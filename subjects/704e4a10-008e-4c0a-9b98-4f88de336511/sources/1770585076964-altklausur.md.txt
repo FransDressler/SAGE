@@ -1,0 +1,187 @@
+# Klausur in Einführung in die Biophysik (PH0023)
+
+## Biomedizinische Physik
+
+### 1.
+Bitte sehen Sie sich die Spektren der Röntgenröhren unten an:
+
+**(a) (1 Punkt)** Bitte tragen Sie die Beschleunigungsspannungen für die drei Spektren in die Tabelle ein (mit korrekter Einheit, keine Punkte, wenn falsche oder keine Einheit angegeben):
+- Spektrum A:
+- Spektrum B:
+- Spektrum C:
+
+**(b) (1 Punkt)** Bitte benennen Sie die beschrifteten Merkmale des Spektrums:
+- Merkmal D:
+- Merkmal E:
+
+**(c) (1 Punkt)** Um welches Targetmaterial handelt es sich hier?  
+Antwort:
+
+**(d) (1 Punkt)** Was wird sich am Spektrum ändern, wenn ein anderes Targetmaterial mit einer niedrigeren Atomzahl verwendet wird? Bitte geben Sie mindestens zwei Änderungen an.  
+Antwort:
+
+---
+
+### 2. (2 Punkte)
+Welcher Effekt wird bei der Verwendung von Kontrastmitteln in der absorptionsbasierten Röntgenbildgebung ausgenutzt und warum erhöht sich der Kontrast?  
+
+---
+
+### 3. (1 Punkt)
+Wie oft kann ein Photon detektiert werden?
+
+- 1-3 Mal, abhängig von der dominierenden Wechselwirkung  
+- 1-3 Mal, abhängig von der Energie des Photons  
+- 1-3 Mal, abhängig sowohl von der Energie des Photons als auch der Wechselwirkung  
+- Ein Photon kann nur einmal detektiert werden  
+
+
+### 4.
+Um die Erzeugung von Röntgenstrahlung an der Munich Compact Light Source (MuCLS) im Wellenbild zu erklären, also wie man eine Synchrotronquelle im Röntgenbereich von einem Durchmesser von 1 km auf 5 m schrumpfen kann, geben Sie bitte unter (a) die Größenordnung für die Energie der geladenen Teilchen im Ring für ein Synchrotron und für die MuCLS an. Unter (b) vergleichen Sie bitte die Perioden der beiden Undulatoren und ihre Arten.
+
+**(a) (1 Punkt)** • Teilchenenergie: Synchrotron vs MuCLS
+
+**(b) (2 Punkte)** • Undulatorart und Periode:  
+Synchrotron Periode  
+vs MuCLS Periode
+
+**(c) (2 Punkte)** Wie verändert man bei der MuCLS die Röntgenenergie?  
+
+
+### 5. (1 Punkt)
+Der Ultraschallkopf ist gleichzeitig ein Transmitter und ein Empfänger. Welche andere bildgebende Methode arbeitet mit dem gleichen Konzept?
+
+- MRT  
+- PET  
+- SPECT  
+- Röntgen CT  
+
+
+### 6.
+Magnetresonanztomographie (MRT) ermöglicht eine Bildgebung mit sehr hohem Weichteilkontrast im Vergleich zur Computertomographie (CT).
+
+**(a) (1 Punkt)** Wie wird in der MRT die Ortsauflösung erzeugt?  
+
+**(b) (1 Punkt)** Warum hat das MRT (OHNE Strahlenbelastung) die CT oder die Mammographie (beides MIT Strahlenbelastung) bisher nicht komplett ersetzt? Bitte geben Sie mindestens zwei Gründe an.  
+
+
+### 7. (1 Punkt)
+Welches der folgenden Isotope wird in PET eingesetzt und warum?
+
+| Isotop | Symbol | Lebensdauer | Photonen, keV (%) |
+|---|---|---:|---|
+| Fluor-18 | 18-F | 109.8m | 511 |
+| Gallium-67 | 67-Ga | 3.3d | 93 (50), 185 (30), 300 (20) |
+| Indium-111 | 111-In | 2.8d | 173 (50), 247 (50) |
+| Jod-123 | 123-I | 13h | 159 |
+| Jod-131 | 131-I | 8d | 365 |
+| Technetium-99m | 99m-Tc | 6h | 140 |
+| Thallium-201 | 201-Tl | 3d | 69-81 (90), 167 (10) |
+
+
+
+### 8. (1 Punkt)
+Welche Art von Strahlung wird am häufigsten in der klinischen Strahlentherapie eingesetzt?
+
+- Gammastrahlung (∼1 MeV)  
+- Röntgenstrahlung im kV-Bereich (∼0.1 MeV)  
+- hochenergetische Röntgenstrahlung (∼10 MeV)  
+- hochenergetische Protonen (∼100 MeV)  
+
+
+### 9. (1 Punkt)
+Ein Proton und ein Kohlenstoff-Ion (6+) haben die gleiche kinetische Energie, d.h. die gleiche Geschwindigkeit. Wie vergleichen sich deren Reichweiten in Wasser?
+
+- Beide Reichweiten sind gleich  
+- Die Reichweite des Protons ist 1/2 von der des Kohlenstoff-Ions  
+- Die Reichweite des Kohlenstoff-Ions ist 1/3 der Reichweite des Protons  
+- Die Reichweite des Kohlenstoff-Ions ist 1/12 der Reichweite des Protons  
+
+
+### 10. (2 Punkte)
+Welche der folgenden Röntgen-Phasenkontrast-Methoden benötigt einen hochauflösenden Detektor und was genau messen diese Methoden (z.B. erste Ableitung der Phase)?
+
+- Analyzer-based Imaging  
+- Crystal Interferometry  
+- Grating Interferometry  
+- Propagation-based Imaging  
+
+
+
+## Chemie der Zelle
+
+### 11. (1 Punkt)
+Ordnen Sie die folgende Liste von Prozessen nach ihrer Energie von der kleinsten zur größten.
+
+A. ATP-Hydrolyse in Zellen.  
+B. Thermische Bewegung/Brownsche Bewegung.  
+C. C-C-Bindung.  
+D. Vollständige Oxidation von Glukose.  
+E. Nicht-kovalente Bindung in Wasser.
+
+
+### 12.
+Muskeln enthalten Kreatinphosphat (KP) als Energiereserve, um die ATP-Konzentration in den frühen Phasen der körperlichen Aktivität aufrechtzuerhalten. Kreatinphosphat kann seine Phosphatgruppe auf ADP übertragen, um Kreatin (K) und ATP zu erzeugen, mit einem ∆G◦ von -3.3 kcal/mol.
+
+KP + ADP → K + AT P      ∆G◦ = −3.3 kcal/mol
+
+**(a) (1 Punkt)** In einem ruhenden Muskel beträgt die Konzentration von [ATP] = 4 mM, [ADP] = 0.013 mM, [KP] = 25 mM und [K] = 13 mM. Wie lautet das ∆G für diese Reaktion im ruhenden Muskel?  
+(R = 1.98 × 10−3 kcal/K mol, T = 310 K)
+
+**(b) (1 Punkt)** Betrachten Sie eine frühe Phase intensiver körperlicher Aktivität, in der 25% des ATP in ADP umgewandelt wurden. Angenommen, dass sich keine anderen Konzentrationen geändert haben, wie lautet das ∆G für die Reaktion in diesem Stadium des trainierenden Muskels?
+
+**(c) (1 Punkt)** Vergleichen Sie die beiden oben berechneten ∆G-Werte. Warum werden in der Anfangsphase der körperlichen Aktivität 25% des ATP in ADP umgewandelt?
+
+
+## Protein
+
+### 13.
+Es gibt vier verschiedene Ebenen der Proteinstruktur, wobei auf jeder Ebene unterschiedliche Wechselwirkungen eine Rolle spielen.
+
+**(a) (1 Punkt)** Was ist die Primärstruktur und welche Wechselwirkungen sind beteiligt?
+
+**(b) (1 Punkt)** Was ist die Sekundärstruktur und welche Wechselwirkungen sind beteiligt?
+
+**(c) (1 Punkt)** Welche Wechselwirkungen sind an der Tertiärstruktur beteiligt?
+
+
+### 14. (2 Punkte)
+Ein Antikörper bindet mit einer Gleichgewichtskonstante K von 5 × 10^9 an ein Protein. Wenn er an ein zweites, verwandtes Protein bindet, bilden sich drei weniger Wasserstoffbrückenbindungen, was die Bindungsaffinität um 4.2 kcal/mol reduziert. Wie lautet das K für die Bindung an das zweite Protein?  
+(R = 1.98 × 10−3 kcal/K mol, T = 310 K)
+
+
+### 15.
+Viele kleine Proteine falten sich in einer Weise, die in etwa mit einem einfachen Zwei-Zustands-Modell übereinstimmt, bei dem es nur den ungefalteten Zustand U und den gefalteten Zustand F gibt. Wir bezeichnen die Konzentration des gefalteten Proteins als [F] und die Konzentration des ungefalteten Proteins als [U]. Unter gegebenen Bedingungen (Temperatur, Konzentrationen von Ionen und anderen Molekülen in der Lösung usw.) wird das chemische Gleichgewicht zwischen den beiden Zuständen durch die Gleichgewichtskonstante beschrieben:
+
+Keq = [F]/[U] = (1 − fU)/fU,
+
+wobei fU = [U]/([U] + [F]) der Anteil der Proteine im ungefalteten Zustand ist.
+
+**(a) (1 Punkt)** Die Gleichgewichtskonstante ist mit der freien Energie des nativen Zustands relativ zum ungefalteten Zustand über die Beziehung ∆Gfold = GN − GU = −RT ln Keq verknüpft, wobei R die ideale Gaskonstante und T die absolute Temperatur ist. Leiten Sie eine Ausdruck für fU als Funktion von ∆Gfold her.
+
+**(b) (1 Punkt)** Wie groß ist der Anteil fU des ungefalteten Proteins, wenn ∆Gfold = -4 kcal/mol, R = 1.98 × 10−3 kcal/K mol und T = 310 K?
+
+
+## DNA, RNA und Gen
+
+### 16. (1 Punkt)
+Menschliche DNA enthält 20% C auf molarer Basis. Wie hoch sind die molaren Prozentsätze von A, G und T?
+
+
+### 17.
+Das diploide menschliche Genom umfasst 6.4 × 10^9 Basenpaare und passt in einen Zellkern mit einem Durchmesser von 6 µm.
+
+**(a) (1 Punkt)** Wie lang ist die DNA in einer menschlichen Zelle?
+
+**(b) (1 Punkt)** Wenn der Durchmesser der DNA-Helix 2.4 nm beträgt, welcher Anteil des Volumens des Zellkerns wird von der DNA eingenommen?
+
+
+### 18. (3 Punkte)
+Eine DNA-Bindungsstelle D kann von zwei verschiedenen Proteinen, A und B, gebunden werden, jedoch jeweils nur von einem zur gleichen Zeit, sodass die beiden Reaktionen D + A ⇌ D · A und D + B ⇌ D · B gekoppelt sind. Die Dissoziationskonstanten der beiden Bindungsreaktionen sind KA = 1 nM bzw. KB = 4 nM. Die Konzentrationen von A und B in Lösung wurden als cA = 3 nM und cB = 16 nM gemessen. Bestimmen Sie das Gleichgewicht der kompetitiven Bindung der DNA-Stelle mit den beiden DNA-bindenden Proteinen, d. h., berechnen Sie die Wahrscheinlichkeiten pA und pB, dass die Stelle D von A bzw. B besetzt ist. Warum ergeben die beiden Wahrscheinlichkeiten zusammen nicht eins?
+
+
+## Membran
+
+### 19. (4 Punkte)
+Eine alternative Betrachtungsweise der Wahrscheinlichkeit für membrangebundene Kanäle ist, die Membran als bestehend aus zwei Kanal-Spezies zu betrachten: geschlossen und offen, mit Konzentrationen cclosed bzw. copen. Diese beiden Spezies unterliegen einer konstanten Umwandlung, die durch ein Gleichgewicht charakterisiert ist, bei dem ihre jeweiligen chemischen Potentiale µclosed und µopen gleich sind. Durch das Gleichsetzen der chemischen Potentiale dieser beiden Spezies soll eine Ausdruck für die Offen-Wahrscheinlichkeit popen hergeleitet werden.
+``` :contentReference[oaicite:0]{index=0}

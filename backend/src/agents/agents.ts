@@ -3,37 +3,39 @@ import { Agent } from "./types"
 import { askTool } from "./tools/ask"
 import { notesTool } from "./tools/notes"
 import { quizTool } from "./tools/quiz"
-import { examTool } from "./tools/examlab"
 import { Ragsearch } from "./tools/Ragsearch"
 import { nopTool } from "./tools/nop"
 import { podcastScriptTool, podcastTtsTool } from "./tools/podcast"
+import { getLocale } from "../lib/prompts/locale"
+
+const { instruction: lang } = getLocale()
 
 const tutor: Agent = reg({
   id: "tutor",
   name: "Tutor",
-  sys: "You teach and assess.",
+  sys: `You teach and assess. ${lang}`,
   tools: [nopTool, notesTool, quizTool, askTool],
 })
 
 const researcher: Agent = reg({
   id: "researcher",
   name: "Researcher",
-  sys: "You aggregate context and draft outputs.",
+  sys: `You aggregate context and draft outputs. ${lang}`,
   tools: [nopTool, Ragsearch, askTool],
 })
 
 const examiner: Agent = reg({
   id: "examiner",
   name: "Examiner",
-  sys: "You design assessments.",
-  tools: [nopTool, examTool, quizTool],
+  sys: `You design assessments. ${lang}`,
+  tools: [nopTool, quizTool],
 })
 
 const podcaster: Agent = reg({
   id: "podcaster",
   name: "Podcaster",
-  sys: "You turn materials into podcast scripts and synthesize audio.",
+  sys: `You turn materials into podcast scripts and synthesize audio. ${lang}`,
   tools: [nopTool, podcastScriptTool, podcastTtsTool],
 })
 
-export const Agents = { tutor, researcher, examiner }
+export const Agents = { tutor, researcher, examiner, podcaster }

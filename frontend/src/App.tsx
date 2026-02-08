@@ -1,18 +1,15 @@
-import Sidebar from "./components/Sidebar";
 import { Outlet } from "react-router-dom";
-import { CompanionProvider } from "./components/Companion/CompanionProvider";
-import CompanionDock from "./components/Companion/CompanionDock";
+import { SubjectProvider } from "./context/SubjectContext";
+import { ModelProvider } from "./context/ModelContext";
 
 export default function App() {
   return (
-    <CompanionProvider>
-      <div className="bg-black text-stone-300 min-h-screen flex flex-col">
-        <Sidebar />
-        <div className="flex-1 relative">
+    <SubjectProvider>
+      <ModelProvider>
+        <div className="bg-stone-950 text-bone min-h-screen">
           <Outlet />
         </div>
-      </div>
-      <CompanionDock />
-    </CompanionProvider>
+      </ModelProvider>
+    </SubjectProvider>
   );
 }

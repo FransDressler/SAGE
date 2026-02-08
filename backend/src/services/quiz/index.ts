@@ -1,5 +1,9 @@
 import llm from "../../utils/llm/llm"
+import type { LLM } from "../../utils/llm/models/types"
 import { normalizeTopic } from "../../utils/text/normalize"
+import { getLocale } from "../../lib/prompts/locale"
+import { formatInstructions } from "../../lib/prompts/instructions"
+import type { UserInstructions } from "../../types/instructions"
 
 export type QuizItem = {
   id: number
@@ -10,16 +14,36 @@ export type QuizItem = {
   explanation: string
 }
 
-const SYS = `PRIMARY OBJECTIVE
-Generate exactly 5 multiple-choice questions about the given topic.
+export type QuizOpts = {
+  difficulty?: "easy" | "medium" | "hard"
+  length?: number
+  instructions?: UserInstructions
+}
+
+const DIFFICULTY_GUIDE: Record<string, string> = {
+  easy: "Focus on straightforward recall and basic comprehension. Questions should test fundamental concepts and definitions.",
+  medium: "Focus on application and understanding. Questions should require applying concepts to scenarios.",
+  hard: "Focus on analysis, evaluation, and synthesis. Questions should require critical thinking and connecting multiple concepts.",
+}
+
+function buildSysPrompt(opts?: QuizOpts) {
+  const count = Math.max(3, Math.min(20, opts?.length || 5))
+  const diff = opts?.difficulty || "medium"
+  const diffGuide = DIFFICULTY_GUIDE[diff] || DIFFICULTY_GUIDE.medium
+
+  return `PRIMARY OBJECTIVE
+Generate exactly ${count} multiple-choice questions about the given topic.
+
+DIFFICULTY: ${diff.toUpperCase()}
+${diffGuide}
 
 OUTPUT CONTRACT
-Return only a JSON array with 5 objects.
+Return only a JSON array with ${count} objects.
 No markdown, no code fences, no prose outside the JSON.
 
 SCHEMA
-"id": 1..5
-"question": plain English, 12..160 chars, unambiguous
+"id": 1..${count}
+"question": plain text, 12..160 chars, unambiguous
 "options": array of exactly 4 distinct strings; each 6..80 chars; each prefixed with A) , B) , C) , D)  OR  1) , 2) , 3) , 4)
 "correct": 1|2|3|4 (1-based index into options)
 "hint": 6..120 chars
@@ -29,29 +53,35 @@ STYLE
 Plain text only. ASCII. No LaTeX. No extra keys or nesting.
 
 VALIDATION
-Exactly 5 items
+Exactly ${count} items
 Each item has all 6 keys
 options length is 4
 correct in [1,2,3,4]
 All strings trimmed and non-empty
 All options should have Oppropriate content, actual options.
 
+LANGUAGE
+${getLocale().instruction}
+
 FAIL-SAFE
 If uncertain, pick the standard interpretation of the topic.
-Output only the JSON array.`
+Output only the JSON array.${formatInstructions(opts?.instructions)}`
+}
 
-const SYS_STRICT = `RETRY: STRICT FORMAT ONLY
+function buildStrictPrompt(count: number) {
+  return `RETRY: STRICT FORMAT ONLY
 
 OUTPUT
-Only a JSON array with 5 objects. No markdown. No extra text.
+Only a JSON array with ${count} objects. No markdown. No extra text.
 
 FIELDS
-id 1..5
+id 1..${count}
 question 12..160 chars
 options exactly 4 strings; prefixed A) , B) , C) , D)  OR  1) , 2) , 3) , 4)
 correct 1|2|3|4
 hint 6..120 chars
 explanation 12..200 chars`
+}
 
 function stripFences(s: string) { return s.replace(/^\s*```(?:json)?\s*|\s*```\s*$/g, "").trim() }
 function extractArray(s: string) { const m = s.match(/\[[\s\S]*\]/); return m ? m[0] : s }
@@ -79,7 +109,7 @@ function cleanOptions(v: any) {
 }
 function coerce(items: any): QuizItem[] {
   const arr = Array.isArray(items) ? items : []
-  const out = arr.slice(0, 5).map((o: any, i: number): QuizItem => {
+  return arr.map((o: any, i: number): QuizItem => {
     const q = nstr(o?.question, 12, 160) || `Question ${i + 1}`
     const opts = cleanOptions(o?.options)
     const correct = to1_4(o?.correct)
@@ -87,14 +117,6 @@ function coerce(items: any): QuizItem[] {
     const explanation = nstr(o?.explanation, 12, 200) || "The correct option matches the main idea; others do not."
     return { id: i + 1, question: q, options: opts, correct, hint, explanation }
   })
-  while (out.length < 5) {
-    const i = out.length
-    const src = out[i - 1] || { question: `Question ${i + 1}`, options: cleanOptions([]), correct: 1, hint: "Use the core idea.", explanation: "The correct option matches the main idea; others do not." }
-    const rot = src.options.map((_, k) => src.options[(k + 1) % 4])
-    const corr = (src.correct % 4) + 1
-    out.push({ id: i + 1, question: src.question, options: rot, correct: corr, hint: src.hint, explanation: src.explanation })
-  }
-  return out
 }
 function validItem(x: any) {
   return x && typeof x.id === "number" && typeof x.question === "string"
@@ -102,27 +124,30 @@ function validItem(x: any) {
     && typeof x.correct === "number" && x.correct >= 1 && x.correct <= 4
     && typeof x.hint === "string" && typeof x.explanation === "string"
 }
-function validQuiz(a: any): a is QuizItem[] { return Array.isArray(a) && a.length === 5 && a.every(validItem) }
+function validQuiz(a: any): a is QuizItem[] { return Array.isArray(a) && a.length > 0 && a.every(validItem) }
 
-async function ask(topicIn: any, sys: string) {
+async function ask(topicIn: any, sys: string, model: LLM) {
   const topic = normalizeTopic(topicIn)
   const msgs = [
     { role: "system", content: sys },
     { role: "user", content: `Topic:\n${topic}\nReturn only the JSON array.` }
   ] as const
-  const r = await llm.invoke([...msgs] as any)
+  const r = await model.invoke([...msgs] as any)
   const raw = typeof r === "string" ? r : String((r as any)?.content ?? "")
   const txt = extractArray(stripFences(raw))
   return tryParse<any>(txt)
 }
 
-export async function handleQuiz(topic: string): Promise<QuizItem[]> {
-  const parsed = await ask(topic, SYS)
+export async function handleQuiz(topic: string, llmOverride?: LLM, opts?: QuizOpts): Promise<QuizItem[]> {
+  const model = llmOverride || llm
+  const count = Math.max(3, Math.min(20, opts?.length || 5))
+  const sys = buildSysPrompt(opts)
+  const parsed = await ask(topic, sys, model)
   if (parsed) {
     const out = coerce(parsed)
     if (validQuiz(out)) return out
   }
-  const parsed2 = await ask(topic, SYS_STRICT)
+  const parsed2 = await ask(topic, buildStrictPrompt(count), model)
   const out2 = coerce(parsed2)
   if (!validQuiz(out2)) throw new Error("Invalid quiz JSON from model")
   return out2

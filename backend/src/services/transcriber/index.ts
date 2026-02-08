@@ -1,6 +1,9 @@
 import { OpenAI } from 'openai';
 import fs from 'fs';
 import { config } from '../../config/env';
+import { getLocale } from '../../lib/prompts/locale';
+import llm from '../../utils/llm/llm';
+import type { LLM } from '../../utils/llm/models/types';
 
 export type TranscriptionProvider = 'openai' | 'google' | 'assemblyai' | 'elevenlabs';
 
@@ -151,7 +154,7 @@ async function transcribeWithAssemblyAI(filePath: string): Promise<Transcription
             throw new Error(`Upload failed: ${uploadResponse.statusText}`);
         }
 
-        const { upload_url } = await uploadResponse.json();
+        const { upload_url } = await uploadResponse.json() as any;
 
         const transcriptResponse = await fetch('https://api.assemblyai.com/v2/transcript', {
             method: 'POST',
@@ -170,7 +173,7 @@ async function transcribeWithAssemblyAI(filePath: string): Promise<Transcription
             throw new Error(`Transcription request failed: ${transcriptResponse.statusText}`);
         }
 
-        const { id } = await transcriptResponse.json();
+        const { id } = await transcriptResponse.json() as any;
 
         let status = 'queued';
         let result: any;
@@ -230,7 +233,7 @@ async function transcribeWithElevenLabs(filePath: string): Promise<Transcription
             throw new Error(`ElevenLabs API error: ${response.statusText}`);
         }
 
-        const result = await response.json();
+        const result = await response.json() as any;
 
         return {
             text: result.text || '',
@@ -242,8 +245,9 @@ async function transcribeWithElevenLabs(filePath: string): Promise<Transcription
     }
 }
 
-async function generateStudyMaterials(transcriptionText: string): Promise<StudyMaterials> {
+async function generateStudyMaterials(transcriptionText: string, llmOverride?: LLM): Promise<StudyMaterials> {
     try {
+        const { instruction: lang } = getLocale()
         const prompt = `Analyze this transcription and create organized study materials:
 
 TRANSCRIPTION:
@@ -264,25 +268,22 @@ Please provide a JSON response with the following structure:
     }
 }
 
-Make it educational and useful for studying. Focus on extracting the most important information for learning purposes.`;
+Make it educational and useful for studying. Focus on extracting the most important information for learning purposes.
+${lang}`;
 
-        const completion = await openai.chat.completions.create({
-            model: 'gpt-4o-mini',
-            messages: [
-                {
-                    role: 'system',
-                    content: 'You are an expert educational content analyzer. Create comprehensive study materials from transcriptions. Always respond with valid JSON only.'
-                },
-                {
-                    role: 'user',
-                    content: prompt
-                }
-            ],
-            temperature: 0.3,
-            max_tokens: 2000,
-        });
+        const model = llmOverride || llm
+        const res = await model.invoke([
+            {
+                role: 'system',
+                content: `You are an expert educational content analyzer. Create comprehensive study materials from transcriptions. Always respond with valid JSON only. ${lang}`
+            },
+            {
+                role: 'user',
+                content: prompt
+            }
+        ])
 
-        const responseText = completion.choices[0]?.message?.content?.trim();
+        const responseText = (typeof res === 'string' ? res : String((res as any)?.content ?? '')).trim()
         if (!responseText) {
             throw new Error('No response from AI');
         }

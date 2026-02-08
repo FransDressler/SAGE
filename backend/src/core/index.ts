@@ -1,10 +1,7 @@
 import cors from 'cors';
-import path from 'path'
 import server from '../utils/server/server'
 import { registerRoutes } from './router'
 import { loggerMiddleware } from './middleware'
-
-process.loadEnvFile(path.resolve(process.cwd(), '.env'))
 
 const app = server()
 
@@ -17,6 +14,7 @@ app.use(cors({
 }));
 app.options('*', cors());
 app.use(app.serverStatic("/storage", "./storage"))
+app.use(app.serverStatic("/subjects", "./subjects"))
 
 registerRoutes(app)
 

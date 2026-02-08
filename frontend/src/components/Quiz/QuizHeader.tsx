@@ -8,7 +8,7 @@ export default function QuizHeader({ topic, idx, total, score }:{ topic:string; 
         <div className="flex items-center gap-4 text-sm">
           <span className="text-stone-300">Question <span id="currentQuestion">{Math.min(idx + 1, total)}</span> of <span id="totalQuestions">{total}</span></span>
           <div className="w-48 bg-stone-800 rounded-full h-2">
-            <div id="progressBar" className="bg-blue-600 h-2 rounded-full transition-all duration-300" style={{ width: `${pct}%` }} />
+            <div id="progressBar" className="bg-bone-muted h-2 rounded-full transition-all duration-300" style={{ width: `${pct}%` }} />
           </div>
           <span className="text-stone-300">Score: <span id="currentScore">{score}</span></span>
         </div>

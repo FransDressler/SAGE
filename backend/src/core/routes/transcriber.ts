@@ -72,7 +72,7 @@ function parseTranscriptionRequest(req: any): Promise<ParsedTranscriptionRequest
 }
 
 export function transcriberRoutes(app: any) {
-    app.post("/transcriber", async (req: any, res: any) => {
+    app.post("/subjects/:id/transcriber", async (req: any, res: any) => {
         try {
             const contentType = req.headers['content-type'] || '';
 
@@ -94,7 +94,6 @@ export function transcriberRoutes(app: any) {
 
             const audioFile = files[0];
 
-            // Check if it's an audio file (or video, which often contains audio)
             if (!audioFile.mimeType.startsWith('audio/') && !audioFile.mimeType.startsWith('video/')) {
                 return res.status(400).json({
                     ok: false,
@@ -106,7 +105,6 @@ export function transcriberRoutes(app: any) {
 
             const result = await transcribeAudio(audioFile.path, provider);
 
-            // Clean up the temporary file
             try {
                 fs.unlinkSync(audioFile.path);
             } catch (e) {

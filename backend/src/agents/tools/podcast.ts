@@ -2,16 +2,7 @@ import fs from "fs"
 import { ToolIO } from "../types"
 import llm from "../../utils/llm/llm"
 import { tts, type TSeg } from "../../utils/tts"
-
-function extractFirstJsonObject(s: string) {
-    let depth = 0, start = -1
-    for (let i = 0; i < s.length; i++) {
-        const c = s[i]
-        if (c === "{") { if (depth === 0) start = i; depth++ }
-        else if (c === "}") { depth--; if (depth === 0 && start !== -1) return s.slice(start, i + 1) }
-    }
-    return ""
-}
+import { extractFirstJsonObject } from "../../lib/ai/extract"
 
 function toText(out: any): string {
     if (!out) return ""

@@ -1,4 +1,4 @@
-import type { UA } from "../../pages/Quiz";
+import type { UA } from "../../lib/api";
 
 export default function ReviewModal({ answers, onClose }:{ answers:UA[]; onClose:()=>void }) {
   return (
@@ -7,7 +7,7 @@ export default function ReviewModal({ answers, onClose }:{ answers:UA[]; onClose
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-semibold text-white">Review Answers</h2>
           <button onClick={onClose} className="p-2 hover:bg-stone-900 rounded-xl transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" className="size-6 text-stone-400 hover:text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" className="size-6 text-stone-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/>
             </svg>
           </button>
@@ -53,10 +53,10 @@ export default function ReviewModal({ answers, onClose }:{ answers:UA[]; onClose
 
       <style>{`
         .np-scroll::-webkit-scrollbar { width: 10px; height: 10px; }
-        .np-scroll::-webkit-scrollbar-track { background: #0b0b0b; border-radius: 9999px; }
-        .np-scroll::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 9999px; border: 2px solid #0b0b0b; }
-        .np-scroll::-webkit-scrollbar-thumb:hover { background: #52525b; }
-        .np-scroll { scrollbar-width: thin; scrollbar-color: #3f3f46 #0b0b0b; }
+        .np-scroll::-webkit-scrollbar-track { background: #0c0a09; border-radius: 9999px; }
+        .np-scroll::-webkit-scrollbar-thumb { background: #44403c; border-radius: 9999px; border: 2px solid #0c0a09; }
+        .np-scroll::-webkit-scrollbar-thumb:hover { background: #57534e; }
+        .np-scroll { scrollbar-width: thin; scrollbar-color: #44403c #0c0a09; }
       `}</style>
     </div>
   );

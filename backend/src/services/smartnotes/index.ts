@@ -1,223 +1,155 @@
 import fs from "fs"
 import path from "path"
-import { PDFDocument, StandardFonts, rgb } from "pdf-lib"
-import fontkit from "@pdf-lib/fontkit"
 import llm from "../../utils/llm/llm"
+import type { LLM } from "../../utils/llm/models/types"
 import { normalizeTopic } from "../../utils/text/normalize"
+import { execDirect } from "../../agents/runtime"
+import { getLocale } from "../../lib/prompts/locale"
+import { formatInstructions } from "../../lib/prompts/instructions"
+import type { UserInstructions } from "../../types/instructions"
 
-export type SmartNotesOptions = { topic?: any; notes?: string; filePath?: string }
+export type SmartNotesOptions = { topic?: any; notes?: string; filePath?: string; length?: string; subjectId?: string; sourceIds?: string[]; instructions?: UserInstructions }
 export type SmartNotesResult = { ok: boolean; file: string }
-
-function sanitizeText(s: string) {
-  if (!s) return ""
-  return s
-    .replace(/\u2192/g, "->")
-    .replace(/\u00b2/g, "^2")
-    .replace(/\u00b3/g, "^3")
-    .replace(/[^\x00-\x7F]/g, "")
-}
-
-function wrap(s: string, max = 90) {
-  return s
-    .split("\n")
-    .map(line => {
-      const out: string[] = []
-      let cur = ""
-      for (const w of line.split(/\s+/)) {
-        if ((cur + " " + w).trim().length > max) {
-          out.push(cur)
-          cur = w
-        } else {
-          cur = (cur ? cur + " " : "") + w
-        }
-      }
-      if (cur) out.push(cur)
-      return out.join("\n")
-    })
-    .join("\n")
-}
 
 async function readInput(opts: SmartNotesOptions) {
   if (opts.notes) return opts.notes
   if (opts.filePath) return await fs.promises.readFile(opts.filePath, "utf8")
-  if (opts.topic) return `Generate detailed Cornell notes on: ${normalizeTopic(opts.topic)}`
+  if (opts.topic) return `Generate detailed study notes on: ${normalizeTopic(opts.topic)}`
   throw new Error("No input")
 }
 
-function extractFirstJsonObject(s: string) {
-  let depth = 0, start = -1
-  for (let i = 0; i < s.length; i++) {
-    const ch = s[i]
-    if (ch === "{") { if (depth === 0) start = i; depth++ }
-    else if (ch === "}") { depth--; if (depth === 0 && start !== -1) return s.slice(start, i + 1) }
+const LENGTH_GUIDE: Record<string, string> = {
+  short: "Keep notes concise and focused on key points only. Include 3-5 review questions.",
+  medium: "Generate standard detailed study notes covering all important topics. Include 5-8 review questions.",
+  long: "Generate comprehensive, in-depth notes covering every concept thoroughly with examples and explanations. Include 8-12 review questions.",
+}
+
+function stripCodeFences(text: string): string {
+  let s = text.trim()
+  // Remove leading ```markdown or ``` and trailing ```
+  s = s.replace(/^```(?:markdown|md)?\s*\n?/i, "")
+  s = s.replace(/\n?```\s*$/i, "")
+  // Remove any preamble before the first heading
+  const headingIdx = s.indexOf("\n#")
+  if (headingIdx > 0 && s[0] !== "#") {
+    s = s.slice(headingIdx + 1)
+  } else if (s[0] !== "#") {
+    // If the very first character could be a heading after trimming
+    const trimmed = s.trimStart()
+    if (trimmed[0] === "#") s = trimmed
   }
-  return ""
+  return s.trim()
 }
 
-function safeParse<T = any>(raw: string): T | null {
-  try { return JSON.parse(raw) as T } catch { return null }
-}
-
-async function generateNotes(text: string) {
+async function generateNotes(text: string, model: LLM, length?: string, instructions?: UserInstructions): Promise<string> {
+  const lengthGuide = LENGTH_GUIDE[length || "medium"] || LENGTH_GUIDE.medium
   const prompt = `
 ROLE
-You are a note generator producing Cornell-style notes.
+You are a study note generator producing well-structured Markdown notes.
 
 OBJECTIVE
-Generate maximum detailed study notes from the input.
+${lengthGuide}
 
-OUTPUT
-Return ONLY a valid JSON object, no markdown, no prose.
+OUTPUT FORMAT
+Return ONLY well-formatted Markdown. Structure the output with:
+- A top-level heading (# Title) summarizing the topic
+- ## Notes section with the main study content, using sub-headings (###), bullet points, bold terms, and tables where appropriate
+- ## Summary section with a concise overview of the key takeaways
+- ## Review Questions section with numbered questions and their answers
 
-SCHEMA
-{
-  "title": string,
-  "notes": string,
-  "summary": string,
-  "questions": string[],
-  "answers": string[]
-}
+LANGUAGE
+${getLocale().instruction}
 
 RULES
-- Do not wrap with code fences.
-- Do not add commentary.
-- Use plain text only.
-- If a field has no content, return "" or [].
-- For each question, the corresponding answer must be in the same index in answers.
-`.trim()
+- Do not wrap the output in code fences.
+- Do not add commentary or preamble before the Markdown.
+- Start directly with the # heading.
+- Use standard Markdown syntax (headings, lists, bold, tables, blockquotes).
+${formatInstructions(instructions)}`.trim()
 
-  const r1 = await llm.invoke([{ role: "user", content: prompt + "\n\nINPUT:\n" + text }] as any)
+  const r1 = await model.invoke([{ role: "user", content: prompt + "\n\nINPUT:\n" + text }] as any)
   const raw1 = typeof r1 === "string" ? r1 : String((r1 as any)?.content ?? "")
-  const parsed1 = safeParse<any>(extractFirstJsonObject(raw1) || raw1)
-  if (parsed1 && typeof parsed1 === "object") return parsed1
+  const md1 = stripCodeFences(raw1)
+  if (md1.startsWith("#")) return md1
 
-  const retrySys = `Return only a JSON object matching the schema. No markdown. No extra text.`
-  const r2 = await llm.invoke([
-    { role: "system", content: retrySys },
+  // Retry once
+  const r2 = await model.invoke([
+    { role: "system", content: "Return only Markdown. Start with a # heading. No code fences. No extra text." },
     { role: "user", content: prompt + "\n\nINPUT:\n" + text }
   ] as any)
   const raw2 = typeof r2 === "string" ? r2 : String((r2 as any)?.content ?? "")
-  const parsed2 = safeParse<any>(extractFirstJsonObject(raw2) || raw2)
-  if (parsed2 && typeof parsed2 === "object") return parsed2
+  const md2 = stripCodeFences(raw2)
+  if (md2.startsWith("#")) return md2
 
-  const fallback = {
-    title: "Notes",
-    notes: sanitizeText(text).slice(0, 4000),
-    summary: "",
-    questions: [],
-    answers: []
-  }
-  return fallback
+  // Fallback: return whatever we got, ensure it starts with a heading
+  const fallback = md2 || md1 || raw1
+  return fallback.startsWith("#") ? fallback : `# Notes\n\n${fallback}`
 }
 
-async function fillTemplateFormPDF(data: any) {
-  const dir = path.join(process.cwd(), "assets", "smartnotes")
-  const hasDir = fs.existsSync(dir)
-  if (!hasDir) return null
-  const files = (await fs.promises.readdir(dir)).filter(f => f.endsWith(".pdf"))
-  if (!files.length) return null
-
-  const chosen = files[Math.floor(Math.random() * files.length)]
-  const pdfBytes = await fs.promises.readFile(path.join(dir, chosen))
-  const pdfDoc = await PDFDocument.load(pdfBytes)
-  pdfDoc.registerFontkit(fontkit)
-
-  const form = pdfDoc.getForm()
-  try {
-    const fontPath = path.join(process.cwd(), "assets", "fonts", "Lexend.ttf")
-    if (fs.existsSync(fontPath)) {
-      const fontBytes = await fs.promises.readFile(fontPath)
-      const font = await pdfDoc.embedFont(fontBytes, { subset: true })
-      try { form.updateFieldAppearances(font) } catch { }
-    }
-  } catch { }
-
-  try { form.getTextField("topic").setText(sanitizeText(data.title || "")) } catch { }
-  try { form.getTextField("notes").setText(wrap(sanitizeText(data.notes || ""))) } catch { }
-  try { form.getTextField("summary").setText(wrap(sanitizeText(data.summary || ""))) } catch { }
-  try {
-    const qna = (data.questions || [])
-      .map((q: string, i: number) => {
-        const a = data.answers && data.answers[i] ? `\nAnswer: ${data.answers[i]}` : ""
-        return `• ${q}${a}`
-      })
-      .join("\n\n")
-    form.getTextField("questions").setText(sanitizeText(qna))
-  } catch { }
-
-  const outDir = path.join(process.cwd(), "storage", "smartnotes")
+async function writeMarkdownFile(markdown: string, outDir: string, title: string): Promise<string> {
   await fs.promises.mkdir(outDir, { recursive: true })
-  const safeTitle = sanitizeText(data.title || "notes").replace(/[^a-z0-9]/gi, "_").slice(0, 50)
+  const safeTitle = (title || "notes").replace(/[^a-z0-9]/gi, "_").slice(0, 50)
   const ts = new Date().toISOString().replace(/[:.]/g, "-")
-  const outPath = path.join(outDir, `${safeTitle || "notes"}_${ts}.pdf`)
-  const outBytes = await pdfDoc.save()
-  await fs.promises.writeFile(outPath, outBytes)
+  const outPath = path.join(outDir, `${safeTitle || "notes"}_${ts}.md`)
+  await fs.promises.writeFile(outPath, markdown, "utf8")
   return outPath
 }
 
-async function createSimplePDF(data: any) {
-  const pdfDoc = await PDFDocument.create()
-  const font = await pdfDoc.embedStandardFont(StandardFonts.Helvetica)
-  const page = pdfDoc.addPage([612, 792])
+async function retrieveContext(topic: string, subjectId: string, sourceIds?: string[]): Promise<string> {
+  try {
+    const safeQ = normalizeTopic(topic)
+    const rag = await execDirect({
+      agent: "researcher",
+      plan: { steps: [{ tool: "rag.search", input: { q: safeQ, ns: subjectId, k: 12 }, timeoutMs: 8000, retries: 1 }] },
+      ctx: { ns: subjectId }
+    })
 
-  const margin = 48
-  const width = page.getWidth() - margin * 2
-  let y = page.getHeight() - margin
+    const ragResult = (rag as any)?.result
+    let docs: Array<{ text?: string; meta?: any }> = Array.isArray(ragResult) ? ragResult : []
 
-  const title = sanitizeText(data.title || "Notes")
-  page.drawText(title, { x: margin, y, size: 20, font, color: rgb(0, 0, 0) })
-  y -= 28
-
-  const sections = [
-    { h: "Notes", t: sanitizeText(data.notes || "") },
-    { h: "Summary", t: sanitizeText(data.summary || "") },
-    {
-      h: "Questions",
-      t: (data.questions || [])
-        .map((q: string, i: number) => {
-          const a = data.answers && data.answers[i] ? `\nAnswer: ${data.answers[i]}` : ""
-          return `• ${q}${a}`
-        })
-        .join("\n\n")
+    if (sourceIds && sourceIds.length > 0) {
+      const allowed = new Set(sourceIds)
+      docs = docs.filter(d => d?.meta?.sourceId && allowed.has(d.meta.sourceId))
     }
-  ]
 
-  for (const sec of sections) {
-    if (!sec.t) continue
-    page.drawText(sec.h, { x: margin, y, size: 14, font, color: rgb(0, 0, 0) })
-    y -= 18
+    docs.sort((a, b) => {
+      const fileA = a?.meta?.sourceFile || ""
+      const fileB = b?.meta?.sourceFile || ""
+      if (fileA !== fileB) return fileA.localeCompare(fileB)
+      return (a?.meta?.chunkIndex || 0) - (b?.meta?.chunkIndex || 0)
+    })
 
-    const lines = wrap(sec.t, 90).split("\n")
-    for (const line of lines) {
-      if (y < margin + 24) {
-        y = page.getHeight() - margin
-        const p = pdfDoc.addPage([612, 792])
-        p.drawText(title, { x: margin, y, size: 12, font, color: rgb(0, 0, 0) })
-        y -= 20
-      }
-      page.drawText(line, { x: margin, y, size: 11, font, color: rgb(0, 0, 0) })
-      y -= 14
-    }
-    y -= 12
+    return docs.map(d => {
+      const m = d?.meta
+      const source = m?.sourceFile
+        ? `[Source: ${m.sourceFile}${m.pageNumber ? `, p.${m.pageNumber}` : ""}]`
+        : ""
+      return `${source}\n${d?.text || ""}`.trim()
+    }).join("\n\n---\n\n")
+  } catch (e) {
+    console.warn("[smartnotes] RAG retrieval failed, proceeding without context:", e)
+    return ""
   }
-
-  const outDir = path.join(process.cwd(), "storage", "smartnotes")
-  await fs.promises.mkdir(outDir, { recursive: true })
-  const safeTitle = sanitizeText(data.title || "notes").replace(/[^a-z0-9]/gi, "_").slice(0, 50)
-  const ts = new Date().toISOString().replace(/[:.]/g, "-")
-  const outPath = path.join(outDir, `${safeTitle || "notes"}_${ts}.pdf`)
-  const outBytes = await pdfDoc.save()
-  await fs.promises.writeFile(outPath, outBytes)
-  return outPath
 }
 
-export async function handleSmartNotes(opts: SmartNotesOptions): Promise<SmartNotesResult> {
-  const input = await readInput(opts)
-  const data = await generateNotes(input)
+export async function handleSmartNotes(opts: SmartNotesOptions, llmOverride?: LLM): Promise<SmartNotesResult> {
+  let input = await readInput(opts)
 
-  const filled = await fillTemplateFormPDF(data)
-  if (filled) return { ok: true, file: filled }
+  if (opts.subjectId && !opts.notes && !opts.filePath) {
+    const context = await retrieveContext(String(opts.topic || ""), opts.subjectId, opts.sourceIds)
+    if (context) {
+      input = `Topic: ${normalizeTopic(String(opts.topic || ""))}\n\nSource material:\n${context}`
+    }
+  }
 
-  const simple = await createSimplePDF(data)
-  return { ok: true, file: simple }
+  const model = llmOverride || llm
+  const markdown = await generateNotes(input, model, opts.length, opts.instructions)
+
+  const outDir = opts.subjectId
+    ? path.join(process.cwd(), "subjects", opts.subjectId, "smartnotes")
+    : path.join(process.cwd(), "storage", "smartnotes")
+
+  const title = String(opts.topic || "notes")
+  const outPath = await writeMarkdownFile(markdown, outDir, title)
+  return { ok: true, file: outPath }
 }

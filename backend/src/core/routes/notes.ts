@@ -1,6 +1,9 @@
 import { handleSmartNotes } from "../../services/smartnotes";
+import { parseInstructions } from "../../lib/prompts/instructions";
 import { emitToAll } from "../../utils/chat/ws";
 import { withTimeout } from "../../utils/quiz/promise";
+import { resolveOverride } from "../../utils/llm/models";
+import { addTool } from "../../utils/subjects/subjects";
 import { config } from "../../config/env";
 import crypto from "crypto";
 import path from "path";
@@ -40,17 +43,23 @@ export function smartnotesRoutes(app: any) {
     ws.on("close", () => clearInterval(iv));
   });
 
-  app.post("/smartnotes", async (req: any, res: any) => {
+  const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+  app.post("/subjects/:id/smartnotes", async (req: any, res: any) => {
     try {
-      const { topic, notes, filePath } = req.body || {};
+      const subjectId = req.params.id;
+      if (!UUID_RE.test(subjectId)) return res.status(400).send({ ok: false, error: "invalid id" });
+      const { topic, notes, filePath, length, sourceIds } = req.body || {};
+      const instructions = parseInstructions(req.body?.instructions);
       if (!topic && !notes && !filePath) {
         return res
           .status(400)
           .send({ ok: false, error: "Provide topic, notes, or filePath" });
       }
 
+      const llmOverride = resolveOverride(req.body);
       const noteId = crypto.randomUUID();
-      nlog("start", noteId, "input:", { topic, notes, filePath });
+      nlog("start", noteId, "input:", { topic, notes, filePath, length, sourceIds });
 
       res
         .status(202)
@@ -60,17 +69,28 @@ export function smartnotesRoutes(app: any) {
         try {
           emitToAll(ns.get(noteId), { type: "phase", value: "generating" });
           const result = await withTimeout(
-            handleSmartNotes({ topic, notes, filePath }),
+            handleSmartNotes({ topic, notes, filePath, length, subjectId, sourceIds, instructions }, llmOverride),
             120000,
             "handleSmartNotes"
           );
+          const filename = path.basename(result.file);
           nlog("generated", noteId, result.file);
           emitToAll(ns.get(noteId), {
             type: "file",
-            file: `${config.url}/storage/smartnotes/${path.basename(
-              result.file
-            )}`,
+            file: `${config.baseUrl}/subjects/${subjectId}/smartnotes/${filename}`,
           });
+
+          try {
+            await addTool(subjectId, {
+              id: noteId,
+              tool: "smartnotes",
+              topic: topic || "Notes",
+              config: { length },
+              createdAt: Date.now(),
+              result: { type: "smartnotes", filename },
+            });
+          } catch (pe) { nlog("persist failed", noteId, pe); }
+
           emitToAll(ns.get(noteId), { type: "done" });
           nlog("done", noteId);
         } catch (e: any) {

@@ -1,6 +1,8 @@
 import path from 'path'
 
-process.loadEnvFile(path.resolve(process.cwd(), '.env'))
+try { process.loadEnvFile(path.resolve(process.cwd(), '.env')) } catch (e: any) {
+  console.warn('[config] .env not loaded:', e?.message || e)
+}
 
 export const config = {
   db_mode: process.env.db_mode || 'json',
@@ -45,4 +47,12 @@ export const config = {
   transcription_provider: process.env.TRANSCRIPTION_PROVIDER || 'openai',
   assemblyai_api_key: process.env.ASSEMBLYAI_API_KEY || '',
   google_project_id: process.env.GOOGLE_CLOUD_PROJECT_ID || '',
+  child_chunk_size: Number(process.env.CHILD_CHUNK_SIZE) || 400,
+  child_chunk_overlap: Number(process.env.CHILD_CHUNK_OVERLAP) || 80,
+  parent_retrieval: process.env.PARENT_RETRIEVAL === 'true',
+  tavily_api_key: process.env.TAVILY_API_KEY || '',
+  websearch_max_results_quick: Number(process.env.WEBSEARCH_MAX_RESULTS_QUICK) || 5,
+  websearch_max_results_deep: Number(process.env.WEBSEARCH_MAX_RESULTS_DEEP) || 15,
+  websearch_timeout: Number(process.env.WEBSEARCH_TIMEOUT) || 30000,
+  websearch_max_content_chars: Number(process.env.WEBSEARCH_MAX_CONTENT_CHARS) || 20000,
 }

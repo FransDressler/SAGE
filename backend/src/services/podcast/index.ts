@@ -1,16 +1,38 @@
 import fs from "fs"
 import llm from "../../utils/llm/llm"
+import type { LLM } from "../../utils/llm/models/types"
 import { tts, type TSeg } from "../../utils/tts"
 import { execDirect } from "../../agents/runtime"
 import { normalizeTopic } from "../../utils/text/normalize"
+import { getLocale } from "../../lib/prompts/locale"
+import { formatInstructions } from "../../lib/prompts/instructions"
+import { extractFirstJsonObject } from "../../lib/ai/extract"
+import type { UserInstructions } from "../../types/instructions"
 
 export type PSeg = { spk: string; voice?: string; md: string }
 export type POut = { title: string; summary: string; segments: PSeg[] }
 
-const P = `
-ROLE
-You are a professional podcast scriptwriter. 
-You craft highly engaging, interactive, and natural-sounding scripts where two speakers explore ideas in a way that feels lively, curious, and practical. 
+const SEGMENT_COUNTS: Record<string, string> = {
+  short: "4–8",
+  medium: "8–16",
+  long: "14–24",
+}
+
+const TONE_GUIDE: Record<string, string> = {
+  casual: "casual, flowing, interactive — like two people thinking together, not lecturing",
+  formal: "formal, academic, and precise — like two scholars discussing research with clarity and rigor",
+  debate: "debate-style — speakers take opposing perspectives and argue their positions with evidence",
+  "teacher-student": "teacher-student dynamic — one speaker explains while the other asks clarifying questions",
+  storytelling: "narrative storytelling — weaving concepts into engaging stories and anecdotes",
+}
+
+function buildPodcastPrompt(length?: string, instructions?: UserInstructions) {
+  const segRange = SEGMENT_COUNTS[length || "medium"] || SEGMENT_COUNTS.medium
+  const tone = TONE_GUIDE[instructions?.tone || "casual"] || TONE_GUIDE.casual
+
+  return `ROLE
+You are a professional podcast scriptwriter.
+You craft highly engaging, interactive, and natural-sounding scripts where two speakers explore ideas in a way that feels lively, curious, and practical.
 The conversation should discourage rote learning and instead highlight real-world applications, relatable daily problems, and thought-provoking examples.
 
 OUTPUT
@@ -25,10 +47,10 @@ Return only one valid JSON object in this format:
 }
 
 RULES
-- 8–16 segments total
+- ${segRange} segments total
 - Alternate speakers A and B consistently
 - Each segment = 1–3 sentences max (natural spoken rhythm)
-- Tone: casual, flowing, interactive — like two people thinking together, not lecturing
+- Tone: ${tone}
 - Use markdown for clarity (lists, emphasis, short paragraphs, bullet points when helpful)
 - Speakers should:
   * Ask and answer questions
@@ -41,28 +63,22 @@ RULES
 - Make it sound alive: energy, curiosity, humor, and quick reactions
 - No code fences or extra text outside the JSON
 
-GOAL
-The script should feel ready to record for a professional podcast that makes listeners think, laugh, and connect ideas to their daily lives — surpassing rote-learning style and beating competitors in engagement and clarity.
-`.trim()
+LANGUAGE
+${getLocale().instruction}
 
-function j1(s: string) {
-  let d = 0, b = -1
-  for (let i = 0; i < s.length; i++) {
-    const c = s[i]
-    if (c === "{") { if (d === 0) b = i; d++ }
-    else if (c === "}") { d--; if (d === 0 && b !== -1) return s.slice(b, i + 1) }
-  }
-  return ""
+GOAL
+The script should feel ready to record for a professional podcast that makes listeners think, laugh, and connect ideas to their daily lives — surpassing rote-learning style and beating competitors in engagement and clarity.${formatInstructions(instructions)}`
 }
 
-export async function makeScript(input: string, topic?: string): Promise<POut> {
+export async function makeScript(input: string, topic?: string, llmOverride?: LLM, length?: string, instructions?: UserInstructions): Promise<POut> {
   const top = normalizeTopic(topic || "general")
+  const prompt = buildPodcastPrompt(length, instructions)
 
   const plan = {
     steps: [
       {
         tool: "podcast.script",
-        input: { prompt: P, material: input, topic: top },
+        input: { prompt, material: input, topic: top },
         timeoutMs: 20000,
         retries: 1
       }
@@ -76,20 +92,25 @@ export async function makeScript(input: string, topic?: string): Promise<POut> {
       return out as POut
     }
   } catch (err) {
+    console.warn("[podcast] agent fallback:", (err as any)?.message || err)
   }
 
   const m = [
-    { role: "system", content: P },
+    { role: "system", content: prompt },
     { role: "user", content: `topic: ${top}\n\nmaterial:\n${input}\n\nreturn only json` }
   ] as any
 
-  const r = await llm.invoke(m)
+  const model = llmOverride || llm
+  const r = await model.invoke(m)
   const t = (typeof r === "string" ? r : String((r as any)?.content || "")).trim()
-  const s = j1(t) || t
-  const o = JSON.parse(s)
-  if (!Array.isArray(o.segments)) o.segments = []
-
-  return o as POut
+  const s = extractFirstJsonObject(t) || t
+  try {
+    const o = JSON.parse(s)
+    if (!Array.isArray(o.segments)) o.segments = []
+    return o as POut
+  } catch {
+    throw new Error("Failed to parse podcast script from LLM response")
+  }
 }
 
 export async function makeAudio(o: POut, dir: string, base: string, emit?: (m: any) => void) {

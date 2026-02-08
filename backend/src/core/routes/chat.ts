@@ -8,9 +8,12 @@ import {
   getMsgs,
 } from "../../utils/chat/chat";
 import { emitToAll } from "../../utils/chat/ws";
+import { resolveOverride } from "../../utils/llm/models";
+import { getSubject } from "../../utils/subjects/subjects";
 
 type UpFile = { path: string; filename: string; mimeType: string };
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const chatSockets = new Map<string, Set<any>>();
 
 export function chatRoutes(app: any) {
@@ -36,8 +39,12 @@ export function chatRoutes(app: any) {
     ws.send(JSON.stringify({ type: "ready", chatId }));
   });
 
-  app.post("/chat", async (req: any, res: any, next: any) => {
+  app.post("/subjects/:id/chat", async (req: any, res: any, next: any) => {
     const t0 = Date.now();
+    const subjectId = req.params.id;
+    if (!UUID_RE.test(subjectId)) {
+      return res.status(400).send({ error: "invalid subject id" });
+    }
     try {
       const ct = String(req.headers["content-type"] || "");
       const isMp = ct.includes("multipart/form-data");
@@ -46,8 +53,9 @@ export function chatRoutes(app: any) {
       let chatId: string | undefined;
       let files: UpFile[] = [];
 
+      let llmOverride: ReturnType<typeof resolveOverride>;
+
       if (isMp) {
-        const tMp = Date.now();
         const { q: mq, chatId: mcid, files: mf } = await parseMultipart(req);
         q = mq;
         chatId = mcid;
@@ -57,25 +65,27 @@ export function chatRoutes(app: any) {
       } else {
         q = req.body?.q || "";
         chatId = req.body?.chatId;
+        llmOverride = resolveOverride(req.body);
         if (!q) return res.status(400).send({ error: "q required" });
       }
 
-      let chat = chatId ? await getChat(chatId) : undefined;
-      if (!chat) chat = await mkChat(q);
+      let chat = chatId ? await getChat(subjectId, chatId) : undefined;
+      if (!chat) chat = await mkChat(subjectId, q);
       const id = chat.id;
-      const ns = `chat:${id}`;
+      const ns = `subject:${subjectId}`;
+      const subjectMeta = await getSubject(subjectId);
+      const customPrompt = subjectMeta?.systemPrompt?.trim() || undefined;
 
       res
         .status(202)
         .send({ ok: true, chatId: id, stream: `/ws/chat?chatId=${id}` });
-      (async () => {
+      setImmediate(async () => {
         try {
           if (isMp) {
             emitToAll(chatSockets.get(id), {
               type: "phase",
               value: "upload_start",
             });
-            const tUp = Date.now();
             for (const f of files) {
               emitToAll(chatSockets.get(id), {
                 type: "file",
@@ -95,8 +105,7 @@ export function chatRoutes(app: any) {
             });
           }
 
-          const tUser = Date.now();
-          await addMsg(id, { role: "user", content: q, at: Date.now() });
+          await addMsg(subjectId, id, { role: "user", content: q, at: Date.now() });
           emitToAll(chatSockets.get(id), {
             type: "phase",
             value: "generating",
@@ -104,20 +113,24 @@ export function chatRoutes(app: any) {
 
           let answer: any = "";
 
-          const msgHistory = await getMsgs(id);
+          const msgHistory = await getMsgs(subjectId, id);
           const relevantHistory = msgHistory.slice(-20);
 
           answer = await handleAsk({
             q,
             namespace: ns,
             history: relevantHistory,
+            llmOverride,
+            systemPrompt: customPrompt,
           });
 
-          await addMsg(id, {
-            role: "assistant",
-            content: answer,
+          const stored = {
+            role: "assistant" as const,
+            content: typeof answer?.answer === "string" ? answer.answer : String(answer ?? ""),
             at: Date.now(),
-          });
+            ...(answer?.sources?.length && { sources: answer.sources }),
+          }
+          await addMsg(subjectId, id, stored);
           emitToAll(chatSockets.get(id), { type: "answer", answer });
           emitToAll(chatSockets.get(id), { type: "done" });
         } catch (err: any) {
@@ -126,8 +139,6 @@ export function chatRoutes(app: any) {
           console.error("[chat] err inner", { chatId: id, msg, stack });
           emitToAll(chatSockets.get(id), { type: "error", error: msg });
         }
-      })().catch((e: any) => {
-        console.error("[chat] err runner", e?.message || e);
       });
     } catch (e: any) {
       console.error("[chat] err outer", e?.message || e);
@@ -135,20 +146,20 @@ export function chatRoutes(app: any) {
     }
   });
 
-  app.get("/chats", async (_: any, res: any) => {
-    const t = Date.now();
-    const chats = await listChats();
+  app.get("/subjects/:id/chats", async (req: any, res: any) => {
+    const subjectId = req.params.id;
+    const chats = await listChats(subjectId);
     res.send({ ok: true, chats });
   });
 
-  app.get("/chats/:id", async (req: any, res: any) => {
-    const t = Date.now();
-    const id = req.params.id;
-    const chat = await getChat(id);
+  app.get("/subjects/:id/chats/:chatId", async (req: any, res: any) => {
+    const subjectId = req.params.id;
+    const chatId = req.params.chatId;
+    const chat = await getChat(subjectId, chatId);
     if (!chat) {
       return res.status(404).send({ error: "not found" });
     }
-    const messages = await getMsgs(id);
+    const messages = await getMsgs(subjectId, chatId);
     res.send({ ok: true, chat, messages });
   });
 }

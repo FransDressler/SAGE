@@ -1,33 +1,51 @@
 import { env } from "../config/env";
 
+// --- Types ---
+
+export type Subject = {
+  id: string;
+  name: string;
+  createdAt: number;
+  updatedAt: number;
+  sourceCount: number;
+  systemPrompt?: string;
+};
+
+export type SourceType = "material" | "exercise" | "websearch";
+
+export type Source = {
+  id: string;
+  filename: string;
+  originalName: string;
+  mimeType: string;
+  size: number;
+  uploadedAt: number;
+  sourceType: SourceType;
+  searchQuery?: string;
+  searchMode?: "quick" | "deep";
+  sourceUrl?: string;
+};
+
 export type ChatStartResponse = { ok: true; chatId: string; stream: string };
 export type ChatMessage = { role: "user" | "assistant"; content: string; at: number };
-export type ChatInfo = { id: string; title?: string; createdAt?: number };
+export type ChatInfo = { id: string; title?: string; at?: number };
 export type ChatsList = { ok: true; chats: ChatInfo[] };
 export type ChatDetail = { ok: true; chat: ChatInfo; messages: ChatMessage[] };
-export type ChatJSONBody = { q: string; chatId?: string };
+export type ChatJSONBody = { q: string; chatId?: string; provider?: string; model?: string };
 export type ChatPhase = "upload_start" | "upload_done" | "generating";
 export type FlashCard = { q: string; a: string; tags?: string[] };
-export type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string; };
-export type QuizStartResponse = { ok: true; quizId: string; stream: string }
-export type QuizEvent = { type: "ready" | "phase" | "quiz" | "done" | "error" | "ping"; quizId?: string; value?: string; quiz?: unknown; error?: string; t?: number }
-export type SmartNotesStart = { ok: true; noteId: string; stream: string }
-export type CompanionHistoryEntry = { role: "user" | "assistant"; content: string }
-export type CompanionAnswer = { topic: string; answer: string; flashcards: FlashCard[] }
-export type CompanionAskResponse = { ok: boolean; companion: CompanionAnswer }
-export type SavedFlashcard = {
-  id: string;
-  question: string;
-  answer: string;
-  tag: string;
-  created: number;
-};
-export type ExamEvent =
-  | { type: "ready"; runId: string }
-  | { type: "phase"; value: string; examId?: string }
-  | { type: "exam"; examId: string; payload: Question[] }
+export type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string };
+export type UA = { questionId: number; selectedAnswer: number; correct: boolean; question: string; selectedOption: string; correctOption: string; explanation: string };
+export type QuizStartResponse = { ok: true; quizId: string; stream: string };
+export type QuizEvent = { type: "ready" | "phase" | "quiz" | "done" | "error" | "ping"; quizId?: string; value?: string; quiz?: unknown; error?: string; t?: number };
+export type SmartNotesStart = { ok: true; noteId: string; stream: string };
+export type SmartNotesEvent =
+  | { type: "ready"; noteId: string }
+  | { type: "phase"; value: string }
+  | { type: "file"; file: string }
   | { type: "done" }
-  | { type: "error"; examId?: string; error: string };
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
 export type PodcastEvent =
   | { type: "ready"; pid: string }
   | { type: "phase"; value: string }
@@ -36,37 +54,14 @@ export type PodcastEvent =
   | { type: "script"; data: any }
   | { type: "audio"; file: string; filename?: string; staticUrl?: string }
   | { type: "done" }
-  | { type: "error"; error: string }
-export type SmartNotesEvent =
-  | { type: "ready"; noteId: string }
-  | { type: "phase"; value: string }
-  | { type: "file"; file: string }
-  | { type: "done" }
-  | { type: "error"; error: string }
-  | { type: "ping"; t: number }
-export type StudyMaterials = {
-  summary: string;
-  keyPoints: string[];
-  topics: string[];
-  categories: string[];
-  searchableKeywords: string[];
-  studyGuide: {
-    mainConcepts: string[];
-    importantTerms: { term: string; definition: string; }[];
-    questions: string[];
-    takeaways: string[];
-  };
-  timestamps?: { time: number; content: string; topic: string; }[];
+  | { type: "error"; error: string };
+export type SavedFlashcard = {
+  id: string;
+  question: string;
+  answer: string;
+  tag: string;
+  created: number;
 };
-
-export type TranscriptionResponse = {
-  ok: boolean;
-  transcription?: string;
-  provider?: string;
-  confidence?: number;
-  error?: string;
-  studyMaterials?: StudyMaterials;
-}
 export type ChatEvent =
   | { type: "ready"; chatId: string }
   | { type: "phase"; value: ChatPhase }
@@ -75,8 +70,18 @@ export type ChatEvent =
   | { type: "done" }
   | { type: "error"; error: string };
 
-type O<T> = Promise<T>;
-type AnswerPayload = string | { answer: string; flashcards?: FlashCard[] };
+export type TranscriptionResponse = {
+  ok: boolean;
+  transcription?: string;
+  provider?: string;
+  confidence?: number;
+  error?: string;
+};
+
+export type RagSource = { sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string; sourceType?: SourceType };
+type AnswerPayload = string | { answer: string; flashcards?: FlashCard[]; sources?: RagSource[] };
+
+// --- HTTP helpers ---
 
 const timeoutCtl = (ms: number) => {
   const c = new AbortController();
@@ -87,7 +92,7 @@ const timeoutCtl = (ms: number) => {
 async function req<T = unknown>(
   url: string,
   init: RequestInit & { timeout?: number } = {}
-): O<T> {
+): Promise<T> {
   const { timeout = env.timeout, ...rest } = init;
   const { signal, done } = timeoutCtl(timeout);
   try {
@@ -104,7 +109,7 @@ async function req<T = unknown>(
   }
 }
 
-const jsonHeaders = (_?: unknown) => {
+const jsonHeaders = () => {
   const h = new Headers();
   h.set("content-type", "application/json");
   return h;
@@ -116,24 +121,103 @@ function wsURL(path: string) {
   return `${proto}//${u.host}${path}`;
 }
 
-export async function chatJSON(body: ChatJSONBody) {
-  return req<ChatStartResponse>(`${env.backend}/chat`, {
+// --- Subject CRUD ---
+
+export function listSubjects() {
+  return req<{ ok: true; subjects: Subject[] }>(`${env.backend}/subjects`);
+}
+
+export function createSubject(name: string) {
+  return req<{ ok: true; subject: Subject }>(`${env.backend}/subjects`, {
     method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify(body),
+    headers: jsonHeaders(),
+    body: JSON.stringify({ name }),
   });
 }
 
-export async function chatMultipart(q: string, files: File[], chatId?: string) {
+export function getSubject(id: string) {
+  return req<{ ok: true; subject: Subject; sources: Source[] }>(
+    `${env.backend}/subjects/${encodeURIComponent(id)}`
+  );
+}
+
+export function renameSubject(id: string, name: string) {
+  return req<{ ok: true; subject: Subject }>(
+    `${env.backend}/subjects/${encodeURIComponent(id)}`,
+    {
+      method: "PATCH",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ name }),
+    }
+  );
+}
+
+export function updateSubjectPrompt(id: string, systemPrompt: string) {
+  return req<{ ok: true; subject: Subject }>(
+    `${env.backend}/subjects/${encodeURIComponent(id)}`,
+    {
+      method: "PATCH",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ systemPrompt }),
+    }
+  );
+}
+
+export function deleteSubject(id: string) {
+  return req<{ ok: true }>(`${env.backend}/subjects/${encodeURIComponent(id)}`, {
+    method: "DELETE",
+  });
+}
+
+// --- Sources ---
+
+export function uploadSources(subjectId: string, files: File[], sourceType: SourceType = "material") {
+  const f = new FormData();
+  f.append("sourceType", sourceType);
+  for (const file of files) f.append("file", file, file.name);
+  return req<{ ok: true; sources: Source[]; warnings?: string[] }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/sources`,
+    {
+      method: "POST",
+      body: f,
+      timeout: Math.max(env.timeout, 300000),
+    }
+  );
+}
+
+export function removeSource(subjectId: string, sourceId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/sources/${encodeURIComponent(sourceId)}`,
+    { method: "DELETE" }
+  );
+}
+
+// --- Chat ---
+
+export async function chatJSON(subjectId: string, body: ChatJSONBody) {
+  return req<ChatStartResponse>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chat`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(body),
+    }
+  );
+}
+
+export async function chatMultipart(subjectId: string, q: string, files: File[], chatId?: string) {
   const f = new FormData();
   f.append("q", q);
   if (chatId) f.append("chatId", chatId);
   for (const file of files) f.append("file", file, file.name);
-  return req<ChatStartResponse>(`${env.backend}/chat`, {
-    method: "POST",
-    body: f,
-    timeout: Math.max(env.timeout, 300000),
-  });
+  return req<ChatStartResponse>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chat`,
+    {
+      method: "POST",
+      body: f,
+      timeout: Math.max(env.timeout, 300000),
+    }
+  );
 }
 
 export function connectChatStream(chatId: string, onEvent: (ev: ChatEvent) => void) {
@@ -143,141 +227,91 @@ export function connectChatStream(chatId: string, onEvent: (ev: ChatEvent) => vo
     try {
       const data = JSON.parse(m.data as string) as ChatEvent;
       onEvent(data);
-    } catch { }
+    } catch {}
   };
   ws.onerror = () => {
     onEvent({ type: "error", error: "stream_error" });
   };
-  return { ws, close: () => { try { ws.close(); } catch { } } };
+  return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
-export async function chatAskOnce(opts: {
-  q: string;
-  files?: File[];
-  chatId?: string;
-  onEvent?: (ev: ChatEvent) => void;
-}) {
-  const { q, files = [], chatId, onEvent } = opts;
-  const start = files.length ? await chatMultipart(q, files, chatId) : await chatJSON({ q, chatId });
-  let answer = "";
-  let flashcards: FlashCard[] | undefined;
-
-  await new Promise<void>((resolve, reject) => {
-    const { close } = connectChatStream(start.chatId, (ev) => {
-      onEvent?.(ev);
-      if (ev.type === "answer") {
-        const p = ev.answer;
-        if (typeof p === "string") {
-          answer = p;
-        } else if (p && typeof p === "object") {
-          answer = p.answer ?? "";
-          if (Array.isArray(p.flashcards)) flashcards = p.flashcards;
-        }
-      }
-      if (ev.type === "done") { close(); resolve(); }
-      if (ev.type === "error") { close(); reject(new Error(ev.error || "chat failed")); }
-    });
-  });
-
-  return { chatId: start.chatId, answer, flashcards };
+export function getChats(subjectId: string) {
+  return req<ChatsList>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chats`
+  );
 }
 
-export async function companionAsk(input: {
-  question: string;
-  filePath?: string;
-  documentText?: string;
-  documentTitle?: string;
-  topic?: string;
-  history?: CompanionHistoryEntry[];
-}) {
-  const question = (input.question || "").trim();
-  if (!question) throw new Error("Question is required");
-
-  const payload: Record<string, unknown> = { question };
-  if (input.filePath) payload.filePath = input.filePath;
-  if (input.documentText) payload.documentText = input.documentText;
-  if (input.documentTitle) payload.documentTitle = input.documentTitle;
-  if (input.topic) payload.topic = input.topic;
-  if (input.history && input.history.length) {
-    payload.history = input.history.map((h) => ({ role: h.role, content: h.content }));
-  }
-
-  return req<CompanionAskResponse>(`${env.backend}/api/companion/ask`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify(payload),
-    timeout: Math.max(env.timeout, 120000),
-  });
+export function getChatDetail(subjectId: string, id: string) {
+  return req<ChatDetail>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chats/${encodeURIComponent(id)}`
+  );
 }
 
-export function getChats() {
-  return req<ChatsList>(`${env.backend}/chats`, { method: "GET" });
-}
+// --- Quiz ---
 
-export function getChatDetail(id: string) {
-  return req<ChatDetail>(`${env.backend}/chats/${encodeURIComponent(id)}`, { method: "GET" });
-}
-
-export async function createFlashcard(input: {
-  question: string;
-  answer: string;
-  tag: string;
-}) {
-  return req<{ ok: true; flashcard: SavedFlashcard }>(`${env.backend}/flashcards`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify(input),
-  });
-}
-
-export async function listFlashcards() {
-  return req<{ ok: true; flashcards: SavedFlashcard[] }>(`${env.backend}/flashcards`, {
-    method: "GET",
-  });
-}
-
-export async function deleteFlashcard(id: string) {
-  return req<{ ok: true }>(`${env.backend}/flashcards/${encodeURIComponent(id)}`, {
-    method: "DELETE",
-  });
-}
-
-export async function getExams() {
-  return req<{ ok: true; exams: { id: string; name: string; sections: any[] }[] }>(
-    `${env.backend}/exams`,
-    { method: "GET" }
-  )
-}
-
-export async function startExam(examId: string) {
-  return req<{ ok: true; runId: string; stream: string }>(
-    `${env.backend}/exam`,
+export async function quizStart(subjectId: string, payload: { topic: string; difficulty?: string; length?: number; sourceIds?: string[]; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }) {
+  return req<QuizStartResponse>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/quiz`,
     {
       method: "POST",
-      headers: jsonHeaders({}),
-      body: JSON.stringify({ examId }),
+      headers: jsonHeaders(),
+      body: JSON.stringify(payload),
     }
-  )
+  );
 }
 
-export function connectExamStream(runId: string, onEvent: (ev: ExamEvent) => void) {
-  const url = wsURL(`/ws/exams?runId=${encodeURIComponent(runId)}`)
-  const ws = new WebSocket(url)
+export function connectQuizStream(quizId: string, onEvent: (ev: QuizEvent) => void) {
+  const url = wsURL(`/ws/quiz?quizId=${encodeURIComponent(quizId)}`);
+  const ws = new WebSocket(url);
   ws.onmessage = (m) => {
     try {
-      onEvent(JSON.parse(m.data as string) as ExamEvent)
-    } catch { }
-  }
-  ws.onerror = () => onEvent({ type: "error", error: "stream_error" })
-  return { ws, close: () => { try { ws.close() } catch { } } }
+      onEvent(JSON.parse(m.data as string) as QuizEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" } as any);
+  return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
-export async function smartnotesStart(input: { topic?: string; notes?: string; filePath?: string }) {
-  return req<SmartNotesStart>(`${env.backend}/smartnotes`, {
+// --- Podcast ---
+
+export async function podcastStart(subjectId: string, payload: { topic: string; sourceIds?: string[]; length?: string; instructions?: { focusArea?: string; additionalInstructions?: string; tone?: string }; provider?: string; model?: string }) {
+  const url = `${env.backend}/subjects/${encodeURIComponent(subjectId)}/podcast`;
+  const res = await fetch(url, {
     method: "POST",
-    headers: jsonHeaders(),
-    body: JSON.stringify(input),
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
   });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || "Failed to start podcast");
+  return data;
+}
+
+export function connectPodcastStream(pid: string, onEvent: (ev: PodcastEvent) => void) {
+  const wsUrl = `${env.backend.replace(/^http/, "ws")}/ws/podcast?pid=${pid}`;
+  const ws = new WebSocket(wsUrl);
+  ws.onmessage = (e) => {
+    try {
+      const msg = JSON.parse(e.data);
+      onEvent(msg);
+    } catch {
+      onEvent({ type: "error", error: "invalid_message" });
+    }
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
+}
+
+// --- SmartNotes ---
+
+export async function smartnotesStart(subjectId: string, input: { topic?: string; notes?: string; filePath?: string; sourceIds?: string[]; length?: string; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }) {
+  return req<SmartNotesStart>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/smartnotes`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(input),
+    }
+  );
 }
 
 export function connectSmartnotesStream(noteId: string, onEvent: (ev: SmartNotesEvent) => void) {
@@ -286,315 +320,207 @@ export function connectSmartnotesStream(noteId: string, onEvent: (ev: SmartNotes
   ws.onmessage = (m) => {
     try {
       onEvent(JSON.parse(m.data as string) as SmartNotesEvent);
-    } catch { }
+    } catch {}
   };
   ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
-  return { ws, close: () => { try { ws.close(); } catch { } } };
+  return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
-export function flashcards(topic: string) {
-  return req<{ cards: unknown[] }>(`${env.backend}/flashcards`, {
-    method: "POST",
-    headers: jsonHeaders(),
-    body: JSON.stringify({ topic }),
-  });
-}
+// --- Flashcards ---
 
-export async function quizStart(topic: string) {
-  return req<QuizStartResponse>(`${env.backend}/quiz`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify({ topic })
-  }
-  )
-}
-
-export async function podcastStart(payload: { topic: string }) {
-  const url = `${env.backend}/podcast`
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  })
-  const data = await res.json()
-  if (!res.ok) throw new Error(data.error || "Failed to start podcast")
-  return data
-}
-
-export function connectPodcastStream(pid: string, onEvent: (ev: any) => void) {
-  const wsUrl = `${env.backend.replace(/^http/, "ws")}/ws/podcast?pid=${pid}`
-  const ws = new WebSocket(wsUrl)
-
-  ws.onopen = () => {
-  }
-
-  ws.onmessage = (e) => {
-    try {
-      const msg = JSON.parse(e.data)
-      onEvent(msg)
-    } catch (err) {
-      onEvent({ type: "error", error: "invalid_message" })
+export async function createFlashcard(subjectId: string, input: { question: string; answer: string; tag: string }) {
+  return req<{ ok: true; flashcard: SavedFlashcard }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/flashcards`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(input),
     }
-  }
-
-  ws.onclose = (e) => {
-  }
-
-  ws.onerror = () => onEvent({ type: "error", error: "stream_error" } as any)
-  return { ws, close: () => { try { ws.close() } catch { } } }
+  );
 }
 
-export function connectQuizStream(quizId: string, onEvent: (ev: QuizEvent) => void) {
-  const url = wsURL(`/ws/quiz?quizId=${encodeURIComponent(quizId)}`);
-  const ws = new WebSocket(url); ws.onmessage = m => {
-    try {
-      onEvent(JSON.parse(m.data as string) as QuizEvent)
-    } catch { }
-  }; ws.onerror = () => onEvent({ type: "error", error: "stream_error" } as any); return { ws, close: () => { try { ws.close() } catch { } } }
+export async function listFlashcards(subjectId: string) {
+  return req<{ ok: true; flashcards: SavedFlashcard[] }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/flashcards`
+  );
 }
 
-export async function transcribeAudio(file: File) {
+export async function deleteFlashcard(subjectId: string, id: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/flashcards/${encodeURIComponent(id)}`,
+    { method: "DELETE" }
+  );
+}
+
+// --- Transcriber ---
+
+export async function transcribeAudio(subjectId: string, file: File) {
   const formData = new FormData();
-  formData.append('file', file);
-
-  return req<TranscriptionResponse>(`${env.backend}/transcriber`, {
-    method: 'POST',
-    body: formData,
-    timeout: Math.max(env.timeout, 180000),
-  });
+  formData.append("file", file);
+  return req<TranscriptionResponse>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/transcriber`,
+    {
+      method: "POST",
+      body: formData,
+      timeout: Math.max(env.timeout, 180000),
+    }
+  );
 }
 
-export type PlannerTask = {
+// --- Models ---
+
+export type ProviderInfo = { id: string; name: string; defaultModel: string };
+export type ModelsResponse = { ok: true; providers: ProviderInfo[]; defaultProvider: string };
+
+export function getModels() {
+  return req<ModelsResponse>(`${env.backend}/models`);
+}
+
+// --- Tools ---
+
+export type MindmapEvent =
+  | { type: "ready"; mindmapId: string }
+  | { type: "phase"; value: string; detail?: string }
+  | { type: "mindmap"; data: any }
+  | { type: "done" }
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
+
+export type ToolRecord = {
   id: string;
-  course?: string;
-  title: string;
-  type?: string;
-  notes?: string;
-  dueAt: number;
-  estMins: number;
-  priority: 1 | 2 | 3 | 4 | 5;
-  status: "todo" | "doing" | "done" | "blocked";
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap";
+  topic: string;
+  config: Record<string, string | undefined>;
   createdAt: number;
-  updatedAt: number;
-  tags?: string[];
-  files?: { id: string; filename: string; originalName: string; mimeType: string; size: number; uploadedAt: number }[];
-  steps?: string[];
+  result: any;
 };
 
-export type PlannerSlot = { id: string; taskId: string; start: number; end: number; kind: "focus" | "review" | "buffer"; done?: boolean }
-export type WeeklyPlan = { days: { date: string; slots: PlannerSlot[] }[] }
-
-export type PlannerEvent =
-  | { type: "ready"; sid: string }
-  | { type: "phase"; value: string }
-  | { type: "plan.update"; taskId: string; slots: PlannerSlot[] }
-  | { type: "materials.chunk"; id: string; idx: number; total: number; more: boolean; encoding: string; data: string }
-  | { type: "materials.done"; id: string; total: number }
-  | { type: "reminder"; text: string; at: number; taskId?: string; scheduledFor?: string }
-  | { type: "daily.digest"; date: string; due: { id: string; title: string; dueAt: number }[]; sessions: number; message: string }
-  | { type: "evening.review"; date: string; stats: any; tomorrowTasks: { id: string; title: string }[]; message: string }
-  | { type: "break.reminder"; text: string; at: string }
-  | { type: "task.created"; task: PlannerTask }
-  | { type: "task.updated"; task: PlannerTask }
-  | { type: "task.deleted"; taskId: string }
-  | { type: "task.files.added"; taskId: string; files: any[] }
-  | { type: "task.file.removed"; taskId: string; fileId: string }
-  | { type: "session.started"; session: { id: string; taskId: string; slotId?: string; startedAt: string; status: string } }
-  | { type: "session.ended"; session: { id: string; endedAt: string; minutesWorked: number; completed: boolean; status: string } }
-  | { type: "weekly.update"; plan: WeeklyPlan }
-  | { type: "slot.update"; taskId: string; slotId: string; done: boolean; skip: boolean }
-  | { type: "done" };
-
-export async function plannerIngest(text: string) {
-  return req<{ ok: boolean; task: PlannerTask }>(`${env.backend}/tasks/ingest`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify({ text })
-  })
+export function listTools(subjectId: string) {
+  return req<{ ok: true; tools: ToolRecord[] }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/tools`
+  );
 }
 
-export async function plannerList(params?: { status?: string; dueBefore?: number; course?: string }) {
-  const q = new URLSearchParams()
-  if (params?.status) q.set("status", params.status)
-  if (params?.dueBefore) q.set("dueBefore", String(params.dueBefore))
-  if (params?.course) q.set("course", params.course)
-  const url = `${env.backend}/tasks${q.toString() ? `?${q}` : ""}`
-  return req<{ ok: boolean; tasks: PlannerTask[] }>(url, { method: "GET" })
+export function deleteTool(subjectId: string, toolId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/tools/${encodeURIComponent(toolId)}`,
+    { method: "DELETE" }
+  );
 }
 
-export async function plannerPlan(id: string, cram?: boolean) {
-  return req<{ ok: boolean; task: PlannerTask & { plan?: { slots: PlannerSlot[] } } }>(`${env.backend}/tasks/${encodeURIComponent(id)}/plan`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify({ cram: !!cram })
-  })
+// --- Mindmap ---
+
+export async function mindmapStart(subjectId: string, payload?: { topic?: string; sourceIds?: string[]; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }) {
+  return req<{ ok: true; mindmapId: string; stream: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/mindmap`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(payload || {}),
+    }
+  );
 }
 
-export async function plannerWeekly(cram?: boolean) {
-  return req<{ ok: boolean; plan: WeeklyPlan }>(`${env.backend}/planner/weekly`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify({ cram: !!cram })
-  })
-}
-
-export async function plannerMaterials(id: string, kind: "summary" | "studyGuide" | "flashcards" | "quiz") {
-  return req<{ ok: boolean; data: any }>(`${env.backend}/tasks/${encodeURIComponent(id)}/materials`, {
-    method: "POST",
-    headers: jsonHeaders({}),
-    body: JSON.stringify({ kind })
-  })
-}
-
-export function connectPlannerStream(sid: string, onEvent: (ev: PlannerEvent) => void) {
-  const url = wsURL(`/ws/planner?sid=${encodeURIComponent(sid)}`)
-  const ws = new WebSocket(url)
+export function connectMindmapStream(mindmapId: string, onEvent: (ev: MindmapEvent) => void) {
+  const url = wsURL(`/ws/mindmap?mindmapId=${encodeURIComponent(mindmapId)}`);
+  const ws = new WebSocket(url);
   ws.onmessage = (m) => {
     try {
-      const ev = JSON.parse(m.data as string)
-      onEvent(ev)
-    } catch { }
-  }
-  ws.onerror = () => { /* ignore for now */ }
-  return { ws, close: () => { try { ws.close() } catch { } } }
-}
-
-export async function plannerUpdate(id: string, patch: Partial<PlannerTask>) {
-  return req<{ ok: boolean; task: PlannerTask }>(`${env.backend}/tasks/${encodeURIComponent(id)}`, {
-    method: "PATCH",
-    headers: jsonHeaders({}),
-    body: JSON.stringify(patch)
-  })
-}
-
-export async function plannerDelete(id: string) {
-  return req<{ ok: boolean }>(`${env.backend}/tasks/${encodeURIComponent(id)}`, { method: "DELETE" })
-}
-
-export async function plannerCreateWithFiles(data: { text?: string; title?: string; course?: string; type?: string; files?: File[] }) {
-  const formData = new FormData()
-  if (data.text) formData.append('q', data.text)
-  if (data.title) formData.append('title', data.title)
-  if (data.course) formData.append('course', data.course)
-  if (data.type) formData.append('type', data.type)
-  if (data.files) {
-    for (const file of data.files) {
-      formData.append('file', file, file.name)
-    }
-  }
-
-  return req<{ ok: boolean; task: PlannerTask & { files?: any[] } }>(`${env.backend}/tasks`, {
-    method: "POST",
-    body: formData,
-    timeout: Math.max(env.timeout, 300000),
-  })
-}
-
-export async function plannerUploadFiles(taskId: string, files: File[]) {
-  const formData = new FormData()
-  for (const file of files) {
-    formData.append('file', file, file.name)
-  }
-
-  return req<{ ok: boolean; files: any[] }>(`${env.backend}/tasks/${encodeURIComponent(taskId)}/files`, {
-    method: "POST",
-    body: formData,
-    timeout: Math.max(env.timeout, 300000),
-  })
-}
-
-export async function plannerDeleteFile(taskId: string, fileId: string) {
-  return req<{ ok: boolean }>(`${env.backend}/tasks/${encodeURIComponent(taskId)}/files/${encodeURIComponent(fileId)}`, {
-    method: "DELETE"
-  })
-}
-
-export type DebateStartResponse = {
-  ok: boolean;
-  debateId: string;
-  session: {
-    id: string;
-    topic: string;
-    position: "for" | "against";
-    createdAt: number;
+      onEvent(JSON.parse(m.data as string) as MindmapEvent);
+    } catch {}
   };
-  stream: string;
-  error?: string;
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
-export type DebateSession = {
-  id: string;
-  topic: string;
-  position: "for" | "against";
-  messages: Array<{
-    role: "user" | "assistant";
-    content: string;
-    timestamp: number;
-  }>;
-  createdAt: number;
+export function getMindmap(subjectId: string) {
+  return req<{ ok: true; data: any }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/mindmap`
+  );
 }
 
-export async function startDebate(topic: string, position: "for" | "against") {
-  return req<DebateStartResponse>(`${env.backend}/debate/start`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ topic, position }),
-    timeout: 30000,
-  })
+export function deleteMindmap(subjectId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/mindmap`,
+    { method: "DELETE" }
+  );
 }
 
-export async function submitDebateArgument(debateId: string, argument: string) {
-  return req<{ ok: boolean; message: string; error?: string }>(`${env.backend}/debate/${encodeURIComponent(debateId)}/argue`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ argument }),
-    timeout: 120000,
-  })
+export function saveMindmap(subjectId: string, toolId: string, data: any) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/mindmap`,
+    {
+      method: "PATCH",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ toolId, data }),
+    }
+  );
 }
 
-export async function getDebateSession(debateId: string) {
-  return req<{ ok: boolean; session: DebateSession; error?: string }>(`${env.backend}/debate/${encodeURIComponent(debateId)}`, {
-    method: "GET",
-  })
+export function aiEditMindmap(
+  subjectId: string,
+  toolId: string,
+  instruction: string,
+  currentData: any,
+  model?: { provider?: string; model?: string }
+) {
+  return req<{ ok: true; data: any }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/mindmap/ai-edit`,
+    {
+      method: "PATCH",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ toolId, instruction, currentData, ...model }),
+      timeout: 120000,
+    }
+  );
 }
 
-export async function listDebates() {
-  return req<{ ok: boolean; debates: Array<any>; error?: string }>(`${env.backend}/debates`, {
-    method: "GET",
-  })
+// --- Web Search ---
+
+export type WebSearchEvent =
+  | { type: "ready"; jobId: string }
+  | { type: "phase"; value: string }
+  | { type: "result"; result: { title: string; url: string; content: string; score?: number } }
+  | { type: "done"; sourceId: string }
+  | { type: "error"; error: string };
+
+export async function webSearchStart(subjectId: string, query: string, mode: "quick" | "deep") {
+  return req<{ ok: true; jobId: string; stream: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/websearch`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ query, mode }),
+    }
+  );
 }
 
-export async function deleteDebate(debateId: string) {
-  return req<{ ok: boolean; message: string; error?: string }>(`${env.backend}/debate/${encodeURIComponent(debateId)}`, {
-    method: "DELETE",
-  })
+export function connectWebSearchStream(jobId: string, onEvent: (ev: WebSearchEvent) => void) {
+  const url = wsURL(`/ws/websearch?jobId=${encodeURIComponent(jobId)}`);
+  const ws = new WebSocket(url);
+  ws.onmessage = (m) => {
+    try {
+      onEvent(JSON.parse(m.data as string) as WebSearchEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
-export async function surrenderDebate(debateId: string) {
-  return req<{ ok: boolean; message: string; error?: string }>(`${env.backend}/debate/${encodeURIComponent(debateId)}/surrender`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-  })
+// --- Markdown ---
+
+export async function fetchMarkdownContent(url: string): Promise<string> {
+  const backend = new URL(env.backend);
+  const parsed = new URL(url, env.backend);
+  if (parsed.origin !== backend.origin) {
+    throw new Error("Refusing to fetch markdown from untrusted origin");
+  }
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`Failed to fetch markdown: ${r.status}`);
+  return r.text();
 }
 
-export type DebateAnalysis = {
-  winner: "user" | "ai" | "draw";
-  reason: string;
-  userStrengths: string[];
-  aiStrengths: string[];
-  userWeaknesses: string[];
-  aiWeaknesses: string[];
-  keyMoments: string[];
-  overallAssessment: string;
-}
-
-export async function analyzeDebate(debateId: string) {
-  return req<{ ok: boolean; analysis: DebateAnalysis; session: DebateSession; error?: string }>(`${env.backend}/debate/${encodeURIComponent(debateId)}/analyze`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    timeout: 60000,
-  })
-}
+// --- Util ---
 
 export function err(e: unknown) {
   return e instanceof Error ? e.message : String(e);

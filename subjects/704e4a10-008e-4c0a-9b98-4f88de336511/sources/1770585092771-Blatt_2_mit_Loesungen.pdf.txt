@@ -1,0 +1,113 @@
+Prof. Julia Herzen
+Prof. Andreas Bausch
+Prof. Ulrich Gerland
+Introduction to Biophysics
+Winter Semester 2025/26, Exercise Sheet 2
+Problem P1.1 X-ray generation
+a) How does an X-ray tube work? Draw the basic components, name and explain them.
+Solution:
+Figure 1
+b) How does the source spectrum of a Molybdenum tube look like and how does it change?
+Draw a plot and indicate the major parts of the spectrum (hint: X-ray emission lines ener-
+gies of Mo: Kα1 = 17.479 keV; Kα2 = 17.374 keV; Kβ1 = 19.608 keV). What are the main
+physical effects in X-ray generation with a tube?
+Solution: X-ray spectrum online calculator -
+https://bps.healthcare.siemens-healthineers.com/booneweb/index.html
+Plot relative intensity against energy (keV). Major parts result from the interaction of elec-
+trons with the target material - two main effects 1.) Bremsstrahlung - polychromatic, max.
+energy is equal to the accelaration voltage, and 2.) characteristic lines depending on the
+target material.
+c) How do the spectra look like for peak tube voltage of 30 kV and 40 kV? What changes?
+Solution: Main changes is the higher maximum energy, due to higher acceleration voltage,
+which is equal to the higher kinetic energy of the electrons, and the overall intensity of all
+energies is increased.
+d) How does the spectrum change with different tube currents? Is there any limitation for
+the tube current?
+Solution: Only the overall intensity changes - not the energy of the X-rays. The limitation
+is given by the acceleration voltage and the heat capacity/cooling/melting point of the target.
+e) How does the spectrum change for Tungsten as target material? What is the minimum
+voltage for an X-ray tube with a tungsten target that the emitted spectrum contains char-
+acteristic K-lines? (Energy levels of Tungsten: K-shell -69.51 keV; L-shell -11.0 keV; M-Shell
+-2.8 keV)?
+Solution: Tungsten has characteristic lines from the L-, and M-Shell in the low energy range,
+which is not relevant to the clinical imaging, as the energy is too low to penetrate patient’s
+tissue. The chosen maximum voltage of 40 kVp is not sufficient for the emitted characteristic
+1
+
+lines Kα and Kβ. The minimum voltage required is -69.51 keV, corresponding to the K-shell
+energy level.
+f) What is a rotating-anode X-ray tube and what are its advantages and limitations?
+Solution: A rotating-anode, as the name indicates, has a rotating target to improve the
+cooling. The accelerated electrons hit the target in only one small region. The rest is dipped
+into oil for cooling. With this approach the heat load on the target can be strongly increased
+avoiding the melting of the material. Thus, rotating-anode sources provide a much higher
+X-ray flux than static anodes.
+Problem P1.2 X-ray interaction with matter
+a) What type of interaction exists/dominates in clinical X-ray imaging?
+Solution: The main interaction effects in the clinical energy range are the Photo-electric
+effect, the Thomson (coherent) scattering and the Compton (incoherent) scattering.
+b) What is the energy and material dependence of absorption?
+Solution: Absorption is different from attenuation - it means the photo-effect, which is the
+only interaction, where a photon is fully absorbed and not just scattered to a different detector
+pixel. Latter would result in an attenuated beam, but is due to scattering not to absorption.
+The attenuation coefficient μphoto ∝ Z4E−3 for the photo-electric absorption.
+c) How do the total attenuation cross sections compare for two different materials (e.g. Car-
+bon and Lead; Hint: tabulated mass attenuation coefficients can be found here:
+https://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html)? Which interaction effect
+dominates the cross section at the clinical X-ray energy range?
+Solution: At low Z materials (e.g. water) the Compton scattering is dominant in the rel-
+evant energy range (50-140 keV). For high Z material (e.g. lead) the photo-electric effect is
+dominating (see figure 2).
+d) What are absorption edges and their nomenclature (e.g. for Iodine)?
+Solution: See figure 3 for the nomenclature for absorption edges and figure 4 for the absorp-
+tion edges of Iodine, which is a common contrast agent in clinical imaging.
+e) What are the strategies to increase contrast in clinical X-ray imaging using contrast agents?
+How does the contrast agent influence the previously discussed interactions?
+Solution: Looking at the high Z- and energy dependence of the photo-electric absorption,
+the strategy becomes obvious. There are two options: 1.) decrease the Energy - the contrast
+should increase with the third power of the energy, or 2.) increase Z of the material - give the
+patient a contrast agent with high Z. This increases the photo-effect contribution with the
+fourth power of Z.
+2
+
+Figure 2: copied from the book T. Buzug, ”Computed Tomography”
+3
+
+Figure 3: copied from the book T. Buzug, ”Computed Tomography”
+Figure 4: plot generated from the NIST data base (https://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html)
+Problem P1.3 Dual-Energy Imaging
+a) What is dual-energy imaging?
+Solution: Dual-energy imaging is analysing the energy-dependent attenuation of different
+materials by taking images at two different X-ray energies (monochromatic applications) or
+4
+
+energy windows (polychromatic applications). This information can be used to clearly dis-
+tinguish these two materials and even to quantify their concentrations. The two quantities
+measured can be used to determine the Compton and the Photo-effect contribution to the
+measured contrast of the corresponding materials and with that to create images showing
+only one of the materials (e.g. soft tissue and iodine contrast agent), the image contrast of
+the object at any monochromatic energy, or the effective-atomic number Zef f distribution
+(e.g. for treatment planning in radiation therapy).
+b) Which technical realizations exist? What are the advantages/limitations of these real-
+izations?
+Solution:
+Figure 5: Different realizations of dual-energy imaging from corresponding manufacturers.
+The main task of all the existing realizations is to take two images of the same object
+at two different effective energies. The rapid kV switching is the simplest method, but is
+time-limited (e.g. beating heart will not be imaged in the same state with two energies).
+Philips decided to modify the detector to include two detection layers - upper layer for lower
+energies and lower layer for higher energies. This is the more complicated method (i.e. the
+detector calibration becomes more challenging), but it is the most elegant way. The major
+advantage is the simultaneous measurement of the object at two energy levels. The challenge
+is a sufficient separation of the two spectra and that one cannot change the two energy levels
+built into the detector side.
+The ’two CTs in one’ solution by Siemens is more complicated and expensive, but gives the
+fastest system (e.g. CT of a beating heart can be easily done). The challenge with this
+system is the scattering-correction from the high-energy tube in the low-energy detector and
+the matching the images taken 90 degrees apart from each other.
+All these realizations do not allow to detect the energy of the X-ray photons. This is, why all
+the manufacturers are switching to photon-counting detectors with spectral resolution. These
+detectors are very complex (i.e. more electronics in it, the calibration needs to be adjusted,
+etc.), but this is the only way to combine the advantages of a simultaneous measurement of
+the object at two different and adjustable energy levels.
+5

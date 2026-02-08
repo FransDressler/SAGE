@@ -1,0 +1,314 @@
+Einführung in die Biophysik
+Vorlesung 5 – Biophysik Teil
+Einführung in die Zelle
+Profs. Julia Herzen, Andreas Bausch, Ulrich Gerland
+School of Natural Sciences
+julia.herzen@tum.de, abausch@tum.de, gerland@tum.de
+
+Zellentypen
+Zellbestandteile und ihre Funktionen
+Zellmembranen
+Zellzyklus
+Inhalt – Biophysik Teil
+2
+Online lesen unter:
+https://ebookcentral.proquest.com
+/lib/Munchentech/detail.action?do
+cID=4856334
+Kapitelweise auf Moodle
+Zum Download unter:
+https://link.springer.com/book/10.
+1007/978-3-662-61609-3
+Kapitel 1 Kapitel 1-3
+(selektiv)
+Kapitel 2
+
+Fragen, die Sie am Ende dieser Vorlesung beantworten können sollten:
+• Wie viele Zelltypen gibt es und was unterscheidet diese?
+• Was sind die Bestandteile der Zellen und ihre Funktionen in der Zelle?
+• Wozu gibt es in der Zelle Membranen und sind diese aufgebaut?
+• Wie sieht ein Zellzyklus aus?
+ausführlichere Behandlung in folgenden Vorlesungen im Bachelor:
+➢ Biophysik (Prof. Rief/Prof. Zacharias, Bachelor 6. Semester)
+Thema Grundlagen der Zellbiologie
+3
+
+Erbinformation in der Zelle bestimmt die Spezies
+4
+
+Entdeckung der DNA – Nobelpreis 1962
+5
+Quelle: www.nobelprize.org
+
+Entdeckung der DNA – Nicht beim Nobelpreis 1962 berücksichtigt
+6
+Photo #51, Kristallographie-Bild aufgenommen von Rosalind
+Franklin und ihrem Doktoranden Raymond Gosling im May 1952.
+
+DNA und ihre Bausteine
+7
+
+DNA und ihre Bausteine
+8
+
+9
+
+Zentrales Dogma – Informationsfluss von DNA zur RNA zum Protein
+10
+Warum ein Dogma?
+Warum nicht die umgekehrte
+Richtung?
+
+Zentrales Dogma – Formulierung von Francis Crick in 1956/58
+11
+https://wellcomecollection.org/works/z3d5fnyg
+Fig 1. Crick’s first outline of the central dogma, from an unpublished note
+made in 1956.
+
+Transkription = Übersetzung
+12
+
+Struktur des RNA-Moleküls
+13
+
+Proteine als Katalysatoren
+14
+
+Alle Zellen von Plasmamembran umgeben
+15
+Warum bestehen Membranen in
+wässrigen Lösungen aus
+Doppelschichten?
+
+Stammbaum des Lebens - Drei Domänen der lebenden Zellen
+16
+
+Konservierung genetischer Information
+17
+
+Übersicht Genome in Modellorganismen
+18
+
+Frage: Wie entschlüsselt man die Funktion eines Gens?
+19
+Durch Gensequenzierung, Mutation und Vergleich in Modell-
+organismen kann man auf die Funktion eines Gens schließen.
+
+Vergleich Prokaryoten und Eukaryoten
+20
+Prokaryoten Eukaryoten
+• Bakterien (z.B. E.coli),
+Archebakterien
+• Einfache Zelle, kein Kern, zirkuläre
+DNA
+• Kein Zytoskelett
+• Kein Nukleus
+• 1-10 μm
+• Anaerob + aerob
+• Pilze, Pflanzen, Tiere
+• Nukleus (DNA)
+• Chromosome
+• viel differenziertere Infrastruktur
+(Zytoskelett)
+• 10-100μm
+• Aerob
+
+Größte biologische Vielfalt bei Prokaryoten
+21
+Prokaryoten = Zellen ohne Zellkern
+
+Struktur von Vibrio cholerae
+22
+
+Das Innere von E. coli - das H-Atom der Molekularbiologie
+23
+Molecular contents of the bacterium E. coli. The illustration on the left shows the crowded cytoplasm of the bacterial cell. The
+cartoon on the right shows an order-of-magnitude molecular census of the E. coli bacterium with the approximate number of
+different molecules in E. coli. (Illustration of the cellular interior courtesy of D. Goodsell.)
+
+Aufteilung der Moleküle bei Zellteilung
+24
+Figure 2.7: Schematic of the random partitioning of molecules during the process of cell division. (A) When the cell divides, each of the
+molecules chooses a daughter cell via a coin flip. (B) Probability distribution for the number of heads for different choices of the total
+number of coin flips.
+
+Zählen der Moleküle in Fluoreszenzmikroskopie
+25
+Figure 2.9: Binomial partitioning of mRNA and proteins in E. coli during cell division. (A) Difference ∆N in the number of mRNAs
+between the two daughters given that the mother has N mRNAs. The curves show three possible partitioning mechanisms
+involving “all or nothing” in which one daughter takes all of the mRNAs, binomial partitioning, and “perfect partitioning” in which
+each daughter gets exactly half of the proteins from the mother cell. (B) Difference in the fluorescence intensity of the two
+daughter cells for a fluorescent fusion to a repressor protein as a function of the fluorescence intensity of the mother cell. The
+line corresponds to binomial partitioning model. (A, adapted from I. Golding et al., Cell 123:1025, 2005; B, adapted from
+N. Rosenfeld et al., Science 307:1962, 2005.)
+
+Struktur von Eukaryoten
+26
+
+Struktur von Eukaryoten II
+27
+
+Funktionen der Organellen
+28
+Nukleus:
+Genom, DNA + RNA Synthese (Information)
+Zytosol:
+Protein Synthese + Degradation Metabolismus
+Endoplasmatisches Reticulum (ER): Proteinsynthese,
+Lipidsynthese, Ca++ Speicher
+Golgi Apparat:
+Versand und Modifikation (Glykolysierung) von Lipiden und
+Proteinen
+Mitochondria:
+Energieerzeugung (auch DNA aus Evolution)
+Lysosome:
+Degradation (Müllabfuhr)
+Zytoskelett:
+Polymernetzwerk zur mech. Stabilisierung und dynamischen
+Oranisation, Transport
+
+Funktionen der Organellen – Mitochondrien
+Funktion: Energieerzeugung
+29
+
+Herkunft der Mitochondrien
+30
+
+Funktionen der Organellen – Endoplasmatisches Reticulum (ER)
+Funktion: Proteinsynthese, Lipidsynthese, Ca++ Speicher
+31
+Figure 2.24: Electron micrograph
+and associated schematic of the
+endoplasmic reticulum (ER). The
+left-hand panel shows a thin-section
+electron micrograph of an acinar
+cell from the pancreas of a bat. The
+nucleus is visible at the upper right
+and the dense and elaborate
+endoplasmic reticulum structure is
+strikingly evident. The right-hand
+panel shows a schematic diagram
+of a model for the three-
+dimensional structure of the
+endoplasmic reticulum in this cell.
+Notice that the size of the lumen in
+the endoplasmic reticulum in the
+schematic is exaggerated for ease
+of interpretation. (Electron
+micrograph from D. W. Fawcett,
+The Cell, Its Organelles and
+Inclusions: An Atlas of Fine
+Structure. W. B. Saunders, 1966.)
+
+Funktionen der Organellen – Golgi Apparat
+Funktion: Versand und Modifikation (Glykolysierung) von Lipiden und Proteinen
+32
+
+Größe von Zellen und ihre Bestandteile
+33
+Abb. 1-9 Wie groß sind Zellen und ihre Bestandteile? (A) Das Schaubild zeigt die Größe von Zellen und ihrer Bestandteile, die Einheiten, in denen sie gemessen werden, und
+die Geräte, die man benötigt, um sie sichtbar zu machen. (B) Diese Zeichnung gibt ein Gespür für den Maßstab zwischen lebenden Zellen und Atomen. Jedes Feld zeigt ein Bild,
+das dann um den Faktor zehn gegenüber seinem Vorgänger vergrößert wird – in der erdachten Abfolge von einem Daumen zur Haut, zu Hautzellen, zu einem Mitochondrium,
+zu einem Ribosom und schließlich zu einer Ansammlung von Atomen, die einen Teil eines der vielen Proteine in unserem Körper bilden. Man beachte, dass Ribosomen sowohl
+innerhalb von Mitochondrien (wie hier gezeigt) als auch im Cytoplasma zu finden sind. Molekulare Strukturdetails, wie in den letzten beiden Feldern gezeigt, liegen jenseits des
+Auflösungsvermögens eines Elektronenmikroskops.
+
+Experimentelle Untersuchung von Zellen
+34
+Experimental techniques that have
+revealed the structure of both cells and
+their organelles. (A) Fluorescence
+microscopy and the associated image of a
+fibroblast with labeled microtubules (yellow)
+and DNA (green). (B) Atomic-force
+microscopy schematic and the associated
+image of the surface topography of a
+fibroblast. (C) Electron microscopy
+schematic and image of cross-section
+through a fibroblast in an animal tissue.
+Arrows indicate bundles of collagen fibers.
+(A, courtesy of Torsten Wittman; B, adapted
+from M. Radmacher, Meth. Cell Biol.
+83:347, 2007; C, adapted from D. E. Birk
+and R. L. Trelstad, J. Cell Biol. 103:231,
+1986.)
+
+Abbe-Beugungsgrenze für Lichtmikroskope
+35
+Laut Ernst Abbe (1873) die kleinste auflösbare Distanz abhängig von:
+𝑑 = 𝜆
+2𝑛𝑠𝑖𝑛𝜃 = 𝜆
+2𝑁𝐴 = 𝜆
+2,8
+mit 𝑁𝐴 – numerische Apertur (1,4-1,6 bei moderner Optik)
+bei grünem Licht um 500 nm und einer 𝑁𝐴 von 1 beträgt die Abbe-Grenze 250 nm (0,25 𝜇𝑚)
+Welche Möglichkeiten hat man um die Auflösung zu erhöhen?
+
+Super Resolution Fluorescence Microscopy - STED
+36
+https://youtu.be/uyMZPFTcXG4?feature=shared
+STED – STimulated Emission Depletion
+
+Zeitskalen biologischer Prozesse
+37
+Figure 3.1: Gallery of biological time scales.
+Logarithmic scale showing the range of time scales
+associated with various biological processes. The
+time scale is in seconds.
+
+Zellzyklus - Eukaryoten
+38
+Figure 3.21: The eukaryotic cell cycle. (A) This cartoon shows some of the key elements of the process of cell division, including the four
+phases G1, S, G2, and M, as well as some of the most important checkpoints. Cells that stop proliferating can exit the cell cycle at G1 and
+enter a resting phase, called G0. Most fully differentiated cells in the adult human body are in G0. Under particular circumstances, non-
+dividing cells in G0 can reenter the cell cycle at G1. (B) Time course of cell mass and DNA content during the cell cycle. Cell mass can
+increase continuously, while DNA content increases only during S phase. (A, adapted from T. D. Pollard and W. C. Earnshaw, Cell Biology,
+W. B. Saunders, 2007; B, adapted from A. Murray and T. Hunt, The Cell Cycle, Oxford University Press, 1993.)
+
+Zellzyklus - Eukaryoten
+39
+
+40
+
+Zellzyklus - Prokayoten
+41
+Figure 3.7: Schematic of an idealized bacterial cell
+cycle. A newborn cell shown at the top has a single
+chromosome with a single origin of replication marked
+by the green dot. The cell cycle initiates with the
+duplication of the origin, and DNA replication then
+proceeds in an orderly fashion around the circular
+chromosome. At the same time, a group of cell division
+proteins beginning with the tubulin analog FtsZ form a
+ring at the center of the cell that will dictate the future
+site of septum formation. As DNA replication proceeds
+and the cell elongates, the two origins become
+separated from each other, with one traveling the entire
+length of the cell to take up residence at the opposite
+pole. As the septum begins to close down, the two
+chromosomal masses are physically separated into the
+two daughter cells, where the cycle can begin anew.
+
+Zellteilung – synchroner Prozess
+42
+Woher wissen die Zellen, wann sie sich teilen müssen?
+
+Uhren und Oszillatoren
+43
+
+Uhren und Oszillatoren
+44
+
+45
+
+Hausaufgaben
+46
+Drei neue Aufgaben auf Moodle
+Biophysik:
+• Aufgabe 1.1: Dimensionen bakterieller Zellen
+• Aufgabe 1.2: Wachstum und die logistische Formel
+• Aufgabe 1.3: Zellzyklus und die Anzahl von Ribosomen
+
+Vielen Dank für ihre
+Aufmerksamkeit!
+47

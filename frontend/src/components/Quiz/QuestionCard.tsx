@@ -1,4 +1,4 @@
-import type { Question } from "../../pages/Quiz";
+import type { Question } from "../../lib/api";
 
 export default function QuestionCard({
   q, selected, showExp, showHint, onSelect, onHint, onNext, isLast
@@ -23,7 +23,7 @@ export default function QuestionCard({
               "answer-option p-4 border rounded-xl cursor-pointer transition-all duration-200",
               "hover:border-stone-700 hover:bg-stone-900/50",
               "border-stone-800",
-              isSel ? "border-blue-500 bg-blue-600/20" : "",
+              isSel ? "border-bone-muted bg-bone/10" : "",
               isCorrect ? "border-green-500 bg-green-600/20" : "",
               isWrongSel ? "border-red-500 bg-red-600/20" : "",
             ].join(" ");
