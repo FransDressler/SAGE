@@ -1,7 +1,8 @@
 <div align="center">
 
 # SAGE
-<img width="1709" height="940" alt="Bildschirmfoto 2026-02-09 um 17 45 53" src="https://github.com/user-attachments/assets/503b0433-14a7-408c-8d2a-782aec3dd734" />
+<img width="1710" height="948" alt="Bildschirmfoto 2026-02-09 um 17 49 21" src="https://github.com/user-attachments/assets/f5ff6860-9ca8-4d7f-9e17-f69a84cbf9e3" />
+
 <img width="1707" height="945" alt="Bildschirmfoto 2026-02-09 um 17 46 12" src="https://github.com/user-attachments/assets/84eee3b7-920e-44f8-b29d-e23a41d55a64" />
 **Study Aid for Guided Education**
 
