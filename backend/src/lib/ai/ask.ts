@@ -9,7 +9,7 @@ import { extractFirstJsonObject } from "./extract"
 import { getLocale } from "../prompts/locale"
 
 export type AskCard = { q: string; a: string; tags?: string[] }
-export type RagSource = { sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string; sourceType?: string }
+export type RagSource = { sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string; sourceType?: string; url?: string }
 export type AskPayload = { topic: string; answer: string; flashcards: AskCard[]; sources?: RagSource[] }
 
 function toText(out: any): string {

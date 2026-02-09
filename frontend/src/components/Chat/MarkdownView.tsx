@@ -7,6 +7,15 @@ import rehypeHighlight from "rehype-highlight";
 
 type Props = { md: string };
 
+/** Convert LaTeX delimiters that remark-math doesn't support into dollar-sign syntax */
+function preprocessMath(md: string): string {
+  // Display math: \[...\] → $$...$$
+  md = md.replace(/\\\[(\s*[\s\S]*?\s*)\\\]/g, (_, inner) => `$$${inner}$$`);
+  // Inline math: \(...\) → $...$
+  md = md.replace(/\\\((.+?)\\\)/g, (_, inner) => `$${inner}$`);
+  return md;
+}
+
 const components: Components = {
   h1: (p) => <h1 className="text-3xl lg:text-4xl font-bold tracking-tight mt-2 mb-4 text-bone-light" {...p} />,
   h2: (p) => <h2 className="text-2xl lg:text-3xl font-semibold tracking-tight mt-6 mb-3 text-bone-light" {...p} />,
@@ -48,14 +57,14 @@ const components: Components = {
 
 export default function MarkdownView({ md }: Props) {
   return (
-    <div className="prose prose-invert max-w-none leading-relaxed text-bone">
+    <div className="prose prose-invert max-w-none leading-relaxed text-bone overflow-x-auto">
       <ReactMarkdown
         skipHtml
         remarkPlugins={[remarkGfm, remarkBreaks, remarkMath]}
         rehypePlugins={[rehypeKatex, rehypeHighlight]}
         components={components}
       >
-        {md || ""}
+        {preprocessMath(md || "")}
       </ReactMarkdown>
     </div>
   );

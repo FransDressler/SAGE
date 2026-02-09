@@ -21,6 +21,7 @@ import { extractAndPrepare, embedPreparedFile, type PreparedFile } from "../../l
 import { embedTextFromFile, type EmbedMeta } from "../../lib/ai/embed"
 import { clearCollection } from "../../utils/database/db"
 import { embeddings } from "../../utils/llm/llm"
+import { expandSubjectGraph } from "../../services/subjectgraph"
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
@@ -171,8 +172,8 @@ export function subjectRoutes(app: any) {
             ...(errors.length > 0 && { warnings: errors }),
           })
 
-          // Phase 2: Run embedding in the background
-          for (const { source, prep, file: f } of embedJobs) {
+          // Phase 2: Run embedding in the background, then expand knowledge graph
+          const embedPromises = embedJobs.map(({ source, prep, file: f }) => {
             const meta: EmbedMeta = {
               sourceId: source.id,
               sourceFile: f.originalName,
@@ -180,10 +181,18 @@ export function subjectRoutes(app: any) {
               subjectId,
               sourceType,
             }
-            embedPreparedFile(prep, ns, meta).catch(err =>
+            return embedPreparedFile(prep, ns, meta).catch(err =>
               console.error(`[embed] background embedding failed for ${f.originalName}:`, err?.message || err)
             )
-          }
+          })
+
+          // After all embeddings complete, expand the subject knowledge graph
+          Promise.all(embedPromises).then(() => {
+            const sourceIds = embedJobs.map(j => j.source.id)
+            expandSubjectGraph(subjectId, sourceIds).catch(err =>
+              console.error(`[subjectgraph] background expand failed:`, err?.message || err)
+            )
+          })
         } catch (e: any) {
           if (!failed) { failed = true; res.status(500).send({ ok: false, error: e?.message || "upload failed" }) }
         }

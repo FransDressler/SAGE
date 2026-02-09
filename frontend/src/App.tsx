@@ -6,7 +6,7 @@ export default function App() {
   return (
     <SubjectProvider>
       <ModelProvider>
-        <div className="bg-stone-950 text-bone min-h-screen">
+        <div className="bg-stone-900 text-bone min-h-screen">
           <Outlet />
         </div>
       </ModelProvider>

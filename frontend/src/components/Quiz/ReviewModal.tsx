@@ -3,7 +3,7 @@ import type { UA } from "../../lib/api";
 export default function ReviewModal({ answers, onClose }:{ answers:UA[]; onClose:()=>void }) {
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-stone-950 border border-stone-900 rounded-2xl p-6 max-w-2xl w-full">
+      <div className="bg-stone-900 border border-stone-900 rounded-2xl p-6 max-w-2xl w-full">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-semibold text-white">Review Answers</h2>
           <button onClick={onClose} className="p-2 hover:bg-stone-900 rounded-xl transition-all duration-300">

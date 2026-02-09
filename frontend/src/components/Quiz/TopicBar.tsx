@@ -19,7 +19,7 @@ export default function TopicBar({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder="Enter a topic to generate a quiz (e.g., Special Relativity)"
-          className="flex-1 bg-stone-950 border border-stone-900 rounded-3xl px-5 py-3 text-stone-100 placeholder-stone-500 outline-none"
+          className="flex-1 bg-stone-900 border border-stone-900 rounded-3xl px-5 py-3 text-stone-100 placeholder-stone-500 outline-none"
         />
         <button
           onClick={onStart}

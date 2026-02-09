@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSubject } from "../../context/SubjectContext";
 import { useModels } from "../../context/ModelContext";
 import CollapsedColumn from "./CollapsedColumn";
-import { chatJSON, getChatDetail, connectChatStream, type ChatMessage, type FlashCard, type ChatEvent, type RagSource } from "../../lib/api";
+import { chatJSON, chatMultipart, getChatDetail, connectChatStream, type ChatMessage, type FlashCard, type ChatEvent, type ChatPhase, type RagSource } from "../../lib/api";
 import MarkdownView from "../Chat/MarkdownView";
 import SourcesList from "../Chat/SourcesList";
 import LoadingIndicator from "../Chat/LoadingIndicator";
@@ -39,19 +39,26 @@ function normalizePayload(payload: unknown): NormalizedPayload {
   return { md: "", flashcards: [], sources: [] };
 }
 
-export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?: boolean; onToggleCollapse?: () => void }) {
+type ToolChatContext = { tool: string; topic: string; content: string };
+
+export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext, onToolChatConsumed }: { collapsed?: boolean; onToggleCollapse?: () => void; toolChatContext?: ToolChatContext | null; onToolChatConsumed?: () => void }) {
   const { subject, chats, activeChatId, setActiveChatId, refreshChats } = useSubject();
   const { chatModel, setChatModel } = useModels();
   type DisplayMessage = ChatMessage & { sources?: RagSource[] };
   const [messages, setMessages] = useState<DisplayMessage[]>([]);
   const [busy, setBusy] = useState(false);
   const [awaiting, setAwaiting] = useState(false);
+  const [currentPhase, setCurrentPhase] = useState<ChatPhase | null>(null);
+  const [phaseDetail, setPhaseDetail] = useState<string | undefined>();
   const [editingIdx, setEditingIdx] = useState<number | null>(null);
   const [editText, setEditText] = useState("");
+  const [pendingImages, setPendingImages] = useState<{ file: File; url: string }[]>([]);
+  const [dragOver, setDragOver] = useState(false);
   const messagesRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const closeRef = useRef<(() => void) | null>(null);
   const wsForChatRef = useRef<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Load chat messages when active chat changes
   useEffect(() => {
@@ -64,7 +71,10 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
         setMessages(res.messages.map(m => {
           if (m.role === "assistant") {
             const norm = normalizePayload(m.content);
-            return { ...m, content: norm.md, sources: norm.sources };
+            // Prefer sources already stored on the message over parsed ones
+            const storedSources = (m as any).sources;
+            const sources = (Array.isArray(storedSources) && storedSources.length) ? storedSources : norm.sources;
+            return { ...m, content: norm.md, sources };
           }
           return m;
         }));
@@ -73,15 +83,27 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
   }, [subject, activeChatId]);
 
   const onWsEvent = (ev: ChatEvent) => {
+    if (ev.type === "phase") {
+      setCurrentPhase(ev.value);
+      setPhaseDetail(ev.detail);
+    }
     if (ev.type === "answer") {
       const norm = normalizePayload(ev.answer);
       setMessages(prev => [...prev, { role: "assistant", content: norm.md, at: Date.now(), sources: norm.sources }]);
       setAwaiting(false);
       setBusy(false);
+      setCurrentPhase(null);
+      setPhaseDetail(undefined);
+    }
+    if (ev.type === "done") {
+      setCurrentPhase(null);
+      setPhaseDetail(undefined);
     }
     if (ev.type === "error") {
       setAwaiting(false);
       setBusy(false);
+      setCurrentPhase(null);
+      setPhaseDetail(undefined);
     }
   };
 
@@ -98,11 +120,43 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
     };
   }, [activeChatId]);
 
+  // Handle tool chat context: start new chat with tool content
+  useEffect(() => {
+    if (!toolChatContext || !subject) return;
+    if (busy) return; // Will retry when busy changes
+    const toolLabel = { quiz: "quiz", podcast: "podcast", smartnotes: "notes", mindmap: "mindmap", exam: "exam" }[toolChatContext.tool] || toolChatContext.tool;
+    const truncated = toolChatContext.content.length > 3000
+      ? toolChatContext.content.slice(0, 3000) + "\n...[truncated]"
+      : toolChatContext.content;
+    const msg = `I just generated a ${toolLabel} about "${toolChatContext.topic}". Here's the content:\n\n${truncated}\n\nHelp me understand and study this material.`;
+    newChat();
+    onToolChatConsumed?.();
+    const timer = setTimeout(() => send(msg), 100);
+    return () => clearTimeout(timer);
+  }, [toolChatContext, busy]);
+
   // Auto-scroll
   useEffect(() => {
     const el = messagesRef.current;
     if (el) setTimeout(() => { el.scrollTop = el.scrollHeight; }, 50);
   }, [messages.length, awaiting]);
+
+  const MAX_IMAGE_SIZE = 10 * 1024 * 1024; // 10MB
+  const IMAGE_TYPES = ["image/png", "image/jpeg", "image/gif", "image/webp"];
+
+  const addImages = (files: FileList | File[]) => {
+    const valid = Array.from(files).filter(f => IMAGE_TYPES.includes(f.type) && f.size <= MAX_IMAGE_SIZE).slice(0, 4);
+    const withUrls = valid.map(f => ({ file: f, url: URL.createObjectURL(f) }));
+    setPendingImages(prev => [...prev, ...withUrls].slice(0, 4));
+  };
+
+  const removeImage = (idx: number) => {
+    setPendingImages(prev => {
+      const removed = prev[idx];
+      if (removed) URL.revokeObjectURL(removed.url);
+      return prev.filter((_, i) => i !== idx);
+    });
+  };
 
   const send = async (text?: string) => {
     const msg = text ?? inputRef.current?.value.trim();
@@ -113,18 +167,28 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
       inputRef.current.style.height = "auto";
     }
 
+    const images = pendingImages.map(p => p.file);
+    for (const p of pendingImages) URL.revokeObjectURL(p.url);
+    setPendingImages([]);
+
     setMessages(prev => [...prev, { role: "user", content: msg, at: Date.now() }]);
     setAwaiting(true);
     setBusy(true);
     setEditingIdx(null);
 
     try {
-      const res = await chatJSON(subject.id, {
-        q: msg,
-        chatId: activeChatId || undefined,
-        provider: chatModel.provider || undefined,
-        model: chatModel.model || undefined,
-      });
+      const res = images.length
+        ? await chatMultipart(subject.id, msg, images, {
+            chatId: activeChatId || undefined,
+            provider: chatModel.provider || undefined,
+            model: chatModel.model || undefined,
+          })
+        : await chatJSON(subject.id, {
+            q: msg,
+            chatId: activeChatId || undefined,
+            provider: chatModel.provider || undefined,
+            model: chatModel.model || undefined,
+          });
       if (res?.chatId && res.chatId !== activeChatId) {
         // Connect WS inline before setActiveChatId so we don't miss events
         if (closeRef.current) closeRef.current();
@@ -147,6 +211,8 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
     }
     setAwaiting(false);
     setBusy(false);
+    setCurrentPhase(null);
+    setPhaseDetail(undefined);
   };
 
   const startEdit = (idx: number) => {
@@ -186,7 +252,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
   if (collapsed && onToggleCollapse) return <CollapsedColumn label="Chat" side="center" onExpand={onToggleCollapse} />;
 
   return (
-    <div className="h-full flex flex-col bg-stone-950 min-h-0">
+    <div className="h-full flex flex-col bg-stone-900 min-h-0 min-w-0 overflow-hidden">
       {/* Chat header */}
       <div className="px-4 py-2 border-b border-stone-800 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-2">
@@ -221,7 +287,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
       </div>
 
       {/* Messages */}
-      <div ref={messagesRef} className="flex-1 overflow-y-auto p-4 custom-scroll">
+      <div ref={messagesRef} className="flex-1 min-h-0 overflow-y-auto p-4 custom-scroll">
         <div className="max-w-6xl mx-auto space-y-4">
         {messages.length === 0 && !awaiting ? (
           <div className="flex flex-col items-center justify-center h-full text-stone-600 text-sm">
@@ -234,7 +300,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
           messages.map((m, i) => (
             m.role === "assistant" ? (
               <div key={i} className="w-full">
-                <div className="rounded-2xl bg-stone-950/90 border border-stone-800 px-5 py-4">
+                <div className="rounded-2xl bg-stone-900/90 border border-stone-800 px-5 py-4">
                   <MarkdownView md={m.content} />
                 </div>
                 {m.sources && m.sources.length > 0 && (
@@ -312,7 +378,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
         {/* Loading with stop button */}
         {awaiting && (
           <div className="w-full space-y-2">
-            <LoadingIndicator label="Thinking..." />
+            <LoadingIndicator label="Thinking..." phase={currentPhase ?? undefined} detail={phaseDetail} />
             <div className="flex justify-center">
               <button
                 onClick={stopGenerating}
@@ -330,25 +396,75 @@ export default function ChatPanel({ collapsed, onToggleCollapse }: { collapsed?:
       </div>
 
       {/* Composer */}
-      <div className="px-4 py-3 border-t border-stone-800 shrink-0">
-        <div className="max-w-6xl mx-auto flex items-end gap-2">
-          <textarea
-            ref={inputRef}
-            placeholder="Ask about your sources..."
-            rows={1}
-            className="flex-1 bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-bone placeholder:text-stone-600 outline-none focus:border-stone-700 resize-none overflow-y-auto max-h-32 text-sm"
-            onInput={e => { const el = e.target as HTMLTextAreaElement; el.style.height = "auto"; el.style.height = Math.min(el.scrollHeight, 128) + "px"; }}
-            onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
-          />
-          <button
-            onClick={() => send()}
-            disabled={busy}
-            className="p-2.5 bg-accent hover:bg-accent-hover disabled:opacity-50 rounded-xl text-stone-950 transition-colors shrink-0"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-            </svg>
-          </button>
+      <div
+        className={`px-4 py-3 border-t shrink-0 transition-colors ${dragOver ? "border-accent bg-accent/5" : "border-stone-800"}`}
+        onDragOver={e => { e.preventDefault(); setDragOver(true); }}
+        onDragLeave={() => setDragOver(false)}
+        onDrop={e => { e.preventDefault(); setDragOver(false); if (e.dataTransfer.files.length) addImages(e.dataTransfer.files); }}
+      >
+        <div className="max-w-6xl mx-auto">
+          {/* Image preview */}
+          {pendingImages.length > 0 && (
+            <div className="flex gap-2 mb-2 flex-wrap">
+              {pendingImages.map((img, i) => (
+                <div key={i} className="relative group">
+                  <img src={img.url} alt="" className="w-16 h-16 object-cover rounded-lg border border-stone-700" />
+                  <button
+                    onClick={() => removeImage(i)}
+                    className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-stone-800 border border-stone-600 text-stone-400 hover:text-white flex items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    x
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="flex items-end gap-2">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/png,image/jpeg,image/gif,image/webp"
+              multiple
+              className="hidden"
+              onChange={e => { if (e.target.files) addImages(e.target.files); e.target.value = ""; }}
+            />
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="p-2.5 text-stone-500 hover:text-stone-300 transition-colors shrink-0"
+              title="Attach image"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
+              </svg>
+            </button>
+            <textarea
+              ref={inputRef}
+              placeholder={dragOver ? "Drop images here..." : "Ask about your sources..."}
+              rows={1}
+              className="flex-1 bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-bone placeholder:text-stone-600 outline-none focus:border-stone-700 resize-none overflow-y-auto max-h-32 text-sm"
+              onInput={e => { const el = e.target as HTMLTextAreaElement; el.style.height = "auto"; el.style.height = Math.min(el.scrollHeight, 128) + "px"; }}
+              onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
+              onPaste={e => {
+                const items = Array.from(e.clipboardData.items);
+                const imageItems = items.filter(i => i.type.startsWith("image/"));
+                if (imageItems.length) {
+                  e.preventDefault();
+                  const files = imageItems.map(i => i.getAsFile()).filter(Boolean) as File[];
+                  addImages(files);
+                }
+              }}
+            />
+            <button
+              onClick={() => send()}
+              disabled={busy}
+              className="p-2.5 bg-accent hover:bg-accent-hover disabled:opacity-50 rounded-xl text-stone-950 transition-colors shrink-0"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>

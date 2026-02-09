@@ -61,7 +61,7 @@ export default function EdgeContextMenu({ edgeId, edgeLabel, edgeWeight, positio
                 value={label}
                 onChange={(e) => setLabel(e.target.value)}
                 autoFocus
-                className="w-full bg-stone-950 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
               />
             </div>
             <div>

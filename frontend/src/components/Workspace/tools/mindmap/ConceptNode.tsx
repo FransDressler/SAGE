@@ -7,6 +7,8 @@ type ConceptData = {
   category: string;
   importance: "high" | "medium" | "low";
   sources: { file: string; page?: number }[];
+  degree?: number;
+  maxDegree?: number;
 };
 
 const CATEGORY_COLORS: Record<string, { border: string; text: string; bg: string }> = {
@@ -25,30 +27,43 @@ const SIZE_MAP: Record<string, string> = {
   low: "min-w-[120px]",
 };
 
+function degreeScale(degree: number, maxDegree: number): number {
+  if (!maxDegree || maxDegree <= 1) return 1;
+  const ratio = degree / maxDegree;
+  return 0.85 + ratio * 0.75;
+}
+
 function ConceptNode({ data }: NodeProps) {
   const [expanded, setExpanded] = useState(false);
   const d = data as unknown as ConceptData;
   const colors = CATEGORY_COLORS[d.category] || CATEGORY_COLORS.term;
   const size = SIZE_MAP[d.importance] || SIZE_MAP.medium;
 
+  // Degree-based scaling: present in knowledge graph, absent in mindmap
+  const hasDegree = d.degree != null && d.maxDegree != null;
+  const scale = hasDegree ? degreeScale(d.degree!, d.maxDegree!) : 1;
+  const isHub = hasDegree && scale > 1.3;
+
   return (
     <>
       <Handle type="target" position={Position.Top} className="!bg-stone-600 !w-2 !h-2 !border-0" />
       <div
         onClick={() => setExpanded(!expanded)}
+        style={hasDegree ? { transform: `scale(${scale})`, transformOrigin: "center center" } : undefined}
         className={`
           rounded-xl border-2 ${colors.border} ${colors.bg} backdrop-blur-sm
           px-3 py-2 cursor-pointer transition-all duration-200
           hover:brightness-125 hover:shadow-lg hover:shadow-stone-900/50
           ${size} max-w-[260px]
           ${expanded ? "ring-1 ring-stone-500/30" : ""}
+          ${isHub ? "shadow-md shadow-stone-900/60" : ""}
         `}
       >
         <div className="flex items-center gap-2">
           <span className={`text-[10px] font-bold uppercase tracking-wider ${colors.text} shrink-0`}>
             {d.category.slice(0, 3)}
           </span>
-          <span className="text-xs font-semibold text-stone-200 truncate leading-tight">
+          <span className={`font-semibold text-stone-200 truncate leading-tight ${isHub ? "text-sm" : "text-xs"}`}>
             {d.label}
           </span>
         </div>

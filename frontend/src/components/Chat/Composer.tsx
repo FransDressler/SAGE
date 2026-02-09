@@ -31,9 +31,9 @@ export default function Composer({ disabled, onSend }: Props) {
   };
 
   return (
-    <div className="fixed bottom-0 pt-6 pb-4 border-t border-stone-900 left-4 right-4 lg:left-32 lg:right-4 z-40 bg-black">
+    <div className="fixed bottom-0 pt-6 pb-4 border-t border-stone-900 left-4 right-4 lg:left-32 lg:right-4 z-40 bg-stone-900">
       <div className="max-w-4xl mx-auto">
-        <div className="relative rounded-3xl bg-stone-950 border border-stone-900 shadow-[inset_0_3px_15px] shadow-stone-900 flex items-end backdrop-blur-lg">
+        <div className="relative rounded-3xl bg-stone-900 border border-stone-900 shadow-[inset_0_3px_15px] shadow-stone-900 flex items-end backdrop-blur-lg">
           <button className="rounded-full p-2.5 bg-stone-900 hover:bg-stone-800 transition-colors duration-200 m-2 flex-shrink-0">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

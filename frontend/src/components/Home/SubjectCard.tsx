@@ -33,7 +33,8 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
 
   return (
     <div
-      className="relative bg-stone-900 border border-stone-800 rounded-xl p-5 hover:border-stone-700 transition-colors cursor-pointer group"
+      className="sunset-card relative bg-stone-900 border border-transparent rounded-xl p-5 cursor-pointer group"
+      style={{ backgroundClip: 'padding-box' }}
       onClick={renaming ? undefined : onClick}
     >
       <div className="flex items-start justify-between mb-3">
@@ -48,7 +49,7 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
             className="bg-stone-800 border border-stone-700 rounded px-2 py-1 text-bone-light text-lg font-medium w-full outline-none focus:border-stone-600"
           />
         ) : (
-          <h3 className="text-bone-light font-medium text-lg truncate pr-2">{subject.name}</h3>
+          <h3 className="sunset-text font-medium text-lg truncate pr-2 text-bone-light">{subject.name}</h3>
         )}
         <button
           onClick={e => { e.stopPropagation(); setMenuOpen(!menuOpen); }}

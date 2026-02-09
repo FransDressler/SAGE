@@ -1,246 +1,222 @@
 <div align="center">
-  
-<img width="full" height="auto" alt="pagelm" src="https://github.com/user-attachments/assets/d3133be1-1931-4132-9301-3596ebb21122" />
 
-# PageLM
+# SAGE
 
-**An open source AI powered education platform that transforms study materials into interactive learning experiences, slightly inspired by NotebookLM**
+**Study AI, Guided by Evidence**
 
-[Report Bug](https://github.com/caviraOSS/pagelm/issues) • [Request Feature](https://github.com/caviraOSS/pagelm/issues) • [Discord server](https://discord.gg/P7HaRayqTh)
+An enhanced fork of [PageLM](https://github.com/CaviraOSS/PageLM) — the open-source AI education platform that transforms study materials into interactive learning experiences.
+
+SAGE extends PageLM with exam simulation, mind map editing, subject graphs, UI refinements, and more.
 
 </div>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-PageLM%20Community%20License-blueviolet.svg" alt="License: PageLM Community License"></a>
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg" alt="Node.js Version"></a>
-  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-18+-blue.svg" alt="React"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/Base-PageLM%20Community%20License-blueviolet.svg" alt="Base License"></a>
+  <a href="LICENSE-ADDITIONS.md"><img src="https://img.shields.io/badge/Additions-%C2%A9%20Frans%20Dressler-orange.svg" alt="Additions License"></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg" alt="Node.js"></a>
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-19-blue.svg" alt="React"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0+-blue.svg" alt="TypeScript"></a>
-  <a href="https://discord.gg/P7HaRayqTh"><img alt="Discord" src="https://img.shields.io/discord/1379682804849180844?label=Discord%20server"></a>
 </p>
 
 ---
 
-# **🔥 Spread the Word!**
+## What SAGE Adds
 
-<p align="center">
-  <a href="https://twitter.com/intent/tweet?text=🤯%20Found%20the%20open%2Dsource%20NotebookLM%20killer%3A%20PageLM%21%20It%20turns%20PDFs%20into%20quizzes%2C%20flashcards%2C%20and%20podcasts.%20Stop%20paying%20for%20study%20tools%21&url=https%3A%2F%2Fgithub.com%2FCaviraOSS%2FPageLM&hashtags=ai,opensource,education,llm"><img src="https://img.shields.io/badge/Share%20on%20X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Share on X"></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgithub.com%2FCaviraOSS%2FPageLM&title=PageLM%3A%20The%20Open%2DSource%20NotebookLM%20Alternative%20for%20Students&summary=PageLM%20is%20an%20AI%20platform%20that%20transforms%20lecture%20notes%20and%20PDFs%20into%20interactive%20quizzes%20and%20AI%20podcasts.%20A%20great%20example%20of%20full%2Dstack%20AI%20development%20%28Node%2FReact%2FLangChain%29."><img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn"></a>
-  &nbsp;
-  <a href="https://reddit.com/submit?url=https%3A%2F%2Fgithub.com%2FCaviraOSS%2FPageLM&title=PageLM%3A%20Open%20Source%20AI%20Notebook%20that%20creates%20Quizzes%2C%20Flashcards%2C%20and%20Podcasts"><img src="https://img.shields.io/badge/Share%20on%20Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Share on Reddit"></a>
-  &nbsp;
-  <a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fgithub.com%2FCaviraOSS%2FPageLM&t=Show%20HN%3A%20PageLM%20%E2%80%93%20Open%20Source%20NotebookLM%20Alternative%20(React%2FNode%2FLangChain)"><img src="https://img.shields.io/badge/Hacker%20News-FF6600?style=for-the-badge&logo=y-combinator&logoColor=white" alt="Submit to Hacker News"></a>
-  &nbsp;
-  <a href="https://dev.to/new/share?url=https%3A%2F%2Fgithub.com%2FCaviraOSS%2FPageLM&title=PageLM%3A%20An%20Open%20Source%20AI%20Education%20Platform%20for%20Quizzes%20and%20Podcasts&prefill=I%20came%20across%20PageLM%20and%20was%20impressed%20by%20its%20architecture%20(Node.js%2FReact%2FLangChain).%20It's%20a%20full%2Dstack%20AI%20platform%20that%20supports%20Ollama%20and%20generates%20structured%20learning%20tools%20like%20ExamLab%20and%20AI%20Podcasts.%20Check%20it%20out%20and%20star%20the%20repo!%0D%0A%0D%0A**Link%20to%20Repo:**%20https%3A%2F%2Fgithub.com%2FCaviraOSS%2FPageLM"><img src="https://img.shields.io/badge/Share%20on%20DEV%20Community-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="Share on DEV Community"></a>
-</p>
+SAGE builds on PageLM's foundation with these additions:
 
-</div>
-
-## Demo
-
-<img src=".github/pagelm.png" alt="PageLM Demo"/>
-
-https://github.com/user-attachments/assets/98fae4ef-c2b7-4ad2-bfe9-1e0665eb4d71
-
-<video width="100%" controls>
-  <source src=".github/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-> **Note**: If the video doesn't load above, you can [download the demo video directly](.github/demo.mp4)
+| Feature | Description |
+|---------|-------------|
+| **Exam Builder** | Generate exam-style assessments from your sources with open and MCQ questions, point allocation, and time limits |
+| **Mind Map AI Editing** | AI-assisted mind map modifications — ask the AI to restructure, expand, or refine your knowledge graphs |
+| **Force-Directed Layout** | Physics-based auto-layout for mind map nodes |
+| **Subject Graph** | Cross-subject knowledge graph visualization |
+| **UI Overhaul** | Refined workspace layout, collapsible panels, improved mobile header, selection popups, and loading indicators |
+| **Enhanced Chat** | Improved composer, markdown rendering, and source attribution display |
+| **Quiz Improvements** | Redesigned question cards, results panel, review modal, and topic bar |
 
 ---
 
-## 🚀 Features
+## All Features
 
-PageLM converts study material into **interactive resources** including quizzes, flashcards, structured notes, and podcasts.  
-The platform provides a modern interface for students, educators, and researchers to **enhance learning efficiency** using state-of-the-art LLMs and TTS systems.
+Everything from PageLM, plus SAGE additions:
 
 ### Learning Tools
 
-- **Contextual Chat** – Ask questions about uploaded documents (PDF, DOCX, Markdown, TXT)
-- **SmartNotes** – Generate Cornell-style notes automatically from topics or uploaded content
-- **Flashcards** – Extract non-overlapping flashcards for spaced repetition
-- **Quizzes** – Create interactive quizzes with hints, explanations, and scoring
-- **AI Podcast** – Convert notes and topics into engaging audio content for learning on the go
-- **Voice Transcribe** - Convert lecture recordings and voice notes into organized, searchable study materials instantly.
-- **Homework Planner** - Plans your Homework Smartly using AI, Assists if your stuck.
-- **ExamLab** - Simulate any exam, get feedback, and be prepared for the exam
-- **Debate** - Debate with AI to improve your Debate skills.
-- **Study Companion** - A personalised AI Companion that assists you.
+| Tool | Origin | Description |
+|------|--------|-------------|
+| **Contextual Chat** | PageLM | RAG-powered Q&A over uploaded documents with source attribution |
+| **SmartNotes** | PageLM | Cornell-style structured notes with PDF export |
+| **Flashcards** | PageLM | Cognitive-dimension tagged cards (anti-rote learning) |
+| **Quizzes** | PageLM | MCQ generation with hints, explanations, and scoring |
+| **AI Podcast** | PageLM | Two-speaker audio dialogues from your materials |
+| **Voice Transcriber** | PageLM | Lecture recordings to searchable, embeddable text |
+| **Homework Planner** | PageLM | AI scheduling with Pomodoro time-blocking |
+| **ExamLab** | PageLM | Simulate standardized tests (GRE, GMAT, SAT, IELTS, JEE) |
+| **Debate** | PageLM | Practice argumentation with an AI opponent |
+| **Study Companion** | PageLM | Persistent AI assistant across study sessions |
+| **Web Search** | PageLM | Pull and embed web content into your sources |
+| **Exam Builder** | SAGE | Generate custom exams from your uploaded sources |
+| **Mind Map** | SAGE | Visual knowledge graphs with AI-assisted editing and force layout |
+| **Subject Graph** | SAGE | Cross-subject knowledge visualization |
 
-### Supported AI Models
+### Supported AI Providers
 
-- Google Gemini • OpenAI GPT • Anthropic Claude • xAI Grok • Ollama (local) • OpenRouter
-
-### Embedding Providers
-
-- OpenAI • Gemini • Ollama
-
-### Technical Highlights
-
-- WebSocket streaming for real-time chat, notes, and podcast generation
-- JSON or vector database support for embeddings and retrieval
-- File-based persistent storage for generated content
-- Markdown-based outputs for structured answers and notes
-- Configurable multi-provider setup for LLMs and TTS engines
-
----
-
-## 🛠️ Technology Stack
-
-| Component      | Technology                               |
-| -------------- | ---------------------------------------- |
-| **Backend**    | Node.js, TypeScript, LangChain, Langraph |
-| **Frontend**   | Vite, React, TailwindCSS                 |
-| **Database**   | JSON (default), optional vector DB       |
-| **AI/ML**      | Multiple LLM providers, embeddings       |
-| **Audio**      | Edge TTS, ElevenLabs, Google TTS         |
-| **Deployment** | Docker, Docker Compose                   |
-| **Docs**       | pdf-lib, mammoth, pdf-parse              |
+| Category | Providers |
+|----------|-----------|
+| **LLM** | Google Gemini · OpenAI GPT · Anthropic Claude · xAI Grok · Ollama (local) · OpenRouter |
+| **Embeddings** | OpenAI · Gemini · Ollama |
+| **TTS** | Edge TTS · ElevenLabs · Google Cloud TTS |
+| **Transcription** | OpenAI Whisper · Google Cloud · AssemblyAI |
 
 ---
 
-## ⚡ Getting Started
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Frontend (React 19 + Vite + TailwindCSS)                   │
+│  WebSocket streams for all long-running operations           │
+└──────────────────────┬──────────────────────────────────────┘
+                       │ HTTP + WebSocket
+┌──────────────────────▼──────────────────────────────────────┐
+│  Backend (Node.js + TypeScript)                              │
+│                                                              │
+│  ┌─────────────┐  ┌──────────────┐  ┌────────────────────┐  │
+│  │ AI Agents   │  │ Services     │  │ RAG Pipeline       │  │
+│  │ ─ Tutor     │  │ ─ Podcast    │  │ ─ Semantic Chunker │  │
+│  │ ─ Researcher│  │ ─ Quiz       │  │ ─ Hybrid Retrieval │  │
+│  │ ─ Examiner  │  │ ─ SmartNotes │  │   (BM25 + Vector)  │  │
+│  │ ─ Podcaster │  │ ─ Mindmap    │  │ ─ Parent/Child     │  │
+│  │             │  │ ─ ExamLab    │  │   document splits   │  │
+│  │  LangGraph  │  │ ─ Exam ★     │  │                    │  │
+│  │  runtime    │  │ ─ Transcriber│  │  LangChain         │  │
+│  │             │  │ ─ Web Search │  │                    │  │
+│  │             │  │ ─ SubjGraph ★│  │                    │  │
+│  └─────────────┘  └──────────────┘  └────────────────────┘  │
+│                                         ★ = SAGE additions   │
+│  Storage: JSON files (default) or ChromaDB (vector)          │
+│  All data stays local — no cloud dependencies                │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js v21.18+
-- npm or pnpm
-- ffmpeg (required for podcast audio)
-- Docker (optional)
+- **Node.js** v20+
+- **npm** (or pnpm)
+- **ffmpeg** — required for podcast audio generation
+- **Docker** — optional
 
-### Local Development
+### Quick Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/caviraOSS/pagelm.git
-cd pagelm
+git clone https://github.com/FransDressler/SAGE.git
+cd SAGE
 
-# Linux:
-  chmod 777 ./setup.sh
-  ./setup.sh
+# Linux / macOS
+chmod +x ./setup.sh && ./setup.sh
 
-# Windows:
-  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-  ./setup.ps1
-
-# Manual (Both Linux/Windows):
-  # Install dependencies
-  cd backend
-  npm install
-  cd ../frontend
-  npm install
-
-  # Setup environment
-  cd ..
-  npm i -g nodemon
-  cp .env.example .env
-  # Make sure to configure API keys and settings in .env
-
-  # Run these two commands in separate terminals but inside the project directory.
-  # Run backend
-  cd backend
-  npm run dev
-
-  # Run frontend
-  cd frontend
-  npm run dev
+# Windows (PowerShell)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+./setup.ps1
 ```
 
-👉 Access at: **http://localhost:5173**
-
-### Docker Deployment
+### Manual Setup
 
 ```bash
-# Development
+# Install dependencies
+cd backend && npm install
+cd ../frontend && npm install
+cd ..
+
+# Configure environment
+cp .env.example .env
+# Edit .env — set your API keys and preferred providers
+
+# Start backend (terminal 1)
+cd backend && npm run dev
+
+# Start frontend (terminal 2)
+cd frontend && npm run dev
+```
+
+Open **http://localhost:5173**
+
+### Docker
+
+```bash
 docker compose up --build
 
-# Production
-docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+# Frontend: http://localhost:5173
+# Backend:  http://localhost:5000
 ```
 
-- Frontend: http://localhost:5173 (dev) / http://localhost:8080 (prod)
-- Backend: http://localhost:5000
-
 ---
 
-## ⚙️ Configuration
+## Configuration
 
-All configuration is handled via environment variables:
+All behavior is controlled through `.env`. Copy `.env.example` and configure:
 
-- **LLM Provider** – Choose your model backend
-- **TTS Engine** – Select speech service for podcasts
-- **Database Backend** – JSON or vector DB
-- **File Upload Limits** – Customize size/format limits
-
-See `.env.example` for all options.
-
----
-
-## 👥 Community
-
-Join our [Discord](https://discord.gg/P7HaRayqTh) community to connect, share ideas, and take part in exciting discussions!
-
----
-
-## 🤝 Contributing
-
-We welcome all contributions.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit changes (`git commit -m "Add feature"`)
-4. Push (`git push origin feature/new-feature`)
-5. Open a Pull Request
-
-**Guidelines:**
-
-- Follow code style and conventions
-- Add tests where needed
-- Update docs for new features
-- Ensure all tests pass before PR
-
----
-
-## 💡 Areas to Contribute
-
-- AI model integrations
-- Mobile app support
-- Performance improvements
-- Accessibility features
-- Docs & tutorials
-
----
-
-## 💖 Support the Project
-
-If you find PageLM useful, please consider supporting:
-
-**Ethereum (ERC-20)**:
-
-```
-0x5a12e3f48b6d761a120bc3cd0977e208c362a74e
+```env
+LLM_PROVIDER=gemini            # gemini | openai | claude | grok | ollama | openrouter
+EMB_PROVIDER=openai             # openai | gemini | ollama
+db_mode=json                    # json | vector (ChromaDB)
+TTS_PROVIDER=edge               # edge | google | eleven
+TRANSCRIPTION_PROVIDER=openai   # openai | google | assemblyai
 ```
 
-Your support helps fund ongoing development and hosting.
+| Provider | Key Variable | Default Model |
+|----------|-------------|---------------|
+| Gemini | `gemini` | `gemini-2.5-flash` |
+| OpenAI | `OPENAI_API_KEY` | `gpt-4o-mini` |
+| Claude | `ANTHROPIC_API_KEY` | `claude-3-5-sonnet-latest` |
+| Grok | `XAI_API_KEY` | `grok-2-latest` |
+| Ollama | *(local, no key)* | `llama4` |
+| OpenRouter | `OPENROUTER_API_KEY` | `google/gemini-2.5-flash` |
+
+See [`.env.example`](.env.example) for the complete list.
 
 ---
 
-## 📜 License
+## Staying Up to Date
 
-Licensed under the **CaviraOSS Community License**.  
-Free to use, share, and modify for personal and educational purposes.  
-Commercial use or resale requires prior written permission from CaviraOSS.
+SAGE tracks the upstream PageLM repository. To pull in the latest changes:
 
-See [LICENSE](LICENSE.md) for full terms.
+```bash
+git fetch upstream
+git merge upstream/main
+```
+
+---
+
+## License
+
+This repository contains two layers of licensing:
+
+| Scope | License | Copyright |
+|-------|---------|-----------|
+| **Base PageLM code** | [PageLM Community License](LICENSE.md) | nullure & recabasic |
+| **SAGE additions** | [SAGE Additions License](LICENSE-ADDITIONS.md) | Frans Dressler |
+
+The base PageLM code is free for personal and educational use. SAGE additions (exam builder, mind map AI editing, subject graph, UI changes, and all other original code by Frans Dressler) are **copyright Frans Dressler** — viewing for reference only, no copying or redistribution without permission.
+
+See [LICENSE.md](LICENSE.md) and [LICENSE-ADDITIONS.md](LICENSE-ADDITIONS.md) for full terms.
+
+---
+
+## Attribution
+
+SAGE is built on [PageLM](https://github.com/CaviraOSS/PageLM) by CaviraOSS (nullure & recabasic).
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by CaviraOSS and contributors**
+**SAGE — Study AI, Guided by Evidence**
 
-⭐ Star us on [GitHub](https://github.com/CaviraOSS/pagelm) if this project helps you!
+Built by [Frans Dressler](https://github.com/FransDressler)
 
 </div>

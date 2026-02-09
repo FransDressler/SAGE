@@ -385,6 +385,7 @@ export async function generateMindmap(
 export async function editMindmapWithAI(
   currentData: MindmapData,
   instruction: string,
+  subjectId: string,
   llmOverride?: LLM
 ): Promise<MindmapData> {
   const trimmed = instruction.trim()
@@ -393,14 +394,31 @@ export async function editMindmapWithAI(
 
   const model = llmOverride || llm
 
+  // Retrieve relevant chunks for the instruction
+  const collection = `subject:${subjectId}`
+  const retriever = await getRetriever(collection, embeddings, { k: 20 })
+  const docs = await retriever.invoke(instruction)
+  const chunks: ChunkDoc[] = docs.map((d: any) => ({
+    text: typeof d.pageContent === "string" ? d.pageContent : String(d.pageContent ?? ""),
+    sourceFile: d.metadata?.sourceFile,
+    sourceId: d.metadata?.sourceId as string | undefined,
+    pageNumber: d.metadata?.pageNumber,
+  }))
+  const sourceMap = buildSourceMap(chunks)
+  const context = chunks.map(c => c.text).join("\n\n---\n\n")
+
   const graphJson = JSON.stringify({
     nodes: currentData.nodes.slice(0, 500),
     edges: currentData.edges.slice(0, 2000),
   })
 
+  const userContent = context
+    ? `Current graph:\n${graphJson}\n\nRelevant source material:\n${context}\n\nInstruction: ${instruction}\n\nReturn only the JSON object.`
+    : `Current graph:\n${graphJson}\n\nInstruction: ${instruction}\n\nReturn only the JSON object.`
+
   const msgs = [
     { role: "system", content: AI_EDIT_PROMPT },
-    { role: "user", content: `Current graph:\n${graphJson}\n\nInstruction: ${instruction}\n\nReturn only the JSON object.` },
+    { role: "user", content: userContent },
   ]
 
   const res = await model.invoke([...msgs] as any)
@@ -412,16 +430,29 @@ export async function editMindmapWithAI(
     throw new Error("AI returned invalid graph structure")
   }
 
+  // Build lookup of existing node sources to preserve them
+  const existingSources = new Map<string, ConceptNode["sources"]>()
+  for (const n of currentData.nodes) {
+    if (n.sources?.length) existingSources.set(n.id, n.sources)
+  }
+  const existingIds = new Set(currentData.nodes.map(n => n.id))
+
   const nodes: ConceptNode[] = parsed.nodes
     .filter((n: any) => n?.id && n?.label)
-    .map((n: any) => ({
-      id: n.id,
-      label: n.label.trim(),
-      description: n.description?.trim() || "",
-      category: n.category?.trim() || "term",
-      importance: (["high", "medium", "low"].includes(n.importance) ? n.importance : "medium") as ConceptNode["importance"],
-      sources: Array.isArray(n.sources) ? n.sources : [],
-    }))
+    .map((n: any) => {
+      const id = n.id
+      const label = n.label.trim()
+      // Existing nodes keep their sources; new nodes get source-matched
+      const sources = existingSources.get(id) || (existingIds.has(id) ? [] : findSources(label, sourceMap))
+      return {
+        id,
+        label,
+        description: n.description?.trim() || "",
+        category: n.category?.trim() || "term",
+        importance: (["high", "medium", "low"].includes(n.importance) ? n.importance : "medium") as ConceptNode["importance"],
+        sources,
+      }
+    })
 
   const nodeIds = new Set(nodes.map(n => n.id))
   const edges: ConceptEdge[] = (Array.isArray(parsed.edges) ? parsed.edges : [])

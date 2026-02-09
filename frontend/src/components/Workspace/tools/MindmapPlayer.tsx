@@ -51,6 +51,7 @@ type Props = {
   toolId?: string;
   subjectId?: string;
   onClose: () => void;
+  onChatAbout?: () => void;
 };
 
 const nodeTypes: NodeTypes = { concept: ConceptNode };
@@ -110,7 +111,7 @@ const CAT_COLORS: Record<string, string> = {
 type HistoryEntry = { nodes: Node[]; edges: Edge[] };
 const MAX_HISTORY = 20;
 
-export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose }: Props) {
+export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose, onChatAbout }: Props) {
   const [search, setSearch] = useState("");
   const { nodes: initialNodes, edges: initialEdges } = useMemo(() => buildFlowGraph(data), [data]);
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
@@ -373,12 +374,12 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose 
 
   // AI Edit
   const handleAiEdit = useCallback(
-    async (instruction: string) => {
+    async (instruction: string, model?: { provider?: string; model?: string }) => {
       if (!subjectId) return;
       setAiEditLoading(true);
       try {
         const currentData = getCurrentData();
-        const res = await aiEditMindmap(subjectId, toolId || "", instruction, currentData);
+        const res = await aiEditMindmap(subjectId, toolId || "", instruction, currentData, model);
         const { nodes: newFlowNodes, edges: newFlowEdges } = buildFlowGraph(res.data);
         setNodes(newFlowNodes);
         setEdges(newFlowEdges);
@@ -413,7 +414,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose 
   return (
     <div className="relative h-full flex flex-col">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-2 border-b border-stone-800 shrink-0 bg-stone-950/80 backdrop-blur-sm z-10">
+      <div className="flex items-center justify-between px-4 py-2 border-b border-stone-800 shrink-0 bg-stone-900/80 backdrop-blur-sm z-10">
         <div className="flex items-center gap-3 min-w-0">
           <span className="text-xs font-bold text-cyan-400 shrink-0">M</span>
           <span className="text-sm text-stone-300 truncate">{topic}</span>
@@ -438,6 +439,11 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose 
             placeholder="Search..."
             className="w-36 bg-stone-900 border border-stone-800 rounded-lg px-2 py-1 text-xs text-stone-300 placeholder:text-stone-600 outline-none focus:border-stone-600"
           />
+          {onChatAbout && (
+            <button onClick={onChatAbout} className="p-1.5 rounded-lg bg-stone-800/80 hover:bg-stone-700 text-stone-400 hover:text-stone-200 transition-colors" title="Chat about this">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg>
+            </button>
+          )}
           <button
             onClick={handleClose}
             className="p-1.5 rounded-lg bg-stone-800/80 hover:bg-stone-700 text-stone-400 hover:text-stone-200 transition-colors"
@@ -450,7 +456,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose 
       </div>
 
       {/* Toolbar */}
-      <div className="flex items-center gap-1.5 px-4 py-1.5 border-b border-stone-800/50 bg-stone-950/60 shrink-0 z-10">
+      <div className="flex items-center gap-1.5 px-4 py-1.5 border-b border-stone-800/50 bg-stone-900/60 shrink-0 z-10">
         <button
           onClick={() => setAddNodeOpen(true)}
           className="px-2.5 py-1 rounded-md text-[11px] font-medium bg-stone-800 text-stone-300 hover:bg-stone-700 hover:text-stone-100 transition-colors"
@@ -520,7 +526,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose 
           minZoom={0.1}
           maxZoom={2}
           proOptions={{ hideAttribution: true }}
-          className="bg-stone-950"
+          className="bg-stone-900"
           deleteKeyCode={["Backspace", "Delete"]}
         >
           <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#292524" />

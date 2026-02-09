@@ -32,14 +32,15 @@ export type QuizResult = { type: "quiz"; questions: any[] }
 export type PodcastResult = { type: "podcast"; pid: string; filename: string }
 export type NotesResult = { type: "smartnotes"; filename: string }
 export type MindmapResult = { type: "mindmap"; data: any }
+export type ExamResult = { type: "exam"; questions: any[]; totalPoints: number; timeLimit: number }
 
 export type ToolRecord = {
   id: string
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap"
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam"
   topic: string
   config: Record<string, string | undefined>
   createdAt: number
-  result: QuizResult | PodcastResult | NotesResult | MindmapResult
+  result: QuizResult | PodcastResult | NotesResult | MindmapResult | ExamResult
 }
 
 const SUBJECTS_ROOT = path.join(process.cwd(), "subjects")

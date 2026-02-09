@@ -14,7 +14,7 @@ export default function CollapsedColumn({ label, side, onExpand }: CollapsedColu
     <div className={`h-full ${border}`}>
       <button
         onClick={onExpand}
-        className={`h-full w-full flex flex-col items-center bg-stone-950/50 cursor-pointer hover:bg-stone-900/50 transition-colors`}
+        className={`h-full w-full flex flex-col items-center bg-stone-900/50 cursor-pointer hover:bg-stone-800/50 transition-colors`}
         aria-label={`Expand ${label}`}
         title={`Expand ${label}`}
       >

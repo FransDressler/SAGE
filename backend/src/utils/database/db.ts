@@ -236,6 +236,36 @@ export async function deleteDocumentsBySource(
   await deleteParentsBySource(collection, sourceId)
 }
 
+export async function getAllDocuments(
+  collection: string,
+  embeddings: EmbeddingsInterface,
+  filter?: { sourceIds?: string[] }
+): Promise<Document[]> {
+  let docs: Document[]
+
+  if (config.db_mode === "json") {
+    const raw = loadJsonDocs(collection)
+    docs = toDocuments(raw)
+  } else {
+    const store = new Chroma(embeddings, {
+      collectionName: collection,
+      url: "http://localhost:8000",
+    })
+    const result = await store.collection.get({ limit: 50000 })
+    docs = (result.documents || []).map((text: string | null, i: number) => new Document({
+      pageContent: text || "",
+      metadata: result.metadatas?.[i] || {},
+    }))
+  }
+
+  if (filter?.sourceIds && filter.sourceIds.length > 0) {
+    const allowed = new Set(filter.sourceIds)
+    docs = docs.filter(d => d.metadata?.sourceId && allowed.has(d.metadata.sourceId))
+  }
+
+  return docs
+}
+
 export async function clearCollection(
   collection: string,
   embeddings: EmbeddingsInterface

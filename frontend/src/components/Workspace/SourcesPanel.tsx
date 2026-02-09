@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useSubject } from "../../context/SubjectContext";
-import type { SourceType, WebSearchEvent } from "../../lib/api";
+import type { Source, SourceType, WebSearchEvent } from "../../lib/api";
 import * as api from "../../lib/api";
 import CollapsedColumn from "./CollapsedColumn";
 
@@ -32,7 +32,6 @@ function rowBorder(sourceType: SourceType) {
   return "";
 }
 
-type FilterTab = "all" | SourceType;
 type SearchResult = { title: string; url: string; content: string };
 
 const DEFAULT_PROMPT_PLACEHOLDER = `Du bist ein Lernassistent. Verwende folgende Strategien:
@@ -46,6 +45,29 @@ const DEFAULT_PROMPT_PLACEHOLDER = `Du bist ein Lernassistent. Verwende folgende
 
 Antworte in der Sprache der Frage. Verwende Markdown-Formatierung mit Überschriften, Listen, Tabellen und LaTeX-Formeln ($..$ inline, $$...$$ block) wenn passend.`;
 
+function SourceRow({ source: s, onRemove }: { source: Source; onRemove: (id: string) => void }) {
+  const st = s.sourceType || "material";
+  return (
+    <div className={`flex items-center gap-2 p-2 rounded-lg bg-stone-900/50 border border-stone-800 group hover:border-stone-700 transition-colors ${rowBorder(st)}`}>
+      <div className={`w-8 h-8 rounded-md flex items-center justify-center text-[10px] font-bold shrink-0 ${iconBg(st)}`}>
+        {fileIcon(s.mimeType, st)}
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs text-stone-200 truncate">{s.originalName}</p>
+        <span className="text-[10px] text-stone-500">{formatSize(s.size)}</span>
+      </div>
+      <button
+        onClick={() => onRemove(s.id)}
+        className="text-stone-600 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all p-1"
+      >
+        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
 export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapsed?: boolean; onToggleCollapse?: () => void }) {
   const { subject, sources, uploadSources, removeSource, updateSystemPrompt, refreshSources } = useSubject();
   const [uploading, setUploading] = useState(false);
@@ -55,10 +77,10 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
   const [promptText, setPromptText] = useState("");
   const [saving, setSaving] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [filter, setFilter] = useState<FilterTab>("all");
   const [panelView, setPanelView] = useState<"list" | "websearch">("list");
-  const inputRef = useRef<HTMLInputElement>(null);
-  const uploadTypeRef = useRef<SourceType>("material");
+  const [openSections, setOpenSections] = useState<Record<string, boolean>>({ material: true, exercise: true, websearch: true });
+  const materialInputRef = useRef<HTMLInputElement>(null);
+  const exerciseInputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Web search state
@@ -73,8 +95,8 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
 
   useEffect(() => {
     setPromptText(subject?.systemPrompt || "");
-    setFilter("all");
     setPanelView("list");
+    setOpenSections({ material: true, exercise: true, websearch: true });
   }, [subject?.id]);
 
   // Clean up websocket on unmount
@@ -113,9 +135,12 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
   };
 
   const openFilePicker = (type: SourceType) => {
-    uploadTypeRef.current = type;
     setDropdownOpen(false);
-    inputRef.current?.click();
+    if (type === "exercise") {
+      exerciseInputRef.current?.click();
+    } else {
+      materialInputRef.current?.click();
+    }
   };
 
   const startWebSearch = async () => {
@@ -159,23 +184,21 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
     }
   };
 
-  // Compute type counts for filter tabs
-  const typeCounts = sources.reduce<Record<string, number>>((acc, s) => {
-    const t = s.sourceType || "material";
-    acc[t] = (acc[t] || 0) + 1;
-    return acc;
-  }, {});
-  const uniqueTypes = Object.keys(typeCounts);
-  const showFilters = uniqueTypes.length > 1;
+  // Group sources by type
+  const materialSources = sources.filter(s => (s.sourceType || "material") === "material");
+  const exerciseSources = sources.filter(s => s.sourceType === "exercise");
+  const webSources = sources.filter(s => s.sourceType === "websearch");
 
-  const filteredSources = filter === "all" ? sources : sources.filter(s => (s.sourceType || "material") === filter);
+  const toggleSection = (key: string) => {
+    setOpenSections(prev => ({ ...prev, [key]: !prev[key] }));
+  };
 
   if (collapsed && onToggleCollapse) return <CollapsedColumn label="Sources" side="left" onExpand={onToggleCollapse} />;
 
   // --- Web Search View ---
   if (panelView === "websearch") {
     return (
-      <div className="h-full flex flex-col border-r border-stone-800 bg-stone-950/50">
+      <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50">
         {/* Header with back button */}
         <div className="px-4 py-3 border-b border-stone-800 flex items-center gap-2 shrink-0">
           <button
@@ -295,7 +318,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
 
   // --- Normal Sources List View ---
   return (
-    <div className="h-full flex flex-col border-r border-stone-800 bg-stone-950/50">
+    <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50">
       <div className="px-4 py-3 border-b border-stone-800 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-1.5">
           {onToggleCollapse && (
@@ -355,12 +378,23 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
       </div>
 
       <input
-        ref={inputRef}
+        ref={materialInputRef}
         type="file"
         multiple
         accept=".pdf,.txt,.md,.docx,.odt"
         onChange={e => {
-          if (e.target.files) handleFiles(e.target.files, uploadTypeRef.current);
+          if (e.target.files) handleFiles(e.target.files, "material");
+          e.target.value = "";
+        }}
+        className="hidden"
+      />
+      <input
+        ref={exerciseInputRef}
+        type="file"
+        multiple
+        accept=".pdf,.txt,.md,.docx,.odt"
+        onChange={e => {
+          if (e.target.files) handleFiles(e.target.files, "exercise");
           e.target.value = "";
         }}
         className="hidden"
@@ -374,34 +408,8 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
         </div>
       )}
 
-      {/* Filter Tabs */}
-      {showFilters && (
-        <div className="px-3 pt-2 pb-1 flex gap-1 overflow-x-auto shrink-0">
-          {[
-            { key: "all" as FilterTab, label: "All", count: sources.length },
-            ...uniqueTypes.map(t => ({
-              key: t as FilterTab,
-              label: t === "material" ? "Material" : t === "exercise" ? "Exercise" : "Web",
-              count: typeCounts[t],
-            })),
-          ].map(tab => (
-            <button
-              key={tab.key}
-              onClick={() => setFilter(tab.key)}
-              className={`px-2 py-1 rounded-md text-[11px] font-medium transition-colors whitespace-nowrap ${
-                filter === tab.key
-                  ? "bg-stone-800 text-stone-200"
-                  : "text-stone-500 hover:text-stone-300 hover:bg-stone-800/50"
-              }`}
-            >
-              {tab.label} ({tab.count})
-            </button>
-          ))}
-        </div>
-      )}
-
       <div
-        className={`flex-1 overflow-y-auto p-3 space-y-2 ${dragOver ? "bg-stone-800/30" : ""}`}
+        className={`flex-1 min-h-0 overflow-y-auto ${dragOver ? "bg-stone-800/30" : ""}`}
         onDragOver={e => { e.preventDefault(); setDragOver(true); }}
         onDragLeave={() => setDragOver(false)}
         onDrop={e => { e.preventDefault(); setDragOver(false); if (e.dataTransfer.files) handleFiles(e.dataTransfer.files); }}
@@ -414,41 +422,94 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
             <p>No sources yet</p>
             <p className="text-xs mt-1">Drop files here or click + Add</p>
           </div>
-        ) : filteredSources.length === 0 ? (
-          <div className="flex flex-col items-center justify-center h-full text-stone-600 text-sm">
-            <p>No {filter} sources</p>
-          </div>
         ) : (
-          filteredSources.map(s => {
-            const st = s.sourceType || "material";
-            return (
-              <div key={s.id} className={`flex items-center gap-2 p-2 rounded-lg bg-stone-900/50 border border-stone-800 group hover:border-stone-700 transition-colors ${rowBorder(st)}`}>
-                <div className={`w-9 h-9 rounded-md flex items-center justify-center text-[10px] font-bold shrink-0 ${iconBg(st)}`}>
-                  {fileIcon(s.mimeType, st)}
+          <div className="divide-y divide-stone-800/50">
+            {/* Materials Section */}
+            <div>
+              <button
+                onClick={() => toggleSection("material")}
+                className="w-full px-3 py-2.5 flex items-center justify-between hover:bg-stone-900/50 transition-colors"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded bg-stone-800 flex items-center justify-center text-[9px] font-bold text-stone-400 shrink-0">
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                  </span>
+                  <span className="text-xs font-medium text-stone-300 uppercase tracking-wider">Sources</span>
+                  <span className="text-[10px] text-stone-600">{materialSources.length}</span>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm text-stone-200 truncate">{s.originalName}</p>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs text-stone-500">{formatSize(s.size)}</span>
-                    {st === "exercise" && (
-                      <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-amber-900/30 text-amber-400 font-medium">Exercise</span>
-                    )}
-                    {st === "websearch" && (
-                      <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-900/30 text-blue-400 font-medium">Web</span>
-                    )}
-                  </div>
+                <svg className={`w-3.5 h-3.5 text-stone-500 transition-transform ${openSections.material ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {openSections.material && (
+                <div className="px-3 pb-2 space-y-1.5">
+                  {materialSources.length === 0 ? (
+                    <p className="text-[11px] text-stone-600 py-1 px-1">No materials added</p>
+                  ) : materialSources.map(s => (
+                    <SourceRow key={s.id} source={s} onRemove={removeSource} />
+                  ))}
                 </div>
-                <button
-                  onClick={() => removeSource(s.id)}
-                  className="text-stone-600 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all p-1"
-                >
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            );
-          })
+              )}
+            </div>
+
+            {/* Exercises Section */}
+            <div>
+              <button
+                onClick={() => toggleSection("exercise")}
+                className="w-full px-3 py-2.5 flex items-center justify-between hover:bg-stone-900/50 transition-colors"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded bg-amber-900/40 flex items-center justify-center text-[9px] font-bold text-amber-400 shrink-0">EX</span>
+                  <span className="text-xs font-medium text-stone-300 uppercase tracking-wider">Exams</span>
+                  <span className="text-[10px] text-stone-600">{exerciseSources.length}</span>
+                </div>
+                <svg className={`w-3.5 h-3.5 text-stone-500 transition-transform ${openSections.exercise ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {openSections.exercise && (
+                <div className="px-3 pb-2 space-y-1.5">
+                  {exerciseSources.length === 0 ? (
+                    <p className="text-[11px] text-stone-600 py-1 px-1">No exams added</p>
+                  ) : exerciseSources.map(s => (
+                    <SourceRow key={s.id} source={s} onRemove={removeSource} />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Web Search Section */}
+            <div>
+              <button
+                onClick={() => toggleSection("websearch")}
+                className="w-full px-3 py-2.5 flex items-center justify-between hover:bg-stone-900/50 transition-colors"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded bg-blue-900/40 flex items-center justify-center text-[9px] font-bold text-blue-400 shrink-0">
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                    </svg>
+                  </span>
+                  <span className="text-xs font-medium text-stone-300 uppercase tracking-wider">Web</span>
+                  <span className="text-[10px] text-stone-600">{webSources.length}</span>
+                </div>
+                <svg className={`w-3.5 h-3.5 text-stone-500 transition-transform ${openSections.websearch ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {openSections.websearch && (
+                <div className="px-3 pb-2 space-y-1.5">
+                  {webSources.length === 0 ? (
+                    <p className="text-[11px] text-stone-600 py-1 px-1">No web sources</p>
+                  ) : webSources.map(s => (
+                    <SourceRow key={s.id} source={s} onRemove={removeSource} />
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         )}
       </div>
 

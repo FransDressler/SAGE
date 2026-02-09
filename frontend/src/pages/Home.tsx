@@ -52,48 +52,82 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen px-6 py-8 max-w-5xl mx-auto">
-      <header className="flex items-center justify-between mb-10">
-        <h1 className="text-2xl font-semibold text-bone-light tracking-tight">PageLM</h1>
-        <button
-          onClick={() => setShowCreate(true)}
-          className="px-4 py-2 bg-accent hover:bg-accent-hover text-stone-950 rounded-lg text-sm font-medium transition-colors"
-        >
-          + New Subject
-        </button>
-      </header>
+    <div className="h-screen relative">
+      {/* Grid lines — two vertical + two horizontal spanning the full viewport */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Vertical lines */}
+        <div className="absolute top-0 bottom-0 left-[8%] sm:left-[12%] w-px bg-stone-700/40" />
+        <div className="absolute top-0 bottom-0 right-[8%] sm:right-[12%] w-px bg-stone-700/40" />
+        {/* Horizontal lines */}
+        <div className="absolute left-0 right-0 top-[18%] h-px bg-stone-700/40" />
+        <div className="absolute left-0 right-0 bottom-[14%] h-px bg-stone-700/40" />
+      </div>
 
-      {loading ? (
-        <div className="flex items-center justify-center h-64">
-          <div className="w-6 h-6 border-2 border-stone-600 border-t-bone rounded-full animate-spin" />
-        </div>
-      ) : subjects.length === 0 ? (
-        <div className="flex flex-col items-center justify-center h-64 text-stone-500">
-          <svg className="w-16 h-16 mb-4 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-          </svg>
-          <p className="text-lg mb-2">No subjects yet</p>
-          <p className="text-sm mb-6">Create your first subject to get started</p>
-          <button
-            onClick={() => setShowCreate(true)}
-            className="px-4 py-2 bg-accent hover:bg-accent-hover text-stone-950 rounded-lg text-sm font-medium transition-colors"
+      {/* Content — positioned in the center cell */}
+      <div className="relative h-full flex flex-col items-center justify-center px-[10%] sm:px-[14%]">
+        {/* Title area — upper center */}
+        <div className="flex flex-col items-center mb-8">
+          <h1
+            className="text-6xl sm:text-7xl font-bold tracking-[0.08em] mb-3 bg-clip-text text-transparent select-none"
+            style={{
+              fontFamily: "'Permanent Marker', cursive",
+              backgroundImage: `
+                radial-gradient(ellipse at 15% 50%, #E8956A 0%, transparent 50%),
+                radial-gradient(ellipse at 85% 40%, #6A8CB8 0%, transparent 50%),
+                radial-gradient(ellipse at 45% 80%, #D4704A 0%, transparent 45%),
+                radial-gradient(ellipse at 65% 15%, #8AACC8 0%, transparent 45%),
+                linear-gradient(135deg, #E8A06A 0%, #D07850 25%, #C85A5A 50%, #9068A0 75%, #5878A8 100%)
+              `,
+            }}
           >
-            + Create Subject
-          </button>
+            S.A.G.E.
+          </h1>
+          <p className="text-sm text-stone-500 tracking-wide">Study Aid for Guided Education</p>
         </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {subjects.map(s => (
-            <SubjectCard
-              key={s.id}
-              subject={s}
-              onClick={() => navigate(`/subject/${s.id}`)}
-              onDelete={() => handleDelete(s.id)}
-              onRename={(name) => handleRename(s.id, name)}
-            />
-          ))}
+
+        {/* Subjects area — lower center, inside the inner rectangle */}
+        <div className="w-full max-w-3xl">
+          {loading ? (
+            <div className="flex items-center justify-center h-32">
+              <div className="w-6 h-6 border-2 border-stone-600 border-t-bone rounded-full animate-spin" />
+            </div>
+          ) : subjects.length === 0 ? (
+            <div className="flex flex-col items-center text-stone-500">
+              <p className="text-sm text-stone-600 mb-6">Create your first subject to get started</p>
+              <button
+                onClick={() => setShowCreate(true)}
+                className="px-5 py-2 bg-accent hover:bg-accent-hover text-stone-950 rounded-lg text-sm font-medium transition-colors"
+              >
+                + Create Subject
+              </button>
+            </div>
+          ) : (
+            <>
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs text-stone-500 uppercase tracking-wider font-medium">Subjects</span>
+                <button
+                  onClick={() => setShowCreate(true)}
+                  className="sunset-btn text-xs text-stone-500 font-medium px-3 py-1 rounded-md"
+                >
+                  + New
+                </button>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pb-16">
+                {subjects.map((s, i) => (
+                  <div key={s.id} className="animate-[fadeIn_300ms_ease_both]" style={{ animationDelay: `${i * 50}ms` }}>
+                    <SubjectCard
+                      subject={s}
+                      onClick={() => navigate(`/subject/${s.id}`)}
+                      onDelete={() => handleDelete(s.id)}
+                      onRename={(name) => handleRename(s.id, name)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
-      )}
+      </div>
 
       {showCreate && (
         <CreateSubjectDialog

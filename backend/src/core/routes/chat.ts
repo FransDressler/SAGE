@@ -1,4 +1,5 @@
-import { handleAsk } from "../../lib/ai/ask";
+import fs from "fs";
+import { handleAgentChat } from "../../lib/ai/agentChat";
 import { parseMultipart, handleUpload } from "../../lib/parser/upload";
 import {
   mkChat,
@@ -54,12 +55,21 @@ export function chatRoutes(app: any) {
       let files: UpFile[] = [];
 
       let llmOverride: ReturnType<typeof resolveOverride>;
+      let imageFiles: UpFile[] = [];
 
       if (isMp) {
-        const { q: mq, chatId: mcid, files: mf } = await parseMultipart(req);
+        const { q: mq, chatId: mcid, provider: mp, model: mm, files: mf } = await parseMultipart(req);
         q = mq;
         chatId = mcid;
-        files = mf || [];
+        const allFiles = mf || [];
+        const IMAGE_MIMES = ["image/png", "image/jpeg", "image/gif", "image/webp"];
+        const IMAGE_EXTS = [".png", ".jpg", ".jpeg", ".gif", ".webp"];
+        imageFiles = allFiles.filter(f => {
+          const ext = (f.filename.match(/\.[^.]+$/) || [""])[0].toLowerCase();
+          return IMAGE_MIMES.includes(f.mimeType) && IMAGE_EXTS.includes(ext);
+        });
+        files = allFiles.filter(f => !IMAGE_MIMES.includes(f.mimeType));
+        if (mp) llmOverride = resolveOverride({ provider: mp, model: mm });
         if (!q)
           return res.status(400).send({ error: "q required for file uploads" });
       } else {
@@ -116,12 +126,16 @@ export function chatRoutes(app: any) {
           const msgHistory = await getMsgs(subjectId, id);
           const relevantHistory = msgHistory.slice(-20);
 
-          answer = await handleAsk({
-            q,
+          answer = await handleAgentChat({
+            question: q,
             namespace: ns,
             history: relevantHistory,
             llmOverride,
             systemPrompt: customPrompt,
+            images: imageFiles.length ? imageFiles.map(f => ({ path: f.path, mimeType: f.mimeType })) : undefined,
+            onPhase: (phase, detail) => {
+              emitToAll(chatSockets.get(id), { type: "phase", value: phase, detail });
+            },
           });
 
           const stored = {
@@ -138,6 +152,11 @@ export function chatRoutes(app: any) {
           const stack = err?.stack || String(err);
           console.error("[chat] err inner", { chatId: id, msg, stack });
           emitToAll(chatSockets.get(id), { type: "error", error: msg });
+        } finally {
+          // Clean up temporary image files
+          for (const f of imageFiles) {
+            try { fs.unlinkSync(f.path); } catch {}
+          }
         }
       });
     } catch (e: any) {

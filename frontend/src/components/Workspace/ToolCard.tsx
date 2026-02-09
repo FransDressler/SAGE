@@ -1,5 +1,5 @@
 type Props = {
-  tool: "quiz" | "podcast" | "smartnotes" | "flashcards" | "transcriber" | "mindmap";
+  tool: "quiz" | "podcast" | "smartnotes" | "flashcards" | "transcriber" | "mindmap" | "exam";
   status: "idle" | "loading" | "ready" | "error";
   label?: string;
   onClick: () => void;
@@ -12,6 +12,7 @@ const TOOL_STYLES: Record<string, { icon: string; color: string; bg: string; bor
   flashcards: { icon: "F", color: "text-amber-400", bg: "bg-amber-900/20", border: "border-amber-800/40" },
   transcriber: { icon: "T", color: "text-orange-400", bg: "bg-orange-900/20", border: "border-orange-800/40" },
   mindmap: { icon: "M", color: "text-cyan-400", bg: "bg-cyan-900/20", border: "border-cyan-800/40" },
+  exam: { icon: "E", color: "text-rose-400", bg: "bg-rose-900/20", border: "border-rose-800/40" },
 };
 
 const TOOL_NAMES: Record<string, string> = {
@@ -21,6 +22,7 @@ const TOOL_NAMES: Record<string, string> = {
   flashcards: "Cards",
   transcriber: "Transcribe",
   mindmap: "Mindmap",
+  exam: "Exam",
 };
 
 export default function ToolCard({ tool, status, label, onClick }: Props) {
@@ -55,6 +57,7 @@ export default function ToolCard({ tool, status, label, onClick }: Props) {
               style.color === "text-purple-400" ? "border-t-purple-400" :
               style.color === "text-amber-400" ? "border-t-amber-400" :
               style.color === "text-orange-400" ? "border-t-orange-400" :
+              style.color === "text-rose-400" ? "border-t-rose-400" :
               "border-t-bone"
             }`} />
           ) : status === "ready" ? (

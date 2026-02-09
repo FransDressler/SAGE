@@ -10,18 +10,20 @@ if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true })
 
 export type UpFile = { path: string; filename: string; mimeType: string }
 
-export function parseMultipart(req: any): Promise<{ q: string; chatId?: string; files: UpFile[] }> {
+export function parseMultipart(req: any): Promise<{ q: string; chatId?: string; provider?: string; model?: string; files: UpFile[] }> {
   return new Promise((resolve, reject) => {
-    const bb = Busboy({ headers: req.headers })
+    const bb = Busboy({ headers: req.headers, limits: { fileSize: 20 * 1024 * 1024, files: 10 } })
     let q = ""
     let chatId = ""
+    let provider = ""
+    let model = ""
     const files: UpFile[] = []
     let pending = 0
     let ended = false
     let failed = false
-    const done = () => { if (!failed && ended && pending === 0) resolve({ q, chatId: chatId || undefined, files }) }
+    const done = () => { if (!failed && ended && pending === 0) resolve({ q, chatId: chatId || undefined, provider: provider || undefined, model: model || undefined, files }) }
 
-    bb.on("field", (n, v) => { if (n === "q") q = v; if (n === "chatId") chatId = v })
+    bb.on("field", (n, v) => { if (n === "q") q = v; if (n === "chatId") chatId = v; if (n === "provider") provider = v; if (n === "model") model = v })
     bb.on("file", (_n, file, info: any) => {
       pending++
       const filename = info?.filename || "file"

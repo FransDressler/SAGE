@@ -32,7 +32,7 @@ export type ChatInfo = { id: string; title?: string; at?: number };
 export type ChatsList = { ok: true; chats: ChatInfo[] };
 export type ChatDetail = { ok: true; chat: ChatInfo; messages: ChatMessage[] };
 export type ChatJSONBody = { q: string; chatId?: string; provider?: string; model?: string };
-export type ChatPhase = "upload_start" | "upload_done" | "generating";
+export type ChatPhase = "upload_start" | "upload_done" | "generating" | "thinking" | "searching_sources" | "searching_web" | "reading_results";
 export type FlashCard = { q: string; a: string; tags?: string[] };
 export type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string };
 export type UA = { questionId: number; selectedAnswer: number; correct: boolean; question: string; selectedOption: string; correctOption: string; explanation: string };
@@ -64,7 +64,7 @@ export type SavedFlashcard = {
 };
 export type ChatEvent =
   | { type: "ready"; chatId: string }
-  | { type: "phase"; value: ChatPhase }
+  | { type: "phase"; value: ChatPhase; detail?: string }
   | { type: "file"; filename: string; mime: string }
   | { type: "answer"; answer: AnswerPayload }
   | { type: "done" }
@@ -78,7 +78,7 @@ export type TranscriptionResponse = {
   error?: string;
 };
 
-export type RagSource = { sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string; sourceType?: SourceType };
+export type RagSource = { sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string; sourceType?: SourceType; url?: string };
 type AnswerPayload = string | { answer: string; flashcards?: FlashCard[]; sources?: RagSource[] };
 
 // --- HTTP helpers ---
@@ -205,10 +205,12 @@ export async function chatJSON(subjectId: string, body: ChatJSONBody) {
   );
 }
 
-export async function chatMultipart(subjectId: string, q: string, files: File[], chatId?: string) {
+export async function chatMultipart(subjectId: string, q: string, files: File[], opts?: { chatId?: string; provider?: string; model?: string }) {
   const f = new FormData();
   f.append("q", q);
-  if (chatId) f.append("chatId", chatId);
+  if (opts?.chatId) f.append("chatId", opts.chatId);
+  if (opts?.provider) f.append("provider", opts.provider);
+  if (opts?.model) f.append("model", opts.model);
   for (const file of files) f.append("file", file, file.name);
   return req<ChatStartResponse>(
     `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chat`,
@@ -386,9 +388,29 @@ export type MindmapEvent =
   | { type: "error"; error: string }
   | { type: "ping"; t: number };
 
+export type ExamQuestion = {
+  id: number;
+  question: string;
+  type: "open" | "mcq";
+  options?: string[];
+  correctAnswer?: string;
+  hint: string;
+  solution: string;
+  points: number;
+  source: string;
+};
+
+export type ExamEvent =
+  | { type: "ready"; examId: string }
+  | { type: "phase"; value: string }
+  | { type: "exam"; exam: { questions: ExamQuestion[]; totalPoints: number; timeLimit: number } }
+  | { type: "done" }
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
+
 export type ToolRecord = {
   id: string;
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap";
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam";
   topic: string;
   config: Record<string, string | undefined>;
   createdAt: number;
@@ -507,6 +529,31 @@ export function connectWebSearchStream(jobId: string, onEvent: (ev: WebSearchEve
   return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
+// --- Exam ---
+
+export async function examStart(subjectId: string, payload: { sourceIds: string[]; timeLimit?: number; shuffle?: boolean; maxQuestions?: number; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }) {
+  return req<{ ok: true; examId: string; stream: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/exam`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(payload),
+    }
+  );
+}
+
+export function connectExamStream(examId: string, onEvent: (ev: ExamEvent) => void) {
+  const url = wsURL(`/ws/exam?examId=${encodeURIComponent(examId)}`);
+  const ws = new WebSocket(url);
+  ws.onmessage = (m) => {
+    try {
+      onEvent(JSON.parse(m.data as string) as ExamEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
+}
+
 // --- Markdown ---
 
 export async function fetchMarkdownContent(url: string): Promise<string> {
@@ -518,6 +565,68 @@ export async function fetchMarkdownContent(url: string): Promise<string> {
   const r = await fetch(url);
   if (!r.ok) throw new Error(`Failed to fetch markdown: ${r.status}`);
   return r.text();
+}
+
+// --- Subject Graph ---
+
+export type SubjectGraphEvent =
+  | { type: "ready"; subjectId: string }
+  | { type: "phase"; value: string; detail?: string }
+  | { type: "graph"; data: any }
+  | { type: "done" }
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
+
+export function getSubjectGraph(subjectId: string) {
+  return req<{ ok: true; data: any | null }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/graph`
+  );
+}
+
+export function rebuildSubjectGraph(subjectId: string, model?: { provider?: string; model?: string }) {
+  return req<{ ok: true; graphId: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/graph/rebuild`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(model || {}),
+    }
+  );
+}
+
+export function expandSubjectGraph(subjectId: string, sourceIds: string[]) {
+  return req<{ ok: true; graphId: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/graph/expand`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ sourceIds }),
+    }
+  );
+}
+
+export function aiEditSubjectGraph(subjectId: string, instruction: string, currentData: any, model?: { provider?: string; model?: string }) {
+  return req<{ ok: true; data: any }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/graph/ai-edit`,
+    {
+      method: "PATCH",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ instruction, currentData, ...model }),
+      timeout: 120000,
+    }
+  );
+}
+
+export function connectSubjectGraphStream(subjectId: string, onEvent: (ev: SubjectGraphEvent) => void) {
+  const url = wsURL(`/ws/subjectgraph?subjectId=${encodeURIComponent(subjectId)}`);
+  const ws = new WebSocket(url);
+  ws.onmessage = (m) => {
+    try {
+      onEvent(JSON.parse(m.data as string) as SubjectGraphEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
 }
 
 // --- Util ---

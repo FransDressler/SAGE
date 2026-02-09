@@ -8,7 +8,7 @@ export default function QuestionCard({
 }) {
   return (
     <div id="quizContent" className="space-y-8">
-      <div id="questionCard" className="bg-stone-950 border border-stone-900 rounded-2xl p-6">
+      <div id="questionCard" className="bg-stone-900 border border-stone-900 rounded-2xl p-6">
         <div className="mb-6">
           <h2 id="questionText" className="text-xl font-semibold text-white mb-4">{q.question}</h2>
           <div id="questionImage" className={`${q.imageHtml ? "" : "hidden"} mb-4`} dangerouslySetInnerHTML={{ __html: q.imageHtml || "" }} />

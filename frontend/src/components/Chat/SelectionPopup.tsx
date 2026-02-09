@@ -12,7 +12,7 @@ export default function SelectionPopup({ selected, addNote, askDoubt, popupRef }
   return (
     <div
       ref={popupRef}
-      className="absolute z-50 bg-stone-950/50 border border-stone-900 rounded-xl p-2 shadow-xl backdrop-blur-md"
+      className="absolute z-50 bg-stone-900/50 border border-stone-900 rounded-xl p-2 shadow-xl backdrop-blur-md"
       style={{ left: selected.x, top: selected.y + 10, transition: "opacity .15s" }}
     >
       <button

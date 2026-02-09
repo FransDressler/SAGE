@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
+import ModelSelector from "../../ModelSelector";
+import { useModels } from "../../../../context/ModelContext";
 
 type Props = {
-  onSubmit: (instruction: string) => void;
+  onSubmit: (instruction: string, model?: { provider?: string; model?: string }) => void;
   onClose: () => void;
   loading: boolean;
 };
@@ -16,12 +18,17 @@ const EXAMPLES = [
 ];
 
 export default function MindmapEditPopup({ onSubmit, onClose, loading }: Props) {
+  const { chatModel } = useModels();
   const [instruction, setInstruction] = useState("");
+  const [toolModel, setToolModel] = useState(chatModel);
 
   const handleSubmit = () => {
     const trimmed = instruction.trim();
     if (!trimmed || loading) return;
-    onSubmit(trimmed);
+    onSubmit(trimmed, {
+      provider: toolModel.provider || undefined,
+      model: toolModel.model || undefined,
+    });
   };
 
   return createPortal(
@@ -56,7 +63,7 @@ export default function MindmapEditPopup({ onSubmit, onClose, loading }: Props) 
             onKeyDown={(e) => {
               if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) handleSubmit();
             }}
-            className="w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600 resize-none disabled:opacity-50"
+            className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600 resize-none disabled:opacity-50"
           />
           <div className="flex flex-wrap gap-1.5">
             {EXAMPLES.map((ex) => (
@@ -69,6 +76,16 @@ export default function MindmapEditPopup({ onSubmit, onClose, loading }: Props) 
                 {ex}
               </button>
             ))}
+          </div>
+
+          {/* Model */}
+          <div>
+            <label className="block text-xs font-medium text-stone-400 mb-1.5">Model</label>
+            <ModelSelector
+              value={toolModel.provider}
+              onChange={(provider, model) => setToolModel({ provider, model })}
+              className="w-full"
+            />
           </div>
         </div>
 

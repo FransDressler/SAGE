@@ -50,7 +50,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
               onChange={(e) => setLabel(e.target.value)}
               placeholder="Concept name"
               autoFocus
-              className="w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600"
+              className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600"
             />
           </div>
 
@@ -61,7 +61,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Brief description…"
               rows={2}
-              className="w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600 resize-none"
+              className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600 resize-none"
             />
           </div>
 
@@ -75,7 +75,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
                   className={`px-2 py-1 rounded-md text-[11px] font-medium transition-colors ${
                     category === c
                       ? "bg-cyan-700/30 border border-cyan-600 text-cyan-300"
-                      : "bg-stone-950 border border-stone-800 text-stone-500 hover:text-stone-300"
+                      : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
                   }`}
                 >
                   {c}
@@ -94,7 +94,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
                   className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     importance === imp
                       ? "bg-cyan-700/30 border border-cyan-600 text-cyan-300"
-                      : "bg-stone-950 border border-stone-800 text-stone-500 hover:text-stone-300"
+                      : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
                   }`}
                 >
                   {imp.charAt(0).toUpperCase() + imp.slice(1)}

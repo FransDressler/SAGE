@@ -72,7 +72,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
                 value={label}
                 onChange={(e) => setLabel(e.target.value)}
                 autoFocus
-                className="w-full bg-stone-950 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
               />
             </div>
             <div>
@@ -81,7 +81,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={2}
-                className="w-full bg-stone-950 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600 resize-none"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600 resize-none"
               />
             </div>
             <div>
@@ -89,7 +89,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="w-full bg-stone-950 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
               >
                 {CATEGORIES.map((c) => (
                   <option key={c} value={c}>{c}</option>
@@ -106,7 +106,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
                     className={`flex-1 py-1 rounded text-[10px] font-medium transition-colors ${
                       importance === imp
                         ? "bg-cyan-700/30 border border-cyan-600 text-cyan-300"
-                        : "bg-stone-950 border border-stone-800 text-stone-500"
+                        : "bg-stone-900 border border-stone-800 text-stone-500"
                     }`}
                   >
                     {imp}

@@ -165,7 +165,7 @@ export function mindmapRoutes(app: any) {
       if (dataErr) return res.status(400).send({ ok: false, error: dataErr })
 
       const llmOverride = resolveOverride(req.body)
-      const newData = await editMindmapWithAI(currentData, instruction, llmOverride)
+      const newData = await editMindmapWithAI(currentData, instruction, subjectId, llmOverride)
 
       if (toolId) {
         await updateTool(subjectId, toolId, { type: "mindmap", data: newData }).catch(e =>

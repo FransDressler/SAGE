@@ -16,11 +16,23 @@ export type ToolConfig = {
   model?: string;
 };
 
+export type ExamToolConfig = {
+  sourceIds: string[];
+  timeLimit: number;
+  shuffle: boolean;
+  maxQuestions?: number;
+  focusArea?: string;
+  additionalInstructions?: string;
+  provider?: string;
+  model?: string;
+};
+
 type Props = {
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap";
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam";
   sources: Source[];
   defaultTopic: string;
   onStart: (config: ToolConfig) => void;
+  onStartExam?: (config: ExamToolConfig) => void;
   onClose: () => void;
 };
 
@@ -29,6 +41,7 @@ const TOOL_META: Record<string, { label: string; color: string; btnClass: string
   podcast: { label: "New Podcast", color: "purple", btnClass: "bg-purple-700 hover:bg-purple-600", borderFocus: "focus:border-purple-600" },
   smartnotes: { label: "New Notes", color: "bone", btnClass: "bg-accent hover:bg-accent-hover text-stone-950", borderFocus: "focus:border-stone-600" },
   mindmap: { label: "Generate Mindmap", color: "cyan", btnClass: "bg-cyan-700 hover:bg-cyan-600", borderFocus: "focus:border-cyan-600" },
+  exam: { label: "New Exam", color: "rose", btnClass: "bg-rose-700 hover:bg-rose-600", borderFocus: "focus:border-rose-600" },
 };
 
 const LENGTH_LABELS: Record<string, Record<string, string>> = {
@@ -45,7 +58,7 @@ function formatSize(bytes: number) {
   return `${(bytes / 1048576).toFixed(1)} MB`;
 }
 
-export default function StudyToolModal({ tool, sources, defaultTopic, onStart, onClose }: Props) {
+export default function StudyToolModal({ tool, sources, defaultTopic, onStart, onStartExam, onClose }: Props) {
   const { chatModel } = useModels();
   const meta = TOOL_META[tool];
 
@@ -53,12 +66,15 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
   const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard">("medium");
   const [length, setLength] = useState<"short" | "medium" | "long">("medium");
   const [selectedSources, setSelectedSources] = useState<Set<string>>(new Set());
-  const [allSources, setAllSources] = useState(true);
+  const [allSources, setAllSources] = useState(tool !== "exam");
   const [focusArea, setFocusArea] = useState("");
   const [additionalInstructions, setAdditionalInstructions] = useState("");
   const [tone, setTone] = useState("casual");
   const [toolModel, setToolModel] = useState(chatModel);
-  const [sourceFilter, setSourceFilter] = useState<"all" | SourceType>("all");
+  const [sourceFilter, setSourceFilter] = useState<"all" | SourceType>(tool === "exam" ? "exercise" : "all");
+  const [examTimeLimit, setExamTimeLimit] = useState(0);
+  const [examShuffle, setExamShuffle] = useState(false);
+  const [examMaxQuestions, setExamMaxQuestions] = useState("");
 
   useEffect(() => {
     if (allSources) setSelectedSources(new Set(sources.map(s => s.id)));
@@ -84,6 +100,21 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
   };
 
   const handleStart = () => {
+    if (tool === "exam") {
+      const ids = allSources ? sources.map(s => s.id) : Array.from(selectedSources);
+      if (ids.length === 0) return;
+      onStartExam?.({
+        sourceIds: ids,
+        timeLimit: examTimeLimit,
+        shuffle: examShuffle,
+        maxQuestions: examMaxQuestions ? Number(examMaxQuestions) : undefined,
+        focusArea: focusArea.trim() || undefined,
+        additionalInstructions: additionalInstructions.trim() || undefined,
+        provider: toolModel.provider || undefined,
+        model: toolModel.model || undefined,
+      });
+      return;
+    }
     if (tool !== "mindmap" && !topic.trim()) return;
     onStart({
       topic: tool === "mindmap" ? (topic.trim() || "Knowledge Map") : topic.trim(),
@@ -119,17 +150,19 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
 
         {/* Body */}
         <div className="px-5 py-4 space-y-4 max-h-[70vh] overflow-y-auto custom-scroll">
-          {/* Topic */}
+          {/* Topic (hidden for exam) */}
+          {tool !== "exam" && (
           <div>
             <label className="block text-xs font-medium text-stone-400 mb-1.5">Topic</label>
             <input
               value={topic}
               onChange={e => setTopic(e.target.value)}
               placeholder={tool === "mindmap" ? "e.g. Machine Learning concepts..." : "Enter topic..."}
-              className={`w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none ${meta.borderFocus}`}
+              className={`w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none ${meta.borderFocus}`}
               autoFocus
             />
           </div>
+          )}
 
           {/* Sources */}
           {sources.length > 0 && (() => {
@@ -168,7 +201,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
                   ))}
                 </div>
               )}
-              <div className="bg-stone-950 border border-stone-800 rounded-lg overflow-hidden">
+              <div className="bg-stone-900 border border-stone-800 rounded-lg overflow-hidden">
                 <label className="flex items-center gap-2 px-3 py-2 border-b border-stone-800 cursor-pointer hover:bg-stone-800/30">
                   <input
                     type="checkbox"
@@ -219,7 +252,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
                 tool === "smartnotes" ? "e.g. only cover section 2 and 3..." :
                 "e.g. neural networks and backpropagation..."
               }
-              className={`w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none ${meta.borderFocus}`}
+              className={`w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none ${meta.borderFocus}`}
             />
           </div>
 
@@ -230,7 +263,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
               <select
                 value={tone}
                 onChange={e => setTone(e.target.value)}
-                className={`w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 outline-none ${meta.borderFocus}`}
+                className={`w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 outline-none ${meta.borderFocus}`}
               >
                 <option value="casual">Casual & Fun</option>
                 <option value="formal">Formal Academic</option>
@@ -253,7 +286,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
                     className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                       difficulty === d
                         ? "bg-green-700/30 border border-green-600 text-green-300"
-                        : "bg-stone-950 border border-stone-800 text-stone-500 hover:text-stone-300"
+                        : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
                     }`}
                   >
                     {d.charAt(0).toUpperCase() + d.slice(1)}
@@ -263,8 +296,63 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
             </div>
           )}
 
-          {/* Length (hidden for mindmap) */}
-          {tool !== "mindmap" && <div>
+          {/* Exam-specific: Time Limit, Shuffle, Max Questions */}
+          {tool === "exam" && (
+            <>
+              <div>
+                <label className="block text-xs font-medium text-stone-400 mb-1.5">Time Limit</label>
+                <div className="flex gap-1.5">
+                  {([
+                    { value: 0, label: "Untimed" },
+                    { value: 30, label: "30 min" },
+                    { value: 60, label: "60 min" },
+                    { value: 90, label: "90 min" },
+                  ] as const).map(opt => (
+                    <button
+                      key={opt.value}
+                      onClick={() => setExamTimeLimit(opt.value)}
+                      className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                        examTimeLimit === opt.value
+                          ? "bg-rose-700/30 border border-rose-600 text-rose-300"
+                          : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
+                      }`}
+                    >
+                      {opt.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={examShuffle}
+                    onChange={e => setExamShuffle(e.target.checked)}
+                    className="rounded border-stone-700 bg-stone-800 text-rose-500 focus:ring-0 focus:ring-offset-0"
+                  />
+                  <span className="text-xs text-stone-400">Shuffle questions</span>
+                </label>
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-stone-400 mb-1.5">
+                  Max Questions <span className="text-stone-600">(optional, blank = all)</span>
+                </label>
+                <input
+                  type="number"
+                  value={examMaxQuestions}
+                  onChange={e => setExamMaxQuestions(e.target.value)}
+                  min={1}
+                  placeholder="e.g. 20"
+                  className={`w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none ${meta.borderFocus}`}
+                />
+              </div>
+            </>
+          )}
+
+          {/* Length (hidden for mindmap and exam) */}
+          {tool !== "mindmap" && tool !== "exam" && <div>
             <label className="block text-xs font-medium text-stone-400 mb-1.5">Length</label>
             <div className="flex gap-1.5">
               {(["short", "medium", "long"] as const).map(l => (
@@ -274,7 +362,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
                   className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     length === l
                       ? "bg-stone-700/50 border border-stone-600 text-stone-200"
-                      : "bg-stone-950 border border-stone-800 text-stone-500 hover:text-stone-300"
+                      : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
                   }`}
                 >
                   {lengths[l]}
@@ -291,7 +379,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
               onChange={e => setAdditionalInstructions(e.target.value)}
               rows={2}
               placeholder="e.g. explain in simple terms, include real-world examples..."
-              className={`w-full bg-stone-950 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none resize-none ${meta.borderFocus}`}
+              className={`w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none resize-none ${meta.borderFocus}`}
             />
           </div>
 
@@ -313,10 +401,10 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
           </button>
           <button
             onClick={handleStart}
-            disabled={tool !== "mindmap" && !topic.trim()}
+            disabled={tool === "exam" ? (allSources ? sources.length === 0 : selectedSources.size === 0) : (tool !== "mindmap" && !topic.trim())}
             className={`px-6 py-2 rounded-lg text-sm font-medium text-white transition-colors disabled:opacity-50 ${meta.btnClass}`}
           >
-            {tool === "mindmap" ? "Generate" : "Start"}
+            {tool === "mindmap" ? "Generate" : tool === "exam" ? "Start Exam" : "Start"}
           </button>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function ResultsPanel({
   const correct = answers.filter(a => a.correct).length;
   return (
     <div id="resultsScreen" className="text-center space-y-6">
-      <div className="bg-stone-950 border border-stone-900 rounded-2xl p-8">
+      <div className="bg-stone-900 border border-stone-900 rounded-2xl p-8">
         <div id="resultIcon" className="text-6xl mb-4">{visual.icon}</div>
         <h2 className="text-3xl font-bold text-white mb-2">Quiz Complete!</h2>
         <p className="text-xl text-stone-300 mb-6">
