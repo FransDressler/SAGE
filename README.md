@@ -4,7 +4,8 @@
 <img width="1710" height="948" alt="Bildschirmfoto 2026-02-09 um 17 49 21" src="https://github.com/user-attachments/assets/f5ff6860-9ca8-4d7f-9e17-f69a84cbf9e3" />
 
 <img width="1707" height="945" alt="Bildschirmfoto 2026-02-09 um 17 46 12" src="https://github.com/user-attachments/assets/84eee3b7-920e-44f8-b29d-e23a41d55a64" />
-**Study Aid for Guided Education**
+
+** _S_tudy _A_id for _G_uided _E_ducation**
 
 
 
