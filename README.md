@@ -1,12 +1,17 @@
 <div align="center">
 
 # SAGE
+<img width="1709" height="940" alt="Bildschirmfoto 2026-02-09 um 17 45 53" src="https://github.com/user-attachments/assets/503b0433-14a7-408c-8d2a-782aec3dd734" />
+<img width="1707" height="945" alt="Bildschirmfoto 2026-02-09 um 17 46 12" src="https://github.com/user-attachments/assets/84eee3b7-920e-44f8-b29d-e23a41d55a64" />
+**Study Aid for Guided Education**
 
-**Study AI, Guided by Evidence**
+
+
 
 An enhanced fork of [PageLM](https://github.com/CaviraOSS/PageLM) — the open-source AI education platform that transforms study materials into interactive learning experiences.
 
 SAGE extends PageLM with exam simulation, mind map editing, subject graphs, UI refinements, and more.
+
 
 </div>
 
