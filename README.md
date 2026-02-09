@@ -9,9 +9,7 @@
 
 
 
-An enhanced fork of [PageLM](https://github.com/CaviraOSS/PageLM) — the open-source AI education platform that transforms study materials into interactive learning experiences.
-
-SAGE extends PageLM with exam simulation, mind map editing, subject graphs, UI refinements, and more.
+A redesigned fork of [PageLM](https://github.com/CaviraOSS/PageLM) — trimmed down, rebuilt with a new UI, and extended with new features like exam generation, AI mind maps, and subject graphs.
 
 
 </div>
@@ -26,44 +24,37 @@ SAGE extends PageLM with exam simulation, mind map editing, subject graphs, UI r
 
 ---
 
-## What SAGE Adds
+## What SAGE Changes
 
-SAGE builds on PageLM's foundation with these additions:
+SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new capabilities:
 
-| Feature | Description |
-|---------|-------------|
+| Change | Description |
+|--------|-------------|
+| **New Design** | Fully reworked UI — workspace layout, collapsible panels, mobile header, loading states, selection popups |
 | **Exam Builder** | Generate exam-style assessments from your sources with open and MCQ questions, point allocation, and time limits |
-| **Mind Map AI Editing** | AI-assisted mind map modifications — ask the AI to restructure, expand, or refine your knowledge graphs |
-| **Force-Directed Layout** | Physics-based auto-layout for mind map nodes |
+| **Mind Map + AI Editing** | Visual knowledge graphs with AI-assisted restructuring and force-directed auto-layout |
 | **Subject Graph** | Cross-subject knowledge graph visualization |
-| **UI Overhaul** | Refined workspace layout, collapsible panels, improved mobile header, selection popups, and loading indicators |
 | **Enhanced Chat** | Improved composer, markdown rendering, and source attribution display |
-| **Quiz Improvements** | Redesigned question cards, results panel, review modal, and topic bar |
+| **Quiz Redesign** | Rebuilt question cards, results panel, review modal, and topic bar |
+| **Removed** | ExamLab, Debate, and Study Companion — stripped to keep the tool focused |
 
 ---
 
-## All Features
+## Features
 
-Everything from PageLM, plus SAGE additions:
-
-### Learning Tools
-
-| Tool | Origin | Description |
-|------|--------|-------------|
-| **Contextual Chat** | PageLM | RAG-powered Q&A over uploaded documents with source attribution |
-| **SmartNotes** | PageLM | Cornell-style structured notes with PDF export |
-| **Flashcards** | PageLM | Cognitive-dimension tagged cards (anti-rote learning) |
-| **Quizzes** | PageLM | MCQ generation with hints, explanations, and scoring |
-| **AI Podcast** | PageLM | Two-speaker audio dialogues from your materials |
-| **Voice Transcriber** | PageLM | Lecture recordings to searchable, embeddable text |
-| **Homework Planner** | PageLM | AI scheduling with Pomodoro time-blocking |
-| **ExamLab** | PageLM | Simulate standardized tests (GRE, GMAT, SAT, IELTS, JEE) |
-| **Debate** | PageLM | Practice argumentation with an AI opponent |
-| **Study Companion** | PageLM | Persistent AI assistant across study sessions |
-| **Web Search** | PageLM | Pull and embed web content into your sources |
-| **Exam Builder** | SAGE | Generate custom exams from your uploaded sources |
-| **Mind Map** | SAGE | Visual knowledge graphs with AI-assisted editing and force layout |
-| **Subject Graph** | SAGE | Cross-subject knowledge visualization |
+| Tool | Description |
+|------|-------------|
+| **Contextual Chat** | RAG-powered Q&A over uploaded documents with source attribution |
+| **SmartNotes** | Cornell-style structured notes with PDF export |
+| **Flashcards** | Cognitive-dimension tagged cards (anti-rote learning) |
+| **Quizzes** | MCQ generation with hints, explanations, and scoring |
+| **AI Podcast** | Two-speaker audio dialogues from your materials |
+| **Voice Transcriber** | Lecture recordings to searchable, embeddable text |
+| **Homework Planner** | AI scheduling with Pomodoro time-blocking |
+| **Web Search** | Pull and embed web content into your sources |
+| **Exam Builder** | Generate custom exams from your uploaded sources |
+| **Mind Map** | Visual knowledge graphs with AI-assisted editing and force layout |
+| **Subject Graph** | Cross-subject knowledge visualization |
 
 ### Supported AI Providers
 
@@ -93,13 +84,11 @@ Everything from PageLM, plus SAGE additions:
 │  │ ─ Researcher│  │ ─ Quiz       │  │ ─ Hybrid Retrieval │  │
 │  │ ─ Examiner  │  │ ─ SmartNotes │  │   (BM25 + Vector)  │  │
 │  │ ─ Podcaster │  │ ─ Mindmap    │  │ ─ Parent/Child     │  │
-│  │             │  │ ─ ExamLab    │  │   document splits   │  │
-│  │  LangGraph  │  │ ─ Exam ★     │  │                    │  │
-│  │  runtime    │  │ ─ Transcriber│  │  LangChain         │  │
-│  │             │  │ ─ Web Search │  │                    │  │
-│  │             │  │ ─ SubjGraph ★│  │                    │  │
+│  │             │  │ ─ Exam       │  │   document splits   │  │
+│  │  LangGraph  │  │ ─ Transcriber│  │                    │  │
+│  │  runtime    │  │ ─ Web Search │  │  LangChain         │  │
+│  │             │  │ ─ SubjGraph  │  │                    │  │
 │  └─────────────┘  └──────────────┘  └────────────────────┘  │
-│                                         ★ = SAGE additions   │
 │  Storage: JSON files (default) or ChromaDB (vector)          │
 │  All data stays local — no cloud dependencies                │
 └──────────────────────────────────────────────────────────────┘
@@ -207,7 +196,7 @@ This repository contains two layers of licensing:
 | **Base PageLM code** | [PageLM Community License](LICENSE.md) | nullure & recabasic |
 | **SAGE additions** | [SAGE Additions License](LICENSE-ADDITIONS.md) | Frans Dressler |
 
-The base PageLM code is free for personal and educational use. SAGE additions (exam builder, mind map AI editing, subject graph, UI changes, and all other original code by Frans Dressler) are **copyright Frans Dressler** — viewing for reference only, no copying or redistribution without permission.
+The base PageLM code is free for personal and educational use. SAGE modifications (new UI design, exam builder, mind map AI editing, subject graph, and all other original code by Frans Dressler) are **copyright Frans Dressler** — viewing for reference only, no copying or redistribution without permission.
 
 See [LICENSE.md](LICENSE.md) and [LICENSE-ADDITIONS.md](LICENSE-ADDITIONS.md) for full terms.
 
