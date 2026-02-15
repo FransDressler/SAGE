@@ -86,7 +86,6 @@ export default function SourceViewer({ source, page, onClose }: {
       {pdf && contentUrl && (
         <iframe
           src={contentUrl}
-          sandbox="allow-same-origin"
           className="flex-1 min-h-0 w-full border-0 bg-stone-900"
           title={source.originalName}
         />

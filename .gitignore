@@ -33,3 +33,6 @@ vite.config.tsbuildinfo
 
 # Claude setup
 .claude
+
+# Subject data — only stored locally
+/subjects/

@@ -64,6 +64,17 @@ export default function SubjectWorkspace() {
 
   const isDesktop = useCallback(() => window.innerWidth >= 768, []);
 
+  const toggleCollapse = useCallback((col: ColumnKey) => {
+    setCollapsed(prev => {
+      const openCount = Object.values(prev).filter(v => !v).length;
+      // Prevent collapsing the last open column
+      if (!prev[col] && openCount <= 1) return prev;
+      const next = { ...prev, [col]: !prev[col] };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      return next;
+    });
+  }, []);
+
   const shortcuts = useMemo<Shortcut[]>(() => [
     // Cmd+Shift+7/8/9/0 — toggle columns (desktop only)
     { key: "7", mod: true, shift: true, action: () => { if (isDesktop()) toggleCollapse("sources"); } },
@@ -106,17 +117,6 @@ export default function SubjectWorkspace() {
     setMobileTab("chat");
     setToolChatContext(ctx);
   };
-
-  const toggleCollapse = useCallback((col: ColumnKey) => {
-    setCollapsed(prev => {
-      const openCount = Object.values(prev).filter(v => !v).length;
-      // Prevent collapsing the last open column
-      if (!prev[col] && openCount <= 1) return prev;
-      const next = { ...prev, [col]: !prev[col] };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-      return next;
-    });
-  }, []);
 
   // Auto-expand sources column when a source is opened from chat/graph
   useEffect(() => {

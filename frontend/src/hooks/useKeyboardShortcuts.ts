@@ -42,7 +42,7 @@ export function useKeyboardShortcuts(shortcuts: Shortcut[]) {
           e.key === s.key ||
           (digitCodes[s.key] != null && e.code === digitCodes[s.key]);
         if (!keyMatch) continue;
-        if (inInput && !s.allowInInputs) continue;
+        if (inInput && !s.allowInInputs && !s.mod) continue;
 
         e.preventDefault();
         e.stopPropagation();
