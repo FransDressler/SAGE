@@ -44,18 +44,18 @@ type MindmapData = {
   sourceCount: number;
 };
 
-const nodeTypes: NodeTypes = { concept: ConceptNode };
-
-const CATEGORIES = ["theory", "person", "event", "term", "process", "principle", "method"];
+const CATEGORIES = ["theory", "person", "event", "term", "process", "principle", "method"] as const;
 const CAT_COLORS: Record<string, string> = {
-  theory: "bg-blue-500",
-  person: "bg-amber-500",
-  event: "bg-rose-500",
-  term: "bg-stone-500",
-  process: "bg-green-500",
-  principle: "bg-purple-500",
-  method: "bg-cyan-500",
+  theory: "#3b82f6",
+  person: "#f59e0b",
+  event: "#f43f5e",
+  term: "#78716c",
+  process: "#22c55e",
+  principle: "#a855f7",
+  method: "#06b6d4",
 };
+
+const nodeTypes: NodeTypes = { concept: ConceptNode };
 
 function buildFlowGraph(data: MindmapData): { nodes: Node[]; edges: Edge[] } {
   const rawNodes: Node[] = data.nodes.map((n) => ({
@@ -206,8 +206,8 @@ export default function SubjectGraphColumn({ collapsed, onToggleCollapse, onChat
 
   const categories = useMemo(() => {
     if (!graphData) return [];
-    const cats = new Set(graphData.nodes.map((n) => n.category));
-    return CATEGORIES.filter((c) => cats.has(c));
+    const used = new Set(graphData.nodes.map((n) => n.category));
+    return CATEGORIES.filter((c) => used.has(c));
   }, [graphData]);
 
   if (collapsed && onToggleCollapse) return <CollapsedColumn label="Graph" side="right" onExpand={onToggleCollapse} />;
@@ -234,14 +234,14 @@ export default function SubjectGraphColumn({ collapsed, onToggleCollapse, onChat
           <div className="flex items-center gap-1">
             <button
               onClick={() => setAiEditOpen(true)}
-              className="text-xs px-2.5 py-1 bg-stone-800 hover:bg-stone-700 rounded-md text-stone-300 transition-colors"
+              className="sunset-fill-btn border border-stone-500 text-[11px] text-stone-500 font-medium px-2.5 py-0.5"
             >
               AI Edit
             </button>
             <button
               onClick={handleRebuild}
               disabled={loading}
-              className="text-xs px-2.5 py-1 bg-stone-800 hover:bg-stone-700 rounded-md text-stone-300 transition-colors disabled:opacity-50"
+              className="sunset-fill-btn border border-stone-500 text-[11px] text-stone-500 font-medium px-2.5 py-0.5 disabled:opacity-50"
             >
               Rebuild
             </button>
@@ -278,7 +278,7 @@ export default function SubjectGraphColumn({ collapsed, onToggleCollapse, onChat
           {sources.length > 0 && (
             <button
               onClick={handleRebuild}
-              className="mt-3 text-xs px-3 py-1.5 bg-stone-800 hover:bg-stone-700 rounded-md text-stone-300 transition-colors"
+              className="sunset-fill-btn mt-3 border border-stone-500 text-[11px] text-stone-500 font-medium px-2.5 py-0.5"
             >
               Build Graph
             </button>
@@ -326,28 +326,23 @@ export default function SubjectGraphColumn({ collapsed, onToggleCollapse, onChat
                 showInteractive={false}
               />
               <MiniMap
-                nodeColor={(n) => {
-                  const cat = (n.data as any)?.category || "term";
-                  const map: Record<string, string> = {
-                    theory: "#3b82f6", person: "#f59e0b", event: "#f43f5e",
-                    term: "#78716c", process: "#22c55e", principle: "#a855f7", method: "#06b6d4",
-                  };
-                  return map[cat] || "#78716c";
-                }}
+                nodeColor={(n) => CAT_COLORS[(n.data as any)?.category] || CAT_COLORS.term}
                 className="!bg-stone-900/80 !border-stone-800 !rounded-lg"
                 maskColor="rgba(0,0,0,0.6)"
               />
             </ReactFlow>
 
             {/* Legend */}
-            <div className="absolute bottom-4 left-4 flex flex-wrap gap-1.5 z-10">
-              {categories.map((cat) => (
-                <span key={cat} className="flex items-center gap-1 text-[10px] text-stone-500">
-                  <span className={`w-2 h-2 rounded-full ${CAT_COLORS[cat] || "bg-stone-500"}`} />
-                  {cat}
-                </span>
-              ))}
-            </div>
+            {categories.length > 0 && (
+              <div className="absolute bottom-4 left-4 flex flex-col gap-1 z-10 bg-stone-900/80 backdrop-blur-sm rounded-lg px-2.5 py-2 border border-stone-800/50">
+                {categories.map((cat) => (
+                  <div key={cat} className="flex items-center gap-1.5">
+                    <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: CAT_COLORS[cat] }} />
+                    <span className="text-[10px] text-stone-400 capitalize">{cat}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </>
       )}

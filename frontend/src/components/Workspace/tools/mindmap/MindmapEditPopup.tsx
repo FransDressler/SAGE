@@ -63,7 +63,7 @@ export default function MindmapEditPopup({ onSubmit, onClose, loading }: Props) 
             onKeyDown={(e) => {
               if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) handleSubmit();
             }}
-            className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600 resize-none disabled:opacity-50"
+            className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-bone-muted resize-none disabled:opacity-50"
           />
           <div className="flex flex-wrap gap-1.5">
             {EXAMPLES.map((ex) => (
@@ -101,7 +101,7 @@ export default function MindmapEditPopup({ onSubmit, onClose, loading }: Props) 
           <button
             onClick={handleSubmit}
             disabled={!instruction.trim() || loading}
-            className="px-6 py-2 rounded-lg text-sm font-medium text-white bg-cyan-700 hover:bg-cyan-600 transition-colors disabled:opacity-50 flex items-center gap-2"
+            className="px-6 py-2 rounded-lg text-sm font-medium sunset-btn bg-stone-800 text-bone transition-colors disabled:opacity-50 disabled:pointer-events-none flex items-center gap-2"
           >
             {loading && (
               <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

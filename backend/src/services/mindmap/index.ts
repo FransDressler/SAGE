@@ -12,8 +12,18 @@ export type MindmapOptions = {
   instructions?: UserInstructions
 }
 
-const MAX_NODES = 200
+const NODES_PER_SOURCE = 15
+const EDGES_PER_SOURCE = 45
+const MIN_NODES = 30
+const MIN_EDGES = 90
 const BATCH_SIZE = 10
+
+function maxNodes(sourceCount: number): number {
+  return Math.max(MIN_NODES, sourceCount * NODES_PER_SOURCE)
+}
+function maxEdges(sourceCount: number): number {
+  return Math.max(MIN_EDGES, sourceCount * EDGES_PER_SOURCE)
+}
 
 function slugify(s: string): string {
   return s
@@ -27,6 +37,8 @@ function normalizeLabel(s: string): string {
   return s.trim().toLowerCase().replace(/\s+/g, " ")
 }
 
+const NODE_COLORS = ["#FFCBE1", "#D6E5BD", "#F9E1A8", "#BCD8EC", "#DCCCEC", "#FFDAB4"]
+
 const EXTRACTION_PROMPT = `Extract key concepts and their relationships from the following text.
 Return ONLY a JSON object with this exact structure (no markdown, no code fences):
 {
@@ -35,14 +47,15 @@ Return ONLY a JSON object with this exact structure (no markdown, no code fences
       "label": "concept name",
       "description": "1-2 sentence summary",
       "category": "theory|person|event|term|process|principle|method",
-      "importance": "high|medium|low"
+      "importance": "high|medium|low",
+      "color": "#HEX"
     }
   ],
   "relationships": [
     {
       "from": "concept label (exact match)",
       "to": "concept label (exact match)",
-      "label": "relationship type (causes, part-of, contrasts, supports, leads-to, example-of, etc.)",
+      "label": "relationship type (causes, part-of, contrasts, supports, leads-to, example-of, subtopic-of, etc.)",
       "weight": 0.5
     }
   ]
@@ -54,19 +67,26 @@ Guidelines:
 - Use the same language as the source material
 - Weight should be 0-1 (1 = strongest relationship)
 - Each concept needs a clear, concise description
-- Only create relationships between concepts you extracted`
+- Only create relationships between concepts you extracted
+- Create parent/umbrella concepts that group related child concepts (e.g. "Thermodynamics" as parent of "Entropy" and "Enthalpy"). Use "part-of" or "subtopic-of" relationships to connect children to parents
+- Mark parent/umbrella concepts as importance "high", key concepts as "medium", and supporting details as "low"
+- Identify bridging concepts that connect different topic areas or categories — these help readers see cross-topic relationships
+- Assign a color to each concept from ONLY these 6 colors: ${NODE_COLORS.join(", ")}
+- Use the SAME color for thematically related concepts (e.g. all biology concepts share one color, all physics concepts share another)
+- Spread colors across different thematic clusters so each cluster is visually distinct`
 
 const AI_EDIT_PROMPT = `You are a knowledge graph editor. You receive a knowledge graph and an editing instruction.
 Apply the requested changes and return the COMPLETE updated graph as JSON.
 
 Rules:
 - Keep all existing nodes/edges unless explicitly asked to remove them
-- New nodes need: id (lowercase-slugified-label), label, description, category (theory|person|event|term|process|principle|method), importance (high|medium|low)
+- New nodes need: id (lowercase-slugified-label), label, description, category (theory|person|event|term|process|principle|method), importance (high|medium|low), color (hex from palette)
 - New edges need: source (node id), target (node id), label (relationship type), weight (0-1)
 - Preserve the original language of existing content
+- Assign colors ONLY from this palette: ${NODE_COLORS.join(", ")}. Use the same color for thematically related nodes.
 - Return ONLY a JSON object (no markdown, no code fences):
 {
-  "nodes": [{ "id": "...", "label": "...", "description": "...", "category": "...", "importance": "high|medium|low", "sources": [] }],
+  "nodes": [{ "id": "...", "label": "...", "description": "...", "category": "...", "importance": "high|medium|low", "color": "#HEX", "sources": [] }],
   "edges": [{ "source": "node-id", "target": "node-id", "label": "...", "weight": 0.5 }]
 }`
 
@@ -74,11 +94,15 @@ const CONSOLIDATION_PROMPT = `You are given a knowledge graph with many nodes. C
 1. Merge near-duplicate concepts (keep the best description)
 2. Remove trivial or overly generic concepts
 3. Keep the most meaningful relationships
-4. Aim for a clean, navigable graph
+4. Aim for a clean, navigable graph with clear hierarchy
+5. Ensure each category has at least one high-importance parent/umbrella node that child concepts connect to via "part-of" or "subtopic-of" edges
+6. Add bridging edges between clusters where concepts from different categories are related — these help connect topic areas
+7. Use "part-of", "subtopic-of" for parent-child; "relates-to", "causes", "supports" etc. for cross-category bridges
+8. Assign colors ONLY from this palette: ${NODE_COLORS.join(", ")}. Use the same color for thematically related concepts so each cluster is visually distinct.
 
 Return ONLY a JSON object (no markdown, no code fences):
 {
-  "concepts": [{ "label": "...", "description": "...", "category": "...", "importance": "high|medium|low" }],
+  "concepts": [{ "label": "...", "description": "...", "category": "...", "importance": "high|medium|low", "color": "#HEX" }],
   "relationships": [{ "from": "...", "to": "...", "label": "...", "weight": 0.5 }]
 }`
 
@@ -108,8 +132,13 @@ function toText(out: any): string {
 }
 
 type RawExtraction = {
-  concepts: Array<{ label: string; description: string; category: string; importance: string }>
+  concepts: Array<{ label: string; description: string; category: string; importance: string; color?: string }>
   relationships: Array<{ from: string; to: string; label: string; weight: number }>
+}
+
+function validColor(c: unknown): string {
+  if (typeof c === "string" && NODE_COLORS.includes(c.toUpperCase())) return c.toUpperCase()
+  return NODE_COLORS[Math.floor(Math.random() * NODE_COLORS.length)]
 }
 
 async function extractBatch(text: string, model: LLM, topic?: string, instructions?: UserInstructions): Promise<RawExtraction> {
@@ -125,7 +154,7 @@ async function extractBatch(text: string, model: LLM, topic?: string, instructio
   const parsed = tryParse<any>(json)
   if (!parsed || !Array.isArray(parsed.concepts)) return { concepts: [], relationships: [] }
   return {
-    concepts: parsed.concepts.filter((c: any) => c?.label),
+    concepts: parsed.concepts.filter((c: any) => c?.label).map((c: any) => ({ ...c, color: c.color })),
     relationships: Array.isArray(parsed.relationships) ? parsed.relationships.filter((r: any) => r?.from && r?.to) : [],
   }
 }
@@ -265,6 +294,7 @@ export async function generateMindmap(
         description: c.description?.trim() || "",
         category: c.category?.trim() || "term",
         importance,
+        color: validColor(c.color),
         sources: findSources(c.label, sourceMap),
       })
     }
@@ -299,7 +329,7 @@ export async function generateMindmap(
     emit("consolidating", "Refining graph with LLM...")
     try {
       const graphSummary = JSON.stringify({
-        concepts: nodes.map(n => ({ label: n.label, description: n.description, category: n.category, importance: n.importance })),
+        concepts: nodes.map(n => ({ label: n.label, description: n.description, category: n.category, importance: n.importance, color: n.color })),
         relationships: edges.map(e => {
           const from = nodeMap.get(e.source)?.label || e.source
           const to = nodeMap.get(e.target)?.label || e.target
@@ -333,6 +363,7 @@ export async function generateMindmap(
             description: c.description?.trim() || oldNode?.description || "",
             category: c.category?.trim() || oldNode?.category || "term",
             importance: (["high", "medium", "low"].includes(c.importance) ? c.importance : "medium") as ConceptNode["importance"],
+            color: validColor(c.color) || oldNode?.color || validColor(null),
             sources: oldNode?.sources || findSources(c.label, sourceMap),
           })
         }
@@ -361,15 +392,24 @@ export async function generateMindmap(
     }
   }
 
-  if (nodes.length > MAX_NODES) {
+  const nodeLimit = maxNodes(sourceCount)
+  const edgeLimit = maxEdges(sourceCount)
+
+  if (nodes.length > nodeLimit) {
     nodes = nodes
       .sort((a, b) => {
         const rank = { high: 0, medium: 1, low: 2 }
         return rank[a.importance] - rank[b.importance]
       })
-      .slice(0, MAX_NODES)
+      .slice(0, nodeLimit)
     const nodeIds = new Set(nodes.map(n => n.id))
     edges = edges.filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
+  }
+
+  if (edges.length > edgeLimit) {
+    edges = edges
+      .sort((a, b) => b.weight - a.weight)
+      .slice(0, edgeLimit)
   }
 
   emit("done")
@@ -437,6 +477,12 @@ export async function editMindmapWithAI(
   }
   const existingIds = new Set(currentData.nodes.map(n => n.id))
 
+  // Build lookup of existing node colors to preserve them
+  const existingColors = new Map<string, string>()
+  for (const n of currentData.nodes) {
+    if (n.color) existingColors.set(n.id, n.color)
+  }
+
   const nodes: ConceptNode[] = parsed.nodes
     .filter((n: any) => n?.id && n?.label)
     .map((n: any) => {
@@ -450,6 +496,7 @@ export async function editMindmapWithAI(
         description: n.description?.trim() || "",
         category: n.category?.trim() || "term",
         importance: (["high", "medium", "low"].includes(n.importance) ? n.importance : "medium") as ConceptNode["importance"],
+        color: existingColors.get(id) || validColor(n.color),
         sources,
       }
     })

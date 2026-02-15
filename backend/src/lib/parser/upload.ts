@@ -4,6 +4,9 @@ import mammoth from "mammoth"
 import { extractText as unpdfExtract, getDocumentProxy } from "unpdf"
 import Busboy from "busboy"
 import { embedTextFromFile, type EmbedMeta } from "../ai/embed"
+import { isMathpixConfigured, extractWithMathpix, type MathpixImage } from "./mathpix"
+import { describeImages } from "../ai/describeImages"
+import { config } from "../../config/env"
 
 const uploadsDir = path.join(process.cwd(), "storage", "uploads")
 if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true })
@@ -12,7 +15,7 @@ export type UpFile = { path: string; filename: string; mimeType: string }
 
 export function parseMultipart(req: any): Promise<{ q: string; chatId?: string; provider?: string; model?: string; files: UpFile[] }> {
   return new Promise((resolve, reject) => {
-    const bb = Busboy({ headers: req.headers, limits: { fileSize: 20 * 1024 * 1024, files: 10 } })
+    const bb = Busboy({ headers: req.headers, defParamCharset: "utf8", limits: { fileSize: 20 * 1024 * 1024, files: 10 } })
     let q = ""
     let chatId = ""
     let provider = ""
@@ -55,19 +58,87 @@ export type UploadOpts = {
 export type PreparedFile = {
   txtPath: string
   pages: { page: number; text: string }[] | null
+  images?: MathpixImage[]
+  imagesDir?: string
 }
 
-export async function extractAndPrepare(filePath: string, contentType?: string): Promise<PreparedFile> {
+export async function extractAndPrepare(
+  filePath: string,
+  contentType?: string,
+  subjectId?: string
+): Promise<PreparedFile> {
   const mime = contentType || ""
-  const { text, pages } = await extractText(filePath, mime)
+  const { text, pages, images, imagesDir } = await extractText(filePath, mime, subjectId)
   if (!text?.trim()) throw new Error("No valid content extracted from file.")
 
-  const cleaned = deduplicateText(text)
+  let cleaned = deduplicateText(text)
   if (!cleaned.trim()) throw new Error("No valid content after deduplication.")
+
+  // Generate image descriptions and inject into markdown alt-text
+  if (images?.length && imagesDir) {
+    try {
+      const descriptions = await describeImages(images, imagesDir)
+      for (const img of images) {
+        const desc = descriptions.get(img.filename)
+        if (desc) {
+          // ![](./images/file.jpg) → ![Alpha decay energy diagram](./images/file.jpg)
+          cleaned = cleaned.replaceAll(`![](${img.ref})`, `![${desc}](${img.ref})`)
+        }
+      }
+    } catch (err: any) {
+      console.warn("[extractAndPrepare] Image description failed, continuing without:", err?.message)
+    }
+  }
 
   const out = `${filePath}.txt`
   fs.writeFileSync(out, cleaned)
-  return { txtPath: out, pages }
+  return {
+    txtPath: out,
+    pages,
+    ...(images && images.length > 0 && { images }),
+    ...(imagesDir && { imagesDir }),
+  }
+}
+
+/**
+ * After source registration, finalize image storage:
+ * - Rename staging images dir to final sourceId-based path
+ * - Rewrite image URLs in the .txt file to point to the serving endpoint
+ */
+export function finalizeImages(
+  prepared: PreparedFile,
+  subjectId: string,
+  sourceId: string
+): void {
+  if (!prepared.images || prepared.images.length === 0 || !prepared.imagesDir) return
+
+  const finalDir = path.join(process.cwd(), "subjects", subjectId, "images", sourceId)
+
+  // Move staging dir to final location
+  if (prepared.imagesDir !== finalDir) {
+    try {
+      fs.rmSync(finalDir, { recursive: true, force: true })
+      fs.mkdirSync(path.dirname(finalDir), { recursive: true })
+      fs.renameSync(prepared.imagesDir, finalDir)
+      prepared.imagesDir = finalDir
+    } catch (err: any) {
+      console.error(`[finalizeImages] Failed to move staging dir:`, err?.message)
+    }
+  }
+
+  // Rewrite image refs in the .txt file
+  let txt = fs.readFileSync(prepared.txtPath, "utf-8")
+  const baseUrl = config.baseUrl || "http://localhost:5000"
+
+  for (const img of prepared.images) {
+    const servedUrl = `${baseUrl}/subjects/${subjectId}/images/${sourceId}/${img.filename}`
+    // Replace Mathpix's relative refs: ![alt](./images/file.jpg) → ![alt](servedUrl)
+    txt = txt.replaceAll(img.ref, servedUrl)
+    // Also handle just the filename in case markdown has variations
+    txt = txt.replaceAll(`(./images/${img.filename})`, `(${servedUrl})`)
+  }
+
+  fs.writeFileSync(prepared.txtPath, txt)
 }
 
 export async function embedPreparedFile(
@@ -79,7 +150,7 @@ export async function embedPreparedFile(
 }
 
 export async function handleUpload(a: UploadOpts): Promise<{ stored: string }> {
-  const prepared = await extractAndPrepare(a.filePath, a.contentType)
+  const prepared = await extractAndPrepare(a.filePath, a.contentType, a.subjectId)
   const ns = a.namespace || "pagelm"
 
   const meta: EmbedMeta = {
@@ -128,17 +199,57 @@ export function deduplicateText(text: string): string {
   return result.join("\n")
 }
 
-type ExtractResult = { text: string; pages: { page: number; text: string }[] | null }
+type ExtractResult = {
+  text: string
+  pages: { page: number; text: string }[] | null
+  images?: MathpixImage[]
+  imagesDir?: string
+}
 
-async function extractText(filePath: string, mime: string): Promise<ExtractResult> {
+async function extractPdfWithUnpdf(raw: Buffer): Promise<ExtractResult> {
+  const pdf = await getDocumentProxy(new Uint8Array(raw))
+  const { text: pageTexts } = await unpdfExtract(pdf, { mergePages: false })
+  const pages = (pageTexts as string[]).map((t, i) => ({ page: i + 1, text: t.trim() }))
+  const fullText = pages.map(p => p.text).join("\n\n")
+
+  if (fullText.trim().length < 50) {
+    throw new Error("PDF has no extractable text (possibly scanned/image-based)")
+  }
+
+  return { text: fullText, pages }
+}
+
+async function extractText(filePath: string, mime: string, subjectId?: string): Promise<ExtractResult> {
   const raw = fs.readFileSync(filePath)
 
   if (mime.includes("pdf")) {
-    const pdf = await getDocumentProxy(new Uint8Array(raw))
-    const { totalPages, text: pageTexts } = await unpdfExtract(pdf, { mergePages: false })
-    const pages = (pageTexts as string[]).map((t, i) => ({ page: i + 1, text: t.trim() }))
-    const fullText = pages.map(p => p.text).join("\n\n")
-    return { text: fullText, pages }
+    // Primary: Mathpix (high-quality LaTeX-aware extraction)
+    if (isMathpixConfigured()) {
+      // Create a staging images dir keyed by timestamp if we have a subjectId
+      let imagesDir: string | undefined
+      if (subjectId) {
+        const stagingKey = `staging-${Date.now()}`
+        imagesDir = path.join(process.cwd(), "subjects", subjectId, "images", stagingKey)
+      }
+
+      try {
+        const result = await extractWithMathpix(filePath, imagesDir)
+        return {
+          text: result.text,
+          pages: result.pages,
+          images: result.images,
+          imagesDir,
+        }
+      } catch (err: any) {
+        // Clean up staging images dir on failure
+        if (imagesDir && fs.existsSync(imagesDir)) {
+          try { fs.rmSync(imagesDir, { recursive: true, force: true }) } catch {}
+        }
+        console.warn(`[extract] Mathpix failed for ${path.basename(filePath)}, falling back to unpdf:`, err?.message)
+      }
+    }
+    // Fallback: unpdf
+    return extractPdfWithUnpdf(raw)
   }
 
   if (mime.includes("markdown")) {
@@ -154,5 +265,5 @@ async function extractText(filePath: string, mime: string): Promise<ExtractResul
     return { text: r.value, pages: null }
   }
 
-  throw new Error("unsupported file type")
+  throw new Error(`Unsupported file type: ${mime || "unknown"}`)
 }

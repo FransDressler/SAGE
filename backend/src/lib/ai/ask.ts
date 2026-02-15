@@ -5,7 +5,7 @@ import llm from "../../utils/llm/llm"
 import type { LLM } from "../../utils/llm/models/types"
 import { execDirect } from "../../agents/runtime"
 import { normalizeTopic } from "../../utils/text/normalize"
-import { extractFirstJsonObject } from "./extract"
+import { extractFirstJsonObject, sanitizeJsonString } from "./extract"
 import { getLocale } from "../prompts/locale"
 
 export type AskCard = { q: string; a: string; tags?: string[] }
@@ -29,7 +29,8 @@ function guessTopic(q: string): string {
 }
 
 function tryParse<T = unknown>(s: string): T | null {
-  try { return JSON.parse(s) as T } catch { return null }
+  try { return JSON.parse(s) as T } catch {}
+  try { return JSON.parse(sanitizeJsonString(s)) as T } catch { return null }
 }
 
 function extractSources(docs: Array<{ text?: string; meta?: any }>): RagSource[] {
@@ -68,7 +69,7 @@ function buildSystemPrompt(): string {
   const fcRules = generateFlashcards ? FLASHCARD_RULES : ""
 
   return `You are PageLM, an AI tutor. Return ONLY a JSON object:
-{"topic": "string", "answer": "GitHub-Flavored Markdown"${schema}}
+{"topic": "string", "answer": "GitHub-Flavored Markdown with LaTeX math"${schema}}
 
 TEACHING APPROACH
 - Explain concepts simply enough for a curious 12-year-old (Feynman technique). Build intuition before formulas.
@@ -79,8 +80,24 @@ TEACHING APPROACH
 ${fcRules}
 ${lang}
 
+MATH & FORMULAS
+- Write ALL math using LaTeX with dollar-sign delimiters.
+- Inline math: $E = mc^2$ (single dollar signs).
+- Display/block math: $$\\int_0^\\infty f(x)\\,dx$$ (double dollar signs, on its own line).
+- NEVER use \\(...\\) or \\[...\\] delimiters.
+- NEVER use plain-text formulas — always wrap in LaTeX.
+- Inside JSON strings, backslashes must be escaped: write \\\\frac not \\frac, \\\\alpha not \\alpha, etc.
+
+IMAGES & DIAGRAMS
+- When context contains image URLs (markdown ![alt](url) syntax), include relevant images in your answer using the exact URL from the context.
+- Do not fabricate image URLs. Only use URLs that appear in the provided context.
+- Add a brief caption or description below each image.
+- Only include images that directly help explain the answer.
+
 OUTPUT
-- Return ONLY the JSON object. No prose, no backticks, no code fences outside the JSON.`
+- Return ONLY the JSON object: {"topic": "string", "answer": "GitHub-Flavored Markdown with LaTeX math"${schema}}
+- The "answer" value must be a valid JSON string. Escape all backslashes (\\\\), newlines (\\n), and quotes (\\").
+- No prose, no backticks, no code fences outside the JSON.`
 }
 
 export const BASE_SYSTEM_PROMPT = buildSystemPrompt()

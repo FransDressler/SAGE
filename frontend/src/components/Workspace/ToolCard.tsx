@@ -1,5 +1,5 @@
 type Props = {
-  tool: "quiz" | "podcast" | "smartnotes" | "flashcards" | "transcriber" | "mindmap" | "exam";
+  tool: "quiz" | "podcast" | "smartnotes" | "flashcards" | "transcriber" | "mindmap" | "exam" | "research";
   status: "idle" | "loading" | "ready" | "error";
   label?: string;
   onClick: () => void;
@@ -13,6 +13,7 @@ const TOOL_STYLES: Record<string, { icon: string; color: string; bg: string; bor
   transcriber: { icon: "T", color: "text-orange-400", bg: "bg-orange-900/20", border: "border-orange-800/40" },
   mindmap: { icon: "M", color: "text-cyan-400", bg: "bg-cyan-900/20", border: "border-cyan-800/40" },
   exam: { icon: "E", color: "text-rose-400", bg: "bg-rose-900/20", border: "border-rose-800/40" },
+  research: { icon: "R", color: "text-blue-400", bg: "bg-blue-900/20", border: "border-blue-800/40" },
 };
 
 const TOOL_NAMES: Record<string, string> = {
@@ -23,6 +24,7 @@ const TOOL_NAMES: Record<string, string> = {
   transcriber: "Transcribe",
   mindmap: "Mindmap",
   exam: "Exam",
+  research: "Research",
 };
 
 export default function ToolCard({ tool, status, label, onClick }: Props) {
@@ -58,6 +60,7 @@ export default function ToolCard({ tool, status, label, onClick }: Props) {
               style.color === "text-amber-400" ? "border-t-amber-400" :
               style.color === "text-orange-400" ? "border-t-orange-400" :
               style.color === "text-rose-400" ? "border-t-rose-400" :
+              style.color === "text-blue-400" ? "border-t-blue-400" :
               "border-t-bone"
             }`} />
           ) : status === "ready" ? (
@@ -82,12 +85,13 @@ export default function ToolCard({ tool, status, label, onClick }: Props) {
           }`}>
             {name}
           </div>
-          <div className="text-[11px] text-stone-600 truncate">
-            {status === "loading" ? "Generating..." :
-             status === "ready" ? (label || "Ready") :
-             status === "error" ? "Failed" :
-             "Generate"}
-          </div>
+          {status !== "idle" && (
+            <div className="text-[11px] text-stone-600 truncate">
+              {status === "loading" ? "Generating..." :
+               status === "ready" ? (label || "Ready") :
+               "Failed"}
+            </div>
+          )}
         </div>
       </div>
     </button>

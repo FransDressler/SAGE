@@ -21,3 +21,15 @@ database.sqlite
 # TypeScript build info
 tsconfig.tsbuildinfo
 vite.config.tsbuildinfo
+
+# OS files
+.DS_Store
+
+# Debug output
+/debug/
+
+# Backup files
+*.bak
+
+# Claude setup
+.claude

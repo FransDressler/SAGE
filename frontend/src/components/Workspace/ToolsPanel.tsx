@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, forwardRef, useImperativeHandle } from "react";
 import { useSubject } from "../../context/SubjectContext";
 import CollapsedColumn from "./CollapsedColumn";
 import {
@@ -7,6 +7,7 @@ import {
   smartnotesStart, connectSmartnotesStream, type SmartNotesEvent,
   mindmapStart, connectMindmapStream, type MindmapEvent,
   examStart, connectExamStream, type ExamEvent,
+  researchStart, connectResearchStream, type ResearchEvent,
   listTools, deleteTool, type ToolRecord,
 } from "../../lib/api";
 import ToolCard from "./ToolCard";
@@ -18,11 +19,12 @@ import FlashcardsTool from "./tools/FlashcardsTool";
 import TranscriberTool from "./tools/TranscriberTool";
 import MindmapPlayer from "./tools/MindmapPlayer";
 import ExamPlayer from "./tools/ExamPlayer";
+import ResearchViewer from "./tools/ResearchViewer";
 
 type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string };
 
 type GeneratedTool = {
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam";
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam" | "research";
   config: ToolConfig;
   status: "loading" | "ready" | "error";
   result: any;
@@ -38,6 +40,7 @@ const TOOL_COLORS: Record<string, { text: string; bg: string; border: string; sp
   smartnotes: { text: "text-bone", bg: "bg-stone-800/30", border: "border-stone-700/40", spinner: "border-t-bone" },
   mindmap: { text: "text-cyan-400", bg: "bg-cyan-900/20", border: "border-cyan-800/40", spinner: "border-t-cyan-400" },
   exam: { text: "text-rose-400", bg: "bg-rose-900/20", border: "border-rose-800/40", spinner: "border-t-rose-400" },
+  research: { text: "text-blue-400", bg: "bg-blue-900/20", border: "border-blue-800/40", spinner: "border-t-blue-400" },
 };
 
 const TOOL_LABELS: Record<string, string> = {
@@ -46,6 +49,7 @@ const TOOL_LABELS: Record<string, string> = {
   smartnotes: "Notes",
   mindmap: "Mindmap",
   exam: "Exam",
+  research: "Research",
 };
 
 const TOOL_ICONS: Record<string, string> = {
@@ -54,6 +58,7 @@ const TOOL_ICONS: Record<string, string> = {
   smartnotes: "N",
   mindmap: "M",
   exam: "E",
+  research: "R",
 };
 
 function relativeTime(ts: number): string {
@@ -74,15 +79,23 @@ function takeQuizArray(a: unknown): Question[] {
   return [];
 }
 
-export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutTool }: { collapsed?: boolean; onToggleCollapse?: () => void; onChatAboutTool?: (ctx: { tool: string; topic: string; content: string }) => void }) {
+export type ToolsPanelHandle = {
+  openTool: (toolId: string) => void;
+};
+
+const ToolsPanel = forwardRef<ToolsPanelHandle, { collapsed?: boolean; onToggleCollapse?: () => void; onChatAboutTool?: (ctx: { tool: string; topic: string; content: string }) => void }>(function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutTool }, ref) {
   const { subject, sources } = useSubject();
 
-  const [modalTool, setModalTool] = useState<"quiz" | "podcast" | "smartnotes" | "mindmap" | "exam" | null>(null);
+  const [modalTool, setModalTool] = useState<"quiz" | "podcast" | "smartnotes" | "mindmap" | "exam" | "research" | null>(null);
   const [generated, setGenerated] = useState<Map<string, GeneratedTool>>(new Map());
   const [viewingTool, setViewingTool] = useState<string | null>(null);
   const [simplePanel, setSimplePanel] = useState<SimplePanel | null>(null);
   const [confirmingDelete, setConfirmingDelete] = useState<string | null>(null);
   const closersRef = useRef<Map<string, () => void>>(new Map());
+
+  useImperativeHandle(ref, () => ({
+    openTool: (toolId: string) => setViewingTool(toolId),
+  }));
 
   // Cleanup WebSocket connections on unmount
   useEffect(() => {
@@ -92,10 +105,14 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
     };
   }, []);
 
-  // Load persisted tools on subject change
+  // Load persisted tools on subject change — reset all state first
   useEffect(() => {
     if (!subject) return;
+    setGenerated(new Map());
+    setViewingTool(null);
+    setSimplePanel(null);
     setConfirmingDelete(null);
+    setModalTool(null);
     listTools(subject.id).then(res => {
       const saved = new Map<string, GeneratedTool>();
       for (const t of res.tools) {
@@ -117,13 +134,7 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
           createdAt: t.createdAt,
         });
       }
-      setGenerated(prev => {
-        const merged = new Map(prev);
-        for (const [k, v] of saved) {
-          if (!merged.has(k)) merged.set(k, v);
-        }
-        return merged;
-      });
+      setGenerated(saved);
     }).catch(e => console.warn("[ToolsPanel] failed to load saved tools:", e));
   }, [subject?.id]);
 
@@ -219,6 +230,29 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
             updateGenerated(key, g => ({ ...g, status: "ready", result: { file: ev.file }, label: config.topic }));
           }
           if (ev.type === "done") { const c = closersRef.current.get(key); if (c) c(); }
+          if (ev.type === "error") updateGenerated(key, g => ({ ...g, status: "error" }));
+        });
+        closersRef.current.set(key, close);
+      }).catch(() => updateGenerated(key, g => ({ ...g, status: "error" })));
+    }
+
+    if (tool === "research") {
+      researchStart(subjectId, {
+        topic: config.topic,
+        depth: config.depth,
+        sourceIds: config.sourceIds.length ? config.sourceIds : undefined,
+        instructions,
+        provider: config.provider,
+        model: config.model,
+      }).then(({ researchId }) => {
+        const { close } = connectResearchStream(researchId, (ev: ResearchEvent) => {
+          if (ev.type === "phase") {
+            updateGenerated(key, g => ({ ...g, label: ev.detail || ev.value || "Researching..." }));
+          }
+          if (ev.type === "file") {
+            updateGenerated(key, g => ({ ...g, status: "ready", result: { file: ev.file }, label: config.topic }));
+          }
+          if (ev.type === "done" || ev.type === "error") { const c = closersRef.current.get(key); if (c) { c(); closersRef.current.delete(key); } }
           if (ev.type === "error") updateGenerated(key, g => ({ ...g, status: "error" }));
         });
         closersRef.current.set(key, close);
@@ -371,6 +405,13 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
         </div>
       );
     }
+    if (gen?.tool === "research" && gen.status === "ready") {
+      return (
+        <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-l border-stone-800 bg-stone-900/50">
+          <ResearchViewer filePath={gen.result.file} topic={gen.config.topic} onClose={() => setViewingTool(null)} onChatAbout={onChatAboutTool ? () => onChatAboutTool({ tool: "research", topic: gen.config.topic, content: `Research about: ${gen.config.topic}` }) : undefined} />
+        </div>
+      );
+    }
   }
 
   // Render simple panel (flashcards / transcriber)
@@ -398,7 +439,7 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
   // Default: card grid overview
   return (
     <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-l border-stone-800 bg-stone-900/50">
-      <div className="px-4 py-3 border-b border-stone-800 shrink-0 flex items-center gap-1.5">
+      <div className="px-4 h-12 border-b border-stone-800 shrink-0 flex items-center gap-1.5">
         {onToggleCollapse && (
           <button onClick={onToggleCollapse} className="p-1 rounded hover:bg-stone-800 text-stone-500 hover:text-stone-300 transition-colors" aria-label="Collapse Tools" title="Collapse Tools">
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" /></svg>
@@ -417,6 +458,7 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
           <ToolCard tool="transcriber" status="idle" onClick={() => setSimplePanel("transcriber")} />
           <ToolCard tool="mindmap" status="idle" onClick={() => setModalTool("mindmap")} />
           <ToolCard tool="exam" status="idle" onClick={() => setModalTool("exam")} />
+          <ToolCard tool="research" status="idle" onClick={() => setModalTool("research")} />
         </div>
 
         {/* Generated items list */}
@@ -538,4 +580,6 @@ export default function ToolsPanel({ collapsed, onToggleCollapse, onChatAboutToo
       )}
     </div>
   );
-}
+});
+
+export default ToolsPanel;

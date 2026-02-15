@@ -10,6 +10,8 @@ import { examRoutes } from "./routes/exam";
 import { modelsRoutes } from "./routes/models";
 import { websearchRoutes } from "./routes/websearch";
 import { subjectGraphRoutes } from "./routes/subjectgraph";
+import { researchRoutes } from "./routes/research";
+import { debugRoutes } from "./routes/debug";
 
 export function registerRoutes(app: any) {
   modelsRoutes(app);
@@ -24,4 +26,6 @@ export function registerRoutes(app: any) {
   examRoutes(app);
   websearchRoutes(app);
   subjectGraphRoutes(app);
+  researchRoutes(app);
+  debugRoutes(app);
 }

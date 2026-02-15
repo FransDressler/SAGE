@@ -6,8 +6,24 @@ import type { LLM } from "../../utils/llm/models/types"
 import type { ConceptNode, ConceptEdge, MindmapData } from "../mindmap/types"
 import { editMindmapWithAI } from "../mindmap"
 
-const MAX_NODES = 200
+const NODES_PER_SOURCE = 15
+const EDGES_PER_SOURCE = 45
+const MIN_NODES = 30
+const MIN_EDGES = 90
 const BATCH_SIZE = 10
+
+function maxNodes(sourceCount: number): number {
+  return Math.max(MIN_NODES, sourceCount * NODES_PER_SOURCE)
+}
+function maxEdges(sourceCount: number): number {
+  return Math.max(MIN_EDGES, sourceCount * EDGES_PER_SOURCE)
+}
+const NODE_COLORS = ["#FFCBE1", "#D6E5BD", "#F9E1A8", "#BCD8EC", "#DCCCEC", "#FFDAB4"]
+
+function validColor(c: unknown): string {
+  if (typeof c === "string" && NODE_COLORS.includes(c.toUpperCase())) return c.toUpperCase()
+  return NODE_COLORS[Math.floor(Math.random() * NODE_COLORS.length)]
+}
 
 function dbKey(subjectId: string): string {
   return `subject:${subjectId}:graph`
@@ -62,6 +78,7 @@ Return ONLY a JSON object with this exact structure (no markdown, no code fences
       "description": "1-2 sentence summary",
       "category": "theory|person|event|term|process|principle|method",
       "importance": "high|medium|low",
+      "color": "#HEX",
       "sources": [{"file": "filename.pdf", "page": 3}]
     }
   ],
@@ -82,7 +99,9 @@ Guidelines:
 - Weight should be 0-1 (1 = strongest relationship)
 - Each concept needs a clear, concise description
 - Only create relationships between concepts you extracted
-- sources: list ONLY the files/pages where the concept actually appears`
+- sources: list ONLY the files/pages where the concept actually appears
+- Assign a color to each concept from ONLY these 6 colors: ${NODE_COLORS.join(", ")}
+- Use the SAME color for thematically related concepts so each cluster is visually distinct`
 
 const CONNECTION_PROMPT = `You are given two sets of concepts from a knowledge graph:
 - EXISTING: concepts already in the graph
@@ -109,15 +128,16 @@ const CONSOLIDATION_PROMPT = `You are given a knowledge graph with many nodes. C
 2. Remove trivial or overly generic concepts
 3. Keep the most meaningful relationships
 4. Aim for a clean, navigable graph
+5. Assign colors ONLY from this palette: ${NODE_COLORS.join(", ")}. Use the same color for thematically related concepts.
 
 Return ONLY a JSON object (no markdown, no code fences):
 {
-  "concepts": [{ "label": "...", "description": "...", "category": "...", "importance": "high|medium|low" }],
+  "concepts": [{ "label": "...", "description": "...", "category": "...", "importance": "high|medium|low", "color": "#HEX" }],
   "relationships": [{ "from": "...", "to": "...", "label": "...", "weight": 0.5 }]
 }`
 
 type RawExtraction = {
-  concepts: Array<{ label: string; description: string; category: string; importance: string; sources?: { file: string; page?: number }[] }>
+  concepts: Array<{ label: string; description: string; category: string; importance: string; color?: string; sources?: { file: string; page?: number }[] }>
   relationships: Array<{ from: string; to: string; label: string; weight: number }>
 }
 
@@ -323,6 +343,7 @@ export async function expandSubjectGraph(
         description: c.description?.trim() || "",
         category: c.category?.trim() || "term",
         importance,
+        color: validColor(c.color),
         sources: conceptSources,
       })
       newLabels.push(c.label.trim())
@@ -374,8 +395,16 @@ export async function expandSubjectGraph(
   let nodes = Array.from(nodeMap.values())
   let edges = Array.from(edgeMap.values())
 
+  // Compute sourceCount before trimming so dynamic limits are available
+  const sourceCount = new Set([
+    ...existing.nodes.flatMap(n => n.sources.map(s => s.file)),
+    ...chunks.map(c => c.sourceFile).filter(Boolean),
+  ]).size
+  const nodeLimit = maxNodes(sourceCount)
+  const edgeLimit = maxEdges(sourceCount)
+
   // Consolidation if too many nodes
-  if (nodes.length > MAX_NODES) {
+  if (nodes.length > nodeLimit) {
     emit("consolidating", "Consolidating large graph...")
     try {
       const graphSummary = JSON.stringify({
@@ -388,7 +417,7 @@ export async function expandSubjectGraph(
       })
       const msgs = [
         { role: "system", content: CONSOLIDATION_PROMPT },
-        { role: "user", content: `Current graph (${nodes.length} nodes, ${edges.length} edges):\n${graphSummary}\n\nReturn only the JSON object.` },
+        { role: "user", content: `Current graph (${nodes.length} nodes, ${edges.length} edges). Target size: ~${nodeLimit} nodes, ~${edgeLimit} edges.\n${graphSummary}\n\nReturn only the JSON object.` },
       ]
       const res = await model.invoke([...msgs] as any)
       const raw = stripFences(toText(res))
@@ -411,6 +440,7 @@ export async function expandSubjectGraph(
             description: c.description?.trim() || oldNode?.description || "",
             category: c.category?.trim() || oldNode?.category || "term",
             importance: (["high", "medium", "low"].includes(c.importance) ? c.importance : "medium") as ConceptNode["importance"],
+            color: validColor(c.color) || oldNode?.color || validColor(null),
             sources: oldNode?.sources || [],
           })
         }
@@ -440,16 +470,18 @@ export async function expandSubjectGraph(
           const rank = { high: 0, medium: 1, low: 2 }
           return rank[a.importance] - rank[b.importance]
         })
-        .slice(0, MAX_NODES)
+        .slice(0, nodeLimit)
       const nodeIds = new Set(nodes.map(n => n.id))
       edges = edges.filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
     }
   }
 
-  const sourceCount = new Set([
-    ...existing.nodes.flatMap(n => n.sources.map(s => s.file)),
-    ...chunks.map(c => c.sourceFile).filter(Boolean),
-  ]).size
+  // Trim edges by weight if over limit
+  if (edges.length > edgeLimit) {
+    edges = edges
+      .sort((a, b) => b.weight - a.weight)
+      .slice(0, edgeLimit)
+  }
 
   const graph: MindmapData = {
     nodes,
@@ -525,6 +557,7 @@ export async function rebuildSubjectGraph(
         description: c.description?.trim() || "",
         category: c.category?.trim() || "term",
         importance,
+        color: validColor(c.color),
         sources: conceptSources,
       })
     }
@@ -549,15 +582,24 @@ export async function rebuildSubjectGraph(
   let nodes = Array.from(nodeMap.values())
   let edges = Array.from(edgeMap.values())
 
-  if (nodes.length > MAX_NODES) {
+  const nodeLimit = maxNodes(sourceCount)
+  const edgeLimit = maxEdges(sourceCount)
+
+  if (nodes.length > nodeLimit) {
     nodes = nodes
       .sort((a, b) => {
         const rank = { high: 0, medium: 1, low: 2 }
         return rank[a.importance] - rank[b.importance]
       })
-      .slice(0, MAX_NODES)
+      .slice(0, nodeLimit)
     const nodeIds = new Set(nodes.map(n => n.id))
     edges = edges.filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
+  }
+
+  if (edges.length > edgeLimit) {
+    edges = edges
+      .sort((a, b) => b.weight - a.weight)
+      .slice(0, edgeLimit)
   }
 
   const graph: MindmapData = {

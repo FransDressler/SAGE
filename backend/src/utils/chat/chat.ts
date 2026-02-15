@@ -45,3 +45,19 @@ export async function getMsgs(subjectId: string, id: string) {
   const a = ((await db.get(`subject:${subjectId}:msgs:${id}`)) as ChatMsg[]) || [];
   return a;
 }
+
+export async function renameChat(subjectId: string, chatId: string, title: string) {
+  const c = (await db.get(`subject:${subjectId}:chat:${chatId}`)) as ChatMeta | undefined;
+  if (!c) return null;
+  c.title = title.slice(0, 60);
+  await db.set(`subject:${subjectId}:chat:${chatId}`, c);
+  return c;
+}
+
+export async function deleteChat(subjectId: string, chatId: string) {
+  await db.delete(`subject:${subjectId}:chat:${chatId}`);
+  await db.delete(`subject:${subjectId}:msgs:${chatId}`);
+  const idx = ((await db.get(`subject:${subjectId}:chat:index`)) as string[]) || [];
+  const filtered = idx.filter((id) => id !== chatId);
+  await db.set(`subject:${subjectId}:chat:index`, filtered);
+}

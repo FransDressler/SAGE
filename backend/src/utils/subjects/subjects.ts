@@ -33,14 +33,15 @@ export type PodcastResult = { type: "podcast"; pid: string; filename: string }
 export type NotesResult = { type: "smartnotes"; filename: string }
 export type MindmapResult = { type: "mindmap"; data: any }
 export type ExamResult = { type: "exam"; questions: any[]; totalPoints: number; timeLimit: number }
+export type ResearchResult = { type: "research"; filename: string }
 
 export type ToolRecord = {
   id: string
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam"
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam" | "research"
   topic: string
   config: Record<string, string | undefined>
   createdAt: number
-  result: QuizResult | PodcastResult | NotesResult | MindmapResult | ExamResult
+  result: QuizResult | PodcastResult | NotesResult | MindmapResult | ExamResult | ResearchResult
 }
 
 const SUBJECTS_ROOT = path.join(process.cwd(), "subjects")
@@ -214,12 +215,20 @@ export async function addTool(subjectId: string, record: ToolRecord): Promise<vo
     for (const t of evicted) {
       try {
         if (t.result.type === "smartnotes") {
-          const fp = path.join(subjectDir(subjectId), "smartnotes", t.result.filename)
-          if (fs.existsSync(fp)) fs.unlinkSync(fp)
+          const safeName = path.basename(t.result.filename)
+          const expectedDir = path.join(subjectDir(subjectId), "smartnotes")
+          const fp = path.resolve(expectedDir, safeName)
+          if (fp.startsWith(expectedDir) && fs.existsSync(fp)) fs.unlinkSync(fp)
         }
         if (t.result.type === "podcast") {
           const dir = path.join(subjectDir(subjectId), "podcasts", t.result.pid)
           if (fs.existsSync(dir)) fs.rmSync(dir, { recursive: true, force: true })
+        }
+        if (t.result.type === "research") {
+          const safeName = path.basename(t.result.filename)
+          const expectedDir = path.join(subjectDir(subjectId), "research")
+          const fp = path.resolve(expectedDir, safeName)
+          if (fp.startsWith(expectedDir) && fs.existsSync(fp)) fs.unlinkSync(fp)
         }
       } catch {}
     }
@@ -245,12 +254,20 @@ export async function deleteTool(subjectId: string, toolId: string): Promise<boo
   await db.set(`subject:${subjectId}:tools`, tools)
 
   if (removed.result.type === "smartnotes") {
-    const fp = path.join(subjectDir(subjectId), "smartnotes", removed.result.filename)
-    if (fs.existsSync(fp)) fs.unlinkSync(fp)
+    const safeName = path.basename(removed.result.filename)
+    const expectedDir = path.join(subjectDir(subjectId), "smartnotes")
+    const fp = path.resolve(expectedDir, safeName)
+    if (fp.startsWith(expectedDir) && fs.existsSync(fp)) fs.unlinkSync(fp)
   }
   if (removed.result.type === "podcast") {
     const dir = path.join(subjectDir(subjectId), "podcasts", removed.result.pid)
     if (fs.existsSync(dir)) fs.rmSync(dir, { recursive: true, force: true })
+  }
+  if (removed.result.type === "research") {
+    const safeName = path.basename(removed.result.filename)
+    const expectedDir = path.join(subjectDir(subjectId), "research")
+    const fp = path.resolve(expectedDir, safeName)
+    if (fp.startsWith(expectedDir) && fs.existsSync(fp)) fs.unlinkSync(fp)
   }
 
   return true

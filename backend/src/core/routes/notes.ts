@@ -49,7 +49,7 @@ export function smartnotesRoutes(app: any) {
     try {
       const subjectId = req.params.id;
       if (!UUID_RE.test(subjectId)) return res.status(400).send({ ok: false, error: "invalid id" });
-      const { topic, notes, filePath, length, sourceIds } = req.body || {};
+      const { topic, notes, filePath, length, sourceIds, mode } = req.body || {};
       const instructions = parseInstructions(req.body?.instructions);
       if (!topic && !notes && !filePath) {
         return res
@@ -59,7 +59,7 @@ export function smartnotesRoutes(app: any) {
 
       const llmOverride = resolveOverride(req.body);
       const noteId = crypto.randomUUID();
-      nlog("start", noteId, "input:", { topic, notes, filePath, length, sourceIds });
+      nlog("start", noteId, "input:", { topic, notes, filePath, length, mode, sourceIds });
 
       res
         .status(202)
@@ -67,10 +67,14 @@ export function smartnotesRoutes(app: any) {
 
       setImmediate(async () => {
         try {
-          emitToAll(ns.get(noteId), { type: "phase", value: "generating" });
           const result = await withTimeout(
-            handleSmartNotes({ topic, notes, filePath, length, subjectId, sourceIds, instructions }, llmOverride),
-            120000,
+            handleSmartNotes({
+              topic, notes, filePath, length, mode, subjectId, sourceIds, instructions,
+              onProgress: (phase, detail) => {
+                emitToAll(ns.get(noteId), { type: "phase", value: phase, detail });
+              },
+            }, llmOverride),
+            300000,
             "handleSmartNotes"
           );
           const filename = path.basename(result.file);

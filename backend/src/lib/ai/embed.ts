@@ -131,6 +131,16 @@ function applyMeta(docs: Document[], meta: EmbedMeta): void {
   }
 }
 
+function augmentContentWithMeta(docs: Document[]): void {
+  for (const doc of docs) {
+    const file = doc.metadata.sourceFile
+    if (file) {
+      const cleanName = file.replace(/\.[^.]+$/, "").replace(/[_-]/g, " ")
+      doc.pageContent = `[Document: ${cleanName}]\n${doc.pageContent}`
+    }
+  }
+}
+
 export async function embedTextFromFile(
   filePath: string,
   namespace: string,
@@ -147,6 +157,7 @@ export async function embedTextFromFile(
     applyMeta(docs, meta)
     if (pages?.length) assignPageNumbers(docs, raw, pages)
     propagateHeadings(docs, raw)
+    augmentContentWithMeta(docs)
     await saveDocuments(namespace, docs, embeddings)
     return "Uploaded successfully."
   }
@@ -203,6 +214,9 @@ export async function embedTextFromFile(
     if (parent?.metadata.heading) child.metadata.heading = parent.metadata.heading
     if (parent?.metadata.pageNumber != null) child.metadata.pageNumber = parent.metadata.pageNumber
   }
+
+  // Augment children with document name for BM25 discoverability
+  augmentContentWithMeta(filteredChildren)
 
   // Store parents and embed children
   await saveParents(namespace, parentEntries)

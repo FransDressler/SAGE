@@ -32,16 +32,18 @@ export type ChatInfo = { id: string; title?: string; at?: number };
 export type ChatsList = { ok: true; chats: ChatInfo[] };
 export type ChatDetail = { ok: true; chat: ChatInfo; messages: ChatMessage[] };
 export type ChatJSONBody = { q: string; chatId?: string; provider?: string; model?: string };
-export type ChatPhase = "upload_start" | "upload_done" | "generating" | "thinking" | "searching_sources" | "searching_web" | "reading_results";
+export type ChatPhase = "upload_start" | "upload_done" | "generating" | "thinking" | "listing_sources" | "searching_sources" | "searching_web" | "reading_results";
+export type AgentStep = { stepId: number; phase: ChatPhase; detail?: string; status: "active" | "done" };
 export type FlashCard = { q: string; a: string; tags?: string[] };
 export type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string };
 export type UA = { questionId: number; selectedAnswer: number; correct: boolean; question: string; selectedOption: string; correctOption: string; explanation: string };
 export type QuizStartResponse = { ok: true; quizId: string; stream: string };
 export type QuizEvent = { type: "ready" | "phase" | "quiz" | "done" | "error" | "ping"; quizId?: string; value?: string; quiz?: unknown; error?: string; t?: number };
 export type SmartNotesStart = { ok: true; noteId: string; stream: string };
+export type SmartNotesMode = "summary" | "deep" | "study-guide"
 export type SmartNotesEvent =
   | { type: "ready"; noteId: string }
-  | { type: "phase"; value: string }
+  | { type: "phase"; value: string; detail?: string }
   | { type: "file"; file: string }
   | { type: "done" }
   | { type: "error"; error: string }
@@ -64,7 +66,7 @@ export type SavedFlashcard = {
 };
 export type ChatEvent =
   | { type: "ready"; chatId: string }
-  | { type: "phase"; value: ChatPhase; detail?: string }
+  | { type: "phase"; value: ChatPhase; detail?: string; stepId?: number }
   | { type: "file"; filename: string; mime: string }
   | { type: "answer"; answer: AnswerPayload }
   | { type: "done" }
@@ -192,6 +194,19 @@ export function removeSource(subjectId: string, sourceId: string) {
   );
 }
 
+export function getSourceContentUrl(subjectId: string, sourceId: string): string {
+  return `${env.backend}/subjects/${encodeURIComponent(subjectId)}/sources/${encodeURIComponent(sourceId)}/content`;
+}
+
+export async function getSourceContentText(subjectId: string, sourceId: string): Promise<string> {
+  const r = await fetch(getSourceContentUrl(subjectId, sourceId));
+  if (!r.ok) {
+    const txt = await r.text().catch(() => "");
+    throw new Error(txt || `Failed to fetch source content: ${r.status}`);
+  }
+  return r.text();
+}
+
 // --- Chat ---
 
 export async function chatJSON(subjectId: string, body: ChatJSONBody) {
@@ -246,6 +261,24 @@ export function getChats(subjectId: string) {
 export function getChatDetail(subjectId: string, id: string) {
   return req<ChatDetail>(
     `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chats/${encodeURIComponent(id)}`
+  );
+}
+
+export function renameChat(subjectId: string, chatId: string, title: string) {
+  return req<{ ok: true; chat: ChatInfo }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chats/${encodeURIComponent(chatId)}`,
+    {
+      method: "PATCH",
+      headers: jsonHeaders(),
+      body: JSON.stringify({ title }),
+    }
+  );
+}
+
+export function deleteChat(subjectId: string, chatId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/chats/${encodeURIComponent(chatId)}`,
+    { method: "DELETE" }
   );
 }
 
@@ -305,7 +338,7 @@ export function connectPodcastStream(pid: string, onEvent: (ev: PodcastEvent) =>
 
 // --- SmartNotes ---
 
-export async function smartnotesStart(subjectId: string, input: { topic?: string; notes?: string; filePath?: string; sourceIds?: string[]; length?: string; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }) {
+export async function smartnotesStart(subjectId: string, input: { topic?: string; notes?: string; filePath?: string; sourceIds?: string[]; length?: string; mode?: SmartNotesMode; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }) {
   return req<SmartNotesStart>(
     `${env.backend}/subjects/${encodeURIComponent(subjectId)}/smartnotes`,
     {
@@ -322,6 +355,34 @@ export function connectSmartnotesStream(noteId: string, onEvent: (ev: SmartNotes
   ws.onmessage = (m) => {
     try {
       onEvent(JSON.parse(m.data as string) as SmartNotesEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
+}
+
+// --- Research ---
+
+export async function researchStart(
+  subjectId: string,
+  body: { topic: string; depth?: ResearchDepth; sourceIds?: string[]; instructions?: { focusArea?: string; additionalInstructions?: string }; provider?: string; model?: string }
+): Promise<ResearchStart> {
+  return req<ResearchStart>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/research`,
+    {
+      method: "POST",
+      headers: jsonHeaders(),
+      body: JSON.stringify(body),
+    }
+  );
+}
+
+export function connectResearchStream(researchId: string, onEvent: (ev: ResearchEvent) => void) {
+  const url = wsURL(`/ws/research?researchId=${encodeURIComponent(researchId)}`);
+  const ws = new WebSocket(url);
+  ws.onmessage = (m) => {
+    try {
+      onEvent(JSON.parse(m.data as string) as ResearchEvent);
     } catch {}
   };
   ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
@@ -408,9 +469,20 @@ export type ExamEvent =
   | { type: "error"; error: string }
   | { type: "ping"; t: number };
 
+export type ResearchDepth = "quick" | "standard" | "comprehensive";
+export type ResearchStart = { ok: true; researchId: string; stream: string };
+export type ResearchEvent =
+  | { type: "ready"; researchId: string }
+  | { type: "phase"; value: string; detail?: string }
+  | { type: "plan"; plan: any }
+  | { type: "file"; file: string }
+  | { type: "done" }
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
+
 export type ToolRecord = {
   id: string;
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam";
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam" | "research";
   topic: string;
   config: Record<string, string | undefined>;
   createdAt: number;

@@ -120,39 +120,57 @@ body {
 .sunset-text {
   transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sunset-card:hover .sunset-text {
+.sunset-card:hover .sunset-text,
+.subject-row:hover .sunset-text {
   background-image: linear-gradient(135deg, #E8A06A 0%, #D07850 25%, #C85A5A 50%, #9068A0 75%, #5878A8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-/* Sunset gradient button — plain by default, gradient fades in on hover */
+/* Sunset gradient button — gradient border fades in on hover (matches .sunset-card) */
 .sunset-btn {
   position: relative;
-  overflow: hidden;
   isolation: isolate;
-  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: transparent !important;
 }
-.sunset-btn::before {
+.sunset-btn::before,
+.sunset-btn::after {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: -1.5px;
   border-radius: inherit;
+  pointer-events: none;
+}
+.sunset-btn::after {
+  background: #78716c;
+  z-index: -2;
+}
+.sunset-btn::before {
   background: linear-gradient(135deg, #E8A06A 0%, #D07850 25%, #C85A5A 50%, #9068A0 75%, #5878A8 100%);
-  opacity: 0;
   z-index: -1;
+  opacity: 0;
   transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sunset-btn:hover::before {
   opacity: 1;
 }
-.sunset-btn:hover {
+
+/* Sunset gradient fill button — outlined at rest, gradient-filled on hover/focus */
+.sunset-fill-btn {
+  background: transparent;
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+.sunset-fill-btn:hover,
+.sunset-fill-btn:focus {
+  background: linear-gradient(135deg, #E8A06A 0%, #D07850 25%, #C85A5A 50%, #9068A0 75%, #5878A8 100%);
+  border-color: transparent;
   color: #1c1917;
 }
 
 .workspace-grid {
-  transition: grid-template-columns 200ms ease;
+  transition: none;
 }
 
 /* Custom animations */

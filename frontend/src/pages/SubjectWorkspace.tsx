@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSubject } from "../context/SubjectContext";
 import { renameSubject } from "../lib/api";
 import SourcesPanel from "../components/Workspace/SourcesPanel";
-import ChatPanel from "../components/Workspace/ChatPanel";
-import ToolsPanel from "../components/Workspace/ToolsPanel";
+import ChatPanel, { type ChatPanelHandle } from "../components/Workspace/ChatPanel";
+import ToolsPanel, { type ToolsPanelHandle } from "../components/Workspace/ToolsPanel";
 import SubjectGraphColumn from "../components/Workspace/SubjectGraphColumn";
+import KeyboardShortcutsHelp from "../components/Workspace/KeyboardShortcutsHelp";
+import CommandPalette from "../components/Workspace/CommandPalette";
+import { useKeyboardShortcuts, type Shortcut } from "../hooks/useKeyboardShortcuts";
 
 export type ToolChatContext = { tool: string; topic: string; content: string };
 
@@ -46,12 +49,49 @@ function buildGridCols(collapsed: Record<ColumnKey, boolean>): string {
 export default function SubjectWorkspace() {
   const { subjectId } = useParams<{ subjectId: string }>();
   const navigate = useNavigate();
-  const { subject, loadSubject } = useSubject();
+  const { subject, loadSubject, setActiveChatId, viewingSource, closeSource } = useSubject();
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState("");
   const [mobileTab, setMobileTab] = useState<MobileTab>("chat");
   const [collapsed, setCollapsed] = useState<Record<ColumnKey, boolean>>(loadCollapsed);
   const [toolChatContext, setToolChatContext] = useState<ToolChatContext | null>(null);
+  const [showShortcuts, setShowShortcuts] = useState(false);
+  const [showCommandPalette, setShowCommandPalette] = useState(false);
+  const chatPanelRef = useRef<ChatPanelHandle>(null);
+  const toolsPanelRef = useRef<ToolsPanelHandle>(null);
+  const viewingSourceRef = useRef(viewingSource);
+  viewingSourceRef.current = viewingSource;
+
+  const isDesktop = useCallback(() => window.innerWidth >= 768, []);
+
+  const shortcuts = useMemo<Shortcut[]>(() => [
+    // Cmd+Shift+7/8/9/0 — toggle columns (desktop only)
+    { key: "7", mod: true, shift: true, action: () => { if (isDesktop()) toggleCollapse("sources"); } },
+    { key: "8", mod: true, shift: true, action: () => { if (isDesktop()) toggleCollapse("chat"); } },
+    { key: "9", mod: true, shift: true, action: () => { if (isDesktop()) toggleCollapse("tools"); } },
+    { key: "0", mod: true, shift: true, action: () => { if (isDesktop()) toggleCollapse("graph"); } },
+    // Cmd+Shift+O — new chat
+    { key: "o", mod: true, shift: true, action: () => chatPanelRef.current?.newChat() },
+    // Cmd+K — toggle command palette
+    { key: "k", mod: true, allowInInputs: true, action: () => setShowCommandPalette(v => !v) },
+    // Cmd+Enter — send message
+    { key: "Enter", mod: true, allowInInputs: true, action: () => chatPanelRef.current?.send() },
+    // Escape — close source viewer or stop generating
+    { key: "Escape", allowInInputs: true, action: () => { if (viewingSourceRef.current) closeSource(); else chatPanelRef.current?.stopGenerating(); } },
+    // Cmd+H — show shortcuts help
+    { key: "h", mod: true, action: () => setShowShortcuts(v => !v) },
+  ], [isDesktop, toggleCollapse, closeSource]);
+
+  useKeyboardShortcuts(shortcuts);
+
+  const expandColumn = useCallback((col: ColumnKey) => {
+    setCollapsed(prev => {
+      if (!prev[col]) return prev;
+      const next = { ...prev, [col]: false };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      return next;
+    });
+  }, []);
 
   const handleChatAboutTool = (ctx: ToolChatContext) => {
     // Ensure chat panel is open
@@ -67,7 +107,7 @@ export default function SubjectWorkspace() {
     setToolChatContext(ctx);
   };
 
-  const toggleCollapse = (col: ColumnKey) => {
+  const toggleCollapse = useCallback((col: ColumnKey) => {
     setCollapsed(prev => {
       const openCount = Object.values(prev).filter(v => !v).length;
       // Prevent collapsing the last open column
@@ -76,7 +116,17 @@ export default function SubjectWorkspace() {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
       return next;
     });
-  };
+  }, []);
+
+  // Auto-expand sources column when a source is opened from chat/graph
+  useEffect(() => {
+    if (!viewingSource) return;
+    if (isDesktop()) {
+      expandColumn("sources");
+    } else {
+      setMobileTab("sources");
+    }
+  }, [viewingSource, isDesktop, expandColumn]);
 
   useEffect(() => {
     if (subjectId) loadSubject(subjectId);
@@ -131,6 +181,14 @@ export default function SubjectWorkspace() {
             {subject.name}
           </h1>
         )}
+        <button
+          onClick={() => setShowShortcuts(true)}
+          className="ml-auto hidden md:flex items-center gap-1.5 px-2 py-1 rounded-md text-stone-600 hover:text-stone-400 hover:bg-stone-800/50 transition-colors"
+          title="Keyboard shortcuts"
+        >
+          <kbd className="text-[10px] font-mono bg-stone-800 border border-stone-700 rounded px-1 py-0.5">⌘H</kbd>
+          <span className="text-[10px]">Help</span>
+        </button>
       </header>
 
       {/* Mobile tab switcher */}
@@ -158,19 +216,41 @@ export default function SubjectWorkspace() {
           style={{ gridTemplateColumns: buildGridCols(collapsed) }}
         >
           <SourcesPanel collapsed={collapsed.sources} onToggleCollapse={() => toggleCollapse("sources")} />
-          <ChatPanel collapsed={collapsed.chat} onToggleCollapse={() => toggleCollapse("chat")} toolChatContext={toolChatContext} onToolChatConsumed={() => setToolChatContext(null)} />
-          <ToolsPanel collapsed={collapsed.tools} onToggleCollapse={() => toggleCollapse("tools")} onChatAboutTool={handleChatAboutTool} />
+          <ChatPanel ref={chatPanelRef} collapsed={collapsed.chat} onToggleCollapse={() => toggleCollapse("chat")} toolChatContext={toolChatContext} onToolChatConsumed={() => setToolChatContext(null)} />
+          <ToolsPanel ref={toolsPanelRef} collapsed={collapsed.tools} onToggleCollapse={() => toggleCollapse("tools")} onChatAboutTool={handleChatAboutTool} />
           <SubjectGraphColumn collapsed={collapsed.graph} onToggleCollapse={() => toggleCollapse("graph")} onChatAbout={handleChatAboutTool} />
         </div>
 
         {/* Mobile */}
         <div className="md:hidden h-full">
           {mobileTab === "sources" && <SourcesPanel />}
-          {mobileTab === "chat" && <ChatPanel toolChatContext={toolChatContext} onToolChatConsumed={() => setToolChatContext(null)} />}
-          {mobileTab === "tools" && <ToolsPanel onChatAboutTool={handleChatAboutTool} />}
+          {mobileTab === "chat" && <ChatPanel ref={chatPanelRef} toolChatContext={toolChatContext} onToolChatConsumed={() => setToolChatContext(null)} />}
+          {mobileTab === "tools" && <ToolsPanel ref={toolsPanelRef} onChatAboutTool={handleChatAboutTool} />}
           {mobileTab === "graph" && <SubjectGraphColumn />}
         </div>
       </div>
+
+      {showShortcuts && <KeyboardShortcutsHelp onClose={() => setShowShortcuts(false)} />}
+      {showCommandPalette && (
+        <CommandPalette
+          onClose={() => setShowCommandPalette(false)}
+          onNewChat={() => {
+            expandColumn("chat");
+            chatPanelRef.current?.newChat();
+          }}
+          onSelectChat={(chatId) => {
+            expandColumn("chat");
+            setActiveChatId(chatId);
+          }}
+          onSelectSource={() => {
+            expandColumn("sources");
+          }}
+          onSelectTool={(toolId) => {
+            expandColumn("tools");
+            setTimeout(() => toolsPanelRef.current?.openTool(toolId), 50);
+          }}
+        />
+      )}
     </div>
   );
 }

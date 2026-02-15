@@ -3,6 +3,9 @@ import { useSubject } from "../../context/SubjectContext";
 import type { Source, SourceType, WebSearchEvent } from "../../lib/api";
 import * as api from "../../lib/api";
 import CollapsedColumn from "./CollapsedColumn";
+import DropOverlay from "./DropOverlay";
+import SourceViewer from "./SourceViewer";
+import { useDragZone } from "../../hooks/useDragZone";
 
 function formatSize(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
@@ -45,10 +48,13 @@ const DEFAULT_PROMPT_PLACEHOLDER = `Du bist ein Lernassistent. Verwende folgende
 
 Antworte in der Sprache der Frage. Verwende Markdown-Formatierung mit Überschriften, Listen, Tabellen und LaTeX-Formeln ($..$ inline, $$...$$ block) wenn passend.`;
 
-function SourceRow({ source: s, onRemove }: { source: Source; onRemove: (id: string) => void }) {
+function SourceRow({ source: s, onRemove, onClick }: { source: Source; onRemove: (id: string) => void; onClick?: () => void }) {
   const st = s.sourceType || "material";
   return (
-    <div className={`flex items-center gap-2 p-2 rounded-lg bg-stone-900/50 border border-stone-800 group hover:border-stone-700 transition-colors ${rowBorder(st)}`}>
+    <div
+      onClick={onClick}
+      className={`flex items-center gap-2 p-2 rounded-lg bg-stone-900/50 border border-stone-800 group hover:border-stone-700 transition-colors ${rowBorder(st)} ${onClick ? "cursor-pointer" : ""}`}
+    >
       <div className={`w-8 h-8 rounded-md flex items-center justify-center text-[10px] font-bold shrink-0 ${iconBg(st)}`}>
         {fileIcon(s.mimeType, st)}
       </div>
@@ -57,7 +63,7 @@ function SourceRow({ source: s, onRemove }: { source: Source; onRemove: (id: str
         <span className="text-[10px] text-stone-500">{formatSize(s.size)}</span>
       </div>
       <button
-        onClick={() => onRemove(s.id)}
+        onClick={(e) => { e.stopPropagation(); onRemove(s.id); }}
         className="text-stone-600 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all p-1"
       >
         <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -69,10 +75,9 @@ function SourceRow({ source: s, onRemove }: { source: Source; onRemove: (id: str
 }
 
 export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapsed?: boolean; onToggleCollapse?: () => void }) {
-  const { subject, sources, uploadSources, removeSource, updateSystemPrompt, refreshSources } = useSubject();
+  const { subject, sources, uploadSources, removeSource, updateSystemPrompt, refreshSources, viewingSource, openSource, closeSource } = useSubject();
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
-  const [dragOver, setDragOver] = useState(false);
   const [promptOpen, setPromptOpen] = useState(false);
   const [promptText, setPromptText] = useState("");
   const [saving, setSaving] = useState(false);
@@ -82,6 +87,10 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
   const materialInputRef = useRef<HTMLInputElement>(null);
   const exerciseInputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const { dragActive, handlers: dragHandlers } = useDragZone({
+    onDrop: files => handleFiles(files),
+  });
 
   // Web search state
   const [searchQuery, setSearchQuery] = useState("");
@@ -195,10 +204,26 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
 
   if (collapsed && onToggleCollapse) return <CollapsedColumn label="Sources" side="left" onExpand={onToggleCollapse} />;
 
+  // --- Source Viewer ---
+  const viewedSource = viewingSource ? sources.find(s => s.id === viewingSource.sourceId) : null;
+  if (viewingSource && viewedSource) {
+    return (
+      <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50 relative" {...dragHandlers}>
+        {dragActive && <DropOverlay icon="document" message="Drop files to add sources" />}
+        <SourceViewer
+          source={viewedSource}
+          page={viewingSource.page}
+          onClose={closeSource}
+        />
+      </div>
+    );
+  }
+
   // --- Web Search View ---
   if (panelView === "websearch") {
     return (
-      <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50">
+      <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50 relative" {...dragHandlers}>
+        {dragActive && <DropOverlay icon="document" message="Drop files to add sources" />}
         {/* Header with back button */}
         <div className="px-4 py-3 border-b border-stone-800 flex items-center gap-2 shrink-0">
           <button
@@ -216,7 +241,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
           <h2 className="text-sm font-medium text-stone-400 uppercase tracking-wider">Web Search</h2>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-3 space-y-3">
+        <div className="flex-1 overflow-y-auto custom-scroll p-3 space-y-3">
           {/* Search input */}
           <div className="space-y-2">
             <input
@@ -318,8 +343,9 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
 
   // --- Normal Sources List View ---
   return (
-    <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50">
-      <div className="px-4 py-3 border-b border-stone-800 flex items-center justify-between shrink-0">
+    <div className="h-full min-h-0 min-w-0 overflow-hidden flex flex-col border-r border-stone-800 bg-stone-900/50 relative" {...dragHandlers}>
+      {dragActive && <DropOverlay icon="document" message="Drop files to add sources" />}
+      <div className="px-4 h-12 border-b border-stone-800 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-1.5">
           {onToggleCollapse && (
             <button onClick={onToggleCollapse} className="p-1 rounded hover:bg-stone-800 text-stone-500 hover:text-stone-300 transition-colors" aria-label="Collapse Sources" title="Collapse Sources">
@@ -334,7 +360,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
           <button
             onClick={() => setDropdownOpen(o => !o)}
             disabled={uploading}
-            className="text-xs px-2.5 py-1 bg-stone-800 hover:bg-stone-700 rounded-md text-stone-300 transition-colors disabled:opacity-50 flex items-center gap-1"
+            className="sunset-fill-btn border border-stone-500 text-[11px] text-stone-500 font-medium px-2.5 py-0.5 disabled:opacity-50 flex items-center gap-1"
           >
             {uploading ? "Uploading..." : "+ Add"}
             <svg className={`w-3 h-3 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -408,12 +434,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
         </div>
       )}
 
-      <div
-        className={`flex-1 min-h-0 overflow-y-auto ${dragOver ? "bg-stone-800/30" : ""}`}
-        onDragOver={e => { e.preventDefault(); setDragOver(true); }}
-        onDragLeave={() => setDragOver(false)}
-        onDrop={e => { e.preventDefault(); setDragOver(false); if (e.dataTransfer.files) handleFiles(e.dataTransfer.files); }}
-      >
+      <div className="flex-1 min-h-0 overflow-y-auto custom-scroll">
         {sources.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-stone-600 text-sm">
             <svg className="w-10 h-10 mb-2 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -448,7 +469,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
                   {materialSources.length === 0 ? (
                     <p className="text-[11px] text-stone-600 py-1 px-1">No materials added</p>
                   ) : materialSources.map(s => (
-                    <SourceRow key={s.id} source={s} onRemove={removeSource} />
+                    <SourceRow key={s.id} source={s} onRemove={removeSource} onClick={() => openSource(s.id)} />
                   ))}
                 </div>
               )}
@@ -474,7 +495,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
                   {exerciseSources.length === 0 ? (
                     <p className="text-[11px] text-stone-600 py-1 px-1">No exams added</p>
                   ) : exerciseSources.map(s => (
-                    <SourceRow key={s.id} source={s} onRemove={removeSource} />
+                    <SourceRow key={s.id} source={s} onRemove={removeSource} onClick={() => openSource(s.id)} />
                   ))}
                 </div>
               )}
@@ -504,7 +525,7 @@ export default function SourcesPanel({ collapsed, onToggleCollapse }: { collapse
                   {webSources.length === 0 ? (
                     <p className="text-[11px] text-stone-600 py-1 px-1">No web sources</p>
                   ) : webSources.map(s => (
-                    <SourceRow key={s.id} source={s} onRemove={removeSource} />
+                    <SourceRow key={s.id} source={s} onRemove={removeSource} onClick={() => openSource(s.id)} />
                   ))}
                 </div>
               )}

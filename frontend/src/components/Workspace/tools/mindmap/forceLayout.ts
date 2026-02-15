@@ -69,8 +69,8 @@ export function forceLayoutGraph(
 
   const nodeCount = simNodes.length;
   // Scale forces based on graph size — increased spacing
-  const chargeStrength = nodeCount > 80 ? -800 : nodeCount > 30 ? -600 : -450;
-  const linkDistance = nodeCount > 80 ? 220 : nodeCount > 30 ? 190 : 160;
+  const chargeStrength = nodeCount > 80 ? -1000 : nodeCount > 30 ? -750 : -550;
+  const linkDistance = nodeCount > 80 ? 260 : nodeCount > 30 ? 220 : 180;
 
   const sim = forceSimulation(simNodes as any)
     .force(

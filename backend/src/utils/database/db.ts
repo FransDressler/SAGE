@@ -4,7 +4,7 @@ import { Chroma } from "@langchain/community/vectorstores/chroma"
 import { BM25Retriever } from "@langchain/community/retrievers/bm25"
 import { Document } from "@langchain/core/documents"
 import { EmbeddingsInterface } from "@langchain/core/embeddings"
-import { EnsembleRetriever } from "langchain/retrievers/ensemble"
+import { EnsembleRetriever } from "@langchain/classic/retrievers/ensemble"
 import { config } from "../../config/env"
 import { getParents, clearParentStore, deleteParentsBySource } from "./parentStore"
 
@@ -92,7 +92,7 @@ export async function getRetriever(
 
     if (docs.length === 0) {
       if (!memoryStores[collection]) {
-        const { MemoryVectorStore } = await import("langchain/vectorstores/memory")
+        const { MemoryVectorStore } = await import("@langchain/classic/vectorstores/memory")
         memoryStores[collection] = await MemoryVectorStore.fromDocuments([], embeddings)
       }
       retrieverCache[collection] = memoryStores[collection].asRetriever({ k })
@@ -100,7 +100,7 @@ export async function getRetriever(
     }
 
     if (!memoryStores[collection]) {
-      const { MemoryVectorStore } = await import("langchain/vectorstores/memory")
+      const { MemoryVectorStore } = await import("@langchain/classic/vectorstores/memory")
       memoryStores[collection] = await MemoryVectorStore.fromDocuments(docs, embeddings)
     }
 

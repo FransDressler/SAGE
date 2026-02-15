@@ -1,17 +1,27 @@
-import { useEffect, useRef, useState } from "react";
+import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { useSubject } from "../../context/SubjectContext";
 import { useModels } from "../../context/ModelContext";
 import CollapsedColumn from "./CollapsedColumn";
-import { chatJSON, chatMultipart, getChatDetail, connectChatStream, type ChatMessage, type FlashCard, type ChatEvent, type ChatPhase, type RagSource } from "../../lib/api";
+import ChatSidebar from "./ChatSidebar";
+import DropOverlay from "./DropOverlay";
+import { useDragZone } from "../../hooks/useDragZone";
+import { chatJSON, chatMultipart, getChatDetail, connectChatStream, type ChatMessage, type FlashCard, type ChatEvent, type RagSource, type AgentStep } from "../../lib/api";
 import MarkdownView from "../Chat/MarkdownView";
 import SourcesList from "../Chat/SourcesList";
 import LoadingIndicator from "../Chat/LoadingIndicator";
 import ModelSelector from "./ModelSelector";
 
 function extractFirstJsonObject(s: string): string {
-  let depth = 0, start = -1;
+  let depth = 0, start = -1, inString = false, escape = false;
   for (let i = 0; i < s.length; i++) {
     const ch = s[i];
+    if (inString) {
+      if (escape) { escape = false; continue; }
+      if (ch === "\\") { escape = true; continue; }
+      if (ch === '"') { inString = false; }
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
     if (ch === "{") { if (depth === 0) start = i; depth++; }
     else if (ch === "}") { depth--; if (depth === 0 && start !== -1) return s.slice(start, i + 1); }
   }
@@ -20,45 +30,126 @@ function extractFirstJsonObject(s: string): string {
 
 type NormalizedPayload = { md: string; flashcards: FlashCard[]; sources: RagSource[] };
 
+/** Escape literal control chars inside JSON string values so JSON.parse succeeds */
+function sanitizeJsonString(s: string): string {
+  let out = "", inStr = false, esc = false;
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i];
+    if (inStr) {
+      if (esc) { esc = false; out += ch; continue; }
+      if (ch === "\\") { esc = true; out += ch; continue; }
+      if (ch === '"') { inStr = false; out += ch; continue; }
+      if (ch === "\n") { out += "\\n"; continue; }
+      if (ch === "\r") { out += "\\r"; continue; }
+      if (ch === "\t") { out += "\\t"; continue; }
+      out += ch;
+    } else {
+      if (ch === '"') inStr = true;
+      out += ch;
+    }
+  }
+  return out;
+}
+
+function tryParseJson(s: string): any {
+  try { return JSON.parse(s); } catch {}
+  try { return JSON.parse(sanitizeJsonString(s)); } catch {}
+  return null;
+}
+
+function fromParsed(obj: any): NormalizedPayload | null {
+  if (!obj || typeof obj !== "object") return null;
+  return {
+    md: String(obj.answer || obj.html || ""),
+    flashcards: Array.isArray(obj.flashcards) ? obj.flashcards : [],
+    sources: Array.isArray(obj.sources) ? obj.sources : [],
+  };
+}
+
 function normalizePayload(payload: unknown): NormalizedPayload {
   if (typeof payload === "string") {
     const s = payload.trim();
-    if (s.startsWith("{") && s.endsWith("}")) {
-      try { const obj = JSON.parse(s); return { md: String(obj?.answer || ""), flashcards: Array.isArray(obj?.flashcards) ? obj.flashcards : [], sources: Array.isArray(obj?.sources) ? obj.sources : [] }; } catch {}
-    }
+    // Try direct parse
+    const direct = tryParseJson(s);
+    if (direct) { const r = fromParsed(direct); if (r) return r; }
+    // Try extracting JSON object from surrounding text
     const inner = extractFirstJsonObject(s);
     if (inner) {
-      try { const obj = JSON.parse(inner); return { md: String(obj?.answer || ""), flashcards: Array.isArray(obj?.flashcards) ? obj.flashcards : [], sources: Array.isArray(obj?.sources) ? obj.sources : [] }; } catch {}
+      const extracted = tryParseJson(inner);
+      if (extracted) { const r = fromParsed(extracted); if (r) return r; }
     }
     return { md: s, flashcards: [], sources: [] };
   }
   if (payload && typeof payload === "object") {
-    const o = payload as any;
-    return { md: String(o?.answer || o?.html || ""), flashcards: Array.isArray(o?.flashcards) ? o.flashcards : [], sources: Array.isArray(o?.sources) ? o.sources : [] };
+    return fromParsed(payload) || { md: "", flashcards: [], sources: [] };
   }
   return { md: "", flashcards: [], sources: [] };
 }
 
 type ToolChatContext = { tool: string; topic: string; content: string };
 
-export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext, onToolChatConsumed }: { collapsed?: boolean; onToggleCollapse?: () => void; toolChatContext?: ToolChatContext | null; onToolChatConsumed?: () => void }) {
+export type ChatPanelHandle = {
+  newChat: () => void;
+  send: () => void;
+  stopGenerating: () => void;
+  focusInput: () => void;
+};
+
+const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCollapse?: () => void; toolChatContext?: ToolChatContext | null; onToolChatConsumed?: () => void }>(function ChatPanel({ collapsed, onToggleCollapse, toolChatContext, onToolChatConsumed }, ref) {
   const { subject, chats, activeChatId, setActiveChatId, refreshChats } = useSubject();
   const { chatModel, setChatModel } = useModels();
-  type DisplayMessage = ChatMessage & { sources?: RagSource[] };
+  type DisplayMessage = ChatMessage & { sources?: RagSource[]; agentSteps?: AgentStep[] };
   const [messages, setMessages] = useState<DisplayMessage[]>([]);
   const [busy, setBusy] = useState(false);
   const [awaiting, setAwaiting] = useState(false);
-  const [currentPhase, setCurrentPhase] = useState<ChatPhase | null>(null);
-  const [phaseDetail, setPhaseDetail] = useState<string | undefined>();
+  const [agentSteps, setAgentSteps] = useState<AgentStep[]>([]);
   const [editingIdx, setEditingIdx] = useState<number | null>(null);
   const [editText, setEditText] = useState("");
   const [pendingImages, setPendingImages] = useState<{ file: File; url: string }[]>([]);
-  const [dragOver, setDragOver] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const messagesRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const closeRef = useRef<(() => void) | null>(null);
   const wsForChatRef = useRef<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useImperativeHandle(ref, () => ({
+    newChat: () => newChat(),
+    send: () => send(),
+    stopGenerating: () => stopGenerating(),
+    focusInput: () => inputRef.current?.focus(),
+  }));
+
+  // Auto-focus chat input when user starts typing and chat is visible
+  useEffect(() => {
+    if (collapsed) return;
+    const handler = (e: KeyboardEvent) => {
+      // Skip if already in an input, or if modifier keys are held (shortcuts)
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      // Skip non-printable keys
+      if (e.key.length !== 1) return;
+      // Skip if a modal/overlay is open (z-50 elements like command palette)
+      if (document.querySelector(".fixed.z-50")) return;
+      inputRef.current?.focus();
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [collapsed]);
+
+  const acceptImages = useCallback((e: DragEvent) => {
+    if (!e.dataTransfer?.items) return false;
+    for (const item of Array.from(e.dataTransfer.items)) {
+      if (item.kind === "file" && item.type.startsWith("image/")) return true;
+    }
+    return false;
+  }, []);
+
+  const { dragActive, handlers: dragHandlers } = useDragZone({
+    onDrop: files => addImages(files),
+    accept: acceptImages,
+  });
 
   // Load chat messages when active chat changes
   useEffect(() => {
@@ -84,26 +175,29 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
 
   const onWsEvent = (ev: ChatEvent) => {
     if (ev.type === "phase") {
-      setCurrentPhase(ev.value);
-      setPhaseDetail(ev.detail);
+      const stepId = ev.stepId ?? Date.now();
+      setAgentSteps(prev => {
+        const updated = prev.map(s => s.status === "active" ? { ...s, status: "done" as const } : s);
+        return [...updated, { stepId, phase: ev.value, detail: ev.detail, status: "active" as const }];
+      });
     }
     if (ev.type === "answer") {
       const norm = normalizePayload(ev.answer);
-      setMessages(prev => [...prev, { role: "assistant", content: norm.md, at: Date.now(), sources: norm.sources }]);
+      setAgentSteps(prev => {
+        const finalized = prev.map(s => s.status === "active" ? { ...s, status: "done" as const } : s);
+        setMessages(old => [...old, { role: "assistant", content: norm.md, at: Date.now(), sources: norm.sources, agentSteps: finalized.length ? finalized : undefined }]);
+        return [];
+      });
       setAwaiting(false);
       setBusy(false);
-      setCurrentPhase(null);
-      setPhaseDetail(undefined);
     }
     if (ev.type === "done") {
-      setCurrentPhase(null);
-      setPhaseDetail(undefined);
+      setAgentSteps([]);
     }
     if (ev.type === "error") {
       setAwaiting(false);
       setBusy(false);
-      setCurrentPhase(null);
-      setPhaseDetail(undefined);
+      setAgentSteps([]);
     }
   };
 
@@ -211,8 +305,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
     }
     setAwaiting(false);
     setBusy(false);
-    setCurrentPhase(null);
-    setPhaseDetail(undefined);
+    setAgentSteps([]);
   };
 
   const startEdit = (idx: number) => {
@@ -252,27 +345,33 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
   if (collapsed && onToggleCollapse) return <CollapsedColumn label="Chat" side="center" onExpand={onToggleCollapse} />;
 
   return (
-    <div className="h-full flex flex-col bg-stone-900 min-h-0 min-w-0 overflow-hidden">
+    <div className="h-full flex flex-col bg-stone-900 min-h-0 min-w-0 overflow-hidden relative" {...dragHandlers}>
+      {dragActive && <DropOverlay icon="image" message="Drop images here" />}
+      {/* Chat sidebar */}
+      <ChatSidebar
+        open={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+        onNewChat={newChat}
+      />
+
       {/* Chat header */}
-      <div className="px-4 py-2 border-b border-stone-800 flex items-center justify-between shrink-0">
+      <div className="px-4 h-12 border-b border-stone-800 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-2">
           {onToggleCollapse && (
             <button onClick={onToggleCollapse} className="p-1 rounded hover:bg-stone-800 text-stone-500 hover:text-stone-300 transition-colors" aria-label="Collapse Chat" title="Collapse Chat">
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" /></svg>
             </button>
           )}
-          {chats.length > 0 && (
-            <select
-              value={activeChatId || ""}
-              onChange={e => setActiveChatId(e.target.value || null)}
-              className="bg-stone-900 border border-stone-800 rounded-md px-2 py-1 text-sm text-bone outline-none max-w-[200px]"
-            >
-              <option value="">New chat</option>
-              {chats.map(c => (
-                <option key={c.id} value={c.id}>{c.title || "Untitled"}</option>
-              ))}
-            </select>
-          )}
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="p-1.5 rounded hover:bg-stone-800 text-stone-500 hover:text-stone-300 transition-colors"
+            aria-label="Chat history"
+            title="Chat history"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
           <ModelSelector
             value={chatModel.provider}
             onChange={(provider, model) => setChatModel({ provider, model })}
@@ -280,7 +379,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
         </div>
         <button
           onClick={newChat}
-          className="text-xs px-2.5 py-1 bg-stone-800 hover:bg-stone-700 rounded-md text-stone-300 transition-colors"
+          className="sunset-fill-btn border border-stone-500 text-[11px] text-stone-500 font-medium px-2.5 py-0.5"
         >
           + New
         </button>
@@ -288,9 +387,9 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
 
       {/* Messages */}
       <div ref={messagesRef} className="flex-1 min-h-0 overflow-y-auto p-4 custom-scroll">
-        <div className="max-w-6xl mx-auto space-y-4">
+        <div className={`max-w-6xl mx-auto ${messages.length === 0 && !awaiting ? "flex flex-col h-full" : "space-y-4"}`}>
         {messages.length === 0 && !awaiting ? (
-          <div className="flex flex-col items-center justify-center h-full text-stone-600 text-sm">
+          <div className="flex flex-col items-center justify-center flex-1 text-stone-600 text-sm">
             <svg className="w-10 h-10 mb-2 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
             </svg>
@@ -300,6 +399,9 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
           messages.map((m, i) => (
             m.role === "assistant" ? (
               <div key={i} className="w-full">
+                {m.agentSteps && m.agentSteps.length > 0 && (
+                  <LoadingIndicator steps={m.agentSteps} finished />
+                )}
                 <div className="rounded-2xl bg-stone-900/90 border border-stone-800 px-5 py-4">
                   <MarkdownView md={m.content} />
                 </div>
@@ -378,7 +480,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
         {/* Loading with stop button */}
         {awaiting && (
           <div className="w-full space-y-2">
-            <LoadingIndicator label="Thinking..." phase={currentPhase ?? undefined} detail={phaseDetail} />
+            <LoadingIndicator label="Thinking..." steps={agentSteps} />
             <div className="flex justify-center">
               <button
                 onClick={stopGenerating}
@@ -396,12 +498,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
       </div>
 
       {/* Composer */}
-      <div
-        className={`px-4 py-3 border-t shrink-0 transition-colors ${dragOver ? "border-accent bg-accent/5" : "border-stone-800"}`}
-        onDragOver={e => { e.preventDefault(); setDragOver(true); }}
-        onDragLeave={() => setDragOver(false)}
-        onDrop={e => { e.preventDefault(); setDragOver(false); if (e.dataTransfer.files.length) addImages(e.dataTransfer.files); }}
-      >
+      <div className="px-4 py-3 border-t border-stone-800 shrink-0">
         <div className="max-w-6xl mx-auto">
           {/* Image preview */}
           {pendingImages.length > 0 && (
@@ -431,7 +528,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
             />
             <button
               onClick={() => fileInputRef.current?.click()}
-              className="p-2.5 text-stone-500 hover:text-stone-300 transition-colors shrink-0"
+              className="h-[38px] w-[38px] flex items-center justify-center text-stone-500 hover:text-stone-300 transition-colors shrink-0"
               title="Attach image"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -440,10 +537,10 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
             </button>
             <textarea
               ref={inputRef}
-              placeholder={dragOver ? "Drop images here..." : "Ask about your sources..."}
+              placeholder="Ask about your sources..."
               rows={1}
-              className="flex-1 bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-bone placeholder:text-stone-600 outline-none focus:border-stone-700 resize-none overflow-y-auto max-h-32 text-sm"
-              onInput={e => { const el = e.target as HTMLTextAreaElement; el.style.height = "auto"; el.style.height = Math.min(el.scrollHeight, 128) + "px"; }}
+              className="flex-1 bg-stone-900 border border-stone-800 rounded-xl px-4 py-2.5 text-bone placeholder:text-stone-600 outline-none focus:border-stone-700 resize-none overflow-y-auto custom-scroll max-h-64 text-sm"
+              onInput={e => { const el = e.target as HTMLTextAreaElement; el.style.height = "auto"; el.style.height = Math.min(el.scrollHeight, 256) + "px"; }}
               onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
               onPaste={e => {
                 const items = Array.from(e.clipboardData.items);
@@ -458,7 +555,7 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
             <button
               onClick={() => send()}
               disabled={busy}
-              className="p-2.5 bg-accent hover:bg-accent-hover disabled:opacity-50 rounded-xl text-stone-950 transition-colors shrink-0"
+              className="h-[38px] w-[38px] flex items-center justify-center bg-accent hover:bg-accent-hover disabled:opacity-50 rounded-xl text-stone-950 transition-colors shrink-0"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
@@ -469,4 +566,6 @@ export default function ChatPanel({ collapsed, onToggleCollapse, toolChatContext
       </div>
     </div>
   );
-}
+});
+
+export default ChatPanel;

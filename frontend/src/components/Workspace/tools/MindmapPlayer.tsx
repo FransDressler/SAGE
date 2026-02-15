@@ -15,7 +15,8 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import ConceptNode from "./mindmap/ConceptNode";
-import { layoutGraph } from "./mindmap/layout";
+import ClusterBackground from "./mindmap/ClusterBackground";
+import { clusterLayoutGraph } from "./mindmap/clusterLayout";
 import MindmapEditPopup from "./mindmap/MindmapEditPopup";
 import AddNodeForm from "./mindmap/AddNodeForm";
 import NodeContextMenu from "./mindmap/NodeContextMenu";
@@ -54,7 +55,7 @@ type Props = {
   onChatAbout?: () => void;
 };
 
-const nodeTypes: NodeTypes = { concept: ConceptNode };
+const nodeTypes: NodeTypes = { concept: ConceptNode, clusterBg: ClusterBackground };
 
 function buildFlowGraph(data: MindmapData): { nodes: Node[]; edges: Edge[] } {
   const rawNodes: Node[] = data.nodes.map((n) => ({
@@ -72,21 +73,47 @@ function buildFlowGraph(data: MindmapData): { nodes: Node[]; edges: Edge[] } {
 
   const nodeIds = new Set(rawNodes.map((n) => n.id));
 
+  // Build category lookup for cross-cluster edge detection
+  const nodeCategoryMap = new Map<string, string>();
+  for (const n of data.nodes) nodeCategoryMap.set(n.id, n.category);
+
   const rawEdges: Edge[] = data.edges
     .filter((e) => nodeIds.has(e.source) && nodeIds.has(e.target))
-    .map((e, i) => ({
-      id: `e-${e.source}-${e.target}-${i}`,
-      source: e.source,
-      target: e.target,
-      label: e.label,
-      data: { weight: e.weight },
-      style: { stroke: "#57534e", strokeWidth: Math.max(1, e.weight * 3) },
-      labelStyle: { fill: "#a8a29e", fontSize: 10, fontFamily: "'Courier Prime', monospace" },
-      labelBgStyle: { fill: "#1c1917", fillOpacity: 0.8 },
-      animated: e.weight > 0.7,
-    }));
+    .map((e, i) => {
+      const isCrossCluster = nodeCategoryMap.get(e.source) !== nodeCategoryMap.get(e.target);
+      return {
+        id: `e-${e.source}-${e.target}-${i}`,
+        source: e.source,
+        target: e.target,
+        label: e.label,
+        data: { weight: e.weight },
+        style: {
+          stroke: isCrossCluster ? "#A89888" : "#8C7E72",
+          strokeWidth: Math.max(1, e.weight * 3),
+          ...(isCrossCluster ? { strokeDasharray: "6 3" } : {}),
+        },
+        labelStyle: { fill: "#C4B8A8", fontSize: 10, fontFamily: "'Courier Prime', monospace" },
+        labelBgStyle: { fill: "#1c1917", fillOpacity: 0.85 },
+        animated: e.weight > 0.7,
+      };
+    });
 
-  return layoutGraph(rawNodes, rawEdges, "TB");
+  // Use cluster layout
+  const { nodes: positioned, edges: layoutEdges, clusterBounds } = clusterLayoutGraph(rawNodes, rawEdges);
+
+  // Add cluster background nodes (behind everything)
+  const bgNodes: Node[] = clusterBounds.map((cb) => ({
+    id: `cluster-bg-${cb.category}`,
+    type: "clusterBg",
+    position: { x: cb.x, y: cb.y },
+    data: { category: cb.category, width: cb.width, height: cb.height },
+    selectable: false,
+    draggable: false,
+    connectable: false,
+    zIndex: -10,
+  }));
+
+  return { nodes: [...bgNodes, ...positioned], edges: layoutEdges };
 }
 
 function slugify(s: string): string {
@@ -97,15 +124,15 @@ function slugify(s: string): string {
     .slice(0, 80);
 }
 
-const CATEGORIES = ["theory", "person", "event", "term", "process", "principle", "method"];
+const CATEGORIES = ["theory", "person", "event", "term", "process", "principle", "method"] as const;
 const CAT_COLORS: Record<string, string> = {
-  theory: "bg-blue-500",
-  person: "bg-amber-500",
-  event: "bg-rose-500",
-  term: "bg-stone-500",
-  process: "bg-green-500",
-  principle: "bg-purple-500",
-  method: "bg-cyan-500",
+  theory: "#3b82f6",
+  person: "#f59e0b",
+  event: "#f43f5e",
+  term: "#78716c",
+  process: "#22c55e",
+  principle: "#a855f7",
+  method: "#06b6d4",
 };
 
 type HistoryEntry = { nodes: Node[]; edges: Edge[] };
@@ -164,14 +191,16 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
   // Extract current MindmapData from React Flow state
   const getCurrentData = useCallback((): MindmapData => {
     return {
-      nodes: nodes.map((n) => ({
-        id: n.id,
-        label: (n.data as any).label || "",
-        description: (n.data as any).description || "",
-        category: (n.data as any).category || "term",
-        importance: (n.data as any).importance || "medium",
-        sources: (n.data as any).sources || [],
-      })),
+      nodes: nodes
+        .filter((n) => n.type === "concept")
+        .map((n) => ({
+          id: n.id,
+          label: (n.data as any).label || "",
+          description: (n.data as any).description || "",
+          category: (n.data as any).category || "term",
+          importance: (n.data as any).importance || "medium",
+          sources: (n.data as any).sources || [],
+        })),
       edges: edges.map((e) => ({
         source: e.source,
         target: e.target,
@@ -184,8 +213,8 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
   }, [nodes, edges, data.generatedAt, data.sourceCount]);
 
   const categories = useMemo(() => {
-    const cats = new Set(data.nodes.map((n) => n.category));
-    return CATEGORIES.filter((c) => cats.has(c));
+    const used = new Set(data.nodes.map((n) => n.category));
+    return CATEGORIES.filter((c) => used.has(c));
   }, [data]);
 
   const handleSearch = useCallback(
@@ -193,13 +222,16 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
       setSearch(term);
       const lower = term.toLowerCase();
       setNodes((prev) =>
-        prev.map((n) => ({
-          ...n,
-          style: {
-            ...n.style,
-            opacity: !term || (n.data as any).label?.toLowerCase().includes(lower) ? 1 : 0.2,
-          },
-        }))
+        prev.map((n) => {
+          if (n.type !== "concept") return n;
+          return {
+            ...n,
+            style: {
+              ...n.style,
+              opacity: !term || (n.data as any).label?.toLowerCase().includes(lower) ? 1 : 0.2,
+            },
+          };
+        })
       );
     },
     [setNodes]
@@ -220,9 +252,9 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
             ...connection,
             label: "relates-to",
             data: { weight: 0.5 },
-            style: { stroke: "#57534e", strokeWidth: 2 },
-            labelStyle: { fill: "#a8a29e", fontSize: 10, fontFamily: "'Courier Prime', monospace" },
-            labelBgStyle: { fill: "#1c1917", fillOpacity: 0.8 },
+            style: { stroke: "#8C7E72", strokeWidth: 2 },
+            labelStyle: { fill: "#C4B8A8", fontSize: 10, fontFamily: "'Courier Prime', monospace" },
+            labelBgStyle: { fill: "#1c1917", fillOpacity: 0.85 },
           },
           eds
         );
@@ -275,6 +307,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
   // Delete node
   const handleDeleteNode = useCallback(
     (nodeId: string) => {
+      if (nodes.find(n => n.id === nodeId)?.type !== "concept") return;
       setNodes((prev) => {
         const updated = prev.filter((n) => n.id !== nodeId);
         const updatedEdges = edges.filter((e) => e.source !== nodeId && e.target !== nodeId);
@@ -297,7 +330,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
                 ...e,
                 label,
                 data: { ...e.data, weight },
-                style: { stroke: "#57534e", strokeWidth: Math.max(1, weight * 3) },
+                style: { stroke: "#8C7E72", strokeWidth: Math.max(1, weight * 3) },
                 animated: weight > 0.7,
               }
             : e
@@ -326,6 +359,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
   // Node context menu
   const onNodeContextMenu = useCallback(
     (event: React.MouseEvent, node: Node) => {
+      if (node.type !== "concept") return;
       event.preventDefault();
       setEdgeMenu(null);
       setNodeMenu({
@@ -416,10 +450,10 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-2 border-b border-stone-800 shrink-0 bg-stone-900/80 backdrop-blur-sm z-10">
         <div className="flex items-center gap-3 min-w-0">
-          <span className="text-xs font-bold text-cyan-400 shrink-0">M</span>
+          <span className="text-xs font-bold text-bone shrink-0">M</span>
           <span className="text-sm text-stone-300 truncate">{topic}</span>
           <span className="text-[10px] text-stone-600 shrink-0">
-            {nodes.length} nodes / {edges.length} edges
+            {nodes.filter(n => n.type === "concept").length} nodes / {edges.length} edges
           </span>
           {hasUnsavedChanges && (
             <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" title="Unsaved changes" />
@@ -465,7 +499,7 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
         </button>
         <button
           onClick={() => setAiEditOpen(true)}
-          className="px-2.5 py-1 rounded-md text-[11px] font-medium bg-cyan-900/40 text-cyan-300 hover:bg-cyan-800/40 transition-colors"
+          className="sunset-btn bg-stone-950 text-[11px] text-stone-300 font-medium px-2.5 py-0.5 rounded-md"
         >
           AI Edit
         </button>
@@ -520,43 +554,38 @@ export default function MindmapPlayer({ data, topic, toolId, subjectId, onClose,
           onEdgeContextMenu={onEdgeContextMenu}
           onPaneClick={() => { setNodeMenu(null); setEdgeMenu(null); }}
           nodeTypes={nodeTypes}
-          connectionLineStyle={{ stroke: "#57534e", strokeWidth: 2 }}
+          connectionLineStyle={{ stroke: "#8C7E72", strokeWidth: 2 }}
           fitView
           fitViewOptions={{ padding: 0.2 }}
           minZoom={0.1}
           maxZoom={2}
           proOptions={{ hideAttribution: true }}
-          className="bg-stone-900"
+          className="bg-[radial-gradient(ellipse_at_center,_#1F1B18_0%,_#12100f_70%)]"
           deleteKeyCode={["Backspace", "Delete"]}
         >
-          <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#292524" />
+          <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#2A2520" />
           <Controls
             className="!bg-stone-900 !border-stone-800 !rounded-lg !shadow-lg [&>button]:!bg-stone-800 [&>button]:!border-stone-700 [&>button]:!text-stone-400 [&>button:hover]:!bg-stone-700"
             showInteractive={false}
           />
           <MiniMap
-            nodeColor={(n) => {
-              const cat = (n.data as any)?.category || "term";
-              const map: Record<string, string> = {
-                theory: "#3b82f6", person: "#f59e0b", event: "#f43f5e",
-                term: "#78716c", process: "#22c55e", principle: "#a855f7", method: "#06b6d4",
-              };
-              return map[cat] || "#78716c";
-            }}
+            nodeColor={(n) => CAT_COLORS[(n.data as any)?.category] || CAT_COLORS.term}
             className="!bg-stone-900/80 !border-stone-800 !rounded-lg"
             maskColor="rgba(0,0,0,0.6)"
           />
         </ReactFlow>
 
         {/* Legend */}
-        <div className="absolute bottom-4 left-4 flex flex-wrap gap-1.5 z-10">
-          {categories.map((cat) => (
-            <span key={cat} className="flex items-center gap-1 text-[10px] text-stone-500">
-              <span className={`w-2 h-2 rounded-full ${CAT_COLORS[cat] || "bg-stone-500"}`} />
-              {cat}
-            </span>
-          ))}
-        </div>
+        {categories.length > 0 && (
+          <div className="absolute bottom-4 left-4 flex flex-col gap-1 z-10 bg-stone-900/80 backdrop-blur-sm rounded-lg px-2.5 py-2 border border-stone-800/50">
+            {categories.map((cat) => (
+              <div key={cat} className="flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: CAT_COLORS[cat] }} />
+                <span className="text-[10px] text-stone-400 capitalize">{cat}</span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Popups / Menus */}

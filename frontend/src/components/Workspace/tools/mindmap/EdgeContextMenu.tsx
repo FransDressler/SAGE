@@ -61,7 +61,7 @@ export default function EdgeContextMenu({ edgeId, edgeLabel, edgeWeight, positio
                 value={label}
                 onChange={(e) => setLabel(e.target.value)}
                 autoFocus
-                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-bone-muted"
               />
             </div>
             <div>
@@ -75,7 +75,7 @@ export default function EdgeContextMenu({ edgeId, edgeLabel, edgeWeight, positio
                 step={0.05}
                 value={weight}
                 onChange={(e) => setWeight(parseFloat(e.target.value))}
-                className="w-full accent-cyan-500"
+                className="w-full accent-[#D07850]"
               />
             </div>
             <div className="flex justify-end gap-2 pt-1">
@@ -84,7 +84,7 @@ export default function EdgeContextMenu({ edgeId, edgeLabel, edgeWeight, positio
               </button>
               <button
                 onClick={handleSave}
-                className="px-3 py-1 rounded text-[11px] font-medium text-white bg-cyan-700 hover:bg-cyan-600"
+                className="px-3 py-1 rounded text-[11px] font-medium sunset-btn bg-stone-800 text-bone"
               >
                 Save
               </button>

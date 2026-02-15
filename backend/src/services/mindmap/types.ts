@@ -4,6 +4,7 @@ export type ConceptNode = {
   description: string
   category: string
   importance: "high" | "medium" | "low"
+  color: string
   sources: { file: string; page?: number }[]
 }
 

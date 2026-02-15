@@ -1,14 +1,14 @@
-import type { ChatPhase } from "../../lib/api";
+import { useState } from "react";
+import type { ChatPhase, AgentStep } from "../../lib/api";
 
-type PhaseStep = { key: ChatPhase; label: string; icon: string };
-
-const AGENT_STEPS: PhaseStep[] = [
-  { key: "thinking", label: "Understanding your question", icon: "thought" },
-  { key: "searching_sources", label: "Searching your materials", icon: "search" },
-  { key: "searching_web", label: "Searching the web", icon: "globe" },
-  { key: "reading_results", label: "Reading results", icon: "read" },
-  { key: "generating", label: "Writing answer", icon: "write" },
-];
+const PHASE_META: Record<string, { label: string; icon: string }> = {
+  thinking: { label: "Understanding your question", icon: "thought" },
+  listing_sources: { label: "Looking up available sources", icon: "read" },
+  searching_sources: { label: "Searching your materials", icon: "search" },
+  searching_web: { label: "Searching the web", icon: "globe" },
+  reading_results: { label: "Reading results", icon: "read" },
+  generating: { label: "Writing answer", icon: "write" },
+};
 
 function StepIcon({ icon, active, done }: { icon: string; active: boolean; done: boolean }) {
   const color = done ? "text-emerald-400" : active ? "text-accent" : "text-stone-600";
@@ -56,12 +56,18 @@ function StepIcon({ icon, active, done }: { icon: string; active: boolean; done:
   }
 }
 
+function getMeta(phase: ChatPhase) {
+  return PHASE_META[phase] ?? { label: phase, icon: "write" };
+}
+
 export default function LoadingIndicator({
-  label = "Preparing your answer…",
-  phase,
-  detail,
-}: { label?: string; phase?: ChatPhase; detail?: string }) {
-  if (!phase) {
+  label = "Preparing your answer\u2026",
+  steps,
+  finished,
+}: { label?: string; steps: AgentStep[]; finished?: boolean }) {
+  const [expanded, setExpanded] = useState(false);
+
+  if (steps.length === 0) {
     return (
       <div className="w-full max-w-4xl rounded-2xl p-6 border border-stone-900 bg-stone-900">
         <div className="flex items-center gap-4">
@@ -80,38 +86,73 @@ export default function LoadingIndicator({
     );
   }
 
-  const currentIdx = AGENT_STEPS.findIndex(s => s.key === phase);
-  const visibleSteps = AGENT_STEPS.filter((step, i) => {
-    if (i <= currentIdx) return true;
-    if (step.key === "generating" && currentIdx >= 0) return true;
-    return false;
-  });
+  if (finished) {
+    return (
+      <div className="w-full max-w-4xl mb-1">
+        <button
+          onClick={() => setExpanded(e => !e)}
+          className="flex items-center gap-2 text-xs text-stone-500 hover:text-stone-300 transition-colors py-1"
+        >
+          <svg
+            className={`w-3 h-3 transition-transform duration-200 ${expanded ? "rotate-90" : ""}`}
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          <span>{steps.length} step{steps.length !== 1 ? "s" : ""}</span>
+          <span className="text-stone-600">
+            {steps.map(s => getMeta(s.phase).label).join(" \u2192 ")}
+          </span>
+        </button>
+        {expanded && (
+          <div className="rounded-xl p-3 border border-stone-800 bg-stone-900/60 mt-1 space-y-1.5">
+            {steps.map((step) => {
+              const meta = getMeta(step.phase);
+              return (
+                <div key={step.stepId} className="flex items-center gap-2.5 opacity-60">
+                  <StepIcon icon={meta.icon} active={false} done={true} />
+                  <span className="text-xs text-stone-400">
+                    {meta.label}
+                    {step.detail && (
+                      <span className="text-stone-500 ml-1.5">
+                        — &ldquo;{step.detail.length > 40 ? step.detail.slice(0, 40) + "\u2026" : step.detail}&rdquo;
+                      </span>
+                    )}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="w-full max-w-4xl rounded-2xl p-5 border border-stone-800 bg-stone-900/80">
       <div className="space-y-2.5">
-        {visibleSteps.map((step, i) => {
-          const stepIdx = AGENT_STEPS.indexOf(step);
-          const isDone = stepIdx < currentIdx;
-          const isActive = stepIdx === currentIdx;
+        {steps.map((step) => {
+          const meta = getMeta(step.phase);
+          const isActive = step.status === "active";
+          const isDone = step.status === "done";
 
           return (
             <div
-              key={step.key}
+              key={step.stepId}
               className={`flex items-center gap-3 transition-all duration-300 ${
-                isActive ? "opacity-100" : isDone ? "opacity-60" : "opacity-30"
+                isActive ? "opacity-100" : "opacity-60"
               }`}
             >
               <div className={`relative ${isActive ? "animate-pulse" : ""}`}>
-                <StepIcon icon={step.icon} active={isActive} done={isDone} />
+                <StepIcon icon={meta.icon} active={isActive} done={isDone} />
               </div>
               <span className={`text-sm ${
-                isActive ? "text-bone font-medium" : isDone ? "text-stone-400" : "text-stone-600"
+                isActive ? "text-bone font-medium" : "text-stone-400"
               }`}>
-                {step.label}
-                {isActive && detail && (
+                {meta.label}
+                {step.detail && (
                   <span className="text-stone-500 ml-1.5 font-normal">
-                    — "{detail.length > 40 ? detail.slice(0, 40) + "…" : detail}"
+                    — &ldquo;{step.detail.length > 40 ? step.detail.slice(0, 40) + "\u2026" : step.detail}&rdquo;
                   </span>
                 )}
               </span>

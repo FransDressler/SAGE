@@ -11,7 +11,7 @@ type ParsedTranscriptionRequest = {
 
 function parseTranscriptionRequest(req: any): Promise<ParsedTranscriptionRequest> {
     return new Promise((resolve, reject) => {
-        const bb = Busboy({ headers: req.headers });
+        const bb = Busboy({ headers: req.headers, defParamCharset: "utf8" });
         let provider: TranscriptionProvider = config.transcription_provider as TranscriptionProvider;
         const files: Array<{ path: string; filename: string; mimeType: string }> = [];
         let pending = 0;
@@ -36,7 +36,8 @@ function parseTranscriptionRequest(req: any): Promise<ParsedTranscriptionRequest
 
         bb.on('file', (_name, file, info: any) => {
             pending++;
-            const filename = info?.filename || 'audio';
+            const rawFilename = info?.filename || 'audio';
+            const filename = path.basename(rawFilename).replace(/[^a-zA-Z0-9._-]/g, '_');
             const mimeType = info?.mimeType || info?.mime || 'audio/webm';
             const filePath = path.join(uploadDir, `${Date.now()}-${filename}`);
             const writeStream = fs.createWriteStream(filePath);

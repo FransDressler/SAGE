@@ -37,6 +37,22 @@ const components: Components = {
   thead: (p) => <thead className="border-b border-stone-800" {...p} />,
   th: (p) => <th className="px-3 py-2 font-semibold text-bone-light" {...p} />,
   td: (p) => <td className="px-3 py-2 align-top" {...p} />,
+  img: ({ src, alt, ...rest }: any) => (
+    <figure className="my-4">
+      <img
+        src={src}
+        alt={alt || ""}
+        referrerPolicy="no-referrer"
+        className="max-w-full max-h-96 rounded-lg border border-stone-700 bg-stone-900"
+        loading="lazy"
+        onError={(e) => { (e.target as HTMLImageElement).style.display = "none" }}
+        {...rest}
+      />
+      {alt && alt !== "diagram" && alt !== "" && (
+        <figcaption className="mt-1 text-sm text-stone-400 italic">{alt}</figcaption>
+      )}
+    </figure>
+  ),
   code: ({ inline, className, children, ...rest }: any) => {
     if (inline) {
       return (

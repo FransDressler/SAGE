@@ -1,5 +1,6 @@
 import { memo, useState } from "react";
 import { Handle, Position, type NodeProps } from "@xyflow/react";
+import { useSubject } from "../../../../context/SubjectContext";
 
 type ConceptData = {
   label: string;
@@ -12,14 +13,16 @@ type ConceptData = {
 };
 
 const CATEGORY_COLORS: Record<string, { border: string; text: string; bg: string }> = {
-  theory:    { border: "border-blue-500/60",   text: "text-blue-400",   bg: "bg-blue-900/20" },
-  person:    { border: "border-amber-500/60",  text: "text-amber-400",  bg: "bg-amber-900/20" },
-  event:     { border: "border-rose-500/60",   text: "text-rose-400",   bg: "bg-rose-900/20" },
-  term:      { border: "border-stone-500/60",  text: "text-stone-300",  bg: "bg-stone-800/30" },
-  process:   { border: "border-green-500/60",  text: "text-green-400",  bg: "bg-green-900/20" },
-  principle: { border: "border-purple-500/60", text: "text-purple-400", bg: "bg-purple-900/20" },
-  method:    { border: "border-cyan-500/60",   text: "text-cyan-400",   bg: "bg-cyan-900/20" },
+  theory:    { border: "border-blue-500",   text: "text-blue-400",   bg: "bg-blue-500/12" },
+  person:    { border: "border-amber-500",  text: "text-amber-400",  bg: "bg-amber-500/12" },
+  event:     { border: "border-rose-500",   text: "text-rose-400",   bg: "bg-rose-500/12" },
+  term:      { border: "border-stone-500",  text: "text-stone-400",  bg: "bg-stone-500/12" },
+  process:   { border: "border-green-500",  text: "text-green-400",  bg: "bg-green-500/12" },
+  principle: { border: "border-purple-500", text: "text-purple-400", bg: "bg-purple-500/12" },
+  method:    { border: "border-cyan-500",   text: "text-cyan-400",   bg: "bg-cyan-500/12" },
 };
+
+const DEFAULT_CAT_COLORS = CATEGORY_COLORS.term;
 
 const SIZE_MAP: Record<string, string> = {
   high: "min-w-[160px]",
@@ -35,11 +38,11 @@ function degreeScale(degree: number, maxDegree: number): number {
 
 function ConceptNode({ data }: NodeProps) {
   const [expanded, setExpanded] = useState(false);
+  const { sources: allSources, openSource } = useSubject();
   const d = data as unknown as ConceptData;
-  const colors = CATEGORY_COLORS[d.category] || CATEGORY_COLORS.term;
+  const colors = CATEGORY_COLORS[d.category] || DEFAULT_CAT_COLORS;
   const size = SIZE_MAP[d.importance] || SIZE_MAP.medium;
 
-  // Degree-based scaling: present in knowledge graph, absent in mindmap
   const hasDegree = d.degree != null && d.maxDegree != null;
   const scale = hasDegree ? degreeScale(d.degree!, d.maxDegree!) : 1;
   const isHub = hasDegree && scale > 1.3;
@@ -51,7 +54,7 @@ function ConceptNode({ data }: NodeProps) {
         onClick={() => setExpanded(!expanded)}
         style={hasDegree ? { transform: `scale(${scale})`, transformOrigin: "center center" } : undefined}
         className={`
-          rounded-xl border-2 ${colors.border} ${colors.bg} backdrop-blur-sm
+          rounded-xl border-2 ${colors.border} ${colors.bg}
           px-3 py-2 cursor-pointer transition-all duration-200
           hover:brightness-125 hover:shadow-lg hover:shadow-stone-900/50
           ${size} max-w-[260px]
@@ -60,7 +63,7 @@ function ConceptNode({ data }: NodeProps) {
         `}
       >
         <div className="flex items-center gap-2">
-          <span className={`text-[10px] font-bold uppercase tracking-wider ${colors.text} shrink-0`}>
+          <span className={`text-[10px] font-bold uppercase tracking-wider shrink-0 ${colors.text}`}>
             {d.category.slice(0, 3)}
           </span>
           <span className={`font-semibold text-stone-200 truncate leading-tight ${isHub ? "text-sm" : "text-xs"}`}>
@@ -75,11 +78,21 @@ function ConceptNode({ data }: NodeProps) {
             )}
             {d.sources.length > 0 && (
               <div className="flex flex-wrap gap-1 pt-1">
-                {d.sources.map((s, i) => (
-                  <span key={i} className="text-[9px] px-1.5 py-0.5 rounded bg-stone-800 text-stone-500">
-                    {s.file}{s.page != null ? ` p.${s.page}` : ""}
-                  </span>
-                ))}
+                {d.sources.map((s, i) => {
+                  const match = allSources.find(src => src.originalName === s.file);
+                  return (
+                    <button
+                      key={i}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (match) openSource(match.id, { page: s.page });
+                      }}
+                      className={`text-[9px] px-1.5 py-0.5 rounded bg-stone-800 text-stone-500 transition-colors ${match ? "hover:bg-stone-700 hover:text-stone-300 cursor-pointer" : ""}`}
+                    >
+                      {s.file}{s.page != null ? ` p.${s.page}` : ""}
+                    </button>
+                  );
+                })}
               </div>
             )}
           </div>

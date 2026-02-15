@@ -66,7 +66,7 @@ export default function Home() {
       {/* Content — positioned in the center cell */}
       <div className="relative h-full flex flex-col items-center justify-center px-[10%] sm:px-[14%]">
         {/* Title area — upper center */}
-        <div className="flex flex-col items-center mb-8">
+        <div className="flex flex-col items-center mb-8 mt-16">
           <h1
             className="text-6xl sm:text-7xl font-bold tracking-[0.08em] mb-3 bg-clip-text text-transparent select-none"
             style={{
@@ -96,23 +96,24 @@ export default function Home() {
               <p className="text-sm text-stone-600 mb-6">Create your first subject to get started</p>
               <button
                 onClick={() => setShowCreate(true)}
-                className="px-5 py-2 bg-accent hover:bg-accent-hover text-stone-950 rounded-lg text-sm font-medium transition-colors"
+                className="sunset-fill-btn border-2 border-stone-300 px-5 py-2 text-sm text-stone-300 font-medium transition-colors"
               >
                 + Create Subject
               </button>
             </div>
           ) : (
             <>
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-0">
                 <span className="text-xs text-stone-500 uppercase tracking-wider font-medium">Subjects</span>
                 <button
                   onClick={() => setShowCreate(true)}
-                  className="sunset-btn text-xs text-stone-500 font-medium px-3 py-1 rounded-md"
+                  className="sunset-fill-btn border-2 border-stone-300 text-xs text-stone-300 font-medium px-3 py-1 transition-colors"
                 >
                   + New
                 </button>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pb-16">
+              <div className="h-px bg-stone-700/60 mt-2" />
+              <div className="divide-y divide-stone-700/40 pb-16">
                 {subjects.map((s, i) => (
                   <div key={s.id} className="animate-[fadeIn_300ms_ease_both]" style={{ animationDelay: `${i * 50}ms` }}>
                     <SubjectCard

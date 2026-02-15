@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import type { Subject } from "../../lib/api";
 
 type Props = {
@@ -12,6 +13,19 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
   const [menuOpen, setMenuOpen] = useState(false);
   const [renaming, setRenaming] = useState(false);
   const [name, setName] = useState(subject.name);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const btnRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const handleClick = (e: MouseEvent) => {
+      if (menuRef.current?.contains(e.target as Node)) return;
+      if (btnRef.current?.contains(e.target as Node)) return;
+      setMenuOpen(false);
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [menuOpen]);
 
   const timeAgo = (ts: number) => {
     const diff = Date.now() - ts;
@@ -33,8 +47,7 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
 
   return (
     <div
-      className="sunset-card relative bg-stone-900 border border-transparent rounded-xl p-5 cursor-pointer group"
-      style={{ backgroundClip: 'padding-box' }}
+      className="subject-row relative py-4 px-2 cursor-pointer group hover:bg-stone-800/30 transition-colors"
       onClick={renaming ? undefined : onClick}
     >
       <div className="flex items-start justify-between mb-3">
@@ -52,6 +65,7 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
           <h3 className="sunset-text font-medium text-lg truncate pr-2 text-bone-light">{subject.name}</h3>
         )}
         <button
+          ref={btnRef}
           onClick={e => { e.stopPropagation(); setMenuOpen(!menuOpen); }}
           className="text-stone-500 hover:text-stone-300 opacity-0 group-hover:opacity-100 transition-opacity p-1 -mr-1"
         >
@@ -67,9 +81,15 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
         <span>{timeAgo(subject.updatedAt)}</span>
       </div>
 
-      {menuOpen && (
+      {menuOpen && btnRef.current && createPortal(
         <div
-          className="absolute right-3 top-12 bg-stone-800 border border-stone-700 rounded-lg shadow-xl z-10 py-1 min-w-[120px]"
+          ref={menuRef}
+          className="fixed bg-stone-800 border border-stone-700 shadow-xl py-1 min-w-[120px]"
+          style={{
+            zIndex: 9999,
+            top: btnRef.current.getBoundingClientRect().bottom + 4,
+            right: window.innerWidth - btnRef.current.getBoundingClientRect().right,
+          }}
           onClick={e => e.stopPropagation()}
         >
           <button
@@ -84,7 +104,8 @@ export default function SubjectCard({ subject, onClick, onDelete, onRename }: Pr
           >
             Delete
           </button>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

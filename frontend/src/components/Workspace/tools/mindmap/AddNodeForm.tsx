@@ -50,7 +50,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
               onChange={(e) => setLabel(e.target.value)}
               placeholder="Concept name"
               autoFocus
-              className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600"
+              className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-bone-muted"
             />
           </div>
 
@@ -61,7 +61,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Brief description…"
               rows={2}
-              className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-cyan-600 resize-none"
+              className="w-full bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600 outline-none focus:border-bone-muted resize-none"
             />
           </div>
 
@@ -74,7 +74,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
                   onClick={() => setCategory(c)}
                   className={`px-2 py-1 rounded-md text-[11px] font-medium transition-colors ${
                     category === c
-                      ? "bg-cyan-700/30 border border-cyan-600 text-cyan-300"
+                      ? "bg-bone/15 border border-bone-muted text-bone"
                       : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
                   }`}
                 >
@@ -93,7 +93,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
                   onClick={() => setImportance(imp)}
                   className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     importance === imp
-                      ? "bg-cyan-700/30 border border-cyan-600 text-cyan-300"
+                      ? "bg-bone/15 border border-bone-muted text-bone"
                       : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
                   }`}
                 >
@@ -111,7 +111,7 @@ export default function AddNodeForm({ onAdd, onClose }: Props) {
           <button
             onClick={handleSubmit}
             disabled={!label.trim()}
-            className="px-6 py-2 rounded-lg text-sm font-medium text-white bg-cyan-700 hover:bg-cyan-600 transition-colors disabled:opacity-50"
+            className="px-6 py-2 rounded-lg text-sm font-medium sunset-btn bg-stone-800 text-bone transition-colors disabled:opacity-50 disabled:pointer-events-none"
           >
             Add
           </button>

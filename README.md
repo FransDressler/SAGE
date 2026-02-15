@@ -7,10 +7,11 @@
 
 ** _S_tudy _A_id for _G_uided _E_ducation**
 
+--- 
 
+**S**tudy **A**id for **G**uided **E**ducation
 
-
-A redesigned fork of [PageLM](https://github.com/CaviraOSS/PageLM) — trimmed down, rebuilt with a new UI, and extended with new features like exam generation, AI mind maps, and subject graphs.
+A redesigned fork of [PageLM](https://github.com/CaviraOSS/PageLM) — rebuilt with a new UI and extended with academic research, AI mind maps, subject graphs, and more.
 
 
 </div>
@@ -31,10 +32,15 @@ SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new
 
 | Change | Description |
 |--------|-------------|
-| **New Design** | Fully reworked UI — workspace layout, collapsible panels, mobile header, loading states, selection popups |
+| **New Design** | Fully reworked UI — workspace layout, collapsible panels, command palette, keyboard shortcuts, drag-and-drop uploads |
+| **Academic Research** | Generate research papers with arXiv, PubMed, and Wikipedia integration — 6-phase pipeline with citations |
 | **Exam Builder** | Generate exam-style assessments from your sources with open and MCQ questions, point allocation, and time limits |
-| **Mind Map + AI Editing** | Visual knowledge graphs with AI-assisted restructuring and force-directed auto-layout |
-| **Subject Graph** | Cross-subject knowledge graph visualization |
+| **Mind Map + AI Editing** | Visual knowledge graphs with AI-assisted restructuring, category clustering, and force-directed auto-layout |
+| **Subject Graph** | Persistent cross-subject knowledge graph that grows incrementally as you add sources |
+| **Mathpix OCR** | Math-aware PDF parsing — converts LaTeX formulas and extracts diagrams |
+| **Image Understanding** | Vision model describes extracted diagrams and figures for richer context |
+| **Chat Sidebar** | Multi-chat support with history, rename, and delete |
+| **Source Viewer** | Inline PDF and markdown preview with page navigation |
 | **Enhanced Chat** | Improved composer, markdown rendering, and source attribution display |
 | **Quiz Redesign** | Rebuilt question cards, results panel, review modal, and topic bar |
 | **Removed** | ExamLab, Debate, and Study Companion — stripped to keep the tool focused |
@@ -45,8 +51,9 @@ SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new
 
 | Tool | Description |
 |------|-------------|
-| **Contextual Chat** | RAG-powered Q&A over uploaded documents with source attribution |
-| **SmartNotes** | Cornell-style structured notes with PDF export |
+| **Contextual Chat** | RAG-powered Q&A over uploaded documents with source attribution and multi-chat history |
+| **Academic Research** | Generate research papers with arXiv, PubMed, and Wikipedia sources — dedicated reader with TOC |
+| **SmartNotes** | Cornell-style structured notes with Wikipedia enrichment, graph context, and PDF export |
 | **Flashcards** | Cognitive-dimension tagged cards (anti-rote learning) |
 | **Quizzes** | MCQ generation with hints, explanations, and scoring |
 | **AI Podcast** | Two-speaker audio dialogues from your materials |
@@ -54,8 +61,10 @@ SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new
 | **Homework Planner** | AI scheduling with Pomodoro time-blocking |
 | **Web Search** | Pull and embed web content into your sources |
 | **Exam Builder** | Generate custom exams from your uploaded sources |
-| **Mind Map** | Visual knowledge graphs with AI-assisted editing and force layout |
-| **Subject Graph** | Cross-subject knowledge visualization |
+| **Mind Map** | Visual knowledge graphs with AI editing, category clustering, and color-coded themes |
+| **Subject Graph** | Persistent knowledge graph that grows incrementally with each source added |
+| **Source Viewer** | Inline PDF and markdown preview with page navigation |
+| **Command Palette** | Unified search across chats, tools, and sources (`Cmd+K`) |
 
 ### Supported AI Providers
 
@@ -65,6 +74,8 @@ SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new
 | **Embeddings** | OpenAI · Gemini · Ollama |
 | **TTS** | Edge TTS · ElevenLabs · Google Cloud TTS |
 | **Transcription** | OpenAI Whisper · Google Cloud · AssemblyAI |
+| **OCR** | Mathpix (math-aware LaTeX extraction) |
+| **Vision** | OpenAI GPT-4.1-mini (image/diagram descriptions) |
 
 ---
 
@@ -73,6 +84,7 @@ SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  Frontend (React 19 + Vite + TailwindCSS)                   │
+│  Command palette · Keyboard shortcuts · Drag-and-drop       │
 │  WebSocket streams for all long-running operations           │
 └──────────────────────┬──────────────────────────────────────┘
                        │ HTTP + WebSocket
@@ -81,14 +93,17 @@ SAGE is a redesigned take on PageLM — new UI, streamlined feature set, and new
 │                                                              │
 │  ┌─────────────┐  ┌──────────────┐  ┌────────────────────┐  │
 │  │ AI Agents   │  │ Services     │  │ RAG Pipeline       │  │
-│  │ ─ Tutor     │  │ ─ Podcast    │  │ ─ Semantic Chunker │  │
-│  │ ─ Researcher│  │ ─ Quiz       │  │ ─ Hybrid Retrieval │  │
-│  │ ─ Examiner  │  │ ─ SmartNotes │  │   (BM25 + Vector)  │  │
-│  │ ─ Podcaster │  │ ─ Mindmap    │  │ ─ Parent/Child     │  │
-│  │             │  │ ─ Exam       │  │   document splits   │  │
-│  │  LangGraph  │  │ ─ Transcriber│  │                    │  │
-│  │  runtime    │  │ ─ Web Search │  │  LangChain         │  │
-│  │             │  │ ─ SubjGraph  │  │                    │  │
+│  │ ─ Tutor     │  │ ─ Research   │  │ ─ Semantic Chunker │  │
+│  │ ─ Researcher│  │ ─ Podcast    │  │ ─ Hybrid Retrieval │  │
+│  │ ─ Examiner  │  │ ─ Quiz       │  │   (BM25 + Vector)  │  │
+│  │ ─ Podcaster │  │ ─ SmartNotes │  │ ─ Parent/Child     │  │
+│  │             │  │ ─ Mindmap    │  │   document splits   │  │
+│  │  LangGraph  │  │ ─ Exam       │  │                    │  │
+│  │  runtime    │  │ ─ Transcriber│  │  LangChain         │  │
+│  │             │  │ ─ Web Search │  │                    │  │
+│  │             │  │ ─ SubjGraph  │  │  External APIs:    │  │
+│  │             │  │ ─ Wikipedia  │  │  arXiv · PubMed    │  │
+│  │             │  │ ─ Mathpix    │  │  Wikipedia · Tavily │  │
 │  └─────────────┘  └──────────────┘  └────────────────────┘  │
 │  Storage: JSON files (default) or ChromaDB (vector)          │
 │  All data stays local — no cloud dependencies                │
@@ -152,6 +167,22 @@ docker compose up --build
 
 ---
 
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Cmd/Ctrl+K` | Open command palette |
+| `Cmd/Ctrl+Shift+O` | New chat |
+| `Cmd/Ctrl+Shift+7` | Toggle sources panel |
+| `Cmd/Ctrl+Shift+8` | Toggle chat panel |
+| `Cmd/Ctrl+Shift+9` | Toggle tools panel |
+| `Cmd/Ctrl+Shift+0` | Toggle graph panel |
+| `Cmd/Ctrl+Enter` | Send message |
+| `Cmd/Ctrl+H` | Show shortcuts help |
+| `Esc` | Stop generating / close modals |
+
+---
+
 ## Configuration
 
 All behavior is controlled through `.env`. Copy `.env.example` and configure:
@@ -172,6 +203,15 @@ TRANSCRIPTION_PROVIDER=openai   # openai | google | assemblyai
 | Grok | `XAI_API_KEY` | `grok-2-latest` |
 | Ollama | *(local, no key)* | `llama4` |
 | OpenRouter | `OPENROUTER_API_KEY` | `google/gemini-2.5-flash` |
+
+### Optional Services
+
+| Service | Variables | Purpose |
+|---------|-----------|---------|
+| **Mathpix** | `MATHPIX_APP_ID`, `MATHPIX_API_KEY` | Math-aware OCR for PDFs with LaTeX formulas |
+| **Tavily** | `TAVILY_API_KEY` | Web search integration for sourcing |
+| **ElevenLabs** | `ELEVEN_API_KEY` | Premium TTS voices for podcasts |
+| **AssemblyAI** | `ASSEMBLYAI_API_KEY` | Alternative transcription provider |
 
 See [`.env.example`](.env.example) for the complete list.
 

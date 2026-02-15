@@ -1,6 +1,6 @@
 import { Document } from "@langchain/core/documents"
 import { EmbeddingsInterface } from "@langchain/core/embeddings"
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter"
+import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters"
 import { getLocale } from "../prompts/locale"
 import { config } from "../../config/env"
 

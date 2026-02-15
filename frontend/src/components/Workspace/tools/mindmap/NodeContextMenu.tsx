@@ -72,7 +72,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
                 value={label}
                 onChange={(e) => setLabel(e.target.value)}
                 autoFocus
-                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-bone-muted"
               />
             </div>
             <div>
@@ -81,7 +81,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={2}
-                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600 resize-none"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-bone-muted resize-none"
               />
             </div>
             <div>
@@ -89,7 +89,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-cyan-600"
+                className="w-full bg-stone-900 border border-stone-800 rounded px-2 py-1 text-xs text-stone-200 outline-none focus:border-bone-muted"
               >
                 {CATEGORIES.map((c) => (
                   <option key={c} value={c}>{c}</option>
@@ -105,7 +105,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
                     onClick={() => setImportance(imp)}
                     className={`flex-1 py-1 rounded text-[10px] font-medium transition-colors ${
                       importance === imp
-                        ? "bg-cyan-700/30 border border-cyan-600 text-cyan-300"
+                        ? "bg-bone/15 border border-bone-muted text-bone"
                         : "bg-stone-900 border border-stone-800 text-stone-500"
                     }`}
                   >
@@ -121,7 +121,7 @@ export default function NodeContextMenu({ nodeId, nodeData, position, onEdit, on
               <button
                 onClick={handleSave}
                 disabled={!label.trim()}
-                className="px-3 py-1 rounded text-[11px] font-medium text-white bg-cyan-700 hover:bg-cyan-600 disabled:opacity-50"
+                className="px-3 py-1 rounded text-[11px] font-medium sunset-btn bg-stone-800 text-bone disabled:opacity-50 disabled:pointer-events-none"
               >
                 Save
               </button>

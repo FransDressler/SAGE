@@ -8,6 +8,7 @@ export type ToolConfig = {
   topic: string;
   difficulty?: "easy" | "medium" | "hard";
   length: "short" | "medium" | "long";
+  depth?: "quick" | "standard" | "comprehensive";
   sourceIds: string[];
   focusArea?: string;
   additionalInstructions?: string;
@@ -28,7 +29,7 @@ export type ExamToolConfig = {
 };
 
 type Props = {
-  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam";
+  tool: "quiz" | "podcast" | "smartnotes" | "mindmap" | "exam" | "research";
   sources: Source[];
   defaultTopic: string;
   onStart: (config: ToolConfig) => void;
@@ -42,12 +43,19 @@ const TOOL_META: Record<string, { label: string; color: string; btnClass: string
   smartnotes: { label: "New Notes", color: "bone", btnClass: "bg-accent hover:bg-accent-hover text-stone-950", borderFocus: "focus:border-stone-600" },
   mindmap: { label: "Generate Mindmap", color: "cyan", btnClass: "bg-cyan-700 hover:bg-cyan-600", borderFocus: "focus:border-cyan-600" },
   exam: { label: "New Exam", color: "rose", btnClass: "bg-rose-700 hover:bg-rose-600", borderFocus: "focus:border-rose-600" },
+  research: { label: "New Research", color: "blue", btnClass: "bg-blue-700 hover:bg-blue-600", borderFocus: "focus:border-blue-600" },
 };
 
 const LENGTH_LABELS: Record<string, Record<string, string>> = {
   quiz: { short: "5 Qs", medium: "10 Qs", long: "20 Qs" },
   podcast: { short: "~3 min", medium: "~6 min", long: "~10 min" },
   smartnotes: { short: "Summary", medium: "Detailed", long: "Comprehensive" },
+};
+
+const DEPTH_LABELS: Record<string, string> = {
+  quick: "Quick",
+  standard: "Standard",
+  comprehensive: "Deep",
 };
 
 const LENGTH_VALUES: Record<string, number> = { short: 5, medium: 10, long: 20 };
@@ -70,6 +78,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
   const [focusArea, setFocusArea] = useState("");
   const [additionalInstructions, setAdditionalInstructions] = useState("");
   const [tone, setTone] = useState("casual");
+  const [researchDepth, setResearchDepth] = useState<"quick" | "standard" | "comprehensive">("standard");
   const [toolModel, setToolModel] = useState(chatModel);
   const [sourceFilter, setSourceFilter] = useState<"all" | SourceType>(tool === "exam" ? "exercise" : "all");
   const [examTimeLimit, setExamTimeLimit] = useState(0);
@@ -120,6 +129,7 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
       topic: tool === "mindmap" ? (topic.trim() || "Knowledge Map") : topic.trim(),
       ...(tool === "quiz" ? { difficulty } : {}),
       length,
+      ...(tool === "research" ? { depth: researchDepth } : {}),
       sourceIds: allSources ? [] : Array.from(selectedSources),
       focusArea: focusArea.trim() || undefined,
       additionalInstructions: additionalInstructions.trim() || undefined,
@@ -351,8 +361,30 @@ export default function StudyToolModal({ tool, sources, defaultTopic, onStart, o
             </>
           )}
 
-          {/* Length (hidden for mindmap and exam) */}
-          {tool !== "mindmap" && tool !== "exam" && <div>
+          {/* Depth (research only) */}
+          {tool === "research" && (
+            <div>
+              <label className="block text-xs font-medium text-stone-400 mb-1.5">Research Depth</label>
+              <div className="flex gap-1.5">
+                {(["quick", "standard", "comprehensive"] as const).map(d => (
+                  <button
+                    key={d}
+                    onClick={() => setResearchDepth(d)}
+                    className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                      researchDepth === d
+                        ? "bg-blue-700/30 border border-blue-600 text-blue-300"
+                        : "bg-stone-900 border border-stone-800 text-stone-500 hover:text-stone-300"
+                    }`}
+                  >
+                    {DEPTH_LABELS[d]}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Length (hidden for mindmap, exam, and research) */}
+          {tool !== "mindmap" && tool !== "exam" && tool !== "research" && <div>
             <label className="block text-xs font-medium text-stone-400 mb-1.5">Length</label>
             <div className="flex gap-1.5">
               {(["short", "medium", "long"] as const).map(l => (

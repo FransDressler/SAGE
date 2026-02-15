@@ -7,6 +7,8 @@ import {
   addMsg,
   listChats,
   getMsgs,
+  renameChat,
+  deleteChat,
 } from "../../utils/chat/chat";
 import { emitToAll } from "../../utils/chat/ws";
 import { resolveOverride } from "../../utils/llm/models";
@@ -133,8 +135,9 @@ export function chatRoutes(app: any) {
             llmOverride,
             systemPrompt: customPrompt,
             images: imageFiles.length ? imageFiles.map(f => ({ path: f.path, mimeType: f.mimeType })) : undefined,
-            onPhase: (phase, detail) => {
-              emitToAll(chatSockets.get(id), { type: "phase", value: phase, detail });
+            chatId: id,
+            onPhase: (phase, detail, stepId) => {
+              emitToAll(chatSockets.get(id), { type: "phase", value: phase, detail, stepId });
             },
           });
 
@@ -180,5 +183,40 @@ export function chatRoutes(app: any) {
     }
     const messages = await getMsgs(subjectId, chatId);
     res.send({ ok: true, chat, messages });
+  });
+
+  app.patch("/subjects/:id/chats/:chatId", async (req: any, res: any, next: any) => {
+    try {
+      const subjectId = req.params.id;
+      const chatId = req.params.chatId;
+      if (!UUID_RE.test(subjectId) || !UUID_RE.test(chatId)) {
+        return res.status(400).send({ error: "invalid id" });
+      }
+      const title = req.body?.title;
+      if (typeof title !== "string" || !title.trim() || title.length > 200) {
+        return res.status(400).send({ error: "title required (max 200 chars)" });
+      }
+      const updated = await renameChat(subjectId, chatId, title.trim());
+      if (!updated) return res.status(404).send({ error: "not found" });
+      res.send({ ok: true, chat: updated });
+    } catch (e: any) {
+      console.error("[chat patch] err", e?.message || e);
+      next(e);
+    }
+  });
+
+  app.delete("/subjects/:id/chats/:chatId", async (req: any, res: any, next: any) => {
+    try {
+      const subjectId = req.params.id;
+      const chatId = req.params.chatId;
+      if (!UUID_RE.test(subjectId) || !UUID_RE.test(chatId)) {
+        return res.status(400).send({ error: "invalid id" });
+      }
+      await deleteChat(subjectId, chatId);
+      res.send({ ok: true });
+    } catch (e: any) {
+      console.error("[chat delete] err", e?.message || e);
+      next(e);
+    }
   });
 }
