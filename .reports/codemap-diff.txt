@@ -1,0 +1,22 @@
+Codemap Diff Report
+===================
+Generated: 2026-02-15T14:31:00Z
+
+Status: INITIAL GENERATION (no previous version to diff)
+Diff percentage: N/A (100% new)
+
+Files generated:
+  codemaps/architecture.md  — Overall system architecture, data flows, provider matrix
+  codemaps/backend.md       — Backend directory structure, route map, AI pipeline
+  codemaps/frontend.md      — Frontend components, hierarchy, state management
+  codemaps/data.md          — All data models, storage schema, WS event protocol
+
+Coverage:
+  - 14 route files mapped
+  - 9 service modules documented
+  - 6 LLM provider adapters catalogued
+  - 20+ type definitions across backend/frontend
+  - Storage schema (Keyv keys + JSON files + filesystem)
+  - WebSocket event protocol for all 9 streaming tools
+
+No user approval required (initial generation, diff < 30%).
