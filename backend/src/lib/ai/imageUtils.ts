@@ -49,6 +49,20 @@ export function readImageAsBase64(localPath: string): { b64: string; mime: strin
   }
 }
 
+/** Resolve a chat image URL like /chat-images/:chatId/file.png to a local file path */
+export function resolveChatImagePath(url: string): string | null {
+  const m = url.match(/\/chat-images\/([^/]+)\/([^/?#]+)/)
+  if (!m) return null
+  const [, chatId, filename] = m
+  if (!UUID_RE.test(chatId)) return null
+  const safeName = path.basename(filename)
+  if (!safeName || safeName.startsWith(".") || safeName !== filename) return null
+  const filePath = path.join(process.cwd(), "storage", "chat-images", chatId, safeName)
+  const expectedDir = path.join(process.cwd(), "storage", "chat-images", chatId)
+  if (!filePath.startsWith(expectedDir + path.sep)) return null
+  return filePath
+}
+
 /** Build LLM image content parts from a list of served image URLs */
 export function buildImageParts(imageUrls: string[], maxImages = 5): Array<{ type: "image_url"; image_url: { url: string } }> {
   const parts: Array<{ type: "image_url"; image_url: { url: string } }> = []

@@ -245,11 +245,28 @@ async function extractText(filePath: string, mime: string, subjectId?: string): 
         if (imagesDir && fs.existsSync(imagesDir)) {
           try { fs.rmSync(imagesDir, { recursive: true, force: true }) } catch {}
         }
-        console.warn(`[extract] Mathpix failed for ${path.basename(filePath)}, falling back to unpdf:`, err?.message)
+        console.error(`[extract] Mathpix FAILED for ${path.basename(filePath)} (${(raw.length / 1024 / 1024).toFixed(1)} MB): ${err?.message}`)
+        console.error(`[extract] Falling back to unpdf — quality may be degraded for scanned/image-based PDFs`)
       }
     }
-    // Fallback: unpdf
-    return extractPdfWithUnpdf(raw)
+    // Fallback: unpdf (won't work well on scanned/image-based PDFs)
+    const fallback = await extractPdfWithUnpdf(raw)
+
+    // Detect likely-garbage extraction: if average words per line is < 2, the PDF is
+    // probably scanned and unpdf just extracted stray OCR fragments or watermarks.
+    const lines = fallback.text.split("\n").filter(l => l.trim().length > 0)
+    const totalWords = lines.reduce((sum, l) => sum + l.trim().split(/\s+/).length, 0)
+    const avgWordsPerLine = lines.length > 0 ? totalWords / lines.length : 0
+
+    if (avgWordsPerLine < 2 && isMathpixConfigured()) {
+      console.error(`[extract] unpdf output looks like garbage (avg ${avgWordsPerLine.toFixed(1)} words/line) — PDF is likely scanned. Mathpix is required but failed.`)
+      throw new Error(
+        "This PDF appears to be scanned/image-based. OCR processing (Mathpix) failed — please try re-uploading. " +
+        "If the problem persists, the file may be too large or Mathpix may be temporarily unavailable."
+      )
+    }
+
+    return fallback
   }
 
   if (mime.includes("markdown")) {

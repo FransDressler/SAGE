@@ -5,7 +5,8 @@ import CollapsedColumn from "./CollapsedColumn";
 import ChatSidebar from "./ChatSidebar";
 import DropOverlay from "./DropOverlay";
 import { useDragZone } from "../../hooks/useDragZone";
-import { chatJSON, chatMultipart, getChatDetail, connectChatStream, type ChatMessage, type FlashCard, type ChatEvent, type RagSource, type AgentStep } from "../../lib/api";
+import { chatJSON, chatMultipart, getChatDetail, connectChatStream, type ChatMessage, type ChatImageRef, type FlashCard, type ChatEvent, type RagSource, type AgentStep } from "../../lib/api";
+import { env } from "../../config/env";
 import MarkdownView from "../Chat/MarkdownView";
 import SourcesList from "../Chat/SourcesList";
 import LoadingIndicator from "../Chat/LoadingIndicator";
@@ -98,7 +99,7 @@ export type ChatPanelHandle = {
 const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCollapse?: () => void; toolChatContext?: ToolChatContext | null; onToolChatConsumed?: () => void }>(function ChatPanel({ collapsed, onToggleCollapse, toolChatContext, onToolChatConsumed }, ref) {
   const { subject, chats, activeChatId, setActiveChatId, refreshChats } = useSubject();
   const { chatModel, setChatModel } = useModels();
-  type DisplayMessage = ChatMessage & { sources?: RagSource[]; agentSteps?: AgentStep[] };
+  type DisplayMessage = ChatMessage & { sources?: RagSource[]; agentSteps?: AgentStep[]; images?: ChatImageRef[]; thinking?: string; citations?: any[] };
   const [messages, setMessages] = useState<DisplayMessage[]>([]);
   const [busy, setBusy] = useState(false);
   const [awaiting, setAwaiting] = useState(false);
@@ -106,6 +107,10 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
   const [editingIdx, setEditingIdx] = useState<number | null>(null);
   const [editText, setEditText] = useState("");
   const [pendingImages, setPendingImages] = useState<{ file: File; url: string }[]>([]);
+  const [streamingText, setStreamingText] = useState("");
+  const [thinkingText, setThinkingText] = useState("");
+  const [thinkingOpen, setThinkingOpen] = useState(false);
+  const [citations, setCitations] = useState<any[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const messagesRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -151,24 +156,38 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
     accept: acceptImages,
   });
 
+  // Revoke blob URLs when messages are cleared or chat changes
+  const revokeBlobUrls = (msgs: DisplayMessage[]) => {
+    for (const m of msgs) {
+      if (m.images) {
+        for (const img of m.images) {
+          if (img.url.startsWith("blob:")) URL.revokeObjectURL(img.url);
+        }
+      }
+    }
+  };
+
   // Load chat messages when active chat changes
   useEffect(() => {
     if (!subject || !activeChatId) {
-      setMessages([]);
+      setMessages(prev => { revokeBlobUrls(prev); return []; });
       return;
     }
     getChatDetail(subject.id, activeChatId).then(res => {
       if (res?.ok && Array.isArray(res.messages)) {
-        setMessages(res.messages.map(m => {
-          if (m.role === "assistant") {
-            const norm = normalizePayload(m.content);
-            // Prefer sources already stored on the message over parsed ones
-            const storedSources = (m as any).sources;
-            const sources = (Array.isArray(storedSources) && storedSources.length) ? storedSources : norm.sources;
-            return { ...m, content: norm.md, sources };
-          }
-          return m;
-        }));
+        setMessages(prev => {
+          revokeBlobUrls(prev);
+          return res.messages.map(m => {
+            if (m.role === "assistant") {
+              const norm = normalizePayload(m.content);
+              const storedSources = (m as any).sources;
+              const sources = (Array.isArray(storedSources) && storedSources.length) ? storedSources : norm.sources;
+              return { ...m, content: norm.md, sources };
+            }
+            const images = (m as any).images as ChatImageRef[] | undefined;
+            return { ...m, ...(Array.isArray(images) && images.length ? { images } : {}) };
+          });
+        });
       }
     }).catch(() => {});
   }, [subject, activeChatId]);
@@ -181,23 +200,50 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
         return [...updated, { stepId, phase: ev.value, detail: ev.detail, status: "active" as const }];
       });
     }
+    if (ev.type === "token") {
+      setStreamingText(prev => prev + (ev as any).value);
+    }
+    if (ev.type === "thinking") {
+      setThinkingText(prev => prev + (ev as any).value);
+    }
+    if (ev.type === "citation") {
+      setCitations(prev => [...prev, (ev as any).value]);
+    }
     if (ev.type === "answer") {
       const norm = normalizePayload(ev.answer);
       setAgentSteps(prev => {
         const finalized = prev.map(s => s.status === "active" ? { ...s, status: "done" as const } : s);
-        setMessages(old => [...old, { role: "assistant", content: norm.md, at: Date.now(), sources: norm.sources, agentSteps: finalized.length ? finalized : undefined }]);
+        const finalThinking = thinkingText;
+        const finalCitations = citations;
+        setMessages(old => [...old, {
+          role: "assistant",
+          content: norm.md,
+          at: Date.now(),
+          sources: norm.sources,
+          agentSteps: finalized.length ? finalized : undefined,
+          ...(finalThinking && { thinking: finalThinking }),
+          ...(finalCitations.length && { citations: finalCitations }),
+        } as DisplayMessage]);
         return [];
       });
+      setStreamingText("");
+      setThinkingText("");
+      setCitations([]);
+      setThinkingOpen(false);
       setAwaiting(false);
       setBusy(false);
     }
     if (ev.type === "done") {
       setAgentSteps([]);
+      setStreamingText("");
     }
     if (ev.type === "error") {
       setAwaiting(false);
       setBusy(false);
       setAgentSteps([]);
+      setStreamingText("");
+      setThinkingText("");
+      setCitations([]);
     }
   };
 
@@ -233,7 +279,7 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
   useEffect(() => {
     const el = messagesRef.current;
     if (el) setTimeout(() => { el.scrollTop = el.scrollHeight; }, 50);
-  }, [messages.length, awaiting]);
+  }, [messages.length, awaiting, streamingText]);
 
   const MAX_IMAGE_SIZE = 10 * 1024 * 1024; // 10MB
   const IMAGE_TYPES = ["image/png", "image/jpeg", "image/gif", "image/webp"];
@@ -262,13 +308,27 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
     }
 
     const images = pendingImages.map(p => p.file);
-    for (const p of pendingImages) URL.revokeObjectURL(p.url);
+    const imageRefs: ChatImageRef[] = pendingImages.map(p => ({
+      filename: p.file.name,
+      mimeType: p.file.type,
+      url: p.url, // blob: URL for immediate display
+    }));
+    // Don't revoke blob URLs yet — they're needed for display in the message bubble
     setPendingImages([]);
 
-    setMessages(prev => [...prev, { role: "user", content: msg, at: Date.now() }]);
+    setMessages(prev => [...prev, {
+      role: "user",
+      content: msg,
+      at: Date.now(),
+      ...(imageRefs.length && { images: imageRefs }),
+    }]);
     setAwaiting(true);
     setBusy(true);
     setEditingIdx(null);
+    setStreamingText("");
+    setThinkingText("");
+    setCitations([]);
+    setThinkingOpen(false);
 
     try {
       const res = images.length
@@ -402,6 +462,15 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
                 {m.agentSteps && m.agentSteps.length > 0 && (
                   <LoadingIndicator steps={m.agentSteps} finished />
                 )}
+                {m.thinking && (
+                  <details className="mb-2 rounded-xl border border-stone-800 bg-stone-950/50 overflow-hidden">
+                    <summary className="px-4 py-2 cursor-pointer text-xs text-stone-500 hover:text-stone-400 transition-colors select-none flex items-center gap-1.5">
+                      <svg className="w-3 h-3 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" /></svg>
+                      Claude's thinking
+                    </summary>
+                    <div className="px-4 py-3 border-t border-stone-800 text-xs text-stone-500 whitespace-pre-wrap max-h-64 overflow-y-auto custom-scroll leading-relaxed">{m.thinking}</div>
+                  </details>
+                )}
                 <div className="rounded-2xl bg-stone-900/90 border border-stone-800 px-5 py-4">
                   <MarkdownView md={m.content} />
                 </div>
@@ -445,6 +514,20 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
                   /* Display mode */
                   <div className="group">
                     <div className="inline-block max-w-[85%] bg-stone-800 border border-stone-700 rounded-2xl px-4 py-3">
+                      {m.images && m.images.length > 0 && (
+                        <div className="flex gap-2 flex-wrap mb-2">
+                          {m.images.map((img, j) => (
+                            <img
+                              key={j}
+                              src={img.url.startsWith("blob:") ? img.url : `${env.backend}${img.url}`}
+                              alt={img.filename}
+                              className="max-w-[200px] max-h-[200px] rounded-lg border border-stone-600 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                              loading="lazy"
+                              onClick={() => window.open(img.url.startsWith("blob:") ? img.url : `${env.backend}${img.url}`, "_blank")}
+                            />
+                          ))}
+                        </div>
+                      )}
                       <div className="text-bone-light whitespace-pre-wrap leading-relaxed">{m.content}</div>
                     </div>
                     {/* Edit / Retry buttons */}
@@ -477,10 +560,24 @@ const ChatPanel = forwardRef<ChatPanelHandle, { collapsed?: boolean; onToggleCol
           ))
         )}
 
-        {/* Loading with stop button */}
+        {/* Loading with streaming + stop button */}
         {awaiting && (
           <div className="w-full space-y-2">
             <LoadingIndicator label="Thinking..." steps={agentSteps} />
+            {thinkingText && (
+              <details open={thinkingOpen} onToggle={e => setThinkingOpen((e.target as HTMLDetailsElement).open)} className="rounded-xl border border-stone-800 bg-stone-950/50 overflow-hidden">
+                <summary className="px-4 py-2 cursor-pointer text-xs text-stone-500 hover:text-stone-400 transition-colors select-none flex items-center gap-1.5">
+                  <svg className="w-3 h-3 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" /></svg>
+                  Thinking...
+                </summary>
+                <div className="px-4 py-3 border-t border-stone-800 text-xs text-stone-500 whitespace-pre-wrap max-h-48 overflow-y-auto custom-scroll leading-relaxed">{thinkingText}</div>
+              </details>
+            )}
+            {streamingText && (
+              <div className="rounded-2xl bg-stone-900/90 border border-stone-800 px-5 py-4">
+                <MarkdownView md={streamingText} />
+              </div>
+            )}
             <div className="flex justify-center">
               <button
                 onClick={stopGenerating}

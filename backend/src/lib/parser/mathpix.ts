@@ -5,8 +5,8 @@ import { config } from "../../config/env"
 
 const API_BASE = "https://api.mathpix.com/v3/pdf"
 const POLL_INTERVAL_MS = 2000
-const POLL_TIMEOUT_MS = 120_000
-const FETCH_TIMEOUT_MS = 30_000
+const POLL_TIMEOUT_MS = 300_000  // 5 min — large scanned PDFs need more processing time
+const FETCH_TIMEOUT_MS = 120_000 // 2 min — large files (30MB+) need more upload/download time
 
 export type MathpixImage = { filename: string; ref: string }
 

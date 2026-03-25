@@ -1,8 +1,12 @@
 import { randomUUID } from "crypto";
+import fs from "fs";
+import path from "path";
 import db from "../database/keyv";
 
+export type ChatImageRef = { filename: string; mimeType: string; url: string };
 export type ChatMeta = { id: string; title: string; at: number };
-export type ChatMsg = { role: "user" | "assistant"; content: any; at: number; sources?: Array<{ sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string }> };
+export type ChatMsg = { role: "user" | "assistant"; content: any; at: number; sources?: Array<{ sourceFile: string; sourceId?: string; pageNumber?: number; heading?: string }>; images?: ChatImageRef[] };
+export type FullDocCache = { sourceId: string; sourceFile: string; sourceType: string; text: string };
 
 export async function mkChat(subjectId: string, t: string) {
   const id = randomUUID();
@@ -54,10 +58,22 @@ export async function renameChat(subjectId: string, chatId: string, title: strin
   return c;
 }
 
+export async function getFullDocCache(subjectId: string, chatId: string): Promise<FullDocCache | null> {
+  return (await db.get(`subject:${subjectId}:fulldoc:${chatId}`)) as FullDocCache | null;
+}
+
+export async function setFullDocCache(subjectId: string, chatId: string, doc: FullDocCache) {
+  await db.set(`subject:${subjectId}:fulldoc:${chatId}`, doc);
+}
+
 export async function deleteChat(subjectId: string, chatId: string) {
   await db.delete(`subject:${subjectId}:chat:${chatId}`);
   await db.delete(`subject:${subjectId}:msgs:${chatId}`);
+  await db.delete(`subject:${subjectId}:fulldoc:${chatId}`);
   const idx = ((await db.get(`subject:${subjectId}:chat:index`)) as string[]) || [];
   const filtered = idx.filter((id) => id !== chatId);
   await db.set(`subject:${subjectId}:chat:index`, filtered);
+  // Clean up persisted chat images
+  const imgDir = path.join(process.cwd(), "storage", "chat-images", chatId);
+  try { fs.rmSync(imgDir, { recursive: true, force: true }); } catch {}
 }

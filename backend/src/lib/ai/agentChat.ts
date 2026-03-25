@@ -8,11 +8,14 @@ import { buildTools } from "./tools/chatTools"
 import { normalizeTopic } from "../../utils/text/normalize"
 import { extractFirstJsonObject, sanitizeJsonString } from "./extract"
 import { getLocale } from "../prompts/locale"
-import { resolveImagePath, mimeFromExt } from "./imageUtils"
+import { resolveImagePath, resolveChatImagePath, mimeFromExt, readImageAsBase64 } from "./imageUtils"
 import type { AskPayload, AskCard, RagSource } from "./ask"
 import { debugBus } from "../../utils/debug/debugBus"
+import { config } from "../../config/env"
+import { streamClaudeResponse, buildCitableDocument } from "../../utils/llm/models/claudeDirect"
 
 const CONTEXT_BUDGET = Number(process.env.LLM_CONTEXT_BUDGET) || 12000
+const FULL_DOC_BUDGET = Number(process.env.FULL_DOC_BUDGET) || 80000
 const MAX_ITERATIONS = 4
 const generateFlashcards = process.env.CHAT_GENERATE_FLASHCARDS === "true"
 
@@ -30,6 +33,7 @@ export type AgentPhase =
   | "listing_sources"
   | "searching_sources"
   | "searching_web"
+  | "reading_full_document"
   | "reading_results"
   | "generating"
 
@@ -44,17 +48,47 @@ function toMessageContent(content: any): string {
   return String(content)
 }
 
+function buildHumanMessageFromPersisted(text: string, images: Array<{ url: string; mimeType: string }>): HumanMessage {
+  const content: any[] = [{ type: "text", text }]
+  for (const img of images) {
+    const localPath = resolveChatImagePath(img.url)
+    if (!localPath) continue
+    const imgData = readImageAsBase64(localPath)
+    if (!imgData) continue
+    content.push({ type: "image_url", image_url: { url: `data:${imgData.mime};base64,${imgData.b64}` } })
+  }
+  return content.length === 1 ? new HumanMessage(text) : new HumanMessage({ content })
+}
+
 function toConversationHistory(history?: HistoryMessage[]) {
   if (!history?.length) return []
-  return history.slice(-8)
+  const filtered = history.slice(-8)
     .filter(m => m?.role === "user" || m?.role === "assistant")
-    .map(msg => {
-      const text = toMessageContent(msg.content)
-      if (msg.role === "assistant") {
-        return new AIMessage(text.slice(0, 300) + (text.length > 300 ? "\n..." : ""))
+  // Find indices of user messages with images (to determine which are "recent")
+  const userImageIndices: number[] = []
+  filtered.forEach((m, i) => {
+    if (m.role === "user" && (m as any).images?.length) userImageIndices.push(i)
+  })
+  // Only include actual image data for the last 2 user messages with images
+  const recentImageCutoff = userImageIndices.length > 2
+    ? userImageIndices[userImageIndices.length - 2]
+    : 0
+
+  return filtered.map((msg, idx) => {
+    const text = toMessageContent(msg.content)
+    if (msg.role === "assistant") {
+      return new AIMessage(text.slice(0, 300) + (text.length > 300 ? "\n..." : ""))
+    }
+    const userText = text.slice(0, 500)
+    const images = (msg as any).images as Array<{ filename: string; mimeType: string; url: string }> | undefined
+    if (images?.length) {
+      if (idx >= recentImageCutoff) {
+        return buildHumanMessageFromPersisted(userText, images)
       }
-      return new HumanMessage(text.slice(0, 500))
-    })
+      return new HumanMessage(userText + `\n[User attached ${images.length} image(s): ${images.map(i => i.filename).join(", ")}]`)
+    }
+    return new HumanMessage(userText)
+  })
 }
 
 // resolveImagePath and mimeFromExt imported from ./imageUtils
@@ -76,8 +110,20 @@ TOOL USAGE:
 - For ANY knowledge question, ALWAYS call source_search first to check the user's study materials.
 - When the user references a specific document by name (e.g. "Blatt 3", "Vorlesung 5", "Übungsblatt"), call list_sources FIRST to find the correct filename, then use source_search with the sourceFilter parameter to search within that specific document.
 - Only use web_search if source_search returned no useful results OR the question is about current events/external information.
+- When the user references a SPECIFIC document by name (e.g. "Blatt 3", "Vorlesung 5", "Übungsblatt 2", "this document"), ALWAYS use get_full_document instead of source_search. RAG chunks from a single document lose structure and context — the full document is always better. Call list_sources first to find the sourceId, then get_full_document with that sourceId.
+- Only use source_search when the question is about a TOPIC that may span multiple documents, or when no specific document is referenced.
+- When in doubt whether to use source_search or get_full_document: if the question targets one document, use get_full_document.
 - For greetings, simple follow-ups, or meta-questions, you may answer directly without tools.
 - You may call tools multiple times if initial results are insufficient.
+
+MULTILINGUAL RETRIEVAL
+- Study materials may be in German or English. Always search in BOTH languages to maximize recall.
+- For every knowledge question, call source_search at least twice:
+  1. Once with the query in the language the user asked in.
+  2. Once with the query translated to the other language (German ↔ English).
+- Use domain-specific terminology in both languages (e.g. "Eigenwerte" + "eigenvalues", "Gleichgewicht" + "equilibrium", "Ableitung" + "derivative").
+- If initial searches miss relevant content, try additional searches with synonyms or alternative technical terms in both languages.
+- Combine and deduplicate results from all searches before answering.
 
 TEACHING APPROACH
 - Explain concepts simply enough for a curious 12-year-old (Feynman technique). Build intuition before formulas.
@@ -213,6 +259,8 @@ function buildHumanMessage(text: string, images?: { path: string; mimeType: stri
   return new HumanMessage({ content })
 }
 
+export type PreloadedDocument = { sourceId: string; sourceFile: string; sourceType: string; text: string }
+
 export async function handleAgentChat(opts: {
   question: string
   namespace: string
@@ -221,14 +269,21 @@ export async function handleAgentChat(opts: {
   systemPrompt?: string
   images?: { path: string; mimeType: string }[]
   onPhase?: (phase: AgentPhase, detail?: string, stepId?: number) => void
+  onToken?: (token: string) => void
+  onThinking?: (text: string) => void
+  onCitation?: (citation: any) => void
   chatId?: string
+  preloadedDocument?: PreloadedDocument | null
+  onFullDocLoaded?: (doc: PreloadedDocument) => void
 }): Promise<AskPayload> {
-  const { question, namespace, history, llmOverride, systemPrompt, images, onPhase, chatId } = opts
+  const { question, namespace, history, llmOverride, systemPrompt, images, onPhase, onToken, onThinking, onCitation, chatId, preloadedDocument, onFullDocLoaded } = opts
 
   let stepCounter = 0
   const emitPhase = (phase: AgentPhase, detail?: string) => {
     onPhase?.(phase, detail, ++stepCounter)
   }
+
+  const isClaude = !llmOverride && config.provider === "claude"
 
   const requestId = randomUUID()
   const requestT0 = Date.now()
@@ -250,21 +305,34 @@ export async function handleAgentChat(opts: {
 
   emitPhase("thinking")
 
+  const collectedSources: any[] = []
+  let exerciseDetected = false
+
   const sysPromptText = buildAgentSystemPrompt(systemPrompt)
   const messages: any[] = [
     new SystemMessage(sysPromptText),
     ...toConversationHistory(history),
-    buildHumanMessage(safeQ, images),
   ]
+
+  if (preloadedDocument?.text) {
+    messages.push(new HumanMessage(
+      `[PRELOADED DOCUMENT: "${preloadedDocument.sourceFile}" (sourceId: ${preloadedDocument.sourceId}, type: ${preloadedDocument.sourceType})]\nThe following document was loaded in a previous turn and is still available. You do NOT need to call get_full_document again for this document.\n\n${preloadedDocument.text}`
+    ))
+    collectedSources.push({
+      text: preloadedDocument.text.slice(0, 200),
+      source: preloadedDocument.sourceFile,
+      sourceId: preloadedDocument.sourceId,
+      sourceType: preloadedDocument.sourceType,
+    })
+  }
+
+  messages.push(buildHumanMessage(safeQ, images))
 
   debugBus.debugEmit({ type: "system_prompt", requestId, prompt: sysPromptText })
   debugBus.debugEmit({
     type: "history", requestId,
     messages: (history || []).slice(-8).map(m => ({ role: m.role, content: toMessageContent(m.content).slice(0, 200) })),
   })
-
-  const collectedSources: any[] = []
-  let exerciseDetected = false
   const sentImageUrls = new Set<string>()
 
   for (let i = 0; i < MAX_ITERATIONS; i++) {
@@ -283,6 +351,24 @@ export async function handleAgentChat(opts: {
     })
 
     if (!response.tool_calls?.length) {
+      // For Claude: stream the final answer natively for better UX
+      // Only do the extra streaming call if the LangChain response was empty/minimal
+      // (tool-calling models sometimes return empty text before tool calls)
+      if (isClaude && (!rawText || rawText.trim().length < 20)) {
+        const streamed = await streamClaudeFinal(sysPromptText, messages, collectedSources, { onToken, onThinking, onCitation })
+        const result = parseAgentResponse(streamed.text, collectedSources)
+        debugBus.debugEmit({ type: "final_parse", requestId, parsed: { topic: result.topic, answer: result.answer.slice(0, 500), sourceCount: result.sources?.length || 0 } })
+        debugBus.debugEmit({ type: "request_end", requestId, durationMs: Date.now() - requestT0 })
+        return result
+      }
+      // LangChain already produced a full response — emit it as tokens to the client
+      if (rawText && onToken) {
+        // Stream the already-generated text in chunks for responsive UI
+        const chunkSize = 20
+        for (let ci = 0; ci < rawText.length; ci += chunkSize) {
+          onToken(rawText.slice(ci, ci + chunkSize))
+        }
+      }
       const result = parseAgentResponse(rawText, collectedSources)
       debugBus.debugEmit({ type: "final_parse", requestId, parsed: { topic: result.topic, answer: result.answer.slice(0, 500), sourceCount: result.sources?.length || 0 } })
       debugBus.debugEmit({ type: "request_end", requestId, durationMs: Date.now() - requestT0 })
@@ -296,6 +382,8 @@ export async function handleAgentChat(opts: {
         emitPhase("searching_sources", tc.args?.query)
       } else if (toolName === "list_sources") {
         emitPhase("listing_sources")
+      } else if (toolName === "get_full_document") {
+        emitPhase("reading_full_document", tc.args?.sourceId)
       } else if (toolName === "web_search") {
         emitPhase("searching_web", tc.args?.query)
       }
@@ -330,9 +418,20 @@ export async function handleAgentChat(opts: {
           }
         } catch {}
 
+        // Cache full document for subsequent turns
+        if (toolName === "get_full_document" && onFullDocLoaded) {
+          try {
+            const parsed = JSON.parse(resultStr)
+            if (parsed && !parsed.error && parsed.text) {
+              onFullDocLoaded({ sourceId: parsed.sourceId, sourceFile: parsed.sourceFile, sourceType: parsed.sourceType, text: parsed.text })
+            }
+          } catch {}
+        }
+
         emitPhase("reading_results")
-        const capped = resultStr.length > CONTEXT_BUDGET
-          ? resultStr.slice(0, CONTEXT_BUDGET) + "\n[...truncated]"
+        const capLimit = toolName === "get_full_document" ? FULL_DOC_BUDGET : CONTEXT_BUDGET
+        const capped = resultStr.length > capLimit
+          ? resultStr.slice(0, capLimit) + "\n[...truncated]"
           : resultStr
         messages.push(new ToolMessage({ content: capped, tool_call_id: tc.id }))
       } catch (err: any) {
@@ -342,7 +441,7 @@ export async function handleAgentChat(opts: {
     }
     // Inject exercise rules after all ToolMessages so we don't break the tool_call→ToolMessage pairing
     if (needExerciseRules) {
-      messages.push(new SystemMessage(EXERCISE_RULES))
+      messages.push(new HumanMessage(`[SYSTEM INSTRUCTION]\n${EXERCISE_RULES}`))
     }
 
     // Inject retrieved images as visual content so the LLM can actually see diagrams
@@ -389,14 +488,28 @@ export async function handleAgentChat(opts: {
     emitPhase("generating")
   }
 
-  // Hit max iterations — one final call without tools
+  // Hit max iterations — one final call without tools (use streaming for Claude)
   emitPhase("generating")
   debugBus.debugEmit({ type: "llm_call_start", requestId, iteration: MAX_ITERATIONS, messageCount: messages.length })
   try {
+    if (isClaude) {
+      const streamed = await streamClaudeFinal(sysPromptText, messages, collectedSources, { onToken, onThinking, onCitation })
+      const result = parseAgentResponse(streamed.text, collectedSources)
+      debugBus.debugEmit({ type: "final_parse", requestId, parsed: { topic: result.topic, answer: result.answer.slice(0, 500), sourceCount: result.sources?.length || 0 } })
+      debugBus.debugEmit({ type: "request_end", requestId, durationMs: Date.now() - requestT0 })
+      return result
+    }
     const t0 = Date.now()
     const finalResponse = await baseLlm.invoke(messages)
-    debugBus.debugEmit({ type: "llm_call_end", requestId, iteration: MAX_ITERATIONS, durationMs: Date.now() - t0, rawContent: toText(finalResponse).slice(0, 2000), toolCalls: [] })
-    const result = parseAgentResponse(toText(finalResponse), collectedSources)
+    const finalText = toText(finalResponse)
+    debugBus.debugEmit({ type: "llm_call_end", requestId, iteration: MAX_ITERATIONS, durationMs: Date.now() - t0, rawContent: finalText.slice(0, 2000), toolCalls: [] })
+    if (finalText && onToken) {
+      const chunkSize = 20
+      for (let ci = 0; ci < finalText.length; ci += chunkSize) {
+        onToken(finalText.slice(ci, ci + chunkSize))
+      }
+    }
+    const result = parseAgentResponse(finalText, collectedSources)
     debugBus.debugEmit({ type: "final_parse", requestId, parsed: { topic: result.topic, answer: result.answer.slice(0, 500), sourceCount: result.sources?.length || 0 } })
     debugBus.debugEmit({ type: "request_end", requestId, durationMs: Date.now() - requestT0 })
     return result
@@ -409,4 +522,73 @@ export async function handleAgentChat(opts: {
       sources: extractSources(collectedSources),
     }
   }
+}
+
+async function streamClaudeFinal(
+  systemPrompt: string,
+  lcMessages: any[],
+  collectedSources: any[],
+  cbs: { onToken?: (t: string) => void; onThinking?: (t: string) => void; onCitation?: (c: any) => void },
+): Promise<{ text: string; thinking: string; citations: any[] }> {
+  const converted: Array<{ role: "user" | "assistant"; content: string | any[] }> = []
+
+  for (const msg of lcMessages) {
+    if (msg instanceof SystemMessage) continue
+    const role: "user" | "assistant" =
+      msg instanceof AIMessage ? "assistant"
+      : msg instanceof ToolMessage ? "user"
+      : msg instanceof HumanMessage ? "user"
+      : "user"
+    const content = typeof msg.content === "string" ? msg.content : msg.content
+    converted.push({ role, content })
+  }
+
+  // Merge consecutive same-role messages (Anthropic requires alternating)
+  const merged: typeof converted = []
+  for (const m of converted) {
+    const last = merged[merged.length - 1]
+    if (last && last.role === m.role) {
+      const lastText = typeof last.content === "string" ? last.content : JSON.stringify(last.content)
+      const curText = typeof m.content === "string" ? m.content : JSON.stringify(m.content)
+      last.content = lastText + "\n\n" + curText
+    } else {
+      merged.push({ ...m, content: m.content })
+    }
+  }
+
+  // Ensure first message is user role
+  if (merged.length && merged[0].role !== "user") {
+    merged.unshift({ role: "user", content: "Please answer based on the conversation above." })
+  }
+
+  // If citations enabled, inject collected sources as citable documents in the last user message
+  if (config.claude_citations && collectedSources.length > 0) {
+    const docBlocks = collectedSources
+      .filter(s => s.text || s.content)
+      .slice(0, 20)
+      .map(s => buildCitableDocument({
+        title: s.source || s.sourceFile || s.title || "Source",
+        text: s.text || s.content || "",
+      }))
+
+    if (docBlocks.length > 0) {
+      const lastUser = merged[merged.length - 1]
+      if (lastUser?.role === "user") {
+        const textPart = typeof lastUser.content === "string"
+          ? [{ type: "text" as const, text: lastUser.content }]
+          : Array.isArray(lastUser.content) ? lastUser.content : [{ type: "text" as const, text: String(lastUser.content) }]
+        lastUser.content = [...docBlocks, ...textPart]
+      }
+    }
+  }
+
+  return streamClaudeResponse({
+    system: systemPrompt,
+    messages: merged,
+    callbacks: {
+      onText: cbs.onToken,
+      onThinking: cbs.onThinking,
+      onCitation: cbs.onCitation,
+    },
+  })
 }

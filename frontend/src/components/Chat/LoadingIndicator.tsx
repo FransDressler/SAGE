@@ -6,6 +6,7 @@ const PHASE_META: Record<string, { label: string; icon: string }> = {
   listing_sources: { label: "Looking up available sources", icon: "read" },
   searching_sources: { label: "Searching your materials", icon: "search" },
   searching_web: { label: "Searching the web", icon: "globe" },
+  reading_full_document: { label: "Reading full document", icon: "read" },
   reading_results: { label: "Reading results", icon: "read" },
   generating: { label: "Writing answer", icon: "write" },
 };

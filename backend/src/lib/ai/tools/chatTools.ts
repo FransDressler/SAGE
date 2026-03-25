@@ -1,11 +1,15 @@
+import { randomUUID } from "crypto"
 import { StructuredTool } from "@langchain/core/tools"
 import { z } from "zod"
-import { getRetrieverWithParents } from "../../../utils/database/db"
+import { getRetrieverWithParents, getAllDocuments } from "../../../utils/database/db"
 import { getLinkedSourceFiles } from "../../../services/subjectgraph"
 import { listSources } from "../../../utils/subjects/subjects"
 import { searchWeb } from "../../../services/websearch/search"
+import { getStudyPlan } from "../../../services/studyplan"
+import { addCard } from "../../../services/ankideck"
 import { config } from "../../../config/env"
 import type { EmbeddingsInterface } from "@langchain/core/embeddings"
+import type { AnkiCard } from "../../../services/ankideck/types"
 
 function extractImageUrls(text: string): string[] {
   const re = /!\[([^\]]*)\]\(([^)]+)\)/g
@@ -167,14 +171,157 @@ class WebSearchTool extends StructuredTool {
   }
 }
 
+const FULL_DOC_BUDGET = Number(process.env.FULL_DOC_BUDGET) || 80000
+
+const getFullDocumentSchema = z.object({
+  sourceId: z.string().describe("The source ID (from list_sources) of the document to retrieve in full"),
+})
+
+class GetFullDocumentTool extends StructuredTool {
+  name = "get_full_document"
+  description = "Retrieve the FULL text of a single document by its sourceId. Use this when the user's question is about one specific document (e.g. summarize, explain, translate a whole document) and RAG chunks would lose important context. Call list_sources first to get the sourceId. WARNING: Only use for single-document questions — for cross-document or topic questions, use source_search instead."
+  schema = getFullDocumentSchema as any
+  private ns: string
+  private embeddings: EmbeddingsInterface
+
+  constructor(ns: string, embeddings: EmbeddingsInterface) {
+    super()
+    this.ns = ns
+    this.embeddings = embeddings
+  }
+
+  async _call({ sourceId }: z.infer<typeof getFullDocumentSchema>) {
+    const safeId = typeof sourceId === "string" ? sourceId.trim() : ""
+    if (!safeId) return JSON.stringify({ error: "sourceId is required" })
+
+    const docs = await getAllDocuments(this.ns, this.embeddings, { sourceIds: [safeId] })
+    if (docs.length === 0) return JSON.stringify({ error: "No content found for this sourceId" })
+
+    docs.sort((a, b) => {
+      const ai = a.metadata?.chunkIndex ?? a.metadata?.pageNumber ?? 0
+      const bi = b.metadata?.chunkIndex ?? b.metadata?.pageNumber ?? 0
+      return ai - bi
+    })
+
+    const sourceFile = docs[0]?.metadata?.sourceFile || "unknown"
+    const sourceType = docs[0]?.metadata?.sourceType || "material"
+    const fullText = docs.map(d => d.pageContent).join("\n\n")
+
+    const truncated = fullText.length > FULL_DOC_BUDGET
+    const text = truncated ? fullText.slice(0, FULL_DOC_BUDGET) + "\n\n[...truncated]" : fullText
+
+    return JSON.stringify({
+      sourceFile,
+      sourceId: safeId,
+      sourceType,
+      totalChunks: docs.length,
+      totalChars: fullText.length,
+      truncated,
+      text,
+    })
+  }
+}
+
+class ListStudyTopicsTool extends StructuredTool {
+  name = "list_study_topics"
+  description = "List all topics and subtopics from the study plan. Use this BEFORE creating Anki cards to know which topics exist, so you can assign cards to the correct topic/subtopic."
+  schema = z.object({}) as any
+  private subjectId: string
+
+  constructor(subjectId: string) {
+    super()
+    this.subjectId = subjectId
+  }
+
+  async _call() {
+    const plan = await getStudyPlan(this.subjectId)
+    if (!plan?.topics?.length) return JSON.stringify({ error: "No study plan found" })
+    return JSON.stringify(plan.topics.map(t => ({
+      id: t.id,
+      name: t.title,
+      subtopics: (t.subtopics || []).map(s => ({ id: s.id, name: s.title })),
+    })))
+  }
+}
+
+const createAnkiCardSchema = z.object({
+  front: z.string().describe("The question/prompt side of the flashcard"),
+  back: z.string().describe("The answer side of the flashcard"),
+  tags: z.array(z.string()).optional().describe("Tags for the card"),
+  topicName: z.string().describe("The name of the study plan topic this card belongs to (must match an existing topic from list_study_topics)"),
+  subtopicName: z.string().optional().describe("The name of the subtopic within the topic (must match an existing subtopic from list_study_topics)"),
+})
+
+class CreateAnkiCardTool extends StructuredTool {
+  name = "create_anki_card"
+  description = `Create an Anki flashcard from the current conversation. Use when the user asks to save something as a flashcard, create an Anki card, or says they want to remember something. You MUST call list_study_topics first to get available topics, then assign the card to the most relevant topic/subtopic.`
+  schema = createAnkiCardSchema as any
+  private subjectId: string
+
+  constructor(subjectId: string) {
+    super()
+    this.subjectId = subjectId
+  }
+
+  async _call({ front, back, tags, topicName, subtopicName }: z.infer<typeof createAnkiCardSchema>) {
+    const plan = await getStudyPlan(this.subjectId)
+    let topicId: string | undefined
+    let subtopicId: string | undefined
+
+    if (plan?.topics) {
+      // Exact match
+      let topic = plan.topics.find(t => t.title.toLowerCase() === topicName.toLowerCase())
+      // Fuzzy fallback
+      if (!topic) {
+        topic = plan.topics.find(t =>
+          t.title.toLowerCase().includes(topicName.toLowerCase()) ||
+          topicName.toLowerCase().includes(t.title.toLowerCase())
+        )
+      }
+      if (topic) {
+        topicId = topic.id
+        if (subtopicName) {
+          let sub = topic.subtopics.find(s => s.title.toLowerCase() === subtopicName.toLowerCase())
+          if (!sub) {
+            sub = topic.subtopics.find(s =>
+              s.title.toLowerCase().includes(subtopicName.toLowerCase()) ||
+              subtopicName.toLowerCase().includes(s.title.toLowerCase())
+            )
+          }
+          if (sub) subtopicId = sub.id
+        }
+      }
+    }
+
+    const card: AnkiCard = {
+      id: randomUUID(),
+      front,
+      back,
+      tags: [...(tags || []), "chat-created"],
+      topicId,
+      subtopicId,
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+    }
+    await addCard(this.subjectId, card)
+    return JSON.stringify({
+      success: true,
+      card: { front, back, tags: card.tags, topic: topicName, subtopic: subtopicName || null },
+    })
+  }
+}
+
 export function buildTools(ns: string, embeddings: EmbeddingsInterface) {
   const subjectId = ns.replace(/^subject:/, "")
   const tools: StructuredTool[] = [
     new SourceSearchTool(ns, embeddings),
     new ListSourcesTool(subjectId),
+    new GetFullDocumentTool(ns, embeddings),
   ]
   if (config.tavily_api_key) {
     tools.push(new WebSearchTool())
   }
+  tools.push(new ListStudyTopicsTool(subjectId))
+  tools.push(new CreateAnkiCardTool(subjectId))
   return tools
 }

@@ -1,4 +1,5 @@
 import fs from "fs";
+import path from "path";
 import { handleAgentChat } from "../../lib/ai/agentChat";
 import { parseMultipart, handleUpload } from "../../lib/parser/upload";
 import {
@@ -9,15 +10,38 @@ import {
   getMsgs,
   renameChat,
   deleteChat,
+  getFullDocCache,
+  setFullDocCache,
 } from "../../utils/chat/chat";
+import type { ChatImageRef } from "../../utils/chat/chat";
 import { emitToAll } from "../../utils/chat/ws";
 import { resolveOverride } from "../../utils/llm/models";
 import { getSubject } from "../../utils/subjects/subjects";
+import { mimeFromExt } from "../../lib/ai/imageUtils";
 
 type UpFile = { path: string; filename: string; mimeType: string };
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const chatSockets = new Map<string, Set<any>>();
+
+function persistChatImages(chatId: string, imageFiles: UpFile[]): ChatImageRef[] {
+  if (!imageFiles.length) return [];
+  const dir = path.join(process.cwd(), "storage", "chat-images", chatId);
+  fs.mkdirSync(dir, { recursive: true });
+  const refs: ChatImageRef[] = [];
+  for (const f of imageFiles) {
+    const safeName = path.basename(f.filename).replace(/[^a-zA-Z0-9._-]/g, "_").slice(0, 255);
+    const dest = path.join(dir, safeName);
+    try {
+      fs.copyFileSync(f.path, dest);
+      fs.unlinkSync(f.path);
+      refs.push({ filename: safeName, mimeType: mimeFromExt(safeName), url: `/chat-images/${chatId}/${safeName}` });
+    } catch (err) {
+      console.warn("[chat] failed to persist image:", f.filename, err);
+    }
+  }
+  return refs;
+}
 
 export function chatRoutes(app: any) {
   app.ws("/ws/chat", (ws: any, req: any) => {
@@ -40,6 +64,22 @@ export function chatRoutes(app: any) {
     });
 
     ws.send(JSON.stringify({ type: "ready", chatId }));
+  });
+
+  // Serve persisted chat images
+  app.get("/chat-images/:chatId/:filename", (req: any, res: any) => {
+    const { chatId, filename } = req.params;
+    if (!UUID_RE.test(chatId)) return res.status(400).send({ error: "invalid chatId" });
+    const safeName = path.basename(filename);
+    if (!safeName || safeName.startsWith(".") || safeName !== filename) return res.status(400).send({ error: "invalid filename" });
+    const filePath = path.join(process.cwd(), "storage", "chat-images", chatId, safeName);
+    const expectedDir = path.join(process.cwd(), "storage", "chat-images", chatId);
+    if (!filePath.startsWith(expectedDir + path.sep)) return res.status(400).send({ error: "invalid path" });
+    if (!fs.existsSync(filePath)) return res.status(404).send({ error: "not found" });
+    res.setHeader("Content-Type", mimeFromExt(safeName));
+    res.setHeader("Cache-Control", "public, max-age=86400");
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    fs.createReadStream(filePath).pipe(res);
   });
 
   app.post("/subjects/:id/chat", async (req: any, res: any, next: any) => {
@@ -117,7 +157,14 @@ export function chatRoutes(app: any) {
             });
           }
 
-          await addMsg(subjectId, id, { role: "user", content: q, at: Date.now() });
+          // Persist uploaded images before storing the message
+          const imageRefs = persistChatImages(id, imageFiles);
+          await addMsg(subjectId, id, {
+            role: "user",
+            content: q,
+            at: Date.now(),
+            ...(imageRefs.length && { images: imageRefs }),
+          });
           emitToAll(chatSockets.get(id), {
             type: "phase",
             value: "generating",
@@ -128,16 +175,39 @@ export function chatRoutes(app: any) {
           const msgHistory = await getMsgs(subjectId, id);
           const relevantHistory = msgHistory.slice(-20);
 
+          // Build image paths from persisted locations
+          const persistedImagePaths = imageRefs.map(ref => {
+            const filePath = path.join(process.cwd(), "storage", "chat-images", id, ref.filename);
+            return { path: filePath, mimeType: ref.mimeType };
+          });
+
+          const cachedDoc = await getFullDocCache(subjectId, id);
+
           answer = await handleAgentChat({
             question: q,
             namespace: ns,
             history: relevantHistory,
             llmOverride,
             systemPrompt: customPrompt,
-            images: imageFiles.length ? imageFiles.map(f => ({ path: f.path, mimeType: f.mimeType })) : undefined,
+            images: persistedImagePaths.length ? persistedImagePaths : undefined,
             chatId: id,
+            preloadedDocument: cachedDoc,
+            onFullDocLoaded: (doc) => {
+              setFullDocCache(subjectId, id, doc).catch(err =>
+                console.warn("[chat] failed to cache full doc:", err)
+              );
+            },
             onPhase: (phase, detail, stepId) => {
               emitToAll(chatSockets.get(id), { type: "phase", value: phase, detail, stepId });
+            },
+            onToken: (token) => {
+              emitToAll(chatSockets.get(id), { type: "token", value: token });
+            },
+            onThinking: (text) => {
+              emitToAll(chatSockets.get(id), { type: "thinking", value: text });
+            },
+            onCitation: (citation) => {
+              emitToAll(chatSockets.get(id), { type: "citation", value: citation });
             },
           });
 
@@ -155,11 +225,6 @@ export function chatRoutes(app: any) {
           const stack = err?.stack || String(err);
           console.error("[chat] err inner", { chatId: id, msg, stack });
           emitToAll(chatSockets.get(id), { type: "error", error: msg });
-        } finally {
-          // Clean up temporary image files
-          for (const f of imageFiles) {
-            try { fs.unlinkSync(f.path); } catch {}
-          }
         }
       });
     } catch (e: any) {

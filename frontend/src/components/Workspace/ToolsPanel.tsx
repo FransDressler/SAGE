@@ -20,6 +20,7 @@ import TranscriberTool from "./tools/TranscriberTool";
 import MindmapPlayer from "./tools/MindmapPlayer";
 import ExamPlayer from "./tools/ExamPlayer";
 import ResearchViewer from "./tools/ResearchViewer";
+import AnkiDeckTool from "./tools/AnkiDeckTool";
 
 type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string };
 
@@ -32,7 +33,7 @@ type GeneratedTool = {
   createdAt?: number;
 };
 
-type SimplePanel = "flashcards" | "transcriber";
+type SimplePanel = "flashcards" | "transcriber" | "ankideck";
 
 const TOOL_COLORS: Record<string, { text: string; bg: string; border: string; spinner: string }> = {
   quiz: { text: "text-green-400", bg: "bg-green-900/20", border: "border-green-800/40", spinner: "border-t-green-400" },
@@ -417,8 +418,8 @@ const ToolsPanel = forwardRef<ToolsPanelHandle, { collapsed?: boolean; onToggleC
   // Render simple panel (flashcards / transcriber)
   if (simplePanel) {
     return (
-      <div className="h-full flex flex-col border-l border-stone-800 bg-stone-900/50">
-        <div className="relative">
+      <div className="h-full min-h-0 flex flex-col border-l border-stone-800 bg-stone-900/50">
+        <div className="relative shrink-0">
           <button
             onClick={() => setSimplePanel(null)}
             className="absolute right-2 top-2 z-10 p-1.5 rounded-lg bg-stone-800/80 hover:bg-stone-700 text-stone-400 hover:text-stone-200 transition-colors"
@@ -428,9 +429,10 @@ const ToolsPanel = forwardRef<ToolsPanelHandle, { collapsed?: boolean; onToggleC
             </svg>
           </button>
         </div>
-        <div className="flex-1 overflow-y-auto custom-scroll">
+        <div className="flex-1 min-h-0 overflow-y-auto custom-scroll">
           {simplePanel === "flashcards" && <FlashcardsTool />}
           {simplePanel === "transcriber" && <TranscriberTool />}
+          {simplePanel === "ankideck" && <AnkiDeckTool />}
         </div>
       </div>
     );
@@ -459,6 +461,7 @@ const ToolsPanel = forwardRef<ToolsPanelHandle, { collapsed?: boolean; onToggleC
           <ToolCard tool="mindmap" status="idle" onClick={() => setModalTool("mindmap")} />
           <ToolCard tool="exam" status="idle" onClick={() => setModalTool("exam")} />
           <ToolCard tool="research" status="idle" onClick={() => setModalTool("research")} />
+          <ToolCard tool="ankideck" status="idle" onClick={() => setSimplePanel("ankideck")} />
         </div>
 
         {/* Generated items list */}

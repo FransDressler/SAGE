@@ -27,12 +27,13 @@ export type Source = {
 };
 
 export type ChatStartResponse = { ok: true; chatId: string; stream: string };
-export type ChatMessage = { role: "user" | "assistant"; content: string; at: number };
+export type ChatImageRef = { filename: string; mimeType: string; url: string };
+export type ChatMessage = { role: "user" | "assistant"; content: string; at: number; images?: ChatImageRef[] };
 export type ChatInfo = { id: string; title?: string; at?: number };
 export type ChatsList = { ok: true; chats: ChatInfo[] };
 export type ChatDetail = { ok: true; chat: ChatInfo; messages: ChatMessage[] };
 export type ChatJSONBody = { q: string; chatId?: string; provider?: string; model?: string };
-export type ChatPhase = "upload_start" | "upload_done" | "generating" | "thinking" | "listing_sources" | "searching_sources" | "searching_web" | "reading_results";
+export type ChatPhase = "upload_start" | "upload_done" | "generating" | "thinking" | "listing_sources" | "searching_sources" | "searching_web" | "reading_full_document" | "reading_results";
 export type AgentStep = { stepId: number; phase: ChatPhase; detail?: string; status: "active" | "done" };
 export type FlashCard = { q: string; a: string; tags?: string[] };
 export type Question = { id: number; question: string; options: string[]; correct: number; hint: string; explanation: string; imageHtml?: string };
@@ -68,6 +69,9 @@ export type ChatEvent =
   | { type: "ready"; chatId: string }
   | { type: "phase"; value: ChatPhase; detail?: string; stepId?: number }
   | { type: "file"; filename: string; mime: string }
+  | { type: "token"; value: string }
+  | { type: "thinking"; value: string }
+  | { type: "citation"; value: any }
   | { type: "answer"; answer: AnswerPayload }
   | { type: "done" }
   | { type: "error"; error: string };
@@ -699,6 +703,273 @@ export function connectSubjectGraphStream(subjectId: string, onEvent: (ev: Subje
   };
   ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
   return { ws, close: () => { try { ws.close(); } catch {} } };
+}
+
+// --- Study Plan ---
+
+export type StudyPlanSubtopic = {
+  id: string;
+  title: string;
+  order: number;
+  content: string;
+  status: "empty" | "generating" | "ready" | "error";
+  generatedAt?: number;
+};
+
+export type StudyPlanTopic = {
+  id: string;
+  title: string;
+  order: number;
+  subtopics: StudyPlanSubtopic[];
+};
+
+export type StudyPlan = {
+  topics: StudyPlanTopic[];
+  generatedAt?: number;
+  sourceCount: number;
+};
+
+export type StudyPlanEvent =
+  | { type: "ready"; subjectId: string }
+  | { type: "phase"; value: string; detail?: string }
+  | { type: "plan"; plan: StudyPlan }
+  | { type: "subtopic-content"; topicId: string; subtopicId: string; content: string }
+  | { type: "done" }
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
+
+export function getStudyPlan(subjectId: string) {
+  return req<{ ok: true; plan: StudyPlan | null }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan`
+  );
+}
+
+export function saveStudyPlan(subjectId: string, plan: StudyPlan) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan`,
+    { method: "PUT", headers: jsonHeaders(), body: JSON.stringify(plan) }
+  );
+}
+
+export function generateStudyPlan(
+  subjectId: string,
+  opts?: {
+    primarySourceIds?: string[];
+    backgroundSourceIds?: string[];
+    prompt?: string;
+    provider?: string;
+    model?: string;
+  },
+) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/generate`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify(opts || {}) }
+  );
+}
+
+export function addStudyPlanTopic(subjectId: string, title: string) {
+  return req<{ ok: true; topic: StudyPlanTopic }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/topics`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({ title }) }
+  );
+}
+
+export function deleteEntireStudyPlan(subjectId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan`,
+    { method: "DELETE" }
+  );
+}
+
+export function deleteStudyPlanTopic(subjectId: string, topicId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/topics/${encodeURIComponent(topicId)}`,
+    { method: "DELETE" }
+  );
+}
+
+export function addStudyPlanSubtopic(subjectId: string, topicId: string, title: string) {
+  return req<{ ok: true; subtopic: StudyPlanSubtopic }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/topics/${encodeURIComponent(topicId)}/subtopics`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({ title }) }
+  );
+}
+
+export function deleteStudyPlanSubtopic(subjectId: string, topicId: string, subtopicId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/topics/${encodeURIComponent(topicId)}/subtopics/${encodeURIComponent(subtopicId)}`,
+    { method: "DELETE" }
+  );
+}
+
+export function generateSubtopicContent(subjectId: string, topicId: string, subtopicId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/subtopic/${encodeURIComponent(topicId)}/${encodeURIComponent(subtopicId)}/generate`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({}) }
+  );
+}
+
+export function generateAllStudyPlanContent(subjectId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/studyplan/generate-all-content`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({}) }
+  );
+}
+
+export function connectStudyPlanStream(subjectId: string, onEvent: (ev: StudyPlanEvent) => void) {
+  const url = wsURL(`/ws/studyplan?subjectId=${encodeURIComponent(subjectId)}`);
+  const ws = new WebSocket(url);
+  ws.onmessage = (m) => {
+    try {
+      onEvent(JSON.parse(m.data as string) as StudyPlanEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
+}
+
+// --- Anki Deck ---
+
+export type AnkiCard = {
+  id: string;
+  front: string;
+  back: string;
+  tags: string[];
+  topicId?: string;
+  subtopicId?: string;
+  imageUrl?: string;
+  sourceId?: string;
+  sourceType?: "material" | "exercise";
+  createdAt: number;
+  updatedAt: number;
+  // SRS review state
+  ankiNoteId?: number;
+  interval?: number;
+  due?: number;
+  ease?: number;
+  reps?: number;
+  lapses?: number;
+  queue?: number;
+  cardType?: number;
+};
+
+export type AnkiDeckEvent =
+  | { type: "ready"; generationId: string }
+  | { type: "phase"; value: string; detail?: string }
+  | { type: "cards"; cards: AnkiCard[] }
+  | { type: "done" }
+  | { type: "error"; error: string }
+  | { type: "ping"; t: number };
+
+export function listAnkiCards(subjectId: string) {
+  return req<{ ok: true; cards: AnkiCard[]; lastGenerated?: number }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck`
+  );
+}
+
+export function deleteAllAnkiCards(subjectId: string) {
+  return req<{ ok: true; deleted: number }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck`,
+    { method: "DELETE" }
+  );
+}
+
+export function addAnkiCard(subjectId: string, card: { front: string; back: string; tags?: string[]; topicId?: string; subtopicId?: string; imageUrl?: string }) {
+  return req<{ ok: true; card: AnkiCard }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/cards`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify(card) }
+  );
+}
+
+export function editAnkiCard(subjectId: string, cardId: string, updates: Partial<AnkiCard>) {
+  return req<{ ok: true; card: AnkiCard }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/cards/${encodeURIComponent(cardId)}`,
+    { method: "PUT", headers: jsonHeaders(), body: JSON.stringify(updates) }
+  );
+}
+
+export function deleteAnkiCard(subjectId: string, cardId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/cards/${encodeURIComponent(cardId)}`,
+    { method: "DELETE" }
+  );
+}
+
+export function generateAnkiCards(subjectId: string, opts: { topicId?: string; subtopicId?: string; count?: number }) {
+  return req<{ ok: true; generationId: string; stream: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/generate`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify(opts) }
+  );
+}
+
+export function connectAnkiStream(generationId: string, onEvent: (ev: AnkiDeckEvent) => void) {
+  const url = wsURL(`/ws/ankideck?generationId=${encodeURIComponent(generationId)}`);
+  const ws = new WebSocket(url);
+  ws.onmessage = (m) => {
+    try {
+      onEvent(JSON.parse(m.data as string) as AnkiDeckEvent);
+    } catch {}
+  };
+  ws.onerror = () => onEvent({ type: "error", error: "stream_error" });
+  return { ws, close: () => { try { ws.close(); } catch {} } };
+}
+
+export function exportAnkiDeckUrl(subjectId: string) {
+  return `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/export`;
+}
+
+// AnkiWeb Sync
+export type AnkiWebStatus = { ok: true; connected: boolean; username?: string; deckName?: string; lastSync?: number };
+
+export function ankiwebStatus(subjectId: string) {
+  return req<AnkiWebStatus>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/ankiweb-status`
+  );
+}
+
+export function ankiwebLogin(subjectId: string, username: string, password: string, deckName: string) {
+  return req<{ ok: true; username: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/ankiweb-login`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({ username, password, deckName }) }
+  );
+}
+
+export function ankiwebSetDeckName(subjectId: string, deckName: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/ankiweb-deckname`,
+    { method: "PUT", headers: jsonHeaders(), body: JSON.stringify({ deckName }) }
+  );
+}
+
+export function ankiwebDisconnect(subjectId: string) {
+  return req<{ ok: true }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/ankiweb`,
+    { method: "DELETE" }
+  );
+}
+
+export function ankiwebSync(subjectId: string) {
+  return req<{ ok: true; syncId: string; stream: string }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/sync`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({}) }
+  );
+}
+
+// --- Study Mode ---
+
+export type StudyStats = { newCount: number; learningCount: number; dueCount: number }
+
+export function getStudyQueue(subjectId: string, limit = 20) {
+  return req<{ ok: true; queue: any[]; stats: StudyStats }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/study-queue?limit=${limit}`
+  );
+}
+
+export function reviewAnkiCard(subjectId: string, cardId: string, rating: "again" | "hard" | "good" | "easy") {
+  return req<{ ok: true; card: any; stats: StudyStats }>(
+    `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/review`,
+    { method: "POST", headers: jsonHeaders(), body: JSON.stringify({ cardId, rating }) }
+  );
 }
 
 // --- Util ---

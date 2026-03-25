@@ -1,5 +1,5 @@
 type Props = {
-  tool: "quiz" | "podcast" | "smartnotes" | "flashcards" | "transcriber" | "mindmap" | "exam" | "research";
+  tool: "quiz" | "podcast" | "smartnotes" | "flashcards" | "transcriber" | "mindmap" | "exam" | "research" | "ankideck";
   status: "idle" | "loading" | "ready" | "error";
   label?: string;
   onClick: () => void;
@@ -14,6 +14,7 @@ const TOOL_STYLES: Record<string, { icon: string; color: string; bg: string; bor
   mindmap: { icon: "M", color: "text-cyan-400", bg: "bg-cyan-900/20", border: "border-cyan-800/40" },
   exam: { icon: "E", color: "text-rose-400", bg: "bg-rose-900/20", border: "border-rose-800/40" },
   research: { icon: "R", color: "text-blue-400", bg: "bg-blue-900/20", border: "border-blue-800/40" },
+  ankideck: { icon: "A", color: "text-teal-400", bg: "bg-teal-900/20", border: "border-teal-800/40" },
 };
 
 const TOOL_NAMES: Record<string, string> = {
@@ -25,6 +26,7 @@ const TOOL_NAMES: Record<string, string> = {
   mindmap: "Mindmap",
   exam: "Exam",
   research: "Research",
+  ankideck: "Anki Deck",
 };
 
 export default function ToolCard({ tool, status, label, onClick }: Props) {
@@ -61,6 +63,7 @@ export default function ToolCard({ tool, status, label, onClick }: Props) {
               style.color === "text-orange-400" ? "border-t-orange-400" :
               style.color === "text-rose-400" ? "border-t-rose-400" :
               style.color === "text-blue-400" ? "border-t-blue-400" :
+              style.color === "text-teal-400" ? "border-t-teal-400" :
               "border-t-bone"
             }`} />
           ) : status === "ready" ? (

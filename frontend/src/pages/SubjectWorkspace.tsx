@@ -5,7 +5,8 @@ import { renameSubject } from "../lib/api";
 import SourcesPanel from "../components/Workspace/SourcesPanel";
 import ChatPanel, { type ChatPanelHandle } from "../components/Workspace/ChatPanel";
 import ToolsPanel, { type ToolsPanelHandle } from "../components/Workspace/ToolsPanel";
-import SubjectGraphColumn from "../components/Workspace/SubjectGraphColumn";
+// import SubjectGraphColumn from "../components/Workspace/SubjectGraphColumn";
+import StudyPlanColumn from "../components/Workspace/StudyPlanColumn";
 import KeyboardShortcutsHelp from "../components/Workspace/KeyboardShortcutsHelp";
 import CommandPalette from "../components/Workspace/CommandPalette";
 import { useKeyboardShortcuts, type Shortcut } from "../hooks/useKeyboardShortcuts";
@@ -193,19 +194,22 @@ export default function SubjectWorkspace() {
 
       {/* Mobile tab switcher */}
       <div className="flex md:hidden border-b border-stone-800 shrink-0">
-        {(["sources", "chat", "tools", "graph"] as MobileTab[]).map(tab => (
-          <button
-            key={tab}
-            onClick={() => setMobileTab(tab)}
-            className={`flex-1 py-2.5 text-sm font-medium capitalize transition-colors ${
-              mobileTab === tab
-                ? "text-bone border-b-2 border-bone"
-                : "text-stone-500 hover:text-stone-300"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
+        {(["sources", "chat", "tools", "graph"] as MobileTab[]).map(tab => {
+          const label = tab === "graph" ? "Plan" : tab;
+          return (
+            <button
+              key={tab}
+              onClick={() => setMobileTab(tab)}
+              className={`flex-1 py-2.5 text-sm font-medium capitalize transition-colors ${
+                mobileTab === tab
+                  ? "text-bone border-b-2 border-bone"
+                  : "text-stone-500 hover:text-stone-300"
+              }`}
+            >
+              {label}
+            </button>
+          );
+        })}
       </div>
 
       {/* 4-column layout (desktop) / single column (mobile) */}
@@ -218,7 +222,8 @@ export default function SubjectWorkspace() {
           <SourcesPanel collapsed={collapsed.sources} onToggleCollapse={() => toggleCollapse("sources")} />
           <ChatPanel ref={chatPanelRef} collapsed={collapsed.chat} onToggleCollapse={() => toggleCollapse("chat")} toolChatContext={toolChatContext} onToolChatConsumed={() => setToolChatContext(null)} />
           <ToolsPanel ref={toolsPanelRef} collapsed={collapsed.tools} onToggleCollapse={() => toggleCollapse("tools")} onChatAboutTool={handleChatAboutTool} />
-          <SubjectGraphColumn collapsed={collapsed.graph} onToggleCollapse={() => toggleCollapse("graph")} onChatAbout={handleChatAboutTool} />
+          {/* <SubjectGraphColumn collapsed={collapsed.graph} onToggleCollapse={() => toggleCollapse("graph")} onChatAbout={handleChatAboutTool} /> */}
+          <StudyPlanColumn collapsed={collapsed.graph} onToggleCollapse={() => toggleCollapse("graph")} />
         </div>
 
         {/* Mobile */}
@@ -226,7 +231,8 @@ export default function SubjectWorkspace() {
           {mobileTab === "sources" && <SourcesPanel />}
           {mobileTab === "chat" && <ChatPanel ref={chatPanelRef} toolChatContext={toolChatContext} onToolChatConsumed={() => setToolChatContext(null)} />}
           {mobileTab === "tools" && <ToolsPanel ref={toolsPanelRef} onChatAboutTool={handleChatAboutTool} />}
-          {mobileTab === "graph" && <SubjectGraphColumn />}
+          {/* {mobileTab === "graph" && <SubjectGraphColumn />} */}
+          {mobileTab === "graph" && <StudyPlanColumn />}
         </div>
       </div>
 

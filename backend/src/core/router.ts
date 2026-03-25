@@ -11,7 +11,9 @@ import { modelsRoutes } from "./routes/models";
 import { websearchRoutes } from "./routes/websearch";
 import { subjectGraphRoutes } from "./routes/subjectgraph";
 import { researchRoutes } from "./routes/research";
+import { studyPlanRoutes } from "./routes/studyplan";
 import { debugRoutes } from "./routes/debug";
+import { ankideckRoutes } from "./routes/ankideck";
 
 export function registerRoutes(app: any) {
   modelsRoutes(app);
@@ -27,5 +29,7 @@ export function registerRoutes(app: any) {
   websearchRoutes(app);
   subjectGraphRoutes(app);
   researchRoutes(app);
+  studyPlanRoutes(app);
+  ankideckRoutes(app);
   debugRoutes(app);
 }

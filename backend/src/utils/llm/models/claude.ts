@@ -5,10 +5,11 @@ import type { MkLLM, MkEmb, EmbeddingsLike } from './types'
 
 export const makeLLM: MkLLM = (cfg: any) => {
   const m = new ChatAnthropic({
-    model: cfg.claude_model || 'claude-3-5-sonnet-latest',
+    model: cfg.claude_model || 'claude-sonnet-4-6-20250514',
     apiKey: cfg.claude || process.env.ANTHROPIC_API_KEY,
     temperature: cfg.temp ?? 0.7,
     maxTokens: cfg.max_tokens,
+    streaming: true,
   })
   return wrapChat(m)
 }

@@ -107,21 +107,34 @@ function cleanOptions(v: any) {
   const pref = Math.random() < 0.5 ? ["A) ", "B) ", "C) ", "D) "] : ["1) ", "2) ", "3) ", "4) "]
   return out.slice(0, 4).map((t, i) => (pref[i] + t).trim())
 }
+function shuffleOptions(opts: string[], correctIdx: number): { options: string[]; correct: number } {
+  const indexed = opts.map((o, i) => ({ o, wasCorrect: i === correctIdx }))
+  for (let i = indexed.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[indexed[i], indexed[j]] = [indexed[j], indexed[i]]
+  }
+  const pref = ["A) ", "B) ", "C) ", "D) "]
+  const newCorrect = indexed.findIndex(x => x.wasCorrect)
+  const options = indexed.map((x, i) => pref[i] + x.o.replace(/^\s*(?:[A-D]\)|[1-4]\))\s*/i, "").trim())
+  return { options, correct: newCorrect }
+}
+
 function coerce(items: any): QuizItem[] {
   const arr = Array.isArray(items) ? items : []
   return arr.map((o: any, i: number): QuizItem => {
     const q = nstr(o?.question, 12, 160) || `Question ${i + 1}`
     const opts = cleanOptions(o?.options)
-    const correct = to1_4(o?.correct)
+    const rawCorrect = to1_4(o?.correct) - 1 // convert to 0-based
+    const { options, correct } = shuffleOptions(opts, rawCorrect)
     const hint = nstr(o?.hint, 6, 120) || "Use the core idea."
     const explanation = nstr(o?.explanation, 12, 200) || "The correct option matches the main idea; others do not."
-    return { id: i + 1, question: q, options: opts, correct, hint, explanation }
+    return { id: i + 1, question: q, options, correct, hint, explanation }
   })
 }
 function validItem(x: any) {
   return x && typeof x.id === "number" && typeof x.question === "string"
     && Array.isArray(x.options) && x.options.length === 4 && x.options.every((o: any) => typeof o === "string")
-    && typeof x.correct === "number" && x.correct >= 1 && x.correct <= 4
+    && typeof x.correct === "number" && x.correct >= 0 && x.correct <= 3
     && typeof x.hint === "string" && typeof x.explanation === "string"
 }
 function validQuiz(a: any): a is QuizItem[] { return Array.isArray(a) && a.length > 0 && a.every(validItem) }
