@@ -1,0 +1,121 @@
+## 1. Struktur fester Körper: Atome in Kristallen , Einkristalle
+
+### 1.1 Vistallstuktur $=$ Gitter + Basis
+
+Ein knistall ist eine 3D, periodiscle Anordung von Atoure. Ein idealer Mistall setet sich ans Atomen zusamman, die in eircen duch diei fundamentale Grund veltanen (Rasisveltaen) $\underline{a}_{1}, \underline{a}_{2}$ and $\underline{a}_{3}$ definiertem Gitter anyenduct sind.
+
+Von jedem Punkt $\underline{r}$ ans sielit die Anoduny der Atome feich ans, wie in Punkt $r^{\prime}$ :
+
+$$
+\underline{r}^{\prime}=\underline{r}+u_{1} \cdot a_{1}+u_{2} \cdot \underline{a}_{2}+u_{3} \cdot \underline{a}_{3} ; u_{i} \in \mathbb{Z} ;
+$$
+
+## Die Mange aller Punkt r' definiant ein Gither.
+
+Um ein Gitter zn beselnaiben, verwenden win 6 Gitterpanamets.
+
+> Githerkoustanten Winkel
+
+\begin{aligned}
+& a_{1}=\left|a_{1}\right| ; a_{2}=\left|a_{2}\right| ; a_{3}=\left|a_{3}\right| ; \\
+& \alpha \Varangle a_{2}, a_{3} ; \beta \Varangle a_{3}, a_{1} ; \gamma \Varangle a_{1}, a_{2}
+\end{aligned}
+
+Volumen do Einhaitszelle:
+
+V_{E z}=\underline{a}_{1} \cdot\left(\underline{a}_{2} \times \underline{a}_{3}\right) .
+
+Dic knistallstunktor wind enst anfubant, wenn eine Basis ans Atomen völlij glaich antij jiden Gitles punlt bostzt.
+
+Relativ en jedem Gittespunlt j’ liges die Basisatome.
+Basis
+
+\underline{R}_{j}=x_{j} \underline{a}_{1}+y_{j} \underline{a}_{2}+z_{j} \cdot \underline{a}_{3}
+
+\text { unistall stuultur }=\text { Gitter }+ \text { Basis }
+
+Alg. gilt: lu 3D gibt es Wie komment man daranf?
+
+\begin{aligned}
+& 14 \text { Bravais-Gither } \\
+& 7 \text { Mistallsysteme }
+\end{aligned}
+
+### 1.2 Bravais-Gitter
+
+Wirs unterscheiden zwischon Panktsymmetien and Translationssymmetien.
+1 Punlet ing Raum wind festgehalten.
+bistall wind als gauzes verschdom
+
+Betrachte zuriäclst nur das Gitter olue Basis.
+
+- Translations symmetie
+
+\begin{array}{r}
+u(\underline{r})=u(\underline{r}+\underline{R}), \underline{R}: \text { Gitter vektor } \\
+\underline{R} \quad=u_{1} \underline{a}_{1}+u_{2} \underline{a}_{2}+u_{3} \underline{a}_{3}, \\
+u_{i} \in \mathbb{Z}
+\end{array}
+
+Die Basisvektain $\underline{a}_{i}$ spannen ein schiefwinklies Kondivatensystem auf • Das Paralleepiped (Spat) wind als Einhaits-odo Elementaszelle (EZ) bezeichnet.
+
+## Bemerkwyen:
+
+- Man unterscheidet primitive EZ (unit 1 Gitlerpankt) und nicht-primitive EZ (unit $>1$ Gitterpunkten).
+- EZ sind vicht eindentij.
+- Mit nidit-primitiven EZ hann man wit den Basis vellere vicht alle Gitter punkte eneichen!
+- Die primite EZ bingt oft die Symmetic do Punktyiths micht zam Assdiuck.
+(wähle widt-primitive EZ wit Basis).
+
+
+## Symmetric operationen
+
+Eine Symmetire operation ist eive Operation, wach der der koinpes nicht vom tusgangszestand zer cuiterschoiden ist.
+
+Beispiel: Drckung und Spiegleny avas Würfeli.
+
+## Das geometische Objekt zur Symmetieoperation haißt Symuetic demant.
+
+Spiegelny $\rightarrow$ Spiegeleberve
+Dicking → Drehackse
+
+## Gruppentheaie
+
+Die Meny aller Symmetie operationen bildet eine math. Gruppe, die Symmetie gruppe.
+
+- Punlet symmetic operation: (unind. ein Gitterpunkt blaibt ahalten)
+
+Didung um eive Adise: es gild $n$-zählige Drehacksen
+⇒ uw Drekuge um $\frac{2 \pi}{n}, n=1,2, \ldots$
+sind alaubt.
+n-tählijbàt: Wie oft titt bei Drehuy wen $2 \pi$ Deckungs feichhait auf.
+nur 2-, 3-, 4- und 6-zählige Dreknyge relevant.
+Symbole: 2, 3, 4, 6
+
+- Spieglun : Beispial Spiegely an $x y$ - Ebere: $x^{\prime}=x$
+
+& y_{1}^{\prime}=y \\
+& z^{\prime}=-z
+
+Symbol : m
+
+- Inversionszentiven: $\quad x^{\prime}=-x, y^{\prime}=-y ; z^{\prime}=-z$;
+
+Symbol: $i$ (oder $\overline{1}$ )
+Spiegeluy au einedn Plunkt.
+
+Punltyitts haben immer Inversion. Bi Einfulnny einer Basis Vann diese verloren gehe.
+
+- Drehinversionsadie: Eusamuengesette Operation, Drehung+luversion
+
+Symbole: $\overline{2}, \overline{3}, \overline{4}, \overline{6}$
+zweizállize Drchy + Inversion $=$ Spiegely.
+$\Rightarrow \quad \overline{2}=m$.
+
+Fazit: 10 Punkt symmetric operation in 3D! ohne Thanslation.
+
+Aus des Gruppentheorie eyeben sidn mathematisch
+32 Punktsymmetice grupper.
+Mit Trauslation: 230 Virstallographiscle Rammguupper.
+Diese verteilen sich aut 7 knistallsysteme.
+

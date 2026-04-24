@@ -1,0 +1,209 @@
+## Richtungen und Ebenen in Kristallen
+
+![This diagram depicts the crystal lattice structure of diamond, showing the arrangement of carbon atoms bonded in a tetrahedral network within a cubic unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-01_993_1040_587_1127.jpg)
+aus Wikipedia commons Diamond Cubic-F lattice animation.gif
+
+Richtungen in einem Kristall
+![This diagram depicts a three-dimensional lattice vector representation in crystallography, showing the vector \( \mathbf{z} \) expressed in terms of the lattice basis vectors \( \mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3 \) within a unit cell. It illustrates how the vector \( \mathbf{z} \) is positioned inside the parallelepiped defined by the lattice vectors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-02_726_771_555_1186.jpg)
+
+## Richtungen in einem Kristall
+
+Beispiel: obere Ecke in einer Einheitszelle (i.a. nicht kubisch)
+![This diagram depicts a crystallographic unit cell showing the lattice vectors a, b, and c along the x, y, and z axes, with the origin labeled as "Fusspunkt" (starting point) and the opposite corner labeled as "Endpunkt" (end point). It illustrates the spatial relationship and direction within the unit cell in a 3D coordinate system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-03_735_797_539_498.jpg)
+
+1. Bestimme Koordinate Fuss- und Endpunkt des Vektors:
+
+$$
+x_{1}, y_{1}, z_{1} \& x_{2}, y_{2}, z_{2}
+$$
+
+2. Subtrahiere Fuss- von Endpunkt.
+3. Normalisiere bzgl. Gitterkonstanten $a, b$, and $c$ :
+
+\frac{x_{2}-x_{1}}{a} \frac{y_{2}-y_{1}}{b} \frac{z_{2}-z_{1}}{c}
+
+4. Finde kleinstes ganzzahliges Verhältnis.
+
+\begin{aligned}
+& \frac{a-0}{a}, \quad \frac{b-0}{b}, \quad \frac{c-0}{c} \\
+& \Rightarrow 1,1,1 \Rightarrow \text { Richtung }\left[\begin{array}{lll}
+1 & 1 & 1
+\end{array}\right]
+\end{aligned}
+
+## Richtungen in einem Kristall
+
+Beispiel:
+![This diagram depicts a three-dimensional coordinate system showing the relationship between a "Fusspunkt" (starting point) and an "Endpunkt" (end point) within the space defined by the x, y, and z axes. It illustrates the vector or line segment connecting these two points.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-04_735_841_539_454.jpg)
+
+1. Bestimme Koordinate Fuss- und Endpunkt des Vektors:
+
+x_{1}, y_{1}, z_{1} \& x_{2}, y_{2}, z_{2} .
+
+2. Subtrahiere Fuss- von Endpunkt
+3. Normalisiere bzgl. Gitterkonstanten $a, b$, and $c$ :
+
+\frac{x_{2}-x_{1}}{a} \frac{y_{2}-y_{1}}{b} \frac{z_{2}-z_{1}}{c}
+
+4. Finde kleinstes ganzzahliges Verhältnis
+pt. $1 \quad x_{1}=0, y_{1}=0, z_{1}=0$
+pt. $2 x_{2}=a, y_{2}=0, z_{2}=c / 2$
+
+\begin{gathered}
+\frac{a-0}{a}, \quad \frac{0-0}{b}, \quad \frac{c / 2-0}{c} \\
+\Rightarrow 1,0,1 / 2 \Rightarrow 2,0,1 \Rightarrow \text { Richtung }\left[\begin{array}{lll}
+2 & 0 & 1
+\end{array}\right]
+\end{gathered}
+
+
+Beispiel:
+
+![This diagram depicts a 3D coordinate system illustrating the concept of a vector from a "Fusspunkt" (starting point) to an "Endpunkt" (end point) within a cubic space. It shows the spatial relationship and direction of the vector in terms of x, y, and z coordinates.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-05_766_882_525_399.jpg)
+pt. $1 \quad x_{1}=a, y_{1}=b / 2, z_{1}=0$
+pt. $2 x_{2}=-a, y_{2}=b, z_{2}=c$
+
+
+x_{1}, y_{1}, z_{1} \& x_{2}, y_{2}, z_{2} .
+
+2. Subtrahiere Fuss- von Endpunkt
+
+
+4. Finde kleinstes ganzzahliges Verhältnis
+
+\begin{gathered}
+\frac{-a-a}{a}, \quad \frac{b-b / 2}{b}, \quad \frac{c-0}{c} \\
+\Rightarrow-2,1 / 2,1 \Rightarrow-4,1,2 \Rightarrow \operatorname{Richtung}[-4 \mathrm{1} 2]
+\end{gathered}
+
+## Kristallographische Ebenen
+
+
+|  |  | $x$ | $y$ | $z$ |
+| :--- | :--- | :---: | :---: | :---: |
+| 1. Verschiebung zum Ursprung |  | --- |  |  |
+| 2. Achsenabschnitte | $a$ | $b$ | $\infty$ |  |
+| 3. Reziproke Werte | $1 / a$ | $1 / b$ | $1 / \infty$ |  |
+| 4. | Normalisiere die Werte | $a / a$ | $b / b$ | $c / \infty$ |
+| 5. | Reduziere die Werte | 1 | 1 | 0 |
+| 6. | Miller Indizes | 1 | 1 | 0 |
+|  |  |  | $(110)$ |  |
+
+![This diagram depicts a parallelepiped defined by three vectors \( \mathbf{a} \), \( \mathbf{b} \), and \( \mathbf{c} \) in a three-dimensional Cartesian coordinate system (x, y, z). It shows the geometric representation of the volume spanned by these vectors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-06_726_793_582_2337.jpg)
+
+## Kristallographische Ebenen
+
+
+|  |  | $x$ | $y$ | $z$ |
+| :--- | :--- | :---: | :---: | :---: |
+| 1. Verschiebung zum Ursprung |  | --- |  |  |
+| 2. | Achsenabschnitte | $a / 2$ | $\infty$ | $\infty$ |
+| 3. | Reziproke Werte | $2 / a$ | $1 / \infty$ | $1 / \infty$ |
+| 4. | Normalisiere die Werte | $2 a / a$ | $b / \infty$ | $c / \infty$ |
+| 5. | Reduziere die Werte | 2 | 0 | 0 |
+| 6. | 2 | 0 | 0 |  |
+
+![This diagram depicts a three-dimensional coordinate system with axes labeled x, y, and z, showing a cube defined by vectors a, b, and c. It illustrates the geometric relationship and orientation of the cube within the 3D Cartesian coordinate space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-07_726_793_582_2337.jpg)
+
+
+
+| :--- | :--- | :---: | :---: | :--- |
+| 1. | Verschiebung zum Ursprung |  | --- |  |
+| 2. | Achsenabschnitte | $a / 2$ | $b$ | $3 c / 4$ |
+| 3. | Reziproke Werte | $2 / a$ | $1 / b$ | $4 / 3 c$ |
+| 4. | Normalisiere die Werte | $2 a / a$ | $b / b$ | $4 c / 3 c$ |
+|  |  | 2 | 1 | $4 / 3$ |
+| 5. | Reduziere die Werte | 6 | 3 | 4 |
+| 6. | Miller Indizes |  | $(634)$ |  |
+
+![This diagram depicts a three-dimensional coordinate system with axes labeled x, y, and z, showing a triangular plane defined by three vectors or points labeled a, b, and c within a cube. It illustrates the geometric relationship and orientation of the triangle in 3D space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-08_730_825_582_2319.jpg)
+
+## Millersche Indizes einiger Ebenen des kubischen Kristalls
+
+![This diagram depicts a crystallographic plane in a cubic crystal system, specifically the (100) plane, showing the orientation of the crystallographic axes a, b, and c relative to the plane.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-09_561_543_471_776.jpg)
+![This diagram depicts a crystallographic plane in a unit cell, specifically the (110) plane, showing its orientation relative to the crystallographic axes a, b, and c.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-09_555_537_474_1336.jpg)
+![This diagram depicts the (111) crystallographic plane within a cubic unit cell, showing the triangular plane formed by the intercepts on the a, b, and c axes. It is used to illustrate the orientation and atomic arrangement of the (111) plane in a crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-09_556_535_484_1922.jpg)
+![This diagram depicts a crystallographic plane in a cubic crystal system, specifically the (200) Miller index plane, showing its orientation relative to the crystallographic axes a, b, and c.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-09_582_535_1078_773.jpg)
+![This diagram depicts a crystallographic unit cell with labeled axes a, b, and c, and highlights the (0-10) crystallographic plane. It is used to show the orientation and indexing of planes within the crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-09_574_543_1078_1388.jpg)
+![This diagram depicts a crystallographic plane labeled (221) within a unit cell, showing the orientation and intercepts of the plane relative to the crystallographic axes a, b, and c.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-09_571_533_1083_1919.jpg)
+
+## Millersche Indizes des hexagonalen Gitters
+
+![This diagram depicts the crystallographic planes and directions in a hexagonal crystal system, showing the Miller-Bravais indices of the prism and basal planes along with the corresponding crystallographic axes.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-10_1126_1061_492_487.jpg)
+
+![This diagram depicts the crystal structure of a body-centered cubic (BCC) lattice, showing the arrangement of atoms at the corners and the center of the cube.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-10_567_506_791_2000.jpg)
+Primitive
+Einheitszelle in grau
+
+## Millersche Indizes des hexagonalen Gitters
+
+![This diagram depicts the process of determining Miller indices for a crystallographic plane in a hexagonal lattice, showing the steps from axis intercepts to normalized and reduced indices, and illustrating the corresponding plane within the hexagonal unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-11_876_2815_583_450.jpg)
+7. Miller Indizes
+
+## Zum Begriff der Ebenen-Schar
+
+![This diagram depicts a two-dimensional lattice showing the original lattice vectors \( \mathbf{a}_1 \) and \( \mathbf{a}_2 \) and the corresponding superlattice vectors \( \mathbf{S}_1, \mathbf{S}_2 \) and \( \mathbf{S}_1', \mathbf{S}_2' \), illustrating the formation of a superlattice structure within the original lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-12_1144_1140_448_645.jpg)
+
+## \{1 2 0\}- Ebenen
+
+Bild 4.10: Zur Herleitung der Millerschen Indizes. Die $\boldsymbol{a}_{3}$-Achse und die eingezeichnete Netzebenenschar stehen senkrecht auf der Zeichenebene. Blau hervorgehoben ist die Ebene mit den Achsenabschnitten $s_{1}=4 a_{1}$ und $s_{2}=2 a_{2}$. Punktiert gezeichnet ist die Ebene mit $s_{1}^{\prime}=8 a_{1}$ und $s_{2}^{\prime}=4 a_{2}$.
+
+## Kristall-Orientierung von Silizium-Wafern
+
+![This image depicts a silicon wafer used in semiconductor manufacturing, shown next to a matchstick for size comparison.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-13_1183_1617_470_801.jpg)
+
+## Reale Kristalle Punkt-Defekte (atomare Defekte)
+
+## Stöchimetrische Fehler
+
+![This diagram depicts a Schottky defect in a crystal lattice, showing the formation of vacancies where atoms are missing from their regular lattice sites.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-14_645_770_468_291.jpg)
+![This diagram depicts a Frenkel defect in a crystal lattice, showing an atom displaced from its regular lattice site to an interstitial position, creating a vacancy and an interstitial defect.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-14_543_733_468_1302.jpg)
+
+- Anion -n
+- Kation +n
+![This diagram depicts an Anti-Schottky defect in a crystal lattice, showing the movement of ions where cations leave their lattice sites, creating vacancies and interstitial defects.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-14_545_876_1221_192.jpg)
+![This diagram depicts an anti-Frenkel defect in a crystal lattice, showing the displacement of an atom from its original lattice site to an interstitial position, creating a vacancy and an interstitial defect.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-14_543_845_1221_1190.jpg)
+![This diagram depicts atomic site exchange (Platztausch) in alloys (Legierungen), showing the swapping of positions between atoms in a lattice structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-14_543_865_1221_2154.jpg)
+
+
+## Reale Kristalle Punkt-Defekte (atomare Defekte)
+
+## Stöchimetrische Fehler
+
+Leerstelle
+![This diagram depicts a crystal lattice structure showing the positions of lattice atoms ("Gitteratom") and defects such as vacancies and interstitial atoms within the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-15_1176_1484_510_296.jpg)
+
+![The diagram depicts atomic lattice structures showing (a) a vacancy defect (Leerstelle) where an atom is missing, and (b) an interstitial defect (Zwischengitteratom) where an extra atom is positioned between the regular lattice sites.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-15_567_1218_520_1958.jpg)
+![This diagram depicts a crystal lattice structure with different types of atoms or ions, showing the arrangement and substitution of one atom (blue) within the lattice of two other types (red and dark red). It is likely illustrating a defect or doping in a solid-state material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-15_504_603_1135_2250.jpg)
+
+Substitutionelles Fremdatom
+
+Interstitielles Fremdatome
+
+## Schottky-Defekt
+
+![This diagram depicts a lattice with a defect (vacancy) and shows the path of a particle or entity moving through the lattice, escaping from the defect site.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-16_1018_991_465_456.jpg)
+![This diagram depicts the process of ionic conduction in a solid ionic lattice, showing the movement of ions (positive and negative) through the lattice as vacancies or interstitial ions migrate. The red arrows indicate the path of ion migration within the crystal structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-16_950_1403_380_1683.jpg)
+
+Schottky-Leerstelle:
+a) Punktdefekt in einatomigen Kristall
+b) Paare von Leerstellen in Ionenkristalle
+
+## Temperaturabhängigkeit der Leerstellenkonzentration $N_{\mathrm{L}} / N$ von Natrium
+
+Temperatur $T /{ }^{\circ} \mathrm{C}$
+![This diagram is a plot showing the relationship between the vacancy concentration (Leerstellekonzentration) in sodium (Natrium) and the reciprocal temperature (Reziproke Temperatur), illustrating how vacancy concentration decreases exponentially with increasing reciprocal temperature.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c585ed6b-95f0-4562-8a1f-d85f411b035d/0a367f9d-bc9f-46be-b6dd-d4863fec1b85-17_1111_1103_713_156.jpg)
+
+Tabelle 5.1: Bindungsenergie $U_{\mathrm{B}} / N$, Bildungsenergie $E_{\mathrm{L}}$ für Leerstellen und Aktivierungsenergie $E_{\mathrm{D}}$ für Volumendiffusion. Um die Vergleichbarkeit der Zahlenwerte zu gewährleisten, ist bei den Ionenkristallen nicht $U_{\mathrm{B}} / N$ bzw. $E_{\mathrm{L}}$ pro Ionenpaar, sondern der halbe Wert, also der Wert pro Ion eingetragen. Bei den Ionenkristallen bezieht sich $E_{\mathrm{D}}$ auf die positiven Ionen. (Daten aus unterschiedlichen Quellen.)
+|  | Al | Cu | Zn | Au | LiF | LiCl | NaCl | KCl |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $U_{\mathrm{B}} / N(\mathrm{eV})$ | 3,39 | 3,49 | 1,35 | 3,81 | 5,36 | 4,38 | 4,07 | 3,68 |
+| $E_{\mathrm{L}}(\mathrm{eV})$ | 0,75 | 1,18 | 0,42 | 0,94 | 1,34 | 1,06 | 1,01 | 1,15 |
+| $E_{\mathrm{D}}(\mathrm{eV})$ | 0,56 | 0,88 | 0,40 | 0,78 | 0,65 | 0,41 | 0,86 | 0,89 |
+
+
+Bild 5.3: Temperaturabhängigkeit der Leerstellenkonzentration $N_{\mathrm{L}} / N$ von Natrium, gemessen über die Volumenänderung. Durch das Auftragen von $\log \left(N_{\mathrm{L}} / N\right)$ als Funktion der reziproken Temperatur wird der exponentielle Zusammenhang unmittelbar sichtbar. (Nach R. Feder, H.P. Charbnau, Phys. Rev. 149, 464 (1966).)
+$\Rightarrow E_{\mathrm{L}}=0,42 \mathrm{eV}$ und $S_{\mathrm{L}} / k_{\mathrm{B}}=5,8$
+zum Vergleich Bindungsenergie $U_{\mathrm{B}}=1,1 \mathrm{eV} /$ Atom
+siehe Hunklinger
+

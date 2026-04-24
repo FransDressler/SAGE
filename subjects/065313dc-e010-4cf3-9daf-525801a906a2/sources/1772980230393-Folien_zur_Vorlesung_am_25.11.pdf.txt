@@ -1,0 +1,232 @@
+### 4.3.4 Statistische Interpretation des 1. HS
+
+- Wir betrachten kleine Änderungen der mittleren Energie und der Entropie:
+
+$$
+\begin{array}{ll}
+E=\langle\hat{H}\rangle=\operatorname{Sp}\{\hat{H} \hat{\rho}\} & \Rightarrow \quad d E=\operatorname{Sp}\{d \hat{H} \hat{\rho}\}+\operatorname{Sp}\{\hat{H} d \hat{\rho}\} \\
+S=-k_{B} \operatorname{Sp}\{\hat{\rho} \ln \hat{\rho}\} \quad \Rightarrow \quad d S=-k_{B} \operatorname{Sp}\{\ln \hat{\rho} d \hat{\rho}\}-k_{B} \operatorname{Sp}\{d \hat{\rho}\}
+\end{array}
+$$
+
+Wegen Spurerhaltung (=Erhaltung der Wahrscheinlichkeiten) gilt:
+
+\operatorname{Sp}\{\hat{\rho}\}=1 \Rightarrow \operatorname{Sp}\{d \hat{\rho}\}=0 \quad \text { und daher: } \quad d S=-k_{B} \operatorname{Sp}\{\ln \hat{\rho} d \hat{\rho}\}
+
+- Für den kanonischen Dichteoperator folgt daraus:
+
+\begin{aligned}
+\hat{\rho}=\hat{\rho}_{\mathrm{K}}=\frac{e^{-\beta \hat{H}}}{Z_{\mathrm{K}}}: \quad d S & =\frac{1}{T} \operatorname{Sp}\{\hat{H} d \hat{\rho}\}+k_{B} \ln Z_{\mathrm{K}} \operatorname{Sp}\{d \hat{\rho}\} \\
+& =\frac{1}{T} \operatorname{Sp}\{\hat{H} d \hat{\rho}\}
+\end{aligned}
+
+-"verallgemeinerte Kräfte": $\quad d \hat{H}=\sum_{i}\left(\partial \hat{H} / \partial X_{i}\right) d X_{i}=\sum_{i} \hat{F}_{i} d X_{i}$
+$X_{i} \ldots$ Systemparameter (Volumen, Oszillationsfrequenz, B-Feld, ...)
+
+\Rightarrow \quad d E=T d S+\operatorname{Sp}\{d \hat{H} \hat{\rho}\} \quad=T d S+\sum_{i}\left\langle\hat{F}_{i}\right\rangle d X_{i}
+
+Der kanonische Dichteoperator erfüllt den 1. Hauptsatz!
+
+Weiters gilt allgemein:
+
+E=\sum_{k} p_{k} E_{k} \Rightarrow d E=\sum_{k} d p_{k} E_{k}+\sum_{k} p_{k} d E_{k}
+
+d E=\underbrace{\sum_{k} d p_{k} E_{k}}_{\delta Q}+\underbrace{\sum_{k} p_{k} d E_{k}}_{\delta W}=\underbrace{T d S}_{\delta Q}+\underbrace{\sum_{i}\left\langle\hat{F}_{i}\right\rangle d X_{i}}_{\delta W}
+
+## Wärmezufuhr/-abgabe:
+
+Änderung der Populationen $p_{k}$ bei konstanten Energieeigenwerten $E_{k}$.
+![This diagram depicts the quantized energy levels of a quantum harmonic oscillator, showing discrete allowed energy states within a parabolic potential well.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-03_566_614_750_184.jpg)
+![The image depicts a rightward-pointing arrow symbol, commonly used to indicate direction or movement toward the right.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-03_165_365_950_1130.jpg)
+![This diagram depicts the quantized energy levels of a quantum harmonic oscillator, showing discrete allowed energy states within a parabolic potential well.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-03_566_613_750_1701.jpg)
+
+## Arbeit:
+
+Externe Änderung der Energieniveaus ohne Änderung der Populationen.
+![This diagram depicts the quantized energy levels of a quantum harmonic oscillator, showing discrete vibrational states separated by an energy interval of ħω.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-03_555_735_1627_179.jpg)
+![This image depicts a right-pointing arrow symbol, commonly used to indicate direction or movement toward the right.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-03_165_360_1848_1236.jpg)
+![This diagram depicts an energy level diagram for a quantum harmonic oscillator under perturbation, showing the shifted energy levels by an amount \(\hbar(\omega + \delta \omega)\) due to a change in the oscillator frequency.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-03_555_1047_1627_1716.jpg)
+
+### 4.4 Extremaleigenschaften
+
+Zum Vergleich zweier Dichteoperatoren $\hat{\rho}$ und $\hat{\rho}^{\prime}$ betrachten wir die folgende Funktion:
+
+\mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right)=\operatorname{Sp}\left\{\hat{\rho}^{\prime}\left(\ln \hat{\rho}-\ln \hat{\rho}^{\prime}\right)\right\} \quad(\text { "Boltzmann'sche } \mathbf{H} \text {-Funktion")* }
+
+Für beliebige Dichteoperatoren mit $\operatorname{Sp}\{\hat{\rho}\}=\operatorname{Sp}\left\{\hat{\rho}^{\prime}\right\}=1$ gilt die Ungleichung:
+
+\mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right) \leq 0 \quad \Leftrightarrow \quad \operatorname{Sp}\left\{\hat{\rho}^{\prime} \ln \hat{\rho}^{\prime}\right\} \geq \operatorname{Sp}\left\{\hat{\rho}^{\prime} \ln \hat{\rho}\right\}
+
+Diese Ungleichung ist nützlich, um Extremaleigenschaften für die Gleichgewichtszustände
+
+\hat{\rho}=\hat{\rho}_{\mathrm{MK}}, \hat{\rho}_{\mathrm{K}}, \hat{\rho}_{\mathrm{G}}
+
+abzuleiten.
+*) H ....griechischer Großbuchstabe "Eta"
+
+Beweis von $\mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right) \leq 0$ :
+wir schreiben: $\quad \hat{\rho}=\sum_{k} p_{k}|k\rangle\langle k|, \quad \hat{\rho}^{\prime}=\sum_{n} p_{n}|n\rangle\langle n|$
+dann:
+
+\begin{aligned}
+\mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right) & =\operatorname{Sp}\left\{\hat{\rho}^{\prime}\left(\ln \hat{\rho}-\ln \hat{\rho}^{\prime}\right)\right\}=\sum_{n} p_{n}\langle n|\left(\ln \hat{\rho}-\ln p_{n}\right)|n\rangle \\
+& =\sum_{n} \sum_{k} p_{n}\langle n \mid k\rangle\langle k| \ln \frac{p_{k}}{p_{n}}|k\rangle\langle k \mid n\rangle
+\end{aligned}
+
+Es gilt die Ungleichung:
+
+\ln \frac{p_{k}}{p_{n}} & \leq \frac{p_{k}}{p_{n}}-1 \\
+\Rightarrow \quad \mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right) & \leq \sum_{n} \sum_{k} p_{n}\langle n \mid k\rangle\langle k|\left(\frac{p_{k}}{p_{n}}-1\right)|k\rangle\langle k \mid n\rangle \\
+& =\sum_{n} p_{n}\langle n|\left(\frac{\hat{\rho}}{p_{n}}-1\right)|n\rangle=\operatorname{Sp}\{\hat{\rho}\}-\operatorname{Sp}\left\{\hat{\rho}^{\prime}\right\}=0
+
+![This diagram depicts the graph of the natural logarithm function \( \ln x \) and the linear function \( x - 1 \), illustrating their behavior and intersection near \( x = 1 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-05_492_699_1035_2033.jpg)
+I) Entropie:
+
+\left.\begin{array}{l}
+S=-k_{B} \operatorname{Sp}\{\hat{\rho} \ln \hat{\rho}\} \\
+S^{\prime}=-k_{B} \operatorname{Sp}\left\{\hat{\rho}^{\prime} \ln \hat{\rho}^{\prime}\right\}
+\end{array}\right\} \quad \Rightarrow \quad k_{B} \mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right)=S^{\prime}+k_{B} \operatorname{Sp}\left\{\hat{\rho}^{\prime} \ln \hat{\rho}\right\}
+
+isoliertes System: $\quad \hat{\rho}=\hat{\rho}_{\mathrm{MK}}=\frac{1}{\Omega} \sum_{E_{k}=E}\left|E_{k}\right\rangle\left\langle E_{k}\right| \quad$ mikrokanonisch
+
+\begin{gathered}
+\hat{\rho}^{\prime}=\sum_{E_{k}=E} p_{k}\left|E_{k}\right\rangle\left\langle E_{k}\right| \quad \begin{array}{c}
+\text { beliebiger anderer Zustand } \\
+\text { (auf Energieschale) }
+\end{array} \\
+\Rightarrow \quad k_{B} \mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right)=S^{\prime}+k_{B} \ln \frac{1}{\Omega} \overbrace{\sum_{E_{k}=E}\left\langle E_{k}\right| \hat{\rho}^{\prime}\left|E_{k}\right\rangle}^{\sum p_{k}=1} \\
+=S^{\prime}-k_{B} \ln \Omega=S^{\prime}-S \leq 0 \quad \Rightarrow S \geq S^{\prime}
+\end{gathered}
+
+Für gegebene Energie $E$ ist $\hat{\rho}_{\mathrm{MK}}$ der Zustand mit maximaler Entropie!
+
+## II) Freie Energie:
+
+- thermischer Gleichgewichtszustand: $\hat{\rho}=\hat{\rho}_{\mathrm{K}}=\sum_{k} \frac{e^{-\beta E_{k}}}{Z_{\mathrm{K}}}\left|E_{k}\right\rangle\left\langle E_{k}\right|$
+- beliebiger anderer Zustand: $\quad \hat{\rho}^{\prime}$
+
+& \Rightarrow \quad k_{B} \operatorname{Sp}\left\{\hat{\rho}^{\prime} \ln \hat{\rho}\right\}=-k_{B} \ln Z_{\mathrm{K}} \operatorname{Sp}\left\{\hat{\rho}^{\prime}\right\}-\frac{1}{T} \sum_{k} E_{k}\left\langle E_{k}\right| \hat{\rho}^{\prime}\left|E_{k}\right\rangle \\
+&=-k_{B} \ln Z_{\mathrm{K}}-\frac{1}{T} \sum_{k}\left\langle E_{k}\right| \hat{\rho}^{\prime} \hat{H}\left|E_{k}\right\rangle \\
+&=\frac{1}{T} F-\frac{1}{T} \operatorname{Sp}\left\{\hat{H} \hat{\rho}^{\prime}\right\}=\frac{1}{T}\left(F-E^{\prime}\right) \\
+& \Rightarrow \quad k_{B} \mathbf{H}\left(\hat{\rho}, \hat{\rho}^{\prime}\right)=S^{\prime}+\frac{1}{T}\left(F-E^{\prime}\right)=\frac{1}{T}\left(F-F^{\prime}\right) \leq 0
+
+Gleichgewichtszustand $\hat{\rho}_{\mathrm{K}}$ ist Zustand mit minimaler freier Energie!
+analog: $\hat{\rho}_{\mathrm{G}}$ minimiert großkanonisches Potential!
+
+## Wichtige Anwendung: Variationsverfahren
+
+Gegeben sei ein kompliziertes System mit Hamiltonoperator $\hat{H}$ und ein einfacheres Testsystem $\hat{H}^{*}$ mit exakt lösbarem Eigenwertproblem:
+
+\left.\hat{H}^{*}\left|\phi_{k}\right\rangle=E_{k}^{*}\left|\phi_{k}\right\rangle \quad \Rightarrow \quad \begin{array}{c}
+\hat{\rho}^{*}=\frac{1}{Z_{K}^{*}} e^{-\beta \hat{H}^{*}} \\
+F^{*}=-k_{B} T \ln Z_{K}^{*}
+\end{array}\right\} \quad \text { bekannt! }
+
+Dann gilt für die freie Energie von $\hat{H}$ :
+
+F \leq F^{*}+\left\langle\hat{H}-\hat{H}^{*}\right\rangle_{\hat{\rho}^{*}}
+
+Durch eine günstige Wahl von $\hat{H}^{*} \equiv \hat{H}^{*}\left(\left\{\lambda_{i}\right\}\right)$ kann damit durch Variation der Parameter eine minimale obere Schranke gefunden werden, die dem exakten Wert von $F$ sehr nahe kommt.
+![This diagram depicts a free energy landscape as a function of a parameter λ, showing the difference between an excited free energy state \( F^* + \langle \hat{H} - \hat{H}^* \rangle_{\hat{\rho}^*} \) (red curve) and a reference free energy \( F \) (blue dashed line). It illustrates how the free energy changes with λ, highlighting a minimum point on the excited state curve.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b7483e54-ba04-4936-ae7c-fca5ab34ab5f/c38ca8bf-ac8d-47a3-b1d4-da6d5fd8e5f0-08_683_994_1468_1975.jpg)
+
+Beweis von $F \leq F^{*}+\left\langle\hat{H}-\hat{H}^{*}\right\rangle_{\hat{\rho}^{*}}$ :
+
+Aus der Ungleichung für die H-Funktion folgt:
+
+k_{B} T \mathbf{H}\left(\hat{\rho}, \hat{\rho}^{*}\right) \leq 0 \quad \Rightarrow \quad k_{B} T \operatorname{Sp}\left\{\hat{\rho}^{*} \ln \hat{\rho}^{*}\right\} \geq k_{B} T \operatorname{Sp}\left\{\hat{\rho}^{*} \ln \hat{\rho}\right\}
+
+-) linke Seite (Definition der Entropie):
+
+k_{B} T \operatorname{Sp}\left\{\hat{\rho}^{*} \ln \hat{\rho}^{*}\right\}=-T S^{*}=F^{*}-\left\langle H^{*}\right\rangle_{\hat{\rho}^{*}}
+
+-) rechte Seite (analog wie Rechnung zur freien Energie):
+
+k_{B} T \operatorname{Sp}\left\{\hat{\rho}^{*} \ln \hat{\rho}\right\}=F-\langle H\rangle_{\hat{\rho}^{*}}
+
+### 4.5 Identische Teilchen
+
+### 4.5.1 Symmetrie von Vielteilchenwellenfunktionen
+
+Teilchen werden als ident bezeichnet, wenn sie in allen ihren Eigenschaften (Masse, Ladung, Spin, magnetisches Moment, ...) übereinstimmen.
+
+Es folgt: Der Hamiltonoperator eines Systems identischer Teilchen, z.B.,
+
+\hat{H}=\sum_{i=1}^{N}\left(\frac{\hat{\vec{p}}_{i}^{2}}{2 m}+V_{\mathrm{ex}}\left(\hat{\vec{r}}_{i}\right)-\hat{\vec{\mu}}_{i} \cdot \vec{B}\right)+\frac{1}{2} \sum_{\substack{i \neq j \\ \text { Einteilchenoperator }}} V_{\mathrm{int}}\left(\hat{\vec{r}}_{i}, \hat{\vec{r}}_{j}\right)
+
+ist invariant unter Vertauschung der Teilchenindizes $i \leftrightarrow j$.
+Formal: "Vertauschungsoperator" $\hat{P}_{i j}$
+
+\hat{P}_{i j} \Psi\left(\ldots, \vec{r}_{i}, \ldots, \vec{r}_{j}, \ldots\right)=\Psi\left(\ldots, \vec{r}_{j}, \ldots, \vec{r}_{i}, \ldots\right)
+
+dann gilt: $\quad \Rightarrow \quad\left[\hat{H}, \hat{P}_{i j}\right]=0$
+wegen: $\hat{P}_{i j}^{2} \Psi\left(\ldots, \vec{r}_{i}, \ldots, \vec{r}_{j}, \ldots\right)=\Psi\left(\ldots, \vec{r}_{i}, \ldots, \vec{r}_{j}, \ldots\right)$
+sind die Eigenwerte des Vertauschungsoperators $\pm 1$
+
+\Rightarrow \quad \hat{P}_{i j}|\Psi\rangle= \pm|\Psi\rangle \quad \text { (für }|\Psi\rangle \text { Eigenfunktion von } \hat{P}_{i j} \text { ) }
+
+- verallgemeinerter Permutationsoperator: $\hat{P}_{\sigma}=\prod \hat{P}_{i j} \quad \sigma \ldots$ Permutation
+
+& \hat{P}_{\sigma} \Psi\left(\vec{r}_{1}, \ldots, \vec{r}_{i}, \ldots, \vec{r}_{j}, \ldots\right)=\Psi\left(\vec{r}_{\sigma(1)}, \ldots, \vec{r}_{\sigma(i)}, \ldots, \vec{r}_{\sigma(j)}, \ldots\right) \\
+& {\left[\hat{H}, \hat{P}_{i j}\right]=0 \quad \Rightarrow \quad\left[\hat{H}, \hat{P}_{\sigma}\right]=0}
+
+⇒ Aus den Lösungen der Schrödingergleichung können gemeinsame Eigenfunktionen von $\hat{H}$ und allen $\hat{P}_{\sigma}$ gefunden werden. D.h.:
+
+\begin{array}{lll}
+\hat{H}|\Psi\rangle=E|\Psi\rangle & \text { und } & \begin{array}{c}
+\text { Anzahl der Vertauschungen } \\
+\swarrow
+\end{array} \\
+\hat{P}_{\sigma}|\Psi\rangle=+|\Psi\rangle & \text { oder } & \hat{P}_{\sigma}|\Psi\rangle=(-1)^{n(\sigma)}|\Psi\rangle
+\end{array} \quad \forall \sigma
+
+Aus einer beliebigen Lösung der Schrödingergleichung $\Psi\left(\vec{r}_{1}, \ldots, \vec{r}_{N}\right)$ konstruieren wir die (nicht unbedingt normierten) Wellenfunktionen:
+
+& \Psi^{S}\left(\vec{r}_{1}, \ldots \vec{r}_{N}\right)=\frac{1}{\sqrt{N!}} \sum_{\sigma} \hat{P}_{\sigma} \Psi\left(\vec{r}_{1}, \ldots \vec{r}_{N}\right) \\
+& \Psi^{A}\left(\vec{r}_{1}, \ldots \vec{r}_{N}\right)=\frac{1}{\sqrt{N!}} \sum_{\sigma}(-1)^{n(\sigma)} \hat{P}_{\sigma} \Psi\left(\vec{r}_{1}, \ldots \vec{r}_{N}\right)
+
+## "vollständig symmetrisch"
+
+## "vollständig antisymmetrisch"
+
+Dann gilt:
+
+\begin{array}{ll}
+\hat{H} \Psi^{S, A}=E \Psi^{S, A} & \hat{P}_{i j} \Psi^{S}=+\Psi^{S} \\
+& \hat{P}_{i j} \Psi^{A}=-\Psi^{A}
+\end{array}
+
+- Wellenfunktionen von identischen Teilchen werden durch ihre Symmetrieeigenschaften unter Vertauschung unterschieden.
+- Teilchen mit symmetrischer Wellenfunktion werden als Bosonen, Teilchen mit antisymmetrischer Wellenfunktionen als Fermionen bezeichnet.
+
+
+## "Spin-Statistik-Theorem":
+
+Aus Erfahrung weiß man, dass Teilchen mit ganzzahligem Spin Bosonen und Teilchen mit halbzahligem Spin Fermionen sind. Diese Tatsache kann auch durch Überlegungen aus der relativistischen Quantenfeldtheorie begründet werden (M. Fierz, W. Pauli, J. Schwinger, ...).
+
+### 4.5.2 Slater Determinanten
+
+Für ein System von unabhängigen Teilchen mit Hamiltonoperator $\hat{H}=\sum_{i=1}^{N} \hat{H}_{i} \quad$ sind die Lösungen der Schrödingergleichung $\hat{H}|\Psi\rangle=E|\Psi\rangle$ durch Produkte von Einteilchenwellenfunktionen gegeben, d.h.:
+
+\left.\begin{array}{rl}
+|\Psi\rangle & =\left|\phi_{k_{1}}^{(1)}\right\rangle \otimes\left|\phi_{k_{2}}^{(2)}\right\rangle \otimes \cdots \otimes\left|\phi_{k_{N}}^{(N)}\right\rangle \\
+E & =\sum_{i} E_{k_{i}}
+\end{array}\right\} \quad \hat{H}_{i}\left|\phi_{k_{i}}^{(i)}\right\rangle=E_{k_{i}}\left|\phi_{k_{i}}^{(i)}\right\rangle
+
+Die entsprechenden antisymmetrisierten Wellenfunktionen für Fermionen können dann kompakt als
+
+\left|\Psi^{A}\right\rangle=\frac{1}{\sqrt{N!}}\left|\begin{array}{ccc}
+\left|\phi_{k_{1}}^{(1)}\right\rangle & \ldots & \left|\phi_{k_{1}}^{(N)}\right\rangle \\
+\vdots & & \vdots \\
+\left|\phi_{k_{N}}^{(1)}\right\rangle & \ldots & \left|\phi_{k_{N}}^{(N)}\right\rangle
+\end{array}\right| \quad \text { "Slater }
+
+geschrieben werden.
+
+Es folgt: Da die Determinante einer Matrix mit zwei gleichen Zeilen verschwindet, gilt für Fermionen: $k_{i} \neq k_{j}$
+
+⇒ Zwei idente Fermionen können sich nie im gleichen Zustand befinden. "Pauli's Ausschlussprinzip"
+
+Bemerkung: Allgemeine Zustände, auch von wechselwirkenden Systemen, sind dann als Überlagerung von Slater-Determinanten gegeben:
+
+|\Psi(t)\rangle=\sum_{\left\{k_{i}\right\}} c_{\left\{k_{i}\right\}}(t)\left|\Psi_{\left\{k_{i}\right\}}^{A}\right\rangle
+

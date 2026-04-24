@@ -1,0 +1,241 @@
+→ Stationäre Verteilung ergibt sich aus Drift wegen Dichtegradienten und aus der Umverteilung durch Stöße.
+
+$$
+\underbrace{\frac{\partial f}{\partial t}}_{=0}+\frac{\vec{p}}{m} \vec{\nabla}_{x} f=\left.\frac{\partial f}{\partial t}\right|_{\mathrm{Stoß}}
+$$
+
+$p_{x}$
+![This diagram depicts electron spin and charge carrier dynamics in a material, showing spin flips (green arrows) and charge carrier drift (blue arrows) along the x-axis, with collisions (Stöße) indicated. It illustrates the interplay between spin states and charge transport under an applied gradient or field.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-01_1105_1828_982_153.jpg)
+
+Gleichgewicht:
+
+n(x)=\frac{p}{k_{B} T(x)}
+
+## Relaxationszeitnäherung
+
+Boltzmann Gleichung i.A. nicht analytisch lösbar → weitere Vereinfachungen nötig.
+"Relaxationszeitnäherung": $\left.\quad \frac{\partial f}{\partial t}\right|_{\text {Stoß }}=-\frac{f-f^{0}}{\tau_{\mathrm{r}}}$
+
+Exponentielle Relaxation zur Gleichgewichtsverteilung mit Zeitkonstante $\tau_{\mathrm{r}}$.
+
+- Abschätzung der Relaxationszeit:
+
+Annahme: $\quad f_{i}=f_{i}^{0}+\delta f_{i}$
+kleine Störung um Gleichgewicht
+dann (Linearisierung um Gleichgewicht):
+
+f_{1} f_{2}-f_{1^{\prime}} f_{2^{\prime}}=\underbrace{f_{1}^{0} f_{2}^{0}-f_{1^{\prime}}^{0} f_{2^{\prime}}^{0}}_{=0}+f_{2}^{0} \delta f_{1}+f_{1}^{0} \delta f_{2}-f_{2^{\prime}}^{0} \delta f_{1^{\prime}}-f_{1^{\prime}}^{0} \delta f_{2^{\prime}}+\ldots
+
+\begin{aligned}
+\left.\frac{\partial f_{1}}{\partial t}\right|_{\mathrm{Stoß}} & \simeq-\int d^{3} p_{2} d^{3} p_{1}^{\prime} d^{3} p_{2}^{\prime} \delta^{4}\left(P-P^{\prime}\right)\left|T_{1^{\prime} 2^{\prime}, 12}\right|^{2} \\
+& \times\left(\underline{f_{2}^{0} \delta f_{1}}+f_{1}^{0} \delta f_{2}-f_{2^{\prime}}^{0} \delta f_{1^{\prime}}-f_{1^{\prime}} \delta f_{2^{\prime}}\right)
+\end{aligned}
+
+zur Abschätzung der Relaxationszeit betrachte nur 1. Term:
+
+\left.\frac{\partial f_{1}}{\partial t}\right|_{\text {Stoß }}=-[\int d^{3} p_{2} \int \underbrace{d^{3} p_{1}^{\prime} d^{3} p_{2}^{\prime} \delta^{4}\left(P-P^{\prime}\right)\left|T_{1^{\prime} 2^{\prime}, 12}\right|^{2}}_{d R_{12 \rightarrow 1^{\prime} 2^{\prime}}} \times f_{2}^{0}] \delta f_{1}
+
+(Stoßrate von 1,2 $\boldsymbol{\rightarrow} \mathbf{1}^{\prime}, \mathbf{2}^{\prime}$ )
+
+\left.\frac{\partial f_{1}}{\partial t}\right|_{\text {Stoß }}=-\left[\text { mittlere Stoßrate für Teilchen mit Impuls } \vec{p}_{1}\right] \delta f_{1}
+
+=-\frac{f_{1}-f_{1}^{0}}{\tau} \quad \Rightarrow
+
+- Geringer Temperaturgradient: $\quad f=f^{0}+\delta f \oiiint_{\text {Abweichu }}$ Abweichung
+
+\begin{gathered}
+\Rightarrow \quad \frac{\vec{p}}{m} \vec{\nabla}_{x} f^{0}+\underbrace{\frac{\vec{p}}{m} \vec{\nabla}_{x} \delta f}_{\approx 0}=-\frac{\delta f}{\tau_{r}} \quad \Rightarrow \quad \frac{\vec{p}}{m} \vec{\nabla}_{x} f^{0}=-\frac{\delta f}{\tau_{r}} \\
+\Rightarrow \quad \delta f=-\tau_{r} \frac{\vec{p}}{m} \vec{\nabla}_{x} f^{0}=-\tau_{r} \frac{\vec{p}}{m} \vec{\nabla}_{x} T(\vec{x}) \frac{\partial f^{0}}{\partial T} \\
+\quad=-\tau_{\mathrm{r}} \frac{\vec{p}}{m} \vec{\nabla}_{x} T(\vec{x})\left(-\frac{5}{2 T(\vec{x})}+\frac{\vec{p}^{2}}{2 m k_{B} T^{2}(\vec{x})}\right) \times f^{0}
+\end{gathered}
+
+![The image depicts the formula for heat flux density (Wärmestromdichte) in terms of an integral over momentum space, showing the kinetic energy density in phase space multiplied by the flow velocity.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-04_540_2711_1653_95.jpg)
+
+- Lokale GV liefert keinen Beitrag zum Wärmestrom:
+
+\vec{j}_{Q}(\vec{x}):=\int d^{3} p\left(\frac{\vec{p}^{2}}{2 m}\right) f^{0}(\vec{x}, \vec{p}) \frac{\vec{p}}{m}=0 \quad \begin{gathered}
+\text { da Integrand ungerade } \\
+\text { Funktion von } \vec{p}
+\end{gathered}
+
+Für den Korrekturterm können wir annehmen, dass $\partial_{y} T=\partial_{z} T=0$ und erhalten dann für $j_{Q} \equiv\left(\vec{j}_{Q}\right)_{x}$ :
+
+\begin{aligned}
+j_{Q}= & \int d^{3} p\left(\frac{\vec{p}^{2}}{2 m}\right) \delta f(\vec{x}, \vec{p}) \frac{p_{x}}{m} \\
+= & \frac{\tau_{\mathrm{r}}}{4 m^{3} T} \partial_{x} T \int d^{3} p\left(5 \vec{p}^{2} p_{x}^{2}-\frac{\vec{p}^{4} p_{x}^{2}}{m k_{B} T}\right) f^{0}(\vec{x}, \vec{p}) \\
+= & \frac{\tau_{\mathrm{r}}}{4 m^{3} T} \partial_{x} T \frac{n_{1} T_{1}}{T}\left(5\left\langle\vec{p}^{2} p_{x}^{2}\right\rangle-\frac{\left\langle\vec{p}^{4} p_{x}^{2}\right\rangle}{m k_{B} T}\right) \\
+& \quad\langle\ldots\rangle=\text { Mittelwert über Maxwell-Impulsverteilung }
+\end{aligned}
+
+Die Mittelwerte ergeben sich durch Ausführen der Gauß-Integrale:
+
+\left\langle\vec{p}^{2} p_{x}^{2}\right\rangle=5\left(m k_{B} T\right)^{2}, \quad\left\langle\vec{p}^{4} p_{x}^{2}\right\rangle=35\left(m k_{B} T\right)^{3}
+
+- Resultat: $\quad j_{Q}=-\frac{5}{2} \frac{\tau_{\mathrm{r}} n_{1} T_{1} k_{B}^{2}}{m} \times \partial_{x} T$
+
+Durch Vergleich mit dem empirischen Fourier-Gesetz:
+
+\vec{j}_{Q}=-K \vec{\nabla} T
+
+erhält man die Wärmeleitfähigkeit für ein (fast) ideales Gas:
+
+K=\frac{5}{2} \frac{\tau_{\mathrm{r}} n_{1} T_{1} k_{B}^{2}}{m}
+
+### 11.4 Brownsche Bewegung
+
+- Beobachtung (Robert Brown, 1827): Kleine Teilchen (mikroskopisch sichtbar) in einer Flüssigkeit führen ungeordnete Bewegung aus.
+![This diagram depicts a two-dimensional random walk, showing the path of a particle or point moving step-by-step in random directions from an initial starting position marked by the red circle.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-07_783_1000_348_1732.jpg)
+- Erklärung (Einstein, 1905, Smoluchowski, 1906):
+
+Bewegung wird durch zufällige Stöße mit Atomen oder Molekülen (mikroskopisch unsichtbar) erzeugt.
+(indirekter Nachweis von Atomen)
+![This diagram depicts a model of atomic or molecular interactions, specifically showing a central red atom or molecule interacting with multiple surrounding blue atoms or molecules through bidirectional arrows indicating mutual influence or exchange.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-07_514_608_1658_1595.jpg)
+
+### 11.4.1 Langevin Gleichung
+
+Gesamtkraft auf Teilchen in Flüssigkeit:
+![This equation depicts the total force \( F(t) \) acting on a system as the sum of an external force, a frictional force (damping), and a Langevin force, commonly used in the context of stochastic or Brownian motion dynamics.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-08_387_2051_406_348.jpg)
+
+- Reibung:
+![This diagram depicts a collision scenario in classical mechanics, showing a mass \( m \) moving with velocity \( v_L \) towards a larger mass \( M \) moving with velocity \( v \), and the smaller mass \( m \) moving away with velocity \(-v_R\) after interaction. It illustrates the velocities of the masses before and after a collision or interaction.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-08_370_1538_919_1056.jpg)
+
+Stoß von zwei Atomen mit Teilchen mit Geschwindigkeit v.
+Impulsübertrag (m << M, Atom wird reflektiert):
+
+\left.\begin{array}{l}
+\Delta p_{L}=2 m\left(v_{L}-v\right) \\
+\Delta p_{R}=-2 m\left(v_{R}+v\right)
+\end{array}\right\} \quad \Delta p_{\mathrm{ges}}=-m\left(4 v+v_{R}-v_{L}\right)
+
+Im Mittel gleich viele Atome mit negativer und positiver Geschwindigkeit.
+$\Rightarrow \quad F_{\text {Reib }}(t) \sim\left\langle\frac{\Delta p}{\Delta t}\right\rangle \sim-v(t)$
+
+Bemerkung: $\mu$.... "Mobilität"
+
+\mu:=\frac{v_{d}}{F_{\mathrm{ex}}}-\begin{gathered}
+\text { Driftgeschwindigkeit } \\
+\text { bei konstanter externer } \\
+\text { Kraft }
+
+## - Langevin Kraft:
+
+![This diagram depicts the derivative \( F'(t) \) of a function \( F(t) \) over time \( t \), showing a series of sharp positive and negative spikes indicating rapid changes or discontinuities in the original function.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-09_635_989_961_200.jpg)
+
+Zeitpunkt der Stöße zufällig:
+
+F(t)=\left\langle\frac{\Delta p}{\Delta t}\right\rangle+F_{L}(t)
+
+es gilt: $\quad\left\langle F_{L}(t)\right\rangle=0 \quad$ aber $\quad\left\langle F_{L}(t) F_{L}\left(t^{\prime}\right)\right\rangle=A^{2} \delta\left(t-t^{\prime}\right)$
+
+A $\_\_\_\_$ Stärke der Kraft
+
+Stöße bei $\mathbf{t}$ und $\mathbf{t}^{\prime}$ sind unkorreliert
+"Langevin Gleichung" (1D): $\quad \dot{v}(t)+\gamma v(t)=\frac{1}{M}\left[F_{\mathrm{ex}}(t)+F_{L}(t)\right]$
+$\gamma=(\mu M)^{-1} \ldots$ Reibungskoeffizient / Dämpfungsrate
+
+Lösung der Langevin Gleichung für ein freies Teilchen, $F_{\mathrm{ex}}=0$ :
+
+v(t)=e^{-\gamma t} v(0)+\frac{1}{M} \int_{0}^{t} d s e^{-\gamma(t-s)} F_{L}(s)
+
+Beweis: ableiten!
+
+- Mittlere Geschwindigkeit:
+
+\langle v(t)\rangle=e^{-\gamma t}\langle v(0)\rangle+\frac{1}{M} \int_{0}^{t} d s e^{-\gamma(t-s)} \underbrace{\left\langle F_{L}(s)\right\rangle}_{=0}=e^{-\gamma t}\langle v(0)\rangle
+
+→ exponentielle Dämpfung der Anfangsgeschwindigkeit durch Reibung
+
+- Geschwindigkeitskorrelationen:
+
+\left\langle v(t) v\left(t^{\prime}\right)\right\rangle= & \left\langle v^{2}(0)\right\rangle e^{-\gamma\left(t+t^{\prime}\right)} \\
+& +\frac{1}{M^{2}} \int_{0}^{t} d s \int_{0}^{t^{\prime}} d s^{\prime} e^{-\gamma(t-s)} e^{-\gamma\left(t^{\prime}-s^{\prime}\right)}\langle\overbrace{F_{L}(s) F_{L}\left(s^{\prime}\right)}\rangle
+
+Dabei haben wir verwendet, dass $v(0)$ und $F_{L}(t>0)$ statistisch unabhängig sind, d.h. $\left\langle v(0) F_{L}(t)\right\rangle=0$.
+
+Achtung: $\left\langle v(t) F_{L}\left(t^{\prime}\right)\right\rangle \neq 0$ für $\mathbf{t}>\mathbf{t}^{\prime}$.
+
+\left\langle v(t) v\left(t^{\prime}\right)\right\rangle & =\left\langle v^{2}(0)\right\rangle e^{-\gamma\left(t+t^{\prime}\right)}+\frac{A^{2}}{M^{2}} e^{-\gamma\left(t+t^{\prime}\right)} \int_{0}^{t^{\prime}} d s e^{2 \gamma s} \quad\left(t>t^{\prime},{ }^{*}\right) \\
+& =\left(\left\langle v^{2}(0)\right\rangle-\frac{A^{2}}{2 \gamma M^{2}}\right) e^{-\gamma\left(t+t^{\prime}\right)}+\frac{A^{2}}{2 \gamma M^{2}} e^{-\gamma\left|t-t^{\prime}\right|}
+
+- Gleichgewichtsfluktuationen:
+
+\left.\begin{array}{l}
+\lim _{t \rightarrow \infty}\left\langle v^{2}(t)\right\rangle=\frac{A^{2}}{2 \gamma M^{2}} \\
+\left\langle E_{\text {kin }}\right\rangle=\frac{1}{2} M\left\langle v^{2}(t)\right\rangle=\frac{1}{2} k_{B} T \\
+\text { therm. Gleichgewicht }
+\end{array}\right\} \quad \Rightarrow \quad A^{2}=2 \gamma M k_{B} T
+
+Reibung und Fluktuationen in der Brownschen Bewegung haben gemeinsame mikroskopische Ursache (Stöße mit Atomen/Molekülen) und sind über die Temperatur miteinander verknüpft (FD-Theorem).
+
+### 11.4.2 Diffusion und die Einstein Gleichung
+
+Durch die zufälligen Kraftstöße steigt mit der Zeit auch die Wahrscheinlichkeit $P(x, t)$ das Teilchen an einem Ort $x \neq 0$ zu finden.
+"Diffusion" (ungerichtete Bewegung):
+
+P(x, t=0) \simeq \delta(x)
+
+P(x, t>0)
+
+![This diagram depicts the Dirac delta function δ(x), showing its characteristic spike at x = 0, representing an infinitely high peak with zero width and unit area under the curve.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-13_661_1121_422_95.jpg)
+![The image depicts a rightward-pointing arrow symbol, commonly used to indicate direction or movement toward the right.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-13_111_322_612_1299.jpg)
+![This diagram depicts a probability density function or wave packet in quantum mechanics, showing the spatial uncertainty Δx in the position variable x.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-13_492_1121_602_1674.jpg)
+-) wegen Symmetrie der Stöße:
+
+\langle x(t)\rangle=0 \forall t
+
+\left(v(0)=F_{\mathrm{ex}}=0\right)
+
+-) man findet im Experiment:
+
+\left\langle(\Delta x)^{2}\right\rangle(t)=\left\langle x^{2}\right\rangle(t) \sim t
+
+## "Diffusionskonstante":
+
+D=\lim _{t \rightarrow \infty} \frac{\left\langle x^{2}(t)\right\rangle}{2 t}
+
+- Berechnung der Diffusionskonstante:
+
+x(t)=\int_{0}^{t} d s v(s) \quad \Rightarrow \quad\left\langle x^{2}(t)\right\rangle=\int_{0}^{t} d s \int_{0}^{t} d s^{\prime}\left\langle v(s) v\left(s^{\prime}\right)\right\rangle
+
+aus Resultat für $\left\langle v(t) v\left(t^{\prime}\right)\right\rangle$ von oben erhalten wir dann:
+
+\left\langle x^{2}(t)\right\rangle & =\int_{0}^{t} d s \int_{0}^{t} d s^{\prime}\left[\left(\left\langle v^{2}(0)\right\rangle-\frac{A^{2}}{2 \gamma M^{2}}\right) e^{-\gamma\left(s+s^{\prime}\right)}+\frac{A^{2}}{2 \gamma M^{2}} e^{-\gamma\left|s-s^{\prime}\right|}\right] \\
+& =\left(\left\langle v^{2}(0)\right\rangle-\frac{A^{2}}{2 \gamma M^{2}}\right) \frac{\left(1-e^{-\gamma t}\right)^{2}}{\gamma^{2}}+\frac{A^{2}}{2 \gamma M^{2}} \int_{0}^{t} d s \int_{0}^{t} d s^{\prime} e^{-\gamma\left|s-s^{\prime}\right|} \\
+& =\left(\left\langle v^{2}(0)\right\rangle-\frac{A^{2}}{2 \gamma M^{2}}\right) \frac{\left(1-e^{-\gamma t}\right)^{2}}{\gamma^{2}}+\frac{A^{2}}{\gamma M^{2}} \int_{0}^{t} d s \int_{0}^{s} d s^{\prime} e^{-\gamma\left(s-s^{\prime}\right)} \\
+& =\left(\left\langle v^{2}(0)\right\rangle-\frac{A^{2}}{2 \gamma M^{2}}\right) \frac{\left(1-e^{-\gamma t}\right)^{2}}{\gamma^{2}}+\frac{A^{2}}{\gamma^{3} M^{2}}\left[\gamma t+\left(e^{-\gamma t}-1\right)\right]
+
+- Grenzfälle:
+
+t \rightarrow 0: & \left\langle x^{2}(t)\right\rangle \simeq\left\langle v^{2}(0)\right\rangle \times t^{2} \\
+t \rightarrow \infty: & \left\langle x^{2}(t)\right\rangle \simeq C+\frac{A^{2}}{\gamma^{2} M^{2}} \times t
+
+![This diagram depicts the time evolution of the mean squared displacement ⟨x²(t)⟩, showing a transition from a quadratic dependence on time (∼ t²) at short times to a linear dependence on time (∼ t) at longer times. It is typically used to illustrate the crossover from ballistic to diffusive motion.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-15_762_1127_100_1774.jpg)
+
+Ungerichtete Bewegung durch unkorrelierte Kraftstöße führt zu einer Verbreiterung der Ortsverteilung die linear in der Zeit wächst.
+
+- Diffusionskonstante:
+
+D=\lim _{t \rightarrow \infty} \frac{\left\langle x^{2}(t)\right\rangle}{2 t}=\frac{A^{2}}{2 \gamma^{2} M^{2}}=\frac{k_{B} T}{\gamma M}
+
+oder mit: $\quad \gamma=(\mu M)^{-1} \quad \Rightarrow \quad D=\mu k_{B} T \quad$ "Einstein Relation"
+
+### 11.4.3 Ergänzung: Diskrete Zufallsbewegung ("Random Walk")
+
+zufällige Bewegung auf diskretem Gitter:
+![This diagram depicts a one-dimensional lattice or chain of discrete points labeled with integer positions along the x-axis, illustrating nearest-neighbor hopping or transitions between adjacent sites at positions 0, -1, and 1.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-16_302_2325_459_338.jpg)
+
+Wahrscheinlichkeit Schritt nach links: $\quad p \quad 0<p<1$
+Wahrscheinlichkeit Schritt nach rechts: $(1-p)$
+
+→ Verteilung der Position $X$ nach n-Schritten?
+
+X_{n}=k-\ell \quad \Rightarrow \quad P(X, n)=\frac{n!}{k!(n-k)!} p^{k}(1-p)^{n-k}
+
+Bsp: $P(X, n=50), p=0.5$
+![This diagram depicts a quantum wave packet showing the spatial uncertainty (ΔX) in the particle's position along the x-axis. It illustrates the probability distribution of finding a particle within a certain range of positions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/bfd41859-8c82-4eb1-9147-efa039676633/6398403a-787a-4b31-9062-a9b7ea039cc3-17_825_1490_243_787.jpg)
+
+Varianz der Binomialverteilung (Sec. 1.3, 1.4): $\quad(\Delta X)^{2}=n p(1-p)$
+
+\Rightarrow & \left\langle X^{2}\right\rangle(n) \sim n \\
+\text { "Random Walk" } & \hat{=} \text { Diffusion im diskreten Ortsraum }
+

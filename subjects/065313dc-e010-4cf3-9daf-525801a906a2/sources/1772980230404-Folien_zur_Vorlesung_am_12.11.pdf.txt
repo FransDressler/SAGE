@@ -1,0 +1,296 @@
+### 3.5.4 Dichte und Geschwindigkeitsverteilungen
+
+allgemeines
+System:
+
+$$
+H(\underline{q}, \underline{p})=\sum_{I=1}^{3 N} \frac{p_{i}^{2}}{2 m}+V(\underline{q}) \longleftarrow \quad \begin{gathered}
+\text { externes Potential } \\
+\text { \& Wechselwirkungen }
+\end{gathered}
+$$
+
+Da $V \neq V(\underline{p})$ folgt:
+
+\rho_{\mathrm{K}}(\underline{q}, \underline{p})=\left[\frac{\prod_{i} e^{-\beta \frac{p_{i}^{2}}{2 m}}}{\frac{1}{N!h^{3 N}} \int d^{3 N} p \prod_{i} e^{-\beta \frac{p_{i}^{2}}{2 m}}}\right] \cdot\left[\frac{e^{-\beta V(\underline{q})}}{\int d^{3 N} q e^{-\beta V(\underline{q})}}\right]
+
+1-Teilchen Impulsverteilung:
+
+w(\vec{p})=\int \frac{d^{3 N} q d^{3(N-1)} p}{N!h^{3 N}} \rho_{\mathrm{K}}(\underline{q}, \underline{p})=\frac{\prod_{i=1}^{3} e^{-\beta \frac{p_{i}^{2}}{2 m}}}{\prod_{i=1}^{3} \int d p_{i} e^{-\beta \frac{p_{i}^{2}}{2 m}}}=\frac{e^{-\beta \frac{|\vec{p}|^{2}}{2 m}}}{\left(2 \pi m k_{B} T\right)^{\frac{3}{2}}}
+
+Wahrscheinlichkeit, dass ein Teilchen Implus $\vec{p}=\left(p_{x}, p_{y}, p_{z}\right)$ hat.
+
+\begin{aligned}
+\text { mit } p=m v \quad \Rightarrow & w(\vec{v})=\left(\frac{m}{2 \pi k_{B} T}\right)^{\frac{3}{2}} e^{-\frac{m|\vec{v}|^{2}}{2 k_{B} T}} \\
+& \text { "Maxwell-Boltzmann Verteilung" }
+\end{aligned}
+
+Dieses Resultat ist für beliebige Wechselwirkungen $V(\underline{q})$ gültig!
+
+Spezialfall: nicht-wechselwirkende Teilchen
+
+V(\underline{q})=\sum_{n=1}^{N} V\left(\vec{q}_{n}\right) \longleftarrow-\text { externes Potential } \mathbf{V}
+
+dann:
+
+\rho_{\mathrm{K}}(\underline{q}, \underline{p})=\left[\frac{\prod_{i} e^{-\beta \frac{p_{i}^{2}}{2 m}}}{\frac{1}{N!h^{3 N}} \int d^{3 N} p \prod_{i} e^{-\beta \frac{p_{i}^{2}}{2 m}}}\right] \cdot\left[\frac{\prod_{n=1}^{N} e^{-\beta V\left(\vec{q}_{n}\right)}}{\prod_{n=1}^{N} \int d^{3} q_{n} e^{-\beta V\left(\vec{q}_{n}\right)}}\right]
+
+Auch Ortsverteilung der Teilchen komplett unabhängig !
+(räumliche) 1-Teilchen Dichteverteilung:
+
+\begin{gathered}
+n(\vec{q})=\int \frac{d^{3(N-1)} q d^{3 N} p}{N!h^{3 n}} \rho_{\mathrm{K}}(\underline{q}, \underline{p})=\frac{e^{-\beta V(\vec{q})}}{\int d^{3} q e^{-\beta V(\vec{q})}} \\
+\Rightarrow n(\vec{q})=n_{0} e^{-\frac{V(\vec{q})}{k_{B} T}}
+\end{gathered}
+
+Beispiel: "Barometrische Höhenformel":
+
+V(z)=m g z
+
+Gas im Schwerefeld
+![This diagram depicts the electric field lines and equipotential surfaces for an electric dipole, showing the direction of the electric field and the distribution of potential around two opposite charges.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-03_875_521_1337_185.jpg)
+![This diagram depicts the barometric formula, showing how the number density \( n(z) \) of particles decreases exponentially with height \( z \) in a gravitational field, governed by temperature \( T \), particle mass \( m \), gravitational acceleration \( g \), and Boltzmann constant \( k_B \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-03_896_851_1333_717.jpg)
+"lokaler Druck": $\quad p(z) \sim n(z)$
+
+\Rightarrow p(z)=p(0) e^{-\frac{m g z}{k_{B} T}}
+
+### 3.5.5 Der Virialsatz
+
+Betrachte Erwartungswerte von der Form $\left\langle\pi_{i} \frac{\partial H}{\partial \pi_{j}}\right\rangle \quad \pi_{i}=q_{i}, p_{i}$
+
+Es gilt: $\left\langle\pi_{i} \frac{\partial H}{\partial \pi_{j}}\right\rangle=\frac{1}{Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) \pi_{i} \frac{\partial H}{\partial \pi_{j}} e^{-\beta H(\underline{q}, \underline{p})}$
+
+\begin{aligned}
+& =-\frac{1}{\beta Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) \pi_{i} \frac{\partial}{\partial \pi_{j}} e^{-\beta H(\underline{q}, \underline{p})} \quad \begin{array}{c}
+\text { partielle } \\
+\text { Integration }
+\end{array} \\
+& =-\frac{1}{\beta Z_{\mathrm{K}}}[\left.\underbrace{\pi_{i} e^{-\beta H(\underline{q}, \underline{p})}}_{=0}\right|_{-\infty} ^{\infty}-\underbrace{\int d \Gamma(\underline{q}, \underline{p}) \frac{\partial \pi_{i}}{\partial \pi_{j}} e^{-\beta H(\underline{q}, \underline{p})}}_{=Z_{\mathrm{K}} \delta_{i j}}]
+\end{aligned}
+
+\Rightarrow \quad\left\langle\pi_{i} \frac{\partial H}{\partial \pi_{j}}\right\rangle=k_{B} T \delta_{i j} \quad \text { "Virialsatz" }
+
+Daraus folgt allgemein:
+
+\left\langle p_{i} \frac{\partial H}{\partial p_{i}}\right\rangle=2\left\langle E_{\mathrm{kin}, i}\right\rangle=k_{B} T \quad \Rightarrow \quad\left\langle E_{\mathrm{kin}, i}\right\rangle=\frac{1}{2} k_{B} T
+
+gesamte mittlere kinetische Energie: $\quad\left\langle E_{\text {kin }}\right\rangle=\frac{3}{2} N k_{B} T$
+
+Weiters gilt
+
+\sum_{i=1}^{3 N}\left\langle q_{i} \frac{\partial H}{\partial q_{i}}\right\rangle=\sum_{i=1}^{3 N}\left\langle q_{i} \frac{\partial V(\underline{q})}{\partial q_{i}}\right\rangle=3 N k_{B} T=2\left\langle E_{\mathrm{kin}}\right\rangle
+
+und für homogene Potentiale und Wechselwirkungen mit $V(\alpha \underline{q})=\alpha^{k} V(\underline{q})$ folgt aus den Satz von Euler
+
+\sum_{i} q_{i} \frac{\partial V(\underline{q})}{\partial q_{i}}=k V(\underline{q}) \quad \Rightarrow \quad\left\langle E_{\mathrm{kin}}\right\rangle=\frac{k}{2}\left\langle E_{\mathrm{pot}}\right\rangle
+
+Beispiel 1: gekoppelte harmonische Oszillatoren
+
+& V(\underline{q})=\frac{1}{2} \sum_{i, j} m K_{i j}\left(q_{i}-q_{j}\right)^{2} \quad(k=2) \\
+& \Rightarrow \quad\left\langle E_{\text {kin }}\right\rangle=\left\langle E_{\text {pot }}\right\rangle
+
+Beispiel 2: gravitativ gebundenes System
+
+\begin{array}{ll}
+V(\underline{q})=\frac{1}{2} \sum_{i \neq j} \frac{m_{i} m_{j} G}{\left|\vec{r}_{i}-\vec{r}_{j}\right|} & (k=-1) \\
+\Rightarrow \quad\left\langle E_{\mathrm{kin}}\right\rangle=-\frac{1}{2}\left\langle E_{\mathrm{pot}}\right\rangle &
+\end{array}
+
+### 3.6 Großkanonisches Ensemble
+
+- Energie und Teilchenaustausch möglich
+- Gesamtsystem isoliert
+![The diagram depicts a thermal bath and particle reservoir system, illustrating a system of particles in contact with a heat and particle reservoir.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-07_630_1163_63_1806.jpg)
+
+& E=E_{S}+E_{B} \\
+& N=N_{S}+N_{B}
+
+## Phasenraumdichte (Gesamtsystem):
+
+\rho(\underline{q}, \underline{p})=\rho_{\mathrm{MK}}\left(\underline{q}_{s} \underline{q}_{b}, \underline{p}_{s}, \underline{p}_{b}\right)=\frac{1}{\Omega_{\mathrm{ges}}(E)} \quad E-\Delta<H(\underline{q}, \underline{p})<E
+
+⇒ Wahrscheinlichkeit, das System mit $N_{S}$ Teilchen im Phasenraumpunkt $\pi_{s}=\left(\underline{q}_{s}, \underline{p}_{s}\right) \in \mathbb{R}^{6 N_{S}}$ zu finden (analog zu Abschnitt 3.4 und 3.5):
+
+\rho_{S}\left(\underline{q}_{s}, \underline{p}_{s} ; N_{S}\right) \sim \Omega_{B}\left(E-E_{S}, V_{B}, N-N_{S}\right), \quad E_{S} \equiv H_{S}\left(\underline{q}_{s}, \underline{p}_{s} ; N_{S}\right)
+
+⇒ Reihenentwicklung für kleine $E_{S} \ll E, N_{S} \ll N$ :
+
+\begin{gathered}
+\ln \Omega_{B} \approx \ln \Omega_{B}(E, N)-\left.\frac{\partial \ln \Omega_{B}}{\partial E_{B}}\right|_{E_{B} \simeq E} E_{S}-\left.\frac{\partial \ln \Omega_{B}}{\partial N_{B}}\right|_{N_{B} \simeq N} N_{S} \\
+=\frac{S_{B}}{k_{B}}-\left.\frac{1}{k_{B}} \underbrace{\frac{\partial S_{B}}{\partial E_{B}}}\right|_{E_{B} \simeq E} E_{S}-\left.\frac{1}{k_{B}} \underbrace{\frac{\partial S_{B}}{\partial N_{B}}}_{=:-\frac{\mu}{T}}\right|_{N_{B} \simeq N} N_{S} \\
+=\frac{1}{T}
+
+\rho_{S}\left(\underline{q}_{s}, \underline{p}_{s} ; N_{S}\right) \sim e^{-\beta\left(H_{S}\left(\underline{q}_{s}, \underline{p}_{s} ; N_{S}\right)-\mu N_{S}\right)}
+
+- Normierung:
+
+1=\sum_{N_{S}=0}^{\infty} \int \frac{d^{3 N_{S}} q d^{3 N_{S}} p}{N_{S}!h^{3 N_{S}}} \rho_{S}\left(\underline{q}_{s}, \underline{p}_{s} ; N_{S}\right)
+
+Daraus erhalten wir die Wahrscheinlichkeitsverteilung für das
+
+## "Großkanonische Ensemble":
+
+\begin{array}{cc}
+\rho_{\mathrm{G}}(\underline{q}, \underline{p} ; N)=\frac{1}{Z_{\mathrm{G}}} e^{-\beta\left(H_{N}(\underline{q}, \underline{p})-\mu N\right)} & \beta:=\left(k_{B} T\right)^{-1} \\
+\left.Z_{\mathrm{G}}=\sum_{N=0}^{\infty} \int \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} e^{-\beta\left(H_{N}(\underline{q}, \underline{p})-\mu N\right.}\right) & =\sum_{N=0}^{\infty} z^{N} Z_{\mathrm{K}}(N) \\
+\text { "großkanonische Zustandssumme" } & \begin{array}{c}
+\text { "Fugazität" } \\
+\text { " } e^{\beta \mu}
+\end{array}
+
+Das großkanonische Ensemble beschreibt die Phasenraumverteilung für ein System, dass an ein Wärmebad mit Temperatur T und ein Teilchenreservoir mit chemischem Potential $\mu$ gekoppelt ist.
+
+### 3.6.1 Anschluss an die Thermodynamik
+
+Ausgehend von der großkanonischen Zustandssumme definieren wir das thermodynamische Potential:
+
+J(T, V, \mu)=-k_{B} T \ln Z_{\mathrm{G}}(T, V, \mu)
+
+welches wir im Folgenden mit dem großkanonischen Potential aus der Thermodynamik identifizieren.
+
+- großkanonische Entropie:
+
+S=-k_{B}\left\langle\ln \rho_{G}\right\rangle
+
+S & =k_{B} \sum_{N=0}^{\infty} \int \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} \underbrace{\left[\beta(H-\mu N)+\ln Z_{\mathrm{G}}\right]}_{-\ln \rho_{\mathrm{G}}} \rho_{\mathrm{G}}\left(\underline{q}_{s}, \underline{p}_{s} ; N\right) \\
+& =\frac{\langle H\rangle}{T}-\frac{\mu}{T}\langle N\rangle-\frac{J}{T} \Rightarrow \underbrace{J=E-S T-\mu N \quad=-p V}_{\text {Fundamentalgleichung }}
+
+- Mittelwert der Teilchenzahl:
+
+\langle N\rangle & =\frac{1}{Z_{G}} \sum_{f^{N=0}}^{\infty} \int \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} \underbrace{\left.N e^{-\beta\left(H_{N}(\underline{q}, \underline{p})-\mu N\right.}\right)}_{\left.=\frac{1}{\beta} \frac{\partial}{\partial \mu} e^{-\beta\left(H_{N}(\underline{q}, \underline{p})-\mu N\right.}\right)}=k_{B} T \frac{1}{Z_{\mathrm{G}}} \frac{\partial}{\partial \mu} Z_{\mathrm{G}} \\
+& =k_{B} T \frac{\partial}{\partial \mu} \ln Z_{\mathrm{G}}=-\left.\frac{\partial J}{\partial \mu}\right|_{T, V}
+
+- Mittelwert des Drucks:
+
+p=-\left\langle\frac{\partial H}{\partial V}\right\rangle=k_{B} T \frac{\partial}{\partial V} \ln Z_{\mathrm{G}}=-\left.\frac{\partial J}{\partial V}\right|_{T, \mu} \quad S=-\left.\frac{\partial J}{\partial T}\right|_{V, \mu}
+
+Großkanonisches Potential:
+
+J(T, V, \mu)=-k_{B} T \ln Z_{\mathrm{G}}=-p(T, \mu) V, \quad d J=-S d T-p d V-N d \mu
+
+Konsistent mit makroskopischer Thermodynamik !!
+
+## Ergänzung: Interpretation des chemischen Potentials
+
+\mu=\left.\frac{\partial E}{\partial N}\right|_{S, V} \quad=\quad[E(N+1)-E(N)]_{S=\text { const }}
+
+⇒ "Energieänderung bei Zufuhr eines Teilchens bei konstanter Entropie".
+
+## Bsp 1: geordnetes System (ein möglicher Zustand)
+
+![This diagram depicts a quantum tunneling process, showing particles at energy level \(E_1\) confined within a potential well (with \(N\) particles) and one particle tunneling through a barrier to the outside region.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-12_571_1063_1146_137.jpg)
+
+& E(N)=E_{1} N \\
+& S(E, N)=k_{B} \ln (\# \text { Mikrozust. })=0
+
+\left.N \rightarrow N+1: \quad \begin{array}{c}
+\Delta E=E_{1} \\
+\Delta S=0
+\end{array}\right\} \quad \Rightarrow \quad \mu=\left.\frac{\partial E}{\partial N}\right|_{S}=E_{1}
+
+![This diagram depicts a two-level atomic system showing population states \(N_0\) and \(N_1\) at energy levels \(0\) and \(E_1\), respectively, with transitions between these states indicated by arrows.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-13_656_1042_264_126.jpg)
+
+N=N_{0}+N_{1}
+
+\frac{\mu}{T}=-\left.\frac{\partial S}{\partial N}\right|_{E, V}=\quad-[S(N+1)-S(N)]_{E=\mathrm{const}}
+
+E(N)=E_{1} N_{1}
+
+S(E, N) & =k_{B} \ln \left[\frac{N!}{\left(N-N_{1}\right)!N_{1}!}\right] \\
+& \underset{\left(\mathbf{N}_{1} \ll \mathbf{N}, \text { Stirling }\right)}{\approx} N_{1}\left[1-\ln \left(\frac{N_{1}}{N}\right)\right]\left(N_{1}=\frac{E}{E_{1}}\right)
+
+⇒ "Entropieänderung bei Zufuhr eines Teilchens bei konstanter Energie".
+
+\left.\begin{array}{l}
+N_{0} \rightarrow N_{0}+1: \\
+N_{1} \rightarrow N_{1}
+\end{array}\right\} \quad \Delta E=0 \quad \Rightarrow \quad \frac{\mu}{T}=-\left.\frac{\partial S}{\partial N}\right|_{E} \simeq-\frac{k_{B} E}{N E_{1}}
+
+Wir erhalten weiters
+
+\frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{N} \simeq-\frac{k_{B}}{E_{1}} \ln \left(\frac{E}{N E_{1}}\right) \quad \Rightarrow \quad \mu \approx \frac{E}{N} \frac{1}{\ln \left[E /\left(N E_{1}\right)\right]}<0
+
+⇒ Negatives chemisches Potential wegen Entropieerhöhung.
+
+## Bsp 3: System gekoppelt an Wärmebad
+
+\mu=\left.\frac{\partial F}{\partial N}\right|_{T, V} \quad=\quad[F(N+1)-F(N)]_{T=\text { const }}
+
+⇒ "Änderung der freien Energie bei Zufuhr eines Teilchens bei konstanter Temperatur".
+chemisches Potential:
+
+" \mu=\Delta E-T \Delta S "
+
+"Änderung der Energie minus Änderung der Entropie".
+![This diagram depicts the energy levels of particles in a system with discrete states, illustrating particles occupying energy levels up to a certain thermal energy \(k_B T\), with one particle transitioning out of the system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-15_762_1218_64_56.jpg)
+
+- Energieänderung:
+
+\Delta E \simeq k_{B} T
+
+- Entropieänderung:
+
+T \Delta S \simeq k_{B} T \ln (\underbrace{\# \text { Mikrozust. }}_{\gg 1})
+
+## vgl. verdünntes, klassisches Gas:
+
+$\Delta E=\frac{3}{2} k_{B} T$
+
+T \Delta S \simeq k_{B} T\left[\ln \left(\frac{V}{N \lambda_{T}^{3}}\right)+\frac{5}{2}\right]
+
+kalorische Zstgl.
+
+## Sackur-Tetrode Formel
+
+\Rightarrow \mu \simeq \Delta E-T \Delta S<0 \quad \rightarrow \quad \mu=-k_{B} T \ln \left(\frac{V}{N \lambda_{T}^{3}}\right)
+
+(genauere Rechnung)
+(gilt auch generell für heiße, schwach wechselwirkende Systeme)
+
+### 3.7 Zusammenfassung
+
+## "Mikrokanonisches Ensemble"
+
+## - Beschreibt:
+
+Isoliertes System, gegeben: E,N,V
+![This diagram depicts carbon monoxide (CO) molecules dispersed in a container, illustrating their random motion and distribution in a gas phase.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-16_403_703_221_2187.jpg)
+
+- Phasenraumdichte:
+
+\rho_{\mathrm{MK}}(\underline{q}, \underline{p})=\frac{1}{\Omega(E)} \quad E-\Delta<H(\underline{q}, \underline{p})<E
+
+- Zustandssumme / generierende Funktion:
+$\left.\begin{array}{c}\Omega(E, \Delta)=\int_{E-\Delta<H<E} \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} \\ \text { - Fundamentales thermodynamisches Potential: } \\ \text { Entropie: } \quad S(E, V, N):=k_{B} \ln \Omega(E, V, N)\end{array}\right\} \Omega=e^{\frac{S T}{k_{B} T}}$
+"Kanonisches Ensemble"
+- Beschreibt:
+
+System gekoppelt an ein Wärmebad gegeben: T,V,N
+![The diagram depicts a thermal bath ("Wärmebad" in German) at temperature T, illustrating a system in contact with an environment that can exchange heat. It shows particles representing the thermal reservoir that maintains the system's temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-17_440_973_200_1959.jpg)
+
+- Phasenraumdichte:
+
+\rho_{\mathrm{K}}(\underline{q}, \underline{p})=\frac{1}{Z_{\mathrm{K}}} e^{-\beta H(\underline{q}, \underline{p})}
+
+- Zustandssumme / generierende Funktion:
+$\left.\begin{array}{c}Z_{\mathrm{K}}=\int \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} e^{-\beta H(\underline{q}, \underline{p})} \\ \text { - Fundamentales thermodynamisches Potential: } \\ \text { freie Energie: } F(T, V, N)=-k_{B} T \ln Z_{\mathrm{K}}(T, V, N)\end{array}\right\} \quad Z_{\mathrm{K}}=e^{-\frac{F}{k_{B} T}}$
+"Großkanonisches Ensemble"
+- Beschreibt:
+
+System gekoppelt an Wärmebad \& Teilchenreservoir, gegeben: T, V, $\mu$
+![This diagram depicts a heat bath and particle reservoir, illustrating a system in contact with a thermal and particle reservoir where particles and energy can be exchanged.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e5ac9b09-3b56-46d0-a804-edcc8eefe212/9659d9d6-7e8a-48ab-9541-0a7273d9495d-18_487_968_179_1912.jpg)
+
+
+\rho_{\mathrm{G}}(\underline{q}, \underline{p} ; N)=\frac{1}{Z_{\mathrm{G}}} e^{-\beta\left(H_{N}(\underline{q}, \underline{p})-\mu N\right)}
+
+
+\left.\begin{array}{l}
+Z_{\mathrm{G}}=\sum_{N=0}^{\infty} z^{N} Z_{\mathrm{K}}(N) \\
+\text { thermodynamisches Potential: }
+\end{array}\right\} \quad Z_{\mathrm{G}}=e^{-\frac{J}{k_{B} T}}
+
+großkanonisches
+Potential:
+
+J(T, V, \mu)=-k_{B} T \ln Z_{\mathrm{G}}(T, V, \mu)
+

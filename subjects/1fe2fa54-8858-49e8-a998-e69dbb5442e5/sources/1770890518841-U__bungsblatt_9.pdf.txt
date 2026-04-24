@@ -1,0 +1,66 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 22.12.25
+Blatt 9
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Holger Mirkes
+9.1 Vergleich von klassischem Modell, Einstein-Modell und
+Debye-Modell
+(a) Was sind die Hauptannahmen des Einstein-Modells (1907) sowie des Debye-
+Modells, und worin unterscheiden sich die beiden Modelle?
+(b) Geben Sie f¨ur jedes Modell (klassisch, Einstein, Debye) die W¨armekapazit¨at
+CV (T ) im Tieftemperaturlimes T ≪ ΘD und im Hochtemperaturlimes T ≫ ΘD
+an. Wie skalieren die Grenzwerte der W¨armekapazit¨aten mit der normierten
+Temperatur T /ΘD?
+Welches Modell beschreibt die W¨armekapazit¨at von kristallinen, nichtleitenden
+Festk¨orpern f¨ur normierte Temperaturen kleiner als T /ΘD = 0.01 am besten?
+9.2 Zustandsdichte von Phononen
+In der Vorlesung wurde die frequenzabh¨angige Zustandsdichte der Phononen
+D(ω) eines dreidimensionalen Kristalls in der Debye-N¨aherung, gleichbedeutend
+zur Debye-Kontinuumsn¨aherung, hergeleitet.
+(a) Leiten Sie jeweils die Zustandsdichtefunktion D(ω) f¨ur eine eindimensionale
+lineare Kette der L¨ange L sowie f¨ur ein zweidimensionales ebenes Kristallgitter
+der Fl¨ache A = L2 in der Debye-N¨aherung her.
+(b) Falls nur Kr¨afte zwischen direkt benachbarten Atomen wirken, lautet die Dispersionsrelation
+ω(q) einer linearen Kette von Atomen mit Abstand a und Masse M
+ω(q) = ωmax sin qa
+2 (1)
+
+Hierbei ist ωmax die maximale Frequenz im longitudinalen Phononenspektrum
+der Kette.
+i) Berechnen Sie die Zustandsdichtefunktion D(ω) der longitudinalen Phononen.
+Skizzieren Sie den Verlauf der Funktion und vergleichen Sie das Ergebnis
+mit der Zustandsdichtefunktion der eindimensionalen linearen Kette in
+der Debye-N¨aherung aus Teilaufgabe b).
+ii) Welcher Zusammenhang besteht zwischen der Maximalfrequenz ωmax des
+Phononenspektrums und der oberen Grenzfrequenz ωD, welche in der
+Debyeschen Kontinuumsn¨aherung angesetzt wird?
+9.3 Brillouin-Streuung
+(a) Licht eines frequenzverdoppelten Nd:YAG-Lasers der Wellenl¨ange λL = 532 nm
+wird an einer Probe aus Quarzglas (mit Brechungsindex n′ = 1,46 bei 532 nm
+und Gitterkonstante a = 4,913 ˚A). gestreut und unter einem Winkel von 107◦
+zur Einfallsrichtung analysiert. Im Spektrum erscheinen zwei symmetrische
+Linienpaare (Stokes/Anti-Stokes)
+δνLA = ±26,03 GHz, δνT A = ±15,90 GHz,
+(a) Berechnen Sie die Schallgeschwindigkeiten vLA und vTA der longitudinalen
+bzw. transversalen Phononen.
+(b) Leiten Sie f¨ur beliebige Streuwinkel 0 ≤ θ ≤ 180◦ die Winkelabh¨angigkeit
+von Phononenfrequenz ν(θ) und Wellenvektor q(θ) ab und bestimmen Sie
+den Bruchteil der ersten Brillouin-Zonenh¨alfte, der durch Variation von θ
+zug¨anglich ist.
+9.4 Zweidimensionales Gitter
+(a) Betrachte ein quadratisches 2D Gitter in der Debye-N¨aherun. Welcher Ausdruck
+beschreibt die Zustandsdichte?
+(b) Welcher Zusammenhang besteht zwischen der Gitterkonstante und der Debye-
+Temperatur?
+(c) Bestimme das Verhalten f¨ur hohe und tife Temperaturen.
+
+9.5 Vergleich von Photonen und Phononen
+(a) Leite einen Ausdruck f¨ur die W¨armekapazit¨at eines Photonengases in einem
+endlichen Volumen her. (Vorgehen wie bei der Debye-W¨armekapazit¨at, jedoch
+f¨ur masselose Bosonen.)
+(b) Welches bekannte physikalische Gesetz folgt daraus f¨ur die Temperaturabh¨angigkeit
+der inneren Energie Uphoton(T )?

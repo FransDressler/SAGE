@@ -1,0 +1,53 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Streuung von Bloch-Elektronen
+aus Gross/Marx
+F
+Streuzentrum
+Ohne Streuung
+⇒ ungestörte Bewegung
+⇒ kein elektrischer Widerstand
+Wellen-
+fronten
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Streumechanismen: Defekt
+aus Hunklinger
+
+Streumechanismen: Phonon (Normal-Prozess)
+aus Hunklinger
+
+Streumechanismen: Phonon (Umklapp-Prozess)
+
+Streumechanismen: Elektron-Elektron
+aus Gross / Marx
+
+Temperaturabhängigkeit von Kupfer und Manganin
+Manganin: 86% Kupfer, 12% Mangan, 2% Nickel
+
+Temperaturabhängigkeit von Natrium (bei tiefenT )
+Mattiesensche Regel
+Der unterschiedliche Restwiderstand bei T = 0 wird
+unterschiedlichen Defektkonzentrationen zugeschrieben.
+𝜌𝐷: Defekt-basiert
+𝜌𝐺: Gitter-basiert (thermisch)
+
+Phonon-dominierte Streuung (für reine Metalle)
+𝜃 ∶ Debye-Temperatur
+Bloch-Grüneisen Gesetz
+
+Elektron-Elektron Streuung? ⇒ hochreine Metalle
+∝ Elektron-Elektron
+∝ Bloch-Grüneisen
+∝ Bloch-Grüneisen
+
+Wärmetransport aufgrund von Elektronen in Metallen
+Λel: elektronische Wärmeleitfähigkeit
+𝑙 ∶ mittlere freie Weglänge
+
+Wiedemann-Franz Gesetz
+Lorenz-Zahl: 𝑳 = 𝟐. 𝟓 ∙ 𝟏𝟎−𝟖 𝑾𝛀𝑲−𝟐
+(nur) wenn 𝑙, die mittlere freie
+Weglänge, für die elektrische und die
+thermische Leitfähigkeit identisch ist.
+
+Wiedemann-Franz Gesetz

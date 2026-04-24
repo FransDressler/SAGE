@@ -1,0 +1,161 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing representations of atomic nuclei, particle physics (Standard Model particles), nuclear reactors, particle accelerators, neutrino detection, cosmic phenomena like supernova remnants, and the timeline of the universe from the Big Bang to galaxy formation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Symmetries, Propagator |
+|  |  |  | Interaction with matter | Cross section |
+| 4 | 04/11/25 |  | Interaction with matter | Bethe-Bloch |
+| 5 | 11/11/25 |  | Particle Detectors |  |
+| 6 | 18/11/25 |  | Accelerators | Four vector, accelerators, cyclotron |
+| 7 | 25/11/25 | Astrophysics | Cosmic accelerators | Supernovae, cosmic rays, BBN |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Alpha, beta, gamma |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiation, Reactors |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Tutorübungen KTA-Intro 2025/2026
+
+Tutor Team
+![The image depicts a group of five individuals labeled with their names and titles, likely representing members of a team or research group.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-03_1179_1173_464_153.jpg)
+
+## Übungsleitung:
+
+Dr. Margarita Kaznacheeva margarita.kaznacheeva@tum.de
+![This image is a photograph of a smiling young woman; it does not depict a diagram or subject matter related to a specific field.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-03_582_514_341_2598.jpg)
+
+## Termine der Vorlesung: <br> Di 14:15-15:45 D
+
+00.5901.051, Hörsaal (5901.EG.051)
+Termine der 6 Übungsgruppen:
+
+| Mo 8:30-10 (Luigi) E | PH II 127, Seminarraum E11 (5107.U1.127) |
+| :--- | :--- |
+| Tue 8:30-10 (Niko) D/E | MW 2235, Seminarraum (5502.02.235) |
+| Tue 12-14 (Niko) D/E | MW 2235, Seminarraum (5502.02.235) |
+| Thu 8:30-10 (Mario) D | PH II 227, Seminarraum E20 (5107.EG.227) |
+| Fri 8:30-10 (Matthias) D | C.3202, Tutorraum (5140.01.202) |
+| Fri 10-12 (Margarita) E | PH 2271, Seminarraum (5101.EG.271) |
+
+## Informationen zum Übungsbetrieb
+
+- 6 Übungsgruppen
+- Übung auch in englischer Sprache (markiert mit E)
+- Wöchentlich: Übungsblätter mit Aufgaben
+- Lösungen eine Woche später!
+- Notenbonus von 0.3 falls
+- Präsentation einer Übungsaufgabe an der Tafel
+![The image depicts a cartoon-style classroom scene showing a teacher standing in front of three students seated at desks.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-04_892_1076_304_2153.jpg)
+- $50 \%$ Anwesenheit bei den Tutorübungen
+- Bestandenes "Quiz" Ende Dezember
+- Klausur: Schriftlich, Hilfsmittel: Taschenrechner und handbeschriebenes DINA4 Blatt
+- Prüfungstermine: 26.2.2026 11:00-12:30
+30.3.2026 11:00-12:30 (Nachholklausur)
+
+
+## Informationen zum Übungsbetrieb
+
+- 6 Übungsgruppen
+- Übung auch in englischer Sprache (markiert mit
+- Wöchentlich: Übungsblätter mit Aufgaben
+- Lösungen eine Woche später!
+- Notenbonus von 0.3 falls
+- Präsentation einer Übungsaufgabe an der Tafel
+- $50 \%$ Anwesenheit bei den Tutorübungen
+- Bestandenes "Quiz" Ende Dezember
+- Klausur: Schriftlich, Hilfsmittel: Taschenrechne
+- Prüfungstermine: 26.2.2026 11:00-12:30
+30.3.2026 11:00-12:30 (Nachholklausur)
+
+Update vom 26.Okt 2025 (siehe auch Email):
+
+- wir halten an den Zeiten der Übungsgruppen fest, da allesamt gut besucht sind.
+- Einige wenige von ihnen, können aus verschiedenen Gründen leider nicht an den Übungen teilnehmen (z.B. wegen Erasmusaufenthalt, Überschneidung mit Vorlesungen). In diesen Ausnahmefällen akzeptieren wir schriftliche Lösungen der
+Arbeitsblätter. Zum Erhalt des Notenbonus sollen dann 50\% der Arbeitsblätter schriftlich bei den Tutoren (Margarita) eingereicht werden. Dies müsste jeweils vor der Veröffentlichung der Lösungen erfolgen (vor Freitag der jeweiligen Woche). Die Sonderregelung muss vorher per Email individuell geklärt werden.
+- Der Notenbonus gilt nur für die erste Klausur, nicht für die Nachholklausur.
+- Der Notenbonus greift erst ab der Note <=4.0 - falls sie also 4.3 (vor Bonus) erreichen, bestehen sie die Klausur nicht.
+
+
+## TUR
+
+Have you ever wondered how physics shapes the way we see and imagine the world? Or how politics, technology, and physics are intertwined - and how they influence each other?
+
+## Then join us for our interdisciplinary seminar series organized together with the TUM social science department!
+
+What: 4 block seminars on Friday afternoons (3 hours each)
+Where: online intro session (this Friday!), then seminar series in Garching
+For whom: Bachelor \& Master students form physics and the social sciences
+Credits: 1 ECTS (general-education subject) - counts as FOPRA
+
+| Time | Lecture Topic | Room |
+| :--- | :--- | :--- |
+| Fri, Oct 31, 2025 <br> 15:00-16:00 | Introduction <br> Discussing the contents, aims and materials of the course | Online |
+| Fri, Nov 14, 2025 <br> 14:00-17:00 | What is Science? What is Knowledge? <br> - L. Winner - Do Artifacts Have Politics? (1980) <br> - A. Pickering - The Mangle of Practice (1999) | Garching |
+| Fri, Dec 12, 2025 <br> 14:00-17:00 | What is a Laboratory? - with lab tour at physics department <br> - K. Knorr-Cetina - What is a Laboratory? In: Epistemic Cultures. How The Sciences Make Knowledge (1999) <br> - K. Barad - Agential Realism: Feminist Interventions in Understanding Scientific Practices (1998) | Garching |
+| Mon, Dec 15, 2025 <br> 18:45-20:45 | Telling Stories, Making Worlds - Art \& Physics Monday (https:// www.adbk.de/de/aktuell/archiv-aktuell/physics-art-mondays.html) <br> - Donna Haraway - Story Telling for Earthly Survival (2016 documentary film by F. Terranova • 1h 20m) <br> - followed by a panel discussion | AdBK \| Old Building \| Old Assembly Hall \| A.EG. 01 |
+| Fri, Jan 23, 2026 <br> 14:00-17:00 | Making Futures with Science and Technology <br> - S. Jasanoff, S-H. Kim - Containing the Atom: Sociotechnical Imaginaries and Nuclear Power in the United States and South Korea (2009) <br> - U. Felt - Keeping Technologies Out: Sociotechnical Imaginaries and the Formation of Austria's Technopolitical Identity (2015) | Garching |
+
+For more info: contact andreas.erhart@tum.de or check:
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts the fundamental particles of the Standard Model of particle physics, showing the classification of quarks, leptons, and force-carrying bosons, with the Higgs boson at the center.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-07_726_941_555_161.jpg)
+![This diagram depicts the classification of hadrons into baryons and mesons, showing that baryons are composed of three quarks, while mesons consist of a quark and an antiquark.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-07_669_820_608_1289.jpg)
+![This diagram depicts the principle of conservation of momentum during a ball toss between two people standing on a frictionless surface, showing how each person moves in opposite directions as they throw and catch the ball.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-07_740_717_358_2525.jpg)
+
+Yukawa!
+
+$$
+V(r)=\frac{g e^{-\mu_{0} r}}{r}
+$$
+
+## drei Generationen der Materie <br> (Fermionen)
+
+Wechselwirkungen
+(Bosonen)
+![This diagram depicts the Standard Model of particle physics, showing all fundamental particles including quarks, leptons, gauge bosons, the Higgs boson, and the hypothetical graviton, along with their masses, charges, and spins.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-08_1647_2532_228_399.jpg)
+
+## Hadronen: Baryonen und Mesonen
+
+![This diagram depicts the quark composition of certain baryons, specifically showing the quark content of a proton, antiproton, neutron, and lambda particle.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-09_643_940_440_225.jpg)
+
+Baryonen:
+Zusammengesetzt aus 3 Quarks
+![This diagram depicts the six types (flavors) of quarks, showing their masses, electric charges, and spin values.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-09_632_972_339_2197.jpg)
+$\mathrm{u}, \mathrm{c}, \mathrm{t}-$ quark: $+2 / 3 \mathrm{e}$
+d, s, b - quark: - 1/3 e
+![This diagram depicts mesons and shows their quark-antiquark compositions, specifically illustrating the quark content of the π⁺, K⁰, π⁰, and J/ψ mesons.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-09_551_938_1109_227.jpg)
+
+## Mesonen: <br> Quark- Antiquarkpaare
+
+> Quarks tragen Farbladungen ( $r, g, b$ )
+> Antiquarks tragen Antifarbe
+
+- Hadronen sind immer farbneutral (additive Farbmischung)
+- freie Quarks existieren nicht
+![This diagram depicts the additive color mixing of the three primary colors of light (red, green, and blue), showing how their overlapping areas produce secondary colors (cyan, magenta, yellow) and white at the center where all three overlap.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-09_558_541_1290_2021.jpg)
+![This diagram depicts the color charge assignments for quarks and antiquarks in quantum chromodynamics (QCD), showing the three color charges (red, green, blue) for quarks and their corresponding anticolor charges (cyan, magenta, yellow) for antiquarks.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-09_424_578_1294_2629.jpg)
+![This diagram depicts the three families of elementary particles in the Standard Model of particle physics, showing the classification of leptons (neutral and charged) and quarks along with their associated force carriers (weak and electromagnetic bosons).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/bacd789a-0732-44ef-87d3-1a70965b27cd/312f20da-3a93-45d1-a53f-c8fa4f8fb1a5-10_1768_1944_35_628.jpg)
+
+
+## Wechselwirkung und Reichweite
+
+| Wechselwirkung | Ladung | Stärke ${ }^{1)}$ | Feldquant | Spin | Reichweite | WW mit |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| elektromagnetisch | elektr. Ladung | 1/137 | Photon $\mathrm{M}=0$ | 1 | $\infty$ | Quarks und geladene Leptonen |
+| stark | Farbladung | $\approx 1 / 2$ | 8 Gluonen $M=0^{2)}$ | 1 | $10^{-15} \mathrm{~m}^{2}$ ) | Quarks |
+| schwach | schwache Ladung | $\approx 1 / 10^{5}$ | $\mathrm{W}^{ \pm}, \mathrm{Z}^{0}$ $M \approx 90 \mathrm{GeV} / \mathrm{c}^{2}$ | 1 | $10^{-18} \mathrm{~m}$ | Quarks und Leptonen |
+| Gravitation ${ }^{\mathbf{3}}$ ) | Masse | $10^{-38}$ | Graviton $\mathrm{M}=0$ (noch nicht beob.) | 2 | $\infty$ | alle Teilchen (Energie) |
+
+[^0]
+[^0]:    ${ }^{1}$ ) Die Stärke hängt vom Abstand (Energie) ab. Hier: Werte bei $0.2 \mathrm{fm} / 1 \mathrm{GeV}$
+    ${ }^{2}$ ) nicht $\infty$ wegen Gluon-Gluon Selbstwechselwirkung
+    ${ }^{3}$ ) so schwach, dass sie (zurzeit) in Kern- und Teilchenphysik keine Rolle spielt.
+

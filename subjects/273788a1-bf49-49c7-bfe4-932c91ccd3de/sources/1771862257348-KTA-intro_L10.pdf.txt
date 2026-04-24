@@ -1,0 +1,182 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 10
+
+19. Januar 2026
+
+## Aufgabe 1 Kernkraftwerk
+
+Ein Kernkraftwerk mit einer elektrischen Nennleistung von 1 GW habe einen thermischen Wirkungsgrad von $\eta=34 \%$. Sein Reaktorkern bestehe aus Uran mit einem Anreicherungsgrad von $3 \%{ }^{235}$ U. Die Auslastung des Kernkraftwerks während der Betriebszeit von $T=1$ Jahr sei $\epsilon=80 \%$. Der Anteil $\lambda$ der Massendifferenz zwischen Ausgangskern und stabilen Endkernen, der nicht zur Erwärmung des Reaktors beiträgt, sei 6\%.
+Hinweis: Natürliches Uran enthält nur etwa $0,7 \%$ des fissilen Isotops ${ }^{235} \mathrm{U}$, während der überwiegende Rest hauptsächlich aus ${ }^{238} \mathrm{U}$ besteht. Für thermische Reaktoren ist diese natürliche Zusammensetzung nicht ausreichend, um eine kontrollierte Kettenreaktion aufrechtzuerhalten. Der Brennstoff wird daher angereichert, d. h. der Anteil von ${ }^{235} \mathrm{U}$ wird erhöht.
+a. Wie ist $\lambda$ physikalisch zu erklären?
+b. Bei der Spaltung von ${ }^{235} \mathrm{U}$ nach dem Einfang eines langsamen Neutrons entstehen Spaltprodukte, die sich in der Nähe der Massenzahlen $A=94$ und 140 häufen. Berechnen Sie aus den Atommassen die gesamte freiwerdende Energie $Q$ pro Kernspaltung unter der Annahme, dass jedes Spaltprodukt ein Neutron emittiert. Die stabilen Endkerne seien ${ }^{94} \mathrm{Zr}$ und ${ }^{140} \mathrm{Ce}$. (Hinweis: Die Atommassen sind $m\left({ }^{94} \mathrm{Zr}\right)=93.906314 \mathrm{u}, m\left({ }^{140} \mathrm{Ce}\right)=139.905435 \mathrm{u}$ und $m\left({ }^{235} \mathrm{U}\right)=235.043922 \mathrm{u}$, wobei $1 \mathrm{u}=931.494028 \mathrm{MeV} / c^{2}$.)
+c. Wieviel ${ }^{235} \mathrm{U}$ wird in dem Kraftwerk innerhalb eines Jahres gespalten?
+d. Für langsame Neutronen beträgt der Spaltquerschnitt von ${ }^{235} \mathrm{U} \sigma_{f}=584$ barn und der Neutroneneinfangsquerschnitt von ${ }^{238} \mathrm{U} \sigma_{n}=2.7$ barn. Wieviel ${ }^{239} \mathrm{Pu}$ wird innerhalb eines Jahres insgesamt im Reaktor erzeugt? (Hinweis: Vernachlässigen Sie Spalt- und Neutroneneinfangsverluste. Relevante Reaktion: ${ }^{238} \mathrm{U}+n \rightarrow{ }^{239} \mathrm{U} \rightarrow{ }^{239} \mathrm{~Np} \rightarrow{ }^{239} \mathrm{Pu}$.)
+
+## Lösung: Kernkraftwerk
+
+a. Obwohl die Neutrinomasse vernachlässigbar ist, wird in den $\beta$-Zerfällen der Spaltprodukte kinetische Energie durch die emittierten $\bar{v}_{e}$ aus dem Reaktor herausgetragen. Dieser Energieanteil trägt nicht zur Erwärmung des Reaktorkerns bei und wird durch den Faktor $\lambda$ parametrisiert.
+b. Unter der Annahme, dass jedes Spaltfragment ein Neutron emittiert, kann man den Prozess effektiv schreiben als
+
+$$
+{ }^{235} \mathrm{U}+n \rightarrow{ }^{94} \mathrm{Zr}+{ }^{140} \mathrm{Ce}+2 n+Q .
+$$
+
+Die Verwendung von Atommassen ist konsistent, da sich die Elektronenmassen herauskürzen (gleiche Gesamtladungszahl $Z$ auf beiden Seiten). Damit folgt
+
+\Delta m=m\left({ }^{235} \mathrm{U}\right)-m\left({ }^{94} \mathrm{Zr}\right)-m\left({ }^{140} \mathrm{Ce}\right)-m_{n} \simeq 0.22351 \mathrm{u},
+
+und somit
+
+Q=\Delta m c^{2} \simeq 0.22351 \times 931.494 \mathrm{MeV} \simeq 208.2 \mathrm{MeV}
+
+c. Die thermische Leistung beträgt
+
+P_{\mathrm{therm}}=\frac{P_{\mathrm{el}}}{\eta}
+
+Nur der Anteil $(1-\lambda)$ der freiwerdenden Energie heizt den Reaktor, daher ist die Spaltrate
+
+\dot{N}_{f}=\frac{P_{\text {therm }}}{(1-\lambda) Q}=\frac{P_{\text {el }}}{\eta(1-\lambda) Q}
+
+Zur Kombination mit SI-Leistungseinheiten wird $Q$ in Joule umgerechnet:
+
+Q=208.2 \mathrm{MeV}=208.2 \times 1.602 \times 10^{-13} \mathrm{~J}
+
+Damit ergibt sich
+
+\dot{N}_{f} \simeq 9.38 \times 10^{19} \mathrm{~s}^{-1}
+
+Über $T=1 \mathrm{a}=3.1536 \times 10^{7} \mathrm{~s}$ und mit Auslastung $\epsilon$ folgt
+
+N_{f}=\epsilon \dot{N}_{f} T \simeq 2.37 \times 10^{27}
+
+Die gespaltene Masse an ${ }^{235} \mathrm{U}$ ist damit
+
+M_{f}=N_{f} m\left({ }^{235} \mathrm{U}\right)=N_{f}(235.043922 \mathrm{u})\left(1.66054 \times 10^{-27} \mathrm{~kg} / \mathrm{u}\right) \simeq 9.24 \times 10^{2} \mathrm{~kg} .
+
+d. Neutroneneinfang an ${ }^{238} \mathrm{U}$ erzeugt über die Zerfallskette schließlich ${ }^{239} \mathrm{Pu}$ :
+
+{ }^{238} \mathrm{U}+n \rightarrow{ }^{239} \mathrm{U} \rightarrow{ }^{239} \mathrm{~Np} \rightarrow{ }^{239} \mathrm{Pu} .
+
+Sei $\Phi$ der Neutronenfluss, $N_{238}$ die Anzahl der ${ }^{238}$ U-Kerne und $N_{235}$ die Anzahl der ${ }^{235}$ UKerne. Dann gilt für die Spaltrate und die Einfangsrate
+
+\dot{N}_{f}=N_{235} \sigma_{f} \Phi, \quad \dot{N}_{n}=N_{238} \sigma_{n} \Phi=\frac{N_{238}}{N_{235}} \frac{\sigma_{n}}{\sigma_{f}} \dot{N}_{f}
+
+Jeder Einfang erzeugt (unter Vernachlässigung von Verlusten) einen ${ }^{239} \mathrm{Pu}$-Kern, also
+
+M_{\mathrm{Pu}}=\epsilon \dot{N}_{n} T m\left({ }^{239} \mathrm{Pu}\right)
+
+Mit $M_{f}=\epsilon \dot{N}_{f} T m\left({ }^{235} \mathrm{U}\right)$ erhält man
+
+M_{\mathrm{Pu}}=\frac{N_{238}}{N_{235}} \frac{\sigma_{n}}{\sigma_{f}} \frac{m\left({ }^{239} \mathrm{Pu}\right)}{m\left({ }^{235} \mathrm{U}\right)} M_{f}
+
+Aus 3\% Anreicherung folgt
+
+\frac{N_{238}}{N_{235}}=\frac{0.97}{0.03}
+
+Mit $\sigma_{f}=584 \mathrm{~b}$ und $\sigma_{n}=2.7 \mathrm{~b}$ ergibt sich
+
+M_{\mathrm{Pu}} \simeq 1.40 \times 10^{2} \mathrm{~kg} .
+
+## Aufgabe $2{ }^{14}$ C-Methode
+
+Der Kohlenstoffgehalt in der Erdatmosphäre besteht zu 98,89\% aus dem Isotop ${ }^{12} \mathrm{C}$, zu 1,11 \% aus dem Isotop ${ }^{13} \mathrm{C}$ und zu $10^{-10} \%$ aus dem radioaktiven Isotop ${ }^{14} \mathrm{C}$. Letzteres zerfällt mit einer Halbwertszeit von 5730 Jahren zu ${ }^{14} \mathrm{~N}$. In der Atmosphäre ist das Verhältnis ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ konstant und kann zur Altersbestimmung organischen Materials verwendet werden, da das untersuchte Objekt nach dem Absterben keinen Stoffwechsel mehr betreibt. Die ${ }^{14} \mathrm{C}$-Isotope zerfallen dann sukzessive im toten Material, während der ${ }^{12} \mathrm{C}$-Gehalt zeitlich konstant bleibt.
+a. Welche Art von Zerfall tritt bei ${ }^{14} \mathrm{C}$ auf? Geben Sie die vollständige Zerfallsgleichung an.
+b. Haben die Zerfallsprodukte von ${ }^{14} \mathrm{C}$ kontinuierliche oder diskrete Energiespektren? Begründen Sie kurz Ihre Antwort.
+c. Zur Datierung einer archäologischen Siedlung wird die Aktivität von ${ }^{14} \mathrm{C}$ in einem alten Holzstück gemessen. Üblicherweise werden Aktivitätswerte als spezifische Aktivität angegeben, d.h. als Aktivität von ${ }^{14} \mathrm{C}$ bezogen auf eine bestimmte Anzahl von ${ }^{12} \mathrm{C}$-Atomen in der Probe. In dem gegebenen Holzstück messen wir heute eine spezifische Aktivität $A_{\text {mol }}$ von $1,72 \mathrm{~Bq}$ pro mol ${ }^{12} \mathrm{C}$. Bestimmen Sie die Zerfallskonstante von ${ }^{14} \mathrm{C}$ und das Alter des Holzstücks.
+d. Welche Genauigkeit (Größenordnung) in der Messung der ${ }^{14} \mathrm{C}$-Aktivität ist mindestens erforderlich, um eine zeitliche Auflösung von 100 Jahren zu erreichen?
+e. Welche alternative Methode kann zur Bestimmung der ${ }^{14} \mathrm{C}$-Konzentration in der Probe verwendet werden?
+
+## Lösung: ${ }^{14}$ C-Methode
+
+a. ${ }^{14} \mathrm{C}$ unterliegt einem $\beta^{-}$-Zerfall:
+
+{ }_{6}^{14} \mathrm{C} \rightarrow{ }_{7}^{14} \mathrm{~N}+e^{-}+\bar{v}_{e}
+
+b. Der Zerfall ist ein Drei-Körper-Zerfall ( ${ }^{14} \mathrm{~N}, e^{-}, \bar{v}_{e}$ ). Nach Anwendung der Energie- und Impulserhaltung bleibt daher ein kontinuierlicher Freiheitsgrad erhalten. Folglich besitzen das emittierte Elektron und das Neutrino (sowie auch der Rückstoßkern) kontinuierliche Energiespektren.
+
+## Hinweis: Kontinuierliches $\boldsymbol{\beta}$-Spektrum vs. diskrete $\boldsymbol{\alpha}$-Linien
+
+Betrachten wir den $\beta$-Zerfall
+
+{ }_{Z}^{A} X \rightarrow{ }_{Z+1}^{A} Y+e^{-}+\bar{v}_{e}
+
+und arbeiten im Ruhesystem des Mutterkerns, sodass anfänglich $\vec{p}_{X}=0$ gilt.
+Die Impulserhaltung fordert dann
+
+\vec{p}_{e}+\vec{p}_{v}+\vec{p}_{Y}=0
+
+oder äquivalent
+
+\vec{p}_{Y}=-\left(\vec{p}_{e}+\vec{p}_{v}\right) .
+
+Die Energieerhaltung verlangt
+
+E_{X}=E_{e}+E_{v}+E_{Y},
+
+wobei die relativistischen Energie-Impuls-Beziehungen gelten:
+
+E_{e}^{2}=p_{e}^{2} c^{2}+m_{e}^{2} c^{4}, \quad E_{v}^{2}=p_{v}^{2} c^{2}+m_{v}^{2} c^{4}, \quad E_{Y}^{2}=p_{Y}^{2} c^{2}+m_{Y}^{2} c^{4}
+
+Da sich drei Teilchen die verfügbare Energie und den Impuls teilen, legen diese Gleichungen die Energie des Elektrons nicht eindeutig fest. Für eine gegebene Elektronenenergie kann das Neutrino unterschiedliche Anteile von Energie und Impuls tragen und dennoch die Erhaltungssätze erfüllen. Als Folge kann die Elektronenenergie kontinuierlich Werte im Bereich
+
+0 \leq T_{e} \leq Q
+
+annehmen, und das beobachtete $\beta$-Spektrum ist kontinuierlich.
+
+## Beim $\alpha$-Zerfall
+
+{ }_{Z}^{A} X \rightarrow{ }_{Z-2}^{A-4} Y+\alpha
+
+liefert die Impulserhaltung
+
+\vec{p}_{Y}=-\vec{p}_{\alpha}
+
+sodass die Beträge der beiden Impulse gleich sind. Zusammen mit der Energieerhaltung
+
+E_{X}=E_{Y}+E_{\alpha}
+
+und den Beziehungen
+
+E_{Y}^{2}=p_{\alpha}^{2} c^{2}+m_{Y}^{2} c^{4}, \quad E_{\alpha}^{2}=p_{\alpha}^{2} c^{2}+m_{\alpha}^{2} c^{4}
+
+legt dies den Betrag des $\alpha$-Impulses $p_{\alpha}$ eindeutig fest. Es bleibt keine Freiheit zur Umverteilung des Impulses. Beim $\alpha$-Zerfall bestimmt die Zweikörperkinematik die Impulse eindeutig, was zu diskreten Linien führt.
+c. Mit $T_{1 / 2}=5730$ a ergibt sich für die Zerfallskonstante
+
+\lambda=\frac{\ln 2}{T_{1 / 2}}=1,21 \times 10^{-4} \mathrm{a}^{-1}
+
+Sei $\eta(t)$ das Isotopenverhältnis ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ in der Probe. Unmittelbar nach dem Absterben des Baumes entspricht dieses Verhältnis dem atmosphärischen Wert. Da die angegebene Häufigkeit $10^{-10} \%=10^{-12}$ beträgt, gilt
+
+\eta_{0}=\frac{10^{-12}}{0,9889}
+
+Die gemessene spezifische Aktivität beträgt $A_{\text {mol }}=1,72 \mathrm{~Bq}$ pro mol ${ }^{12} \mathrm{C}$. Ein Mol ${ }^{12} \mathrm{C}$ enthält $N_{A}$ Atome, sodass die Anzahl der ${ }^{14} \mathrm{C}$-Atome pro mol ${ }^{12} \mathrm{C}$ gleich $\eta N_{A}$ ist und damit
+
+A_{\mathrm{mol}}=\left(\eta N_{A}\right) \lambda \quad \Rightarrow \quad \eta=\frac{A_{\mathrm{mol}}}{\lambda N_{A}}
+
+Mit dem Zerfallsgesetz $\eta(t)=\eta_{0} e^{-\lambda t}$ ergibt sich für das Alter
+
+t=\frac{\ln \left(\eta_{0}\right)-\ln (\eta)}{\lambda} \approx 2,5 \times 10^{3} \mathrm{a} \approx 2520 \mathrm{a} .
+
+d. Für $t_{2}=t_{1}+100$ a gilt
+
+\frac{A\left(t_{2}\right)}{A\left(t_{1}\right)}=\frac{N\left(t_{2}\right)}{N\left(t_{1}\right)}=\exp (-\lambda \cdot 100 \mathrm{a})=\exp (-0,0121) \approx 0,988 .
+
+Die Aktivität ändert sich also über 100 Jahre um etwa $1,2 \%$. Um eine zeitliche Auflösung von 100 Jahren zu erreichen, ist daher eine Aktivitätsmessung mit einer Genauigkeit auf Prozentniveau erforderlich.
+e. Eine Alternative zur Aktivitätsmessung ist die Beschleuniger-Massenspektrometrie (accelerator mass spectrometry, AMS), bei der das Isotopenverhältnis ${ }^{14} \mathrm{C} /{ }^{12} \mathrm{C}$ direkt durch Zählen der Atome und nicht über deren radioaktiven Zerfall bestimmt wird.
+
+Dabei werden die Kohlenstoffatome der Probe zunächst in negative Ionen (z. B. C ${ }^{-}$) umgewandelt und in einem Tandembeschleuniger auf hohe Energien (typischerweise einige MeV) beschleunigt. Anschließend werden die Ionen mithilfe magnetischer und elektrischer Analysatoren nach Masse und Ladung getrennt.
+
+Aus dem gemessenen Isotopenverhältnis wird das Alter der Probe mithilfe des radioaktiven Zerfallsgesetzes
+
+\eta(t)=\eta_{0} e^{-\lambda t}
+
+bestimmt.
+Die wesentlichen Vorteile der AMS sind ihre sehr hohe Empfindlichkeit und die Möglichkeit, sehr kleine Probenmengen zu untersuchen. Daher wird AMS häufig zur Radiokohlenstoffdatierung verwendet, insbesondere bei alten oder wertvollen Proben.
+Bei der radiometrischen ${ }^{14} \mathrm{C}$-Datierung basiert die Altersbestimmung hingegen auf der Messung der Aktivität von ${ }^{14} \mathrm{C}$. Aufgrund der langen Halbwertszeit von ${ }^{14} \mathrm{C}$ ist die Zerfallskonstante klein, und die Aktivität nimmt über 100 Jahre nur um etwa $1 \% \mathrm{ab}$. Dies begrenzt die erreichbare zeitliche Auflösung und macht Aktivitätsmessungen für sehr alte Proben ineffizient.
+
+Die Beschleuniger-Massenspektrometrie bestimmt dagegen direkt die verbleibende Anzahl der ${ }^{14} C$-Atome. Dadurch sind wesentlich höhere Empfindlichkeiten und deutlich kleinere Probenmengen möglich. In der Praxis ermöglicht AMS eine zuverlässige Radiokohlenstoffdatierung von einigen hundert Jahren bis zu etwa $10^{4}$ Jahren, darüber hinaus wird die verbleibende ${ }^{14} \mathrm{C}$-Häufigkeit zu klein, um sie noch sicher vom Untergrund zu unterscheiden.
+
+## Aufgabe 3
+
+Im letzten Teil des Tutoriums werden wir auch über das Weihnachtsquiz sprechen. Bitte bereiten Sie dafür Ihre Fragen vor.
+

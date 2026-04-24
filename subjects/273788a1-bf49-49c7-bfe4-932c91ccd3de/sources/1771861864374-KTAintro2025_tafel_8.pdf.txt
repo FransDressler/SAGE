@@ -1,0 +1,140 @@
+## Vorlesung 8: 2.12.2025
+
+Spektrum der Komischen Strahlung (siehe Slides):
+![This diagram depicts the energy spectrum of cosmic rays, showing the transition from galactic to extragalactic sources around the "knee" and "ankle" features, with the GZK cutoff marking the highest energy limit.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dcbb0472-af84-466c-9595-a281e9e738c4/da9e3a27-2231-452d-822b-c71e378016b2-1_442_817_459_616.jpg)
+
+Fermi Beschleunigung: $E_{\text {max }}=Z \cdot R \cdot \beta$, Magnetfeld $B$ und Größe des Objekts $R$ Für Supernova $E_{\text {max }} \approx 10^{15} \mathrm{eV}$
+
+## 2 Kernphysik
+
+2 grundlegende Modelle zur Beschreibung von Kernen:
+
+1. Tröpfchenmodell (makroskopisches Modell)
+
+- Betrachtung Kern als geladener Flüssigkeitstropfen
+
+→ dicht gepackte Flüssigkeit von Nukleonen
+→ nur durchschnittliche, kollektive Eigenschaften zählen
+→ wird durch Weizäcker-Formel beschrieben
+Was erklärt das Modell gut?
+⇒ globale Massentrends
+⇒ Spaltung und Fusion
+⇒ Oberflächen, Deformationsprozesse
+2. Fermigas/Schalenmodell (mikroskopisch)
+jedes Nukleon wird einzeln im Kernpotential betrachtet (Analogie: Elektronen in Atomschalen)
+→ jedes Nukleon bewegt sich im mittleren Potential
+→ Niveaus sind quantisiert
+Was erklärt dieses Modell gut?
+⇒ Feinstruktur von Energieneveaus
+⇒ Spins und Paritäten von Grunzuständen
+⇒ Übergänge (Strahlung)
+⇒ Magische Kerne und Stabilitätssprünge
+Moderne Kernphysik kombiniert beides:
+
+- Collective model (Bohr-Mottelson)
+- Mean field model
+
+Analogie zum Flüssigkeitstropfen:
+
++ konstante Dichte
++ kurze Reichweite der Kräfte
++ Sättigung, Deformierbarkeit, Oberflächenspannung
+- mittlere freie Weglänge von Molekülen in Flüssigkeiten klein, bei Nukleonen aber groß
+
+→ Quantenflüssigkeit
+
+## 2．1 Tröpfchenmodell
+
+## 2．1．1 Experimentelle Beobachtungen
+
+klassisch：elastische Steuung von $e^{-}$an Kernen
+（WW punktförmig und elektromagnetische am Kern）
+→ Messung der Ladungsträger
+Resultat：
+
+$$
+R \approx r_{0} A^{1 / 3} \quad \text { mit } r_{0} \approx 1.2 \mathrm{fm}
+$$
+
+unter der Annahme der Kugelform：
+
+V=\frac{4}{3} \pi R^{3}=\frac{4}{3} \pi V_{0}^{2} \underline{A}
+
+Kerndichte：
+
+\frac{V}{A}=\text { const } \approx 0.17 \frac{\text { Nukleonen }}{\mathrm{fm}^{3}}
+
+Grundsätzliche Frage：Wie stark sind Nukleonen gebunden？
+
+\begin{aligned}
+& \text { Protonen, Neutronen } \hat{=} \text { Nukleonen } \\
+& \text { verschiedene Kombinationen von } \mathrm{Z} \text { und } \mathrm{N} \hat{=} \text { Nuklide }
+\end{aligned}
+
+![This diagram depicts the composition of an atomic nucleus, showing protons (Z) and neutrons (N) within the nucleus, with the equation A = Z + N representing the total number of nucleons (mass number).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dcbb0472-af84-466c-9595-a281e9e738c4/da9e3a27-2231-452d-822b-c71e378016b2-2_195_372_916_264.jpg)
+$\underline{\text { Bindungsenergie：}}$
+
+```
+Nuklide mit gleichem A 云 Isobare
+Nuklide mit gleichen N 科 Isotone
+Nuklide mit gleichem Z 众Isotope
+```
+
+B(Z, A)=\left[Z \cdot M\left({ }^{1} \mathrm{H}\right)+N M_{n}-M(A, Z)\right] c^{2}
+
+（Rechnung mit Atommassen $M$ ，da sie leichter experimentell zu bestimmen ist．）
+Mit $M\left({ }^{1} \mathrm{H}\right)=m_{p}+m_{e}$
+
+\begin{aligned}
+M_{p} & =938.272 \mathrm{MeV} / \mathrm{c}^{2} \\
+M_{n} & =939.565 \mathrm{MeV} / \mathrm{c}^{2} \\
+m_{e} & =0.511 \mathrm{MeV} / \mathrm{c}^{2}
+\end{aligned}
+
+## 2．1．2 Weizäckerformel（1935）
+
+Masse eines Atoms
+
+& M(A, Z)=N M_{n}+Z M_{p}+Z m_{e}-\underbrace{\left[a_{V} A-a_{S} A^{2 / 3}-a_{C} \frac{Z^{2}}{A^{1 / 3}}-a_{a} \frac{(N-Z)^{2}}{4 A}-\frac{\delta}{A^{1 / 2}}\right]}_{B(A, Z)} \quad \text { (Weizäcker) } \\
+& a_{V}=15.67 \mathrm{MeV} / \mathrm{c}^{2}, \quad a_{S}=17.23 \mathrm{MeV} / \mathrm{c}^{2}, \quad a_{C}=0.714 \mathrm{MeV} / \mathrm{c}^{2}, \quad a_{a}=93.15 \mathrm{MeV} / \mathrm{c}^{2}, \\
+& \delta= \begin{cases}-11.2 \mathrm{MeV} / \mathrm{c}^{2} & \text { falls } \mathrm{Z} \text { u. N gerade }(\mathrm{gg}) \\
+0 & \text { für ungerades } \mathrm{A}(\mathrm{ug}) \\
++11.2 \mathrm{MeV} / \mathrm{c}^{2} & \text { falls } \mathrm{Z} \text { und } \mathrm{N} \text { ungerade (uu) }\end{cases}
+
+Volumenterm $a_{V} \cdot A$
+－proportional zu Anzahl der Nukleonen
+－Bindungsenergie durch Kernkraft
+－kurze Reichweite，WW nur mit unmittelbaren Nachbarn
+→ Bindungsenergie gesättigt
+Falls jedes Nukleon mit jeden Nukleon wechselwirken würde，müsste $\sim A(A-1) \sim A^{2}$ gelten
+Sättigungseffekt führt zu $\rho_{N} \approx$ const．
+Oberflächenterm $-a_{S} A^{2 / 3}\left(\sim R^{2}\right)$
+－Nukleone nan Oberfläche sind von weniger Nukleonen umgeben
+
+- Bindungsenergie reduziert (Analogie zu Oberflächenspannung eines flüssigen Tropfens)
+
+Coulombterm $-a_{C} \frac{Z^{2}}{A^{1 / 3}}$
+
+- elektrische Abstoßung zwischen Protonen im Kern
+
+→ Reduktion der Bindungsenergie (nota bene: $e / m$-WW hat lange Reichweite, deshalb wechselwirkung mit allen geladenen Konstituenten, deshalb $\sim Z^{2}$ )
+
+Assymetrieterm $-a_{a} \frac{(N-Z)^{2}}{4 A}$
+Schwere Kerne häufen Neutronen an, um die Abstoßung der Protonen zu kompensieren.
+Fermionen gehorchen Pauliprinzip
+
+- $n$ und $p$ müssen Energiezustände füllen (von unten nach oben)
+- symmetrische Auffüllung von $n$ und $p$ Niveaus energetisch am günstigsten
+
+Wenn $N \neq Z$ :
+$n$ müssen auf höhere Energieniveaus ausweichen
+
+- Fermi-Energie steigt
+- Kern wird weniger stabil
+![This diagram depicts the relationship between the number of neutrons (N) and protons (Z) in atomic nuclei, showing the line of stable isotopes where nuclei have a balanced neutron-to-proton ratio for stability. It also indicates the line where the number of neutrons equals the number of protons (N=Z).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dcbb0472-af84-466c-9595-a281e9e738c4/da9e3a27-2231-452d-822b-c71e378016b2-3_505_808_1197_296.jpg)
+![This diagram depicts the energy levels of protons (p) and neutrons (n) in a nucleus, illustrating the concept of Fermi levels or Fermi energy for these nucleons. It shows the occupied and unoccupied energy states for protons and neutrons, indicating their distribution within the nuclear potential.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dcbb0472-af84-466c-9595-a281e9e738c4/da9e3a27-2231-452d-822b-c71e378016b2-3_526_524_1176_1233.jpg)
+
+Paarungsterm
+Eine gerade Anzahl von Protonen und Neutronen erhöht die Bindung.
+Spin up, Spin down Paare von $n$ und $p$ untereinander erhöhen die Bindung!
+

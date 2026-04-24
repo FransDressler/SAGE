@@ -1,0 +1,164 @@
+## Übung zur Vorlesung <br> Physik der kondensierten Materie 1
+
+WiSe 2025/2026
+Keine Tutorien
+Blatt 13
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und
+-materialien
+Johannes Figueiredo
+
+### 13.1 Zyklotron-Resonanz
+
+Die Zyklotronresonanz ist ein physikalisches Phänomen, bei dem geladene Teilchen in einem konstanten Magnetfeld $B$ Energie aus einem hochfrequenten elektrischen Wechselfeld absorbieren. Dies geschieht, wenn die Frequenz des Wechselfeldes mit der Umlauffrequenz der Teilchen (Zyklotronfrequenz $\omega_{c}=\frac{q B}{m^{*}}$ ) übereinstimmt. Die ersten solchen Messungen zur Bestimmung von Elektronen- und Lochmassen wurden 1954 an der UC Berkeley von Gene Dresselhaus in Silizium und Germanium durchgeführt. Bei einer Zyklotronfrequenz von 24 GHz wurden für die Löcher folgende Zyklotron-Resonanz-Peaks gemessen:
+
+| Material | $B_{1}$ | $B_{2}$ |
+| :---: | :---: | :---: |
+| Si | $1.37 \times 10^{3} \mathrm{G}$ | $4.21 \times 10^{3} \mathrm{G}$ |
+| Ge | $3.78 \times 10^{2} \mathrm{G}$ | $2.92 \times 10^{3} \mathrm{G}$ |
+
+(a) Bestimmen Sie die effektiven Massen der Löcher sowohl für Silizium als auch Germanium.
+(b) Warum werden zwei Resonanzen für die Löcher gemessen? Ordnen Sie diese zu.
+
+## Lösung
+
+(a) Aus $m^{*}=\frac{e B_{\text {res }}}{2 \pi f}$ ergibt sich:
+
+| Material | $m_{1}^{*}$ | $m_{2}^{*}$ |
+| :---: | :---: | :---: |
+| Si | $0.160 m_{\mathrm{e}}$ | $0.491 m_{\mathrm{e}}$ |
+| Ge | $0.044 m_{\mathrm{e}}$ | $0.341 m_{\mathrm{e}}$ |
+
+(b) Zwei Loch-Resonanzen treten auf, weil im Valenzband zwei unterschiedliche Lochzweige existieren: light hole (lh) und heavy hole (hh), die wegen Spin-Bahn-Kopplung unterschiedliche Dispersionen $E(k)$ und damit unterschiedliche effektive Massen besitzen. Bei fester Frequenz gilt:
+
+$$
+\begin{aligned}
+& B_{\mathrm{res}} \text { klein } \Rightarrow m^{*} \text { klein } \text { ⇒ } \text { light hole, } \\
+& B_{\mathrm{res}} \text { groß } \Rightarrow m^{*} \text { groß } \text { ⇒ } \text { heavy hole. }
+\end{aligned}
+$$
+
+### 13.2 Hall-Effekt
+
+Eine rechteckige Probe eines p-dotierten Halbleiters hat die Abmessungen:
+
+- Länge zwischen den Stromkontakten: $L=10 \mathrm{~mm}$
+- Breite (quer zur Stromrichtung): $w=5 \mathrm{~mm}$
+- Dicke: $t=0.5 \mathrm{~mm}$
+
+Die Probe wird bei Raumtemperatur vermessen.
+Ein Strom $I=20 \mathrm{~mA}$ fließt entlang der Länge. Ein Magnetfeld $B=0.8 \mathrm{~T}$ steht senkrecht zur Probenfläche. Gemessen wird eine Hall-Spannung zwischen den seitlichen Kontakten:
+
+V_{H}=6.4 \mathrm{mV}
+
+(a) Bestimmen Sie den Hall-Koeffizienten $R_{H}$ und die Lochdichte $p$ (in $\mathrm{cm}^{-3}$ ).
+
+Bei $B=0$ wird entlang der Länge die Spannung
+
+V_{x x}=1.60 \mathrm{~V}
+
+bei demselben Strom $I=20 \mathrm{~mA}$ gemessen.
+(b) Bestimmen Sie die Resistivität $\rho$ und die Mobilität $\mu_{p}$ (in $\mathrm{cm}^{2} / \mathrm{V} / \mathrm{s}$ ).
+
+## Lösung
+
+(a) Für eine 3D-Probe gilt
+
+R_{H}=\frac{E_{y}}{j_{x} B}
+
+mit
+
+E_{y}=\frac{V_{H}}{w}, \quad j_{x}=\frac{I}{w t}
+
+Damit folgt
+
+R_{H}=\frac{\left(V_{H} / w\right)}{(I /(w t)) B}=\frac{V_{H} t}{I B}
+
+Einsetzen:
+
+\begin{gathered}
+V_{H}=6.4 \mathrm{mV}, t=0.5 \mathrm{~mm}, I=20 \mathrm{~mA}, B=0.8 \mathrm{~T} . \\
+R_{H} \approx 2 \times 10^{-4} \mathrm{~m}^{3} / \mathrm{C} .
+\end{gathered}
+
+In der Ein-Band-Näherung (nur Löcher):
+
+R_{H}=\frac{1}{q p} \Rightarrow p=\frac{1}{q R_{H}} \approx 3.12 \times 10^{22} \mathrm{~m}^{-3} \hat{=} 3.12 \times 10^{16} \mathrm{~cm}^{-3} .
+
+(b) Zunächst der Widerstand:
+
+R=\frac{V_{x x}}{I}=80 \Omega
+
+Für einen Quader gilt
+
+\rho=R \frac{A}{L}, \quad A=w \cdot t
+
+Es folgt
+
+\rho=R \frac{w t}{L}=2 \times 10^{-2} \Omega \mathrm{~m} .
+
+Leitfähigkeit:
+
+\sigma=\frac{1}{\rho}=50 \mathrm{Sm}^{-1}
+
+Im Ein-Band-Modell gilt:
+
+\sigma=q p \mu_{p} \quad \Rightarrow \quad \mu_{p}=\frac{\sigma}{q p} \approx 100 \mathrm{~cm}^{2} \mathrm{~V}^{-1} \mathrm{~s}^{-1} .
+
+### 13.3 Shubnikov-de Haas-Effekt (2D)
+
+Wir betrachten ein zweidimensionales Elektronensystem (2DEG) im senkrechten Magnetfeld $B$ bei tiefen Temperaturen ( $T \approx 0$ ). Im Magnetfeld werden die Zustände in Landau-Niveaus zusammengefasst. Jedes Landau-Niveau enstpircht einem Ring im $k$-Raum zwischen zwei benachbarten, quantisierten Zyklotronbahnen mit Flächen $S_{n}$ und $S_{n+1}$.
+(a) Zeigen Sie anhand der Onsager-Beziehung, dass die Flächen benachbarter Zyklotronbahnen im $k$-Raum die Beziehung
+
+\Delta S \equiv S_{n+1}-S_{n}=\frac{2 \pi e B}{\hbar}
+
+erfüllen. Verwenden Sie anschließend die Zustandsdichte im $k$-Raum, um zu zeigen, dass die Entartung $p$ eines Landau-Niveaus (Zahl der Zustände pro Niveau, ohne Spin) für eine Probe der Fläche $A=L_{x} L_{y}$ ist:
+
+p=\frac{A e B}{h}
+
+Interpretieren Sie kurz, warum $p \propto B$ gilt.
+(b) Bei $T \approx 0$ seien $s$ Landau-Niveaus vollständig gefüllt und das Niveau $s+1$ nur teilweise. Zeigen Sie, dass für die Felder $B_{s}$, bei denen das chemische Potential $\mu$ gerade zwischen zwei Niveaus liegt (d. h. ein ganzzahliger Füllzustand vorliegt),
+
+N=s p \quad \Rightarrow \quad B_{s}=\frac{N h}{e A} \frac{1}{s}
+
+Folgern Sie daraus, dass alle quantenmechanischen Oszillationen (z. B. in $\rho_{x x}$ ) periodisch in $1 / B$ sind und bestimmen Sie die Periodizität $\Delta(1 / B)$. Erklären Sie schließlich in wenigen Sätzen, warum man diese Oszillationen in der longitudinalen Resistivität $\rho_{x x}$ sieht, wenn $\mu$ beim Variieren von $B$ über LandauNiveaus hinweg wandert.
+
+
+(a) Semiklassisch (Onsager-Quantisierung) gilt für die quantisierten Zyklotronbahnen im $k$-Raum
+
+S_{n}=\frac{2 \pi e B}{\hbar}(n+\gamma)
+
+Damit folgt für benachbarte Bahnen unmittelbar
+
+\Delta S=S_{n+1}-S_{n}=\frac{2 \pi e B}{\hbar}
+
+In 2D ist die Zahl der $k$-Raum-Zustände pro Fläche im $k$-Raum gleich
+
+\frac{A}{(2 \pi)^{2}} .
+
+Ein Landau-Niveau entspricht genau dem "Ringbereich" der Fläche $\Delta S$ zwischen $S_{n}$ und $S_{n+1}$. Daher ist die Zahl der Zustände (Entartung) pro LandauNiveau
+
+p=\frac{A}{(2 \pi)^{2}} \Delta S=\frac{A}{(2 \pi)^{2}} \frac{2 \pi e B}{\hbar}=\frac{A e B}{2 \pi \hbar}=\frac{A e B}{h} .
+
+Interpretation: Mit wachsendem $B$ wächst der Flächenabstand $\Delta S \propto B$, also enthält jedes Landau-Niveau mehr Zustände; deshalb gilt $p \propto B$. (Mit Spin käme ein Faktor $g_{s}=2$ hinzu.)
+(b) Bei $T \approx 0$ werden die Landau-Niveaus von unten aufgefüllt. Sind $s$ Niveaus vollständig gefüllt, dann ist die Elektronenzahl
+
+N=s p=s \frac{A e B}{h}
+
+Daraus folgt für die Felder $B_{s}$ der "Sprungstellen" des chemischen Potentials
+
+B_{s}=\frac{N h}{e A} \frac{1}{s}
+
+In invertierter Darstellung erhält man
+
+\frac{1}{B_{s}}=\frac{e A}{N h} s,
+
+also ist $1 / B_{s}$ linear in der ganzen Zahl $s$; die Abstände sind konstant:
+
+\Delta\left(\frac{1}{B}\right)=\frac{1}{B_{s+1}}-\frac{1}{B_{s}}=\frac{e A}{N h}
+
+Damit sind die quantenmechanischen Oszillationen, die bei jedem Durchgang einer Landau-Struktur durch $\mu$ auftreten, periodisch in $1 / B$.
+
+Warum sieht man das in $\rho_{x x}$ ? Beim Variieren von $B$ verschieben sich LandauNiveaus relativ zum chemischen Potential $\mu$. Dadurch oszilliert die Zustandsdichte am Fermi-Niveau $D\left(E_{F}\right)$ : sie ist groß, wenn $\mu$ in einem Landau-Niveau liegt, und klein, wenn $\mu$ zwischen Niveaus liegt. Da die dissipative (longitudinale) Leitfähigkeit $\sigma_{x x}$ und damit die longitudinale Resistivität $\rho_{x x}$ empfindlich von den verfügbaren Zuständen am Fermi-Niveau und von Streuprozessen abhängen, zeigt $\rho_{x x}(B)$ sog. Shubnikov-de Haas-Oszillationen (SdH). In HallGeometrien werden deshalb häufig $\rho_{x x}$ (zeigt die Landau-Quantisierung und $\mathrm{SdH})$ und $\rho_{x y}$ (liefert die Trägerdichte) gemeinsam dargestellt.
+

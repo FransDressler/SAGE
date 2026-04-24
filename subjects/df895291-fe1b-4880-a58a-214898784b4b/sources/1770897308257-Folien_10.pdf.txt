@@ -1,0 +1,121 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Die Brillouin-Zone
+aus Hunklinger
+2/ax
+/ax
+2/|ay|
+/|ay|
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Die Brillouin-Zone
+aus Gross, Marx
+Erste Brillouin-Zone sowie
+Brillouin-Zonen höherer
+Ordnung für ein
+zweidimensionales Gitter.
+Gezeigt sind die erste bis
+vierte Brillouin-Zone
+
+Die Brillouin-Zone einer linearen Kette
+Bild 4.6
+aus Hunklinger
+
+Geometrische Interpretation:
+Konstruktive Interferenz tritt nur dann auf, wenn die Spitze des
+einfallenden k-Vektors auf der senkrechten Ebene liegt (Bragg-Ebene),
+welche einen reziproken Gittervektor halbiert.
+Da die Wellenlänge bei der (elastischen) Beugung am Kristall unverändert bleibt, gilt, dass:
+von Laue Bedingung = Bragg Bedingung
+𝒌 = 𝒌0 = 2𝜋/𝜆
+𝑮 = 𝒌 − 𝒌0
+⇒ 𝑮𝟐 + 2𝒌0 ∙ 𝑮 + 𝒌0𝟐 = 𝒌𝟐 = 𝒌0𝟐
+⇒ 𝒌0 ∙ 𝑮
+|𝑮| = 1
+2 |𝑮|
+(*)
+*
+(bzw. 𝑲𝐡𝐤𝐥)G = 𝒌 − 𝒌0
+𝒌
+𝒌0
+⇒ 2 𝒌0 ∙ 𝑮 = 𝑮𝟐
+= 𝒌 ∙ 𝑐𝑜𝑠𝜑
+𝜑
+𝜑
+
+Reziprokes Gitter von fcc
+Abb. 2.4
+aus Gross, Marx
+1.) Das reziproke Gitter des fcc Gitters ist ein bcc Gitter.
+2. ) Die Wigner-Seitz-Zelle des
+reziproken Gitters wird als erste
+Brillouin-Zone bezeichnet.
+3.) Punkte hoher Symmetrie
+werden mit
+, X, L, K, U und W
+gekennzeichnet.
+Bild 4.8
+aus Hunklinger bzw.
+Ashcroft Mermin
+
+Reziprokes Gitter von bcc
+1.) Das reziproke Gitter des bcc Gitters ist ein fcc Gitter.
+2. ) Die Wigner-Seitz-Zelle des
+reziproken Gitters wird als erste
+Brillouin-Zone bezeichnet.
+Bild 4.8
+aus Hunklinger bzw.
+Ashcroft Mermin
+3.) Punkte hoher Symmetrie
+werden mit
+, H, N und P
+gekennzeichnet.
+
+Die ersten drei BZ von bbc
+
+Die Ewald-Kugel
+aus Gross / Marx
+1. Trage einfallenden k0-Vektor, beginnend am
+Ursprung in das reziproke Gitter ein.
+2. Zeichne Kugel um Spitze von k mit Radius |k|.
+3. Laue-Bedingung nur erfüllt, wenn reziproker
+Gitterpunkt auf der Kugeloberfläche liegt.
+Für beliebig einfallende Wellenvektoren k0 werden im
+allgemeinen keine Bragg Peaks beobachtet.
+Ist jedoch k0 – k = Khkl (bzw. G) so stammt der beobachtete
+Reflex von der Ebene (hkl).
+
+Die Ewald-Konstruktion
+Hilft, die unterschiedlichen Röntgenbeugungsmethoden darzustellen.
+(0,0)
+(2,2)
+Khkl
+k0
+k
+1. Trage einfallenden k0-Vektor, beginnend am
+Ursprung in das reziproke Gitter ein.
+2. Zeichne Kugel um Spitze von k mit Radius |k|.
+3. Laue-Bedingung nur erfüllt, wenn reziproker
+Gitterpunkt auf der Kugeloberfläche liegt.
+Für beliebig einfallende Wellenvektoren k0 werden im
+allgemeinen keine Bragg Peaks beobachtet.
+Ist jedoch k0 – k = Khkl (bzw. G) so stammt der beobachtete
+Reflex von der Ebene (hkl).
+
+Die Laue Methode
+k2
+k1
+Röntgenstrahl trifft aus fester Richtung n auf einen Einkristall. Röntgenstrahl enthält ein Spektrum von
+Wellenlängen
+1 bis
+2 mit zugehörigen Wellenvektoren k1 und k2.
+Alle Punkte im schraffierten (grünen) Bereich erfüllen die Laue-Bedingungen und erzeugen einen
+Bragg-Reflex. Methode dient vorwiegend zur Orientierung von bekannten Kristallstrukturen.
+
+Laue-Verfahren Beispiele
+
+Drehkristall-
+Verfahren
+
+Pulver- oder Debye-Scherrer-Methode
+
+Strukturfaktor

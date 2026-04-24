@@ -1,0 +1,110 @@
+## Übung zur Vorlesung <br> Physik der kondensierten Materie 1
+
+WiSe 2025/2026
+Tutorien in der Woche vom 01.01.26
+Blatt 1
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und
+-materialien
+Prof. Dr. Alexander Holleitner
+
+## Aufgabe 1: Begriffe in der Kristallographie
+
+Machen Sie sich mit folgenden Begriffen vertraut und diskutieren Sie diese anhand der Struktur von Graphen:
+
+![This diagram depicts the lattice structure of graphene, showing the arrangement of carbon atoms in a hexagonal pattern and illustrating the lattice vectors and basis vectors used to describe the crystal structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-1_598_622_1239_751.jpg)
+Abbildung 1: Graphenstruktur
+
+(a) Bravaisgitter
+(b) Primitive Vektoren
+(c) Koordinationszahl
+
+![The diagram depicts the structure of a hexagonal lattice, showing (a) the hexagonal symmetry with lattice vectors and angles, (b) the hexagonal lattice points arrangement, and (c) a two-atom basis associated with the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-2_381_1406_335_345.jpg)
+Abbildung 2: Konstruktion der Graphenstruktur
+
+![This diagram depicts the atomic lattice structure of graphene, showing the hexagonal arrangement of carbon atoms with lattice vectors \(\vec{a}_1\) and \(\vec{a}_2\), and the corresponding reciprocal lattice vector \(\vec{b}_2\) with an angle of 60° between them.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-2_481_661_852_730.jpg)
+Abbildung 3: Primitive Gittervektoren und eine mögliche primitive Einheitszelle von Graphen
+
+(d) Wigner-Seitz Zelle
+(e) Kristallstruktur
+(a) Bravaisgitter
+
+Die zweidimensionale Graphenstuktur stellt kein Bravais-Gitter dar! Ein vereinfachter Beweis kann man anhand Abbildung 1 veranschaulichen. Laut Definition ist ein Bravais-Gitter ein unendliches Gitter von Raumpunkten mit einer Anordnung und Orientierung, die exakt gleich aussieht, egal von welchem Gitterpunkt wir das Gitter betrachten (Aus Buch Festkörperphysik " von R. Gross; 4. aktualisierte Auflage). Die Schnittpunkte der gestrichelten Linien bilden kein Bravais-Gitter. Zwar sieht aus der Perspektive von Punkt
+
+P und R die Anordnung der Punkte gleich aus, jedoch ist die Perspektive von Punkt Q um $60^{\circ}$ gedreht. Folglich ist die Wabenstruktur kein Bravais-Gitter. Die 2d-Wabenstruktur ntspricht einem hexagonalen Bravais-Gitter (Abbildung 2(a) und 2(b)) mit zweiatomiger Basis (Abbildung 2(c)).
+(b) Primitive Vektoren
+
+Die primitiven Vektoren $\overrightarrow{a_{1}}, \overrightarrow{a_{2}}$ sind über den Gittervektor $\vec{R}$ definiert. Es gilt $\vec{R}=n_{1} \overrightarrow{a_{1}},+n_{2} \overrightarrow{a_{2}}$ als primitive Vektoren, wobei $\overrightarrow{a_{1}}, \overrightarrow{a_{2}} \in Z$. Durch eine Gittertranslation mit dem Gittervektor wird das Gitter wieder in sich selbst überführt. Die primitiven Vektoren für die Wabenstruktur sind in Abbildung 3 eingezeichnet.
+(c) Koordinationszahl
+
+Die Koordinationszahl definiert die Zahl der nächsten Nachbaratome. Für die Wabenstruktur beträgt die Koordinationszahl 3.
+(d) Wigner-Seitz Zelle
+
+Die Wigner-Seitz-Zelle ist eine primitive Einheitszelle (von vielen möglichen). Konstruktion (s. Abb. D):
+(a) Zeichne die Verbindungslinien zu den nächsten Nachbarn (Gitterpunkte).
+(b) Zeichne die Mittelsenkrechten auf die Verbindungslinien.
+(c) Das kleinste eingeschlossene Volumen definiert die Wigner-Seitz-Zelle.
+(e) Kristallstruktur
+
+Die Kristallstruktur besteht aus einem Punktgitter und einer Basis. Im Fall der Wabenstruktur ist das Punktgitter hexagonal und die Basisbesteht aus zwei Atomen.
+
+## Aufgabe 2: Raumerfüllung von kubischen Gittern
+
+In Abbildung 1 sind die drei kubischen Bravais-Gitter abgebildet. Bestimmen Sie die Anzahl der Gitterpunkte pro konventioneller Einheitszelle (Würfel) und berechnen Sie die maximale Packungsdichte, welche sich für harte Kugeln für diese drei Gitter ergibt.
+Die Metalle Wolfram und Aluminium besitzen bei Zimmertemperatur ein bcc- bzw. ein fcc-Gitter. Die Basis besteht aus einem Atom pro Gitterpunkt. Die Dichten sind $19,3 \mathrm{~g} / \mathrm{cm}^{3}(\mathrm{~W})$ und $2,7 \mathrm{~g} / \mathrm{cm}^{3}(\mathrm{Al})$. Nehmen Sie im Folgenden an, die Atome seien harte Kugeln, die ihre nächsten Nachbarn berühren.
+
+![This diagram depicts different types of cubic crystal lattice structures, specifically simple cubic, body-centered cubic, and face-centered cubic lattices, showing the arrangement of atoms at lattice points within each unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-4_194_678_337_708.jpg)
+Abbildung 4: Konventionelle Einheitszellen des primitiv kubischen, des raumzentriert kubischen (bcc) und des flächenzentriert kubischen (fcc) Gitters (von links nach rechts)
+
+(a) Berechnen sie die Anzahl der Gitterpunkte pro konventionelle Einheitszelle. Anzahl der Gitterpunkte pro konventionelle Einheitszelle
+(a) Simple Cubic (sc): $N_{\mathrm{sc}}=8 \cdot 1 / 8=1$
+(b) Body Centered Cubic (bcc): $N_{\mathrm{bcc}}=1+8 \cdot 1 / 8=2$
+(c) Face Centered Cubic (fcc): $N_{\text {fcc }}=6 \cdot 1 / 2+8 \cdot 1 / 8=4$
+(b) Berechnen Sie die Gitterkonstanten $a_{\mathrm{bcc}}$ und $a_{\mathrm{fcc}}$ dieser Kristallstrukturen in Einheiten des Atomradius $r$.
+(a) Body Centered Cubic (bcc):
+
+Bestimme zuerst die Länge der Raumdiagonale $d_{\text {bcc }}$ in Abhängigkeit der Kantenlänge $a_{\mathrm{bcc}}: d_{\mathrm{bcc}}=\sqrt{3} a_{\mathrm{bcc}}$
+Die Raumdiagonale verläuft durch zwei halbe Kugeln an den
+Eckpunkten und durch eine ganze Kugel im Zentrum der Zelle. Daher ergibt sich für $r_{\mathrm{bcc}}=d_{\mathrm{bcc}} / 4=\frac{\sqrt{3}}{4} a_{\mathrm{bcc}}$
+Es folgt $a_{\mathrm{bcc}}=d / 4=\frac{4}{\sqrt{3}} r_{\mathrm{bcc}}$
+(b) Face Centered Cubic (fcc): $r_{\text {fcc }}$
+
+Bestimme zuerst die Länge der Flächendiagonale $l_{\text {fcc }}$ in Abhängigkeit der Kantenlänge $a: l_{\mathrm{fcc}}=\sqrt{2} a_{\mathrm{fcc}}$
+Die Flächendiagonale verläuft durch zwei halbe Kugeln an den Eckpunkten und durch eine ganze Kugel im Zentrum der Fläche.
+Daherergibt sich für $r_{\mathrm{fcc}}=l_{\mathrm{fcc}} / 4=\frac{\sqrt{2}}{4} a_{\mathrm{fcc}}$
+Es folgt $a_{\mathrm{fcc}}=\frac{4}{\sqrt{2}} r_{\mathrm{fcc}}$
+(c) Welche Volumina $V_{\mathrm{bcc}}$ und $V_{\text {fcc }}$ (in Einheiten von $r$ ) haben die primitiven Elementarzellen?
+
+$$
+\begin{aligned}
+& V_{\mathrm{pEZ}, \mathrm{bcc}}=a_{\mathrm{bcc}}^{3} / 2=\frac{32}{3 \sqrt{3}} r_{\mathrm{bcc}}^{3} \\
+& V_{\mathrm{pEZ}, \mathrm{fcc}}=a_{\mathrm{fcc}}^{3} / 4=\frac{8}{\sqrt{2}} r_{\mathrm{fcc}}
+\end{aligned}
+$$
+
+(d) Berechnen Sie die Gitterkonstanten $a_{\mathrm{W}}$ und $a_{\mathrm{Al}}$ aus den Dichten der beiden Metalle. (Verwenden Sie die molaren Massen: 183, 84 u für W und 26, 98 u für Al; Avogadro-Konstante $N_{\mathrm{A}}=6,022 \cdot 10^{23} \mathrm{~mol}^{-1}$.)
+
+\begin{aligned}
+& a_{\mathrm{W}}=\sqrt[3]{2 V_{\mathrm{pEZ}, \mathrm{bcc}}}=\sqrt[3]{\frac{2 m_{\mathrm{W}}}{\rho_{\mathrm{W}}}}=0.32 \mathrm{~nm} \\
+& a_{\mathrm{Al}}=\sqrt[3]{4 V_{\mathrm{pEZ}, \mathrm{fcc}}}=\sqrt[3]{\frac{4 m_{\mathrm{Al}}}{\rho_{\mathrm{Al}}}}=0.4 \mathrm{~nm}
+\end{aligned}
+
+## Aufgabe 3: Nickeloxidschichten
+
+![This diagram depicts the atomic arrangement in a two-dimensional crystal lattice, specifically showing the alternating positions of two different types of atoms or ions (represented by filled and empty circles) with a lattice constant labeled as "a."](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-5_545_628_1035_348.jpg)
+Abbildung 5: $\mathrm{NiO}_{2}$ Gitter.
+
+![This diagram depicts the crystal lattice structure of sodium chloride (NaCl), showing the alternating arrangement of sodium ions (Na⁺) and chloride ions (Cl⁻) in a cubic pattern.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-5_566_566_1018_1188.jpg)
+Abbildung 6: Deformiertes $\mathrm{NiO}_{2}$ Gitter.
+
+Der gemeinsame Baustein einiger korrelierter Materialien sind Nickeloxidschichten (siehe Abbildung 5). Der Abstand zwischen Nickelatomen (gefüllte Kreise) sei $a$. Der Einfachheit halber sollen diese $\mathrm{NiO}_{2}$-Schichten in der 3. Dimension im Abstand $c$ übereinander liegen. In erster Näherung besitzen die Schichten eine vierzählige Symmetrie; der Kristall ist tetragonal.
+(a) Zeichnen Sie das (zweidimensionale) Bravais-Gitter und geben Sie einen möglichen Satz primitiver Vektoren für eine Nickeloxidschicht an. Was ist die primitive Einheitszelle und was die Basis?
+
+![The image depicts two lattice structures with their corresponding unit cells and basis atoms, illustrating the solutions for two different crystallographic problems (a) and (b). It shows the arrangement of atoms in the lattice, the unit cell vectors \(\vec{a}_1\) and \(\vec{a}_2\), and the basis associated with each lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f744c725-2deb-4f86-9aad-e0a328038316/0fe11e98-82e7-4e8a-9bd0-66c23fc24d58-6_591_1142_346_469.jpg)
+Abbildung 7: Primitive Einheitszellen der beiden Gitter
+
+Das zweidimensionale Bravais-Gitter ist quadratisch mit den primitiven Gittervektoren $\vec{a}_{1}$ und $\vec{a}_{2}$. Der Gitterabstand beträgt $a$. Die Einheitszelle ist in Abbildung 7(a) als grau schattierte Fläche eingezeichnet. Die Basis besteht aus einem Nickel mit zwei Sauerstoffatomen.
+(b) Ein einem hypothetischen $\mathrm{NiO}_{2}$-Material stellt man bei genauerer Betrachtung fest, dass die Sauerstoffatome abwechselnd leicht oberhalb und unterhalb der Ebene liegen (siehe Abbildung 6, (+) bedeutet oberhalb und (-) unterhalb). Das $\mathrm{NiO}_{2}$-Gitter ist also nicht ganz symmetrisch. Was sind in diesem Fall das Bravaisgitter, die Basis und die primitive Einheitszelle? Wie groß ist somit der Gitterabstand in Einheiten von $a$ ?
+Unter der Annahme einer tetragonalen Kristallstruktur in 3D, ist das BravaisGitter in 2D quadratisch mit $\left|\vec{a}_{1}\right|=\left|\vec{a}_{2}\right|$ und der Winkel zwischen $\vec{a}_{1}$ und $\vec{a}_{2}$ beträgt $90^{\circ}$. Die primitive Einheitszelle muss größer als in 6(a) gewählt werden und ist um $45^{\circ}$ verkippt. Der neue Gitterabstand in Einheiten von $a$ beträgt $\sqrt{2} a$. Die primitive Einheitszelle ist in Abbildung 6(.)b) als grau schattierte Fläche eingezeichnet. Die Basis besteht aus zwei Nickelatomen und vier Sauerstoffatomen.
+

@@ -1,0 +1,56 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Der Strukturfaktor
+aus Hunklinger
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Strukturfaktor: Beispiel bcc mit einer Atomsorte
+aus Hunklinger
+
+Beispiel KCl und KBr NaCl Struktur:
+fcc-Gitter mit zweiatomiger Basis
+siehe
+Kapitel 1.3
+K+ und Br - haben unterschiedliche
+Elektronenzahl
+→ 𝑓𝐾+ ≠ 𝑓Br−
+→ Es treten auch Intensitäten für ungeraden Fall auf
+→ Es treten Reflexe nur bei geraden Indizes auf.
+rα1= (0, 0, 0) und rα2 = (1/2 , 1/2 , 1/2)
+𝑆hkl = 𝑆ℎ𝑘𝑙
+𝑓𝑐𝑐 ∙ 𝑓𝐾+ + 𝑓Cl− ∙ −1 ℎ+k+l
+𝑆ℎkl = 4 ∙ (𝑓𝐾+ + 𝑓Cl−)h,k,l alle gerade:
+𝑆ℎkl = 4 ∙ (𝑓𝐾+ − 𝑓Cl−)h,k,l alle ungerade:
+K+ und Cl- haben gleiche
+Elektronenzahl
+
+Der reziproke Raum
+
+Atom-Strukturfaktor
+
+Der Atom-Strukturfaktor
+Von C. Back
+
+Der Atom-Strukturfaktor
+𝑓 𝚫𝒌 = න
+𝑉
+𝜌 𝒓 𝑒−𝛥𝒌∙𝒓´ 𝑑𝑉´ Hier wurde Khkl bzw. G durch k ersetzt, da Streuvermögen eines
+Atoms nicht von der Kristallstruktur abhängt.
+Atomstruktur- oder Atomformfaktor des Atoms spiegelt die spezifischen Eigenschaften des betrachteten
+Streuzentrums wider.
+Bei Röngtenstrahlung Bei Neutronenstrahlung
+Auswertung des
+Integrals
+𝑓 𝚫𝒌 = න
+𝑉
+𝜌 𝒓 𝑒−𝛥𝒌∙𝒓´ 𝑑𝑉´
+(Atom) Kugelvolumen z.B. 1s-Orbital
+ 
+𝒌0
+𝒌0
+𝒌
+𝒌
+2𝜃
+𝒓´
+𝜑
+𝜟𝒌 = 𝒌 − 𝒌0
+dV

@@ -1,0 +1,121 @@
+### 5.4 Spezifisde Waince des feien Elelitionengases
+
+## Kassiseles feies $\bar{e}-$ Gas $: \frac{1}{2} k_{B} \cdot T$ pro Froikents yad
+
+$$
+\Rightarrow C_{v}^{\text {vescriech }}=\left.\frac{\partial}{\partial T} u\right|_{v}=N \cdot \frac{T}{2} k_{B}
+$$
+
+Faletar 100 γco
+
+\left[-10^{-1} \partial / \mathrm{mol} \cdot \mathrm{k}\right]
+
+Tenni-Gas finer Elektonem:
+
+\begin{aligned}
+& u=\int_{0}^{\infty} D(E) \cdot f(E, T) \cdot E \cdot d E, \text { usit } \\
+& N=\int_{0}^{\infty} D(E) \cdot f(E, T) \cdot d E=\text { coust. }
+\end{aligned}
+
+tief Temperaturen $(T \rightarrow 0): \quad \mu=E_{F}$ und
+
+N=\frac{V}{3 \pi^{2}}\left(\frac{2 m E_{7}}{t^{2}}\right)^{3 / 2} \text { (s. Unpitel 5.3) }
+
+\left.u=N \cdot \frac{v}{2 \pi^{2}}\left(\frac{2 m}{u^{2}}\right)^{3 / 2} \int_{0}^{\infty} \frac{\epsilon^{3 / 2} d E}{e^{\left(E-E_{V}\right) / u_{B} T}+1} \right\rvert\, \begin{aligned}
+& \text { aualytisch } \\
+& \text { uidt lisbor! }
+\end{aligned}
+
+⇒ Sommer fld -
+(2.B. Gross/rraix Bermany $c$; Ashcoff.
+
+\begin{aligned}
+& u=\int_{0}^{\infty} E \cdot f(E, T) \cdot \partial(E) \cdot d E \\
+& \begin{array}{l}
+=\int_{0}^{\infty}\left(E-E_{F}\right) f(E, T) D(E) d E+E_{F} \cdot \int_{0}^{\infty} f\left(E_{1} T\right) D(E) d E \\
+=\int_{0}^{\infty}\left(E-E_{F}\right) f\left(E_{1} T\right) D(E) d E+E_{F} \cdot N
+\end{array} \\
+& C_{V}=\left(\frac{\partial u}{\partial T}\right)_{V}=\int_{i-1}^{\infty}\left(E-E_{T}\right) \cdot D(E) \underbrace{\vdots \frac{\partial}{\partial T} f\left(E_{1} T\right)}_{\begin{array}{c}
+\text { Tin } \\
+\text { in des Nabe vou }
+\end{array}} \cdot d E \\
+& \text { vou Nace vaschieden }
+
+\text { "Thicks" : } & - \text { Zidee } D\left(E_{F}\right) \text { ves das lutegarl } \\
+& - \text { Integration von }-\infty \text { bis }+\infty . \\
+& - \text { Seke } \mu=E_{F} \\
+& - \text { Substituier : } x=\frac{\left(E-E_{F}\right)}{u_{B} T} ; \frac{d x}{d E}=\frac{1}{u_{B} T} ;
+
+& C_{V}=D\left(E_{F}\right) \int_{-\infty}^{+\infty}(+) \frac{\left(E-E_{F}\right)^{2}}{u_{B} T^{2}} \frac{e^{\left(E-E_{F}\right) / u_{B T}}}{\left(e^{\left(E-E_{F}\right) / u_{B T} T}+1\right)^{2}} \cdot d E_{i} \\
+& =D\left(E_{F}\right) k_{B}^{2} T \underbrace{\int_{-\infty}^{+\infty} x^{2} \frac{e^{x}}{\left(e^{x}+1\right)^{2}} \cdot d x}_{\pi^{2} / 3} \text {; } \\
+& =D\left(E_{F}\right) \cdot k_{B}^{2} T \cdot \frac{\pi^{2}}{3} \quad \left\lvert\, D(E)=\frac{V}{2 \pi^{2}}\left(\frac{2 m}{t^{2}}\right)^{2 / 2} \sqrt{E}\right. \\
+& \left.=\frac{V}{2 \pi^{2}}\left(\frac{2 m}{-k^{2}}\right)^{3 / 2} \sqrt{E_{F}} \cdot k_{B}^{2} T \frac{\pi^{2}}{3} \quad \right\rvert\, E_{F}=\frac{-u^{2}}{2 m}\left(\frac{2 \pi^{2} N}{V}\right)^{2 / 3} \\
+& \left.=\frac{v}{6} k_{B}^{2} T\left(\frac{3 \pi^{2} \cdot N}{V}\right) \cdot \frac{1}{E_{F}} \quad \right\rvert\, E_{F}=k_{B} \cdot T_{F} \\
+& C_{v}^{\text {ECKt. }}=\frac{\pi^{2}}{2} \cdot N K_{B} \frac{T}{T_{F}} \cdot \gamma \cdot T \\
+& \text { Sommerfeld- } \\
+& \text { voustante } \\
+& \text { Redulktion stalktor } \\
+& \text { im Velleid sus } \\
+& \text { veassiston Theorie }
+
+In Kombination mit dem Berity do Phonouen (Kap. 3.4.3) erhält man fin $T \ll \theta_{0}$ (Debye-Temperatur):
+
+C_{v}=C_{v}^{\text {Gitter }}+C_{v}^{\text {Election }}=\alpha \cdot T^{3}+\gamma \cdot T
+
+### 5.5 Thermisde Leitfähighit des fieien Elektomengases
+
+In Analogie zn bapitel 4.2 definiesien wis den Wämestrom $\dot{f} \mathrm{~m}: \dot{f}=x \cdot D T$, unt ${ }^{x}$ des Wämelaitfälinglsit.
+spea. Wörke luparitat. Wis hatten yschniabeen : $\quad a t=\frac{1}{3} \cdot c_{v} \cdot v \cdot e_{1}$. unitleve Weghing Entsprechend lisst sich firs dou electronischer tuteil definieran.
+
+& J L=\frac{1}{3} \cdot c_{\uparrow} \cdot{ }_{\uparrow} \cdot(\underset{\uparrow}{v}) \\
+& C_{v} \text { mittlere mittlere Strensit } \\
+& \text { Geodwindjust des Eblitione } \\
+& \text { (siebe Uapitel 7). }
+
+$v^{2}=\left(v_{F}\right)^{2}=2 E_{F} / m=2 \cdot k_{B} \cdot T_{F} / m$
+![This image depicts a handwritten physics or mathematics equation involving variables such as volume (V), temperature (T), and constants like π and k_B (Boltzmann constant). It appears to be related to statistical mechanics or thermodynamics, possibly calculating a quantity like the number of particles or energy states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1cf6f719-4d8b-4fc3-a7b4-d94c3ad6a375/3171edc7-0272-4041-8401-bba627840906-3_118_1347_287_383.jpg)
+
+x^{\text {ECluter }}=\frac{\pi^{2}}{3} \frac{n k_{B}^{2} \tau}{m} \cdot T \quad n=\frac{N}{V}
+
+In Hetallen: $\alpha^{\text {ECCATTON }}>\mathcal{S E}^{\text {Phomon }}$.
+Typisde Wate his be 3e~ $\omega / \mathrm{cmk} \sim 100 \omega / \mathrm{m} \cdot K\left(\begin{array}{c}\text { side } \\ \text { Tokèm } 17)\end{array}\right.$
+
+### 5.6 Vollektive Plänomene
+
+Wieso funktioniest die Nähony fiever Elektionens so gent?
+Gaüude: - Pauli- hinzip - Stoße zwischen é cuntodiūdt.
+
+- Keine echten Elechtomen: Quasitailchen (spëts)
+- Abschirmmy der clektostatisile WW anderan
+
+e^{-} \text {(Fiedel - Ossilletionen) . }
+
+### 5.6.1 Abschirmuny
+
+Punktladung (Stórung) bir is → Storpotential $\delta \phi(\underline{r})$.
+⇒ Verschiebury des lovaler Energia null punks un e. $\boldsymbol{\delta} \boldsymbol{\phi}(\boldsymbol{\sigma})$
+$\Rightarrow \delta u(\underline{\sigma})=|e| \cdot D\left(E_{F}\right) \cdot \delta \phi(\underline{\sigma})$
+übes die Poisson-Glaichny giet:
+
+\underline{\nabla}^{2}(\delta \phi)=\frac{e}{\varepsilon_{0}} \cdot \delta u=\underbrace{\frac{e^{2}}{e_{0}} \cdot D\left(E_{F}\right)}_{\text {Vof } a k t o} \cdot \delta \phi(I)
+
+Diff.-Glaichng fin $\delta \phi$ mit Vayel symmetionshs lossay:
+
+& \delta \phi(I)=-\frac{e}{4 \pi \varepsilon_{0}} \frac{e^{-|I| / \tau_{T I}}}{|I|}, \text { wit } \\
+& \tau_{T F}=\sqrt{\frac{\varepsilon_{0}}{e^{2} \Delta\left(E_{F}\right)}} \\
+& \text { der } \\
+& \text { Thomas-Fermin } \\
+& \text { Abschincerlange }
+
+⇒ Potentiale weiden exponsentiall abgeschincert.
+
+\text { Fü G | } N i \quad n \sim 9 \cdot 10^{28} \mathrm{~m}^{-3}: r_{T T} \approx 0.55 \AA \text { ! }
+
+### 5.6.2 Mottscher Metall-Isolates Übergang
+
+Metall oder Isolater hänjt nach der Theaie des feim Elektonengases vom Gittorabstand $a b$ :
+![This handwritten note explains the relationship between atomic spacing and material properties, stating that small atomic spacing leads to metallic behavior while large spacing leads to insulating behavior, with a reference to solving the Schrödinger equation with a periodic potential to describe electron states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1cf6f719-4d8b-4fc3-a7b4-d94c3ad6a375/3171edc7-0272-4041-8401-bba627840906-4_250_1332_437_485.jpg)
+
+Abschätzey : $u<0.045 / a_{0}^{3}$
+⇒ Experimente mit Druck, reguetfeld oder Dotiery.
+

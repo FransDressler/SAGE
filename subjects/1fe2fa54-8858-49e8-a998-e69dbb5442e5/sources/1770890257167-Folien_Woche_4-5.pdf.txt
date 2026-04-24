@@ -1,0 +1,169 @@
+01. Diffraction 1
+Experimental methods in solid-state physics
+04 Basic theory of diffraction
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+01. Diffraction 2
+Nobel prize in physics 1914
+
+01. Diffraction 3
+Nobel prize in physics 1914
+Experimental work carried out at
+chair of Arnold Sommerfeld
+(LMU, theoretical physics)
+
+01. Diffraction 4
+The zincblende lattice
+sulfur
+(1/4,1/4,1/4)
+zinc
+(0,0,0)
+Primitive unit cell Conventional unit cell
+Same lattice GaAs (III-V) or CdTe (II-VI), but also
+silicon and diamond (two indentical atoms in the basis)
+
+01. Diffraction 5
+High symmetry directions in zincblende lattice
+[100]
+„the sides of the cube“
+[111]
+„the diagonal of the cube“
+
+01. Diffraction 6
+materialsproject.org
+
+01. Diffraction 7
+Planes vs. directions
+
+01. Diffraction 8
+Laue‘s historic experiment
+X-rays incident along [100] [111]
+
+01. Diffraction 9
+Bragg‘s condition
+
+01. Diffraction 10
+Laue‘s condition
+„Gross“-convention:
+• Incoming wave vector k
+• Outgoing wave vector k‘
+„Hunklinger“-convention:
+• Incoming wave vector k0
+• Outgoing wave vector k
+
+01. Diffraction 11
+Reciprocal space
+
+01. Diffraction 12
+Geometric construction via Ewald‘s sphere
+
+01. Diffraction 13
+Experimental methods in solid-state physics
+05 Scattering as Fourier transform:
+Form factor and structure factor
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+01. Diffraction 14
+light source
+plane wave
+far-field image plane
+Scattering and diffraction in wave optics
+𝐴0𝑒−𝑖𝒌𝒓
+𝐴(𝒒) 𝑒−𝑖𝒌(𝒓−𝒓′)
+|𝑟′ − 𝑟|
+Huygens: each point
+emits a spherical
+wave front
+
+01. Diffraction 15
+Fraunhofer approximation
+
+01. Diffraction 16
+First Born approximation
+Assumption: scattering is weak
+→ less than one scattering event inside
+the sample volume
+→ approximate the local solution inside
+the material by the incoming wave
+→ equivalent to first-order perturbation
+theory
+→ or equivalent to calculating only the
+first Feynman diagram
+Hunklinger, Festkörperphysik
+𝜓 = 𝐴0𝑒−𝑖𝒌𝟎𝒓
+
+01. Diffraction 17
+Basic scattering theory and Born approximation
+
+01. Diffraction 18
+Basic scattering theory and Born approximation
+
+01. Diffraction 19
+Atomic form factor
+Density at atomic positions
+Scattering amplitude
+
+01. Diffraction 20
+Structure factor
+Density at periodic atomic positions
+Scattering amplitude
+
+01. Diffraction 21
+Indexing of diffraction peaks in the cubic system
+Conventional
+• The reference is always the
+primitive cubic system.
+• All diffraction peak are indexed as
+(hkl) where hkl denote planes in
+the primitive cubic basis.
+• Why: 𝑑ℎ𝑘𝑙 = 𝑎
+ℎ2 + 𝑘2 + 𝑙2
+sin2(𝜃) = 𝜆2
+4𝑎2 (ℎ2 + 𝑘2 + 𝑙2)
+
+01. Diffraction 22
+Example of NaCl
+• fcc lattice with 2
+atoms in the basis
+• hkl all even or all odd
+• hkl even → strong
+• hkl odd → weak
+
+01. Diffraction 23
+Fcc as simple cubic lattice with 4 atoms in the basis
+
+01. Diffraction 24
+NaCl structure factor
+
+01. Diffraction 25
+Example of NaCl
+• fcc lattice with 2
+atoms in the basis
+• hkl all even or all odd
+• hkl even → strong
+• hkl odd → weak
+
+01. Diffraction 26
+Laue method – polychromatic X-ray beam and single crystal
+Hunklinger, Festkörperphysik
+
+01. Diffraction 27
+Debye-Scherrer – monochromatic X-ray and powder sample
+
+01. Diffraction 28
+Single crystal XRD (Drehkristallverfahren)
+Example: semiconductor thin films for energy conversion
+Walter-Schottky-Institute: Prof. Ian Sharp, Prof. Johanna Eichhorn
+https://doi.org/10.1002/adfm.202405532
+
+01. Diffraction 29
+XRD in practice
+https://rigaku.com/products/x-ray-diffraction-and-scattering/xrd
+Monochromatic X-ray Source X-ray Detector
++ precision mechanicssample

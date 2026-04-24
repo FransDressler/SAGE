@@ -1,0 +1,104 @@
+# Physik der kondensierten Materie Festkörperphysik 
+
+Wintersemester 2025/2026
+
+Gliederung:<br>1. Struktur fester Körper<br>2. Wellen in Kristallstrukturen<br>3. Gitterdynamik<br>4. Thermische Leitfähigkeit (Phononen)<br>5. Das freie Elektronengas<br>6. Bandstruktur und Blochtheorem<br>7. Ladungstransport
+
+## 1. Struktur fester Körper
+
+Makroskopischer Regelmäßigkeiten: äußere Form, Farbe
+![The image depicts a cubic crystal structure of sodium chloride (NaCl), showing the characteristic cubic shape of its crystalline form.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-02_770_701_566_198.jpg)
+
+![The image shows a mineral specimen featuring orange-red garnet crystals embedded in a lighter host rock. It depicts the natural crystal formation and mineralogy of garnet.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-02_503_653_1133_836.jpg)
+Spessartin (kubisch)
+
+![The image shows a mineral specimen of amazonite, a green to blue-green variety of microcline feldspar. It depicts the crystal structure and natural coloration of amazonite.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-02_848_558_546_1444.jpg)
+Amazonit (triklin)
+
+![The image shows a specimen of the mineral Rhodonite in its triclinic crystal form.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-02_752_759_399_2137.jpg)
+
+![The image depicts a cluster of brownish-orange crystals, likely a mineral specimen. It shows the natural crystal formation and structure of the mineral.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-02_619_568_1024_2749.jpg)
+Orthorombischer Brookit
+
+## 1. Struktur fester Körper
+
+- Einkristalline Festkörper (z.B. Si-Einkristall)
+
+Die Orte der Atome können durch ein periodisches Gitter von Raumpunkten beschrieben werden.
+
+- Polykristalline Festkörper (z.B. polykristallines Si, NaCI-Kristalle)
+... bestehen aus vielen kleinen Einkristallen, deren Größe und Orientierung ohne Ordnung variiert.
+- Amorphe Festkörper (z.B. Glas)
+
+Atome bzw. Moleküle sind unregelmäßig verteilt. Keine strenge Periodizität.
+
+- Flüssigkristalle
+
+Zwischenzustand zwischen geordneten Zustand eines kristallinen Festkörpers und einer isotropen Flüssigkeit.
+
+- Zusammengesetzte Festkörper (z.B. Holz)
+![This diagram depicts the crystal structure of a layered material, showing the arrangement of atoms in the lattice with lattice vectors labeled "a" and "b." It highlights specific atomic sites or interactions within the layers, likely for analyzing bonding or structural properties.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-04_1140_1151_493_1086.jpg)
+
+
+## Translationssymmetrie
+
+![This diagram depicts a crystal lattice structure illustrating the unit cell defined by lattice vectors a, b, and c, with a red arrow indicating a lattice translation vector connecting equivalent lattice points.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-05_1237_1542_474_720.jpg)
+aus Hunklinger
+
+## Einheitszellen in 2D und 3D Bravais-Gitter
+
+![This diagram depicts different two-dimensional lattice structures with their corresponding primitive lattice vectors labeled, illustrating how the lattice basis vectors transform under various lattice deformations or changes in unit cell choice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-06_579_1515_474_877.jpg)
+(b)
+![This diagram depicts a crystal lattice structure showing the arrangement of atoms in a three-dimensional unit cell, with lattice vectors \(a_1\), \(a_2\), and \(a_3\) defining the unit cell edges.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-06_534_843_1092_1150.jpg)
+
+Welche sind primitive Einheitszellen?
+
+## Primitive Gitterzellen eines 2D Bravais-Gitter
+
+(a)
+| 0 | 0 | 0 | 0 |
+| :--- | :--- | :--- | :--- |
+| 0 | 0 | 0 | 0 |
+
+
+![This diagram depicts a two-dimensional lattice structure, specifically showing a distorted square lattice with nodes connected by edges, illustrating a geometric arrangement of points and their connectivity.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-07_476_583_493_1643.jpg)
+![This diagram depicts a two-dimensional square lattice with a pattern of zigzag or wavy lines connecting certain lattice points, likely representing a specific type of interaction or path in a condensed matter or materials science context.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-07_471_571_1062_1015.jpg)
+![This diagram depicts a two-dimensional lattice structure with atoms represented by circles and two sets of intersecting lines indicating crystallographic planes or directions within the lattice. It shows the arrangement of atoms and the orientation of specific lattice planes in a crystal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-07_465_611_1068_1626.jpg)
+
+## Symmetrieoperationen und Symmetrieelement
+
+![The diagram depicts symmetry operations in a one-dimensional lattice, showing translation, reflection (Spiegelung), and rotation (Drehung) of lattice points.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-08_279_1649_720_734.jpg)
+
+## Die 10 Punksymmetrieoperationen
+
+![This diagram depicts the atomic orbital of a hydrogen atom, specifically the 1s orbital, showing the spherical shape and the probability distribution of the electron around the nucleus.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_588_445_447_420.jpg)
+![This diagram depicts the spatial orientation of the two lobes of a 2p atomic orbital, showing the angular nodes and the phases of the wave function in each lobe.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_597_467_447_904.jpg)
+![This diagram depicts the orientation of three p orbitals (px, py, pz) in an atom, showing their spatial arrangement along the x, y, and z axes. It illustrates the directional properties of p orbitals in three-dimensional space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_606_463_447_1405.jpg)
+![This diagram depicts the electron configuration and orbital filling for the 4d subshell, showing the distribution of electrons in the four d orbitals with their respective spin orientations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_615_458_447_1911.jpg)
+![This diagram depicts the molecular orbital configuration of the benzene molecule, showing the six π-electrons distributed in the six π molecular orbitals formed by the combination of p-orbitals on the six carbon atoms.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_597_445_447_2408.jpg)
+
+$$
+\overline{\mathbf{1}}=\mathbf{i}
+$$
+
+$\overline{\mathbf{2}}=\mathbf{m}$
+![This diagram depicts the molecular orbital configuration of the oxygen molecule (O2), showing the occupancy of electrons in the π* antibonding orbitals with their spin orientations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_453_449_1146_420.jpg)
+![This diagram depicts the molecular orbital representation of the oxygen molecule (O2), showing the arrangement of electrons in the π* antibonding orbitals with their spins indicated.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_507_444_1146_913.jpg)
+![This diagram depicts the molecular orbital configuration of the cyclopropenyl cation (C3H3⁺), showing the distribution of six π-electrons in the molecular orbitals around the three-membered ring. It illustrates the bonding and antibonding interactions, with electron occupancy indicated for each orbital.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_669_440_1029_1414.jpg)
+![This diagram depicts the electron configuration of the boron atom, specifically showing the distribution of its five electrons in the 2p orbitals with their spin orientations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_646_435_1029_1916.jpg)
+![This diagram depicts the quark composition and color charge arrangement inside an antiproton, showing three antiquarks (two anti-up and one anti-down) with their corresponding color charges.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-09_660_440_1029_2413.jpg)
+
+## Punktsymmetrie-Operationen
+
+![This diagram depicts a tessellation pattern composed of pentagons and irregular quadrilaterals, illustrating a way to tile a plane without gaps or overlaps using these shapes.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-10_530_570_662_689.jpg)
+![This diagram depicts a tessellation pattern using regular octagons, showing how they can fit together with gaps to cover a plane. It illustrates the geometric arrangement and spatial relationship of octagons in a tiling pattern.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-10_539_524_653_1397.jpg)
+
+![This diagram depicts a tiling pattern known as the "squared square" or a tessellation involving octagons and squares, showing how squares and octagons can fit together to fill a plane without gaps.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-10_530_569_662_2064.jpg)
+„Reguläre Fünf-, Sieben- oder Achtecke lassen sich nicht flächendeckend ohne Überschneidung bzw. Löcher anordnen. Dies bedeutet, dass Symmetrieachsen mit dieser Zähligkeit nicht existieren."
+
+## Quasi-Kristalle
+
+![This image depicts a Penrose tiling pattern, which is a non-periodic tiling made of shapes that cover a plane without repeating regularly. It shows an arrangement of shapes that create an aperiodic tessellation with fivefold symmetry.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/c8cc93ea-f8a1-44c1-9983-e7d37f9f425a/b1b3b75d-e388-4a69-b7b6-2f2006084c2d-11_923_845_426_1167.jpg)
+
+In einem Quasikristall sind die Atome nicht wirklich periodisch sondern nur „quasiperiodisch“ angeordnet. D.h. Quasikristalle besitzen eine lokal regelmäßige Struktur, sind über große Abstände aber aperiodisch aufgebaut.
+

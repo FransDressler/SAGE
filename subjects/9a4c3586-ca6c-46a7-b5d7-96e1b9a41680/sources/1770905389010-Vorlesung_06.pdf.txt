@@ -1,0 +1,116 @@
+## Aus gedeliute Defelle
+
+Maknoskopische Eijenschaften, wie die mednamische Festrybeit, werden von ansgedehuter Defeleter beeirflusst.
+Uuferscheide: spiöde (z.B. Keramile) $\Leftrightarrow$ duletil (Retall)
+Man misst z.B. Spannungs - Dehuming - lenve.
+fin geninge Auslankenge: Hook'schos Gesetz
+
+$$
+\sigma=E\left(\frac{\delta L}{\partial L}\right) ;
+$$
+
+unit $\sigma$ : mechaciiscle Spanny $\left[\frac{N}{m^{2}}\right]$
+$L$ : Länge des Materials
+$E$ : Elastizitätsmodul
+$\frac{\partial L}{L}$ : Delanny.
+Abriss bei: $\frac{J L}{L}<1 \% \Rightarrow$ spröde Matainkia ( Hok yiel
+
+\frac{\partial L}{L} \sim 10 \% \Rightarrow \text { duktile raterialer }
+
+Bi Einkistalle : - plastiscle Verfanny bei Ve. Spannuge
+
+- anisotiopes Vanalta (wg. Scherbaido)
+
+Unitiscle Schubspannuy:
+
+\begin{aligned}
+b & =G \cdot e, \quad e=\frac{\partial x}{d} \\
+\uparrow & \hat{\imath} \\
+\text { sclubjo sciub- } &
+\end{aligned}
+
+"Saliebe so laye, bis knistall uns eive Atom-Position weitenüdel".
+
+\begin{aligned}
+& \sigma=\left(\frac{G \cdot a}{2 \pi \cdot d}\right) \cdot \underbrace{\sin \left(\frac{2 \pi \delta x}{a}\right)}_{L_{\text {max }}: 1}
+\end{aligned}
+
+das Hodlesde Cesela
+giet.
+
+& \sin (x) \sim x \Rightarrow \sigma=\frac{G \cdot x}{2 \pi \cdot d} \cdot \frac{\pi \cdot \delta_{x}}{x}=G \frac{\delta_{x}}{d} \\
+& \sigma_{c}=\frac{G \cdot a}{2 \pi \cdot d} \approx \frac{G}{2 \pi}(\text { fin } a \sim d)
+
+Verflaiche exp. bestimmtes schubmodul unt $\sigma_{c}$ : sch grofe Abweidnge:
+Z.B. Aluminium $\{$
+
+Einkistell $\frac{Q^{\text {anp }}}{\sigma_{c}} \sim 10^{4}$
+Polyhistall - " ~ 150
+Duraluminin - 1- ~ 10
+
+## Ganud: Bilduy von Versetzunger: - Stufen versetzege
+
+## Versetznyse:
+
+## Allj. gilt:
+
+- Limendefekte → Unsarde: "Vernutschte" (slip) Es bildet sich eire Glateberue.
+- Gleitebers sind material spezifisch.
+- typischoweise : Ebere unit dichtestor Padey
+- Stufen versettengen: $\underline{b} \perp$ Versetzemyslivie $\underline{s}$
+- Schamben versetey : $\underline{b}$ || Versetzuyslinie $\underline{s}$
+- b ist houstant eutlay do Versetzye.
+- Versetzys sude usomales weise crickt in mistalle, soudan :
+(i) an der oberflido (oder kon granza)
+(ii) an einam Versetrugs knoter
+
+\Rightarrow \underline{b}_{1}+\underline{b}_{2}+\ldots=0
+
+(iii) sind in sich geschlosse.
+
+- 6 ist eive topologisile Eahallungs röße
+- Versetenga köuna sides verbinden ades auf spalte $\Rightarrow \underline{b}=\sum_{i}^{i} \underline{b}_{i}$
+- Vusetenge unit gegenseitigen Vareich $\left(\underline{b}_{1}=-\underline{b}_{2}\right)$ könner sich gegenseity annililierer
+
+
+### 1.9 Bindums verlältuisse in Unistallen
+
+Usache fü der Zusammenhalt des Festliapps. Elektostatiscle trzzichny zwiseher Elektona und positiv geladene Atom kerve
+
+Gitterenagic = Enajie der faien $e^{-}$- Enajic des mistalls.
+Athaletive kneft:
+
+## 5 Grandtyper :
+
+Starlve
+in Puiodusystem
+
+- van de Waals Binduy (Eddgashinstalle $-\frac{10 \mathrm{meV}}{\text { Atous }}$ )
+- Wasserboriciden binduy
+![The image shows a handwritten note referring to the metallic binding energy of lithium (Li), quantified as 1.64 eV per atom.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f5dbbc07-3d56-4c30-b09d-d11f0902334a/1aec2ea7-7707-4eea-ab2a-3cea24e32a48-3_126_1031_1049_938.jpg)
+- iouische Binduy (Alkolihaloguidknistale)
+- Kovalente Bindy (Diamont, Si : 7,37 ev )
+
+
+## Audue Satierry:
+
+\begin{gathered}
+\text { v.d. Waals Binduy } \\
+\text { togon }
+\end{gathered}
+
+loniscle Mace Bindy
+
+## Vovalemte Bindy Diamant
+
+metallisce Bindy
+![This diagram depicts the classification of closed electron shells, distinguishing between weak and strong isotropic fluctuating dipoles and complete induction transfer.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f5dbbc07-3d56-4c30-b09d-d11f0902334a/1aec2ea7-7707-4eea-ab2a-3cea24e32a48-3_360_876_1457_1154.jpg)
+![The image depicts a handwritten note explaining the concept of "nicht-abgeschlossene Schalen" (incomplete electron shells) in atoms, specifically referring to the valence electrons between atoms and the apparent "shift" of valence electrons.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f5dbbc07-3d56-4c30-b09d-d11f0902334a/1aec2ea7-7707-4eea-ab2a-3cea24e32a48-3_316_858_1816_1169.jpg)
+start , isotoop
+
+## Repulsive Veaft:
+
+Des Anziehny winkt eive repulsive uraft entyege, die vom überlapp de Elelltionen orbitale hernühr ("Pauli-Pinzip").
+
+Dic Balance swishe attrahtives und repulsises haft hoilt den unistall zusamme.
+

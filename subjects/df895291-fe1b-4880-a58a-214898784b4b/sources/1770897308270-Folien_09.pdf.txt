@@ -1,0 +1,220 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Fourier-Entwicklung von Punktgittern
+und das reziproke Gitter
+aus Gross, Marx
+⇒ Minimaler reziproker Gittervektor: 𝟐𝝅
+𝒅
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Reziproker Raum
+bzw. reziprokes Gitter in 1D
+ai ∙ bj = 2ij
+a
+b = 2/a
+
+aus Hunklinger
+Zweidimensionales schiefwinkliges Gitter:
+ai ∙ bj = 2 ij
+Reziproker Raum
+bzw. reziprokes Gitter in 2D
+
+aus Hunklinger
+Das reziproke Gitter eines einfach kubischen
+Gitters ist ebenfalls ein kubisches Gitter.
+Die Gitterkonstante der Einheitszelle beträgt
+2/a.
+Daher der Name reziprokes Gitter (1/a)
+Es gilt: ai ∙ bj = 2 ij
+bzw. reziprokes Gitter in 3D
+
+fcc Gitter in 3D
+a2
+a1
+a3
+Das reziproke Gitter eines fcc Gitters ist ein bcc!
+
+bcc Gitter in 3D
+a2
+a1
+a3
+Das reziproke Gitter eines bcc Gitters ist ein fcc!
+
+Reziprokes Gitter und Miller Indizes
+Ein reziproker Gittervektor 𝑲𝒉𝒌𝒍 = ℎ𝒃𝟏 + 𝑘𝒃𝟐 + 𝑙𝒃3 steht
+senkrecht auf der Ebene mit den Miller indizes (hkl).
+Das primitive Bravaisgitter wird durch
+die Vektoren a1, a2 und a3 aufgespannt.
+𝒓𝟏 × 𝒓𝟐 = 𝒂𝟐
+𝑘 − 𝒂𝟏
+ℎ × 𝒂𝟑
+𝑙 − 𝒂𝟏
+ℎ
+= 1
+ℎ𝑘𝑙 ℎ𝒂𝟐 × 𝒂𝟑 + 𝑘𝒂𝟑 × 𝒂𝟏 + 𝑙𝒂𝟏 × 𝒂𝟐
+∝ (ℎ𝒃𝟏 + 𝑘𝒃𝟐 + 𝑙𝒃𝟑)
+r1
+Beweis:
+a1/h
+a3/l
+a2/k
+r2
+
+Abstand zweier Ebenen (hkl)
+… beträgt 2𝜋
+|𝑲𝐡𝐤𝐥|.
+𝑑hkl = 𝒂𝟐
+𝑘 ∙ ෝ𝒏𝐡𝐤𝐥 = 𝒂𝟐
+𝑘 ∙ ℎ𝒃𝟏+𝑘𝒃𝟐+𝑙𝒃𝟑
+ℎ𝒃𝟏+𝑘𝒃𝟐+𝑙𝒃𝟑
+= 2𝜋
+|𝑲𝐡𝐤𝐥|
+𝒂𝐢 ∙ 𝒃𝐣 = 2𝜋𝛿ij
+r1
+a1/h
+a3/l
+a2/k
+r2
+𝑑hkl
+Das primitive Bravaisgitter wird durch
+die Vektoren a1, a2 und a3 aufgespannt.
+Beweis:
+𝑑hkl ist die Projektion von ො𝑛 auf einen
+der drei Vektoren. Hier a2/k.
+
+Konstruktion des reziproken Gitters
+- Zeichne Lot auf jede (hkl) Ebene durch den
+Ursprung im Ortsraum. (Reziproke
+Gittervektoren 𝑲𝐡𝐤𝐥 = ℎ𝒃𝟏 + 𝑘𝒃𝟐 + 𝑙𝒃𝟑 stehen
+senkrecht auf der Ebene (hkl) )
+- Platziere zu jeder (hkl)-Ebene einen Punkt auf
+dem Lot im Abstand 2𝜋/𝒅𝐡𝐤𝐥 vom Ursprung.
+𝑑hkl
+
+Beispiel: Reziprokes Gitter in 2D
+(0,0) b1
+b2
+(0,0)
+𝒃𝟏 = 2𝜋
+|𝒂𝟏|
+𝒃𝟐 = 2𝜋
+|𝒂𝟐|
+
+Beispiel: Reziprokes Gitter in 2D
+(0,0) b1
+b2
+(0,0)
+𝒃𝟏 = 2𝜋
+|𝒂𝟏|
+𝒃𝟐 = 2𝜋
+|𝒂𝟐|
+|d| = |a1| = 2 / |G| 𝑮 =
+2𝜋
+0
+|d|
+
+|d| = |a2|/2 = 2 / |G| 𝑮 = 2 ∙
+0
+2𝜋
+|d|
+
+𝑮 =
+𝒅 = 2𝜋
+|𝑮|
+
+Weiteres Beispiel:
+Konstruktion eines reziproken Gitters in 2D
+- Zeichne Lot auf jede (hkl) Ebene durch den
+Ursprung im Ortsraum.
+- Platziere zu jeder (hkl)-Ebene einen Punkt auf
+dem Lot im Abstand 2𝜋/𝒅𝐡𝐤𝐥 vom Ursprung.
+b1
+(0,1)
+
+b1
+b2 - Zeichne Lot auf jede (hkl) Ebene durch den
+Ursprung im Ortsraum.
+(0,1)
+(1,1)
+(2,1)
+(3,1)
+(1,0)
+(2,0)
+(3,0)
+(0,2)
+(1,2)
+Weiteres Beispiel:
+Konstruktion eines reziproken Gitters in 2D
+
+Der Satz G der reziproken Gittervektoren bestimmt die möglichen Beugungsreflexe
+Die von Laue Bedingung
+Richtung der einfallenden
+Strahlung k0
+Richtung der gestreuten
+Strahlung k
+𝒌 − 𝒌0 = 𝑮
+G = 𝒌 − 𝒌𝟎
+𝒌𝒌0
+𝒌0
+Vorsicht!
+In Gross/Marx wird die
+einfallende Richtung
+mit k und die
+ausfallende Richtung
+mit k´ bezeichnet
+
+Geometrische Interpretation:
+Konstruktive Interferenz tritt nur dann auf, wenn die Spitze des
+einfallenden k0-Vektors auf der senkrechten Ebene liegt (Bragg-Ebene),
+welche einen reziproken Gittervektor halbiert.
+Da die Wellenlänge bei der (elastischen) Beugung am Kristall unverändert bleibt, gilt, dass:
+von Laue Bedingung vs. Bragg Bedingung
+𝒌 = 𝒌0 = 2𝜋/𝜆
+𝑮 = 𝒌 − 𝒌0
+⇒ 𝑮𝟐 + 2𝒌0 ∙ 𝑮 + 𝒌0𝟐 = 𝒌𝟐 = 𝒌0𝟐
+⇒ 𝒌0 ∙ 𝑮
+|𝑮| = 1
+2 |𝑮|
+(*)
+*
+(bzw. 𝑲𝐡𝐤𝐥)G = 𝒌 − 𝒌0
+𝒌
+𝒌0
+⇒ 2 𝒌0 ∙ 𝑮 + 𝑮𝟐 = 0
+= 𝒌 ∙ 𝑐𝑜𝑠𝜑
+𝜑
+𝜑
+mit G ist auch –G ein reziproker Gittervektor (**)
+**
+
+Da die Wellenlänge bei der (elastischen) Beugung am Kristall unverändert bleibt, gilt, dass:
+von Laue Bedingung vs. Bragg Bedingung
+𝒌 = 𝒌0 = 2𝜋/𝜆 (*)
+*
+= 𝒌 ∙ 𝑐𝑜𝑠𝜑
+= 1
+2 𝑛 ∙ 𝑮𝟎 = 1
+2 𝑛 ∙ 2𝜋
+|𝒅𝐡𝐤𝐥|
+kürzester reziproker
+Gittervektor (siehe Folie 1!)
+⇒ 2 2𝜋
+𝜆 ∙ 𝑠𝑖𝑛𝜃 = 𝑛 ∙ 2𝜋
+|𝒅𝐡𝐤𝐥|
+⇒ 2𝑑hkl ∙ 𝑠𝑖𝑛𝜃 = 𝑛 ∙ 𝜆
+(hkl)
+𝜑 𝜑
+𝜃 𝜃
+Netzebene
+(hkl) ⊥ G
+(bzw. 𝑲𝐡𝐤𝐥)
+G = 𝒌 − 𝒌0
+=
+𝒌
+⇒ 𝒌0 ∙ 𝑮
+|𝑮| = 1
+2 |𝑮|
+𝑮 = 𝒌 − 𝒌0
+⇒ 𝑮𝟐 + 2𝒌0 ∙ 𝑮 + 𝒌0𝟐 = 𝒌𝟐 = 𝒌0𝟐
+⇒ 2 𝒌0 ∙ 𝑮 = 𝑮𝟐
+mit G ist auch –G ein reziproker Gittervektor (**)
+**

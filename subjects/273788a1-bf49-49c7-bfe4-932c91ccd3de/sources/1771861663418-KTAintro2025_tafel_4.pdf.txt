@@ -1,0 +1,174 @@
+## Vorlesung 4: 4.11.2025
+
+## Definition Helizität
+
+$$
+h=\frac{\vec{s} \cdot \vec{p}}{|\vec{p}|}
+$$
+
+## "Ausrichtung des Spins relativ zur Bewegungsrichtung eines Teilchens"
+
+![This diagram depicts the spin and momentum directions of a particle, specifically showing the momentum vector \(\vec{p}\) pointing upward and the spin vector \(\vec{S}\) also pointing upward, indicating a particle with spin aligned parallel to its momentum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/022ca45f-203d-414c-a334-b499efaf1c6c/f0ead79f-969f-42e3-9d1e-784ed3c1215d-1_86_168_648_351.jpg)
+"Rechtshändig" Spin ⇑, Impuls ↑ parallel
+![This image depicts the spin and momentum directions of a particle, showing the momentum vector \(\vec{p}\) pointing upward and the spin vector \(\vec{s}\) also pointing upward, indicating the particle's spin orientation relative to its momentum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/022ca45f-203d-414c-a334-b499efaf1c6c/f0ead79f-969f-42e3-9d1e-784ed3c1215d-1_90_175_785_349.jpg)
+"linkshändig" Spin ⇑, Impuls ↓ anitparallel
+
+### 1.11 Diskrete Symmetrien:
+
+### 1.11.1 Parität, Raumspiegelung
+
+\hat{P}\left(\begin{array}{l}
+x \\
+y \\
+z
+\end{array}\right)=\left(\begin{array}{l}
+-x \\
+-y \\
+-z
+\end{array}\right)
+
+Impuls $\hat{P} \vec{p}=-\vec{p}$
+Kraft $\vec{F}=\dot{\vec{p}} \quad \hat{P} \vec{F}=-\vec{F}$
+E-Feld $\hat{P} \vec{E}=-\vec{E}$
+B-Feld $\quad \hat{P} \vec{B}=(-\nabla) \times(-\vec{A})=\vec{B}$
+Drehimpuls $\hat{P} \vec{L}=+\vec{L}$
+
+\operatorname{Spin} \quad \hat{P} \vec{s}=+\vec{s}
+
+Experiment:
+![This diagram depicts the measurement of scattering intensity I(θ) for electrons with different spin polarizations (right-handed and left-handed) and an unpolarized spin distribution, showing how the detector captures scattering at angle θ relative to the electron spin orientation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/022ca45f-203d-414c-a334-b499efaf1c6c/f0ead79f-969f-42e3-9d1e-784ed3c1215d-1_754_942_1679_603.jpg)
+
+Beobachtung: Ergebnis identisch ⇒ $\hat{P}$ ist bei $e / m$ und starker WW erhalten. Allerdings ist $\hat{P}$ in der schwachen WW verletzt, siehe das
+
+Wu Experiment Erster eyperimenteller Nachweis der Paritätsverletzung in der schwachen Wechselwirkung (siehe Übungsaufgabe, wichtig für KLausur).
+für $m=0$ gilt:
+
+Es kommen linkshändige Teilchen und rechtshändige Antiteilchen vor.
+
+Die gegenteiligen Teilchen mit entgegengesetzter Helizität sind stark unterdrückt.
+
+### 1.11.2 Ladungskonjugation $\hat{C}$ (Englisch "charge")
+
+- Transformation von Teilchen in Antiteilchen
+- alle additiven Ladungen $L, Q, B$ kehren das Vorzeichen um
+- $\vec{E}$ und $\vec{B}$ Felder kehren sich um
+$e / m$ und Starke WW erhalten $\hat{C}$
+schwache
+
+\begin{array}{cc} 
+& n \rightarrow p+e^{-}+\overline{\nu_{e}} \leftarrow \text { rechtshändig } \\
+\hat{C} & \bar{n} \rightarrow \bar{p}+e^{+}+\nu_{e} \leftarrow \text { rechtshändig }
+\end{array}
+
+↑ stark unterdrückt!
+
+Reicht das aus, um Materie-Antimaterie Asymmetrie zu erklären?
+Nein, da $\hat{P}$ wieder diese aufhebt
+
+\hat{P} \hat{C} \quad \bar{n} \rightarrow \bar{p}+e^{+}+\nu_{e} \leftarrow \text { linkshändig }
+
+damit läuft der Prozess wieder gleich stark ab!
+
+\Gamma(X \rightarrow f)=\Gamma(\bar{X} \rightarrow \bar{f})
+
+Wenn also CP verletzt ist, gilt $\Gamma(X \rightarrow f) \neq \Gamma(\bar{X} \rightarrow \bar{f})$ und es ist ein Prozess gefunden, der Shakrov erfüllt und somit:
+
+CPT Theorem: $\hat{C} \hat{P} \hat{T}$ ist immer erhalten.
+
+Übersicht zur Erhaltung der WW bei Symmetrien:
+| WW | $\hat{C}$ | $\hat{P}$ | $\hat{C} \hat{P}$ |
+| :---: | :---: | :---: | :---: |
+| $e / m$ | $\checkmark$ | $\checkmark$ | $\checkmark$ |
+| starke* $^{*}$ | $\checkmark$ | $\checkmark$ | $\checkmark$ |
+| schwache** $^{*}$ | $\max$ | $\max$ | schwach |
+|  | $X$ | $X$ | $X$ |
+| grav | $\checkmark$ | $\checkmark$ | $\checkmark$ |
+
+
+*Strong CP problem: QCD-Theorie sagt signifikante CP Verletzung für die starke Wechselwirkung vorher, Experimente sehen bisher aber keine, und können bereits eine große CP Verletzung ausschließen. ** Bei der schwachen Wechselwirkung ist sowohl die Parität als auch die Ladungskonjugation maximal verletzt ('max'); Experimente zeigen aber auch eine schwache CP Verletzung ('schwach').
+
+### 1.12 Wirkungsquerschnitt $\sigma$
+
+$=\mathrm{Maß}$ für Wahrscheinlichkeit einer Reaktion zwischen Projektil und Target.
+Man ist an Streuexperimenten interessiert, denn sie liefern Informationen über Dynamik der WW zwischen Projektil und Target, also über Wechselwirkungspotential und Kopplungsstärke.
+![This diagram depicts the molecular orbital formation in a diatomic molecule, showing the overlap of atomic orbitals to form a bonding sigma orbital (σ_b) and an antibonding sigma orbital (σ*). It illustrates the spatial arrangement and phase relationships of the orbitals along the internuclear axis with distance d and angle A.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/022ca45f-203d-414c-a334-b499efaf1c6c/f0ead79f-969f-42e3-9d1e-784ed3c1215d-3_645_865_228_285.jpg)
+
+## Anzahl an Teilchen am Target:
+
+N_{b}=n_{b} \cdot A \cdot d
+
+$\overrightarrow{v_{a}}$ die Geschwindigkeit des Projektils, hier nach links gerichtet,
+$\sigma_{b}$ die Querschnittsfläche von Targetteilchen
+("Es komt zur Reaktion, wenn Teilchen das Target trifft.")
+
+## Fluss der Projektile
+
+(Zahl der Projektile, die pro Zeiteinheit und Flächeneinheit auf das Target fallen)
+
+\Phi_{a}=\frac{\dot{N}_{a}}{A}=n_{a} \cdot v_{a}\binom{\Delta v=A \Delta t \cdot v_{a}}{n_{a}=\frac{\Delta N}{\Delta V}}
+
+Damit: Reaktionsrate $\dot{N}$
+
+\dot{N}=\sigma_{b} \cdot \dot{N}_{b} \cdot \Phi_{a}
+
+## Annahmen:
+
+- kein Überlapp von $G_{b}$, den Streuzentren
+- nur eine Streuung an jeweils einem Streuzentrum
+- Homogenität in Strahl von Target
+
+Daraus erhält man die Definition des geometrischen Wirkungsquerschnitts
+
+\sigma_{b}=\frac{\dot{N}}{\Phi_{a} \cdot N_{b}}=\frac{\text { Zahl Reaktionen pro Zeiteinheit }}{\text { Zahl Projektile pro Zeit und Fläche × Zahl der Streuzentren }},
+
+bei einem homogenen Strahl (im Querschnitt).
+Oder andernfalls
+
+\sigma_{b}=\frac{N}{\Phi_{a} \cdot N_{b}}=\frac{\text { Zahl Reaktionen pro Zeiteinheit }}{\text { Zahl Projektile pro Zeit × Zahl der Streuzentren pro Fläche }}
+
+Dieses Bild gibt eine gute anschauliche Beschreibung, aber generell ist der Wirkungsquerschnitt sehr verschieden von der rein geometrischen Beschreibung.
+Beispielsweise für die Proton-Proton Streuung erweist sich das Modell als passabel, da die geometrische Ausdehnung vergleichbar mit der Reichweite ist.
+
+Aber im Allgemeinen hat man eine starke Abhängigkeit von:
+
+- Energie
+- Form und Reichweite des WW Potentials
+- Stärke der WW
+
+\begin{gathered}
+\sigma_{\mathrm{tot}}=\frac{\text { Zahl Reaktionen pro Zeiteinheit }}{\text { Zahl Projektile pro Zeit } \times \text { Zahl der Streuzentren pro Flächeneinheit }} \\
+\sigma_{\mathrm{tot}}=\sigma_{\mathrm{el}}+\sigma_{\mathrm{inel}}
+\end{gathered}
+
+$\sigma$ ist eine physikalische Größe, die die Dimension einer Fläche besitzt, unabhängig von Gestaltung des Experimentes. $\sigma_{\mathrm{el}}$ bezeichnet dabei den Wirkungsquerschnitt für elastische Prozesse (Zustände der Teilchen ändern sich nicht, gesamte kinetische Energie der Teilchen ändert sich nicht), $\sigma_{\text {inel }}$ den Wirkungsquerschnitt für in elastische Prozesse. Das bedeuted, ein Teil der kinetischen Energie geht in innere Anregung der Teilchen (Anregung der Teilchen) oder neue Freiheitsgrade (neue Teilchen, Bremsstrahlung etc.).
+
+Einheit:
+1 barn $=1 \mathrm{~b}=10^{-28} \mathrm{~m}^{2} 1 \mathrm{mb}=10^{-31} \mathrm{~m}^{2}$
+
+Beispiel:
+
+\begin{aligned}
+& \sigma_{p p}(10 \mathrm{GeV}) \approx 40 \mathrm{mb} \\
+& \sigma_{\nu p}(10 \mathrm{GeV}) \approx 70 \mathrm{mb}
+\end{aligned}
+
+Luminosität $\left[\frac{1}{\text { Fläche Zeit }}\right]$ "Anzahl Teilchenbegegnungen pro Zeit und Fläche"
+
+\begin{aligned}
+& L=\Phi_{a} \cdot N_{b} \quad \Rightarrow \sigma=\frac{\dot{N}}{L} \\
+& =\dot{N}_{a} \cdot n_{b} \cdot d=n_{a} \cdot v_{a} \cdot N_{b}
+\end{aligned}
+
+### 1.12.1 Differentieller Wirkungsquerschnitt
+
+In der Praxis gibt man nicht die Gesamtzahl der Reaktionen, sondern einen Teil, an.
+![This diagram depicts the scattering of a particle or wave by a target, showing the differential solid angle element (ΔΩ) at a scattering angle (θ) relative to the incident direction.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/022ca45f-203d-414c-a334-b499efaf1c6c/f0ead79f-969f-42e3-9d1e-784ed3c1215d-4_499_963_1025_552.jpg)
+$\Delta \Omega=\frac{A_{D}}{r^{2}}$ ist der Raumwinkel der von Detektorfläche $A_{d}$ gemessen wird.
+
+Der differentielle Wirkungsquerschnitt ("abhängig vom Winkel") ist
+
+\frac{d \sigma}{d \Omega}=\dot{N}_{o b s} \frac{1}{L \cdot \Delta \Omega},
+
+mit $\dot{N}_{\text {obs }}$ der beobachteten Rate pro Raumwinkel.
+Zusätzlich wird oft die Abhägigkeit von Energie mit doppelt diff. WQ beschrieben: $\frac{d^{2} \sigma}{d \Omega d E}$
+

@@ -1,0 +1,88 @@
+![The image is an introductory overview of nuclear, particle, and astrophysics, showing key elements such as atomic nuclei, particle physics (including the Standard Model particles), nuclear reactors, particle accelerators, neutrino detection, cosmic phenomena like supernova remnants, and the timeline of the universe from the Big Bang to galaxy formation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-01_1875_3333_0_0.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Beta, alpha, fission |
+| 10 | 16/12/25 |  | Nuclear reactors | Radioactive transitions, Radiocarbon method |
+| 11 | 13/01/26 | Particle / Nuclear | Nuclear Structure | Gamma transitions, Mott, Form factors |
+| 12 | 20/01/26 |  | Nucleon Structure | Deep inelastic scattering, Quarks and QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Quiz am 23.12.25 --- Online in Moodle
+
+- Bestandenes Quiz als Voraussetzung für Notenbonus
+
+![The image is a graphic design depicting the word "QUIZ!" in a comic-style burst. It is intended to indicate or promote a quiz or trivia activity.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-03_862_875_675_314.jpg)
+Prüfung: 26.2. at 11:00-12:30
+
+![This bar chart depicts the distribution of participant ratings (Bewertung) on a scale from 0 to 10, showing the number of participants (Teilnehmer/innen) for each rating interval.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-03_1080_1561_689_1464.jpg)
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts the decay activity over time for two radioactive isotopes A and B, where isotope A has a shorter half-life (τ_A < τ_B). It shows the activity curves of both isotopes, with A decaying more rapidly than B.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_412_300_677_52.jpg)
+Fig. 5.13
+
+$$
+A=N \cdot \lambda=-\frac{d N}{d t}
+$$
+
+![This diagram depicts the activity (Akt.) versus time (t) for two radioactive isotopes A and B with different decay constants (λ_A and λ_B), illustrating the conditions when the half-life of A is greater than or much greater than that of B. It shows how the activities of the isotopes change over time and the point at which their activities are equal (t_max).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_409_602_677_333.jpg)
+Fig. 5.14
+
+![This diagram depicts the activity (Akt.) versus time (t) for two radioactive isotopes A and B, showing the decay behavior where the half-life of A is much greater than the observation time, which is much greater than the half-life of B (τ_A >> t >> τ_B). It illustrates how the activity of isotope A remains nearly constant while the activity of isotope B increases over time due to the decay of A into B.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_435_337_677_911.jpg)
+Fig. 5.15
+
+Fig. 5.16
+
+IDEALES GLEICHGEWICHT bei $t=t_{\max }$
+$\_\_\_\_$ FORTSCHREITENDES GLEICHGEWICHT für $t>t_{\text {max }}$
+![This diagram depicts the uranium-238 decay series, showing the sequence of alpha and beta-minus decays from uranium-238 through various intermediate isotopes until reaching stable lead-206.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_1004_686_403_1439.jpg)
+![This diagram depicts the formation and decay of carbon-14 (^14C), showing the nuclear reaction where nitrogen-14 (^14N) captures a neutron to form carbon-14, followed by the beta decay of carbon-14 back into nitrogen-14 with the emission of an electron and an antineutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_386_793_484_2366.jpg)
+![The diagram depicts the equilibrium ratio of carbon isotopes (^12C and ^14C) in living organisms, showing that the number of ^12C atoms is 10^12 times that of ^14C atoms.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_201_725_880_2369.jpg)
+![The diagram depicts the radioactive decay of carbon-14 (^14C) in dead organisms, showing the imbalance between the amounts of carbon-12 (^12C) and carbon-14 due to the decay process.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-04_233_848_1072_2374.jpg)
+
+Aktivität in radioaktiven Zerfällen
+
+Zerfallsketten
+Radiokarbonmethode
+![This diagram depicts the nuclear energy levels and neutron emission processes involved in the photoneutron reaction \( A_ZX(\gamma,n)^{A-1}_ZX \), showing discrete nuclear states, the continuum region, and the giant resonance in the photonuclear cross section. It also illustrates neutron capture by the nucleus \( ^{A-1}_ZX + n \) and corresponding total neutron cross section behavior.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-05_1736_1479_71_942.jpg)
+![This is a nuclear decay scheme diagram for the beta-minus decay of Krypton-85 (Kr-85) to Rubidium-85 (Rb-85), showing energy levels, spin-parity states, gamma emission probabilities, and half-lives of the excited states involved.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-06_1751_1329_46_864.jpg)
+
+![This diagram depicts the normalized energy ratio (E'/E) of scattered particles as a function of the scattering angle (θ) for different initial energies (0.5 GeV and 10 GeV) and mass numbers (A=1 and A=50), illustrating energy loss in particle scattering events.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-07_1505_1760_170_738.jpg)
+Povh Abb 5.2
+
+![The diagram depicts a 3-spectrometer setup at MAMI, showing the arrangement and components of three spectrometers (A, B, and C) used for particle detection and analysis in a beamline experiment.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-08_1368_1793_231_762.jpg)
+Povh Abb 5.4
+
+Elektron-Streuung an ${ }^{12} \mathrm{C}$
+![This diagram depicts the differential cross-section (dσ/dΩ) as a function of scattering angle (θ) for a particle interaction at an energy of 420 MeV, showing experimental data points compared to theoretical model predictions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-09_1217_915_328_307.jpg)
+
+| $\rho(\mathrm{r})$ | $\left\|F\left(\boldsymbol{q}^{2}\right)\right\|$ | Beispiel |
+| :--- | :--- | :--- |
+| punktförmig | konstant | Elektron |
+| exponentiell | Dipol | Proton |
+| gaußförmig | gaußförmig | ${ }^{6} \mathrm{Li}$ |
+| homogene Kugel | oszillierend | - |
+| Kugel mit diffusem Rand | oszillierend | ${ }^{40} \mathrm{Ca}$ |
+| $\mathrm{r} \longrightarrow$ | $\|q\| \longrightarrow$ |  |
+
+
+| Ladungsverteilung $f(r)$ | Formfaktor $F\left(\boldsymbol{q}^{2}\right)$ |  |
+| :--- | :--- | :--- |
+| Punkt exponentiell | 1 $\left(1+\boldsymbol{q}^{2} / a^{2} \hbar^{2}\right)^{-2} \exp \left(-\boldsymbol{q}^{2} / 2 a^{2} \hbar^{2}\right) 3 \alpha^{-3}(\sin \alpha-\alpha \cos \alpha)$ mit $\quad \alpha=\|\boldsymbol{q}\| R / \hbar$ | ![This image depicts mathematical expressions for the nuclear form factor \( F(q^2) \), showing different models used to describe how the form factor depends on the momentum transfer squared \( q^2 \), including constant, dipole, Gaussian, and oscillatory forms.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-09_347_540_1409_2409.jpg) |
+
+
+![This diagram is a spectrum showing the energy levels of excited states in carbon-12 (^12C) nuclei produced by inelastic scattering of electrons (e + ^12C → e' + ^12C). It plots the number of events versus the scattered electron momentum (p') with labeled peaks corresponding to specific excitation energies in ^12C.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/5f6212d1-3a26-4e8f-a7d9-8d77190a4575/c1d9f33e-98dc-49ba-8968-ab63731c6a6c-10_1480_1492_204_932.jpg)
+Povh Abb 5.
+

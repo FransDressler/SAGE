@@ -1,0 +1,224 @@
+### 8.2 Virialentwicklung
+
+Wir betrachten nun ein wechselwirkendes Gas mit Hamiltonfunktion
+
+$$
+H=\sum_{i=1}^{N} \frac{\vec{p}_{i}^{2}}{2 m}+\frac{1}{2} \sum_{i, j=1}^{N} U_{i j} \quad \text { wobei } \quad U_{i j} \equiv U\left(\vec{x}_{i}-\vec{x}_{j}\right)
+$$
+
+2-Teilchen Wechselwirkung
+⟹ Die Zustandssumme ist im Allgemeinen nicht mehr exakt berechenbar.
+
+Virialentwicklung: Reihenentwicklung der Zustandsgleichung eines wechselwirkenden Gases in Potenzen der Dichte $\rho=\bar{N} / V$ :
+
+\frac{p}{k_{B} T}=\frac{\bar{N}}{V}+B_{2}(T)\left(\frac{\bar{N}}{V}\right)^{2}+B_{3}(T)\left(\frac{\bar{N}}{V}\right)^{3}+\ldots
+
+Die entsprechenden Parameter $B_{n}(T)$ nennt man Virialkoeffizienten.
+
+Als Ausgangspunkt der Entwicklung betrachten wir die großkanonische Zustandssumme:
+
+Z_{\mathrm{G}}=\sum_{N=0}^{\infty} z^{N} Z_{\mathrm{K}}(N) \quad \text { mit } \quad z=e^{\beta \mu \quad \text { "Fugazität" }}
+
+Daraus erhalten wir:
+
+\begin{array}{rlrl}
+J(T, V, \mu) & =-k_{B} T \ln Z_{\mathrm{G}} & \text { und } & \bar{N}=-\left.\frac{\partial J}{\partial \mu}\right|_{T, V} \\
+& =-p V & & \text { mittlere Teilchenzahl } \\
+\text { großkanonisches Potential } & &
+\end{array}
+
+Für ein ideales, nicht-entartetes Gas gilt:
+
+z=e^{\beta \mu} \simeq \frac{\bar{N} \lambda_{T}^{3}}{V} \ll 1
+
+Idee: Approximative Berechnung der ZS eines wechselw., nicht-entarteten Gases durch Reihenentwicklung in $z=e^{\beta \mu} \ll 1$.
+
+\begin{aligned}
+J(T, V, \mu) & =-k_{B} T \ln \left[1+Z_{\mathrm{K}}(1) z+Z_{\mathrm{K}}(2) z^{2}+\ldots\right] \\
+& \quad(*) \\
+& =-k_{B} T\left[Z_{\mathrm{K}}(1) z+\left(Z_{\mathrm{K}}(2)-\frac{Z_{\mathrm{K}}^{2}(1)}{2}\right) z^{2}+\ldots\right]
+\end{aligned}
+
+*) Reihenentwicklung des Logarithmus:
+
+\begin{aligned}
+& \ln (1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+\ldots \\
+& \ln \left(1+\sum_{n=1}^{\infty} c_{n} x^{n}\right)=c_{1} x+\left(c_{2}-\frac{c_{1}^{2}}{2}\right) x^{2}+\left(c_{3}-c_{1} c_{2}+\frac{c_{1}^{3}}{3}\right) x^{3}+\ldots
+\end{aligned}
+
+Analog erhält man für die mittlere Teilchenzahl:
+
+\bar{N}=-\left.\frac{\partial J}{\partial \mu}\right|_{T, V}=z Z_{\mathrm{K}}(1)+2 z^{2}\left(Z_{\mathrm{K}}(2)-\frac{Z_{\mathrm{K}}^{2}(1)}{2}\right)+\ldots
+
+Diese Gleichung kann durch Potenzreihenansatz $z \equiv(\bar{N})=\sum_{n} \alpha_{n} \bar{N}^{n}$ iterativ nach $z$ aufgelöst werden:
+
+\Rightarrow \quad z=\frac{\bar{N}}{Z_{\mathrm{K}}(1)}-\frac{2 \bar{N}^{2}}{Z_{\mathrm{K}}^{3}(1)}\left(Z_{\mathrm{K}}(2)-\frac{Z_{\mathrm{K}}^{2}(1)}{2}\right)+\ldots
+
+Nach Einsetzen von $z$ in Reihendarstellung von $J=-p V$ erhalten wir die gewünschte Entwicklung:
+
+\frac{p}{k_{B} T}=\frac{\bar{N}}{V}+\sum_{n=2}^{\infty} B_{n}(T)\left(\frac{\bar{N}}{V}\right)^{n}
+
+wobei sich die Virialkoeffizienten $B_{n}(T)$ aus der expliziten Durchführung der Reihenentwicklung ergeben.
+
+### 8.2.1 Diskussion von $\mathrm{B}_{2}$ :
+
+- Die wichtigste und oft auch ausreichende Korrektur zum idealen Gas ist durch den 2. Virialkoeffizienten
+
+B_{2}(T)=-\frac{V}{Z_{\mathrm{K}}^{2}(1)}\left(Z_{\mathrm{K}}(2)-\frac{Z_{\mathrm{K}}^{2}(1)}{2}\right)=V\left(\frac{1}{2}-\frac{Z_{\mathrm{K}}(2)}{Z_{\mathrm{K}}^{2}(1)}\right) \text { gegeben. }
+
+- Berechnung von $B_{2}(T)$ :
+
+Z_{\mathrm{K}}(1)=\frac{1}{h^{3}} \prod_{i=1}^{3} \int d p_{i} e^{-\frac{\beta}{2 m} p_{i}^{2}} \int d^{3} x_{1}=\frac{V}{\lambda_{T}^{3}}
+
+Z_{\mathrm{K}}(2) & =\frac{1}{2 h^{6}} \prod_{i=1}^{6} \int d p_{i} e^{-\frac{\beta}{2 m} p_{i}^{2}} \int d^{3} x_{1} d^{3} x_{2} e^{-\beta U\left(\vec{x}_{1}-\vec{x}_{2}\right)} \\
+& =\frac{1}{2 \lambda_{T}^{6}} \int d^{3} x_{1} d^{3} x_{2} e^{-\beta U\left(\vec{x}_{1}-\vec{x}_{2}\right)}
+
+![This diagram depicts the position vectors of two particles within a volume \( V \), showing the vectors \(\vec{x}_1\) and \(\vec{x}_2\) pointing to the individual particle positions and \(\vec{x}\) representing a vector between the two particles.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-05_545_672_322_2165.jpg)
+
+\begin{gathered}
+\Rightarrow Z_{\mathrm{K}}(2)-\frac{Z_{\mathrm{K}}^{2}(1)}{2}=\frac{1}{2 \lambda_{T}^{6}} \int d^{3} x_{1} d^{3} x_{2} \underbrace{\left(e^{-\beta U\left(\vec{x}_{1}-\vec{x}_{2}\right)}-1\right)}_{\neq 0 \text { für } \vec{x}_{1} \approx \vec{x}_{2}} \\
+\left(\vec{x}=\vec{x}_{1}-\vec{x}_{2}\right) \quad \simeq-\frac{1}{2 \lambda_{T}^{6}} \int_{V} d x_{2} \int_{\mathcal{R}^{3}} d^{3} x\left(e^{-\beta U(\vec{x})}-1\right) \\
+\Rightarrow \quad B_{2}(T)=-\frac{1}{2} \int d^{3} x\left(e^{-\beta U(\vec{x})}-1\right)
+\end{gathered}
+
+- Näherungsweise Berechnung von $B_{2}(T)$ :
+![This diagram depicts a typical atom-atom interaction potential, showing how the potential energy (U) varies with the distance (r) between two atoms.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-06_862_1063_274_174.jpg)
+![The image depicts a right-pointing arrow symbol, commonly used to indicate direction or movement toward the right.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-06_207_234_528_1357.jpg)
+![This diagram depicts the "hard-sphere approximation" potential energy function \( U(r) \) used in physics or chemistry to model particle interactions, showing an infinite potential barrier for distances \( r \leq r_0 \) and a finite, thermally influenced potential for \( r > r_0 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-06_905_1258_221_1706.jpg)
+
+B_{2}(T) & =-2 \pi \int_{0}^{\infty} d r r^{2}\left(e^{-\beta U(r)}-1\right) \\
+& \approx \underbrace{2 \pi \int_{0}^{r_{0}} d r r^{2}}_{-\frac{a}{k_{B} T}}+\underbrace{2 \pi \beta \int_{r_{0}}^{\infty} d r r^{2} U(r)} \approx b-\frac{a}{k_{B} T}
+
+B_{2}(T) \approx b-\frac{a}{k_{B} T} \quad\left\{\begin{array}{l}
+b=\frac{2 \pi r_{0}^{3}}{3} \quad(*) \\
+a=2 \pi \int_{r_{0}}^{\infty} d r r^{2}|U(r)| \quad(* *)
+\end{array}\right.
+
+Anmerkungen:
+*) Das von den Gasteilchen blockierte Volumen (pro Teilchen). Für harte Kugeln ist $b$ vier mal das Volumen einer Kugel.
+![This diagram depicts the concept of atomic or molecular radius, specifically showing the distance \( r_0 \) between the centers of two adjacent atoms or ions. It is used to illustrate the measure of atomic size or the bond length in a diatomic molecule.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-07_334_440_834_2165.jpg)
+**) Das negative Vorzeichen impliziert eine Verringerung des Drucks. Dieser Term kann daher als Anziehung interpretiert werden.
+**) Die Näherung $e^{-\beta U} \approx 1-\beta U$ ist gültig für Temperaturen größer als die Potentialtiefe. Damit sind gebundene Zustände ausgeschlossen.
+
+⟹ Messung von $B_{2}(T)$ erlaubt Rückschlüsse auf Wechselwirkungspotential!
+
+### 8.2.2 Ergänzung "Cluster-Entwicklung":
+
+Alternativ zur obigen Herleitung betrachten wir nun die kanonische ZS
+
+Z_{\mathrm{K}}(N) & =\frac{1}{N!h^{3 N}} \int d p^{3 N} d x^{3 N} e^{-\beta H} \quad \quad U_{i j} \equiv U\left(\vec{x}_{i}-\vec{x}_{j}\right) \\
+& =\frac{1}{N!\lambda_{T}^{3 N}} \int d x^{3 N} e^{-\beta \sum_{i<j} U_{i j}}=\frac{1}{N!\lambda_{T}^{3 N}} \int d x^{3 N} \prod_{i<j} e^{-\beta U_{i j}}
+
+und definieren die "Ursell-Mayer" Funktion:
+
+f_{i j}=e^{-\beta U_{i j}}-1
+
+![This diagram depicts a radial potential energy function \( U(r) \) and a corresponding radial wavefunction \( f(r) \) for a quantum system, showing the behavior of the wavefunction within and beyond the potential well, with characteristic points \( r_0 \) and \( r_c \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-08_799_1422_1415_258.jpg)
+
+Für ein Potential mit charakteristischer
+
+f\left(r \gg r_{c}\right) \rightarrow 0
+
+Z_{\mathrm{K}}(N)= & \frac{1}{N!\lambda_{T}^{3 N}} \int d x^{3 N} \prod_{i<j}\left(f_{i j}+1\right) \\
+= & \frac{1}{N!\lambda_{T}^{3 N}} \int d x^{3 N}\left[\begin{array}{c}
+1+\left(f_{12}+f_{13}+\ldots\right) \\
+\text { (I) } \\
+\\
+\\
+\end{array}+\left(f_{12} f_{23}+f_{12} f_{34}+\ldots\right)+\left(f_{12} f_{23} f_{34}+\ldots\right)+\ldots\right]
+
+(III)
+![This diagram depicts the stages of particle aggregation or clustering, showing (I) dispersed individual particles, (II) initial particle collisions forming small clusters, and (III) larger clusters formed by multiple particles aggregating.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-09_730_2431_950_142.jpg)
+$\mathbf{n}$-ter Term: WW Korrektur für $n$ Teilchen innerhalb eines Volumens $V \sim r_{c}^{3}$.
+Für ein verdünntes Gas werden solche Konfigurationen für größere $n$ immer unwahrscheinlicher!
+"Mayersche Cluster-Entwicklung": Berechnung der Zustandssumme durch systematisches Abzählen und Aufsummieren aller Korrekturterme (siehe z.B. K. Huang, "Statistical Mechanics").
+
+Hier: 2-Teilchen Korrektur:
+
+Z_{\mathrm{K}}(N) & \approx \frac{1}{N!\lambda_{T}^{3 N}} \int d x^{3 N}[1+(\underbrace{f_{12}+f_{13}+\ldots}_{N(N-1) / 2})] \\
+& =\frac{1}{N!\lambda_{T}^{3 N}}[V^{N}+N(N-1) V^{N-1} \times \underbrace{\frac{1}{2} \int d x^{3}\left(e^{-\beta U(\vec{x})}-1\right)}_{-B_{2}(T)}] \\
+& \approx \frac{V^{N}}{N!\lambda_{T}^{3 N}}\left[1-\frac{N^{2}}{V} B_{2}(T)\right] \quad(N \gg 1)
+
+⇒ Freie Energie: $\quad F \approx F^{\text {id }}-k_{B} T \ln \left[1-\frac{N^{2}}{V} B_{2}(T)\right]$
+
+### 8.2.3 "Molekularfeldnäherung" der freien Energie
+
+Wir betrachten die kanonische ZS:
+
+Z_{\mathrm{K}}(N)=\frac{1}{N!\lambda_{T}^{3 N}} \int d x^{3 N} e^{-\beta \sum_{i<j} U_{i j}}
+
+und schreiben die Wechselwirkung als:
+
+U_{i j}=U_{i j}^{\mathrm{B}}+U_{i j}^{\mathrm{HK}}
+
+![This diagram depicts the "hard-sphere approximation" for an interatomic or intermolecular binding potential, showing the potential energy \( U \) as a function of distance \( r \), where the potential is infinite (repulsive) below a certain radius \( r_0 \) and follows a binding potential \( U^B(r) \) beyond that.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-11_920_1211_237_1737.jpg)
+
+## Molekularfeldnäherung ("Mean-field approximation"):
+
+- Ersetze Bindungspotential durch gemitteltes Potential:
+
+\bar{U}=\frac{1}{V} \int_{V} d^{3} x U^{\mathrm{B}}(\vec{x})=-\frac{2 a}{V}
+
+\Rightarrow \quad \sum_{i<j} U_{i j}=-\frac{N(N-1)}{V} a+\sum_{i<j} U_{i j}^{\mathrm{HK}}
+
+\begin{array}{r}
+\Rightarrow \quad Z_{\mathrm{K}}(N) \approx \frac{1}{N!\lambda_{T}^{3 N}} \times e^{\frac{a N^{2}}{V k_{B} T}} \times \int d x^{3 N} \underbrace{e^{-\beta \sum_{i<j} U_{i j}^{\mathrm{HK}}}}_{\simeq 0 \text { für }\left|\vec{x}_{i}-x_{j}\right|<r_{0}} \\
+\text { 亘 }
+\end{array}
+
+Wir nähern das verbleibende Ortsintegral durch:
+
+\int d x^{3 N} e^{-\beta \sum_{i<j} U_{i j}^{\mathrm{HK}}} \approx\left(V-V_{\mathrm{ex}}\right)^{N}, \quad V_{\mathrm{ex}}=N\left(\frac{2 \pi r_{0}^{3}}{3}\right)=N b
+
+von allen anderen Teilchen blockiertes Volumen
+
+Damit erhalten wir einen genäherten Ausdruck für die Zustandssumme und die freie Energie für ein schwach wechselwirkendes Gas:
+
+& \Rightarrow \quad Z_{\mathrm{K}}(N) \approx \frac{(V-N b)^{N}}{N!\lambda_{T}^{3 N}} e^{\frac{a N^{2}}{V k_{B} T}} \\
+& \Rightarrow \quad F(T, V, N) \approx-k_{B} T N \ln \left(\frac{e(V-b N)}{N \lambda_{T}^{3}}\right)-\frac{a N^{2}}{V}
+
+## Bemerkung 1:
+
+(1) Clusterentwicklung (2-Teilchenkorrekturen):
+
+F \approx F^{\mathrm{id}}-k_{B} T \ln \left[1-\frac{N^{2}}{V} B_{2}(T)\right] \approx F^{\mathrm{id}}+k_{B} T \frac{N^{2}}{V} b-\frac{N^{2} a}{V}
+
+(2) Molekularfeldnäherung:
+
+F^{\mathrm{MF}}=-k_{B} T N \ln \left(\frac{e(V-b N)}{N \lambda_{T}^{3}}\right)-\frac{a N^{2}}{V} \approx F^{\mathrm{id}}+k_{B} T \frac{N^{2}}{V} b-\frac{N^{2} a}{V}
+
+(3) Virialentwicklung:
+
+\begin{array}{rlr}
+F=J+\mu N \quad \Rightarrow \quad F \approx F^{\text {id }}+k_{B} T \frac{N^{2}}{V} b-\frac{N^{2} a}{V} \\
+J \simeq-k_{B} T\left[N+B_{2} \frac{N^{2}}{V}\right] & \\
+\mu \simeq k_{B} T \ln \left[\frac{N \lambda_{T}^{3}}{V}\left(1+\frac{2 N}{V} B_{2}\right)\right] & \begin{array}{c}
+\text { (vgl. Reihenentwicklung der } \\
+\text { Fugazität in 8.2) }
+
+Bis zur ersten Ordnung von $\mathrm{B}_{2}, \mathrm{a}, \mathrm{b}$ (Gültigkeit der Näherung) erhält man mit allen drei Methoden das gleiche Resultat für die freie Energie.
+
+## Bemerkung 2:
+
+\int d x^{3 N} e^{-\beta \sum_{i<j} U_{i j}^{\mathrm{HK}}} \approx\left(V-V_{\mathrm{ex}}\right)^{N}, \quad V_{\mathrm{ex}}=N\left(\frac{2 \pi r_{0}^{3}}{3}\right)=N b
+
+vgl. 1D Tonks Gas (Übungsaufgabe 5.2):
+![This diagram depicts a one-dimensional system of particles within a box of length L, showing particle positions including a pair separated by a distance r₀ and a reference position xᵢ for a specific particle. It is likely used to illustrate spatial arrangements or correlations between particles in a confined system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-14_487_2505_1251_253.jpg)
+
+N!\times \int_{(N-1) r_{0} / 2}^{L-r_{0} / 2} d x_{N} \cdots \int_{3 r_{0} / 2}^{x_{3}-r_{0}} d x_{2} \int_{r_{0} / 2}^{x_{2}-r_{0}} d x_{1}=\left[L-N r_{0}\right]^{N}
+
+2D, 3D: Keine exakte Berechnung mehr möglich.
+![This diagram depicts a chemical reaction showing the formation of a covalent bond between atoms 2 and 3 as atom 1 approaches, illustrating the process of bond formation in a molecule.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ed19ffd-cb42-4a62-b084-1f53a731cc83/0e0fec6a-c5db-44da-9ff3-db5e77a243d0-15_804_1000_269_105.jpg)
+
+Das von Teilchen 2 und 3 blockierte Volumen für Teilchen 1 ist nicht mehr einfach zu berechnen.
+
+V_{\mathrm{exc}} \neq 2 \times\left(\frac{2 \pi r_{0}^{3}}{3}\right)
+
+-) Erste Anwendung von Monte Carlo Simulationen: Harte Kugeln in 2D [1]
+-) Verschiedene numerische Methoden zu Berechnung höherer Viralkoeffizienten in 3D [2]:
+
+B_{2} / b=1, \quad B_{3} / b=0.625, \quad B_{4} / b^{3}=0.28694950, \quad \ldots
+
+[1] N. Metropolis, A. W. Rosenbluth, M. N. Rosenbluth, A. H. Teller, E. Teller: Equation of State Calculations by Fast Computing Machines. In: The Journal of Chemical Physics. Volume 21, 1087 (1953)
+[2] Brian Cowen, Topics in Statistical Mechanics (Imperial College Press, 2005)
+

@@ -1,0 +1,142 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Hunklinger
+und Kopitzki
+Tight-binding Ansatz
+Bringt man Atome näher und näher zusammen so wird die Entartung
+der atomaren Niveaus aufgehoben. Annäherung von N-Atomen
+⇒ Aufhebung der N-fachen Entartung
+Diamant sollte im Modell der
+freien Elektronen ein Metall sein.
+Warum ist es ein Isolator?
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Gross/Marx
+Tight-binding Ansatz
+Beispiel einer Wellenfunktion
+Allg. ist der Ansatz einer
+gitterperiodischen Funktion für
+den „tight binding“-Ansatz nicht
+zwingend erforderlich. Die
+Rechnungen vereinfachen sich
+allerdings.
+
+aus Hunklinger
+Beispiel: einfach kubisches Gitter
+
+Tight-binding erklärt, dass (a) Bandlücken und Bandüberlapp vom jeweiligen Kristall abhängen und dass (b) die
+höheren Bänder nicht die Form der unteren Bänder besitzen müssen.
+Im „tight-binding“ Modell ist
+Diamant ein Isolator
+(bzw. Halbleiter mit großer
+Bandlücke)!
+
+Zahl der Zustände
+Zahl der Zustände in einem Band ist gleich der Anzahl N der primitiven Elementarzellen im Kristall
+(bei Besetzung der Zustände Spin beachten).
+- Volumen der primitiven Zelle des fcc-Gitters: V = a3/4
+⇒ Quader mit Kantenlänge LxLyLz enthält N = 4 LxLyLz /a3 primitive Zellen.
+- Volumen der 1. Brillouin-Zone (bcc-gitter mit Gitterkonstante 4/a)
+Beispiel:
+𝑉𝐵𝑧 = 1
+2
+4𝜋
+𝑎
+3
+= 32
+𝑎3 𝜋3
+⇒ Zahl der Zustände in der 1. BZ:
+32
+𝑎3 𝜋3: 2𝜋 3
+𝐿𝑥𝐿𝑦𝐿𝑧
+= 4𝐿𝑥𝐿𝑦𝐿𝑧
+𝑎3 = 𝑁
+Aus periodischer
+Randbedingung
+⇒ Zahl der besetzten Bänder ist bestimmt durch die Zahl der Elektronen pro Elementarzelle.
+
+Metalle, Halbleiter, Isolatoren
+106
+Nach Callister,
+Rethwisch (2014)
+100
+10-6
+10-12
+10-18
+Cu, Ag,
+Mn
+Ge,
+Ge
+Si
+GaAs
+SiC, GaN
+Diamant
+Quarz
+Saphir
+Teflon
+Metalle
+Halbmetalle
+Halbleiter
+(intrinsisch)
+Isolatoren
+EF
+EF
+Metall Halbmetall
+Halbleiter
+Eg < 3 eV
+Isolator
+Eg > 3 eV
+[W-1cm-1] bei 300 K
+
+Metalle, Halbleiter, Isolatoren
+Volle Bänder tragen
+keinen Strom,
+nicht-volle schon!
+
+
+Die Zustände im obersten besetzten Band sind nicht vollständig mit Elektronen besetzt.
+Die Zahl der Zustände in einem Band ist gleich der Zahl der primitiven Elementarzellen im
+Kristall, N ⇒ 2N Elektronen (spin-up und spin-down) können in einem Band untergebracht
+werden (falls Bänder nicht überlappen).
+Beispiel Alkalimetalle:
+ein Valenzelektron pro primitiver Elementarzelle ⇒ das oberste Band ist nur halb besetzt .
+Metalle
+Metall
+Oberstes Band mit freien Zuständen
+⇒ Leitungsband
+Oberstes voll besetztes Band
+⇒ Valenzband
++ weitere mit niedrigerer Energie
+Volle Bänder tragen keinen Strom,
+nicht-volle schon!
+
+aus Gross / Marx
+Beispiel: Bandstruktur von Kupfer (Siehe auch Vorlesung 20!)
+[Ar] + 3d104s1
+core
+11 Elektronen
+⇒ 6 Bänder
+𝐷 𝐸 = 𝑉
+2𝜋2
+2𝑚
+ℏ2
+3/2
+𝐸
+Volle Bänder tragen keinen Strom,
+
+Enthält die Elementarzelle eine gerade Anzahl von Elektronen (und überlappen die Bänder
+nicht) so füllen die Valenzelektronen ein oder mehrere Bänder vollständig auf und lassen
+(bei T = 0) die oberen leer.
+Beispiel Si: [Ne] + 3s23p2
+Halbleiter & Isolatoren
+Oberstes Band mit freien Zuständen
+⇒ Leitungsband
+Oberstes voll besetztes Band
+⇒ Valenzband
++ weitere mit niedrigerer Energie
+Eg
+Volle Bänder tragen keinen Strom!
+Halbleiter unterscheiden sich von Isolatoren nur durch die Größe der Energielücke
+(typisch größer/kleiner 3 eV):
+𝐸𝑔
+𝐻𝐿 < 𝐸𝑔
+𝐼𝑠𝑜𝑙𝑎𝑡𝑜𝑟

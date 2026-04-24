@@ -1,0 +1,309 @@
+## Übung zur Vorlesung <br> Physik der kondensierten Materie 1
+
+WiSe 2025/2026
+Technische Universität München
+Blatt 12
+Lehrstuhl für Nanotechnologie und -materialien
+
+Impuls von Blochelektronen, Bewegungsgleichung, Drude Modell, SommerfeldModell, Boltzmann
+
+### 12.1 Blochelektronen
+
+Ein Elektron befinde sich im leeren Leitungsband eines Kristalls und vollziehen nur unter der Wirkung eines konstanten elektrischen Feldes $E$ Bloch-Oszillationen:
+(a) Unter welchen Bedingungen könnten Bloch-Oszillationen in einem realen drei dimensionalen metallischen System auftreten.
+(b) Stelle die Bewegungsgleichung des Kristallelektrons auf.
+(c) Die Dispersionsrelation $E_{L}(k)$ des Leitungsbandes kann fur den Fall eines "schwachen" Gitterpotenzials kosinusförmig genähert werden. Zeichnen Sie in dieser Näherung die Dispersionsrelation entlang der $k_{x}$-Richtung und tragen Sie in Ihrer Skizze die Grenze der ersten Brillouin-Zone ein.
+(d) Bestimmen Sie die Periodendauer T und die räumliche Amplitude A der Oszillation.(Elektrischen Feld $E=6 \mathrm{~V} / \mathrm{cm}$, Gitterkonstante $a=0.3 \mathrm{~nm}$ und Bandbreite $W=6 \mathrm{eV}$ ).
+
+Lösung:
+(a) Bedingungen fur Bloch-Oszillation: Geringe Defektdichte (große mittlere freie Weglänge) und tiefe Temperaturen (geringe Elektron-Phonon-Streuung).
+(b) Formal gilt für Kristallelektronen dieselbe Bewegungsgleichung wie für freie Elektronen:
+
+$$
+\hbar \dot{k}=-e E
+$$
+
+Bei freien Elektronen gilt fur die Geschwindigkeit $\vec{v}=\hbar \vec{k} / m$. Allerdings handelt es sich im Falle von Elektronen im periodischen Potential bei $\vec{k}$ um den Kristallimpuls und die Geschwindigkeit folgt aus der Dispersionsrelation:
+
+\vec{v}=1 / \hbar \cdot \vec{\nabla}_{\vec{k}} E(\vec{k})
+
+(c) Dispersionsrelation
+![This diagram depicts an energy band structure in a crystal lattice, showing the energy E as a function of the wave vector k within the first Brillouin zone. It illustrates electron transitions under an applied electric field (E-Feld), indicating electron movement between energy states near the band extrema (E_max and E_min).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bffb51d0-4cb4-48d1-98c6-9577535ac0c7/02a0bcff-0824-4f0c-a619-be5282e1fc36-02_491_743_743_691.jpg)
+(d) Die Periode T der Schwingung entspricht der Zeit, die das Elektron braucht, um einmal die Brillouinzone vollständig zu durchlaufen:
+
+T=\left|\frac{2 \pi / a}{\dot{k}}\right|=\frac{h}{a e E}=23 n s
+
+Die Amplitude der Schwingung erhält man daraus, dass sich das Elektron auf seinem Weg vom Zentrum zum rechten Rand $(+\pi / a)$ der Brillouinzone von der Bandunterkante ( $E_{\text {min }}$ ) zur Oberkante ( $E_{\text {max }}$ ) bewegt. Aufgrund der Energieerhaltung gilt für die Amplitude:
+
+\begin{gathered}
+e E \cdot A=E_{\max }-E_{\min }=W \\
+A=W / e E=1 \mathrm{~cm}
+\end{gathered}
+
+### 12.2 Drude-Modell
+
+Das Drude-Modell verwendet die Annahme, dass nach allen Stößen die Bewegungsrichtung der Elektronen vollständig zufällig ist, also gilt unmittelbar nach einem Stoß
+$\left\langle v_{x}, v_{y}, v_{z}\right\rangle=0$. Eine weitere Annahme ist, dass die Stöße inelastisch sind: Es wird angenommen, dass jeder Stoß die kinetische Energie des Elektrons auf denselben Wert $\frac{1}{2} m v_{i}^{2}$ reduziert (dieser steht in Zusammenhang mit der Temperatur der Probe). Würden wir hingegen elastische Stöße annehmen, so würde die kinetische Energie der Elektronen im Beisein eines elektrischen Feldes ständig zunehmen und für große Proben nahezu unbegrenzt anwachsen.
+(a) Wir nehmen ein elektrisches Feld $E_{x}$ an, das in $x$-Richtung zeigt. Wie bekannt, bewirkt dieses Feld eine Verschiebung von $v_{x}$ um den Betrag $-\frac{e E_{x} t}{m}$ während einer Zeit $t$. Berechnen Sie die Zunahme der kinetischen Energie während der Zeit $t$
+
+\Delta E(t)=\frac{1}{2} m\left[v(t)^{2}-v(0)^{2}\right]
+
+wenn die Anfangsgeschwindigkeit gegeben ist durch
+
+v(0)=v_{i}(\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) .
+
+Zeigen Sie, dass unter der Annahme, dass die Richtung von $v(0)$ zufällig ist, der mittlere Energiezuwachs während der Zeit $t$ gegeben ist durch
+
+\langle\Delta E(t)\rangle=\frac{e^{2} E_{x}^{2} t^{2}}{2 m}
+
+## Lösung:
+
+Mit einer Anfangsgeschwindigkeit $v(0)=v_{i}(\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta)$ erhalten wir
+
+v(t)=v_{i}\left(\sin \theta \cos \phi-\frac{e E_{x} t}{m}, \sin \theta \sin \phi, \cos \theta\right) .
+
+Damit ergibt sich
+
+v(t)^{2}-v(0)^{2}=-2 \frac{e E_{x} t}{m} \sin \theta \cos \phi+\frac{e^{2} E_{x}^{2} t^{2}}{m^{2}}
+
+und somit
+
+\Delta E(t)=-e E_{x} t \sin \theta \cos \phi+\frac{e^{2} E_{x}^{2} t^{2}}{2 m}
+
+Unter der Annahme, dass die Anfangsrichtung zufällig ist, mittelt sich der erste Term heraus, und man erhält
+
+\langle\Delta E(t)\rangle=\frac{e^{2} E_{x}^{2} t^{2}}{2 m}
+
+(b) Wie lautet die Wahrscheinlichkeitsdichtefunktion für die Zeit zwischen zwei aufeinanderfolgenden Stößen eines einzelnen Elektrons?
+Hinweis: Wir modulieren die Stöße als Poisson-Prozess mit Rate $1 / \tau$, genau wie man Übergänge durch eine Tunnelbarriere in einfachen Modellen als PoissonProzess mit Rate $\Gamma$ beschreibt.
+Lösung:
+(i) Die Wahrscheinlichkeit, dass ein Elektron innerhalb des kleinen Zeitintervalls $d t$ mit einer Verunreinigung zusammenstößt, ist $d t / \tau$.
+(ii) Die Wahrscheinlichkeit, dass ein Elektron während einer Zeit $t$ keine Stöße erfährt, ist $e^{-t / \tau}$.
+Daher ist die Wahrscheinlichkeit, dass ein Elektron eine Zeit $t$ frei fliegt und dann im Zeitintervall $[t, t+d t]$ stößt, das Produkt dieser beiden Wahrscheinlichkeiten:
+
+\left(\frac{d t}{\tau}\right) e^{-t / \tau}
+
+Die entsprechende Wahrscheinlichkeitsdichtefunktion für die Zeiten $t$ zwischen zwei Stößen lautet somit $p(t)=\frac{1}{\tau} e^{-t / \tau}$.
+(c) Berechnen Sie die mittlere Zeit zwischen zwei Stößen.
+
+Dies kann direkt mit der oben gefundenen Wahrscheinlichkeitsdichtefunktion berechnet werden:
+
+\langle t\rangle=\int_{0}^{\infty} d t t p(t)=\frac{1}{\tau} \int_{0}^{\infty} d t t e^{-t / \tau}=\tau
+
+(d) Verwenden Sie die Ergebnisse aus (a) und (b), um die mittlere Energie zu berechnen, die ein Elektron zwischen zwei Stößen gewinnt.
+Die als Funktion der Zeit zwischen zwei Stößen gewonnene Energie lautet
+
+\frac{e^{2} E_{x}^{2} t^{2}}{2 m}
+
+sodass der Erwartungswert dieser Energie gegeben ist durch
+
+\frac{e^{2} E_{x}^{2}}{2 m}\left\langle t^{2}\right\rangle=\frac{e^{2} E_{x}^{2}}{2 m \tau} \int_{0}^{\infty} d t t^{2} e^{-t / \tau}=\frac{e^{2} E_{x}^{2} \tau^{2}}{m}
+
+(e) Unter der Annahme, dass die gesamte zwischen zwei Stößen gewonnene Energie beim zweiten Stoß an das Gitter abgegeben wird, zeigen Sie, dass der mittlere Energietransfer von den Elektronen auf die Probe pro Volumen und pro Sekunde gegeben ist durch $\sigma E_{x}^{2}$, wobei $\sigma=\frac{n e^{2} \tau}{m}$ die Leitfähigkeit ist und $n$ die Elektronendichte bezeichnet.
+Die mittlere Stoßfrequenz pro Volumen in der Probe ist $n / \tau$, wobei $n$ die Elektronendichte ist. Im Mittel überträgt jeder Stoß eine Energie
+
+\frac{e^{2} E_{x}^{2} \tau^{2}}{m}
+
+von den Elektronen auf das Gitter. Die gesamte Energietransferrate pro Volumen ist somit
+
+\frac{n e^{2} \tau}{m} E_{x}^{2}=\sigma E_{x}^{2}
+
+wobei $\sigma=\frac{n e^{2} \tau}{m}$ die Leitfähigkeit ist.
+(f) Zeigen Sie, dass sich daraus für die gesamte pro Sekunde dissipierte Energie in einer leitfähigen Probe der Länge $L$ und des Querschnitts $A$ das bekannte Ergebnis ergibt
+
+P=I^{2} R
+
+wobei $R$ der Gesamtwiderstand der Probe ist.
+Die gesamte pro Sekunde dissipierte Energie lautet somit
+
+P=A L \sigma E_{x}^{2}
+
+wobei $A L$ das Volumen der Probe ist. Die Stromdichte (entlang der Feldrichtung) ist gegeben durch
+
+j=\sigma E_{x}
+
+und der Gesamtstrom ergibt sich daher zu
+
+I=A \sigma E_{x}
+
+Setzt man $E_{x}=\frac{I}{A \sigma}$ ein und verwendet $R=\frac{L}{\sigma A}$, so erhält man unmittelbar $P=I^{2} R$.
+
+### 12.3 Bloch-Oszillationen
+
+In der quasi-klassischen Beschreibung eines Wellenpakets, das um einen bestimmten Quasiimpuls $\mathbf{k}$ zentriert ist, gilt für die Gruppengeschwindigkeit
+
+\dot{\mathbf{r}}=\frac{1}{\hbar} \frac{\partial \varepsilon_{\mathbf{k}}}{\partial \mathbf{k}},
+
+während sich der Quasiimpuls gemäß
+
+\hbar \dot{\mathbf{k}}=\mathbf{F}_{\mathrm{ext}}
+
+ändert, wobei $\mathbf{F}_{\text {ext }}$ die Kraft durch die angelegten externen Felder (zusätzlich zum periodischen Potential) ist.
+(a) Wir betrachten das eindimensionale Tight-Binding-Modell mit der Dispersionsrelation
+
+\varepsilon_{k}=-2 t \cos (k a) .
+
+Zeigen Sie, dass ein homogenes elektrisches Feld die Elektronen nicht dauerhaft beschleunigt, sondern sie um eine feste Position herum oszillieren lässt (Berechnen sie den Ausdruck für die Bloch-Oszillationen $r(t)$ und deren Frequenz). Das bedeutet, dass für hinreichend starke Felder alle Metalle wie Isolatoren wirken würden.
+(b) Warum ist dieser Effekt in normalen Metallen schwer zu beobachtet? Was würde sich ändern, wenn man statt Metallen Halbleiter-Supragitter (längere Gitterperiodizität und größere Relaxationszeit) betrachtet?
+Hinweis: Metalle haben eine Relaxationszeit der Größenordnung $\sim 10^{-14} \mathrm{~s}$ und eine Gitterkonstante $a \approx 1 \AA$. Schätzen Sie das minimale Feld ab, das nötig ist, um Bloch-Oszillationen zu beobachten. Beachten Sie, dass die quasi-klassische Näherung im Fall sehr starker Felder zusammenbricht.
+(c) Wir fügen nun einen kleinen Dämpfungsterm zu Gl. (2) hinzu und analysieren die Konsequenzen. Die Änderungsrate des Quasiimpulses sei nun
+
+\hbar \dot{k}=F_{\mathrm{ext}}-\frac{m}{\tau} \dot{r},
+
+wobei $\tau$ die Relaxationszeit ist.
+Zeigen Sie, dass diese Dämpfung zum Verschwinden der Oszillationen und damit zu einer stationären Lösung führen kann. Wie lautet die entsprechende
+
+Bedingung, und wie sieht die stationäre Lösung aus? Berechnen Sie anschließend analytisch $k(t)$ in beiden Situationen (ohne und mit Dämpfung), um Ihre Überlegungen zu überprüfen.
+
+(a) Ausgangspunkt sind die semiklassischen Gleichungen in 1D:
+
+\dot{r}=\frac{1}{\hbar} \frac{\partial \varepsilon_{k}}{\partial k},
+
+Gruppengeschwindigkeit aus der Dispersionsrelation: Gegeben ist die Dispersionsrelation
+
+\varepsilon_{k}=-2 t \cos (k a)
+
+Die Gruppengeschwindigkeit ist
+
+v(k)=\dot{r}=\frac{1}{\hbar} \frac{\partial \varepsilon_{k}}{\partial k}=-2 t \cdot(-\sin (k a)) \cdot a=2 t a \sin (k a)
+
+Wir legen ein homogenes elektrisches Feld $E$ an:
+
+F_{\mathrm{ext}}=-e E
+
+Daher folgt
+
+\hbar \dot{k}=-e E \quad \Rightarrow \quad \dot{k}=-\frac{e E}{\hbar}
+
+Integration mit Anfangsbedingung $k(0)=k_{0}$ ergibt
+
+k(t)=k_{0}-\frac{e E}{\hbar} t
+
+Wir definieren die Bloch-Frequenz
+
+\omega_{B}=\frac{e E a}{\hbar}
+
+so dass
+
+k a(t)=k_{0} a-\omega_{B} t
+
+Zeitabhängige Geschwindigkeit und Bahn $r(t)$ : Einsetzen von $k(t)$ in $v(k)$ liefert
+
+v(t)=\dot{r}(t)=\frac{2 t a}{\hbar} \sin (k a(t))=\frac{2 t a}{\hbar} \sin \left(k_{0} a-\omega_{B} t\right)
+
+Die Geschwindigkeit ist also periodisch in der Zeit. Zur Bestimmung von $r(t)$ integrieren wir:
+
+r(t)-r_{0}=\int_{0}^{t} v\left(t^{\prime}\right) d t^{\prime}=\frac{2 t a}{\hbar} \int_{0}^{t} \sin \left(k_{0} a-\omega_{B} t^{\prime}\right) d t^{\prime}
+
+Also
+
+r(t)-r_{0}=-\frac{2 t a}{\hbar \omega_{B}}\left[\cos \left(k_{0} a-\omega_{B} t\right)-\cos \left(k_{0} a\right)\right]
+
+Mit $\omega_{B}=e E a / \hbar$ folgt
+
+r(t)=r_{0}+\frac{2 t}{e E}\left[\cos \left(k_{0} a\right)-\cos \left(k_{0} a-\omega_{B} t\right)\right]
+
+Dies ist eine periodische Funktion in der Zeit. Das Elektron führt eine oszillatorische Bewegung aus. Die Amplitude der Bloch-Oszillation ist
+
+A=\frac{2 t}{e E}
+
+Die Bloch-Frequenz ist
+
+\omega_{B}=\frac{e E a}{\hbar} \Rightarrow T_{B}=\frac{2 \pi}{\omega_{B}}=\frac{2 \pi \hbar}{e E a}=\frac{h}{e E a}
+
+(b) Damit Bloch-Oszillationen beobachtbar sind, muss die Bloch-Periode kürzer oder vergleichbar mit der Relaxationszeit $\tau$ sein. Setzt man $T_{B}=\tau$, so erhält man
+
+E_{\min }=\frac{h}{e a \tau}
+
+Für typische Metalle mit $\tau \sim 10^{-14} \mathrm{~s}$ und $a \sim 1 \AA$ ist dieses Feld extrem groß (Größenordnung $10^{9} \mathrm{~V} / \mathrm{m}$ ). Solche Felder sind in Metallen praktisch nicht realisierbar (elektrischer Durchschlag, starke Erwärmung usw.), und außerdem wird die semiklassische Beschreibung bei so starken Feldern fragwürdig.
+Metalle vs. Supragitter: In normalen Metallen wird ein Elektron typischerweise schon nach Zeiten $\sim \tau$ gestreut und kann die Bloch-Periode nicht kohärent durchlaufen. Daher beobachtet man dort keine Bloch-Oszillationen. In HalbleiterSupragitterstrukturen ist hingegen die effektive Periodizität $a_{\text {SL }}$ deutlich größer und die Relaxationszeit $\tau$ kann größer sein. Dadurch wird
+
+E_{\min } \sim \frac{h}{e a_{\mathrm{SL}} \tau}
+
+wesentlich kleiner und kann in den experimentell zugänglichen Bereich fallen. Daher lassen sich Bloch-Oszillationen in solchen Supragitterstrukturen experimentell leichter nachweisen.
+(c) Nun betrachten wir die gedämpfte Gleichung
+
+\hbar \dot{k}=F_{\mathrm{ext}}-\frac{m}{\tau} \dot{r}
+
+eingesetzt
+
+\hbar \dot{k}=-e E-\frac{m}{\tau} \frac{2 t a}{\hbar} \sin (k a)
+
+Also
+
+\dot{k}=-\frac{e E}{\hbar}-\frac{2 t a m}{\hbar^{2} \tau} \sin (k a)
+
+Eine stationäre Lösung $k_{s}$ erfüllt $\dot{k}=0$ :
+
+\begin{gathered}
+0=-\frac{e E}{\hbar}-\frac{2 t a m}{\hbar^{2} \tau} \sin \left(k_{s} a\right) \\
+\frac{2 t a m}{\tau} \sin \left(k_{s} a\right)=-e E \hbar \\
+\sin \left(k_{s} a\right)=-\frac{e E \hbar \tau}{2 t a m}
+\end{gathered}
+
+Für eine reelle Lösung muss $\left|\sin \left(k_{s} a\right)\right| \leq 1$ gelten, also
+
+\left|\frac{e E \hbar \tau}{2 \operatorname{tam}}\right| \leq 1 \quad \Rightarrow \quad|e E| \leq \frac{2 \operatorname{tam}}{\hbar \tau}
+
+Dies ist die Bedingung dafür, dass eine stationäre Lösung (und damit das Verschwinden der Oszillationen) überhaupt möglich ist. In der stationären Lösung ist $\dot{k}=0$, also folgt aus
+
+\hbar \dot{k}=-e E-\frac{m}{\tau} \dot{r}
+
+die Kraftbilanz
+
+\frac{m}{\tau} \dot{r}=-e E
+
+Damit ergibt sich die stationäre Geschwindigkeit
+
+v_{s}=\dot{r}=-\frac{e E \tau}{m}
+
+Außerdem muss
+
+v_{s}=v\left(k_{s}\right)=\frac{2 t a}{\hbar} \sin \left(k_{s} a\right)
+
+gelten, was mit der zuvor gefundenen Bedingung für $\sin \left(k_{s} a\right)$ konsistent ist. Ohne Dämpfung ( $\tau \rightarrow \infty$ ) entfällt der zweite Term, und wir erhalten
+
+\hbar \dot{k}=-e E \quad \Rightarrow \quad k(t)=k_{0}-\frac{e E}{\hbar} t
+
+wie bereits in Teil (a). Dies führt zu den Bloch-Oszillationen.
+Wir betrachten kleine Abweichungen $\delta k(t)$ von der stationären Lösung $k_{s}$ :
+
+k(t)=k_{s}+\delta k(t), \quad|\delta k| \ll 1 .
+
+Entwicklung der Sinusfunktion:
+
+\sin (k a)=\sin \left(k_{s} a+a \delta k\right) \approx \sin \left(k_{s} a\right)+a \cos \left(k_{s} a\right) \delta k
+
+Eingesetzt in die DGL für $\dot{k}$ :
+
+\dot{k}=-\frac{e E}{\hbar}-\frac{2 t a m}{\hbar^{2} \tau}\left[\sin \left(k_{s} a\right)+a \cos \left(k_{s} a\right) \delta k\right] .
+
+Da $k_{s}$ stationär ist, erfüllt es
+
+-\frac{e E}{\hbar}-\frac{2 t a m}{\hbar^{2} \tau} \sin \left(k_{s} a\right)=0
+
+sodass der konstante Anteil verschwindet. Es bleibt
+
+\dot{\delta k}=-\frac{2 t a m}{\hbar^{2} \tau} a \cos \left(k_{s} a\right) \delta k
+
+Wir definieren
+
+\gamma=\frac{2 t a^{2} m}{\hbar^{2} \tau} \cos \left(k_{s} a\right)
+
+dann gilt
+
+\dot{\delta k}=-\gamma \delta k
+
+Die Lösung ist
+
+\delta k(t)=\delta k(0) e^{-\gamma t}=\left(k_{0}-k_{s}\right) e^{-\gamma t},
+
+
+k(t)=k_{s}+\left(k_{0}-k_{s}\right) e^{-\gamma t}, \quad \gamma=\frac{2 t a^{2} m}{\hbar^{2} \tau} \cos \left(k_{s} a\right)
+
+Damit nähert sich $k(t)$ exponentiell der stationären Lösung $k_{s}$. Die Geschwindigkeit nähert sich entsprechend dem konstanten Wert
+
+v_{s}=-\frac{e E \tau}{m}
+
+wobei alle Oszillationen mit der Zeit abklingen und schließlich verschwinden.
+

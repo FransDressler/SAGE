@@ -1,0 +1,140 @@
+## Vorlesung 6: 18.11.2025
+
+1.13.3 Photo-Effekt (dominierend bei kEV)
+
+- Ein Photon wird komplett vom Kern absorbiert.
+- Ein gebundenes Elektron wird ausgesendet.
+- Der Kern erhält einen kleinen (zu vernachlässigenden) Rückstoß, damit die Impulserhaltung gilt.
+
+Die kinetische Energie des Elektrons ist die Differenz von Photonenenergie und Bindungsenergie des Elektrons, was von der Schale abhängt,
+
+$$
+T_{e}=h \nu-E_{b} .
+$$
+
+![This diagram depicts the process of beta-minus decay, showing a neutron in the nucleus converting into a proton while emitting an electron (beta particle) and an antineutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-1_264_355_680_1375.jpg)
+
+Der Wirkungsquerschnitt fällt stark mit Energie ab
+
+\sigma_{\text {Photo-Effekt }} \sim \frac{Z^{4.5}}{E^{3.5}}
+
+- Je höher Z, desto mehr Elektronen
+- Je größer $E_{\gamma}$, desto kleinere Wellenlänge
+
+→ mehrfache Änderung des Feldes pro Durchgang des Atoms
+→ keine kohärente Anregung
+![This diagram depicts the energy spectrum of cosmic rays, showing the flux (r) as a function of energy (E) with a power-law dependence approximately proportional to E^-3.5.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-1_227_341_1133_1416.jpg)
+
+→ schwächere Übergangswahrscheinlichkeit
+Fermis goldene Regel: $\Gamma=M_{\mathrm{if}} \cdot \sigma$, wobei $M_{\mathrm{if}}$ stark sinkt.
+Was passiert nach dem Photoeffekt:
+Das angeregtes Atom geht durch Aussenden eines Röntgenquant (XRay) in Grundzustand über
+
+E_{\text {X-ray }}=E_{K}-E_{L} .
+
+Alternativer Prozess: Auger Elektronen; Energie wird auf weites Hüllenelketron übertragen (z.B. aus der L Schale).
+![This diagram depicts the Auger effect, showing the process where an electron transition between atomic shells (from L to K) results in the emission of an Auger electron instead of an X-ray photon.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-1_218_332_1631_1535.jpg)
+
+E_{\text {Auger }}=E_{K}-2 E_{L}
+
+### 1.13.4 Compton Effekt (Streuung) ( $100 \mathrm{keV}-1 \mathrm{MeV}$ )
+
+- Gamma Energie hoch genug, dass $e^{-}$quasi frei erscheinen!
+- Gamma stößt mit $e^{-}$, ändert seine Energie und gibt kinetische Energie an das Elektron ab.
+![This diagram depicts the Compton scattering process, showing an incident photon (γ) interacting with an electron in an atom, resulting in a scattered photon (γ') and a recoiling electron (e-).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-1_246_332_1982_1457.jpg)
+
+Aus Energie und Impulserhaltung folgt, mit $\theta$ als Streuwinkel:
+
+\begin{gathered}
+E^{\prime}=\frac{E}{1+\frac{E}{m_{e} c^{2}}(1-\cos \theta)}=\frac{E}{1+\alpha(1-\cos \theta)} \\
+T_{e}=E-E^{\prime}=E \frac{\alpha(1-\cos \theta)}{1+\alpha(1-\cos \theta)}
+\end{gathered}
+
+Das Maximum, bei der sogenannten 'Compton Kante', tritt bei $\theta=\pi$ auf, und zwar
+
+T_{e, \max }=\frac{2 E^{2}}{m_{e} c^{2}+2 E}
+
+Dieser Wert ist ungleich $E$, wegen Impulserhaltung: dafür wäre $E_{\gamma}=0$ gefordert. Starte mit der Annahme, dass die gesamte Energie auf das Elektron übertragen wird, also
+
+E_{e}=m_{e} c^{2}+E_{\gamma} .
+
+Außerdem muss
+
+p_{e}=\frac{E_{\gamma}}{c} \quad \text { (Impulserhaltung) }
+
+gelten. Dann setzt man $E_{\gamma}$ ein und erhält
+
+\begin{array}{r}
+E_{e}^{2}=P_{e}^{2} c^{2}+m_{e}^{2} c^{4} \\
+\Rightarrow 2 m_{e} c^{2} E_{\gamma}=0 \\
+\Rightarrow E_{\gamma}=0
+\end{array}
+
+Die Verschiebung in der Wellenlänge ist gegeben durch
+
+\Delta \lambda=\lambda^{\prime}-\lambda=\frac{h}{m_{e} c}(1-\cos \theta)=\lambda_{C}(1-\cos \theta) .
+
+Energiespektren:
+![This diagram depicts the energy spectrum of Compton-scattered photons, showing the differential number of photons (dN/dE) as a function of energy (E), including the Compton continuum and the Compton edge at energy E₀ = hν.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-2_442_554_954_751.jpg)
+
+Wirkungsquerschnitt
+
+\sigma_{C} \propto Z \cdot \frac{\ln E}{E}
+
+- Compton streut an Einelektronen: $Z \sim$ Anzahl der $e^{-}$
+- $\frac{\ln E}{E}$ Term sorgt für Abfallen von WQ mit steigender Energie
+- Je relativistischer, desto mehr Vorwärtsbewegung
+
+→ Weniger Zustände
+→ Kleinere Übergangswahrscheinlichkeit (konstant bei kleinen $E$, da nicht relativistisch)
+
+### 1.13.5 Paarbildung ( $\geq 1.022 \mathrm{MeV}$ )
+
+- Entstehung eines Elektron-Positron-Paares in Coulombfeld eines Kernes (oder Elektrons)
+
+\gamma+\text { Kern } \rightarrow e^{+}+e^{-}+\text {Kern }
+
+![This diagram is a Feynman diagram depicting the process of pair production, where a gamma photon (γ) interacts near a nucleus (kern) and produces an electron (e⁻) and a positron (e⁺).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-2_565_397_2170_552.jpg)
+
+Wieder muss der Kern involviert sein wegen der Impulserhaltung, da das Photon masselos ist.
+
+- Photon verschwindet dabei komplett. $E_{\gamma}$ geht in Massen und kinetische Energien der beiden Teilchen.
+
+E_{\gamma}=2 m_{e} c^{2}+T_{e^{+}}+T_{e^{-}}+T_{\text {Rückstoß, Kern }}
+
+Wirkungsquerschnitt
+Je höher die Energie, je mehr verschiedene (Energie-)Zustände existieren.
+→ Phasenraum wird größer
+
+\sigma_{e^{+}, e^{-}} \propto\left(E_{\gamma}-2 m_{e} c^{2}\right)^{2} \cdot Z^{2}
+
+Die Stärke des E-Felds hängt von $Z$ ab (Coulombpotential).
+
+### 1.14 Wie detektiert man Strahlung?
+
+4 (Haupt)Prozesse:
+
+1. Ionisation
+
+→ Erzeugung von Elektron-Loch oder $e^{-}$-Ion Paaren
+→ Quanta: $E_{i} \sim \mathrm{eV}$
+2. Szintillation
+
+→ Anregung von Atomen/Molekülorbitalen
+→ Quanta: $E_{\mathrm{ph}} \sim \mathrm{eV}-10 \mathrm{eV}$
+→ Aussendung sichtbares/UV-Licht
+3. Phonen (=Wärme)
+
+→ Gitterschwingungen
+→ Angeregt durch Stöße oder Absorption von Teilchen im Festkörper
+→ Quanta: $E_{\text {Phonon }} \sim \mu \mathrm{eV}-\mathrm{meV}$
+4. Cherenkov Licht
+
+→ Lichtgeschwindigkeit in Medium $v_{\text {med }}=\frac{c}{n}$, mit $n$ dem Brechungsindex (bei Wasser $n=1.33$ )
+
+→ Bei $v>v_{\text {med }}$ sind $e / m$ Wellen "langsamer" als Teilchen, analog zu Überschallflugzeug.
+
+→ Wellen werden erzeugt ( $\widehat{=}$ "Überschallknall") und entlang eines Kegels
+![This diagram depicts the concept of a hyperbola formed by the intersection of a cone and a plane. It shows how the plane intersects both nappes of the cone, resulting in two separate curves.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/dac0c6e3-93f7-4e10-bf25-3dfad449596f/013cb190-03c4-43ef-a80c-25da029d9676-3_172_360_1640_1603.jpg)
+emittiert.
+

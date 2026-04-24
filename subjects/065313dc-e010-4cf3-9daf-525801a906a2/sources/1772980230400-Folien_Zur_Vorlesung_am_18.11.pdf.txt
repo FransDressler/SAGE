@@ -1,0 +1,256 @@
+## 4. Quantenstatistik
+
+4.1 Quantenmechanik (Wiederholung):
+
+- Ein quantenmechanisches System ist zu jedem Zeitpunkt durch eine Wellenfunktion $|\psi(t)\rangle$ in einem abstrakten Hilbertraum $\mathcal{H}$ beschrieben.
+- Die Zeitentwicklung ist durch die Schrödingergleichung bestimmt,
+
+$$
+\frac{d}{d t}|\psi(t)\rangle=-\frac{i}{\hbar} \hat{H}|\psi(t)\rangle \quad \Rightarrow \quad|\psi(t)\rangle=e^{-i \hat{H} t / \hbar}|\psi(0)\rangle
+$$
+
+wobei der Hamiltonoperator $\hat{H}$ der Energie des Systems entspricht.
+
+- Der Hamiltonoperator ist "hermitesch" ( $\hat{H}^{\dagger}=\hat{H}$ ). Daraus folgt:
+
+\hat{H}\left|\varphi_{k}\right\rangle=E_{k}\left|\varphi_{k}\right\rangle \quad E_{k} \in \mathbb{R}
+
+und die Energieeigenzustände bilden eine vollständige Orthonormalbasis von $\mathcal{H}$ mit:
+
+\left\langle\varphi_{k} \mid \varphi_{k^{\prime}}\right\rangle=\delta_{k, k^{\prime}} \quad \sum_{k}\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|=\mathbb{1}
+
+- Alle observablen Größen werden durch hermitesche Operatoren $\hat{A}=\hat{A}^{\dagger}$ repräsentiert. Für ein System im Zustand $|\psi(t)\rangle$ ist der Erwartungswert von $\hat{A}$ gegeben durch
+
+\langle\hat{A}\rangle(t)=\langle\psi(t)| \hat{A}|\psi(t)\rangle
+
+- Sei $\hat{A}\left|a_{k}\right\rangle=a_{k}\left|a_{k}\right\rangle$, dann ist die Wahrscheinlichkeit bei einer einzelnen Messung den Wert $A=a_{k}$ zu erhalten gleich
+
+P\left(A=a_{k}\right)=\left|\left\langle a_{k} \mid \psi(t)\right\rangle\right|^{2}
+
+Wichtig: Selbst für ein vollständig bestimmtes System
+
+\hat{H},|\psi(0)\rangle \quad \Rightarrow \quad|\psi(t)\rangle=e^{-i \hat{H} t / \hbar}|\psi(0)\rangle
+
+(deterministisch)
+sind Messergebnisse in der Quantenmechanik i.A. zufällig verteilt.
+
+## Ziel der statistischen Physik:
+
+Beschreibung nicht-vollständig bestimmter Quantensysteme.
+
+### 4.2 Der Dichteoperator
+
+Betrachten wir nun den Fall, dass der Anfangszustand nicht exakt bekannt ist, sondern nur, dass ein Zustand
+
+|\psi(t=0)\rangle=\left|\psi_{n}\right\rangle \quad \text { mit Wahrscheinlichkeit } \quad p_{n} \text { vorliegt. }
+
+Dann ist der verallgemeinerte Erwartungswert einer Observable:
+
+\langle\hat{A}\rangle(t)=\sum_{n} p_{n}\left\langle\psi_{n}(t)\right| \hat{A}\left|\psi_{n}(t)\right\rangle \quad \quad\left|\psi_{n}(t)\right\rangle=e^{-i \hat{H} t / \hbar}\left|\psi_{n}\right\rangle
+
+"Unbestimmtheit des Systems"
+
+\begin{aligned}
+&\langle\hat{A}\rangle(t)=\sum_{n} p_{n}\left\langle\psi_{n}(t)\right| \underbrace{\left(\sum_{k}\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|\right)}_{\mathbb{1}} \hat{A}\left|\psi_{n}(t)\right\rangle \\
+&=\sum_{k}\left\langle\varphi_{k}\right| \hat{A} \underbrace{\sum_{n} p_{n}\left|\psi_{n}(t)\right\rangle\left\langle\psi_{n}(t)\right|}_{=: \hat{\rho}(t) \longrightarrow \text { Spur }})\left|\varphi_{k}\right\rangle=\operatorname{Spp} \hat{A} \hat{\rho}(t)\} \\
+& \longrightarrow \text { "Dichteoperator" }
+\end{aligned}
+
+- Der Zustand eines nicht-vollständig bestimmten Quantensystems wird durch den Dichteoperator $\hat{\rho}(t)$ repräsentiert.
+- Mit Hilfe des Dichteoperators können Erwartungswerte von Observablen verallgemeinert als
+
+\langle\hat{A}\rangle(t)=\operatorname{Sp}\{\hat{A} \hat{\rho}(t)\}
+
+ausgedrückt werden.
+
+## Eigenschaften des Dichteoperators:
+
+- selbstadjungiert (="hermitesch"): $\quad \hat{\rho}^{\dagger}=\hat{\rho} \quad$ (folgt aus Definition)
+- Diagonalform: Da hermitesch, kann $\hat{\rho}$ immer in der Form
+
+\hat{\rho}=\sum_{k} p_{k}\left|\lambda_{k}\right\rangle\left\langle\lambda_{k}\right|
+
+geschrieben werden, wobei $\left|\lambda_{k}\right\rangle$ Eigenbasis von $\hat{\rho}$ und $p_{k} \in \mathbb{R}$ ist die Wahrscheinlichkeit, das System im Zustand $\left|\lambda_{k}\right\rangle$ zu finden.
+
+Achtung: Diese Darstellung ist nicht eindeutig wenn $p_{k}=p_{k^{\prime}}!$
+
+- Da $p_{k}$ Wahrscheinlichkeiten ⇒ $\hat{\rho}$ ist positiv semidefinit ( $p_{k} \geq 0$ ) und
+
+\operatorname{Sp}\{\hat{\rho}\}=\sum_{k} p_{k}=1
+
+"reiner Zustand": $\quad \hat{\rho}=|\psi\rangle\langle\psi| \quad \Leftrightarrow \quad \operatorname{Sp}\left\{\hat{\rho}^{2}\right\}=1$
+"gemischter Zustand": $\quad \hat{\rho}=\sum_{k=1}^{m>1} p_{k}\left|\lambda_{k}\right\rangle\left\langle\lambda_{k}\right| \Leftrightarrow \operatorname{Sp}\left\{\hat{\rho}^{2}\right\}=\sum_{k=1}^{m>1} p_{k}^{2}<1$
+
+- Zeitentwicklung:
+![This image depicts the time-dependent Schrödinger equation in quantum mechanics, showing the relationship between the time evolution of a quantum state \(|\psi_n(t)\rangle\) and the Hamiltonian operator \(\hat{H}\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/17f8fb7e-a8c1-48e9-aa37-5d14ba3de8f4/ab67de00-6dcd-4c5a-9e36-26105bfc07aa-05_222_2045_1104_945.jpg)
+
+\begin{aligned}
+\frac{d}{d t} \hat{\rho}(t) & =\sum_{n} p_{n}\left(\left|\dot{\psi}_{n}(t)\right\rangle\left\langle\psi_{n}(t)\right|+\left|\psi_{n}(t)\right\rangle\left\langle\dot{\psi}_{n}(t)\right|\right) \\
+\frac{d}{d t} \hat{\rho}(t) & =-\frac{i}{\hbar} \hat{H}\left(\sum_{n} p_{n}\left|\psi_{n}(t)\right\rangle\left\langle\psi_{n}(t)\right|\right)+\frac{i}{\hbar}\left(\sum_{n} p_{n}\left|\psi_{n}(t)\right\rangle\left\langle\psi_{n}(t)\right|\right) \hat{H}
+\end{aligned}
+
+\Rightarrow \quad \frac{d}{d t} \hat{\rho}(t)=-\frac{i}{\hbar}[\hat{H}, \hat{\rho}] \quad \text { "von Neumann Gleichung" }
+
+Beispiel 1: $|\psi\rangle=\alpha|0\rangle+\beta|1\rangle \quad|\alpha|^{2}+|\beta|^{2}=1$
+$\Rightarrow \hat{\rho}=|\psi\rangle\langle\psi|=|\alpha|^{2}|0\rangle\langle 0|+\alpha \beta^{*}|0\rangle\langle 1|+\alpha^{*} \beta|1\rangle\langle 0|+|\beta|^{2}|1\rangle\langle 1| \quad \begin{gathered}\text { reiner } \\ \text { Zustand }\end{gathered}$
+$\begin{aligned} & \text { Matrixdarstellung: } \\ & \{|0\rangle,|1\rangle\} \text { - Basis }\end{aligned} \hat{\rho}=\left(\begin{array}{cc}|\alpha|^{2} & \alpha^{*} \\ \alpha^{*} \beta & |\beta|^{2}\end{array}\right) \longrightarrow$ "Kohärenzen"
+"kohärente Superposition von $|0\rangle$ und $|1\rangle$ "
+
+Beispiel 2: $\quad p_{0}:|\psi\rangle=|0\rangle, \quad p_{1}:|\psi\rangle=|1\rangle \quad \quad p_{0}+p_{1}=1$
+$\Rightarrow \hat{\rho}=p_{0}|0\rangle\langle 0|+p_{1}|1\rangle\langle 1| \quad$ gemischter Zustand
+
+Matrixdarstellung: $\quad \hat{\rho}=\left(\begin{array}{cc}p_{0} & 0 \\ 0 & p_{1}\end{array}\right) \quad$ "statistisches Gemisch
+
+## Der reduzierte Dichteoperator:
+
+Sei $\hat{\rho}(t)$ der Dichteoperator des Gesamtsystems $\mathcal{H}=\mathcal{H}_{1} \otimes \mathcal{H}_{2}$ und $\hat{A}_{1} \equiv \hat{A}_{1} \otimes \hat{\mathbb{1}}_{2}$ eine Observable im Subsystem 1. Dann:
+
+\left\langle\hat{A}_{1}(t)\right\rangle & =\operatorname{Sp}\left\{\hat{A}_{1} \hat{\rho}(t)\right\}=\sum_{k_{1}} \sum_{k_{2}}\left\langle\varphi_{k_{1}}\right|\left\langle\varphi_{k_{2}}\right|\left(\hat{A}_{1} \otimes \hat{\mathbb{1}}_{2}\right) \hat{\rho}(t)\left|\varphi_{k_{1}}\right\rangle\left|\varphi_{k_{2}}\right\rangle \\
+& =\sum_{k_{1}}\left\langle\varphi_{k_{1}}\right| \hat{A}_{1} \hat{\rho}_{1}(t)\left|\varphi_{k_{1}}\right\rangle=\operatorname{Sp}_{1}\left\{\hat{A}_{1} \hat{\rho}_{1}(t)\right\}
+
+wobei
+![The image depicts the mathematical definition of the reduced density operator for subsystem 1, obtained by taking the partial trace over subsystem 2 in a composite quantum system. It shows how the reduced density operator \(\hat{\rho}_1(t)\) is derived from the total density operator \(\hat{\rho}(t)\) by tracing out the degrees of freedom of subsystem 2.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/17f8fb7e-a8c1-48e9-aa37-5d14ba3de8f4/ab67de00-6dcd-4c5a-9e36-26105bfc07aa-07_746_2235_1003_486.jpg)
+reduzierter Dichteoperator: vollständige Beschreibung des Subsystems !
+
+Beispiel 3: $\quad|\psi\rangle=\frac{1}{\sqrt{2}}\left(|0\rangle_{a}|0\rangle_{b}+|1\rangle_{a}|1\rangle_{b}\right) \quad \mathcal{H}=\mathcal{H}_{a} \otimes \mathcal{H}_{b}$
+
+\Rightarrow \hat{\rho}=|\psi\rangle\langle\psi|=\frac{1}{2} & {\left[|0\rangle_{a}\langle 0| \otimes|0\rangle_{b}\langle 0|+|0\rangle_{a}\langle 1| \otimes|0\rangle_{b}\langle 1|\right.} \\
+& \left.+|1\rangle_{a}\langle 0| \otimes|1\rangle_{b}\langle 0|+|1\rangle_{a}\langle 1| \otimes|1\rangle_{b}\langle 1|\right]
+
+reiner Zustand des Gesamtsystems
+reduzierter Dichteoperator vom System "a":
+
+\hat{\rho}_{a}=\operatorname{Sp}_{b}\{\hat{\rho}\} & ={ }_{b}\langle 0| \rho|0\rangle_{b}+{ }_{b}\langle 1| \rho|1\rangle_{b} \\
+& =\frac{1}{2}\left(|0\rangle_{a}\langle 0|+|1\rangle_{a}\langle 1|\right)=\frac{1}{2} \mathbb{1}_{a} \quad \text { (maximal) gemischt }
+
+## allgemein:
+
+Für einen verschränkten Zustand des Gesamtsystems $\left(|\psi\rangle \neq|\psi\rangle_{a} \otimes|\psi\rangle_{b}\right)$ ist der reduzierte Dichteoperator gemischt.
+
+## "Übersetzungstabelle"
+
+| klassisch | quantenmechanisch |
+| :--- | :--- |
+| - Hamiltonfunktion $H(\underline{q}, \underline{p})$ | - Hamiltonoperator $\hat{H}$ |
+| - Phasenraumdichte $\quad \rho(t, \underline{q}, \underline{p})$ | - Dichteoperator $\quad \hat{\rho}(t)$ |
+| - Liouville Gleichung | - von-Neumann Gleichung |
+| $\frac{\partial}{\partial t} \rho(t)=\{H, \rho\}$ | $\frac{\partial}{\partial t} \hat{\rho}(t)=-\frac{i}{\hbar}[\hat{H}, \hat{\rho}] \quad[\hat{H}, \hat{\rho}]=0$ |
+| - Observable: $\quad A(\underline{q}, \underline{p})$ <br> (Phasenraumfunktion) | - Observable: $\hat{A}$ <br> (hermitescher Operator) |
+| - Erwartungswerte: | - Erwartungswerte: |
+| $\langle A\rangle=\int \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} A(\underline{q}, \underline{p}) \rho(\underline{q}, \underline{p})$ | $\langle\hat{A}\rangle=\operatorname{Sp}\{\hat{A} \hat{\rho}\}$ |
+
+### 4.3 Statistische Ensembles in der QM
+
+Die Überlegungen zur Ensembletheorie aus der klassischen Mechanik lassen sich direkt auf die Quantenmechanik übertragen.
+
+### 4.3.1 Mikrokanonisches Ensemble
+
+Wir betrachten ein isoliertes System mit Hamiltonoperator $\hat{H}$ und Energieeigenwerten $E_{k}$, d.h.
+
+\hat{H}\left|E_{k}\right\rangle=E_{k}\left|E_{k}\right\rangle
+
+Annahme: Alle Eigenzustände $\left|E_{k}\right\rangle$ mit Energie $E-\Delta<E_{k}<E$ sind gleich wahrscheinlich (Ergodenhypothese).
+
+## Mikrokanonischer Dichteoperator:
+
+\hat{\rho}_{\mathrm{MK}}=\frac{1}{\Omega} \sum_{k}^{E-\Delta<E_{k}<E}\left|E_{k}\right\rangle\left\langle E_{k}\right| \quad \Omega(E, \Delta)=\sum_{k}^{E-\Delta<E_{k}<E} 1
+
+Beispiel: N Spin-1/2 Teilchen mit Energieaufspaltung $E_{0}$
+![This diagram depicts the energy levels of a system with N two-level particles or spins, showing the spin-up and spin-down states for each particle and the energy gap \(E_0\) between these states. The red dots likely indicate occupied or excited states within the system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/17f8fb7e-a8c1-48e9-aa37-5d14ba3de8f4/ab67de00-6dcd-4c5a-9e36-26105bfc07aa-11_392_2494_343_327.jpg)
+
+Gesamtenergie: $\quad E=E_{0} N_{\uparrow}$
+
+\frac{N!}{N_{\uparrow}!\left(N-N_{\uparrow}\right)!} \text { - fach entartet! }
+
+mikrokanonischer Dichteoperator:
+
+\hat{\rho}_{\mathrm{MK}}=\frac{1}{\Omega(E)} \sum\left|\downarrow_{1} \ldots \uparrow_{i} \ldots \uparrow_{j} \ldots \downarrow_{N}\right\rangle\left\langle\downarrow_{1} \ldots \uparrow_{i} \ldots \uparrow_{j} \ldots \downarrow_{N}\right|
+
+alle Zustände mit $\mathrm{N}_{\uparrow}=\left(\mathrm{E} / \mathrm{E}_{0}\right)$ "Spin-up" Teilchen
+
+Zustandssumme:
+
+\Omega(E)=\frac{N!}{N_{\uparrow}!\left(N-N_{\uparrow}\right)!} \quad \quad N_{\uparrow}=\left(E / E_{0}\right)
+
+Entropie ( $\mathrm{N} \gg 1$ ):
+$S(E)=k_{B} \ln (\Omega) \simeq k_{B}\left[N \ln N-N_{\uparrow} \ln N_{\uparrow}-\left(N-N_{\uparrow}\right) \ln \left(N-N_{\uparrow}\right)\right]$
+
+=k_{B} N\left[x \ln \frac{1}{x}+(1-x) \ln \frac{1}{(1-x)}\right], \quad x=\frac{N_{\uparrow}}{N}=\frac{E}{E_{0} N}
+
+![This diagram depicts the entropy \( S \) normalized by \( k_B N \) as a function of the normalized energy \( E / E_{\text{max}} \), illustrating the relationship between entropy and energy in a system. It also shows the thermodynamic definition of temperature \( \frac{1}{T} = \frac{\partial S}{\partial E} \) as the slope of the entropy curve with respect to energy.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/17f8fb7e-a8c1-48e9-aa37-5d14ba3de8f4/ab67de00-6dcd-4c5a-9e36-26105bfc07aa-12_839_1234_1011_112.jpg)
+![This diagram depicts the temperature function \( T(E) \) normalized by \( E_0/k_B \) as a function of normalized energy \( E/E_{\text{max}} \), showing the relationship between temperature and energy for a system with a specific energy distribution described by the given logarithmic formula.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/17f8fb7e-a8c1-48e9-aa37-5d14ba3de8f4/ab67de00-6dcd-4c5a-9e36-26105bfc07aa-12_855_1290_906_1619.jpg)
+
+In einem System mit nach oben hin beschränkter Energie können auch negative Temperaturen auftreten, da die Entropie mit steigender Energie wieder abnimmt.
+
+Spezifische Wärme:
+
+C & =\frac{\partial E}{\partial T}=T \frac{\partial S}{\partial T}=T \frac{\partial S}{\partial x}\left(\frac{\partial T}{\partial x}\right)^{-1}=N E_{0}\left(\frac{\partial T}{\partial x}\right)^{-1} \\
+& =N k_{B}(1-x) x[\ln (1-x)-\ln (x)]^{2} \geq 0
+
+![This diagram depicts the normalized heat capacity \( C/(Nk_B) \) as a function of the normalized energy \( E/E_{\text{max}} \) for a two-level system, showing how heat capacity varies with energy distribution between the two levels.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/17f8fb7e-a8c1-48e9-aa37-5d14ba3de8f4/ab67de00-6dcd-4c5a-9e36-26105bfc07aa-13_746_1568_858_423.jpg)
+
+- Es gilt weiterhin, dass die Energie mit steigender Temperatur zunimmt.
+- Bei Kopplung an ein gewöhnliches Wärmebad wird aber nie eine Energie von $E>E_{\max } / 2$ erreicht.
+
+
+## Ergänzung: Operatorwertige Funktionen
+
+In der Quantenstatistik verwenden wir wiederholt operatorwertige Funktionen, wie z.B. $\exp (-\beta \hat{H})$ oder $\ln (\hat{\rho})$.
+
+Diese Funktionen können formal über die Potenzreihenentwicklung der regulären Funktionen definiert werden und generell mit Hilfe der Eigenwertzerlegung berechnet werden.
+
+Sei $f(x \in R)$ eine analytische Funktion mit Potenzreihe: $f(x)=\sum_{n=0}^{\infty} c_{n} x^{n}$
+
+Dann definieren wir dazu die entsprechende operatorwertige Funktion als:
+
+f(\hat{A})=\sum_{n=0}^{\infty} c_{n} \hat{A}^{n}
+
+Im relevanten Fall von hermetischen Operatoren können wir den Operator in seiner Eigenbasis darstellen
+
+\hat{A}=\sum_{k} \lambda_{k}\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|
+
+und da die $\left|\varphi_{k}\right\rangle$ eine Orthonormalbasis bilden gilt:
+
+\hat{A}^{n}=\left(\sum_{k_{1}} \lambda_{k_{1}}\left|\varphi_{k_{1}}\right\rangle\left\langle\varphi_{k_{1}}\right|\right) \ldots\left(\sum_{k_{n}} \lambda_{k_{n}}\left|\varphi_{k_{n}}\right\rangle\left\langle\varphi_{k_{n}}\right|\right)=\sum_{k} \lambda_{k}^{n}\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|
+
+Damit kann die operatorwertige Funktion explizit berechnet werden, indem man $f(x)$ für jeden Eigenwert berechnet:
+
+f(\hat{A}) & =\sum_{n=0}^{\infty} c_{n} \sum_{k} \lambda_{k}^{n}\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|=\sum_{k}\left(\sum_{n=0}^{\infty} c_{n} \lambda_{k}^{n}\right)\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right| \\
+& =\sum_{k} f\left(\lambda_{k}\right)\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|
+
+Beispiel 1: In der statistischen Physik benötigen wir häufig die Exponentialfunktion des Hamiltonoperators, die wir einfach in der Energieeigenbasis auswerten können.
+
+e^{-\beta \hat{H}}=\sum_{k} e^{-\beta E_{k}}\left|E_{k}\right\rangle\left\langle E_{k}\right|
+
+Beispiel 2: Für die Berechnung der Entropie benötigen wir den Logarithmus des Dichteoperators.
+
+Als einfaches Beispiel betrachten wir den folgenden Dichteoperator für ein Zwei-Niveau System:
+
+\hat{\rho}=\frac{1}{2}|0\rangle\langle 0|+\frac{i}{4}|0\rangle\langle 1|-\frac{i}{4}|1\rangle\langle 0|+\frac{1}{2}|1\rangle\langle 1| \quad \Leftrightarrow \quad \hat{\rho}=\frac{1}{4}\left(\begin{array}{cc}
+2 & i \\
+-i & 2
+\end{array}\right)
+
+Matrixdarstellung
+
+Für diese $2 \times 2$ Matrix erhalten wir die Eigenwerte und Eigenvektoren:
+
+\begin{array}{ll}
+p_{1}=\frac{3}{4}, p_{2}=\frac{1}{4} & \left|\varphi_{1}\right\rangle=\frac{1}{\sqrt{2}}(i|0\rangle+|1\rangle) \\
+\left|\varphi_{2}\right\rangle=\frac{1}{\sqrt{2}}(|0\rangle+i|1\rangle)
+\end{array}
+
+Daher:
+
+\hat{\rho} & =p_{1}\left|\varphi_{1}\right\rangle\left\langle\varphi_{1}\right|+p_{2}\left|\varphi_{2}\right\rangle\left\langle\varphi_{2}\right| \\
+\ln (\hat{\rho}) & =\ln \left(p_{1}\right)\left|\varphi_{1}\right\rangle\left\langle\varphi_{1}\right|+\ln \left(p_{2}\right)\left|\varphi_{2}\right\rangle\left\langle\varphi_{2}\right| \\
+S(\hat{\rho}) & =-k_{B} \operatorname{Sp}\{\hat{\rho} \ln (\hat{\rho})\}=-k_{B} \sum_{k=1,2} p_{k} \ln \left(p_{k}\right) \simeq 0.56 k_{B}
+
+Bemerkung: Bei Dichteoperatoren können auch Eigenwerte $p_{k}=0$ auftreten, für die der Logarithmus nicht definiert ist. Für die Berechnung relevanter Größen wie der Entropie, tritt jedoch der Logarithmus immer nur in folgender Kombination auf:
+
+\hat{\rho} \ln (\hat{\rho})=\sum_{k} p_{k} \ln \left(p_{k}\right)\left|\varphi_{k}\right\rangle\left\langle\varphi_{k}\right|
+
+Zur Berechnung dieser Summe kann man zuerst immer annehmen, dass alle $p_{k}$ endlich sind und dann für die entsprechenden Terme den Limes $p_{k} \rightarrow 0$ bilden, da
+
+\lim _{p_{k} \rightarrow 0} p_{k} \ln \left(p_{k}\right)=0
+

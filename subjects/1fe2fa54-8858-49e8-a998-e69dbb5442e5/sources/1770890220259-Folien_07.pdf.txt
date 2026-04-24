@@ -1,0 +1,95 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Ionische Bindung
+aus Gross, Marx
+z.B. NaCl: fcc-Gitter mit Basis aus Cl- und Na+ Ion
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Konturlinien der Elektronendichteverteilung in NaCl
+aus Hunklinger
+Cl- hat Elektronenkonfiguration von Argon:
+… 3s2 3p6
+Na+ hat Elektronenkonfiguration von Neon:
+… 2s2 2p6
+
+Madelung-Konstante
+aus Gross, Marx
+z.B. NaCl: fcc-Gitter mit Basis aus Cl- und Na+ Ion
+Bei der NaCl-Struktur (fcc) ist ein Na+-Ion im Abstand R
+von 6 Cl−-Ionen umgeben, es folgen:
+12 Na+ -Ionen im Abstand 2R,
+8 Cl− -Ionen im Abstand 3 R︂ ,
+6 Na+ -Ionen im Abstand 2R,
+24 Na+ -Ionen im Abstand 5R,
+…
+Na+-Ion
+
+Ionische Bindung: Potenzialverlauf
+aus Groß, Marx
+cc
+
+aus Marx, Gross
+Kovalente Bindung
+H2+-Molekülion
+
+aus Marx, Gross
+Kovalente Bindung
+H2+-Molekülion
+
+H2-Molekül
+Abb. 3.15
+
+Hybrid-Orbitale (hier: sp1)
+
+Hybrid-Orbitale (hier: sp2)
+Abb. 3.20
+
+Abb. 3.21
+Hybrid-Orbitale (hier: sp3)
+
+sp3-Hybridisierung
+aus Hunklinger
+Tetraedrische Bindung in
+Diamant (C: 2s22p2),
+Silizium (Si: 3s23p2), und
+Germanium (Ge: 4s24p2).
+109.47° Bindungswinkel
+
+aus Demtröder
+
+Ionische vs. kovalente Bindung
+Sehr viele Bindungen sind gemischte Bindungen.
+Beispiel: RbF 𝜒𝑅𝑏 = 0.486
+𝜒𝐹 = 3.40
+mit 𝜒𝐴 und 𝜒𝐵 die Elektronegativitäten der beiden Elemente.
+Grobe Abschätzung
+des ionischen Charakters
+in %:
+1 − exp − 𝜒𝐴 − 𝜒𝐵 2
+4 ∙ 100 %
+1 − exp − 3.4 − 0.486 2
+4 ∙ 100 % = 88.1 %
+Linus Pauling
+Journal of the American Chemical Society, 54, 3570 (1932).
+
+ptable.com
+
+Metallische Bindung
+wikipedia
+Metallatome können äußere Elektronen leicht abgeben und
+formen eine Elektronenwolke, welche die positiven Ionen umgibt
+(Leitungselektronen). Energie des Systems kann auf diese Weise
+erniedrigt werden. Metallische Bindung ist am schwierigsten zu
+berechnen. Sehr vereinfachte Darstellung: Freie Elektronen
+halten Kristall zusammen.
+
+Van der Waals Wechselwirkung
+
+Lennard-Jones-Potenzial
+berechnet für Argon
+
+Wasserstoffbrücken-Bindung
+aus Demtröder
+
+Schmelztemperaturen und Bindungsenergien
+der chemischen Elemente
+Abb. 3.1

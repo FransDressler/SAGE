@@ -1,0 +1,165 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+(A) Longitudinale Gitterschwingung bei zweiatomiger Basis
+nach Hunklinger
+vv u u
+v v
+uu
+𝑀1
+𝑀2
+𝐶 𝐶
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+1D Bravaisgitter mit 2 Atomen in der primitiven Einheitszelle
+nach Hunklinger
+𝜔 = 2𝐶 𝑀1 + 𝑀2
+𝑀1𝑀2
+𝜔 = 2𝐶
+𝑀2
+𝜔 = 2𝐶
+𝑀1
+𝑀1 > 𝑀2
+𝜔 = 0
+Frequenzlücke
+
+1D Bravaisgitter mit 2 Atomen in der primitiven Einheitszelle
+aus Hunklinger +
+Gross / Marx
+𝜔 = 2𝐶 𝑀1 + 𝑀2
+𝑀1𝑀2
+𝜔 = 0
+𝑀1 > 𝑀2
+
+(B) Longitudinale Gitterschwingung bei zweiatomiger Basis
+vv u u
+v v
+uu
+𝑚
+𝑚
+𝐾 𝐺
+
+Wir betrachten eine Basis mit 2 gleichen Atomen, die aber durch unterschiedliche Kraftkonstanten
+gekoppelt sind:
+Gleichgewichts-
+positionen
+Primitive Zelle
+Nomenklatur: u1(na) = Auslenkung um
+u2(na) = Auslenkung um
+Potentielle Energie (harmonische Näherung):
+Φ = 𝐾
+2 ෍
+𝑛
+𝑢1 𝑛𝑎 − 𝑢2 𝑛𝑎 2 + 𝐺
+2 ෍
+𝑛
+{𝑢2 𝑛𝑎) − 𝑢1( 𝑛 + 1 𝑎) 2
+x einer Feder mit K
+x einer Feder mit G
+(n - 2)∙a (n - 1)∙a n ∙a (n + 1)∙a (n + 2)∙a
+d Ga - d K
+
+u1 -u2
+u1(na) - u2(na) =
+x
+
+Im Folgenden 𝑑 ≤ 𝑎
+2 , 𝐾 ≥ 𝐺:
+Bewegungsgleichungen:
+𝑚 ሷ 𝑢1 𝑛𝑎 = − 𝜕Φ
+𝜕𝑢1 𝑛𝑎
+= −𝐾 𝑢1 𝑛𝑎 − 𝑢2 𝑛𝑎 − 𝐺{𝑢1 𝑛𝑎 − 𝑢2( 𝑛 − 1 𝑎)}
+𝑚 ሷ 𝑢2 𝑛𝑎 = − 𝜕Φ
+𝜕𝑢2 𝑛𝑎
+= −𝐾 𝑢2 𝑛𝑎 − 𝑢1 𝑛𝑎 − 𝐺{𝑢2 𝑛𝑎 − 𝑢1( 𝑛 + 1 𝑎)}
+Wir suchen wieder nach Lösungen, die eine Welle mit Kreisfrequenz  und Wellenvektor q darstellen:
+𝑢1 𝑛𝑎, 𝑡 = 𝑈 ∙ 𝑒𝑖(𝑞𝑛𝑎−𝜔𝑡)
+𝑢2 𝑛𝑎, 𝑡 = 𝑉 ∙ 𝑒𝑖(𝑞𝑛𝑎−𝜔𝑡)
+Für q werden wieder periodische Randbedingungen angenommen.
+
+Lösungen in Bewegungsgleichungen eingesetzt:
+𝑚𝜔2 − 𝐾 + 𝐺 ∙ 𝑈 + 𝐾 + 𝐺𝑒−𝑖𝑞𝑎 ∙ 𝑉 = 0
+𝐾 + 𝐺𝑒+𝑖𝑞𝑎 ∙ 𝑈 + 𝑚𝜔2 − 𝐾 + 𝐺 ∙ 𝑉 = 0
+Lösungen für homogenes Gleichungssystem (rechte Seite = 0), wenn Koeffizientendeterminante verschwindet:
+𝑚𝜔2 − 𝐾 + 𝐺 2 − 𝐾 + 𝐺𝑒−𝑖𝑞𝑎 𝐾 + 𝐺𝑒+𝑖𝑞𝑎 = 0
+𝑚𝜔2 − 𝐾 + 𝐺 2 − 𝐾2 + 𝐺2 + 2𝐾𝐺 ∙ cos(𝑞𝑎) = 0
+⇒ Quadratische Gleichung für
+2
+𝜔2 = 𝐾 + 𝐺
+𝑚 ± 1
+𝑚 𝐾2 + 𝐺2 + 2𝐾𝐺 ∙ cos(𝑞𝑎) Dispersionsrelation
+Für jeden der N Werte von q (wegen periodischer Randbedingungen) existieren 2 Lösungen ± ⇒ 2𝑁 Normalschwingungen
+
+aus Hunklingeraus Hunklinger
+𝜔 = 2(𝐾 + 𝐺)
+𝜔 = 2𝐾
+𝜔 = 2𝐺
+(+)
+(−)
+
+Spezialfälle
+𝜔2 = 𝐾 + 𝐺
+𝑚 ± 1
+𝑚 𝐾2 + 𝐺2 + 2𝐾𝐺 ∙ cos 𝑞𝑎 = 𝐾 + 𝐺
+𝑚 ± 𝐾 + 𝐺
+𝑞 = 0
+(+)
+(−)
+eingesetzt in
+𝑈 = 𝑉 ← q = 0 und
+ = 0 eingesetzt in eine der beiden Gleichungen für 𝑈 oder V.
+Akustischer Zweig: Die Atome in der primitiven Zelle bewegen sich in Phase:
+𝜔 = 2 𝐾 + 𝐺 /𝑚
+𝑈 = −𝑉 ← q = 0 und 𝜔 = 2 𝐾 + 𝐺 /𝑚 eingesetzt in eine der Gleichungen für 𝑈 oder V.
+Optischer Zweig: Die Atome in der primitiven Zelle bewegen sich gegenphasig:
+
+Spezialfälle
+𝑚 𝐾2 + 𝐺2 + 2𝐾𝐺 ∙ cos 𝑞𝑎 = 𝐾 + 𝐺
+𝑚 ± 𝐾 - 𝐺
+𝑞 = 𝜋
+𝑎
+d.h. 𝜆 = 2𝑎; eingesetzt in
+𝜔 = 2𝐺
+𝑈 = 𝑉
+Im akustischen Zweig bewegen sich alle Atome in einer primitiven Einheitszelle in Phase.
+𝜔 = 2𝐾
+𝑈 = −𝑉
+Im optischen Zweig schwingen die Basisatome für 𝑞 = 𝜋
+𝑎 in einer Einheitszelle gegeneinander.
+
+Frequenzlücke
+
+3D Gitter mit n Atomen als Basis
+Bild 6.13
+aus Hunklinger
+Bewegungsgleichungen in 3D werden durch Transformation auf Normal-Koordinaten vollständig entkoppelt (siehe Physik 1!).
+Für jeden Wert von q gibt es 3n Schwingungsmoden.
+3 akustische Zweige
+3 (n - 1) optische Zweige
+Typische Dispersionskurve für ein Gitter
+mit zwei-atomiger Basis entlang einer
+beliebig gegebenen Richtung im k-Raum.
+Die 3 akustischen Zweige (unten) sind für
+kleine q linear in q. Die drei oberen Kurven
+(optische Zweige) verlaufen relativ flach,
+wenn die Wechselwirkung innerhalb der
+Zellen wesentlich stärker ist als zwischen
+den Zellen.
+Beachte: Da keine Entartung vorliegt, ist in
+dem gezeigten Beispiel die Richtung von q
+keine Richtung hoher Symmetrie
+
+aus Ashcroft Mermin
+Longitudinal akustische Mode Transversal akustische Mode
+Beispiel einer longitudinalen und transversalen
+akustischen Mode entlang einer beliebigen Richtung
+
+3D Gitter mit n Atomen als Basis
+aus Hunklinger, Gross/Marx
+bzw. P. E. Van Camp et al.,
+PRB 31, 4089 (1985).
+Entlang Richtungen hoher Symmetrie liegen unterschiedliche
+Dispersionsäste oft übereinander: Entartung!
+In Si sind in [100]- und [111] Richtung die transversalen
+Schwingungen entartet.
+[100]
+[001]
+-[010]

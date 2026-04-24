@@ -1,0 +1,324 @@
+# Vorlesungsskript zur Einführung in die Kern-, Teilchenund Astrophysik 
+
+Technische Universität München
+
+Wintersemester 2025/26
+
+Dr. Raimund Strauß<br>Yannick Thiéry
+
+## Vorlesung 1: 14.10.2025
+
+## 1 Grundbausteine der Materie
+
+### 1.1 Das Atom
+
+| $\approx 450 \mathrm{v} . \mathrm{Chr}$. | Demokrit/ Leukipp | 'atomos' | - unteilbar <br> - Alles ist Atom und Leere <br> - Atome unterscheiden sich in Form, Größe, Anordnung o. Lage, aber nicht in Qualität <br> - rein philosophische Sicht auf die Dinge |
+| :--- | :--- | :--- | :--- |
+| 1803-1808 | John Dalton | Atomtheorie | - Alle Atome sind untereinander gleich (eines Elements) <br> - Alle Materie besteht aus Atomen (unteilbar) <br> - Atome werden in chemischen Reaktionen nicht vernichtet oder geschaffen, sondern nur umgeordnet (sie bleiben erhalten). <br> - Gesetz der multiplen Proportionen (ganzzahlige Verhältnisse der Elemente) <br> - Kugelbild, Partialdrücke |
+| 1811 | A.Avogadro | Avogadro Gesetz | - Bei gleicher Temperatur und gleichem Druck enthalten gleiche Volumina gleich viel Teilchen (Moleküle) <br> - Exakt Ideales Gas $P V=n R T$ |
+| 1827 | R.Brown | Brownsche Bewegung | - Zitterbewegung von Pollenkörnern in Wasser <br> → Interpretation: intrinsische Bewegung "der Teilchen selber" |
+| 1905 | A.Einstein |  | Deutung der Brownschen Bewegung |
+| 1913 | J.Perrin | $\left\langle x^{2}\right\rangle=2 D t$ (1D) | Mittlere quadratische Verschiebung $\left\langle x^{2}\right\rangle$ wächst mit Zeit $t$ und Diffusionskoeffizient $D$ |
+
+![This diagram depicts the concept of angular velocity in rotational motion, showing a circle with radius "a" and arrows representing the direction of velocity vectors at different points on the circumference.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-03_282_332_196_301.jpg)
+
+Stokes-Einstein
+$D=\frac{k_{B} T}{6 \pi \eta a}$
+$a$ : Teilchenradius, $\eta$ : Viskosität, T: Temperatur
+
+Nobelpreis 1926
+→ genauere Messung ergibt universelle $k_{B}$ und $N_{A}$
+
+## Beweis für Atome
+
+## 1912 Bragg
+
+Röntgenkristallographie zeigt atomares Gitter
+Nobelpreis 1915
+
+### 1.2 Die Suche nach Teilchen - und die Struktur der Atome
+
+1897 Joseph Thomson
+Entdeckung des Elektrons
+![This diagram depicts a cathode ray tube (CRT) setup showing the emission of electrons (e-) from the cathode, their acceleration towards the anode, and their deflection by perpendicular electric (E) and magnetic (B) fields.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-03_499_1016_1121_513.jpg)
+
+## Kathodenstrahlröhre
+
+- $\vec{E}$ und $\vec{B}$ so justieren, dass keine Ablenkung stattfindet $q E=q v B \Longrightarrow v=\frac{E}{B}$
+- $\vec{E}$ ausschalten $q v B=\frac{m v^{2}}{r} \Longrightarrow \frac{q}{m}=\frac{E}{B^{2} r}$
+
+$$
+\frac{e}{m} \approx 1.7 \cdot 10^{-11} \frac{\mathrm{C}}{\mathrm{~kg}}
+$$
+
+Warum neues Teilchen:
+
+- unabhängig von Gas/Material der Elektroden
+- sehr großes $e / m$
+- negative Ladung
+
+![This diagram depicts the quark composition of a proton, showing it consists of two up quarks and one down quark.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-03_314_314_2055_1256.jpg)
+Thomsons Atommodell
+
+![The image depicts a reference to Millikan's oil drop experiment conducted between 1909 and 1913, which was used to determine the electron's mass and charge.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-04_132_840_191_287.jpg)
+![This diagram depicts an electrolysis setup for the electrolysis of water, showing the decomposition of water into oxygen and hydrogen gases at the electrodes when an electric current is applied.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-04_282_479_333_296.jpg)
+
+\begin{gathered}
+m_{e} \approx 9.11 \cdot 10^{-31} \mathrm{~kg} \\
+-e=-1.602176634 \cdot 10^{-19} \mathrm{C}(\mathrm{SI}, \text { exakt })
+\end{gathered}
+
+1896 Becquerel, Rutherford Entdeckung der Radioaktivität
+-1903 Villard
+
+| Becquerel | allgemein unsichtbare Strahlung | Durchdringung |
+| :--- | :--- | :--- |
+| Rutherford | $\alpha-{ }_{2}^{4} \mathrm{He}$ | gering |
+|  | $\beta-e^{-}\left(e^{+}\right)$ | mittel |
+| Villard | $\gamma-$ neutral, $e / m$-Strahlung | hoch |
+
+1911 E. Rutherford - Experiment
+Nobelpreis für Physik
+![This diagram depicts the scattering of alpha particles by a gold foil, illustrating the deflection angle (θ) of alpha particles as they pass through or are deflected by the gold foil before reaching a zinc sulfide (ZnS) screen. It is related to the Rutherford gold foil experiment demonstrating the nuclear structure of the atom.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-04_282_583_1082_1183.jpg)
+
+Ergebnis:
+
+- meisten Teilchen werden nicht abgelenkt
+- hohe Streuwinkel beobachtet (selten) → nur möglich, wenn punktförmige Teilchen
+
+\frac{d \sigma}{d \Omega_{R u t h}}=\frac{Z_{1} Z_{2} e^{2}}{16 \pi \epsilon_{0} E} \frac{1}{\sin ^{4}(\theta / 2)}
+
+Beispiel: Frontalstoß $r_{\text {min }}=\frac{1}{4 \pi \epsilon_{0}} \frac{Z_{1} Z_{2} e^{2}}{E}$
+![This diagram depicts alpha decay, showing an alpha particle (α) being emitted from a nucleus (kern) after overcoming the minimum energy barrier (E_min).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-04_126_246_1695_1356.jpg)
+wenn E groß genug ist, Kernstruktur (=Abweichung von Rutherfords punktförmiger Streuung) kann aufgelöst werden
+
+\frac{d \sigma}{d \Omega}=\frac{d \sigma}{d \Omega_{R u t h}} \cdot|F(\vec{q})|^{2}
+
+### 1.3 Entdeckung des Protons
+
+Vorgeschichte: Gasentladungsröhren zeigen positive Strahlung $\frac{e}{m}$ konnte gemessen werden (via $\vec{E} \perp \vec{B}$ )
+→ größeres $\frac{e}{m} \rightarrow$ kleinstes Teilchen
+
+1919 Rutherford
+
+\alpha+{ }^{14} \mathrm{~N} \rightarrow{ }^{17} \mathrm{O}+p
+
+→ Proton ist Bestandteil der Kerne $\quad m_{p} \approx 1.673 \cdot 10^{-27} \mathrm{~kg}$
+
+1932 Chadwick Nobel
+
+Entdeckung des Neutrons
+Vermutung bereits 1920 von Rutherford
+
+\alpha+{ }^{9} \mathrm{Be} \rightarrow{ }^{12} \mathrm{C}+\mathrm{X}
+
+Bereits Curie: neutrale Strahlung, Interpretation als ultra-harte $\gamma$-Strahlung Chadwick: viele, präzise Messungen mit verschiedenen Abschirmungen
+
+\alpha \rightarrow \overline{\mathrm{Be}} \xrightarrow{n} \underset{\text { Schirm }}{S \mid} \xrightarrow{P} \underset{\text { Defector }}{|D|}
+
+Problem Kinematik: für $\gamma$ 's
+
+T_{\mathrm{p}, \max }=\frac{2 E_{\gamma}^{2}}{m_{p} c^{2}+2 E_{\gamma}}
+
+Bsp. $E_{\gamma}=5 \mathrm{MeV}, T_{p} \approx 50 \mathrm{keV}$ viel zu niedrig
+Lösung, neues neutrales Teilchen:
+
+T_{\mathrm{p}, \max }=\frac{4 m_{n} m_{p}}{\left(m_{n}+m_{p}\right)^{2}} T_{n}
+
+Ergebnis von Chadwick: $m_{n} \approx 1.674 \cdot 10^{-27} \mathrm{~kg} ; m_{n}-m_{p} \approx 2.3 \cdot 10^{-30} \mathrm{~kg}$
+Kurze Diskussion über $\gamma$-Strahlung: -neutral, ruhemassefrei, durchdringend? Woher wissen wir es?
+→ Relativität + Maxwell:
+
+E^{2}=(p c)^{2}+(m c)^{2}, \quad m_{\gamma}=0 \Longrightarrow E=p c
+
+→ Einsteins Lichtquant + Planck (1903):
+
+E=h \nu, \quad p=\frac{E}{c}=\frac{h}{\lambda}
+
+→ Compton-Streuung (1923):
+
+\Delta \lambda=\lambda^{\prime}-\lambda=\frac{h}{m_{e} c}(1-\cos \theta)
+
+„viel E an $e^{-}$übertragen, nicht an $p^{\text {" }}$
+$\rightarrow \gamma$ bewegt sich mit $c=2.98 \cdot 10^{8} \mathrm{~m} / \mathrm{s}$
+→ Keine Ablenkung in E/B-Feldern
+→ Lichtdruck (Folienexperimente): $p=\frac{E}{c}$ wird bestätigt
+
+1932 Anderson Antiteilchen → Positron $e^{+}$
+![This diagram depicts the deflection of cosmic radiation (cosmic rays) by a magnetic field, showing how charged particles such as electrons (e-) are influenced within a nebula chamber.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-05_250_384_1923_1181.jpg)
+
+1930er Pauli Neutrino wird postuliert
+$\beta$-Zerfall $n \rightarrow p+e^{-}+\overline{\overline{\nu_{e}}}$
+$\nu$-Eigenschaften: -keine $e / m$ WW
+-geringe Masse
+![This diagram depicts a gamma-ray spectrum comparison, showing the measured intensity (I) versus energy (E) with the measured spectrum labeled "Messung" and the expected gamma-ray peak labeled "Erwartung (γ-Körperzerfall)."](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-05_264_497_2238_1183.jpg)
+
+1933 Fermi Theorie des $\beta$-Zerfalls
+1956 Reines Cowan Neutrino wird experimentell nachgewiesen
+Status 1930er: 4 Teilchen $n, p, e^{-}, \nu(+$ Antiteilchen $)$ wurden als elementar angesehen.
+
+1950/60 Beschleunigungsexperimente
+→ Quarkmodell, Hadronen sind aus 2 oder 3 Quarks aufgebaut
+$p, n$ sind (leichte und stabile) Vertreter von großer Teilchenfamilie, der Hadronen
+⟹ "Hadronen Zoo"
+2012 CERN LHC Entdeckung des Higgs Teilchens (100x schwerer als $p$ )
+→ Standardmodell komplett
+
+### 1.4 Standardmodell der Teilchenphysik
+
+## Fermionen
+
+- halbzahliger Spin $s=\frac{1}{2}, \frac{3}{2}, \frac{5}{2}, \ldots$
+- Wellenfunktion antisymmetrisch $\Psi\left(\overrightarrow{r_{1}}, s_{1} ; \overrightarrow{r_{2}}, s_{2}\right)=-\Psi\left(\overrightarrow{r_{2}}, s_{2} ; \overrightarrow{r_{1}}, s_{1}\right)$
+- daher Teilchen genau gleich $\Psi(\vec{r}, s ; \vec{r}, s)=0$
+= Pauli Prinzip: zwei identischer Fermionen können nicht denselben Quantenzustand besetzen
+
+
+## Bosonen
+
+- ganzzahliger Spin $s=0,1,2, \ldots$
+- Wellenfunktion symmetrisch $\Psi\left(\overrightarrow{r_{1}}, s_{1} ; \overrightarrow{r_{2}}, s_{2}\right)=\Psi\left(\overrightarrow{r_{2}}, s_{2} ; \overrightarrow{r_{1}}, s_{1}\right)$
+- kein Pauliverbot: viele identische Bosonen in Grundzustand
+
+
+## Spin
+
+- Quantenmechanische Eigenschaft (wie Ladung, Masse)
+- nicht klassisch eine Kugel, die sich dreht
+- $\rightarrow 2 s+1$ Ausrichtungen des Spins
+
+
+## Vorlesung 2: 21.10.2025
+
+## Einschub: Einheiten
+
+Definition $\mathrm{eV}=$ Energie eines Teilchens mit Ladung $e$, wenn es 1 V durchläuft.
+
+1 \mathrm{eV}=1 \mathrm{~J} / \mathrm{C} \cdot 1.602 \cdot 10^{-19} \mathrm{C}=1.602 \cdot 10^{-19} \mathrm{~J}
+
+typische Werte:
+Atomphysik
+eV, keV Energien
+$1 \AA=10^{-10} \mathrm{~m}=0.1 \mathrm{~nm}$ Abstände
+Kern-/Teilchenphysik
+$\mathrm{MeV} / \mathrm{GeV} / \mathrm{TeV}$ Energien
+$10^{-15} \mathrm{~m}=1 \mathrm{fm}$
+$E^{2}=(p c)^{2}+\left(m c^{2}\right)^{2}$
+Impuls : $1 \mathrm{MeV} / \mathrm{c}=5.3 \cdot 10^{-22} \mathrm{~kg} \mathrm{~m} / \mathrm{s}$
+Masse : $1 \mathrm{MeV} / \mathrm{c}^{2}=1.788 \cdot 10^{-30} \mathrm{~kg}$
+üblich $\hbar=\mathrm{c}=1$
+Am Ende der Rechnung fügt man die "richtige" Potenz von $\hbar$ und c ein.
+Atommasse $1 \mathrm{u}=\frac{1}{12}{ }^{12} \mathrm{C}$ Masse $\approx 931.5 \mathrm{MeV} / \mathrm{c}^{2} \approx 1.661 \cdot 10^{-27} \mathrm{~kg}$
+Planck'sches Wirkungsquantum
+$\hbar c=197 \mathrm{MeV} \mathrm{fm} \approx 200 \mathrm{meV} \mathrm{fm}$
+$\hbar=\frac{h}{2 \pi}=1 . .5 \cdot 10^{-34} \mathrm{~J} \mathrm{~s} \approx 6.58 \cdot 10^{-22} \mathrm{Mev} \mathrm{s}$
+$E=h \cdot f \quad p=\frac{h}{\lambda} \quad \Delta E \cdot \Delta t \geq \frac{\hbar}{2}$
+
+### 1.5 Grundbausteine, punktförmig, 3 Familien (3 flavours)
+
+### 1.5.1 Fermionen
+
+| Spin 1/2 |
+| :--- |
+| Quarks |
+| $\quad q=\frac{2}{3}$ |
+| $\quad q=-\frac{1}{3}$ |$\quad$| Leptonen |
+| :--- |
+| $+\quad\binom{u}{d}\binom{c}{s}\binom{t}{b} \quad$$q=0$ <br> $q=1$$\binom{\nu_{e}}{e^{-}}\binom{\nu_{\mu}}{\mu^{-}}\binom{\nu_{\tau}}{\tau^{-}}$ |
+| +12 Antiteilchen $\left(\bar{u}, e^{+}, \overline{\nu_{e}}\right)-$ gespiegelte Ladung |
+
+### 1.5.2 Bosonen
+
+Austauschteilchen, die die fundamentalen Wechselwirkungen vermitteln
+
+$\left.\begin{array}{llll}\gamma & \text { elektromagnetische } \mathrm{WW} & m=0 \\ \text { Gluonen } & \text { starke } \mathrm{WW} & m=0 \\ / & \text { Gravitation } & / \\ Z_{0}, W^{ \pm} & \text {schwache } \mathrm{WW} & m=80-90 \mathrm{GeV} / \mathrm{c}^{2}\end{array}\right\}$ Spin 1
+
+### 1.5.3 Hadronen
+
+## Baryonen (3 Quarks)
+
+| Proton | $\stackrel{\uparrow \uparrow \downarrow}{u u d}$ | $q=+1$ | $L=0, s=\frac{1}{2}, J=L+s=\frac{1}{2}$ | $\mathrm{~m}=938 \mathrm{MeV} / \mathrm{c}^{2}$ |
+| :--- | :--- | :--- | :--- | :--- |
+|  | $d d \stackrel{\downarrow}{\downarrow}$ | $q=0$ | $J=\frac{1}{2}$ | $\mathrm{~m}=939 \mathrm{MeV} / \mathrm{c}^{2}$ |
+| $\Lambda^{0}$ | $u d s$ |  | $J=\frac{1}{2}$ | $\mathrm{~m}=1115 \mathrm{MeV} / \mathrm{c}^{2}$ |
+
+## Mesonen (Quark, Antiquark)
+
+Pion | $\hat{u} \frac{\downarrow}{d}$ | $J=0 \quad \mathrm{~m}=140 \mathrm{MeV} / \mathrm{c}^{2}$ |
+| :--- | :--- |
+| $\varrho^{+}$ | $\begin{cases}\text {Quarks in s Welle } & l=0 \\ \text { Spins antiparallel } & s=0 \\ \hat{u} \frac{\downarrow}{d}\end{cases}$ |
+| $\begin{cases}\text { Quarks in s Welle } & l=0 \\ \text { Spins parallel } & s=1\end{cases}$ |  |
+
+... viele weitere
+
+### 1.6 Fundamentale Wechselwirkung
+
+## Quantenfeldtheorie (QFT)
+
+## klassisch
+
+![This diagram depicts two point charges, q1 and q2, with the electric field vector \(\vec{E}\) originating from charge q1 and the force vector \(\vec{F}\) acting on charge q2, illustrating the interaction between the charges in an electric field.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-09_280_362_413_404.jpg)
+
+→ Ladung $q_{1}$ sitzt an Raumpunkt
+→ um Ladung herrscht Feld $\vec{E}$
+$\rightarrow q_{2}$ sitzt im Feld
+→ auf $q_{2}$ wirkt Kraft $\vec{F}=q_{2} \cdot \vec{E}$
+Reichweite hängt von Form des Feldes ab z.B. Coulomb
+
+\Phi=\frac{1}{4 \pi \epsilon_{0}} \frac{q}{r}
+
+(unendliche Reichweite)
+![The diagram depicts two charges, q1 and q2, with a field quantum of mass M indicated near q1, suggesting a representation related to a massive field quantum interaction or particle physics concept involving field quanta and charged particles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-09_240_421_370_1073.jpg)
+
+- $q_{1}$ sendet Feldquant aus
+- erlaubt da $\Delta E \cdot \Delta t \geq \frac{\hbar}{2}$
+- Wahrscheinlichkeit der Aussendung $\sim q_{1}$
+- $q_{2}$ absorbiert das Feldquant
+- Wahrscheinlichkeit $\sim q_{2}$
+$\Delta E=M c^{2}$
+$\Delta t \approx \frac{\hbar}{2 M c^{2}}$ Lebensdauer des Feldquants Reichweite $R=\Delta t \cdot c \approx \frac{\hbar}{2 M c}$
+→ je höher die Masse des Feldquants, je kleiner die Reichweite
+$\rightarrow e / m \quad \Longrightarrow \quad M=0 \quad \Longrightarrow \quad$ unendliche Reichweite
+
+
+### 1.7 Yukawa Kopplung
+
+Start: $\quad E^{2}=(p c)^{2}+\left(m c^{2}\right)^{2} \quad$ mit $E=i \hbar \partial_{t}, \vec{p}=-i \hbar \nabla$
+⟹ Klein Gordon Gleichung
+
+\begin{gathered}
+\left(\nabla^{2}-\mu^{2}\right) \Phi(r)=-J(r) \quad \text { inhomogen, statisch, "getriebenes Feld" } \\
+\left(\nabla^{2}-\mu^{2}\right) \Phi(r)=0 \quad \text { homogen, statisch, "freies Feld" } \\
+\mu=\frac{m c}{\hbar}
+\end{gathered}
+
+Wir betrachten eine Kugel (kugelsymmetrisch) mit punktförmiger Ladung im Zentrum, mit Stärke $g$
+
+J(\vec{r})=g \delta^{(3)}(\vec{r})
+
+Ladung außerhalb der Quelle $(r>0) \quad J(r)=0$
+Wir betrachten nun das Feld außerhalb der Quelle $\left(\nabla^{2}-\mu^{2}\right) \Phi(r)=0 \quad \nabla^{2}=\frac{1}{r^{2}} \frac{d}{d r}\left(r^{2} \frac{d}{d r}\right)$
+Ansatz $\quad \Phi(r)=\frac{f(r)}{r}$
+$\Longrightarrow f^{\prime \prime}-\mu^{2} f=0 \quad r \rightarrow \infty$, keine Divergenz
+$f(r)=A e^{-\mu r}+B e^{\mu r} \quad \Longrightarrow \quad B=0$
+Lösung: $\quad \Phi(r)=A \frac{e^{-\mu r}}{r}$
+Bestimme A via "Matching" : Betrachte kleine Kugel mit Radius $\epsilon$ und lasse dann $\epsilon \rightarrow 0$ gehen
+
+\int_{K_{\epsilon}} \underbrace{\left(\nabla^{2}-\mu^{2}\right)}_{(\epsilon \rightarrow 0) \rightarrow 0} \Phi d^{3} r=-g \int_{K_{\epsilon}} \delta^{(3)} d^{3} r=-g
+
+Gaußsatz auf Laplace Term $\quad \int_{K_{\epsilon}} \nabla(\nabla \Phi) d^{3} r=\int_{\partial K_{\epsilon}} \nabla \Phi d S \quad$ lässt sich leicht integrieren.
+… $A=\frac{g}{4 \pi} \Rightarrow \Phi(r)=\frac{g}{4 \pi} \frac{e^{-\mu r}}{r}$
+Reichweite: $\quad r_{\text {range }} \equiv \lambda=\frac{1}{\mu}=\frac{\hbar}{M c}=\frac{\hbar c}{M c^{2}}$
+
+Bsp. schwache WW
+
+r_{\text {range }}=\frac{200 \mathrm{MeV} \mathrm{fm}}{80 \mathrm{GeV}} \approx 2.5 \cdot 10^{-3} \mathrm{fm} \approx 2.5 \mathrm{am} \quad \text { Reichweite der schwachen WW. }
+
+WW Energie: $\quad V(r)=g_{2} \cdot \Phi(r)= \pm \frac{g_{1} g_{2}}{4 \pi} \frac{e^{-\mu r}}{r}$
+![This diagram depicts energy level curves for a quantum system, showing how the energy varies with a parameter \( v(r) \) for different quantum numbers \( m \), specifically illustrating the case for \( m=0 \) and higher \( m \) values.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8b5ea5b7-b0b3-47a5-92cf-ea6423417a9a/ad80958f-9244-406a-a5fc-5535f5eda98f-10_433_579_447_735.jpg)
+
+Bsp: $\quad e / m-\mathrm{WW} \quad$ Coulomb Potential $m=0 \quad g=\frac{Q}{\epsilon_{0}}$
+
+\varphi(r)=\frac{1}{4 \pi \epsilon_{0}} \frac{Q}{r} \\
+V(r)=q \cdot \varphi(r)=\frac{q Q}{4 \pi \epsilon_{0}} \cdot \frac{1}{r}
+

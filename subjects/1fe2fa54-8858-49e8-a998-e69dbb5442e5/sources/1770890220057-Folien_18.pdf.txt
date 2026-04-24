@@ -1,0 +1,59 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Das freie Elektronengas
+aus Gross / Marx
+EF: Fermi-
+Energie
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Das freie Elektronengas
+Das freie Elektronengas stellt die einfachste Näherung dar, die
+elektronischen Eigenschaften von Metallen zu beschreiben.
+Vorstellung: Schwach gebundene Valenzelektronen bewegen
+sich nahezu frei durch das Metall (Leitungselektronen).
+Die Gesamtenergie besteht nur aus kinetischer Energie
+(siehe rechte Skizze).
+Die Coulomb-Wechselwirkung zwischen den Elektronen selbst
+und zwischen Elektronen und positiven Ionenrümpfen wird
+vernachlässigt.
+Fermi-Gas freier Elektronen: "Gas" aus freien,
+nicht-wechselwirkenden Elektronen, die dem
+Pauli-Prinzip gehorchen!
+Skizze
+aus Gross / Marx
+
+Impuls-Operator
+Energieniveaus in 1D
+Zunächst betrachten wir ein 'eindimensionales' Metall.
+Die Elektronen sind in einem Kasten der Länge L mit unendlich hohen Potentialbarrieren
+eingeschlossen. Ein Elektron kann nicht in die Potentialbarriere eindringen.
+Schrödingergleichung:
+𝐻𝜓𝑛 = 𝑝2
+2𝑚 = − ℏ2
+2𝑚
+𝑑2𝜓𝑛
+𝑑𝑥2 = 𝜖𝑛𝜓𝑛
+𝑝 = 𝑖ℎ 𝜕
+𝜕𝑥
+Hamilton-Operator Wellenfunktion
+Randbedingung: 𝜓𝑛 𝑥 = 0 = 𝜓𝑛 𝑥 = 𝐿 = 0
+
+Die Fermi-Dirac Verteilung
+T = 0
+f (μ) = ½
+μ: chemisches Potential
+
+aus Hunklinger
+Fermi-Kugel in 3D
+Die Fermi-Kugel besitzt
+die Fermi-Fläche als
+Oberfläche und den
+Fermi-Wellenvektor
+als Radius
+kF
+
+Zustandsdichte
+besetzt unbesetzt
+Fermi-Kante
+
+Elektronendichte bestimmt
+Fermi-Energie, -Temperatur, -Wellenvektor und -Geschwindigkeit

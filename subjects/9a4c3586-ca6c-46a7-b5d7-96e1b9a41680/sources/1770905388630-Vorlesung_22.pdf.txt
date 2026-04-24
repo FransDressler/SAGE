@@ -1,0 +1,115 @@
+6.3 Modell stank gebundener Elaktionen ("Tight binding Ausatz")
+
+Betrachte das jitterperiodische Potential $U(\underline{r})$ als Überlagerceng von Atompotentialen $V(I)$ mit Wellenfunktion $\Psi_{\alpha}(I)$.
+
+Ausganyspunkt : - "geloistes" atomares Problem
+
+$$
+H_{A} \Psi_{\alpha}=\left[-\frac{\hbar^{2}}{2 m} \nabla^{2}+V_{A}(\underline{\tau})\right] \Psi_{\alpha}=E_{\alpha} \Psi_{\alpha}
+$$
+
+- Ston potential durch veiteres Atom bei $\underline{R}$ m:
+
+\begin{aligned}
+& \begin{aligned}
+H= & H_{\hat{A}}+H_{\hat{A}} \\
+& \text { feèe Atom stancury }
+\end{aligned}
+\end{aligned}
+
+- Summiere ùber alle Atome nit $\underline{R}_{n} \neq \underline{R}_{m}$ :
+
+H_{S}\left(\underline{r}-\underline{R}_{m}\right)=\sum_{n \neq m} V_{A}\left(\underline{r}-\underline{R}_{n}\right)
+
+Ausate:
+Folie
+
+WI (I) : Übel lajerm afle atomares Wellenfunctioner
+$\psi_{\underline{u}}(\underline{r})=\sum_{m} c_{m} \psi_{\alpha}\left(\underline{r}-\underline{R}_{m}\right)=\frac{1}{\sqrt{N}} \sum_{m} e^{i \underline{k} \underline{R}_{m}} \psi_{\alpha}\left(\underline{r}-\underline{R}_{m}\right)$
+Blodn-Theorem N:Auzall des Abure Folic
+⇒ Everjewente:
+
+\begin{aligned}
+E_{\underline{k}} & =\frac{\left\langle\psi_{\underline{k}}\right| H\left|\psi_{\underline{k}}\right\rangle}{\left\langle\psi_{\underline{k}} \mid \psi_{\underline{k}}\right\rangle} \\
+& =\frac{\int \psi_{\underline{k}}^{*} H \psi_{\underline{k}} d V}{\underbrace{\int \psi_{\underline{k}}^{*} \psi_{\underline{k}} d V}_{\approx \Lambda, d a \text { ubedepp veain }}}
+
+$E_{\underline{k}} \approx \frac{1}{N} \sum_{m, n} e^{i \underline{k}\left(\underline{Q_{m}}-\underline{R}_{n}\right)} \int \psi_{\alpha}^{*}\left(\underline{r}-\underline{R}_{m}\right)\left[H_{A}+H_{s}\left(\underline{r}-\underline{R}_{m}\right)\right] \psi_{\alpha}\left(\underline{r}-\underline{R}_{m}\right) d V$
+
+⇒ Eirencent
+des Asolicaten Aloure
+(beckaunt)
+
+Aufspaltury des. lutepals in zwei futlibe $\alpha$ and $\beta$.
+
+\alpha=-\int \psi_{\alpha}^{*}\left(\underline{r}-\underline{R}_{m}\right) H_{s}\left(\underline{r}-\underline{R}_{m}\right) \psi_{\alpha}\left(\underline{r}-\underline{R}_{m}\right) d V
+
+Anderms des Enerjecijenwerts aufficund der von den Nach bar-Atomen hervorgensemen Potentialändermy
+
+\beta=-\int \psi_{\alpha}^{*}\left(\underline{r}-\underline{R}_{n}^{\downarrow}\right) H_{s}\left(\underline{r}-\underline{R}_{m}\right) \psi_{\alpha}\left(\underline{r}-\underline{R}_{m}\right) d V
+
+Enerje-Audermy anfymed überbpp der Wellenfunktion des "Auf-Atolus" ubit Wallentunktionen der übrigen Atone.
+Vorghensweise und Anfspaltury des lutegrals giet fin alle Eifurwerte $E_{i}$, autsprechend:
+
+E_{\underline{k}, j} \approx \frac{1}{N} \sum_{m, n} e^{i \underline{k}\left(\underline{R}_{m}-\underline{R}_{n}\right)}\left(E_{i}-\alpha_{i}-\beta_{i, n}\right)
+
+- Fin $E_{i}$ und $\alpha_{i}$ spielt übulapp der Wellenfunktiona venve Rolle $\Rightarrow \underline{R}_{m}=\underline{R}_{n}$
+- $E_{i}, \alpha_{i}$ and $\beta_{i n}$ hänjen widnt von deen "Anfatom" ab ⇒ Summation exibt Talles $N$.
+
+\Rightarrow \quad E_{\underline{x}_{1} j} \approx E_{i}-\alpha_{i}-\sum_{n} \beta_{i, n} e^{i \underline{y}\left(\underline{R}_{m}-\underline{R}_{n}\right)}
+
+## Венеткизеи:
+
+- Sind die Elektonen stark lovalisiert, recht es bei der Summe, nur den Baitraj der viächsten Nachbarn zu bericksichtign. $\beta$; hängt dann von der Anzall der viächosten Nachbarn ab (siehe "Kondinationszale" ans Vapitel 1.3).
+- Überlapp der Wellenfunktionen hängt von Aot der Bindumy (kapitcl 1.9) und knistallstruktor ab (hapitel 1.2). $\Rightarrow \beta_{i}$ variiest, selbst wenn vächste Nachbann berüchsidetijt verden.
+- "Tight-binding" funktioniest anch fin amonphe Stffe, da nus viächste Nachboun ausicidrand sein Viamen. Entspicchend Veine Bloch-Imention als Ansatz! ⇒ Everjebänder sind beine Uonsequena der periodischen Anondung der Atone, sondenn der WW zwischen Atonen. ⇒ "Decekt-Bänder".
+
+Baspide
+
+- Einfaches unbisches Gittor: koondinationszale 6
+$(*) \Rightarrow E_{\underline{k}_{1} i} \approx E_{i}-\alpha_{i}-2 \beta_{i}\left[\cos \left(k_{x} \cdot a\right)+\cos \left(u_{y} \cdot a\right)+\cos \left(u_{z} \cdot a\right)\right]$
+- Ans den diskreten Enerjenivean $E_{i}$ isoliesto Atome entsteht abgesenktes Band des Breite $\omega=12 \cdot \beta_{i}$. Folie anant
+- Fir Vline $\underline{k}$-Weate: $\quad E_{\underline{k}_{1} i} \approx \underbrace{E_{i}-\alpha_{i}-6 \beta_{i}}_{\text {Banduntsvante }}+\beta_{i a^{2} k^{2}}$
+ähdich we $\frac{t^{2} t^{2}}{e^{2} w^{1}}$,
+uit effektiver Masse
+$m^{x}=\frac{u^{2}}{2 \beta ; a^{2}}$
+(side Uapite 7)
+- fcc-Gither (Z.B. Al) . Kordinationszale 12
+
+\left(\underline{R}_{m}-\underline{R}_{n}\right)= & \left( \pm \frac{a}{2}, \pm \frac{a}{2}, 0\right)_{i} \\
+& \left( \pm \frac{a}{2}, 0, \pm \frac{a}{2}\right) ; \\
+& \left(0, \pm \frac{a}{2}, \pm \frac{a}{2}\right) ;
+
+$(*) \Rightarrow E_{\underline{x}_{1} i} \approx E_{i}-\alpha_{i}-4 \beta_{i}\left[\cos \left(\frac{1}{2} k_{y} \cdot a\right) \cos \left(\frac{1}{2} k_{z} a\right)+\right.$
+$+\cos \left(\frac{1}{2} k_{z} a\right) \cos \left(\frac{1}{2} k_{x} a\right)+$
+$\left.+\cos \left(\frac{1}{2} k_{x} a\right) \cos \left(\frac{1}{2} k_{y} a\right)\right]$.
+
+\Rightarrow \quad \omega=24 \cdot \beta_{i} .
+
+## 6.4 talle der tastäude
+
+Es stalt sich die Froje, wie viele der berechneten bustände tatsächlich besetet sind.
+
+## Fast fiei Elektioneu:
+
+zadl de Einhaitszellem: $N=\frac{V}{V z e l b}$
+Volumen in $\underline{K}$-Raucu: $(2 \pi)^{3} / V$
+Volumen der Sz : $(2 \pi)^{3} / z \circ l b$
+$k$ - Zustände in Sz ⋅ V/Vzalb $=N$ pro Band
+unit Spinficihitsgrad: $\quad$ 2N zustände pro Band.
+
+## Tight-Binding: Die N Enerjeniveaus der N Atome spalten dends WW auf.
+
+⇒ WW fühst zen Bändern mit N-Zustärdan
+unit Spinficiheitsgrad: $2 N$ zustände pro Band.
+
+Folie Diamant.
+
+Engo: - Unistalle unit unjerader Anzall an $e^{-}$pro EZ
+⇒ Metalle (in das oberste Band werden Nxein 2N vafingbone zustände gefill)
+
+- Unistalle unit genader Anzall an e- pro EZ sind :
+- Isolater bzw. Halbleites fals Baudlicke zwischa obasten gefillten und witer widd gefille (Band existient)
+- Halburetall (-tals ain Bandübelapp de beida existiat . )
+
+Rest-Folien.
+

@@ -1,0 +1,187 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 11
+
+19. Januar 2026
+
+## Aufgabe 1 Auswahlregeln
+
+Elektromagnetische Strahlungsübergänge von einem Zustand $|a\rangle$ in einen Zustand $|b\rangle$ erfolgen unter Emission eines Photons der Energie $\omega=E_{a}-E_{b}$. Die Zustände $|a\rangle$ und $|b\rangle$ sind durch den Bahndrehimpuls (der Spin wird vernachlässigt) sowie durch weitere simultane Quantenzahlen $\alpha_{a}, \alpha_{b}$ charakterisiert:
+
+$$
+|a\rangle=\left|l_{a} m_{a}, \alpha_{a}\right\rangle, \quad|b\rangle=\left|l_{b} m_{b}, \alpha_{b}\right\rangle .
+$$
+
+a. Welche $E j$ - und $M j$-Übergänge sind aufgrund der Erhaltung von Drehimpuls und Parität erlaubt? Gehen Sie davon aus, dass die Parität der Zustände $|a\rangle$ und $|b\rangle$ ausschließlich durch den Bahndrehimpuls bestimmt ist.
+b. Welche Übergänge sind möglich für $l_{b}=0$ und $l_{a}=2 l$ sowie $l_{a}=2 l+1(l=0,1,2, \ldots)$ ?
+c. Der Kern ${ }^{57} \mathrm{Fe}$ besitzt einen niederenergetischen $\gamma$-Übergang vom ersten angeregten Zustand in den Grundzustand:
+
+|a\rangle=\left|J_{a}^{\pi}=\frac{3^{-}}{2}\right\rangle, \quad|b\rangle=\left|J_{b}^{\pi}=\frac{1^{-}}{2}\right\rangle, \quad|a\rangle \rightarrow|b\rangle+\gamma .
+
+Bestimmen Sie unter Verwendung der Erhaltung von Drehimpuls und Parität alle erlaubten elektromagnetischen Multipolübergänge $E j$ und $M j$ für diesen Zerfall. Welche Multipolordnung ist voraussichtlich dominant? Geben Sie eine kurze qualitative Begründung an.
+
+## Lösung: Auswahlregeln
+
+a. Parität von $\mid a>: \quad P_{a}=(-1)^{l_{a}}$
+
+Parität von $\mid b>: \quad P_{b}=(-1)^{l_{b}}$
+Für die Parität des Photons muss gelten: $\quad P_{\gamma}=P_{a} P_{b}=(-1)^{l_{a}+l_{b}}$
+Die mögliche Werte für den Drehimpuls $j$ des Photons sind
+
+\left|l_{a}-l_{b}\right| \leq j \leq l_{a}+l_{b}, \quad \text { mit } \quad j \neq 0
+
+Für jedes dieser $j$ ist die Parität des Photons bestimmt durch
+
+- $P_{\gamma}=(-1)^{j} \quad$ für $E j$ Übergänge
+- $P_{\gamma}=(-1)^{j+1} \quad$ für $M j$ Übergänge
+
+\begin{aligned}
+& E j \text { Übergänge sind erlaubt wenn }(-1)^{j}=(-1)^{l_{a}+l_{b}} \\
+& M_{j} \text { Übergänge sind erlaubt wenn }(-1)^{j+1}=(-1)^{l_{a}+l_{b}} \\
+& \text { wobei jeweils }\left|l_{a}-l_{b}\right| \leq j \leq l_{a}+l_{b}
+\end{aligned}
+
+b. Da $l_{b}=0$ ist, gibt es nur einen erlaubten $j$-Wert:
+
+l_{a}-0 \leq j \leq l_{a}+0 \quad \text { nur wenn } \quad j=l_{a}
+
+Bei den geradzahligen $l_{a}=2 l$ ist $l=0$ nicht erlaubt wegen $j \neq 0$, also $j=2 l$ für $l=1,2, \ldots$ möglich.
+Alle ungeradzahligen $j=l_{a}=2 l+1(l=0,1,2, \ldots)$ sind erlaubt.
+$P_{a} P_{b}=(-1)^{l_{a}}=P_{\gamma}$ ergibt:
+$P_{\gamma}=(-1)^{j}=(-1)^{l_{a}} \quad$ für $E j$ Übergänge: erlaubt
+$P_{\gamma}=(-1)^{j+1} \neq(-1)^{l_{a}} \quad$ für $M j$ Übergänge: verboten
+c. Wir betrachten den Übergang
+
+\left|J_{a}^{\pi}=\frac{3^{-}}{2}\right\rangle \rightarrow\left|J_{b}^{\pi}=\frac{1^{-}}{2}\right\rangle+\gamma
+
+## Erlaubte Multipole
+
+Drehimpuls: Das Photon trägt den Gesamtdrehimpuls $j$ (Multipolordnung), der die Bedingung
+
+\left|J_{a}-J_{b}\right| \leq j \leq J_{a}+J_{b}, \quad j \neq 0
+
+erfüllen muss. Für $J_{a}=\frac{3}{2}$ und $J_{b}=\frac{1}{2}$ ergibt sich
+
+1 \leq j \leq 2 \quad \Rightarrow \quad j=1,2 .
+
+Parität: Die Parität des Photons ist festgelegt durch
+
+\pi_{\gamma}=\pi_{a} \pi_{b}
+
+Hier gilt $\pi_{a}=\pi_{b}=-1$, also
+
+\pi_{\gamma}=(+1)
+
+Für elektromagnetische Strahlung gilt:
+
+\pi_{\gamma}= \begin{cases}(-1)^{j} & \text { für } E j \\ (-1)^{j+1} & \text { für } M j\end{cases}
+
+Nun werden die einzelnen Fälle überprüft:
+$\underline{j=1:}$
+
+E 1: \pi_{\gamma}=(-1)^{1}=-1 \text { verboten, } \quad M 1: \pi_{\gamma}=(-1)^{2}=+1 \text { erlaubt. }
+
+$j=2:$
+
+E 2: \pi_{\gamma}=(-1)^{2}=+1 \text { erlaubt, } \quad M 2: \pi_{\gamma}=(-1)^{3}=-1 \text { verboten. }
+
+Damit sind die erlaubten Multipolübergänge
+
+M 1 \text { und } E 2 .
+
+## Dominanter Multipolübergang
+
+Höhere Multipole sind für $d \ll \lambda$ stark unterdrückt. Zusätzlich sind magnetische Übergänge im Allgemeinen gegenüber elektrischen Übergängen gleicher Ordnung unterdrückt, und man verwendet häufig die Faustregel
+
+M \ell \sim E(\ell+1) .
+
+Damit ist zu erwarten, dass ein $M 1$-Übergang von ähnlicher Größenordnung ist wie ein $E 2$ Übergang. Da hier sowohl $M 1$ als auch $E 2$ erlaubt sind, erwartet man einen dominierenden $M 1 / E 2$-Mischübergang, wobei $M 1$ typischerweise etwas größer ist, da es der niedrigeren Multipolordnung entspricht:
+$M 1$ dominant (mit einer kleineren E2-Beimischung).
+
+## Aufgabe 2 : Elastische und inelastische Streuung von Elektronen an Kernen
+
+Elektronenstreuung ist ein leistungsfähiges Werkzeug zur Untersuchung der Struktur von Kernen. Durch die Messung der Energie- und Winkelverteilung der gestreuten Elektronen lassen sich elastische Streuprozesse an ganzen Kernen von inelastischen Prozessen unterscheiden, bei denen innere Freiheitsgrade des Kerns angeregt werden.
+Die Abbildung zeigt ein Energiespektrum von Elektronen, die an einem $\mathrm{H}_{2} \mathrm{O}$-Target gestreut wurden. Die Daten wurden am Linearbeschleuniger MAMI-A in Mainz bei 246 MeV Strahlenergie unter einem Streuwinkel von $148.5^{\circ}$ aufgenommen.
+
+![This image depicts an energy spectrum and momentum conservation diagram for the electron scattering reaction on oxygen-16 nuclei, specifically showing the electron energy distribution (Zählrate vs. E'e) and the momentum transfer before and after the collision (Stoß).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/f6092420-d376-4c2f-9db6-7b7ae62642b0/72e658e2-2fed-4aa4-a931-f47c46f4d210-4_515_1089_778_497.jpg)
+Abbildung 1: Die Abbildung zeigt ein Energiespektrum von Elektronen, die an einem $\mathrm{H}_{2} \mathrm{O}$-Target unter einem festen Streuwinkel gestreut wurden. Zusätzlich veranschaulichen schematische Zeichnungen den Streuprozess vor und nach der Kollision.
+
+a. Beschreiben Sie die im Elektronenenergiespektrum sichtbaren Hauptstrukturen. Welche Bereiche des Spektrums entsprechen elastischer Streuung und welchen inelastischen bzw. quasi-elastischen Prozessen? Warum treten schmale Peaks bei wohldefinierten Elektronenenergien auf?
+
+## Lösung:
+
+Die schmalen Peaks bei hohen Elektronenenergien entsprechen der elastischen Streuung, bei der das Target in seinem Anfangszustand verbleibt und das gestreute Elektron eine wohldefinierte Endenergie besitzt. Die breite Verteilung bei kleineren Elektronenenergien stammt aus inelastischer und quasi-elastischer Streuung, bei der Energie auf innere Freiheitsgrade des Kerns oder auf einzelne Nukleonen übertragen wird.
+Bei elastischer Streuung unter festem Streuwinkel erlauben Energie- und Impulserhaltung nur eine einzige kinematische Lösung für die Endenergie des Elektrons, sofern sich das Target zunächst in Ruhe befindet. Daher führen elastische Streuprozesse an Wasserstoffkernen (Protonen) und an ${ }^{16} \mathrm{O}$-Kernen zu schmalen Peaks bei charakteristischen Energien.
+
+Bei der quasi-elastischen Streuung streuen die Elektronen an einzelnen, im Kern gebundenen Nukleonen. Da diese Nukleonen gebunden sind und sich nicht in Ruhe befinden, variiert die auf das Nukleon übertragene Energie von Ereignis zu Ereignis. Dies führt zu einer breiten Struktur im Elektronenenergiespektrum anstelle eines scharfen Peaks.
+
+## Lösung:
+
+Zunächst ein paar allgemeine Vorbetrachtungen zur Kinematik:
+Sei der Viererimpuls $p=(e, \vec{p})$ mit dem Skalarprodukt $p_{1} p_{2}=E_{1} E_{2}-\overrightarrow{p_{1}} \overrightarrow{p_{2}}$. Damit ist insbesondere $p^{2}=E^{2}-|\vec{p}|^{2}=m^{2}$.
+Betrachten wir nun das Elektron mit $p(e, \vec{p}, m)$ und den Stoßpartner (wahlweise H-Kern, ${ }^{16}$ O-Kern oder Nukleon) mit $P(E, \vec{P}, M)$. Gestrichene Größen bezeichnen jeweils die Situation nach dem Stoß. Energie- und Impulserhaltung lassen sich kompakt schreiben als
+
+\begin{aligned}
+p+P & =p^{\prime}+P^{\prime} \\
+(p+P)^{2} & =\left(p^{\prime}+P^{\prime}\right)^{2} \\
+p^{2}+2 p P+P^{2} & =p^{\prime 2}+2 p^{\prime} P^{\prime}+P^{\prime 2} \\
+p P & =p^{\prime} P^{\prime}
+\end{aligned}
+
+beim elastischen Stoß ( $p^{2}=m^{2}=p^{\prime 2}, P^{2}=M^{2}=P^{\prime 2}$ ).
+Weiterhin wissen wir, daß der Viererimpuls des nicht nachgewiesenen Targets $P^{\prime}= p+P-p^{\prime}$ ist. Ausserdem befindet sich sich das Target im Laborsystem vor dem Stoß in Ruhe: $\vec{P}=0$. Damit erhält man weiter:
+
+p P & =p^{\prime}\left(p+P-p^{\prime}\right) \\
+& =p^{\prime} p+P p^{\prime}-p^{\prime 2} \\
+& =p^{\prime} p+P p^{\prime}-m^{2} \\
+e M & =e e^{\prime}-\vec{p} \vec{p}^{\prime}+e^{\prime} M-m^{2} \\
+e M & =e e^{\prime}-\left|\vec{p} \| \vec{p}^{\prime}\right| \cos \theta+e^{\prime} M-m^{2}
+
+Da das Elektron ultrarelativistisch ist ( $e=246 \mathrm{MeV}, m=0.5 \mathrm{MeV}, e \gg m$ ), kann man vereinfachen zu $e=|\vec{p}|$. Ausserdem kann $m^{2}$ vernachlässigt werden.
+
+e M & =e e^{\prime}(1-\cos \theta)+e^{\prime} M-m^{2} \\
+e^{\prime} & =\frac{e}{1+\frac{e}{M}(1-\cos \theta)}
+
+Wenn der Stoß inelastisch ist, wird der Kern angeregt (d.h., die Masse des Kerns nach dem Stoß ist um die Anregungsenergie erhöht: $M^{\prime}=M+E^{*}$ ), muss obige Formel wie folgt verallgemeinert werden:
+
+p P & =p^{\prime} P^{\prime}+\frac{1}{2}\left(P^{\prime 2}-P^{2}\right) \\
+P^{\prime 2}-P^{2} & =M^{2}+2 M E^{*}+E^{* 2}-M^{2} \\
+& =2 M E^{*}+E^{* 2} \\
+& \approx 2 M E^{*} \\
+e M & =e e^{\prime}(1-\cos \theta)+e^{\prime} M+M E^{*} \\
+e^{\prime} & =\frac{e-E^{*}}{1+\frac{e}{M}(1-\cos \theta)}
+
+b. Berechnen sie die Elektronenenergie für elastische Streuung an den Wasserstoffkernen.
+
+
+Nach unseren Vorarbeiten beschränkt sich diese Aufgabe auf das Einsetzen von Zahlen:
+
+e_{\mathrm{H}}^{\prime} & =\frac{e}{1+\frac{e}{M}(1-\cos \theta)} \\
+& =\frac{246}{1+\frac{246}{938}\left(1-\cos 148.5^{\circ}\right)} \mathrm{MeV} \\
+& =165.6 \mathrm{MeV}
+
+c. Berechnen sie die Elektronenenergie für elastische Streuung am Grundzustand sowie für inelastische Streuung zum ersten angeregten Zustand ( $E^{*}=6049 \mathrm{keV}$ ) von ${ }^{16} \mathrm{O}$.
+
+Lösung:
+Ebenso hier:
+
+e_{\mathrm{O}}^{\prime} & =\frac{e}{1+\frac{e}{M}(1-\cos \theta)} \\
+& =\frac{246}{1+\frac{246}{16.931 .5}\left(1-\cos 148.5^{\circ}\right)} \mathrm{MeV} \\
+& =238.7 \mathrm{MeV}
+
+und
+
+e_{\mathrm{O}^{*}}^{\prime} & =\frac{e-E^{*}}{1+\frac{e}{M}(1-\cos \theta)} \\
+& =\frac{246-6}{1+\frac{246}{16 \cdot 931.5}\left(1-\cos 148.5^{\circ}\right)} M \\
+& =232.8 \mathrm{MeV}
+
+d. Lassen sich in dieser Messung Strukturen innerhalb des ${ }^{16}$ O-Kerns auflösen?
+
+Lösung:
+
+\Delta x & \geq \frac{\hbar}{p} \\
+& =\frac{197 \mathrm{MeV} / c \mathrm{fm}}{246 \mathrm{MeV} / c} \\
+& \approx 0.8 \mathrm{fm}
+
+Dies bestimmt im Wesentlichen das Auflösungsvermögen des Elektronenstrahls. $\Delta x$ ist deutlich kleiner als der Kern, kann also den Kern bereits als nicht mehr punktförmig betrachten. $\Delta x$ liegt sogar in der Grössenordnung eines Nukleonenradius, also können auch Streuprozesse an einzelnen Nukleonen stattfinden, nicht nur am Kern als Ganzes. Genau das passiert:
+

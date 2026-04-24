@@ -1,0 +1,60 @@
+## Ladungstransport in Bändern
+
+Wenn keine Spannung angelegt wird, fließt kein Strom.
+Wird ein elektrisches Feld angelegt, verändert sich jeder Zustand $\boldsymbol{k}$ um:
+
+$$
+d \boldsymbol{k}=-\frac{-\boldsymbol{e} \boldsymbol{E}}{\hbar} \mathrm{dt}
+$$
+
+## Band komplett gefüllt
+
+Verschiebung um $\boldsymbol{d} \boldsymbol{k}$ für jeden Zustand gleich.
+⇒ Summation ergibt wieder 0 .
+![This diagram depicts the energy dispersion relation for electrons in a one-dimensional crystal lattice, showing the energy \(E(k)\) as a function of the wave vector \(k\) within the first Brillouin zone from \(-\pi/a\) to \(\pi/a\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-1_472_1074_850_368.jpg)
+
+- $|\boldsymbol{E}|=0: \sum_{\text {besetzte Zustände }} \boldsymbol{v}(\boldsymbol{k})=0$
+- $|\boldsymbol{E}| \neq 0: \sum_{\text {besetzte Zustände }} \boldsymbol{v}(\boldsymbol{k})=0$
+
+
+## Band partiell gefüllt
+
+Verschiebung um $d \boldsymbol{k}$ in leere Zustände.
+⇒ Summation ergibt $\neq 0$.
+![This diagram depicts an energy band structure showing the relationship between energy \(E(k)\) and wave vector \(k\) in a periodic lattice, illustrating the dispersion relation for electrons in a crystal. It specifically shows the energy values at discrete \(k\)-points within the first Brillouin zone from \(-\pi/a\) to \(\pi/a\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-1_472_998_850_1861.jpg)
+
+- $|\boldsymbol{E}|=0: \sum_{\text {besetzte Zustände }} \boldsymbol{v}(\boldsymbol{k})=0$
+- $|\boldsymbol{E}| \neq 0: \sum_{\text {besetzte Zustände }} \boldsymbol{v}(\boldsymbol{k}) \neq 0$
+
+
+## Sommerfeld-Theorie
+
+![This diagram depicts the shift of the Fermi surface in momentum space (wave number space) for electrons in a metal. It shows the Fermi surface at zero electric field (a) and the displaced Fermi surface under an applied electric field \( \mathcal{E}_x \) (b), illustrating the change in wave number \( \delta k_x \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-2_1009_2152_317_479.jpg)
+Bild 9.5: Verschiebung der Fermi-Kugel im elektrischen Feld. Die Punkte symbolisieren die erlaubten Wellenvektoren. a) Fermi-Kugel ohne elektrisches Feld. Koordinatenursprung und Kugelmittelpunkt fallen zusammen. b) Unter dem Einfluss des elektrischen Feldes $-\mathcal{E}_{x}$ haben sich alle Wellenvektoren und mit ihnen die Elektronenverteilung um den Betrag $\delta k_{x}$ nach rechts verschoben. Durch Stöße werden Elektronen aus dem dunklen Bereich der Vorderseite in den helleren Bereich der Rückseite transportiert.
+
+## Boltzmann Gleichung
+
+![The image depicts the Boltzmann equation and its components, specifically showing the terms related to field, diffusion, and scattering, along with the relaxation time approximation for the scattering term.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-3_1295_2504_413_266.jpg)
+![This image is a photograph of a man with glasses and a beard. It does not depict a diagram or specific subject matter.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-3_639_653_116_2534.jpg)
+![The image depicts a handwritten signature of Ludwig Boltzmann.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-3_144_421_782_2650.jpg)
+(1844 - 1906)
+5. FOLGE, 1930 , BAND4, HEFT2
+
+III
+
+5. F O L G E, 1930 , BAND 4, HEF
+(Zur Theorie der elektrischen
+und thermischen Leitfahigkeit von Metallen
+
+![This image is a black-and-white photograph of a man wearing glasses and a suit. It does not depict a diagram or specific subject matter beyond the portrait of the individual.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-4_662_532_78_2711.jpg)
+Rudolf Peierls
+(1907 - 1995)
+
+(Mit 1 Figur)
+
+Die Modifikation, die hier vorgenommen werden soll, beruht auf folgendem Umstand: Bloch hatte so gerechnet, als ob das Gitter sich stets, unabhängig von der Geschwindigkeitsverteilung der Elektronen, im thermischen Gleichgewicht befindet. Um die Berechtigung dieser Annahme untersuchen zu können, muß erst die folgende Frage beantwortet werden: Angenommen, die Gitterschwingungen seien zu einer gegebenen Zeit nicht im thermischen Gleichgewicht; welche Prozesse tragen dann in erster Linie dazu bei, das Gleichgewicht wiederherzustellen?
+
+![This diagram depicts an energy band structure in a solid, showing the energy (E) as a function of crystal momentum (ξ) within the first Brillouin zone from -π to π. It illustrates the formation of energy gaps at the zone boundaries due to electron wave interference in a periodic potential.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/1b1f9dfc-6551-4c00-b151-6891fe2cd278/a9212e65-8cf9-460a-a424-f061dea05f9e-4_683_866_958_1953.jpg)
+Energiewerte erster Näherung
+Fig. 1
+

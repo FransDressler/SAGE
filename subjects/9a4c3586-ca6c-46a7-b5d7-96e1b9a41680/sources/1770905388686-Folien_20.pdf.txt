@@ -1,0 +1,177 @@
+## Modell der freien Elektronen
+
+![This diagram depicts the energy barrier at a metal-vacuum interface, showing the work function (Φ), the Fermi energy level (EF), and the potential energy barrier (W) that electrons must overcome to escape from the metal into the vacuum.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-01_923_913_513_416.jpg)
+Bild 8.1: Potenzial im Modell freier Elektronen. Die Potenzialtiefe ist mit $W$, die Austrittsarbeit mit $\phi$ und die Fermi-Energie mit $E_{\mathrm{F}}$ bezeichnet.
+
+![This diagram depicts a Fermi surface in momentum space, showing a spherical Fermi surface labeled "Fermi-Fläche" with axes kx, ky, and kz representing the components of the wave vector.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-01_975_951_466_1969.jpg)
+Bild 8.7: Fermi-Kugel. Am absoluten Nullpunkt sind alle Elektronen in Zuständen innerhalb der Fermi-Kugel untergebracht, die Begrenzung der Kugel ist daher scharf.
+
+aus Hunklinger
+
+## Modell der freien Elektronen
+
+![This image depicts the density of states \(D(E)\) as a function of energy \(E\) for particles in different spatial dimensions: 3D, 2D, and 1D systems. It shows how the density of states varies with energy in three, two, and one-dimensional systems respectively.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-02_704_1925_377_586.jpg)
+Abb. 7.2: Zustandsdichte für ein 1D-, 2D- und 3D-Elektronengas.
+
+$$
+\begin{gathered}
+D(E)=\frac{V}{2 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{3 / 2} E^{1 / 2} \quad \text { (3D-Elektronengas) } \\
+D(E)=\frac{A}{2 \pi}\left(\frac{2 m}{\hbar^{2}}\right) E^{0}=\text { const } \quad \text { (2D-Elektronengas) } \\
+D(E)=\frac{L}{\pi}\left(\frac{2 m}{\hbar^{2}}\right)^{1 / 2} E^{-1 / 2} \quad \text { (1D-Elektronengas) }
+\end{gathered}
+$$
+
+
+![The diagrams depict the density of states and occupation probability of electrons in a material, illustrating the Fermi-Dirac distribution at absolute zero and finite temperatures. The left graph shows the occupied and unoccupied states at zero temperature, while the right graph compares the occupation at zero and non-zero temperatures using the Fermi-Dirac function.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-03_957_2924_463_171.jpg)
+Abb. 7.4: Fermi-Kugel und Zustandsdichte für ein 3D-Elektronengas bei $T=0$. Die besetzten und unbesetzten Zustände sind durch eine scharfe Fermi-Kante getrennt.
+
+
+|  | $n / 10^{28} \mathrm{~m}^{-3}$ | $k_{\mathrm{F}} / \AA^{-1}$ | $v_{\mathrm{F}} / 10^{6} \mathrm{~ms}^{-1}$ | $E_{\mathrm{F}} / \mathrm{eV}$ | $T_{\mathrm{F}} / \mathrm{K}$ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Li | 4,62 | 1,11 | 1,11 | 4,69 | 54400 |
+| Na | 2,54 | 0,91 | 1,05 | 3,16 | 36700 |
+| Al | 18,07 | 1,75 | 2,03 | 11,67 | 135400 |
+| Cu | 8,49 | 1,36 | 1,57 | 7,04 | 81700 |
+| Ag | 5,86 | 1,20 | 1,39 | 5,49 | 63700 |
+| Au | 5,90 | 1,20 | 1,38 | 5,51 | 63900 |
+| Pb | 13,20 | 1,57 | 1,81 | 9,37 | 108700 |
+
+Tabelle 8.1: Elektronendichte, Betrag des Fermi-Vektors und der Fermi-Geschwindigkeit, Fermi-Energie und Fermi-Temperatur ausgewählter Metalle. Bei der Berechnung der Zahlenwerte wurde die Masse der freien Elektronen verwendet.
+
+## Spezifische Wärme von Cu
+
+## Die korrekte Beschreibung der spezifischen Wärme bei tiefsten Temperaturen ist einer der größten Erfolge der freien Elektronentheorie.
+
+![This image depicts the specific heat capacity (Cv) of copper (Cu) as a function of temperature, showing experimental data and theoretical fits based on the equation Cv = γT + βT³, which separates electronic and lattice contributions to the heat capacity at low temperatures.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-05_1069_2218_395_497.jpg)
+Bild 8.8: a) Verlauf der spezifischen Wärme von Kupfer bei tiefen Temperaturen. Die spezifische Wärme setzt sich aus dem linearen Anteil der Elektronen (gestrichelt) und dem $T^{3}$-Beitrag der Phononen (strichpunktiert) zusammen. b) Spezifische Wärme $C_{V} / T$ von Kupfer als Funktion von $T^{2}$. (Nach J.A. Rayne, Austral. J. Phys. 9, 191 (1956).)
+
+## Sommerfeld
+
+| Metall | $\gamma_{\exp }\left(10^{-3} \mathrm{~J} / \mathrm{mol} \mathrm{K}^{2}\right)$ | $\gamma_{\text {theor }}\left(10^{-3} \mathrm{~J} / \mathrm{mol} \mathrm{K}^{2}\right)$ | $\gamma_{\text {exp }} / \gamma_{\text {theor }}$ |
+| :--- | :--- | :--- | :--- |
+| Li | 1.63 | 0.749 | 2.18 |
+| Na | 1.38 | 1.094 | 1.26 |
+| K | 2.08 | 1.668 | 1.25 |
+| Rb | 2.41 | 1.911 | 1.26 |
+| Cs | 3.20 | 2.238 | 1.43 |
+| Fe | 4.98 | 0.498 | 10 |
+| Co | 4.98 | 0.483 | 10.3 |
+| Ni | 7.02 | 0.458 | 15.3 |
+| Cu | 0.695 | 0.505 | 1.38 |
+| Ag | 0.646 | 0.645 | 1.00 |
+| Au | 0.729 | 0.642 | 1.14 |
+| Sn | 1.78 | 1.41 | 1.26 |
+| Pb | 2.98 | 1.509 | 1.97 |
+
+
+![The image depicts a bust of Arnold Sommerfeld along with the formula for the fine-structure constant (α), which shows the fundamental physical constant characterizing the strength of the electromagnetic interaction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-06_944_569_114_2648.jpg)
+Theresienstr. 37 LMU München
+
+Tabelle 7.2: Vergleich zwischen experimentellem und nach (7.2.8) berechneten Wert des Sommerfeld-
+Koeffizienten $\gamma$ der elektronischen spezifischen Wärme. Koeffizienten $y$ der elektronischen spezifischen Wärme.
+
+## Zustandsdichte von Nickel
+
+![This diagram depicts the electronic density of states (Zustandsdichte D(E)) for Nickel as a function of energy (E) in electron volts (eV), showing the distribution of available electronic states up to the Fermi energy level (E_F).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-07_1230_1224_447_549.jpg)
+Bild 8.9: Zustandsdichte von Nickel. Der Beitrag der $d$-Elektronen überdeckt den des $s$-Bands, dessen gedachter Verlauf gestrichelt gezeichnet ist. Die besetzten Zustände sind durch dunkleres Blau hervorgehoben. (Nach J. Callaway, C.S. Wang, Phys. Rev. B 7, 1096 (1973).)
+
+## Beispiel: Zustandsdichte von Kupfer
+
+![This diagram depicts the density of states (DOS) as a function of energy for electronic states, showing contributions from s and d orbitals and indicating the Fermi energy level (E_F). The equation represents the theoretical expression for the density of states in a free electron model.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-08_1246_1390_377_158.jpg)
+
+Abb. 8.22
+aus Gross / Marx bzw. R. Courths, et al Phys. Rep 112, 55 (1984).
+A. Holleitner WS 25/26
+
+## Bandstruktur und Bloch-Theorem
+
+![This diagram depicts the potential energy landscape in a crystal lattice, showing (a) the actual potential wells at atomic positions and (b) the pseudopotential experienced by electrons as they move freely through the crystal while avoiding the atomic cores.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-09_998_2886_416_396.jpg)
+Bild 8.2: Anschauliche Darstellung der Potenziallandschaft. Die Bildbegrenzung ist so gewählt, dass ein Schnitt entlang von Atomkernen erfolgt, der andere dagegen zwischen den Rümpfen verläuft.
+a) Coulomb-Potenzial, b) Pseudopotenzial.
+
+## Modell der freien Elektronen im periodischen Gitter
+
+![The image shows electronic band structure diagrams: (a) the free electron energy dispersion relation with parabolic bands repeated periodically in k-space, and (b) the energy band structure of electrons in a periodic potential exhibiting energy band gaps at the Brillouin zone boundaries.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-10_1029_2303_396_440.jpg)
+Bild 8.14: a) Darstellung der Lösung der Schrödinger-Gleichung eines eindimesionalen leeren Gitters. Die Energieeigenwerte wiederholen sich im $\boldsymbol{k}$-Raum mit der Periode $g=2 \pi / a$. b) Reduktion der Energieeigenwerte auf die 1. Brillouin-Zone. Alle erlaubten Energieeigenwerte kommen durch Addition eines geeigneten reziproken Gittervektors im Bereich $-\pi / a<k \leq \pi / a$ zu liegen. Man beachte, dass sich die Energieskala der beiden Abbildungen unterscheidet.
+
+
+Situation 1: Zustände sind gekoppelt, aber periodisches Potential hat geringen Einfluss auf Energie-Eigenwert.
+![This diagram depicts the electronic band structure of a one-dimensional crystal, showing the energy dispersion relation \(E(k_x)\) with periodicity in reciprocal space characterized by the Brillouin zone boundaries at \(\pm 2\pi/a\). It illustrates the folding of energy bands due to the crystal lattice periodicity and the concept of the first Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-11_910_2741_438_273.jpg)
+
+Abb. 8.4: (a) Parabolische Energiebänder für ein freies Elektron in einer Dimension. Die Gitterperiode im realen Raum ist $a$.
+
+
+![This diagram depicts the energy band structure in a periodic potential, showing the coupling of states and the resulting energy eigenvalues as a function of wave vector \( k_x \). It illustrates how the potential strongly influences the energy levels, leading to band gaps at the Brillouin zone boundaries.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-12_1089_2754_259_273.jpg)
+Abb. 8.4: (a) Parabolische Energiebänder für ein freies Elektron in einer Dimension. Die Gitterperiode im realen Raum ist $a$.
+
+## Quasi-freie Elektronen: Ladungsdichteverteilung
+
+$\left|\psi_{+}\right|^{2}$ besitzen Dichte an den Atomrümpfen
+⇒ Coulomb-Wechselwirkung reduziert Eigenenergie um $\mathrm{U}_{1}$
+
+![This diagram depicts the probability density functions of symmetric (a) and antisymmetric (b) wavefunctions, |Ψ^s|^2 and |Ψ^a|^2, for electrons in a periodic potential (c) representing a crystal lattice. It illustrates how electron wavefunctions behave in the presence of a periodic potential V(x) in solid-state physics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-13_1049_1662_371_322.jpg)
+Abb. 8.7: Wahrscheinlichkeitsdichte (a) $\left|\Psi^{s}\right|^{2}$ und (b) $\left|\Psi^{a}\right|^{2}$ für zwei stehende Elektronenwellen. In (c) ist die qualitative Form der potenziellen Energie $V(x)$ eines Elektrons in einem eindimensionalen Gitter gezeigt.
+
+$\left|\psi \_\right|^{2}$ besitzen Dichte zwischen den Atomrümpfen
+⇒ erhöhte Eigenenergie um $+\mathrm{U}_{1}$
+
+## Quasi-freie Elektronen: Bandlücke an der BZ-Grenze
+
+Je weiter weg vom Zonenrand wird der Einfluss des period. Potentials immer geringer
+
+![This diagram depicts energy band structures in a solid, showing the formation of energy bands and band gaps for free electrons and band electrons in a crystal lattice. It illustrates how electron density distribution near atomic cores affects the energy levels at the zone boundary, including the influence of Coulomb interaction on eigenenergies.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-14_1063_3071_529_174.jpg)
+Abb. 8.8: Zur Entstehung der Energielücke am Rand der Brillouin-Zone durch stehende Elektronenwellen. Die erste Brillouin-Zone ist farbig hinterlegt. (a) ausgedehntes Zonenschema, (b) reduziertes Zonenschema. Die $E(k)$-Beziehung für freie Elektronen ist gestrichelt eingezeichnet.
+
+## Dispersionkurve von quasi-freien Elektronen
+
+![This diagram is an energy band structure showing the opening of an energy gap \(2U_1\) at the Brillouin zone boundary \(k_x = \pi/a\) due to a periodic potential in a one-dimensional crystal lattice. It depicts how the free electron parabolas are modified by the periodic potential, resulting in band splitting and the formation of an energy gap.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-15_1186_1125_491_259.jpg)
+Bild 8.18: Dispersionskurven von quasi-freien Elektronen in einer eindimensionalen Probe. Das periodische Potenzial bewirkt bei $k_{x}=\pi / a$ die Aufspaltung $\left|2 \widetilde{V}_{g}\right|$. Die Lösungen für das leere Gitter sind gestrichelt gezeichnet.
+
+## 1D freie Elektronen: erweitertes, reduziertes und periodisches Zonenschema
+
+![This image depicts energy dispersion relations for electrons in a one-dimensional crystal lattice, showing (a) a free electron parabola, (b) energy bands with a band gap opening at the Brillouin zone boundary due to a weak periodic potential, and (c) multiple energy bands with band gaps in an extended zone scheme.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-16_1107_2414_447_443.jpg)
+Abb. 8.6: Ausgedehntes (a), reduziertes (b) und periodisches Zonenschema (c) freier Elektronen in einer Dimension.
+
+## 1D quasi-freie (fast freie) Elektronen: erweitertes, reduziertes und periodisches Zonen-Schema
+
+![This diagram depicts an energy band structure showing the relationship between energy (E) and wave vector (k) in a periodic potential, illustrating allowed energy bands and forbidden gaps in a crystal lattice. The plot is labeled in German, with "Energie" for energy and "Wellenvektor" for wave vector.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-17_962_749_489_533.jpg)
+Bild 8.20: Energiedispersionskurve $E_{k}$ eines eindimendionalen Gitters im erweiterten, im reduzierten und im periodischen Zonenschema. Die erlaubten Energiebereiche sind dunkel getönt, die verbotenen Bereiche hell gelassen. Die Teile der Kurve, die der Energieparabel eines freien Elektrons entsprechen, sind im periodischen Zonenschema dicker gezeichnet.
+
+![This diagram depicts an electronic band structure showing the energy dispersion relation of electrons as a function of the wave vector \( k \) in a periodic lattice. It specifically shows the allowed energy bands and band gaps for electrons in a crystal, with the wave vector values marked at high-symmetry points in the Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-17_960_657_489_1354.jpg)
+![This diagram depicts the energy band structure and corresponding wavefunctions for a particle in a periodic potential, showing the relationship between energy levels and wavevector \( k \) with associated Bloch wavefunctions \( U_1, U_2, U_3 \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-17_959_894_492_2094.jpg)
+
+## Modell der freien Elektronen mit Bandindizes
+
+![This diagram is an electronic band structure plot showing the energy (E) versus wave vector (kx) for different energy bands in a crystal lattice, labeled by band indices and grouped by ranges of band numbers.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-18_1105_813_398_427.jpg)
+Abb. 8.5: Reduziertes Zonenschema für ein freies Elektronengas in einem einfach kubischen Gitter mit Gitterkonstante $a$. Dargestellt ist $E_{n}(\mathbf{k})$ nur entlang $k_{x}$ innerhalb der 1. Brillouin-Zone.
+
+| Bandindex | ( $\boldsymbol{h}, \boldsymbol{k}, \boldsymbol{\ell}$ ) | $\boldsymbol{E}_{\boldsymbol{n}} \boldsymbol{(} \mathbf{0 ,} \mathbf{0 ,} \mathbf{0} \boldsymbol{)}$ | $E_{n}\left(k_{x}, 0,0\right)$ |
+| :--- | :--- | :--- | :--- |
+| 1 | 000 | 0 | $k_{x}^{2}$ |
+| 2 | 100 | $\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}+\frac{2 \pi}{a}\right)^{2}$ |
+| 3 | $\overline{1} 00$ | $\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}-\frac{2 \pi}{a}\right)^{2}$ |
+| 4,5,6,7 | 010, $0 \overline{1} 0,001,00 \overline{1}$ | $\left(\frac{2 \pi}{a}\right)^{2}$ | $k_{x}^{2}+\left(\frac{2 \pi}{a}\right)^{2}$ |
+| 8,9,10,11 | $110,1 \overline{1} 0,101,10 \overline{1}$ | $2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}+\frac{2 \pi}{a}\right)^{2}+\left(\frac{2 \pi}{a}\right)^{2}$ |
+| 12,13,14,15 | $\overline{1} 10, \overline{11} 0, \overline{1} 01, \overline{1} 0 \overline{1}$ | $2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}-\frac{2 \pi}{a}\right)^{2}+\left(\frac{2 \pi}{a}\right)^{2}$ |
+| 16,17,18,19 | 011, $0 \overline{1} 1,01 \overline{1}, 0 \overline{11}$ | $2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ | $k_{x}^{2}+2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ |
+
+Tabelle 8.1: Dispersionsrelation in [100] Richtung jeweils in Einheiten von $\hbar^{2} / 2 m$.
+
+## Leeres 3D fcc-Gitter
+
+![This diagram is an electronic band structure plot showing the energy levels (E_k) of electrons normalized by the Fermi energy (E_F) as a function of the crystal momentum (Wellenvektor k) along high-symmetry points in the Brillouin zone (Γ, X, W, L, K). It depicts the allowed energy bands and band gaps in a crystalline solid.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-19_1210_1210_573_474.jpg)
+
+Walter Schottky Institut \& School of Natural Sciences
+![This diagram depicts the Brillouin zone of a crystal lattice, showing high-symmetry points and directions in reciprocal space labeled with standard notation (e.g., Γ, X, L, W). It is used in solid state physics to analyze electronic band structures and phonon dispersion relations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-19_967_1042_58_2247.jpg)
+
+Bild 8.15: Energiedispersionskurven freier Elektronen in einem leeren kubisch flächenzentrierten Gitter nach der Reduktion auf die 1. Brillouin-Zone. Die Energie wurde auf die Fermi-Energie $E_{\mathrm{F}}$ eines Metalls mit drei freien Elektronen pro Atom normiert.
+
+## Energie-Dispersion von Aluminium
+
+![This image shows electronic band structure diagrams depicting the energy \(E_k\) as a function of the wave vector \(k\) for a crystalline solid, with the Fermi energy \(E_F\) indicated. The left diagram presents normalized energy bands, while the right diagram shows energy bands in electron volts with band indices labeled.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-20_1400_2072_380_7.jpg)
+
+![This diagram depicts the Brillouin zone of a face-centered cubic (FCC) crystal lattice, showing high-symmetry points and paths in reciprocal space used for electronic band structure calculations. It illustrates the first Brillouin zone boundaries and labels special k-points such as Γ, X, L, and W.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2e5014fa-37eb-4a8a-8344-dfbd43d294d6/161804c5-bacf-4c81-8433-a19ea33ab47b-20_972_1045_52_2253.jpg)
+Bild 8.16: Energiedispersionskurven von Aluminium. Die Zahlen an den Kurven geben die Ordnung der Brillouin-Zonen an, in denen die gekennzeichneten Teile der Dispersionskurve vor der Reduktion lagen. Die Fermi-Energie $E_{\mathrm{F}}$ ist ebenfalls eingezeichnet. (Nach B. Segall, Phys. Rev. 124, 1797 (1961).)
+
+Walter Schottky Institut \& School of Natural Sciences
+

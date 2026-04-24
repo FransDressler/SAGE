@@ -1,0 +1,197 @@
+## Fourier-Entwicklung von Punktgittern und das reziproke Gitter
+
+(a)
+(b)
+![This diagram depicts wave patterns corresponding to different wave vectors in a two-dimensional lattice with lattice constant d. It shows how the wavelength of the waves relates approximately to multiples of π/d along the lattice directions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-01_1046_1541_560_334.jpg)
+
+Abb. 2.6: Zur Verdeutlichung der Existenz eines minimalen reziproken Gittervektors
+$\mathrm{G}_{\text {min }}=2 \pi / d$. In (a) ist $\lambda=d / 2$ und die ebene Welle hat den gleichen Wert auf allen Gitterpunkten. Dies trifft auch für (b) zu, wo $\lambda=\lambda_{\text {max }}=d$. In (c) ist $\lambda=2 d$. Hier kann die ebene Welle nicht mehr auf allen Gitterpunkten den gleichen Wert haben.
+
+⇒ Minimaler reziproker Gittervektor: $\frac{\mathbf{2} \boldsymbol{\pi}}{\boldsymbol{d}}$
+
+## Reziproker Raum bzw. reziprokes Gitter in 1D
+
+$$
+\boldsymbol{a}_{\mathrm{i}} \cdot \boldsymbol{b}_{\mathrm{j}}=2 \pi \delta_{\mathrm{ij}}
+$$
+
+![This diagram depicts a linear molecule model showing atoms connected by bonds, illustrating the concept of bond length between two atoms in the molecule.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-02_165_980_896_307.jpg)
+a
+
+![The image depicts a rightward-pointing arrow symbol, commonly used to indicate direction or movement toward the right.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-02_129_189_885_1557.jpg)
+![This diagram depicts a one-dimensional chain of atoms or particles connected by springs, commonly used to model lattice vibrations or phonons in solid-state physics. It shows the arrangement of masses (atoms) connected by springs representing interatomic forces in a linear crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-02_157_782_919_2047.jpg)
+
+b=2 \pi / a
+
+## Reziproker Raum bzw. reziprokes Gitter in 2D
+
+![The image depicts a 2D lattice and its corresponding reciprocal lattice, showing the primitive vectors \( \mathbf{a}_1, \mathbf{a}_2 \) for the real-space lattice (top) and \( \mathbf{b}_1, \mathbf{b}_2 \) for the reciprocal lattice (bottom).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-03_1199_1169_478_515.jpg)
+Bild 4.4: Zusammenhang zwischen realem und reziprokem Gitter. Im oberen Teil des Bildes ist das ursprüngliche Gitter in schwarz, im unteren Teil das entsprechende reziproke in blau dargestellt. Der Basisvektor $b_{1}$ des reziproken Gitters steht senkrecht auf $a_{2}$ und $b_{2}$ senkrecht auf $a_{1}$.
+
+Zweidimensionales schiefwinkliges Gitter:
+
+\boldsymbol{a}_{\mathrm{i}} \cdot \boldsymbol{b}_{\mathrm{j}}=2 \pi \delta_{\mathrm{ij}}
+
+## Reziproker Raum bzw. reziprokes Gitter in 3D
+
+![This diagram depicts the relationship between a direct lattice (with vectors \(a_1, a_2, a_3\)) and its corresponding reciprocal lattice (with vectors \(b_1, b_2, b_3\)) in three-dimensional space, showing how the reciprocal lattice vectors are oriented relative to the direct lattice vectors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-04_1121_1367_420_280.jpg)
+Bild 4.5: Elementarzelle des realen (blau getönt) und des reziproken kubisch primitiven Gitters mit den Gitterkonstanten $a$ bzw. $b=2 \pi / a$.
+
+Das reziproke Gitter eines einfach kubischen Gitters ist ebenfalls ein kubisches Gitter.
+
+Die Gitterkonstante der Einheitszelle beträgt $2 \pi / a$.
+
+Daher der Name reziprokes Gitter (1/a)
+
+Es gilt:
+
+
+## fcc Gitter in 3D
+
+![This diagram depicts the hexagonal close-packed (hcp) crystal structure, showing the atomic arrangement in the unit cell (a) and the lattice vectors with the angle α between them (b).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-05_860_1828_367_707.jpg)
+Bild 3.27: Kubisch flächenzentriertes Gitter. a) Konventionelle Elementarzelle mit den vier dunkler gezeichneten Gitterpunkten. b) Die primitive Elementarzelle (dunkle Atome) ist blau hervorgehoben, die nicht-primitive kubische Zelle dünn gezeichnet. Zwischen den Achsen der primitiven Zelle tritt der Winkel $\alpha=60^{\circ}$ auf.
+
+## bcc Gitter in 3D
+
+![This diagram depicts the crystal structure of a body-centered tetragonal (bct) lattice, showing the atomic arrangement and the lattice vectors \(a_1\), \(a_2\), and \(a_3\) along with the angle \(\alpha\) between them.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-06_878_1707_291_846.jpg)
+Bild 3.26: Kubisch raumzentriertes Gitter. a) Konventionelle Elementarzelle mit den beiden dunkler gezeichneten Gitterpunkten. b) Die primitive Elementarzelle (dunkle Atome) ist blau hervorgehoben, die nicht-primitive kubische Zelle ist dünn gezeichnet. Der Winkel $\alpha$ zwischen den Achsen der primitiven Zelle beträgt $109^{\circ} 28^{\prime}$.
+
+## Reziprokes Gitter und Miller Indizes
+
+![This diagram depicts a crystallographic plane normal vector \(\hat{n}\) in a lattice defined by basis vectors \(\mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3\) and corresponding lattice constants \(h, k, l\), showing the geometric relationship between lattice vectors \(\mathbf{r}_1, \mathbf{r}_2\) and the plane normal in a crystal structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-07_1033_1326_327_283.jpg)
+
+Ein reziproker Gittervektor $\boldsymbol{K}_{\boldsymbol{h} \boldsymbol{k} \boldsymbol{l}}=h \boldsymbol{b}_{\mathbf{1}}+k \boldsymbol{b}_{\mathbf{2}}+l \boldsymbol{b}_{3}$ steht senkrecht auf der Ebene mit den Miller indizes (hkl).
+
+Beweis:
+Das primitive Bravaisgitter wird durch die Vektoren $\mathbf{a}_{1}, \mathbf{a}_{2}$ und $\mathbf{a}_{3}$ aufgespannt.
+
+\begin{gathered}
+r_{1} \times r_{2}=\left(\frac{a_{2}}{k}-\frac{a_{1}}{h}\right) \times\left(\frac{a_{3}}{l}-\frac{a_{1}}{h}\right) \\
+=\frac{1}{h k l}\left(h a_{2} \times a_{3}+k a_{3} \times a_{1}+l a_{1} \times a_{2}\right) \\
+\propto\left(h b_{1}+k b_{2}+l b_{3}\right)
+\end{gathered}
+
+## Abstand zweier Ebenen (hkl)
+
+![This diagram depicts the geometric relationship between crystal lattice vectors and the reciprocal lattice vector \(\vec{n}\), illustrating the calculation of the interplanar spacing \(d_{hkl}\) for lattice planes indexed by (hkl). It shows the vectors \(\vec{a}_1/h\), \(\vec{a}_2/k\), \(\vec{a}_3/l\), and the resulting distances \(r_1\), \(r_2\), and the normal vector \(\vec{n}\) used to determine \(d_{hkl}\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-08_1036_1329_327_280.jpg)
+… beträgt $\frac{2 \pi}{\left|\boldsymbol{K}_{\mathbf{h k l}}\right|}$.
+
+Beweis:
+Das primitive Bravaisgitter wird durch die Vektoren $\mathbf{a}_{1}, \mathbf{a}_{2}$ und $\mathbf{a}_{3}$ aufgespannt.
+$d_{\text {hkl }}$ ist die Projektion von $\hat{n}$ auf einen der drei Vektoren. Hier $\mathbf{a}_{\mathbf{2}} / \mathrm{k}$.
+
+\begin{array}{r}
+d_{\mathrm{hkl}}=\frac{\boldsymbol{a}_{2}}{k} \cdot \widehat{\boldsymbol{n}}_{\mathbf{h k l}}=\frac{\boldsymbol{a}_{2}}{k} \cdot \frac{h \boldsymbol{b}_{\mathbf{1}}+k \boldsymbol{b}_{\mathbf{2}}+l \boldsymbol{b}_{\mathbf{3}}}{\left|h \boldsymbol{b}_{\mathbf{1}}+k \boldsymbol{b}_{\mathbf{2}}+l \boldsymbol{b}_{\mathbf{3}}\right|}=\frac{2 \pi}{\left|\boldsymbol{K}_{\mathbf{h k l}}\right|} \\
+\boldsymbol{a}_{\mathbf{i}} \cdot \boldsymbol{b}_{\mathbf{j}}=2 \pi \delta_{\mathrm{ij}}
+\end{array}
+
+## Konstruktion des reziproken Gitters
+
+![This diagram depicts the geometric relationship between lattice vectors and the reciprocal lattice vector in crystallography, showing how the interplanar spacing \( d_{hkl} \) relates to the reciprocal lattice vector \( \mathbf{r} \) and the crystal axes \( \mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3 \) scaled by Miller indices \( h, k, l \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-09_1032_1326_331_283.jpg)
+
+- Zeichne Lot auf jede (hkl) Ebene durch den Ursprung im Ortsraum. (Reziproke Gittervektoren $\boldsymbol{K}_{\mathbf{h k l}}=h \boldsymbol{b}_{\mathbf{1}}+k \boldsymbol{b}_{\mathbf{2}}+l \boldsymbol{b}_{\mathbf{3}}$ stehen senkrecht auf der Ebene (hkl) )
+- Platziere zu jeder (hkl)-Ebene einen Punkt auf dem Lot im Abstand $2 \pi / \boldsymbol{d}_{\mathbf{h k l}}$ vom Ursprung.
+
+
+## Beispiel: Reziprokes Gitter in 2D
+
+![This diagram depicts a two-dimensional lattice or grid defined by basis vectors \(a_1\) and \(a_2\), showing discrete points at integer multiples of these vectors starting from the origin \((0,0)\). It is typically used to represent the arrangement of points in a 2D crystal lattice or a mathematical lattice structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-10_763_1149_645_334.jpg)
+![This diagram depicts a two-dimensional reciprocal lattice showing the points defined by the reciprocal lattice vectors b₁ and b₂, with the origin at (0,0).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-10_736_537_648_1857.jpg)
+
+\begin{aligned}
+& b_{1}=\frac{2 \pi}{\left|a_{1}\right|} \\
+& b_{2}=\frac{2 \pi}{\left|a_{2}\right|}
+\end{aligned}
+
+## Beispiel: Reziprokes Gitter in 2D
+
+![This diagram depicts a two-dimensional lattice structure showing lattice points arranged along two basis vectors \(a_1\) and \(a_2\), with a distance \(|d|\) marked between vertical lattice lines.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-11_817_1131_587_341.jpg)
+
+|\boldsymbol{d}|=\left|\mathbf{a}_{1}\right|=2 \pi /|\boldsymbol{G}|
+
+![This diagram depicts a 2D reciprocal lattice in the context of crystallography or solid-state physics, showing the arrangement of reciprocal lattice points in the plane defined by the reciprocal lattice vectors b1 and b2.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-11_633_523_648_1861.jpg)
+$(0,0) \quad \mathrm{b}_{1}$
+
+\boldsymbol{G}=\binom{\frac{2 \pi}{\left|a_{1}\right|}}{0}
+
+\begin{aligned}
+& b_{1}=\frac{2 \pi}{\left|a_{1}\right|} \\
+& b_{2}=\frac{2 \pi}{\left|a_{2}\right|}
+\end{aligned}
+
+
+![This diagram depicts a two-dimensional lattice structure defined by basis vectors \(a_1\) and \(a_2\), showing the arrangement of lattice points in a grid pattern with a spacing magnitude \(|d|\) between points along the \(a_2\) direction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-12_752_1134_652_339.jpg)
+
+![This diagram depicts a two-dimensional reciprocal lattice in crystallography, showing the arrangement of reciprocal lattice points with basis vectors labeled, specifically highlighting the vector b₂.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-12_640_531_648_1857.jpg)
+$(0,0) \quad \mathrm{b}_{1}$
+
+
+|\boldsymbol{d}|=\left|\mathbf{a}_{2}\right| / 2=2 \pi /|\boldsymbol{G}|
+
+\boldsymbol{G}=2 \cdot\binom{0}{\frac{2 \pi}{\left|\boldsymbol{a}_{2}\right|}}
+
+
+![This diagram depicts a two-dimensional lattice with basis vectors \(a_1\) and \(a_2\), showing lattice points (black dots) and a set of parallel lines (orange) spaced by a distance \(|d|\), likely representing lattice planes or a family of crystallographic planes in the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-13_738_1152_659_341.jpg)
+
+|\boldsymbol{d}|=\frac{2 \pi}{|\boldsymbol{G}|}
+
+![This diagram depicts a reciprocal lattice in two dimensions, showing the lattice points defined by the reciprocal lattice vectors b₁ and b₂, with the origin at (0,0).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-13_722_523_655_1861.jpg)
+
+\boldsymbol{G}=\binom{\frac{2 \pi}{\left|a_{1}\right|}}{\frac{2 \pi}{\left|a_{2}\right|}}
+
+## Weiteres Beispiel: <br> Konstruktion eines reziproken Gitters in 2D
+
+![This diagram depicts the relationship between a two-dimensional lattice defined by basis vectors \( \mathbf{a}_1 \) and \( \mathbf{a}_2 \) and its corresponding reciprocal lattice defined by vectors \( \mathbf{b}_1 \) and \( \mathbf{b}_2 \), showing the construction of reciprocal lattice points and the angles between the vectors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-14_1080_1295_437_341.jpg)
+
+- Zeichne Lot auf jede (hkl) Ebene durch den Ursprung im Ortsraum.
+- Platziere zu jeder (hkl)-Ebene einen Punkt auf dem Lot im Abstand $2 \pi / \boldsymbol{d}_{\mathbf{h k l}}$ vom Ursprung.
+
+
+## Weiteres Beispiel: <br> Konstruktion eines reziproken Gitters in 2D
+
+![This diagram depicts a two-dimensional lattice of points labeled by integer coordinate pairs, illustrating the basis vectors \( \mathbf{b}_1 \) and \( \mathbf{b}_2 \) that generate the lattice in a vector space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-15_1015_988_478_655.jpg)
+
+- Zeichne Lot auf jede (hkl) Ebene durch den Ursprung im Ortsraum.
+
+
+## Die von Laue Bedingung
+
+Richtung der einfallenden Strahlung $\boldsymbol{k}_{0}$
+
+G=k-k_{0}
+
+Richtung der gestreuten Strahlung $\boldsymbol{k}$
+
+\boldsymbol{k}-\boldsymbol{k}_{0}=\boldsymbol{G}
+
+Der Satz $\boldsymbol{G}$ der reziproken Gittervektoren bestimmt die möglichen Beugungsreflexe
+
+## von Laue Bedingung vs. Bragg Bedingung
+
+Da die Wellenlänge bei der (elastischen) Beugung am Kristall unverändert bleibt, gilt, dass: $|\boldsymbol{k}|=\left|\boldsymbol{k}_{0}\right|=2 \pi / \lambda$ (*)
+
+& \boldsymbol{G}=\boldsymbol{k}-\boldsymbol{k}_{0} \\
+\Rightarrow & \boldsymbol{G}^{2}+2 \boldsymbol{k}_{0} \cdot \boldsymbol{G}+\boldsymbol{k}_{0}^{2}=\boldsymbol{k}^{2} \stackrel{*}{=} \boldsymbol{k}_{0}^{2} \\
+\Rightarrow & 2 \boldsymbol{k}_{0} \cdot \boldsymbol{G}+\boldsymbol{G}^{2}=0 \\
+\Rightarrow & \boldsymbol{k}_{0} \cdot \frac{\boldsymbol{G}}{|\boldsymbol{G}|} \stackrel{* *}{=} \frac{1}{2}|\boldsymbol{G}| \\
+= & |\boldsymbol{k}| \cdot \cos \varphi
+
+mit $\boldsymbol{G}$ ist auch $\boldsymbol{-} \boldsymbol{G}$ ein reziproker Gittervektor (**)
+![This diagram depicts the vector relationship in reciprocal space for diffraction, showing the difference vector \( \mathbf{G} = \mathbf{k} - \mathbf{k}_0 \) between the incident wave vector \( \mathbf{k}_0 \) and the scattered wave vector \( \mathbf{k} \), with the angle \( \varphi \) related to the diffraction condition.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/66bb6fb1-f8a5-4600-a5b7-fa012b02d11a/cede9339-abdf-43d6-bfe6-32e4f6ce7f86-17_605_995_874_2096.jpg)
+
+## Geometrische Interpretation:
+
+Konstruktive Interferenz tritt nur dann auf, wenn die Spitze des einfallenden $\boldsymbol{k}_{0}$-Vektors auf der senkrechten Ebene liegt (Bragg-Ebene), welche einen reziproken Gittervektor halbiert.
+
+## von Laue Bedingung $=$ Bragg Bedingung
+
+Da die Wellenlänge bei der (elastischen) Beugung am Kristall unverändert bleibt, gilt, dass: $|\boldsymbol{k}|=\left|\boldsymbol{k}_{0}\right|=2 \pi / \lambda$ (*)
+
+& \boldsymbol{G}=\boldsymbol{k}-\boldsymbol{k}_{0} \\
+\Rightarrow & \boldsymbol{G}^{\mathbf{2}}+2 \boldsymbol{k}_{0} \cdot \boldsymbol{G}+\boldsymbol{k}_{0}^{\mathbf{2}}=\boldsymbol{k}^{\mathbf{2}} \stackrel{*}{=} \boldsymbol{k}_{0}^{\mathbf{2}} \\
+\Rightarrow & 2 \boldsymbol{k}_{0} \cdot \boldsymbol{G}=\boldsymbol{G}^{\mathbf{2}} \\
+\Rightarrow & \boldsymbol{k}_{0} \cdot \frac{\boldsymbol{G}}{|\boldsymbol{G}|} \stackrel{* *}{=} \frac{1}{2}|\boldsymbol{G}|=\frac{1}{2} n \cdot \boldsymbol{G}_{\mathbf{0}}=\frac{1}{2} n \cdot \frac{2 \pi}{\left|\boldsymbol{d}_{\mathbf{h k l}}\right|} \\
+= & |\boldsymbol{k}| \cdot \cos \varphi \\
+\Rightarrow & 2 \frac{2 \pi}{\lambda} \cdot \sin \theta=n \cdot \frac{2 \pi}{\left|\boldsymbol{d}_{\mathbf{h k l}}\right|} \\
+\Rightarrow & 2 d_{\mathrm{hkl}} \cdot \sin \theta=n \cdot \lambda
+

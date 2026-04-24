@@ -1,0 +1,98 @@
+Physik der kondensierten Materie
+Festkörperphysik
+Wintersemester 2025/2026
+Gliederung:
+1. Struktur fester Körper
+2. Wellen in Kristallstrukturen
+3. Gitterdynamik
+4. Thermische Leitfähigkeit (Phononen)
+5. Das freie Elektronengas
+6. Bandstruktur und Blochtheorem
+7. Ladungstransport
+
+Die 14 Bravais-Gitter in 3D
+aus Gross, Marx
+Identische Darstellungen in:
+Hunklinger,
+Ibach & Lüth
+Kopitzki
+…
+https://demonstrations.wolfram.com/The143DBravaisLattices/
+
+Auguste Bravais 1811-1863
+Wikipedia commons
+Ein Bravais-Gitter ist ein unendliches Gitter von
+Raumpunkten mit einer Anordnung und Orientierung, die
+exakt gleich aussieht, egal von welchem Gitterpunkt wir
+das Gitter betrachten.
+Bravais-Gitter
+Tabelle 1.4 aus Gross, Marx
+*Arthur Schönflies, Thesis (1877)
+3D
+3D
+2D
+Zstl. - Translationen
+- Schraubenachsen (Rotation + Translation)
+- Gleitspiegelungen (Spiegelung + Translation)
+10 Kristallklassen
+2D 17 Raumgruppen
+5 KristallsystemePunktgruppen
+5 Bravais-GitterRaumgruppen
+nur 10 Punktsymmetrieoperationen
+*
+
+Kubisch primitives Gitter (simple cubic - sc)
+aus Hunklinger
+a) Gitter mit (dunkelgefärbter) einatomiger Basis. Die heller dargestellten Atome gehören bereits zu den
+benachbarten Elementarzellen. b) Cäsiumchloridstruktur. Die Elementarzelle enthält die beiden dunklen
+Atome bzw. Ionen auf den Plätzen (0, 0, 0) und (1/2, 1/2, 1/2). Die hellen Atome sind auch hier bereits
+Bestandteile der benachbarten Elementarzellen.
+a a 2
+a
+
+Kubisch primitives Gitter
+Packungsverhältnis (atomic packing factor - APF)
+a
+R = 0.5a
+Atome pro EZ: 8 × 1
+8 = 1
+aus W.D. Callister, Jr. and D.G. Rethwisch
+Fundamentals of Materials Science
+and Engineering:
+Wiley (2016)
+APF: 1 ∙
+4
+3𝜋 0.5∙𝑎 3
+𝑎3 = 0,52
+Volumen pro EZ
+Volumen pro Atom
+
+Gitterstrukturen der chemischen Elemente
+Abb. 1.17
+aus Gross / Marx
+hcp: ABCABC …
+dhcp: ABACABAC…
+sc
+
+Wigner-Seitz Zelle
+Abb. 3.34
+aus Hunklinger
+a) Darstellung des Konstruktionsprinzips anhand eines ebenen schiefwinkligen Gitters. Zwischen den
+verbundenen Gitterpunkten werden jeweils Mittelsenkrechte errichtet. b) Wigner-Seitz-Zelle des
+kubisch raumzentrierten Gitters. Die üblicherweise benutzte nicht-primitive Elementarzelle ist
+gestrichelt gezeichnet, der Gitterpunkt im Zentrum der Zelle wurde weggelassen.
+
+Wigner-Seitz Zelle
+Abb. 3.34
+Allg.: Die Wigner-Seitz Zelle ist eine von vielen
+möglichen primitiven Elementarzellen mit folgender
+Konstruktionsvorschrift:
+a) Zeichne Verbindungslinie zu dem nächsten
+Nachbarn.
+b) Zeichne die Mittelsenkrechte
+c) Das kleinste eingeschlossene Volumen ist die
+Wigner-Seitz-Zelle
+- Welche Einheitszelle verwendet wird, ist eine Frage der Handhabbarkeit.
+- Die Symmetrie des Gitters ist u.a. an größeren Einheitszellen besser zu erkennen.
+- Die Abmessung gebräuchlicher Einheitszellen („Gitterkonstanten“) ist oft größer als der
+interatomare Abstand.

@@ -1,0 +1,41 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+𝑬 = 0: σ𝑏𝑒𝑠𝑒𝑡𝑧𝑡𝑒 𝑍𝑢𝑠𝑡ä𝑛𝑑𝑒 𝒗(𝒌) = 0 .
+Band partiell gefüllt
+𝑬 ≠ 0: σ𝑏𝑒𝑠𝑒𝑡𝑧𝑡𝑒 𝑍𝑢𝑠𝑡ä𝑛𝑑𝑒 𝒗 𝒌 ≠ 0 .
+Ladungstransport in Bändern
+Wenn keine Spannung angelegt wird, fließt kein Strom.
+Wird ein elektrisches Feld angelegt, verändert sich jeder Zustand k um: 𝑑𝒌 = − −𝒆𝑬
+ℏ dt
+Verschiebung um dk für jeden Zustand gleich.
+⇒ Summation ergibt wieder 0.
+𝑬 = 0: σ𝑏𝑒𝑠𝑒𝑡𝑧𝑡𝑒 𝑍𝑢𝑠𝑡ä𝑛𝑑𝑒 𝒗(𝒌) = 0 .
+Band komplett gefüllt
+𝑬 ≠ 0: σ𝑏𝑒𝑠𝑒𝑡𝑧𝑡𝑒 𝑍𝑢𝑠𝑡ä𝑛𝑑𝑒 𝒗(𝒌) = 0 .
+Verschiebung um dk in leere Zustände.
+⇒ Summation ergibt ≠ 0.
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Sommerfeld-Theorie
+aus Hunklinger
+
+Boltzmann Gleichung
+ሶ
+𝒌 𝜕𝑓
+𝜕𝒌 + ሶ 𝒓 𝜕𝑓
+𝜕𝒓 + 𝜕𝑓
+𝜕𝑡 = 𝜕𝑓
+𝜕𝑡 ቚ𝑆𝑡𝑟𝑒𝑢𝑢𝑛𝑔
+Feldterm
+Diffusionsterm
+Streuterm
+Boltzmann Gleichung
+𝜕𝑓
+𝜕𝑡 ቚ𝑆𝑡𝑟𝑒𝑢𝑢𝑛𝑔 = − 𝑓 𝒌 − 𝑓0 𝒌
+𝜏(𝒌)
+Relaxationszeitansatz
+𝜏 : Relaxationszeit
+𝜏−1 : Streurate
+(1844 – 1906)
+
+Rudolf Peierls
+(1907 – 1995)

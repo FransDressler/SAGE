@@ -1,0 +1,214 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 1
+
+26. Oktober 2025
+
+## Aufgabe 1 Größenordnungen und Einheiten
+
+In der Kern- und Teilchenphysik werden SI-Einheiten im Allgemeinen nicht verwendet, da andere Einheitssysteme die relevanten Prozesse handlicher beschreiben. Nützliche Konstanten für diese Aufgabe sind:
+
+$$
+\begin{aligned}
+h & =6.626 \times 10^{-34} \mathrm{~J} \mathrm{~s}=4.136 \times 10^{-15} \mathrm{eV} \mathrm{~s} \\
+c & =2.998 \times 10^{8} \mathrm{~m} / \mathrm{s} \\
+1 \mathrm{eV} & =1.602 \times 10^{-19} \mathrm{~J}
+\end{aligned}
+$$
+
+a) Berechnen Sie die äquivalenten Werte der in der folgenden Tabelle angegebenen Größen.
+
+| $E[\mathrm{~J}]$ | $E[\mathrm{eV}]$ | $v[\mathrm{~Hz}]$ | $\lambda[\mathrm{m}]$ |
+| :---: | :---: | :---: | :---: |
+|  | 2.4 |  |  |
+|  |  | $1.5 \times 10^{18}$ |  |
+|  |  |  | $2.0 \times 10^{-15}$ |
+
+Hierbei bezeichnet $E$ die Energie in Joule bzw. Elektronenvolt, $v$ die Frequenz in Hertz und $\lambda$ die Wellenlänge in Metern.
+b) Welche physikalischen Objekte oder Strukturen entsprechen den berechneten Energie- und Wellenlängenskalen? Was kann man mit Photonen dieser Energien auffösen?
+c) Im Large Hadron Collider (LHC) am CERN werden Protonen auf eine Energie von 7 TeV beschleunigt. Sie sind in Bündeln zusammengefasst, die jeweils etwa $10{ }^{11}$ Protonen enthalten. Bestimmen Sie die Geschwindigkeit eines Autos mit der Masse $m=1 \mathrm{t}$, das die gleiche Gesamtenergie hätte wie ein solches Protonenbündel.
+
+## Lösung: Größenordnungen und Einheiten
+
+a) Unter Verwendung der Relationen
+
+\begin{aligned}
+E[\mathrm{~J}] & =1.602 \times 10^{-19} \mathrm{~J} / \mathrm{eV} \times E[\mathrm{eV}], \\
+E & =h v, \\
+v & =\frac{c}{\lambda},
+\end{aligned}
+
+und Einsetzen von $h=6.626 \times 10^{-34} \mathrm{~J}$ s sowie $c=2.998 \times 10^{8} \mathrm{~m} / \mathrm{s}$ ergeben sich folgende Werte:
+
+| $E[\mathrm{~J}]$ | $E[\mathrm{eV}]$ | $v[\mathrm{~Hz}]$ | $\lambda[\mathrm{m}]$ |
+| :---: | :---: | :---: | :---: |
+| $3.84 \times 10^{-19}$ | 2.4 | $5.80 \times 10^{14}$ | $5.17 \times 10^{-7}$ |
+| $9.94 \times 10^{-16}$ | $6.20 \times 10^{3}$ | $1.5 \times 10^{18}$ | $2.00 \times 10^{-10}$ |
+| $9.93 \times 10^{-11}$ | $6.20 \times 10^{8}$ | $1.50 \times 10^{23}$ | $2.00 \times 10^{-15}$ |
+
+b) - Die Werte in der ersten Zeile entsprechen Photonen mit einer Wellenlänge von etwa 520 nm, d. h. sichtbarem grünen Licht. Das Auflösungsvermögen kann grob als die halbe Wellenlänge abgeschätzt werden, also etwa 260 nm .
+
+- Die zweite Zeile entspricht Röntgenstrahlung mit $\lambda \approx 1 \times 10^{-10} \mathrm{~m}=1 \AA$, die geeignet ist, atomare und molekulare Strukturen aufzulösen.
+- Die dritte Zeile entspricht $\lambda \approx 10^{-15} \mathrm{~m}=1 \mathrm{fm}$, der charakteristischen Längenskala von Atomkernen.
+c) Die Gesamtenergie eines Bündels von $10{ }^{11}$ Protonen, von denen jedes $E_{p}=7 \mathrm{TeV}$ besitzt, beträgt:
+
+E_{\text {Bündel }}=10^{11} \times 7 \times 10^{12} \mathrm{eV}=7 \times 10^{23} \mathrm{eV}=1.12 \times 10^{4} \mathrm{~J} .
+
+Die kinetische Energie eines Autos der Masse $m=1 \mathrm{t}=1000 \mathrm{~kg}$ lautet:
+
+E_{\mathrm{kin}}=\frac{1}{2} m v^{2}
+
+Setzt man $E_{\text {kin }}=E_{\text {Bündel }}$, so ergibt sich:
+
+v=\sqrt{\frac{2 E_{\mathrm{kin}}}{m}}=\sqrt{\frac{2 \times 1.12 \times 10^{4} \mathrm{~J}}{1000 \mathrm{~kg}}}=15.0 \mathrm{~m} / \mathrm{s}=54 \mathrm{~km} / \mathrm{h} .
+
+Berücksichtigt man, dass sich im LHC-Ring etwa 2800 solcher Protonenbündel gleichzeitig befinden, ergibt sich eine beeindruckende Gesamtenergie.
+
+## Aufgabe 2 Masse-Reichweiten-Beziehung
+
+Die Wechselwirkung zwischen zwei Teilchen kann durch den Austausch virtueller Teilchen, sogenannter Eichbosonen mit Masse $M$, beschrieben werden.
+a) Leiten Sie aus der Heisenbergschen Unschärferelation $\Delta E \Delta t \geq \hbar / 2$ einen Zusammenhang zwischen der Masse des Austauschteilchens und der Reichweite der Wechselwirkung her.
+b) Wie groß ist die Reichweite der Kernkraft unter der Annahme, dass Pionen zwischen den Nukleonen ausgetauscht werden ( $m_{\pi}=140 \mathrm{MeV}$ )?
+c) Welche Masse müsste das hypothetische Austauschteilchen der Gravitationskraft, das Graviton, nach dieser Beziehung besitzen?
+
+## Lösung: Masse-Reichweiten-Beziehung
+
+a) Wenn man annimmt, dass die Austauschteilchen sich mit Lichtgeschwindigkeit ausbreiten und dass die Energieunschärfe mindestens groß genug sein muss, um die Teilchen zu erzeugen,
+
+\Delta E \geq M c^{2}
+
+ergibt sich folgender Zusammenhang:
+
+\Rightarrow \Delta R=c \Delta t=\frac{\hbar c}{2 M c^{2}},
+
+wobei $M$ die Masse des Austauschteilchens ist.
+b) Für die Kernkraft ergibt sich damit:
+
+\Delta R=\frac{197 \mathrm{MeV} \mathrm{fm}}{2 \cdot 140 \mathrm{MeV}}=0.7 \cdot 10^{-15} \mathrm{~m}=0.7 \mathrm{fm},
+
+unter Verwendung von $\hbar c=197.36 \mathrm{MeV} \mathrm{fm}$.
+Der Radius des Nukleons beträgt in etwa 1 fm , daher ist in diesem Modell nur eine Wechselwirkung zwischen benachbarten Nukleonen möglich. Daraus lässt sich die annähernd konstante Bindungsenergie pro Nukleon über alle Atomkerne hinweg erklären.
+c) Die Reichweite der Gravitation ist unendlich, also muss das Graviton masselos sein (vgl. Reichweite der elektromagnetischen Wechselwirkung und Masse des Photons).
+
+## Aufgabe 3 Elektron-Nukleon-Streuung
+
+Ein Elektronenstrahl ( $E=100 \mathrm{MeV}, I=10 \mu \mathrm{~A}$ ) trifft auf ein 2 cm dickes Target aus flüssigem Wasserstoff ( $\rho_{\mathrm{H}_{2}}=71 \mathrm{mg} / \mathrm{cm}^{3}$ ). Ein $2 \times 2 \mathrm{~cm}^{2}$ großer Szintillationsdetektor befindet sich in einem Abstand von 1 m unter einem Winkel von $45^{\circ}$.
+a. Berechnen Sie die Zählrate der Elektronen, die elastisch an Protonen gestreut werden und den Detektor treffen, unter der Annahme, dass die Ausdehnung des Protons und der Energieübertrag auf das Proton vernachlässigt werden können.
+
+Lösung: Näherungen:
+
+- nur elektrische Wechselwirkung, kein Spin
+- punktförmiges Streuzentrum
+- unendlich schweres Streuzentrum (kein Rückstoß)
+
+Rutherford-Differentialwirkungsquerschnitt:
+
+\frac{d \sigma}{d \Omega}(\theta)=\frac{Z^{2} e^{4}}{4 E_{e}^{2} \sin ^{4}\left(\frac{\theta}{2}\right)}\left(\frac{1}{4 \pi \varepsilon_{0}}\right)^{2}
+
+Zählrate:
+
+\begin{gathered}
+R_{e}=I_{e} N_{\text {Target }} \frac{d \sigma}{d \Omega} d \Omega \\
+I_{e}=\frac{10 \mu \mathrm{~A}}{e}=\frac{10^{-5} \mathrm{~A}}{1.602 \cdot 10^{-19} \mathrm{C}}=6.242 \cdot 10^{13} \mathrm{~s}^{-1}
+\end{gathered}
+
+Anzahl der Targetteilchen pro Flächeneinheit:
+
+\begin{gathered}
+N_{\text {Target }}=\frac{\rho}{m} \cdot d=\frac{\rho N_{A}}{A} \cdot d=\frac{71 \cdot 10^{-3} \mathrm{~g} / \mathrm{cm}^{3} \cdot 6.022 \cdot 10^{23} 1 / \mathrm{mol} \cdot 2 \mathrm{~cm}}{1 \mathrm{~g} / \mathrm{mol}}=8.551 \cdot 10^{22} \mathrm{~cm}^{-2} \\
+d \Omega=\frac{f_{\text {Detektor }}}{r^{2}}=\frac{4 \mathrm{~cm}^{2}}{1 \mathrm{~m}^{2}}=4 \cdot 10^{-4} \mathrm{sr} \\
+\frac{d \sigma}{d \Omega}=\frac{1 \cdot(1.44 \mathrm{MeV} \mathrm{fm})^{2}}{4 \cdot 10^{4} \mathrm{MeV}^{2} \sin ^{4}\left(22.5^{\circ}\right)}=2.417 \cdot 10^{-3} \mathrm{fm}^{2}=24.17 \mu \mathrm{~b}
+\end{gathered}
+
+Verwendet: $\frac{e^{2}}{4 \pi \varepsilon_{0}}=1.44 \mathrm{MeV} \cdot \mathrm{fm}$,
+
+R_{e}=5.16 \cdot 10^{4} \mathrm{~s}^{-1}=51.6 \mathrm{kHz}
+
+b. Bestimmen Sie den Impulsübertrag auf das Proton unter der Annahme, dass die Rückstoßenergie des Protons vernachlässigbar ist. Zeigen Sie, dass diese Annahme gerechtfertigt ist.
+
+## Lösung:
+
+Der Impulsübertrag ist definiert als
+
+\mathbf{q}=\mathbf{p}_{i}-\mathbf{p}_{f}
+
+Für elastische Streuung, bei der die Rückstoßenergie des Protons vernachlässigt wird ( $p_{i}=p_{f}=p$ ), gilt:
+
+q^{2}=2 p^{2}(1-\cos \theta) \quad \Rightarrow \quad q=2 p \sin \left(\frac{\theta}{2}\right)
+
+Numerisch:
+
+q=200 \mathrm{MeV} / c \cdot \sin \left(45^{\circ} / 2\right)=76.5 \mathrm{MeV} / c
+
+## Rückstoßenergie des Protons
+
+Die Rückstoßenergie kann aus Impuls- und Energieerhaltung abgeleitet werden.
+
+## Impulserhaltung:
+
+\mathbf{p}_{i}=\mathbf{p}_{f}+\mathbf{p}_{p}
+
+wobei $\mathbf{p}_{p}$ der Impuls des Protons nach dem Stoß und $\theta$ der Streuwinkel des Elektrons ist. Durch Quadrieren erhält man:
+
+p_{p}^{2}=p_{i}^{2}+p_{f}^{2}-2 \mathbf{p}_{i} \cdot \mathbf{p}_{f}=p_{i}^{2}+p_{f}^{2}-2 p_{i} p_{f} \cos \theta .
+
+Energieerhaltung: Vor dem Stoß beträgt die Energie des Protons seine Ruheenergie $E_{0}=M_{p} c^{2}$. Nach dem Stoß ist seine Gesamtenergie $\sqrt{E_{0}^{2}+p_{p}^{2} c^{2}}$. Somit gilt:
+
+p_{i} c+E_{0}=p_{f} c+\sqrt{E_{0}^{2}+p_{p}^{2} c^{2}}
+
+Nach Umstellen des Terms $p_{f} c$ und Quadrieren erhält man:
+
+E_{0}^{2}+c^{2}\left(p_{i}-p_{f}\right)^{2}+2 c E_{0}\left(p_{i}-p_{f}\right)=E_{0}^{2}+p_{p}^{2} c^{2}
+
+oder äquivalent:
+
+p_{p}^{2}=p_{i}^{2}+p_{f}^{2}-2 p_{i} p_{f}+\frac{2 E_{0}\left(p_{i}-p_{f}\right)}{c}
+
+Eliminiert man $p_{p}^{2}$ zwischen den beiden Ausdrücken, so ergibt sich:
+
+\frac{E_{0}\left(p_{i}-p_{f}\right)}{c}=p_{i} p_{f}(1-\cos \theta) .
+
+## Nähernung für Elektronenenergie
+
+Da die Elektronenenergie viel größer ist als ihre Ruhemasse ( $E \gg m_{e} c^{2}=511 \mathrm{keV}$ ), kann man näherungsweise $p_{i} \approx E_{i} / c$ und $p_{f} \approx E_{f} / c$ setzen. Umstellen der obigen Gleichung liefert die Energie des gestreuten Elektrons:
+
+E_{f}=\frac{E_{0} E_{i}}{E_{0}+E_{i}(1-\cos \theta)}
+
+Rückstoßenergie des Protons: Die an das Proton übertragene Energie ergibt sich zu:
+
+E_{i}-E_{f}=E_{i}\left[1-\frac{1}{1+\frac{E_{i}}{M_{p} c^{2}}(1-\cos \theta)}\right] \simeq \frac{q^{2}}{2 M_{p}}=3.1 \mathrm{MeV} .
+
+Da $E_{p}^{\text {Rückstoß }}=3.1 \mathrm{MeV} \ll E_{e}=100 \mathrm{MeV}$ gilt, kann die Rückstoßenergie des Protons tatsächlich vernachlässigt werden.
+c. Kann die Messung Informationen über die endliche Größe des Protons liefern (Protonenladungsradius $=0,87 \mathrm{fm}$ )?
+
+## Lösung:
+
+Die räumliche Auflösung kann als die Wellenlänge des ausgetauschten virtuellen Photons abgeschätzt werden, das für den Impulsübertrag $q$ verantwortlich ist:
+
+\lambda=\frac{h}{q}=\frac{2 \pi \hbar c}{q c}=\frac{2 \cdot 3,14 \cdot 197 \mathrm{MeV} \cdot \mathrm{fm}}{76,5 \mathrm{MeV}}=16,3 \mathrm{fm} .
+
+( $\hbar=\frac{h}{2 \pi}$ ). Die Messung ist nicht empfindlich genug, da $\lambda>r_{p}$ ist (Protonenladungsradius $=0,87 \mathrm{fm}$, gemäß PDG).
+d. Welche minimale Elektronenenergie ist erforderlich, um die Struktur eines Protons aufzulösen?
+
+
+Aus Teil (b) ergibt sich für den Impulsübertrag:
+
+q=2 p \sin \left(\frac{\theta}{2}\right)
+
+wobei $p$ der Elektronenimpuls ist.
+Für relativistische Elektronen ( $E \approx p c$ ) ergibt sich die erforderliche Energie, um eine räumliche Auflösung vergleichbar mit dem Protonenradius zu erreichen ( $\lambda \approx r_{p}$ ), zu:
+
+E=p c=\frac{q c}{2 \sin (\theta / 2)}=\frac{\pi \hbar c}{\lambda \sin (\theta / 2)} .
+
+Setzt man $\hbar c=197 \mathrm{MeV} \cdot \mathrm{fm}, \lambda=0,87 \mathrm{fm}$ und $\theta=45^{\circ}$ ein, so erhält man:
+
+E=\frac{3,14 \times 197 \mathrm{MeV} \cdot \mathrm{fm}}{0,87 \mathrm{fm} \times \sin \left(22,5^{\circ}\right)}=1857 \mathrm{MeV}=1,9 \mathrm{GeV}
+
+Daraus folgt, dass Elektronen mit einer Energie von etwa 2 GeV erforderlich sind, um die innere Struktur des Protons in diesem Aufbau aufzulösen.
+
+Man kann diese Energie jedoch verringern, indem man den Detektor so positioniert, dass der Impulsübertrag im Streuprozess maximal wird: $q$ ist maximal, wenn $\sin \left(\frac{\theta}{2}\right)=1 \Rightarrow \frac{\theta}{2}=90^{\circ} \Rightarrow \theta=180^{\circ}$. Dann gilt
+
+E=\frac{\pi \hbar c}{\lambda}=\frac{\pi \hbar c}{r_{p}}=711 \mathrm{MeV}
+
+Anmerkung: Detailliertere Analysen der Elektron-Proton-Streuung zeigen den Einfluss der Kernformfaktoren, welche die endlichen räumlichen Ladungs- und Stromverteilungen im Inneren des Protons berücksichtigen. In solchen Fällen wird die erforderliche Wellenlänge der Sonde genauer durch die reduzierte de Broglie-Wellenlänge $\lambda=\frac{\hbar}{q}=\frac{\lambda}{2 \pi}$ abgeschätzt. Diese Verfeinerung liefert ein präziseres Kriterium für die Energieskala, die notwendig ist, um die innere Struktur des Protons aufzulösen.
+

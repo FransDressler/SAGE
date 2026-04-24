@@ -1,0 +1,239 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Gross / Marx
+Harmonische Näherung der WW benachbarter Atome
+und thermische Ausdehnung
+x
+x
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+𝑥 =
+׬−∞
++∞ 𝑑𝑥 𝑥 exp − 𝑈 𝑥
+𝑘B𝑇
+׬−∞
++∞ 𝑑𝑥 exp − 𝑈 𝑥
+𝑘B𝑇
+exp − a𝑥2−b𝑥3− c𝑥4
+𝑘B𝑇 = exp − a𝑥2
+𝑘B𝑇 1 + b𝑥3
+𝑘B𝑇 + c𝑥4
+𝑘B𝑇 + ⋯ | ex = 1 + x + x2
+2! + 𝑥3
+3! + …
++∞ 𝑑𝑥 b𝑥4
+𝑘B𝑇 exp − a𝑥2
+𝑘B𝑇 = 3 𝜋
+4
+b
+a
+5
+2
+𝑘B𝑇 3
+2
+න
+−∞
++∞
+𝑑𝑥 exp − a𝑥2
+𝑘B𝑇 = 𝜋
+a 𝑘B𝑇
+mit  linearem
+thermischen
+Ausdehnungs-
+koeffizienten
+und R0 GGW-
+Abstand (T = 0)
+𝑥 = 3b
+4a2 ∙ 𝑘B 𝑇 = α ∙ 𝑅0 𝑇
+Relative Längenänderung : 𝑥
+𝑅0
+Längenänderung eines Kristalls ist proportional zur Temperatur!
+𝑙 𝑇 = 𝑙0 1 + 𝛼𝑇 , mit 𝑙0 Länge (T = 0)
+Thermodynamischer Mittelwert
+von 𝑈 𝑥 = 𝑎𝑥2 − 𝑏𝑥3 − 𝑐x4 :
+Zähler von (*):
+Nenner von (*):
+(*)
+න
+−∞
++∞
+𝑑𝑥 𝑥 exp − 𝑈 𝑥
+𝑘B𝑇 = න
+𝑑𝑥 𝑥 exp − a𝑥2
+𝑘B𝑇 1 + b𝑥3
+𝑘B𝑇 + c𝑥4
+𝑘B𝑇 + ⋯
+= න
+𝑑𝑥 x exp − a𝑥2
+𝑘B𝑇 + න
+𝑑𝑥 b 𝑥4 exp − a𝑥2
+𝑘B𝑇 + න
+𝑑𝑥 c 𝑥5 exp − a𝑥2
+𝑘B𝑇 + . . .
+
+mit  linearem thermischen Ausdehnungs-
+koeffizienten und R0 GGW-Abstand (T = 0)𝑥 = 3b
+4a2 ∙ 𝑘B 𝑇 = α ∙ 𝑅0 𝑇
+Über phänomenologischen Ansatz der Zustandsdichte eines kubischen Systems
+kann man nach Eduard Grüneisen zeigen (z.B. Kapitel 7.1 in Hunklinger und Kapitel 6.3.2 Gross/Marx):
+𝑙 𝑇 = 𝑙0 1 + 𝛼𝑇 , mit 𝑙0 Länge (T = 0)
+α = γ ∙ 𝑐𝑉
+3 B
+mit  dem Grüneisen-Parameter,
+cV die spezifische Wärmekapazität und
+B dem Kompressionsmodul
+cV im Zähler:
+- Ausdehnungskoeffizient proportional zur spezif. Wärmekapazität.
+B im Nenner:
+- Weiche Materialien einen großen thermischen Ausdehnungskoeffizienten
+- B relativ unabhängig von T
+Grüneisen-Beziehung
+
+aus Gross / Marx
+Harmonische Näherung der WW benachbarter Atome
+und thermische Ausdehnung
+
+aus Hunklinger
+Thermischer Ausdehnungskoeffizient
+und die spezifische Wärmekapazität
+Grüneisen-Parameter  beschreibt, wie sich
+die Phononenfrequenz  bei einer
+Volumenänderung ändert (starke Näherung):
+𝛿𝜔𝑞,i
+𝜔𝑞,i
+= −𝛾 𝛿V
+V
+Typische Werte zwischen 1 und 3.
+
+Gegenbeispiel: Thermische Ausdehnung
+Grüneisen-Parameter  wechselt das
+Vorzeichen!
+
+Wechselwirkung zwischen Phononen
+Die Existenz der Wärmeausdehnung zeigt, dass die Annahme harmonischer Kräfte zwischen den
+Atomen (potentielle Energie = Abstand2; Hooke’sches Gesetz) nicht exakt gültig ist.
+Im harmonischen Fall würden sich Gitterschwingungen ungestört überlagern können. Im Falle
+harmonischer Kräfte (und ohne Defekte) wäre z.B. Wärmeleitung unendlich.
+Durch anharmonische Anteile im Gitterpotential wird die mittlere freie Weglänge der Phononen (mit)
+begrenzt.
+Im anharmonischen Potential können z.B. zwei Phononen ein drittes erzeugen. In der QM-Sprache
+gibt es nichtlineare Terme, wie z.B. 𝑎†𝑎†𝑎 (zwei Phononen werden vernichtet und eines erzeugt).
+Für diesen Fall (3-Phonon Prozess) gelten folgende Erhaltungssätze:
+Energie:
+Impuls:
+ℏ𝜔1 + ℏ𝜔1 = ℏ𝜔3
+ℏ𝑞1 + ℏ𝑞1 = ℏ𝑞3
+Man kann zwei Prozesse unterscheiden:
+Normal-Prozess oder n-Prozess, bei denen die Richtung des Energieflusses erhalten bleibt (
+k = 0)
+und Umklappprozesse (
+k ≠ 0).
+
+aus Hunklinger
+Phonon-Phonon-Wechselwirkung
+
+Normalprozess und Umklappprozess
+1. BZ 1. BZ
+
+Umklappprozesse
+
+Für tiefe Temperaturen sind Umklapp-Prozesse weniger wahrscheinlich, da große q1- und q2 -Werte nicht
+besetzt sind.
+Ein Wellenvektor muss mindestens 𝑞 ≥ 𝜋/2𝑎 sein. Dieses q entspricht ℏ𝜔 ~𝑘B𝜃𝐷/2 .
+Die Besetzungswahrscheinlichkeit dieser Frequenz ist:
+𝑛 ω = 1
+𝑒ℏ𝜔/𝑘B𝑇−1 ≈ 1
+𝑒𝜃𝐷/ 2𝑇−1 ≈ 𝑒−𝜃𝐷/2𝑇 (𝑇 ≪ 𝜃𝐷)
+𝑙𝑝ℎ
+−1 ∝ 𝑛 𝒒 ⇒ 𝑙𝑝ℎ ∝ 𝑒𝜃𝐷/2𝑇
+Bei tiefen Temperaturen wird die mittlere freie Weglänge der
+Phononen nur noch durch Streuung an Defekten und den
+Kristalloberflächen begrenzt
+⇒ Die mittlere freie Weglänge wird unabhängig von der Temperatur.
+Die Temperaturabhängigkeit der Wärmeleitfähigkeit 𝜅 wird dann nur
+noch durch die spezifische Wärme cv bestimmt und wird proportional
+zu T3.
+qz
+qx
+qy
+qD
+Wir definieren eine freie mittlere Weglänge 𝑙𝑝ℎ, für die wir schreiben
+können: (𝑇 ≪ 𝜃𝐷)
+≈ 𝑇/𝜃𝐷 (𝑇 ≫ 𝜃𝐷)
+⇒ 𝑙𝑝ℎ ∝ 𝜃𝐷/𝑇 (𝑇 ≫ 𝜃𝐷)
+Bei hohen Temperaturen erwarten wir bei der
+Wärmeleitfähigkeit 𝜅
+- einen Bereich mit 𝑒𝜃𝐷/2𝑇
+- einen weiteren Bereich mit 𝜃𝐷/𝑇 .
+
+Wärmeleitfähigkeit Übertragung von Energie geschieht in Kristallen über
+Phononen, Photonen, Elektronen etc. In Nichtmetallen
+dominieren Phononen. Wellenpakete aus
+Gitterschwingungen (Phononen) bewegen sich vom
+heißen Ende zum kalten Ende des Festkörpers.
+Ist die Phononen-Population am heißen Ende höher
+⇒ Diffusion zum kalten Ende mit geringerer Phononen-
+Population.
+ሶ
+𝑄
+𝐴 = −𝜅 Δ𝑇
+Δ𝑥 𝜅: Wärmeleitfähigkeit
+Fluss der
+thermischen Energie
+durch Fläche A pro
+Zeitinheit Argument nach Debye:
+Aus der kinetischen Gastheorie weiß man:
+𝜅 = 1
+3 𝑐𝑣 ∙ 𝑣 ∙ 𝑙𝑝ℎ
+Temperaturabhängige
+Größen
+Schall-
+geschwindigkeit
+Mittlere freie Weg-
+Länge eines Phonons
+Was bestimmt die thermische Leitfähigkeit
+bzw. den Wärmewiderstand?
+
+Experiment: Wärmeleitfähigkeit
+& ballistischer Phononentransport
+
+aus Blakemore
+ähnlich in Kopitziki
+Wärmeleitfähigkeit
+Streuung durch
+Defekte
+und/oder
+Oberfläche
+∝ 𝑒𝜃𝐷/2𝑇𝑇3
+∝ 1
+𝑇
+Casimir
+-Bereich
+𝜅 = 1
+3 𝑐𝑣 ∙ 𝑣 ∙ 𝑙𝑝ℎ
+
+Wärmeleitfähigkeit
+
+Wärmeleitfähigkeit (intrinsische Defekte)
+
+Wärmeleitfähigkeit (Oberflächenstreuung)
+Die mittlere freie Weglänge ist bei tiefen Temperaturen in der größeren Probe länger und
+wird in der kleineren Probe durch Streuung an den Oberflächen begrenzt.
+
+Wärmeleitfähigkeit (amorphe Materialien)
+
+Thermische Leitfähigkeit und mittlere freie Weglänge
+der Phononen
+aus Blakemore
+… in typischen nichtmetallischen Festkörpern bei
+verschiedenen Temperaturen
+
+Thermische Leitfähigkeit der chemischen Elemente
+aus Gross/Marx
+
+Thermische Leitfähigkeit
+weiterer verschiedener
+Stoffe
+aus Wikipedia (30.08.25)
+
+1D Wärmeleitfähigkeit
+22

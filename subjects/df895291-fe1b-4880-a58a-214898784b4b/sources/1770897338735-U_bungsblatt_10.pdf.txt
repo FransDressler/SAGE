@@ -1,0 +1,46 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 12.01.26
+Blatt 10
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+10.1 W¨armeleitf¨ahigkeit
+Skizzieren Sie den typischen Temperaturverlauf der W¨armeleitf¨ahigkeit von kristalli-
+nen Dielektrika. Erkl¨aren Sie die physikalischen Hintergr¨unde der verschiedenen
+Bereiche der Temperaturabh¨angigkeit.
+10.2 Fl¨ussiges 3He als Fermi-Gas
+Aufgrund der durch die kleine Atommasse verursachten großen Nullpunktfluktuatio-
+nen wird 3He selbst bei T = 0 K nicht fest. Mit einem Kernspin von I = 1/2 bildet
+es somit eine Fermi-Fl¨ussigkeit, mit ρ = 0.08 g cm−3.
+(a) Aufgrund der endlichen Wechselwirkungen stellt fl¨ussiges 3He kein ideales Fermi-
+Gas dar, sondern eine Fermi-Fl¨ussigkeit mit einer effektiver Masse m∗ = 2.8m3He.
+Berechnen Sie hiermit die Fermi-Energie EF, Fermi-Temperatur TF und Fermi-
+Geschwindigkeit vF. Vergleichen Sie diese Werte mit typischen Werten von
+Elektronengasen in Metallen. Welchen Vorteil besitzt fl¨ussiges 3He gegen¨uber
+Elektronengasen in Metallen zum Studium von Fermi-Gasen?
+(b) Berechnen Sie die spezifische W¨arme von fl¨ussigem 3He f¨ur T << TF.
+10.3 Chemisches Potenzial in zwei Dimensionen
+Ausgehend von der Zustandsdichte D2D = A·m/π¯h2, zeigen Sie, dass f¨ur das chemis-
+che Potential eines zweidimensionalen Fermi-Gases gilt:
+μ(T ) = kBT ln
+
+exp
+ πn¯h2
+mkBT
+
+− 1
+
+, (1)
+wobei n die Elektronendichte ist.
+
+10.4 Spezifische W¨armekapazit¨at von Gold
+(a) Berechnen Sie den elektronischen und phononischen Beitrag zur spezifischen
+W¨armekapazit¨at cV von Gold im Modell eines freien Elektronengases bei einer
+Temperatur von T = 300 K. (Gold ist ein kubisch, fl¨achenzentriertes Gitter,
+mit a = 4.08 ˚A, nAu = 5.9 × 1028 m−3, θAu = 162 K)
+(b) Bei welcher Temperatur sind die beiden Beitr¨age gleich?
+(c) Berechnen Sie den Sommerfeld-Koeffizienten γ = cel.
+V /T von Gold und vergle-
+ichen Sie diesen mit dem experimentell ermittelten Wert γAu = 71.42 J K−2 m−3.

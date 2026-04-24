@@ -1,0 +1,152 @@
+## 5. Das fieie Eleletroneugas
+
+## Das Modell des "feien Eleletronengas" ist die einfachile Nähery, um die elektionischou Ejususchaften von Metallen zu Gescluciber.
+
+Annahmen: - Die Gesantenerje des Elektonemsystems besteht new ans Vivetiches Eneyje.
+
+- Schwach opbunde Valenzclektoren beweger sidn nahezn fia dunch des rataial ( → Leiturigs elektionen)
+- Conlomb-WO zwischen den Laiturys elelitoner sowie zu Atomriumpfe wind vervach lissigt.
+
+Klassisches feies Elehtronengas: $e^{-}$sind Kassische Taildren.
+
+- Ohmsche Geselz (Drude Thecie) ✓
+- Esminany awische delitisclen und
+![The image depicts handwritten text in German mentioning "elektrischen und Wärmeleitfähigkeit" (electrical and thermal conductivity) and references "Wiedemann-Franz," indicating it relates to the Wiedemann-Franz law, which describes the relationship between electrical and thermal conductivity in metals.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9282e2b9-da21-45d0-a89f-847d952dcdfe/2c9b53b6-1bb2-4021-a488-00d5ff0c8be3-1_100_891_1235_1109.jpg)
+
+Fenei-Gas feies Elektionen: Teilchen gehocher Pauli- Prinzip ( → Tenui- Dirac Vertaly)
+
+- spez. Wäme der e- (Sommerfeld) V
+- mapuetiscle Suszeptibilität
+
+Als Ausblich: "Quasi-feien Elettionen; WW zevisden $e^{-}$und Atouñücupfe wind duch eive soy. effeletive rasse m* beschirieb
+
+- Halbetr ...
+
+
+## Einfachen retalle:
+
+Ime elektomischer Eigenselafter lassen sich durch (parabolische) hinetisehe Energieterne der (quasi-) fieien Elellitone in gests Nähsy bescriciber:
+
+| Albali-retalle | $(1$ - wertije $)$ |
+| :--- | :--- |
+| $\mathrm{Be}, \mathrm{Ca}$, so, Ba | $(2$ - wert. $)$ |
+| $\mathrm{Al}, \mathrm{Ga}$ | $(3$ - wert. $)$ |
+| Pb | $(4-$ wert. $)$ |
+
+Nicht-einfache retalle: Edelmetalle, Überganysmetalle, Lacuthanide, Altivide, ...
+
+### 5.1 Eminje-Niveans und Zustandsdichte in 10-Fill
+
+Ausgangspunkt. Elatetion wit Masse mi im Vastenpotential nit unendlid koker Wänder. An padem soll QM und Pauli- Prinzip yetten (Femi-Gas!)
+Schiodijy :
+
+$$
+\begin{aligned}
+& H \psi_{n}=E_{n} \psi_{n} ; \quad H=\frac{p^{2}}{r_{m}} ; p=-i t_{n} \frac{d}{d x} \\
+& \Rightarrow-\frac{4 z}{2 m} \frac{d^{2}}{d x^{2}} \psi_{n}=E_{n} \psi_{n} ; \quad E_{n}: \text { Evenje des } \\
+& \text { Rustand u. }
+\end{aligned}
+$$
+
+Ausate:
+
+Rand bedingen:
+
+\psi_{n}(0)=\psi_{n}(L)=0 ; \frac{n \lambda}{2}=L ;
+
+E_{n}=\underbrace{\frac{t^{2}}{2 m}\left(\frac{n \pi}{L}\right)^{2}}_{k}
+
+Quantenzaten: $u \in \mathbb{N} m_{s}= \pm 1 / 2$ (midt besidesientijt)
+![This diagram depicts the quantized energy levels and corresponding wavefunctions of a particle in a one-dimensional infinite potential well (quantum box), illustrating the relationship between wavelength (λ) and energy states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9282e2b9-da21-45d0-a89f-847d952dcdfe/2c9b53b6-1bb2-4021-a488-00d5ff0c8be3-2_361_466_1163_173.jpg)
+
+\overbrace{\text { Uiveliscle Enrice }}^{\frac{t^{2} u^{2}}{2 m}}\left(1 \frac{p^{2}}{2 m}\right)
+
+Aufyund des Pauli-Priumps passher in jodes Nivean zwei telebore nit wis $= \pm 1 / 2$
+
+## Fenni-Nivean :
+
+$u_{T}$ : Quantenzall des oberister, besetater Niveans ("Fenni-Niveren")!
+$N=2 \cdot u_{F}$ : Gesarntzale der Laituyselektron.
+Fermin-Erraje : $\quad E_{T}$. Enerje dess obersted, beretzten Niveans.
+
+### 5.2 Besetzeny der Niveaus bei endlicher Tempenater
+
+Die Feumi-Dinac-Verteiley gewähilaistet die Enfally des Pauli-Prinzips und gibt die Wahnschainlichke't an, okess ein electronischer Zastand mit Enajie $E$ bei Temperater $T$ besettet ist:
+
+f(E, T)=\frac{1}{e^{(E-\mu) / k \sigma T}+1}
+
+T=0: System ist im Grundzustand.
+Alle bustände bis $E_{F}$ sind besetzt.
+
+f(E, 0)= \begin{cases}1 & \text { fin } E<\mu \\ 0 & \text { fin } E>\mu\end{cases}
+
+Fii $T=0$ gilf:
+$\mu$ ' chem. Potenzial
+wind so yewäll, daw
+$\mu=E_{\Phi}$
+die Gesantzale'den e-: N
+
+T>0: Vinetiscle Engje des Elelltonen-Gases vächst mit stajender Temperates.
+Benorky: $-f(\mu)=\frac{1}{2}$ für alle $T$ !
+
+### 5.3 Freies Felmi-Gas in 30
+
+Schödings: $\quad-\frac{t_{1}^{2}}{2 m}\left(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}\right) \psi_{\underline{k}}(\underline{r})=E_{\underline{k}} \psi_{\underline{k}}(\underline{r})$
+Elatition in Wiinfel unit Vantenläge $L$ :
+$\Psi \underline{\underline{x}}$ (I) : steheude Welle
+
+=A \cdot \sin \left(\frac{u_{x} \pi}{2} \cdot x\right) \cdot \sin \left(\frac{u_{y} \pi}{2} \cdot y\right) \cdot \sin \left(\frac{u_{z} \pi}{2} \cdot z\right)
+
+## Peridische Raudbedingeng
+
+Elektonemgas ist uneudlial ansgedehut, aber wellenfunktion wiederholt sich "alle" $L$,
+
+\psi_{\underline{k}}(\underline{r})=\psi_{\underline{k}}(x+L, y, r)=\psi_{\underline{k}}(x, y, z), \hat{y}_{y, z}^{f_{i}}
+
+![This diagram depicts the concept of a traveling wave as a wave function in quantum mechanics, showing the relationship between the wave vector \(k\), the de Broglie wavelength \(\lambda\), and the mathematical form of the wave function \(\psi(x)\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9282e2b9-da21-45d0-a89f-847d952dcdfe/2c9b53b6-1bb2-4021-a488-00d5ff0c8be3-3_319_1841_1801_224.jpg)
+
+\text { mit } k_{x}, k_{y}, k_{z}=0 ; \pm \frac{2 \pi}{L} ; \pm \frac{4 \pi}{L}
+
+Ebene Wille liefet
+
+E_{\underline{k}}=\frac{u^{2} u^{2}}{2 u}=\frac{u^{2}}{2 u}\left(k_{\lambda}^{2}+k_{y}^{2}+k_{z}^{2}\right)
+
+Als lmpuls laisst sich schecibe : $f=-i t$ II
+
+\Rightarrow \quad f \psi_{\underline{k}}=-t_{1} \underline{\nabla} \psi_{\underline{k}}(\underline{r})=t_{1} \underline{k} \cdot \psi_{\underline{k}}(\underline{r})
+
+Eberve Wille $\psi_{\underline{\underline{v}}}(\underline{\underline{v}})$ ist die Eigun funktion des Impulses $f$ unit Eijen went tak
+
+## Benurkygu
+
+- Teildrengesehwindigheit im Zustand $\underline{k}: \underline{v}=\frac{6 \underline{k}}{m}$;
+- $\exists N$ - Eleltion ⇒ $T=0$ liegen die besetzten tustande innulalb eiver lugel im Ungel im U-Raum, dic ciner Radius $k_{T}$ (Tenni-Wellenvelter)
+- Funi-Energie ist Enagie an des Oberflacle des Vugel: Es jilt:
+
+\begin{aligned}
+& N=2 \cdot \frac{\frac{4}{3} \cdot \pi k_{I}^{3}}{\left(\frac{2 \pi}{L}\right)^{3} \times} \\
+& \text { Spin Volume eines Zustandes im K- Roun } \\
+&=\frac{v}{3 \pi^{2}} \cdot k_{F}^{3}
+\end{aligned}
+
+\begin{array}{ll}
+\Rightarrow & K_{F}=\left(\frac{3 \pi^{2} N}{v}\right)^{1 / 3}=\left(3 \cdot \pi^{2} \cdot u\right)^{1 / 3} u=\frac{N}{v} \\
+\Rightarrow & E_{F}=\frac{t^{2}}{2 m}\left(\frac{3 \pi N}{v}\right)^{2 / 3}=\frac{t^{2}}{2 m}(3 \pi \cdot u)^{2 / 3} \\
+\Rightarrow & \left(E=\frac{t^{2} u^{2}}{2 u}\right)
+\end{array}
+
+$\Rightarrow \quad v_{F}=\frac{t_{1} k_{T}}{m}=\frac{t_{1}}{m}\left(\frac{G \pi^{2} \cdot N}{v}\right)^{1 / 3} \quad \begin{aligned} & \text { Geschwindijkit der } e^{-} \\ & \text {auf do Inin-Tede }\end{aligned}$
+$\Rightarrow \quad N=\frac{V}{3 \pi^{2}}\left(\frac{2 m E_{F}}{\hbar^{2}}\right)^{3 / 2}$
+
+D(E)=\frac{d}{d E} \cdot N=\frac{v}{2 u^{2}}\left(\frac{2 m}{u^{2}}\right)^{3 / 2} \sqrt{E}
+
+Zustandsdichle eines Faini-Gaves (side Zantalübuy!)
+$-\ln N=\frac{3}{2} \ln \left(E_{7}\right)+$ const. $\Leftrightarrow \frac{d N}{N}=\frac{3}{2} \frac{d E^{\prime}}{E_{7}}$
+
+D\left(E_{F}\right)=\left.\frac{d}{d E} \cdot N\right|_{E_{F}}=\frac{3}{2} \frac{N}{E_{F}}
+
+Zustandsdichle an der Tenni-Enejie ist vonder Grioßennduny Trildren zale / Termi-Enegie!
+
+- Iervi-Wellenlaje: $\quad \lambda_{T}=\frac{2 \pi}{k_{T}}$
+- Termi-Temperater: $\quad T_{F}=\frac{E_{F}}{U_{R}}$
+

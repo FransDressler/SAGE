@@ -1,0 +1,45 @@
+Prof. Julia Herzen
+Prof. Andreas Bausch
+Prof. Ulrich Gerland
+Introduction to Biophysics
+Winter Semester 2025/26, Exercise Sheet 11
+Problem 11.1 Membrane transport and membrane potential
+Which of the following statements are true? Explain why or why not?
+Transport by transporters can be either active or passive, whereas transport by channels
+is always passive.
+Transporters saturate at high concentrations of the transported molecule when all their
+binding sites are occupied; channels, on the other hand, do not bind the ions they
+transport and thus the flux of ions through a channel does not saturate.
+The membrane potential arises from movements of charge that leave ion concentrations
+practically unaffected, causing only a very slight discrepancy in the number of positive
+and negative ions on the two sides of the membrane.
+Problem 11.2 Changing the membrane potential via ion transport
+Consider a spherical cell with radius R = 100 μm. The capacitance of the cell membrane is
+1 μF/cm2. How much charge needs to be transported across the membrane in order to change
+the voltage across the membrane by 100 mV? If this charge transfer occurs via monovalent
+ions, what is the corresponding change in intracellular ion concentration? How does this
+concentration change compare to typical absolute concentrations of intracellular ions? How
+does this change, if the cell has a radius of only R = 1 μm?
+Problem 11.3 Membrane potential by Na+ and K+
+The squid giant axon occupies a unique position in the history of our understanding of cell
+membrane potentials and nerve action. When an electrode is stuck into an intact giant axon,
+the membrane potential registers –70 mV. When the axon, suspended in a bath of seawater,
+is stimulated to conduct a nerve impulse, the membrane potential changes transiently from
+–70 mV to +40 mV.
+For univalent ions and at 20 ◦C (293 K), the Nernst equation reduces to
+V = 25.2 mV ln Co
+Ci
+where Co and Ci are the concentrations outside and inside, respectively.
+Using this equation, calculate the potential across the resting membrane (1) assuming
+that it is due solely to K+ and (2) assuming that it is due solely to Na+. (The Na+ and K+
+concentrations in axon cytoplasm and in seawater are given in Table 1.) Which calculation is
+closer to the measured resting potential? Which calculation is closer to the measured action
+potential? Explain why these assumptions approximate the measured resting and action
+potential.
+1
+
+ION CYTOPLASM SEAWATER
+Na+ 65 mM 430 mM
+K+ 344 mM 9 mM
+Table 1: Ionic composition of seawater and of cytoplasm from the squid giant axon.
+2

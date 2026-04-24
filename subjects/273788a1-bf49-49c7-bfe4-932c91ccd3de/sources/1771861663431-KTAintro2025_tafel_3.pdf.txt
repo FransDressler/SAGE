@@ -1,0 +1,169 @@
+## Vorlesung 3: 28.10.2025
+
+Einschub: Reichweite einer Wechselwirkung in QFT
+Heisenberg:
+
+$$
+\begin{aligned}
+& \Delta E \Delta t \geq \frac{\hbar}{2} \\
+& \Delta t=\frac{\hbar}{2 M c^{2}}
+\end{aligned}
+$$
+
+Untere Schranke für $\Delta t$
+Kohärenzzeit einer Welle:
+
+\Delta \phi=\frac{\left(E_{0}+\frac{1}{2} \Delta E\right) t}{\hbar}-\frac{\left(E_{0}-\frac{1}{2} \Delta E\right) t}{\hbar}
+
+Phasendifferenz zwischen zwei typischen Komponenten $E_{0} \pm \frac{1}{2} \Delta E$ einer Welle:
+
+\approx \frac{\Delta E t}{\hbar}
+
+Definition Kohärenzzeit als Zeitspanne, nach der Phase sich um $\sim 1$ rad ändert:
+
+\Delta t \leq \frac{\hbar}{\Delta E}
+
+Obere Schranke:
+
+\Rightarrow \Delta t \approx \frac{\hbar}{\Delta E}
+
+Reichweite: $\quad r_{\text {range }}=v \cdot \Delta t \leq c \Delta t \approx \frac{\hbar c}{M c^{2}}$
+
+### 1.8 Symmetrien und Erhaltungssätze
+
+### 1.8.1 Noethersche Theorem:
+
+(stark vereinfacht)
+Jede stetige Symmetrie einer physikalischen Wirkung erzeugt eine Erhaltungsgröße.
+Jede Erhaltungsgröße kommt von einer Symmetrie.
+Stetige Symmetrien (beliebig fein variieren)
+
+| Zeitverschiebung | → Energieerhaltung | (Gesetze hängen nicht von Zeit ab) |
+| :--- | :--- | :--- |
+| Ortsverschiebung Drehung | → Impulserhaltung → Drehimpulserhaltung | (gleiche Physik überall) (keine ausgezeichnete Raumrichtung) |
+| diskrete Symmetrien "nicht Noether" ("einzelne", getrennte Sprünge) |  |  |
+|  |  |  |
+| $\hat{P}$ Parität | → Spiegelung | $\vec{r} \rightarrow-\vec{r}$ |
+| $\hat{C}$ Ladungskonjugation | → Teilchen ↔ Antiteilchen |  |
+| $\hat{T}$ Zeitumkehr | $t \rightarrow-t$ |  |
+
++ Kombination $\hat{C} \hat{P}, \hat{C} \hat{P} \hat{T} \ldots$
+
+
+### 1.8.2 Leptonenzahl ("Zählladung")
+
+\begin{array}{ccc}
++1 & \text { Leptonen } & e^{-}, \nu_{e} \\
+-1 & \text { Antileptonen } & e^{+}, \mu^{+}, \overline{\nu_{e}}
+\end{array}
+
+$L=L_{e}+L_{\mu}+L_{\tau} \quad$ Familienleptonenzahlen
+L: erhalten (nach Noether)
+$L_{e}, L_{\mu}, L_{\tau}$ nicht generell erhalten
+(siehe Neutrinooszillationen)
+praktisch: erhalten
+
+|  |  | $\mathbf{L}_{\mathbf{e}}$ | $\mathbf{L}_{\mu}$ | $\mathbf{L}_{\tau}$ |
+| :---: | :---: | :---: | :---: | :---: |
+| $e^{-}$ | $\nu_{e}$ | +1 <br> -1 | 0 | 0 |
+| $e^{+}$ | $\overline{\nu_{e}}$ | -1 |  |  |
+| $\mu^{-}$ | $\nu_{\mu}$ | 0 | +1 <br> -1 | 0 |
+| $\nu^{+}$ | $\overline{\nu_{\mu}}$ | 0 |  |  |
+| $\tau^{-}$ | $\nu_{\tau}$ | 0 | 0 | +1 <br> -1 |
+| $\tau^{+}$ | $\overline{\nu_{\tau}}$ |  |  |  |
+
+Bsp
+
+\begin{array}{clll}
+n \rightarrow p+e^{-} & & \text {nicht erlaubt } & \\
+L: 0 & +1 & & \\
+n \rightarrow p+e^{-}+\overline{\nu_{e}} & & \text { erlaubt } & \\
+L: 0 & +1 \quad-1 & & \\
+\mu^{-} \rightarrow e^{-}+\gamma & & \text { nicht erlaubt } & \\
+L_{\mu}=1 \quad L_{e}=1 & & \Delta L=0 \checkmark \quad \Delta L_{\mu} \neq 0 X & \Delta L_{e} \neq 0 X
+\end{array}
+
+### 1.8.3 Baryonenzahlerhaltung
+
+Baryon $q q q$, Proton ist leichtestes Baryon
+Bisher angenommen: Baryonenzahl $B$ ist erhalten (= additive Quantenzahl) warum: $p$ ist stabil, bisher wurde kein $p$-Zerfall beobachtet
+
+\begin{array}{ccc}
+B(p)=1 & B(n)=1 & B(\bar{p})=1 \\
+B(q)=\frac{1}{3} & B(\bar{q})=-\frac{1}{3} & B(\text { Mesonen })=0
+
+### 1.9 Feynman Graphen
+
+- Visualisieren fundamentale Teilchenreaktionen
+- "Bild" quantenfeldspezifischer Vorgänger
+- Mathematische Beschreibung von WW-Wahrscheinlickeiten (Reaktionen, Zerfällen)
+![This diagram depicts the representation of different fundamental particles in space and time, showing quarks and leptons as straight lines, gauge bosons (photon, W±, Z0) as wavy lines, the Higgs boson as a dashed line, and gluons as curly lines. It is used to illustrate how these particles are typically depicted in Feynman diagrams in particle physics.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/12621e0e-3e96-4770-886e-076224d5333d/ee5282c3-d659-434a-ac1f-b3d1133946ba-3_476_947_443_552.jpg)
+$\underline{\text { Regeln für Feynman Graphen: }}$
+- Impuls, $E, L_{e}, L_{\mu}, L_{\tau}, B$ sind erhalten
+- ⟶ Teilchen $\rightleftarrows$ Antiteilchen
+- externen Linien, reellen Teilchen, "on shell", ⇒ reell beobachtbar, $E^{2}=(p c)^{2}+\left(m c^{2}\right)^{2}$ gilt streng
+- interne Linien, virtuelle Teilchen, Austauschteilchen, "Zustände", erfüllt $E^{2}=(p c)^{2}+\left(m c^{2}\right)^{2}$ nicht, aber $\Delta E \cdot \Delta t \geq \frac{\hbar}{2}$,"off shell"
+
+
+### 1.10 WW Wahrscheinlichkeiten
+
+Fermis goldene Regel beschreibt die Zustandsdichte $\Gamma_{\text {if }}$ [1/Zeit]
+
+\left.\Gamma_{\mathrm{i} \rightarrow \mathrm{f}}=\frac{2 \pi}{\hbar}|\langle f| \hat{V}(r)| i\right\rangle\left.\right|^{2} \varrho\left(E_{f}\right) .
+
+Das Matrixelement $M_{\text {if }}=\langle f| \hat{V}(r)|i\rangle$ ist ein Maß dafür, wie gut der Anfangszustand an den Endzustand mit Potential der WW $\hat{V}$ koppelt. Die Zustandsdichte der Endzustände $\varrho\left(E_{f}\right)$, enstpricht oft der Phasenraumdichte. Je mehr Zustände desto höhere Wahrscheinlichkeit, dass die Reaktion abläuft.
+
+In der Quantenmechanik (QM) in Born'scher Näherung schreibt sich
+
+M_{\mathrm{if}}=\langle f| \hat{V}(r)|i\rangle=\int d^{3} r e^{-i \vec{q} \cdot \vec{r}} V(\vec{r})=\tilde{V}(\vec{q}),
+
+mit $V(\vec{r})$ dem Potential im Ortsraum.
+Yukawa Potential
+
+\begin{gathered}
+V(r)= \pm \frac{g_{1} g_{2}}{4 \pi} \frac{e^{-\mu r}}{r} \\
+\tilde{V}(\vec{q})=\int d^{3} r e^{-i \vec{q} \cdot \vec{r}} V(\vec{r})
+\end{gathered}
+
+Kugelsymmetrie
+
+\begin{aligned}
+\vec{q} \cdot \vec{r} & =q r \cos \theta \quad q=|q| \\
+d^{3} r & =r^{2} \sin \theta d r d \theta d \varphi
+\end{aligned}
+
+\begin{gathered}
+\tilde{V}(\vec{q})= \pm \frac{g_{1} g_{2}}{4 \pi} \int_{0}^{\infty} d r r^{2} \frac{e^{-\mu r}}{r} \underbrace{\int_{0}^{\pi} d \theta \sin \theta e^{-i q r \cos \theta}}_{=2 \frac{\sin (q r)}{q r}} \int_{0}^{2 \pi} d \varphi \\
+=g_{1} g_{2} \int_{0}^{\infty} d r e^{-\mu r} \frac{\sin (q r)}{q}
+\end{gathered}
+
+$\tilde{V}(\vec{q})=g_{1} g_{2} \frac{1}{q^{2}+\mu^{2}} \quad \sim \frac{1}{q^{2}+M^{2}} \quad q$ Impulsübertrag, $M$ Masse des Austauschteilchens
+Beispiel $e / m$
+
+M_{\mathrm{if}}=\frac{Z_{1} Z_{2} e^{2}}{\epsilon_{0}} \frac{1}{q^{2}} \\
+\Gamma \sim \frac{1}{a^{4}} \quad(\text { siehe Rutherford })
+
+Beispiel für schwache WW
+
+\beta \text {-Zerfall: } \quad n \rightarrow p+e^{-}+\overline{\nu_{e}}
+
+1935 Fermi
+![This diagram is a Feynman diagram depicting neutron beta decay, showing a neutron (n) decaying into a proton (p), an electron (e⁻), and an electron antineutrino (ν̅ₑ) via the weak interaction with coupling constant g_F.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/12621e0e-3e96-4770-886e-076224d5333d/ee5282c3-d659-434a-ac1f-b3d1133946ba-4_238_646_1062_513.jpg)
+
+Damit konnten die Energiespektren der $e^{-}$erklärt werden ( $=$low energy).
+1967/68 Glashow, Salam, Weinberg
+![This diagram is a Feynman diagram depicting neutron beta decay, showing the neutron decaying into a proton, electron, and electron antineutrino via the exchange of a W boson. The accompanying equations relate to the weak interaction coupling and the propagator of the W boson.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/12621e0e-3e96-4770-886e-076224d5333d/ee5282c3-d659-434a-ac1f-b3d1133946ba-4_282_755_1525_459.jpg)
+
+\frac{g^{2}}{M_{W}^{2}}=G_{F} \\
+Q^{2} \gg M_{W}^{2} \quad \Rightarrow \quad M_{i f}=\frac{g^{2}}{q^{2}} \approx \frac{e^{2}}{q^{2}}
+
+Idee (nicht genau so korrekt)
+
+g \approx e
+
+mit e: elektrische Elementarladung
+
+M_{W} \approx \sqrt{\frac{e^{2}}{G_{F}}} \approx 90 \mathrm{GeV}
+
+Dies führt zum Konzept der Elektroschwachen Wechselwirkung.
+

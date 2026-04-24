@@ -1,0 +1,308 @@
+## 10. Phasenübergänge
+
+### 10.1 Phänomenologie und Begriffe
+
+Phasen: Zustände der Materie, die sich durch thermische, mechanische, magnetische, etc. Eigenschaften sowie durch ihre Symmetrien unterscheiden.
+
+> Innerhalb einer Phase sind thermodynamische Potentiale analytische Funktionen der Zustandsvariablen.
+
+Phasenübergang: Änderung der Phase bei Änderung eines Parameters. In der Nähe des Übergangs ist die freie Energie (oder ein anderes therm. Potential) eine nicht-analytische Funktion (nicht beliebig oft differenzierbar).
+
+### 10.1.1 Klassifizierung von Phasenübergängen
+
+## Phasenübergang "1. Ordnung":
+
+-) 1. Ableitungen thermodynamischer Potentiale sind unstetig
+-) latente Wärme $Q_{L}=T_{0} \Delta S \neq 0$ !!
+-) metastabile Phasen (überhitzte Flüssigkeit, übersättigter Dampf, ... )
+
+Bsp1: Flüssigkeit-Gas Übergang (bei gegebenen äußeren Druck $p, T<T_{c}$ ):
+Gibbs freie Enthalpie: $\quad G \equiv G(T, p, N)$
+![This diagram depicts the concept of osmotic pressure, showing solvent molecules (blue circles) separated by a semipermeable membrane (green line) with a pressure difference (p < p0) applied across it at temperature T.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-02_758_702_463_354.jpg)
+![This diagram depicts a Gibbs free energy (G) versus pressure (p) plot at constant temperature (T = const.), showing a phase transition at pressure p0 where the slope of G changes abruptly.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-02_590_956_684_1708.jpg)
+![This diagram depicts a pressure-volume or pressure-temperature scenario showing a system where the pressure \( p \) is greater than a reference pressure \( p_0 \), indicating compression or an increase in pressure on a fluid or gas below a movable boundary.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-02_642_706_1482_346.jpg)
+![This diagram depicts the specific volume (V) as a function of pressure (p) at constant temperature (T) for a substance undergoing a phase transition, showing the distinct volumes of the gas phase (Vg) and the fluid phase (Vf) at the saturation pressure (p0). The equation indicates that volume is the partial derivative of Gibbs free energy (G) with respect to pressure at constant temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-02_618_996_1490_1716.jpg)
+![This diagram depicts a physical system used to illustrate the concept of pressure (p) exerted by particles in a container on a piston with a mass (kg) on top, specifically for a temperature (T) below a reference temperature (T0). It shows the relationship between temperature, particle motion, and pressure in a confined gas system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-03_529_884_100_295.jpg)
+![This diagram depicts the Gibbs free energy (G) as a function of temperature (T) at constant pressure, illustrating the concept of metastable continuation in a phase transition near temperature T₀.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-03_651_1326_137_1458.jpg)
+![This diagram depicts a gas in a container with a movable piston under pressure \( p \), heated so that the temperature \( T \) is greater than a reference temperature \( T_0 \). It illustrates the behavior of gas molecules under increased temperature conditions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-03_862_894_771_285.jpg)
+![This diagram depicts the entropy (S) as a function of temperature (T), showing a discontinuous change in entropy (ΔS) at a transition temperature (T₀), illustrating the relationship between entropy and the temperature derivative of the Gibbs free energy (G) at constant pressure.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-03_619_1316_940_1458.jpg)
+-) thermo. Potential stetig, aber Sprung in den 1. Ableitungen
+-) latente Wärme $Q_{L}=T_{0} \Delta S$
+-) metastabile Phasen
+
+Bsp2: ferromagnetischer Übergang (als Funktion von B, bei $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ ):
+![This diagram depicts the behavior of magnetization (B) as a function of temperature (T) around the critical temperature (Tc) in a ferromagnetic material, showing the transition from aligned spins below Tc to disordered spins above Tc.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-04_513_989_232_126.jpg)
+
+Freie Energie: $\quad F \equiv F(T, B)$
+
+$$
+B<0
+$$
+
+![This diagram depicts a potential energy function \( F \) as a function of a variable \( m \), illustrating spontaneous symmetry breaking with a double-well potential where the system's stable state is at a nonzero value of \( m \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-04_577_810_887_126.jpg)
+
+$B=0$
+![This diagram depicts a double-well potential energy function \( F \) as a function of the order parameter \( m \), commonly used in the context of phase transitions or spontaneous symmetry breaking in physics. It shows two stable minima representing two distinct equilibrium states separated by an unstable maximum at \( m=0 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-04_582_804_882_1114.jpg)
+
+B>0
+
+![This diagram depicts a potential energy function \( F(m) \) with respect to a variable \( m \), showing a local minimum where a stable state or equilibrium (indicated by the red dot) occurs. It is likely illustrating spontaneous symmetry breaking or a phase transition scenario in a physical or field theory context.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-04_582_814_887_2118.jpg)
+![This diagram depicts a force (F) versus magnetic field (B) graph showing the behavior of a magnetic force that increases to a maximum and then decreases as the magnetic field strength increases.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-04_588_804_1605_132.jpg)
+![This diagram depicts the magnetization (M) versus magnetic field (B) curve for a ferromagnetic material, showing the hysteresis loop that illustrates magnetic hysteresis behavior.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-04_688_926_1500_1542.jpg)
+
+\mathcal{M}=-\left.\frac{\partial F}{\partial B}\right|_{T}
+
+## Phasenübergang " $\mathbf{2}$. Ordnung" (kontinuierlicher Phasenübergang)
+
+-) 1. Ableitungen thermodynamischer Potentiale stetig
+-) keine latente Wärme
+-) unstetiges oder divergentes Verhalten der therm. Response Funktionen (spezifische Wärme, Suszeptibilität, Kompressibilität, ...)
+
+Bsp1: ferromagnetischer Übergang (für $\mathrm{B}=0$, als Funktion von T )
+![This diagram depicts the behavior of magnetization (B) in a ferromagnetic material as a function of temperature (T), showing the alignment of magnetic moments below and above the Curie temperature (Tc). It illustrates the transition from spontaneous magnetization with aligned spins below Tc to disordered spins and loss of magnetization above Tc.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-05_508_973_818_1611.jpg)
+![This diagram depicts the magnetization (M) as a function of temperature (T) near the critical temperature (Tc) for a magnetic phase transition, showing how magnetization changes continuously and vanishes at Tc. The equation relates magnetization to the derivative of the free energy (F) with respect to magnetic field (B) at constant temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-05_683_1116_1436_142.jpg)
+![This diagram depicts the magnetic susceptibility \(\chi(T)\) as a function of temperature \(T\), showing a divergence at the critical temperature \(T_c\). It illustrates the definition of magnetic susceptibility as the negative second derivative of the free energy \(F\) with respect to magnetic field \(B\) at constant temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-05_724_1169_1479_1674.jpg)
+
+Bsp2: Flüssigkeit-Gas Übergang bei $\mathrm{T} \sim \mathrm{T}_{\mathrm{c}}$ (vergleiche Kapitel 8.5)
+![This diagram depicts a temperature versus velocity curve illustrating the concept of critical temperature (\(\bar{T}_c\)) and critical velocity (\(\bar{v}_c\)) in a superfluid or fluid dynamics context, showing stable and unstable flow regions with arrows indicating transitions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-06_825_957_348_137.jpg)
+
+Bsp2: Flüssigkeit-Gas Übergang bei $\mathrm{T} \sim \mathrm{T}_{\mathrm{c}}$ (vergleiche Kapitel 8.5)
+![This diagram depicts an order parameter for the liquid-gas phase transition, showing how the relative velocity fluctuation changes from an ordered liquid phase ("flüssig, geordnet") to a disordered gaseous phase ("gasförmig, ungeordnet") as temperature crosses the critical temperature \( T_c \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-06_841_1301_348_1563.jpg)
+
+"Response Funktion"
+
+\kappa_{T}=-\left.\frac{1}{V} \frac{\partial^{2} G}{\partial p^{2}}\right|_{T} \sim \frac{1}{\left|T-T_{c}\right|}
+
+![This diagram depicts the temperature dependence of the magnetic susceptibility \(\chi(T)\) near a critical temperature \(T_c\), showing a divergence at \(T_c\) characteristic of a phase transition.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-06_725_1010_1415_1722.jpg)
+
+## Einschub: Ergänzungen zur Thermodynamik
+
+## A) Clausius-Clapeyron-Gleichung
+
+Beim Flüssigkeit-Gas Übergang gilt entlang der Phasenkoexistenzkurve:
+
+\mu_{\mathrm{f}}\left(p_{0}, T\right)=\mu_{\mathrm{g}}\left(p_{0}, T\right), \quad p_{0} \equiv p_{0}(T) \longleftrightarrow \text { Gleichgewichtsdruck }
+
+Außerdem wissen wir (siehe Kapitel 2.4) :
+
+\mu(p, T)=\frac{G(p, T)}{N} \quad \text { und } \quad S=-\left.\frac{\partial G}{\partial T}\right|_{p}, \quad V=\left.\frac{\partial G}{\partial p}\right|_{T}
+
+Daraus folgt: $\begin{aligned} \frac{d}{d T} \mu_{\mathrm{f}}\left(p_{0}(T), T\right) & =\frac{\partial \mu_{\mathrm{f}}}{\partial p} \frac{\partial p_{0}}{\partial T}+\frac{\partial \mu_{\mathrm{f}}}{\partial T}= \\ \underset{\downarrow}{\swarrow} / N & \stackrel{\partial \mu_{\mathrm{g}}}{\partial p} \frac{\partial p_{0}}{\partial T}+\frac{\partial \mu_{\mathrm{g}}}{\partial T} \\ V_{\mathrm{f}} / N & \stackrel{\downarrow}{\mathrm{f}} / N\end{aligned} \underset{\stackrel{\downarrow}{\mathrm{~g}} / N}{\downarrow} S_{\mathrm{g} / N}$
+und wir erhalten die Clausius-Clapeyron-Gleichung
+
+\frac{\partial p_{0}}{\partial T}=\frac{S_{\mathrm{g}}-S_{\mathrm{f}}}{V_{\mathrm{g}}-V_{\mathrm{f}}}=\frac{Q_{L}}{T \Delta V}
+
+![This diagram depicts the entropy (S) as a function of temperature (T), showing a discontinuous jump in entropy (ΔS) at a critical temperature (T₀), characteristic of a first-order phase transition.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-08_630_957_306_1817.jpg)
+
+Näherung (ideales Gas): $V_{\mathrm{f}} \ll V_{\mathrm{g}}, V_{\mathrm{g}} \simeq N k_{B} T / p, q_{L}=Q_{L} / N$
+
+\frac{d p_{0}}{p_{0}}=\frac{q_{L}}{k_{B} T^{2}} d T \quad \Rightarrow \quad p_{0}(T)=C e^{-q_{L} /\left(k_{B} T\right)}
+
+- Bestimmung der gesamten Dampfdruckkurve aus Verdampfungswärme an einem Punkt im ( $\mathrm{p}, \mathrm{T}$ ) Diagram.
+- Bestimmung der Verdampfungswärme aus $\mathrm{p}_{0}(\mathrm{~T})$ Messung.
+
+
+## B) Mehrphasige / mehrkomponentige Systeme
+
+Unter gewissen Bedingungen kann ein System auch in mehr als 2 Phasen gleichzeitig existieren:
+Z.B. "Tripelpunk"
+
+Gas-Flüssigkeit-Festkörper
+![This is a phase diagram showing the states of matter (solid, liquid, gas) of a substance as a function of pressure and temperature, including the triple point and critical point.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-09_793_1136_253_1701.jpg)
+
+Für mehrkomponentige Stoffe erhält man den Zusammenhang:
+
+f=2+n-r
+
+## "Gibbssche Phasenregel
+
+f ... Anzahl der frei wählbaren (intensiven)
+n ... Anzahl der (chemisch verschiedenen) Komponenten
+r ... Anzahl der vorliegenden Phasen
+
+### 10.1.2 Symmetriebrechung und Ordnungsparameter
+
+Bei den meisten Phasenübergängen wird eine Symmetrie des Systems spontan gebrochen. Dabei geht das System von einem ungeordneten Zustand mit hoher Symmetrie in einen geordneten Zustand mit niedrigerer Symmetrie über
+
+| Phase | gebrochene Symmetrie |
+| :--- | :--- |
+| Kristall | Translationssymmetrie |
+| Ferromagnet | Rotationssymmetrie |
+| Ising-Ferromagnet | Inversionssymmetrie |
+| Supraleiter | Eichsymmetrie (global Phasenrotation) |
+
+-Phase bei hoher Temperatur ist in der Regel ungeordnete Phase mit höherer Symmetrie.
+
+- Ausnahmen zur Symmetriebrechung: z.B. Gas -> Flüssigkeit
+
+
+## "Ordnungsparameter":
+
+Makroskopische Zustandsvariable, die in der ungeordneten Phase verschwindet, aber in der geordneten Phase einen endlichen Wert annimmt.
+
+| Phase | Ordnungsparameter $\varphi$ |
+| :--- | :--- |
+| Ferromagnet | Magnetisierung $\overrightarrow{\mathcal{M}}$ (Vektor) |
+| Ising-Ferromagnet | Ising-Magnetisierung $m$ (Skalar) |
+| Flüssigkeit | Dichtedifferenz $\Delta n=n_{\mathrm{f}}-n_{\mathrm{g}} \quad$ (Skalar) |
+| Suprafluides He | Grundzustandswellenfunktion $\Psi_{0}$ (komplex) |
+| Supraleiter | Energielücke $\Delta$ (Skalar) <br> Cooper-Paar-Wellenfunktion $\Psi_{s}$ (komplex) |
+|  |  |
+
+- bei Symmetriebrechung -> Ordnungsparameter als zusätzlicher Parameter zur Beschreibung des Systems notwendig
+- allgemein keine systematische Methode, den Ordnungsparameter einer Phase zu identifizieren
+
+
+### 10.2 Kritische Phänomene
+
+Das Verhalten eines Systems in der Nähe des kritischen Punkts hängt nicht von mikroskopischen Details ab und wird durch wenige kritische Exponenten beschrieben.
+
+### 10.2.1 Kritische Exponenten
+
+Die kritischen Exponenten $\alpha, \beta, \gamma$ und $\delta$ beschreiben das Verhalten therm. Größen in der Umgebung eines Phasenübergangs 2. Ordnung:
+
+|  | mag. System | Gas/Flüssigkeit |
+| :--- | :---: | :---: |
+| spez. Wärme | $C_{B} \sim\|\tau\|^{-\alpha}$ | $C_{T} \sim\|\tau\|^{-\alpha}$ |
+| Ordnungsparameter | $m \sim\|\tau\|^{\beta}$ | $\delta v \sim\|\tau\|^{\beta}$ |
+| Response-Funktion | $\chi \sim\|\tau\|^{-\gamma}$ | $\kappa_{T} \sim\|\tau\|^{-\gamma}$ |
+| Zustandsgleichung $(\tau=0)$ | $B \sim m^{\delta}$ | $\delta p \sim \delta v^{\delta}$ |
+
+wobei:
+
+\tau=\left(T-T_{c}\right) / T_{c}
+
+## Bemerkungen:
+
+- Divergentes Verhalten meist symmetrisch um $\mathrm{T}=\mathrm{T}_{\mathrm{c}}$.
+- Ausnahme: Ordnungsparameter, da $m=0$ für $\mathrm{T}>\mathrm{T}_{\mathrm{c}}$.
+- allgemeine Definition der kritischen Exponenten: $\alpha=\lim _{\tau \rightarrow 0^{+}} \frac{\ln f(\tau)}{\ln \tau}$
+
+Damit erhält man $\alpha=0$ für Sprung in der Funktion $f(\tau)$ oder auch für logarithmische Divergenz, $f(\tau) \sim-\ln (|\tau|)$.
+
+## Korrelationen:
+
+Weiters führt man 2 weitere Exponenten $\eta$ und $\nu$ zur Beschreibung räumlicher Korrelationen ein.
+
+Man findet $\left(\mathrm{T} \sim \mathrm{T}_{\mathrm{c}}\right): \quad G(\vec{r})=\langle\varphi(\vec{r}) \varphi(0)\rangle-\langle\varphi(\vec{r})\rangle\langle\varphi(0)\rangle \quad \sim \frac{e^{-|\vec{r}| / \xi}}{|\vec{r}|^{p}}$
+
+- Korrelationslänge: $\quad \xi \sim|\tau|^{\nu} \longrightarrow \infty$
+- Potenzgesetz bei $\mathrm{T}=\mathrm{T}_{\mathrm{c}}: \quad p=d-2+\eta \quad d \ldots$ Dimension
+
+
+### 10.2.2 Universalität:
+
+Die kritischen Exponenten sind universell, d.h. sie hängen nicht von mikroskopischen Details des Systems sondern nur von
+
+1. der Dimension d des Systems
+2. der Reichweite der Wechselwirkung
+3. der Anzahl der Komponenten/Symmetrie des Ordnungsparameters ab .
+
+⇒ "Universalitätsklasse": Alle Phasenübergänge mit gleichen kritischen Exponenten.
+
+| Universalitätsklasse | $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\nu$ | $\eta$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| MF-Theorien | $0(\operatorname{disk})$ | $1 / 2$ | 1 | 3 | $1 / 2$ | 0 |
+| 2D Ising | $0(\log )$ | $1 / 8$ | $7 / 4$ | 15 | 1 | $1 / 4$ |
+| 3D Ising | 0.11 | 0.33 | 1.24 | 4.82 | 0.63 | 0.03 |
+| Potts (2D,q=3) | $1 / 3$ | $1 / 9$ | $13 / 9$ | 14 | $5 / 6$ | $4 / 15$ |
+
+## Bemerkungen:
+
+-) Exakte Lösung des 1D Ising Modells mit transversalem Feld bei $\mathrm{T}=0$ :
+
+\beta=1 / 8, \nu=1, \eta=1 / 4, \ldots \quad \Leftrightarrow \quad \begin{array}{r}
+\text { Universalitätsklasse: } \\
+\text { 2D Ising Modell }
+\end{array}
+
+-) allgemein: Korrespondenz zwischen d-dim. Quantenphasenübergang $(\mathrm{T}=0)$ und Phasenübergang in $(\mathrm{d}+1)$-dim. klassischen Modell.
+-) Skalierungsrelationen (ohne Beweis):
+
+\begin{array}{cl}
+\alpha+2 \beta+\gamma=2 & 2-\alpha=d \nu \\
+\gamma=\beta(\delta-1) & \gamma=\nu(2-\eta)
+\end{array}
+
+## ⇒ Es gibt nur 2 unabhängige kritische Exponenten !
+
+### 10.3 Landau Theorie
+
+- erste allgemeine (phänomenologische) Theorie von Phasenübergängen (2.Ordnung)
+- wichtigste Anwendung: Beschreibung der Eigenschaften von Supraleitern (Ginzburg, Landau 1950) (noch ohne mikroskopisches Modell)
+
+
+## Grundlegende Annahmen:
+
+1) Der PÜ zwischen einer ungeordneten und einer geordneter Phase wird durch den Ordnungsparameter $\varphi$, bzw. durch dessen i. A. ortsabhängige Dichte $\psi(\vec{r})$ beschrieben:
+
+\varphi=\int d^{3} r \psi(\vec{r}), \quad \psi(\vec{r}) \begin{cases}=0 & T>T_{c} \\ \neq 0 & T<T_{c}\end{cases}
+
+2) In der Nähe des PÜ ist $\psi(\vec{r})$ klein und die freie Energie kann in Potenzen von $\psi(\vec{r})$ und $\nabla \psi(\vec{r})$ entwickelt werden:
+
+\begin{gathered}
+F(T ; \varphi)=F_{0}(T)+\int d^{3} r\left[-\pi(\vec{r}) \psi(\vec{r})+a(T) \psi^{2}(\vec{r})+b(T) \psi^{4}(\vec{r})\right. \\
+\left.+c(T)(\nabla \psi(\vec{r}))^{2}+\ldots\right]
+\end{gathered}
+
+## Diskussion:
+
+- $\pi(\vec{r})$ : die zum Ordnungsparameter konjugierte Kraft / externes Feld: z.B. homogenes Magnetfeld:
+
+\pi(\vec{r}) \equiv \mu B, \quad \psi(\vec{r}) \equiv \mathcal{M} \quad \varphi=-\frac{\partial F}{\partial \pi} \Leftrightarrow \mathcal{M}=-\frac{\partial F}{\partial B}
+
+Achtung: Ankopplung an externes Feld ⟶ explizite Symmetriebrechung!
+
+- Für $\pi(\vec{r})=0$ muss die freie Energie invariant unter Symmetrietransformationen sein!
+
+\text { z.B. } \quad F(T, \varphi)=F(T,-\varphi) \quad \Rightarrow \quad \begin{aligned}
+& \text { keine ungeraden Potenzen } \\
+& \text { von } \psi(\vec{r}), \nabla \psi(\vec{r}) \text { erlaubt! }
+\end{aligned}
+
+- Allgemeiner Ordnungsparameter: $\psi(\vec{r}) \in \mathbb{C}, \vec{\psi}(\vec{r}) \in \mathbb{R}^{n}, \ldots$
+
+\psi^{2}(\vec{r}) \rightarrow|\psi(\vec{r})|^{2}, \vec{\psi} \cdot \vec{\psi}, \ldots \in \mathbb{R} \quad \begin{aligned}
+& \text { invariant unter Rotationen, } \\
+& \text { Eichtransformationen, etc. }
+\end{aligned}
+
+### 10.3.1 Phasenübergänge 2. Ordnung
+
+## homogenes System:
+
+F(T ; \varphi) \simeq F_{0}(T)-\pi \varphi+a(T) \varphi^{2}+b(T) \varphi^{4}+\ldots
+
+- Im Gleichgewichtszustand ist die freie Energie minimal, d.h.:
+
+\frac{\partial F}{\partial \varphi}=0, \quad \frac{\partial^{2} F}{\partial \varphi^{2}}>0, \quad b(T)>0
+
+\begin{array}{ll}
+\Rightarrow & 2 a(T) \varphi+4 b(T) \varphi^{3}=\pi \\
+\Rightarrow & 2 a(T)+12 b(T) \varphi^{2}>0
+
+Existenz eines globalen Minimums
+
+- Für $\pi=0$ (ohne externe Symmetriebrechung) ergeben sich damit zwei verschiedene stabile Lösungen:
+$(\mathbf{I}) a(T)>0$ :
+
+\varphi=0
+
+( → ungeordnete Phase, $\mathrm{T}>\mathrm{T}_{\mathrm{c}}$ )
+(II) $a(T)<0$ :
+
+\varphi= \pm \sqrt{\frac{-a(T)}{2 b(T)}}
+
+( → geordnete Phase, $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ )
+
+Um einen Übergang von einer ungeordneten zu einer geordneten Phase zu erhalten, muss $a(T)$ bei $\mathrm{T}=\mathrm{T}_{\mathrm{c}}$ das Vorzeichen wechseln.
+einfachste Annahme: $\quad a(T) \approx a_{0}\left(T-T_{c}\right), \quad b(T) \approx b_{0}$
+![This diagram depicts the free energy \(F(T; \varphi)\) as a function of an order parameter \(\varphi\) for different temperatures relative to a critical temperature \(T_c\), illustrating the behavior of a system undergoing a second-order phase transition. It shows how the free energy landscape changes shape, with a single minimum at \(\varphi=0\) for \(T > T_c\), a flat inflection at \(T = T_c\), and two symmetric minima for \(T < T_c\), indicating spontaneous symmetry breaking.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-19_830_1412_602_126.jpg)
+![This diagram depicts the temperature dependence of an order parameter ϕ(T) near a critical temperature Tc, showing that ϕ(T) follows a square root behavior proportional to √(Tc - T) below Tc and is zero above Tc, characteristic of a second-order phase transition.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/0c5e62cc-98f5-492d-a706-27be6593c1e6/70b260bd-5d0e-4790-83be-d2021eaf0ec7-19_693_852_649_1954.jpg)
+
+\varphi= \begin{cases}0 & T>T_{c} \\
+\pm \sqrt{\frac{a_{0}}{2 b_{0}}}\left(T_{c}-T\right)^{\frac{1}{2}} & F(T) \simeq\left\{\begin{array}{ll}
+F_{0}(T) & T<T_{c} \\
+F_{0}(T)-\frac{a_{0}^{2}}{4 b_{0}}\left(T-T_{c}\right)^{2} &
+\end{array}\right\}\end{cases}
+

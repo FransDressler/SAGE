@@ -1,0 +1,48 @@
+### 1.3 Unbische Stukturen
+
+- Vubisch primitiv: (simple cubic - sc)
+- kubisch innemzentient : (body centered cubic - bcc
+- Kubisch flichenzentiant : (face centered cubic - fcc )
+
+6 uächste Nachbaun: a "Koondinationszale"
+
+12 übeniādiste Nechboun atron Padkungsvaliāltuis : $\quad 52 \%$
+
+Unbische EZ wit 2 Gitter punkten bei $(0,0,0)$ and $\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right)$ 8 viächiste Nachbana a $\frac{\sqrt{3}}{2}$ Packmysverlialtius $68 \%$
+Vubische EZ uit 4 Gitterpendete 12 vëchste Nadiban $a / \sqrt{2}$ 6 überiächisle Nechbonn a Padumys verhältuis $74 \%$
+
+⇒ hödiste kocidinationszale, dichteste Paduy.
+1.4 kcp - Stuktmen (hexajonally close-packed)
+primitive EZ: $\alpha=120^{\circ}, a=b_{i}$
+
+$$
+\begin{aligned}
+c & =\sqrt{\frac{8}{3}} \cdot a \\
+& \cong 1,63 a \\
+\operatorname{Basis}(0,0,0), & \left(\frac{2}{3}, \frac{1}{3}, \frac{1}{3}\right)
+\end{aligned}
+$$
+
+## Dichleste Vujelpadiumy
+
+Die hexajonal diditeste kugelpacturing eutsteht, wenn man sin hexagon ales Bravais-Gitter wit einer Basis ans (cuind.) zavè glaichartijer Atomen kombiniest.
+Das euste sei bè $(0,0,0)$, das zweite bei $\left(\frac{2}{3}, \frac{1}{3}, \frac{1}{3}\right)$, also aut halbor c-Achsenholo im zentime eines Basisdiciedes.
+
+⇒ Es gibt hein hexagonal diehtest appacktes Gitler, soudau nur einen hexajoual dichlest gepachten Enist all.
+
+## 1.5 $\frac{\text { Die Diamant - Stuktur }}{C_{1} \text { Si , Ge }}$ <br> $\uparrow$
+
+(wenn Diacmant)
+fcc-Stuktus wit 2 -atonijos Basis $(0,0,0),\left(\frac{1}{4}, \frac{1}{4}, \frac{1}{4}\right)$
+kondinationszale 4
+Packurysdichte $34 \%$
+Unsache
+$s p^{3}$ - Hybnidisiercung.
+
+## Bemerkungen:
+
+- Veine 4-zählige Drehachse durda Würfelfeiche!
+- Kohlenstoff hocunt in unterschiedliclon knistall forma vor, sog. Polymople!
+Diamant, Graphit, Graphen, Bilajer-Graphar, Fallereve, kohlen-Nauoräduchen, etc....
+- Zinkblendestuktur: wie Diamant, abs Basis ans twei cuterschiedliche Atom z.B. ZnS, GaA, luSb, GaP (III-II Halbleito).
+

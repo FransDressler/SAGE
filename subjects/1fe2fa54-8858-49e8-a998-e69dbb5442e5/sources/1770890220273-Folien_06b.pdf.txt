@@ -1,0 +1,66 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Bindungsverhältnisse in Kristallen (bei RT)
+ptable.com
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Stabile Bindung / Festkörper
+aus Hunklinger
+Balance zwischen attraktiven und repulsiven Kräften
+zwischen Atomen und Elektronen
+Potentielle Energie minimiert, wenn:
+- Coulomb-Abstoßung zwischen positiven Atomrümpfen möglichst klein (tatsächlich dominiert Pauli-Prinzip),
+- Coulomb-Abstoßung zwischen Elektronen möglichst klein (Pauli-Prinzip),
+- Coulomb-Anziehung zwischen Atomrümpfen und Elektronen möglichst groß ist.
+Kinetische Energie möglichst klein:
+- Lokalisierung auf
+x erhöht kinetische Energie (Teilchen in einer Box)
+- -
++ +
+𝐸𝑘𝑖𝑛~
+ħ2𝜋2
+8𝑚Δ𝑥
+Stabile Bindung:
+Gesamtenergie (Ekin + Epot) < Energie der individuellen Atome
+
+Gitterstrukturen
+der chemischen Elemente
+Tabelle 2.2 aus Hunklinger
+Abb. 1.17 aus Gross / Marx
+hcp: ABCABC …
+dhcp: ABACABAC…
+sc
+
+Bindungsverhältnisse in Kristallen
+aus Gross, Marx
+Fünf Grundtypen:
+• van-der-Waals Bindung (Edelgaskristalle)
+• Wasserstoffbrücken-Bindung
+• Metallische Bindung (alle Metalle)
+• Ionische Bindung (Alkalihalogenid-Kristalle)
+• Kovalente Bindung (Diamant, Silizium, Germanium)
+Stärke
+Wasserstoffbrücken
+-Bindung
+
+aus Hunklinger
+Stark schematisierte Darstellung
+der Ladungsverteilung grundlegender Bindungstypen.
+Bindungstypen
+unterscheiden
+sich in Stärke &
+Richtungs-
+abhängigkeit
+van-der Waals
+Bindung
+Ionische
+Bindung
+Kovalente
+Metallische
+Bildung
+
+Gleichgewichtsabstand
+repulsive WW: ~A/rn
+(Überlapp der Wellenfunktionen)nn
+nm anziehende WW: ~B/rm
+r0
+Gleichgewichtsabstand

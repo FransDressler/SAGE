@@ -1,0 +1,5 @@
+![This diagram is a flow chart for determining the point group of a molecule based on its molecular geometry and symmetry elements. It guides the user through questions about linearity, inversion centers, rotation axes, and mirror planes to classify the molecule into its correct point group.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a353a5a8-7349-4427-90d4-4ce1e12695cc/6c54a5ce-064d-4245-9846-a5b153fb1558-1_2152_1620_268_247.jpg)
+
+![This diagram is a Hermann–Mauguin symmetry notation flow chart used for determining the crystallographic space group symbols based on symmetry elements present in a crystal system. It guides the user through a series of yes/no questions about symmetry operations to identify the correct space group notation.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a353a5a8-7349-4427-90d4-4ce1e12695cc/6c54a5ce-064d-4245-9846-a5b153fb1558-2_2005_1561_348_309.jpg)
+Breneman, G. L. (1987). Crystallographic symmetry point group notation flow chart. Journal of Chemical Education, 64(3), 216. https://doi.org/10.1021/ed064p216
+

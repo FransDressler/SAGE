@@ -1,0 +1,513 @@
+01. Growth 1
+Experimental methods in solid-state physics
+01 Crystal growth
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+01. Growth 2
+Growth methods for 3D bulk crystals
+Photograph of a silicon CZ puller with 200 mm crystal.
+(Wacker Siltronic AG).DOI:10.13140/RG.2.1.3112.9209
+Czochralski method
+(pulling from the melt)
+Float zone
+(inductive melting)
+Bridgman method
+(temperature gradient)
+Wikipedia, Cepheiden CC BY-SA 3.0.
+Wikipedia, Matthias Renner CC BY-SA 3.0.
+Induction coil
+Poly-Si
+
+01. Growth 3
+Chemical vapor transport (CVT)
+• Transport reaction of the form
+1. AB(s) + X(g) → AX(g) + B(g)
+2. Reversed reaction
+• X(g) forms a volatile component with the source material AB(s).
+It is called the transport agent.
+• The reactants sealed in the reactor (e.g. glass ampule) and
+placed in a temperature gradient.
+• The growth process is completely controlled by
+thermodynamics → highly repeatable and predictable.
+• High quality bulk single crystals can be fabricated from lower
+quality source materials, e.g. powder.
+• Materials exploration → New materials can be rapidly
+synthesized and their structural and chemical properties can be
+characterized (X-ray crystallography, XPS analysis, etc.)
+Binnewies et al. Z. Anorg. Allg. Chem. 2013, 639, (2), 219–229, Copyright Wiley 2013.
+MoS2 MoTe2
+
+01. Growth 4
+Flux growth achieves low defect density
+Defect density in equlibrium
+CVT Annealed Self-flux
+500 nm x 500 nm
+Self-flux growth of WSe2
+Nano Lett. 2019, 19, 7, 4371–4379, https://doi.org/10.1021/acs.nanolett.9b00985
+• Source material is dissolved
+(WSe2) in a solvent (Se)
+• Se-rich conditions reduce the
+equilibrium concentrations of Se-
+defects
+crystals precipitateprecursors in solution
+cooling
+~1°C / h
+sealed ampule
+• The equilibrium defect concentration is given by the
+Arrhenius equation
+• E: formation energy of the defect (in eV)
+Example:
+• For E = 2 eV, T = 1400 K:
+• For E = 4 eV, T = 1400 K:
+𝑛 = 𝑁0 ⋅ 𝑒−𝐸/(𝑘𝑏𝑇)
+𝑛
+𝑁 ≈ e−1/(8.6e−5 ⋅1400)) ≈ 𝑒−16 ≈ 0.1 ppm
+𝑛
+𝑁 ≈ 𝑒−32 ≈ 10 ppt
+ACS Nano 2019, 13, 5, 6050–6059
+https://doi.org/10.1021/acsnano.9b02316
+
+01. Growth 5
+Defect density in equilibrium
+Nano Lett. 2019, 19, 7, 4371–4379, https://doi.org/10.1021/acs.nanolett.9b00985
+
+01. Growth 6
+Growth modes in thin film deposition
+Growth Mode Description Driving Force Morphology
+Typical
+Conditions /
+Examples
+Volmer–Weber
+Island growth: atoms
+bond more strongly to
+each other than to the
+substrate.
+High adatom–
+adatom binding
+energy
+3D islands
+Metals on
+insulators;
+e.g. Au on SiO₂
+Frank–van der
+Merwe
+Layer-by-layer growth:
+atoms bond more
+strongly to the
+substrate.
+High adatom–
+substrate binding
+energy
+Uniform
+monolayers
+Epitaxial
+semiconductors
+with good lattice
+match
+Stranski–
+Krastanov
+Layer-plus-island
+growth: initial layer-by-
+layer followed by
+island formation.
+Strain accumulation
+due to lattice
+mismatch
+Monolayer followed
+by 3D islands
+Ge on Si, InAs on
+GaAs (strained-
+layer heteroepitaxy)
+substrate
+substrate
+strained layer
+
+01. Growth 7
+Molecular beam epitaxy (MBE)
+• Material growth directly from the corresponding elements.
+• Ultra-high-vacuum environment (p = 10-10 mbar)
+• Epitaxial growth. Vertical growth rate ~Å/min. Suitable for thin films.
+• Technologically very relevant, since it provides very high material quality and
+is also scalable.
+AlGaAs MBE at WSI-TUM
+Nature Materials 20, 632–637 (2021)
+
+01. Growth 8
+Metal organic vapor deposition
+Nano Lett. 18, 1049−1056 (2018)
+Link
+MOCVD Reactor Gas flow control
+ACS Nano 9, 2, 2080–2087 (2015).
+• Metal organic precursors
+• High-vacuum environment
+• Precise control over
+temperature, flow rate, flow
+profile.
+• Technologically very relevant,
+since it provides very high
+material quality and is also
+scalable (e.g. LEDs)
+
+01. Growth 9
+Lattice constant of semiconductor materials
+D S Arteev et al J. Phys.: Conf. Ser. 1135 012050 (2018)Sensors 2013, 13(4), 5054-5098; https://doi.org/10.3390/s130405054
+Blue LED
+Nobel Prize in Physics 2014
+Near to mid-infrared technology
+(nightvision, environmental sensing)
+CMOS Chip technology
+(Intel, IBM, Nvidia, AMD, …)
+High-frequency electronics
+
+01. Growth 10
+Examples of strained heterostructures – Buffer layers
+Lattice matching between materials with vastly
+different lattice constants
+target film
++
+???
+
+01. Growth 11
+Examples of strained heterostructures – Buffer layers
+Lattice matching between materials with vastly
+different lattice constants
+target film
++
+Side view Top view
+• Lattice matching by growth of a thick buffer layer
+• Strain relaxation and defect formation iside the buffer layer
+• Graded buffer: stepwise or continous adaption to target
+lattice → interfaces or buffer layer traps the defects
+(mainly threading dislocations → „durchlaufende
+Versetzung“)
+???
+
+01. Growth 12
+Examples of strained heterostructures – Quantum dots
+Nanomaterials 2020, 10(12), 2450;
+• Growth of a thin strained layer on a „wetting
+layer“
+• Beyond critical thickness → island formation
+(Stranski-Krastanoff growth)
+• Overgrowth of the islands → self-assembled
+embedded quantum dots
+→ see for example lecture on Advanced
+Semiconductor Physics
+Quantum dot = particle in a box
+Energy quantization in all spatial
+dimensions:
+• 0D electron system (artifical atom)
+• Discrete energy states
+
+01. Growth 13
+Experimental methods in solid-state physics
+02 Real space structure – STM & AFM
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+01. Growth 14
+Transmission electron microscope 1931 2025
+b
+a
+2 nm
+IBM (Rüschlikon)Fritz-Haber-Institut (Berlin) Scanning tunneling microscope 1983 2014
+Binnig, Roher, et. al.
+Phys. Rev. Lett. 50, 120 (1983)
+© Julian Klein, MITErnst Ruska, Nobel Lecture
+Nanoscale Research Letters 9, 377, (2014)
+Bulk (Volumen) Surface (Oberfläche)
+
+01. Growth 15
+„Gott schuf das Volumen, der Teufel die Oberfläche.“ (Wolfgang Pauli, angeblich)
+What about the surface ???
+• no periodicity, unsaturated bonds, reconstructions, …
+Periodic crystal (main topic of this year):
+• Periodicity → Bloch Theorem → simplified
+Schrödinger equation
+• „Simple rules“ for allowed energy levels →
+band structure
+
+01. Growth 16
+„Gott schuf das Volumen, der Teufel die Oberfläche.“ (Wolfgang Pauli, angeblich)
+Relevance of surfaces and interfaces:
+• friction: microscopic interaction between surfaces
+• chemical reactions:
+• surfaces or defects are active centers in
+catalysis
+• corrosion depends on surface properties
+• electronics:
+• transport across interfaces (e.g. solar cell)
+• scattering from surfaces (Si-transistor)
+https://www.science.org/doi/10.1126/science.aan0979 Wikipedia
+
+01. Growth 17
+STM vs. AFM
+e-
+Tip
+Surface
+AFM
+STM
+Tunneling current
+• due to an applied voltage
+• due to local electronic structurre
+Electrostatic force due
+• to dipole interaction (vdW interaction)
+• to Pauli repulsion (exchange interaction)
+I ~ exp(-d/z) ∙ LDOS
+z0 ~ Å - nm
+
+01. Growth 18
+Technical implementation of STM
+TUM Prof. Barth, Prof. Auwärter
+UHV STM
+TUM Prof. Bandarenka
+TUM Prof. Eichhorn
+Ambient (or liquid) STM
+
+01. Growth 19
+Example: HOPG, and graphene
+cf. Lecture on „2D materials“ – Prof Holleitner, Summer Term 2026
+Applied Surface Science, 466, 2019, Pages 51-58Solid State Commun. 149, 1151-1156 (2009
+
+01. Growth 20
+Example: Defects in WS2
+cf. Lecture on „2D materials“ – Prof Holleitner, Summer Term 2026
+Band gap
+Defect state
+resonant tunneling
+
+01. Growth 21
+Example: different surfaces of Si
+
+01. Growth 22
+Example: different surfaces of Si
+Nanoscale Research Letters 9, 377, (2014)E. Crane et al 2018 J. Phys.: Conf. Ser. 1079 012010
+Si (001) Si (111)
+Phys. Rev. B 67, 035405 (2003)
+Surface reconstruction Scientific Reports 11,
+15034 (2021)
+
+01. Growth 23
+Working principle of AFM
+Mechanical resonance
+
+01. Growth 24
+Example: Mica – „Glimmer“
+Wikipedia
+
+01. Growth 25
+Example from biophysics: DNA
+Scientific Reports 7, 15275 (2017).
+
+01. Growth 26
+200 μm
+tungsten wire
+1 nm
+F ≈ pN
+• The interaction of the tip with a crystal surface
+results in by tiny electrostatic forces (F ≈ pN)
+• These forces appears as additional damping
+terms in the equation of motion.
+• The additional damping shifts the resonance
+frequency of the oscillator
+tungsten tip
+Tuning fork AFM
+
+01. Growth 27
+Tuning fork AFM - Quarz Crystal Oscillators
+quartz crystal
+electrodes
+Direct piezoelectric effect
+• Deformation of the crystal results in a polarisation P.
+• The polarisation can be measured as a surface charge or voltage.
+• This can be used in sensors.
+Inverse piezoelectric effect
+• An applied field polarizes the crystal.
+• The crystal responds with a deformation ΔL.
+• This can be used in actuators.
+++
+-
+-
+- +
+++
+P
+Si O
+Si Si
+O
+O
+applied deformationΔL
+
+01. Growth 28
+Quarz Crystal Oscillators – Equivalent circuit
+motional inductance
+motional capacitance
+resistance
+static capacitance
+• electrodes
+• stray capacitance to the environment
+The quartz oscillator can be modelled by an equivalent electronic circuit
+
+01. Growth 29
+Quarz Crystal Oscillators – Resonance frequency
+𝜔res
+2 = 1
+𝐿𝐶 − 𝑅2
+4𝐿2
+𝜔res
+2 = 1
+2 ⋅ 104 H ⋅ 10−15 F − 1
+4
+5 ⋅ 105 Ω
+2 ⋅ 104 H
+2
+2 1011s−2 − 5
+4
+2
+⋅ 100s−2
+Resonance frequency
+𝜔res ≈ 𝜔0 = 223 000 s−1
+𝑓0 ≈ 35.5 kHZ
+
+01. Growth 30
+Quarz Crystal Oscillators – Q-factor
+𝑄 = 𝑅 𝐿
+𝐶 = 𝜔0𝐿
+𝑅 = 1
+𝜔0𝑅𝐶
+𝑄 = 1
+2𝜋 ⋅ 35.5 kHz ⋅ 500 kΩ ⋅ 1 fF
+𝑄 = 1
+10𝜋 ⋅ 35.5 107 ≈ 9000
+Q-factor
+
+01. Growth 31
+Quarz Crystal Oscillators – Precise frequency standards
+tungsten tip𝑄 = 𝑓res
+Δ𝑓 ≈ 3000
+Δ𝑓(FWHM) ≈ 10 Hz
+𝑓res = 32 698 Hz
+• 215 = 32 768 Hz
+• Used as frequency reference in
+wrist watches
+• 1 Hz is derived from f0 by a
+cascade of digital frequency
+dividers (T-flop)
+
+01. Growth 32
+200 μm
+tungsten wire
+Bonds of an organic molecule Atomic defects in a 2D crystal
+1 nm
+F ≈ pN
+Tuning fork AFM - Seeing the internal structure of bonds
+
+01. Growth 33
+03 Real space structure – TEM
+
+01. Growth 34
+Transmission electron microscope 1931 2025
+b
+a
+2 nm
+IBM (Rüschlikon)Fritz-Haber-Institut (Berlin) Scanning tunneling microscope 1983 2014
+Binnig, Roher, et. al.
+Phys. Rev. Lett. 50, 120 (1983)
+© Julian Klein, MITErnst Ruska, Nobel Lecture
+Nanoscale Research Letters 9, 377, (2014)
+Bulk (Volumen) Surface (Oberfläche)
+
+01. Growth 35
+What do Samsung TVs have in common with the Nobel prize in chemistry 2023
+
+01. Growth 36
+Optical microscopy: the basics
+Object
+Magnified image
+Objective lenses
+Illumination
+Magnification:
+• Mag1 x Mag2 x Mag3 …
+• (arbitrarily) large
+Resolution:
+• λ/(2 NA) → diffraction limit in the far field
+• 532 nm (green), NA ~ 1 → 266 nm
+
+01. Growth 37
+Optical microscopy: contrast mechanisms
+Source: Zeiss.
+Source: myscope.training.
+
+01. Growth 38
+Interaction of charged particles with matter
+electron (or ion)
+scattering with
+localized nuclei (elastic)
+scattering delocalized electrons
+(inelastic)
+Knock-on damage threshold:
+~ 100 keV depending on bond strength
+
+01. Growth 39
+Principle of magnetic focussing
+Sketch of an objective lens
+https://www.jeol.com/words/emterms/20121023.060558.php#gsc.tab=0
+Magnetic lens
+
+01. Growth 40
+Brightfield transmission electron microscopy
+https://www.itgagroup.com.au/asbestos-tem-analysis/
+TEM image on a fluorescent screen while adjusting beam parameters
+
+01. Growth 41
+Brightfield transmission electron microscopy
+DOI: 10.1109/TED.2017.2771785
+„quantum dot“
+
+01. Growth 42
+Quantum dots with well defined size have well defined colors
+DOI: 10.1109/TED.2017.2771785
+
+01. Growth 43
+What do Samsung TVs have in common with the Nobel prize in chemistry 2023
+
+01. Growth 44
+Darkfield transmission electron microscopy
+https://physik.uni-paderborn.de/en/lindner/nanostrukturierung-nanoanalytik-photonische-
+materialien/research-1/temstem-2
+
+01. Growth 45
+Darkfield transmission electron microscopy
+Source: Perovskite Oxide Nanocrystals — Synthesis, Characterization, Functionalization, and Novel Applications
+
+01. Growth 46
+Scanning transmission electron microscopy (STEM)
+Source:Jeol
+Bulk sample
+Atomic column
+https://www.nature.com/articles/srep37788
+
+01. Growth 47
+Scanning transmission electron microscopy (STEM)
+CrSBr – Layered antiferromagnet
+
+01. Growth 48
+Making samples
+Source Tescan
+Cut from bulk crystal Make from layered crystal
+
+01. Growth 49
+Defects in STEM – hexagonal boron nitride
+Phys. Rev. Materials 9, 056203 (2025)
+Small June 2023 19(39):e2301926 DOI:10.1002/smll.202301926
+Electron beam etching
+Knock-on damageOptically active defect centers for quantum sensing
+Optically active defect centers for quantum communication
+single photon emitters
+
+01. Growth 50
+TEM in biophysics? Absolutely! Cryo – EM.

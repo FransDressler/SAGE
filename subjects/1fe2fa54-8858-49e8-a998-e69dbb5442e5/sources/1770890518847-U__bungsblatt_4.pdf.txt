@@ -1,0 +1,86 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 17.11.26
+Blatt 4
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Leonard Geilen
+4.1 Bindungstypen
+Im Festk¨orper kann man zwischen verschiedenen Bindungstypen unterscheiden, die
+jedoch nur selten in reiner Form auftreten. Welche Bindungstypen dominieren in der
+festen Phase der folgenden Materialien: Argon, Magnesium, Diamant, kristalliner
+Quarz, Quarzglas, Polyethylen, GaAs, KBr und NH3?
+4.2 Born-Haber Kreisprozess
+Die Bindungsenergie von Ionenkristallen kann mit Hilfe des Born-Haber Kreisprozesses
+ermittelt werden. Berechnen Sie mit diesem Verfahren die Bindungsenergie eines
+1 cm3 großen KBr Kristalls in eV. Dieser besitzt eine Dichte ρ = 2.75 g cm−3.Die
+folgenden Gr¨oßen beziehen sich jeweils auf ein Atom bzw. auf ein Molek¨ul:
+• Ionisierungsenergie von Kalium (K −−→ K+) |∆HIon| = 4.34 eV,
+• Sublimationsenthalpie von Kalium |∆HSub| = 0.90 eV,
+• Verdampfungsenthalpie von Brom |∆HVap| = 0.30 eV,
+• Elektronenaffinit¨at von Brom (Br −−→ Br– ): |∆HAff| = 3.37 eV,
+• Dissoziationsenergie von Br2 |∆HDiss| = 1.97 eV,
+• Reaktionsw¨arme bei der Bildung von KBr aus metallischem Kalium und fl¨ussigem
+Brom |Q| = 4.05 eV.
+Beschreiben Sie kurz die Energien die im Prozess freigesetzt oder aufgewendet wer-
+den. Zeichnen Sie ein Schema des Prozesses mit der Enthalpie¨anderung als vertikale
+Achse.
+
+4.3 sp2-Hybridisierung in Graphit
+Graphit besteht aus Kohlenstoffschichten, bei denen die Atome in einem hexago-
+nalen Gitter angeordnet sind. Innerhalb einer Schicht (x-y-Ebene) sind die Kohlen-
+stoffatome stark ¨uber kovalente Bindungen gebunden. Wobei in dem hexagonalen
+Gitter jedes Kohlenstoffatom eine Bindung mit drei Nachbaratomen eingeht. Die
+Schichten sind wiederum nur schwach durch Van-der-Waals-Kr¨afte gebunden.
+Die dreiz¨ahlig symmetrische Anordnung (bzgl. der z-Achse) der Bindungen um ein
+Kohlenstoffatom bezeichnet man als sp2-Hybridisierung. Sie l¨asst sich als durch eine
+Linearkombination der drei konventionellen Orbitale
+|ϕ2s⟩ = 1
+4√2π
+
+2 − Zr
+aB
+
+e− Zr
+2aB
+|ϕ2px ⟩ = 1
+4√2π
+Zr
+aB
+e− Zr
+2aB sin θ cos φ
+|ϕ2py ⟩ = 1
+Zr
+2aB sin θ sin φ
+darstellen.
+(a) Sind die angegeben Orbitale schon normiert und orthogonal? Was muss gegebe-
+nenfalls angepasst werden?
+(b) Formen sie die Hybrid-Orbitale als Linearkombination der konventionellen Or-
+bitalen. Dabei soll |Φ1⟩ entlang der x-Achse zeigen. Hinweis Damit |Φ1⟩ in
+x-Richtung zeigt, hat es keinen Beitrag von |ϕ2py ⟩. ϕ2s ist kugelsymmetrisch
+und tr¨ag zu gleichen Teilen zu den drei Hybridorbitalen bei. Die Hybridorbitale
+m¨ussen ihrerseits wieder normalisiert und orthonormal zu einander sein.
+(c) Freiwillig: Skizzieren Sie den Querschnitt der Orbitale |Φi⟩ in der xy-Ebene.
+Dabei kann |Φi(r, θ, φ)|2 nicht wie bei den konventionellen Orbitalen in einen
+radial und winkelabh¨angigen Teil faktorisiert werden. Es lohnt sich also die
+Orbitale mit einer Plotting Software f¨ur verschiedene r/aB .
+
+4.4 Eindimensionaler Ionenkristall
+Betrachten Sie eine Kette aus 2N Ionen mit der abwechselnden Ladung ±q und dem
+abstoßenden Potential A/Rn zwischen n¨achsten Nachbarn.
+1 2 N
+R −q +q
+Abbildung 1: Eindimensionaler Ionenkristall aus 2N Ionen
+(a) Berechnen Sie zun¨achst die Madelung-Konstante α f¨ur den unendlich aus-
+gedehnten, eindimensionalen Ionenkristall.
+(b) Zeigen Sie, dass f¨ur den Gleichgewichtsabstand Kristalls folgendes gilt:
+U (R0) = −2 ln 2 N q2
+4πϵ0R0
+
+1 − 1
+n
+
+Gehen Sie davon aus, dass f¨ur große N und unter Vernachl¨assigung von Ran-
+deffekten dieselbe Madelung-Konstante verwendet werden kann wie in a).

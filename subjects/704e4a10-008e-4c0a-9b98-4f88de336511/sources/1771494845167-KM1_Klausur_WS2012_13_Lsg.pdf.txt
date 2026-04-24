@@ -1,0 +1,252 @@
+## 1 Bindungsenergie im Neon-Kristall (10 Punkte)
+
+(a) Nennen Sie vier Bindungstypen in Festkörpern und geben Sie jeweils ein Beispiel an, in dem dieser Bindungstyp dominant ist. (4 Punkte)
+(b) Skizzieren Sie die fec-Struktur. (1 Punkt)
+(c) Wieviele nächste Nachbarn besitzt in der fcc-Struktur jedes Atom? (1 Punkt)
+(d) Das Edelgas Neon kristallisiert in der fcc-Struktur. Die Bindungsenergie des Kristalls wurde $\mathrm{zu} U_{\mathrm{B}}=-1.88 \mathrm{~kJ} \mathrm{~mol}^{-1}$ gemessen und die Gitterkonstante beträgt $a=4.466 \AA$. Die Wechselwirkung der Atome untereinander kann über das Lennard-Jones-Potential beschrieben werden:
+
+$$
+U_{\mathrm{Pot}}(r)=-4 \epsilon\left[\left(\frac{\sigma}{r}\right)^{6}-\left(\frac{\sigma}{r}\right)^{12}\right]
+$$
+
+Berechnen Sie die Parameter $\sigma$ und $\epsilon$. Gehen Sie von der Annahme aus, dass die Wechselwirkung nur zwischen nächsten Nachbarn auftritt. (4 Punkte)
+
+## Lösung:
+
+(a) Weitere Bindungstypen (je Typ und Beispiel ):
+
+| Bindungstyp | Bespiel |
+| :--- | ---: |
+| Ionenbindung | NaCl |
+| Kovalente Bindung | Diamant |
+| Metallische Bindung | Natrium |
+| Wasserstoffbrückenbindung | Wasser |
+
+(b) Siehe Abbildung 1.1.
+(c) In der fcc Struktur gibt es 12 nächste Nachbarn.
+(d) Zunächst bestimmt man den Gleichgewichtsabstand aus dem Lennard-Jones-Potential. Im Gleichgewicht gilt:
+
+\frac{d U_{\mathrm{Pot}}}{d r}=-4 \epsilon\left[-6 \frac{\sigma^{6}}{r^{7}}+12 \frac{\sigma^{12}}{r^{13}}\right]=0
+
+Die lässt sich umstellen zu:
+
+\sigma=\frac{r_{0}}{\sqrt[6]{2}}=\frac{a}{\sqrt{2} \sqrt[6]{2}}=2^{-\frac{2}{3}} a=\underline{\underline{2.813 \AA}}
+
+wobei $r_{0}$ der Gleichgewichtsabstand nächster Nachbarn in der fcc Struktur ist. Für die Berechnung der Bindungsenergie des Kristalls muss man die potentielle Energie
+
+![This diagram depicts the body-centered cubic (BCC) crystal structure, showing the arrangement of atoms at the corners and the center of a cube with lattice parameter "a."](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-02_590_631_242_781.jpg)
+Abbildung 1.1: fcc-Struktur
+
+aller Atome im Kristall summieren. Dabei ist zu beachten, dass ein Atom mit 12 nächsten Nachbarn in Wechselwirkung tritt.
+
+U=-12 \cdot \frac{1}{2} \cdot N_{A}\left\{4 \epsilon\left[\left(\frac{\sigma}{r_{0}}\right)^{6}-\left(\frac{\sigma}{r_{0}}\right)^{12}\right]\right\}
+
+Der Faktor $1 / 2$ vermeidet doppelte Summation über die selbe Bindung. Durch Einsetzten von $\sigma$ erhält man:
+
+U=-6 N_{A}\left\{4 \epsilon\left[\left(\frac{1}{2}\right)-\left(\frac{1}{4}\right)\right]\right\}=-6 N_{A} \epsilon
+
+und damit das Endergebnis:
+
+\epsilon=-\frac{U}{6 N_{A}}=\frac{0.31 \mathrm{~kJ} \mathrm{~mol}^{-1}}{N_{A}}=\underline{\underline{3 \mathrm{meV}}}
+
+## 2 Flüssiges ${ }^{3} \mathrm{He}$ (5 Punkte)
+
+${ }^{3} \mathrm{He}$ ist selbst bei $\mathrm{T}=0$ flüssig und hat eine Dichte von $\rho=0.08 \mathrm{~g} \mathrm{~cm}^{-3} \cdot{ }^{3} \mathrm{He}$ verhält sich wie ein Fermi-Gas und viele seiner Eigenschaften lassen sich mit diesem Modell quantitativ beschreiben. Bestimmen Sie in dieser Näherung für flüssiges ${ }^{3} \mathrm{He}$
+(a) die Fermi-Energie $E_{\mathrm{F}}$ in eV (2 Punkte)
+(b) den Fermi-Wellenvektor $k_{F}$ (1 Punkt)
+(c) die Fermi-Geschwindigkeit $v_{\mathrm{F}}$ (1 Punkt)
+
+## (d) die Fermi-Temperatur $T_{\mathrm{F}}$ (1 Punkt)
+
+Hinweis: Die effektive Masse $m^{*}$ der ${ }^{3} \mathrm{He}$-Atome im Fermigas ist ungefähr 2.8 -mal so groß wie die freier ${ }^{3} \mathrm{He}$-Atome.
+
+## Lösung:
+
+\begin{aligned}
+E_{\mathrm{F}} & =\frac{\hbar^{2}}{2 m^{*}}\left(3 \pi^{2} n\right)^{2 / 3}[1 / 2] \\
+& =\frac{\hbar^{2}}{2 m^{*}}\left(3 \pi^{2} \frac{\rho \cdot 1000}{m_{\mathrm{He}}}\right)^{2 / 3} \\
+& =2.43 \times 10^{-23} \mathrm{~J} \\
+& =1.52 \times 10^{-4} \mathrm{eV}
+\end{aligned}
+
+Dabei ist $m_{\mathrm{He}}=3 \mathrm{u}=4.98 \times 10^{-27} \mathrm{~kg}$ die Masse des freien ${ }^{3} \mathrm{He}$-Atoms und $m^{*}= 2.8 \cdot m_{\mathrm{He}}=1.39 \times 10^{-26} \mathrm{~kg}$ die effektive Atommasse. Der Faktor 1000 entstammt der Einheitenkonversion von $\mathrm{g} \mathrm{cm}^{-3} \mathrm{zu} \mathrm{kg} \mathrm{m}{ }^{-3}$. Daraus ergibt sich eine Fermi-Temperatur von
+
+T_{\mathrm{F}}=E_{\mathrm{F}} / k_{\mathrm{B}}=1.76 \mathrm{~K}
+
+Den Fermi-Wellenvektor erhält man analog zu
+
+k_{\mathrm{F}}=\left(3 \pi^{2} n\right)^{1 / 3}=7.8 \times 10^{9} \mathrm{~m}^{-1}
+
+Mit
+
+E_{\mathrm{F}}=\frac{\hbar^{2} k_{\mathrm{F}}^{2}}{2 m^{*}}=\frac{\left(m^{*} v_{\mathrm{F}}\right)^{2}}{2 m^{*}}
+
+kann die Fermi-Geschwindigkiet berechnet werden:
+
+\begin{aligned}
+v_{\mathrm{F}} & =\frac{\sqrt{E_{\mathrm{F}} \cdot 2 m^{*}}}{m^{*}} \\
+& =59 \mathrm{~ms}^{-1}
+\end{aligned}
+
+## 3 Zweidimensionale Struktur (8 Punkte)
+
+Abbildung 3.1 zeigt eine zweidimensionale Verbindung aus drei Elementen mit den Atomradien $r_{\mathrm{A}}$ (Atom A: Schachbrettmuster), $r_{\mathrm{B}}$ (Atom B: gefüllt) und $r_{\mathrm{C}}$ (Atom C: vertikal gestreift).
+(a) Wieviele Atome jedes Typs sind in der primitiven Einheitszelle? (1 Punkt)
+(b) Geben Sie die chemische Formeleinheit des Kristalls an. (1 Punkt)
+(c) Geben Sie die Einheitsvektoren einer primitiven Einheitszelle an. (1 Punkt)
+(d) Geben Sie die Vektoren für die B-Atome dieser Einheitszelle an. (2 Punkte)
+(e) Welche geometrische Form hat die Wigner-Seitz Zelle? (1 Punkt)
+(f) Wieviele akustische und wieviele optische Phononenzweige gibt es? (2 Punkte)
+
+![This diagram depicts the crystal lattice structure of a compound, showing the arrangement of different atoms or ions in a two-dimensional plane along the x and y axes.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-04_725_700_1050_685.jpg)
+Abbildung 3.1: Zweidimensionale Struktur zu Aufgabe 3
+
+
+(a) $2 \times \mathrm{A}$-Atome, $4 \times \mathrm{B}$-Atome und $6 \times \mathrm{C}$-Atome
+(b) $A B_{2} C_{3}$
+(c) $\left(4 \cdot r_{\mathrm{A}}+4 \cdot r_{\mathrm{B}}, 0\right)=(12.8 \AA, 0 \AA)$
+$\left(0,2 \cdot r_{\mathrm{A}}+2 \cdot r_{\mathrm{B}}\right)=(0 \AA, 6.4 \AA)$
+
+& \left(r \_A+r \_B, 0\right) \\
+& \left(3^{*} r \_A+3^{*} r \_B, 0\right) \\
+& \left(0, r \_A+r \_B\right) \\
+& \left(2 * r \_A+2 * r \_B, r \_A+r \_B\right)
+
+??? nicht sicher...
+
+## (a) Rackareis Rechteck
+
+schelcht lesbar
+
+## ![The image is too blurry to clearly identify or read the content, so I cannot determine what the diagram or image is depicting.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-05_103_1494_564_303.jpg)
+
+## $\mathrm{N}=12$ von Basisatomanzahl
+
+insgesamt: 2N Phononen (hier 2D, vgl 3D: 3N)
+2N-2 optische Phononen
+2 akustische Phononen
+
+## 4 Reziprokes Gitter (7 Punkte)
+
+Hinweis: $\vec{a} \times(\vec{b} \times \vec{c})=(\vec{a} \cdot \vec{c}) \vec{b}-(\vec{a} \cdot \vec{b}) \vec{c}$
+(a) Zeigen Sie, dass allgemein gilt:
+
+V^{*}=\frac{(2 \pi)^{3}}{V}
+
+V ist hierbei das Volumen der primitiven Einheitszelle des Kristallgitters und $\mathrm{V}^{*}$ das Volumen der primitiven Einheitszelle des reziproken Gitters. (3 Punkte)
+(b) Eine hexagonal-primitive Kristallstruktur liege mit ihrer hexagonalen Ebene in der $\mathrm{x}-\mathrm{y}$ Ebene eines kartesischen Koordinatensystems (Abbildung 4.1). Die primitivem Einheitsvektoren sind $(\mathrm{a}, 0,0),(\mathrm{a} / 2, \sqrt{3} a / 2,0)$ und $(0,0, \mathrm{c})$. Berechnen Sie die Einheitsvektoren des reziproken Gitters. (3 Punkte)
+(c) Welche Struktur hat dieses reziproke Gitter? (1 Punkt)
+
+![This diagram depicts the hexagonal close-packed (hcp) crystal structure, showing the arrangement of atoms and the lattice vectors \(a_1\), \(a_2\), and \(a_3\) along the x, y, and z axes, with lattice parameters \(a\) and \(c\).](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-06_471_570_1078_753.jpg)
+Abbildung 4.1: Hexagonale Einheitszelle aus Aufgabe 4
+
+
+(a) Das Volumen $V^{*}$ ist gegeben durch das Spatprodukt:
+
+V^{*}=b_{1}\left(b_{2} \times b_{3}\right)
+
+mit $b_{1}=2 \pi \frac{a_{2} \times a_{3}}{a_{1}\left(a_{2} \times a_{3}\right)}[1 / 2]$ und $V=a_{1}\left(a_{2} \times a_{3}\right)$ folgt:
+
+V^{*}=\frac{2 \pi}{V}\left(a_{2} \times a_{3}\right)\left(\frac{2 \pi}{V}\right)^{2}\left(a_{3} \times a_{1}\right) \times\left(a_{1} \times a_{2}\right)
+
+V^{*} & =\left(\frac{2 \pi}{V}\right)^{3}\left(a_{2} \times a_{3}\right) \cdot\left(a_{1}\left(\left(a_{3} \times a_{1}\right) \cdot a_{2}\right)-a_{2}\left(\left(a_{3} \times a_{1}\right) \cdot a_{1}\right)\right) \\
+& =\left(\frac{2 \pi}{V}\right)^{3} \cdot V^{2}=\frac{(2 \pi)^{3}}{V}
+
+Alternative Lösung
+
+V^{*}=\frac{2 \pi}{V}\left(a_{2} \times a_{3}\right)\left(b_{2} \times a_{3}\right)
+
+Mit der Lagrage-Identität: $\left(a_{2} \times a_{3}\right)\left(b_{2} \times a_{3}\right)=\left(a_{2} b_{2}\right)\left(a_{3} b_{3}\right)-\left(a_{2} b_{3}\right)\left(a_{3} b_{2}\right)$ und $a_{2} \perp b_{3}$ und $a_{3} \perp b_{2}$ folgt:
+
+V^{*}=\frac{2 \pi}{V}\left(a_{2} b_{2}\right)\left(a_{3} b_{3}\right)
+
+mit $b_{i} a_{j}=2 \pi \delta_{i j}$ folgt:
+
+V^{*}=\frac{(2 \pi)^{3}}{V}
+
+(b) Der Winkel zwischen $a_{1}=(a, 0,0)$ und $a_{2}=\left(\frac{a}{2}, \frac{\sqrt{3} a}{2}, 0\right)$ im hexagonalen Gitter beträgt $60^{\circ}$. Beide stehen senkrecht auf $a_{3}=(0,0, c)$
+
+\rightarrow a_{1}\left(a_{2} \times a_{3}\right)=\frac{\sqrt{3}}{2} a^{2} c
+
+Die Kreuzprodukte zwischen den primitiven Einheitsvektoren sind:
+
+& \overrightarrow{a_{2}} \times \overrightarrow{a_{3}}=\left(\frac{\sqrt{3}}{2} a c,-\frac{a c}{2}, 0\right) \\
+& \overrightarrow{a_{3}} \times \overrightarrow{a_{1}}=(0, a c, 0) \\
+& \overrightarrow{a_{1}} \times \overrightarrow{a_{2}}=\left(0,0, \frac{\sqrt{3}}{2} a^{2}, 0\right)
+
+Die Richtungen der reziproken Einheitsvektoren $\vec{b}_{i}$ ergeben sich aus der "Rechten Hand Regel" für das Kreuzprodukt. Die reziproken Einheitsvektoren ergeben sich damit zu:
+
+& \overrightarrow{b_{1}}=\frac{2 \pi}{\sqrt{3} a}(\sqrt{3},-1,0) \\
+& \overrightarrow{b_{2}}=\frac{4 \pi}{\sqrt{3} a}(0,1,0) \\
+& \overrightarrow{b_{3}}=\frac{2 \pi}{c}(0,0,1)
+
+(c) Das reziproke Gitter ist wiederum ein hexagonal-primitives Gitter. Die Richtungen der reziproken Einheitsvektoren sind im Bild gegeben. Das reziproke Gitter ist gegenüber dem Kristallgitter in der hexagonalen Ebene um $30^{\circ}$ verdreht.
+
+![This diagram depicts the lattice vectors in a crystal lattice (Kristallgitter) and its corresponding reciprocal lattice (reziproktes Gitter), showing the basis vectors a1, a2 for the crystal lattice and b1, b2 for the reciprocal lattice.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-08_309_588_251_772.jpg)
+Abbildung 4.2: Draufsicht auf hexagonales gitter im real raum und entsprechende reziproken Gitter.
+
+## 5 Landauniveaus des freien Elektronengases (10 Punkte)
+
+Eine metallische Probe befinde sich in einem Magnetfeld $\vec{B}=B \vec{e}_{z}$. Die Kristallelektronen können in der Näherung eines freien Elektronengases behandelt werden.
+(a) Wieviele Landau-Zylinder $l_{\max }(\vec{B})$ befinden sich innerhalb der Grenzen der Nullfeld-Fermi-Kugel? (Die Nullfeld-Fermi-Kugel ist die Fermi-Kugel für $\mathrm{B}=0$ ) (2 Punkte) Hinweis: Der Radius des $l$-ten Landau-Zylinders im k-Raum ist
+
+k_{1}=\sqrt{\frac{2 e B}{\hbar}(l+1 / 2)}
+
+(b) Betrachten Sie nun den konkreten Fall eines Natrium-Kristalls mit der Elektronendichte $n_{e}=2.54 \times 10^{22} \mathrm{~cm}^{-3}$. Der Kristall sei einem Magnetfeld $B=1 \mathrm{~T}$ ausgesetzt. Berechnen sie $l_{\text {max }}$. (2 Punkte)
+(c) Wie groß ist das Magnetfeld $B_{0}$, bei dem der innerste Landau-Zylinder $(l=0)$ die Nullfeld-Fermi-Kugel verlässt? Vergleichen Sie den Wert mit technisch realisierbaren Magnetfeldern. (2 Punkte)
+(d) Bestimmen Sie den Entartungsgrad $G$ eines Landau-Zylinders für einen Kristall mit dem Volumen $V=L_{x} L_{y} L_{z}$. $G$ ist definiert als
+
+G=Z(\vec{k}) \Delta S d_{z}
+
+Dabei ist $Z(\vec{k})$ die Zustandsdichte der Elektronen in drei Dimensionen. $\Delta S$ ist die Fläche zwischen zwei benachbarten Landau-Kreisen in der Ebene $k_{z}=0 . d_{z}$ ist der Abstand benachbarter Zustände in $k_{z}$-Richtung. (4 Punkte)
+
+
+(a) Anzahl Landau-Zylinder Die Quantenzahl des Landau-Zylinders, der auf der ursprünglichen Grenze der Fermi-Kugel liegt $\left(k_{F}=k_{l, \text { max }}\right)$, ist
+
+l_{\max }=\frac{\hbar k_{F}^{2}}{2 e B}-1 / 2
+
+mit dem Fermi-Wellenvektor $k_{\mathrm{F}}$ -
+(b) Landau-Zylinder in Natrium Zur Berechnung wan Brau Benictigan wir den Radius
+![The image depicts a portion of a scientific text discussing the Fermi sphere (Fermi-Kugel) and the Fermi wave vector (Fermi-Wellenvektor) in the context of a zero field (Nullfeld). It specifically relates to concepts in quantum mechanics or solid-state physics involving the Fermi surface.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-09_70_1397_422_347.jpg) Rechnung). Daraus folgt:
+
+l_{\max }=\frac{\hbar\left(3 \pi^{2} n_{e}\right)^{2 / 3}}{2 e B}-1 / 2=272 \pi a
+
+(c) Magnetfeld für $l=0$ Man erhält $B_{0}$, wenn $l_{\text {max }}=0, d$ h
+
+B_{0}=\frac{\hbar\left(3 \pi^{2} n_{e}\right)^{2 / 3}}{e}=54540 \mathrm{~T}
+
+$B_{0}$ ist um viele Größenordnungen größer als technisch realisierbare Magmetfelder (ca. 100 T mit gepulsten Verfahren; einige Tausend T mit Implosiunstech-then)
+(d) Entartungsgrad $G$ Die von einem Landau-Zylinder in der $k_{z}=0$ - Ebene USchlossene Fläche ist
+
+S_{l}=\pi k_{l}^{2}=\frac{2 \pi e B}{\hbar}(l+1 / 2)
+
+Die von benachbarten Zylindern eingeschlossene Fläche ist dam
+
+\Delta S=S_{l}-S_{l-1}=\frac{2 \pi e B}{\hbar}
+
+Im Nullfeld entfällt aufgrund der Quantisierung der erlaubten $k$-Werte in Einheiten der Größe $2 \pi / L_{x}, 2 \pi / L_{y}$ und $2 \pi / L_{z}$ auf jeden Zustand im rexiproken Raum das Volumen $(2 \pi)^{3} / L_{x} L_{y} L_{z}$ und die Zustandsdichte ist $Z(k)=V /(2 \pi)^{3}$. Die Quantisierung $2 \pi / L_{z}$ gilt auch im Magnetfeld. Daher ist $d_{\sigma_{z}}=0=2 \pi / L_{z}$ anch bei eingeschaltetem Magnetfeld ein sinnvoller Ausdruck für die Ausdehnung der Zustände in der $k_{z}=0$
+
+- Ebene. Einsetzen liefert den gesuchten Entartungsgrad $G$ :
+
+G=Z(\vec{k}) \Delta S d_{k_{z}=0}=\frac{L_{z} L_{z}}{2 \pi} \frac{e B}{\hbar}
+
+Der Entartungsgrad ist damit unabhängig von der Quantenzahl $l$ und linear in $B$.
+
+## 6 Ladungsträgerdichte dotierter Halbleiter (6 Punkte)
+
+(a) Skizzieren Sie den Logarithmus der Ladungsträgerdichte $n$ eines $n$-dotierten Halbleiters als Funktion seiner reziproken Temperatur $1 / T$. (2 Punkte)
+(b) Kennzeichnen und benennen Sie in Ihrer Skizze charakteristische Temperaturbereiche. (2 Punkte)
+(c) Diskutieren Sie die wesentlichen physikalischen Merkmale dieser Temperaturbereiche. (2 Punkte)
+
+![This diagram depicts the electron density (log n) as a function of different temperature regions (α, β, γ, δ) in a semiconductor, showing how the electron density varies with temperature and activation energies related to the band gap (Eg) and donor energy levels (Ed).](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/e33926bf-56d1-4e1a-802d-47926877387c/d80c547d-6e6f-4fd3-acf1-ed25baf31fdf-10_725_1079_278_518.jpg)
+Abbildung 6.1: Logarithmische Ladungsträgerdichte eines n -dotierten Halbleiters als Funktion der reziproken Temperatur
+
+Lösung: Die vier charakteristischen Bereiche sind
+(a) Siehe Abbildung 6.1
+(b) Siehe Abbildung 6.1
+(c) Kompensation; Bereich $\delta: k_{\mathrm{B}} T \ll E, n \ll n_{\mathrm{A}} \ll n_{\mathrm{D}}$
+
+- Störstellenreserve; Bereich $\gamma: n_{\mathrm{A}} \ll n \ll n_{\mathrm{D}}$
+- Erschöpfungszustand; Bereich $\beta: n \approx n_{\mathrm{D}}=$ const
+- Eigenleitung; Bereich $\alpha: n>n_{\mathrm{D}}, n_{\mathrm{A}}$
+

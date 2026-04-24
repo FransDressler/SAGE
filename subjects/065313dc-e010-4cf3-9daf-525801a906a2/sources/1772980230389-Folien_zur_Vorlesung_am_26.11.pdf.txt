@@ -1,0 +1,196 @@
+### 4.5.3 Fock Zustände
+
+Für identische Teilchen spielt der Teilchenindex keine Rolle und die einzig relevante Information in $\left|\Psi^{S, A}\right\rangle$ ist die Anzahl der Teilchen im jeweiligen Einteilchenzustand $\left|\phi_{k}\right\rangle$.
+
+⇒ Vereinfachte Basiszustände für Vielteilchensysteme (Fock-Zustände):
+
+$$
+|\Psi\rangle=\left|\left\{n_{k}\right\}\right\rangle \equiv\left|n_{0}, n_{1}, \ldots, n_{k}, \ldots\right\rangle \quad n_{k} \ldots . \text { Anzahl der Teilchen in }\left|\phi_{k}\right\rangle
+$$
+
+Die Fockzustände bilden eine Orthonormalbasis
+
+\left\langle n_{0}^{\prime}, n_{1}^{\prime}, \ldots, n_{i}^{\prime}, \ldots \mid n_{0}, n_{1}, \ldots, n_{i}, \ldots\right\rangle=\prod_{i} \delta_{n_{i}, n_{i}^{\prime}}
+
+und sind für Bosonen/Fermionen explizit gegeben durch
+
+\left|\left\{n_{k}\right\}\right\rangle=C_{\left\{n_{k}\right\}} \sum_{\sigma}( \pm 1)^{n(\sigma)} \hat{P}_{\sigma}\{\underbrace{\left|\phi_{0}^{(1)}\right\rangle\left|\phi_{0}^{(2)}\right\rangle \ldots}_{n_{0}} \ldots \underbrace{\left|\phi_{k}^{(l)}\right\rangle\left|\phi_{k}^{(l+1)}\right\rangle \ldots \ldots}_{n_{k}}\}
+
+mit Normierung: $\quad C_{\left\{n_{k}\right\}}=\left(N!\prod_{k} n_{k}!\right)^{-\frac{1}{2}}$
+
+- Die verschiedenen Symmetrieeigenschaften führen zu:
+
+n_{k}= \begin{cases}0,1,2, \ldots, \infty & \text { für Bosonen } \\ 0,1 & \text { für Fermionen }\end{cases}
+
+- Der Zustand $|\operatorname{vac}\rangle=|0,0, \ldots 0\rangle$ mit $\langle\operatorname{vac} \mid \operatorname{vac}\rangle=1$ wird als Vakuumzustand bezeichnet.
+- Allgemeine Vielteilchenzustände: $|\Psi(t)\rangle=\sum_{\left\{k_{i}\right\}} c_{\left\{k_{i}\right\}}(t)\left|n_{0}, n_{1}, \ldots, n_{k}, \ldots\right\rangle$
+- Teilchenzahloperator: $\quad \hat{N}\left|\left\{n_{k}\right\}\right\rangle=N\left|\left\{n_{k}\right\}\right\rangle, \quad N=\sum_{k} n_{k}$
+
+Beispiel:
+
+\hat{H}=\sum_{i=1}^{N} \frac{\hat{p}_{i}^{2}}{2 m}+V_{\mathrm{box}}\left(\hat{x}_{i}\right)=\sum_{i=1}^{N} \hat{H}_{i}
+
+mit (Einteilchen Schrödinger Gl.):
+![This diagram depicts the energy levels and corresponding wavefunctions (|φ0⟩, |φ1⟩, |φ2⟩) of a quantum system, showing the spatial probability distributions of the first three energy eigenstates at energies E0, E1, and E2.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/f03e3eba-4180-49e1-97b8-e2fe9e2a3eff/14cadde9-f499-439f-bb02-45c3799994d3-03_572_847_68_1922.jpg)
+
+\hat{H}_{i}\left|\phi_{k}^{(i)}\right\rangle=E_{k}\left|\phi_{k}^{(i)}\right\rangle
+
+\phi_{k}(x)=\left\langle x \mid \phi_{k}\right\rangle
+
+- $\mathbf{N = 0}: \quad|\Psi\rangle=|\operatorname{vac}\rangle=|0,0, \ldots 0\rangle$
+- $\left.\mathbf{\mathbf { N } = 1 :} \begin{array}{l}|\Psi\rangle=\left|0, \ldots, 1_{k}, \ldots\right\rangle=\left|\phi_{k}^{(1)}\right\rangle \\ \Psi\left(x_{1}\right)=\left\langle x_{1} \mid \Psi\right\rangle=\phi_{k}\left(x_{1}\right)\end{array}\right\} \quad$ Boson oder Fermion
+- $\mathbf{N} \boldsymbol{=} \mathbf{2}$ : Bosonen
+
+|\Psi\rangle=|2,0,0 \ldots\rangle=\frac{1}{\sqrt{N!n_{0}!}}\left[\left|\phi_{0}^{(1)}\right\rangle\left|\phi_{0}^{(2)}\right\rangle+\left|\phi_{0}^{(2)}\right\rangle\left|\phi_{0}^{(1)}\right\rangle\right]
+
+\Psi\left(x_{1}, x_{2}\right)=\left\langle x_{1}, x_{2} \mid \Psi\right\rangle=\frac{\phi_{0}\left(x_{1}\right) \phi_{0}\left(x_{2}\right)+\phi_{0}\left(x_{2}\right) \phi_{0}\left(x_{1}\right)}{2}=\phi_{0}\left(x_{1}\right) \phi_{0}\left(x_{2}\right)
+
+Normierung:
+
+\langle\Psi \mid \Psi\rangle=\int d x_{1} d x_{2}\left|\phi_{0}\left(x_{1}\right)\right|^{2}\left|\phi_{0}\left(x_{2}\right)\right|^{2}=\left[\int d x\left|\phi_{0}(x)\right|^{2}\right]^{2}=1
+
+- $\mathbf{N = 2}$ : Bosonen oder Fermionen
+
+\begin{aligned}
+& |\Psi\rangle=|1,1,0 \ldots\rangle=\frac{1}{\sqrt{2}}\left[\left|\phi_{0}^{(1)}\right\rangle\left|\phi_{1}^{(2)}\right\rangle \pm\left|\phi_{0}^{(2)}\right\rangle\left|\phi_{1}^{(1)}\right\rangle\right] \\
+& \Rightarrow \Psi\left(x_{1}, x_{2}\right)=\frac{\phi_{0}\left(x_{1}\right) \phi_{1}\left(x_{2}\right) \pm \phi_{1}\left(x_{1}\right) \phi_{0}\left(x_{2}\right)}{\sqrt{2}}
+\end{aligned}
+
+Normierung:
+
+\begin{aligned}
+\langle\Psi \mid \Psi\rangle & =\frac{1}{2} \int d x_{1} d x_{2}\left|\phi_{0}\left(x_{1}\right) \phi_{1}\left(x_{2}\right) \pm \phi_{1}\left(x_{1}\right) \phi_{0}\left(x_{2}\right)\right|^{2} \\
+& =[\underbrace{\int d x_{1}\left|\phi_{0}\left(x_{1}\right)\right|^{2}}_{=1}][\underbrace{\int d x_{2}\left|\phi_{1}\left(x_{2}\right)\right|^{2}}_{=1}] \pm[\underbrace{\int d x_{1} \phi_{0}\left(x_{1}\right) \phi_{1}\left(x_{1}\right)}_{=0}]^{2}
+\end{aligned}
+
+- $\mathbf{N}=3$ : Bosonen $\quad|\Psi\rangle=|3,0,0 \ldots\rangle \quad \Leftrightarrow \quad \Psi\left(\left\{x_{i}\right\}\right)=\phi_{0}\left(x_{1}\right) \phi_{0}\left(x_{2}\right) \phi_{0}\left(x_{3}\right)$
+
+Bosonen/Fermionen: $\quad|\Psi\rangle=|1,1,1,0, \ldots\rangle \quad \Leftrightarrow$
+
+& \Psi\left(\left\{x_{i}\right\}\right)=\frac{1}{\sqrt{6}}\left[\phi_{0}\left(x_{1}\right) \phi_{1}\left(x_{2}\right) \phi_{2}\left(x_{3}\right) \pm \phi_{1}\left(x_{1}\right) \phi_{0}\left(x_{2}\right) \phi_{2}\left(x_{3}\right) \pm \phi_{2}\left(x_{1}\right) \phi_{1}\left(x_{2}\right) \phi_{0}\left(x_{3}\right)\right. \\
+&\left. \pm \phi_{0}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi_{1}\left(x_{3}\right)+\phi_{2}\left(x_{1}\right) \phi_{0}\left(x_{2}\right) \phi_{1}\left(x_{3}\right)+\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi_{0}\left(x_{3}\right)\right]
+
+### 4.6 Ideale Quantengase
+
+Im Modell eines idealen Quantengases werden Wechselwirkungen vernachlässigt. Das System ist daher durch die Lösungen des Einteilchen-Hamiltonoperators beschrieben:
+
+\hat{H}=\sum_{i=1}^{N} \hat{H}_{i} \quad \hat{H}_{i}\left|\phi_{k_{i}}^{(i)}\right\rangle=E_{k_{i}}\left|\phi_{k_{i}}^{(i)}\right\rangle
+
+Statistische Berechnungen von Vielteilchensystemen vereinfachen sich in der großkanonischen Beschreibung. Zur Berechnung der Zustandssumme
+
+Z_{\mathrm{G}}=\operatorname{Sp}\left\{e^{-\beta(\hat{H}-\mu \hat{N})}\right\}
+
+verwenden wir die Fock-Basiszustände mit Eigenschaften:
+
+\hat{H}\left|\left\{n_{k}\right\}\right\rangle=\left(\sum_{k} E_{k} n_{k}\right)\left|\left\{n_{k}\right\}\right\rangle, \quad \hat{N}\left|\left\{n_{k}\right\}\right\rangle=\left(\sum_{k} n_{k}\right)\left|\left\{n_{k}\right\}\right\rangle
+
+Damit erhalten wir: $\quad\left\langle\left\{n_{k}\right\}\right| e^{-\beta(\hat{H}-\mu \hat{N})}\left|\left\{n_{k}\right\}\right\rangle=e^{-\beta \sum_{k}\left(E_{k}-\mu\right) n_{k}}$
+und: $\quad Z_{\mathrm{G}}=\sum_{n_{0}} \sum_{n_{1}} \ldots e^{-\beta \sum_{k}\left(E_{k}-\mu\right) n_{k}}=\prod_{k} \sum_{n_{k}}\left(e^{-\beta\left(E_{k}-\mu\right)}\right)^{n_{k}}$
+
+- Bosonen: $n_{k}=0,1, \ldots, \infty$
+
+\Rightarrow \quad Z_{\mathrm{G}}=\prod_{k} \sum_{n_{k}=0}^{\infty}\left(e^{-\beta\left(E_{k}-\mu\right)}\right)^{n_{k}}=\prod_{k} \frac{1}{1-e^{-\beta\left(E_{k}-\mu\right)}}
+
+geometrische Reihe
+
+& \Rightarrow \quad J=-k_{B} T \ln Z_{\mathrm{G}}=k_{B} T \sum_{k} \ln \left(1-e^{-\beta\left(E_{k}-\mu\right)}\right) \\
+& \Rightarrow \quad\langle\hat{N}\rangle=-\frac{\partial J}{\partial \mu}=\sum_{k} \frac{e^{-\beta\left(E_{k}-\mu\right)}}{1-e^{-\beta\left(E_{k}-\mu\right)}}=\sum_{k} \underbrace{\frac{1}{e^{\beta\left(E_{k}-\mu\right)}-1}}_{\left\langle\hat{n}_{k}\right\rangle}
+
+- Fermionen: $\quad n_{k}=0,1$
+
+& \Rightarrow \quad Z_{\mathrm{G}}=\prod_{k} \sum_{n_{k}=0,1}\left(e^{-\beta\left(E_{k}-\mu\right)}\right)^{n_{k}}=\prod_{k}\left(1+e^{-\beta\left(E_{k}-\mu\right)}\right) \\
+& \Rightarrow \quad J=-k_{B} T \ln Z_{\mathrm{G}}=-k_{B} T \sum_{k} \ln \left(1+e^{-\beta\left(E_{k}-\mu\right)}\right) \\
+& \Rightarrow \quad\langle\hat{N}\rangle=-\frac{\partial J}{\partial \mu}=\sum_{k} \frac{e^{-\beta\left(E_{k}-\mu\right)}}{1+e^{-\beta\left(E_{k}-\mu\right)}}=\sum_{k} \underbrace{\frac{1}{e^{\beta\left(E_{k}-\mu\right)}+1}}_{\left\langle\hat{n}_{k}\right\rangle}
+
+- Zum Vergleich: "klassische" ununterscheidbare Teilchen ("Boltzonen")
+
+& Z_{\mathrm{G}}=\sum_{N=0}^{\infty} Z_{\mathrm{K}}(N) e^{\beta \mu N}=\sum_{N=0}^{\infty} \frac{1}{N!}\left(\sum_{k} e^{-\beta\left(E_{k}-\mu\right)}\right)^{N}=e^{\left(\sum_{k} e^{-\beta\left(E_{k}-\mu\right)}\right)} \\
+& Z_{\mathrm{K}}(N)=\frac{1}{N!}\left(\sum_{k_{1}} e^{-\beta E_{k_{1}}}\right)\left(\sum_{k_{2}} e^{-\beta E_{k_{2}}}\right) \ldots\left(\sum_{k_{N}} e^{-\beta E_{k_{N}}}\right)
+
+Anzahl der möglichen Teilchenvertauschungen
+
+Produkt der Zustandssummen der einzelnen Teilchen
+
+& \Rightarrow \quad J=-k_{B} T \ln Z_{\mathrm{G}}=\sum_{k} e^{-\beta\left(E_{k}-\mu\right)} \\
+& \Rightarrow \quad\langle\hat{N}\rangle=-\frac{\partial J}{\partial \mu}=\sum_{k} \underbrace{e^{-\beta\left(E_{k}-\mu\right)}}_{=\left\langle\hat{n}_{k}\right\rangle}
+
+Zusammenfassung: mittlere Teilchenzahl im Zustand $\left|\phi_{k}\right\rangle$
+-Bosonen:
+
+\left\langle\hat{n}_{k}\right\rangle=\frac{1}{e^{\beta\left(E_{k}-\mu\right)}-1}
+
+"Bose-Einstein Verteilung"
+
+- Fermionen:
+
+\left\langle\hat{n}_{k}\right\rangle=\frac{1}{e^{\beta\left(E_{k}-\mu\right)}+1}
+
+"Fermi-Dirac Verteilung"
+-"klassische" Teilchen:
+
+\left\langle\hat{n}_{k}\right\rangle=\frac{1}{e^{\beta\left(E_{k}-\mu\right)}}
+
+"Maxwell-Boltzmann Verteilung"
+
+## 5. Das Ideale Fermi Gas
+
+### 5.1 Grundlagen:
+
+In diesem Kapitel betrachten wir ein ideales, d.h. nicht-wechselwirkendes Gas aus Fermionen mit Masse $m$ und Spin S in einem externen Potential $V_{\text {ex }}(\vec{r})$ (z.B. Box, harmonische Falle, ...).
+
+Hamiltonoperator: $\quad \hat{H}=\sum_{i} \frac{\hat{\vec{p}}_{i}^{2}}{2 m}+V_{\text {ex }}\left(\hat{\vec{r}}_{i}\right)=\sum_{i} \hat{H}_{i}$
+Weitere Annahme*: kein äußeres Magnetfeld. Dann besitzen alle Spinzustände die gleiche Energie und die Eigenwerte der EinteilchenSchrödingergleichung,
+
+\hat{H}_{i}\left|\phi_{k}^{(i)}, m_{s}\right\rangle=E_{k}\left|\phi_{k}^{(i)}, m_{s}\right\rangle \quad \quad m_{s}=-S,-S+1, \ldots, S
+
+sind jeweils $g_{S}=(2 S+1)$-fach entartet.
+![The image depicts a German text note stating that something is "not essential, but for the simplification of the following derivations." It is likely a footnote or explanatory remark related to a mathematical or scientific derivation.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/f03e3eba-4180-49e1-97b8-e2fe9e2a3eff/14cadde9-f499-439f-bb02-45c3799994d3-11_102_2500_2144_15.jpg)
+
+- Großkanon. Zustandssumme: $Z_{\mathrm{G}}=\prod_{k}\left(1+e^{-\beta\left(E_{k}-\mu\right)}\right)^{g_{S}}$
+- Großkanon. Potential: $\quad J=-k_{B} T g_{S} \sum_{k} \ln \left(1+e^{-\beta\left(E_{k}-\mu\right)}\right)$
+- Mittlere Teilchenzahl: $\quad N=\sum_{k} \frac{g_{S}}{e^{\beta\left(E_{k}-\mu\right)}+1}$
+
+
+### 5.1.1 Zustandsdichte
+
+Im thermodynamischen Limes $N, V \rightarrow \infty$ geht der Abstand zwischen den Energieniveaus gegen Null und das Einteilchenspektrum wird kontinuierlich. In diesem Fall ist es sinnvoll die Zustandsdichte $D(E)$ einzuführen:
+
+D(E)=\sum_{k, m_{s}} \delta\left(E-E_{k, m_{s}}\right)=g_{S} \sum_{k} \delta\left(E-E_{k}\right)
+
+Damit folgt für eine beliebige Funktion $F(E)$ der Energie:
+
+\sum_{k, m_{s}} F\left(E_{k, m_{s}}\right)=\int_{0}^{\infty} D(E) F(E) d E
+
+- Für große Systeme mit kleinem Abstand zwischen den Energieniveaus kann $D(E)$ durch eine kontinuierliche Funktion ersetzt werden.
+![This diagram depicts the Fermi-Dirac distribution function \( F(E) \) for electron energies \( E \) in a solid, showing the continuous probability distribution (blue curve) and the discrete energy levels \( E_k \) (red spikes) available to electrons.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/f03e3eba-4180-49e1-97b8-e2fe9e2a3eff/14cadde9-f499-439f-bb02-45c3799994d3-13_804_1438_1003_179.jpg)
+![This diagram depicts the Fermi-Dirac distribution function \( F(E) \) and the density of states \( D(E) \) as functions of energy \( E \), commonly used in solid-state physics to describe electron occupancy and available energy states in a material.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/f03e3eba-4180-49e1-97b8-e2fe9e2a3eff/14cadde9-f499-439f-bb02-45c3799994d3-13_667_1169_1003_1732.jpg)
+- Bedeutung der Zustandsdichte:
+
+D(E) d E=\text { Anzahl der Energieeigenzustände im Interval }[E, E+d E]
+
+## Bsp1: Zustandsdichte für Gas in einer 3D Box:
+
+\left.\begin{array}{l}
+E_{\vec{k}}=\frac{\hbar^{2}}{2 m}\left(k_{x}^{2}+k_{y}^{2}+k_{z}^{2}\right) \\
+E_{\vec{n}}=\frac{\hbar^{2}}{2 m}\left(\frac{2 \pi}{L}\right)^{2}\left(n_{x}^{2}+n_{y}^{2}+n_{z}^{2}\right)
+\end{array}\right\} \quad n_{i}=\frac{2 \pi}{L_{i}} n_{i}
+
+periodische Randbedingungen !
+
+\begin{array}{rlrl}
+\sum_{\vec{n}, m_{s}} F\left(E_{\vec{n}}\right) & =g_{S} \sum_{n_{x}, n_{y}, n_{z}} F\left(E_{\vec{n}}\right) \Delta n_{x} \Delta n_{y} \Delta n_{z} & & \left(\Delta n_{i}=1\right) \\
+& =g_{S} \frac{L_{x} L_{y} L_{z}}{(2 \pi)^{3}} \sum_{k_{x}, k_{y}, k_{z}} F\left(E_{\vec{k}}\right) \Delta k_{x} \Delta k_{y} \Delta k_{z} & & \Delta k_{i}=\frac{2 \pi}{L_{i}} \rightarrow 0 \\
+\left(L_{i} \rightarrow \infty\right) & =\frac{g_{S} V}{(2 \pi)^{3}} \int d^{3} k F\left(E_{\vec{k}}\right) & V=L_{x} L_{y} L_{z}
+\end{array}
+
+- Polarkoordinaten: $\int d^{3} k F\left(E_{|\vec{k}|}\right) \rightarrow 4 \pi \int_{0}^{\infty} k^{2} d k F\left(E_{k}\right)$
+- Variablentransformation:
+
+\begin{gathered}
+E=\frac{\hbar^{2} k^{2}}{2 m} \Rightarrow \quad k=\sqrt{\frac{2 m E}{\hbar^{2}}} \quad d k=\frac{1}{2} \sqrt{\frac{2 m}{\hbar^{2}}} \frac{d E}{\sqrt{E}} \\
+\Rightarrow \quad \sum_{\vec{n}, m_{s}} F\left(E_{\vec{n}}\right)=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \int_{0}^{\infty} d E \sqrt{E} F(E) \\
+=\int_{0}^{\infty} d E D(E) F(E)
+\end{gathered}
+
+Zustandsdichte (Box, 3D): $\quad D(E)=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \sqrt{E}$
+

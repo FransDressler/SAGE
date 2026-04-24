@@ -1,0 +1,129 @@
+### 3.2 Gitterdynamik
+
+bishes: statische mistallgitter num: Atome Könven um ilme Glaidgevidatslaje schwinge.
+
+## Gitterwelle $\leftrightarrow$ Quant: Phonon
+
+![This diagram depicts a harmonic approximation of a potential energy curve for an atom-atom interaction, showing the potential energy (u) as a function of the distance between two atoms (r).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/063fd941-67de-4497-abb3-bc8fd9bfd504/25f90bed-1a22-4566-be0e-a69876d7ffb7-1_250_547_143_1046.jpg)
+
+Betrachte (meistens) :
+
+- Gittrs uit ein-oder atorenjor Basis
+- Eindimensionale bette
+- Hoch symmetrie rickituge
+
+Gesucht: - Allg. Bewegungs glaidny (in harmouischs Nöhry!)
+
+- Dispensionsnelation : $\omega \rightarrow \omega(7)$
+
+
+### 3.2.1 10-Bravais Gitts wit anatomins Basis
+
+Bei 1D- Gittun unit einatomip Basis Könce die einreluen Gitter ebecu zer eiven "Atom", das als bujel wit unendlich Vleim Radius verstanden wind, zusammargefesct weide.
+
+Fins jeden wellenveleter q gibt es 3 Schwingungs zustärde/arten:
+
+- 1 lonjitudinale Polarisation
+- 2 transversale Polaisation
+
+Ansatz de linearen Vette: Auslenty
+
+$$
+|I|=c \cdot u^{L}
+$$
+
+![This diagram depicts a one-dimensional tight-binding model in solid state physics, showing atomic sites labeled \( u_{s-2} \) to \( u_{s+2} \) with hopping terms \( c_{-1} \) and \( c_2 \) representing nearest-neighbor interactions between lattice sites.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/063fd941-67de-4497-abb3-bc8fd9bfd504/25f90bed-1a22-4566-be0e-a69876d7ffb7-1_295_894_1870_971.jpg)
+
+Gesamle thafl anf theme $s$ :
+
+I_{s}{ }^{\left(H_{0}, k\right)} \sum_{n} c_{n}\left(u_{s+n}-u_{s}\right)
+
+Beweguygighichny de Ebeve \& :
+
+M \frac{d^{2}}{d t^{2}} u_{s}=\sum c_{n}\left(u_{s+n}-u_{s}\right),
+
+unit M der Masse des Atous und $n \in \mathbb{R}$
+
+Cöscungsausatz (*): $\quad u_{s+u}=U \cdot e^{-i[\omega t-q(s+u) \cdot a]}$,
+sowie Annalue der "Beru - von Karmanu"
+O.t
+
+\Rightarrow \quad \omega^{2} M=\sum_{n} c_{n} \cdot\left(1-e_{\hat{w}-e^{i q n}}^{i q n}\right) .
+
+Ans Symmeticgünder: $c_{n}=-c_{n} \Rightarrow$ Summation übs positive $n$.
+
+\begin{aligned}
+& \Rightarrow \omega^{2}=\frac{1}{M} \sum_{u=1}^{\infty} c_{u}(\underbrace{2-e^{\text {iqua }-e^{-i q u a}}}_{=2 \cos (q u a)}) \\
+& \Rightarrow \omega^{2} \quad=\frac{1}{M} \sum_{u=1}^{\infty} c_{u}[2-2 \cos (q \cdot u a)] \\
+& \Rightarrow \quad \omega^{2}=\frac{2}{M} \sum_{n=1}^{\infty} c_{u}[1-\cos (q \cdot u a)]
+\end{aligned}
+
+Wenn nus die WW zwischen räcksten Nachbance besteht:
+
+\begin{aligned}
+& \omega^{2}=\frac{2 C_{1}}{M} \underbrace{[1-\cos (q \cdot a)]}_{2 \sin ^{2}(x)=1-\cos (2 x)} \quad n=1! \\
+& \omega^{2}=\frac{4 C_{1}}{M} \sin ^{2}\left(\frac{1}{2} q \cdot a\right)
+\end{aligned}
+
+Dispersions nelation fin lonitudinale Solvall welle
+
+\omega=2 \sqrt{\frac{C_{1}}{M}}\left|\sin \left(\frac{9 \cdot a}{2}\right)\right|
+
+## Bennerkinge
+
+- Bei WW auch mit überriächsten Nachbann
+
+\omega^{2}=\frac{4 c_{1}}{11}\left[\sin ^{2}\left(\frac{q a}{2}\right)+\frac{c_{2}}{c_{1}} \sin ^{2}(q a)\right]
+
+⇒ "qualitativ" ähnlichs verlanf, typischerweise bei retalle.
+
+- Begl. Schallgeschwindijve't bei Kleinen $q \quad q \rightarrow 0$
+$\xrightarrow{\text { "lanjwelligs Grenzfall" }}: \frac{\omega}{q}=\frac{\sqrt{\frac{4 C_{1}}{n}} \cdot|\underbrace{\sin \left(\frac{1}{2} \cdot q \cdot a\right)}_{\rightarrow \frac{1}{2} \cdot q \cdot a}| \xrightarrow{\downarrow} \rightarrow 0(\lambda \rightarrow \infty)}{} \frac{\omega}{q}=\sqrt{\frac{C_{1}}{n}} \cdot a$
+
+Vagliche Resultat aus Elastizitäts theonie (sieke 3.1.4) "Vabisches"."
+
+\frac{\omega}{q}=\sqrt{\frac{c_{11}}{s}}\left(b_{24} \cdot \sqrt{\frac{c_{44}}{s}} \text { thansversal }\right)
+
+⇒ gibt milenoskopischen Ausdiuck fin teastizitätstenson $c_{11}$
+
+- Bzf. "Granularität": $\Delta q=\frac{2 \pi}{a} \cdot \frac{1}{N}, N: N^{0}$ Atome
+- Am Rand der 1. Bz: $\frac{d}{d q} \cdot \omega=0 \Rightarrow$ stehende welle!
+(fin Richoloy, nit hok Gitts symmetrie )
+
+
+### 3.2.2 Bedentuny des esten Brillouin-Zoue
+
+Wirs betrachten den Phasenmeterselied benach bats Atone.
+
+\frac{u_{s+1}}{u_{s}}=\frac{U \cdot e^{-i \omega t} e^{i \cdot q(s+1) \cdot a}}{U \cdot e^{-i \omega t} \cdot e^{i q s a}}=e^{i q a}
+
+Plassencentersilied
+Phasenmenterehied unuss zwische 0 and $2 \pi$ ligen.
+
+& \quad-\pi<9 \cdot a<\pi \quad \text { (dine Verlust der Allj.gültijlait) } \\
+& \Rightarrow \quad-\frac{\pi}{a}<9<+\frac{\pi}{a} \quad \text { 1. Brillouin-Zone (Bz) }
+
+Fin $q^{\prime} \notin 1 . B z: \quad q^{\prime}=q+\frac{2 \pi}{q} \cdot p \quad$ Redultion anf 1.B7
+
+## Be merkygen
+
+- Kousistent check: $\quad \frac{u_{s-1}}{u_{s}}=e^{i q^{\prime} \cdot a}=e^{i q a} e^{ \pm 2 \pi \cdot i \cdot p}=e^{i q a}$
+- Typisdorwère hat a eive andue Ridituy als a'
+"Umblapp" - Prozess bzw. "Uuskapp" - Strenny.
+⇒ Phasengesehwindigheit vphase $=\frac{\omega}{9}$ ändert des Vareiche.'.
+⇒ Die Conuppen zeschewin dijkait $v_{q}=\frac{d}{d q} \cdot \omega$ abo vielst!
+Physik I ⇒ $v_{\delta}$ ist relevant fin Encije transpoit.
+- Gesehwindijua't des Wellenpatels $v_{\delta}^{10}=\frac{d}{d q} \cdot \omega ; \underline{v}_{g}-\underline{\nabla}_{q}(\omega(q))$
+
+v_{1}=\frac{d}{d q} \cdot \omega=\sqrt{\frac{c_{1}}{M}} \cdot a \cdot\left|\cos \left(\frac{1}{2} q \cdot a\right)\right|
+
+![This diagram depicts the dispersion relation for the first Brillouin zone in a crystal lattice, showing the relationship between the wave vector \( k \) and energy or frequency within the zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/063fd941-67de-4497-abb3-bc8fd9bfd504/25f90bed-1a22-4566-be0e-a69876d7ffb7-4_347_909_558_912.jpg)
+
+- Unzwellijr Creuzfall: $|a| \rightarrow \frac{\pi}{a}$
+
+\Rightarrow \quad \frac{u_{s+1}}{u_{s}}=e^{ \pm i \pi}=-1
+
+Benadibarte Gittrebenen schwingen in Gegen phase
+⇒ stehende welle (in Riditunge hokes Symmetrie)
+$\Leftrightarrow$ housistent nit $\frac{d_{w}}{d_{q}}=0$ (sible ober).
+

@@ -1,0 +1,223 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 12
+
+31. Januar 2026
+
+## Aufgabe 1 : Zusammenfassung: Struktur des Protons
+
+Erläutern Sie, welche experimentelle Evidenz es für die folgenden Eigenschaften des Protons (und seiner Substruktur) gibt:
+a. Das Proton ist kein punktförmiges Teilchen, sondern ein zusammengesetztes System.
+b. Die Konstituenten des Protons sind punkförmige Spin-1/2-Teilchen.
+c. Die Konstituenten besitzen drittel-zahlige elektrische Ladungen.
+d. Das Proton ist aus drei Konstituenten aufgebaut.
+e. Neben diesen Konstituenten, den Valenzquarks, enthält das Proton auch Seequarks.
+f. Das Proton enthält neben Quarks auch Gluonen.
+
+## Lösung: Zusammenfassung - Struktur des Protons
+
+Hinweis: In der Lepton-Nukleon-Streuung wird die Wechselwirkung durch den Austausch eines virtuellen Photons oder eines schwachen Eichbosons vermittelt. Die Größe
+
+$$
+Q^{2} \equiv-q^{2}=-\left(p_{\mathrm{in}}-p_{\mathrm{out}}\right)^{2}
+$$
+
+ist das Quadrat des Viererimpulsübertrags. Physikalisch bestimmt $Q^{2}$ die räumliche Auflösung der Sonde: kleine $Q^{2}$ entsprechen großen Wellenlängen und tasten das Proton als Ganzes ab, während große $Q^{2}$ kurzen Wellenlängen entsprechen und kleine Distanzskalen im Inneren des Protons auflösen. Eine grobe Abschätzung der Auflösung ist
+
+\Delta r \sim \frac{\hbar c}{\sqrt{Q^{2}}}
+
+In der tiefinelastischen Streuung kann das Proton nicht als punktförmiges Teilchen behandelt werden. Stattdessen wird der differentielle Wirkungsquerschnitt durch Strukturfunktionen $F_{i}\left(x, Q^{2}\right)$ beschrieben, die Informationen über die innere Struktur des Protons enthalten. Die Variable
+
+x=\frac{Q^{2}}{2 p \cdot q}
+
+(Bjorken-Variable) kann als der Anteil des Protonimpulses interpretiert werden, den das getroffene Quark trägt.
+Strukturfunktionen beschreiben, wie der Protonimpuls auf Quarks und Antiquarks verteilt ist. Sie erlauben es, die Anzahl der Valenzquarks sowie das Vorhandensein von Seequarks und Gluonen zu bestimmen. Bei hinreichend großen $Q^{2}$ liefert die annähernde $Q^{2}$-Unabhängigkeit der Strukturfunktionen (Bjorken-Skalierung) einen Hinweis auf punktförmige Konstituenten im Proton.
+
+## Erläutern Sie, welche experimentelle Evidenz es für die folgenden Eigenschaften des Protons (und seiner Substruktur) gibt:
+
+## a. Das Proton ist kein punktförmiges Teilchen, sondern ein zusammengesetztes System.
+
+Dies zeigt sich in der elastischen Elektron-Proton-Streuung. Wäre das Proton punktförmig, so würde der Wirkungsquerschnitt durch die Dirac- (bzw. Mott-)Formel beschrieben. Experimentell beobachtet man jedoch Abweichungen von der Punktteilchen-Vorhersage. Die gemessene $Q^{2}$-Abhängigkeit des elastischen Streuquerschnitts wird durch elektromagnetische Formfaktoren beschrieben, die die endliche räumliche Ausdehnung des Protons kodieren. Eine häufig verwendete Parametrisierung ist der Dipol-Formfaktor, der auf einen Protonradius der Größenordnung von 1 fm hinweist.
+
+Weitere Hinweise auf die innere Struktur ergeben sich aus der Anregung von Baryonenresonanzen, wie z. B. der $\Delta(1232)$-Resonanz, die auftreten, sobald die invariante Masse des Endzustands etwa 1.2 GeV überschreitet. Solche Anregungen sind für ein strukturloses Teilchen nicht möglich und zeigen daher, dass das Proton ein zusammengesetztes Objekt ist.
+
+## b. Die Konstituenten des Protons sind punktförmige Spin- $\frac{1}{2}$-Teilchen.
+
+Die Eigenschaften der Konstituenten werden in der tiefinelastischen Elektron-ProtonStreuung sichtbar. Bei hinreichend großem Impulsübertrag zeigen die Strukturfunktionen ein annäherndes Skalierungsverhalten, d.h. sie hängen hauptsächlich von der BjorkenVariable $x$ und nur schwach von $Q^{2} \mathrm{ab}$. Dieses Verhalten ist charakteristisch für die Streuung an punktförmigen Konstituenten.
+
+Zusätzlich gilt experimentell die Beziehung
+
+2 x F_{1}(x)=F_{2}(x)
+
+die als Callan-Gross-Beziehung bekannt ist. Sie ist eine direkte Folge der Streuung an Spin- $\frac{1}{2}$-Konstituenten. Die experimentelle Bestätigung dieser Beziehung liefert daher einen starken Hinweis darauf, dass die Konstituenten des Protons punktförmige Fermionen mit Spin 1/2 sind.
+
+## c. Die Konstituenten tragen gebrochene elektrische Ladungen.
+
+Eine zentrale Annahme des Quarkmodells ist, dass Quarks gebrochene elektrische Ladungen von $+2 / 3 e$ bzw. $-1 / 3 e$ tragen. Diese Zuordnung erklärt erfolgreich die beobachteten Ladungen des Protons (uud) und des Neutrons (udd).
+
+Starke experimentelle Hinweise auf gebrochene Ladungen ergeben sich aus der konsistenten Beschreibung einer Vielzahl von Streudaten sowie aus dem Hadronenspektrum. Insbesondere erfordert die Existenz der $\Delta^{++}$-Resonanz mit Ladung $+2 e$ drei Quarks mit jeweils $+2 / 3 e$. Gleichzeitig wird kein Baryon mit Ladung $-2 e$ beobachtet, was bei ganzzahligen Quarkladungen zu erwarten wäre. Dieses Muster lässt sich natürlich durch gebrochene Quarkladungen erklären.
+
+## d. Das Proton besteht aus drei Konstituenten (Valenzquarks).
+
+Tiefinelastische Streuexperimente zeigen, dass sowohl das Nukleon als auch seine Konstituenten Spin $\frac{1}{2}$ tragen. Die einfachste Kombination von Spin- $\frac{1}{2}$-Teilchen, die einen Protonspin von $\frac{1}{2}$ ergibt und gleichzeitig die beobachteten Ladungen von Proton und Neutron reproduziert, ist ein System aus drei Quarks.
+
+Diese Vorstellung wird durch Neutrino-Nukleon-Streuung stark gestützt. Die Strukturfunktion
+
+F_{3}^{v N}(x)=2(q(x)-\bar{q}(x))
+
+ist ausschließlich empfindlich gegenüber Valenzquarks. Ihr Integral,
+
+\int_{0}^{1} d x F_{3}(x)=6
+
+entspricht drei Valenzquarks im Nukleon.
+Zusätzlich verlangt die Farbladungsneutralität in der Quantenchromodynamik (QCD), dass Baryonen farbsinguläre Zustände sind, was auf natürliche Weise durch drei Quarks unterschiedlicher Farbe realisiert wird.
+
+## e. Neben Valenzquarks enthält das Proton auch Seequarks.
+
+Wäre das Proton ausschließlich aus drei Valenzquarks aufgebaut, so würde sein gesamter Impuls von drei Streuzentren getragen. Tiefinelastische Streuung zeigt jedoch, dass die Strukturfunktionen bei kleinen Werten von Bjorken- $x$ stark ansteigen, was auf eine große Zahl von Partonen mit sehr kleinem Impulsanteil hinweist.
+Dieses Verhalten wird als Evidenz für Seequarks interpretiert, d. h. virtuelle $q \bar{q}$-Paare im Proton. Weitere Unterstützung liefert die Neutrinostreuung: Das experimentell beobachtete Verhältnis der $v$ - zu $\bar{v}$-Wirkungsquerschnitte beträgt etwa 2:1, während bei ausschließlich vorhandenen Valenzquarks ein Verhältnis von 3:1 zu erwarten wäre.
+
+## f. Neben Quarks enthält das Proton auch Gluonen.
+
+Der von Quarks getragene Impulsanteil kann durch Integration der elektromagnetischen Strukturfunktion über alle $x$ bestimmt werden:
+
+\int_{0}^{1} d x F_{2}^{e N}(x) \approx 0.5
+
+Dies zeigt, dass Quarks nur etwa die Hälfte des Gesamtimpulses des Protons tragen.
+Der verbleibende Impulsanteil muss von elektrisch und schwach neutralen Konstituenten getragen werden, die als Gluonen identifiziert werden. Gluonen spielen damit eine zentrale Rolle in der inneren Struktur des Protons, auch wenn sie nicht direkt zu den Wirkungsquerschnitten in der Elektron- oder Neutrinostreuung beitragen.
+
+## Aufgabe 2 : Callan-Gross-Beziehung
+
+Für die tiefinelastische Streuung von Elektronen am Proton ergibt sich für die Strukturfunktionen des Protons der Zusammenhang
+
+2 x F_{1}\left(x, Q^{2}\right)=F_{2}\left(x, Q^{2}\right)
+
+der als Callan-Gross-Beziehung bekannt ist. Dabei beschreiben $F_{2}\left(x, Q^{2}\right)$ und $F_{1}\left(x, Q^{2}\right)$ den elektrischen bzw. magnetischen Anteil der Wechselwirkung. $Q^{2}$ gibt das Quadrat des Impulsübertrags an.
+a. Die Bjorken'sche Skalenvariable ist als $x:=\frac{Q^{2}}{2 M v}$ definiert, mit $M$ als Masse des Protons. $v=E-E^{\prime}$ entspricht dem Energieübertrag vom Projektil auf das Target. Zeigen Sie, dass $x$ ein Maß für die Inelastizität eines Streuprozesses ist.
+b. Wie muss der Rutherford-Streuquerschnitt modifiziert werden, um den für die Streuung zweier punktformiger Spin-1/2-Teilchen gültigen Streuquerschnitt
+
+\frac{d \sigma}{d \Omega d E^{\prime}}=\left(\frac{d \sigma}{d \Omega}\right)_{M o t t}\left[1+2 \tau\left(Q^{2}, v\right) \tan ^{2} \frac{\theta}{2}\right]
+
+zu erhalten? Dabei gibt der Faktor $\tau=\frac{Q^{2}}{4 m^{2} c^{2}}$ den Anteil des magnetischen Moments des Targets (der Masse m) an der Wechselwirkung an.
+
+## Lösung: Callan-Gross-Beziehung
+
+Für die tiefinelastische Streuung (DIS) von Elektronen am Proton gilt für die Strukturfunktionen des Protons die Beziehung
+
+2 x F_{1}\left(x, Q^{2}\right)=F_{2}\left(x, Q^{2}\right)
+
+die als Callan-Gross-Beziehung bekannt ist. Dabei ist $Q^{2}=-q^{2}$ das Quadrat des Viererimpulsübertrags. Die Strukturfunktionen $F_{1}$ und $F_{2}$ beschreiben die hadronische Antwort auf transversale bzw. longitudinale virtuelle Photonen und enthalten Informationen über die innere Struktur des Protons.
+a. Die Bjorken-Skalierungsvariable ist definiert als
+
+x:=\frac{Q^{2}}{2 M v},
+
+wobei $M$ die Protonmasse ist und $v=E-E^{\prime}$ den Energieübertrag vom Lepton auf das Proton im Laborsystem bezeichnet.
+
+Bei hinreichend großen Energien können angeregte Nukleonenzustände wie etwa die $\Delta$-Resonanz erzeugt werden. Die invariante Masse $W$ des hadronischen Endzustands ist dann
+
+W^{2}=(P+q)^{2}=M^{2}+2 P \cdot q+q^{2}=M^{2}+2 M v-Q^{2}
+
+Mit der Definition von $x$ lässt sich dies schreiben als
+
+W^{2}=M^{2}+Q^{2}\left(\frac{1}{x}-1\right)
+
+Daraus folgt:
+
+\begin{array}{ll}
+x=1 \quad \Rightarrow \quad W^{2}=M^{2} & \text { (elastische Streuung) } \\
+x<1 \quad \Rightarrow \quad W^{2}>M^{2} & \text { (inelastische Streuung) }
+\end{array}
+
+Kleine Werte von $x$ entsprechen stark inelastischen Prozessen mit großer invarianter Masse des hadronischen Endzustands. Bjorken- $x$ ist somit ein direktes Maß für die Inelastizität des Streuprozesses.
+b. Der Rutherford-Streuquerschnitt beschreibt die Streuung zweier punktförmiger, spinloser Teilchen und besitzt die charakteristische Winkelabhängigkeit
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }} \propto \frac{1}{\sin ^{4}(\theta / 2)}
+
+Für die Streuung relativistischer Spin- $\frac{1}{2}$-Leptonen müssen Spineffekte berücksichtigt werden (s. Abb.1). Dies führt zum Mott-Streuquerschnitt, der die Helizitätserhaltung des Projektils berücksichtigt:
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\text {Mott }}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }}\left(1-\beta^{2} \sin ^{2} \frac{\theta}{2}\right) .
+
+Im ultrarelativistischen Grenzfall ( $\beta \simeq 1$ ) vereinfacht sich dies zu
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\text {Mott }}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }} \cos ^{2} \frac{\theta}{2}
+
+Berücksichtigt man zusätzlich den Rückstoß des Targets, so ergibt sich ein weiterer Phasenraumfaktor $E^{\prime} / E$, und man erhält
+
+\left(\frac{d^{2} \sigma}{d \Omega d E^{\prime}}\right)_{\text {Mott }}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }} \frac{E^{\prime}}{E} \cos ^{2} \frac{\theta}{2}
+
+Ist auch das Target ein Spin- $\frac{1}{2}$-Teilchen (wie das Proton oder ein einzelnes Quark), so tragen zusätzlich Spinflip-Prozesse bei. Diese führen zu einem weiteren Term proportional zu $\tan ^{2}(\theta / 2)$, sodass sich insgesamt
+
+\frac{d^{2} \sigma}{d \Omega d E^{\prime}}=\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{Mott}}\left[1+2 \tau \tan ^{2} \frac{\theta}{2}\right]
+
+ergibt, mit
+
+\tau=\frac{Q^{2}}{4 m^{2}}
+
+Der Faktor $\tau$ beschreibt den Beitrag der magnetischen Wechselwirkung, die mit dem Spin des Targetteilchens der Masse $m$ verknüpft ist. In der elastischen Streuung ist $m$ die Protonmasse; in der tiefinelastischen Streuung kann $m$ als charakteristische Massenskala des getroffenen Quarks interpretiert werden.
+
+Diese Form des Streuquerschnitts liefert zusammen mit der experimentell bestätigten Callan-Gross-Beziehung
+
+2 x F_{1}=F_{2}
+
+einen starken Hinweis darauf, dass die Konstituenten des Protons punktförmige Spin- $\frac{1}{2}$ Teilchen sind.
+
+![This diagram depicts the behavior of electrons (e⁻) in the presence of a proton (p) under different conditions, illustrating electron scattering and reflection scenarios. It shows how electron trajectories change when interacting with the proton, including cases where electrons are reflected or transmitted.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/28a337ff-fb2f-42ad-beaa-7267eef2d636/a11f17df-ec83-4aac-82c3-500da537cc57-5_266_1104_2236_484.jpg)
+Abbildung 1: Diagramme zur Mott- und zur Fermion-Fermion-Sreuung mit Spinflip des Targets
+
+## Aufgabe 3 : Gluonen
+
+a. Überlegen Sie (in Analogie zur Konstruktion der Flavour-Wellenfunktionen von Mesonen), wie die Farbwellenfunktionen der Gluonen dargestellt werden können. Welche Bedeutung hat der total symmetrische Zustand?
+$S U(3)$ : Analog zur Konstruktion der Meson-Wellenfunktionen kann man eine geeignete Basis aus drei Farben ( $r, g, b$ ) und drei Antifarben ( $\bar{r}, \bar{g}, \bar{b}$ ) verwenden. In dieser Basis spannen Zustände der Form $|i \bar{j}\rangle$ die Produktdarstellung
+
+3 \otimes \overline{3}=8 \oplus 1
+
+auf.
+Die physikalischen Gluonen entsprechen dem Oktett (Adjungierte Darstellung) von $S U(3)$. Sechs der Oktett-Zustände lassen sich schreiben als
+
+|r \bar{g}\rangle,|r \bar{b}\rangle,|g \bar{r}\rangle,|g \bar{b}\rangle,|b \bar{r}\rangle,|b \bar{g}\rangle .
+
+Hinzu kommen zwei linear unabhängige diagonale Kombinationen,
+
+\frac{1}{\sqrt{2}}|r \bar{r}-g \bar{g}\rangle, \quad \frac{1}{\sqrt{6}}|r \bar{r}+g \bar{g}-2 b \bar{b}\rangle,
+
+die so gewählt sind, dass alle Oktett-Zustände orthonormal sind. Durch Rotationen im Farbraum können diese Zustände ineinander überführt werden.
+
+Die verbleibende Kombination,
+
+\frac{1}{\sqrt{3}}|r \bar{r}+g \bar{g}+b \bar{b}\rangle,
+
+ist total symmetrisch und entspricht einem Farbsingulett. Sie ist proportional zur Einheitsmatrix im Farbraum und koppelt daher nicht an Farbladung.
+
+Die Quantenchromodynamik basiert auf der Eichgruppe $S U(3)$, deren Eichbosonen ausschließlich den acht Generatoren der Gruppe entsprechen. Der Farbsingulett-Zustand würde zu einem zusätzlichen $U(1)$-Faktor gehören und ist daher kein QCD-Gluon. Folglich treten nur die acht Oktett-Zustände als physikalische Gluonen auf.
+b. Was kann man aus 3-Jet-Ereignissen über Gluonen lernen?
+
+An $e^{+} e^{-}$- oder $p \bar{p}$-Kollidern können Quark-Antiquark-Paare mit großen und entgegengesetzten Impulsen erzeugt werden. Nach der Hadronisierung erscheinen solche Ereignisse im Detektor als 2-Jet-Ereignisse.
+
+Wenn eines der Quarks ein hartes Gluon abstrahlt (analog zur Bremsstrahlung), das anschließend ebenfalls hadronisiert, entsteht ein 3-Jet-Ereignis:
+
+e^{+} e^{-} \rightarrow q \bar{q} g .
+
+Die Beobachtung solcher Ereignisse liefert daher einen direkten experimentellen Nachweis für die Existenz von Gluonen.
+
+3-Jet-Ereignisse werden durch drei klar getrennte hadronische Energieflüsse und annähernde Impulserhaltung identifiziert,
+
+\vec{p}_{1}+\vec{p}_{2}+\vec{p}_{3} \approx 0,
+
+![This image depicts particle collision events in a particle detector, showing the hadron jets produced from quark-antiquark pairs, with the left side illustrating a simple quark-antiquark event and the right side showing a quark-antiquark-gluon event.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/28a337ff-fb2f-42ad-beaa-7267eef2d636/a11f17df-ec83-4aac-82c3-500da537cc57-7_1098_1139_285_447.jpg)
+Fig. 9.6. Typical 2-jet and 3-jet events, measured with the JADE detector at the PETRA $\mathrm{e}^{+} \mathrm{e}^{-}$storage ring. The figures show a projection perpendicular to the beam axis, which is at the centre of the cylindrical detector. The tracks of charged particles (solid lines) and of neutral particles (dotted lines) are shown. They were reconstructed from the signals in the central wire chamber and in the lead glass calorimeter surrounding the wire chamber. In this projection, the concentration of the produced hadrons in two or three particle jets is clearly visible. (Courtesy of DESY)
+
+wodurch sie sich von 2-Jet-Topologien unterscheiden lassen.
+In führender Ordnung ist die Wahrscheinlichkeit für die Gluonemission proportional zur starken Kopplungskonstanten $\alpha_{s}$. Daher liefert das Verhältnis der Raten von 3-Jet- zu 2-Jet-Ereignissen ein direktes Maß für $\alpha_{s}$. Messungen am PETRA-Kollider am DESY ergaben Werte der Größenordnung
+
+\alpha_{s} \sim 0.1-0.2 .
+
+Durch die Untersuchung der Energieabhängigkeit dieses Verhältnisses kann außerdem das Laufen der starken Kopplungskonstanten beobachtet werden (Abb. 2).
+Weitere Informationen über Gluonen erhält man aus den Winkelverteilungen der Jets. Im Mittel ist der Gluonenjet der energieärmste Jet. Durch die Untersuchung der Winkelkorrelationen zwischen den Jets und den Vergleich mit theoretischen Vorhersagen zeigt sich, dass die gemessenen Verteilungen mit Gluonen als Spin-1-Teilchen übereinstimmen. Ein skalares Gluon würde zu einer anderen Abstrahlcharakteristik führen (Abb. 3).
+Unabhängige Hinweise auf den Spin der Gluonen ergeben sich außerdem aus der Massendifferenz zwischen pseudoskalaren und Vektormesonen, die durch Spin-Spin-Wechselwirkungen entsteht, welche durch den Austausch von Gluonen vermittelt werden.
+
+![This diagram is a plot showing the running of the strong coupling constant (α_s) as a function of the momentum transfer squared (q²) in GeV², with experimental data points from various processes such as tau decay, deep inelastic scattering, and Z⁰ decay. It illustrates how α_s decreases with increasing energy scale, consistent with quantum chromodynamics (QCD) predictions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/28a337ff-fb2f-42ad-beaa-7267eef2d636/a11f17df-ec83-4aac-82c3-500da537cc57-8_1114_855_342_580.jpg)
+Abbildung 2: Laufende Kopplungskonstante $\alpha_{s}$
+
+![This diagram is a particle physics angular distribution plot showing the differential number of events \( \frac{dN}{d(\cos \tilde{\theta})} \) as a function of \( \cos \tilde{\theta} \) for a reaction with energy range 250 GeV < W < 36 GeV, comparing scalar and vector hypotheses.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/28a337ff-fb2f-42ad-beaa-7267eef2d636/a11f17df-ec83-4aac-82c3-500da537cc57-8_885_1072_1690_507.jpg)
+Abbildung 3: Daten vom TASSO Detektor am DESY zur Bestimmung des Gluonenspins.
+

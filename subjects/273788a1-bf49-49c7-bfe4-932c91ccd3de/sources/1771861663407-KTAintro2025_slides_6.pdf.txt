@@ -1,0 +1,113 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing representations of atomic nuclei, particle physics (Standard Model particles), nuclear reactors, particle accelerators, neutrino detection, and cosmic phenomena including the Big Bang and stellar evolution.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma, neutron interactions, detectors |
+| 7 | 25/11/25 | Particle/Astrophysics | Accelerators, Cosmic accelerators | Four vector, accelerators, cyclotron Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Alpha, beta, gamma |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiation, Reactors |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Literatur
+
+- Terranova, A modern primer in particle \& nuclear physics (Oxford Univ. Press)
+- Povh, Rith, Scholz, Zetsche; Teilchenphysik (Springer Verlag)
+- Perkins; Introduction to High Energy Physics (Addison Wesley)
+- Mayer-Kuckuck; Kernphysik (Teubner)
+- Kundt; Astrophysics A primer (Springer)
+- Hanslmeier: Einführung in Astronomie und Astrophysik (Springer)
+
+
+## Tiefergehende Literatur
+
+- Berger; Elementarteilchenphysik (Springer)
+- Halzen, Martin; Quarks \& Leptons (Wiley)
+- Kleinknecht; Teilchendetektoren (Teubner)
+- Carroll, Ostlie; An Introduction to Modern Astrophysics (AddisonWesley)
+![This image is the cover of a textbook titled "Teilchen und Kerne," which is an introduction to physical concepts related to particles and nuclei.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-03_1009_712_556_2574.jpg)
+
+
+## Literatur:
+
+- Die ersten drei Minuten (Steven Weinberg)
+
+
+## Einführung in Quantenmechanik (für NichtPhysiker und Physiker :)
+
+Einfache und 'unterhaltsame' Einführung in die Quantenphysik:
+https://www.didaktik.physik.unimuenchen.de/archiv/inhalt_materialien/quantenphysik _sek1/quant_sek1.pdf
+![The image depicts the cover of a book titled "Quantenmechanik," which is an introduction to quantum mechanics by Nobel laureate Steven Weinberg. It shows that the subject matter is a foundational and advanced treatment of quantum mechanics concepts.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-04_939_585_408_2565.jpg)
+![This image is the cover of a textbook titled "Einführung in die Quantenmechanik," which is an introduction to quantum mechanics for physics education students.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-04_793_522_984_976.jpg)
+![The image is the cover of a textbook titled "Quantenmechanik" by Schwabl, which is an introduction to quantum mechanics. It shows the book's edition (7th) and highlights that it includes more than 100 exercises.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-04_884_582_924_1833.jpg)
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts the process of beta-plus decay, showing a proton (p⁺) inside a nucleus converting into a neutron while emitting a positron (e⁺) and a neutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-05_746_1074_294_0.jpg)
+![This diagram is a stopping power graph showing the energy loss per unit distance (-dE/dx) of charged particles as a function of their relativistic parameter (βγ) in various materials, illustrating the minimum ionizing particle (MIP) region and the approximate 1/β² dependence at low velocities.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-05_1001_890_286_1239.jpg)
+
+$$
+-\frac{1}{\varrho} \frac{d E}{d x}=K z^{2} \frac{Z}{A} \frac{1}{\beta^{2}}\left[\ln \left(\frac{2 m_{e} c^{2}(\beta \gamma)^{2}}{I}\right)-\beta^{2}\right]
+$$
+
+$-\frac{1}{\varrho} \frac{d E}{d x} \approx 2 \mathrm{MeVcm}^{2} / \mathrm{g}$
+![This diagram depicts the mass attenuation coefficient (μ/ρ) as a function of gamma-ray energy (Eγ) in MeV, showing the contributions of different photon interaction processes: Compton effect, photoelectric effect, and pair production, along with their total combined effect.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-05_967_955_398_2260.jpg)
+
+Energieverlust in
+Materie
+
+Gamma interactions
+
+## Nachtrag aus Skript: Energieverlust von Elektronen
+
+Sonderfall Elektronen/Positronen:
+Da $e^{-} / e^{+}$sehr leicht sind, erfahren sie stärkere Ablenkung im Feld der Kerne. Durch die entsprechende Abbremsung werden Photonen abgestrahlt, die Bremsstrahlung. Diese ist stark energie- und Molekül-abhängig. Zusätlich zu der oben beschrieben Bethe-Bloch Formel gibt es einen additiven Faktor zur kompletten Beschreibung von $d E / d x$ :
+
+Energieverlust schneller Elektronen in Materie
+![This diagram depicts the energy loss mechanisms of electrons as a function of their energy, showing the contributions of collision loss and bremsstrahlung loss to the total energy loss (dE/dx) in units of MeV·cm²/g.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-06_1077_1197_708_2070.jpg)
+
+## WW hochenergetischer Photonen
+
+![The left diagram depicts the process of electromagnetic shower development, showing how a primary electron produces bremsstrahlung photons that subsequently create electron-positron pairs. The right image shows a simulated or detected electromagnetic shower event in a particle detector, illustrating the cascade of secondary particles generated by the initial high-energy particle interaction.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-07_1248_3077_307_151.jpg)
+
+Teilchenschauer, verursacht durch kosmische Strahlung in der Atmosphäre.
+Hier: 1 TeV Proton, 20 km Höhe, Computersimulation
+![This is a gamma-ray energy spectrum showing the characteristic features of a 1778.9 keV gamma-ray source, including the full energy peak, Compton continuum, Compton edge, single and double escape peaks, backscatter, bremsstrahlung, and pair production annihilation peak.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-08_1555_2338_192_474.jpg)
+
+## Nachweis von Photonen von Szintillator: Photomultiplier
+
+![This diagram depicts the working principle of a photomultiplier tube, showing the conversion of incident photons into photoelectrons at the photocathode, followed by electron multiplication through a series of dynodes to produce a measurable electrical output signal.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-09_1060_2228_259_532.jpg)
+
+Quantum Efficiency $\varepsilon$ :
+gibt an wieviele Photoelektronen pro Photon erzeugt werden.
+Typisch $\varepsilon=0.25$
+![The image shows a Geiger-Müller tube, a device used for detecting and measuring ionizing radiation. It depicts the sensor component of a Geiger counter.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-09_670_588_1082_2387.jpg)
+
+ATLAS Detektor (LHC - CERN)
+![This diagram depicts the ATLAS detector at the Large Hadron Collider, showing its various components such as the inner detector, calorimeters, toroids, and muon detection systems used for particle physics experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-10_1452_2505_280_402.jpg)
+
+![This diagram depicts the ATLAS detector setup and shows the detection and tracking of various particles (muon, proton, neutron, electron, photon, neutrino) produced in high-energy collisions, illustrating which particles are visible or invisible to different detector components.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-11_1652_1892_91_742.jpg)
+![This image depicts the IceCube Neutrino Observatory at the South Pole, showing a 3D visualization of neutrino detection events within the ice and a photo of a digital optical module used in the detector.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-12_1593_1961_64_44.jpg)
+
+## Cherenkov light in reactor pool
+
+![This image depicts the blue Cherenkov radiation glow inside a nuclear reactor core, showing the active nuclear fuel assemblies submerged in water.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-12_1371_1046_286_2195.jpg)
+
+Detect Cherenkov Light in Ice!
+![This image depicts a dilution refrigerator used for cooling experimental apparatus to millikelvin temperatures, typically in quantum computing or condensed matter physics research. It shows the intricate internal components designed to achieve ultra-low temperatures by successive stages of cooling.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-13_1715_1158_82_105.jpg)
+
+Cryogenic detectors for neutrino detection
+![This diagram depicts the process of nuclear fission, showing a heavy atomic nucleus splitting into smaller nuclei, releasing energy and neutrons, which can then induce further fission reactions. The image also includes a nuclear power plant, indicating the application of this process for energy generation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-13_864_1586_281_1514.jpg)
+![This image shows a small quartz crystal with a microfabricated superconducting quantum interference device (SQUID) circuit on its surface, used for sensitive magnetic flux detection. The scale indicates the size of the quartz crystal, approximately 5 mm.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7e02f4ba-239d-4129-ba6e-01f00a83dcf2/aab6a8b2-ed8a-4835-92bb-488f04674225-13_694_852_1062_1432.jpg)
+

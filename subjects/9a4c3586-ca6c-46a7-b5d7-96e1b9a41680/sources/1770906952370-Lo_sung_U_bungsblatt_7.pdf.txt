@@ -1,0 +1,260 @@
+# Übung zur Vorlesung <br> Physik der kondensierten Materie 1 
+
+WiSe 2025/2026
+Tutorien in der Woche vom 8.12.25
+Lösungen zu Blatt 7
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und -materialien
+Alexander Musta
+
+### 7.1 Elastische Eigenschaften von Festkörpern
+
+(a) Wie sind die Komponenten des Spannungstensors $\sigma_{i j}$ definiert? Welche Eigenschaft besitzt der Spannungstensor, wenn sich der Körper im statischen Gleichgewicht befindet? Gebe jeweils eine Skizze für einen Würfel an, welche eine Dehnung in $y$-Richtung, eine uniforme Kompression und eine Scherung auf der $x y$-Fläche in Richtung $y$ erfährt.
+
+## Lösung:
+
+Die Komponente $\sigma_{i j}$ beschreibt eine differentielle Kraft pro Fläche, welche in die $i$-te Richtung auf die Fläche wirkt, welche durch den Normalvektor in die $j$-te Richtung definiert ist. Wenn der Körper sich im statischen Gleichgewicht befindet, dann ist der Spannungstensor symmetrisch (d.h. $\sigma_{i j}=\sigma_{j i}$, siehe Abbildung 1). Außerdem müssen die auf entgegengesetzten Flächen wirkenden Spannungen vom Betrag gleich und mit umgekehrtem Vorzeichen sein. Abbildung 2 zeigt jeweils eine Skizze für einen Würfel an, welche eine Dehnung in $y$-Richtung (a), eine uniforme Kompression (b) und eine Scherung auf der $x y$-Fläche in Richtung $y$ erfährt (c).
+(b) Wie sind die Komponenten des Dehnungstensors $e_{i j}$ in Bezug auf den Verschiebungsvektor $\vec{u}(\vec{r})$ definiert?
+
+## Lösung:
+
+![This diagram depicts the components of the shear stress tensor on a two-dimensional element, showing the directions and orientations of the shear stresses \(\sigma_{xy}\) and \(\sigma_{yx}\) acting on the faces of the square element in the \(x\) and \(y\) coordinate directions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/07e6e222-b64e-4e46-b25a-cb0e13f19b35/5efe70c5-c35d-422a-b065-fbb55edc0934-02_538_590_330_749.jpg)
+Abbildung 1: Veranschaulichung der Tatsache, dass für einen Körper im statischen Gleichgewicht $\sigma_{i j}=\sigma_{j i}$ gelten muss. Die Summe der Kräfte in $x$-Richtung verschwindet für $\sigma_{x y}=\sigma_{y x}$. Übernommen aus Gross, Rudolf und Marx, Achim. Festkörperphysik, München: Oldenbourg Wissenschaftsverlag, 2012.
+
+![This diagram depicts the components of the stress tensor acting on a differential cubic element in three dimensions, showing normal stresses in (a) and (b) and shear stresses in (c) along the x, y, and z axes.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/07e6e222-b64e-4e46-b25a-cb0e13f19b35/5efe70c5-c35d-422a-b065-fbb55edc0934-02_437_1446_1151_333.jpg)
+Abbildung 2: (a) Dehnung eines Würfels in y-Richtung. Die Zugspannung $\sigma_{y y}$ bewirkt eine Streckung in y-Richtung um den Betrag $\Delta y$. (b) Uniforme Kompression unter allseitigem Druck. (c) Reine Scherdeformation. In (a) und (c) sind die für das mechanische Gleichgewicht erforderlichen Gegenkräfte punktiert dargestellt. Übernommen aus Hunklinger, Siegfried. Festkörperphysik, München: De Gruyter Oldenbourg, 2014.
+
+Der Dehnungstensor ist gegeben als:
+
+$$
+e_{i j}=\frac{1}{2}\left(\frac{\partial u_{i}}{\partial x_{j}}+\frac{\partial u_{j}}{\partial x_{i}}\right)
+$$
+
+und ist damit ein symmetrischer Tensor 2. Stufe. Er beschreibt die differentielle
+
+Deformation eines Körpers.
+(c) Der Elastizitätstensor $C_{i j k l}$ ist ein Tensor 4. Stufe, der eine lineare Beziehung zwischen dem Spannungstensor und dem Dehnungstensor herstellt (Verallgemeinerung des Hooke'schen Gesetzes) und wird wie folgt definiert:
+
+\sigma_{i j}=\sum_{k l} C_{i j k l} e_{k l}
+
+Außerdem kann die elastische Energiedichte eines Körpers geschrieben werden als
+
+U=\frac{1}{2} \sum_{i j k l} \tilde{C}_{i j k l} e_{i j} e_{k l}
+
+Welche Beziehung besteht zwischen $\tilde{C}_{i j k l}$ und $C_{i j k l}$ ? Wie viele unabhängige Komponenten besitzt $C_{i j k l}$ für einen Körper im statischen Gleichgewicht?
+
+
+Wir nutzen die Tatsache, dass $\frac{\partial U}{\partial e_{i j}}=\sigma_{i j}$ gilt:
+
+\frac{\partial U}{\partial e_{i j}}=\frac{1}{2} \sum_{n m k l} \tilde{C}_{n m k l}\left(e_{n m} \delta_{i j, k l}+\delta_{i j, n m} e_{k l}\right)=\frac{1}{2} \sum_{k l} e_{k l}\left(\tilde{C}_{k l i j}+\tilde{C}_{i j k l}\right)
+
+Durch den Koeffizienten Vergleich mit den Ausdruck von $\sigma_{i j}$ erhalten wir:
+
+C_{i j k l}=\frac{1}{2}\left(\tilde{C}_{k l i j}+\tilde{C}_{i j k l}\right)=C_{k l i j}
+
+Des Weiteren gelten:
+
+\begin{aligned}
+& \sigma_{i j}=\sigma_{j i} \Rightarrow C_{i j k l}=C_{j i k l} \\
+& e_{i j}=e_{j i} \Rightarrow C_{i j k l}=C_{i j l k}
+\end{aligned}
+
+Aus den ursprünglich $3^{4}=81$ Koeffizienten für $C_{i j k l}$ bleiben durch Gleichungen (6) und (7) nur noch $\left(\sum_{i=1}^{3} i\right)^{2}=36$ übrig. Schließlich bleiben durch Gleichung (5) dann nur noch $\left(\sum_{i=1}^{6} i\right)=21$ unabhängige Komponenten übrig. Aufgrund der Symmetrie von $\sigma_{i j}$ und $e_{i j}$ ist es sinnvoll, die sogennante Voigt-Notation
+zu verwenden, welche die Doppelindizes $i j$ auf einfache Indizes $m$ wie folgt abbildet:
+
+\begin{aligned}
+& x x \rightarrow 1 \quad y y \rightarrow 2 \quad z z \rightarrow 3 \\
+& y z=z y \rightarrow 4 \quad x z=z x \rightarrow 5 \quad x y=y x \rightarrow 6
+\end{aligned}
+
+Dadurch werden Tensoren 2./4. Stufe auf Tensoren 1./2. Stufe vereinfacht. Damit der Ausdruck für die elastische Energiedichte in der Voigt-Notation identisch bleibt, gilt zusätzlich für den Dehnungstensor folgende Relationen:
+
+& e_{x x} \rightarrow e_{1} \quad e_{y y} \rightarrow e_{2} \quad e_{z z} \rightarrow e_{3} \\
+& 2 e_{y z} \rightarrow e_{4} \quad 2 e_{x z} \rightarrow e_{5} \quad 2 e_{x y} \rightarrow e_{6}
+
+Damit gilt für $U$ mit Indizes $i, j, k, l=\{x, y, z\}$ folgendes:
+
+U & =\frac{1}{2} \sum_{i j k l} \tilde{C}_{i j k l} e_{i j} e_{k l}=\frac{1}{2} \sum_{i j} e_{i j}\left(\sum_{l} \tilde{C}_{i j l l} e_{l l}+2 \sum_{k l, k<l} \tilde{C}_{i j k l} e_{k l}\right) \\
+& =\frac{1}{2} \sum_{i j} e_{i j} \sum_{m=1}^{6} \tilde{C}_{i j m} e_{m}=\frac{1}{2} \sum_{m=1}^{6} e_{m}\left(\sum_{i} \tilde{C}_{i i m} e_{i i}+2 \sum_{i j, i<j} \tilde{C}_{i j m} e_{i j}\right) \\
+& =\frac{1}{2} \sum_{n=1}^{6} \sum_{m=1}^{6} \tilde{C}_{n m} e_{n} e_{m}=\frac{1}{2} \sum_{n=1}^{6} \tilde{C}_{n n} e_{n}^{2}+\frac{1}{2} \sum_{n m, n<m}\left(\tilde{C}_{n m}+\tilde{C}_{m n}\right) e_{n} e_{m} \\
+& =\frac{1}{2} \sum_{n=1}^{6} C_{n n} e_{n}^{2}+\sum_{n m, n<m} C_{n m} e_{n} e_{m}
+
+(d) In der Technik werden häufig polykristalline Materialien verwendet, die man hinsichtlich ihrer elastischen Eigenschaften in guter Näherung als isotrope Festkörper betrachten kann. Was versteht man unter den technischen Größen YoungModul $E$, Poisson-Zahl $\nu$, Kompressionsmodul $B$ und Gleitmodul $G$ ? Wie sind diese Größen definiert? Sind diese Größen unabhängig voneinander?
+
+
+Die technischen Größen Young-Modul $E$, Poisson-Zahl $\nu$, Kompressionsmodul $B$ und Gleitmodul $G$ sind wie folgt definiert:
+i. Die Größe $E$ gibt den Zusammenhang zwischen einer Spannung $\sigma$ und der daraus resultierenden relativen Längenänderung $\frac{\Delta l}{l}$ in Richtung der Spannung an:
+
+\sigma=E \frac{\Delta l}{l}
+
+Das Elastizitätsmodul $E$ ist für ein isotropes Medium kein Tensor mehr, sondern ein Skalar.
+ii. Die Poisson-Zahl $\nu$ gibt das Verhältnis von Querkontraktion zu Dehnung an:
+
+\nu=-\frac{\frac{\Delta d}{d}}{\frac{\Delta l}{l}} .
+
+Eine Spannung $\sigma$ resultiert nicht nur in einer Längenänderung $\Delta l$ in Richtung der Spannung, sondern auch in einer Kontraktion $-\Delta d$ quer zur wirkenden Spannung.
+iii. Der Kompressionsmodul $B$ gibt den Zusammenhang zwischen Volumenänderung und einer gleichmäßig auf den Körper wirkenden Spannung, die z. B. durch hydrostatischen Druck realisiert werden kann, an:
+
+p=-\sigma=-B \frac{\Delta V}{V} .
+
+iv. Der Schub-, Scher- oder Gleitmodul $G$ gibt den Zusammenhang zwischen einer auf einen Körper wirkenden Schubspannung und dem daraus resultierenden Scherwinkel $\alpha$ an:
+
+\sigma=G \alpha
+
+Für die Charakterisierung von isotropen Festkörpern reichen zwei unabhängige Größen aus. Die oben definierten vier technischen Größen sind also nicht unabhängig voneinander.
+
+### 7.2 Elastizitätstensor eines zweidimensionalen kubischen Kristalls
+
+(a) Zeigen Sie, dass der Elastizitätstensor unter Symmetriebetrachtungen eines zweidimensionalen kubischen Gitters folgende Form annimmt:
+
+C=\left(\begin{array}{ccc}
+C_{11} & C_{12} & 0 \\
+C_{12} & C_{11} & 0 \\
+0 & 0 & C_{33}
+\end{array}\right) .
+
+Die Indizes $\{1,2,3\}$ entsprechen den Indizes $\{x x, y y, x y\}$ in der sogenannten Voigt-Notation.
+Hinweis: Betrachte die Invarianz der Energiedichte $U$ unter bestimmten Symmetrieoperationen.
+
+
+Ein zweidimensionales kubisches Kristallgitter ist unter anderem invariant unter Spiegelung entlang der [11]-Achse sowie der [01]-Achse. Eine Spiegelung entlang [11] hat zur Folge, dass $x \rightarrow y$ und $y \rightarrow x$ vertauscht werden. Die Komponenten des Spannungstensors $e_{i j}$ werden dann wie folgt transformiert:
+
+& e_{x x} \rightarrow e_{y y} \Leftrightarrow e_{1} \rightarrow e_{2} \\
+& e_{y y} \rightarrow e_{x x} \Leftrightarrow e_{2} \rightarrow e_{1} \\
+& e_{x y} \rightarrow e_{y x}=e_{x y} \Leftrightarrow e_{3} \rightarrow e_{3}
+
+Die rechte Seite bezieht sich auf die in Aufgabe 7.1 besprochene Voigt-Notation, allerdings in diesem Fall nur in zwei Dimensionen. Die elastische Energiedichte, ist gegeben durch:
+
+U=\frac{1}{2}\left(C_{11} e_{1}^{2}+C_{22} e_{2}^{2}+C_{33} e_{3}^{2}\right)+C_{12} e_{1} e_{2}+C_{13} e_{1} e_{3}+C_{23} e_{2} e_{3}
+
+Nach der Spiegelung entlang der [11]-Achse ist die Energiedichte gegeben als:
+
+U_{1}=\frac{1}{2}\left(C_{11} e_{2}^{2}+C_{22} e_{1}^{2}+C_{33} e_{3}^{2}\right)+C_{12} e_{2} e_{1}+C_{13} e_{2} e_{3}+C_{23} e_{1} e_{3}
+
+Durch Vergleich der Koeffizienten soll dadurch folgendes gelten:
+
+U_{1}=U \Rightarrow C_{11}=C_{22} ; \quad C_{13}=C_{23} .
+
+Für die Spiegelung entlang der Richtung [01] gilt, dass $x \rightarrow-x$ und $y \rightarrow y$. Die Komponenten des Spannungstensors werden dann wie folgt transformiert:
+
+& e_{x x} \rightarrow e_{-x-x}=e_{x x} \Leftrightarrow e_{1} \rightarrow e_{1} \\
+& e_{y y} \rightarrow e_{y y} \Leftrightarrow e_{2} \rightarrow e_{2} \\
+& e_{x y} \rightarrow e_{-x y}=-e_{x y} \Leftrightarrow e_{3} \rightarrow-e_{3}
+
+Wir schreiben die Energiedichte in den transformierten Koordinaten auf:
+
+U_{2}=\frac{1}{2}\left(C_{11} e_{1}^{2}+C_{22} e_{2}^{2}+C_{33} e_{3}^{2}\right)+C_{12} e_{1} e_{2}-C_{13} e_{1} e_{3}-C_{23} e_{2} e_{3}
+
+Schließlich müssen für die Koeffizienten $C_{i j}$ folgende Beziehungen gelten:
+
+U_{2}=U \Rightarrow C_{13}=-C_{13}=0 ; \quad C_{23}=-C_{23}=0
+
+Dadurch besitzt der Elastizitätstensor nur 3 unabhängige Komponenten $C_{11}, C_{12}$ und $C_{33}$ und kann geschrieben werden als
+
+C=\left(\begin{array}{ccc}
+C_{11} & C_{12} & 0 \\
+C_{12} & C_{11} & 0 \\
+0 & 0 & C_{33}
+\end{array}\right)
+
+(b) Die Bewegungsgleichung für Schallwellen in einem Medium ist gegeben durch:
+
+\rho \frac{\partial^{2} u_{i}}{\partial t^{2}}=\sum_{j=x, y, z} \frac{\partial \sigma_{i j}}{\partial j}
+
+$u_{i}$ steht für die lokale Auslenkung in die $i$-te Richtung ( $i=x, y, z$ ), $\rho$ für die Dichte und $\sigma_{i j}$ für den Spannungstensor. Zeige, dass elastische Wellen, welche sich in einem zweidimensionalen kubischen Gitter in die [11]-Richtung ausbreiten folgende Phasengeschwindigkeiten besitzen
+
+& v_{1}=\sqrt{\frac{C_{11}+2 C_{33}+C_{12}}{2 \rho}} \text { für longitudinale Wellen } \\
+& v_{2}=\sqrt{\frac{C_{11}-C_{12}}{2 \rho}} \text { für transversale Wellen }
+
+Hinweis: Die Bewegungsgleichung in (17) kann mit dem Ansatz einer ebenen Welle für die Auslenkung $u_{i}$ gelöst werden.
+
+
+Wir schreiben die Bewegungsgleichung für die Auslenkung $u_{i}(i=x, y)$ einer Schallwelle in einem zweidimensionalen Medium folgendermaßen um:
+
+\rho \frac{\partial^{2} u_{i}}{\partial t^{2}}=\sum_{j} \frac{\partial \sigma_{i j}}{\partial j}=\sum_{j k l} C_{i j k l} \frac{\partial e_{k l}}{\partial j}=\sum_{j k l} \frac{1}{2} C_{i j k l}\left(\frac{\partial^{2} u_{k}}{\partial j \partial l}+\frac{\partial^{2} u_{l}}{\partial j \partial k}\right)
+
+Durch das einsetzen von $C_{i j k l}$ für ein kubisches Gitter ergeben sich folgende gekoppelte Differenzialgleichungen:
+
+\rho \frac{\partial^{2} u_{x}}{\partial t^{2}} & =C_{11} \frac{\partial^{2} u_{x}}{\partial x^{2}}+\left(C_{12}+C_{33}\right) \frac{\partial^{2} u_{y}}{\partial x \partial y}+C_{33} \frac{\partial^{2} u_{x}}{\partial y^{2}} \\
+\rho \frac{\partial^{2} u_{y}}{\partial t^{2}} & =C_{11} \frac{\partial^{2} u_{y}}{\partial y^{2}}+\left(C_{12}+C_{33}\right) \frac{\partial^{2} u_{x}}{\partial x \partial y}+C_{33} \frac{\partial^{2} u_{y}}{\partial x^{2}}
+
+Zur Lösung dieser Differenzialgleichungen machen wir den allgemeinen Ansatz
+
+\vec{u}(x, y)=\vec{u}_{0} e^{i\left(k_{x} x+k_{y} y-\omega t\right)}
+
+Setzen wir den Ansatz in die Bewegungsgleichungen ein, ergibt sich:
+
+\rho \omega^{2} u_{0, x} & =C_{11} k_{x}^{2} u_{0, x}+\left(C_{12}+C_{33}\right) u_{0, y} k_{x} k_{y}+C_{33} u_{0, x} k_{y}^{2} \\
+\rho \omega^{2} u_{0, y} & =C_{11} k_{y}^{2} u_{0, y}+\left(C_{12}+C_{33}\right) u_{0, x} k_{x} k_{y}+C_{33} u_{0, y} k_{x}^{2}
+
+Das Gleichungssystem kann in Matrixform auch wie folgt geschrieben werden:
+
+\left(\begin{array}{cc}
+-\rho \omega^{2}+C_{11} k_{x}^{2}+C_{33} k_{y}^{2} & \left(C_{12}+C_{33}\right) k_{x} k_{y} \\
+\left(C_{12}+C_{33}\right) k_{x} k_{y} & -\rho \omega^{2}+C_{11} k_{y}^{2}+C_{33} k_{x}^{2}
+\end{array}\right)\binom{u_{0, x}}{u_{0, y}}=0 .
+
+Für eine Welle, welche sich in die [11]-Richtung fortbewegt, muss $k_{x}=k_{y}=k$ gelten. Die Frequenz $\omega$ erhalten wir, indem wir fordern, dass die Determinante der Matrix verschwinden soll:
+
+& {\left[-\rho \omega^{2}+k^{2}\left(C_{11}+C_{33}\right)\right]^{2}-\left[k\left(C_{12}+C_{33}\right)\right]^{2}=0} \\
+& \Rightarrow \rho \omega^{2}=k^{2}\left[C_{11}+C_{33} \mp\left(C_{12}+C_{33}\right)\right] \\
+& \Rightarrow \omega_{1}=k \sqrt{\frac{C_{11}+2 C_{33}+C_{12}}{\rho}} ; \quad \omega_{2}=k \sqrt{\frac{C_{11}-C_{12}}{\rho}}
+
+Die Phasengeschwindigkeit einer Ebenen Welle lässt sich berechnen als $|\vec{v}|=\frac{\omega}{|\vec{k}|} (|\vec{k}|=\sqrt{2} k$ in diesem Fall), wodurch sich die folgenden Geschwindigkeiten ergeben:
+
+v_{1}=\sqrt{\frac{C_{11}+2 C_{33}+C_{12}}{2 \rho}} ; \quad v_{2}=\sqrt{\frac{C_{11}-C_{12}}{2 \rho}}
+
+Um zu bestimmen, welches der beiden Geschwindigkeiten zu der transversalen oder longitudinalen Welle gehört, setzen wir $\omega_{i}$ zurück in die Matrixgleichung ein. Damit gilt für $\omega_{1}$ :
+
+k^{2}\left(C_{33}+C_{12}\right)\left(\begin{array}{cc}
+-1 & 1 \\
+1 & -1
+\end{array}\right)\binom{u_{0, x}}{u_{0, y}}=0 \Rightarrow u_{0, x}=u_{0, y} \text { (longitudinale Welle) }
+
+Und für $\omega_{2}$ ergibt sich:
+
+k^{2}\left(C_{33}+C_{12}\right)\left(\begin{array}{ll}
+1 & 1 \\
+1 & 1
+\end{array}\right)\binom{u_{0, x}}{u_{0, y}}=0 \Rightarrow u_{0, x}=-u_{0, y} \quad(\text { transversale Welle })
+
+### 7.3 Elastizitätsmodul
+
+(a) Welche Längenänderung erfährt ein Stahlseil (Elastizitätsmodul $E=2 \cdot 10^{11} \mathrm{N} / \mathrm{m}^{2}$, Dichte $\rho_{S t}=7.7 \cdot 10^{3} \mathrm{~kg} / \mathrm{m}^{3}$ ) der Länge $L=9 \mathrm{~km}$, wenn es in einem senkrechten Schacht hängt?
+
+
+Wir wählen das Koordinatensystem so, dass die z-Achse parallel zum Seil liegt. Es ist bei $z=L$ angebracht und endet bei $z=0$. Die Zugspannung in Abhängigkeit der Höhe $z$ berechnet sich durch
+
+\sigma(z)=\frac{F_{g}(z)}{A}=\frac{m(z) g}{A}=\frac{\rho_{s t} V g}{A}=\frac{\rho_{s t} A z g}{A}=\rho_{s t} z g,
+
+wobei $A$ der Querschnitt des Seiles ist, $\rho_{s t}$ die Dichte des Stahlseiles und $g$ die Gravitationskonstante. Für konstante Zugspannungen gilt
+
+\sigma=E \frac{\Delta L}{L}
+
+und somit $\Delta L=(\sigma L) / E$. Für die Zugspannung im Seil müssen wir kleine Seilstücke der Länge $L_{i}$ betrachten und diese aufsummieren bzw. darüber integrieren um die gesamte Längenänderung zu erhalten
+
+\Delta L=\sum_{i} \frac{\sigma_{i}}{E} L_{i} \rightarrow \int_{0}^{L} \frac{\sigma(z)}{E} d z
+
+Mit Gleichung (33) erhalten wir
+
+\Delta L=\int_{0}^{L} \frac{\sigma(z)}{E} d z=\int_{0}^{L} \frac{\rho_{s t} z g}{E} d z=\frac{\rho_{s t} g L^{2}}{2 E}=15.3 \mathrm{~m}
+
+(b) Welche Längenänderung erfährt ein Stahlseil der Länge $L=9 \mathrm{~km}$, wenn es im Meer (Dichte $\rho_{W}=1.03 \cdot 10^{3} \mathrm{~kg} / \mathrm{m}^{3}$ ) abgesenkt wird?
+
+
+Auf das Seil wirkt nun die Gewichtskraft $F_{g}(z)$ und die Auftriebskraft $F_{A}(z)$, die gesamte Kraft auf das Seil ist also gegeben durch
+
+F(z)=F_{g}(z)-F_{A}(z)=\rho_{s t} V(z) g-\rho_{w} V(z) g=\left(\rho_{s t}-\rho_{w}\right) g V(z)
+
+Analog zu Teilaufgabe (a) finden wir
+
+\Delta L=\frac{\left(\rho_{s t}-\rho_{w}\right) g L^{2}}{2 E}=13.3 \mathrm{~m}
+
+(c) Wie lang darf das Seil im Schacht höchstens sein, damit die maximale zulässige Zugspannung von $\sigma_{\max }=8 \cdot 10^{8} \mathrm{~N} / \mathrm{m}^{2}$ nicht überschritten wird?
+
+
+Das Seil reißt da, wo es das meiste Gewicht trägt, also bei $L=L_{\text {max }}$. Die maximale Spannung ( $\sigma_{\text {max }}=8 \cdot 10^{8} \mathrm{~N} / \mathrm{m}^{2}$ ) ist damit $\sigma_{\text {max }}=\sigma\left(L_{\text {max }}\right)=\rho_{s t} L_{\text {max }} g$. Damit das Seil nicht reißt muss also gelten
+
+L<L_{\max }=\frac{\sigma_{\max }}{\rho_{s t} g}=10^{4} \mathrm{~m}
+

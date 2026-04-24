@@ -1,0 +1,207 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Blatt 11
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und -materialien
+Johannes Schmuck
+Themen: leeres Gitter, Tight-Binding-Model, Fermi Surface
+11.1 Warm Up
+(a) Stellen Sie sich ein zweidimensionales quadratisches Gitter vor, in dem Elek-
+tronen nur zu den n¨achsten Nachbarn ’h¨upfen’ k¨onnen, beschrieben durch ein
+Tight-Binding-Modell.
+- Wenn eine der Hopping-Richtungen (z.B. entlang x) nach und nach unterdr¨uckt
+wird (d.h. das Hopping wird viel schw¨acher als entlang y), wie w¨urden sich die
+elektronischen Eigenschaften ¨andern? Diskutieren Sie die erwartete Form der
+Energieb¨ander und die Dimensionalit¨at der Elektronenbewegung.
+- Angenommen, die Hopping-Amplitude wird entlang einer Richtung komplex,
+d.h. t → t · eiϕ. Welche physikalischen Ph¨anomene k¨onnten dadurch auftreten?
+Denken Sie an Bandtopologie und m¨ogliche Str¨ome.
+F¨ur ein Quadratgitter mit nur n¨achsten Nachbarn gilt:
+ε(k) = −2tx cos(kxa) − 2ty cos(kya).
+- Wenn tx = ty, entsteht ein isotropes 2D-Band mit geschlossenen Fermi-
+Fl¨achen.
+F¨ur tx ≪ ty, wird jedoch die Dispersion in kx-Richtung flach: ε(k) ≈ −2ty cos(kya),
+d.h. Elektronen bewegen sich fast nur noch entlang y.
+Konsequenz: quasi-1D-Verhalten, Leitf¨ahigkeit stark anisotrop (σx ≪ σy).
+Fermi-Fl¨achen werden von geschlossenen Kurven (2D) zu offenen Linien (1D).
+Dies entspricht einer ¨Anderung der Dimensionalit¨at der Bewegung.
+- Eine einheitliche Phase in einer Richtung kann meist durch eine Gauge-
+Transformation entfernt werden. Physikalisch ¨andert sich das Spektrum nicht,
+
+außer bei speziellen Randbedingungen (z.B. Ringe ⇒ persistente Str¨ome).
+Wenn jedoch um ein Plaquette eine endliche Phase akkumuliert wird Φ =P φij̸ = 0, so entspricht dies einem effektiven magnetischen Fluss. M¨ogliche
+Folgen: Rekonstruktion der B¨ander (Hofstadter-Spektrum), nichttriviale Band-
+topologie (Chern-Zahlen ungleich null), Auftreten von Randstr¨omen (chiral
+edge states) und quantisierte Hall-Leitung.
+(b) Welche physikalische Gr¨oße entscheidet in einem Material mit einer kleinen
+Bandl¨ucke, ob es sich dabei um einen Leiter oder einen Halbleiter ist? Welche
+experimentellen M¨oglichkeiten giebt es auf diesen einzuwirken? Die entschei-
+dende physikalische Gr¨oße ist die Lage des Fermi-Niveaus EF relativ zur Bandl¨ucke.
+Befindet sich EF innerhalb des Valenz- oder Leitungsbandes, so besitzt das Ma-
+terial freie Ladungstr¨ager und verh¨alt sich wie ein Leiter. Liegt EF hingegen
+innerhalb der Bandl¨ucke, so ist das Material bei T = 0 nichtleitend und zeigt bei
+endlicher Temperatur aufgrund thermischer Anregungen von Elektronen ¨uber
+die kleine Bandl¨ucke ein typisches Halbleiterverhalten. Experimentell l¨asst sich
+der Charakter auf verschiedene Weisen beeinflussen. Durch gezielte Dotierung
+kann das Fermi-Niveau in das Leitungs- oder Valenzband verschoben werden.
+Auch die Temperatur spielt eine wichtige Rolle, da sie die Zahl der thermisch
+angeregten Elektronen bestimmt. Mechanischer Druck oder Dehnung k¨onnen
+die Bandl¨ucke ver¨andern und im Extremfall sogar schließen, was zu einer
+Metallisierung f¨uhrt. Ein ¨außeres elektrisches Feld, etwa in einem Feldeffekt-
+Transistor, erlaubt ebenfalls die Verschiebung von EF . Schließlich k¨onnen auch
+optische Anregungen mit Photonenenergien oberhalb der Bandl¨ucke Elektron-
+Loch-Paare erzeugen und so die Leitf¨ahigkeit erh¨ohen.
+(c) Wie sieht die Fermifl¨ache in einem ein- und zweidimensionalen System im
+reziproken Raum aus?
+
+(d) Kreuze die richtigen Antworten an:
+[ ] Jedes Band kann zwei Elektronen pro Einheitszelle aufnehmen; daher ist ein
+Material mit einer geraden Anzahl von Elektronen ein Metall, w¨ahrend eines
+mit einer ungeraden Anzahl von Elektronen ein Isolator sein kann. Falsch
+[ ] In Metallen ist die Fermifl¨ache geschlossen und bestimmt viele elektronische
+Eigenschaften (z. B. Leitf¨ahigkeit, spezifische W¨arme). Richtig
+[ ] Bei T = 0K ist die Fermifl¨ache vollst¨andig leer. Falsch
+11.2 Quadratisches ebenes Gitter & reduziertes Zonenschema
+(a) Konstruieren Sie die ersten drei Brillouin-Zonen im reduzierten und ausgedehn-
+ten Zonenschema eines ebenen quadratischen Gitters (Gitterkonstante a) und
+markieren Sie f¨ur die ersten drei Energieb¨ander eines zweidimensionalen freien
+Elektronengases die von Elektronen besetzten Zust¨ande. Nehmen Sie dazu die
+Energiedispersion von freien Elektronen und den Radius der Fermi-Kugel zu
+kF = 1.75π/a an. Was ¨andert sich, wenn anstelle eines freien Elektronengases
+ein Elektronengas betrachtet wird, welches sich in einem schwachen periodis-
+chen Potenzial befindet?
+Antwort: F¨ur ein quadrarisches Gitter, kann ein entsprechendes reziprokes
+Gitter sofort konstruiert werden mit dem Gitterpunktabstand b = 2π/a. Die
+ersten drei Brillouin-Zonen werden mittels der Konstruktionsvorschrift der
+Wigner-Seitz-Zelle erhalten (ausgedehntes Zonenschema). Wenn nun zeich-
+nerisch genau gearbeitet wurde kann der Radius kF der Fermi-Kugel direkt
+eingezeichnet werden so wie untenstehender Abbildung a dargestellt. Da bekannt
+ist, dass der Abstand vom Zentrum der ersten BZ zum Rand π/a ist, reicht die
+eingezeichnete Fermi Kugel mit kF = 1.75π/a ¨uber den Rand der ersten Bril-
+louinzone hinaus. F¨ur das reduzierte Zonenschema ergibt sich die Darstellung
+in untenstehender Abbildung. Die rechte Abbildung veranschaulicht nochmal
+die Besetzung der entsprechenden Brillouinzonen entlang der kx-Richtung. Bei
+dieser Betrachtung wird deutlich, dass das reduzierte Zonenschema den Vorteil
+bietet etwaige nicht besetzte Zust¨ande in der ersten Brillouinzone sofort zu
+identifizieren wohingegen eine eindimensionale E(k)-Darstellung den Eindruck
+vermittelt alle Zust¨ande in der ersten BZ seien besetzt.
+
+(b) Wir betrachten nun das quadratische Gitter mit Gitterkonstante a und einer
+Tight-Binding Bandstruktur der Elektronen, Ek = −t[cos(kx·a)+cos(ky ·a)−2].
+Wo liegen das energetische Minimum und das Maximum des Bandes? Wie groß
+ist die Bandbreite in Einheiten von t?
+Antwort: Das Bandminimum liegt im Zentrum der Brillouin-Zone bei k = (0, 0)
+mit dem Wert Emin = −t[cos(0 · a) + cos(0 · a) − 2] = −t[1 + 1 − 2] = 0. Das
+Bandmaximum liegt bei k = (π/a, π/a) mit Emax = −t[cos(π/a · a) + cos(π/a ·
+a)−2] = −t[−1−1−2] = 4t. Die Banbreite ist demnach W = Emax−Emin = 4t.
+(c) Zeichnen Sie qualitativ den Verlauf des Bandes l¨angs (0, 0) → (π/a, 0) →
+(π/a, π/a) → (0, 0). Antwort: Durch Einsetzten der gegebenen k-Werte k¨onnen
+die entsprechenden Energien in Einheiten von t bestimmt werden und die Form
+der Bandstruktur qualitativ eingezeichnet werden: E(0, 0) = 0t,E(π/a, 0) =
+2t,E(π/a, π/a) = 4t
+
+11.3 Au(111) Einkristall
+Die Abbildung zeigt die Fermi-Oberfl¨ache von Au(111), sie stammt aus ARPES Mes-
+sungen (C. Tusche et al. Ultramicroscopy 206 (2019), https://doi.org/10.1016/j.ultramic.2019.112815).
+Zwei Merkmale werden im Folgenden besprochen: Die kreisf¨ormige Kontur, die einem
+Oberfl¨achenzustand entstammt und die hexagonale Kontur aus der Kristallstruktur.
+Die kreisf¨ormige Fermi-Kontur hat einen Radius von kF = 0.17 ˚A−1.
+(a) Berechne die Fermiwellenl¨ange sowie die zwei-dimensionale Elektronendichte
+n2D. Wieso benutzen wir die zwei-dimensionale Elektronendichte?
+Antwort: Oberfl¨achenzust¨ande gibt es nur an der Schnittfl¨ache (2D) des Einkristalls.
+
+λF = 2π
+kF = 6.283185307
+0.17 ˚A ≈ 36.96 ˚A ≈ 3.70 nm,
+n2D = k2
+F
+2π = 0.0289
+6.283185307 ˚A−2 ≈ 0.00460 ˚A−2 ≈ 4.6 × 1013 cm−2.
+(b) Beschreibe woher die detektierte Elektronenverteilung stammt? Welche Sym-
+metrien liegen im Kristall wohl offensichtlich vor? Wie verhalten sich die
+Oberfl¨achenzust¨ande? Wie sehen wohl de zugeh¨origen B¨ander aus?
+Antwort:
+Zentraler Kreis: Zeigt einen isotropen, fast frei-Elektronen-¨ahnlichen Oberfl¨achenzustand
+(oft vom Shockley-Typ). Seine Dispersion h¨angt haupts¨achlich von | k | ab,
+sodass Fl¨achen gleicher Energie kreisf¨ormig sind. Oder anders gesagt: Der
+oberfl¨achenlokalisierte Zustand erf¨ahrt ein schwaches in-plane periodisches Po-
+tential und stammt oft aus s-¨ahnlichem Charakter, was eine ann¨ahernd isotrope
+effektive Masse und kreisf¨ormige Konturen ergibt.
+¨Außere, hexagonal-¨ahnliche Konturen: Entstehen aus bulk-projizierten Zust¨anden
+oder der Bulk-Bandstruktur, die in die Oberfl¨achen-Brillouin-Zone projiziert
+wird. Sie werden stark vom Kristallpotential und der Gitter-Symmetrie beein-
+flusst und zeigen daher hexagonale Anisotropie (fcc(111)).
+(c) Erkl¨are nun wie man aus den gemessenen ARPES Daten die effektive Masse
+erh¨alt.
+Antwort:
+Die ARPES-Daten m¨ussen nahe Γ einer Parabel angefittet werden. Daf¨ur
+m¨ussen die Energien der Elektronen gegen k geplottet werden und die Kr¨ummungen
+der erhaltenen Elektronenverteilungen angefittet werden. F¨ur parabolische Dis-
+persion gilt n¨amlich d2E
+dk2 = ℏ2
+m∗ .
+(d) Berechne nun die effektive Masse m∗ und die Fermigeschwindigkeit vF unter der
+Annahme das Bandminimum liegt ∆E = 0.5eV unterhalb der Fermienergie.
+∆E = ℏ2k2
+F
+2m∗ ⇒ m∗ = ℏ2k2
+2∆E mit ∆E = 0.50 eV
+m∗ = 3.215×10−50
+1.60218×10−19 kg ≈ 0.22me vF = ℏkF
+m∗ ≈ 8.94 × 105 m s−1
+11.4 Tight-Binding Model
+In den 1980er Jahren wurde eine Familie von Oxiden entdeckt, die sich als supralei-
+tend mit wesentlich h¨oheren kritischen Temperaturen als Metalle und Legierungen
+erwiesen. Die Verbindungen in dieser Oxidfamilie enthalten alle Ebenen aus Kupfer
+und Sauerstoff, wobei die Cu-Atome an den Knoten eines quadratischen Gitters
+
+sitzen. Einige Mitglieder dieser Familie enthalten zudem Kupfer-Sauerstoff-Ketten.
+Ein Beispiel hierf¨ur ist YBa2Cu3O7. Ziel ist es, die Bandstruktur von YBa2Cu3O7 auf
+vereinfachte Weise unter Verwendung der Tight-Binding-N¨aherung zu untersuchen.
+Betrachten Sie eine isolierte Kette und Ebene von Kupfer- und Sauerstoffatomen.
+Sei a der Cu–Cu-Abstand und y der Einheitsvektor entlang der Kette.
+(a) Verwenden Sie die Abbildung, um das Bravais-Gitter und die Basis einer Kupfer-
+Sauerstoff-Kette anzugeben.
+(b) Wie lautet das zugeh¨orige reziproke Gitter? Geben Sie die entsprechende erste
+Brillouin-Zone an.
+(c) Geben Sie die Form der Bloch-Funktionen in der Tight-Binding-N¨aherung an.
+Sei k der entsprechende Wellenvektor.
+(d) Betrachten Sie nur die n¨achsten Nachbarn und berechnen Sie die Dispersion-
+srelation EC (k). Dr¨ucken Sie das Ergebnis in Form der Matrixelemente aus:
+
+E0
+C = R d3r ϕ1(r) ˆHC ϕ1(r), Vchain = V = − R d3r ϕ1(r) ˆHC ϕ1(r + ay)
+wobei y der Einheitsvektor entlang der Kette ist und ˆHC der Hamiltonoperator
+eines Elektrons in der Kette.
+(e) Zeichnen Sie die Dispersionsrelation unter der Annahme V > 0. Wenn die
+Elektronenbesetzung dieses Bandes ein Elektron pro Einheitszelle betr¨agt, wie
+sieht dann die Fermi-Oberfl¨ache aus? Was passiert, wenn die Elektronenbe-
+setzung sehr gering ist? Geben Sie in diesem Fall die effektive Masse m∗ der
+Elektronen an.
+a) Das Bravais-Gitter einer Kette ist die Menge der Punkte Rn = nay, wobei
+n ∈ Z ist und y ein Einheitsvektor entlang der Kettenachse. Die Basis besteht
+dann aus einem Kupferatom bei R0 = 0 und einem Sauerstoffatom bei ay/2.
+b) Das reziproke Gitter ist Kp = (2π/a)py, wobei p ∈ Z. Die erste Brillouin-
+Zone ist das Intervall [−π/a, +π/a].
+c) Unter Verwendung der vorher eingef¨uhrten Notation gilt
+ψk(r) = 1√Nn
+P
+ℓ eikℓaϕ1(r − ℓay), wobei Nn die Anzahl der Einheitszellen ist.
+d) Es ergibt sich EC (k) = E0
+C − 2V cos ka.
+e) Beschr¨ankt auf die erste Brillouin-Zone, ist diese Relation dargestellt. Die
+Funktion EC (k) ist symmetrisch unter k −→ π
+a − k, EC (k) −→ 2E0
+C − EC (k).
+Die H¨alfte der Zust¨ande liegt also im Teilintervall [−π/2a, +π/2a]. Ein Elek-
+tron pro Einheitszelle entspricht einem halb gef¨ullten Band, und die Fermi-
+Energie ist dann E0
+C . Die Fermifl¨ache reduziert sich auf die beiden Punkte
+k = +π/2a und k = −π/2a. Bei sehr geringer Besetzung wird nur der un-
+tere Bereich des Bandes in der N¨ahe von k ≈ 0 besetzt. Dann gilt EC (k) ≃
+E0
+C − 2V  1 − 1
+2 k2a2, woraus folgt m∗ = ℏ2
+2V a2 .
+

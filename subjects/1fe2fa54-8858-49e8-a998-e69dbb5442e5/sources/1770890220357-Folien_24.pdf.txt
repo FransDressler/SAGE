@@ -1,0 +1,177 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+(𝒎∗)−𝟏 =
+1/𝑚1 0 0
+0 1/𝑚2 0
+0 0 1/𝑚3
+Die effektive Masse
+𝑑𝒗(𝒌)
+𝑑𝑡 = 1
+ℏ2 𝛁𝑘 𝛁𝑘𝐸𝑛 𝒌 ∙ 𝑭
+(𝒎∗)−𝟏
+𝑑𝒗i 𝒌
+𝑑𝑡 = ෍
+j
+1
+ℏ2
+𝜕2𝐸𝑛 𝒌
+𝜕𝑘i𝜕𝑘j
+𝐹j ; 𝑖, 𝑗 = 𝑥, 𝑦, 𝑢𝑛𝑑 𝑧
+1
+𝑚∗ ij = 1
+ℏ2
+𝜕2𝐸𝑛 𝒌
+𝜕𝑘i𝜕𝑘j
+Definiert den effektiven
+Massentensor im Punkt k
+eines Bandes.
+In Komponentenschreibweise:
+𝒎∗ = Tensor der effektiven Masse
+Bemerkungen:
+− Mit Hilfe des Tensors der effektiven Masse m* wird die Verbindung zur klassischen
+Bewegungsgleichung F = ma hergestellt.
+− Die Tensoren der reziproken effektiven Masse (1/m*)𝛼𝛽 bzw. der effektiven Masse m*𝛼𝛽 sind
+symmetrisch. Sie lassen sich daher auf Hauptachsen transformieren, wodurch sich die Anzahl der
+unabhängigen Komponenten auf höchstens drei reduziert:
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Die effektive Masse
+𝑑𝒗(𝒌)
+𝑑𝑡 = 1
+ℏ2 𝛁𝑘 𝛁𝑘𝐸𝑛 𝒌 ∙ 𝑭
+Bemerkungen:
+− Die reziproke effektive Masse ist durch die Krümmung der Energiefläche bestimmt. In ihr ist die
+Wechselwirkung der Elektronen mit den Atomrümpfen versteckt, die diese bei ihrer Bewegung im
+Festkörper erfahren.
+− Die Kenntnis der Energiedispersion E(k) reicht zur Beschreibung der Elektronenbewegung.
+− Man bezeichnet das hier entwickelte Konzept zur Beschreibung der Elektronenbewegung im Kristall
+als „effektive Massennäherung“.
+(𝒎∗)−𝟏
+𝒎∗ = Tensor der effektiven Masse
+𝑑𝒗i 𝒌
+𝑑𝑡 = ෍
+j
+𝐹j ; 𝑖, 𝑗 = 𝑥, 𝑦, 𝑢𝑛𝑑 𝑧
+𝑚∗ ij = 1
+Definiert den effektiven
+Massentensor im Punkt k
+eines Bandes.
+In Komponentenschreibweise:
+
+Die effektive Masse in 1D
+aus Hunklinger
+k1 k2
+Effektive Masse bei k1 ist positiv, bei k2
+negativ (siehe später: Löcher)
+Je flacher die Parabel, desto größer die
+effektive Masse!
+
+Parabolische Massennäherung in 1D
+aus Hunklinger
+𝐸 = ℏ2𝑘2
+2𝑚∗
+k1 k2
+1D und parabolische Dispersion
+⇒ 𝜕2𝐸
+𝜕𝑘2 = ℏ2
+𝑚∗ ⇒ konstante effektive Masse
+Der Wert für m* kommt theoretisch aus Bandstrukturrechnungen, experimentell aus
+der Messung der Zyklotronresonanz.
+3D Beispiel: Unterschiedliche Krümmung der Dispersion in x-, y-, und z-Richtung
+(𝒎∗)−𝟏 =
+1/𝑚1 0 0
+0 1/𝑚2 0
+0 0 1/𝑚3
+⇒ 𝒎∗ =
+𝑚1 0 0
+0 𝑚2 0
+0 0 𝑚3
+𝐸 𝒌 = ℏ2𝑘𝑥
+2
+𝑚1
++ ℏ2𝑘𝑦
+2
+𝑚2
++ ℏ2𝑘𝑧
+𝑚3
+, mit 1
+𝑚𝑖
+= 1
+ℏ2 ∙ 𝜕2 𝐸𝑛
+𝜕𝑘𝑖
+Effektive Masse bei k1 ist positiv, bei k2
+negativ (siehe später: Löcher)
+Je flacher die Parabel, desto größer die
+effektive Masse!
+
+Effektive Masse in Silizium
+Bilder 28.5 und 28.6
+aus Ashcroft Mermin
+Unterschiedliche effektive Massen für unterschiedliche
+Richtungen der Elektronen im Leitungsband von Si:
+m1 = m2 ≠ m3
+Energiebänder des Siliziums. Das Leitungsband-Minimum in
+Richtung [100], verursacht die Ellipsoide konstanter Energie in
+der Abbildung oben.
+Das Valenzbandmaximum tritt bei k = 0 auf, wo sich zwei
+entartete Bänder mit unterschiedlichen Krümmungen treffen,
+so dass es 'leichte Löcher' und 'schwere Löcher' gibt.
+
+Blochoszillationen
+
+Ladungstransport in Bändern
+EF
+Eg
+Halbleiter & Isolatoren: Enthält die Elementarzelle eine gerade Anzahl von Elektronen (und überlappen
+die Bänder nicht) so füllen die Valenzelektronen ein oder mehrere Bänder vollständig auf und lassen
+(bei T = 0) die oberen leer.
+Beispiel: Si: [Ne] + 3s23p2
+Stromdichte: 𝒋 = − 𝑒
+𝑉 σ𝑘 ∈ 𝐵𝑎𝑛𝑑 𝒗 𝒌 = − 𝑒
+ℏ𝑉 σ𝑘 ∈ 𝐵𝑎𝑛𝑑 𝛁𝑘𝐸𝑛 𝒌 = 0, mit V dem Kristallvolumen
+da bei einem vollen Band: 𝐸n(𝒌) = 𝐸n(−𝒌) eine gerade Funktion ist, 𝐯 −𝒌 = −𝐯(𝒌).
+Volle Bänder tragen keinen Strom.
+
+Loch = „Defekt-Elektron“
+
+𝑬 ≠ 0:
+Positive Ladung q
+U
+I
++
+-
+v
+Elektron bei 𝑬 ≠ 0:
+Drift-Bewegung
+𝑬 ≠ 0:
+.
+.
+Elektron bei 𝑬 = 0:
+randomisierte
+Bewegung
+Drude-Modell
+Wikipedia
+Paul Drude (1863-1906)
+
+Im Rahmen der Drude-Theorie gilt, dass bei 𝑬 ≠ 0 die Geschwindigkeit 𝒗 zwischen den Stößen linear
+anwächst, bis es 𝒗𝒅 als Sättigungswert erreicht.
+Sobald das Feld 𝑬 ausgeschalten wird (𝑬 = 0) gilt: 𝑚 d 𝒗
+dt = −𝑚 𝒗𝒅
+τ
+⇒ 𝒗 = 𝒗𝒅 𝒕 = 𝟎 ∙ 𝑒−𝒕/𝝉
+⇒ m ∙ 𝒗 = 𝒑 = m ∙ 𝒗𝒅 𝒕 = 𝟎 ∙ 𝑒−𝒕/𝝉= 𝒑𝒅 𝒕 = 𝟎 ∙ 𝑒−𝒕/𝝉
+Daher wird 𝜏 als Impulsrelalaxationszeit bezeichnet (engl. „momentum relaxation time“ oder
+„momentum scattering time“), die charakteristische Zeit, in welcher der Driftstrom exponetiell abklingt
+(gerne auch 𝜏𝑚)
+Typsiche Stoßzeiten:
+10-14-10-12 s
+(LO-Phononen bei RT)
+Elektronen bewegen sich an
+der Fermi-Kante mit vF.
+Elektronen streuen an Gitter-
+Defekten, Phononen, etc.
+v ist die sog. Drift-Geschwindigkeit.
+Streu-Prozesse sind unkorreliert.
+Des Weiteren: „Drude auf modern“:
+Drude-Modell
+
+Sommerfeld-Theorie (nächste Vorlesung)

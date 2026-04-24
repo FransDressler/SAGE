@@ -1,0 +1,84 @@
+1
+aus Marx/Gross
+Brillouin- vs. Raman-Streuung
+Brillouin light scattering
+
+2
+aus Hunklinger
+Brillouin light scattering
+
+3
+Cavity (standing wave)
+Movable mirror
+
+4
+aus Hunklinger
+
+5
+Experimental methods in solid-state physics
+08 Density of States
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+6
+Heat capacity
+Occupation
+Phonons = BOSONs
+𝜕𝑈
+𝑑𝑇
+• the systems needs to have
+degrees of freedom that can be
+thermally excited
+• the number of contributing
+excitations is linked to both their
+DENSITY and their OCCUPATION
+
+7
+Heat capacity
+𝜕𝑈
+𝑑𝑇
+• the systems needs to have
+degrees of freedom that can be
+thermally excited
+• the number of contributing
+excitations is linked to both their
+DENSITY and their OCCUPATION
+electrons = FERMIONs
+Occupation
+
+8
+Density of states
+
+9
+Density of states
+
+10
+
+11
+
+12
+Density of states and dispersion
+
+13
+Phonon density of states Si – Debye vs. reality
+
+14
+Heat capacity - Debye
+
+15
+Heat capacity - Debye
+High temperature limit Low temperature limit
+
+16
+Classical limit = Number of degrees of freedom
+T³ = Occupation of Phonon DOS
+
+17
+Thermal conductivity – Phonon scattering
+
+18
+Thermal conductivity in the ultra-pure limit
+J. Appl. Phys. 123, 095112 (2018)
+https://doi.org/10.1063/1.5017778

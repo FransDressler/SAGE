@@ -1,0 +1,328 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 2
+
+31. Oktober 2025
+
+## Aufgabe 1 Kurze Fragen zum Standardmodell
+
+a) Warum besteht alle (stabile) Materie aus den Fermionen der ersten Familie?
+
+Lösung: Stabile Materie besteht ausschließlich aus Up-Quarks ( $u$ ), Down-Quarks ( $d$ ) und Elektronen ( $e^{-}$), da dies die leichtesten fundamentalen Teilchen sind. Teilchen der zweiten und dritten Familie sind schwerer und zerfallen daher in der Regel in leichtere Teilchen.
+b) Wie viele Elementarteilchen sind bekannt (mit und ohne Antiteilchen)?
+
+## Lösung:
+
+Ohne Antiteilchen:
+6 Quarks +6 Leptonen +8 Gluonen + Photon $+Z$-Boson $+W$-Boson + Higgs-Boson $=24$
+Mit Antiteilchen:
+$2 \times 6$ Quarks $+2 \times 6$ Leptonen +8 Gluonen + Photon $+Z$-Boson $+2 W$-Bosonen + Higgs-Boson $=37$
+Das Graviton ist hier nicht berücksichtigt, da es bisher nicht experimentell nachgewiesen wurde.
+c) Welches Elementarteilchen beteiligt sich an welcher Wechselwirkung?
+
+Lösung:
+
+| Wechselwirkung | Austauschteilchen | Wirkt auf |
+| :--- | :--- | :--- |
+| Elektromagnetisch | Photon | Quarks und geladene Leptonen/Bosonen |
+| Stark | 8 Gluonen | Quarks und Gluonen |
+| Schwach | $Z$ - und $W$-Bosonen | Quarks und Leptonen |
+| Gravitation | Gravitonen (noch nicht beobachtet) | Alle Teilchen |
+
+d) Welche sind die leichtesten Baryonen? Welche sind die leichtesten Mesonen? Schreiben Sie ihre Quarkzusammensetzungen und Spins auf.
+Lösung:
+Die leichtesten Baryonen sind das Proton, das Neutron und das $\Lambda^{0}$.
+
+| Name | Quarkzusammensetzung | Spin | Masse |
+| :--- | :--- | :--- | :--- |
+| Proton $(p)$ | uud | $1 / 2$ | 938.3 MeV |
+| Neutron $(n)$ | ddu | $1 / 2$ | 939.6 MeV |
+| $\Lambda^{0}$ | uds | $1 / 2$ | 1115.6 MeV |
+
+Die leichtesten Mesonen sind die Pionen: $\pi^{ \pm, 0}$
+
+| Name | Quarkzusammensetzung | Spin | Masse |
+| :--- | :--- | :--- | :--- |
+| $\pi^{+}$ | $u \bar{d}$ | 0 | 139.6 MeV |
+| $\pi^{-}$ | $\bar{u} d$ | 0 | 139.6 MeV |
+| $\pi^{0}$ | $u \bar{u}$ oder $d \bar{d}$ | 0 | 135 MeV |
+
+## Aufgabe 2 Herleitung des Yukawa-Potentials
+
+In der Quantenfeldtheorie werden Wechselwirkungen zwischen Teilchen als Austausch virtueller Bosonen beschrieben. Die Eigenschaften dieser Austauschteilchen, insbesondere ihre Masse, bestimmen die Stärke und Reichweite der entsprechenden Kraft. Dieses Konzept liefert eine einheitliche Beschreibung der fundamentalen Wechselwirkungen - von der Elektrodynamik (vermittelt durch masselose Photonen) bis hin zur kurzreichweitigen Kernkraft, die durch massive Mesonen vermittelt wird.
+a) Zeigen Sie anhand der folgenden Schritte, dass das statische Feld einer Punktquelle $g_{0}$ für ein massives skalares Austauschteilchen der Masse $m$ die Form des Yukawa-Potentials hat:
+
+$$
+\phi(r)=\frac{g_{0}}{4 \pi} \frac{e^{-r / \lambda}}{r}, \quad \lambda=\frac{\hbar}{m c} .
+$$
+
+- Schreiben Sie die Klein-Gordon-Gleichung für ein skalares Feld $\phi(\mathbf{r}, t)$ der Masse $m$ in Anwesenheit einer statischen Punktquelle $Q$ am Ursprung auf.
+- Nehmen Sie eine stationäre (zeitunabhängige) Konfiguration $\phi(\mathbf{r}, t)=\phi(\mathbf{r})$ an und vereinfachen Sie die Klein-Gordon-Gleichung zu einer räumlichen, inhomogenen Differentialgleichung für $\phi(\mathbf{r})$.
+- Nehmen Sie eine kugelsymmetrische Lösung an, $\phi(\mathbf{r})=\phi(r)$.
+- Finden Sie die allgemeine Lösung der Gleichung für $r>0$. Hinweis: Verwenden Sie einen Ansatz der Form $\phi(r)=f(r) / r$.
+- Wenden Sie die physikalischen Randbedingungen an:
+- $\phi(r)$ bleibt endlich für $r \rightarrow \infty$,
+- $\phi(r)$ ist stetig bei $r=0$ (kein unendliches Feld außerhalb der Quelle).
+
+Zeigen Sie, dass die Lösung die Form
+
+\phi(r)=A \frac{e^{-r / \lambda}}{r}
+
+hat, wobei $\lambda=\frac{\hbar}{m c}$ die Reichweite der Wechselwirkung ist.
+
+- Bestimmen Sie die Normierungskonstante $A$ mithilfe des Gaußschen Satzes: Integrieren Sie die Feldgleichung über eine kleine Kugel $S_{\epsilon}$ mit Radius $\epsilon$ um eine statische Punktquelle $g_{0}$ im Zentrum.
+Zeigen Sie, dass das resultierende Potential lautet:
+
+\phi(r)=\frac{g_{0}}{4 \pi} \frac{e^{-r / \lambda}}{r},
+
+das sogenannte Yukawa-Potential.
+b) Bestimmen Sie die Reichweite $\lambda$ der elektromagnetischen Wechselwirkung. Zeigen Sie, dass das Coulomb-Potential der Grenzfall des Yukawa-Potentials ist.
+c) Bestimmen Sie die Reichweite $\lambda$ der schwachen Wechselwirkung, vermittelt durch die $Z$ ( $m_{Z}=91.2 \mathrm{GeV}$ ) und $W$-Bosonen ( $m_{W}=80.4 \mathrm{GeV}$ ).
+d) Bestimmen Sie die Reichweite $\lambda$ der starken Wechselwirkung. Betrachten Sie zwei Fälle:
+
+- Kernkraft durch Pionenaustausch ( $m_{\pi}=140 \mathrm{MeV}$ ),
+- fundamentale starke Wechselwirkung durch masselose Gluonen.
+
+Vergleichen Sie die Reichweite der Kernkraft mit der aus der Heisenbergschen Unschärferelation aus der letzten Übung. Diskutieren Sie, ob die durch masselose Gluonen bestimmte Reichweite der fundamentalen starken Wechselwirkung physikalisch sinnvoll ist.
+
+## Gegebene Konstanten:
+
+\hbar c=197.3 \mathrm{MeV} \mathrm{fm}, \quad 1 \mathrm{fm}=10^{-15} \mathrm{~m} .
+
+## Lösung
+
+a) Um das Yukawa-Potential herzuleiten, nehmen wir an, dass das Nukleon als Quelle virtueller Mesonen wirkt, analog dazu, wie eine elektrische Ladung als Quelle virtueller Photonen betrachtet werden kann.
+
+Wir beginnen mit der Wellengleichung eines freien, relativistischen Teilchens der Masse $m$. Wenn wir Energie $E$ und Impuls $\mathbf{p}$ in der Energie-Impuls-Beziehung
+
+E^{2}=p^{2} c^{2}+m^{2} c^{4}
+
+durch die entsprechenden quantenmechanischen Operatoren ersetzen
+
+E \rightarrow i \hbar \frac{\partial}{\partial t}, \quad \mathbf{p} \rightarrow-i \hbar \nabla
+
+erhalten wir die Klein-Gordon-Gleichung:
+
+\left(\frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}}-\nabla^{2}+\frac{m^{2} c^{2}}{\hbar^{2}}\right) \phi(\mathbf{r}, t)=0
+
+Wenn das Feld $\phi$ von einer statischen Punktquelle $g_{0}$ am Ursprung erzeugt wird, muss die rechte Seite eine Delta-Funktion enthalten:
+
+\left(\frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}}-\nabla^{2}+\frac{m^{2} c^{2}}{\hbar^{2}}\right) \phi(\mathbf{r}, t)=-g_{0} \delta(\mathbf{r})
+
+## Zeitunabhängiger Fall
+
+Für eine statische Potentialkonfiguration $\phi(\mathbf{r}, t)=\phi(\mathbf{r})$ verschwindet der ZeitableitungsTerm:
+
+\nabla^{2} \phi(\mathbf{r})-\frac{m^{2} c^{2}}{\hbar^{2}} \phi(\mathbf{r})=-g_{0} \delta^{(3)}(\mathbf{r})
+
+Dies ist eine inhomogene Helmholtz-Gleichung, die das räumliche Feld einer statischen Quelle beschreibt.
+
+## Kugelsymmetrischer Fall
+
+Unter der Annahme von Kugelsymmetrie, $\phi(\mathbf{r})=\phi(r)$, ergibt sich für den LaplaceOperator:
+
+\nabla^{2} \phi=\frac{1}{r^{2}} \frac{d}{d r}\left(r^{2} \frac{d \phi}{d r}\right) .
+
+Damit reduziert sich die Gleichung für $r>0$ auf:
+
+\frac{1}{r^{2}} \frac{d}{d r}\left(r^{2} \frac{d \phi}{d r}\right)-\frac{m^{2} c^{2}}{\hbar^{2}} \phi(r)=0
+
+## Lösung der homogenen Gleichung
+
+Wir verwenden den Ansatz $\phi(r)=f(r) / r$. Dann gilt:
+
+\frac{d \phi}{d r}=\frac{f^{\prime}(r)}{r}-\frac{f(r)}{r^{2}}, \quad \frac{d}{d r}\left(r^{2} \frac{d \phi}{d r}\right)=\frac{d}{d r}\left(r f^{\prime}(r)-f(r)\right)=r f^{\prime \prime}(r) .
+
+Eingesetzt in die Gleichung folgt:
+
+\frac{f^{\prime \prime}(r)}{r}-\frac{m^{2} c^{2}}{\hbar^{2}} \frac{f(r)}{r}=0
+
+oder äquivalent:
+
+f^{\prime \prime}(r)-\frac{m^{2} c^{2}}{\hbar^{2}} f(r)=0
+
+Dies ist eine lineare Differentialgleichung mit konstanter Koeffizienten, deren allgemeine Lösung lautet:
+
+f(r)=A e^{-\mu r}+B e^{\mu r}, \quad \text { wobei } \quad \mu=\frac{m c}{\hbar} .
+
+Somit ergibt sich:
+
+\phi(r)=\frac{f(r)}{r}=\frac{A e^{-\mu r}+B e^{\mu r}}{r} .
+
+## Randbedingungen
+
+Damit $\phi(r)$ für $r \rightarrow \infty$ endlich bleibt, muss der wachsende Exponentialterm verschwinden $(B=0)$. Die physikalisch akzeptable Lösung lautet daher:
+
+\phi(r)=\frac{A e^{-\mu r}}{r} .
+
+## Bestimmung der Konstanten $\boldsymbol{A}$
+
+Wir integrieren die Feldgleichung über eine kleine Kugel $S_{\epsilon}$ mit Radius $\epsilon$ :
+
+\int_{V_{\epsilon}} \nabla^{2} \phi d^{3} r-\mu^{2} \int_{V_{\epsilon}} \phi d^{3} r=-g_{0} \int_{V_{\epsilon}} \delta^{(3)}(\mathbf{r}) d^{3} r=-g_{0}
+
+Der zweite Term verschwindet für $\epsilon \rightarrow 0$, da das Volumen verschwindet.
+
+Mit dem Gaußschen Satz gilt:
+
+\int_{V_{\epsilon}} \nabla^{2} \phi d^{3} r=\oint_{S_{\epsilon}} \nabla \phi \cdot d \mathbf{S}=\left.4 \pi \epsilon^{2} \frac{\partial \phi}{\partial r}\right|_{r=\epsilon}
+
+Für $\phi(r)=A e^{-\mu r} / r$ folgt:
+
+\frac{\partial \phi}{\partial r}=A e^{-\mu r}\left(-\frac{\mu}{r}-\frac{1}{r^{2}}\right)
+
+Damit ergibt sich bei $r=\epsilon$ :
+
+\left.4 \pi \epsilon^{2} \frac{\partial \phi}{\partial r}\right|_{r=\epsilon}=4 \pi A e^{-\mu \epsilon}(-\mu \epsilon-1) \underset{\epsilon \rightarrow 0}{\longrightarrow}-4 \pi A .
+
+Einsetzen in die Integralgleichung liefert:
+
+-4 \pi A=-g_{0} \Rightarrow A=\frac{g_{0}}{4 \pi}
+
+## Ergebnis (Yukawa-Potential):
+
+\phi(r)=\frac{g_{0}}{4 \pi} \frac{e^{-\mu r}}{r}=\frac{g_{0}}{4 \pi} \frac{e^{-r / \lambda}}{r}, \quad \lambda=\frac{1}{\mu}=\frac{\hbar}{m c} .
+
+Das Potential hat dieselbe $1 / r$-Abhängigkeit wie das Coulomb-Potential, jedoch mit einem exponentiellen Dämpfungsfaktor $e^{-r / \lambda}$. Dieser Faktor begrenzt die Reichweite der Wechselwirkung auf $\lambda=\hbar /(m c)$.
+Im Grenzfall $m \rightarrow 0$ (masseloses Austauschteilchen) geht $\lambda \rightarrow \infty$, und man erhält das Coulomb-Potential:
+
+\lim _{m \rightarrow 0} \phi(r)=\frac{g_{0}}{4 \pi r}
+
+## Bonus:
+
+Als Nächstes zeigen wir einen alternativen Ansatz für die Herleitung des Yukawa-Potentials im Fourierraum.
+
+Wir betrachten die statische Klein-Gordon-Gleichung mit einer Punktquelle:
+
+\left(-\nabla^{2}+\mu^{2}\right) \phi(\mathbf{r})=Q \delta^{(3)}(\mathbf{r})
+
+## Fourier-Transformation
+
+Mit der Konvention
+
+f(\mathbf{p})=\int d^{3} r e^{-i \mathbf{p} \cdot \mathbf{r}} f(\mathbf{r})
+
+Die Fourier-Transformation von (1) ergibt
+
+\int d^{3} r e^{-i \mathbf{p} \cdot \mathbf{r}}\left(-\nabla^{2} \phi(\mathbf{r})+\mu^{2} \phi(\mathbf{r})\right)=Q \int d^{3} r e^{-i \mathbf{p} \cdot \mathbf{r}} \delta^{(3)}(\mathbf{r})
+
+Unter Verwendung von
+$\phi(\mathbf{p})=\int d^{3} r e^{-i \mathbf{p} \cdot \mathbf{r}} \phi(\mathbf{r}), \quad \int d^{3} r e^{-i \mathbf{p} \cdot \mathbf{r}} \nabla^{2} \phi(\mathbf{r})=-p^{2} \phi(\mathbf{p}), \quad \int d^{3} r e^{-i \mathbf{p} \cdot \mathbf{r}} \delta^{(3)}(\mathbf{r})=1$,
+erhalten wir
+
+\left(p^{2}+\mu^{2}\right) \phi(\mathbf{p})=Q \quad \Longrightarrow \quad \phi(\mathbf{p})=\frac{Q}{p^{2}+\mu^{2}}
+
+## Inverse Transformation (Schwinger-Parametrisierung)
+
+Die inverse Transformation lautet
+
+\phi(\mathbf{r})=Q \int \frac{d^{3} p}{(2 \pi)^{3}} \frac{e^{i \mathbf{p} \cdot \mathbf{r}}}{p^{2}+\mu^{2}}
+
+Führen wir den Schwinger-Parameter ein
+
+\frac{1}{p^{2}+\mu^{2}}=\int_{0}^{\infty} d s e^{-s\left(p^{2}+\mu^{2}\right)}
+
+um
+
+\begin{aligned}
+\phi(\mathbf{r}) & =\frac{Q}{(2 \pi)^{3}} \int_{0}^{\infty} d s e^{-s \mu^{2}} \int d^{3} p e^{-s p^{2}+i \mathbf{p} \cdot \mathbf{r}} \\
+& =\frac{Q}{(2 \pi)^{3}} \int_{0}^{\infty} d s e^{-s \mu^{2}} \int d^{3} p \exp \left[-s\left(\mathbf{p}-\frac{i \mathbf{r}}{2 s}\right)^{2}-\frac{r^{2}}{4 s}\right]
+\end{aligned}
+
+zu erhalten.
+Durch quadratisches Ergänzen und Verwendung des gaußschen Integrals
+
+\int d^{3} q e^{-s q^{2}}=\left(\frac{\pi}{s}\right)^{3 / 2}
+
+erhalten wir
+
+\phi(\mathbf{r})=\frac{Q}{8 \pi^{3 / 2}} \int_{0}^{\infty} d s s^{-3 / 2} e^{-s \mu^{2}-r^{2} /(4 s)}
+
+Definiere
+
+F(\mu, r):=\int_{0}^{\infty} d s s^{-1 / 2} e^{-s \mu^{2}-r^{2} /(4 s)}
+
+so, dass
+
+\phi(\mathbf{r})=\frac{Q}{8 \pi^{3 / 2}} \underbrace{\int_{0}^{\infty} d s s^{-3 / 2} e^{-s \mu^{2}-r^{2} /(4 s)}}_{=2 \frac{\partial}{\partial r} F(\mu, r) /(-r)}
+
+Auswertung von $F(\mu, r)$
+Mit der Substitution $s=t^{2}(d s=2 t, d t)$ erhalten wir
+
+F(\mu, r)=\int_{0}^{\infty} d t 2 e^{-\mu^{2} t^{2}-r^{2} /\left(4 t^{2}\right)}
+
+Quadratische Ergänzung:
+
+F(\mu, r)=2 \int_{0}^{\infty} d t \exp \left[-\mu^{2}\left(t-\frac{r}{2}\right)^{2}-\mu r\right]=2 e^{-} \underbrace{\int_{0}^{\infty} d t e^{-\mu^{2}\left(t-\frac{r}{2 \mu t}\right)^{2}}}_{=: I}
+
+Zur Auswertung von $I$ beachten wir, dass
+
+2 I=\int_{0}^{\infty} d t\left(1+\frac{r}{2 \mu t^{2}}\right) e^{-\mu^{2}\left(t-\frac{r}{2 \mu t}\right)^{2}} \stackrel{u=t-\frac{r}{2 \mu t}}{=} \int_{-\infty}^{\infty} d u e^{-\mu^{2} u^{2}}=\sqrt{\frac{\pi}{\mu^{2}}}=\frac{\sqrt{\pi}}{\mu}
+
+Daraus folgt
+
+I=\frac{\sqrt{\pi}}{2 \mu} \quad \Longrightarrow \quad F(\mu, r)=e^{-\mu r} \frac{\sqrt{\pi}}{\mu} .
+
+## Zusammenführen des Ergebnisses
+
+Leiten wir $F$ nach $r$ ab und verwenden die obige Beziehung, um zu erhalten
+
+\int_{0}^{\infty} d s s^{-3 / 2} e^{-s \mu^{2}-r^{2} /(4 s)}=2 \sqrt{\pi} \frac{e^{-\mu r}}{r}
+
+Daher gilt
+
+\phi(\mathbf{r})=\frac{Q}{8 \pi^{3 / 2}} \cdot 2 \sqrt{\pi} \frac{e^{-\mu r}}{r}=\frac{Q}{4 \pi} \frac{e^{-\mu r}}{r} .
+
+## Endergebnis (Yukawa-Potential):
+
+\phi(\mathbf{r})=\frac{Q}{4 \pi r} e^{-\mu r}
+
+## b) Elektromagnetische Wechselwirkung (Photonenaustausch): Yukawa → Coulomb
+
+Da das Photon masselos ist ( $m=0 \Rightarrow \mu=0$ ), ergibt sich
+
+\phi(r)=\frac{g_{0}}{4 \pi} \frac{e^{-\mu r}}{r} \underset{\mu \rightarrow 0}{\longrightarrow} \frac{g_{0}}{4 \pi r} .
+
+Dies entspricht bis auf den SI-Faktor $1 / \varepsilon_{0}$ dem Coulomb-Potential. Für ein masseloses Austauschteilchen (Photon) ist die Reichweite
+
+\lambda=\frac{1}{\mu} \xrightarrow[m \rightarrow 0]{ } \infty,
+
+die elektromagnetische Wechselwirkung ist also langreichweitig. Siehe Abbildung 1 für einen Vergleich zwischen dem Coulomb- und dem Yukawa-Potential.
+
+## c) Schwache Wechselwirkung ( $W^{ \pm}, Z^{0}$-Bosonen)
+
+Die Reichweite eines Austauschteilchens mit Masse $m$ (in $\mathrm{MeV} / c^{2}$ ) ist
+
+\begin{gathered}
+\lambda=\frac{\hbar c}{m c^{2}} \simeq \frac{197.3 \mathrm{MeV} \mathrm{fm}}{m[\mathrm{MeV}]} . \\
+\lambda_{W}=\frac{197.3}{80.4 \times 10^{3}} \mathrm{fm}=2.45 \times 10^{-3} \mathrm{fm}=2.45 \times 10^{-18} \mathrm{~m}, \\
+\lambda_{Z}=\frac{197.3}{91.2 \times 10^{3}} \mathrm{fm}=2.16 \times 10^{-3} \mathrm{fm}=2.16 \times 10^{-18} \mathrm{~m} .
+\end{gathered}
+
+Die schwache Wechselwirkung ist kurzreichweitig, da ihre Austauschteilchen sehr schwer sind; der Yukawa-Faktor $e^{-r / \lambda}$ unterdrückt das Feld bereits für $r \sim 10^{-3} \mathrm{fm}$.
+
+![This diagram depicts the potential \( V(r) \) as a function of distance \( r \) for bosons, showing the difference between the potential of a massless boson, which follows a \( \frac{1}{r} \) dependence, and a massive boson, which follows a Yukawa potential \( \frac{e^{-mr}}{r} \).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ab887a78-64ac-4792-a383-320e1a0fb3a6/88637b74-e70e-4339-93bd-39312a573d5d-8_876_785_292_632.jpg)
+Abbildung 1: Vergleich zwischen dem Coulomb-Potential (durchgezogene blaue Linie), das einem masselosen Austauschteilchen entspricht, und dem Yukawa-Potential (gestrichelte rote Linie), das einem massiven Austauschteilchen entspricht. Die exponentielle Abschwächung im Yukawa-Potential begrenzt die Reichweite der Wechselwirkung auf ungefähr $r \sim 1 / m$.
+
+## d) Starke Wechselwirkung
+
+- Kernkraft: Pionenaustausch
+
+\lambda_{\pi}=\frac{197.3}{140} \mathrm{fm}=1.41 \mathrm{fm}=1.41 \times 10^{-15} \mathrm{~m} .
+
+Die Reichweite $\lambda_{\pi} \sim 1-2 \mathrm{fm}$ entspricht der typischen Nachbarschafts- oder Oberflächenreichweite innerhalb eines Atomkerns.
+
+## - Fundamentale starke Wechselwirkung: Gluonaustausch
+
+Unter der Annahme masseloser Gluonen würde man für die starke Wechselwirkung eine unendliche Reichweite erwarten. In der Natur wird dies jedoch aufgrund der Einschließung (Confinement) nicht realisiert. In der Elektrodynamik tragen masselose Photonen die Wechselwirkung, besitzen jedoch keine elektrische Ladung und wechselwirken daher nicht miteinander. Bei der starken Wechselwirkung hingegen tragen Gluonen die Kraft, aber im Gegensatz zu Photonen besitzen Gluonen selbst eine starke Ladung (Farbe). Das bedeutet, dass Gluonen miteinander wechselwirken und die Felder der anderen beeinflussen, wodurch verhindert wird, dass sich die starken Feldlinien ausbreiten, und die Reichweite der starken Wechselwirkung auf etwa $\sim 1 \mathrm{fm}$ begrenzt wird.
+
+## Zusammenfassung
+
+| Wechselwirkung | Austauschteilchen | Masse | Reichweite $\lambda$ |
+| Elektromagnetisch | Photon ( $\gamma$ ) | $m=0$ | $\infty$ |
+| Schwach | $W^{ \pm}$ | 80.4 GeV | $2.45 \times 10^{-3} \mathrm{fm}=2.45 \times 10^{-18} \mathrm{~m}$ |
+|  | $Z^{0}$ | 91.2 GeV | $2.16 \times 10^{-3} \mathrm{fm}=2.16 \times 10^{-18} \mathrm{~m}$ |
+| Stark (Kernkraft) | Pion ( $\pi$ ) | 140 MeV | $1.41 \mathrm{fm}=1.41 \times 10^{-15} \mathrm{~m}$ |
+| Stark (fundamental) | Gluon (g) | $m=0$ | $\sim 1 \mathrm{fm}$ |
+| Gravitation | Graviton (hyp.) | $m=0$ | $\infty$ |
+

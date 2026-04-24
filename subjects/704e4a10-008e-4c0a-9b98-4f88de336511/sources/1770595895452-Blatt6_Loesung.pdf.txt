@@ -1,0 +1,51 @@
+Introduction to Biophysics
+Technische Universität München
+Wintersemester 2025/2026
+Prof. Julia Herzen, Prof. Andreas Bausch, Prof. Ulrich Gerland
+Solutions to Exercise Sheet 6
+Problem 6.1
+You should advise the runner to breathe rapidly just before the race. Since a sprint will
+cause a lowering of blood and cell pH, the object of the pre-race routine would be to
+raise the pH with the idea that the runner could then sprint longer before feeling fatigue.
+Holding your breath or breathing rapidly both temporarily affect the amount of dissolved
+CO2 in the bloodstream. Holding your breath will increase the amount of CO2 and push
+the equilibrium to the right, leading to an increase in [H+] and a lower pH. By contrast,
+breathing rapidly will reduce the concentration of CO2 and pull the equilibrium to the
+left, leading to a decrease in [H+] and a higher pH.
+Problem 6.2
+It seems counterintuitive that polymerization of free tubulin subunits into highly ordered
+microtubules should occur with an overall increase in entropy (decrease in order). But
+it is counterintuitive only if one considers the subunits in isolation. Remember that
+thermodynamics refers to the whole system, which includes the water molecules. The
+increase in entropy is due largely to the effects of polymerization on water molecules.
+The surfaces of the tubulin subunits that bind together to form microtubules are fairly
+hydrophobic, and constrain (order) the water molecules in their immediate vicinity. Upon
+polymerization, these constrained water molecules are freed up to interact with other
+water molecules. Their new found disorder much exceeds the increased order of the
+protein subunits, and thus the net increase in entropy (disorder) favors polymerization.
+Problem 6.3
+The reverse of the forward reaction is simply not a possibility under physiological condi-
+tions. The flow of material through a pathway requires that the ∆G values for every step
+must be negative. Thus, for a flow from liver glycogen to serum glucose the step from
+glucose 6-phosphate to glucose must have a negative ∆G. To simply reverse the forward
+reaction (that is, G6P + ADP → glucose + ATP, ∆G◦ = 4.0 kcal/mole) would require
+that the concentration ratio [glucose][ATP]/ [G6P][ADP] be less than 0.0015 in order to
+bring the reaction to equilibrium (∆G = 0).
+
+Introduction to Biophysics: Solutions to Exercise Sheet 6
+∆G◦ = −RT lnKeq (f or a system at chemical equilibrium)
+4.0 kcal/mole = −0.616 kcal/mole ln[glucose][AT P ]
+[G6P ][ADP ] (at 37◦C)
+ln[glucose][AT P ]
+[G6P ][ADP ] = −4.0 kcal/mole
+0.616 kcal/mole = −6.49
+[glucose][AT P ]
+[G6P ][ADP ] = 0.0015
+Inside a functioning cell, such as a liver cell exporting glucose, the concentration of ATP
+always exceeds that of ADP, but just for illustrative purposes let us assume the ratio is 1.
+Under these conditions the ratio [glucose]/[G6P] must be 0.0015; that is, the concentration
+of G6P must be nearly 700 times that of glucose. Since the circulating concentration of
+glucose is maintained at between 4 and 5 mM, this corresponds to about 3 M G6P, an
+impossible concentration given that the total concentration of cellular phosphate is less
+than about 25 mM.
+2

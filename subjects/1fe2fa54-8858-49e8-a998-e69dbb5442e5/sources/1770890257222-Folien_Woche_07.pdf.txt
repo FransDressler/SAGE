@@ -1,0 +1,195 @@
+1
+Experimental methods in solid-state physics
+07 Raman and Brillouin light scattering
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+2
+Spectroscopy with neutrons
+© FRM-II
+Triple axes spectrometer
+𝑞 = 𝑘 − 𝑘′
+Δ𝐸 = ℏ𝜔 = 𝐸 − 𝐸′
+Inelastic scattering
+
+3
+Phonon dispersion of GaAs
+→ sound wave
+→ interacts with light
+Number of phonon branches: 3N
+N: number of atoms in the primitive unit cell
+
+4
+Phonon dispersion of GaAs
+→ sound wave
+→ interacts with light
+Zinc-blende structure
+LA
+TA
+LO
+TO
+
+5
+Phonons are quasi-particles
+Macroscopic periodic crystal:
+•A strongly interacting many-body system
+•With a well-defined many-body ground state
+•And a large spectrum of possible excited many-body states
+Many-body ground state
+Excited states
+
+6
+Phonons are quasi-particles
+Quasiparticles:
+•Are elementary excitations of that many-body ground state
+•Behave as if they were particles with effective properties
+(mass, charge, spin, etc.)
+•Represent collective motion of many underlying microscopic
+degrees of freedom
+•Have long lifetimes (their spectral peak is sharp), meaning
+interaction/scattering is weak enough to give them well-
+defined energy ℏ𝜔 and momentum 𝒒
+
+7
+Statistics for (quasi-)particles
+Classical (Maxwell–Boltzmann) Bosons (Bose–Einstein) Fermions (Fermi–Dirac)
+Distribution function 1
+𝑒(𝐸−𝜇)/(𝑘𝐵𝑇)
+1
+𝑒(𝐸−𝜇)/(𝑘𝐵𝑇) − 1
+𝑒(𝐸−𝜇)/(𝑘𝐵𝑇) + 1
+μ = 0
+T = 300 K
+μ = 0.15 eV
+T = 300 K
+μ = 0.15 eV
+T = 10 K
+
+8
+Statistics for (quasi-)particles
+Classical (Maxwell–
+Boltzmann) Bosons (Bose–Einstein) Fermions (Fermi–Dirac)
+Indistinguishability Not enforced (particles treated
+as distinguishable) Enforced Enforced
+Quantum state occupancy No restriction Unlimited per state ≤ 1 per state (Pauli principle)
+Distribution function 1
+𝑒(𝐸−𝜇)/(𝑘𝐵𝑇)
+𝑒(𝐸−𝜇)/(𝑘𝐵𝑇) − 1
+𝑒(𝐸−𝜇)/(𝑘𝐵𝑇) + 1
+Validity regime High (T), low density All (T) All (T)
+Chemical potential ( \mu ) 𝜇 < 0, large negative 𝜇 < 0 (→0 at condensation) 𝜇 ≥ 0
+Many-particle behavior No collective quantum effects Bose condensation, coherence,
+superfluidity Fermi surfaces
+Examples Classical gas, dilute ions Phonons, photons, magnons,
+excitons, … Electrons
+Low-T limit Particles freeze out Macroscopic occupancy of
+lowest state
+Sharp Fermi surface
+, 𝑓 𝐸 = 𝛿(𝐸 − 𝜇)
+
+9
+Occupation of phonon modes
+Ground state
+Phonon mode with q and ω
+ℏ𝜔
+
+10
+Occupation of phonon modes
+Ground state
+Phonon mode with q and ω
+ℏ𝜔
+
+11
+Light-matter interaction
+
+12
+Light-matter interaction
+
+13
+Raman scattering is a two-step process (Stokes)
+ℏ𝜔photon
+Intermediate (virtual) state
+ℏ𝜔photon − ℏ𝜔phonon
+n+1 phonons
+Step 1 Step 2
+
+14
+Raman scattering is a two-step process (anti-Stokes)
+ℏ𝜔photon
+Intermediate (virtual) state
+ℏ𝜔photon + ℏ𝜔phonon
+n phonons
+Step 1 Step 2
+n+1 phonons
+
+15
+Raman scattering is a two-step process
+Dynamical structure factor: which excitation exist in the system
+Raman vertex (transition matrix element): which transitions are optically active
+
+16
+Raman scattering: experimental implementation
+Source: Wikipedia
+Important considerations
+• Raman scattering a weak process → the Rayleigh scattered
+laser light must by suppressed by many orders of magnitude
+• Photons have very little momentum/wavevektor: k = 2π/λ
+→ k ~ 107 m-1
+• Wavevectors in Brillouin zone: k = π/a
+→ k ~ 1010 m-1
+First order Raman scattering probes excitations at q = 0
+
+17
+Raman spectrum of zincblende III-V semiconductors
+TO
+LO
+Mooradian and Wright, Solid State Communications Vol. 4, pp.431 - 434, 1966
+LA
+TA
+GaAs phonon dispersion
+
+18
+Raman spectrum of silicon
+[100]
+[001]
+-[010]
+Hunklinger, Gross
+P. E. Van Camp et al.,
+PRB 31, 4089 (1985).
+
+19
+aus Hunklinger (Bild 6.24)
+& Gross/Marx (Bild 5.21)
+Raman-Streuung bzw. Spektroskopie
+Raman spectrum of silicon: Stokes vs. Anti-Stokes
+
+20
+aus Marx/Gross
+Raman-Streuung bzw. Spektroskopie
+Isotope effects
+
+21
+Sunmary
+• Phonons are quasiparticles with well defined energy E and wavevector q
+• Occupation number for a mode follows the Bose-Einstein-distribution
+• Light-matter interaction is governed by 𝒅 ⋅ 𝑬 in the dipole approximation
+• Raman scattering
+• is formally a second order perturbation theory process
+• probes phonons at the zone center
+• allows Stokes and anti-Stokes processess
+• couples to first order to LO and TO phonons
+
+22
+aus Marx/Gross
+Brillouin- vs. Raman-Streuung
+Brillouin light scattering
+
+23
+Brillouin light scattering
+Cavity (standing wave)
+Movable mirror
+
+24
+aus Hunklinger

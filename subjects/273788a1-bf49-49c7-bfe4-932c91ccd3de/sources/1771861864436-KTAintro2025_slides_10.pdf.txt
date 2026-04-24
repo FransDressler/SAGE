@@ -1,0 +1,219 @@
+![The image is an introduction to nuclear, particle, and astrophysics, showing key concepts and tools such as atomic nuclei, particle physics (Standard Model chart), particle accelerators, neutrino detection, cosmic phenomena like the Crab Nebula, and the timeline of the Big Bang and cosmic evolution.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-01_1875_3333_0_0.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Beta, alpha, fission |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiocarbon, gamma transitions |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Quiz am 23.12.25 --- Online in Moodle
+
+- Bestandenes Quiz als Voraussetzung für Notenbonus
+- Komplett online um 14:30 Uhr am Dienstag 23.12.25
+- Länge: $20-25 \mathrm{~min}$
+- Test Quiz online am Freitag
+- Zugang für beide Quiz in moodle
+- Email mit Details wird folgen!
+![The image is for a quiz and shows the word "QUIZ!" in a bold, comic-style explosion graphic.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-03_864_876_833_2212.jpg)
+
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts the mass excess (M) versus atomic number (Z) for isotopes with mass number A=101, showing which isotopes are beta-unstable (filled circles) and beta-stable (open circles). It illustrates the beta stability curve for these isotopes, indicating the direction of beta decay.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-04_1032_1035_408_182.jpg)
+![This diagram depicts the energy level structure related to alpha decay, showing bound states of protons and neutrons within the nuclear radius and the quasi-stationary state corresponding to the alpha particle energy above the potential barrier. It illustrates the potential barrier and energy conditions for alpha particle emission from the nucleus.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-04_944_1722_502_1356.jpg)
+
+## Bindungsenergien und Betazerfälle
+
+Alpha Zerfall
+Kernspaltung
+
+![This diagram depicts the activity (Akt.) versus time (t) for two radioactive isotopes A and B, illustrating the decay rates where isotope A has a shorter half-life (τ_A) than isotope B (τ_B). It shows the difference in decay curves and the time at which the activity of isotope A reaches its maximum (t_max).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-05_566_404_182_760.jpg)
+Fig. 5.13
+
+![This diagram depicts the activity (Akt.) versus time (t) for two radioactive isotopes A and B, where the half-life of A (τ_A) is greater than that of B (τ_B). It shows the decay rates (λ_A and λ_B) and the time (t_max) at which the activity of isotope B reaches its maximum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-05_566_384_182_1176.jpg)
+Fig. 5.14
+
+![This diagram depicts the activity versus time for two radioactive isotopes A and B with different decay constants (λ_A and λ_B), illustrating the condition where the half-life of A (τ_A) is much greater than that of B (τ_B), and showing the time (t_max) at which their activities are equal.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-05_566_475_179_1531.jpg)
+Fig. 5.15
+
+![This diagram depicts the activity (Akt.) of two radioactive isotopes A and B as a function of time (t), illustrating the decay behavior when the lifetime of A (τ_A) is much greater than the time, which is much greater than the lifetime of B (τ_B). It shows the constant activity of isotope A and the increasing activity of isotope B over time until reaching a maximum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-05_607_462_177_1973.jpg)
+Fig. 5.16
+
+IDEALES GLEICHGEWICHT bei $\mathrm{t}=\mathrm{t}_{\text {max }}$
+$\_\_\_\_$ FORTSCHREITENDES GLEICHGEWICHT
+für $t>t_{\text {max }}$
+
+SÄKULARES
+GLEICHGEWICHT
+
+Aktivität von B unter 4 verschiedenen Fällen.
+Das „ideale Gleichgewicht“ erreicht man für $\mathrm{t}_{\text {max }}$ wenn die Aktivität maximal wird (berechenbar aus Kurvendiskussion obiger Formel).
+Für $\tau_{\mathrm{A}} \gg \tau_{\mathrm{B}}$ gleichen sich die Aktivitäten von Mutter- und Tochterkern an.
+Man spricht vom „säkularen Gleichgewicht“, wenn auch noch die Messzeit t
+$\gg \tau_{\mathrm{B}}$
+
+## Uran- und Thorium Zerfallsketten
+
+Gezeigt wird die Kette von ${ }^{238} \mathrm{U}$
+![This diagram is a section of the actinide series from the nuclear decay chart, showing isotopes of elements like Uranium, Thorium, Protactinium, Neptunium, and Actinium with their half-lives and decay modes. The arrows indicate specific radioactive decay pathways between these isotopes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-06_653_1380_0_1420.jpg)
+![This image is a portion of a nuclide chart showing isotopes of heavy elements with their decay modes and half-lives. It specifically depicts alpha decay (yellow), beta-plus decay (red), and beta-minus decay (blue) color-coded for each isotope.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-06_1113_2408_664_310.jpg)
+![This diagram depicts the uranium-238 decay series, showing the sequential alpha and beta decays of uranium-238 into various daughter isotopes until reaching stable lead-206. It includes the half-lives and decay modes of each isotope in the series.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-07_1829_1248_23_1281.jpg)
+![This diagram depicts the uranium-238 decay series, showing the sequential alpha and beta-minus decays of isotopes from uranium-238 down to stable lead-206. It includes the intermediate radioactive isotopes, their half-lives, and the type of decay transitions between them.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-08_1530_1056_171_614.jpg)
+
+## Beispiel aus der "Praxis"
+
+## CRESST Experiment zur Suche nach Dunkler Materie
+
+![This image shows a copper vacuum chamber used in experimental physics or materials science, specifically designed to house and isolate sensitive components or samples in a controlled vacuum environment. The chamber includes a removable lid and ports for instrumentation or vacuum connections.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-08_550_861_411_1822.jpg)
+Beobachtung von Störsignalen (Untergrund), welche von Dunkler Materie Signalen ununterscheidbar sind!
+
+![This diagram depicts the uranium-238 decay series, showing the sequence of alpha and beta decays from uranium-238 to stable lead-206, including the intermediate radioactive isotopes and their half-lives.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-09_1624_1155_119_619.jpg)
+
+## Beispiel aus der "Praxis"
+
+CRESST Experiment zur Suche nach Dunkler Materie
+![This image shows a cryogenic detector used in particle physics or astrophysics experiments, specifically designed for detecting rare events such as dark matter interactions or neutrinoless double beta decay. It depicts the detector components including the cryostat housing and the sensor assembly.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-09_590_918_374_1900.jpg)
+
+Beobachtung von Störsignalen (Untergrund), welche von Dunkler Materie Signalen ununterscheidbar sind!
+![This diagram depicts the alpha decay of Polonium-210 (²¹⁰Po) into Lead-206 (²⁰⁶Pb), showing the energy released as a 5.3 MeV alpha particle and the recoil energy of 103 keV imparted to the lead nucleus.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-09_426_1082_1270_1890.jpg)
+![The image depicts the uranium decay series, specifically tracing the origin of Polonium-210 contamination, showing two possible sources: radon gas or cigarette smoke. It illustrates the radioactive decay pathways from uranium to stable lead isotopes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-10_1693_2332_78_499.jpg)
+![This image depicts a partial radioactive decay chain starting from Uranium-238, showing its alpha decay to Thorium-234 and subsequent beta-minus decay to Protactinium-234m. It illustrates the sequence of nuclear transformations and decay modes in the uranium series.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-11_1585_252_137_499.jpg)
+
+
+Fragestellung: Ursprung der ${ }^{210} \mathrm{Po}$ Kontamination ??
+![This image depicts an icon of an alarm clock, representing the concept of time or an alert/reminder related to time.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-11_194_186_197_2895.jpg)
+![The image depicts the chemical element Radon (Rn) from the periodic table, specifically highlighting its atomic number 86 and atomic mass 222.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-11_361_920_421_1895.jpg)
+
+Option 2:
+![The image depicts a close-up of a lit cigarette, specifically showing the burning tip and ash formation. It is related to smoking or tobacco use.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-11_368_931_812_1887.jpg)
+
+- Messzeit: mehrere Jahre
+- ${ }^{210} \mathrm{Po}$ hat eine Halbwertszeit von 138 Tagen
+- Durch zeitliche Entwicklung der ${ }^{210} \mathrm{Po}$ Aktivität kann man die Ursache der Strahlung bestimmen!
+
+Welche zeitliche Entwicklung der ${ }^{210}$ Po Alpha Aktivität erwarten sie für Option 1 bzw. 2 ?
+![This diagram depicts the decay chain of Uranium-238, showing the sequence of alpha and beta decays through various isotopes including Thorium, Radium, Radon, Polonium, Bismuth, Lead, Thallium, and Mercury, along with their half-lives. It specifically illustrates the radioactive transformations leading to stable Lead-206.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-12_1584_1415_117_583.jpg)
+![This diagram depicts the uranium-238 decay series, showing the sequence of alpha and beta decays from uranium-238 to stable lead-206, including intermediate isotopes and their half-lives. It also highlights different decay pathways and rates for specific isotopes in the series.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-13_1597_1415_104_583.jpg)
+![This diagram depicts the activity (Akt.) versus time (t) for a radioactive decay chain where the parent isotope A decays to daughter isotope B, showing the condition where the parent half-life (τ_A) is much longer than the time (t), which is much longer than the daughter half-life (τ_B). It illustrates the constant activity of A and the increasing activity of B as it approaches secular equilibrium.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-13_522_415_273_2093.jpg)
+![This diagram depicts the uranium-238 decay series, showing the sequence of alpha and beta-minus decays from uranium-238 to stable lead-206, including intermediate isotopes and their half-lives.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-14_1545_1141_182_773.jpg)
+
+## Lösung
+
+## Option 1:
+
+![The image depicts the element Radon (Rn) from the periodic table, showing its atomic number 86 and atomic mass 222.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-14_155_394_463_1786.jpg)
+
+## Option 2:
+
+![The image depicts a lit cigarette, showing the burning end with ash and smoke. It is related to smoking or tobacco use.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-14_155_379_1119_2051.jpg)
+![This diagram depicts the energy level diagram for beta-minus decay of the nucleus ^60Co (Cobalt-60), showing the transitions between energy states and the emitted gamma rays with their respective energies.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-14_564_779_1288_2140.jpg)
+![This diagram depicts the uranium-238 decay series, showing the sequence of alpha and beta-minus decays from uranium-238 to stable lead-206, including intermediate isotopes and their half-lives.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-15_1579_1154_174_773.jpg)
+
+## Lösung
+
+![This diagram depicts the activity (Akt.) versus time (t) for two radioactive isotopes A and B, illustrating the decay behavior when the half-life of A (τ_A) is much greater than the elapsed time t, which is much greater than the half-life of B (τ_B). It shows the activity of isotope A remaining nearly constant while the activity of isotope B increases and approaches equilibrium.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-15_527_423_304_2270.jpg)
+
+## Option 2:
+
+![The image depicts a lit cigarette, showing the burning end with ash and smoke. It is related to smoking or tobacco use.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-15_155_382_1119_2051.jpg)
+![This diagram depicts a logarithmic plot of activity (log A) versus time (t) for a radioactive substance, illustrating the exponential decay process characterized by the decay constant (Anstieg-λ).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-15_350_654_1309_2195.jpg)
+
+Lösung
+
+
+![This diagram shows the rate of recoil events from ^206Pb as a measure of ^210Po activity over time, illustrating the buildup of radon decay products in a sample. It is used to track the activity of radon progeny through their alpha decay recoil rates.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-17_1172_2323_396_402.jpg)
+
+Der Ratenanstieg mit in etwa der Halbwertszeit von ${ }^{210} \mathrm{Po}$ deutet darauf hin, dass Rn (kurz) vor der Messung in den Detektoren implantiert wurde.
+
+## Anwendung Altersbestimmung
+
+## Die wichtigsten Methoden sind
+
+- ${ }^{14} \mathrm{C}$ - Methode für organische Substanzen (z.B. Iceman, bzw. „Ötzi“ starb unterhalb der Finailspitze auf 3200 m vor ca. 5250 Jahren). Halbwertszeit ${ }^{14} \mathrm{C}: 5730$ a
+- Uran/Thorium - Blei Gehalt von Gestein und Meteoriten
+
+Halbwertszeiten ${ }^{238} \mathrm{U}: 4.5 \times 10^{9}$ a ${ }^{232} \mathrm{Th}: 1.4 \times 10^{10}$ a
+
+- He-Gehalt von Gesteinen und Meteoriten
+
+
+## Alter unseres Sonnensystems: $\mathbf{4 , 5} \times \mathbf{1 0}^{\mathbf{9}}$ a
+
+Vergleiche auch dazu das Vorkommen von ${ }^{235} \mathrm{U}$ mit nur $0,7 \%$. Halbwertszeit: $7 \times 10^{8}$ a
+
+$$
+\begin{aligned}
+& \text { Aus dem Zerfallsgesetz } N=N_{0} e^{-\lambda_{A} t} \text { für einen einstufigen Prozess } A \xrightarrow{\lambda_{A}} B \text { (stabil) folgt } \\
+& \quad t=\tau_{A} \ln \frac{N_{0}}{N} . \\
+& \text { Wenn A und B die Zahl der jeweligen Kerne bezeichnen, gilt } t=\tau_{A} \ln \frac{A+B}{A}
+\end{aligned}
+$$
+
+Das Alter $t$ ist dann bestimmbar, wenn man gute Annahmen für B zur Zeit $t=0$ machen kann und wenn es keine Konkurrenzprozesse gibt, die A und B sonst signifikant verändern
+
+## Radiokarbonmethode ${ }^{\mathbf{1 4}} \mathbf{C}$ :
+
+- Datierung von organischen Proben (300-50.000 Jahre)
+- C-14 zerfällt mit Halbwertszeit von 5800 Jahren via BetaZerfall
+
+Zerfallsgesetz:
+
+\left(\frac{{ }^{14} C}{{ }^{12} C}\right)=\left(\frac{{ }^{14} C}{{ }^{12} C}\right)_{\text {Luft }} \cdot e^{-\lambda_{14} t} \quad \text { mit } \quad \lambda_{14}=1,21 \cdot 10^{-4} \frac{1}{\text { a }}
+
+Messmethoden:
+
+- Zählrohr
+- Flüssigszintillator
+- Beschleuniger-Massenspektroskopie (AMS)
+![The diagram depicts the formation and decay of carbon-14 (^14C), showing the nuclear reaction where nitrogen-14 (^14N) captures a neutron to form carbon-14 and a proton, followed by the beta decay of carbon-14 back into nitrogen-14, an electron, and an antineutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-19_587_1202_257_1952.jpg)
+![The image depicts the equilibrium ratio of carbon isotopes ^12C to ^14C in living organisms, showing that the number of ^12C atoms is 10^12 times the number of ^14C atoms.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-19_256_1128_929_1916.jpg)
+![The diagram depicts the radioactive decay of carbon-14 (^14C) in dead organisms, showing the imbalance between the number of stable carbon-12 (^12C) atoms and the decreasing number of ^14C atoms due to decay.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-19_363_1329_1166_1916.jpg)
+
+
+## Bekannteste Anwendung: <br> Turiner Grabtuch
+
+Reliquie von Jesus von Nazareth?
+
+Radiokarbonmethode datiert Grabtuch auf Mittelalter
+Nature. Band 337, Nr. 6208, 16. Februar 1989, S. 611-615
+![This image shows the Shroud of Turin, depicting the face of a man believed by some to be Jesus Christ, with the left side showing the shroud under normal light and the right side showing it under enhanced or negative imaging to reveal more facial details.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-20_735_1120_599_1978.jpg)
+
+Quelle: wikipedia
+Bekannteste Anwendung:
+Turiner GrabtuchReliquie von Jesus von Nazareth?Radiokarbonmethode datiert GrabtuctMittelalterNature. Band 337, Nr. 6208, 16. Februar 1989, S. 61
+
+54
+
+Sir - If the shroud of Turin is in fact the burial cloth of Christ, contrary to its
+recent carbon-dated age of about 670 years (Nature 335, 663; 1988 and 337, 611; 1989), then according to the Bible it was present at a unique physical event: the
+resurrection of a dead body. Unfortunately, this event is not accessible to direct scientific scrutiny, but the image on the shroud, which still cannot be duplicated, appears
+to be a scorch, indicating that the body radiated light and/or heat. It may also have radiated neutrons, which would have irradiated the shroud and changed some
+
+## Shroud irradiated with neutrons? <br> CORRESPONDENCE
+
+should vary in different parts of the shroud. In addition, other unstable isotopes
+should have been formed. Several of these isotopes have half-lives long enough that they would still be present, yet short The unstable isotopes most likely the found in the shroud are ${ }^{6} \mathrm{Cl}$ and ${ }^{41} \mathrm{Ca}$. The presence of either would confirm that the An accurate measurement of the ratio of either ${ }^{4} \mathrm{Cl}$ to ${ }^{45} \mathrm{Cl}$ or ${ }^{41} \mathrm{Ca}$ to ${ }^{42} \mathrm{Ca}$ (see table) would test the prediction of an integrated This may not be possible, however, because contamination with new sources of chlorine or calcium may have occurred irridation took place. Thomas J. Phillips Harvard University, Cambridge, Massachusetts 02138, USA Hedges replies-The processes sugges-
+ted by Phillips were considered by the participating laboratories. However, for the reasons given below, the likelihood of the nuclei to different isotopes by
+neutron capture. In particular, some ${ }^{4} \mathrm{C}$ could have been generated from "C. If we assume that the shroud is 1,950 years old and that the neutrons were emitted
+thermally, then an integrated flux of $2 \times 10^{10}$ neutron $\mathrm{cm}^{-2}$ whegrated flux of $2 \times 10^{\circ}$ neutrons $\mathrm{cm}^{-3}$ would have converted
+enough ${ }^{12} \mathrm{C}$ to ${ }^{14} \mathrm{C}$ to give an apparent carbon-dated age of 670 years. This flux of neutrons should have other measurable consequences. The neutron uniform, for example, so the ${ }^{4} \mathrm{C} l^{3} \mathrm{C}$ ratio
+
+## Kuriosität: Verfälschung der Messergebisse durch Auferstehung?
+
+![This table depicts the properties of selected parent/daughter isotopes, including their natural abundance, neutron capture cross-section, daughter isotope, half-life, and predicted parent/daughter ratio for isotopes subjected to neutron irradiation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-21_270_905_1369_1692.jpg)
+![This image shows a portion of a journal header from the publication "Nature," specifically indicating the volume number 337 and the date 16 February 1989.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/45437ef2-f09f-4d6a-9658-0e6a8f3bcd77/fadd14a8-b7b9-4a9d-967c-41bc3b8666e7-21_82_435_456_2623.jpg)
+that they influenced the date in the way proposed is in my view so exceedingly (1) No plausible physical mechanism has been proposed to explain how the resurrection was accompanied by a significant is to be proposed, it seems pointless to make any scientific measurement on the (2) Assuming a 'scientific' (but not yet articulated) explanation for the neutron flux, it is an amazing coincidence that the priate to give the most likely date on historical grounds. (Arguably a total of $10^{\circ}$ neutrons (the number in a human figures, this be available. Using Phillips' figures, this would be sufficient to impart a produce a date within 100 years of the first recorded history of the shroud implies that the dose has been 'fine-tuned' to better than one part in a hundred million.) (3) In fact, the dose proposed by Phillips thed has not included the neutron capture by nitrogen in the 1,000 p.p.m., for which a thermal neutron flux of $2 \times 10^{13} \mathrm{~cm}^{-2}$ (that is, 1,000 times less) would be appropriate. This does not the chemical implications (even without recoil effects). The three dating laboratories used different types of treatments, (for example at Oxford we purified the cellulose), yet obtained formed by neutron irraows that any C chemically in the same way as the original ${ }^{\mathrm{C}}$ C. This is inherently unlikely because the original nitrogen is in a chemicallv quite
+

@@ -1,0 +1,214 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Physik der kondensierten Materie
+Festkörperphysik
+Wintersemester 2025/2026
+WSI (2019)
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Vorlesung & Übungsbetrieb
+Vorlesung Dienstag 12:00 – 14:00 Uhr HS2 A. Holleitner
+Donnerstag 10:00 – 12:00 Uhr HS2 A. Holleitner
+• Material zur Vorlesung steht auf Moodle zur Verfügung.
+Zentralübung Montag 12:00 – 14:00 Uhr HS3 Christoph Kastl
+• Einführung in die experimentellen Methoden
+• Besprechung leichter Verständnisfragen
+• Besprechung von Fragen und offenen Punkten aus der Vorlesung, Ergänzungen
+• Hilfe bei der Lösung der Aufgaben
+• Eine der Examensaufgaben stammt aus den Themen der Zentralübung.
+Übungsgruppen
+• erstes Übungsblatt am 17.10.2025 auf Moodle (jeden Freitag neues Übungsblatt)
+• Besprechung des Übungsblatts jeweils in der übernächsten Woche (erste Tutorien ab dem 28.10.2025)
+
+Übungsgruppen
+Gruppe 2 Dienstag 08:30-10:00 Uhr PH2271 (Physik 2) Johannes Schmuck
+Gruppe 3 Dienstag 16:00-18:00 Uhr 5101.EG.271 (Physik 1) Sebastian Loy
+Gruppe 4 Mittwoch 14:00-16:00 Uhr 5140.01.201 (Tutorraum) Alexander Musta
+Gruppe 5 Mittwoch 14:00-16:00 Uhr 5402.01.220J (Chemie) Pablo Galan Vazquez (Englisch)
+Gruppe 6 Donnerstag 08:30-10:00 Uhr 5502.EG.234 (MW) Kurosch Mehrgan
+Gruppe 7 Freitag 12:00-14:00 Uhr PH2271 (Physik 2) Holger Mirkes
+Gruppe 8 Freitag 14:00-16:00 Uhr online / Englisch Sayooj Satheesh, Yuhan Sun
+
+Prüfungen zur Vorlesung
+Klausur
+Wiederholung
+23.02.2026 Montag 14:00 – 15:30 Uhr
+09.04.2026 Donnerstag 11:00 – 12:30 Uhr
+„Die Studierenden müssen sich selbst zu den Prüfungen anmelden“.
+Bitte beachten Sie die Anmeldefristen (voraussichtlich Mitte November bis Mitte Januar).
+Notenbonus von einer Notenstufe
+• Zweimal vorrechnen in Tutorien
+• Regelmäßige Teilnahme an Tutorien (>50%)
+• Bestandene Probeklausur
+• Der Notenbonus erlaubt nicht, die Klausur zu bestehen.
+Probeklausur 12.01.2026 12:00 – 14:00 Uhr HS3
+
+Notenbonus von einer Notenstufe
+• Zweimal vorrechnen in Tutorien
+• Regelmäßige Teilnahme an Tutorien (>50%)
+• Bestandene Probeklausur
+• Der Notenbonus erlaubt nicht die Klausur zu bestehen.
+• Übungsblatt immer an einem Freitag, Eintragen bis Sonntagabend eine Woche später.
+• Besprechung und Vorrechnen des Übungsblatts in der folgenden Woche.
+…
+
+Literatur
+https://www.ub.tum.de/opac
+
+NaCl (kubisch)
+Spessartin (kubisch)
+Rhodonit (triklin)
+Hämatit (trigonal)
+Amazonit (triklin)
+Orthorombischer
+Brookit
+Was ist Festkörperphysik?
+
+Jahr Preisträger Thema WS SS
+1901 Wilhelm Conrad Röntgen Röngten Strahlung 1
+1905Philipp Lenard Kathodenstrahlung 1
+1910Johannes Diderik van der Waals Van der Waals Gleichung 1
+1913Heike Kamerlingh Onnes tiefe Temperaturen 1
+1914Max von Laue Entdeckung der Beugung von Röntgenstrahlen an Kristallen 1
+1915William Henry Bragg, William Lawrence Bragg Analyse der Kristallstruktur durch Röntgenstrahlen 1
+1922Albert Einstein Photoelektrischer Effekt 1
+1923Robert Andrews Millikan Photoelektrischer Effekt 1
+1925James Franck, Gustav Hertz Elektron-Atom Wechselwirkung 1
+1929Louis de Broglie Wellennatur der Elektronen 1
+1930Chandrasekhara Venkata Raman Raman-Streuung 1
+1936
+…
+Peter Debye
+Beiträge zur Molekularstruktur durch Dipolmomente, hier
+Debye-Temperatur 1
+1937Clinton Davisson, George Thomson Beugung von Elektronen an Kristallen 1
+1938Enrio Fermi Neutronen, Kernreaktion 1
+1939Ernest Lawrence Zyklotron 1
+1944
+Isidor Isaac Rabi
+Resonanzmethode zur Bestimmung magnetischer
+Eigenschaften 2
+1945Wolfgang Pauli Pauli-Prinzp 1
+1952Felix Bloch, Edward Mills Purcell Kernspinresonanzspektroskopie, hier Bloch-Welle 1
+1954Max Born Quantenmechanik, hier Born Oppenheim Näherung 1
+1956William Shockley, John Bardeen, Walter Brattain Erfindung des Transistors 2
+1961Robert Hofstadter, Rudolf Mößbauer Mößbauer-Effekt 1
+1962Lev Davidovich Landau Theorien über kondensierte Materie, Suprafluidität 1
+1970Hannes Alfvén, Louis Néel Ferri und Antiferrmagnetismus 2
+1972John Bardeen, Leon Cooper, Robert Schrieffer BCS-Theorie der Supraleitung 2Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Nobelpreise
+
+1952Felix Bloch, Edward Mills Purcell Kernspinresonanzspektroskopie, hier Bloch-Welle 1
+1954Max Born Quantenmechanik, hier Born Oppenheim Näherung 1
+1956William Shockley, John Bardeen, Walter Brattain Erfindung des Transistors 2
+1961Robert Hofstadter, Rudolf Mößbauer Mößbauer-Effekt 1
+1962Lev Davidovich Landau Theorien über kondensierte Materie, Suprafluidität 1
+1970Hannes Alfvén, Louis Néel Ferri und Antiferrmagnetismus 2
+1972John Bardeen, Leon Cooper, Robert Schrieffer BCS-Theorie der Supraleitung 2
+1973Leo Esaki, Ivar Giaever, Brian Josephson Tunnel-Effekte in Festkörpern 2
+1977Philip Anderson, Nevill Mott, John Van Vleck Elektronenstruktur in magn. und ungeordneten Systemen 2
+1985Klaus von Klitzing Entdeckung des Quanten-Hall-Effekts 1
+1986Ernst Ruska, Gerd Binnig, Heinrich Rohrer Elektronenmikroskopie und Rastertunnelmikroskop 2
+1987J. Georg Bednorz, K. Alexander Müller Hochtemperatur-Supraleitung 2
+1991
+Richard R. Ernst
+Entwicklung der hochauflösenden NMR-Spektroskopie – auch für
+Festkörperanwendungen 2
+1994Bertram N. Brockhouse und Clifford G. Shull Neutronenspektroskopie 1
+1996Robert F. Curl, Harold W. Kroto, Richard E. Smalley Entdeckung der Fullerene – neue Festkörpermaterialien 2
+1998Robert B. Laughlin, Horst L. Störmer, Daniel C. Tsui Fraktionaler Quanten-Hall-Effekt 1
+2000Zhores I. Alferov, Herbert Kroemer, Jack S. Kilby Halbleiter-Heterostrukturen 2
+2003
+Alexei Abrikossov, Witali Ginsburg, Anthony James
+Leggett Supraleiter und Supraflüssigkeiten 2
+2007Albert Fert, Peter Grünberg Riesenmagnetowiderstand (GMR) 2
+2010Andre Geim, Konstantin Novoselov Entdeckung von Graphen 1
+2011Daniel Shechtman Entdeckung der Quasikristalle 1
+2014Isamu Akasaki, Hiroshi Amano, Shuji Nakamura Entwicklung effizienter blauer LEDs 1 2
+2016
+David J. Thouless, F. Duncan M. Haldane, J. Michael
+Kosterlitz Topologische Phasenübergänge in Festkörpern 1
+2019
+John B. Goodenough, M. Stanley Whittingham, Akira
+Yoshino
+Entwicklung von Lithium-Ionen-Batterien – Festkörper-
+Elektrochemie 1
+2023Pierre Agostini, Ferenc Krausz, Anne L’Huillier Attosekundenphysik – Elektronendynamik in Festkörpern 2
+2023Moungi G. Bawendi, Louis E. Brus, Alexei I. Ekimov Für die Entdeckung und Entwicklung von Quantenpunkten 2
+2025
+….
+John Clarke, Michel Devoret, John Martinis
+.
+Makroscopisches Quantum Mechanisches Tunneln
+Schaltkreis
+2
+…Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Nobelpreise
+
+… für die Entdeckung von
+makroskopischem quantenmechanischen
+Tunneln und Energie-Quantisierung in
+einem elektrischen Stromkreis.
+2025
+https://physics.aps.org/articles/v18/170
+Michel H. DevoretJohn Clarke John M. Martinis
+Makroskopischer
+Supraleitender
+Zustand
+1
+Makroskopischer
+Supraleitender
+Zustand
+2
+Tunnel-
+barriere
+
+https://physics.aps.org/articles/v18/170
+Michel H. DevoretJohn Clarke John M. Martinis
+Phasen-
+unterschied
+zwischen
+1 und
+2:
+
+1
+2
+Tunnel-
+barriere
+Ohne Supraleitung
+
+8.3 Milliarden
+https://www.leonellocalvetti.com/
+~8 Milliarden
+auf 78 mm2
+Wikipedia.com
+https://population.un.org/wpp/
+Gordon Moore: “Every 1.5 years
+complexity doubles”
+Homo sapiens auf der ErdeTransistoren auf einem Chip
+
+https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_5nm
+Downscaling
+
+Exzellenzcluster
+Munich Center for Quantum Science & Technology
+www.mcqst.de
+
+www.munich-quantum-valley.de
+
+Vorlesung & Übungsbetrieb
+Vorlesung Dienstag 12:00 – 14:00 Uhr HS2 A. Holleitner
+Donnerstag 10:00 – 12:00 Uhr HS2 A. Holleitner
+• Material zur Vorlesung steht auf Moodle zur Verfügung.
+Zentralübung Montag 12:00 – 14:00 Uhr HS3 Christoph Kastl
+• Einführung in die experimentellen Methoden
+• Besprechung leichter Verständnisfragen
+• Besprechung von Fragen und offenen Punkten aus der Vorlesung, Ergänzungen
+• Hilfe bei der Lösung der Aufgaben
+• Eine der Examensaufgaben stammt aus den Themen der Zentralübung.
+• erstes Übungsblatt am 17.10.2025 auf Moodle (jeden Freitag neues Übungsblatt)
+• Besprechung des Übungsblatts in der übernächsten Woche (erste Tutorien ab dem 28.10.2025)
+
+Physik der kondensierten Materie
+Festkörperphysik
+Wintersemester 2025/2026
+WSI (2019)

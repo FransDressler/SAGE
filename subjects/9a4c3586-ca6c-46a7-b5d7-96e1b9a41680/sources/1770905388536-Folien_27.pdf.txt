@@ -1,0 +1,78 @@
+## Elektronenbewegung im Magnetfeld
+
+![This diagram depicts the forces acting on a charged particle (electron) in a conductor under the influence of electric fields (Ex, Ey) and a magnetic field (Bz), showing the electric force (FE) and Lorentz force (FL) on the particle, as well as the resulting charge current density (Jqx) in the x-direction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9f9694f0-cbbf-4e8f-9ec0-45a38c43724c/043698a4-4693-4990-a5d9-18b50069e0c7-1_579_1293_591_1028.jpg)
+Abb. 7.17: Zur Veranschaulichung des Hall-Effekts. Die Elektronen bewegen sich entgegen der technischen Stromrichtung $\mathrm{J}_{\mathrm{q}}$ in die negative $x$-Richtung. Sie werden dabei durch die Lorentz-Kraft in die negative $y$-Richtung abgelenkt und bauen ein elektrisches Querfeld $\mathbf{E}_{y}$ auf. Im stationären Zustand kompensiert die Kraft $\mathbf{F}_{E}=-e \mathbf{E}_{y}$ durch das Hall-Feld die Lorentz-Kraft $\mathbf{F}_{\mathrm{L}}=-e \delta \mathbf{v} \times \mathbf{B}$.
+
+## Elektronenbewegung im Magnetfeld (Hall-Effekt)
+
+Im Magnetfeld gilt:
+$\boldsymbol{j}=\widehat{\boldsymbol{\sigma}} \boldsymbol{E} \quad$ bzw. $\boldsymbol{E}=\widehat{\boldsymbol{\rho}} \boldsymbol{j}$, mit $\widehat{\boldsymbol{\rho}}=\widehat{\boldsymbol{\sigma}}^{-1}$
+d.h. $\quad\left(\begin{array}{l}j_{x} \\ j_{y} \\ j_{z}\end{array}\right)=\left(\begin{array}{lll}\sigma_{x x} & \sigma_{x y} & \sigma_{x z} \\ \sigma_{y x} & \sigma_{y y} & \sigma_{y z} \\ \sigma_{z x} & \sigma_{z y} & \sigma_{z z}\end{array}\right)\left(\begin{array}{c}E_{x} \\ E_{y} \\ E_{z}\end{array}\right)$
+bzw.
+
+$$
+\left(\begin{array}{c}
+E_{x} \\
+E_{y} \\
+E_{z}
+\end{array}\right)=\left(\begin{array}{lll}
+\rho_{x x} & \rho_{x y} & \rho_{x z} \\
+\rho_{y x} & \rho_{y y} & \rho_{y z} \\
+\rho_{z x} & \rho_{z y} & \rho_{z z}
+\end{array}\right)\left(\begin{array}{l}
+j_{x} \\
+j_{y} \\
+j_{z}
+\end{array}\right)
+$$
+
+Bewegungsgleichung im Drude-Modell:
+
+m\left(\frac{d}{d t}+\frac{1}{\tau}\right) \boldsymbol{v}_{e}=-e\left(\boldsymbol{E}+\boldsymbol{v}_{e} \times \boldsymbol{B}\right)
+
+![This diagram depicts the setup of a Hall effect experiment, showing the flow of current (Jq) through a conductor in a magnetic field (B), with the resulting Hall voltage (UH) generated perpendicular to the current and magnetic field. It illustrates the arrangement of charges and dimensions relevant to measuring the Hall effect.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9f9694f0-cbbf-4e8f-9ec0-45a38c43724c/043698a4-4693-4990-a5d9-18b50069e0c7-2_598_985_1045_2069.jpg)
+
+## Elektronenbewegung im Magnetfeld (Hall-Effekt)
+
+Table 1.4
+HALL COEFFICIENTS OF SELECTED ELEMENTS IN MODERATE TO HIGH FIELDS ${ }^{\boldsymbol{a}}$
+| METAL | VALENCE | $-1 / R_{H}$ пес |
+| :--- | :--- | :--- |
+| Li | 1 | 0.8 |
+| Na | 1 | 1.2 |
+| K | 1 | 1.1 |
+| Rb | 1 | 1.0 |
+| Cs | 1 | 0.9 |
+| Cu | 1 | 1.5 |
+| Ag | 1 | 1.3 |
+| Au | 1 | 1.5 |
+| Be | 2 | -0.2 |
+| Mg | 2 | -0.4 |
+| In | 3 | -0.3 |
+| Al | 3 | -0.3 |
+
+
+[^0]
+## Elektronen-Dispersionen im Magnetfeld
+
+![This diagram depicts the Landau level energy spectrum of electrons in a magnetic field, showing quantized energy levels (Landau levels) as a function of the wave vector \( k_z \) with the Fermi energy \( E_F \) indicated.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9f9694f0-cbbf-4e8f-9ec0-45a38c43724c/043698a4-4693-4990-a5d9-18b50069e0c7-4_1221_1203_467_413.jpg)
+Bild 9.29: Elektronenenergie im Magnetfeld als Funktion der Wellenzahl $k_{z}$. Die gestrichelte Kurve gibt die Energie freier Elektronen ohne Magnetfeld wieder. Die Zustände der Subbänder sind bis zur Fermi-Energie besetzt.
+
+## Projektion in die Ebene von $\boldsymbol{k}_{\mathbf{x}}$ und $\boldsymbol{k}_{\mathbf{y}}$
+
+![This image depicts two different representations of wavevector (Wellenvektor) distributions in reciprocal space: (a) shows a discrete grid of wavevectors in a square lattice, and (b) shows concentric circular contours representing constant magnitude of the wavevector.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9f9694f0-cbbf-4e8f-9ec0-45a38c43724c/043698a4-4693-4990-a5d9-18b50069e0c7-5_965_1990_421_672.jpg)
+Bild 9.30: Einfluss eines Magnetfelds auf die Eigenwerte der Wellenvektoren freier Elektronen in der $x y$-Ebene. Die Komponente der Wellenvektoren in Feldrichtung wird nicht beeinflusst. a) Erlaubte Wellenvektoren ohne Magnetfeld, b) erlaubte Wellenvektoren im Magnetfeld.
+
+## Landau-Zustände des freien Elektronen-Gases
+
+![This diagram depicts the shape of a Fermi surface in a metal under the influence of a magnetic field \( B \), showing the quantized Landau levels as cylindrical slices of the Fermi sphere. It illustrates how the three-dimensional Fermi surface is quantized into discrete energy levels in the presence of a magnetic field.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9f9694f0-cbbf-4e8f-9ec0-45a38c43724c/043698a4-4693-4990-a5d9-18b50069e0c7-6_1378_1039_327_553.jpg)
+Bild 9.31: Landau-Röhren des freien Elektronengases. Die besetzten Zylinder werden durch die Fermi-Kugel begrenzt. Ebenfalls dargestellt ist die Projektion der Zylinder in die $x y$-Ebene.
+
+## Zustandsdichte des freien Elektronen-Gases im Magnetfeld
+
+![The diagrams depict the density of states \(D(E)\) as a function of energy \(E/\hbar \omega_c\) for two different cases: (a) discrete Landau levels in a system without disorder, and (b) broadened Landau levels with localized and extended states in a disordered system, showing the formation of mobility edges.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9f9694f0-cbbf-4e8f-9ec0-45a38c43724c/043698a4-4693-4990-a5d9-18b50069e0c7-7_1125_2439_382_440.jpg)
+Bild 9.32: Elektronische Zustandsdichte mit und ohne (grau) Magnetfeld. Die Spinaufspaltung wurde bei dieser Darstellung nicht berücksichtigt. a) Zustandsdichte eines zweidimensionalen, b) Zustandsdichte eines dreidimensionalen Systems.
+
+
+[^0]:    ${ }^{a}$ These are roughly the limiting values assumed by $R_{H}$ as the field becomes very large (of order $10^{4} \mathrm{G}$ ), and the temperature very low, in carefully prepared specimens. The data are quoted in the form $n_{0} / n$, where $n_{0}$ is the density for which the Drude form (1.21) agrees with the measured $R_{H}: n_{0}=-1 / R_{H} e c$. Evidently the alkali metals obey the Drude result reasonably well, the noble metals $(\mathrm{Cu}, \mathrm{Ag}, \mathrm{Au})$ less well, and the remaining entries, not at all.
+

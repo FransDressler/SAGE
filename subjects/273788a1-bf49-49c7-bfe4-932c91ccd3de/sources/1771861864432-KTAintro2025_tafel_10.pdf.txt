@@ -1,0 +1,48 @@
+## Vorlesung 10: 16.12.2025
+
+### 2.2 Radioaktive Zerfälle
+
+![This is a Feynman diagram depicting a two-photon decay process of an excited nuclear state \((Z, A)^*\) transitioning to a lower energy state \((Z, A)\) by emitting two photons (\(\gamma\)) simultaneously.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/e1034b1a-4c04-449c-8273-fa62c1c91e40/c3a8706d-53d9-4461-8269-1957da04c13c-1_280_561_504_415.jpg)
+![This diagram depicts an alpha decay process, showing the transition from a parent nucleus with atomic number Z and mass number A to a daughter nucleus with atomic number Z-2 and mass number A-4, along with the emission of an alpha particle. It also notes that the alpha decay has a very narrow energy bandwidth and is slower compared to gamma decay.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/e1034b1a-4c04-449c-8273-fa62c1c91e40/c3a8706d-53d9-4461-8269-1957da04c13c-1_208_563_539_1089.jpg)
+![This is a nuclear decay diagram depicting beta-plus (β⁺) decay, showing the transition from a parent nucleus with atomic number Z to a daughter nucleus with atomic number Z-1 and the emission of a positron. The label "K-Einfang" indicates electron capture from the K-shell.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/e1034b1a-4c04-449c-8273-fa62c1c91e40/c3a8706d-53d9-4461-8269-1957da04c13c-1_176_394_868_440.jpg)
+![This is an energy level diagram for beta-minus (β⁻) decay, showing the transition from a parent nucleus with atomic number Z and mass number A to a daughter nucleus with atomic number Z+1 and the same mass number A, along with the associated half-life range of the decay.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/e1034b1a-4c04-449c-8273-fa62c1c91e40/c3a8706d-53d9-4461-8269-1957da04c13c-1_193_461_865_995.jpg)
+
+Übersicht verschiedener Kernübergänge: Gamma-Zerfall $(\gamma)$ mit typischen Lebensdauern von $\tau \approx 10^{-12} \mathrm{~s}$, Alpha-Zerfall ( $\alpha$ ) mit im Vergleich dazu sehr großen Halbwertszeiten, sowie Beta-Zerfälle ( $\beta^{ \pm}$) und Elektroneneinfang (K-Einfang) mit einem breiten Spektrum an Lebensdauern.
+
+Charakteristische Größe ist die Energieunschärfe nach Heisenberg:
+
+$$
+\Delta E \approx \frac{\hbar}{\tau}
+$$
+
+Für $\tau \approx 10^{-12} \mathrm{~s}$ ergibt sich $\Delta E \sim 10^{-3} \mathrm{eV}$.
+Die Zerfallskonstante $\lambda$ gibt die Wahrscheinlichkeit an, dass ein Kern pro Zeiteinheit zerfällt. Für die Anzahl der Kerne $N$ und die Aktivität $A$ gilt:
+
+\begin{aligned}
+& A=N \cdot \lambda=-\frac{d N}{d t} \\
+& \quad N(t)=N_{0} e^{-\lambda t} \quad A(t)=A_{0} e^{-\lambda t} \\
+& \quad \frac{N}{N_{0}}=\exp \left\{-\frac{t}{\tau}\right\} \\
+& \quad t=\tau_{A} \ln \frac{N_{0}}{N}=\tau_{A} \ln \frac{A+B}{A}
+\end{aligned}
+
+Wichtige Kenngrößen:
+
+- Mittlere Lebensdauer: $\quad \tau=\frac{1}{\lambda}$
+- Halbwertszeit: $T_{1 / 2}=\frac{\ln 2}{\lambda}$
+
+Einheiten $1 \mathrm{~Bq}=1 \mathrm{~s}^{-1}$. Früher: 1 Curie $=1 \mathrm{Ci}=3.7 \cdot 10^{10} \mathrm{~Bq}$.
+
+### 2.2.1 Tochteraktivität
+
+Betrachte die Zerfallsreihe $A \xrightarrow{\lambda_{A}} B \xrightarrow{\lambda_{B}} C$. Die zeitliche Änderung der Kerne von $B$ ergibt sich aus Gewinn (Zerfall von $A$ ) und Verlust (Zerfall von $B$ ):
+
+\frac{d B}{d t}=\lambda_{A} A-\lambda_{B} B=\lambda_{A} A_{0} e^{-\lambda_{A} t}-\lambda_{B} B
+
+Durch Integration erhält man für die Anzahl der Tochterkerne:
+
+B(t)=A_{0} \frac{\lambda_{A}}{\lambda_{B}-\lambda_{A}}\left(e^{-\lambda_{A} t}-e^{-\lambda_{B} t}\right)
+
+Die Aktivität des Tochterkerns lässt sich kompakt so schreiben:
+
+B(t) \lambda_{B}=A(t) \lambda_{A} \frac{\lambda_{B}}{\lambda_{B}-\lambda_{A}}\left(1-e^{-\left(\lambda_{B}-\lambda_{A}\right) t}\right)
+

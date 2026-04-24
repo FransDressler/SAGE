@@ -1,0 +1,53 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Blatt 2
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und -materialien
+2.1 Kristallographische Richtungen in 3D
+Kubische Gitter
+(a) Zeichnen Sie die folgenden Gitterrichtungen: [100], [110], [112], [1¯10].
+(b) Bestimmen Sie die Richtungsindizes der angegebenen kristallographischen Rich-
+tungen.
+(c) Bestimmen Sie die Miller-Indizes der gezeichneten Ebenen.
+
+(d) Eine Familie von Ebenen umfasst alle Ebenen, die aufgrund der Symmetrie des
+Kristallsystems ¨aquivalent sind, d. h. dieselbe Verteilung von Gitterpunkten
+enthalten. Die Notation {hkl} wird f¨ur die Familie der Ebenen verwendet, die
+zur Ebene (hkl) ¨aquivalent sind. In einem kubischen System sind zum Beispiel
+die Ebenen (0¯10) und (100) ¨aquivalent und geh¨oren zur Familie {100}. Finden
+Sie zwei Ebenen, die zur gleichen Familie geh¨oren wie die erste aus dem vorigen
+Teil.
+Hexagonale Gitter
+(a) Zeichnen Sie die Ebenen, die den Miller-Indizes (10¯11) und (¯12¯10) entsprechen.
+(b) Identifizieren Sie die Miller-Indizes der gezeichneten Ebenen.
+
+2.2 Graphen
+Graphen ist ein zweidimensionales Material, das f¨ur seine außergew¨ohnliche Fes-
+tigkeit und Leitf¨ahigkeit bekannt ist. Diese Eigenschaften machen es vielversprechend
+f¨ur Anwendungen in der Elektronik, in Sensoren und in der Energiespeicherung. Es
+is zusammengesetzt aus Einzelschichten von Kohlenstoffatomen, angeordnet in einem
+sogenanntes Honeycomb-Gitter.
+(a) Finden Sie die Einheitszelle, die Gittervektoren a1 und a2 und dr¨ucken Sie die
+Atombasis mit diesen aus.
+(b) Welche Symmetrien finden wir in diesem Material?
+(c) Welche Symmetrien w¨urden wir in einem Material mit derselben Gitterstruk-
+tur, aber mit zwei verschiedenen Atomarten, finden?
+2.3 Perowskite
+Perowskite sind Materialien mit der Formel ABX3. Sie geh¨oren zu den h¨aufigsten
+Struktur-Familien und k¨onnen eine Vielzahl von Ph¨anomenen aufweisen, wie z. B.
+Supraleitung oder Ferroelektrizit¨at. Einige hybride organisch-anorganische Perowskite
+werden f¨ur die Herstellung hocheffizienter Solarzellen verwendet.
+(a) SrTiO3 ist ein Oxid mit einer kubischen Perowskit-Struktur, wie in der Ab-
+bildung gezeigt. Das Ti befindet sich im Zentrum. Identifizieren Sie, welche
+Atome den beiden anderen Elementen entsprechen.
+
+(b) Welches Bravais-Gitter entspricht diesem Material? Finden Sie die primitiven
+Gittervektoren und Basisvektoren.
+(c) Welche Symmetriepunkte enth¨alt es? Welche Symmetrien w¨urden auftreten,
+wenn das Gitter entlang der y-Achse gedehnt w¨urde?
+(d) Stellen Sie die Verteilung der Atome in den Ebenen mit den Miller-Indizes
+(100) und (110) dar, f¨ur das nicht deformierte SrTiO3.
+(e) F¨ur die zweidimensionalen Gitter, die in diesen Ebenen vorzufinden sind, finden
+Sie die primitiven Gittervektoren und geben Sie die Basisvektoren als Linear-
+kombination dieser primitiven Vektoren an.

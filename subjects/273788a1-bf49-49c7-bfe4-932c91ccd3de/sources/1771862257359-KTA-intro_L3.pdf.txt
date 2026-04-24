@@ -1,0 +1,205 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 3
+
+3. November 2025
+
+## Aufgabe 1 Erhaltungssätze
+
+a. Welche Erhalungssätze kennen Sie?
+b. Geben Sie an ob folgende Zerfälle erlaubt sind bzw. geben Sie an welcher Erhaltungssatz verletzt ist falls ein Prozess nicht erlaub ist.
+
+- $n \rightarrow p+e^{+}+\bar{v}_{e}$
+- $p \rightarrow n+e^{+}+v_{e}$
+- $\mu^{-} \rightarrow e^{-}+\gamma$
+- $\mu^{-} \rightarrow e^{-}+v_{\mu}$
+- $\mu^{-} \rightarrow e^{-}+v_{\mu}+\overline{v_{e}}$
+- $p \rightarrow e^{+}+\pi^{0}$
+- $n \rightarrow p+\gamma$
+c. ${ }_{Z}^{A} \mathrm{X}_{N}$ beschreibt ein Isotop des Elements X mit Ordungszahl $Z$, Massenzahl $A$ und Neutronenzahl $N$. Unter welchen Bedingungen ist folgender Zerfall erlaubt? Wie nennt man diesen Zerfall?
+- ${ }_{Z}^{A} \mathrm{X}_{N} \rightarrow{ }_{Z-1}^{A} \mathrm{Y}_{N+1}+e^{+}+v_{e}$
+
+
+## Lösung: Erhaltungssätze
+
+a. Folgende Erhaltungssätze sind bisher bekannt:
+
+- Energieerhaltung
+- Impulserhaltung
+- Drehimpulserhaltung
+- Ladungserhaltung
+- Leptonenzahlerhaltung
+- Leptonenfamilienzahl (Zusatz: Im Prinzip z.B. durch Neutrinooszillationen verletzt, hier aber noch als erhalten angenommen )
+- Baryonzahlerhaltung
+b. - Verboten: Ladungserhaltung verletzt.
+- Verboten: Energieerhaltung verletzt, die Masse des Protons ( 938.2 MeV ) ist kleiner als die addierten Massen des Neutrons ( 939.6 MeV ) und Positrons ( $\simeq 0.5 \mathrm{MeV}$ ).
+- Verboten: Leptonfamilienzahl nicht erhalten.
+- Verboten: Leptonfamilienzahl und Parität nicht erhalten.
+
+Das Muon ist also kein angeregter Zustand des Elektrons. In der Theorie der Supersymmetrie ist dieser Zerfall jedoch erlaubt und wäre eine Bestätigung für ihre Gültigkeit. Deshalb wird aktiv nach ihm gesucht. Das beste Limit mit einem branching ratio von $4.2 \cdot 10^{-13}$ stammt vom Paul Scherrer Institut.
+
+- Erlaubt.
+- Verboten: Baryonzahl nicht erhalten. Im Standardmodel wird das Proton als stabil angesehen. Grand Unified Theories (GUTs) sagen jedoch den vorliegenden Zerfall voraus. Der Wassercherenkov-Neutrino-Detektor Super-Kamiokande liefert mit einer Lebenszeit $\tau_{p \rightarrow \bar{v} \pi^{+}}>10^{32} a$. (siehe http://arxiv.org/pdf/1305.4391.pdf)
+- Verboten: Ladung nicht erhalten.
+c. Der Zerfall ist erlaubt falls die Masse von ${ }_{\mathrm{Z}}^{\mathrm{A}} \mathrm{X}_{\mathrm{N}}$ größer ist als die addierten Massen von ${ }_{\mathrm{Z}-1}^{\mathrm{A}} \mathrm{Y}_{\mathrm{N}+1}$ und $e^{+}(\simeq 0.5 \mathrm{MeV})$, sonst ist er durch die Energieerhaltung verboten. Ein typisches Beispiel ist ${ }^{22} \mathrm{Na} \rightarrow{ }^{22} \mathrm{Ne}+e^{+}+v_{e}$. Es handelt sich hierbei um einen $\beta^{+}$-Zerfall.
+
+
+## Aufgabe 2 Feynman-Graphen
+
+Zeichnen Sie die Feynman-Graphen zu folgenden Prozessen:
+a. Elektron-Neutrino - Elektron Streuung:
+
+$$
+e^{-}+v_{e} \rightarrow e^{-}+v_{e}
+$$
+
+b. Muon Zerfall:
+
+\mu^{-} \rightarrow e^{-}+v_{\mu}+\bar{v}_{\mathrm{e}}
+
+c. Elektron - Elektron Streuung:
+
+e^{-}+e^{-} \rightarrow e^{-}+e^{-}
+
+d. Inverser Betazerfall
+
+\bar{v}_{e}+p \rightarrow n+e^{+},
+
+## Lösung: Feynman-Graphen
+
+a. Elektron-Neutrino - Elektron Streuung:
+
+e^{-}+v_{e} \rightarrow e^{-}+v_{e}
+
+Die Streuung zwischem einem Elektron-Neutrino und einem Elektron wird durch die schwache Wechselwirkung vermittelt, da Neutrinos keine elektrische Ladung tragen und ausschließlich schwach wechselwirken. Dabei sind sowohl geladene als auch neutrale Ströme möglich.
+(a) zeigt die Elektron-Neutrino - Elektron Streuung als geladenen Strom. Dabei wird eines der beiden geladenen Vektorbosonen der schwachen Wechselwirkung, das $W^{+}$oder das $W^{-}$, ausgetauscht.
+(b) zeigt die Streuung als neutralen Strom. Dabei wird das neutrale Vektorboson der schwachen Wechselwirkung, das $Z^{0}$, ausgetauscht.
+Die Übergangsamplitude für den gezeigten Prozess (und grundsätzlich) ergibt sich dann aus der Addition der beiden (aller) möglichen Feynman Graphen.
+![This image shows Feynman diagrams for electron-neutrino scattering processes, depicting (a) charged current interaction mediated by a W boson and (b) neutral current interaction mediated by a Z boson.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/a3d5d3e7-6f5f-4efb-ba07-96adfcb43537/5b47758c-6e32-492f-9894-4c2c884500b6-3_490_1096_2028_520.jpg)
+b. Muon Zerfall:
+
+\mu^{-} \rightarrow e^{-}+v_{\mu}+\bar{v}_{\mathrm{e}}
+
+Da beim Muon-Zerfall aufgrund der Leptonfamilienzahlerhaltung Neutrinos entstehen müssen, wird auch dieser Zerfall über die schwache Wechselwirkung vermittelt. Beim $\mu^{-}$ Zerfall wird aufgrund der Ladungserhaltung das $W^{-}$Boson ausgetauscht. Es handelt sich somit um einen geladenen Strom der schwachen Wechselwirkung.
+![This is a Feynman diagram depicting the decay of a muon (μ⁻) into a muon neutrino (ν_μ), an electron (e⁻), and an electron antineutrino (ν̅_e) via the intermediate W boson.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/a3d5d3e7-6f5f-4efb-ba07-96adfcb43537/5b47758c-6e32-492f-9894-4c2c884500b6-4_334_582_532_794.jpg)
+c. Elektron - Elektron Streuung:
+
+e^{-}+e^{-} \rightarrow e^{-}+e^{-}
+
+Zwar können Elektronen auch über die schwache Wechselwirkung durch $Z^{0}$ Austausch aneinander streuen, wobei diese gegenüber der elekrtomagnetischen mit $\frac{1}{m_{\mathrm{Z}}^{2}}$ unterdrückt ist. Hauptsächlich wechselwirken sie daher, insbesondere bei niedrigen Energien, elektromagnetisch über den Austauch eines Photons.
+![This is a Feynman diagram depicting electron-electron scattering (Møller scattering) mediated by the exchange of a virtual photon (γ).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/a3d5d3e7-6f5f-4efb-ba07-96adfcb43537/5b47758c-6e32-492f-9894-4c2c884500b6-4_351_273_1306_977.jpg)
+
+Auch in diesem Fall ergibt sich die Übergangsamplitude aus der Addition aller möglichen Feynman-Graphen
+d. Inverser Betazerfall (IBD):
+
+Der inverse Betazerfall beschreibt die Reaktion eines Elektron-Antineutrinos mit einem Proton:
+
+\bar{v}_{e}+p \rightarrow n+e^{+}
+
+Dieser Prozess wird durch die schwache Wechselwirkung vermittelt, wobei ein $W$-Boson ausgetauscht wird.
+![This diagram depicts the inverse beta decay process, showing the interaction where an electron antineutrino and a proton produce a neutron and a positron via the exchange of a W+ boson. It also illustrates the quark-level transformation of an up quark in the proton into a down quark in the neutron.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/a3d5d3e7-6f5f-4efb-ba07-96adfcb43537/5b47758c-6e32-492f-9894-4c2c884500b6-4_376_783_2254_689.jpg)
+
+## Aufgabe 3 Feynman Boson-Propagator
+
+In der Quantenfeldtheorie werden Wechselwirkungen zwischen Teilchen als Austausch von virtuellen Bosonen beschrieben. Die Eigenschaften dieser Austauschteilchen - insbesondere ihre Masse - bestimmen die Stärke und Reichweite der entsprechenden Kraft. Dieses Konzept liefert eine einheitliche Beschreibung der fundamentalen Wechselwirkungen, von der Elektrodynamik (vermittelt durch masselose Photonen) bis hin zur kurzreichweitigen Kernkraft, die durch massive Mesonen vermittelt wird.
+Ziel: Ableitung eines vereinfachten nicht-relativistischen Ausdrucks für die Amplitude des Streuprozesses zwischen zwei Teilchen, dargestellt als Austausch eines virtuellen massiven Bosons. Beziehen Sie den Ausdruck auf das Feynman-Diagramm des Prozesses und extrahieren Sie die Feynman-Regeln.
+a. Betrachten Sie die nicht-relativistische Streuung eines Teilchens mit Ladung $g$ an einem zentralen Potential $V(r)$, das von einer festen Quelle mit Ladung $g_{0}$ emittiert wird. Zeigen Sie, dass die Amplitude des Prozesses (als Funktion des von dem gestreuten Teilchen verlorenen Nettoimpulses) proportional zur Fourier-Transformierten des Potentials ist.
+b. Berechnen Sie die Amplitude, indem Sie annehmen, dass $V(r)$ die Form des YukawaPotentials
+
+\frac{g_{0} e^{-r m}}{4 \pi r}
+
+annimmt, das Interaktionen vermittelt, die von einem Boson der Masse $m$ stammen.
+c. Zeichnen Sie das Feynman-Diagramm, das den Streuprozess darstellt. Können Sie die Feynman-Regeln ableiten, die benötigt werden, um die oben berechnete Amplitude zu rekonstruieren? Was ist die Feynman-Regel, die dem Boson-Propagator entspricht?
+d. Wie verhält sich die Wahrscheinlichkeit des Streuprozesses zur Amplitude?
+
+## Lösung: Feynman Boson-Propagator
+
+Wir betrachten eine statische Quelle mit zentralem Potential $V(r)$ und Ladung $g_{0}$.
+a) In der nichtrelativistischen Quantenmechanik wird die Wahrscheinlichkeitsamplitude für die Streuung von einem Anfangszustand $\psi_{i}$ in einen Endzustand $\psi_{f}$ durch ein Potential $V(r)$ (in erster Bornscher Näherung) gegeben durch
+
+M=\left\langle\psi_{f}\right| g V(r)\left|\psi_{i}\right\rangle
+
+Hierbei bezeichnet $g$ die Kopplungsstärke des Teilchens an das Feld. Sowohl der Anfangsals auch der Endzustand können durch ebene Wellen beschrieben werden:
+
+\psi_{i}=e^{i \mathbf{p}_{1} \cdot \mathbf{r}}, \quad \psi_{f}=e^{i \mathbf{p}_{2} \cdot \mathbf{r}}
+
+die freien Teilchen mit den Impulsen $\mathbf{p}_{1}$ und $\mathbf{p}_{2}$ entsprechen.
+Einsetzen in das Matrixelement ergibt
+
+M \propto g \int e^{i \mathbf{p}_{2} \cdot \mathbf{r}} V(r) e^{-i \mathbf{p}_{1} \cdot \mathbf{r}} d^{3} r=g \int e^{i\left(\mathbf{p}_{2}-\mathbf{p}_{1}\right) \cdot \mathbf{r}} V(r) d^{3} r=g \int e^{i \mathbf{q} \cdot \mathbf{r}} V(r) d^{3} r
+
+wobei $\mathbf{q}=\mathbf{p}_{2}-\mathbf{p}_{1}$ der Impulsübertrag zwischen den Teilchen ist.
+
+Dieses Integral ist definitionsgemäß die Fourier-Transformation des Potentials $V(r)$. Daher hängt die Streuamplitude nur vom Impulsübertrag q ab:
+
+M(\mathbf{q}) \propto \tilde{V}(\mathbf{q}) .
+
+b) Für eine Wechselwirkung, die durch den Austausch eines massiven Bosons der Masse $m$ vermittelt wird, hat das Potential zwischen zwei Ladungen $g$ und $g_{0}$ die Form des Yukawa-Potentials:
+
+V(r)=\frac{g_{0} e^{-m r}}{4 \pi r}
+
+Diese Form ergibt sich als statische (zeitunabhängige) Lösung der Klein-Gordon-Gleichung für ein Feld der Masse $m$. Der Exponentialfaktor $e^{-m r}$ spiegelt die endliche Reichweite des massiven Feldes wider.
+
+Wir berechnen nun die Fourier-Transformation in Kugelkoordinaten, wobei $\mathbf{q} \cdot \mathbf{r}=q r \cos \theta$ und das Volumenelement $d^{3} r=r^{2} \sin \theta d r d \theta d \phi$ ist, sodass gilt
+
+M(q)=g \int V(r) e^{i q r \cos \theta} d \phi \sin \theta d \theta r^{2} d r
+
+Der Integrand hängt nicht von $\phi \mathrm{ab}$, daher ergibt die $\phi$-Integration einen Faktor $2 \pi$ :
+
+M(q)=g 2 \pi \int_{0}^{\pi} e^{i q r \cos \theta} \sin \theta d \theta \int_{0}^{\infty} V(r) r^{2} d r
+
+Für die $\theta$-Integration setzen wir $x=\cos \theta$ und $d x=-\sin \theta d \theta$, sodass
+
+\int_{0}^{\pi} e^{i q r \cos \theta} \sin \theta d \theta=\int_{-1}^{1} e^{i q r x} d x=\frac{e^{i q r}-e^{-i q r}}{i q r}=\frac{2 \sin (q r)}{q r}
+
+Damit ergibt die Winkelintegration insgesamt $4 \pi \frac{\sin (q r)}{q r}$, und
+
+M(q)=g 4 \pi \int_{0}^{\infty} V(r) \frac{\sin (q r)}{q r} r^{2} d r
+
+Einsetzen von $V(r)$ ergibt
+
+M(q)=g g_{0} \int_{0}^{\infty} e^{-m r} \frac{\sin (q r)}{q} d r
+
+Unter Verwendung der Identität $\sin (q r)=\left(e^{i q r}-e^{-i q r}\right) /(2 i)$ wird das Integral zu
+
+M(q)=g g_{0} \int_{0}^{\infty} e^{-m r} \frac{e^{i q r}-e^{-i q r}}{2 i q} d r=\frac{g g_{0}}{2 i q}\left[\int_{0}^{\infty} e^{-r(m-i q)} d r-\int_{0}^{\infty} e^{-r(m+i q)} d r\right]
+
+Jeder Exponentialterm ergibt ein einfaches Pol-Integral der Form
+
+\int_{0}^{\infty} e^{-r(m \mp i q)} d r=\frac{1}{m \mp i q}
+
+Durch Kombination beider Beiträge erhält man
+
+M(q)=\frac{g g_{0}}{2 i q}\left(\frac{1}{m-i q}-\frac{1}{m+i q}\right)=\frac{g g_{0}}{q^{2}+m^{2}}
+
+Dieser Ausdruck zeigt explizit, dass die Amplitude für große Vermittlermasse $m$ oder großen Impulsübertrag $q$ stark unterdrückt wird.
+c) Das Feynman-Diagramm des Prozesses ist in Abbildung 1 dargestellt. Es zeigt die Streuung eines Teilchens mit der Ladung $g$ an einem zentralen Feld (oder Potential) mit der Ladung $g_{0}$, vermittelt durch den Austausch eines massiven Bosons der Masse m.
+Vergleicht man den Ausdruck für die Streuamplitude
+
+M(\mathbf{q}) \propto \frac{g g_{0}}{|\mathbf{q}|^{2}+m^{2}},
+
+so kann man daraus unmittelbar die entsprechenden Feynman-Regeln für diese Wechselwirkung ablesen.
+
+- Jeder Vertex trägt einen Faktor der zugehörigen Kopplungskonstante bei. In diesem einfachen Fall trägt ein Vertex den Faktor $g$ (Kopplung des einfallenden Teilchens an das Wechselwirkungsfeld) und der andere den Faktor $g_{0}$ (Kopplung des Targets an dasselbe Feld).
+- Die Linie, die die beiden Vertizes verbindet, entspricht dem Propagator des ausgetauschten Bosons. Für einen skalaren Vermittler der Masse $m$ ist der Propagator im Impulsraum gegeben durch
+
+\frac{1}{|\mathbf{q}|^{2}+m^{2}}
+
+Dieser Term beschreibt die Ausbreitung eines virtuellen Bosons, das den Impuls $q$ zwischen den beiden Wechselwirkungspunkten überträgt. Der Nenner zeigt, dass schwere Vermittler (großes $m$ ) oder große Impulsüberträge ( $|\mathbf{q}|$ groß) die Wechselwirkung unterdrücken, was die kurze Reichweite massiver Austauschteilchen (wie beim Yukawa-Potential) erklärt.
+
+![This diagram is a Feynman diagram depicting the interaction between particles mediated by a scalar particle with mass m, showing the exchange of a virtual particle with propagator 1/(q² + m²) between two fermions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/a3d5d3e7-6f5f-4efb-ba07-96adfcb43537/5b47758c-6e32-492f-9894-4c2c884500b6-7_351_549_1653_758.jpg)
+Abbildung 1: Feynman-Diagramm, das die Streuung eines Teilchens der Ladung $g$ (obere durchgezogene Linie) an einem zentralen Yukawa-Potential der Ladung $g_{0}$ (untere Linie) zeigt.
+
+d) Die Verbindung zwischen der Streuamplitude und der physikalischen Rate des Prozesses wird durch die Goldene Regel von Fermi gegeben:
+
+\Gamma \propto|M|^{2} \rho,
+
+wobei $\Gamma$ die Übergangsrate, $M$ die Streuamplitude und $\rho$ die Dichte der Endzustände bezeichnet.
+
+Diese Beziehung bedeutet, dass die Wahrscheinlichkeit (bzw. die Rate) des Prozesses mit dem Quadrat der Amplitude zunimmt. Physikalisch heißt das, dass stärkere Kopplungen
+(größere $g$ und $g_{0}$ ) oder leichtere Vermittler (kleineres $m$ ) die Streuwahrscheinlichkeit erhöhen, während große Impulsüberträge oder schwere Vermittlermassen sie verringern.
+Sowohl aus dem Diagramm als auch aus der mathematischen Form der Amplitude kann man somit erkennen, dass:
+
+- Der Propagator die Reichweite und Stärke der Kraft beschreibt.
+- Die Vertizes die Kopplungsstärken bestimmen.
+

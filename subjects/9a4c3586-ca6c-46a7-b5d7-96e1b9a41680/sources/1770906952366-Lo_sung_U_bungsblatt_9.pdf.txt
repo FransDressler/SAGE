@@ -1,0 +1,324 @@
+## Übung zur Vorlesung <br> Physik der kondensierten Materie 1
+
+WiSe 2025/2026
+Tutorien in der Woche vom 22.12.25
+Blatt 9
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und
+-materialien
+Holger Mirkes
+
+### 9.1 Vergleich von klassischem Modell, Einstein-Modell und Debye-Modell
+
+(a) Was sind die Hauptannahmen des Einstein-Modells (1907) sowie des DebyeModells, und worin unterscheiden sich die beiden Modelle?
+(b) Geben Sie für jedes Modell (klassisch, Einstein, Debye) die Wärmekapazität $C_{V}(T)$ im Tieftemperaturlimes $\mathrm{T} \ll \Theta_{D}$ und im Hochtemperaturlimes $\mathrm{T} \gg \Theta_{D}$ an. Wie skalieren die Grenzwerte der Wärmekapazitäten mit der normierten Temperatur $\mathrm{T} / \Theta_{D}$ ?
+Welches Modell beschreibt die Wärmekapazität von kristallinen, nichtleitenden Festkörpern für normierte Temperaturen kleiner als $\mathrm{T} / \Theta_{D}=0.01$ am besten?
+
+## Lösung
+
+(a) Sowohl das Einstein-Modell als auch das Debye-Modell stellen im Gegensatz zum klassischen Modell quantenmechanische Betrachtungsweisen dar.
+(i) Einstein-Modell (1907):
+
+- Ausschließlich optische Phononen werden berücksichtigt.
+- Annahme: Alle $3 N$-Oszillatoren (Eigenschwingungen) haben die gleiche Frequenz $\omega_{E}$ (Einstein-Frequenz), wobei jeder Oszillator mit der quantisierten Energie $E_{n}=(n+1 / 2) \hbar \omega_{E}$ zur Gesamtenergie beiträgt.
+- Annahme: Diskrete Zustandsdichte $D(\omega)=\delta\left(\omega-\omega_{E}\right)$ in 3D.
+- Gute Näherung für den optischen Zweig der Dispersionsrelation und gute Näherung für einige Materialien bei genügend hohen Temperaturen.
+- Betrachte absolute Temperatur $T$ in Relation zur Einstein-Temperatur $\theta_{E}=\hbar \omega_{E} / k_{B}$.
+(ii) Debye-Modell:
+- Ausschließlich akustische Phononen werden berücksichtigt.
+- Annahme einer linearen Dispersion $\omega_{i}=v_{i} \cdot q$ für jeden Dispersionszweig.
+- Annahme einer einatomigen Basis ( $r^{\prime}=1$ ).
+- Annahme einer kontinuierlichen Zustandsdichte pro Dispersionszweig $D(\omega)=\frac{V}{2 \pi^{2}} \frac{\omega^{2}}{v_{i}^{3}}$ in 3D.
+- Sehr gute Näherung für genügend tiefe Temperaturen, da kleine $q$ für die lineare Annäherung der akustischen Zweige vorausgesetzt werden.
+- Betrachte absolute Temperatur $T$ in Relation zur Debye-Temperatur $\theta_{D}=\hbar \omega_{D} / k_{B}$, wobei $\omega_{D}$ die Debye-Frequenz wiedergibt.
+(iii) Hauptunterschiede zwischen Einstein- und Debye-Modell:
+- Einstein-Modell verwendet eine Näherung für optische Phononen. Das Debye-Modell, im Gegensatz, approximiert akustische Phononen.
+- Einstein-Modell berücksichtigt lediglich eine Frequenz $\omega_{E}$. Das DebyeModell berücksichtigt einen kontinuierlichen Frequenzraum bis $\omega_{D}$.
+- Das Debye-Modell beschreibt ein realitätsnäheres Verhalten von Festkörpern für sehr kleine Temperaturen $T \rightarrow 0$ als das Einstein-Modell.
+(b) Für die folgende Lösung setzen wir eine einatomige Basis voraus. Ansonsten wäre das Debye-Modell nicht anwendbar.
+
+|  | Klassisch | Einstein (1907) | Debye |
+| :---: | :---: | :---: | :---: |
+| $T \rightarrow 0$ | $3 N k_{B}$ | $3 N k_{B}\left(\frac{\theta_{E}}{T}\right)^{2} \exp \left(-\theta_{E} / T\right)$ | $3 N k_{B} \frac{4 \pi^{4}}{5}\left(\frac{T}{\theta_{D}}\right)^{3}$ |
+| $T \rightarrow \infty$ | $3 N k_{B}$ | $3 N k_{B}$ | $3 N k_{B}$ |
+
+Tabelle 1: Übersicht zu den Wärmekapazitäten $C_{V}(T)$ der verschiedenen Modelle in Abhängigkeit der absoluten Temperatur $T$.
+
+Das Debye-Modell im Tieftemperaturlimes $T \rightarrow 0$ beschreibt die Wärmekapazität $C_{V}(T)$ für $T / \theta_{D}=0.01$ am Besten.
+
+### 9.2 Zustandsdichte von Phononen
+
+In der Vorlesung wurde die frequenzabhängige Zustandsdichte der Phononen $D(\omega)$ eines dreidimensionalen Kristalls in der Debye-Näherung, gleichbedeutend zur Debye-Kontinuumsnäherung, hergeleitet.
+(a) Leiten Sie jeweils die Zustandsdichtefunktion $D(\omega)$ für eine eindimensionale lineare Kette der Länge L sowie für ein zweidimensionales ebenes Kristallgitter der Fläche $\mathrm{A}=\mathrm{L} 2$ in der Debye-Näherung her.
+(b) Falls nur Kräfte zwischen direkt benachbarten Atomen wirken, lautet die Dispersionsrelation $\omega(q)$ einer linearen Kette von Atomen mit Abstand a und Masse M
+
+$$
+\omega(q)=\omega_{\max }\left|\sin \frac{q a}{2}\right|
+$$
+
+Hierbei ist $\omega_{\text {max }}$ die maximale Frequenz im longitudinalen Phononenspektrum der Kette.
+i) Berechnen Sie die Zustandsdichtefunktion $\mathrm{D}(\omega)$ der longitudinalen Phononen. Skizzieren Sie den Verlauf der Funktion und vergleichen Sie das Ergebnis mit der Zustandsdichtefunktion der eindimensionalen linearen Kette in der Debye-Näherung aus Teilaufgabe b).
+ii) Welcher Zusammenhang besteht zwischen der Maximalfrequenz $\omega_{\text {max }}$ des Phononenspektrums und der oberen Grenzfrequenz $\omega_{D}$, welche in der Debyeschen Kontinuumsnäherung angesetzt wird?
+
+## Lösung
+
+(a) :
+(i) Eindimensionale lineare Kette der Länge $L$
+
+Der folgende Teil stellt eine zusätzliche Information zur Lösung dar.
+Die Länge der Kette $L$ kann auch mit Hilfe des Abstands $a$ zwischen benachbarten Atomen als $L=N \cdot a$ ausgedrückt werden. Hierbei ist $N$ die Anzahl der Atome in der Kette. Der Gittervektor entspricht $R_{n}=n \cdot a$. Analog zur Vorlesung nehmen wir periodische Randbedingungen $u_{n}= u_{n+N}$ an. Mit dem Lösungsansatz $u_{n}=u_{0} \cdot \exp \left(i\left[q R_{n}-\omega t\right]\right)$ erhalten wir Gitterschwingungen mit der quantisierten Wellenzahl $q=p \cdot \frac{2 \pi}{N a}=p \cdot \frac{2 \pi}{L}$, wobei $p \in \mathbb{Z}$.
+Beschränken wir uns auf die 1. Brillouinzone $-\pi / a<q \leq+\pi / a$, dann
+gibt es $N_{\text {Moden }}^{(1 D)}$ mögliche Wellenzahlen bzw. Schwingungsmoden ohne Berücksichtigung der Polarisation. Da es in 1D nur eine Polarisationsrichtung gibt, folgt $N_{\text {Moden, insgesamt }}^{(1 D)}=1 \cdot N_{\text {Moden }}^{(1 D)}$.
+Die Beziehung zwischen $N_{\text {Moden,insgesamt }}^{(1 D)}$ und $N$ lautet $N_{\text {Moden,insgesamt }}^{(1 D)}= 1 \cdot 1 \cdot N_{p E Z}=1 \cdot 1 \cdot N$, wobei $N_{p E Z}$ die Anzahl der primitiven Einheitszellen darstellt und für eine monoatomare Kette gleich $N$ ist.
+Die Zahl der Schwingungsmoden pro Volumen im 1D $q$-Raum beträgt
+
+Z^{(1 D)}=\frac{\text { Anzahl der Zustände in 1. BZ }}{\text { Strecke der 1. BZ }}=\frac{N_{\text {Moden }}^{(1 D)}}{2 \cdot \pi / a}=\frac{N a}{2 \pi}=\frac{L}{2 \pi} .
+
+Jeder Zustand nimmt im 1D $q$-Raum das Volumen $\frac{2 \pi}{L}$ ein (siehe Abbildung 1).
+
+![This diagram depicts a timeline or sequence with two marked endpoints and several intermediate divisions, likely representing intervals or stages between a start and end point.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/6edca514-5d9a-40dd-816c-8bb330f5c9bd/bc99d0e1-5cf9-4ca7-b48d-88262116d141-04_96_1032_1136_526.jpg)
+Abbildung 1: Zustandsdichte im 1D $q$-Raum für $N_{\text {Moden }}^{(1 D)}=8$.
+
+Nun diskutieren wir die eigentliche Lösung der Fragestellung.
+Dafür nutzen wir das Vorgehen aus der Vorlesung für den 3D Fall und beschränken uns auf die Herleitung in 1D.
+Zahl der Zustände $N_{\text {Moden }}^{(1 D)}(q)$ innerhalb der Linie mit Länge $2 \cdot q$ :
+
+N_{\text {Moden }}^{(1 D)}(q)=\frac{\text { Strecke } q \text { in } \text { ± } \text { Richtung }}{\text { Volumen eines Zustands im 1D } q-\text { Raum }}=\frac{2 \cdot q}{2 \pi / L}
+
+Es gibt nur longitudinale Schwingungen in der 1D Kette. Daher folgt für die Schallgeschwindigkeit $v_{i}=v_{L}$. Aus der linearen Dispersionsrelation im Debye-Modell erhalten wir dann
+
+q=\frac{\omega}{v_{i}}=\frac{\omega}{v_{L}} .
+
+Einsetzen von Gleichung (3) in Gleichung (2) ergibt
+
+N_{\text {Moden }}^{(1 D)}(\omega)=N_{\text {Moden,insgesamt }}^{(1 D)}(\omega)=\frac{2}{2 \pi / L} \frac{\omega}{v_{L}} .
+
+Ableiten von (4) nach der Kreisfrequenz $\omega$ führt zur der konstanten Zustandsdichtefunktion $D(\omega)$ der eindimensionalen linearen Kette mit Länge $L$ :
+
+D^{(1 D)}(\omega)=\frac{d N_{\text {Moden,insgesamt }}^{(1 D)}(\omega)}{d \omega}=\frac{1}{\pi} \frac{L}{v_{i}}=\frac{1}{\pi} \frac{L}{v_{L}}
+
+(ii) Zweidimensionales Kristallgitter der Fläche $A=L^{2}$
+
+Der Abstand benachbarter Atome in $x$-Richtung ist $a$ und für die $y$ Richtung beträgt der Abstand b. Für die Seitenlängen gilt $L_{x}=N_{x} \cdot a=L$ sowie $L_{y}=N_{y} \cdot b=L$. Darüber hinaus, setzen wir auch im Fall des 2D Kristallgitters periodische Randbedingungen voraus.
+Die Zustände des zweidimensionalen Kristallgitters sind schematisch in Abbildung 2 gezeigt. Ein Zustand im 2D $q$-Raum nimmt hierbei die reziproke Fläche $\frac{(2 \pi)^{2}}{L_{x} L_{y}}=\frac{(2 \pi)^{2}}{L^{2}}=\frac{(2 \pi)^{2}}{A}$ ein.
+
+![This diagram depicts a two-dimensional Cartesian coordinate system showing a grid of points at integer coordinates, representing the lattice points in the plane.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/6edca514-5d9a-40dd-816c-8bb330f5c9bd/bc99d0e1-5cf9-4ca7-b48d-88262116d141-06_1041_1039_382_500.jpg)
+Abbildung 2: Zustandsdichte im 2D $q$-Raum.
+
+Analog zu Teilaufgabe (i) folgt für die Zahl der Schwingungsmoden pro Volumen im 2D $q$-Raum (ohne Berücksichtigung der Polarisation)
+$Z^{(2 D)}=\frac{\text { Anzahl der Zustände in 1. } \mathrm{BZ}}{\text { Fläche der 1.BZ }}=\frac{N_{x} N_{y}}{(2 \pi / a)(2 \pi / b)}=\frac{L^{2}}{(2 \pi)^{2}}=\frac{A}{(2 \pi)^{2}}$.
+$N_{\text {Moden }}^{(2 D)}=N=N_{x} \cdot N_{y}$ ist die Anzahl möglicher Wellenzahlen bzw. Schwingungsmoden in der 1. Brillouinzone (in 2D ohne Berücksichtigung der Polarisationsrichtungen) und ist gleich der Teilchenanzahl $N$. Kommen wir zur Lösung für das zweidimensionale Kristallgitter.
+Die Zahl der Zustände $N_{\text {Moden }}^{(2 D)}(q)$ innerhalb der Kreisfläche $\pi \cdot q^{2}$ (ohne
+
+Berücksichtigung der Polarisation) berechnet sich zu
+
+N_{\text {Moden }}^{(2 D)}(q)=\frac{\text { Kreisfläche } \pi \cdot q^{2}}{\text { Volumen eines Zustands im 2D } q \text {-Raum }}=\frac{\pi \cdot q^{2}}{(2 \pi / L)^{2}} .
+
+Es gibt zwei akustische Dispersionszweige mit linearer Dispersion. Für die longitudinale Mode gilt wiederum (3) aus Teil (i), aber nun gibt es auch noch zusätzlich eine transversale Mode. Die transversale Mode besitzt die Dispersionsrelation
+
+q=\frac{\omega}{v_{i}}=\frac{\omega}{v_{T}}
+
+Einsetzen von jeweils (3) und (7) in (6) führt erstens zu
+
+N_{L}^{(2 D)}(\omega)=\frac{\pi}{(2 \pi / L)^{2}} \frac{\omega^{2}}{v_{L}^{2}}
+
+und zweitens zu
+
+N_{T}^{(2 D)}(\omega)=\frac{\pi}{(2 \pi / L)^{2}} \frac{\omega^{2}}{v_{T}^{2}}
+
+Schließlich erhalten wir für die gesamte (addierte) Zustandsdichte $D(\omega)$ des zweidimensionalen Kristallgitters mit der Fläche $A=L^{2}$ :
+
+D^{(2 D)}(\omega)=\frac{d N_{\text {Moden,insgesamt }}^{(2 D)}(\omega)}{d \omega}=\frac{A}{2 \pi}\left(\frac{1}{v_{L}^{2}}+\frac{1}{v_{T}^{2}}\right) \cdot \omega
+
+(b) :
+
+## (i) Berechnung der allgemeinen Zustandsdichtefunktion:
+
+Bei der allgemeinen Dispersionsrelation ist $\omega_{\text {max }}$ die Grenzfrequenz am Rand der 1. Brillouinzone. Umstellen der Dispersionsrelation $\omega(q)$ nach $q(w)$ ergibt
+
+\omega(q)=\omega_{\max }\left|\sin \frac{q a}{2}\right| \Rightarrow q(w)=\frac{2}{a} \arcsin \frac{\omega}{\omega_{\max }} .
+
+Für die Ableitung des Arkussinus gilt die Formel
+
+\frac{d}{d x} \arcsin \frac{x}{c}=\frac{1}{c} \frac{1}{\sqrt{1-\left(\frac{x}{c}\right)^{2}}}
+
+Die Anzahl der Zustände $N_{\text {Moden }}^{(1 D)}$ in einer 1D linearen Kette kennen wir aus der vorherigen Teilaufgabe und Einsetzen von (11) liefert dann
+
+N_{\text {Moden }}^{(1 D)}(q)=\frac{2 \cdot q}{2 \pi / L} \Rightarrow N_{\text {Moden,allgemein }}^{(1 D)}(\omega)=\frac{2 L}{\pi a} \arcsin \frac{\omega}{\omega_{\max }}
+
+Die Ableitung von $N_{\text {Moden,allgemein }}^{(1 D)}(\omega)$ nach $\omega$ ist letztendlich die gesuchte Zustandsdichtefunktion $D(\omega)$. Hierbei wird die Ableitung des Arkussinus (12) angewendet.
+
+D(\omega)=\frac{d N_{\text {Moden,allgemein }}^{(1 D)}(\omega)}{d \omega}=\frac{2 L}{\pi a} \frac{1}{\omega_{\max }} \frac{1}{\sqrt{1-\left(\frac{\omega}{\omega_{\max }}\right)^{2}}}=\frac{2 L}{\pi a} \frac{1}{\sqrt{\omega_{\max }^{2}-\omega^{2}}}
+
+## Die Dispersion und Zustandsdichte im langwelligen Limes:
+
+Im langwelligen Limes gilt $q \rightarrow 0$ und die Dispersion $\omega(q)$ wird linear. Einerseits entwickeln wir die allgemeine Dispersionsrelation $\omega(q)=\omega_{\text {max }}\left|\sin \frac{q a}{2}\right|$ bis zur 1. Ordnung in $q$ :
+
+\omega(q)=\omega_{\max }\left|\sin \frac{q a}{2}\right| \approx \omega_{\max } \cdot\left(\frac{q a}{2}\right)
+
+Andererseits gilt die Debye-Näherung
+
+\omega(q)=v_{i} \cdot q
+
+Aus dem Vergleich der Taylor-Näherung von $\omega(q)=\omega_{\text {max }}\left|\sin \frac{q a}{2}\right|$ mit der Näherung im Debye-Modell erhalten wir folgende Beziehung
+
+v_{i}=\frac{a}{2} \omega_{\max }
+
+In der Debye-Näherung wird die lineare Dispersion bei der Debye- (Grenz) Frequenz $\omega_{D}$ abgeschnitten (Rand der 1. Brillouinzone). Durch Einführen der Heaviside-Sprungfunktion lässt sich die lineare Debye-Dispersion in Abhängigkeit der Abschneidefrequenz bringen:
+
+\omega(q)=v_{i} \cdot q \cdot \Theta\left(\omega_{D}-v_{i} \cdot q\right)
+
+Unter Berücksichtigung der Heaviside-Sprungfunktion ergibt sich für die Zustandsdichte von Gleichung (5)
+
+D^{(1 D)}(\omega)=\frac{d N_{\text {Moden }}^{(1 D)}(\omega)}{d \omega}=\frac{1}{\pi} \frac{L}{v_{i}} \cdot \Theta\left(\omega_{D}-\omega\right)
+
+Skizze sowie Vergleich der Zustandsdichten $D^{(1 D)}(\omega)$ und $D(\omega)$ : Die Zustandsdichtefunktion aus (14) hat eine (van Hove) Singularität bei $\omega=\omega_{\text {max }}$. Im Fall $\omega \rightarrow 0$ folgt $D(\omega=0)=(2 L) /\left(\pi a \omega_{\text {max }}\right)=L /\left(\pi v_{i}\right)$. Abbildung 3 zeigt sowohl die Dispersionsrelationen als auch die Zustandsdichten. Für sehr kleine Frequenzen $\omega \rightarrow 0$ konvergieren beide Zustandsdichten gegen den Wert $L /\left(\pi v_{i}\right)$ (siehe Abbildung 3).
+
+![This image depicts the phonon density of states (left) and the phonon dispersion relation (right) in the Debye approximation, showing the cutoff frequency \(\omega_D\) and maximum frequency \(\omega_{max}\) for vibrational modes in a solid.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/6edca514-5d9a-40dd-816c-8bb330f5c9bd/bc99d0e1-5cf9-4ca7-b48d-88262116d141-09_583_1301_700_515.jpg)
+Abbildung 3: Das linke Bild zeigt die normalisierten Zustandsdichtefunktionen $D(\omega)$ und $D^{(1 D)}(\omega)$ bis zur ihren Grenzfrequenzen. $D(\omega)$ ist schraffiert eingezeichnet. Das rechte Bild zeigt die zugehörigen normalisierten Dispersionsrelationen. Die Gerade entspricht dabei der Debye-Näherung. ( $v_{s}=v_{i}$ ) Abbildung 3 stammt aus dem Buch „Festkörperphysik: Aufgaben und Lösungen“ von R. Gross und A. Marx (S. 98; 2. Auflage; 2018).
+
+(ii) Damit wir $\omega_{\text {max }}$ und $\omega_{D}$ in Relation setzen können, müssen wir die Anzahl der Normalschwingungen $N_{\text {Moden,insgesamt }}^{(1 D)}$ berechnen, die für den allgemeinen Ansatz und dessen Debye-Näherung gleich sind. Das heißt, dass die graue Fläche und die schraffierte Fläche in Abbildung 3 gleich groß sein müssen.
+
+\text { Debye-Näherung: } \quad N_{\text {Moden }}^{(1 D)}=\int_{0}^{\omega_{D}} D^{(1 D)}(\omega) d \omega=\frac{1}{\pi} \frac{L}{v_{i}} \omega_{D}
+
+\begin{aligned}
+\text { Allgemein : } N_{\text {Moden,allgemein }}^{(1 D)}= & \int_{0}^{\omega_{\max }} D(\omega) d \omega= \\
+& =\frac{2 L}{\pi a} \int_{0}^{\omega_{\max }} \frac{1}{\omega_{\max }} \frac{d \omega}{\sqrt{1-\left(\frac{\omega}{\omega_{\max }}\right)^{2}}}=\frac{L}{a}
+\end{aligned}
+
+Setze die Schallgeschwindigkeit $v_{i}$ aus (15) in Gleichung (18) ein:
+
+N_{\text {Moden }}^{(1 D)}=\frac{1}{\pi} \frac{L}{v_{i}} \omega_{D}=\frac{2 L}{\pi a} \frac{\omega_{D}}{\omega_{\max }}
+
+Gleichsetzen von (19) und (20) ergibt
+
+\frac{L}{a}=\frac{2 L}{\pi a} \frac{\omega_{D}}{\omega_{\max }}
+
+Lösen der Gleichung (21) nach $\omega_{D}$ ergibt die finale Beziehung zwischen $\omega_{D}$ und $\omega_{\text {max }}$ :
+
+\omega_{D}=\frac{\pi}{2} \omega_{\max }
+
+### 9.3 Brillouin-Streuung
+
+(a) Licht eines frequenzverdoppelten Nd:YAG-Lasers der Wellenlänge $\lambda_{\mathrm{L}}=532 \mathrm{~nm}$ wird an einer Probe aus Quarzglas (mit Brechungsindex $n^{\prime}=1,46$ bei 532 nm und Gitterkonstante $a=4,913 \AA$ ). gestreut und unter einem Winkel von $107^{\circ}$ zur Einfallsrichtung analysiert. Im Spektrum erscheinen zwei symmetrische Linienpaare (Stokes/Anti-Stokes)
+
+\delta \nu_{L A}= \pm 26,03 \mathrm{GHz}, \quad \delta \nu_{T A}= \pm 15,90 \mathrm{GHz}
+
+(a) Berechnen Sie die Schallgeschwindigkeiten $v_{\mathrm{LA}}$ und $v_{\mathrm{TA}}$ der longitudinalen bzw. transversalen Phononen.
+(b) Leiten Sie für beliebige Streuwinkel $0 \leq \theta \leq 180^{\circ}$ die Winkelabhängigkeit von Phononenfrequenz $\nu(\theta)$ und Wellenvektor $q(\theta)$ ab und bestimmen Sie den Bruchteil der ersten Brillouin-Zonenhälfte, der durch Variation von $\theta$ zugänglich ist.
+
+
+(a) Schallgeschwindigkeiten ${ }^{1}$
+
+Für die Brillouinstreung gilt:
+
+\delta \nu=\frac{2 n^{\prime} v}{\lambda_{\mathrm{L}}} \sin \frac{\theta}{2}
+
+Damit folgt
+
+v=\frac{\delta \nu \lambda_{\mathrm{L}}}{2 n^{\prime} \sin (\theta / 2)}
+
+Einsetzen der Messwerte liefert
+
+\begin{aligned}
+& v_{\mathrm{LA}}=\frac{26.03 \times 10^{9} \mathrm{~Hz} \cdot 532 \times 10^{-9} \mathrm{~m}}{2 \cdot 1.46 \cdot \sin 107 / 2} \approx 5.9 \times 10^{3} \mathrm{~m} / \mathrm{s}, \\
+& v_{\mathrm{TA}}=\frac{15.90 \times 10^{9} \mathrm{~Hz} \cdot 532 \times 10^{-9} \mathrm{~m}}{2 \cdot 1.46 \cdot \sin 107 / 2} \approx 3.6 \times 10^{3} \mathrm{~m} / \mathrm{s} .
+\end{aligned}
+
+## (b) Winkelabhängigkeit und Brillouin-Zone
+
+Allgemein gilt
+
+q(\theta)=\frac{4 \pi n^{\prime}}{\lambda_{\mathrm{L}}} \sin \frac{\theta}{2}, \quad \delta \nu(\theta)=\frac{v q(\theta)}{2 \pi}=\frac{2 n^{\prime} v}{\lambda_{\mathrm{L}}} \sin \frac{\theta}{2} .
+
+Für $\theta$ von $0^{\circ}$ (Vorwärtsstreuung) bis $180^{\circ}$ (Rückwärtsstreuung) erstreckt sich
+
+0 \leq q(\theta) \leq q_{\max }=\frac{4 \pi n^{\prime}}{\lambda_{\mathrm{L}}} \approx 3,45 \times 10^{7} \mathrm{~m}^{-1} .
+
+Nutzt man als Vergleich den halben Brillouin-Zonenrand des $\alpha$-Quarz-Gitters,
+
+q_{\mathrm{BZ}}=\frac{\pi}{a} \approx 6,4 \times 10^{9} \mathrm{~m}^{-1},
+
+so wird der Anteil
+
+[^0]$$
+\frac{q_{\max }}{q_{\mathrm{BZ}}} \approx 5,4 \times 10^{-3} \approx 0,5 \%
+der ersten Brillouin-Zonenhälfte abgedeckt. Das Experiment erfasst also ausschließlich Phononen sehr nahe am $\Gamma$-Punkt.
+
+### 9.4 Zweidimensionales Gitter
+
+(a) Betrachte ein quadratisches 2D Gitter in der Debye-Näherun. Welcher Ausdruck beschreibt die Zustandsdichte?
+(b) Welcher Zusammenhang besteht zwischen der Gitterkonstante und der DebyeTemperatur?
+(c) Bestimme das Verhalten der Wärmekapazität für hohe und tife Temperaturen.
+
+
+(a)
+
+D^{(2)}(\omega)=\frac{A}{2 \pi} \frac{\omega}{v_{D}^{2}} \quad \text { (pro Phononenzweig) }
+
+(b)
+
+\theta=\frac{2 \hbar v_{D}}{a k_{B}} \sqrt{\pi}
+
+(c)
+
+U=\int_{0}^{\omega_{D}} D^{(2)}(\omega) \frac{\hbar \omega}{e^{\hbar \omega / k_{B} T}-1} d \omega=2 N\left(\frac{T}{\theta}\right)^{2} k_{B} T \int_{0}^{x_{D}} \frac{x^{2} d x}{e^{x}-1} \quad \text { (pro Phononenzweig). }
+
+## Grenzfälle:
+
+- Tiefe Temperaturen $(T \rightarrow 0): \quad C_{V} \propto T^{2}$,
+- Hohe Temperaturen $(T \rightarrow \infty)$ : Dulong-Petit-Gesetz.
+
+
+### 9.5 Vergleich von Photonen und Phononen
+
+(a) Leite einen Ausdruck für die Wärmekapazität eines Photonengases in einem endlichen Volumen her. (Vorgehen wie bei der Debye-Wärmekapazität, jedoch für masselose Bosonen.)
+(b) Welches bekannte physikalische Gesetz folgt daraus für die Temperaturabhängigkeit der inneren Energie $U_{\text {photon }}(T)$ ?
+
+
+## (a) Wärmekapazität $C_{V}$ des Photonengases
+
+Für ein Photonengas im Volumen $V=L^{3}$ gelten (periodische Randbedingungen):
+
+- Zwei Polarisationsfreiheitsgrade ⇒ Entartung $g=2$.
+- Dispersion: $\omega=c k$, wobei $k=|\mathbf{k}|$.
+- Besetzungszahl (Bose-Einstein):
+
+\langle n(\omega)\rangle=\frac{1}{e^{\beta \hbar \omega}-1}, \quad \beta=\frac{1}{k_{B} T}
+
+Zustandsdichte. Die Zahl der Moden im Wellenzahlintervall $d^{3} k$ lautet
+
+g \frac{V}{(2 \pi)^{3}} d^{3} k=\frac{2 V}{(2 \pi)^{3}} 4 \pi k^{2} d k=\frac{V}{\pi^{2}} k^{2} d k
+
+Mittels $k=\omega / c, d k=d \omega / c$ erhält man die dichte der Moden pro Frequenzintervall
+
+g(\omega) d \omega=\frac{V}{\pi^{2} c^{3}} \omega^{2} d \omega
+
+Energiedichte. Die mittlere Energie einer Mode ist $\hbar \omega\langle n\rangle$. Damit ergibt sich die innere Energie
+
+U(T)=\int_{0}^{\infty} \hbar \omega g(\omega)\langle n(\omega)\rangle d \omega=\frac{V}{\pi^{2} c^{3}} \int_{0}^{\infty} \frac{\hbar \omega^{3}}{e^{\beta \hbar \omega}-1} d \omega
+
+Substitution $x=\beta \hbar \omega$ führt auf
+
+U(T)=\frac{V}{\pi^{2} c^{3}} \frac{1}{(\hbar \beta)^{4}} \int_{0}^{\infty} \frac{x^{3}}{e^{x}-1} d x
+
+Der bekannte Integralsatz $\int_{0}^{\infty} \frac{x^{3}}{e^{x}-1} d x=\frac{\pi^{4}}{15}$ liefert schließlich
+
+U(T)=a V T^{4}, \quad a=\frac{\pi^{2} k_{B}^{4}}{15 \hbar^{3} c^{3}} \approx 7.5657 \times 10^{-16} \frac{\mathrm{~J}}{\mathrm{~m}^{3} \mathrm{~K}^{4}}
+
+Wärmekapazität bei konstantem Volumen:
+
+C_{V}(T)=\left(\frac{\partial U}{\partial T}\right)_{V}=4 a V T^{3}
+
+## (b) Stefan-Boltzmann-Gesetz für die Strahlungsenergie
+
+Der in (a) erhaltene Ausdruck
+
+U_{\text {photon }}(T)=a V T^{4}
+
+ist (bis auf den geometrischen Faktor $V$ ) identisch mit dem Stefan-BoltzmannGesetz für die Energiedichte eines schwarzen Strahlungsfeldes. Das Photonengas besitzt also eine Energie $U \propto T^{4}$ und eine Wärmekapazität $C_{V} \propto T^{3}$.
+
+
+[^0]:    ${ }^{1}$ Daten aus: M. Kim et al., Shear Brillouin light scattering microscope, Optics Express 24, 319 (2016).[31-2]
+

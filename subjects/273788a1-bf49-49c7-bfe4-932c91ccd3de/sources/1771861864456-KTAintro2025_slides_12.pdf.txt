@@ -1,0 +1,127 @@
+![The image is an introduction to nuclear, particle, and astrophysics, showing key concepts such as atomic nuclei, particle physics (including the Standard Model particles), experimental apparatus like particle accelerators and detectors, and astrophysical phenomena like the Big Bang and cosmic structures.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-01_1875_3333_0_0.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Beta, alpha, fission |
+| 10 | 16/12/25 |  | Nuclear reactors | Radioactive transitions, Radiocarbon method |
+| 11 | 13/01/26 | Particle / Nuclear | Nuclear Structure | Gamma transitions, Mott, Form factors |
+| 12 | 20/01/26 |  | Nucleon Structure | Deep inelastic scattering, Quarks and QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts the nuclear energy levels and gamma-ray induced neutron emission (γ,n) reaction cross sections, showing discrete and continuum states of a nucleus and the giant resonance associated with photonuclear reactions. It illustrates the energy dependence of neutron emission cross sections and the multipolarity of gamma radiation transitions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-03_1090_1160_343_127.jpg)
+![This diagram is a Feynman diagram depicting the scattering process of an electron and a positron, where an electron-positron pair annihilates into a virtual photon (γ), which then produces another electron-positron pair.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-03_615_842_450_1333.jpg)
+![This diagram depicts the spatial and momentum space profiles of a quantum state, showing a "sphere with diffuse edge" in position space (r) and its corresponding oscillatory behavior in momentum space (|q|).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-03_311_850_632_2366.jpg)
+$\left(\frac{d \sigma}{d \Omega}\right)_{\text {Mott }}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }}\left(1-\beta^{2} \sin ^{2}\left(\frac{\theta}{2}\right)\right)$
+$\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{exp}}=\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{Mott}} \cdot\left|F^{2}\left(\vec{q}^{2}\right)\right|^{2}$
+
+Gammaübergänge Auswahlregeln
+
+Elektron-Kern Streuung
+
+Formfaktoren
+
+Elektron-Streuung an ${ }^{12} \mathrm{C}$
+![This diagram depicts the differential cross-section (dσ/dΩ) as a function of scattering angle (θ) for a particle interaction at an energy of 420 MeV, showing experimental data points compared to theoretical model predictions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-04_1217_915_328_307.jpg)
+
+| $\rho(\mathrm{r})$ | $\left\|F\left(\boldsymbol{q}^{2}\right)\right\|$ | Beispiel |
+| :--- | :--- | :--- |
+| punktförmig | konstant | Elektron |
+| exponentiell | Dipol | Proton |
+| gaußförmig | gaußförmig | ${ }^{6} \mathrm{Li}$ |
+| homogene Kugel | oszillierend | - |
+| Kugel mit diffusem Rand | oszillierend | ${ }^{40} \mathrm{Ca}$ |
+| $\mathrm{r} \longrightarrow$ | $\|q\| \longrightarrow$ |  |
+
+
+| Ladungsverteilung $f(r)$ | Formfaktor $F\left(\boldsymbol{q}^{2}\right)$ |  |
+| :--- | :--- | :--- |
+| Punkt exponentiell | 1 $\left(1+\boldsymbol{q}^{2} / a^{2} \hbar^{2}\right)^{-2} \exp \left(-\boldsymbol{q}^{2} / 2 a^{2} \hbar^{2}\right) 3 \alpha^{-3}(\sin \alpha-\alpha \cos \alpha)$ mit $\quad \alpha=\|\boldsymbol{q}\| R / \hbar$ | ![This image shows different mathematical expressions for the nuclear form factor \( F(q^2) \), specifically constant, dipole, Gaussian, and oscillatory forms, used in scattering or nuclear physics to describe the distribution of charge or matter within a nucleus.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-04_347_540_1409_2409.jpg) |
+
+
+![This diagram is a scattering spectrum for the reaction \( e + {}^{12}C \rightarrow e' + {}^{12}C \), showing the number of events as a function of the scattered electron momentum \( p' \) in MeV/c, with labeled peaks corresponding to specific excitation energies of the carbon-12 nucleus.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-05_1480_1492_204_932.jpg)
+Povh Abb 5.
+
+![This diagram depicts the nucleon form factors G as functions of the squared momentum transfer \(Q^2\), showing the electric and magnetic form factors for the proton and neutron. It compares experimental data points for \(G_E^p\), \(G_M^p\), and \(G_M^n\) scaled by their respective magnetic moments, along with the squared neutron electric form factor \((G_E^n)^2\).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-06_1479_1824_252_778.jpg)
+Povh Abb 6.1
+
+![This diagram depicts a differential cross-section measurement for a scattering process at an electron beam energy of 4.879 GeV and scattering angle of 10°, showing the variation of the double differential cross-section with respect to scattered electron energy and invariant mass W, including a comparison to elastic scattering data divided by 15.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-07_1577_2656_120_268.jpg)
+Povh Abb 7.1
+
+![This diagram depicts the proton structure function \( F_2^p(x, Q^2) \) as a function of the Bjorken scaling variable \( x \) for the range \( 2 \, (\text{GeV}/c)^2 < Q^2 < 18 \, (\text{GeV}/c)^2 \), showing how the proton's internal quark distribution varies with \( x \) in deep inelastic scattering experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-08_1568_1684_156_778.jpg)
+Povh Abb 7.2
+
+![This diagram is a plot of the ratio \( \frac{2xF_1}{F_2} \) versus the variable \( x = \frac{Q^2}{2M\nu} \), showing experimental data points for different ranges of the squared four-momentum transfer \( Q^2 \) in deep inelastic scattering experiments. It is used to analyze the scaling behavior of structure functions in nucleon scattering.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-09_1674_1431_88_942.jpg)
+Povh Abb 7.3
+
+## Die Farben der QCD
+
+Quarks tragen Farbe (Triplett (3) )
+Antiquarks tragen Antifarbe (Anti-Triplett (3) )
+Alle beobachteten Hadronen sind farblos (Farb-Singletts)
+Mesonen: $\quad(3) \times \overline{(3)} \rightarrow$ (1) + (8)
+Baryonen: ${ }^{(3)} \times$ (3) $\times$ (3) $\rightarrow$ (1) + (8) + (8) + (10)
+![This image depicts the additive color mixing of red, green, and blue light, showing how their overlapping projections combine to form secondary colors and white light.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-10_738_779_276_2420.jpg)
+
+Baryonen: bestehen aus Quarks mit r, g, b = nach außen „weiß“, also farbneutral
+Mesonen: bestehen aus Quark-Antiquark mit $\mathrm{r}, \overline{\mathrm{g}} \mathrm{g}, \overline{\mathrm{b}} \mathrm{b}$, also auch nach außen farbneutral
+
+## Die Farben der QCD
+
+Darstellung der Farben in der QCD in 2 Dimensionen:
+g
+
+Das $\pi^{+}$-Meson z.B. als farbneutrales Objekt:
+![This diagram depicts Feynman diagrams related to gluon interactions in quantum chromodynamics, specifically gluon splitting into a quark-antiquark pair and the gluon self-interaction vertex.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-11_827_544_385_2014.jpg)
+
+Baryonen und Antibaryonen als farbneutrale Objekte:
+![This is a Feynman diagram depicting the interaction of four gluons in quantum chromodynamics (QCD), representing the self-interaction vertex of gluons.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-11_233_230_1372_2266.jpg)
+tkopplung
+4-Gluon-Vertex
+
+## Gluonen
+
+Als Resultat der Gruppentheorie (ohne Herleitung) können Gluonen folgende acht Farbkombinationen aufweisen:
+farbigen Quarks kann eine antisymmetrische Wellenfunktion kor en:
+
+Als Konsequenz können Gluonen untereinander koppeln. Sie vermitteln nicht nur die starke WW, sie unterliegen ihr selbst.
+
+Beispiele der Quark-Gluon-Wechselwirkungen. Gluon-Abstrahlung führte zur Entdeckung der Gluonen
+vom Quark
+$\mathrm{q} \rightarrow \mathrm{qg}$
+$\mathrm{g} \rightarrow \mathrm{q} \overline{\mathrm{q}}$
+
+3-Gluon-Vertex
+$\mathrm{g} \rightarrow \mathrm{gg}$
+
+4-Gluon-Vertex
+gg $\rightarrow$ gg
+
+Darstellung in 2D
+(120º-Winkel):
+![This diagram depicts the color charge directions in quantum chromodynamics (QCD), showing the three color charges (red, green, blue) separated by 120 degrees in a color space.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-12_318_394_1270_1266.jpg)
+farbloses Objekt:
+Meson: $\left|\pi^{+}\right\rangle=\left\{\begin{array}{l}u_{\mathrm{r}} \bar{d}_{\overline{\mathrm{r}}} \\ u_{\mathrm{g}} \bar{d}_{\overline{\mathrm{g}}}\end{array}\right.$
+![This diagram depicts the baryon octet in particle physics, showing the arrangement of baryons according to their strangeness and charge. It illustrates the relationships and classification of baryons within the SU(3) flavor symmetry.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-12_305_394_1283_2444.jpg)
+
+## 2- und 3-Jet-Ereignisse
+
+## Entdeckung der Gluonen
+
+![This image depicts particle collision events in a particle detector, showing hadron jets produced from quark-antiquark pairs (left) and from quark-antiquark pairs with an additional gluon emission (right), illustrating the process of hadronization in high-energy physics experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/0cf75858-0b80-4cd7-bf1b-cc4e6a86842f/01f6a23c-71d2-4fe1-82f7-62646b8dc2cf-13_1201_1433_201_1535.jpg)
+> $\bar{\theta}$ : Winkel zwischen höchstenergetischem Jet und Fluglinie der anderen beiden in deren CMS:
+
+## Gluonen haben Spin 1
+

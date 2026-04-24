@@ -1,0 +1,75 @@
+### 2.4 Brillain-zone
+
+Die Brillain-Zoue (Bt) ist de Wijue-Seitz-Zelle des rezipiden Gitlers.
+Ennvery: Die Wijus-Seritz Zelle ist die primitive EZ um eiven Gitterpunkt, wobei der unsehlossue Romens viahs ace anyeschosseve Gitter punkt als an jiden anderce G.iter prenkt ligt.
+
+Die enst Brillain-Zone ist das herinste Volume, das vos den Ebener eingesch lossen wind, wide die vom Chispicug ans geneidneten $\underline{k}$ in de rite senterects schuèden.
+
+Benerluy - Basivend anf des Slizze de Folie giet:
+Eine Welle, deren Wellenvektor vom Unspiny ans greichnet auf des Bz-Grenze andet, enfill die von Lave - und danit die Broff-Bedingy.
+Dese Aucsege vind späto sehs wichtjo wende, wenn wis v.a. die dektonisile Baudistraleter distentiere.
+
+- Bz hat sich bei des Beschacibuy der Rointfenberugug nicht duchgeseltzt, aber bei des Besclucibuy alber deventare Aungegon in Test kispes, wie $e^{-}$, Phoneon, Maguou, …
+- Die 1. BA wind gaueflaichij von de 2 . BP umschlassen. De 2. BA - " 3. Bt " etc.
+- Alle Bz haba das glide Voluman!
+2.5 Die Lave-Bedingung and Ewald-Konstuktion
+
+Die von Lane-Bedingy in Umzform lantet
+
+$$
+\begin{aligned}
+\Delta \underline{k}=\underline{G}=\underline{k}_{n k e ;} & \left|\cdot \underline{a}_{1}\right| \cdot \underline{a}_{2} \mid \cdot \underline{a}_{3} \\
+& \text { unt } \underline{k}_{n k e}=4 \underline{b}_{1}+k \underline{b}_{2}+e \underline{b}_{3} \\
+& \text { unt } \underline{a}_{i} \cdot \underline{b}_{j}=2 \pi \cdot \delta_{i j}
+\end{aligned}
+$$
+
+## Geometisile Dentuy:
+
+Caue-Glidnye
+![This diagram depicts the decay scheme of potassium-40 (⁴⁰K), showing its alpha decay and beta-minus decay pathways. It illustrates the emission directions of alpha particles and beta particles from the nucleus.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7075101d-ceef-44ce-a0e8-e1241f84272c/8398d887-aee5-46ce-9f29-06db12bf0dc2-2_202_253_833_296.jpg)
+
+\underline{a}_{1} \cdot \Delta \underline{k}=2 \pi \cdot h
+
+$\Rightarrow \Delta \underline{k}$ muss um civen beglemantel un die Richtey $a_{1}$ ligen, da $\alpha \neq 90^{\circ}$.
+Im Reflexion in 30 muss $\Delta \underline{K}$ alle dici Lane-Gleichnyen erfulle.
+Setw auschanlid ist dafin die sog. Evald-Voustrubtion.
+⇒ siche Foliar.
+
+### 2.6 Strenwethoder
+
+Wie in der Zentialübung vertieft, gibt es vaschiedere Steuruethode und-verfahr, wie die Lave-Methode, das Indikistall vertahren (bragg-Verfahra) and die Pulver-Methode nach Debye-Schere.
+
+### 2.7 Der Struktur faktor
+
+Foje: Uann man Anssagen über die lutensität des alanbte Reflexe bei do Routge- (Nentiona-) Benjuy treffer?
+Bisher: Annahme $\boldsymbol{\Delta} \underline{k}=\underline{G}(*)$ ist enfull.
+⇒ Stenamplitude
+
+A_{:}(t)=\frac{\tilde{A}}{R_{0}} e^{-i\left(\omega_{0} t-\underline{u}_{0} \underline{R}_{0}\right)} \int_{V_{p+0}} \rho( \pm) e^{-i\left(\underline{u}-\underline{u}_{0}\right) \cdot \hat{x}} d V
+
+Win definierces :
+
+\rho u k e=\frac{1}{v_{z}} \rho(\underline{r}) e^{i \underline{k}_{n k e} \cdot \underline{r}} \text {, da } \underline{k_{-}} \underline{u}_{0}=\Delta \underline{u}^{(*)}=\underline{G}=\underline{u}_{n k e}
+
+$V_{z}$ : Volumen der prinitiven Einheitszelle
+Nen: Bebrahte unu zusätilier die Rolle der Basis in Bravaisgitts!
+⇒ Dr Veller 1 setter sich zusamum ans $\underline{R} m, \frac{\tau}{\rho}, \underline{v}^{\prime}$.
+![The diagram is depicting the layers of the Earth, specifically showing the Earth's crust, the layer of the Earth's mantle, and the inner core of the Earth.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7075101d-ceef-44ce-a0e8-e1241f84272c/8398d887-aee5-46ce-9f29-06db12bf0dc2-3_133_768_1247_1286.jpg)
+
+Wir nehure an, dess die Atone unglu sind. Eusätzlich lego wis den Unspicy in are Edue der EZ ( $\underline{R} m=0$ )
+Selze $\underline{r}=\underline{r} \alpha+\underline{r}^{\prime}$ ein:
+
+\begin{aligned}
+\Rightarrow \rho \text { uke }=\frac{1}{v_{z}} & \underbrace{\sum_{\alpha} f_{\alpha}}_{\substack{\text { Atomshultur } \\
+\text { falter }}} \cdot e^{-i \underline{G} \cdot \tau_{\alpha}} \\
+& \text { Dteuvaniójer des Summe länft übr alle Basisatone. }
+\end{aligned}
+
+Definition:
+Stuktusfakter $\quad S_{\text {nke }}=V_{z} \cdot$ suke
+tit $\underline{G}=\underline{U}_{u k e}=u \underline{b}_{1}+k \underline{b}_{2}+\underline{b}_{\underline{b}_{3}}$ und $\underbrace{\underline{\underline{r}_{\alpha}}=u_{\alpha} \underline{a}_{1}+v_{\alpha} \underline{a}_{2}+\omega_{\alpha} \underline{a}_{3}}_{\text {Position invelalb der Ez }}$
+gilf: $\underline{G} \cdot \tau_{\alpha}=2 \pi\left(h u_{\alpha}+k v_{\alpha}+e \omega_{\alpha}\right)$ und damit:
+
+S_{u k e}=V_{z} \cdot \rho u k e=\sum_{\alpha} f_{\alpha}(u) e^{-2 \pi i\left(u u_{\alpha}+k v_{\alpha}+l \omega_{\alpha}\right)}
+

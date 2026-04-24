@@ -1,0 +1,180 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Keine Tutorien
+Blatt 13
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Johannes Figueiredo
+13.1 Zyklotron-Resonanz
+Die Zyklotronresonanz ist ein physikalisches Ph¨anomen, bei dem geladene Teilchen
+in einem konstanten Magnetfeld B Energie aus einem hochfrequenten elektrischen
+Wechselfeld absorbieren. Dies geschieht, wenn die Frequenz des Wechselfeldes mit
+der Umlauffrequenz der Teilchen (Zyklotronfrequenz ωc = qB
+m∗ ) ¨ubereinstimmt.
+Die ersten solchen Messungen zur Bestimmung von Elektronen- und Lochmassen
+wurden 1954 an der UC Berkeley von Gene Dresselhaus in Silizium und Germanium
+durchgef¨uhrt. Bei einer Zyklotronfrequenz von 24 GHz wurden f¨ur die L¨ocher fol-
+gende Zyklotron-Resonanz-Peaks gemessen:
+Material B1 B2
+Si 1.37 × 103 G 4.21 × 103 G
+Ge 3.78 × 102 G 2.92 × 103 G
+(a) Bestimmen Sie die effektiven Massen der L¨ocher sowohl f¨ur Silizium als auch
+Germanium.
+(b) Warum werden zwei Resonanzen f¨ur die L¨ocher gemessen? Ordnen Sie diese
+zu.
+L¨osung
+(a) Aus m∗ = eBres
+2πf ergibt sich:
+Material m∗
+1 m∗
+2
+Si 0.160 me 0.491 me
+Ge 0.044 me 0.341 me
+
+(b) Zwei Loch-Resonanzen treten auf, weil im Valenzband zwei unterschiedliche
+Lochzweige existieren: light hole (lh) und heavy hole (hh), die wegen Spin-
+Bahn-Kopplung unterschiedliche Dispersionen E(k) und damit unterschiedliche
+effektive Massen besitzen. Bei fester Frequenz gilt:
+Bres klein ⇒ m∗ klein ⇒ light hole,
+Bres groß ⇒ m∗ groß ⇒ heavy hole.
+13.2 Hall-Effekt
+Eine rechteckige Probe eines p-dotierten Halbleiters hat die Abmessungen:
+• L¨ange zwischen den Stromkontakten: L = 10 mm
+• Breite (quer zur Stromrichtung): w = 5 mm
+• Dicke: t = 0.5 mm
+Die Probe wird bei Raumtemperatur vermessen.
+Ein Strom I = 20 mA fließt entlang der L¨ange. Ein Magnetfeld B = 0.8 T steht
+senkrecht zur Probenfl¨ache. Gemessen wird eine Hall-Spannung zwischen den seitlichen
+Kontakten:
+VH = 6.4 mV.
+(a) Bestimmen Sie den Hall-Koeffizienten RH und die Lochdichte p (in cm−3).
+Bei B = 0 wird entlang der L¨ange die Spannung
+Vxx = 1.60 V
+bei demselben Strom I = 20 mA gemessen.
+(b) Bestimmen Sie die Resistivit¨at ρ und die Mobilit¨at μp (in cm2/V/s).
+L¨osung
+(a) F¨ur eine 3D-Probe gilt
+RH = Ey
+jxB ,
+mit
+Ey = VH
+w , jx = I
+wt.
+
+Damit folgt
+RH = (VH /w)
+(I/(wt)) B = VH t
+I B .
+Einsetzen:
+VH = 6.4 mV, t = 0.5 mm, I = 20 mA, B = 0.8 T.
+RH ≈ 2 × 10−4 m3/C.
+In der Ein-Band-N¨aherung (nur L¨ocher):
+RH = 1
+q p ⇒ p = 1
+qRH
+≈ 3.12 × 1022 m−3 ˆ= 3.12 × 1016 cm−3.
+(b) Zun¨achst der Widerstand:
+R = Vxx
+I = 80 Ω.
+F¨ur einen Quader gilt
+ρ = R A
+L , A = w · t.
+Es folgt
+ρ = R wt
+L = 2 × 10−2 Ω m.
+Leitf¨ahigkeit:
+σ = 1
+ρ = 50 S m−1.
+Im Ein-Band-Modell gilt:
+σ = q p μp ⇒ μp = σ
+q p ≈ 100 cm2 V−1 s−1.
+13.3 Shubnikov-de Haas-Effekt (2D)
+Wir betrachten ein zweidimensionales Elektronensystem (2DEG) im senkrechten
+Magnetfeld B bei tiefen Temperaturen (T ≈ 0). Im Magnetfeld werden die Zust¨ande
+in Landau-Niveaus zusammengefasst. Jedes Landau-Niveau enstpircht einem Ring
+im k-Raum zwischen zwei benachbarten, quantisierten Zyklotronbahnen mit Fl¨achen
+Sn und Sn+1.
+
+(a) Zeigen Sie anhand der Onsager-Beziehung, dass die Fl¨achen benachbarter Zyk-
+lotronbahnen im k-Raum die Beziehung
+∆S ≡ Sn+1 − Sn = 2πeB
+¯h
+erf¨ullen. Verwenden Sie anschließend die Zustandsdichte im k-Raum, um zu
+zeigen, dass die Entartung p eines Landau-Niveaus (Zahl der Zust¨ande pro
+Niveau, ohne Spin) f¨ur eine Probe der Fl¨ache A = LxLy ist:
+p = AeB
+h .
+Interpretieren Sie kurz, warum p ∝ B gilt.
+(b) Bei T ≈ 0 seien s Landau-Niveaus vollst¨andig gef¨ullt und das Niveau s + 1 nur
+teilweise. Zeigen Sie, dass f¨ur die Felder Bs, bei denen das chemische Potential
+μ gerade zwischen zwei Niveaus liegt (d. h. ein ganzzahliger F¨ullzustand vor-
+liegt),
+N = s p ⇒ Bs = N h
+eA
+1
+s .
+Folgern Sie daraus, dass alle quantenmechanischen Oszillationen (z. B. in ρxx)
+periodisch in 1/B sind und bestimmen Sie die Periodizit¨at ∆(1/B). Erkl¨aren
+Sie schließlich in wenigen S¨atzen, warum man diese Oszillationen in der longi-
+tudinalen Resistivit¨at ρxx sieht, wenn μ beim Variieren von B ¨uber Landau-
+Niveaus hinweg wandert.
+(a) Semiklassisch (Onsager-Quantisierung) gilt f¨ur die quantisierten Zyklotronbah-
+nen im k-Raum
+Sn = 2πeB
+¯h (n + γ).
+Damit folgt f¨ur benachbarte Bahnen unmittelbar
+∆S = Sn+1 − Sn = 2πeB
+¯h .
+In 2D ist die Zahl der k-Raum-Zust¨ande pro Fl¨ache im k-Raum gleich
+A
+(2π)2 .
+
+Ein Landau-Niveau entspricht genau dem “Ringbereich” der Fl¨ache ∆S zwis-
+chen Sn und Sn+1. Daher ist die Zahl der Zust¨ande (Entartung) pro Landau-
+Niveau
+p = A
+(2π)2 ∆S = A
+(2π)2
+2πeB
+¯h = AeB
+2π¯h = AeB
+h .
+Interpretation: Mit wachsendem B w¨achst der Fl¨achenabstand ∆S ∝ B, also
+enth¨alt jedes Landau-Niveau mehr Zust¨ande; deshalb gilt p ∝ B. (Mit Spin
+k¨ame ein Faktor gs = 2 hinzu.)
+(b) Bei T ≈ 0 werden die Landau-Niveaus von unten aufgef¨ullt. Sind s Niveaus
+vollst¨andig gef¨ullt, dann ist die Elektronenzahl
+N = s p = s AeB
+Daraus folgt f¨ur die Felder Bs der “Sprungstellen” des chemischen Potentials
+Bs = N h
+eA
+1
+s .
+In invertierter Darstellung erh¨alt man
+Bs
+= eA
+N h s,
+also ist 1/Bs linear in der ganzen Zahl s; die Abst¨ande sind konstant:
+∆
+ 1
+B
+
+= 1
+Bs+1
+− 1
+Bs
+= eA
+N h.
+Damit sind die quantenmechanischen Oszillationen, die bei jedem Durchgang
+einer Landau-Struktur durch μ auftreten, periodisch in 1/B.
+Warum sieht man das in ρxx? Beim Variieren von B verschieben sich Landau-
+Niveaus relativ zum chemischen Potential μ. Dadurch oszilliert die Zustands-
+dichte am Fermi-Niveau D(EF ): sie ist groß, wenn μ in einem Landau-Niveau
+liegt, und klein, wenn μ zwischen Niveaus liegt. Da die dissipative (longitudi-
+nale) Leitf¨ahigkeit σxx und damit die longitudinale Resistivit¨at ρxx empfind-
+lich von den verf¨ugbaren Zust¨anden am Fermi-Niveau und von Streuprozessen
+abh¨angen, zeigt ρxx(B) sog. Shubnikov-de Haas-Oszillationen (SdH). In Hall-
+Geometrien werden deshalb h¨aufig ρxx (zeigt die Landau-Quantisierung und
+SdH) und ρxy (liefert die Tr¨agerdichte) gemeinsam dargestellt.

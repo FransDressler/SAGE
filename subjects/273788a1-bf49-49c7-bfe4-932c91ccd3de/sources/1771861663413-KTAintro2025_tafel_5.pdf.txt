@@ -1,0 +1,145 @@
+## Vorlesung 5: 11.11.2025
+
+### 1.13 Wechselwirkung von Teilchen mit Materie
+
+### 1.13.1 Wechselwirkung von geladenen Teilchen mit Materie
+
+- Geladene Teilchen durchqueren Materie (schwere Teilchen $\mu^{+}, \pi^{+}, p, \mathrm{He}^{2+},{ }^{12} \mathrm{C}$ ) ( $e^{-}$ist ein Sonderfall, siehe unten)
+- Kontinuierliche Abgabe von Energie durch Stöße mit den Medium
+- Hauptsächlich WW mit $e^{-}$im Medium → Ionisation oder Anregung von Atomen
+![This diagram depicts the photoelectric effect, showing photons incident on a metal surface causing the ejection of electrons from the metal. It illustrates how incoming light energy results in the emission of electrons from the material.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/232cc09c-c939-4c76-838c-8d55fc160bcb/e4cdf9d1-46c2-4f11-9234-02c708de44dc-1_236_661_781_694.jpg)
+
+Dieser Energieverlust pro Strecke und auf die Dichte $\varrho$ normalisiert, mit Einheit $\left[\mathrm{MeVcm}^{2} / \mathrm{g}\right]$, wird durch die Bethe-Bloch-Formel beschrieben (Herleitung aus klassicher Elektromechanik, Quantenmechanik, speziellen Relativitätstheorie und Atomphysik; analytische Herleitung mit Hilfe einiger Näherungen)
+
+$$
+-\frac{1}{\varrho} \frac{d E}{d x}=K z^{2} \frac{Z}{A} \frac{1}{\beta^{2}}\left[\ln \left(\frac{2 m_{e} c^{2}(\beta \gamma)^{2}}{I}\right)-\beta^{2}\right] .
+$$
+
+(Bethe-Bloch)
+
+Die hier auftretenden Größen sind einerseits die Konstanten
+$K=0.307 \mathrm{MeVcm}^{2} / \mathrm{g}$
+$z$ die Ladung des Projektils
+$Z / A$ Verhältnis von Protonenzahl zu Massenzahl des Mediums
+$m_{e} c^{2}=511 \mathrm{keV}$
+I, die mittlere Ionisationsenergie
+Beispielswerte sind: $I(\mathrm{H}) \sim 10 \mathrm{eV}, I(\mathrm{C}) \sim 75 \mathrm{eV}, I(\mathrm{Si}) \sim 173 \mathrm{eV}$.
+Und die Abhängigkeiten, die von Interesse sind
+$\beta=\frac{v}{c}$, die normierte Geschwindigkeit
+der verwandte Faktor $\gamma=\frac{1}{\sqrt{1-\beta^{2}}}$, ein Maß für die Relativität eines Teilchen
+Deren Produkt $\gamma \beta$, ein ebenso ein Maß für wie relativistisch das Teilchen ist.
+Die Tabelle unten macht dies deutlich.
+
+| $\beta$ | $\gamma$ | $\gamma \beta \sim$ | Bereich |
+| :---: | :---: | :---: | :---: |
+| 0.1 | 0.7 | 1 | nicht relativistisch |
+| 0.7 | 1.4 | 1 | halbrelativistisch |
+| 1 | 3 | 3 | "MIP" (s. MIP) |
+| 1 | 10 | 10 | relativistisch |
+
+Wie sieht der Verlauf von $\frac{d E}{d x}$ gegen Geschwindigkeit/Energie aus?
+![This diagram depicts the stopping power (energy loss per unit distance) of electrons in different materials (H2, C, Pb) as a function of electron momentum, showing how the stopping power varies with momentum and material type.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/232cc09c-c939-4c76-838c-8d55fc160bcb/e4cdf9d1-46c2-4f11-9234-02c708de44dc-2_640_1376_315_331.jpg)
+
+Bereich bei $\beta \gamma<1$ :
+
+\frac{\Delta E}{\Delta x} \sim \frac{1}{v^{2}}
+
+- Teilchen bewegt sich langsam durch die Materie.
+- Es wechselwirkt elektrostatisch mit Elektronen.
+- Dabei gibt es kleine Energien an Materie ab.
+
+→ Coulomb-Kraft zwischen Teilchen mit $z \cdot e$ und den atomaren Elektron $\quad F \sim \frac{z e^{2}}{r^{2}}$
+→ Dauer der WW hängt von Geschwindigkeit des Teilchens ab.
+$\Delta t=\frac{b}{v}, \quad b \sim$ Impact paramter, Abstand zwischen Mittelpunkt des Streuzentrums und dem Projektil
+→ langsam → längere Zeit im Potenzial → mehr Energieabgabe
+⇒ Energie (klassisch) $\Delta E \sim \frac{1}{v^{2}}$ (der Zusammenhang folgt aus der geometrischen Abhängikeit des transversalen elektischen Feldes bei "Vorbeifliegenëines Teilchens am Streuzentrum (zB Elektron) mit einer bestimmmten Geschwindikeit $v$.
+
+⇒ Anzahl an Kollisionen pro Strecke $d x$ ist konstant (hängt von Elektronendichte ab), somit folgt
+
+\Rightarrow \frac{d E}{d x} \sim \frac{1}{\beta^{2}}
+
+Bereich bei $\beta \gamma>1$ :
+In der Formel (Bethe-Bloch):
+
+- $\beta$ wird konstant $(\rightarrow 1) \quad \frac{1}{\beta^{2}} \sim 1$
+- $\ln (\gamma \beta \ldots)$ steigt leicht an
+
+Physikalisch:
+Wenn Teilchen relativistische Geschwindigkeiten annimmt, wird das Feld assymmetrisch und das transversales E-Feld verstärkt.
+
+→ Elektronen "sehen" höheres Feld der vorbeifliegenden Teilchen
+→ stärker gebundene Elektronen (weiter innen im Atom) können angeregt werden
+→ stärkere WW
+
+Abhängigkeiten von Teilchenart und Materie
+Teilchen:
+
+- Ladung $z$
+- Geschwindigkeit $\beta$
+- nicht von Masse
+
+Materie:
+
+- $Z / A$ : bei $\mathrm{H}: 1, \mathrm{He}-\mathrm{Fe} \sim 0.5, \mathrm{~Pb}-\mathrm{U} \sim 0.4$
+- schwache Abhängigkeit von $I$
+
+Man findet ein Minimum bei $\gamma \beta \sim 3-4$, mit relativ konstanten $\frac{d E}{d x}$.
+In diesem Bereich sind die Teilchen sogenannte Minimally ionizing particles (MIP):
+MIP
+
+-\frac{1}{\varrho} \frac{d E}{d x} \approx 2 \mathrm{MeVcm}^{2} / \mathrm{g}
+
+| Material | Dichte $\varrho$ in $\mathrm{g} / \mathrm{cm}^{3}$ | $-\frac{d E}{d x}$ in $\mathrm{MeV} / \mathrm{cm}$ |
+| :---: | :---: | :---: |
+| Plastik | $\sim 1$ | $\approx 2$ |
+| Silizium | $\sim 2.33$ | $\approx 4$ |
+| Blei | $\sim 11$ | $\approx 13$ |
+
+Beispielswerte für die Energieabgabe für einige Materialien
+
+Für eine Abschätzung für die Reichweite von Teilchen setzt man
+
+\langle R\rangle=\int_{E_{0}}^{0} \frac{1}{\frac{d E}{d x}} d E
+
+wobei man den konstanten, "MIP", Bereich für $\frac{d E}{d x}$ einsetzt.
+Damit erhält man für Kosmische Myonen mit Energien von $1-10 \mathrm{GeV}$ eine Reichweite von
+
+\left\langle R_{\mathrm{Fels}}\right\rangle \approx \frac{E_{0}}{\frac{d E}{d x}}=\frac{10 \mathrm{GeV}}{5 \mathrm{MeV}} \mathrm{~cm}=20 \mathrm{~m}
+
+und für Protonen mit 150 MeV in Wasser $\left\langle R_{p^{+}}\right\rangle \sim \frac{E_{0}}{5 \mathrm{MeV} / \mathrm{cm}}=15 \mathrm{~cm}$.
+Die Faustregel für kosmische Protonen besagt, dass $\underline{1 \mathrm{~m}}$ Abschirmung 95\% der Strahlung abschirmt.
+Bragg peak:
+Wenn Teilchen langsamer werden, also $\beta \downarrow$, steigt der Energieverlust stark an ( $\alpha 1 / \beta^{2}$ ).
+→ Bragg peak am Ende der Reichweite
+![This diagram depicts the Bragg curve, showing the variation of energy loss per unit distance (dE/dx) of charged particles, such as protons or alpha particles, as they travel through a medium, with a pronounced peak near the end of their range.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/232cc09c-c939-4c76-838c-8d55fc160bcb/e4cdf9d1-46c2-4f11-9234-02c708de44dc-3_325_641_1944_696.jpg)
+
+Sonderfall Elektronen/Positronen:
+Da $e^{-} / e^{+}$sehr leicht sind, erfahren sie stärkere Ablenkung im Feld der Kerne. Durch die entsprechende Abbremsung werden Photonen abgestrahlt, die Bremsstrahlung. Diese ist stark energie- und Molekül-abhängig. Zusätlich zu der oben beschrieben Bethe-Bloch Formel gibt es einen additiven Faktor zur kompletten Beschreibung von $d E / d x$ :
+
+\left.\frac{d E}{d x}\right|_{\mathrm{rad}} \sim E \cdot Z^{2}
+
+dominant oberhalb von $E_{c} \approx 800 \mathrm{MeV} / \mathrm{Z}$
+
+### 1.13.2 Gamma Wechselwirkung
+
+- Geladene Teilchen wechselwirken kontinuierlich und geben nach und nach Energie ab.
+- Gammas wechselwirken mit Materie stets an einem Punkt.
+
+→ Stochastische Wahrscheinlichkeit für Wechselwirkung entlang des Weges
+"jedes Photon hat an jedem kleinen Wegstück dieselbe Wahrscheinlichkeit zur Wechselwirkung."
+
+\begin{aligned}
+\frac{d I(x)}{d x} & =-\mu I(x) \\
+\Rightarrow I(x) & =I_{0} \exp ^{-\mu x}
+\end{aligned}
+
+$I(x)$ Intesität pro Zeit und Fläche die nach dem Weg $x$ noch übrig ist $\mu$ linearer Absorptionskoeffizient
+Wahrscheinlichkeit pro Weglänge, dass ein Photon wechselwirkt, hängt von Energie des Photons und Art der Materie ab.
+Der Absorptionskoeffizient hängt linear mit dem Wirkungsquerschnitt zusammen:
+
+\mu=\sigma \cdot n,
+
+mit Wirkungsquerschnitt $\sigma$ und Teilchendichte $n$.
+Drei Prozesse dominieren: Photoeffekt, Compton-Streuung und Paarbildung
+![This diagram depicts the mass attenuation coefficient (μ/ρ) as a function of photon energy (E) in MeV, showing the contributions of Compton scattering and pair production to the total attenuation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/232cc09c-c939-4c76-838c-8d55fc160bcb/e4cdf9d1-46c2-4f11-9234-02c708de44dc-4_634_1390_1233_331.jpg)
+

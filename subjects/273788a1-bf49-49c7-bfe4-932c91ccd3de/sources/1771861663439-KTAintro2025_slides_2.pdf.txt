@@ -1,0 +1,105 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing key concepts such as atomic nuclei, particle physics (including the Standard Model particles), nuclear reactors, particle accelerators, neutrino detection, cosmic phenomena like supernova remnants, and the timeline of the universe from the Big Bang to galaxy formation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Feynman, Propagator, Symmetries, conservations |
+|  |  |  | Interaction with matter | Cross section |
+| 4 | 04/11/25 |  | Interaction with matter | Bethe-Bloch |
+| 5 | 11/11/25 |  | Particle Detectors |  |
+| 6 | 18/11/25 |  | Accelerators | Four vector, accelerators, cyclotron |
+| 7 | 25/11/25 | Astrophysics | Cosmic accelerators | Supernovae, cosmic rays, BBN |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Alpha, beta, gamma |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiation, Reactors |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Tutorübungen KTA-Intro 2025/2026
+
+Tutor Team
+![The image depicts a group of five individuals, each labeled with a name and title, likely representing members of a team or organization.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-03_1179_1173_464_153.jpg)
+
+## Übungsleitung:
+
+Dr. Margarita Kaznacheeva margarita.kaznacheeva@tum.de
+![This image is a portrait photograph of a smiling young woman. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-03_582_514_341_2598.jpg)
+![This image depicts the schedule for a lecture and six exercise groups, showing the days, times, instructors, group designations, and room locations for each session.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-03_776_2002_963_1328.jpg)
+
+## Informationen zum Übungsbetrieb
+
+- 6 Übungsgruppen
+- Übung auch in englischer Sprache (markiert mit E)
+- Wöchentlich: Übungsblätter mit Aufgaben
+- Lösungen eine Woche später!
+- Notenbonus von 0.3 falls
+- Präsentation einer Übungsaufgabe an der Tafel
+![This image depicts a cartoon or animated scene of a classroom setting, showing a teacher standing in front of three students seated at desks.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-04_892_1076_304_2153.jpg)
+- $50 \%$ Anwesenheit bei den Tutorübungen
+- Bestandenes "Quiz" Ende Dezember
+- Klausur: Schriftlich, Hilfsmittel: Taschenrechner und handbeschriebenes DINA4 Blatt
+- Prüfungstermine: 26.2.2026 11:00-12:30
+30.3.2026 11:00-12:30 (Nachholklausur)
+
+
+## Was ist die Natur unserer Materie ?
+
+## 'Spirit' der Vorlesung:
+
+- Voller "Must-Knows" für Physiker
+- Fokus auf Basics in KTA
+- Übungen überarbeitet, Fokus auf Basics
+- Hauptteil an Tafel, Powerpoint nur ergänzend
+- 'Never to late' for a career in KTA
+![This diagram depicts the timeline of the expanding universe, showing the evolution from the Big Bang through cosmic inflation, formation of galaxies, and continuing expansion.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-05_1085_1282_304_2005.jpg)
+- Wichtiges ToolKit auch für andere Bereiche der Physik
+- Skript! Suche nach Werkstudierenden (bitte bei mir melden).
+drei Generationen der Materie
+(Fermionen)
+![This diagram depicts the Standard Model of particle physics, specifically showing the three generations of quarks and leptons with their respective masses, electric charges, and spins.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-06_1647_1323_228_399.jpg)
+
+
+## drei Generationen der Materie <br> (Fermionen)
+
+Wechselwirkungen
+(Bosonen)
+![This diagram depicts the Standard Model of particle physics, showing the fundamental particles categorized as quarks, leptons, gauge bosons, the Higgs boson, and the hypothetical graviton, along with their masses, charges, and spins.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-07_1647_2532_228_399.jpg)
+
+![This diagram depicts the difference between repulsive (abstoßend) and attractive (anziehend) forces in the context of two people throwing objects, showing how the direction of motion and resulting forces affect their relative movement over time (Zeit).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-08_1255_2718_323_323.jpg)
+![This diagram depicts the three families of fundamental particles in the Standard Model of particle physics, showing the classification of leptons, quarks, and neutrinos along with their associated force interactions (electromagnetic, weak, and strong). It organizes these particles by family generation and type, including charged leptons, neutrinos, and quarks.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ee60df3c-6589-499e-9a4b-ff4c9a524604/debfa267-7a1a-4e69-a110-b4250091236d-09_1768_1944_35_628.jpg)
+
+## Vereinheitlichung der fundamentalen WW
+
+Jahrhundert
+16./17.
+18.
+
+Elektrostatik
+Magnetismus
+Gravitation
+19.
+
+Elektromagnetische WW
+20.
+(1. Hälfte)
+
+QED (Quantenelektrodynamik)
+schwache WW
+starke WW
+ART
+20.
+(2. Hälfte)
+elektroschwache WW
+QCD*
+Allgemeine
+Relativitäts-
+?
+Grand Unified Theorie (GUT) ? theorie
+„Weltformel“, Theorie of Everything, Stringtheorie?, Quantum Loop Gravity?
+

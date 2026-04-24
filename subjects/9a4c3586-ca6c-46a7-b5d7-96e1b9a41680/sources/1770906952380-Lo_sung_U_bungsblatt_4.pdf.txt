@@ -1,0 +1,222 @@
+# Übung zur Vorlesung <br> Physik der kondensierten Materie 1 
+
+WiSe 2025/2026
+Tutorien in der Woche vom 17.11.26
+Blatt 4
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und
+-materialien
+Leonard Geilen
+
+### 4.1 Bindungstypen
+
+Im Festkörper kann man zwischen verschiedenen Bindungstypen unterscheiden, die jedoch nur selten in reiner Form auftreten. Welche Bindungstypen dominieren in der festen Phase der folgenden Materialien: Argon, Magnesium, Diamant, kristalliner Quarz, Quarzglas, Polyethylen, GaAs, KBr und $\mathrm{NH}_{3}$ ?
+
+## Lösung
+
+- Argon: Van-der-Waals Bindung. Argon Atome besitzen Edelgaskonfiguration.
+- Magnesium: Metallische Bindung. Das Magnesium besitzt zwei schwach gebundene Außenelektronen. Diese bilden im Metall ein Elektronengas aus.
+- Diamant: Kovalente Bindung. Die Kohlenstoff Atome liegen in einer $s p^{3}$ Hybridisierung vor.
+- Quarzkristall: Polare kovalente Bindung. Der Grundbaustein des Quarzkristall ist das $\mathrm{SiO}_{4}$-Tetraeder (siehe Abb. 1a). Die Si -O Bindung ist stark polar, da die Elektronegativität des Sauerstoffs $\chi=3.44$ deutlich über der des Siliziums $\chi=1.90$ liegt (Es wird die Pauling-Skala für die Elektronegativität verwendet).
+- Quarzglas: Polare kovalente Bindung. Amorphes Quarz besteht aus $\mathrm{SiO}_{4}$ Tetraedern, die jedoch kein Gitter bilden.
+- Polyethylen: Kovalente $\mathrm{C}-\mathrm{C}$ Bindungen, polare kovalente $\mathrm{C}-\mathrm{H}$ Bindungen, Van-der-Waals Bindungen zwischen den Molekülen (siehe Abb. 1b).
+- GaAs: Polare kovalente $\mathrm{sp}^{3}$-Orbitalbindung.
+- KBr: Ionenkristall. KBr ist ein Alkali-Halogenid aus zwei einfach geladenen Ionen mit annähernd kugelsymmetrischer Ladungsverteilung.
+- $\mathrm{NH}_{3}$ : Polare kovalente $\mathrm{N}-\mathrm{H}$ Bindung, Wasserstoffbrückenbindung zwischen den $\mathrm{NH}_{3}$-Molekülen über freies Elektronenpaar am Stickstoffatom.
+
+![The image depicts the molecular structures of a SiO4 tetrahedron and a polyethylene polymer chain, showing the atomic arrangement and bonding in each.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ab680d11-b0d2-48e7-a23e-466c5e30ebb3/44a8d238-8122-4e13-9105-e6cc7880aa6c-02_575_1219_775_455.jpg)
+Abbildung 1: Verschiedene Bindungstypen.
+
+### 4.2 Born-Haber Kreisprozess
+
+Die Bindungsenergie von Ionenkristallen kann mit Hilfe des Born-Haber Kreisprozesses ermittelt werden. Berechnen Sie mit diesem Verfahren die Bindungsenergie eines $1 \mathrm{~cm}^{3}$ großen KBr Kristalls in eV . Dieser besitzt eine Dichte $\rho=2.75 \mathrm{~g} \mathrm{~cm}^{-3}$. Die folgenden Größen beziehen sich jeweils auf ein Atom bzw. auf ein Molekül:
+
+- Ionisierungsenergie von Kalium $\left(\mathrm{K} \longrightarrow \mathrm{K}^{+}\right)\left|\Delta H_{\text {Ion }}\right|=4.34 \mathrm{eV}$,
+- Sublimationsenthalpie von Kalium $\left|\Delta H_{\text {Sub }}\right|=0.90 \mathrm{eV}$,
+- Verdampfungsenthalpie von Brom $\left|\Delta H_{\text {Vap }}\right|=0.30 \mathrm{eV}$,
+- Elektronenaffinität von Brom ( $\mathrm{Br} \longrightarrow \mathrm{Br}^{-}$): $\left|\Delta H_{\mathrm{Aff}}\right|=3.37 \mathrm{eV}$,
+- Dissoziationsenergie von $\mathrm{Br}_{2}\left|\Delta H_{\text {Diss }}\right|=1.97 \mathrm{eV}$,
+- Reaktionswärme bei der Bildung von KBr aus metallischem Kalium und flüssigem Brom $|Q|=4.05 \mathrm{eV}$.
+
+Beschreiben Sie kurz die Energien die im Prozess freigesetzt oder aufgewendet werden. Zeichnen Sie ein Schema des Prozesses mit der Enthalpieänderung als vertikale Achse.
+
+## Lösung
+
+Der Born-Haber Kreisprozess ist ein Schema, das zur Bestimmung von experimentell schwer zugänglichen Eigenschaften (z.B. Elektronenaffinitiäten) benutzt wird. Es verknüpft thermodynamische Zustandsgrößen in einem (hypothetischem) Kreisprozess. Jede Größe kann daher bestimmt werden, sofern die anderen bekannt sind. Das Verfahren ist nach seinen Entwicklern Fritz Haber (1868-1934) und Max Born (18821970) benannt.
+
+Gesucht ist die Bindungsenergie $E_{\text {Bind }}$ eines KBr Kristalls. Folgende Energien sind bekannt:
+
+$$
+\begin{array}{rlrl}
+\Delta H_{\text {Ion }} & =4.34 \mathrm{eV}, & \text { Umwandlung } \mathrm{K} \longrightarrow \mathrm{~K}^{+} \\
+\Delta H_{\text {Aff }} & =3.37 \mathrm{eV}, & \text { Umwandlung Br } & \mathrm{Br}^{-} \\
+\Delta H_{\text {Sub }} & =0.90 \mathrm{eV}, & \text { Umwandlung K(gas) } \longrightarrow \mathrm{K}(\text { fest }) \\
+\Delta H_{\text {Vap }} & =0.30 \mathrm{eV}, & \text { Umwandlung Br } 2(\text { flüssig }) \longrightarrow \mathrm{Br}_{2}(\text { gas }) \\
+\Delta H_{\text {Diss }} & =1.97 \mathrm{eV}, & \text { Umwandlung } \mathrm{Br}_{2} \longrightarrow 2 \mathrm{Br} \\
+Q & =4.05 \mathrm{eV}, & \text { Reaktion K(fest) }+ \text { Br(flüssig) } \longrightarrow \mathrm{KBr}
+\end{array}
+$$
+
+Die Abbildung stellt ein fiktives Prozess da. Ausgehend vom Kaliumbromidkristall KBr , wird zunächst die Bindungsenergie aufgewendet, um ein Ionengas zu erzeugen. Danach wird die Elektroaffinität von Brom benötigt um das Ion zu neutralisieren. Das positiv geladen Kalium Ion setzt die Ionisierungsenergie frei beim Einfangen eines Elektrons. Brom bildet dann $\mathrm{Br}_{2}$ Moleküle, dabei wird die Dissoziationsenergie frei. Nun kondensiert das Brom Gas zu einer Flüssigkeit, wobei die Verdampfungsenthalpie frei wird. Das Kalium kondensiert und setzt dabei die Sublimationsenthalpie frei. Im letzten Schritt reagiert dann das festes Kalium mit dem Brom Gas und bilden ein Kaliumbromidkristall. Hierbei wird die Reaktionswärme frei. Es gilt:
+
+- Positive Energien müssen aufgewendet werden.
+- Negative Energien werden frei.
+
+![This diagram is a Born-Haber cycle for potassium bromide (KBr), showing the stepwise enthalpy changes involved in forming KBr from its elements, including ionization energy, dissociation energy, vaporization, sublimation, electron affinity, and lattice energy.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ab680d11-b0d2-48e7-a23e-466c5e30ebb3/44a8d238-8122-4e13-9105-e6cc7880aa6c-04_1013_772_320_674.jpg)
+Abbildung 2: Born-Haber Kreisprozess
+
+- Die Summe aller Energien muss verschwinden.
+
+Daraus folgt:
+
+\begin{aligned}
+0 & =\Delta H_{\text {Bind } / \text { Molekül }}-\Delta H_{\text {Ion }}-\Delta H_{\text {Sub }}-\frac{\Delta H_{\text {Vap }}}{2}+\Delta H_{\text {Aff }}-\frac{\Delta H_{\text {Diss }}}{2}-Q \\
+\rightarrow \Delta H_{\text {Bind } / \text { Molekül }} & =\Delta H_{\text {Ion }}+\Delta H_{\text {Sub }}+\frac{\Delta H_{\text {Vap }}}{2}-\Delta H_{\text {Aff }}+\frac{\Delta H_{\text {Diss }}}{2}+Q \\
+\Delta H_{\text {Bind } / \text { Molekül }} & =7.055 \mathrm{eV}
+\end{aligned}
+
+Nun muss man noch die Anzahl der KBr-Moleküle im $1 \mathrm{~cm}^{3}$ großen Kristall bestimmen um die absolute Bindungsenergie $E_{\text {Bind }}$ zu bestimmen.
+
+\begin{aligned}
+E_{\text {Bind }} & =7.055 \mathrm{eV} \cdot \frac{\rho \cdot V}{M} \cdot N_{\mathrm{A}}=7.055 \mathrm{eV} \cdot \frac{2.75 \mathrm{~g} \mathrm{~cm}^{-3} \cdot 1 \mathrm{~cm}^{3}}{119 \mathrm{~g} \mathrm{~mol}^{-1}} \cdot N_{\mathrm{A}} \\
+& =9.8 \times 10^{22} \mathrm{eV}=15.7 \mathrm{~kJ}
+\end{aligned}
+
+Die molare Masse von KBr beträgt $M=39.1 \mathrm{~g} \mathrm{~mol}^{-1}+79.9 \mathrm{~g} \mathrm{~mol}^{-1}=119 \mathrm{~g} \mathrm{~mol}^{-1}$.
+
+## $4.3 s p^{2}$-Hybridisierung in Graphit
+
+Graphit besteht aus Kohlenstoffschichten, bei denen die Atome in einem hexagonalen Gitter angeordnet sind. Innerhalb einer Schicht ( x - y -Ebene) sind die Kohlenstoffatome stark über kovalente Bindungen gebunden. Wobei in dem hexagonalen Gitter jedes Kohlenstoffatom eine Bindung mit drei Nachbaratomen eingeht. Die Schichten sind wiederum nur schwach durch Van-der-Waals-Kräfte gebunden.
+Die dreizählig symmetrische Anordnung (bzgl. der z-Achse) der Bindungen um ein Kohlenstoffatom bezeichnet man als $\mathrm{sp}^{2}$-Hybridisierung. Sie lässt sich als durch eine Linearkombination der drei konventionellen Orbitale
+
+\left|\phi_{2 s}\right\rangle & =\frac{1}{4 \sqrt{2 \pi}}\left(2-\frac{Z r}{a_{B}}\right) e^{-\frac{Z r}{2 a_{B}}} \\
+\left|\phi_{2 p_{x}}\right\rangle & =\frac{1}{4 \sqrt{2 \pi}} \frac{Z r}{a_{B}} e^{-\frac{Z r}{2 a_{B}}} \sin \theta \cos \varphi \\
+\left|\phi_{2 p_{y}}\right\rangle & =\frac{1}{4 \sqrt{2 \pi}} \frac{Z r}{a_{B}} e^{-\frac{Z r}{2 a_{B}}} \sin \theta \sin \varphi
+
+darstellen.
+(a) Sind die angegeben Orbitale schon normiert und orthogonal? Was muss gegebenenfalls angepasst werden?
+(b) Formen sie die Hybrid-Orbitale als Linearkombination der konventionellen Orbitalen. Dabei soll $\left|\Phi_{1}\right\rangle$ entlang der x -Achse zeigen. Hinweis Damit $\left|\Phi_{1}\right\rangle$ in x-Richtung zeigt, hat es keinen Beitrag von $\left|\phi_{2 p_{y}}\right\rangle$. $\phi_{2 s}$ ist kugelsymmetrisch und träg zu gleichen Teilen zu den drei Hybridorbitalen bei. Die Hybridorbitale müssen ihrerseits wieder normalisiert und orthonormal zu einander sein.
+(c) Freiwillig: Skizzieren Sie den Querschnitt der Orbitale $\left|\Phi_{i}\right\rangle$ in der $x y$-Ebene. Dabei kann $\left|\Phi_{i}(r, \theta, \varphi)\right|^{2}$ nicht wie bei den konventionellen Orbitalen in einen radial und winkelabhängigen Teil faktorisiert werden. Es lohnt sich also die Orbitale mit einer Plotting Software für verschiedene $r / a_{B}$.
+
+
+(a) Die angegebenen Orbitals sind zwar orthogonal aber nicht normiert. Es fehlt ein Faktor $\left(Z / a_{B}\right)^{3 / 2}$.
+(b) Zunächst kann man die drei Hybridorbitale $\left|\Phi_{1,2,3}\right\rangle$ als allgemeine Linearkombination der konventionellen Orbitale schreiben.
+
+\left|\Phi_{1}\right\rangle & =a_{1}\left|\phi_{2 s}\right\rangle+b_{1}\left|\phi_{2 p_{x}}\right\rangle+c_{1}\left|\phi_{2 p_{y}}\right\rangle \\
+\left|\Phi_{2}\right\rangle & =a_{2}\left|\phi_{2 s}\right\rangle+b_{2}\left|\phi_{2 p_{x}}\right\rangle+c_{2}\left|\phi_{2 p_{y}}\right\rangle \\
+\left|\Phi_{3}\right\rangle & =a_{3}\left|\phi_{2 s}\right\rangle+b_{3}\left|\phi_{2 p_{x}}\right\rangle+c_{3}\left|\phi_{2 p_{y}}\right\rangle
+
+Da $\left|\phi_{2 s}\right\rangle$ sowohl von $\theta$ als auch $\varphi$ unabhängig ist und damit kugelsymmetrisch zum Ursprung muss es zu gleichen Anteilen in allen drei Hybridorbitale eingehen. Somit ergibt sich für $a_{1,2,3}$
+
+\begin{gathered}
+\left\langle\phi_{2 s} \mid \Phi_{1}\right\rangle=\left\langle\phi_{2 s} \mid \Phi_{2}\right\rangle=\left\langle\phi_{2 s} \mid \Phi_{3}\right\rangle=a_{1}=a_{2}=a_{3} \\
+\left|\left\langle\phi_{2 s} \mid \Phi_{1}\right\rangle\right|^{2}+\left|\left\langle\phi_{2 s} \mid \Phi_{2}\right\rangle\right|^{2}+\left|\left\langle\phi_{2 s} \mid \Phi_{3}\right\rangle\right|^{2}=1 \quad \rightarrow \quad a_{1}^{2}=a_{2}^{2}=a_{3}^{2}=\frac{1}{3} \\
+a_{1}=a_{2}=a_{3}=\frac{1}{\sqrt{3}}
+\end{gathered}
+
+Da wir $\left|\Phi_{1}\right\rangle$ entlang der x -Achse liegend definiert haben muss die $\left|\phi_{2 p_{y}}\right\rangle$-Kontribution verschwinden, also $c_{1}=0$ sein.
+Schließlich muss $\left|\Phi_{1}\right\rangle$ noch normiert sein:
+
+\left\langle\Phi_{1} \mid \Phi_{1}\right\rangle=a_{1}^{2}+b_{1}^{2} \stackrel{!}{=} 1=\frac{1}{3}+b_{1}^{2} \quad \rightarrow \quad b_{1}=\sqrt{\frac{2}{3}}
+
+Nun müssen die anderen beiden Hybridorbitale orthogonal zu $\left|\Phi_{1}\right\rangle$ sein es gilt also:
+
+& \left\langle\Phi_{2} \mid \Phi_{1}\right\rangle=a_{1} a_{2}+b_{1} b_{2} \stackrel{!}{=} 0 \\
+& \left\langle\Phi_{3} \mid \Phi_{1}\right\rangle=a_{1} a_{3}+b_{1} b_{2} \stackrel{!}{=} 0
+
+Folglich sind
+
+& b_{2}=-\frac{a_{1} a_{2}}{b_{1}}=-\frac{1 / 3}{\sqrt{2 / 3}}=-\frac{1}{\sqrt{6}} \\
+& b_{3}=-\frac{a_{1} a_{3}}{b_{1}}=-\frac{1 / 3}{\sqrt{2 / 3}}=-\frac{1}{\sqrt{6}}
+
+Die Normalisierung von $\left|\Phi_{2}\right\rangle$ und $\left|\Phi_{3}\right\rangle$ ergibt dann
+
+\left\langle\Phi_{2} \mid \Phi_{2}\right\rangle & =a_{2}^{2}+b_{2}^{2}+c_{2}^{2} \stackrel{!}{=} 1 \\
+c_{2}^{2} & =1-\left(a_{2}^{2}+b_{2}^{2}\right)=1-\left(\frac{1}{3}+\frac{1}{6}\right)=\frac{1}{2} \\
+\text { undanalog } c_{3}^{2} & =\frac{1}{2}
+
+Damit sich $\left|\Phi_{2}\right\rangle$ und $\left|\Phi_{3}\right\rangle$ unterscheiden wählen wir für $c_{2}=+1 / \sqrt{2}$ die positive Lösung und $c_{3}=-1 / \sqrt{2}$ die negative Lösung. Die drei Hybridorbitale als Linearkombination der Konventionellen sind also:
+
+& \left|\Phi_{1}\right\rangle=\frac{1}{\sqrt{3}}\left|\phi_{2 s}\right\rangle+\sqrt{\frac{2}{3}}\left|\phi_{2 p_{x}}\right\rangle \\
+& \left|\Phi_{2}\right\rangle=\frac{1}{\sqrt{3}}\left|\phi_{2 s}\right\rangle-\frac{1}{\sqrt{6}}\left|\phi_{2 p_{x}}\right\rangle+\frac{1}{\sqrt{2}}\left|\phi_{2 p_{y}}\right\rangle \\
+& \left|\Phi_{2}\right\rangle=\frac{1}{\sqrt{3}}\left|\phi_{2 s}\right\rangle-\frac{1}{\sqrt{6}}\left|\phi_{2 p_{x}}\right\rangle-\frac{1}{\sqrt{2}}\left|\phi_{2 p_{y}}\right\rangle
+
+(c) Die Amplitudenquadrate der drei Hybrid-Orbitale sind in Abbildung 3 zu sehen. Um den Schnitt durch die Orbitale in die $x y$-Ebene zu legen muss $\theta=\pi / 2$ gewählt werden. Bei Kohlenstoff ist die Kernladungszahl $Z=6$. Im Gegensatz zu den konventionellen Orbitalen lassen sich die Hybrid-Orbitale nicht in einen Radialteil und Kugelflächenfunktionen aufteilen. Man muss für eine polare Projektion von $\left|\Phi_{i}\right|^{2}$ über $\varphi$ also noch ein festes $r / a_{B}$ wählen, das Beispiel hier ist $r / a_{B}=0.2$.
+
+![This diagram is a polar plot showing the squared magnitudes of three wavefunctions, labeled |Φ₁|², |Φ₂|², and |Φ₃|², as functions of angle. It depicts the angular distribution or probability density patterns of these wavefunctions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ab680d11-b0d2-48e7-a23e-466c5e30ebb3/44a8d238-8122-4e13-9105-e6cc7880aa6c-08_929_949_388_592.jpg)
+Abbildung 3: Amplitudenquadrate der drei Hybrid-Orbitale $\left|\Phi_{i}\right\rangle$ bei $\theta=\pi / 2$ und $r / a_{B}=0.2$
+
+### 4.4 Eindimensionaler Ionenkristall
+
+Betrachten Sie eine Kette aus $2 N$ Ionen mit der abwechselnden Ladung $\pm q$ und dem abstoßenden Potential $A / R^{n}$ zwischen nächsten Nachbarn.
+
+![This diagram depicts a linear chain model of alternating positive and negative charges, showing pairs of charges separated by a distance R, labeled from 1 to N. It is used to represent the arrangement of charges in a one-dimensional ionic or dipole system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ab680d11-b0d2-48e7-a23e-466c5e30ebb3/44a8d238-8122-4e13-9105-e6cc7880aa6c-08_218_955_1813_586.jpg)
+Abbildung 4: Eindimensionaler Ionenkristall aus $2 N$ Ionen
+
+(a) Berechnen Sie zunächst die Madelung-Konstante $\alpha$ für den unendlich ausgedehnten, eindimensionalen Ionenkristall.
+(b) Zeigen Sie, dass für den Gleichgewichtsabstand Kristalls folgendes gilt:
+
+U\left(R_{0}\right)=-2 \ln 2 \frac{N q^{2}}{4 \pi \epsilon_{0} R_{0}}\left(1-\frac{1}{n}\right)
+
+Gehen Sie davon aus, dass für große $N$ und unter Vernachlässigung von Randeffekten dieselbe Madelung-Konstante verwendet werden kann wie in a).
+
+
+(a) - Abstand zwischen nächsten Nachbarn: $R$
+
+- Unendlich ausgedehnter, eindimensionaler Ionenkristall: $N \rightarrow \infty$
+- Madelung-Konstante: $\alpha$
+- Coulomb-Energie eines Ions mit allen Nachbarn: $E \approx-\alpha \cdot \frac{q^{2}}{4 \pi \varepsilon_{0} R}$
+- Berechnung der Madelung-Konstante:
+
+\alpha=2 \cdot \sum_{\substack{j \neq i \\ i=0}}^{\infty} \frac{1}{\tilde{\alpha}_{i j}}=2 \cdot \sum_{\substack{j \neq i \\ i=0}}^{\infty} \frac{(-1)^{j+1}}{x_{j} / R}
+
+Der Faktor 2 wird hinzugefügt, da jeweils ein benachbartes Ion in positiver beziehungsweise negativer Richtung beiträgt.
+
+- Aus (1) folgt
+
+\alpha & =-2 \cdot \sum_{\substack{j \neq i \\
+i=0}}^{\infty} \frac{(-1)^{j}}{x_{j} / R} \\
+& =-2 \cdot[-\underbrace{\frac{1}{R / R}}_{\ominus}+\underbrace{\frac{1}{2 R / R}}_{\oplus}-\underbrace{\frac{1}{3 R / R}}_{\ominus}+\underbrace{\frac{1}{4 R / R}}_{\oplus} \mp \ldots] \\
+& =-2 \cdot[-\underbrace{\frac{1}{1}}_{\ominus}+\underbrace{\frac{1}{2}}_{\oplus}-\underbrace{\frac{1}{3}}_{\ominus}+\underbrace{\frac{1}{4}}_{\oplus} \mp \ldots] \\
+& =-2 \cdot[-\ln 2]
+
+- Ergebnis für die Madelung-Konstante $\alpha$ :
+
+\alpha=2 \cdot \ln 2
+
+(b) - Für das Potenzial $U(R)$ gilt
+
+U(R)=U_{1}(R)+U_{2}(R)=2 N \frac{A}{R^{n}}-2 N \ln (2) \frac{q^{2}}{4 \pi \varepsilon_{0} R}
+
+- Repulsiver Beitrag von Überlappung innerer Elektronenschalen:
+
+U_{1}(R)=2 N \frac{A}{R^{n}}
+
+Der Faktor $2 N$ ergibt sich folgendermaßen: Das Potential pro Ionenpaar berücksichtigt 2 nächste Nachbarn → Faktor 2. Da dieses Potential pro Ionenpaar gilt, kommt der Faktor $N$ für die Anzahl der Paare hinzu.
+
+- Attraktiver Beitrag von der Coulomb-Wechselwirkung:
+
+U_{2}(R)=-2 N \ln (2) \frac{q^{2}}{4 \pi \varepsilon_{0} R}
+
+Der Faktor $N$ kommt für die Anzahl der Paare hinzu.
+
+- Im Kräftegleichgewicht gilt
+
+0 \stackrel{!}{=}\left[-\frac{d U(R)}{d R}\right]_{R=R_{0}}
+
+, wobei $R_{0}$ den Gleichgewichtsabstand darstellt.
+
+- Aus (3) und (4) wird der Faktor $A$ bestimmt.
+
+0 & \stackrel{!}{=} 2 N \frac{n A}{R_{0}^{n+1}}-2 N \ln (2) \frac{q^{2}}{4 \pi \varepsilon_{0} R_{0}^{2}} \\
+\frac{n A}{R_{0}^{n+1}} & =\ln (2) \frac{q^{2}}{4 \pi \varepsilon_{0} R_{0}^{2}} \\
+A & =\frac{\ln (2)}{n} \frac{q^{2}}{4 \pi \varepsilon_{0}} R_{0}^{n-1}
+
+- Einsetzen von $A$ in Gleichung (3) für $R=R_{0}$ ergibt
+
+\begin{gathered}
+U\left(R_{0}\right)=2 N \ln (2) \frac{1}{n} \frac{q^{2}}{4 \pi \varepsilon_{0} R_{0}}-2 N \ln (2) \frac{q^{2}}{4 \pi \varepsilon_{0} R_{0}} \\
+U\left(R_{0}\right)=-2 \ln (2) \frac{N q^{2}}{4 \pi \epsilon_{0} R_{0}}\left(1-\frac{1}{n}\right)
+\end{gathered}
+

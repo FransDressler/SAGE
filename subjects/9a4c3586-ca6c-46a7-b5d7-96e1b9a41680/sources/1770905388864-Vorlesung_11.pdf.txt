@@ -1,0 +1,97 @@
+Fin den Strukturfaktor hatten wir geschiabeen :
+
+$$
+\begin{aligned}
+& S_{n k e}=V_{z} \text { shke }=\sum_{\alpha} f_{\alpha}(\underline{G}) \cdot e^{-2 \pi i\left(k u_{\alpha}+k v_{\alpha}+e \omega_{\alpha}\right)} \text {, } \\
+& \text { suke }=\frac{1}{v_{z}} \int_{v_{z}} \rho(\underline{\tau}) e^{-i \underline{k}_{\text {nue }} r} \\
+& \begin{array}{l}
+\text { Summation Atomstrultur- } \\
+\text { über Aforme falter }
+\end{array} \\
+& \text { der Basis } \\
+& \text { unit } \underline{G}=k \underline{b}_{1}+k \underline{b}_{2}+e \underline{b}_{3} \text { und } \underline{r}_{\alpha}=u_{\alpha} \underline{a}_{1}+v_{\alpha} \underline{a}_{2}+\omega_{\alpha} \underline{a}_{3}
+\end{aligned}
+$$
+
+## Baspide
+
+- Unbisch primitive Giths (sc) wit 1-atonijen Basis Summation eutfall: $\quad S_{\text {nke }}=f_{\alpha}(\underline{G}) \quad[=f(\underline{G})]$
+- Unisiscl privitives Gitter (se) unit 2-atomiger Basis (Csce): Annalume: Cs bie $(0,0,0)$ und Cl bai $\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right)$
+
+\begin{aligned}
+S_{\text {uke }} & =f_{c_{s}} e^{-2 \pi i(h \cdot 0+k \cdot 0+e \cdot 0)}+f_{\varphi} e^{-2 \pi i\left(h \cdot \frac{1}{2}+k \frac{1}{2}+e \cdot \frac{1}{2}\right)} \\
+& =f_{c_{s}}+f_{C e} \cdot e^{-i \pi(h+k+e)} \\
+& =f_{c_{s}}+f_{\varphi}(-1)^{h+k+e} \\
+\text { Suke } & = \begin{cases}f_{c_{s}}+f_{\varphi}, & h+k+e \quad \text { gerade: konstruktiv } \\
+f_{c_{s}}-f_{\varphi e}, & h+k+e \text { mujerade: (teilacise) } \\
+\text { destuktive }\end{cases}
+\end{aligned}
+
+⇒ Reflexe unit stark unterschie dlidan luteusitäte.
+
+- Unbisch rammzentient (bcc) unit einfacher Basis. glence Afore bei $(0,0,0)$ und $\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right)$
+
+\text { Suke } & =f_{\text {Atan }}\left[e^{-2 \pi i(u \cdot 0+k \cdot 0+e \cdot 0)}+e^{-\pi i\left(k_{i} \frac{1}{2}+k \cdot \frac{1}{2}+l \frac{1}{2}\right)}\right] \\
+& =f_{\text {Aton }}\left[1+(-1)^{u+k \cdot l}\right]
+
+Snke $=\left\{\begin{array}{cl}2 f A \text { ton } & , 4+k+e \text { genade: konstuktive } \\ 0 & , 4+k+e \text { ungende dectuktiv }\end{array}\right.$
+Besonderkent bei CsI (eigenteich sc) : $\mathrm{Cs}^{+}$und $\mathrm{I}^{-}$ besitien glide Anzall an $e^{-} \Rightarrow$ we $b c c$
+
+- flichenrentiest (fcc) unit einfacher Basis
+
+Atome bir $\underline{r}_{1}=(0,0,0) ; \underline{r}_{2}=\left(0, \frac{1}{2}, \frac{1}{2}\right)$;
+
+& r_{3}=\left(\frac{1}{2}, 0, \frac{1}{2}\right) i \pm_{4}=\left(\frac{1}{2}, \frac{1}{2}, 0\right) i \\
+& S_{\text {ne }}= f_{\text {Atom }} \cdot\left[e^{-2 \pi i \cdot 0}+e^{-2 \pi i\left[\frac{1}{2} \cdot k+\frac{1}{2} \cdot e\right]}+e^{-2 \pi i\left(\frac{1}{2} h+\frac{1}{2} e\right)}+e^{-2 \pi i\left(\frac{1}{2} h+\frac{1}{2} k\right)}\right] \\
+&= f_{\text {Atom }} \cdot\left[1+e^{-i \pi(k+e)}+e^{-i \pi(h+e)}+e^{-i \pi(h+k)}\right] \\
+&= f_{\text {Atom }} \cdot\left[1+(-1)^{k+e}+(-1)^{k+e}+(-1)^{k+k}\right]
+
+## Benork ny
+
+- Transformation zwische Ortsramen $\stackrel{F F T}{\longleftrightarrow}$ rexiprdien Raun
+
+⇒ Basisvektac liäng von des "Ansgangszelle" ab.
+Wie bà der Folie zu schn (Bild 4.16 Hunkligu)
+
+& (11)^{\prime}=(10) \\
+& (10)^{\prime}=?
+
+⇒ Expriment zaigt, ob "Ansgonjszelle" zu groß ge wälbet was
+$\Rightarrow \exists$ minimals nexiproles Gited velets $G_{\text {min }}=\frac{2 \pi}{d_{\text {uke }}}$ (side 2.3).
+
+### 2.8 Atom - Stukturfalktor
+
+In Falle des Röntyen diffraktometie bezachnet man den AtomStinkturtakter anch als Atom-Famfaktor odo als atomare Strenfaktoren; als Maß fin die Strenknaff jides Atoms.
+
+\rho u k e & =\frac{1}{V_{z}} \int_{V_{z}} \rho(\tau) e^{-i \underline{G} \underline{I}} d V=\frac{1}{V_{z}} \sum_{\alpha} e^{-i \underline{G} \underline{\tau}_{\alpha}} \int_{V_{\alpha}} \rho_{\alpha}\left(\underline{r}^{\prime}\right) e^{-i \underline{G} \underline{r}^{\prime}} d V^{\prime} \\
+& =\frac{1}{V_{z}} \sum_{\alpha} f_{\alpha}(\underline{G}) \cdot e^{-i \underline{G} \underline{r}_{\alpha}} .
+
+Annalure: Ladum der Atome ist kngelsymmeticsh.
+
+\Rightarrow \quad f_{\alpha} & =\int_{0}^{\infty} \int_{0}^{2 \pi} \int_{0}^{\pi} \frac{d r d \vartheta d \varphi r^{2} \sin \vartheta}{d V} \rho_{\alpha}(r) e^{-i G \cdot r} \\
+& =\left.2 \pi \int_{0}^{\infty} \int_{0}^{\pi} d r d \vartheta \sin \vartheta_{\sigma}^{2} \rho_{\alpha}(r) e^{-i \underline{G} \cdot r}\right|_{d(\cos \vartheta)=} ^{-\sin \vartheta \cdot d \vartheta}
+
+& =-2 \pi \int_{0}^{\infty} \int_{1}^{-1} d r r^{2} d(\cos \theta) \rho \alpha(\tilde{r}) e^{i|G| \cdot|r| \cos \theta} \\
+& =4 \pi \int_{0}^{\infty} d r r^{2} \rho \alpha(\tilde{r}) \frac{\sin (\underline{G} \cdot \tilde{r})}{\underline{G} \cdot \tilde{r}} ;(*)
+
+Ist die gesamte Eleletionenvertily bei $\subseteq=0$ Uonsentiest ist:
+
+& \Rightarrow \frac{\sin (\underline{G} \cdot \underline{r})}{\underline{G} \cdot \underline{r}} \rightarrow 1, \quad \text { fin } \underline{G} \cdot \underline{r} \rightarrow 0 \\
+& f_{\alpha}=4 \pi \int_{0}^{\infty} d r r^{c} u(\underline{r})=z \\
+& \rho(\underline{r}) \stackrel{!}{=} \underline{u}(\underline{r})
+
+radiale integral ubs Laduys träjes vertaily, 12
+⇒ lutensität $\alpha \quad|z|^{2} \quad$ fin $\underline{G} \cdot \underline{r} \rightarrow 0$.
+Beispiel 1 c - Wellentunktion von Wasserstoff: $\psi_{0}=\frac{1}{\left(\pi a_{0}^{3}\right)^{\frac{1}{2}}} e^{-\pi / a_{0}}$,
+
+\rho(|r|) & -\left|\psi_{0}(|r|)\right|^{2} \\
+& =\frac{1}{\pi a_{0}^{3}} e^{-\frac{r_{r}}{a_{0}}} \quad a_{0}=\text { Bodr-Radius }
+
+(*) $\Rightarrow \quad f_{\alpha}(|\underline{u}|)=\frac{1}{\left[1+\left(\frac{1}{2} a_{0} k\right)^{2}\right]^{2}}$
+Bennerky
+
+- Ally. hängt dic Intensitätsvateily eines Reflexes von der Eldetrocuvertily $a b \Rightarrow$ Restimmuny von $g(\underline{r})$ bzew. $u(\underline{r})$ in gewissan Grannen.
+- Man findef, dess u(r) un Wesenthick des Ventiley feies Atone entspridnt.
+$-\underline{G} \cdot \underline{r} \rightarrow 0=$ (a) gilt fin Vawäntssticuny $\underline{G} \rightarrow 0$ -
+(b) Nentronenstienny: Atouradius ist Vlain geguniber der wellenlánge unabhängio von den stenveltes.
+

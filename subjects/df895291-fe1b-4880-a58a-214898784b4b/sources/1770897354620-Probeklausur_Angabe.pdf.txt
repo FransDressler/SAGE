@@ -1,0 +1,193 @@
+Probeklausur
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+12.01.2026
+Verwenden Sie f¨ur jede Aufgabe ein
+neues Blatt. Vermerken Sie auf jedem
+Blatt Name und Matrikelnummer.
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Prof. Alexander Holleitner
+1 Fragen zur Zentral¨ubung (8 Punkte)
+Es gen¨ugt die folgenden Fragen in Stichpunkten zu beantworten.
+(a) Nennen Sie zwei experimentelle Methoden, mit denen sich die Gitterstruktur
+an der Oberfl¨ache eines Festk¨orpers bestimmen l¨asst (2 Punkte). Begr¨unden
+Sie f¨ur die von Ihnen gew¨ahlten Methoden kurz, warum diese spezifisch
+oberfl¨achensensitiv sind (2 Punkte).
+(b) Welche Aussage beschreibt die Impulserhaltung bei der Raman-Streuung 1.
+Ordnung in einem idealen Kristall korrekt? (1 Punkt)
+(i) Es k¨onnen Phononen mit beliebigem Wellenvektor q beteiligt sein, da
+der Impuls der Photonen im Kristall vernachl¨assigbar ist.
+(ii) Wegen des kleinen Photonenimpulses tragen n¨aherungsweise nur
+Phononen nahe q « 0 (Zonenzentrum) zum Streuprozess bei.
+(iii) Die Streuung erfordert immer zwei Phononen mit entgegengesetztem
+Wellenvektor `q und ´q, um die Impulserhaltung zu erf¨ullen.
+(iv) Die Impulserhaltung wird durch elastische Elektronenstreuung im
+Kristall sichergestellt.
+(c) Welche der folgenden Aussagen zu Phononen in zweiter Quantisierung ist
+korrekt? (1 Punkt)
+(i) Der Operator a:
+q erzeugt ein Atom mit Impuls ¯hq.
+1
+
+(ii) Phononen sind Fermionen, da sie die gekoppelte Bewegung von
+Elektronen und Atomkernen beschreiben.
+(iii) Da Phononen kollektive Moden sind, ist ihre Besetzungszahl nicht
+wohldefiniert, sondern nur die klassische Schwingungsamplitude.
+(iv) Der Erwartungswert xa:
+qaqy entspricht der mittleren Besetzungszahl einer
+quantisierten Gitterschwingungsmode mit Wellenvektor q.
+(d) Wie skaliert die phononische spezifische W¨arme CV eines zweidimensionalen
+Kristalls bei tiefen Temperaturen T ! ΘD? (1 Punkt)
+(i) CV 9T
+(ii) CV 9T 2
+(iii) CV 9T 3
+(iv) CV ist temperaturunabh¨angig
+(e) Welche der folgenden Aussagen zur Umklapp-Streuung von Phononen ist
+falsch? (1 Punkt)
+(i) Umklapp-Streuung ist ein Drei-Phononen-Prozess, bei dem der
+resultierende Phononenimpuls um einen reziproken Gittervektor
+verschoben wird.
+(ii) Umklapp-Streuung erh¨alt den Kristallimpuls und tr¨agt daher nicht zur
+Begrenzung der W¨armeleitf¨ahigkeit bei.
+(iii) Bei hohen Temperaturen sind Umklapp-Prozesse wahrscheinlicher, da
+die Frequenz der Mehrzahl der angeregten Phononen mit der
+Debye-Frequenz vergleichbar ist.
+(iv) Bei tiefen Temperaturen sind Umklapp-Prozesse unterdr¨uckt, da die
+notwendigen hochenergetischen Phononen nicht thermisch besetzt sind.
+2
+
+2 Verst¨andnisfragen (13 Punkte)
+Es gen¨ugt die folgenden Fragen in Stichpunkten zu beantworten.
+(a) Was ist der Unterschied zwischen der konventionellen und primitiven
+Einheitszelle? (2 Punkte)
+(b) Die Kristallstruktur von Festk¨orpern kann mittels R¨ontgenstreuung ermittelt
+werden. Warum verwenden wir die potentiell gesundheitssch¨adliche
+R¨ontgenstrahlung statt des optischen Lichtes? (1 Punkt)
+(c) In Ionenkristallen sind die h¨aufigsten Fehlstellen Schottky-Defekte. Was sind
+Schottky-Defekte, und warum haben wir keine einzelnen Fehlstellen in
+Ionenkristallen? (2 Punkte)
+(d) Die Fehlstellenanzahl im Kristall ist gegeben durch
+NL “ N eSL{kB e´EL{kB T .
+Erkl¨aren Sie den Ursprung der beiden exponentiellen Terme. (2 Punkte)
+(e) Was ist die Elektronegativit¨at, und wie h¨angt sie von der Atomzahl ab? (2
+Punkte)
+(f) F¨ur die ionische Bindung ist die potentielle Energie pro Ionenpaar gegeben
+durch
+˜U pRq “ ´α q2
+4πε0R ` ZNNλe´R{ρ,
+wobei R der Abstand zum n¨achsten Nachbarn, q die Ladung der Ionen, α die
+Madelung-Konstante und ZNN die Zahl der n¨achsten Nachbaratome ist. Die
+Gleichung gilt rund um R “ R0 und bis R Ñ 8, macht aber falsche
+Vorhersagen f¨ur R ! R0. Die Parameter λ und ρ sind empirische Konstanten.
+I. Diskutieren Sie die physikalische Ursache der attraktiven und repulsiven
+Wechselwirkung in ˜U pRq. (2 Punkte)
+II. Skizzieren Sie den Verlauf des Potentials ˜U pRq und der Kraft F pRq.
+Vernachl¨assigen Sie R Ñ 0, zeichnen Sie aber den Bereich um R “ R0
+und bis R Ñ 8. Markieren Sie R0. Denken Sie daran die Achsen zu
+beschriften. (2 Punkte)
+3
+
+3 Kristallgitter (10 Punkte)
+Abbildung 1 zeigt eine fiktive zweidimensionale Kristallstruktur, die aus
+kugelf¨ormigen Atomen mit Radius rA ą rB “ rC .A B
+C
+Abbildung 1: Fiktive zweidimensionale Kristallstruktur.
+(a) Skizzieren Sie eine primitive Gitterzelle mit den primitiven Gittervektoren
+und geben Sie die zugeh¨origen Basisatome an. (2 Punkte)
+(b) W¨ahlen Sie eine Basis mit m¨oglichst hoher Symmetrie aus und geben Sie die
+Koordinaten der Basisatome als Vielfache der Gittervektoren an. (2 Punkte)
+(c) Welches Bravais-Gitter beschreibt die Translationssymmetrie des
+Punktgitters vollst¨andig? (1 Punkt)
+(d) Beschreiben Sie, wie man die Wigner-Seitz-Zelle erh¨alt, und skizzieren Sie
+diese f¨ur das vorliegende Punktgitter. (2 Punkte)
+(e) Welche Symmetrieeigenschaften der Punktgruppe haben Punktgitter und
+Basis (Dreh- und Spiegeloperationen). Stimmen Basis und Punktgitter in
+ihren Symmetrieeigenschaften ¨uberein? (3 Punkte)
+4
+
+4 Die hcp-Struktur (15 Punkte)
+Abbildung 2 zeigt eine hcp-Struktur. Dabei ist a der Atomabstand innerhalb einer
+Ebene und c der Abstand zweier, senkrecht zur Ebene, ¨ubereinanderliegenden
+Atome.
+Abbildung 2: Die hcp-Struktur.
+(a) Zeigen Sie, dass das Verh¨altnis c
+a in der hcp Struktur
+b8
+3 « 1,633 ist. (7
+Punkte)
+(b) Zeigen Sie, dass der Strukturfaktor einer einatomigen hcp-Struktur jeden der
+sechs Werte Shkl “ f p1 ` e´inπ
+3 q, n “ 1, ..., 6 annehmen kann. Verwenden Sie
+die eingezeichnete Basis des hcp-Gitters mit je einem Atom an den Positionen
+(0, 0, 0) und (1
+3 , 1
+3 , 1
+2 ), angegeben in Einheiten der Gittervektoren. (4 Punkte)
+(c) Zeigen Sie, dass alle reziproken Gitterpunkte in der Ebene parallel zur
+c-Achse, die K “ 0 enth¨alt, einen nicht verschwindenden Strukturfaktor
+haben. (3 Punkte)
+(d) Zeigen Sie, dass es in anderen Ebenen verschwindende Strukturfaktoren gibt.
+(1 Punkt)
+5
+
+5 Bragg Bedingung (9 Punkte)
+Eine Ag3Sn Oberfl¨ache wurde auf eine Messing-Schicht mit 70% Cu und 30% Zn
+gewachsen. Zus¨atzlich wurde dazwischen eine Lage Cu gewachsen. Ein
+R¨ontgenstreuexperiment mit der Wellenl¨ange λ “ 1,541˚A wurde durchgef¨uhrt und
+hat folgende Streuwinkel ergeben (n=1):
+2θ “ 37,61˝ ; 39,5˝ ; 42,41˝ ; 43,27˝
+49,29˝ ; 50,39˝ ; 51,93˝ ; 72,05˝ ; 74,02˝
+Folgende Zwischenebenenabst¨ande sind bekannt
+Material Zwischenebenenabstand (˚A)
+Abstand 1 Abstand 2 Abstand 3
+Messing 2,13 1,85 1,31
+Cu 2,09 1,81 1,28
+Ag3Sn 2,39 2,28 1,76
+Betrachten Sie nur die Streuung erster Ordnung.
+(a) Ordnen Sie die Streuwinkel den verschiedenen Materialien zu. (3 Punkte)
+(b) Verwenden Sie die Ergebnisse des R¨ontgenbeugungsexperiments, um zu
+zeigen, dass Cu in einer fcc-Struktur kristallisiert. (4 Punkte)
+(c) Berechnen Sie die Gitterkonstante f¨ur Cu. (1 Punkt)
+(d) Messing hat dieselbe Struktur wie Cu. Berechnen Sie wie der Zusatz von 30%
+Zn zu Kupfer die Gitterkonstante ¨andert. (1 Punkt)
+6
+
+6 Gitterschwingungen (25 Punkte)
+Betrachten Sie eine lineare Kette mit alternierenden Atomen der Masse M1 und M2
+verkn¨upft ¨uber die Kopplungskonstante C.
+Abbildung 3: Lineare Kette aus zwei alternierenden Atomen der Masse M1 und M2.
+(a) Zeigen Sie, dass die Dispersionsrelation folgende Form besitzt, wenn nur die
+Wechselwirkung der Atome mit ihren unmittelbaren Nachbarn ber¨ucksichtigt
+wird:
+ω2
+˘ “ C
+M1M2
+ˆ
+M1 ` M2 ˘
+b
+M 2
+1 ` M 2
+2 ` 2M1M2 cos qa
+˙
+. (1)
+Verwenden Sie hierzu den L¨osungsansatz unptq “ u0eipqna´ωtq bzw.
+vnptq “ v0eipqna´ωtq. (7 Punkte)
+(b) Skizzieren sie den Verlauf ωpqq. Denken Sie daran die Achsen zu beschriften.
+Tragen Sie auf der x-Achse auch das Zentrum und den Rand der 1.
+Brillouin-Zone ein. Diskutieren Sie den Grenzfall q Ñ 0. Berechnen Sie die
+Steigung der Dispersion dort. (6 Punkte)
+Angabe: cos qa » 1 ´ 1
+2 q2a2... und ?1 ` x » 1 ` 1
+2 x...
+(c) Diskutieren Sie den Grenzfall q Ñ π{a. Beschreiben Sie qualitativ die
+Steigung der Dispersion. (4 Punkte)
+(d) Diskutieren Sie den Grenzfall M1 " M2. (4 Punkte)
+Angabe: ?1 ` x » 1 ` 1
+2 x...
+(e) Wie schwingen die Atome unterschiedlicher Masse relativ zueinander bei
+akustischen und optischen Schwingungen? Skizzieren Sie die Auslenkung der
+beiden Atomsorten f¨ur transversal und longitudinal akustische sowie f¨ur
+transversal und longitudinal optische Gitterschwingungen. (4 Punkte)
+7

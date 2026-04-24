@@ -1,0 +1,151 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing representations of atomic nuclei, particle physics (Standard Model particles), experimental facilities (nuclear reactors, particle accelerators), neutrino research, and cosmological phenomena like the Big Bang and stellar evolution.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Alpha, beta, gamma |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiation, Reactors |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts a scintillation detection setup, showing how incoming radiation interacts with a scintillator to produce light quanta, which are then detected by a photomultiplier tube (PMT). It illustrates the conversion of radiation energy into detectable light signals for measurement.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-03_562_801_283_24.jpg)
+![This diagram depicts the internal structure and components of a particle physics detector, specifically showing the arrangement of various detector elements such as the solenoid, calorimeters, toroids, and inner detector used for tracking and measuring particles in high-energy collisions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-03_605_1138_744_372.jpg)
+![This diagram depicts a Van de Graaff generator setup used for particle acceleration, showing components such as the charge conveyor belt, ion source, evacuated acceleration channel, and analyzing magnet for directing charged particles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-03_730_582_609_1625.jpg)
+
+$$
+\overrightarrow{F_{L}}=q(\vec{E}+\vec{v} \times \vec{B})
+$$
+
+![This diagram depicts a cyclotron, showing the components involved in accelerating ions, including the dees, guide magnetic field, radius of gyration, RF driving force, ion production at the center, extraction electrode, and the path of the extracted ion beam.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-03_639_954_666_2323.jpg)
+
+Detektoren : Prinzip und Realität
+Beschleuniger
+
+## Terrestrische und kosmische Beschleuniger
+
+First successful cyclotron
+(Lawrence, 1931)
+![This image depicts the Crab Nebula, a supernova remnant showing the expanding cloud of gas and dust resulting from the explosion of a massive star. It illustrates the complex structure and composition of the nebula, including filaments of ionized gas and regions of high-energy emission.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-04_1104_1900_525_1208.jpg)
+
+- lineare Kette von leitenden Driftröhren,
+- an Hochfrequenz angeschlossen ,
+- Teilchen entlang Längsachse,
+
+Isings und Wideröes Linearbeschleuniger
+![This diagram depicts a linear accelerator (linac) setup showing the acceleration of ions from an ion source through a series of drift tubes powered by an RF generator, which creates alternating electric fields to accelerate the ions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-05_626_2248_464_819.jpg)
+
+- Hochfrequenz synchron zum Teilchenflug:
+
+Teilchen zwischen Driftröhren, wenn beschleunigendes $\vec{E}$-Feld, sonst im feldfreien Raum einer Driftröhre
+
+- Drifttöhrenlänge wächst mit Teilchengeschwindigkeit
+
+Wideröe hat 1928 den ersten funktionierende Beschleuniger nach Isings Vorschlag gebaut.
+
+## Zyklotron
+
+![This diagram depicts a cyclotron, showing the path of ions produced at the center, their radius of gyration under a guide magnetic field, the RF driving force applied between the "Dees," and the extraction of the accelerated ion beam via an extraction electrode.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-06_1142_1718_427_799.jpg)
+
+![The image depicts two cyclotrons: the first successful cyclotron built by Lawrence in 1931 and a modern 590 MeV cyclotron at the Paul Scherrer Institut, illustrating the evolution of particle accelerator technology.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-07_1343_2244_95_536.jpg)
+Figure 4.6: A first prototype of a cyclotron (by Lawrence) and the 590 MeV isochronous cyclotron at PSI.
+
+## Synchrotron
+
+![This diagram depicts the layout of a synchrotron particle accelerator, showing components such as the electron gun (Elektronenkanone), linear accelerator (LINAC), injection magnet (Injektionsmagnet), acceleration section (Beschleunigungsstrecke), deflection magnet (Ablenkmagnet), focusing magnet (Fokussierungsmagnet), and ejection magnet (Ejektionsmagnet) used to accelerate and direct electrons toward an experimental target.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-08_1077_1423_380_867.jpg)
+Fig. 1.16 Prinzipieller Aufbau eines modernen Synchrotrons. Die Bahn wird durch Ablenkmagnete mit homogenem Feld festgelegt, wïrend die Fokussierung des Strahls durch gesonderte Magnete besorgt wird. Die Beschleu:igung geschieht durch eine oder mehrere kurze HF-Strukturen. Die Teilchen werden von einem Vorbeschleuniger (Linac oder Microtron) geliefert.
+
+## The energy spectrum of Cosmic Rays
+
+![This diagram depicts the cosmic ray energy spectrum, showing the scaled flux of cosmic rays as a function of their energy per particle, with comparisons to energies achieved at various particle accelerators including the LHC. It illustrates cosmic ray energies reaching many orders of magnitude higher than those produced in human-made accelerators, up to center of mass energies around 1000 TeV.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-09_1202_2246_494_888.jpg)
+
+## The energy spectrum of Cosmic Rays
+
+![This diagram is a cosmic ray energy spectrum plot showing the scaled flux of particles as a function of their energy per particle, with annotations comparing the highest energy cosmic rays to the kinetic energy of a football kicked at 100 km/h.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-10_1191_2243_505_888.jpg)
+
+
+![This diagram is a cosmic ray energy spectrum graph showing the flux of cosmic rays as a function of their energy per particle, with annotations marking the "knee," "ankle," and "GZK cut-off" features in the spectrum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-11_1251_2890_447_239.jpg)
+
+## Energien höher aus $10^{18} \mathrm{eV}$ werden nicht mehr vom galaktischen Magnetischen Feld in der Galaxie gehalten
+
+![This diagram depicts the trajectories of 10^18 eV protons traveling through a random nanogauss magnetic field with a 1 Mpc cell size, showing how their paths are deflected over distances measured in megaparsecs (Mpc).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-12_1123_1126_401_526.jpg)
+![The diagram depicts the trajectories of 10^20 eV protons in a random nanogauss magnetic field with a 1 Mpc cell size, showing how these ultra-high-energy protons propagate through such a magnetic environment over distances measured in megaparsecs (Mpc).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-12_1095_1092_424_1776.jpg)
+
+## Super Nóva
+
+- Explosion of a star
+- Energy emission of $10^{51}$ erg or $10^{44}$ Joule
+- $99 \%$ in form of, neutrinos
+- $20-30$ SN explosions per second in the universe
+- 3 SN explosion per 100 years in our galaxy
+
+
+## Active Galactic Nuclei (AGN)
+
+- Active galactic nuclei (AGNs) are compact regions in the centers of galaxies that appear very bright in electromagnetic radiation
+- Regions contain supermassive black holes that accrete surrounding matter, converting gravitational energy into radiation
+- In-falling matter forms an accretion disk. In many AGNs, relativistic jets perpendicular to the disk are observed
+- Example: Quasar, Blazar
+
+
+## Gamma Ray Bursts (GRB)
+
+- GRBs are extremely energetic explosions observed in distant galaxies
+- For a period of $10^{-3}$ to $10^{3}$ seconds they outshine every other source of gamma rays in the Universe
+- They were first detected by a set of military satellites, operated by the US Air Force
+- Long bursts (duration > 2s): associated with the core-collapse of a supermassive star
+- Short bursts ( $<2 \mathrm{~s}$ ): result of two merging neutron stars, or the merging of a neutron star and a black hole
+
+
+## Greisen-Zatsepin-Kuzmin (GZK) Cut-off
+
+> Slowing interactions of CR particle with the CMB
+> $\gamma_{C M B}+p \rightarrow \Delta^{+} \rightarrow p+\pi^{0}$
+> $\gamma_{C M B}+p \rightarrow \Delta^{+} \rightarrow n+\pi^{+}$
+
+Kernphysik
+
+Entstehung von...
+
+- leichten Kernen im frühen Universm ( $10-10^{3}$ sek. nach dem Urknall)
+- Kerne bis Fe in stellaren Brennen (Fusion)
+- schwere Kerne in Supernova und anderen Orten mit extrem hohen Neutronenfluessen
+![This diagram depicts the timeline of the universe from the Big Bang to the present day, showing key stages such as cosmic inflation, formation of particles, dark ages, galaxy formation, and the development of the solar system.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-18_1299_3122_519_125.jpg)
+
+
+## Massenbestimmung durch Massenspekroskopie
+
+![This diagram depicts a mass spectrometer setup, showing the path of ions from the ion source (Ionenquelle) through electric (E) and magnetic (B) fields, leading to their separation and detection at the collector (Auffänger). It illustrates how ions with different mass-to-charge ratios are deflected differently, enabling their identification.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-19_1030_1489_567_270.jpg)
+
+\begin{aligned}
+& r_{\mathrm{E}}=\frac{M}{Q} \cdot \frac{v^{2}}{E} \\
+& r_{\mathrm{M}}=\frac{M}{Q} \cdot \frac{v}{B}
+\end{aligned}
+
+> Radien $r_{E}$ (Coulombkraft im EFeld) und $r_{B}$ durch Lorentzkraft im B-Feld
+
+Alternativ/zusätzlich kann man Kernmassen über Kernreaktionen ermitteln:
+Aus Poch, Seite 15f
+z.B. ${ }^{1} \mathrm{H}+\mathrm{n}->{ }^{2} \mathrm{H}+\gamma$
+
+![This diagram is a nuclear binding energy per nucleon (B/A) curve showing the binding energy as a function of mass number (A) for atomic nuclei, highlighting magic numbers for protons (Z) and neutrons (N). It illustrates the stability of nuclei with peaks at magic numbers where nuclei are more tightly bound.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-20_1837_1398_17_165.jpg)
+Aus Povh S. 19ff
+
+![This diagram depicts the components of nuclear binding energy per nucleon (B/A) as a function of mass number (A), showing the contributions from volume energy, surface energy, Coulomb energy, asymmetry energy, and the total binding energy in the context of the semi-empirical mass formula.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-20_1466_1429_205_1719.jpg)
+Aus Povh S. 19ff
+
+![This diagram depicts the binding energy per nucleon (in MeV) as a function of the mass number (A), illustrating the energy changes involved in nuclear fusion (lighter nuclei combining to form heavier nuclei) and nuclear fission (heavier nuclei splitting into lighter nuclei). The labels "Fusion" and "Spaltung" (German for fission) indicate the regions where energy is released by these respective nuclear processes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/81875c31-1e65-46d4-ad16-b57ae0c15e40/162463ed-01b7-479f-987f-ec226f52b4a0-21_1518_2284_188_622.jpg)
+

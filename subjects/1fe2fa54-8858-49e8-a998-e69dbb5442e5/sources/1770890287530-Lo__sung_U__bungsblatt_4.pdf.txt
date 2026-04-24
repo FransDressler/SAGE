@@ -1,0 +1,372 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 17.11.26
+Blatt 4
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Leonard Geilen
+4.1 Bindungstypen
+Im Festk¨orper kann man zwischen verschiedenen Bindungstypen unterscheiden, die
+jedoch nur selten in reiner Form auftreten. Welche Bindungstypen dominieren in der
+festen Phase der folgenden Materialien: Argon, Magnesium, Diamant, kristalliner
+Quarz, Quarzglas, Polyethylen, GaAs, KBr und NH3?
+L¨osung
+• Argon: Van-der-Waals Bindung. Argon Atome besitzen Edelgaskonfiguration.
+• Magnesium: Metallische Bindung. Das Magnesium besitzt zwei schwach
+gebundene Außenelektronen. Diese bilden im Metall ein Elektronengas aus.
+• Diamant: Kovalente Bindung. Die Kohlenstoff Atome liegen in einer sp3-
+Hybridisierung vor.
+• Quarzkristall: Polare kovalente Bindung. Der Grundbaustein des Quarzkristall
+ist das SiO4-Tetraeder (siehe Abb. 1a). Die Si – O Bindung ist stark polar, da
+die Elektronegativit¨at des Sauerstoffs χ = 3.44 deutlich ¨uber der des Siliziums
+χ = 1.90 liegt (Es wird die Pauling-Skala f¨ur die Elektronegativit¨at verwendet).
+• Quarzglas: Polare kovalente Bindung. Amorphes Quarz besteht aus SiO4-
+Tetraedern, die jedoch kein Gitter bilden.
+• Polyethylen: Kovalente C – C Bindungen, polare kovalente C – H Bindungen,
+Van-der-Waals Bindungen zwischen den Molek¨ulen (siehe Abb. 1b).
+
+• GaAs: Polare kovalente sp3-Orbitalbindung.
+• KBr: Ionenkristall. KBr ist ein Alkali-Halogenid aus zwei einfach geladenen
+Ionen mit ann¨ahernd kugelsymmetrischer Ladungsverteilung.
+• NH3: Polare kovalente N – H Bindung, Wasserstoffbr¨uckenbindung zwischen
+den NH3-Molek¨ulen ¨uber freies Elektronenpaar am Stickstoffatom.
+(a) SiO4-Tetraheder (b) Polyethylen
+Abbildung 1: Verschiedene Bindungstypen.
+4.2 Born-Haber Kreisprozess
+Die Bindungsenergie von Ionenkristallen kann mit Hilfe des Born-Haber Kreisprozesses
+ermittelt werden. Berechnen Sie mit diesem Verfahren die Bindungsenergie eines
+1 cm3 großen KBr Kristalls in eV. Dieser besitzt eine Dichte ρ = 2.75 g cm−3.Die
+folgenden Gr¨oßen beziehen sich jeweils auf ein Atom bzw. auf ein Molek¨ul:
+• Ionisierungsenergie von Kalium (K −−→ K+) |∆HIon| = 4.34 eV,
+• Sublimationsenthalpie von Kalium |∆HSub| = 0.90 eV,
+• Verdampfungsenthalpie von Brom |∆HVap| = 0.30 eV,
+• Elektronenaffinit¨at von Brom (Br −−→ Br– ): |∆HAff| = 3.37 eV,
+• Dissoziationsenergie von Br2 |∆HDiss| = 1.97 eV,
+
+• Reaktionsw¨arme bei der Bildung von KBr aus metallischem Kalium und fl¨ussigem
+Brom |Q| = 4.05 eV.
+Beschreiben Sie kurz die Energien die im Prozess freigesetzt oder aufgewendet wer-
+den. Zeichnen Sie ein Schema des Prozesses mit der Enthalpie¨anderung als vertikale
+Achse.
+L¨osung
+Der Born-Haber Kreisprozess ist ein Schema, das zur Bestimmung von experimentell
+schwer zug¨anglichen Eigenschaften (z.B. Elektronenaffiniti¨aten) benutzt wird. Es
+verkn¨upft thermodynamische Zustandsgr¨oßen in einem (hypothetischem) Kreisprozess.
+Jede Gr¨oße kann daher bestimmt werden, sofern die anderen bekannt sind. Das Ver-
+fahren ist nach seinen Entwicklern Fritz Haber (1868-1934) und Max Born (1882-
+1970) benannt.
+Gesucht ist die Bindungsenergie EBind eines KBr Kristalls. Folgende Energien
+sind bekannt:
+∆HIon = 4.34 eV, Umwandlung K −−→ K+
+∆HAff = 3.37 eV, Umwandlung Br −−→ Br–
+∆HSub = 0.90 eV, Umwandlung K(gas) −−→ K(fest)
+∆HVap = 0.30 eV, Umwandlung Br2(fl¨ussig) −−→ Br2(gas)
+∆HDiss = 1.97 eV, Umwandlung Br2 −−→ 2 Br
+Q = 4.05 eV, Reaktion K(fest)+ Br(fl¨ussig) −−→ KBr
+Die Abbildung stellt ein fiktives Prozess da. Ausgehend vom Kaliumbromid-
+kristall KBr, wird zun¨achst die Bindungsenergie aufgewendet, um ein Ionengas zu
+erzeugen. Danach wird die Elektroaffinit¨at von Brom ben¨otigt um das Ion zu neu-
+tralisieren. Das positiv geladen Kalium Ion setzt die Ionisierungsenergie frei beim
+Einfangen eines Elektrons. Brom bildet dann Br2 Molek¨ule, dabei wird die Dissozi-
+ationsenergie frei. Nun kondensiert das Brom Gas zu einer Fl¨ussigkeit, wobei die
+Verdampfungsenthalpie frei wird. Das Kalium kondensiert und setzt dabei die Sub-
+limationsenthalpie frei. Im letzten Schritt reagiert dann das festes Kalium mit dem
+Brom Gas und bilden ein Kaliumbromidkristall. Hierbei wird die Reaktionsw¨arme
+frei. Es gilt:
+• Positive Energien m¨ussen aufgewendet werden.
+• Negative Energien werden frei.
+
+Abbildung 2: Born-Haber Kreisprozess
+• Die Summe aller Energien muss verschwinden.
+Daraus folgt:
+0 = ∆HBind/Molek¨ul − ∆HIon − ∆HSub − ∆HVap
+2 + ∆HAff − ∆HDiss
+2 − Q
+→ ∆HBind/Molek¨ul = ∆HIon + ∆HSub + ∆HVap
+2 − ∆HAff + ∆HDiss
+2 + Q
+∆HBind/Molek¨ul = 7.055 eV
+Nun muss man noch die Anzahl der KBr-Molek¨ule im 1 cm3 großen Kristall bestim-
+men um die absolute Bindungsenergie EBind zu bestimmen.
+EBind = 7.055 eV · ρ · V
+M · NA = 7.055 eV · 2.75 g cm−3 · 1 cm3
+119 g mol−1 · NA
+= 9.8 × 1022 eV = 15.7 kJ
+Die molare Masse von KBr betr¨agt M = 39.1 g mol−1 + 79.9 g mol−1 = 119 g mol−1.
+
+4.3 sp2-Hybridisierung in Graphit
+Graphit besteht aus Kohlenstoffschichten, bei denen die Atome in einem hexago-
+nalen Gitter angeordnet sind. Innerhalb einer Schicht (x-y-Ebene) sind die Kohlen-
+stoffatome stark ¨uber kovalente Bindungen gebunden. Wobei in dem hexagonalen
+Gitter jedes Kohlenstoffatom eine Bindung mit drei Nachbaratomen eingeht. Die
+Schichten sind wiederum nur schwach durch Van-der-Waals-Kr¨afte gebunden.
+Die dreiz¨ahlig symmetrische Anordnung (bzgl. der z-Achse) der Bindungen um ein
+Kohlenstoffatom bezeichnet man als sp2-Hybridisierung. Sie l¨asst sich als durch eine
+Linearkombination der drei konventionellen Orbitale
+|ϕ2s⟩ = 1
+4√2π
+
+2 − Zr
+aB
+
+e− Zr
+2aB
+|ϕ2px ⟩ = 1
+4√2π
+Zr
+aB
+e− Zr
+2aB sin θ cos φ
+|ϕ2py ⟩ = 1
+Zr
+2aB sin θ sin φ
+darstellen.
+(a) Sind die angegeben Orbitale schon normiert und orthogonal? Was muss gegebe-
+nenfalls angepasst werden?
+(b) Formen sie die Hybrid-Orbitale als Linearkombination der konventionellen Or-
+bitalen. Dabei soll |Φ1⟩ entlang der x-Achse zeigen. Hinweis Damit |Φ1⟩ in
+x-Richtung zeigt, hat es keinen Beitrag von |ϕ2py ⟩. ϕ2s ist kugelsymmetrisch
+und tr¨ag zu gleichen Teilen zu den drei Hybridorbitalen bei. Die Hybridorbitale
+m¨ussen ihrerseits wieder normalisiert und orthonormal zu einander sein.
+(c) Freiwillig: Skizzieren Sie den Querschnitt der Orbitale |Φi⟩ in der xy-Ebene.
+Dabei kann |Φi(r, θ, φ)|2 nicht wie bei den konventionellen Orbitalen in einen
+radial und winkelabh¨angigen Teil faktorisiert werden. Es lohnt sich also die
+Orbitale mit einer Plotting Software f¨ur verschiedene r/aB .
+(a) Die angegebenen Orbitals sind zwar orthogonal aber nicht normiert. Es fehlt
+ein Faktor (Z/aB )3/2.
+
+(b) Zun¨achst kann man die drei Hybridorbitale |Φ1,2,3⟩ als allgemeine Linearkom-
+bination der konventionellen Orbitale schreiben.
+|Φ1⟩ = a1 |ϕ2s⟩ + b1 |ϕ2px ⟩ + c1 |ϕ2py ⟩
+|Φ2⟩ = a2 |ϕ2s⟩ + b2 |ϕ2px ⟩ + c2 |ϕ2py ⟩
+|Φ3⟩ = a3 |ϕ2s⟩ + b3 |ϕ2px ⟩ + c3 |ϕ2py ⟩
+Da |ϕ2s⟩ sowohl von θ als auch φ unabh¨angig ist und damit kugelsymmetrisch
+zum Ursprung muss es zu gleichen Anteilen in allen drei Hybridorbitale einge-
+hen. Somit ergibt sich f¨ur a1,2,3
+⟨ϕ2s|Φ1⟩ = ⟨ϕ2s|Φ2⟩ = ⟨ϕ2s|Φ3⟩ = a1 = a2 = a3
+| ⟨ϕ2s|Φ1⟩ |2 + | ⟨ϕ2s|Φ2⟩ |2 + | ⟨ϕ2s|Φ3⟩ |2 = 1 → a2
+1 = a2
+2 = a2
+3 = 1
+3
+a1 = a2 = a3 = 1
+√3
+Da wir |Φ1⟩ entlang der x-Achse liegend definiert haben muss die |ϕ2py ⟩-Kontribution
+verschwinden, also c1 = 0 sein.
+Schließlich muss |Φ1⟩ noch normiert sein:
+⟨Φ1|Φ1⟩ = a2
+1 + b2
+1
+!
+= 1 = 1
+3 + b2
+1 → b1 =
+r2
+3
+Nun m¨ussen die anderen beiden Hybridorbitale orthogonal zu |Φ1⟩ sein es gilt
+also:
+⟨Φ2|Φ1⟩ = a1a2 + b1b2
+!
+= 0
+⟨Φ3|Φ1⟩ = a1a3 + b1b2
+= 0
+Folglich sind
+b2 = −a1a2
+b1
+= − 1/3
+p2/3 = − 1
+√6
+b3 = −a1a3
+b1
+= − 1/3
+p2/3 = − 1
+√6.
+
+Die Normalisierung von |Φ2⟩ und |Φ3⟩ ergibt dann
+⟨Φ2|Φ2⟩ = a2
+2 + b2
+2 + c2
+2
+= 1
+c2
+2 = 1 − (a2
+2 + b2
+2) = 1 −
+1
+3 + 1
+6
+
+= 1
+2
+undanalog c2
+3 = 1
+2.
+Damit sich |Φ2⟩ und |Φ3⟩ unterscheiden w¨ahlen wir f¨ur c2 = +1/√2 die positive
+L¨osung und c3 = −1/√2 die negative L¨osung. Die drei Hybridorbitale als
+Linearkombination der Konventionellen sind also:
+|Φ1⟩ = 1
+√3 |ϕ2s⟩ +
+r2
+3 |ϕ2px ⟩
+|Φ2⟩ = 1
+√3 |ϕ2s⟩ − 1
+√6 |ϕ2px ⟩ + 1
+√2 |ϕ2py ⟩
+|Φ2⟩ = 1
+√3 |ϕ2s⟩ − 1
+√6 |ϕ2px ⟩ − 1
+√2 |ϕ2py ⟩ .
+(c) Die Amplitudenquadrate der drei Hybrid-Orbitale sind in Abbildung 3 zu se-
+hen. Um den Schnitt durch die Orbitale in die xy-Ebene zu legen muss θ = π/2
+gew¨ahlt werden. Bei Kohlenstoff ist die Kernladungszahl Z = 6. Im Gegensatz
+zu den konventionellen Orbitalen lassen sich die Hybrid-Orbitale nicht in einen
+Radialteil und Kugelfl¨achenfunktionen aufteilen. Man muss f¨ur eine polare
+Projektion von |Φi|2 ¨uber φ also noch ein festes r/aB w¨ahlen, das Beispiel hier
+ist r/aB = 0.2.
+
+0°
+45°
+90°
+135°
+180°
+225°
+270°
+315°
+0.2 0.4 0.6 0.8 1.0 1.2 1.4
+|Φ1|2
+|Φ2|2
+|Φ3|2Abbildung 3: Amplitudenquadrate der drei Hybrid-Orbitale |Φi⟩ bei θ = π/2 und
+r/aB = 0.2
+4.4 Eindimensionaler Ionenkristall
+Betrachten Sie eine Kette aus 2N Ionen mit der abwechselnden Ladung ±q und dem
+abstoßenden Potential A/Rn zwischen n¨achsten Nachbarn.
+1 2 N
+R −q +q
+Abbildung 4: Eindimensionaler Ionenkristall aus 2N Ionen
+(a) Berechnen Sie zun¨achst die Madelung-Konstante α f¨ur den unendlich aus-
+gedehnten, eindimensionalen Ionenkristall.
+
+(b) Zeigen Sie, dass f¨ur den Gleichgewichtsabstand Kristalls folgendes gilt:
+U (R0) = −2 ln 2 N q2
+4πϵ0R0
+
+1 − 1
+n
+Gehen Sie davon aus, dass f¨ur große N und unter Vernachl¨assigung von Ran-
+deffekten dieselbe Madelung-Konstante verwendet werden kann wie in a).
+(a) • Abstand zwischen n¨achsten Nachbarn: R
+• Unendlich ausgedehnter, eindimensionaler Ionenkristall: N → ∞
+• Madelung-Konstante: α
+• Coulomb-Energie eines Ions mit allen Nachbarn: E ≈ −α · q2
+4πε0R
+• Berechnung der Madelung-Konstante:
+α = 2 ·
+∞X
+j̸ =i
+i=0
+1
+˜αij
+= 2 ·
+∞X
+j̸ =i
+i=0
+(−1)j+1
+xj /R (1)
+Der Faktor 2 wird hinzugef¨ugt, da jeweils ein benachbartes Ion in positiver
+beziehungsweise negativer Richtung beitr¨agt.
+• Aus (1) folgt
+α = −2 ·
+(−1)j
+xj /R
+= −2 ·
+
+
+
+− 1
+R/R
+| {z }
+⊖
++ 1
+2R/R
+| {z }
+⊕
+− 1
+3R/R
+⊖
++ 1
+4R/R
+⊕
+∓...
+
+
+
+
+= −2 ·
+
+− 1
+1|{z}
+2|{z}
+− 1
+3|{z}
+4|{z}
+∓...
+
+
+= −2 · [− ln 2]
+
+• Ergebnis f¨ur die Madelung-Konstante α:
+α = 2 · ln 2 (2)
+(b) • F¨ur das Potenzial U (R) gilt
+U (R) = U1 (R) + U2 (R) = 2N A
+Rn − 2N ln (2) q2
+4πε0R (3)
+• Repulsiver Beitrag von ¨Uberlappung innerer Elektronenschalen:
+U1 (R) = 2N A
+Rn
+Der Faktor 2N ergibt sich folgendermaßen: Das Potential pro Ionenpaar
+ber¨ucksichtigt 2 n¨achste Nachbarn → Faktor 2. Da dieses Potential pro
+Ionenpaar gilt, kommt der Faktor N f¨ur die Anzahl der Paare hinzu.
+• Attraktiver Beitrag von der Coulomb-Wechselwirkung:
+U2 (R) = −2N ln (2) q2
+4πε0R
+Der Faktor N kommt f¨ur die Anzahl der Paare hinzu.
+• Im Kr¨aftegleichgewicht gilt
+0 !
+=
+
+−dU (R)
+dR
+
+R=R0
+(4)
+, wobei R0 den Gleichgewichtsabstand darstellt.
+• Aus (3) und (4) wird der Faktor A bestimmt.
+0 !
+= 2N nA
+Rn+1
+0
+− 2N ln (2) q2
+4πε0R2
+0
+nA
+Rn+1
+= ln (2) q2
+4πε0R2
+A = ln (2)
+n
+q2
+4πε0
+Rn−1
+
+• Einsetzen von A in Gleichung (3) f¨ur R = R0 ergibt
+U (R0) = 2N ln (2) 1
+q2
+4πε0R0
+− 2N ln (2) q2
+4πε0R0
+U (R0) = −2 ln (2) N q2
+4πϵ0R0
+1 − 1
+(5)

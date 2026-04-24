@@ -1,0 +1,170 @@
+## Vorlesung 12: 20.01.2026
+
+## Wiederholung 1:
+
+## Helizität
+
+$$
+h=\frac{\vec{s} \cdot \vec{p}}{|\vec{s}||\vec{p}|}
+$$
+
+Projektion von Spin in Bewegungsrichtung, $h= \pm 1$ für parallele/ antiparallele Ausrichtung.
+
+Man findet also ein Bezugssystem, in dem sich die Helizität umkehrt (= Helicity flip). Dies ist möglich für $v<c$. Der Anteil, an der jeweils anderen Helizität skaliert mit $\frac{m}{E}$, sprich je höher die Ruhemasse und je kleiner die Energie (Geschwindigkeit) ist.
+![This diagram depicts the precession of a spin vector \(\vec{S}\) around the z-axis under the influence of a magnetic field or angular momentum vector \(\vec{p}\), illustrating the concept of spin precession in quantum mechanics or classical magnetic resonance.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/94397e73-02c6-4c8b-8d3a-7fce8f91513c/a542132e-d702-4e62-8a0a-63a69a8dd896-1_583_817_1352_632.jpg)
+
+Mott Elektron hat Spin $1 / 2$, Kern hat keinen Spin. Damit kann der Spin im Streuprozess nicht umgekehrt werden. Falls also $\vec{p} \rightarrow-\vec{p}$, dreht sich auch die Helizität um $h: 1 \rightarrow-1$. Dies ist bei $v \approx c$ allerdings nicht möglich.
+$\Rightarrow 180^{\circ}$-Streuung ist vollkommen unterdrückt. Bei masselosen Teilchen ist Spin fest an Impuls gebunden, wohingegen bei massebehafteten Teilchen sich immer ein Bezugssystem finden lässt, in dem sich die Helizität umdreht.
+
+Wiederholung 2: Formfaktoren bei Kernen
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{exp}}=\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{Mott}} \cdot\left|F^{2}\left(\vec{q}^{2}\right)\right|^{2}
+
+sobald $|\vec{q}|$ größer wird, wird $\lambda=\frac{\hbar}{|q|}$ kleiner.
+Damit nimmt die Auflösung zu und die Struktur des Kerns wird unersucht. Das virtuelle Photon sieht nur einen Teil der Ladung ⇒ Wechselwirkung wird kleiner!
+
+|\vec{F}(\vec{q})| \leq 1
+
+\left|F\left(\vec{q}^{2}\right)\right|=\int e^{i \vec{q} \cdot \vec{x} / \hbar} f(\vec{x}) d^{3} x
+
+In Kugelsymmetrischer Näherung erhält man
+
+\begin{aligned}
+& F\left(q^{2}\right)=4 \pi \int f(r) \frac{\sin (|q| r / \hbar)}{|q| r / \hbar} r^{2} d r \\
+\Rightarrow & f(r)=\int F\left(\vec{q}^{2}\right) e^{-i \vec{q} \cdot \vec{x} / \hbar} d^{3} q \quad \text { (radiale Ladungsverteilung) }
+\end{aligned}
+
+Bei homogener Kugel mit Radius $R$ ergibt sich ein Minimum in $F\left(\vec{q}^{2}\right)$ bei $|q| \approx 4,5 \frac{\hbar}{R}$.
+Bei ${ }^{12} \mathrm{C}$ : $E=420 \mathrm{MeV}$ und $51^{\circ}$ ergibt sich
+
+\begin{gathered}
+|q|=2|p| \sin \theta / 2 \\
+=2 \frac{E}{c} \sin \theta / 2 \\
+=\frac{400 \mathrm{MeV}}{c} \\
+R \approx 4.5 \frac{\hbar}{q} \approx 4.5 \cdot \frac{197}{400} \mathrm{fm} \approx 2.3 \mathrm{fm}
+\end{gathered}
+
+Aus genaueren Vermessungen der Kerne ergibt sich folgender Zusammenhang (siehe auch Weizäcker Massenformel)
+
+R \approx 1.21 \cdot A^{1 / 3} \mathrm{fm}
+
+Ladungsdichte
+
+\rho_{N} \approx 0.17 \text { Nukleonen } / \mathrm{fm}^{3}
+
+(Auch möglich ist inelastische Streuung: Größere Energieüberträge durch Anregung von Kernen.)
+![This diagram depicts a momentum spectrum for the reaction e + ¹²C → e' + ¹²C, showing the number of events as a function of the scattered electron momentum (p') with labeled energy levels corresponding to excited states of the ¹²C nucleus.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/94397e73-02c6-4c8b-8d3a-7fce8f91513c/a542132e-d702-4e62-8a0a-63a69a8dd896-2_891_899_1398_584.jpg)
+
+### 2.8 Elastische Streuung am Nukleon
+
+Wie ist ein Nukleon aufgebaut? Formfaktoren von Nukleonen Streuung von $e^{-}$an Protonen und Deuteronen (Neutronen!)
+Challenge: Ausdehnung von Nukleonen, und damit Ladung, ist $<1 \mathrm{fm}$.
+⇒ hohe Energie $100 \mathrm{Mev}-1 \mathrm{GeV} \approx M_{p}=938 \mathrm{MeV} / \mathrm{c}^{2}$
+⇒ Targetrückstoß kann nicht mehr vernachlässigt werden.
+
+q^{2}=2 m_{e}^{2} c^{2}-2\left(E E^{\prime} / c^{2}-|p|\left|p^{\prime}\right| \cos \theta\right) \approx-\frac{4 E E^{\prime}}{c^{2}} \sin ^{2}(\theta / 2)
+
+Aus dem Dreierimpuls wird ein Viererimpuls $\vec{q}^{2} \rightarrow q^{2}$. Konvention $Q^{2}=-q^{2}$.
+Magnetisches Moment
+
+\mu=g \frac{e}{2 M} \frac{\hbar}{2}
+
+(Spin 1/2 Teilchen)
+Bei magnetischer WW gilt Umklappen der Nukleonenspins
+$\Rightarrow 0^{\circ}$ ist nicht möglich, $180^{\circ}$ stark favorisiert. Für Elektronenstreuung an Spin $1 / 2$ und punktförmigen Teilchen gilt
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\operatorname{Spin} 1 / 2 \text { Punkt }}=\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{Mott}} \cdot(1+2 \underbrace{\frac{Q^{2}}{2 M^{2} c^{2}}}_{\tau} \tan ^{2} \frac{\theta}{2})
+
+Mit entsprechenden Formfaktoren bei ausgedehnten Nukleonen
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\operatorname{Spin} 1 / 2}=\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{Mott}} \cdot\left[\frac{G_{E}^{2}\left(Q^{2}\right)+\tau G_{M}\left(Q^{2}\right)}{1+\tau}+2 \tau G_{M}\left(Q^{2}\right) \tan ^{2} \frac{\theta}{2}\right],
+
+(Rosenbluth-Formel)
+$G_{\mathrm{E} / \mathrm{B}}$ steht für elektrischen/ magnetischen Formfaktor, siehe auch 1.
+
+![This diagram is a plot of nucleon electromagnetic form factors, showing the electric and magnetic form factors of the proton and neutron (G_E^p, G_M^p, G_M^n) as functions of the squared momentum transfer Q². It is used to study the internal charge and magnetization distributions of nucleons.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/94397e73-02c6-4c8b-8d3a-7fce8f91513c/a542132e-d702-4e62-8a0a-63a69a8dd896-3_678_832_1043_493.jpg)
+Povh Abb 6.1
+
+Typische $q^{2}$ Verteilung Dipol $\frac{1}{(1+q)^{2}} \hat{=} f(r)$ Verteilung $\exp (-a r)$
+⇒ Nukleonen sind:
+
+- nicht punktförmig
+- nicht homogen geladene Kugeln
+
+⇒ sehr diffuse Objekte !?
+
+\sqrt{\left\langle r^{2}\right\rangle_{p}} \approx 0.88 \mathrm{fm}
+
+### 2.9 Tiefinelastische Streuung (DIS)
+
+\lambda \ll R, Q \gg \frac{\hbar}{R^{2}} \Rightarrow E \gtrsim 5 \mathrm{GeV}
+
+![This diagram depicts a differential cross-section measurement for electron scattering at an energy of 4.879 GeV and scattering angle of 10 degrees, showing resonance peaks and elastic scattering contributions as a function of scattered electron energy and invariant mass W.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/94397e73-02c6-4c8b-8d3a-7fce8f91513c/a542132e-d702-4e62-8a0a-63a69a8dd896-4_585_976_194_502.jpg)
+
+Angeregte Nukleonenzustände
+$\overline{\text { Bei sehr hoher Elektronenenergie: elastische Streuung }}$
+Maxima bei kleineren Energien: inelastische Anregungen der Nukleonen $=$ Nukleonenresonanz
+Existenz von Resonanz ⇒ Nukeon ist ein zusammengesetzes System
+
+Invariante Masse $W$
+
+W c^{2}=P^{\prime 2}=(P+q)^{2}=M^{2} c^{2}+2 P q+q^{2}=M c^{2}+M \nu-Q^{2} \text { mit } \nu=\frac{P q}{M}
+
+Im Ruhezustand des Protons $P(M c, 0) q\left(\left(E-E^{\prime}\right) / c, \vec{q}\right.$ ist
+
+\nu=E-E^{\prime}
+
+die Energie, die auf ein Nukleon übertragen wird. Definition von zwei Größen
+
+\begin{aligned}
+& y:=\frac{q}{P_{p}}=1-\frac{E^{\prime}}{E} \\
+& x:=\frac{Q^{2}}{2 P q}=\frac{Q^{2}}{2 M \nu}
+\end{aligned}
+
+(Bjorken-Skalierung)
+$x$ ist hierbei ein Maß für wie inelastisch der Prozess ist.
+
+\text { elastisch: } & W=M \Rightarrow x=1 \\
+\text { inelastisch: } & W>M \Rightarrow 0<x<1
+
+Beispiel: sogenannte $\Delta(1232)$ Resonanz
+
+W=1232 \mathrm{MeV} / \mathrm{c}^{2}
+
+Betrachte folgende Ladungszustände
+
+\Delta^{++} \Delta^{+} \Delta \Delta^{-}
+
+Sehr breiter Peak und äußerst kurze Lebenszeit
+
+& \Gamma \approx 120 \mathrm{MeV}, \quad \tau=\frac{\hbar}{\Gamma} \approx 5.5 \cdot 10^{-24} \mathrm{~s} \\
+& \Delta^{+} \rightarrow p+\Pi, \quad \Delta^{+} \rightarrow n+\Pi^{+}
+
+Jetzt das Interessante: hohes $W$, kleines $x$ um Struktur immer besser aufzulösen. $=$ tiefinelastische Streuung Zwei Parameter bei inelastisch ( $Q^{2}, x$ ) statt nur $\theta$
+Parametrisierung heute:
+
+\left(\frac{d^{2} \sigma}{d Q^{2} d x}\right)=\frac{4 \pi \alpha^{2} \hbar^{2}}{Q^{4}}\left[\left(\frac{1-y}{x}-\frac{M y}{2 E} F_{2}\left(x, Q^{2}\right)\right)+\mu^{2} F_{1}\left(x, Q^{2}\right)\right]
+
+$F_{2,1}$ sind wieder die elektrischen bzw. magnetischen Strukturfaktoren.
+Messung von $\sigma$ bei verschiedenen $x$ und $Q^{2}$ und auch $y$ lieferten die Haupterkenntnisse (siehe Plot):
+
+1. Bei festen $x$ (also bei bestimmten Grad an Inelastizität) bleibt $F_{2}$ konstant, wenn man $Q^{2}$ ändert
+
+![This diagram is a plot of the proton structure function \( F_2^p(x, Q^2) \) as a function of the Bjorken scaling variable \( x \) for a range of momentum transfer squared \( Q^2 \) between 2 and 18 (GeV/c)\(^2\), showing how the distribution of quarks inside the proton varies with \( x \).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/94397e73-02c6-4c8b-8d3a-7fce8f91513c/a542132e-d702-4e62-8a0a-63a69a8dd896-5_670_721_283_529.jpg)
+Povh Abb 7.2
+
+Konstituenten in Nukleonen sind punktförmig
+2. Bei Spin $1 / 2$ Teilchen gilt
+
+\begin{array}{r}
+2 x F_{1}(x)=F_{2}(x) \\
+\frac{2 x F_{1}}{F_{2}} \approx 1
+\end{array}
+
+(Callan-Gross-Beziehung)
+![This diagram is a plot of the ratio \( \frac{2xF_1}{F_2} \) as a function of the variable \( x = \frac{Q^2}{2M\nu} \), showing experimental data points for different ranges of the squared four-momentum transfer \( Q^2 \) in GeV\(^2\)/c\(^2\). It is related to deep inelastic scattering experiments used to study the structure functions \( F_1 \) and \( F_2 \) of nucleons.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/94397e73-02c6-4c8b-8d3a-7fce8f91513c/a542132e-d702-4e62-8a0a-63a69a8dd896-5_766_650_1416_529.jpg)
+
+Povh Abb 7.3
+
+Die punktförmigen Konstituenten haben Spin 1/2
+

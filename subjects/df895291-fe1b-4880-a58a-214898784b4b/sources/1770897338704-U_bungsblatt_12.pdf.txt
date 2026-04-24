@@ -1,0 +1,105 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Blatt 12
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und -materialien
+Impuls von Blochelektronen, Bewegungsgleichung, Drude Modell, Sommerfeld-
+Modell, Boltzmann
+12.1 Blochelektronen
+Ein Elektron befinde sich im leeren Leitungsband eines Kristalls und vollziehen nur
+unter der Wirkung eines konstanten elektrischen Feldes E Bloch-Oszillationen:
+(a) Unter welchen Bedingungen k¨onnten Bloch-Oszillationen in einem realen drei
+dimensionalen metallischen System auftreten.
+(b) Stelle die Bewegungsgleichung des Kristallelektrons auf.
+(c) Die Dispersionsrelation EL(k) des Leitungsbandes kann fur den Fall eines ”schwachen”
+Gitterpotenzials kosinusf¨ormig gen¨ahert werden. Zeichnen Sie in dieser N¨aherung
+die Dispersionsrelation entlang der kx-Richtung und tragen Sie in Ihrer Skizze
+die Grenze der ersten Brillouin-Zone ein.
+(d) Bestimmen Sie die Periodendauer T und die r¨aumliche Amplitude A der Oszil-
+lation.(Elektrischen Feld E = 6V/cm, Gitterkonstante a = 0.3nm und Band-
+breite W = 6eV).
+12.2 Drude-Modell
+Das Drude-Modell verwendet die Annahme, dass nach allen St¨oßen die Bewegungsrich-
+tung der Elektronen vollst¨andig zuf¨allig ist, also gilt unmittelbar nach einem Stoß
+⟨vx, vy, vz ⟩ = 0. Eine weitere Annahme ist, dass die St¨oße inelastisch sind: Es
+wird angenommen, dass jeder Stoß die kinetische Energie des Elektrons auf densel-
+ben Wert 1
+2 mv2
+i reduziert (dieser steht in Zusammenhang mit der Temperatur der
+Probe). W¨urden wir hingegen elastische St¨oße annehmen, so w¨urde die kinetische
+Energie der Elektronen im Beisein eines elektrischen Feldes st¨andig zunehmen und
+f¨ur große Proben nahezu unbegrenzt anwachsen.
+
+(a) Wir nehmen ein elektrisches Feld Ex an, das in x-Richtung zeigt. Wie bekannt,
+bewirkt dieses Feld eine Verschiebung von vx um den Betrag −eExt
+m w¨ahrend
+einer Zeit t. Berechnen Sie die Zunahme der kinetischen Energie w¨ahrend der
+Zeit t
+∆E(t) = 1
+2m v(t)2 − v(0)2 , (1)
+wenn die Anfangsgeschwindigkeit gegeben ist durch
+v(0) = vi(sin θ cos ϕ, sin θ sin ϕ, cos θ). (2)
+Zeigen Sie, dass unter der Annahme, dass die Richtung von v(0) zuf¨allig ist,
+der mittlere Energiezuwachs w¨ahrend der Zeit t gegeben ist durch
+⟨∆E(t)⟩ = e2E2
+xt2
+2m . (3)
+(b) Wie lautet die Wahrscheinlichkeitsdichtefunktion f¨ur die Zeit zwischen zwei
+aufeinanderfolgenden St¨oßen eines einzelnen Elektrons?
+Hinweis: Wir modulieren die St¨oße als Poisson-Prozess mit Rate 1/τ , genau wie
+man ¨Uberg¨ange durch eine Tunnelbarriere in einfachen Modellen als Poisson-
+Prozess mit Rate Γ beschreibt.
+(c) Berechnen Sie die mittlere Zeit zwischen zwei St¨oßen.
+(d) Verwenden Sie die Ergebnisse aus (a) und (b), um die mittlere Energie zu
+berechnen, die ein Elektron zwischen zwei St¨oßen gewinnt.
+(e) Unter der Annahme, dass die gesamte zwischen zwei St¨oßen gewonnene En-
+ergie beim zweiten Stoß an das Gitter abgegeben wird, zeigen Sie, dass der
+mittlere Energietransfer von den Elektronen auf die Probe pro Volumen und
+pro Sekunde gegeben ist durch σE2
+x, wobei σ = ne2τ
+m die Leitf¨ahigkeit ist und
+n die Elektronendichte bezeichnet.
+
+(f) Zeigen Sie, dass sich daraus f¨ur die gesamte pro Sekunde dissipierte Energie
+in einer leitf¨ahigen Probe der L¨ange L und des Querschnitts A das bekannte
+Ergebnis ergibt
+P = I2R, (4)
+wobei R der Gesamtwiderstand der Probe ist.
+12.3 Bloch-Oszillationen
+In der quasi-klassischen Beschreibung eines Wellenpakets, das um einen bestimmten
+Quasiimpuls k zentriert ist, gilt f¨ur die Gruppengeschwindigkeit
+˙r = 1
+¯h
+∂εk
+∂k , (1)
+w¨ahrend sich der Quasiimpuls gem¨aß
+¯h ˙k = Fext (2)
+¨andert, wobei Fext die Kraft durch die angelegten externen Felder (zus¨atzlich zum
+periodischen Potential) ist.
+(a) Wir betrachten das eindimensionale Tight-Binding-Modell mit der Dispersion-
+srelation
+εk = −2t cos(ka). (5)
+Zeigen Sie, dass ein homogenes elektrisches Feld die Elektronen nicht dauerhaft
+beschleunigt, sondern sie um eine feste Position herum oszillieren l¨asst (Berech-
+nen sie den Ausdruck f¨ur die Bloch-Oszillationen r(t) und deren Frequenz). Das
+bedeutet, dass f¨ur hinreichend starke Felder alle Metalle wie Isolatoren wirken
+w¨urden.
+(b) Warum ist dieser Effekt in normalen Metallen schwer zu beobachtet? Was
+w¨urde sich ¨andern, wenn man statt Metallen Halbleiter-Supragitter (l¨angere
+Gitterperiodizit¨at und gr¨oßere Relaxationszeit) betrachtet?
+Hinweis: Metalle haben eine Relaxationszeit der Gr¨oßenordnung ∼ 10−14 s und
+eine Gitterkonstante a ≈ 1 ˚A. Sch¨atzen Sie das minimale Feld ab, das n¨otig ist,
+um Bloch-Oszillationen zu beobachten. Beachten Sie, dass die quasi-klassische
+N¨aherung im Fall sehr starker Felder zusammenbricht.
+
+(c) Wir f¨ugen nun einen kleinen D¨ampfungsterm zu Gl. (2) hinzu und analysieren
+die Konsequenzen. Die ¨Anderungsrate des Quasiimpulses sei nun
+¯h ˙k = Fext − m
+τ ˙r, (6)
+wobei τ die Relaxationszeit ist.
+Zeigen Sie, dass diese D¨ampfung zum Verschwinden der Oszillationen und
+damit zu einer station¨aren L¨osung f¨uhren kann. Wie lautet die entsprechende
+Bedingung, und wie sieht die station¨are L¨osung aus? Berechnen Sie anschließend
+analytisch k(t) in beiden Situationen (ohne und mit D¨ampfung), um Ihre
+¨Uberlegungen zu ¨uberpr¨ufen.

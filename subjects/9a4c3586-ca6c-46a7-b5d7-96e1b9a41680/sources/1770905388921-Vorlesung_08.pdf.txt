@@ -1,0 +1,89 @@
+## 2. Wellen in Unistallstrukturen
+
+Das Vaständuis der Festkönperphysik ist enj verkrimpft mit dem Vaständais de tusbraitung vou Wellen in periodischen Struktura. Beispicle Elektronen (Bloch wellen), Phonon (Gittersehwinguage),
+
+Mapmonen (Spin wellen).
+Wellen hönnen anch zus Untersuchmy von knistallen einjesekt werder. Röntyen - Elelitionen- und Nenthoneustrahlen Vönven Wellentäys im Bereich des Gitter konstantern (~ A) besitzen.
+
+Nentronen → heruverteileng / Spinvertaily
+Rointga $/ e^{-} \rightarrow$ Electronvertaily
+
+$\frac{\text { Dinelle rethoden: }}{\text { (Realnaum) }}$
+
+Licht milmoskop, TEM
+Rastersouden miknoshopen (STM, ATM,...)
+⇒ meistens Oberflache.
+$\frac{\text { Indirekten rethoden: }}{\text { (Reziproken Rame) }} \quad$ Bengung, Intenforenz von Wellen
+⇒ periodische Mistalle
+ig
+$\cos \left(k_{x} x\right) \cos \left(k_{y} y\right) \cos \left(\begin{array}{l}\left.k_{z} \cdot z\right) ; \quad e^{\prime G} \underline{\tau} \\ {[|\tau|]=m \quad[|\underline{k}|]=\frac{1}{m}}\end{array}\right.$ ↑
+$\left[\frac{1}{m}\right][m] K=\frac{2 \pi}{\lambda}$
+Benguny von wellen am knistallgiths zers Untersuchy
+![The diagram is depicting the crystal structure and the wavelength of the source, showing the relationship between photons, electrons, and neutrons.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/af538bfa-3d5f-4aa9-bb54-c1267773d037/b30ca8fa-f76d-4c57-a2ea-d8115780d67e-1_117_1371_1825_287.jpg) ~ interatomons Abstand $\sim i$
+![The diagram shows the energy scales of different particles or radiation types, specifically X-rays (Röntgenstrahlen) at 10 keV, neutrons at 80 meV (thermal neutrons), and electrons at 150 eV.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/af538bfa-3d5f-4aa9-bb54-c1267773d037/b30ca8fa-f76d-4c57-a2ea-d8115780d67e-1_334_1051_2068_476.jpg)
+
+### 2.1 Die Braff - Bedingung
+
+Gelocugle strahlem findet man uw in Ridntunge, in den die an parallelen Atomebern reflektiaten strahle konstruktiv interferieser.
+![This diagram depicts the geometry of X-ray diffraction by a crystal lattice, illustrating the path difference between rays reflected from adjacent crystal planes separated by distance d, used to derive Bragg's Law.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/af538bfa-3d5f-4aa9-bb54-c1267773d037/b30ca8fa-f76d-4c57-a2ea-d8115780d67e-2_391_640_296_311.jpg)
+
+We unterschied fin oine Atomebere
+
+$$
+2 d \cdot \sin \theta=u \cdot \lambda
+$$
+
+Bragg - Gleidurng
+Bediuguy fin Vonstiuktive Interferenz.
+
+Bengung ist nus möglich, wenn die Wellenläge $\lambda$ gainjud Vlain ist.
+$\frac{u \lambda}{2 \cdot d} \leq 1 \quad \Rightarrow \quad$ darf incht gioßes als $2 d$ creade.
+Die Annahme spiegelnder Reflexiona do Rointgenstrahly ist aie Vereinfachuy. Jede Ebene reflehtiat $\sim 10^{-3}-10^{-5}$ des Strahly. Reflaxion bei hohen Indizes of ordest künzere Wellenläge.
+
+### 2.2 Benjuy an disthetten Gitter: das "Lane" Bild
+
+Fiel: Zusammenhang zwischen Strenintensität (Expaiment) und Dickteverteiluy $\rho(\underline{\text { ® }})$ (hängt von Gittes + Basis (싀istall!) und vou de tot de Soude $a b$, un Anssage übu Antban des knistaller/Probe treffen zn können.
+Annalime: Fillt ebeve Welle nist Amplitude $A(t)=A_{0} \cdot e^{-i\left(\omega_{0} t-\underline{k} \underline{I}\right)}$ anf das Gitter ein, wind jedes Strenzentrum amm Ausgangrpunkt einer Ungelwelle
+
+\begin{aligned}
+A_{z}(t) & =\frac{\tilde{A}}{R_{i}} e^{-i\left(\omega_{0} t-\underline{u}_{0} \cdot \underline{R}_{i}\right)}, \\
+\text { unt }^{\prime} R_{i}^{\prime} & \text { Abstand zum Strenzentrum und } \\
+\tilde{A} & =\text { Sten waluscheinlichkat ( } \alpha \text { Sonde, Strecitartion) }
+\end{aligned}
+
+Entscheidend ist die Phasendifferenz zwischen den anfsummierten Stranwellen, die dunch unterschiedlide Lagen des Strenzentra hervagennfere wind und somit die Strulturinfamation enthält.
+
+Wejdifferenz: $\quad \Delta S=\left(\frac{\underline{\underline{k}} \cdot \underline{\underline{r}}}{|\underline{\underline{k}}|}\right)-\left(\frac{\dot{\underline{k}}_{0} \cdot \underline{\underline{r}}}{\left|\underline{k}_{0}\right|}\right)$
+Phasendifferent : $\Delta \varphi=\left(\underline{u}-\underline{u}_{0}\right) \cdot \underline{r}$
+⇒ Betry $d A_{s}(\pi, t)$ des Volumens $\Delta V$ am Ort $\leq$ zw Amplitude der Strenstrahley am Detektor in Abstand $\left|R_{1}\right|$
+
+d A_{s}(-, t)=\rho(\underline{r}) \cdot A_{z}(t) \cdot d V=\frac{\pi}{\left|R_{1}\right|} \rho(\underline{r}) e^{-i\left(\omega_{0} t-k R_{1}+\left(\underline{u}_{-} \underline{u}_{0}\right) \cdot r\right)}
+
+- Einfachstienny! "Enste Borusche Nähoung" de Strentheore'
+- Probe vlain
+- $R_{0}=R_{1}$ (gropes Abstand zum Defeleter).
+
+⇒ Gesantamplitude dend Integration des Probenvolumend
+![This image shows a mathematical expression for the scattered wave amplitude \( A_s(t) \) in a scattering experiment, indicating its dependence on experimental parameters and the stream amplitude as a function of spatial variables.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/af538bfa-3d5f-4aa9-bb54-c1267773d037/b30ca8fa-f76d-4c57-a2ea-d8115780d67e-3_369_1661_1082_370.jpg)
+
+\text { Strenamplitude: } \quad A(\underline{\hat{k}})=\int_{V_{p \text { nole }}} \rho(\underline{r}) e^{-i \underline{\hat{k}} \cdot \underline{r}} d V
+
+unit Streuvelktor: $\quad \underline{\hat{k}}=\underline{k}-\underline{k}_{0}$
+
+Allg. $A(\hat{\underline{\hat{M}}})$ sidet ans wie Focuis-Thansforwiate von $S(\hat{r})$.
+⇒ Messgöpe $A(\underline{\hat{K}})$ liefut physikaliczbe Größe $g(\underline{r})$ dench Foulisso- Thans formation.
+
+\rho(\underline{r})=\frac{1}{(2 \pi)^{3}} \int A(\underline{\hat{k}}) e^{i \underline{\hat{k}} \underline{r}} d^{3} \underline{\hat{k}}
+
+Phasenproblem: Bei der Messuy (lutansit: I $\sim A^{2}$ ) geht die Phasen infermation valoren!
+
+Bishor : fü allgemeine "Proben" ⇒ Was gilt für Unistall? Idee von Max vou Lave: Betrachte unistall als Benyryittes ⇒ Willar linge $\sim$ Gitterabstond
+Beispiel Röntfa bengy: $X_{\text {rays }}$ streven an des Elektionenkiall (e.m. Strakly)
+
+In die Elelltronendichte $u(\tau)$ eines translations invanianten unistalls gilt:
+
+\begin{aligned}
+& u(\underline{r}+\underline{R})=u(\underline{r}), \\
+& \left.\frac{R}{\left(u i \in u_{1}\right.} \underline{a}_{1}+u_{2} \underline{a}_{2}+u_{3} \underline{a}_{3}\right)
+\end{aligned}
+

@@ -1,0 +1,72 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Keine Tutorien
+Blatt 13
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Johannes Figueiredo
+13.1 Zyklotron-Resonanz
+Die Zyklotronresonanz ist ein physikalisches Ph¨anomen, bei dem geladene Teilchen
+in einem konstanten Magnetfeld B Energie aus einem hochfrequenten elektrischen
+Wechselfeld absorbieren. Dies geschieht, wenn die Frequenz des Wechselfeldes mit
+der Umlauffrequenz der Teilchen (Zyklotronfrequenz ωc = qB
+m∗ ) ¨ubereinstimmt.
+Die ersten solchen Messungen zur Bestimmung von Elektronen- und Lochmassen
+wurden 1954 an der UC Berkeley von Gene Dresselhaus in Silizium und Germanium
+durchgef¨uhrt. Bei einer Zyklotronfrequenz von 24 GHz wurden f¨ur die L¨ocher fol-
+gende Zyklotron-Resonanz-Peaks gemessen:
+Material B1 B2
+Si 1.37 × 103 G 4.21 × 103 G
+Ge 3.78 × 102 G 2.92 × 103 G
+(a) Bestimmen Sie die effektiven Massen der L¨ocher sowohl f¨ur Silizium als auch
+Germanium.
+(b) Warum werden zwei Resonanzen f¨ur die L¨ocher gemessen? Ordnen Sie diese
+zu.
+13.2 Hall-Effekt
+Eine rechteckige Probe eines p-dotierten Halbleiters hat die Abmessungen:
+• L¨ange zwischen den Stromkontakten: L = 10 mm
+• Breite (quer zur Stromrichtung): w = 5 mm
+
+• Dicke: t = 0.5 mm
+Die Probe wird bei Raumtemperatur vermessen.
+Ein Strom I = 20 mA fließt entlang der L¨ange. Ein Magnetfeld B = 0.8 T steht
+senkrecht zur Probenfl¨ache. Gemessen wird eine Hall-Spannung zwischen den seitlichen
+Kontakten:
+VH = 6.4 mV.
+(a) Bestimmen Sie den Hall-Koeffizienten RH und die Lochdichte p (in cm−3).
+Bei B = 0 wird entlang der L¨ange die Spannung
+Vxx = 1.60 V
+bei demselben Strom I = 20 mA gemessen.
+(b) Bestimmen Sie die Resistivit¨at ρ und die Mobilit¨at μp (in cm2/V/s).
+13.3 Shubnikov-de Haas-Effekt (2D)
+Wir betrachten ein zweidimensionales Elektronensystem (2DEG) im senkrechten
+Magnetfeld B bei tiefen Temperaturen (T ≈ 0). Im Magnetfeld werden die Zust¨ande
+in Landau-Niveaus zusammengefasst. Jedes Landau-Niveau enstpircht einem Ring
+im k-Raum zwischen zwei benachbarten, quantisierten Zyklotronbahnen mit Fl¨achen
+Sn und Sn+1.
+(a) Zeigen Sie anhand der Onsager-Beziehung, dass die Fl¨achen benachbarter Zyk-
+lotronbahnen im k-Raum die Beziehung
+∆S ≡ Sn+1 − Sn = 2πeB
+¯h
+erf¨ullen. Verwenden Sie anschließend die Zustandsdichte im k-Raum, um zu
+zeigen, dass die Entartung p eines Landau-Niveaus (Zahl der Zust¨ande pro
+Niveau, ohne Spin) f¨ur eine Probe der Fl¨ache A = LxLy ist:
+p = AeB
+h .
+Interpretieren Sie kurz, warum p ∝ B gilt.
+
+(b) Bei T ≈ 0 seien s Landau-Niveaus vollst¨andig gef¨ullt und das Niveau s + 1 nur
+teilweise. Zeigen Sie, dass f¨ur die Felder Bs, bei denen das chemische Potential
+μ gerade zwischen zwei Niveaus liegt (d. h. ein ganzzahliger F¨ullzustand vor-
+liegt),
+N = s p ⇒ Bs = N h
+eA
+1
+s .
+Folgern Sie daraus, dass alle quantenmechanischen Oszillationen (z. B. in ρxx)
+periodisch in 1/B sind und bestimmen Sie die Periodizit¨at ∆(1/B). Erkl¨aren
+Sie schließlich in wenigen S¨atzen, warum man diese Oszillationen in der longi-
+tudinalen Resistivit¨at ρxx sieht, wenn μ beim Variieren von B ¨uber Landau-
+Niveaus hinweg wandert.

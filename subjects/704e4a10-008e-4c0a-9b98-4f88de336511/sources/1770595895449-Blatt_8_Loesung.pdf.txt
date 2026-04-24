@@ -1,0 +1,47 @@
+Introduction to Biophysics
+Technische Universität München
+Wintersemester 2025/2026
+Prof. Julia Herzen, Prof. Andreas Bausch, Prof. Ulrich Gerland
+Solutions to Exercise Sheet 8
+Problem 8.1
+True. The human karyotype comprises 22 autosomes and the two sex chromosomes,
+X and Y. Females have 22 autosomes and two X chromosomes for a total of 23
+different chromosomes. Males also have 22 autosomes, but have an X and a Y
+chromosome for a total of 24 different chromosomes.
+True. Humans and mice diverged from a common ancestor long enough ago for
+roughly 2 out of 3 nucleotides to have been changed by random mutation. The re-
+gions that have been conserved are those with important functions, where mutations
+with deleterious effects were eliminated by natural selection. Other regions have
+not been conserved because natural selection cannot operate to eliminate changes
+in nonfunctional DNA.
+True. All the core histones are rich in lysine and arginine, which have basic-positively
+charged-side chains that can neutralize the negatively charged DNA backbone.
+False. By using the energy of ATP hydrolysis, chromatin remodeling complexes can
+catalyze the movement of nucleosomes along DNA, or even between segments of
+DNA.
+True. Duplication of chromosomal segments, which may include one or more genes,
+allows one of the two genes to diverge over time to acquire different, but related
+functions. The process of gene duplication and divergence is thought to have played
+a major role in the evolution of biological complexity.
+Problem 8.2
+A dicentric chromosome is unstable because the two kinetochores have the potential to
+interfere with one another. Normally, microtubules from the two poles of the spindle ap-
+paratus attach to opposite faces of a single kinetochore in order to separate the individual
+chromatids at mitosis. If a chromosome contains two centromeres, half of the time the
+microtubules from one of the poles will attach to the two kinetochores associated with one
+chromatid, while the microtubules from the other pole will attach to the two kinetochores
+associated with the other chromatid. Division can then occur satisfactorily. The other
+half of the time, the microtubules from each pole will attach to kinetochores that are
+associated with different chromatids. When that happens, each chromatid will be pulled
+to opposite spindle poles with enough force to snap it in two. Thus, two centromeres are
+bad for a chromosome, causing chromosome breaks-rendering it unstable.
+
+Introduction to Biophysics: Solutions to Exercise Sheet 9
+Problem 8.3
+With these assumptions, the DNA is compacted 27-fold in 30-nm fibers relative to the
+extended DNA. The total length of duplex DNA in 50 nm of the fiber is 1360 nm [(20
+nucleosome) × (200 bp/nucleosome) × (0.34 nm/bp) = 1360 nm). 1360 nm of duplex
+DNA reduced to 50 nm of chromatin fiber represents a 27-fold condensation [(1360 nm/50
+nm) = 27.2]. This level of packing represents 0.27% (27/10000) of the total condensation
+that occurs at mitosis, still a long way off what is needed.
+2

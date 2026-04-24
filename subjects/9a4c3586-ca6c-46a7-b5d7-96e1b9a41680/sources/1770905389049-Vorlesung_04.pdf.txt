@@ -1,0 +1,113 @@
+## 1. 7 Richtmen and Ebennen in Unistall
+
+Physikalischen Eijeuschaften, we electrische Leitfabijke't und Schallesehwindijuet, hänger oft mistallnichtury ab.
+Epitaktische Wackstum (MBE - molecules beace epitary) haingt von den buistallebences $a b$, auf die ein knistall auflgezüchtet wenden soll.
+⇒ System, um Richtmyen und Ebenen zn Klassifiziera.
+
+## Bestimmung do Richtunge
+
+$\underline{a}_{1}, \underline{a}_{2}$ und $\underline{a}_{3}$ spannen einen Einkeits zelle anf
+(i.A. silief winkli $j$ ), $u^{\prime}, v^{\prime}$ und $w^{\prime} \in \mathbb{Z}$.
+![This diagram depicts the vector addition of two vectors \( \vec{u}a_1 \) and \( \vec{v}a_2 \) resulting in a resultant vector \( \vec{w}as \), with the red vector \( \vec{z} \) representing the difference between the resultant vector and another vector \( \vec{x} \). It is related to vector operations in physics or mathematics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/fc55aed1-d977-4f33-aea5-3c150c1edf38/4d454c78-05b4-401a-b380-d8740d151cef-1_274_436_1049_230.jpg)
+
+Fin eiven Punkt $P$ gelte: $\underline{z}=u^{\prime} \underline{a}_{1}+v^{\prime} \underline{a}_{2}+w^{\prime} \underline{a}_{3}$.
+⇒ Suche die Vlainsten ganzen zaklen $u, v, u$, fur die jilt:
+
+Rsp.:
+
+$$
+\begin{aligned}
+& u^{\prime}: v^{\prime}: \omega^{\prime}=u: v: \omega \\
+& 2: 6: 8=1: 3: 4 .
+\end{aligned}
+$$
+
+Die Riditung von $z$ wind kessifizierd als $[u, v, \omega]$.
+lst z.B. $v^{\prime}$ negativ $\Rightarrow[u \bar{v} \omega](\operatorname{odev}[u-v \omega] ;[u \underline{w}])$
+Gauzer Satz äquivaleuter Richtungen (E.B. Winfellenten) <uvw>.
+
+## Bestimmung des Eberne
+
+Millusche ludizes
+![This diagram depicts the geometric interpretation of the cross product of two vectors \(\vec{a_1}\) and \(\vec{a_2}\), showing the parallelogram formed by the vectors and the resulting vector \(\vec{a_3}\) perpendicular to the plane of \(\vec{a_1}\) and \(\vec{a_2}\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/fc55aed1-d977-4f33-aea5-3c150c1edf38/4d454c78-05b4-401a-b380-d8740d151cef-1_271_400_1894_251.jpg)
+$a_{1}, a_{2}$ und $a_{3}$ spannen $E Z$ anf.
+$\Rightarrow \begin{aligned} & \text { bilde Vehwert: } \\ & \text { vou } u^{\prime}, v^{\prime}, \omega^{\prime}\end{aligned}: \frac{1}{u^{\prime}}, \frac{1}{v^{\prime}}, \frac{1}{\omega^{\prime}}$
+$\Rightarrow \quad$ bilde saki von ganzen takla (meistura) $h, k, l$ uit:
+
+h: k: l=\frac{1}{u^{\prime}}: \frac{1}{v^{\prime}}: \frac{1}{w^{\prime}}
+
+Die Flacks / Ebene ist dann durch (hke) charaktenisiert.
+
+## Benneskny
+
+- Sate äquivalenter Flache|Ebener ist duch \{kke\} beschieber, Z.B.
+
+\begin{aligned}
+& \{100\} \\
+& \{110\} \\
+& \{111\}
+\end{aligned}
+
+alle Wintelfliche
+alle Flane durd paralleb Fachadiagoule
+alle Farke dunch drei Fachourdiajouch
+
+### 1.8 Fehlordnumjer in Unistalle (neale bristalle)
+
+Bichs : ideale maknoskopisere Unistalle $\sim 10^{23}$ Atouse
+Problen: völlig fehlufieien Auaduyer ist unuioglich (Entiopie).
+Defest 1 Abweichny von den Periodizität des Atone.
+Aiten von Defelten:
+
+- Punkt defelete (atomare Defelete)
+- Linien defelle - 10 (Uersetz rege)
+- fladuenhafte Defelte - 20 (innue Grenzflaiden)
+
+Defeleterzengey:
+
+- Teildambestiabley (2.B. Nentione, lone, $e^{-}$)
+- themiesh.
+
+
+## Reispiele
+
+## - Schottky - Defekt :
+
+Es gibt eire von der Temperatur abliangije Zahl von Fehlstelle, wie Punktdefekte und Paare vou Leerstelle in lonemkistall. In lonembristalle ist es enerjetisch güustij, dass gleich viele Leerstellen für Vatione und Anionen entsteher, da der knistall clektiish nental blaibt.
+
+## Thermo dynamische überleguy
+
+Annahme: $\exists$ Leerstellen didate.
+ficie Euthalpie: $\quad G=U-T S+p V \pm \underline{\otimes x}=I+p V$
+Fin $p=$ const, $T=$ coust. $d G=d U-T d S+p d V$.
+Fin Vlaire Leerstellen diater: $d V=0$.
+Beitiaj der Leastelle zur inneren Enaje: $\quad \Delta U_{L}=N_{L} \cdot E_{L},{ }^{æ}$ ®
+$E_{L}$ : Enseujungs enejie $\left(\frac{e V}{A \text { ton }}\right)$
+$N_{L}$ : Auzale der Leastelle.
+Beiting des Leastelle zess Entopie:
+
+- Schwingung:- Entopie $S_{L}$ : Ánden des Spektien do Gitter-
+- Monfiguations - Entiopie $S_{k}$. schingenyer.
+
+Vertaile $N_{L}$ Leenstcllen auf $N+N_{L}$ Gitterplitien:
+
+\omega_{k}=\frac{\left(N+N_{L}\right)!}{N!N_{L}!}
+
+Eutopie - Beiting (Boltzmanu): $S_{k}=k_{B} \cdot \ln \left(\frac{\left(N+N_{L}\right)!}{N!N_{L}!}\right) ; S=k_{B} \ln \Omega$
+( ) ( **)
+$\Rightarrow \Delta F_{L}^{*}=N_{L} E_{L}+T \Delta S=N_{L} E_{L}-T N_{L} S_{L}-u_{B} T \ln \left(\frac{\left(N+N_{L}\right)!}{N!N_{L}!}\right)$
+$N_{L} \ll N$ sowie mit $\ln (x!)=x(\ln x-1)$ (Stinlij)
+
+\approx N_{L} E_{L}-N_{L} T S_{L}-K_{Q} T N_{L} \ln \left(\frac{N_{L}}{N}\right)
+
+In thereischa Gleich gewicht ist $\Psi$ minimal : $\Rightarrow \frac{\partial T}{\partial N_{L}} \stackrel{!}{=} 0$
+
+\cdots \quad N_{L}=N \exp \left(\frac{S_{L}}{U_{B}}\right) \exp \left(-\frac{E_{L}}{U_{R} T}\right)
+
+Typiscle Weite:
+
+Unsade:
+$S_{L} / K_{B} \sim 0.5-5$ und $E_{L} \sim \mathrm{eV}$ Fin $E_{L} \sim 1 \mathrm{eV}$ and $s_{L} / u_{B} \sim 3 N_{L} / N \sim 2 \cdot 10^{-14}(1000 \mathrm{~K})$ und $3 \cdot 10^{-16}(300 \mathrm{~K})$
+Die Oberflache hat eire genijere Bindry scuerjie ("vissing parturs")
+⇒ Transpent vou Atoner zer Oberfliche ist thermodynamish bejunstijt.
+

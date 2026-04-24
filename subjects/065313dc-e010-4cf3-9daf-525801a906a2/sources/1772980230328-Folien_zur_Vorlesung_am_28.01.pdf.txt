@@ -1,0 +1,159 @@
+## Einschub: Molekulardynamik-Simulationen ("Basics")
+
+```
+gegeben: -\() N\) Teilchen mit Masse \(m\)
+    -) Wechselwirkungspotential \(U\left(\vec{x}_{i}-\vec{x}_{j}\right)\)
+    -) externes Potential \(V_{\text {ext }}\left(\vec{x}_{i}\right)\)
+```
+
+Bewegungsgleichungen:
+
+$$
+\left.\begin{array}{rl}
+\dot{\vec{x}}_{i} & =\vec{v}_{i} \\
+m \dot{\vec{v}}_{i} & =-\vec{\nabla}_{i} V_{\mathrm{ext}}\left(\vec{x}_{i}\right)-\sum_{j \neq i} \vec{\nabla}_{i} U\left(\vec{x}_{i}-\vec{x}_{j}\right)=: \vec{F}_{i}
+\end{array}\right\} \quad \ddot{\vec{x}}_{i}=\vec{F}_{i} / m
+$$
+
+Bsp: Lennard-Jones Potential
+
+U(\vec{r})=4 U_{0}\left[\left(\frac{r_{0}}{r}\right)^{12}-\left(\frac{r_{0}}{r}\right)^{6}\right]
+
+![This diagram depicts a Lennard-Jones potential energy curve showing the variation of potential energy \( U \) with interatomic distance \( r \), including the equilibrium distance \( r_{\text{min}} \) where the potential energy is at its minimum \(-U_0\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-01_815_1089_1399_1901.jpg)
+
+- Numerik → dimensionslose Einheiten!
+Zeit: $\tilde{t}=t / t_{0}$
+Ort: $\quad \tilde{x}=x / x_{0}$
+Energie: $\quad \tilde{E}=E / E_{0}$
+
+Bsp: $E_{0}=U_{0}, \quad x_{0}=r_{0}$
+
+\Rightarrow \frac{d^{2} \tilde{x}}{d \tilde{t}^{2}}=-\frac{t_{0}^{2} U_{0}}{r_{0}^{2} m} \partial_{\tilde{x}} \tilde{U}(\tilde{x}) \quad \text { wähle: } \quad t_{0}=\sqrt{\frac{r_{0}^{2} m}{U_{0}}}
+
+dimensionslose Bewegungsgleichungen (Tilde weggelassen):
+
+\begin{aligned}
+\dot{\vec{x}}_{i} & =\vec{v}_{i} \\
+\dot{\vec{v}}_{i} & =-\vec{\nabla}_{i} \sum_{j \neq i} U\left(x_{i}-x_{j}\right) \vec{v}_{i} \equiv F_{i j} \\
+F_{i j} & =48\left[\frac{1}{\left|\vec{x}_{i}-\vec{x}_{j}\right|^{14}}-\frac{1}{2\left|\vec{x}_{i}-\vec{x}_{j}\right|^{8}}\right]\left(\vec{x}_{i}-\vec{x}_{j}\right)
+\end{aligned}
+
+- Randeffekte / endliche Systemgröße:
+(i) "Wände":
+
+V_{\mathrm{ext}}=\frac{1}{x^{\alpha}}+\frac{1}{(L-x)^{\alpha}}
+
+![This diagram depicts an external potential \( V_{\text{ext}} \) as a function of position, showing a potential well with very steep walls at the boundaries \(0\) and \(L\), corresponding to the case where the parameter \(\alpha \gg 1\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-03_720_1184_52_1653.jpg)
+(ii) periodische Randbedingungen:
+□ simuliertes System
+□ idente Spiegelsysteme
+![This diagram depicts a cellular automaton, specifically showing the transition of the center cell's neighborhood from one state to the next based on the states of its surrounding cells. It illustrates how the state of the center cell (highlighted) changes due to the influence of its neighboring cells, indicated by the red arrows.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-03_872_899_919_1711.jpg)
+
+WW zwischen Teilchen aus den Nachbarzellen ⇒ keine Randeffekte, aber endliche Systemgröße kann Simulation immer noch beeinflussen.
+
+## Numerische Integration:
+
+Diskretisierung (1D): $\quad x_{i}^{(n)} \equiv x_{i}\left(t_{n}\right), \quad t_{n}=n \times \Delta t$
+![This diagram depicts a discrete time grid used for numerical analysis or time-stepping methods, showing time points \( t_n \) from 0 to \( T \) with corresponding discrete values \( x_i^{(n)} \) at each time step \( n \), spaced by a time interval \(\Delta t\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-04_429_2420_517_174.jpg)
+
+1) Euler Integration:
+
+\left.\begin{array}{l}
+x_{i}\left(t_{n+1}\right)=x_{i}\left(t_{n}\right)+v_{i}\left(t_{n}\right) \Delta t \\
+v_{i}\left(t_{n+1}\right)=v_{i}\left(t_{n}\right)+\sum_{j} F_{i j}\left(t_{n}\right) \Delta t
+\end{array}\right\} \text { Iteration }
+
+-) exakt für $\Delta t \rightarrow 0$
+-) Fehler (pro Zeitschritt) $\sim O\left(\Delta t^{2}\right)$, gesamt $\sim O(\Delta t)$
+-) anfällig für Instabilitäten
+2) Verlet-Integration:
+(i) $\quad x(t+\Delta t)=x(t)+v(t) \Delta t+\frac{1}{2} \ddot{x}(t) \Delta t^{2}+O\left(\Delta t^{3}\right)$
+(ii) $\quad x(t-\Delta t)=x(t)-v(t) \Delta t+\frac{1}{2} \ddot{x}(t) \Delta t^{2}-O\left(\Delta t^{3}\right)$
+$(i)+(i i) \quad x(t+\Delta t)=2 x(t)-x(t-\Delta t)+\ddot{x}(t) \Delta t^{2}+\underline{O\left(\Delta t^{4}\right)}$
+numerische Integration:
+
+\begin{aligned}
+x_{i}\left(t_{1}\right) & =x_{i}\left(t_{0}\right)+v_{i}\left(t_{0}\right) \Delta t+\frac{1}{2} \sum_{j} F_{i j}\left(t_{0}\right) \Delta t^{2} \\
+x_{i}\left(t_{n+1}\right) & =2 x_{i}\left(t_{n}\right)-x_{i}\left(t_{n-1}\right)+\sum_{j} F_{i j}\left(t_{n}\right) \Delta t^{2} \\
+\Rightarrow v_{i}\left(t_{n}\right) & =\frac{x_{i}\left(t_{n+1}\right)-x_{i}\left(t_{n-1}\right)}{2 \Delta t}
+\end{aligned}
+
+(erster Schritt)
+(Iteration)
+3) "Leapfrog" Integration:
+
+x(t+\Delta t)=x(t)+\Delta t[\underbrace{\dot{x}(t)+\frac{\Delta t}{2} \ddot{x}(t)}_{v(t+\Delta t / 2)}]+O\left(\Delta t^{2}\right)
+
+\Rightarrow \quad x(t+\Delta t) & =x(t)+v(t+\Delta t / 2) \Delta t \\
+v(t+\Delta t / 2) & =v(t-\Delta t / 2)+F(t) \Delta t
+
+Orte und Geschwindigkeiten werden an verschiedenen Zeitpunkten ausgewertet.
+![This diagram depicts the leapfrog integration method used in numerical time-stepping, showing the staggered updates of position \(x_i\) and velocity \(v_i\) at alternating half-time steps within a time interval \(\Delta t\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-06_682_1977_1458_258.jpg)
+
+## Potentiale
+
+Wandpotential
+![This diagram depicts a one-dimensional quantum well potential (specifically a finite square well) with parameter α = 4, showing the potential energy as a function of position x over the well width L.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-07_841_1285_686_147.jpg)
+
+V_{\text {Wand }}(x)=\frac{1}{|x|^{\alpha}}+\frac{1}{|x-L|^{\alpha}}
+
+Lennard-Jones Potential
+![This diagram depicts the Lennard-Jones potential, showing the variation of potential energy as a function of the distance between two particles, with a characteristic minimum indicating the equilibrium separation.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-07_846_1327_686_1521.jpg)
+
+U\left(\vec{r}_{i j}\right)=4\left(\frac{1}{\left|\vec{r}_{i j}\right|^{12}}-\frac{1}{\left|\vec{r}_{i j}\right|^{6}}\right)
+
+![This diagram depicts the time evolution of a wave function or probability density in a one-dimensional quantum or physical system, showing how the distribution changes with position \(x\) over time \(t\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-08_839_1311_265_112.jpg)
+
+\left(N=5, L=20, T=25, \Delta t=2 \times 10^{-5}\right)
+
+![This diagram depicts the trajectories of multiple random walks or stochastic processes over time, showing how the position \( x \) changes as a function of time \( t \) for each individual path.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-08_843_1315_1361_116.jpg)
+![This diagram depicts the normalized energy \( E(t)/E(0) \) as a function of time \( t \), showing the time evolution of energy relative to its initial value. It specifically illustrates how the energy remains approximately constant over time.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-08_843_1342_1361_1531.jpg)
+
+\left(N=5, L=20, T=25, \Delta t=10^{-3}\right)
+
+![This diagram depicts the trajectories of multiple random walks or stochastic processes over time, showing how position \( x \) changes as a function of time \( t \) for different individual paths.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-09_856_1343_261_88.jpg)
+![This diagram shows the time evolution of the normalized energy \( \frac{E(t)}{E(0)} \) of a system, indicating that the energy remains nearly constant over time \( t \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-09_848_1427_269_1482.jpg)
+
+Leapfrog: $\quad\left(N=5, L=20, T=25, \underline{\Delta t=10^{-3}}\right)$
+![This diagram is a space-time plot showing the trajectories of multiple particles or objects over time, with position on the x-axis and time on the y-axis. It depicts how the positions of five distinct entities change as time progresses.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-09_864_1351_1377_88.jpg)
+
+Leapfrog: $\quad\left(N=5, L=20, T=25, \underline{\Delta t=10^{-3}}\right)$
+![This diagram depicts the time evolution of the normalized energy \( \frac{E(t)}{E(0)} \) of a system, showing fluctuations around the initial energy value over the time interval from 0 to 25.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-09_868_1400_1377_1514.jpg)
+
+## Thermalisierung in 1D ?
+
+![This diagram depicts contour lines of a wave function or probability density evolving over time and position, likely representing a quantum mechanical wave packet or a similar oscillatory phenomenon in one spatial dimension.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-10_843_1326_350_82.jpg)
+![This diagram shows the velocity distribution \(N(v)\) of particles at two different times, \(t=0\) and \(t=10\), illustrating how the velocity distribution evolves over time.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-10_852_1297_347_1561.jpg)
+![This diagram depicts the time evolution of multiple wave functions or probability densities as a function of position, showing how each wave oscillates and changes over time.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-10_862_1338_1345_76.jpg)
+![This diagram depicts the velocity distribution \( N(v) \) of particles at two different times, \( t=0 \) and \( t=45 \), illustrating the effect of multiple particle collisions and wall interactions on the velocity spread over time.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-10_855_1300_1352_1561.jpg)
+
+## Thermalisierung in 2D ?
+
+![This diagram depicts multiple random walk trajectories showing the paths of particles or agents moving in two-dimensional space with positions labeled along the x and y axes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-11_868_1197_325_196.jpg)
+![This diagram depicts the velocity distribution \(N(v_x)\) of particles at two different times, \(t=0\) and \(t=10\), showing how the initial sharp velocity peaks at \(\pm 2\) broaden and spread out over time.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-11_877_1194_331_1505.jpg)
+![This diagram depicts multiple random walk trajectories showing the positions (x, y) of walkers over time in a two-dimensional space. It illustrates the paths taken by different random walkers as they move randomly across the plane.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-11_879_1200_1306_196.jpg)
+![This diagram depicts velocity distribution histograms of particles at two different times, t=0 and t=60, showing how the number of particles with specific velocities changes over time. It specifically illustrates the spreading or evolution of particle velocities in the x-direction.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-11_884_1198_1311_1501.jpg)
+
+### 11.3 Anwendung: Wärmetransport
+
+Ziel: Berechnung der Wärmeleitfähigkeit eine (fast) idealen Gases.
+![This diagram depicts heat transfer through a gas between a warm reservoir (warmes Reservoir) at temperature T2 and a cold reservoir (kaltes Reservoir) at temperature T1, showing the direction of heat flow (Wärmestrom) from the warm to the cold side.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/3471c5fc-fa67-490d-8096-3b119835f77d/6b757ef2-ab76-47ac-9115-bdb64168b6e8-12_851_2315_401_274.jpg)
+
+- Stöße erzeugen lokale Gleichgewichtsverteilung (GV)
+
+f^{0}(\vec{x}, \vec{p})=n(\vec{x})\left(\frac{1}{2 \pi m k_{B} T(\vec{x})}\right)^{\frac{3}{2}} e^{-\frac{\vec{p}^{2}}{2 m k_{B} T(\vec{x})}}
+
+mit lokal variierender Temperatur $T(\vec{x})$.
+
+- Unter Annahme eines konstanten Drucks gilt
+
+p=n(\vec{x}) k_{B} T(\vec{x})=n_{1} k_{B} T_{1}
+
+und damit: $\quad \quad f^{0}(\vec{x}, \vec{p})=\frac{n_{1} T_{1}}{T(\vec{x})}\left(\frac{1}{2 \pi m k_{B} T(\vec{x})}\right)^{\frac{3}{2}} e^{-\frac{\vec{p}^{2}}{2 m k_{B} T(\vec{x})}}$
+
+Lokale GV ist aber keine stationäre Lösung des Gesamtsystems, da aus der Boltzmann Gleichung folgt:
+
+\underbrace{\frac{\partial f}{\partial t}}_{=0}+\frac{\vec{p}}{m} \vec{\nabla}_{x} f=\left.\frac{\partial f}{\partial t}\right|_{\mathrm{Stoß}}
+
+→ Stationäre Verteilung ergibt sich aus Drift wegen Dichtegradienten und aus der Umverteilung durch Stöße.
+

@@ -1,0 +1,54 @@
+## 6. 5 Fanidsuflarde (Metalle)
+
+Im Modell des feien Elektonengases ist die Tenniobuflade eine Ungloberfliche, sofenn die Fanifliche in der 1 . Br ligt.
+
+Find $K_{F}>\frac{\pi}{a} \Rightarrow$ Fermilengel rajt übs 1. Bz hinaus.
+$\Rightarrow$ 82-Greuze wind inberschitte
+⇒ Redultion anf 1. BZ.
+⇒ Bragg-Reflection
+⇒ Bandlinder
+Gruppengeschwindijuat versehvindel am Rand de 67
+$\Leftrightarrow$ Bände laufon "flach" sin
+⇒ Deformation der Fenciflirch am Zonennand.
+
+## 7. Ladmugstransport
+
+Im Folgenden werder vis die Encenutrisse aus den Vepitch übes die deletionische Bandstruktus anf den Ladungstransport innuhalb des mistalle anwende (Bewegy von Elektion in Abhänjple't eines elektischer und/odes maguetisehe Eelds). Daza betrachten wis zunächst den Impubs, die Geschwindigheit and die sig. effeltive Masse von Bloch-Elatione.
+
+## 7.1 lmpuls von Bloch-Eleletionem
+
+Gesucht: $\langle\underline{p}\rangle_{n, \underline{x}}$ luppuls cives Bloch-Elections im Eustand $|u, \underline{u}\rangle$ (s. Folien).
+
+Resultat: $\langle\underline{f}\rangle_{u, \underline{k}}=t_{1} \underline{k}-i t_{v} \int_{v, \underline{k}}^{*}(\underline{v}) \underline{D} u_{u, k}(\underline{v}) \underline{d r}^{3} \neq t_{1} \underline{k}$
+![This diagram depicts a simple electrical circuit symbol for a battery, showing the positive and negative terminals.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d58c7c32-898b-4e69-88d1-f13dafb7a824/fcf21bda-1697-43bd-b971-c05262a024d8-1_196_268_2392_557.jpg)
+"Fillele Quantenzank, welele dic
+"kristall-Impuls: Phasenänderieny aives BlochWellenfentin outs Gitteriansbition beselucibl.
+Physikaliselve "mechanische Impuls" eives Elektions ans der Gesount collem function cives Elevtions
+7.2 zusammankay zwischon $\underline{f}, \underline{v}_{n, k}$ und $E(\underline{k})$
+
+Resulat: $\quad \underline{v}_{u, \underline{k}}=\frac{1}{t_{1}} \underline{\nabla}_{\underline{k}} E_{u}(\underline{k}) \quad$ (siche Iolia sw Hality)
+
+Die Gesehwindijust aives Eleletions in periodisden Potential ist Voustant und enleidet Veive Stirng ins peridischen Potential. D.K. Colvale Stiongen, wie Defekte, Grenzfliech and Phonone spiele beim Ladungstionsport cine essenticle Rolle (side kommende kepitel).
+
+### 7.3 Rewejung gleich ung im K-Raum
+
+Resiltat: $\quad t_{1} \frac{d \underline{\underline{k}}}{d t}=-e(\underline{E}+\underline{v} \times \underline{B})$
+
+## Semiklassische Be weynyoglaichy
+
+Autwort auf ain änfeses Feld ist gairs der zeitlide Ablify des veristall impulses.
+
+### 7.4 Effeletive Masse
+
+Gilf das Newtonsele Geselz "I $=m \cdot \underline{a}$ " and in oinem Festlisper?
+
+$$
+\frac{d}{d t} \underline{v}(\underline{k})=\left(\underline{\nabla}_{k} \cdot \underline{v}\right) \cdot \frac{d \underline{u}}{d t}=\underline{\nabla}_{\underline{k}}\left(\frac{1}{t_{1}} \underline{\nabla} E_{n}(k)\right) \underbrace{\cdot \frac{d \underline{k}}{d t}}_{\underline{ \pm} / n}
+$$
+
+Resultat : $\quad \frac{d}{d t} v(\underline{k})=\frac{1}{t^{2}} \underline{\nabla}_{\underline{k}}\left[\underline{\nabla}_{\underline{k}} E_{n}(\underline{k})\right] \cdot \underline{I}$
+
+## Definition: $\left(m^{*}\right)^{-1}$
+
+soguname effective Masse eines Block elections im Zustand U.
+

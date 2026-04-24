@@ -1,0 +1,298 @@
+## 9. Magnetismus
+
+Ziele: -) statistische Beschreibung magnetischer Effekte
+-) einfache Modellsysteme zur Beschreibung (ferro-)magnetischer Phasenübergänge
+
+### 9.1 Thermodynamik magnetischer Systeme
+
+V ... Volumen der mag. Probe
+
+![This diagram depicts the concept of magnetization in a material, showing how individual magnetic moments within a small volume contribute to the overall magnetization vector. It illustrates the relationship between the magnetic field, microscopic magnetic moments, and the average magnetization per unit volume.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-01_1004_2151_972_734.jpg)
+magnetisches Feld
+
+## Quantenmechanische Modellierung:
+
+Bei einem gegebenen, homogenen äußeren magnetischen Feld $\vec{B}$ wird die Energie der magnetischen Probe durch den Hamiltonoperator
+
+$$
+\hat{H}=-\hat{\mathcal{M}} \cdot \vec{B}, \quad \text { mit } \quad \overrightarrow{\mathcal{M}}=\int_{V} \vec{M} d^{3} r=\sum_{i} \vec{\mu}_{i}
+$$
+
+beschrieben.
+
+Bei Kopplung des magnetischen Systems an ein Wärmebad ergibt sich daher die freie Energie
+
+F(T, \vec{B})=-k_{B} T \ln Z_{\mathrm{K}}
+
+mit der kanonischen Zustandssumme: $\quad Z_{\mathrm{K}}=\operatorname{Sp}\left\{e^{-\beta \hat{H}(\vec{B})}\right\}$
+und den Ableitungen : $\quad S=-\left.\frac{\partial F}{\partial T}\right|_{\vec{B}}, \quad E=\langle\hat{H}\rangle=-\frac{\partial}{\partial \beta} \ln Z_{\mathrm{K}}$
+
+Aus der Ableitung der freien Energie nach den Komponenten des Magnetfelds erhalten wir das magnetische Moment der gesamten Probe:
+
+\mathcal{M}_{k}=-\left.\frac{\partial F}{\partial B_{k}}\right|_{T}=\left.\frac{1}{\beta} \frac{\partial \ln Z_{\mathrm{K}}}{\partial B_{k}}\right|_{T}
+
+Weitere wichtige physikalische Größen erhält man aus den 2 . Ableitungen der freien Energie:
+
+- Spezifische Wärme (bei konstantem B-Feld):
+
+C_{B}=\left.\frac{\partial E}{\partial T}\right|_{\vec{B}}=\left.\frac{\partial E}{\partial S} \frac{\partial S}{\partial T}\right|_{\vec{B}}=-\left.T \frac{\partial^{2} F}{\partial T^{2}}\right|_{\vec{B}}
+
+- Magnetische Suszeptibilität (isotherm):
+
+\chi=\left.\frac{1}{V} \frac{\partial \mathcal{M}}{\partial B}\right|_{T}=-\left.\frac{1}{V} \frac{\partial^{2} F}{\partial B^{2}}\right|_{T} \quad(\overrightarrow{\mathcal{M}} \| \vec{B})
+
+## Anschluss an die Thermodynamik:
+
+![This diagram depicts the principle of the Hall effect, showing how a magnetic field (\(\vec{B}\)) applied perpendicular to a current (\(I\)) flowing through a conductor causes charge carriers to deflect, creating a transverse voltage.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-04_864_553_260_142.jpg)
+
+Erster Hauptsatz für magnetische Systeme:
+
+d E(S, \underline{\overrightarrow{\mathcal{M}}})=T d S+\delta W_{\mathrm{mag}}=T d S+\vec{B} d \overrightarrow{\mathcal{M}}
+
+aber, von Interesse:
+vorgebenes äußeres Magnetfeld
+
+\vec{B}_{k}=\frac{\partial E}{\partial \overrightarrow{\mathcal{M}}_{k}}
+
+Legendre Transformation zur Enthalpie und freien Enthalpie:
+
+E(S, \overrightarrow{\mathcal{M}}) \quad \Rightarrow \quad H(S, \vec{B})=E-\vec{B} \overrightarrow{\mathcal{M}} \quad \Rightarrow \quad G(T, \vec{B})=H-T S
+
+d G(T, \vec{B})=-S d T-\overrightarrow{\mathcal{M}} d \vec{B}, \quad \quad S=-\left.\frac{\partial G}{\partial T}\right|_{\vec{B}}, \quad \mathcal{M}_{k}=-\left.\frac{\partial G}{\partial B_{k}}\right|_{T}
+
+## Zusammenfassung:
+
+Im Folgenden verwenden wir die in der Literatur* üblichen Konvention mit
+
+- Hamiltonoperator*: $\quad \hat{H}=-\hat{\mathcal{M}} \cdot \vec{B}$,
+-"Freie Energie": $\quad F(T, \vec{B})=-k_{B} T \ln Z_{\mathrm{K}}, \quad Z_{\mathrm{K}}=\operatorname{Sp}\left\{e^{-\beta \hat{H}(\vec{B})}\right\}$
+-"Energie": $\quad E=\langle\hat{H}\rangle=-\frac{\partial}{\partial \beta} \ln Z_{\mathrm{K}}=F-T S$
+
+Aber: Die Energie $\mathrm{E}(\mathrm{S}, \mathrm{B})$ und freie Energie $\mathrm{F}(\mathrm{T}, \mathrm{B})$ sind jedoch Funktionen der (intensiven) Zustandsvariable B. Sie entsprechen daher eigentlich der Enthalpie und der (Gibbs) freien Enthalpie aus der Thermodynamik:
+$E(S, \vec{B}) \quad \leftrightarrow \quad H(S, p, N)$
+$F(T, \vec{B}) \leftrightarrow G(T, p, N)$
+*) Diese Beschreibung vernachlässigt die Energie des mag. Feldes selbst, sowie die externe elektrische Arbeit, welche zur Aufrechterhaltung des äußeren Felds verrichtet wird.
+
+### 9.2 Paramagnetismus ungekoppelter Spins
+
+Wir betrachten zuerst ein System aus N ungekoppelten mag. Momenten (z.B. Störstellenatom mit ungerader Elektronenzahl oder nur teilweise gefüllten inneren Schalen).
+
+Hamilton Operator:
+
+H=-\sum_{i=1}^{N} \vec{\mu}_{i} \cdot \vec{B}
+
+![This diagram depicts magnetic dipole moments (\(\vec{\mu}_i\)) of particles within a material subjected to an external magnetic field \(\vec{B} = B \vec{e}_z\). It shows the orientation of the magnetic moments in response to the applied magnetic field along the z-axis.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-06_429_1565_575_1336.jpg)
+(keine Kopplungen, Feldenergie vernachlässigt)
+
+- Magnetisches Moment des Elektrons:
+
+\vec{\mu}=-\frac{\mu_{B}}{\hbar}(\vec{L}+g_{s} \hbar \underset{\text { Bahndrehimpuls }}{\vec{S}} \overbrace{\text { (dimensionslos) }}
+
+\left(g_{s}=2, \mu_{B} \approx 9.27 \times 10^{-24} \mathrm{~J} / \mathrm{T}\right)
+
+Bohrsches Magneton
+
+Spezialfall ( $\mathbf{L = 0 , ~} \mathbf{S = 1 / 2}$ ): $\quad \Rightarrow \quad \mu_{z}=-\mu_{B} \sigma_{z}$,
+
+\sigma_{z}=\left(\begin{array}{cc}
+1 & 0 \\
+0 & -1
+\end{array}\right)
+
+S=1/2:
+
+H=\mu B \sum_{i=1}^{N} \sigma_{z}^{i} \quad \mu \equiv \mu_{B}
+
+Pro Elektron gibt es zwei mögliche Energieeigenwerte, $H_{i}|\psi\rangle=\varepsilon|\psi\rangle$ :
+
+\begin{array}{llc}
+\varepsilon_{\uparrow}=+\mu B & |\psi\rangle=|\uparrow\rangle & \text { "spin up" } \\
+\varepsilon_{\downarrow}=-\mu B & |\psi\rangle=|\downarrow\rangle & \text { "spin down" }
+\end{array}
+
+⟹ Die magnetischen Momente (Spins) richten sich parallel (anti-parallel) zum Magnetfeld aus, um die Energie zu minimieren.
+
+- kanonische Zustandssumme:
+
+Z_{\mathrm{K}}=\sum_{m_{i}= \pm} e^{-\beta \mu B \sum_{i} m_{i}}=\prod_{i}\left(e^{\frac{\mu B}{k_{B} T}}+e^{-\frac{\mu B}{k_{B} T}}\right)=\left[2 \cosh \left(\frac{\mu B}{k_{B} T}\right)\right]^{N}
+
+- freie Energie:
+
+F(T, B)=-k_{B} T \ln Z_{\mathrm{K}}=-N k_{B} T \ln \left[2 \cosh \left(\frac{\mu B}{k_{B} T}\right)\right]
+
+- Magnetisches Moment: $\quad \mathcal{M}=\left\langle\sum_{i} \mu_{z}^{i}\right\rangle=-\left.\frac{\partial F}{\partial B}\right|_{T}$
+
+\Rightarrow \quad \mathcal{M}=N \mu \tanh \left(\frac{\mu B}{k_{B} T}\right)
+
+Zustandsgleichung eines idealen Paramagneten
+![This diagram depicts the magnetization curve (M/μN) as a function of the magnetic field (B), showing the saturation behavior of magnetization in a paramagnetic or ferromagnetic material.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-08_914_1269_338_1658.jpg)
+
+- Schwache Felder / hohe Temperaturen: $\tanh (x) \simeq x$
+
+\mathcal{M} \simeq N \mu^{2} \frac{B}{k_{B} T} \quad \Rightarrow \chi=\left.\frac{1}{V} \frac{\partial \mathcal{M}}{\partial B}\right|_{T} \simeq \frac{N}{V} \frac{\mu^{2}}{k_{B} T} \sim \frac{1}{T}
+
+[^0]- Entropie und Energie:
+
+\begin{aligned}
+& S=-\left.\frac{\partial F}{\partial T}\right|_{B}=\underbrace{N k_{B} \ln \left[2 \cosh \left(\frac{\mu B}{k_{B} T}\right)\right]}_{=-F / T}-\underbrace{N \frac{\mu B}{T} \tanh \left(\frac{\mu B}{k_{B} T}\right)}_{=\mathcal{M} B / T} \\
+& \Rightarrow \quad E=F+T S=-\mathcal{M} B=\langle H\rangle
+\end{aligned}
+
+- Spezifische Wärme: $\quad C_{B}=\left.\frac{\partial E}{\partial T}\right|_{B}=N\left(\frac{\mu B}{k_{B} T}\right)^{2}\left[\cosh \left(\frac{\mu B}{k_{B} T}\right)\right]^{-2}$
+![This diagram is a plot of the normalized magnetic specific heat capacity \( C_B / (k_B N) \) as a function of the normalized temperature \( k_B T / (\mu B) \), showing how the magnetic specific heat varies with temperature in a system with magnetic moments in an external magnetic field.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-09_799_1246_1430_185.jpg)
+charakteristisches Maximum der spez. Wärme bei
+
+k_{B} T \simeq \mu B
+
+- Fluktuationen:
+
+\begin{aligned}
+\operatorname{Var}(\mathcal{M})= & \left\langle\mathcal{M}^{2}\right\rangle-\langle\mathcal{M}\rangle^{2} \\
+= & \mu^{2} \sum_{i, j} \underbrace{\left(\left\langle\sigma_{z}^{i} \sigma_{z}^{j}\right\rangle-\left\langle\sigma_{z}^{i}\right\rangle\left\langle\sigma_{z}^{j}\right\rangle\right)}_{=\delta_{i j}\left(1-\left\langle\sigma_{z}^{i}\right\rangle^{2}\right)}=N \mu^{2}\left[\cosh \left(\frac{\mu B}{k_{B} T}\right)\right]^{-2}
+\end{aligned}
+
+Vergleich mit $\quad \chi=\left.\frac{1}{V} \frac{\partial \mathcal{M}}{\partial B}\right|_{T}=\frac{N}{V} \frac{\mu^{2}}{k_{B} T}\left[\cosh \left(\frac{\mu B}{k_{B} T}\right)\right]^{-2}$
+
+\text { ergibt: } \quad \Rightarrow \quad \chi=\frac{1}{V k_{B} T} \times \operatorname{Var}(\mathcal{M})
+
+Zusammenhang zwischen magnetischer Suszeptibilität und Fluktuationen in der Magnetisierung!
+
+### 9.3 Ferromagnetismus
+
+### 9.3.1 Phänomenologie ferromagnetischer Stoffe (Fe, Co, Ni, ... )
+
+- Für T<Tc (Curie-Temperatur):
+-) leicht magnetisierbar ( $\mu_{\mathrm{r}} \gg 1$ )
+-) "spontane Magnetisierung" auch bei $\mathrm{B}=0$
+-) "Hysterese": Das Umpolen einer magnetisierten Probe benötigt ein endliches Gegenfeld ("Koerzitivfeldstärke").
+![This diagram depicts a magnetic hysteresis loop showing the relationship between magnetization (M) and applied magnetic field (B₀), illustrating the lagging behavior of magnetization behind the magnetic field in a ferromagnetic material.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-11_830_1120_380_1870.jpg)
+- Für T>Tc: paramagnetisches Verhalten
+- Für $\mathbf{T = T c}$ : Phasenübergang zwischen paramagnetischem und ferromagnetischem Zustand.
+
+
+### 9.3.2 Austauschwechselwirkung und das Heisenberg Modell:
+
+Die Ursache des Ferromagnetismus liegt in der starken Kopplung zwischen benachbarten Elektronenspins:
+
+- magnetische Dipol-Dipol Kopplung (zu schwach !!)
+- Austauschwechselwirkung (Pauli-Prinzip + Coulomb-WW):
+![This diagram depicts the wavefunctions (ψ_a and ψ_b) of a particle in a double-well potential, illustrating the symmetric and antisymmetric combinations of the localized states in each well. It shows the quantum mechanical tunneling effect between the two wells.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-12_318_1475_787_623.jpg)
+
+& \Psi_{T}\left(\vec{r}_{1}, \vec{r}_{2}\right)=\frac{1}{\sqrt{2}}\left[\psi_{a}\left(\vec{r}_{1}\right) \psi_{b}\left(\vec{r}_{2}\right)-\psi_{a}\left(\vec{r}_{2}\right) \psi_{b}\left(\vec{r}_{1}\right)\right] \otimes|T\rangle \quad \begin{array}{c}
+\text { Spin-Triplet } \\
+\text { Wellenfunktion }
+\end{array} \\
+& \Psi_{S}\left(\vec{r}_{1}, \vec{r}_{2}\right)=\frac{1}{\sqrt{2}}\left[\psi_{a}\left(\vec{r}_{1}\right) \psi_{b}\left(\vec{r}_{2}\right)+\psi_{a}\left(\vec{r}_{2}\right) \psi_{b}\left(\vec{r}_{1}\right)\right] \otimes|S\rangle \quad \begin{array}{c}
+\text { Spin-Singlet } \\
+\text { Wellenfunktion }
+\end{array}
+
+1) Symmetrie der Spin-Wellenfunktion bestimmt Symmetrie der Ortswellenfunktion.
+2) Symmetrie der Ortswellenfunktion bestimmt, z.B., den mittleren Abstand der Elektronen → unterschiedlicher Coulomb-WW
+
+- Effective Spin-Spin Wechselwirkung:
+
+\text { / } J=E_{S}-E_{T}
+
+\hat{H}_{\mathrm{ex}}=E_{T}|T\rangle\langle T|+E_{S}|S\rangle\langle S|=: \quad E_{0} \mathbb{1}-\frac{J}{2}(|T\rangle\langle T|-|S\rangle\langle S|)
+
+Die Triplet- und Singletzustände sind Eigenzustände des Gesamtspins $\vec{S}=\vec{S}_{1}+\vec{S}_{2}$ mit:
+
+& \vec{S}^{2}|T\rangle=2|T\rangle, \quad \vec{S}^{2}|S\rangle=0, \quad \vec{S}_{i}^{2}|T\rangle=\frac{3}{4}|T\rangle, \quad \vec{S}_{i}^{2}|S\rangle=\frac{3}{4}|S\rangle \\
+& \text { und } \quad \vec{S}_{1} \cdot \vec{S}_{2}=\frac{1}{2}\left(\vec{S}^{2}-\vec{S}_{1}^{2}-\vec{S}_{2}^{2}\right)=\frac{1}{4}|T\rangle\langle T|-\frac{3}{4}|S\rangle\langle S|
+
+Damit erhalten wir die effektive Austauschwechselwirkung:
+
+\hat{H}_{\mathrm{ex}}=-J \vec{S}_{1} \cdot \vec{S}_{2}+\text { const } .
+
+## Das "Heisenberg Modell":
+
+Wechselwirkende Spins im externen Magnetfeld:
+
+\hat{H}_{\mathrm{Heis}}=g_{s} \mu_{B} \vec{B} \sum_{i=1}^{N} \vec{S}_{i}-J \sum_{\langle i, j\rangle} \vec{S}_{i} \cdot \vec{S}_{j}
+
+![This diagram depicts the antiferromagnetic ordering of spins in a two-dimensional lattice, showing adjacent spins aligned in opposite directions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-14_439_735_95_2039.jpg)
+
+Summe über nächste Nachbarn
+$J>0$ : ferromagnetisch, d.h. parallele Ausrichtung der Spins ist energetisch günstiger
+$J<0$ : anti-ferromagnetisch, d.h. anti-parallele Ausrichtung der Spins ist energetisch günstiger
+
+Durch weitere Reduzierung auf eine Spin-Komponente ( $\vec{S}_{i} \rightarrow \sigma_{z}^{i} / 2$ ), erhält man das "Ising Modell"
+
+H_{\text {Ising }}=\mu B \sum_{i} \sigma_{z}^{i}-J \sum_{\langle i, j\rangle} \sigma_{z}^{i} \sigma_{z}^{j}
+
+als minimales Modell zur Beschreibung ferromagnetischer Eigenschaften.
+
+### 9.4 Das Ising Modell: Molekularfeldnäherung
+
+Das Ising Modell ist in 1D und 2D exakt lösbar. Es ist aber instruktiv, zuerst eine Näherungslösung zu betrachten.
+
+### 9.4.1 Molekularfeld- ("mean-field") Näherung:
+
+Wir schreiben das Ising Modell als:
+
+H=\mu B \sum_{i} \sigma_{z}^{i}-J \sum_{\langle i, j\rangle} \sigma_{z}^{i} \sigma_{z}^{j}=\mu \sum_{i} \underbrace{\left(B-\frac{J}{\mu} \sum_{j}^{\mathrm{nn}} \sigma_{z}^{j}\right)}_{B_{\mathrm{eff}}} \sigma_{z}^{i}
+
+Die Austausch-WW der Nachbarspins wirkt sich wie ein zusätzliches lokales mag. Feld aus, dass jedoch von der Konfiguration der Spins abhängt.
+
+Näherung: $\quad B_{\text {eff }} \approx B-z \frac{J}{\mu}\left\langle\sigma_{z}\right\rangle$
+z ... Anzahl der Nachbarspins
+
+- Das lokale Feld wird durch seinen Mittelwert approximiert.
+- Der Erwartungswert $\left\langle\sigma_{z}\right\rangle$ ist vorerst unbekannt, und muss am Ende der Rechnung selbstkonsistent bestimmt werden.
+
+
+## Molekularfeldnäherung (etwas genauer):
+
+Wir schreiben allgemein und noch ohne Näherung:
+
+\sigma_{z}^{i}=\left\langle\sigma_{z}^{i}\right\rangle+\left(\sigma_{z}^{i}-\left\langle\sigma_{z}^{i}\right\rangle\right)=\text { "Mittelwert" + "Fluktuationen" }
+
+Damit:
+
+\sigma_{z}^{i} \sigma_{z}^{j}= & {\left[\left\langle\sigma_{z}^{i}\right\rangle+\left(\sigma_{z}^{i}-\left\langle\sigma_{z}^{i}\right\rangle\right)\right]\left[\left\langle\sigma_{z}^{j}\right\rangle+\left(\sigma_{z}^{j}-\left\langle\sigma_{z}^{j}\right\rangle\right)\right] } \\
+= & \left\langle\sigma_{z}^{i}\right\rangle\left\langle\sigma_{z}^{j}\right\rangle+\left(\sigma_{z}^{i}-\left\langle\sigma_{z}^{i}\right\rangle\right)\left\langle\sigma_{z}^{j}\right\rangle+\left(\sigma_{z}^{j}-\left\langle\sigma_{z}^{j}\right\rangle\right)\left\langle\sigma_{z}^{i}\right\rangle \\
+& +(\underbrace{\left.\sigma_{z}^{i}-\left\langle\sigma_{z}^{i}\right\rangle\right)\left(\sigma_{z}^{j}-\left\langle\sigma_{z}^{j}\right\rangle\right)}_{\approx 0} \longleftarrow \begin{array}{c}
+\text { Kopplung zwischen } \\
+\text { "Fluktuationen" }
+
+Molekularfeldnäherung: $\quad \sigma_{z}^{i} \sigma_{z}^{j} \rightarrow \sigma_{z}^{i}\left\langle\sigma_{z}^{j}\right\rangle+\sigma_{z}^{j}\left\langle\sigma_{z}^{i}\right\rangle-\left\langle\sigma_{z}^{i}\right\rangle\left\langle\sigma_{z}^{j}\right\rangle$
+
+Der Beitrag der Fluktuationen der magnetischen Momente wird in der Wechselwirkung im Vergleich zu den mittleren Momenten vernachlässigt.
+
+Mit dieser Näherung reduziert sich das Ising Modell auf ein System von $N$ ungekoppelte Spins in einem (effektiven) Magnetfeld:
+
+\begin{gathered}
+H \rightarrow H_{\mathrm{MF}}=\mu B_{\mathrm{eff}} \sum_{i=1}^{N} \sigma_{z}^{i}+\frac{z J}{2} N m^{2} \\
+B_{\mathrm{eff}}=B+z \frac{J}{\mu} m, \quad \begin{array}{l}
+\text { "Energie-Offset" } \\
+\text { (abhängig von m) }
+\end{gathered}
+
+mag. Moment
+
+m \equiv-\left\langle\sigma_{z}\right\rangle
+
+effektives Magnetfeld
+
+Daher erhalten wir analog zu 9.2: $\quad Z_{\mathrm{MF}}=\left[2 e^{-\beta \frac{z J}{2} m^{2}} \cosh \left(\frac{\mu B_{\mathrm{eff}}}{k_{B} T}\right)\right]^{N}$
+und aus $m=-\left.\frac{1}{\mu N \beta} \frac{\partial \ln Z_{\mathrm{MF}}}{\partial B_{\mathrm{eff}}}\right|_{T, m}$ folgt $\quad m=\tanh \left(\frac{\mu B+z J m}{k_{B} T}\right)$
+Selbstkonsistenzgleichung für magnetisches Moment
+
+### 9.4.2 Diskussion der MF Lösung
+
+- kritische Temperatur:
+
+T_{c}:=\frac{z J}{k_{B}}, \quad \tau=\frac{T-T_{c}}{T_{c}}
+
+- Grenzfall $\mathbf{B}=\mathbf{0}: \quad m=\tanh (\beta m z J)$
+![This diagram depicts the behavior of an order parameter (likely magnetization or mass, labeled "m") as a function of temperature above the critical temperature \(T_c\), showing the system in the disordered phase where the order parameter is zero at \(m=0\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-18_640_1110_1003_174.jpg)
+![This diagram depicts the behavior of an order parameter \( m \) as a function of an external parameter (likely temperature or field) below the critical temperature \( T_c \), showing multiple stable and unstable equilibrium points characteristic of a first-order phase transition or spontaneous symmetry breaking in a system undergoing a phase change.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3f33bea-e4f2-4e48-8b54-d1a2c64d4d1b/068d9395-c565-403d-8da9-0d02f2e87960-18_656_1116_987_1653.jpg)
+
+Für T>T ${ }_{\mathrm{c}}$ existiert nur eine Lösung mit $m=0$, d.h. mit verschwindendem magnetischen Moment.
+
+Für $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ gibt es noch zwei weitere Lösungen mit $m= \pm m_{0}$, d.h. mit endlicher Magnetisierung.
+
+
+[^0]:    "Curie-Gesetz"
+

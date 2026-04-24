@@ -1,0 +1,122 @@
+# Übung zur Vorlesung <br> Physik der kondensierten Materie 1 
+
+WiSe 2025/2026
+Tutorien in der Woche vom 12.01.26
+Blatt 10
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und
+-materialien
+
+### 10.1 Wärmeleitfähigkeit
+
+Skizzieren Sie den typischen Temperaturverlauf der Wärmeleitfähigkeit von kristallinen Dielektrika. Erklären Sie die physikalischen Hintergründe der verschiedenen Bereiche der Temperaturabhängigkeit.
+Die Wärmeleitfähigkeit wird durch Umklappprozesse und Phonon-Defektstreuung bestimmt. Da für Umklappprozesse der Summenwellenvektor bei der Wechselwirkung zwischen zwei Phononen außerhalb der 1. Brillouin-Zone liegen muss, müssen wir
+
+$$
+\left|\boldsymbol{q}_{1}+\boldsymbol{q}_{2}\right| \geq \frac{1}{2}|\boldsymbol{G}|
+$$
+
+fordern. Im Rahmen des Debye-Modells ist die mittlere Energie dieser Phononen, für die Umklappprozesse möglich sind, etwa $k_{\mathrm{B}} \theta_{D} / 2$. Damit können wir ihre Besetzungswahrscheinlichkeit zu
+
+\langle n\rangle=\frac{1}{e^{\theta_{D} / 2 T}-1}
+
+Mit $l_{\mathrm{ph}} \propto\langle n\rangle^{-1}$ ergibt sich dann:
+
+l_{\mathrm{ph}} \propto \begin{cases}e^{\theta_{D} / 2 T} & \text { für } T \ll \theta_{D} \\ \frac{\theta_{D}}{T} & \text { für } T \gg \theta_{D} .\end{cases}
+
+Wir erwarten also, dass $l_{\mathrm{ph}}$ von hohen Temperaturen her kommend zunächst $\propto 1 / T$ und dann $\propto e^{\theta_{D} / 2 T}$ ansteigt und dann unterhalb einer von der Probengröße und Probenreinheit abhängigen Temperatur sättigt. Bei solch tiefen Temperaturen sind Umklapp-Prozesse unterdrückt und die mittlere freie Weglänge der Phononen nur noch durch Streuung an Defekten und den Kristalloberflächen begrenzt. Die mittlere freie Weglänge wird unabhängig von der Temperatur und die Wärmeleitfähigkeit
+wird nur noch durch die spezifische Wärme bestimmt. Sie ist dort somit proportional zu $T^{3}$. Bei hohen Temperaturen ist die spezifische Wärme konstant, und das Temperaturverhalten von $\kappa$ ist durch die mittlere freie Weglänge bestimmt.
+
+Abbildung 1: Typische Temperaturverlauf der Wärmeleitfähigkeit $\kappa$.
+
+### 10.2 Flüssiges ${ }^{3} \mathrm{He}$ als Fermi-Gas
+
+Aufgrund der durch die kleine Atommasse verursachten großen Nullpunktfluktuationen wird ${ }^{3}$ He selbst bei $T=0 \mathrm{~K}$ nicht fest. Mit einem Kernspin von $I=1 / 2$ bildet es somit eine Fermi-Flüssigkeit, mit $\rho=0.08 \mathrm{~g} \mathrm{~cm}^{-3}$.
+(a) Aufgrund der endlichen Wechselwirkungen stellt flüssiges ${ }^{3}$ He kein ideales FermiGas dar, sondern eine Fermi-Flüssigkeit mit einer effektiver Masse $m^{*}=2.8 m_{3}{ }_{\mathrm{He}}$. Berechnen Sie hiermit die Fermi-Energie $E_{\mathrm{F}}$, Fermi-Temperatur $T_{\mathrm{F}}$ und FermiGeschwindigkeit $v_{\mathrm{F}}$. Vergleichen Sie diese Werte mit typischen Werten von Elektronengasen in Metallen. Welchen Vorteil besitzt flüssiges ${ }^{3}$ He gegenüber Elektronengasen in Metallen zum Studium von Fermi-Gasen?
+
+Die Fermi-Energie ist gegeben durch
+
+E_{F}=\mu(0)=\frac{\hbar^{2}}{2 m_{3_{\mathrm{He}}}^{*}}\left(3 \pi^{2} n_{3^{\mathrm{He}}}\right)^{2 / 3}=2.405 \times 10^{-23} \mathrm{~J}
+
+Für Fermi-Temperatur und Fermi-Geschwindigkeit gilt:
+
+\begin{aligned}
+T_{\mathrm{F}} & =\frac{E_{\mathrm{F}}}{k_{\mathrm{B}}}=1.743 \mathrm{~K} \\
+v_{\mathrm{F}} & =\sqrt{\frac{2 E_{\mathrm{F}}}{m_{\mathrm{Be}}^{*}}}=58.5 \mathrm{~m} \mathrm{~s}^{-1}
+\end{aligned}
+
+Während die Atomdichte in flüssigem ${ }^{3}$ He die gleiche Größenordnung wie die Elektronendichte in Metallen hat (z.B. $n_{\mathrm{Cu}}=8.45 \times 10^{28} \mathrm{~m}^{-3}$ ), ist die Masse der ${ }^{3} \mathrm{He}$-Atome um mehr als drei Größenordnungen höher als die Elektronenmasse. Da die Fermi-Energie und -Temperatur proportional zu 1 m skalieren, besitzt flüssiges ${ }^{3}$ He eine im Vergleich zu einem Elektronengas viel niedrigere Fermi Energie (Fermi-Temperatur). Während wir für Metalle Fermi-Energien (-Temperaturen) im Bereich einiger $\mathrm{eV}(10000 \mathrm{~K})$ haben, beträgt diese für ${ }^{3} \mathrm{He}$ weniger als $1 \mathrm{meV}(10 \mathrm{~K})$. Dies bietet große Vorteile beim Studium von Fermi-Gasen bzw. Fermi-Flüssigkeiten. Da die Fermi-Temperatur von Elektronengasen weit oberhalb der Schmelztemperatur von Metallen liegt, kann der Übergang von einem entarteten Quantengas bei $T<T_{\mathrm{F}}$ zu einem klassischen Teilchengas bei $T>T_{\mathrm{F}}$ mit Metallen prinzipiell nicht studiert werden. Für flüssiges ${ }^{3} \mathrm{He}$ mit $T_{\mathrm{F}} \simeq 1.7 \mathrm{~K}$ ist dies dagegen leicht möglich. Der entsprechende Temperaturbereich ist mit etablierten Kühltechniken leicht zu erreichen. Zusätzlich kann ${ }^{3} \mathrm{He}$ sehr rein hergestellt werden.
+(b) Berechnen Sie die spezifische Wärme von flüssigem ${ }^{3} \mathrm{He}$ für $T \ll T_{\mathrm{F}}$. Um die spezifische Wärme von flüssigem ${ }^{3} \mathrm{He}$ für $T \ll T_{\mathrm{F}}$ zu berechnen, benutzen wir die Tieftemperaturnäherung der spezifischen Wärme eines idealen Fermi-Gases:
+
+c_{V}=\frac{\pi^{2}}{2} n_{{ }^{3} \mathrm{He}} k_{\mathrm{B}} \frac{T}{T_{\mathrm{F}}^{*}}
+
+Um die endlichen Wechselwirkungseffekte zu berücksichtigen, verwenden wir die effektive Fermi-Temperatur $T_{\mathrm{F}}^{*}=1.743 \mathrm{~K}$. Damit erhalten wir für $\mathrm{T}=$ 20 mK :
+
+c_{V}(20 \mathrm{mK})=1.249 \times 10^{4} \mathrm{~J} \mathrm{~m}^{-3} \mathrm{~K}^{-1}
+
+### 10.3 Chemisches Potenzial in zwei Dimensionen
+
+Ausgehend von der Zustandsdichte $N_{2 \mathrm{D}}=m / \pi \hbar^{2}$, zeigen Sie, dass für das chemische Potential eines zweidimensionalen Fermi-Gases gilt:
+
+\mu(T)=k_{\mathrm{B}} T \ln \left[\exp \left(\frac{\pi n \hbar^{2}}{m k_{\mathrm{B}} T}\right)-1\right],
+
+wobei n die Elektronendichte ist.
+Für die Elektronendichte für $d=2$ gilt
+
+n_{2 \mathrm{D}}=\frac{1}{L^{2}} \sum_{\boldsymbol{k}, \sigma} f_{\boldsymbol{k}}=\int_{0}^{\infty} d \epsilon_{\boldsymbol{k}} N_{2 \mathrm{D}}\left(\epsilon_{\boldsymbol{k}}\right) f_{\boldsymbol{k}}=\frac{m}{\pi \hbar^{2}} \int_{0}^{\infty} \frac{d \epsilon_{\boldsymbol{k}}}{e^{\epsilon_{\boldsymbol{k}}-\mu(T) / k_{\mathrm{B}} T}+1}
+
+Hierbei ist $f_{\boldsymbol{k}}=\left[e^{\epsilon_{\boldsymbol{k}}-\mu(T) / k_{\mathrm{B}} T}+1\right]^{-1}$ die Besetzungswahrscheinlichkeit der Zustände bei der Temperatur $T$. Dieses Integral ist tabelliert und wir finden:
+
+\int_{0}^{\infty} \frac{d x}{b+c e^{a x}}=\frac{1}{a b}[\ln (b+c)-\ln (c)]
+
+In unserem Fall ist $a=1 / k_{\mathrm{B}} T, b=1$ und $c=e^{-\mu / k_{\mathrm{B}} T}$ und wir erhalten
+
+n_{2 \mathrm{D}}=\frac{m}{\pi \hbar^{2}}\left[\mu(T)+k_{\mathrm{B}} T \ln \left(1+e^{-\mu / k_{\mathrm{B}} T}\right)\right] .
+
+Diese Gleichung müssen wir nach $/ m u$ auflösen. Wir erhalten
+
+\frac{n_{2 \mathrm{D}} \pi \hbar^{2}}{m k_{\mathrm{B}} T}-\frac{\mu(T)}{k_{\mathrm{B}} T}=\ln \left(1+e^{-\mu / k_{\mathrm{B}} T}\right) \rightarrow e^{-\mu / k_{\mathrm{B}} T}=\frac{1}{e^{-n_{2 \mathrm{D}} \pi \hbar^{2} / m k_{\mathrm{B}} T}-1}
+
+und daraus schließlich
+
+\mu(T)=k_{\mathrm{B}} T \ln \left[\exp \left(\frac{\pi n \hbar^{2}}{m k_{\mathrm{B}} T}\right)-1\right] .
+
+### 10.4 Spezifische Wärmekapazität von Gold
+
+(a) Berechnen Sie den elektronischen und phononischen Beitrag zur spezifischen Wärmekapazität $c_{V}$ von Gold im Modell eines freien Elektronengases bei einer Temperatur von $T=300 \mathrm{~K}$. (Gold ist ein kubisch, flächenzentriertes Gitter,
+mit $a=4.08 \AA, n_{\mathrm{Au}}=5.9 \times 10^{28} \mathrm{~m}^{-3}, \theta_{\mathrm{Au}}=162 \mathrm{~K}$ )
+Der elektronische Beitrag zur spezifischen Wärmekapazität lautet
+
+c_{V}^{e l .}=\frac{\pi^{2}}{2} n k_{\mathrm{B}} \frac{T}{T_{\mathrm{F}}}
+
+Die Fermi-Temperatur lässt sich aus der gegebenen Elektronendichte berechnen:
+
+T_{\mathrm{F}}=\frac{E_{\mathrm{F}}}{k_{\mathrm{B}}}=\frac{\hbar^{2}}{2 m k_{\mathrm{B}}}\left(3 \pi^{2} n\right)^{2 / 3}=6.413 \times 10^{4} \mathrm{~K}
+
+Daraus ergibt sich sofort
+
+c_{V}^{e l .}(T=300 \mathrm{~K})=1.880 \times 10^{4} \mathrm{~J} \mathrm{~m}^{-3} \mathrm{~K}^{-1}
+
+Als nächstes schätzen wir den Phononen-Beitrag zur spezifischen Wärmekapazität ab. Bei $T=300 \mathrm{~K}$, also $T \simeq \theta_{D}$, gilt die klassische Näherung:
+
+c_{V}^{p h .}=3 n k_{\mathrm{B}}=2.44 \times 10^{6} \mathrm{~J} \mathrm{~m}^{-3} \mathrm{~K}^{-1}
+
+(b) Bei welcher Temperatur sind die beiden Beiträge gleich?
+
+Die Temperatur bei der die beiden Beiträge übereinstimmen lässt sich aus dem Tieftemperaturlimes abschätzen von $c_{V}^{p h .}$ :
+
+c_{V}^{p h .}=\frac{12}{5} \pi^{4} n k_{\mathrm{B}}\left(\frac{T}{\theta_{D}}\right)^{3}
+
+Gleichsetzen mit $c_{V}^{e l}=\pi^{2} / 2 n k_{\mathrm{B}} T / T_{\mathrm{F}}$ ergibt:
+
+T_{0}^{2}=\theta_{D}^{2} \frac{5}{24 \pi^{2}} \frac{\theta_{D}}{T_{\mathrm{F}}} \rightarrow T_{0}=1.183 \mathrm{~K}
+
+(c) Berechnen Sie den Sommerfeld-Koeffizienten $\gamma=c_{\mathrm{V}}^{\mathrm{el}} / T$ von Gold und vergleichen Sie diesen mit dem experimentell ermittelten Wert $\gamma_{\mathrm{Au}}=71.42 \mathrm{~J} \mathrm{~K}^{-2} \mathrm{~m}^{-3}$. Der Sommerfeld-Koeffizient für Gold ergibt sich zu
+
+\gamma=\frac{c_{V}^{e l .}}{T}=62.67 \mathrm{~J} \mathrm{~m}^{-3} \mathrm{~K}^{-2}
+
+Die Diskrepanz zwischen dem theoretischen und experimentellen Werte rührt daher, dass die Elektronen nicht wirklich frei sind, wie es im Sommerfeld-Modell angenommen wird. Bandstruktur- und (Fermi Flüssigkeits-) WechselwirkungsEffekte lassen sich jedoch manchmal in einer renormierten effektiven (thermischen ") Masse $m_{\text {th }}$ zusammenfassen:
+
+\gamma^{*}=\frac{m_{t h}}{m} \gamma^{\mathrm{frei}} \rightarrow m_{t h}^{\mathrm{Au}}=1.140
+

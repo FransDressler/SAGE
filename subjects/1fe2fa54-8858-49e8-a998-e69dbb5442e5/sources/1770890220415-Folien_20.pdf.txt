@@ -1,0 +1,97 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Hunklinger
+Modell der freien Elektronen
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Gross / Marx
+Modell der freien Elektronen
+
+aus Gross / Marx
+
+aus Hunklinger
+
+Spezifische Wärme von Cu Die korrekte Beschreibung der spezifischen Wärme
+bei tiefsten Temperaturen ist einer der größten Erfolge
+der freien Elektronentheorie.
+
+aus Gross/Marx
+Wikipedia
+Sommerfeld
+Theresienstr. 37
+LMU München
+
+Zustandsdichte von Nickel
+
+Abb. 8.22
+aus Gross / Marx bzw.
+R. Courths, et al Phys.
+Rep 112, 55 (1984).
+Beispiel: Zustandsdichte von Kupfer
+𝐷 𝐸 = 𝑉
+2𝜋2
+2𝑚
+ℏ2
+3/2
+𝐸
+
+Bandstruktur und Bloch-Theorem
+-
+Elektronen bewegen
+sich „frei“ durch den
+Kristall, meiden aber
+die Position der
+Atomrümpfe
+⇒ Pseudopotenzial
+
+Modell der freien Elektronen im periodischen Gitter
+
+Abb. 8.4
+Situation 1: Zustände sind gekoppelt, aber periodisches
+Potential hat geringen Einfluss auf Energie-Eigenwert.
+2/a
+
+Abb. 8.4
+Situation 2: Zustände sind gekoppelt, und periodisches
+Potential hat starken Einfluss auf Energie-Eigenwert.
+
+(äquivalentes Bild 8.17
+in Hunklinger)
+Quasi-freie Elektronen: Ladungsdichteverteilung
+|+|2 besitzen Dichte an den Atomrümpfen
+⇒ Coulomb-Wechselwirkung reduziert Eigenenergie um U1
+|−|2 besitzen Dichte zwischen den
+Atomrümpfen
+⇒ erhöhte Eigenenergie um +U1
+
+Quasi-freie Elektronen: Bandlücke an der BZ-Grenze
+Exakt am Zonenrand gilt:
+|+|2 besitzen Dichte an den
+Atomrümpfen
+⇒ Coulomb-Wechselwirkung
+reduziert Eigenenergie um U1
+Exakt am Zonenrand gilt:
+|−|2 besitzen Dichte zwischen den
+⇒ erhöhte Eigenenergie um +U1
+Je weiter weg vom Zonenrand wird der
+Einfluss des period. Potentials immer
+geringer
+2𝑈11
+
+Dispersionkurve von quasi-freien Elektronen
+2𝑈11
+
+1D freie Elektronen:
+erweitertes, reduziertes und periodisches Zonenschema
+
+1D quasi-freie (fast freie) Elektronen:
+erweitertes, reduziertes und periodisches Zonen-Schema
+∝ 2 ∙ 𝑈11
+∝ 2 ∙ 𝑈21
+∝ 2 ∙ 𝑈31
+…1
+
+Modell der freien Elektronen mit Bandindizes
+
+Leeres 3D fcc-Gitter
+
+Energie-Dispersion von Aluminium

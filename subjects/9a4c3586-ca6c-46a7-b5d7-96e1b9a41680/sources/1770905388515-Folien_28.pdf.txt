@@ -1,0 +1,232 @@
+# Quanten-Hall-Effekt 
+
+Dr. Christoph Kastl<br>Walter-Schottky-Institut and Physics Department<br>Zentrum für Nanotechnologie<br>und Nanomaterialien
+
+Hall-Effekt (klassisch)
+![This diagram depicts the directions of velocity (v), magnetic field (B), and the resulting force (v × B) on a charged particle moving in a magnetic field, illustrating the right-hand rule for the magnetic force in electromagnetism.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-02_445_879_809_81.jpg)
+
+SdH-Oszillationen (semi-klassisch)
+![This diagram depicts the density of states (DOS) as a function of energy (E) for a material, showing the energy gap (Eg) between the valence band and conduction band in a semiconductor or insulator.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-02_503_794_799_1208.jpg)
+
+Quanten-Hall-Effekt (voll quantisiert)
+![This diagram depicts the density of states (DOS) for electrons in a two-dimensional electron gas subjected to a perpendicular magnetic field, showing discrete Landau levels as peaks in the DOS versus energy (E). The inset illustrates the cyclotron motion of electrons in the magnetic field.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-02_992_817_614_2267.jpg)
+
+## Nobelpreis 1985 - Fundamentale Forschung an Halbleitern
+
+## 2D Halbleiter mit hoher Reinheit und Mobilität
+
+![This is a photograph of a man wearing glasses, a suit jacket, a shirt, and a tie. It does not depict a diagram or image related to a specific subject matter.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-03_619_425_838_130.jpg)
+Photo from the Nobel Foundation archive.
+
+## Klaus von Klitzing <br> Facts
+
+Klaus von Klitzing
+Nobel Prize in Physics 1985
+
+Born: 28 June 1943, Schroda, German-occupied Poland (now Poland)
+
+Affiliation at the time of the award: Max-PlanckInstitut für Festkörperforschung, Stuttgart, Germany
+
+Prize motivation: "for the discovery of the quantized Hall effect"
+
+![The diagram depicts the structure of a GaAs/AlGaAs heterostructure device, showing the layered composition including doped AlxGa1-xAs, undoped GaAs, and semi-insulating GaAs, with a focus on the formation of a two-dimensional electron gas (2DEG) within the undoped GaAs layer.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-03_791_1014_520_1974.jpg)
+FIG. 3. Typical shape and cross section of a GaAs$\mathrm{Al}_{x} \mathrm{Ga}_{1-x} \mathrm{As}$ heterostructure used for Hall-effect measurements.
+
+![This diagram depicts the quantum Hall effect, showing the Hall resistance (R_xy) quantized in plateaus at values of (25813 Ω)/ν and the longitudinal resistance (R_xx) dropping to zero at these plateaus as a function of magnetic field. The values of the filling factor ν correspond to the quantized Hall states observed in the experiment.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-04_1186_1006_317_466.jpg)
+FIG. 14. Experimental curves for the Hall resistance $R_{H}=\rho_{x y}$ and the resistivity $\rho_{x x} \sim R_{x}$ of a heterostructure as a function of the magnetic field at a fixed carrier density corresponding to a gate voltage $V_{g}=0 \mathrm{~V}$. The temperature is about 8 mK .
+
+![This diagram depicts a Hall bar device structure used for measuring electrical properties such as the Hall voltage (V_xy), longitudinal voltage (V_xx), and current (I) in a two-dimensional electron gas (2DEG) formed in a GaAs/AlGaAs heterostructure. It shows the layer composition and dimensions of the semiconductor materials and the placement of voltage and current contacts on the device.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-04_1020_1283_296_1825.jpg)
+FIG. 3. Typical shape and cross section of a GaAs$\mathrm{Al}_{x} \mathrm{Ga}_{1-x} \mathrm{As}$ heterostructure used for Hall-effect measurements.
+
+Zustände pro Landau Level (und Fläche)
+
+$$
+n_{L L}=\frac{e B}{h}
+$$
+
+Für feste Elektronendichte $n_{2 D}$ sind genau $v$ Landau Level gefüllt wenn gilt
+
+n_{2 D}=\frac{e B}{h} \cdot v
+
+Mit dem klassischen Hallwiderstand erhalten wir
+
+R_{x y}=R_{H} \cdot B=\frac{1}{e \cdot n_{2 D}} \cdot B=\frac{h}{e^{2}} \cdot \frac{1}{v}
+
+![This image shows a formula for the quantum number \( n_{LL} \), which is related to the Landau level index in the context of electrons in a magnetic field, involving the electron charge \( e \), magnetic field \( B \), and Planck's constant \( h \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-05_793_728_1014_1960.jpg)
+
+## Widerstand (Messgröße) vs. Leitfähigkeit (Fundamental)
+
+## Ohmsches Gesetz
+
+\boldsymbol{j}=\sigma \cdot \boldsymbol{E} \quad \square \quad\binom{j_{x}}{j_{y}}=\left(\begin{array}{ll}
+\sigma_{x x} & \sigma_{x y} \\
+\sigma_{y x} & \sigma_{y y}
+\end{array}\right) \cdot\binom{E_{x}}{E_{y}}
+
+## Inversion des Leitfähigkeitstensors
+
+\rho=\sigma^{-1}
+
+\begin{array}{rlrl}
+\sigma_{x x}=\frac{\rho_{x x}}{\rho_{x x}^{2}+\rho_{x y}^{2}} & & \rho_{x x}=\frac{\sigma_{x x}}{\sigma_{x x}^{2}+\sigma_{x y}^{2}} \\
+\sigma_{x y}=\frac{-\rho_{x y}}{\rho_{x x}^{2}+\rho_{x y}^{2}} & \rho_{x y}=\frac{-\sigma_{x y}}{\sigma_{x x}^{2}+\sigma_{x y}^{2}}
+\end{array}
+
+Im Experiment
+![This diagram depicts the quantum Hall effect, showing the Hall conductance (σ_xy) quantized in units of kΩ versus magnetic field, along with the longitudinal resistance (ρ_xx) exhibiting peaks at transitions between quantized plateaus.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-06_793_671_1000_1775.jpg)
+
+\begin{aligned}
+& \sigma_{x y}=\frac{\frac{4 e^{2}}{h}}{\left(\frac{4 e^{2}}{h}\right)^{2}+0^{2}} \\
+& \sigma_{x x}=\frac{0}{\left(\frac{4 e^{2}}{h}\right)^{2}+0^{2}}=0
+\end{aligned}
+
+![This diagram depicts the density of states (DOS) for electrons in a magnetic field, showing discrete Landau levels separated by the cyclotron energy \(\hbar \omega_c\), with the Fermi energy \(E_F\) indicated.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-07_940_1572_300_262.jpg)
+
+## Konsistent bisher:
+
+- Wert der Quantisierung
+
+→ Landau-Level Entartung
+
+- Fermi-Level zwischen Landau-Leveln $\rightarrow \operatorname{DOS}\left(\mathrm{E}_{\mathrm{F}}\right) \sim 0$ und $\sigma_{x x}=0$
+
+Wie fließt der Messtrom ohne eine Zustandsdichte bei $\mathrm{E}_{\mathrm{F}}$ ?
+
+Wieso kann ein "Isolator" einen endlichen Hallwiderstand haben?
+
+## 2D Volumen (Bulk)
+
+![This diagram depicts electron motion near the edge of a material, showing localized cyclotron orbits ("Lokalisierte Bahn") and skipping orbits ("Skipping orbit") along the edge ("Rand"). It illustrates the behavior of electrons in a magnetic field at the boundary of a two-dimensional electron system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-08_913_1128_512_88.jpg)
+![The image depicts the fabrication and microscopic view of a nanoscale electronic device, specifically a quantum point contact or nanowire structure. Part (a) shows a schematic of the device fabrication process involving deposition of metallic contacts, while part (b) shows an electron microscope image of the actual nanoscale structure with a scale bar indicating 2 micrometers.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-08_800_947_519_1260.jpg)
+![This image depicts magnetic field distributions in a superconducting sample at two different magnetic field strengths (100 mT and 174 mT), showing the spatial variation of the local magnetic field intensity T(x,y) over a micrometer-scale area.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-08_913_988_498_2253.jpg)
+
+## Transport durch 1D Randkanäle
+
+## Rand durch Potentialwall angenähert
+
+![This diagram depicts the one-dimensional density of states at the Fermi energy (E_F) for different quantum levels (ν = 1 to 6). It shows how the density of states varies with energy near the Fermi level in a 1D system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-09_1128_1189_440_198.jpg)
+
+x=0
+
+x=W
+
+![This diagram depicts quantum tunneling, showing a particle's wave function being exponentially suppressed while passing through a potential barrier between two regions labeled 1 and 2.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-09_626_1251_355_1669.jpg)
+
+- 1D Randkanäle mit chiraler Propagation
+
+→ keine Rückstreuung im Kanal
+
+- Keine Streuung zwischen den Randzuständen durch die Volumenzustände
+- Perfekte Transmission: $\mathrm{T}_{12}=1 \rightarrow$ Transport beschrieben durch Landauer-Büttiker-Formalismus
+
+
+## Transport durch 1D Randkanäle
+
+Der Strom ist durch die Anzahl der Randkänale $v$, das Leitswertquantum $\frac{e^{2}}{h}$ und die chemische Potentialdifferenz $V_{1}-V_{2}$ gegeben
+
+I_{12}=v \cdot T_{12} \cdot G_{1 D} \cdot V_{12}=v \frac{e^{2}}{h}\left(V_{1}-V_{2}\right)
+
+![This diagram depicts fluid flow in a channel with two sections of different velocities, V1 and V2, showing the direction of flow and the presence of two points labeled 1 and 2 near the channel walls.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-10_646_1515_344_1535.jpg)
+
+Da zwischen den Randkanälen keine Streuung stattfindet sind die Potentiale des „oberen“ und „unteren“ Randes durch $\mathrm{V}_{2}$ und $\mathrm{V}_{1}$ gegeben
+
+R_{x y}=\frac{V_{x y}}{I}=\frac{V_{1}-V_{2}}{v \frac{e^{2}}{h}\left(V_{1}-V_{2}\right)}=\frac{1}{v} \cdot \frac{h}{e^{2}}
+
+## Lokalisierung und Quantisierung durch Unordnung
+
+![This diagram depicts the density of states \(D(E)\) in a system showing localized states ("Lokalisierte Zustände") and extended states ("Ausgedehnte Zustände") as a function of energy \(E\) normalized by \(\hbar \omega_c\), with the Fermi energy \(E_F\) indicated. It is related to the electronic states in a quantized energy spectrum, likely in the context of the quantum Hall effect or Landau levels.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-11_1457_1192_244_33.jpg)
+
+![This diagram depicts different flow patterns of quantized and non-quantized vortices in a superfluid, showing the behavior of the superfluid density tensor components ρ_xy and ρ_xx under these conditions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-11_1168_1832_252_1307.jpg)
+Bild 9.44: Elektronenzustände bei der Fermi-Energie. a) Neben den drei Randkanälen sind in der Mitte lokalisierte Zustände zu sehen. b) Mit zunehmendem Magnetfeld vergrößern sich die Bereiche mit lokalisierten Zuständen. Der innerste Kanal entfernt sich vom Probenrand. c) Inelastische Streuung zwischen den Elektronen der beiden innersten Kanäle tritt auf. d) Fermi-Energie und Landau-Niveau fallen zusammen, der innerste Kanal ist in lokalisierte Zustände aufgebrochen. Der Längswiderstand ist maximal.
+
+## Ausblick: Fraktionaler Quanten-Hall-Effekt
+
+## Nobel Prize in Physics 1998
+
+![The image is a black-and-white portrait photograph of an older man with curly white hair, glasses, and a suit and tie. It does not depict a diagram or subject matter beyond the person's likeness.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-12_598_400_489_114.jpg)
+Photo from the Nobel Foundation archive.
+Robert B. Laughlin
+
+Prize share: $\frac{1}{3}$
+
+![This image is a black-and-white photograph of a man smiling. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-12_598_405_489_546.jpg)
+Horst L. Störmer
+
+Prize share: $1 / 3$
+![This image is a portrait photograph of a person. It does not depict a diagram or subject matter that can be described in terms of scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-12_598_400_489_984.jpg)
+
+Daniel C. Tsui
+Prize share: $\frac{1}{3}$
+
+The Nobel Prize in Physics 1998 was awarded jointly to Robert B. Laughlin, Horst L. Störmer and Daniel C. Tsui "for their discovery of a new form of quantum fluid with fractionally charged excitations"
+![This diagram depicts the Hall resistance (R_H) and longitudinal resistance (R) as functions of magnetic field strength, illustrating the quantized Hall resistance plateaus and corresponding fractional quantum Hall effect states at specific fractional filling factors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-12_1009_960_224_1864.jpg)
+
+![This diagram depicts the concept of composite quasi-particles formed by electrons combined with flux quanta, illustrating their behavior in a two-dimensional system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-12_382_1303_1239_1695.jpg)
+Figure 16. Schematic representation of $1 / 3$ charged quasiparticles. At slightly higher $B$ fields than at $v=1 / 3$ additional vortices are created. They represent dimples in the electron lake. In the dimples exactly $1 / 3$ of an electron charge is missing. These are the fractionally charged quasiparticles of the FQHE.
+
+## Ausblick: Topologie und Quantisierung
+
+![The image is a portrait photograph of an elderly man. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-13_566_376_484_260.jpg)
+© Nobel Prize Outreach. Photo:
+A. Mahmoud
+David J. Thouless
+Prize share: 1/2
+
+## Nobel Prize in Physics 2016
+
+![The image is a portrait photograph of an older man with glasses, a mustache, and thinning hair. It does not depict a diagram or subject matter for analysis.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-13_559_371_489_669.jpg)
+© Nobel Prize Outreach. Photo: A. Mahmoud
+F. Duncan M. Haldane
+
+![This image is a portrait photograph of an older man wearing glasses, a suit, and a blue tie.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-13_566_384_486_1073.jpg)
+© Nobel Prize Outreach. Photo:
+A. Mahmoud
+J. Michael Kosterlitz
+Prize share: 1/4
+
+Prize share: 1/4
+
+The Nobel Prize in Physics 2016 was awarded with one half to David J. Thouless, and the other half to F. Duncan M. Haldane and J. Michael Kosterlitz "for theoretical discoveries of topological phase transitions and topological phases of matter"
+
+\begin{aligned}
+& \sigma_{x y}=C \cdot \frac{e^{2}}{h}=\sum_{n \mathrm{occ}} \int_{B Z} d^{2} k /(2 \pi)^{2} \Omega_{n}(\boldsymbol{k}) \\
+& \Omega_{n}(\boldsymbol{k})=\nabla_{k} \times A_{n}(\boldsymbol{k})=\nabla_{k} \times i\left\langle u_{n \boldsymbol{k}}\right| \nabla_{\boldsymbol{k}}\left|u_{n \boldsymbol{k}}\right\rangle
+\end{aligned}
+
+- Chern number $C$
+- Berry connection $A_{n}(\boldsymbol{k})$
+- Berry curvature $\Omega_{n}(\boldsymbol{k})$
+
+→ Hall conductance can be expressed in genereal geometric properties of the Hamiltonian
+
+## Ausblick: Präzisionsmessungen und das SI-System
+
+![This image shows a close-up of a microelectronic or microfabricated device, likely a microelectromechanical system (MEMS) or an integrated circuit component, illustrating the physical structure and wiring connections on a microscopic scale.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-14_770_1001_304_125.jpg)
+Figure 8. Photograph of a GaAs/AlGaAs sample. The size is about $6 \times 1.5 \mathrm{~mm}$. Black area (in reality mirror-like but reflecting the black camera) is the original surface above the 2DES. Gray areas have been scratched away to confine the current path to the center of the sample. White areas are indium blotches used to make contact to the 2DES. Gold wires are attached. Specimens like this one, prepared with little attention to exact dimension nor to tidiness, show quantization of the Hall resistance to an accuracy of a few 10 parts in a billion. The specimen shown is the sample in which the fractional quantum Hall effect (FQHE) was discovered in 1981.
+
+![This diagram depicts the seven base units of the International System of Units (SI) along with their corresponding defining constants. It shows the relationship between each base unit (e.g., meter, kilogram, second) and the fundamental physical constants used to define them.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-14_884_870_320_1232.jpg)
+![This diagram depicts a measurement setup for a superconducting device involving four Josephson junctions arranged in a loop, showing the configuration for injecting currents and measuring voltage edges under an applied magnetic field, with the circuit connected to a SQUID and lock-in amplifier for sensitive detection.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-14_983_852_283_2279.jpg)
+![This diagram depicts the relative change in resistance (ΔR/R) as a function of the longitudinal resistance (R_xx) in micro-ohms for a sample under a magnetic field of 10.86 T at 1.3 K, showing experimental data with error bars and a linear fit. The inset shows the relative change in resistance as a function of current (I) in microamperes.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-14_551_886_1281_2232.jpg)
+
+## Aktuelle Forschung: Anomaler Fraktionaler Quanten-Hall-Effekt
+
+a
+![This diagram depicts a layered van der Waals heterostructure device used for electrical gating, showing the arrangement of graphene (Gr), hexagonal boron nitride (hBN), platinum (Pt), and twisted MoTe2 (tMoTe2) layers with top, center, and bottom gate voltages (Vtg, Vcg, Vbg) applied for controlling electronic properties.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-15_777_452_320_421.jpg)
+
+![The diagrams depict measurements of longitudinal resistance (Rxx) and Hall resistance (Rxy) as functions of carrier density (n) and displacement field (D/ε0) in a two-dimensional electronic system, showing quantum Hall states at fractional filling factors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-15_1326_869_276_916.jpg)
+
+d
+![This diagram depicts the Hall resistance \( R_{xy} \) as a function of the filling factor \(\nu\) and magnetic field \(\mu_0 H\), showing fractional quantum Hall states at specific fractional filling factors such as (1, -1), (2/3, -2/3), and (3/5, -3/5).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-15_785_928_312_1820.jpg)
+
+![This image is an atomic force microscopy (AFM) scan showing the surface topography of a nanoscale device or material, with height variations indicated by the color scale ranging from 0 to 25 nm. The dashed yellow lines likely mark regions of interest or boundaries within the sample.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-15_384_358_1135_479.jpg)
+
+e
+![This diagram depicts a tight-binding model on a hexagonal lattice, showing the hopping parameters (t1, t2) and phase factor (e^(iφ)) between lattice sites labeled MX and XM, which are likely related to a transition metal dichalcogenide (TMD) material. It illustrates the complex hopping terms and their directions within the hexagonal unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-15_397_321_1156_1818.jpg)
+
+f
+![This diagram is an energy band structure plot for a material at filling factor ν = -1, showing the energy levels (in meV) as a function of momentum points in the Brillouin zone (K, M, Γ). It indicates the presence of topological bands with a Chern number |C| = 1, highlighting the energy gap around the Fermi level (E_F).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-15_413_567_1153_2187.jpg)
+
+![This diagram depicts experimental data and device schematics related to quantum point contacts (QPCs) in graphene under high magnetic fields, showing conductance quantization, fractional quantum Hall states, and charge fluctuations in different Landau levels. It includes a false-colored electron microscope image of the device, conductance and magnetic field dependence plots, and time-resolved measurements of conductance fluctuations linked to electron occupancy in Landau levels.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a561f124-cdb3-4342-9e1c-a3247420c35d/0f9f8ae5-e37b-422c-9c26-53bbd8e2e6b2-16_1393_2002_331_58.jpg)
+
+Anyonische Zustände bei geradzahlig, fraktionalem Füllfaktor, z.B. 5/2, sind mögliche Kandidaten zur Realisierung von Topologischen Qubits.
+

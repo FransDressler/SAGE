@@ -1,0 +1,48 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Hunklinger
+Bandstruktur und Bloch-Theorem
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Hunklinger
+Bloch-Wellenfunktion
+Eine Bloch-Wellenfunktion
+k(r)
+besteht aus einem gitterperiodischen Teil uk(r )
+und einer ebenen Welle eikr.
+
+Abb. 8.20
+Bloch-Theorem Alle erlaubten elektronischen
+Zustände können in der 1.
+BZ dargestellt werden. Das
+Bloch-Theorem erlaubt die
+unterschiedliche Darstellung
+von E(k).
+Ausgedehntes
+Zonenschema
+Reduziertes
+Zonenschema
+Periodisches
+𝜓𝑛,𝒌𝟎+𝑮(r) = 𝜓𝑛,𝒌𝟎 𝒓
+𝐸𝑛,𝒌𝟎+𝑮 = 𝐸𝑛,𝒌𝟎
+4. Band
+Bandlücke
+3. Band
+Bandlücke
+2. Band
+1. Band
+
+aus Gross / Marx
+Bloch-Theorem in 2D
+
+aus Gross / Marx
+Modell der freien Elektronen mit Bandindizes
+
+aus Hunklinger &
+Hamaguchi (Basic
+Semiconductor Physics)
+Leeres 3D fcc-Gitter
+
+Siehe Fig. 1.16 aus
+Hamaguchi (Basic
+Semiconductor Physics)
+3D fcc-Gitter (Beispiele)

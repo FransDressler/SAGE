@@ -1,0 +1,670 @@
+Experimental Methods in Solid State Physics
+Christoph Kastl - TUM
+Winter Term 2025
+Contents
+1 Crystal Growth 2
+2 Real-Space Probes I: Scanning tunneling and atomic force microscopy 8
+3 Real-Space Probes II: Transmission Electron Microscopy 13
+© 2025 Christoph Kastl, Technical University of Munich. Text generated with AI assistance and edited by the
+author. For classroom use in “Tutorial on Solid State Physics – TUM Winter Term 2025” only. Redistribution or
+commercial use prohibited.
+1
+
+Tutorial on Solid State Physics 2025 Week 1-3
+1 Crystal Growth
+The quality of a solid-state experiment is inseparably linked to the quality of the crystal under
+investigation. Whether one aims to determine a lattice structure from diffraction data, measure
+charge carrier mobility in a transport setup, or resolve vibrational modes by spectroscopy, all of
+these rely on materials with high purity and low defect density. Poorly grown samples broaden
+diffraction peaks, obscure electronic states, and diminish transport properties. In many research
+programs, sample preparation is the true bottleneck: no sample, no science.
+Impurities and defects are unavoidable in real crystals, but their concentration and distribution
+depend strongly on the growth route. Impurities (foreign atoms) may enter during synthesis from
+the growth chamber, the growth atmosphere, chemical transport agents, or incomplete purification of
+the source material. Defects (such as vacancies, dislocations, grain boundaries) are generated when
+the lattice fails to propagate perfectly during solidification, or when thermodynamic driving forces at
+elevated temperature favor a finite defect population. Growth parameters—temperature gradients,
+pulling and translation speeds, atmosphere, pressure, and cooling or annealing protocols—are chosen
+to minimize these imperfections or to drive them out after growth.seed
+crucible
+bulk
+single crystal
+a b
+hot melt
+a c
+material
+in solution
+precipitated
+crystal
+slow cooling (K/h) temperature difference (few K)
+AB(s)+X(g)
+X(g)+AB(s)
+AX(g)+B(g)
+Figure 1: Examples of common crystal growth techniques. a Czochralski method. b Flux growth.
+c Chemical vapor transport.
+Bulk crystal growth
+Czochralski (CZ) method. A charge of the material is melted in a crucible, and a seed crystal
+is dipped into the melt and slowly pulled upward while rotating (Fig. 1a). Solidification proceeds
+at the solid–liquid interface, replicating the crystallographic order of the seed. The crystal diameter
+is controlled by a balance of heat flow and pulling rate; rotation helps homogenize the melt. CZ
+excels at producing large single crystals (e.g. silicon, germanium) and underpins wafer production
+in microelectronics. Technical challenges include thermal stresses that can nucleate dislocations,
+and contamination from the crucible (e.g. oxygen uptake from quartz in Si). Post-growth anneals
+and carefully tuned thermal gradients are employed to reduce defect densities and to control oxygen
+precipitation in downstream processing.
+2
+
+Tutorial on Solid State Physics 2025 Week 1-3
+Equilibrium Vacancy Concentration
+Even in an apparently perfect crystal, some lattice sites are empty. These vacancies are
+unavoidable because, at finite temperature, the crystal can lower its free energy by exchanging
+a small amount of internal energy for a large increase in entropy.
+Energetic cost. Creating a single vacancy costs the formation energy Ev
+f , which includes
+breaking the surrounding bonds and relaxing the lattice. Creating n vacancies raises the total
+internal energy by approximately
+U (n) = n Ev
+f .
+Counting possibilities and entropy. The key point is that there are many ways to choose
+which n sites are vacant in a crystal with N atomic sites. The number of possible arrangements
+is
+Ω =
+N
+n
+
+= N !
+n! (N − n)! .
+Therefore, a crystal with a small number of vacancies has a much higher entropy than a
+perfect crystal. The configurational entropy is defined as
+S = kB ln Ω,
+where kB is Boltzmann’s constant. When N is very large (of order Avogadro’s number) and
+n ≪ N , we can use Stirling’s approximation, ln N ! ≈ N ln N − N , to simplify:
+S ≈ kB [N ln N − n ln n − (N − n) ln(N − n)] ≈ kB n
+
+ln
+ N
+n
+
++ 1
+
+.
+This means that the entropy increases roughly like kB n ln(N/n)—so adding a few vacancies
+greatly increases the number of accessible configurations.
+Minimizing the total free energy. The relevant thermodynamic potential at fixed tem-
+perature is the Helmholtz free energy,
+F (n) = U − T S ≈ nEv
+f − kB T n
+
+ln
+ N
++ 1
+
+.
+Setting ∂F/∂n = 0 gives
+Ev
+f − kB T ln
+= 0, ⇒ n
+N ≡ cv = exp
+
+− Ev
+f
+kB T
+In this simplified model, the equilibrium vacancy fraction is determined by a simple Boltzmann
+factor: sites with an energy cost Ev
+f are occupied with a probability proportional to e−Ev
+f /kB T .
+Typical numbers. For Ev
+f = 1 eV, we find
+cv (T = 300 K) ≈ 10−17 and cv (T = 1200 K) ≈ 10−6
+Physical consequences. During crystal growth, the temperature is high and cv correspond-
+ingly large. Upon cooling, the equilibrium defect density drops. If cooling is slow, defects have
+time to recombine or diffuse to sinks (dislocations, surfaces). Rapid quenching, in contrast,
+freezes in a nonequilibrium defect density. Controlling temperature profiles and annealing
+times is therefore one of the most powerful tools in obtaining crystals with low defect concen-
+tration.
+3
+
+Bridgman–Stockbarger method. Here, the material is sealed in an ampoule and translated
+slowly through a well-defined temperature gradient so that the charge melts and then resolidifies
+from one end to the other. Ideally a single seed determines the crystallographic orientation and the
+solidification front remains planar. The method is mechanically simpler than CZ and is widely used
+for compound semiconductors, e.g. GaAs, CdTe. Because the melt is confined, interactions with
+container walls can introduce impurities. Segregation during solidification may yield compositional
+inhomogeneities if the translation speed and gradient are not optimized. Grain formation is sup-
+pressed by maintaining a stable interface and modest growth rates; too steep a gradient or too fast
+a pull promotes polycrystallinity and dislocation generation.
+Flux growth. Flux growth exploits a high-temperature solvent (the “flux”) in which the target
+compound has appreciable solubility. Upon slow cooling, the solution becomes supersaturated and
+the compound crystallizes out, ideally on a seed or as free-standing single crystals (Fig. 1b). Because
+dissolution and precipitation occur well below the melting point of the compound, flux growth is
+especially valuable for materials that decompose or melt incongruently. Choice of flux is central: a
+self-flux (one component of the target stoichiometry) minimizes chemical contamination, whereas
+foreign-metal fluxes (e.g. Sn, Bi) can widen the accessible solvent window but risk incorporation or
+surface wetting. In practice, a charge composed of starting elements (or pre-reacted powders) and
+flux is sealed in a crucible, heated to homogenize, then cooled at very slow cooling rates (typically
+0.1 − 0.5 K/h) through the supersaturation regime.
+Chemical Vapor Transport (CVT). Chemical vapor transport grows crystals by reversible
+gas-phase reactions that shuttle material from a hot source zone to a cooler sink zone within a
+sealed ampoule (Fig. 1c). A small amount of transport agent X (e.g. halogens or halides) reacts
+with the source compound, denoted AB, at temperature Thot to form volatile species AX(g) and
+B(g) into the gas phase; these diffuse to the cold zone at Tcold, where the equilibrium shifts and
+the target compound AB re-precipitates in solid form, releasing the transport agent X into the
+gas phase. The net flux is set by the gradient in chemical potential between zones and the gas-
+phase diffusivity. CVT is particularly effective for layered chalcogenides and many transition-metal
+compounds, where direct melt growth is impractical or yields polycrystals. Both flux growth and
+chemical vapor transport achieve equilibrium crystal growth far below the melting point, which
+improves chemical homogeneity at the expense of growth speed.
+Thin-film growth
+Many materials and device structures used in modern technology cannot be grown as large bulk
+crystals but instead require atomically precise thin films or heterostructures. These are obtained by
+epitaxial growth techniques, in which atoms or molecules condense on a single-crystalline substrate
+and arrange themselves in registry with its lattice. The term epitaxy (from Greek epi, “upon”,
+and taxis, “arrangement”) emphasizes that the crystallographic orientation of the film is determined
+by the substrate. Depending on the source of the depositing species, epitaxy can be realized in
+ultra-high vacuum (molecular beam epitaxy, MBE) or in a chemically reactive gas environment
+(metal–organic chemical vapor deposition, MOCVD). Thin-film growth unites thermodynamics and
+kinetics: surface energies decide whether atoms wet or cluster, while lattice mismatch and strain
+determine how many coherent layers can be sustained. Techniques such as MBE and MOCVD
+translate these principles into atomic-scale control, enabling modern semiconductor technology and
+the exploration of quantum phenomena in engineered heterostructures.
+4
+
+Tutorial on Solid State Physics 2025 Week 1-3a b
+single crystal substrate
+Volmer-Weber
+(island growth)
+Frank-van der Merve
+(layer-by-layer growth)
+strained
+layer
+Stranski–Krastanov
+(layer plus island growth)
+vacuum chamber
+substrate
+effusion cells
+Figure 2: a Schematic illustration of thin-film growth via molecular beam epitaxy. b Comparison
+of the three basic thin-film growth modes.
+Molecular Beam Epitaxy (MBE). In MBE, beams of atoms or molecules are evaporated from
+effusion cells under ultra-high-vacuum conditions (p ≲ 10−8 mbar) and directed toward a heated
+substrate (Fig. 2a). Because the mean free path is much larger than the chamber dimensions, the
+particles travel ballistically, allowing excellent control over flux and composition. Layer thickness
+is determined by the arrival rate and substrate temperature, and can be monitored in real time by
+electron diffraction methods.
+The low background pressure minimizes contamination, leading to extremely pure interfaces and
+sharp heterojunctions. However, maintaining lattice matching between film and substrate is essential
+to prevent misfit dislocations. For small mismatches, strain can be elastically accommodated over
+several monolayers; beyond a critical thickness, plastic relaxation occurs and dislocations nucleate
+to relieve the strain energy. Precise flux control and growth interruptions at submonolayer level
+enable the fabrication of quantum wells, superlattices, and two-dimensional electron gases central
+to modern semiconductor physics.
+Metal–Organic Chemical Vapor Deposition (MOCVD). MOCVD achieves epitaxial growth
+through chemical reactions of volatile precursor molecules at a heated substrate in a controlled atmo-
+sphere (typically 10−1–102 mbar). Organometallic compounds such as trimethylgallium or diethylz-
+inc deliver the metal component, while hydrides such as AsH3 or PH3 supply nonmetals. At the
+substrate temperature (600 ◦C to 1000 ◦C), these precursors decompose, releasing the constituent
+atoms, which incorporate into the growing film while gaseous by-products are pumped away.
+Compared to MBE, MOCVD operates at higher pressures and is less demanding in vacuum tech-
+nology, making it suitable for industrial-scale wafer growth. It remains the standard for compound
+semiconductors such as GaAs, InP, and GaN, used in LEDs and high-frequency electronics. The
+principal challenges lie in controlling gas-phase reactions, precursor depletion, and uniformity across
+large substrates. Because chemical reactions can generate carbon or oxygen residues, purification of
+precursors and precise temperature control are critical for achieving low defect densities.
+Growth modes. Commonly, thin-film growth can be classified into three distinct mechanisms,
+which are island growth, layer-by-layer growth, and layer-plus-island growth (Fig. 2b). Whether
+a film grows layer-by-layer or as isolated islands is determined by the balance of surface and inter-
+face energies. Let γs, γf , and γi denote the surface energies of substrate, film, and the interface,
+5
+
+respectively. If
+γs > γf + γi,
+atoms of the film wet the substrate completely, resulting in Frank–van der Merwe (layer-by-layer)
+growth. If
+γs < γf + γi,
+film atoms bond more strongly to each other than to the substrate, producing Volmer–Weber
+(island) growth. Intermediate cases, where the first few monolayers wet the surface but strain accu-
+mulates, lead to Stranski–Krastanov growth: initial layer-by-layer deposition followed by island
+formation once the strain energy exceeds the wetting energy gain. Control of these energies—by
+adjusting substrate temperature, background gas, and surface reconstruction—is the key to tailoring
+film morphology in epitaxy.
+Strain and Critical Thickness
+When a crystalline film is grown on a substrate with a slightly different lattice constant, the
+atomic planes of the film must stretch or compress to match those of the substrate. The
+relative mismatch,
+ε = af − as
+as
+,
+defines the in-plane strain. For very thin films, this distortion can be accommodated elasti-
+cally: the film simply adjusts its lattice spacing without introducing defects. Such a film is
+called pseudomorphic or coherently strained.
+As the film becomes thicker, the elastic energy stored in the lattice increases proportionally to
+the film thickness, because each additional layer adds more strained material. Eventually, it
+becomes energetically favorable for the film to relax by forming small lattice imperfections at
+the interface, such as dislocations or stacking faults. The film thickness at which this happens
+is called the critical thickness hc.
+A detailed elastic analysis (beyond the scope of this tutorial) shows that the critical thickness
+decreases approximately inversely with the lattice mismatch:
+hc ∝ 1
+|ε| .
+This means that even a small mismatch drastically limits the thickness of a defect-free epitaxial
+layer.
+To get a feeling for typical numbers, consider GaAs grown on an AlAs substrate, which has
+a very small lattice mismatch of only |ε| ≈ 0.001. In this case, coherent layers up to several
+hundred nanometers thick can be grown without strain relaxation. In contrast, for GaN grown
+on sapphire, the mismatch is about |ε| ≈ 0.04 (4%), and the corresponding critical thickness
+is only a few nanometers. Beyond that, misfit dislocations form to relieve the strain, leading
+to mosaicity and reduced carrier mobility.
+In practice, modern epitaxy exploits this interplay between strain and relaxation. For ex-
+ample, thin strained layers can be used deliberately to tune band gaps and enhance carrier
+mobility (“strain engineering”), while thicker films require graded buffer layers or van der
+Waals substrates to avoid defect formation.
+6
+
+Question 1 Defect density
+At T = 1200 K, two point defects have formation energies Ef = 2 eV and Ef = 5 eV. Assuming
+c ∝ exp[−Ef /(kB T )] with kB = 8.6 × 10−5 eV/K, what is the approximate ratio of their equilibrium
+concentrations c2/c5?
+1(a)
+e−(5−2)/(8.6×10−5×1200) ≈ 10−13
+(b)
+e(5−2)/(8.6×10−5×1200) ≈ 1013
+(c)
+1/(3 × 1200) ≈ 3 × 10−4
+(d)
+Question 2 Bulk crystal growth
+During Czochralski growth of silicon, the most important source of oxygen contamination is:
+evaporation from the melt surface.(a)
+residual gas in the chamber.(b)
+the rotating seed crystal.(c)
+reaction and dissolution of the quartz crucible at high temperature.(d)
+Question 3 Bulk crystal growth
+Which statement regarding flux growth vs. chemical vapor transport (CVT) is correct?
+Both operate near the melting point and typically yield the largest crystals.(a)
+Flux growth relies on supersaturation in a liquid solvent (diffusion in melt); CVT uses a gas-phase
+transport agent and a hot–cold equilibrium to drive deposition.
+(b)
+CVT growth minimizes contamination better than flux growth because the halogens used as
+transport agents purify the source material.
+(c)
+CVT always produces lower defect density due to lower temperatures.(d)
+Question 4
+Thin-film growth A GaAs film (af = 5.65 ˚A) is grown on a GaP substrate (as = 5.45 ˚A). Estimate
+the lattice mismatch ε and the qualitative implication for the critical thickness.
+|ε| ≈ 0.2%; coherent thickness ∼ hundreds of nm.(a)
+|ε| ≈ 3.7%; coherent growth limited to only a few nm before misfit dislocations.(b)
+|ε| ≈ 8%; film remains pseudomorphic up to micrometer.s(c)
+|ε| ≈ 10−4; strain negligible.(d)
+7
+
+2 Real-Space Probes I: Scanning tunneling and atomic force
+microscopy
+Optical microscopy is limited in resolution by the wavelength of light: even under ideal conditions,
+features smaller than roughly λ/2 (a few hundred nanometers) cannot be resolved. Real space atomic
+details of surfaces remained inaccessible until the 1980s, when a new class of instruments—scanning
+probe microscopes—overcame this limit by exploiting interactions between a sharp tip and a surface
+at the atomic scale.
+The first of these was the scanning tunneling microscope (STM), invented by G. Binnig and
+H. Rohrer in 1981. It provided the first direct images of individual atoms on a solid surface and
+earned its inventors the 1986 Nobel Prize in Physics. A few years later, the related atomic force
+microscope (AFM) extended the idea to non-conductive samples, making scanning probe techniques
+central to modern nanoscience.
+Scanning Tunneling Microscopy (STM)
+Principle of operation. The STM operates by bringing a sharp metallic tip extremely close to
+a conductive surface—so close that the outermost atoms of tip and sample are separated by only
+a few ˚angstr¨oms. When a bias voltage V is applied between them, electrons can tunnel quantum
+mechanically through the vacuum gap (Fig. 3a). The resulting tunneling current I depends sensi-
+tively on the tip–sample separation z: even a displacement of 1 ˚A can change the current by roughly
+one order of magnitude. This exponential dependence makes it possible to map the surface with
+atomic-scale resolution.a
+tip
+sample
+vacuum
+tip sample
+electron
+tunneling
+b c
+5 Å
+Figure 3: Scanning tunneling microscopy (STM). a Working principle of STM. b Electron microscope
+image of an electrochemically etched tungsten tip. Reprinted with permission from Meas. Sci.
+Technol. 10, 11–18 (1999). Copyright IOP 1999. c Constant current image of the surface of highly
+oriented pyrolitic graphite (HOPG) resolving the hexagonal periodic lattice structure. Reprinted
+with permission from Solid State Commun. 149, 1151-1156 (2009). Copyright Elsevier 2009.
+Technical implementation. The STM tip is mounted on a piezoelectric scanner capable of sub-
+˚angstr¨om motion in all three directions. The scanner raster-scans the tip across the surface while a
+feedback loop continuously adjusts its height to maintain a constant tunneling current. The resulting
+vertical displacement z(x, y) forms the topographic map of the surface. This constant-current mode
+is the most common operating mode and provides stable, high-resolution images.
+8
+
+An alternative is the constant-height mode, in which the tip height remains fixed while variations
+in tunneling current are recorded. This mode is faster but riskier—any protrusion higher than the
+set distance can cause a tip crash. Constant-height operation is therefore restricted to atomically
+flat surfaces such as graphite or semiconductor terraces.
+The quality of an STM image depends critically on the sharpness and cleanliness of the tip. In
+practice, tips are usually made from tungsten or platinum–iridium wires a few tenths of a millimeter
+thick. Tungsten tips are often prepared by electrochemical etching, in which a short wire is immersed
+in a sodium hydroxide solution and biased against a counter electrode. When the wire thins to
+a fine neck, it breaks spontaneously, leaving a sharp apex with a radius of curvature of only a
+few nanometers (Fig. 3b). The freshly etched tip is rinsed, sometimes annealed in vacuum, and
+occasionally further sharpened by field evaporation or gentle indentation into a clean metal surface.
+Quantum Tunneling and STM Imaging Contrast
+For an electron with energy E incident on a 1D potential barrier of height Φ and width z,
+quantum mechanics predicts a finite transmission probability
+T ∝ exp(−2κz), with κ =
+p2m(Φ − E)
+ℏ .
+In the STM, this leads to a tunneling current approximately proportional to
+I(V, z) ∝ V ρs(EF ) e−2κz ,
+where ρs(EF ) is the local density of electronic states (LDOS) of the sample at the Fermi
+energy. The STM signal therefore depends on both the geometric distance and the electronic
+structure at the surface.
+When a bias voltage V is applied, electrons tunnel from occupied states of one electrode to
+unoccupied states of the other. The current can be expressed as
+I(V ) ∝
+Z EF +eV
+EF
+ρs(r, E) T (E, z) dE,
+which means that changing the bias allows one to probe occupied (V < 0) or empty (V > 0)
+electronic states. In a constant-current image, regions with higher LDOS at the chosen energy
+appear as apparent “protrusions” because the feedback system retracts the tip slightly to keep
+I constant. STM images therefore represent contours of constant integrated LDOS rather than
+purely geometric height maps.
+Atomic Force Microscopy (AFM)
+While the STM relies on a tunneling current and thus requires a conductive sample, the atomic
+force microscope (AFM) generalizes the concept of scanning with a sharp tip to measure mechanical
+rather than electronic interactions. In AFM, a sharp tip mounted at the end of a flexible cantilever
+is brought close to the sample surface. The forces acting between tip and surface—arising from van
+der Waals attraction, Pauli repulsion, and possibly electrostatic or capillary interactions—bend the
+cantilever by minute amounts. These deflections, typically on the order of picometers to nanometers,
+are measured with sub-˚angstr¨om precision using an optical lever: a laser beam reflected from the
+9
+
+cantilever onto a position-sensitive, segmented photodiode records its angular motion.5 μm
+a
+sample
+b
+tip
+laser segmented
+photodiode
+cantilever
+2 nm
+c
+Figure 4: Atomic force microscopy (AFM). a Working principle of AFM. b Electron microscope
+image of a pyramid-shaped tip on a microcantilever fabricated from silicon. Adapted under the terms
+of Creative Commons Attribution-Share Alike 4.0 International from wikimedia.org. Copyright
+NanoscaleRanger 2019. c Atomically resolved topography of a Mica surface, an insulating, layered
+silicate mineral. Adapted with permission from Rev. Sci. Instrum. 81, 073704 (2010). Copyright
+AIP 2010.
+Lennard–Jones Potential
+The interaction between two atoms or surfaces can often be modeled by a Lennard–Jones
+potential
+U (r) = 4ε
+ σ
+r
+12
+−
+ σ
+r
+6
+,
+where ε is the binding energy and σ the equilibrium separation. The corresponding force is
+F (r) = − dU
+dr = 24ε
+ 2σ12
+r13 − σ6
+r7
+At large r, the attractive r−7 term dominates (van der Waals regime); at small r, the steep
+r−13 term causes repulsion due to overlapping electron orbitals. The transition between
+these regimes determines whether the AFM operates in attractive (non-contact) or repulsive
+(contact) mode.
+Operating principle and force regimes. As the tip approaches the surface, the interaction
+passes smoothly from long-range attraction to short-range repulsion. The resulting force–distance
+curve governs the contrast in all AFM modes. In contact mode, the tip lightly touches the surface
+on the repulsive side of the curve, and topography is recorded by maintaining a constant deflection.
+In non-contact mode, the cantilever oscillates near its resonance frequency a few nanometers above
+the surface; attractive forces reduce its effective spring constant and cause a measurable frequency
+shift. Tapping or intermittent-contact mode lies between these two limits and is widely used because
+it minimizes lateral forces and sample damage.
+10
+
+Nanomechanics with AFM. Beyond imaging, the AFM provides a quantitative tool for explor-
+ing mechanical properties at the nanoscale. When the tip indents a surface, the local deformation
+obeys the same continuum concepts introduced in solid mechanics: stress, strain, and elastic moduli.
+In the simplest case of a spherical tip of radius R pressing into an elastic half-space, the contact
+radius a and indentation depth δ are related by the Hertz model,
+F = 4
+3 E∗√R δ3/2, with 1
+E∗ = 1 − ν2
+t
+Et
++ 1 − ν2
+s
+Es
+where Et,s and νt,s are the Young’s moduli and Poisson ratios of tip and sample, respectively.
+Measuring the force–distance curve thus allows extraction of the effective elastic modulus E∗.
+Typical AFM cantilevers have spring constants between 10−2 and 100 N/m. A deflection of only
+1 nm therefore corresponds to forces from piconewtons to nanonewtons—comparable to the weight of
+a single bacterium or the force between two chemical bonds. Conversely, when a sharp tip contacts
+a surface over a few square nanometers, these small forces translate into enormous local pressures
+of several gigapascals, sufficient to deform or even manipulate individual atoms. This remarkable
+range makes the AFM not only a microscope but also a nanoscale mechanical tester that directly
+links macroscopic elasticity to atomic-scale interactions.
+Driven Harmonic Oscillator and Frequency Shift
+A cantilever of effective mass m and spring constant k obeys
+m¨z + γ ˙z + kz = F0 cos(ωt),
+with resonance frequency f0 = 1
+2π
+pk/m and quality factor Q = 1
+γ
+√km. When the tip
+experiences a weak additional force gradient ∂F/∂z, the effective spring constant becomes
+keff = k − ∂F/∂z, leading to a frequency shift
+∆f ≈ − f0
+2k
+∂F
+∂z .
+Attractive forces (∂F/∂z < 0) decrease f0, while repulsive interactions increase it. In non-
+contact AFM, the feedback loop maintains a constant oscillation amplitude or frequency shift,
+allowing topographic mapping with minimal tip–sample contact and atomic-scale resolution.
+11
+
+Question 5 Tunneling in STM
+In an STM, the tunneling current follows approximately I ∝ e−2κz with κ ≈ 10 nm−1. By how much
+does the current change if the tip–sample distance increases by 1 ˚A?
+The current doubles.(a)
+The current decreases by about one order of magnitude.(b)
+The current remains constant.(c)
+The current drops to zero instantly.(d)
+Question 6 Image contrast in STM
+In constant-current STM imaging, the feedback loop adjusts the tip height so that the tunneling
+current remains fixed. What does the recorded topographic signal actually represent?
+The true geometric height of the outermost surface atoms.(a)
+The local electric potential at the surface.(b)
+Contours of constant integrated local density of electronic states (LDOS) at the chosen bias
+voltage.
+The spatial variation of the work function of the material.(d)
+Question 7 Forces in AFM
+The interaction between an AFM tip and a surface atom can be approximated by a Lennard–Jones
+potential
+U (r) = 4ε
+ σ
+12
+−
+ σ
+6
+At which distance regime is the tip–sample force attractive, and how does this relate to AFM imaging
+modes?
+For r < σ, the force is attractive; AFM operates in non-contact mode.(a)
+For r > σ, the van der Waals term dominates and the force is attractive; AFM operates in
+non-contact mode.
+For r > σ, the force becomes repulsive; AFM operates in contact mode.(c)
+The force is always repulsive because surfaces cannot attract.(d)
+Question 8 Comparing STM and AFM
+Which statement correctly compares STM and AFM?
+STM measures mechanical forces, while AFM measures tunneling current.(a)
+STM requires a conductive sample and measures electron tunneling; AFM measures interatomic
+forces and can image insulating materials.
+Both techniques require vacuum and cryogenic temperatures.(c)
+AFM generally achieves higher lateral resolution than STM on metal surfaces.(d)
+12
+
+3 Real-Space Probes II: Transmission Electron Microscopy
+After exploring scanning probe methods that map surfaces atom by atom, we now turn to a technique
+capable of imaging within solids. The transmission electron microscope (TEM) provides real-space
+information from thin crystalline specimens and can reach sub-˚angstr¨om resolution, sufficient to
+resolve individual atomic columns deep in the bulk. Whereas STM and AFM are limited to the
+outermost atomic layers, TEM reveals the internal structure, defects, and interfaces of materials.
+Principle of operation
+The concept of using electrons instead of light for microscopy dates back to the early 1930s. Because
+electrons exhibit wave–particle duality, Ernst Ruska realized that their wavelength could be much
+shorter than that of visible light, and that electromagnetic lenses could be used to focus them just as
+glass lenses focus light. Together with Max Knoll, he built the first transmission electron microscope
+in 1931 and demonstrated a spatial resolution surpassing optical microscopes. For this pioneering
+work, Ruska was later awarded the Nobel Prize in Physics in 1986—the same year that Gerd Binnig
+and Heinrich Rohrer received the prize for inventing the STM. Both breakthroughs transformed our
+ability to “see” matter on the atomic scale, one through electron optics, the other through quantum
+tunneling.
+In a TEM, a high-energy electron beam—typically 80 keV to 300 keV—is generated by a thermionic
+or field-emission gun and guided down an evacuated electron optics column. A series of electro-
+magnetic condenser lenses shape and focus the beam onto the sample, typically a thinned slab of
+crystalline material. The sample must be sufficiently electron-transparent (50 nm to 100 nm) so
+that a significant fraction of the electrons can traverse it without complete absorption. After in-
+teraction with the sample, the transmitted and scattered electrons are refocused by the objective
+and projection lenses to form a magnified image or diffraction pattern. In former days the pat-
+tern was detected by a fluorescent screen, whereas nowadays modern semiconductor cameras with
+few-electron sensitivity are well established.
+Interaction of electrons with matter. When electrons penetrate a crystalline solid, they scatter
+with both atomic nuclei and the surrounding electron cloud:
+• Elastic scattering: the electron changes direction but not its kinetic energy. It arises from
+the Coulomb potential of the atomic cores and is responsible for diffraction and image contrast.
+The angular distribution of this scattering carries structural information about the arrange-
+ment of atoms. At high accelerating voltages, the elastic mean free path (typically 50 nm to
+200 nm)is long enough for thin specimens to transmit a measurable fraction of the incident
+beam.
+• Inelastic scattering: the electron transfers energy to the sample, exciting vibrations (phonons),
+collective excitations (e.g. plasmons), or ionizing electrons. This process leads to energy loss,
+heating, and beam damage, and limits the total dose a specimen can tolerate. Inelastic scat-
+tering also reduces image contrast by adding background intensity.
+The requirement of thin samples therefore stems from the balance between these two processes:
+the crystal to be imaged must be thick enough to represent the bulk but thin enough that most elec-
+trons experience at most one significant scattering event before leaving the sample. This competition
+between scattering and absorption governs both image contrast and achievable thickness.
+13
+
+Tutorial on Solid State Physics 2025 Week 1-3a cbTEM STEM
+condensor
+objective
+intermediate
+detector
+aperture
+electron gun
+projector
+Figure 5: Transmission electron micoscopy (TEM) and scanning transmission electron microscopy
+(STEM). a Working principle of TEM and STEM. b Bright-field image of an epitaxially grown
+semiconductor heterostructure revealing the formation of dislocations (dark contrast) due to strain
+relaxation. Reprinted from J. Phys.: Conf. Ser. 471 012008 (2013) under the terms of Creative
+Commons Attribution 3.0 license. Copyright The Authors 2013. c Atomically resolved lattice of a
+thin bilayer film of CrSBr, an antiferromagnetic van der Waals material. Reprinted from Phys. Rev.
+X 15, 021080 (2025) under the terms of Creative Commons Attribution 4.0 International license.
+Copyright The Authors 2025.
+Electron Wavelength and Resolution Limit
+The resolving power of a microscope depends on the wavelength of its probe. An electron
+accelerated through a potential V attains a relativistic momentum
+p =
+s
+2meeV
+
+1 + eV
+2mec2
+so that its de Broglie wavelength is
+λ = h
+p .
+At 200 keV, λ ≈ 2.5 × 10−3 nm (0.0025 ˚A), about five orders of magnitude shorter than visible
+light. Even though lens aberrations prevent achieving this theoretical limit, practical spatial
+resolutions below 0.1 nm—corresponding to atomic spacing—are nowadays routinely achieved.
+Electron optics and image formation. he principles of electron optics closely mirror those of
+geometric optics. Just as in an optical microscope, image formation in a TEM follows the principles of
+geometric optics. Magnetic lenses—coils of wire producing an axially symmetric magnetic field—act
+on moving electrons via the Lorentz force, bending their trajectories toward the optical axis much
+like a convex glass lens focuses light rays. A typical TEM employs several such lenses in sequence:
+the condenser lens controls the beam convergence and illumination area, the objective lens forms
+the first magnified image of the specimen, and the intermediate and projector lenses further enlarge
+this image onto the viewing screen or detector (Fig. 5a). The overall magnification is approximately
+the product M = MobjectiveMintermediateMprojector. Since the individual magnifications are each
+14
+
+on the order of 100×, the total magnification often exceeds 105. Modern TEMs therefore combine
+enormous geometric magnification with the intrinsically short electron wavelength to achieve atomic-
+scale resolution, revealing e.g. the formation of dislocations within semiconductor heterostructures
+(Fig. 5b).
+Numerical aperture and collection angle. In analogy to optical microscopy, the resolution of
+a TEM also depends on the range of scattering angles collected by the objective lens, often expressed
+as a numerical aperture (NA). Formally, NA = n sin α, where α is the semi-angle of the objective
+lens aperture and n the refractive index of the medium (unity in vacuum). Because the electron
+wavelength is extremely small, even a modest angular aperture of a few milliradians corresponds to
+very high resolving power. However, increasing α also enhances lens aberrations and reduces contrast
+by admitting more highly scattered electrons. In practice, the objective aperture therefore acts as a
+spatial filter: by selecting a smaller collection angle, one emphasizes mass–thickness and diffraction
+contrast, whereas a larger aperture favors high-resolution, phase-contrast imaging. Thus, while the
+NA in TEM formally plays the same role as in light optics, its optimization reflects a compromise
+between resolution, contrast, and aberration control rather than simple diffraction limits.
+Aberration correction In any lens system, spherical and chromatic aberrations distort the focus
+of off-axis rays, limiting resolution. In early TEMs, the spherical aberration coefficient Cs of the
+objective lens defined a point-spread function with radius proportional to (Csλ3)1/4. The advent
+of multipole correctors—combinations of hexapole or octupole lenses that introduce compensating
+fields—has revolutionized the field. The corrector effectively flattens the phase front of high-angle
+rays, restoring them to the same focal plane as paraxial electrons. Corrected TEMs routinely achieve
+sub-˚angstr¨om probes with minimal phase distortion, allowing direct imaging of atomic columns (Fig.
+5c).
+Z-Contrast and Incoherent Scattering
+For an electron scattered elastically by a Coulomb potential, the Rutherford differential cross-
+section is dσ
+dΩ ∝ Z2
+E2 sin4(θ/2) ,
+so the integrated intensity at large scattering angles grows roughly with Z2. In HAADF-
+STEM, this incoherent scattering dominates the detected signal, producing a direct, mono-
+tonic relationship between brightness and atomic number—unlike conventional phase-contrast
+TEM, where interference effects complicate interpretation.
+HAADF-STEM imaging
+Whereas conventional TEM relies on interference between transmitted and diffracted beams, scan-
+ning TEM (STEM) analyzes electrons scattered at defined angles, providing new types of image
+contrast. TEM forms images using the entire transmitted beam (bright-field) or selected diffracted
+beams (dark-field). In modern STEM instruments, the beam is instead focused into a fine probe
+and raster-scanned across the sample. Detectors placed at different scattering angles collect the
+transmitted electrons to form images with various contrast mechanisms.
+A particularly powerful mode is the high-angle annular dark-field (HAADF) STEM, where elec-
+trons scattered to large angles (tens of milliradians) are recorded by an annular detector (Fig. 5a).
+15
+
+Because high-angle scattering arises from incoherent Rutherford-type interactions with the atomic
+nuclei, the resulting signal intensity scales approximately as I ∝ Z1.7−2, where Z is the atomic
+number. This Z-contrast makes heavy atoms appear bright and enables chemical contrast at atomic
+resolution.
+Sample preparation
+Achieving high-resolution imaging requires electron-transparent specimens. Bulk samples are thinned
+mechanically to a few tens of micrometers, then ion-milled or etched to perforation. For site-specific
+studies, a focused ion beam (FIB) microscope can lift out and thin cross-sectional lamellae directly
+from devices or heterostructures. Typical final thicknesses are 30 nm to 80 nm, striking a balance
+between minimizing multiple scattering and maintaining structural integrity. Surface contamination
+and beam damage are minimized by gentle low-energy cleaning immediately before insertion into
+the TEM.
+Question 9 Image contrast
+In a high-angle annular dark-field (HAADF) STEM image, which statement about image brightness
+is correct?
+Boron (Z = 5) will appear brighter than carbon (Z = 6).(a)
+Carbon (Z = 6) will appear slightly brighter than boron (Z = 5).(b)
+Both elements appear with equal brightness because they are adjacent in the periodic table.(c)
+Image brightness does not depend on atomic number but only on surface roughness.(d)
+Question 10 Sample preparation
+Why must TEM specimens typically be thinner than about 100 nm?
+To prevent magnetic deflection of the electron beam.(a)
+Because the vacuum system cannot accommodate thicker samples.(b)
+To minimize multiple elastic and inelastic scattering and maintain interpretable, high-contrast
+transmission images.
+To reduce charging effects due to secondary electron emission.(d)
+Question 11 STEM
+In high-angle annular dark-field (HAADF) STEM imaging, the contrast is mainly determined by:
+Interference between transmitted and diffracted beams.(a)
+Incoherent Rutherford-type scattering.(b)
+Bragg reflection from specific lattice planes.(c)
+Secondary electron emission from the specimen surface.(d)
+16

@@ -1,0 +1,35 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Duktile Materialien
+aus Hunklinger
+Polykristall Einkristall
+Bis A: Hooksches Gesetz
+A-B: reversibel, nicht-linear
+C rückläufitg: Entlastung
+mit permanenter Verformung
+B-D: plastische Verformung
+D: maximale Zugfestigkeit
+D-E: lokale Verformung
+E: Abriss
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Plastische Deformation von Einkristallen
+aus Hunklinger www.doitpoms.ac.uk/tlplib/slip/printall.php
+cadmium crystal:
+https://www.doitpoms.ac.uk/tlplib/slip/videos/06.mp4
+
+Kritische Schubspannung
+a) Prinzipielle Anordnung. b) Variation der erforderlichen Schubspannung σ als
+Funktion der Verschiebung x der Gitterebene B. Die Gleichgewichtslage der
+Gitterebenen ist durch hellblaue Kreise angedeutet. aus Hunklinger
+
+Ausbildung und Wanderung von Versetzungen
+aus Hunklinger
+Schubspannung
+
+Versetzungen und Burgersvektor
+Burgers-Vektor parallel
+zur Versetzungslinie
+⇒ Schraubenversetzung
+Burgers-Vektor senkrecht
+zur Versetzungslinie
+⇒ Stufenversetzung

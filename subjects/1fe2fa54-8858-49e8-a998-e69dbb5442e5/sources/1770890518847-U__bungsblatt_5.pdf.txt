@@ -1,0 +1,62 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 24.11.25
+Blatt 5
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Sebastian Loy
+5.1 Reziprokes Gitter in zwei Dimensionen: die
+Brillouin-Zone
+Wir betrachten ein 2D Gitter mit den primitiven Gittervektoren
+a1 =
+1
+0
+
+, a2 =
+1/3
+2/3
+
+.
+(a) Berechnen Sie die primitiven Gittervektoren im reziproken Raum.
+(b) Zeichnen Sie das reale und das reziproke Gitter und konstruieren Sie die Wigner-
+Seitz-Zelle und die 1. Brillouin-Zone.
+(c) Zeichnen Sie (ausgehend von einem Punkt (00)) die folgenden Punkte im
+reziproken Gitter: (10), (01) und (¯12
+3 ).
+(d) Zeichnen Sie die zugeh¨origen Ebenen in das reale Gitter ein und beschreiben
+Sie kurz den Zusammenhang zwischen diesen Ebenen und den Punkten im
+reziproken Gitter.
+5.2 Strukturfaktor von Diamant
+Die konventionelle Zelle der Diamantstruktur wird ¨ublicherweise als W¨urfel dargestellt.
+Die Kristallstruktur ist ein dann ein fcc-Gitter mit einer zweiatomigen Basis, beste-
+hend aus zwei Kohlenstoffatomen. (Eine sch¨one graphische Darstellung findet man
+z.B. unter de.wikipedia.org/wiki/Diamant.) Diese so definierte konventionelle
+Zelle enth¨alt insgesamt acht Kohlenstoffatome.
+
+(a) Bestimmen Sie den Strukturfaktor Shkl der zweiatomigen Basis.
+(b) Geben Sie die Miller’schen Indizes an, bei denen eine Ausl¨oschung von Reflexen
+auftritt.
+(c) Zeigen Sie, dass die erlaubten Reflexionen der Diamantstruktur entweder die
+Bedingung (i) h + k + l = 4n mit n ∈ Z erf¨ullen, wenn alle Indizes h, k, l gerade
+sind, oder die Bedingung (ii), dass alle Indizes h, k, l ungerade sind.
+(d) Was ¨andert sich beim Strukturfaktor, wenn wir von der Diamantstruktur zu
+einer Zinkblende-Struktur ¨ubergehen?
+5.3 Anwendung der Laue Bedingung: Das Debye-Scherrer
+Experiment
+Bei einem Debye-Scherrer Experiment untersucht man Proben, indem man sie mit
+monochromatischer R¨ontgenstrahlung bestrahlt. Auf dem Schirm, der kreisf¨ormig
+um die Probe angeordnet ist, zeigen sich Diffraktionsringe unter bestimmten Winkeln
+2θ. Aus diesen Winkeln kann man die Kristallstruktur der untersuchten Probe her-
+leiten.
+Die in unserem Fall im Experiment gemessenen Winkel seien:
+2θ1 = 28,8◦, 2θ2 = 41,0◦, 2θ3 = 50,8◦ und 2θ4 = 59,6◦.
+(a) Leiten Sie die Bragg-Bedingung aus der Laue-Bedingung her.
+(b) Geben Sie an, ob es sich bei der gemessenen Probe um eine fcc-, bcc- oder Dia-
+mantstruktur handelt. Nehmen Sie hierf¨ur an, dass es sich bei allen gemessenen
+Reflexen um Beugungsreflexe 1. Ordnung handelt.
+(c) Wenn wir die Wellenl¨ange der R¨ontgenstrahlung kennen, k¨onnen wir in diesem
+Experiment auch die Gitterkonstante bestimmen. Die vorliegende Messung
+wurde bei einer Wellenl¨ange von λ = 1,541 ˚A aufgenommen. Berechnen Sie die
+Gitterkonstante a der konventionellen kubischen Zelle.

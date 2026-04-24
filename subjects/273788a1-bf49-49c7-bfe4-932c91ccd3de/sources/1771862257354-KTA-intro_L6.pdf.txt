@@ -1,0 +1,264 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 6
+
+25. November 2025
+
+## Aufgabe 1 : Teilchendetektoren
+
+In einem Plastik-Szintillator werden etwa $100 \sim \mathrm{eV}$ Energieverlust eines durchlaufenden Teilchens benötigt, um ein Photon im sichtbaren Bereich zu erzeugen, wobei allerdings nur ca. 2\% der Photonen in einem angeschlossenen Photomultiplier nachgewiesen werden. In einer Silizium-Halbleiterdiode werden ca. 3.6 eV benötigt, um ein Elektron-Loch-Paar zu erzeugen, in einem Gas (z.B. Argon) erfordert eine Ionisation etwa $20-30 \mathrm{eV}$ (für Argon 26 eV ).
+a. Wie groß ist jeweils die relative Energieauflösung $\sigma\left(E_{d}\right) / E_{d}$ für Energiedeposition $E_{d}$ von 1 MeV ? Hinweis: Poisson-Statistik
+
+## Lösung:
+
+Die Poissonverteilung sagt: Bei einem Zählratenexperiment mit statistisch $N$ Ereignissen (Ladungsträgerpaarerzeugung, Photonen, . . .) ist der relative statistische Fehler
+
+$$
+\frac{1}{\sqrt{N}}
+$$
+
+mit
+
+N=\frac{E_{d}}{E_{\text {Einzelprozess }}}
+
+für die physikalischen Prozesse "Lichterzeugung in Szintillator", "Ionisation im Gas" und "Elektron-Loch-Paar-Erzeugung in Silizium" haben wir die Energieen
+
+| Prozess | Energie eV |
+| :--- | ---: |
+| Lichterzeugung in Szintillator | $\frac{100}{0.02}$ |
+| Ionisation im Gas | $\approx 30$ |
+| Elektron-Loch-Paar-Erzeugung in Silizium | 3.6 |
+
+Daraus ergeben sich folgende statistische Fehler:
+
+| $E_{d}$ | $E_{\text {Einzelprozess }}$ | $N$ | $\frac{1}{\sqrt{N}}$ | $\sigma\left(E_{d}\right)$ |
+| ---: | ---: | ---: | ---: | ---: |
+| 1 MeV | $\frac{100 \mathrm{eV}}{0.02}$ | 200 | 0.07 | 70 keV |
+| 1 MeV | 30 eV | $3.3 \times 10^{4}$ | 0.006 | 5.5 keV |
+| 1 MeV | 3.6 eV | $2.7 \times 10^{5}$ | $2 \times 10^{-3}$ | 2.0 keV |
+
+Vorsicht: Das Rauschen der Elektronik und Ladungsverluste im Material erhöhen bei Halbleiterdetektoren und Ionisationskammern den Fehler deutlich was aber durch den sog. Fano-Fakktor z.T wieder kompensiert wird , so daß tatsächliche relative Messungenauigkeiten im MeV-Bereich eher bei $0.2-1 \%$ liegen.
+$\_\_\_\_$
+b. Wie dick müssen die jeweiligen Detektoren etwa sein, um für minimalionisierende Protonen ( $\gamma \approx 3.16$ ) Energieverluste $\Delta E$ von 1 MeV zu messen? Nehmen sie dabei an, dass $B=m_{e} c^{2} / I=10^{5}$ ( $I$ Ionisirungsenergie) ist und alle drei Materialien gleiches Proton zu Neutron Verhältnis von 1 haben.
+Hinweis: Dichten sind für Plastik-Szintillatoren $1 \mathrm{~g} / \mathrm{cm}^{3}$, Silizium $2.33 \mathrm{~g} / \mathrm{cm}^{3}$ und Gase $1-3 \mathrm{mg} / \mathrm{cm}^{3}$ bei typischen Drücken in Detektoren (Argon : $1.8 \mathrm{mg} / \mathrm{cm}^{3}$ ).
+
+## Lösung:
+
+\frac{\Delta E}{\Delta x} \approx \frac{\mathrm{~d} E}{\mathrm{~d} x} \approx 0.15 \rho \cdot \frac{Z}{A} \cdot \frac{z^{2}}{\beta^{2}} \cdot 2\left(\ln \left(B \gamma^{2}\right)-\beta^{2}\right)\left[\mathrm{MeV} \mathrm{~cm}^{2} \mathrm{~g}^{-1}\right]
+
+Da wir mit minimal-ionisierender Strahlung rechnen ( $\gamma \approx 3-4$ ), können wir folgende Annahmen/Näherungen machen:
+
+\begin{aligned}
+z^{2} & =1 \\
+\gamma^{2} & \approx 10 \\
+\beta^{2} & =1-\frac{1}{\gamma^{2}} \approx 1 \\
+B & \approx 10^{5} \\
+\frac{Z}{A} & \approx \frac{1}{2}
+\end{aligned}
+
+das bringt uns zu
+
+\frac{\Delta E}{\Delta x}=\rho \cdot 2.0 \mathrm{MeV} \mathrm{~cm}^{2} \mathrm{~g}^{-1}
+
+Einzig die Dichte des Materials beeinflusst benötigte Dicke signifikant:
+
+\begin{aligned}
+\text { Si: } & \frac{\Delta E}{\Delta x}=4.7 \mathrm{MeV} \mathrm{~cm}^{-1} \\
+\text { Plastik: } & \frac{\Delta E}{\Delta x}=2.0 \mathrm{MeV} \mathrm{~cm}^{-1} \\
+\text { Argon: } & \frac{\Delta E}{\Delta x}=3.6 \mathrm{keV} \mathrm{~cm}^{-1}
+\end{aligned}
+
+Somit:
+
+\begin{gathered}
+d_{\mathrm{Si}}=\frac{1 \mathrm{MeV}}{4.7 \mathrm{MeV} \mathrm{~cm}} \\
+d_{\text {Plastic }}=\frac{1 \mathrm{MeV}}{2.0 \mathrm{MeV} \mathrm{~cm}} \\
+d_{\mathrm{Ar}}=\frac{1 \mathrm{MeV}}{3.6 \times 10^{-3} \mathrm{MeV} \mathrm{~cm}^{-1}}=0.50 \mathrm{~cm}=5.0 \mathrm{~mm}
+\end{gathered}
+
+für Gase bei Normaldruck liegt die Dicke 3 Größenordnungen höher.
+c. Wie dick müssen die jeweiligen Detektoren sein um eine Energieauflösung von $\frac{\sigma\left(E_{d}\right)}{E_{d}}=1 \%$ zu erreichen.
+
+Lösung:
+Zahl der Ladungsträger ist also $(1 / 1 \%)^{2}$ also $10^{4}$
+$E_{d}=N \cdot E_{\text {Einzelprozess }}$
+
+- Silizium : $E_{d}=3.6 \cdot 10^{4} \mathrm{eV}$
+- Plastik : $E_{d}=5000 \cdot 10^{4} \mathrm{eV}$
+- Argon : $E_{d}=26 \cdot 10^{4} \mathrm{eV}$
+
+Daraus ergibt sich eine Dicke von ca.
+
+- Silizium : $d \approx 76 \mu m$
+- Plastik : $d \approx 25 \mathrm{~cm}$
+- Argon : $d \approx 72 c m$
+
+
+## Aufgabe 2 : Cherenkov-Detektor
+
+Ein geladenes Teilchen, das sich durch ein Medium mit einer Geschwindigkeit bewegt, die größer ist als die Lichtgeschwindigkeit in diesem Medium, erzeugt sogenannte Cherenkov-Strahlung. Diese Strahlung wird auf einem Kegelmantel ausgesandt.
+a. Berechnen sie die Schwelle in $\gamma=1 / \sqrt{1-\beta^{2}}$, ab der die angegebenen Radiatormaterialien Cherenkov-Strahlung emittieren. Welchen Impulsen entspricht dies für geladene Pionen?
+
+| Medium | $\mathrm{N}_{2}$ | $\mathrm{C}_{4} \mathrm{~F}_{10}$ | Aerogel | Quarz | Wasser |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Brechungsindex $(n-1)$ | $2.98 \cdot 10^{-4}$ | $1.53 \cdot 10^{-3}$ | 0.05 | 0.458 | 0.333 |
+
+Lösung:
+Damit überhaupt Cherenkov-Licht ausgesendet wird, muß das Teilchen sich schneller bewegen als das Licht in dem Medium. Diese Bedingung steckt implizit in der Formel für den Öffnungswinkel
+
+\cos \theta & =\frac{1}{\beta n} \\
+|\cos \theta| & \leq 1 \\
+\frac{1}{n} & \leq \beta
+
+Im Folgenden wird der Grenzwert $\frac{1}{n}=\beta$ betrachtet:
+
+\gamma & =\frac{1}{\sqrt{1-\beta^{2}}} \\
+& =\frac{1}{\sqrt{1-\frac{1}{n^{2}}}} \\
+\left|\overrightarrow{p_{\pi}}\right| & =\beta \gamma m_{\pi} c
+
+wobei $m_{\pi^{ \pm}}=139.6 \mathrm{MeV} / c^{2}$.
+Damit ergeben sich minimale $\beta_{\text {thr }}$ und $\gamma_{\text {thr }} \mathrm{zu}$
+
+| Medium | n | $\beta_{\text {thr }}$ | $\gamma_{\text {thr }}$ | $\left\|\overrightarrow{p_{\pi}}\right\|[\mathrm{MeV} / \mathrm{c}]$ |
+| :--- | ---: | ---: | ---: | ---: |
+| $\mathrm{N}_{2}$ | 1.000298 | 0.9997 | 40.83 | 5700 |
+| $\mathrm{C}_{4} \mathrm{~F}_{10}$ | 1.00153 | 0.9985 | 18.08 | 2520 |
+| Aerogel | 1.05 | 0.9523 | 3.28 | 436 |
+| Quarz | 1.458 | 0.6859 | 1.37 | 131.2 |
+
+b. Die Zahl der Cherenkov-Photonen mit einer Wellenlänge $\lambda$, die pro Längenintervall $\mathrm{d} x$ des Radiators von einem Teilchen mit Ladung $z$ abgestrahlt werden (mit Feinstrukturkonstante $\alpha)$ ist:
+
+\frac{\mathrm{d}^{2} N}{\mathrm{~d} \lambda \mathrm{~d} x}=\frac{2 \pi z^{2} \alpha}{\lambda^{2}}\left(1-\frac{1}{\beta^{2} n^{2}(\lambda)}\right)
+
+Schätzen sie ab, wieviele Photonen pro cm Radiatordicke Wasser in einem Wellenlängenbereich von 100-1000 nm, in dem sie den Brechungsindex als konstant annehmen, von Myonen mit $\sim 10 \mathrm{GeV} / \mathrm{c}$ erzeugt werden? Vergleichen sie grössenordnungsmässig den Energieverlust aufgrund von Čerenkovstrahlung mit dem Energieverlust aufgrund von Ionisation (Bethe-Bloch-Formel).
+
+Die Formel für die wellenlängenabhängige Photonendichte lässt sich umschreiben in
+
+\frac{\mathrm{d}^{2} N}{\mathrm{~d} \lambda \mathrm{~d} x} & =\frac{2 \pi z^{2} \alpha}{\lambda^{2}}\left(1-\frac{1}{\beta^{2} n^{2}(\lambda)}\right) \\
+& =\frac{2 \pi z^{2} \alpha}{\lambda^{2}}\left(1-\cos ^{2} \Theta\right) \\
+& =\frac{2 \pi z^{2} \alpha}{\lambda^{2}} \sin ^{2} \Theta
+
+Die Anzahl der pro Weglänge emmitierten Photonen zwischen 100 nm und 1000 nm ergibt sich so einfach (mit $z=1$ und unter Vernachlässigung der Dispersion) als das Integral:
+
+\frac{\mathrm{d} N}{\mathrm{~d} x} & =\int_{\lambda_{1}}^{\lambda_{2}} \frac{\mathrm{~d}^{2} N}{\mathrm{~d} \lambda \mathrm{~d} x} \mathrm{~d} \lambda \\
+& =\frac{2 \pi z^{2} \alpha}{1} \sin ^{2} \Theta\left[\frac{-1}{\lambda}\right]_{\lambda_{1}}^{\lambda_{2}} \\
+& =\quad \frac{2 \pi z^{2} \alpha}{1} \sin ^{2} \Theta\left(\frac{1}{100 \mathrm{~nm}}-\frac{1}{1000 \mathrm{~nm}}\right) \\
+\approx 4120 \mathrm{~cm}^{-1} \cdot \sin ^{2} \Theta &
+
+Betrachten wir als Beispiel einen Detektor mit Wasser, der Teilchen mit $\beta \approx 1$ messen soll ( 10 GeV Myon, 100 GeV proton, etc.). Dabei ist
+
+\sin ^{2} \Theta & =1-\frac{1}{1.333^{2}} \\
+& =0.4372186 \\
+\frac{\mathrm{~d} N}{\mathrm{~d} x} & =1801 \mathrm{~cm}^{-1}
+
+## Energieverlust durch Cherenkov-Strahlung:
+
+Ein Cherenkov-Photon, das mit der Wellenlänge $\lambda$ emittiert wird, trägt eine Energie
+
+E_{\gamma}=h v=\frac{h c}{\lambda}
+
+Die entsprechend abgestrahlte Energie ist daher
+
+\frac{\mathrm{d}^{2} E}{\mathrm{~d} \lambda \mathrm{~d} x}=\left(\frac{\mathrm{d}^{2} N}{\mathrm{~d} \lambda \mathrm{~d} x}\right)\left(\frac{h c}{\lambda}\right)
+
+Um den gesamten Energieverlust zwischen $\lambda_{1}$ und $\lambda_{2}$ zu erhalten, integrieren wir über alle Wellenlängen:
+
+\frac{\mathrm{d} E}{\mathrm{~d} x}=\int_{\lambda_{1}}^{\lambda_{2}} \frac{\mathrm{~d}^{2} N}{\mathrm{~d} \lambda \mathrm{~d} x} \frac{h c}{\lambda} \mathrm{~d} \lambda
+
+Die pro Längeneinheit abgestrahlte Energie ist
+
+\frac{\mathrm{d} E}{\mathrm{~d} x}=\int_{\lambda_{1}}^{\lambda_{2}} \frac{\mathrm{~d}^{2} N}{\mathrm{~d} \lambda \mathrm{~d} x} \frac{h c}{\lambda} \mathrm{~d} \lambda=2 \pi \alpha\left(1-\frac{1}{n^{2}}\right) h c \int_{\lambda_{1}}^{\lambda_{2}} \lambda^{-3} \mathrm{~d} \lambda=\pi \alpha\left(1-\frac{1}{n^{2}}\right) h c\left(\frac{1}{\lambda_{1}^{2}}-\frac{1}{\lambda_{2}^{2}}\right)
+
+Mit
+
+\begin{gathered}
+\alpha \simeq \frac{1}{137}, \quad n \simeq 1.33, \quad h c \simeq 1.24 \times 10^{-6} \mathrm{eVm} \\
+\lambda_{1}=100 \mathrm{~nm}=10^{-7} \mathrm{~m}, \quad \lambda_{2}=1000 \mathrm{~nm}=10^{-6} \mathrm{~m}
+\end{gathered}
+
+\frac{\mathrm{d} E}{\mathrm{~d} x} \simeq \pi \cdot \frac{1}{137} \cdot 0.435 \cdot\left(1.24 \times 10^{-6} \mathrm{eV} \mathrm{~m}\right) \cdot\left(9.9 \times 10^{13} \mathrm{~m}^{-2}\right) \simeq 1.2 \times 10^{6} \mathrm{eV} / \mathrm{m}=10 \mathrm{keV} / \mathrm{cm}
+
+## Ionisationsverluste:
+
+Aus
+
+p=\beta \gamma m c \quad \Rightarrow \quad \gamma=\frac{p}{\beta m c}
+
+und für einen Myonimpuls von
+
+p \approx 10 \mathrm{GeV} / c, \quad m_{\mu} c^{2}=105.7 \mathrm{MeV}
+
+erhalten wir näherungsweise
+
+\gamma \approx \frac{10 \mathrm{GeV} / c}{105.7 \mathrm{MeV} / c} \simeq 94.6, \quad \beta \simeq 1 .
+
+Für Wasser verwenden wir:
+
+B=1.36 \times 10^{4}, \quad \rho=1 \mathrm{~g} / \mathrm{cm}^{3}
+
+Aus dem (vereinfachten) Bethe-Bloch-Ausdruck:
+
+\left|\frac{\mathrm{d} E}{\mathrm{~d} x}\right|=0.15 \rho \frac{Z_{1}}{A} \frac{z^{2}}{\beta^{2}} 2\left[\ln \left(B \gamma^{2}\right)-\beta^{2}\right], \\
+\left|\frac{\mathrm{d} E}{\mathrm{~d} x}\right|=0.15 \cdot 1 \cdot 0.5 \cdot 2 \cdot\left[\ln \left(\left(1.36 \times 10^{4}\right)\left(94.6^{2}\right)\right)-1\right] \approx 2.64 \mathrm{MeV} / \mathrm{cm} .
+
+Daraus folgt
+
+\frac{(d E / d x)_{\mathrm{Cher}}}{(d E / d x)_{\mathrm{ion}}} \sim \frac{10^{4}}{2 \times 10^{6}} \sim 5 \times 10^{-3}
+
+d. h. der Cherenkov-Beitrag ist zwei bis drei Größenordnungen kleiner als die Ionisationsverluste.
+c. In einem Schwellencherenkovzähler werden Teilchenarten unterschieden, indem der Brechungsindex so gewählt wird, z.B. über Materialwahl oder Gasdruck, dass bei einem gegebenen Impuls eine Teilchensorte Licht erzeugt, die Andere aber nicht. Bestimmen sie die optimalen Brechungsindizes, um bei $10 \mathrm{GeV} / \mathrm{c}$ Teilchenimpuls Pionen von Kaonen bzw. Kaonen von Protonen trennen zu können $\left(m_{\pi^{ \pm}}=139.6 \mathrm{MeV} / c^{2}, m_{K^{ \pm}}=\right. 439.7 \mathrm{MeV} / c^{2}$ und $m_{p}=938.27 \mathrm{MeV} / c^{2}$ ).
+
+Die Schwelle des Cherenkov-Detektors erhält man aus dem Impuls:
+
+|\vec{p}| & =\frac{1}{\sqrt{1-\beta^{2}}} \beta m_{0} c \\
+\frac{|\vec{p}|^{2}}{m_{0}^{2} c^{2}} & =\frac{\beta^{2}}{1-\beta^{2}} \\
+\frac{m_{0}^{2} c^{2}}{|\vec{p}|^{2}}+1 & =\frac{1}{\beta^{2}} \\
+\frac{1}{\sqrt{\frac{m_{0}^{2} c^{2}}{|\vec{p}|^{2}}+1}} & =\beta
+
+Das ergibt für $\pi^{ \pm}, K^{ \pm}$und $p$ folgende Brechungsindizes:
+
+| Teilchen | $\beta$ | $n$ |
+| :--- | ---: | ---: |
+| $\pi^{ \pm}$ | 0.9999 | 1.0001 |
+| $K^{ \pm}$ | 0.9990 | 1.0010 |
+| $p$ | 0.9956 | 1.0044 |
+
+Zur guten Separation der Teilchen sind Brechungsindizes zwischen den Schwellindizes zu wählen, also z.B.
+(i) $\pi^{ \pm} / K^{ \pm}: n \approx 1.0005$
+(ii) $K^{ \pm} / p: n \approx 1.0025$
+
+## Aufgabe 3 : Szintillationsdetektor
+
+In einem organischen Szintillator werden beim Durchgang eines geladenen Teilchens pro MeV deponierter Energie etwa 10000 Photonen im sichtbaren Bereich emittiert. Die Photonen können mit einem Photomultiplier (PMT) detektiert werden. Nehmen Sie an, dass 20 \% der Photonen zum PMT gelangen (Verluste durch geometr. Anordnung, Absorption). Die Wahrscheinlichkeit, dass ein auf die Photokathode treffendes Photon dort ein Elektron auslöst beträgt etwa 25 \%.
+a. Wie groß ist die Wahrscheinlichkeit, dass bei 5 gleichzeitig auf die Photokathode treffenden Photonen i) kein, ii) genau ein Photoelektron erzeugt wird?
+
+Der Erzeugnungsprozess der Photoelektronen genugt der Poisson-Statistik.
+
+P(n . \mu)=\frac{\mu^{n}}{n!} e^{-\mu}
+
+Die Wahrscheinlichkeit, ein Photoelektron zu erzeugen, beträgt $25 \%$, d.h. der Erwartungswert bei $\mathrm{N}=5$ Photonen beträgt $\mu=1.25$. Die Wahrscheinlichkeit, kein Photoelektron zu erzeugen beträgt demnach
+
+P(0,1.25)=e^{-1.25}=0.287
+
+Die Wahrscheinlichkeit, genau ein Photoelektron zu erzeugen, beträgt
+
+P(1,1.25)=1.25 e^{-1.25}=0.358
+
+Die erzeugten Photoelektronen werden vervielfacht (typischerweise Faktor $10{ }^{6}$ ) und das so entstandene Ladungssignal ausgelesen.
+b. Wie dick muss das Szintillatormaterial gewählt werden, damit ein durchfliegendes minimalionisierendes Teilchen mit einer Wahrscheinlichkeit von mindestens $99 \%$ nachgewiesen wird?
+
+Für ein minimal ionisierendes Teilchen gilt näherungsweise
+
+\frac{d E}{d x}=\rho 2 \mathrm{MeV} \frac{c m^{2}}{g}
+
+In einem organischen Szintillator mit $\rho=1 \frac{g}{c m^{3}}$ ist $\frac{d E}{d x}=2 \mathrm{MeV} / \mathrm{cm}$
+Pro cm werden damimt im Szintillator etwa 20000 Photonen erzeugt. Davon gelangen 20 \% zum PMT, d.h. 4000 Photonen. Davon erzeugen 25 \% ein Photoelektron, d.h. insgesamt 1000 erzeugte Photoelektronen pro cm Szintillator.
+
+P(n=0)<1 \% \\
+e^{-\mu}=0.01 \Longrightarrow \mu=-\ln 0.01=4.6
+
+Das heißt, die benötigte Dicke, um mit $99 \%$ Wahrscheinlichkeit mindestens 1 p.e. auszulösen,
+beträgt nur $\frac{4.6}{1000} \mathrm{~cm}=46 \mu \mathrm{~m}$.
+Tatsächlich wird man die Szintillatordicke größer wählen, da auch die Nachweisschwelle höher angesetzt werden sollte. Schließlich kann 1 Photoelektron auch zufällig (thermisch) ausgelöst werden.
+![This diagram depicts the working principle of a photomultiplier tube, showing the conversion of an incoming photon into a photoelectron at the photocathode, followed by the multiplication of secondary electrons through a series of dynodes, resulting in an amplified electrical output signal.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b0ef3d80-5b9a-4609-8d60-5ad716ff4d41/6f44ce23-6ec0-4832-8448-d46ae61c7b63-9_617_1323_1005_402.jpg)
+

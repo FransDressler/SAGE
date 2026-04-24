@@ -1,0 +1,335 @@
+## Harmonische Näherung der WW benachbarter Atome und thermische Ausdehnung
+
+![This diagram depicts the potential energy curves and corresponding energy levels for a harmonic oscillator (blue) and an anharmonic oscillator (red), showing how the average position ⟨x⟩ shifts from the equilibrium position x₀ in the anharmonic case.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-01_963_1363_580_290.jpg)
+Abb. 6.12: Zur Veranschaulichung der thermischen Ausdehnung durch anharmonische Effekte. Bei höherer Temperatur werden höhere Schwingungszustände besetzt, deren Schwerpunkte für ein anharmonisches Potenzial bei größeren Gleichgewichtsabständen liegen. Dies führt im thermischen Mittel zu einem größeren Atomabstand.
+
+Thermodynamischer Mittelwert von $U(x)=a x^{2}-b x^{3}-c \mathrm{x}^{4}$ :
+
+$$
+\langle x\rangle=\frac{\int_{-\infty}^{+\infty} d x x \exp \left[-\frac{U(x)}{k_{\mathrm{B}} T}\right]}{\int_{-\infty}^{+\infty} d x \exp \left[-\frac{U(x)}{k_{\mathrm{B}} T}\right]}
+$$
+
+\begin{aligned}
+& \left.\exp \left[-\frac{\mathrm{a} x^{2}-\mathrm{b} x^{3}-\mathrm{c} x^{4}}{k_{\mathrm{B}} T}\right]=\exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]\left(1+\frac{\mathrm{b} x^{3}}{k_{\mathrm{B}} T}+\frac{\mathrm{c} x^{4}}{k_{\mathrm{B}} T}+\cdots\right) \quad \right\rvert\, \quad \mathrm{e}^{\mathrm{x}}=1+\mathrm{x}+\frac{\mathrm{x}^{2}}{2!}+\frac{x^{3}}{3!}+\ldots \\
+& \int_{-\infty}^{+\infty} d x x \exp \left[-\frac{U(x)}{k_{\mathrm{B}} T}\right]=\int_{-\infty}^{+\infty} d x x \exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]\left(1+\frac{\mathrm{b} x^{3}}{k_{\mathrm{B}} T}+\frac{\mathrm{c} x^{4}}{k_{\mathrm{B}} T}+\cdots\right) \\
+& =\int_{-\infty}^{+\infty} d x / \mathrm{x} \exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]+\int_{-\infty}^{+\infty} d x \mathrm{~b} x^{4} \exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]+\int_{-\infty}^{+\infty} d x \mathrm{c} x^{5} \exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]+\ldots
+\end{aligned}
+
+mit $\alpha$ linearem thermischen Ausdehnungskoeffizienten und $R_{0}$ GGWAbstand ( $T=0$ )
+
+Relative Längenänderung: $\frac{\langle x\rangle}{R_{0}}$ Längenänderung eines Kristalls ist proportional zur Temperatur!
+
+\left.\begin{array}{l}
+\text { Zähler von (*): } \quad \int_{-\infty}^{+\infty} d x \frac{\mathrm{~b} x^{4}}{k_{\mathrm{B}} T} \exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]=\frac{3 \sqrt{\pi}}{4} \frac{\mathrm{~b}}{\mathrm{a}^{\frac{5}{2}}}\left(k_{\mathrm{B}} T\right)^{\frac{3}{2}} \\
+\text { Nenner von (*): } \int_{-\infty}^{+\infty} d x \exp \left[-\frac{\mathrm{a} x^{2}}{k_{\mathrm{B}} T}\right]=\sqrt{\frac{\pi}{\mathrm{a}} k_{\mathrm{B}} T}
+\end{array}\right\} \quad\langle x\rangle=\frac{3 \mathrm{~b}}{4 \mathrm{a}^{2}} \cdot k_{\mathrm{B}} T=\alpha \cdot R_{0} T
+
+l(T)=l_{0}(1+\alpha T), \quad \text { mit } l_{0} \text { Länge }(T=0)
+
+$l(T)=l_{0}(1+\alpha T), \quad$ mit $l_{0}$ Länge $(T=0)$
+
+\langle x\rangle=\frac{3 \mathrm{~b}}{4 \mathrm{a}^{2}} \cdot k_{\mathrm{B}} T=\alpha \cdot R_{0} T
+
+mit $\alpha$ linearem thermischen Ausdehnungskoeffizienten und $R_{0}$ GGW-Abstand ( $T=0$ )
+
+Über phänomenologischen Ansatz der Zustandsdichte eines kubischen Systems kann man nach Eduard Grüneisen zeigen (z.B. Kapitel 7.1 in Hunklinger und Kapitel 6.3.2 Gross/Marx):
+
+\alpha=\frac{\gamma \cdot c_{V}}{3 \mathrm{~B}}
+
+Grüneisen-Beziehung
+
+mit $\gamma$ dem Grüneisen-Parameter,
+$\mathrm{c}_{\mathrm{V}}$ die spezifische Wärmekapazität und
+$B$ dem Kompressionsmodul
+$c_{\mathrm{V}}$ im Zähler:
+
+- Ausdehnungskoeffizient proportional zur spezif. Wärmekapazität.
+$B$ im Nenner:
+- Weiche Materialien einen großen thermischen Ausdehnungskoeffizienten
+- $B$ relativ unabhängig von $T$
+
+
+## Harmonische Näherung der WW benachbarter Atome und thermische Ausdehnung
+
+![This diagram depicts the potential energy curves and energy levels of a harmonic oscillator (blue) versus an anharmonic oscillator (red), showing how the average position ⟨x⟩ shifts from the equilibrium position x₀ in the anharmonic case.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-04_963_1363_580_290.jpg)
+Abb. 6.12: Zur Veranschaulichung der thermischen Ausdehnung durch anharmonische Effekte. Bei höherer Temperatur werden höhere Schwingungszustände besetzt, deren Schwerpunkte für ein anharmonisches Potenzial bei größeren Gleichgewichtsabständen liegen. Dies führt im thermischen Mittel zu einem größeren Atomabstand.
+
+## Thermischer Ausdehnungskoeffizient und die spezifische Wärmekapazität
+
+![This diagram shows the thermal expansion coefficient and specific heat capacity of aluminum as functions of temperature, comparing thermal expansion (black points) and specific heat (blue points) data over a temperature range from 0 to 300 K.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-05_1206_1333_519_355.jpg)
+Bild 7.1: Thermischer Ausdehnungskoeffizient und reduzierte spezifische Wärme von Aluminium. Für den Grüneisenparameter wurde der Wert $\gamma=2,2$ gewählt. (Nach Y.S. Touloukian, E.H. Buyco, Thermophysical Properties of Matter, Band IV, IFI/ Plenum, 1970.)
+
+Grüneisen-Parameter $\gamma$ beschreibt, wie sich die Phononenfrequenz $\omega$ bei einer Volumenänderung ändert (starke Näherung):
+
+\frac{\delta \omega_{q, \mathrm{i}}}{\omega_{q, \mathrm{i}}}=-\gamma \frac{\delta \mathrm{V}}{\mathrm{~V}}
+
+Typische Werte zwischen 1 und 3.
+
+## Gegenbeispiel: Thermische Ausdehnung
+
+![This diagram shows the linear thermal expansion coefficient (α_L) of silicon as a function of temperature (T) in Kelvin. It specifically highlights the temperature range where the Grüneisen parameter γ changes sign, causing the thermal expansion coefficient to become negative.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-06_1292_1507_491_198.jpg)
+Abb. 6.13: Temperaturabhängigkeit des Längenausdehnungskoeffizienten von Silizium (nach Y. Okada, Y. Tokumaru, J. Appl. Phys. 56, 314 (1984)).
+
+## Wechselwirkung zwischen Phononen
+
+Die Existenz der Wärmeausdehnung zeigt, dass die Annahme harmonischer Kräfte zwischen den Atomen (potentielle Energie = Abstand ${ }^{2}$; Hooke'sches Gesetz) nicht exakt gültig ist.
+
+Im harmonischen Fall würden sich Gitterschwingungen ungestört überlagern können. Im Falle harmonischer Kräfte (und ohne Defekte) wäre z.B. Wärmeleitung unendlich.
+
+Durch anharmonische Anteile im Gitterpotential wird die mittlere freie Weglänge der Phononen (mit) begrenzt.
+
+Im anharmonischen Potential können z.B. zwei Phononen ein drittes erzeugen. In der QM-Sprache gibt es nichtlineare Terme, wie z.B. $a^{\dagger} a^{\dagger} a$ (zwei Phononen werden vernichtet und eines erzeugt).
+
+Für diesen Fall (3-Phonon Prozess) gelten folgende Erhaltungssätze:
+
+\begin{aligned}
+\text { Energie: } & \hbar \omega_{1}+\hbar \omega_{1} & =\hbar \omega_{3} \\
+\text { Impuls: } & \hbar q_{1}+\hbar q_{1} & =\hbar q_{3}
+\end{aligned}
+
+Man kann zwei Prozesse unterscheiden:
+Normal-Prozess oder n -Prozess, bei denen die Richtung des Energieflusses erhalten bleibt ( $\Delta \boldsymbol{k}=0$ ) und Umklappprozesse ( $\Delta \boldsymbol{k} \neq 0$ ).
+
+## Phonon-Phonon-Wechselwirkung
+
+![This diagram depicts the placement and orientation of three microphones (Schallwandler) inside a spherical sound field or acoustic measurement setup, showing the directions in which each microphone is pointed.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-08_1077_1179_525_440.jpg)
+Bild 7.4: Messanordnung zum Nachweis der Phonon-Phonon-Wechselwirkung. Die Schallwandler (1) und (2) erzeugen transversale Schallwellen mit 10 MHz bzw. longitudinale mit 15 MHz . Der Wandler (3) weist longitudinale Schallwellen mit 25 MHz nach. (Nach F.R. Rollins, Jr., L.H. Todd, Jr., Phys. Rev. 136, A597 (1964).)
+
+## Normalprozess und Umklappprozess
+
+![This diagram depicts the reciprocal lattice vectors within the first Brillouin zone (1. BZ) of a hexagonal lattice, showing the original reciprocal lattice vectors \( q_1, q_2, q_3 \) in (a) and a shifted vector \( q_3' \) along with the reciprocal lattice vector \( G \) in (b). It illustrates the concept of reciprocal lattice vector translation within the Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-09_814_1834_450_741.jpg)
+Bild 7.15: Drei-Phononen-Prozess. a) Normal-Prozess: Alle Wellenvektoren liegen in der blau dargestellten 1. Brillouin-Zone. b) Umklapp-Prozess: Der Betrag der Wellenvektoren $\boldsymbol{q}_{1}$ und $\boldsymbol{q}_{2}$ wurde gegenüber der linken Abbildung verdoppelt. Dadurch kommt der resultierende Vektor $\boldsymbol{q}_{3}$ außerhalb der 1. BrillouinZone zu liegen, so dass ein Umklapp-Prozess auftritt.
+
+## Umklappprozesse
+
+![The diagram is a phonon dispersion relation showing the frequency (ω) as a function of the normalized wave vector (qa/π) for different phonon modes in a crystal lattice. It depicts acoustic and optical phonon branches with labeled points corresponding to specific wave vectors and frequencies.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-10_1228_1199_463_338.jpg)
+Bild 7.16: Umklapp-Prozess. Die beiden Phononen mit den Wellenvektoren $\boldsymbol{q}_{1}$ und $\boldsymbol{q}_{2}$ stoßen und erzeugen das Phonon mit dem Wellenvektor $\boldsymbol{q}_{3}$. Durch Addition des reziproken Gittervektors $\boldsymbol{G}=-2 \pi / a$ kommt der Wellenvektor $\boldsymbol{q}_{3}^{\prime}$ in der 1. Brillouin-Zone zu liegen. Das Vorzeichen der Gruppengeschwindigkeit, angedeutet durch die entsprechenden Tangenten, ändert sich bei diesem Stoß.
+
+Für tiefe Temperaturen sind Umklapp-Prozesse weniger wahrscheinlich, da große $\boldsymbol{q}_{\boldsymbol{1}^{-}}$und $\boldsymbol{q}_{\mathbf{2}}$-Werte nicht besetzt sind.
+
+Ein Wellenvektor muss mindestens $q \geq \pi / 2 a$ sein. Dieses $q$ entspricht $\hbar \omega \sim k_{\mathrm{B}} \theta_{D} / 2$.
+Die Besetzungswahrscheinlichkeit dieser Frequenz ist:
+
+n(\omega)=\frac{1}{e^{\hbar \omega / k_{\mathrm{B}} T}-1} \approx \frac{1}{e^{\theta_{D} / 2 T}-1} & \approx e^{-\theta_{D} / 2 T}\left(T \ll \theta_{D}\right) \\
+& \approx T / \theta_{D} \quad\left(T \gg \theta_{D}\right)
+
+Wir definieren eine freie mittlere Weglänge $l_{p h}$, für die wir schreiben
+![This diagram depicts a three-dimensional momentum space with axes \(q_x\), \(q_y\), and \(q_z\), showing a vector \(\mathbf{q}_D\) inside a spherical region. It is likely used to illustrate the concept of momentum vectors within defined spherical boundaries in physics or materials science.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-11_476_547_409_2315.jpg)
+können:
+
+\begin{array}{rlr}
+l_{p h}^{-1} \propto n(\boldsymbol{q}) & \Rightarrow l_{p h} \propto e^{\theta_{D} / 2 T} & \left(T \ll \theta_{D}\right) \\
+& \Rightarrow l_{p h} \propto \theta_{D} / T & \left(T \gg \theta_{D}\right)
+\end{array}
+
+Bei tiefen Temperaturen wird die mittlere freie Weglänge der Phononen nur noch durch Streuung an Defekten und den Kristalloberflächen begrenzt
+⇒ Die mittlere freie Weglänge wird unabhängig von der Temperatur. Die Temperaturabhängigkeit der Wärmeleitfähigkeit $\kappa$ wird dann nur noch durch die spezifische Wärme $c_{\mathrm{v}}$ bestimmt und wird proportional zu $T^{3}$.
+
+Bei hohen Temperaturen erwarten wir bei der Wärmeleitfähigkeit $\kappa$
+
+- einen Bereich mit $e^{\theta_{D} / 2 T}$
+- einen weiteren Bereich mit $\theta_{D} / T$.
+
+
+## Wärmeleitfähigkeit
+
+$\frac{\dot{Q}}{A}=-\kappa \frac{\Delta T}{\Delta x} \quad \kappa$ : Wärmeleitfähigkeit
+
+Fluss der
+thermischen Energie
+durch Fläche A pro
+![This diagram depicts a light clock used to illustrate the concept of time measurement in special relativity, showing light pulses bouncing between two mirrors separated by distance A and the spatial dimension x related to the clock's motion.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-12_745_1364_775_211.jpg)
+
+Was bestimmt die thermische Leitfähigkeit bzw. den Wärmewiderstand?
+
+Übertragung von Energie geschieht in Kristallen über Phononen, Photonen, Elektronen etc. In Nichtmetallen dominieren Phononen. Wellenpakete aus Gitterschwingungen (Phononen) bewegen sich vom heißen Ende zum kalten Ende des Festkörpers.
+
+Ist die Phononen-Population am heißen Ende höher ⇒ Diffusion zum kalten Ende mit geringerer PhononenPopulation.
+
+Argument nach Debye:
+Aus der kinetischen Gastheorie weiß man:
+![This diagram depicts the formula for thermal conductivity (κ) in terms of specific heat capacity (cv), particle velocity (v), and mean free path (lph), highlighting the temperature-dependent variables in the equation.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-12_299_1190_945_1816.jpg)
+
+Schall-
+Mittlere freie Weggeschwindigkeit
+
+Länge eines Phonons
+
+Abb. 6.14: Schematische Darstellung zum Wärmestrom durch eine Querschnittsfläche $A$. Im Zeitintervall $\tau$ passieren alle Phononen die Querschnittfläche $A$, die sich in $x$-Richtung bewegen und sich innerhalb eines Quaders der Länge $v_{x} \tau$ befinden.
+
+## Experiment: Wärmeleitfähigkeit \& ballistischer Phononentransport
+
+![This diagram depicts experimental setups for measuring temperature changes using bolometers and thermometers, showing the placement of heaters and sensors on different sample geometries (a slab and a cylinder) in contact with a thermal bath.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-13_1110_1337_552_276.jpg)
+
+Bild 7.12: Schema der Messanordnungen zur Untersuchung der ballistischen Ausbreitung von Phononen bzw. zur Messung der Wärmeleitfähigkeit. Links wird der Wärmetransport durch eine Probe in Form einer dünnen Platte, rechts der Transport längs eines langen, dünnen Stabes gemessen.
+
+## Wärmeleitfähigkeit
+
+![This diagram depicts the temperature dependence of phonon mean free path and lattice thermal conductivity in solids, showing how these quantities vary logarithmically with temperature and highlighting different scattering mechanisms and regimes such as the Casimir regime and exponential behavior.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-14_1170_2777_333_341.jpg)
+Figure 2-23 Typical variation of phonon mean free path and phonon thermal conductivity with temperature, plotted in double logarithmic fashion. The increase of mean free path on cooling (as Umklapp-processes become less likely) is eventually ended when defect and surface scattering control the thermal path.
+
+
+![This diagram shows the thermal conductivity (Wärmeleitfähigkeit) of sodium fluoride (NaF) as a function of temperature (Temperatur) in Kelvin, illustrating how thermal conductivity varies with temperature, including a region where it follows a T³ dependence.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-15_1121_1181_474_343.jpg)
+
+\kappa=\frac{1}{3} c_{v} \cdot v \cdot l_{p h}
+
+Bild 7.14: Wärmeleitfähigkeit von hochreinem Natriumfluorid als Funktion der Temperatur. (Nach H.E. Jackson et al., Phys. Rev. Lett. 25, 26 (1970).)
+
+## Wärmeleitfähigkeit (intrinsische Defekte)
+
+![The diagrams depict the thermal conductivity (Wärmeleitfähigkeit) as a function of temperature for LiF (a) and silicon isotopes (28Si and natural Si) (b), showing how thermal conductivity varies with temperature in these materials.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-16_962_2087_312_320.jpg)
+
+\kappa=\frac{1}{3} c_{v} \cdot v \cdot l_{p h}
+
+Bild 7.18: a) Wärmeleitfähigkeit von LiF mit verschiedenem ${ }^{6} \mathrm{Li} /{ }^{7} \mathrm{Li}$-Verhältnis. Die Konzentration des ${ }^{7}$ Li-Isotops betrug (A) $99,99 \%$, (B) $97 \%$, (C) $93 \%$ und (D) $51 \%$. (Nach P.D. Thacher, Phys. Rev. 156, 975 (1967).) b) Wärmeleitfähigkeit von isotopenreinem ${ }^{28}$ Si und natürlichem Silizium. (Nach A.V Inyushkin et al., phys. stat. sol. (c), 1, 2995 (2004).)
+
+## Wärmeleitfähigkeit (Oberflächenstreuung)
+
+![The image shows graphs of thermal conductivity (Wärmeleitfähigkeit) as a function of temperature for LiF (lithium fluoride) and silicon, comparing different sample conditions or treatments. It also includes the formula for thermal conductivity κ in terms of specific heat capacity (cv), velocity (v), and phonon mean free path (lph).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-17_980_2781_294_322.jpg)
+Bild 7.17: a) Wärmeleitfähigkeit von LiF-Kristallen mit nahezu quadratischen Querschnitten als Funktion der Temperatur. Die Kantenlänge nimmt von (A) $7,3 \mathrm{~mm}$ auf (D) $1,1 \mathrm{~mm}$ ab. (Nach P.D. Thacher, Phys. Rev. 156, 975 (1967).) b) Wärmeleitfähigkeit eines Siliziumkristalls mit sehr gut polierter bzw. aufgerauter Oberfläche. (Nach V. Röhring, private Mitteilung.)
+
+Die mittlere freie Weglänge ist bei tiefen Temperaturen in der größeren Probe länger und wird in der kleineren Probe durch Streuung an den Oberflächen begrenzt.
+
+## Wärmeleitfähigkeit (amorphe Materialien)
+
+![This diagram shows the thermal conductivity (κ) of SiO2 as a function of temperature (T) for both crystalline (kristallin) and amorphous (amorph) forms, highlighting different temperature-dependent regimes and power-law behaviors (∝ T³ for crystalline and ∝ T² for amorphous).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-18_1043_1500_440_232.jpg)
+Abb. 6.18: Temperaturabhängigkeit der Wärmeleitfähigkeit in kristallinem (Rauten) und amorphem Quarz (Dreiecke). Die blauen Linien zeigen das Ergebnis für weitere Quarz- und Borsilikat-Gläser, die alle eine ähnliche Temperaturabhängigkeit zeigen (nach R. C. Zeller, R. O. Pohl, Phys. Rev. B 4, 2029 (1971)).
+
+## Thermische Leitfähigkeit und mittlere freie Weglänge der Phononen
+
+TABLE 2-3 LATTICE THERMAL CONDUCTIVITY AND PHONON MEAN FREE PATH IN TYPICAL NONMETALLIC SOLIDS ${ }^{\circ}$
+| Solid | $\mathbf{T} \boldsymbol{=} \mathbf{2 7 3 K}$ |  | $\mathrm{T}=77 \mathrm{~K}$ |  | $\mathbf{T} \boldsymbol{=} \mathbf{2 0 K}$ |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|  | Thermal Conductivity $\stackrel{K_{\ell}}{(\mathbf{W} / \text { m }}$ K) | Phonon Mean Free Path $\boldsymbol{\Lambda} \boldsymbol{=} \boldsymbol{(} \mathbf{3} \boldsymbol{\kappa}_{\boldsymbol{\ell}} \boldsymbol{/} \mathbf{v}_{\mathbf{0}} \mathbf{C}_{\mathbf{v}}$ (m) | Thermal Conductivity $\left(\mathrm{W} / \mathrm{m}_{\ell}^{K_{\ell}} \cdot \mathrm{K}\right)$ | Phonon Mean Free Path $\boldsymbol{\Lambda} \boldsymbol{=} \boldsymbol{(} \boldsymbol{\kappa}_{\boldsymbol{\ell}} \boldsymbol{/} \mathbf{v}_{\mathbf{0}} \mathbf{C}_{\mathbf{v}} \boldsymbol{)}$ (m) | Thermal Conductivity $(\mathrm{W} / \mathrm{m} \cdot \mathrm{K})$ | Phonon Mean Free Path $\Lambda=\left(3 \kappa_{\ell} / v_{0} C_{v}\right)$ (m) |
+| Silicon | 150 | $4.3 \times 10^{-8}$ | 1500 | $2.7 \times 10^{-6}$ | 4200 | $4.1 \times 10^{-4}$ |
+| Germanium | 70 | $3.3 \times 10^{-8}$ | 300 | $3.3 \times 10^{-7}$ | 1300 | $4.5 \times 10^{-5}$ |
+| Crystalline Quartz ( $\mathrm{SiO}_{2}$ ) | 14 | $9.7 \times 10^{-9}$ | 66 | $1.5 \times 10^{-7}$ | 760 | $7.5 \times 10^{-5}$ |
+| $\mathrm{CaF}_{2}$ | 11 | $7.2 \times 10^{-9}$ | 39 | $1.0 \times 10^{-7}$ | 85 | $1.0 \times 10^{-5}$ |
+| NaCl | 6.4 | $6.7 \times 10^{-9}$ | 27 | $5.0 \times 10^{-8}$ | 45 | $2.3 \times 10^{-6}$ |
+| ${ }^{7} \mathrm{LiF}$ (isotopically pure) | 10 | $3.3 \times 10^{-9}$ | 150 | $4.0 \times 10^{-7}$ | 8000 | $1.2 \times 10^{-3}$ |
+
+
+[^0]
+## Thermische Leitfähigkeit der chemischen Elemente
+
+| Thermische Leitfähigkeit und Debye Temperatur |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|  | Be 1440 2.00 | Debye Temperatur (K) |  |  |  |  |  |  |  |  |  | B | C | N | 0 | F | Ne |
+|  |  |  |  |  |  |  |  |  |  |  |  | ... | 2230 | ⋯ | … | … | 75 |
+|  |  |  |  |  |  |  |  |  |  |  |  | 0.27 | 1.29 | ⋯ | … | ... | ⋯ |
+| Na | Mg |  |  |  |  |  |  |  |  |  |  | Al | Si | P | S | Cl | Ar |
+| 158 | 400 |  |  |  |  |  |  |  |  |  |  | 428 | 645 | $\boldsymbol{\ldots}$ | … | … | 92 |
+| 1.41 | 1.56 |  |  |  |  |  |  |  |  |  |  | 2.37 | 1.48 | … | … | … | ⋯ |
+| K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni | Cu | Zn | Ga | Ge | As | Se | Br | Kr |
+| 91 | 230 | 360 | 420 | 380 | 630 | 410 | 470 | 445 | 450 | 343 | 327 | 320 | 374 | 282 | 90 | … | 72 |
+| 1.02 | … | 0.16 | 0.22 | 0.31 | 0.94 | 0.08 | 0.80 | 1.00 | 0.91 | 4.01 | 1.16 | 0.41 | 0.6 | 0.50 | 0.02 | … | ⋯ |
+| Rb | Sr | Y | Zr | Nb | Mo | Tc | Ru | Rh | Pd | Ag | Cd | In | Sn | Sb | Te | I | Xe |
+| 56 | 147 | 280 | 291 | 275 | 450 | … | 600 | 480 | 274 | 225 | 209 | 108 | 200 | 211 | 153 | … | 64 |
+| 0.58 | … | 0.17 | 0.23 | 0.54 | 1.38 | 0.51 | 1.17 | 1.50 | 0.72 | 4.29 | 0.97 | 0.82 | 0.67 | 0.24 | 0.02 | … | ⋯ |
+| Cs | Ba | La | Hf | Ta | W | Re | Os | Ir | Pt | Au | Hg | TI | Pb | Bi | Po | At | Rn |
+| 38 | 110 | 142 | 252 | 240 | 400 | 430 | 500 | 420 | 240 | 165 | 71.9 | 78.5 | 105 | 119 | ⋯ | ⋯ | 64 |
+| 0.36 | … | 0.14 | 0.23 | 0.58 | 1.74 | 0.48 | 0.88 | 1.47 | 0.72 | 3.17 | … | 0.46 | 0.35 | 0.08 | … | … | ⋯ |
+| Fr | Ra | Ac |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ⋯ | ⋯ | ⋯ | ⋯ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| … | … | ⋯ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ⋯ |  |  | Ce | Pr | Nd | Pm | Sm | Eu | Gd | Tb | Dy | Ho | Er | Tm | Yb | Lu |  |
+|  |  |  | ⋯ | ... | … | ⋯ | ⋯ | … | 200 | ... | 210 | ... | ⋯ | ⋯ | 120 | 210 | ⋯ |
+|  |  |  | 0.11 | 0.13 | 0.16 | ⋯ | 0.13 | … | 0.11 | 0.11 | 0.11 | 0.16 | 0.14 | 0.17 | 0.35 | 0.16 |  |
+| ⋯ |  |  | Th | Pa | U | Np | Pu | Am | Cm | Bk | Cf | Es | Fm | Md | No | Lr |  |
+|  |  |  | 163 | … | 207 | ... | ... | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ |
+|  |  |  | 0.54 | … | 0.28 | 0.06 | 0.07 | ⋯ | … | ⋯ | … | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ |  |
+
+## Thermische Leitfähigkeit weiterer verschiedener Stoffe
+
+| Kunststoffe | Wärmeleitfähigkeit $\boldsymbol{\lambda}$ in $\mathbf{W} \boldsymbol{/} \boldsymbol{(} \mathbf{m} \boldsymbol{\cdot} \mathbf{K} \boldsymbol{)}$ |
+| :--- | :--- |
+| Polyvinylchlorid (PVC) | 0,17 ${ }^{[21]}$ |
+| Polystyrol (PS) | 0,17 ${ }^{[21]}$ |
+| Polymethylmethacrylat (PMMA, Plexiglas) | 0,19 ${ }^{[21]}$ |
+| Polycarbonat | 0,20[21] |
+| Epoxidharz (EP) | 0,20 ${ }^{[21]}$ |
+| Polysiloxane (Silikon) | 0,2...0,3 |
+| Polypropylen (PP) | 0,23 ${ }^{[21]}$ |
+| Polyethylenterephthalat (PET) | 0,24 ${ }^{[21]}$ |
+| Polyetherimid (PEI) | 0,24[22] |
+| Polyurethan kompakt (PUR) | 0,245 ${ }^{[22]}$ |
+| Polytetrafluorethylen (PTFE) | 0,25 ${ }^{[21]}$ |
+| Polyamide (Nylon, Perlon) | 0,25… 0,35 ${ }^{[21]}$ |
+| Polyetheretherketon (PEEK) | 0,25 ${ }^{\text {[23] }}$ |
+| Polyethylen (PE) | 0,33... 0,57[21] |
+| Polyimide (PI) | 0,37... 0,52 ${ }^{\text {[21] }}$ |
+
+
+| Metalle | Wärmeleitfähigkeit $\lambda$ in $\mathbf{W} \boldsymbol{/} \boldsymbol{(} \mathbf{m} \boldsymbol{\cdot} \mathbf{K} \boldsymbol{)}$ |
+| :--- | :--- |
+| Quecksilber | 8,3 |
+| Bismut | 8,4 |
+| Edelstahl rostfrei | $15 \ldots 25^{[15]}$ |
+| Titan | 22 |
+| Blei | 35 |
+| Tantal | 54 |
+| Zinn | 67 |
+| Platin | 71 |
+| Chromstahl 1.400 | 30 |
+| Eisen | 80,2 |
+| Nickel | 85 |
+| Natrium | 133 |
+| Magnesium | 170 |
+| Zink | 110 |
+| Messing | 120 |
+| Aluminiumlegierungen | $75 . . .235{ }^{[16]}$ |
+| Silizium | 163 |
+| Magnesium | 156 |
+| Beryllium | 201 |
+| Aluminium (99,5 \%) | 236 |
+| Gold (rein) | 314 |
+| Kupferlegierungen (Sn, Zn, Ni, Pb) | $30 \ldots 110^{[17]}$ |
+| Kupfer (Handelsware) | $240 \ldots 380^{[18]}$ |
+| Kupfer (rein) | 401 |
+| Silber | 429 |
+
+
+| Flüssigkeiten und sonstige Stoffe | Wärmeleitfähigkeit $\boldsymbol{\lambda}$ in $\mathbf{W} \boldsymbol{/} \boldsymbol{(} \mathbf{m} \boldsymbol{\cdot} \mathbf{K} \boldsymbol{)}$ |
+| Öl | $0,13 \ldots 0,15$ |
+| Benzin | 0,140[24] |
+| Schnee ( $0,25 \mathrm{~g} / \mathrm{cm}^{3}$ ) | 0,16[1] |
+| Ethanol $95 \%\left(20^{\circ} \mathrm{C}\right)$ | 0,17 |
+| Schwefel | 0,269 |
+| Ammoniak unter Druck | 0,521 ${ }^{[24]}$ |
+| Schwefelsäure | 0,544 ${ }^{[24]}$ |
+| Wasser ( $0^{\circ} \mathrm{C}$ ) | 0,5562 ${ }^{[25]}$ |
+| Kreide | 0,92 |
+| Siliciumdioxid (Quarz) | 1,2... 12 |
+| Humus | 1,26 |
+| Eis $\left(-10^{\circ} \mathrm{C}\right)$ | 2,33 ${ }^{[26]}$ |
+| Wärmeleitpaste | $1 . .4{ }^{[27]}$ |
+| Aluminiumoxid | 28 |
+| Kohlenstoff (Graphit) | 119... 165 |
+| Silicium | 148 |
+| Aluminiumnitrid | 180 |
+| Berylliumoxid | 300 |
+| Siliciumcarbid | 350 |
+| Spinnenseide | längs bei 20 \% Dehnung bis $416{ }^{[28]}$ |
+| Diamant | 2300 |
+| Graphen | 5300 |
+
+aus Wikipedia (30.08.25)
+A. Holleitner WS $25 / 26$
+
+## 1D Wärmeleitfähigkeit
+
+(a)
+![This image is a scanning electron microscope (SEM) image showing a microfabricated structure with four black masses surrounding a central mechanical component, likely depicting a microelectromechanical system (MEMS) device or a micro-scale mechanical actuator.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-22_744_957_317_104.jpg)
+
+(b)
+![This image depicts a scanning electron microscope (SEM) view of a nanoscale gap between two electrodes, likely used for experiments involving electron transport or nanodevice fabrication. The scale bar indicates the gap size is on the order of 1 micrometer.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-22_741_960_317_1286.jpg)
+
+![This diagram depicts the temperature dependence of the thermal conductance (Thermischer Leitwert) normalized by the quantum of thermal conductance \( G_0 \), showing how it varies with temperature \( T \) in kelvin. It includes the theoretical expression for the quantum of thermal conductance \( G_0 = \frac{\pi^2 k_B^2 T}{3h} \) and compares experimental data points to this theoretical prediction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2049bf88-f498-4a83-9cf6-a8aabc884a3e/79829d72-587b-4fe4-830d-dd45ffec77a5-22_941_926_263_2354.jpg)
+
+Bild 7.19: Experimentelle Anordnung. a) In der Mitte befindet sich eine frei schwebende $4 \mu \mathrm{~m} \times 4 \mu \mathrm{~m}$ große, aus einer Siliziumnitrid-Membran strukturierte Fläche, die an vier Stegen aufgehängt ist. In den nierenförmigen dunklen Bereichen wurde die Membran vollständig weggeätzt. Die beiden Goldfilme im Zentrum dienen als Heizer. Sie sind über dünne Niobdrähte mit den Anschlusselektroden verbunden. b) Vergrößerung eines Verbindungsstegs mit einer Breite von ungefähr 200 nm . (Nach K. Schwab et al., Nature 404, 974 (2000).)
+
+Bild 7.20: Thermischer Leitwert einer eindimensionalen Probe. Der beobachtete Leitwert ist auf $16 G_{0}$ normiert. Unter $0,8 \mathrm{~K}$ verhalten sich die Verbindungsstege wie eindimensionale Proben. Erwartungsgemäß steigt der thermische Leitwert bei höheren Temperaturen proportional zu $T^{3}$ an. (Nach K. Schwab et al., Nature 404, 974 (2000).)
+
+
+[^0]:    ${ }^{\circ}$ Data from R. Berman, Cryogenics 5, 297 (1965) and references therein, among other sources. For each conductivity value, the mean free path is calculated using $\mathrm{v}_{0}$ from Table 2-1, and $\mathrm{C}_{\mathrm{v}}$ (per unit volume) chosen to be consistent with the "thermal" Debye temperature of Table 2-2.
+

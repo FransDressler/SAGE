@@ -1,0 +1,51 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Hunklinger
+Spezifische Wärmekapazität
+Klassisch: Dulong-Petit
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Abb. 6.2 und 6.3
+aus Gross/Marx
+Besetzung von Phononen-Zuständen mit einer Energie ℏ
+
+Bose-Einstein-
+Verteilungsfunktion
+
+Angewendet auf die typische Phononen-Dispersionsrelation
+Approximierter Beitrag ℏ
+
+im Einstein-Modell
+Abb 6.4
+aus Marx/Gross bzw.
+Ashcroft Mermin
+
+aus Hunklinger
+Spezifische Wärmekapazität
+Klassisch: Dulong-Petit
+… stimmt bei tiefen Temperaturen
+nicht mit Experiment überein!
+
+aus Gross / Marx
+Spezifische Wärmekapazität bei tiefen Temperaturen
+für „Isolatoren“
+
+Angewendet auf die typische Phononen-Dispersionsrelation
+Approximierter Beitrag ℏ
+im Einstein-Modell
+𝜔 𝑞 → 0
+𝑞 = 𝑐 = 𝐶1
+𝑀 𝑎 = 𝑣S Schallgeschwindigkeit
+aus Marx/Gross bzw.
+Ashcroft Mermin
+
+Zum Debye-Modell
+~Cu
+
+
+Debye-Temperaturen der chemischen Elemente
+aus Gross/Marx
+
+Spezifische Wärmekapazität Diamant
+
+Spezifische Wärmekapazität in 2D
+𝐶𝑉 ∼ 𝑇2

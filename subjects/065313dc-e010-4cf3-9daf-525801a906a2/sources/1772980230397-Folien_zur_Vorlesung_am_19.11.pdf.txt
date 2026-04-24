@@ -1,0 +1,115 @@
+## Entropie und der 3. Hauptsatz
+
+Entropie (allgemein für Dichteoperatoren):
+
+$$
+S=-k_{B} \operatorname{Sp}\{\hat{\rho} \ln \hat{\rho}\}
+$$
+
+mikrokanonisch:
+
+S=-k_{B} \operatorname{Sp}\{\hat{\rho} \ln \hat{\rho}\}=-k_{B} \operatorname{Sp}\left\{\sum_{k} \frac{1}{\Omega} \ln \left(\frac{1}{\Omega}\right)\left|E_{k}\right\rangle\left\langle E_{k}\right|\right\}=k_{B} \ln \Omega
+
+\text { mikrokanonisch } \quad \hat{\rho}=\frac{1}{\Omega} \sum_{k}\left|E_{k}\right\rangle\left\langle E_{k}\right|
+
+![This diagram is an energy level diagram showing the quantized energy states of a quantum system, with discrete energy levels labeled from a ground state \(E_0\) to higher excited states.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ccb05fe-9bab-418a-b393-2a61bc5cd08f/c29bc0c8-2695-4a08-99bf-a6cb3ddd19b8-1_773_519_1399_105.jpg)
+Grundzustand g-fach entartet !
+
+diskrete Energieniveaus 3. Hauptsatz der Thermodynamik!
+
+### 4.3.2 Kanonisches Ensemble
+
+Wir betrachten nun ein System gekoppelt an ein Wärmebad mit Gesamthamiltonoperator
+
+\hat{H} \simeq \hat{H}_{S}+\hat{H}_{B} \quad \hat{H}|k\rangle_{s}|n\rangle_{b}=(\underbrace{E_{k}+E_{n}}_{E_{k n}})|k\rangle_{s}|n\rangle_{b}
+
+Annahme: Gesamtsystem isoliert und beschrieben durch MK Dichteoperator:
+
+\hat{\rho}_{\mathrm{MK}}=\frac{1}{\Omega_{\mathrm{ges}}} \sum_{k, n}^{E-\Delta<E_{k n}<E}|k\rangle_{s}\langle k| \otimes|n\rangle_{b}\langle n|
+
+⇒ reduzierter Dichteoperator des Systems:
+
+\hat{\rho}_{S}=\operatorname{Sp}_{b}\left\{\hat{\rho}_{\mathrm{MK}}\right\}=\sum_{k} \underbrace{\frac{\Omega_{B}\left(E-E_{k}\right)}{\Omega_{\text {ges }}}}_{p_{k}}|k\rangle_{s}\langle k|
+
+⇒ Entwicklung von $\ln \Omega_{B} \approx \frac{S_{B}}{k_{B}}-\frac{1}{k_{B}} \frac{\partial S_{B}}{\partial E} E_{k} \quad \Rightarrow \quad p_{k} \sim e^{-\frac{E_{k}}{k_{B} T}}$
+
+## gegeben:
+
+- Hamiltonoperator: $\hat{H}$
+- Eigenwerte/Eigenbasis:
+
+\hat{H}\left|E_{k}\right\rangle=E_{k}\left|E_{k}\right\rangle
+
+![This diagram depicts a quantum system with discrete energy levels (E0, E1, E2, ... Ek) interacting with a thermal reservoir (Wärmebad) at temperature T, illustrating energy exchange between the system and the heat bath.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ccb05fe-9bab-418a-b393-2a61bc5cd08f/c29bc0c8-2695-4a08-99bf-a6cb3ddd19b8-3_767_1401_169_1489.jpg)
+
+Kanonischer ("thermischer") Dichteoperator:
+
+\begin{aligned}
+\hat{\rho}_{\mathrm{K}} & =\sum_{k} \frac{e^{-\beta E_{k}}}{Z_{\mathrm{K}}}\left|E_{k}\right\rangle\left\langle E_{k}\right|=\frac{e^{-\beta \hat{H}}}{Z_{\mathrm{K}}}, \\
+Z_{\mathrm{K}} & =\sum_{k} e^{-\beta E_{k}}=\operatorname{Sp}\left\{e^{-\beta \hat{H}}\right\}
+\end{aligned}
+
+(Zustandssumme)
+
+Beispiel: Harmonischer Oszillator
+
+\hat{H}=\frac{\hat{p}^{2}}{2 m}+\frac{1}{2} m \omega^{2} \hat{x}^{2}=\hbar \omega \hat{a}^{\dagger} \hat{a}
+
+$|n\rangle$
+
+$|2\rangle$
+![This diagram depicts the energy levels of a quantum harmonic oscillator, showing discrete quantized states separated by an energy interval of ħω. It illustrates the vibrational energy levels associated with quantum states |0⟩ and |1⟩.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ccb05fe-9bab-418a-b393-2a61bc5cd08f/c29bc0c8-2695-4a08-99bf-a6cb3ddd19b8-4_566_825_142_2023.jpg)
+
+- "Erzeugungs- und Vernichtungsoperatoren"
+
+\left.\begin{array}{ll}
+\hat{x}=\sqrt{\frac{\hbar}{2 m \omega}}\left(\hat{a}+\hat{a}^{\dagger}\right) \\
+\hat{p}=\sqrt{\frac{\hbar m \omega}{2}} i\left(\hat{a}^{\dagger}-\hat{a}\right)
+\end{array}\right\}\left[\hat{a}, \hat{a}^{\dagger}\right]=1 \quad \begin{array}{ll} 
+& \hat{a}|n\rangle=\sqrt{n}|n-1\rangle \\
+& \hat{a}^{\dagger}|n\rangle=\sqrt{n+1}|n+1\rangle
+\end{array}
+
+-Eigenwertgleichung: $\quad \hat{H}|n\rangle=\hbar \omega n|n\rangle \quad \Rightarrow \quad E_{n}=\hbar \omega n$
+
+Kanonischer Dichteoperator und Zustandssumme:
+geometrische Reihe
+
+\hat{\rho}_{\mathrm{K}}=\frac{1}{Z_{\mathrm{K}}} \sum_{n=0}^{\infty} e^{-\beta \hbar \omega n}|n\rangle\langle n| \quad Z_{\mathrm{K}}=\sum_{n=0}^{\infty}\left(e^{-\beta \hbar \omega}\right)^{n}=\frac{1}{1-e^{-\beta \hbar \omega}}
+
+- Besetzungswahrscheinlichkeiten:
+
+\begin{aligned}
+p_{n} & =\langle n| \hat{\rho}_{\mathrm{K}}|n\rangle \\
+& =e^{-\beta \hbar \omega n}\left(1-e^{-\beta \hbar \omega}\right)
+\end{aligned}
+
+![This diagram shows the probability distribution \( p_n \) of the quantum harmonic oscillator energy levels \( n \) at a finite temperature, specifically for the ratio \(\frac{\hbar \omega}{k_B T} = 0.3\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6ccb05fe-9bab-418a-b393-2a61bc5cd08f/c29bc0c8-2695-4a08-99bf-a6cb3ddd19b8-5_619_1422_612_1500.jpg)
+
+- Mittlere Besetzungszahl:
+
+\langle\hat{n}\rangle & =\left\langle\hat{a}^{\dagger} \hat{a}\right\rangle=\operatorname{Sp}\left\{\hat{n} \hat{\rho}_{\mathrm{K}}\right\}=\frac{1}{Z_{\mathrm{K}}} \sum_{n=0}^{\infty} n\left(e^{-\beta \hbar \omega}\right)^{n} \\
+& =\frac{1}{Z_{\mathrm{K}}}\left(x \frac{\partial}{\partial x} \sum_{n=0}^{\infty} x^{n}\right)_{x=e^{-\beta \hbar \omega}} \Rightarrow\langle\hat{n}\rangle=\frac{1}{e^{\beta \hbar \omega}-1}
+
+Achtung: 1 harm. Oszillator $\neq$ thermodyn. Limes $\Rightarrow \Delta n \sim\langle\hat{n}\rangle$
+
+### 4.3.3 Großkanonisches Ensemble
+
+Ein System sei an ein Wärmebad und Teilchenreservoir gekoppelt. Für jede Systemteilchenzahl $\mathrm{N}_{\mathrm{s}}$ erhalten wir einen Satz Eigenfunktionen
+
+& \hat{H}_{S}\left|E_{k}\left(N_{S}\right)\right\rangle=E_{k}\left(N_{S}\right)\left|E_{k}\left(N_{S}\right)\right\rangle \\
+& \hat{N}_{S}\left|E_{k}\left(N_{S}\right)\right\rangle=N_{S}\left|E_{k}\left(N_{S}\right)\right\rangle \quad \text { Teilchenzahloperator }
+
+⇒ allgemeiner Systemdichteoperator:
+
+\hat{\rho}_{S}=\sum_{N_{S}=0}^{\infty} \sum_{k} p_{k}\left(N_{S}\right)\left|E_{k}\left(N_{S}\right)\right\rangle\left\langle E_{k}\left(N_{S}\right)\right|
+
+Analoge Argumentation wie im Abschnitt 3.6:
+
+p_{k}\left(N_{S}\right) \sim \Omega_{B}\left(E-E_{k}\left(N_{S}\right), N-N_{S}\right) \sim e^{-\beta\left(E_{k}\left(N_{S}\right)-\mu N_{S}\right)}
+
+Großkanonischer Dichteoperator:
+
+& \hat{\rho}_{\mathrm{G}}=\sum_{N=0}^{\infty} \sum_{k} \frac{e^{-\beta\left(E_{k}(N)-\mu N\right)}}{Z_{\mathrm{G}}}\left|E_{k}(N)\right\rangle\left\langle E_{k}(N)\right|=\frac{e^{-\beta(\hat{H}-\mu \hat{N})}}{Z_{\mathrm{G}}} \\
+& Z_{\mathrm{G}}=\sum_{N=0}^{\infty} \sum_{k} e^{-\beta\left(E_{k}(N)-\mu N\right)}=\operatorname{Sp}\left\{e^{-\beta(\hat{H}-\mu \hat{N})}\right\}
+

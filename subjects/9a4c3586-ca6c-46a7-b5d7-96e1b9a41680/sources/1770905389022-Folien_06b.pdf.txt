@@ -1,0 +1,71 @@
+## Bindungsverhältnisse in Kristallen (bei RT)
+
+![This image depicts a periodic table of elements in German, showing the classification of elements by state of matter at 27°C (solid, liquid, gas, unknown) and grouping them into metals, metalloids, and nonmetals. It also includes atomic numbers, symbols, names, atomic weights, and highlights specific element groups such as alkali metals, halogens, and noble gases.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/053332c0-2d8e-44cf-8a08-2070b68f9765/0ba18ccf-097c-4e1e-a5d0-11a9f1dbde3b-1_957_3239_484_49.jpg)
+
+## Stabile Bindung / Festkörper
+
+Balance zwischen attraktiven und repulsiven Kräften zwischen Atomen und Elektronen
+![This diagram depicts the concept of electric dipole moments, showing two opposite charges (+ and -) separated by a distance, with arrows indicating the direction of the dipole moment vector from the negative to the positive charge.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/053332c0-2d8e-44cf-8a08-2070b68f9765/0ba18ccf-097c-4e1e-a5d0-11a9f1dbde3b-2_284_688_321_2226.jpg)
+
+## Potentielle Energie minimiert, wenn:
+
+- Coulomb-Abstoßung zwischen positiven Atomrümpfen möglichst klein (tatsächlich dominiert Pauli-Prinzip),
+- Coulomb-Abstoßung zwischen Elektronen möglichst klein (Pauli-Prinzip),
+- Coulomb-Anziehung zwischen Atomrümpfen und Elektronen möglichst groß ist.
+
+Kinetische Energie möglichst klein:
+
+- Lokalisierung auf $\Delta x$ erhöht kinetische Energie (Teilchen in einer Box)
+
+$$
+E_{\text {kin }} \sim \frac{\hbar^{2} \pi^{2}}{8 m \Delta x}
+$$
+
+Stabile Bindung:
+Gesamtenergie $\left(E_{\text {kin }}+E_{\text {pot }}\right)<$ Energie der individuellen Atome
+
+## Gitterstrukturen der chemischen Elemente
+
+|  | Li | Be | B | C | N | O | F | Ne |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Bindungsenergie (eV/Atom) | 1,64 | 3,32 | 5,81 | 7,37 | 4,91 | 2,60 | 0,84 | 0,020 |
+| Bindungsenergie (kJ/mol) | 158 | 320 | 561 | 711 | 474 | 251 | 81,0 | 1,92 |
+| Schmelztemperatur (K) | 453 | 1560 | 2348 | 4765 | 63,2 | 54,4 | 53,5 | 24,6 |
+
+
+| 1 |  |  | □ |  | □ |  |  |  | □ |  |  |  |  |  | " <br> v <br> V |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Li | Be |  | □ |  |  | □ |  |  | □ |  |  |  | B | C | N | O | F | Ne |
+| Na | Mg |  |  |  |  |  |  |  |  | Diamant |  |  | Al | Si | P | S | Cl | Ar |
+| K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni | Cu |  | Zn | Ga | Ge | As | Se | Br | Kr |
+| Rb | Sr | Y | Zr | Nb | Mo | Tc | Ru | Rd | Pd | Ag |  | Cd | In | Sn | Sb | Te | I | Xe |
+| Cs | Ba | LaLu | Hf | Ta | W | Re | Os | Ir | Pt | Au |  | Hg | TI | Pb | Bi | Po | At | Rn |
+| Fr | Ra | $\begin{aligned} & \text { Ac- } \\ & \text { Lr } \end{aligned}$ |  | La <br> Ac |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  | Nd | Pm | Sm | Eu | Gd | Tb | Dy | Ho | Er | Tm | Yb | Lu |
+|  |  |  |  |  | Th | Pa | U | Np | Pu | Am | Cm | Bk | Cf | Es | Fm | Md | No | Lr |
+
+## Bindungsverhältnisse in Kristallen
+
+![The image depicts different types of crystal structures and bonding: a Van der Waals crystal of Argon (Ar), an ionic crystal of Potassium Chloride (KCl), a metallic crystal of Sodium (Na), and a covalent crystal structure of Diamond (C).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/053332c0-2d8e-44cf-8a08-2070b68f9765/0ba18ccf-097c-4e1e-a5d0-11a9f1dbde3b-4_1336_1098_399_221.jpg)
+
+Fünf Grundtypen:
+
+- van-der-Waals Bindung (Edelgaskristalle)
+- Wasserstoffbrücken-Bindung
+- Metallische Bindung (alle Metalle)
+- Ionische Bindung (Alkalihalogenid-Kristalle)
+- Kovalente Bindung (Diamant, Silizium, Germanium)
+![The diagram depicts a hydrogen bond (Wasserstoffbrücken-Bindung) between two fluoride ions (F⁻) and a proton (H⁺) positioned between them, illustrating the concept of hydrogen bonding in chemistry.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/053332c0-2d8e-44cf-8a08-2070b68f9765/0ba18ccf-097c-4e1e-a5d0-11a9f1dbde3b-4_397_1831_1352_1468.jpg)
+
+
+## Stark schematisierte Darstellung der Ladungsverteilung grundlegender Bindungstypen.
+
+![The diagram depicts different types of chemical bonding, showing the structural arrangements for van der Waals bonding, ionic bonding, covalent bonding, and metallic bonding. It illustrates how atoms or ions are organized and interact in each type of bond.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/053332c0-2d8e-44cf-8a08-2070b68f9765/0ba18ccf-097c-4e1e-a5d0-11a9f1dbde3b-5_1081_3133_426_47.jpg)
+Bild 2.1: Schematische Darstellungder Verteilung der bindend wirkenden Elektronen bei den unterschiedlichen Bindungstypen. Die hellgrauen Bereiche symbolisieren die bevorzugten Aufenthaltsorte der bindenden Elektronen. Als Vertreter für die jeweiligen Bindungsarten wurden (a) Neon, (b) Natriumchlorid, (c) Graphit und (d) Natrium gewählt. Die Reihe führt von der Van-der-Waals- und Ionenbindung über die kovalente zur metallischen Bindung.
+
+## Gleichgewichtsabstand
+
+![This diagram depicts a Lennard-Jones type potential showing the variation of potential energy (φ/ε) as a function of distance (r/σ) between particles, illustrating the balance between repulsive (r^-n) and attractive (r^-m) wavefunction overlap forces.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/053332c0-2d8e-44cf-8a08-2070b68f9765/0ba18ccf-097c-4e1e-a5d0-11a9f1dbde3b-6_1193_1736_495_1007.jpg)
+
+Gleichgewichtsabstand
+

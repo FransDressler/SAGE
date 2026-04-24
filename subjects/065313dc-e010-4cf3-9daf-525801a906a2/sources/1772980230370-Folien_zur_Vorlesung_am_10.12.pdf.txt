@@ -1,0 +1,283 @@
+## 7. Photonen und Phononen
+
+7.1 Quantisierung des Strahlungsfelds
+
+### 7.1.1 Maxwell Gleichungen (Wiederholung)
+
+Im ladungsfreien Raum werden das elektrische Feld $\vec{E}$ und das magnetische Feld $\vec{B}$ durch die 4 Maxwell Gleichungen beschrieben:
+
+$$
+\begin{array}{rlr}
+\vec{\nabla} \cdot \vec{E}=0, & \vec{\nabla} \cdot \vec{B}=0 \\
+\vec{\nabla} \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}, & \vec{\nabla} \times \vec{B}=\frac{1}{c^{2}} \frac{\partial \vec{E}}{\partial t}
+\end{array}
+$$
+
+- Skalar- und Vektorpotential: $\quad \vec{E}=-\frac{\partial \vec{A}}{\partial t}-\vec{\nabla} \Phi, \quad \vec{B}=\vec{\nabla} \times \vec{A}$
+- Eichinvarianz d. MG: $\quad \Phi \mapsto \Phi-\frac{\partial \chi}{\partial t}, \quad \vec{A} \mapsto \vec{A}+\vec{\nabla} \chi$
+
+\chi(\vec{r}, t) \quad \ldots \text { skalares Eichfeld }
+
+- Coulomb-Eichung: $\vec{\nabla} \cdot \vec{A}=0 \quad \Rightarrow \quad\left(\vec{\nabla}^{2}-\frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}}\right) \vec{A}=0$
+
+Allgemeiner Lösungsansatz:
+
+\vec{A}(\vec{r}, t)=\frac{1}{\sqrt{\epsilon_{0}}} \sum_{n} \vec{u}_{n}(\vec{r}) q_{n}(t)
+
+(normierte) Modenfunktionen:
+
+\left(\vec{\nabla}^{2}+\frac{\omega_{n}^{2}}{c^{2}}\right) \vec{u}_{n}=0
+
+("Helmholtz Gleichung")
+
+Modenamplituden:
+
+\ddot{q}_{n}+\omega_{n}^{2} q_{n}=0
+
+(harmonischer Oszillator)
+
+3D Box mit Volumen $\mathrm{V}=\mathrm{L}^{3}$ und periodischen Randbedingungen:
+Lösung der Helmholtz Gleichung = ebene Wellen:
+
+\omega_{\vec{k}}=c|\vec{k}|, \quad \quad \vec{u}_{\vec{k}, \lambda}=\frac{1}{\sqrt{V}} \vec{\epsilon}_{\lambda}(\vec{k}) e^{i \vec{k} \cdot \vec{r}}
+
+- k -Vektoren: $\quad \vec{k}=\frac{2 \pi}{L}\left(n_{x}, n_{y}, n_{z}\right) \quad n_{i} \in \mathbb{Z}$
+- Polarisationsvektoren: $\quad \vec{\epsilon}_{\lambda=1,2}(\vec{k})$
+
+\vec{\nabla} \cdot \vec{A}=0 \quad \Rightarrow \quad \vec{\epsilon}_{\lambda=1,2}(\vec{k}) \perp \vec{k}
+
+![This diagram depicts the polarization vectors \(\vec{\epsilon}_1\) and \(\vec{\epsilon}_2\) perpendicular to the wave vector \(\vec{k}\) of an electromagnetic wave, illustrating the transverse nature of electromagnetic wave polarization.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/dc59a0fd-14ba-4c92-9c4a-0742272405db/848d139f-d2df-4714-b2bd-c649e5f2248b-03_382_440_1230_2091.jpg)
+
+Für jeden k-Vektor gibt es 2 unabhängige Polarisationsmoden.
+
+- Normierung/Orthogonalität: $\quad \int_{V} d^{3} \vec{r} \vec{u}_{\vec{k}, \lambda}^{*}(\vec{r}) \cdot \vec{u}_{\vec{k}^{\prime}, \lambda^{\prime}}(\vec{r})=\delta_{\lambda, \lambda^{\prime}} \delta_{\vec{k}, \vec{k}^{\prime}}$
+
+Die klassische Hamiltonfunktion (=Energie) des EM Feldes ist:
+
+H_{\mathrm{EM}}=\int_{V} d^{3} r \frac{\epsilon_{0}}{2}\left(\vec{E}^{2}+c^{2} \vec{B}^{2}\right)=\int_{V} d^{3} r \frac{\epsilon_{0}}{2}\left(\dot{\vec{A}}^{2}+c^{2}(\vec{\nabla} \times \vec{A})^{2}\right)
+
+Einsetzen von $\vec{A}(\vec{r}, t)=\frac{1}{\sqrt{\epsilon_{0}}} \sum_{\lambda, \vec{k}} \vec{u}_{\lambda, \vec{k}}(\vec{r}) q_{\lambda, \vec{k}}(t)$
+ergibt (ohne Beweis, partielle Integration und Vektoridentitäten):
+
+\Rightarrow \quad H_{\mathrm{EM}}=\sum_{\lambda, \vec{k}} \frac{1}{2}\left(\dot{q}_{\lambda, \vec{k}}^{2}+\omega_{\vec{k}}^{2} q_{\lambda, \vec{k}}^{2}\right)
+
+⇒ Summe von unabhängigen harmonischen Oszillatoren mit Frequenzen $\omega_{\vec{k}}=c|\vec{k}|$ !
+
+### 7.1.2 Kanonische Quantisierung
+
+Quantisierungsregeln:
+
+- Koordinaten:
+kanonische Impulse:
+
+\left.\begin{array}{c}
+q_{\lambda, \vec{k}} \mapsto \hat{q}_{\lambda, \vec{k}} \\
+p_{\lambda, \vec{k}}=\dot{q}_{\lambda, \vec{k}} \mapsto \hat{p}_{\lambda, \vec{k}}
+\end{array}\right\}
+
+- Erzeugungs-/ Vernichtungsoperatoren:
+
+\left.\begin{array}{l}
+\hat{q}_{\lambda, \vec{k}}=\sqrt{\frac{\hbar}{2 \omega_{\vec{k}}}}\left(\hat{a}_{\lambda, \vec{k}}^{\dagger}+\hat{a}_{\lambda, \vec{k}}\right) \\
+\hat{p}_{\lambda, \vec{k}}=i \sqrt{\frac{\hbar \omega_{\vec{k}}}{2}}\left(\hat{a}_{\lambda, \vec{k}}^{\dagger}-\hat{a}_{\lambda, \vec{k}}\right)
+\end{array}\right\} \quad \begin{gathered}
+\hat{H}_{\mathrm{EM}}=\sum_{\lambda, \vec{k}} \hbar \omega_{\vec{k}}\left(\hat{a}_{\lambda, \vec{k}}^{\dagger} \hat{a}_{\lambda, \vec{k}}+\frac{1}{2}\right) \\
+{\left[\hat{a}_{\lambda, \vec{k}}, \hat{a}_{\lambda^{\prime}, \vec{k}^{\prime}}^{\dagger}\right]=\delta_{\lambda, \lambda^{\prime}} \delta_{\vec{k}, \vec{k}^{\prime}}}
+\end{gathered}
+
+## Zusammenfassung:
+
+- Das quantisierte EM Feld wird durch eine Summe von unabhängigen harmonischen Oszillatoren beschrieben.
+- Die freien Moden sind ebene Wellen und werden durch den k -Vektor $\vec{k}$ und den Polarisationsindex $\lambda=1,2$ indiziert.
+- Der Hamiltonoperator (ohne Grundzustandsenergie*) ist:
+
+\hat{H}_{\mathrm{EM}}=\sum_{\lambda, \vec{k}} \hbar \omega_{\vec{k}} \hat{a}_{\lambda, \vec{k}}^{\dagger} \hat{a}_{\lambda, \vec{k}} \quad \text { mit } \quad \omega_{\vec{k}}=c|\vec{k}|
+
+- Die Eigenzustände und Energien des EM Feldes sind dann durch die Besetzungszahlen $n_{\lambda, \vec{k}}$ der einzelnen Oszillatormoden bestimmt:
+
+\hat{H}_{\mathrm{EM}}\left|\left\{n_{\lambda, \vec{k}}\right\}\right\rangle=E\left|\left\{n_{\lambda, \vec{k}}\right\}\right\rangle \quad \Rightarrow \quad E=\sum_{\lambda, \vec{k}} \hbar \omega_{\vec{k}} n_{\lambda, \vec{k}}
+
+*) Für statistische Überlegungen nicht relevant.
+
+- Der Grundzustand $|\operatorname{vac}\rangle \equiv\left|\left\{n_{\lambda, \vec{k}}=0\right\}\right\rangle$ wird als "Vakuumzustand" bezeichnet.
+- Angeregte Zustände der Form
+
+|n\rangle=\frac{1}{\sqrt{n!}}\left(\hat{a}_{\lambda, \vec{k}}^{\dagger}\right)^{n}|\mathrm{vac}\rangle
+
+werden als " $n$-Photonzustände" bezeichnet.
+"Photon" = quantisierte Anregung einer EM Feldmode
+
+Achtung: Obwohl sehr viele Gemeinsamkeiten zwischen Photonen und bosonischen Teilchen bestehen, ist diese Analogie nicht immer hilfreich und oft auch verwirrend.
+
+Da Photonen beliebig erzeugt und vernichtet werden können, ist die Photonenzahl N keine frei wählbare Zustandsvariable.
+
+### 7.2 Thermodynamik des EM Feldes
+
+Wir betrachten einen geschlossenen Hohlraum mit Volumen V, welcher von einem absorbierenden Material bei Temperatur Tumgeben ist.
+
+## Hamiltonoperator:
+
+\hat{H}_{\mathrm{EM}}=\sum_{k} \hbar \omega_{k} \hat{n}_{k}, \quad \quad \hat{n}_{k}=\hat{a}_{k}^{\dagger} \hat{a}_{k}, \quad \quad k \equiv(\lambda, \vec{k})
+
+Das EM Feld im Hohlraum steht im thermischen Kontakt (Energieaustausch) mit der Umgebung und wird deshalb durch den kanonischen Dichteoperator beschrieben:
+
+\hat{\rho}_{\mathrm{K}}=\frac{1}{Z_{\mathrm{K}}} e^{-\beta \hat{H}_{\mathrm{EM}}}
+
+- Zustandssumme:
+
+\begin{aligned}
+Z_{\mathrm{K}}=\operatorname{Sp}\left\{e^{-\beta \hat{H}_{\mathrm{EM}}}\right\} & =\sum_{\left\{n_{k}\right\}} e^{-\beta \sum_{k} \hbar \omega_{k} n_{k}}=\prod_{k}\left(\sum_{n_{k}=0}^{\infty} e^{-\beta \hbar \omega_{k} n_{k}}\right) \\
+& =\prod_{k}\left(\frac{1}{1-e^{-\beta \hbar \omega_{k}}}\right) \quad(\text { vgl. Bosonen mit } \boldsymbol{\mu}=\mathbf{0})
+\end{aligned}
+
+- Freie Energie:
+
+F(T, V)=-k_{B} T \ln Z_{\mathrm{K}}=-2 k_{B} T \sum_{\vec{k}} \ln \left(\frac{1}{1-e^{-\beta \hbar \omega_{\vec{k}}}}\right)
+
+Kontinuumslimit: $\quad \sum_{\vec{k}} \rightarrow \frac{V}{(2 \pi)^{3}} \int d^{3} k \rightarrow \frac{V}{2 \pi^{2}} \int_{0}^{\infty} d k k^{2}$
+
+\begin{aligned}
+F(T, V) & =k_{B} T \frac{V}{\pi^{2}} \int_{0}^{\infty} d k k^{2} \ln \left(1-e^{-\beta \hbar \omega_{k}}\right) \quad \begin{array}{c}
+\text { partielle } \\
+\text { Integration }
+\end{array} \\
+& =-\frac{V \hbar c}{3 \pi^{2}} \int_{0}^{\infty} d k k^{3} \frac{e^{-\beta \hbar \omega_{k}}}{1-e^{-\beta \hbar \omega_{k}}}=-\frac{V \hbar c}{3 \pi^{2}} \frac{1}{(\beta \hbar c)^{4}} \underbrace{\int_{0}^{\infty} d x \frac{x^{3}}{e^{x}-1}}_{=\Gamma(4) \zeta(4)=\pi^{4} / 15}
+\end{aligned}
+
+\Rightarrow \quad F(T, V)=-\frac{\pi^{2} V}{45 \hbar^{3} c^{3}}\left(k_{B} T\right)^{4}
+
+(historische) Konvention:
+
+## "Stefan-Boltzmann-Konstante"
+
+F(T, V)=-\frac{4 \sigma}{3 c} V T^{4}, \quad \sigma=\frac{\pi^{2} k_{B}^{4}}{60 \hbar^{3} c^{2}} \simeq 5.67 \times 10^{-8} \mathrm{Wm}^{-2} \mathrm{~K}^{-4}
+
+⇒ Druck, Entropie, Energie eines Photonengases aus thermodynamischen Relationen (siehe Übungen).
+
+### 7.2.1 Planck'sches Strahlungsgesetz
+
+## - Innere Energie:
+
+U(T, V)=-\frac{\partial}{\partial \beta} \ln Z_{\mathrm{K}} & =-2 \frac{\partial}{\partial \beta} \sum_{\vec{k}} \ln \left(\frac{1}{1-e^{-\beta \hbar \omega_{\vec{k}}}}\right) \\
+& =2 \sum_{\vec{k}} \frac{\hbar \omega_{\vec{k}}}{e^{\beta \hbar \omega_{\vec{k}}}-1}=2 \sum_{\vec{k}} \hbar \omega_{\vec{k}}\left\langle\hat{n}_{\vec{k}}\right\rangle
+
+⇒ Mittlere Photonzahl in Mode $\vec{k}$ :
+
+\left\langle\hat{n}_{\vec{k}}\right\rangle=\frac{1}{e^{\beta \hbar \omega_{\vec{k}}}-1}
+
+## Bose-Einstein-Verteilung ( $\boldsymbol{\mu} \boldsymbol{=} \mathbf{0}$ )
+
+Kontinuumslimit:
+
+U(T, V)=\frac{V}{\pi^{2}} \int_{0}^{\infty} d k k^{2} \frac{\hbar \omega_{k}}{e^{\beta \hbar \omega_{k}}-1}=V \int_{0}^{\infty} d \omega \underbrace{\frac{\omega^{2}}{\pi^{2} c^{3}} \frac{\hbar \omega}{e^{\beta \hbar \omega}-1}}_{=: u(\omega, T)}
+
+- Spektrale Energiedichte: $u(\omega, T)$
+
+Bedeutung: EM-Energie/Volumen im Frequenzintervall $[\omega, \omega+d \omega]$ :
+
+u(\omega, T) d \omega=\frac{\omega^{2} d \omega}{\pi^{2} c^{3}} \times \hbar \omega \times \frac{1}{e^{\beta \hbar \omega}-1}
+
+Anzahl der Moden
+
+Energie der Moden
+mittlere
+Besetzung einer Mode
+
+Spektrale Energiedichte:
+![This diagram depicts the Planck distribution function for blackbody radiation, showing the spectral energy density \( u(\omega, T) \) as a function of normalized frequency \(\hbar \omega / (k_B T)\), with asymptotic behaviors \(\sim \omega^2\) at low frequencies and \(\sim \omega^3 e^{-\beta \hbar \omega}\) at high frequencies.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/dc59a0fd-14ba-4c92-9c4a-0742272405db/848d139f-d2df-4714-b2bd-c649e5f2248b-12_1078_1766_95_649.jpg)
+
+## Diskussion:
+
+- Für kleine Frequenzen $\hbar \omega \ll k_{B} T$ gilt $\left\langle\hat{n}_{k}\right\rangle \approx k_{B} T / \hbar \omega_{k}$ und daher
+
+u(\omega, T) \simeq \frac{\omega^{2}}{\pi^{2} c^{3}} \times k_{B} T
+
+Das RJG erhält man aus der klassischen Überlegung, dass jede Feldmode (= harmonischer Oszillator) eine mittlere Energie $\left\langle E_{k}\right\rangle=k_{B} T$ beiträgt:
+
+u(\omega, T) d \omega \underset{\text { Anzahl der Moden }}{\simeq} \frac{\omega^{2}}{\pi^{2} c^{3}} d \omega \times k_{B} T
+
+Problem: Die spektrale Energiedichte wächst mit $\sim \omega^{2}$ und die Gesamtenergie divergiert ⇒ "ultraviolett Katastrophe".
+
+- Für große Frequenzen $\hbar \omega_{k} \gg k_{B} T$ gilt $\left\langle\hat{n}_{k}\right\rangle \approx e^{-\hbar \omega_{k} / k_{B} T}$ und daher
+
+u(\omega, T) \simeq \frac{\hbar \omega^{3}}{\pi^{2} c^{3}} \times e^{-\hbar \omega / k_{B} T} \quad \text { "Wiensches Strahlungsgesetz" }
+
+(von Wilhelm Wien 1896 empirisch gefunden)
+
+⇒ Maximum der Energiedichte:
+
+\frac{\partial}{\partial \omega} u(\omega, T) \stackrel{!}{=} 0 \Rightarrow \begin{cases}\hbar \omega_{\max }=3 k_{B} T & \text { (Wien) } \\ \hbar \omega_{\max }=2.82 k_{B} T & \text { (exakt) }\end{cases}
+
+## "Wiensches Verschiebungsgesetz"
+
+- Planck $(\sim 1900)$ : Ersetzen der klassischen Zustandssumme über kontinuierliche Energien jeder Feldmode,
+
+Z_{\mathrm{K}}^{\mathrm{kl}} \sim \prod_{k} \int_{0}^{\infty} d E_{k} e^{-\beta E_{k}} \sim \prod_{k} k_{B} T
+
+durch Summe über diskrete Anzahl von "Energiequanten"
+
+Z_{\mathrm{K}} \sim \prod_{k} \sum_{n=0}^{\infty} e^{-\beta\left(\Delta E_{k}\right) n} \sim \prod_{k} \frac{1}{1-e^{-\left(\beta \Delta E_{k}\right)}}
+
+Damit konsistent mit W. Verschiebungsgesetz $\Leftrightarrow \Delta E_{k}=\hbar \times \omega_{k}$
+
+### 7.3 Phononen
+
+Die Thermodynamik von Festkörpern wird, abgesehen von den freien Elektronen in Metallen, vor allem durch die Schwingungen der Gitteratome bestimmt.
+
+Die quantisierten Anregungen der Vibrationseigenmoden in einem Festkörper nennt man Phononen.
+
+vereinfachtes Beispiel: lineare Kette
+![This diagram depicts a one-dimensional chain of masses and springs, illustrating the positions and displacements of masses connected by springs with spacing \(a\) and mass \(m\), used to model lattice vibrations or phonons in a crystal.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/dc59a0fd-14ba-4c92-9c4a-0742272405db/848d139f-d2df-4714-b2bd-c649e5f2248b-15_371_1496_1146_73.jpg)
+
+- Hamiltonfunktion:
+
+H=\sum_{\ell} \frac{p_{\ell}^{2}}{2 m}+V\left(\left\{x_{\ell}\right\}\right)
+
+![This diagram depicts a potential energy curve \( V(r) \) as a function of the interatomic distance \( r \), showing the interaction potential between two atoms or particles. It illustrates the equilibrium bond distance \( r_0 \approx a \) and compares the actual potential (solid line) with a harmonic approximation (dashed line) near the minimum.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/dc59a0fd-14ba-4c92-9c4a-0742272405db/848d139f-d2df-4714-b2bd-c649e5f2248b-15_968_1226_1045_1759.jpg)
+
+V(r) \simeq V\left(r_{0}\right)+\frac{k}{2}\left(r-r_{0}\right)^{2}+\ldots
+
+Harmonische Näherung: $\quad x_{\ell}=x_{\ell}^{0}+u_{\ell}, \quad x_{\ell}^{0}=\ell \times a, \quad\left|u_{\ell}\right| \ll a$
+
+V\left(\left\{x_{\ell}\right\}\right)=V\left(\left\{x_{\ell}^{0}\right\}\right)+\left.\sum_{\ell} \frac{\partial V}{\partial x_{\ell}}\right|_{x_{\ell}^{0}} u_{\ell}\left(+\left.\frac{1}{2} \sum_{\ell, \ell^{\prime}} \frac{\partial^{2} V}{\partial x_{\ell} \partial x_{\ell^{\prime}}}\right|_{x_{\ell}^{0}} u_{\ell} u_{\ell^{\prime}}\right)+\ldots
+
+(Gleichgewicht)
+approx. Hamiltonfunktion:
+
+H \simeq \sum_{\ell} \frac{p_{\ell}^{2}}{2 m}+\frac{1}{2} \sum_{\ell, \ell^{\prime}} K_{\ell \ell^{\prime}} u_{\ell} u_{\ell^{\prime}}, \quad K_{\ell \ell^{\prime}}=\left.\frac{\partial^{2} V}{\partial x_{\ell} \partial x_{\ell^{\prime}}}\right|_{x_{\ell}^{0}}
+
+⇒ quadratische Funktion von $\left\{x_{\ell}, p_{\ell}\right\}$ (Bewegungsgl. linear in $\left\{x_{\ell}, p_{\ell}\right\}$ )
+⇒ Hamiltonfunktion kann durch Transformation in Normalkoordinaten $\left\{u_{\ell}, p_{\ell}\right\} \rightarrow\left\{Q_{n}, P_{n}\right\}$ in Diagonalform gebracht werden:
+
+\Rightarrow \quad H=\sum_{n}\left(\frac{P_{n}^{2}}{2 m}+\frac{1}{2} m \omega_{n}^{2} Q_{n}^{2}\right)
+
+Bsp: i) lineare Kette mit $\mathrm{N}=\mathrm{L} / \mathrm{a}$ Atomen, periodische Randbedingungen
+ii) Wechselwirkung nur zwischen Nachbaratomen:
+
+V \simeq \sum_{\ell} \frac{K}{2}\left(u_{\ell}-u_{\ell+1}\right)^{2}
+
+- Normalkoordinaten:
+
+\begin{array}{rlrl}
+u_{\ell} & =\frac{1}{\sqrt{N}} \sum_{k} e^{i k a \ell} Q_{k} & k & =\frac{2 \pi}{L} \times\left[-\frac{N}{2}+1, \ldots, \frac{N}{2}\right] \\
+p_{\ell} & =\frac{1}{\sqrt{N}} \sum_{k} e^{-i k a \ell} P_{k} & & \left.\Rightarrow k \in]-\frac{\pi}{a}, \frac{\pi}{a}\right]
+\end{array}
+
+- Hamiltonfunktion / Vibrationsspektrum:
+
+\Rightarrow \quad H & =\sum_{k}\left(\frac{P_{k} P_{-k}}{2 m}+\frac{1}{2} m \omega_{k}^{2} Q_{k} Q_{-k}\right) \\
+\omega_{k} & =2 \sqrt{\frac{K}{m}}\left|\sin \left(\frac{k a}{2}\right)\right|
+
+![This diagram depicts the phonon dispersion relation for an acoustic branch in a one-dimensional lattice, showing the angular frequency ω as a function of wavevector k with a linear dependence near k = 0 and a maximum frequency ω_max at the Brillouin zone boundary ±π/a.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/dc59a0fd-14ba-4c92-9c4a-0742272405db/848d139f-d2df-4714-b2bd-c649e5f2248b-17_857_1232_1373_1737.jpg)
+
+## Nebenrechnungen:
+
+\sum_{\ell} \frac{p_{\ell}^{2}}{2 m}=\sum_{k, k^{\prime}} \underbrace{\frac{1}{N} \sum_{\ell} e^{-i\left(k+k^{\prime}\right) a \ell}}_{\delta_{k,-k^{\prime}}} \frac{P_{k} P_{k^{\prime}}}{2 m}=\sum_{k} \frac{P_{k} P_{-k}}{2 m}
+
+\sum_{\ell}\left(u_{\ell}-u_{\ell+1}\right)^{2} & =\sum_{\ell} u_{\ell}\left(2 u_{\ell}-u_{\ell-1}-u_{\ell+1}\right) \\
+& =\sum_{k, k^{\prime}} \underbrace{\frac{1}{N} \sum_{\ell} e^{i\left(k+k^{\prime}\right) a \ell}}_{\delta_{k,-k^{\prime}}} \underbrace{\left(2-e^{i k a}-e^{-i k a}\right)}_{4 \sin ^{2}(k a / 2)} Q_{k} Q_{k^{\prime}} \\
+& =\sum_{k} 4 \sin ^{2}\left(\frac{k a}{2}\right) Q_{k} Q_{-k}
+
+Allgemein: 3D Gitter
+![This diagram depicts the phonon dispersion relations in a crystal, showing the distinction between optical and acoustic phonons and their corresponding frequencies as functions of the wave vector \(k\). It also explains the summation over phonon wave vectors in the first Brillouin zone and the phonon branch index \(\lambda\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/dc59a0fd-14ba-4c92-9c4a-0742272405db/848d139f-d2df-4714-b2bd-c649e5f2248b-19_1971_2764_243_89.jpg)
+

@@ -1,0 +1,292 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing key concepts and tools such as atomic nuclei, particle physics (Standard Model particles), nuclear reactors, particle accelerators, neutrino detection, cosmic phenomena, and the timeline of the universe from the Big Bang to galaxy formation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 |  | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Alpha, beta, gamma |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiation, Reactors |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Literatur
+
+- Terranova, A modern primer in particle \& nuclear physics (Oxford Univ. Press)
+- Povh, Rith, Scholz, Zetsche; Teilchenphysik (Springer Verlag)
+- Perkins; Introduction to High Energy Physics (Addison Wesley)
+- Mayer-Kuckuck; Kernphysik (Teubner)
+- Kundt; Astrophysics A primer (Springer)
+- Hanslmeier: Einführung in Astronomie und Astrophysik (Springer)
+
+
+## Tiefergehende Literatur
+
+- Berger; Elementarteilchenphysik (Springer)
+- Halzen, Martin; Quarks \& Leptons (Wiley)
+- Kleinknecht; Teilchendetektoren (Teubner)
+- Carroll, Ostlie; An Introduction to Modern Astrophysics (AddisonWesley)
+![This image shows the cover of a textbook titled "Teilchen und Kerne," which is an introduction to the physical concepts of particles and nuclei.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-03_1009_712_556_2574.jpg)
+
+
+## Literatur:
+
+- Die ersten drei Minuten (Steven Weinberg)
+
+
+## Einführung in Quantenmechanik (für NichtPhysiker und Physiker :)
+
+Einfache und 'unterhaltsame' Einführung in die Quantenphysik:
+https://www.didaktik.physik.unimuenchen.de/archiv/inhalt_materialien/quantenphysik _sek1/quant_sek1.pdf
+![The image depicts the cover of a book titled "Quantenmechanik," which is an introduction to quantum mechanics by Nobel laureate Steven Weinberg. It shows the subject matter of quantum mechanics, likely including concepts such as particle interactions and quantum fields.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-04_939_585_408_2565.jpg)
+![The image depicts the cover of a textbook titled "Einführung in die Quantenmechanik," which is an introduction to quantum mechanics for physics education students.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-04_793_522_984_976.jpg)
+![The image depicts the cover of a textbook titled "Quantenmechanik," which is an introduction to quantum mechanics. It shows that the book is the 7th edition by Schwabl and includes more than 100 exercise problems.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-04_884_582_924_1833.jpg)
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts the interaction mechanisms of gamma rays with matter, specifically showing the photoelectric effect, Compton effect, and pair production, along with the resulting detector response spectrum for gamma-ray detection.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-05_1440_3180_323_130.jpg)
+
+## Nachweis von Photonen von Szintillator: Photomultiplier
+
+![The diagram depicts the working principle of a photomultiplier tube, showing how incident photons generate photoelectrons at the photocathode, which are then multiplied through a series of dynodes to produce a measurable electrical output signal.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-06_1060_2228_259_532.jpg)
+
+Quantum Efficiency $\varepsilon$ :
+gibt an wieviele Photoelektronen pro Photon erzeugt werden.
+Typisch $\varepsilon=0.25$
+![This image shows a Nixie tube, an electronic device used for displaying numerals or other information using glow discharge. It specifically depicts the bulb-like glass enclosure containing shaped cathodes that light up to display digits.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-06_670_588_1082_2387.jpg)
+
+ATLAS Detektor (LHC - CERN)
+![This diagram depicts the ATLAS detector at the Large Hadron Collider, showing its various components such as the inner detector, calorimeters, toroids, and muon detection systems used for particle physics experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-07_1452_2505_280_402.jpg)
+
+![This diagram depicts the ATLAS detector's particle identification and tracking system, showing how different particles (muon, proton, neutron, electron, photon, neutrino) interact with and are detected by various detector components such as the muon spectrometer, calorimeters, and tracking detectors. It illustrates the particle tracks and their visibility or invisibility to the detector.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-08_1652_1892_91_742.jpg)
+![The image depicts the IceCube Neutrino Observatory at the South Pole, showing a neutrino detection event inside the ice and a photomultiplier module used to detect Cherenkov radiation from neutrino interactions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-09_1593_1961_64_44.jpg)
+
+## Cherenkov light in reactor pool
+
+![This image depicts the core of a nuclear reactor submerged in water, showing the blue Cherenkov radiation emitted by charged particles moving faster than the speed of light in water.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-09_1371_1046_286_2195.jpg)
+
+Detect Cherenkov Light in Ice!
+![This image depicts a dilution refrigerator, a device used to achieve ultra-low temperatures close to absolute zero for experiments in quantum computing and condensed matter physics. It shows the internal components and structure designed to cool samples to millikelvin temperatures.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-10_1710_1150_85_106.jpg)
+
+## Phononen-Detektor für Neutrinos
+
+![The image depicts a cryogenic detector setup for detecting neutrinos from a nuclear power plant, showing a single crystal (Einkristall) with a thermometer attached used to measure temperature changes caused by neutrino interactions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-10_1434_1642_278_1476.jpg)
+
+## Terrestrische und kosmische Beschleuniger
+
+First successful cyclotron
+(Lawrence, 1931)
+![This image depicts the Crab Nebula, a supernova remnant showing the expanding cloud of gas and dust resulting from a massive star's explosion. It illustrates the complex structure of ionized gas and energetic particles emitted by the central pulsar.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-11_1104_1900_525_1208.jpg)
+
+| Sonde, Instrument | typ. Energie | Auflösung bis ca. | auflösbare Objekte |
+| :--- | :--- | :--- | :--- |
+| sichtbares Licht | $1 \ldots 3 \mathrm{eV}$ | $10^{-6} \mathrm{~m}$ | Viren |
+| Röntgenstrahlung; Elektronenmikroskop | 10 keV | $10^{-10} \mathrm{~m}$ | Atome, Kristallstrukt. |
+| niederenergetische Teilchenbeschleuniger | 100 MeV | $10^{-14} \mathrm{~m}$ | Atomkern |
+| Moderne Teilchenbeschleuniger (LEP, HERA) | 100 GeV | $10^{-17} \mathrm{~m}$ | Quarks und darüberhinaus.. |
+
+- Kernphysik
+
+Elektron-/Proton-Beschleuniger lonen-Beschleuniger/-Collider Gleichstrom-Teilchenstrahlen ("Stretcher")
+
+- Hochenergiephysik
+"Fixed target"-Beschleuniger Speicherring-Beschleuniger/-Collider Linear-Beschleuniger
+- Energieerzeugung
+
+Inertial Fusion
+Kernbrennstoffbrüten
+Fissionsreaktor
+
+- Industrie
+
+Radiographie mit Röntgenstrahlen Ionen-Implantation Isotopen-Herstellung/-Trennung Material-Untersuchungen Nahrungsmittel-Sterilisation Elektronen-/Röntgenstrahl-Lithographie
+
+## Beschleuniger - Anwendungen
+
+- Synchrotron-Strahlung
+
+Grundlegende Atom- und Molekülphysik
+Festkörperphysik
+Geowissenschaften
+Materialwissenschaften
+Chemie
+Molekular- und Zell-Biologie
+Oberflächen-/Grenzflächenphysik
+
+- Kohärente Strahlung
+
+Freie-Elektronen-Laser (FEL)
+Mikroproben
+Holographie
+
+- Medizin
+
+Radiotherapie
+Digitale Subtraktions-Angiographie minimal invasive Behandlungen mit abstimmbaren FELs
+![This image depicts the layout of the Large Hadron Collider (LHC) at CERN, showing the 27 km circular tunnel and the locations of its main detectors (CMS, LHCb, ATLAS, ALICE) and associated facilities. The inset shows a section of the particle accelerator equipment used in the collider.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-14_1873_3323_0_0.jpg)
+
+## van de Graaff-Generator
+
+![This diagram depicts the operation of a Van de Graaff generator used for particle acceleration, showing components such as the charge conveyor belt, ion source, evacuated acceleration channel, and analyzing magnet. It illustrates how high voltage is generated and used to accelerate ions for experimental or analytical purposes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-15_1282_1017_380_1385.jpg)
+
+Tandem-van de Graaff-Beschleuniger
+![This diagram depicts a negative ion accelerator, showing the process of accelerating negative ions from a negative ion source through a high-voltage terminal, stripping electrons via foil or gas, and analyzing the resulting positive ions with a magnet.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-16_865_1948_566_935.jpg)
+
+## Das MLL Labor - Tandemschleuniger in Garching (seit 2019 im Abbau)
+
+![This image depicts a particle accelerator facility, specifically showing the linear accelerator and associated equipment used to accelerate charged particles to high energies for experimental physics research.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-17_1511_1981_242_645.jpg)
+
+- lineare Kette von leitenden Driftröhren,
+- an Hochfrequenz angeschlossen ,
+- Teilchen entlang Längsachse,
+
+Isings und Wideröes Linearbeschleuniger
+![This diagram depicts a linear accelerator (linac) setup, showing how ions from the ion source are accelerated through a series of drift tubes powered by an RF generator. The arrows indicate the direction of the accelerating electric fields that increase the ions' kinetic energy as they pass through each gap.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-18_626_2248_464_819.jpg)
+
+- Hochfrequenz synchron zum Teilchenflug:
+
+Teilchen zwischen Driftröhren, wenn beschleunigendes $\vec{E}$-Feld, sonst im feldfreien Raum einer Driftröhre
+
+- Drifttöhrenlänge wächst mit Teilchengeschwindigkeit
+
+Wideröe hat 1928 den ersten funktionierende Beschleuniger nach Isings Vorschlag gebaut.
+
+## Zyklotron
+
+![This diagram depicts a cyclotron, showing the path of ions produced at the center being accelerated by an RF driving force between the "Dees" in a magnetic guide field, with the ions eventually extracted as a beam through an extraction electrode.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-19_1142_1718_427_799.jpg)
+
+![The image shows two cyclotrons: the first successful cyclotron built by Lawrence in 1931 and a modern 590 MeV cyclotron at the Paul Scherrer Institut, illustrating the development of particle accelerators.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-20_1343_2244_95_536.jpg)
+Figure 4.6: A first prototype of a cyclotron (by Lawrence) and the 590 MeV isochronous cyclotron at PSI.
+
+## Synchrotron
+
+![This diagram depicts the layout of an electron synchrotron, showing components such as the electron gun, linear accelerator (LINAC), injection and ejection magnets, accelerating sections, deflection magnet, and focusing magnets used to accelerate and guide electrons for experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-21_1077_1423_380_867.jpg)
+Fig. 1.16 Prinzipieller Aufbau eines modernen Synchrotrons. Die Bahn wird durch Ablenkmagnete mit homogenem Feld festgelegt, wïrend die Fokussierung des Strahls durch gesonderte Magnete besorgt wird. Die Beschleu:igung geschieht durch eine oder mehrere kurze HF-Strukturen. Die Teilchen werden von einem Vorbeschleuniger (Linac oder Microtron) geliefert.
+
+## The energy spectrum of Cosmic Rays
+
+![This diagram depicts the cosmic ray energy spectrum, showing the scaled flux of cosmic rays as a function of particle energy, with data from various experiments and highlighting energies far exceeding those achievable at particle accelerators like the LHC.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-22_1202_2246_494_888.jpg)
+
+## The energy spectrum of Cosmic Rays
+
+![This diagram depicts the cosmic ray energy spectrum, showing the scaled flux of particles as a function of their energy per particle, with annotations comparing particle energies to those achieved in particle accelerators and a football kicked at 100 km/h.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-23_1191_2243_505_888.jpg)
+
+
+![This diagram is a cosmic ray energy spectrum plot showing the flux of cosmic rays as a function of energy per particle, with annotations marking the "knee," "ankle," and the "GZK cut-off" features in the spectrum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-24_1251_2890_447_239.jpg)
+
+## Energien höher aus $10^{18} \mathrm{eV}$ werden nicht mehr vom galaktischen Magnetischen Feld in der Galaxie gehalten
+
+![This diagram shows the trajectories of 10^18 eV protons moving through a random nanogauss magnetic field with a cell size of 1 megaparsec (Mpc), illustrating how the protons' paths are deflected over large cosmic distances.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-25_1123_1126_401_526.jpg)
+![This diagram depicts the trajectories of 10^20 eV protons traveling through a random nanogauss magnetic field with a 1 Mpc cell size, showing their paths over distances measured in megaparsecs (Mpc).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b453f17a-3ad8-45d7-a9f7-e63f4f199351/009a2684-9bf0-44cd-9604-bb477d03886f-25_1095_1092_424_1776.jpg)
+
+## Super Nóva
+
+- Explosion of a star
+- Energy emission of $10^{51}$ erg or $10^{44}$ Joule
+- $99 \%$ in form of, neutrinos
+- $20-30$ SN explosions per second in the universe
+- 3 SN explosion per 100 years in our galaxy
+
+
+## Active Galactic Nuclei (AGN)
+
+- Active galactic nuclei (AGNs) are compact regions in the centers of galaxies that appear very bright in electromagnetic radiation
+- Regions contain supermassive black holes that accrete surrounding matter, converting gravitational energy into radiation
+- In-falling matter forms an accretion disk. In many AGNs, relativistic jets perpendicular to the disk are observed
+- Example: Quasar, Blazar
+
+
+## Gamma Ray Bursts (GRB)
+
+- GRBs are extremely energetic explosions observed in distant galaxies
+- For a period of $10^{-3}$ to $10^{3}$ seconds they outshine every other source of gamma rays in the Universe
+- They were first detected by a set of military satellites, operated by the US Air Force
+- Long bursts (duration > 2s): associated with the core-collapse of a supermassive star
+- Short bursts ( $<2 \mathrm{~s}$ ): result of two merging neutron stars, or the merging of a neutron star and a black hole
+
+
+## Greisen-Zatsepin-Kuzmin (GZK) Cut-off
+
+> Slowing interactions of CR particle with the CMB
+> $\gamma_{C M B}+p \rightarrow \Delta^{+} \rightarrow p+\pi^{0}$
+> $\gamma_{C M B}+p \rightarrow \Delta^{+} \rightarrow n+\pi^{+}$
+
+Zur Wiederholung
+
+## Vierer-Vektoren
+
+## (zur Erinnerung)
+
+natürliches Einheitensystem:
+$\hbar=c=1$, Umrechnung: $\hbar c=197,329 \mathrm{MeV} \cdot f m$
+Koordinaten:
+$\left(x^{\mu}\right)=\left(x^{0}, x^{1}, x^{2}, x^{3}\right)=\left(x^{0}, \vec{x}\right)=(t, \vec{x})$ bilden 4-Vektor
+$\mu=0,1,2,3, k=1,2,3$ (räumliche Koordinaten)
+$\left(x^{\mu}\right)$ : Komponenten bezüglich eines festen Inertialsystems IS, Bezeich-
+nung: kontravariante Komponenten
+Raum der $x^{\mu}$ : Minkovski-Raum
+Metrik: $x^{2}=\left(x^{0}\right)^{2}-\vec{x}^{2}=g_{\mu \nu} a^{\mu} a^{\nu}$ (Summation über $\mu, \nu$ )
+
+$$
+g=\left(g_{\mu \nu}\right)=\left(\begin{array}{cccc}
+1 & 0 & 0 & 0 \\
+0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & -1
+\end{array}\right) \quad \rightarrow \text { metrischer Tensor }
+$$
+
+Skalarprodukt: $\vec{x} \cdot \vec{y}=g_{\mu \nu} x^{\mu} y^{\nu}$
+kovariante Komponenten:
+
+\begin{array}{ll}
+x_{\mu}=g_{\mu \nu} x^{\nu} & \left(x^{0}=x_{0}, x^{k}=-x_{k}\right) \\
+x^{2}=x_{\mu} x^{\mu}=g_{\mu \nu} x^{\mu} x^{\nu} &
+\end{array}
+
+## Vierer-Vektoren
+
+## (zur Erinnerung)
+
+Lorentz-Transformationen:
+$\Lambda: I S \longrightarrow I S^{\prime}$ lineare Transformation
+$\Lambda: x^{\mu} \longrightarrow x^{\prime \mu}=\Lambda_{\nu}^{\mu} x^{\nu}, \Lambda=\left(\Lambda_{\nu}^{\mu}\right)(4 \times 4$ - Matrix $)$
+Bedingung: Metrik ist invariant, d.h. $x^{2}=x^{\prime 2}$
+$\Leftrightarrow \Lambda g \Lambda^{T}=g \Rightarrow \operatorname{det}(\Lambda)= \pm 1 \Rightarrow d^{4} x, d^{4} x^{\prime}$ invariant
+Beispiele:
+a) Drehungen: $\left(\Lambda_{\nu}^{\mu}\right)=\left(\begin{array}{c|ccc}1 & 0 & 0 & 0 \\ \hline 0 & & & \\ 0 & & R & \\ 0 & & & \end{array}\right) \mathrm{R}: 3 \times 3$ Matrix orthogonal, $\operatorname{det}(R)=1$
+b) Boost (in $x^{1}$-Richtung) $\left(\Lambda_{\nu}^{\mu}\right)=\left(\begin{array}{cccc}\gamma & \gamma \beta & 0 & 0 \\ \gamma \beta & \gamma & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1\end{array}\right)$ mit $\gamma=\frac{1}{\sqrt{1-\beta^{2}}}$
+
+## Vierer-Vektoren Zusammenfassung
+
+- Vierervektoren:
+
+\begin{aligned}
+\mathbf{x}=\left(x_{0}, x_{1}, x_{2}, x_{3}\right) & =(c t, \vec{x}) \\
+\mathbf{p}=\left(p_{0}, p_{1}, p_{2}, p_{3}\right) & =\left(\frac{E}{c}, \vec{p}\right)
+\end{aligned}
+
+- Skalarprodukt zweier Vierervektoren $\mathbf{a , b}$ (Lorentz-invariant):
+
+\mathbf{a} \cdot \mathbf{b}=a_{0} b_{0}-\vec{a} \vec{b}
+
+- Gilt auch für das Quadrat des des Impulses $\mathbf{p}$ :
+
+\mathbf{p}^{2}=\frac{E^{2}}{c^{2}}-\vec{p}^{2}
+
+- Das Quadrat ist gleich der Ruhemasse $m c^{2}$, weil sich ein Bezugssystem findet, in dem das Teilchen ruht, d.h. $\vec{p}=0$ und $E=m c^{2}$
+⇒ Invariante Masse: $m=\sqrt{\frac{\mathbf{p}^{2}}{c}}$
+(1) und (2) ⇒ Ergibt die bekannte Energie-Impuls-Beziehung:
+
+E^{2}-\vec{p}^{2} c^{2}=m^{2} c^{4}
+

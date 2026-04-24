@@ -1,0 +1,171 @@
+## Übung zur Vorlesung <br> Physik der kondensierten Materie 1
+
+WiSe 2025/2026
+Lösungsskizze zu
+Blatt 3
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und
+-materialien
+Sebastian Loy
+
+Dieses Dokument stellt eine Lösungsskizze dar, mit keinerlei Garantie auf Vollständigkeit und/oder Korrektheit.
+
+### 3.1 Wiederholung
+
+Einfache Aufgaben, die mit Ihrem bisherigen Grundwissen aus der Festkörperphysik spontan und (in einer Klausursituation) ohne Nachschlagen gelöst werden sollten.
+(a) Abbildung 1 zeigt ein zweidimensionales Kristallgitter. Welches Bravaisgitter liegt vor? Zeichnen Sie eine primitive und eine nicht-primitive Einheitszelle ein. Geben Sie an, wieviele Gitterpunkte Ihre gewählten Einheitszellen enthalten.
+Lösung: Das Bravais-Gitter ist zentriert-rechteckig. $\vec{a}_{1}^{\prime}$ und $\vec{a}_{2}^{\prime}$ sind die primitiven Gittervektoren der primitiven Einheitszelle (grüner Bereich) mit einem Gitterpunkt. $\vec{a}_{1}$ und $\vec{a}_{2}$ sind die Gittervektoren einer nicht-primitiven (oder konventionellen) Einheitszelle mit zwei Gitterpunkten (roter Bereich).
+(b) Welches Kristallgitter wird zur Beschreibung von CsCl verwendet? (siehe Abbildung 2)
+Lösung: Wir wählen ein einfach kubisches (sc) Kristallgitter mit einer Basis aus einem $\mathrm{Cl}^{-}$-Ion und einem $\mathrm{Cs}^{+}$-Ion.
+Wichtiger Hinweis: CsCl ist kein bcc-Gitter! Alle Atome (einschließlich des Mittelpunktes) müssen in einem bcc-Gitter identisch sein. Bei CsCl ist das Atom in der Mitte Cl, während die Atome in den Ecken Cs sind.
+
+![This diagram depicts a comparison between two sets of lattice vectors in a two-dimensional lattice, showing the original lattice vectors \(\vec{a}_1\) and \(\vec{a}_2\) in red and a transformed or rotated set of lattice vectors \(\vec{a}'_1\) and \(\vec{a}'_2\) in green.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-2_315_1263_311_433.jpg)
+Abbildung 1: Konventionelle Einheitszelle (rot) und primitive Einheitszelle (grün).
+
+![This diagram depicts the crystal structure of caesium chloride (CsCl), showing its cubic primitive lattice with cesium atoms at the origin [000] and chlorine atoms at the body center position [½ ½ ½].](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-2_332_1039_833_502.jpg)
+Abbildung 2: Cäsiumchlorid bildet ein kubisches Gitter mit einer zweitatomigen Basis.
+
+(c) Nennen Sie jeweils ein Element, das mit einem Basisatom pro Gitterpunkt in einem sc, bcc und fcc Bravaisgitter kristallisiert.
+Lösung: Einfach kubisch (sc): Polonium Po (die Alpha-Form ist SC und die Beta-Form ist rhomboedrisch).
+Raumzentriert kubisch (bcc): z.B. Fe, Cr, Mo, W und Alkalimetalle wie Li, K, Na, Rb, Cs.
+Flächenzentriert kubisch (fcc): z.B. Cu, Ag, Au, Al, Pd, Pt.
+
+## (d) Zeichnen Sie die angegebenen Kristallflächen in die zugehörigen kubischen Elementarzellen aus Abbildung 3 ein.
+
+Lösung: Kristallebenen (hkl) in kubischen Einheitszellen: Oben, von links nach rechts: (010), (020), ( $1, \overline{1}, 1$ ). Unten, von links nach rechts: (110), (113), (111).
+
+Hinweis: Einige der Ebenen sind in die erste Einheitszelle zurückübersetzt. Dies ist eine übliche Darstellungsweise für Kristallebenen.
+
+![This diagram depicts the different 2D planes and 3D volume elements formed by the basis vectors \(\vec{a}_1\), \(\vec{a}_2\), and \(\vec{a}_3\) in a three-dimensional lattice or vector space. It shows the geometric interpretation of areas and volumes spanned by pairs or triplets of these vectors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-3_542_1136_320_491.jpg)
+Abbildung 3: Kristallebenen in kubischen Einheitszellen
+
+(e) Folgende Vektoren spannen eine primitive Einheitszelle auf:
+
+$$
+\vec{a}_{1}=\frac{a}{2}\left(\begin{array}{l}
+1 \\
+1 \\
+0
+\end{array}\right) \quad \vec{a}_{2}=\frac{a}{2}\left(\begin{array}{l}
+0 \\
+1
+\end{array}\right) \quad \vec{a}_{3}=\frac{a}{2}\left(\begin{array}{l}
+0 \\
+1
+\end{array}\right)
+$$
+
+Skizzieren Sie die Gittervektoren $\vec{a}_{1}, \vec{a}_{2}$ und $\vec{a}_{3}$ in einem kartesischen Koordinatensystem. Welches Kristallsystem wird durch die primitive Einheitszelle charakterisiert?
+Lösung: Die primitive Einheitszelle wird durch folgende Vektoren aufgespannt:
+
+- $\vec{a}_{1}=\frac{a}{2}\left(\begin{array}{l}1 \\ 1 \\ 0\end{array}\right)$
+- $\vec{a}_{2}=\frac{a}{2}\left(\begin{array}{l}0 \\ 1 \\ 1\end{array}\right)$
+- $\vec{a}_{3}=\frac{a}{2}\left(\begin{array}{l}1 \\ 0 \\ 1\end{array}\right)$
+
+Der rote Würfel in Abbildung 4 zeigt die konventionelle kubische Einheitszelle, der grüne Rhomboeder zeigt die primitive Einheitszelle. Das Kristallsystem ist kubisch, das Bravais Gitter ist fcc. Siehe folgende Abbildung!
+
+![The image depicts the crystal lattice structure of a body-centered cubic (BCC) unit cell, showing the lattice vectors and atomic positions within the unit cell. It illustrates the spatial arrangement of atoms and the geometry of the BCC lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-4_341_921_388_588.jpg)
+Abbildung 4: primitive Gittervektoren in einem kartesischen Koordinatensystem
+
+### 3.2 Verständnisfragen
+
+(a) Warum deformieren Einkristalle bei geringerer Zugspannung als Polykristalle mit konstanter Zugspannung?
+
+- Im einfachen Bild können die Gitterebenen eines Einkristalls übereinandergleiten. Die genauere Erklärung folgt in (b).
+(b) Warum führt das Konzept des idealen Kristalls zu völlig falschen Vorhersagen bei der kritischen Schubspannung?
+- Die abgeschätzten kritischen Schubspannungen sind im einfachen Bild deutlich zu hoch. Der Mechanismus der plastischen Verformung beruht nicht, wie bei der Abschätzung der kritischen Schubspannung angenommen, in einem einfachen Übereinandergleiten von Gitterebenen. Tatsächlich beruht der Fließvorgang bei kristallinen Festkörpern auf der Bewegung von Versetzungen.
+(c) Wodurch kommt der abstoßende - und der anziehende Teil des Lennard-JonesPotentials zustande und welche Proportionalität haben die beiden Teile typischerweise zum Radius?
+- Abstoßend: Überlapp von Wellenfunktionen nach Pauli-Prinzip; $r^{-12}$
+- Anziehend: Van-der-Waals Kräfte; $r^{-6}$
+(d) Skizzieren Sie ein kubisches Gitter mit einer zusätzlich eingeschobene Gitterebene, deren Ausdehnung so klein ist, dass sie nirgendwo bis an den Kristallrand heranreicht (2D-Skizze genügt).
+
+Wie verläuft die Versetzungslinie in drei Dimensionen? Markieren Sie die Versetzungslinien in Ihrer Skizze.
+Wie verläuft der Burgers-Vektor in drei Dimensionen? Markieren Sie den Burgers-Vektor in Ihrer Skizze.
+Welche Form beschreibt der Burgers-Vektor in drei Dimensionen?
+
+![The diagram depicts a dislocation in a crystal lattice, specifically illustrating an edge dislocation with its associated extra half-plane of atoms, the dislocation line (Versetzungslinie), and the Burgers vector (Burgers-Vektor). It shows both a side view and a top view of the dislocation structure and the ring-shaped Burgers vector around the dislocation line.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-5_1201_905_666_610.jpg)
+Abbildung 5:
+
+(e) Zeichnen Sie den Burgers-Vektor in Abbildung 6 ein. Wie steht dieser zur Versetzungslinie?
+Lösung:
+Die Versetzungslinie steht senkrecht auf die Bildebene und geht durch das rote
+
+Kreuz. Der Burgers-Vektor ist (abhängig von der definierten Umlaufrichtung) (anti)parallel zur Versetzungslinie und kann auf einem beliebigen Punkt der blau markierten Kante eingezeichnet werden. Die Länge des Burgers-Vektor entspricht dem Höhenunterschied an der blau markierten Kante.
+
+![This image depicts a microscopic or atomic-scale view of a material surface with a marked boundary line (in blue) and two specific points indicated by a green and a red cross, likely representing distinct features or defects on the surface. It is used for analyzing the structure or morphology of the material at the nanoscale.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-6_581_905_573_610.jpg)
+Abbildung 6: Schraubenversetzung [Hunklinger, H. (2021). Festkörperphysik (5. Aufl.). De Gruyter.]
+
+### 3.3 Leerstellendiffusion
+
+Mit Hilfe der Tracer-Methode wurde die Diffusion von Natriumionen in NaBr (Dichte $\rho=3,20 \mathrm{~g} / \mathrm{cm}^{3}$ ) bei $480^{\circ} \mathrm{C}$ und $650^{\circ} \mathrm{C}$ untersucht. Für den Diffusionskoeffizienten $D$ wurden hierbei die Werte $3,22 \cdot 10^{-15} \mathrm{~m}^{2} / \mathrm{s}$ bzw. $3,62 \cdot 10^{-13} \mathrm{~m}^{2} / \mathrm{s}$ gefunden.
+Tipp 1: Eine solche Messung wird in "Festkörperphysik" von Siegfried Hunklinger auf Seit 147 gezeigt.
+Tipp 2: Hunklinger wechselt in diesem Abschnitt zwischen Entropie und Bindungsenergie pro Ion und pro Ionenpaar.
+(a) Wie groß ist die Summe aus Bildungsenergie pro Ion und Aktivierungsenergie der Leerstellen?
+
+## Lösung:
+
+Hunklinger schreibt (auch aus Vorlesung herleitbar): $D=D_{0} e^{S_{L} / k_{B}} e^{-\left(E_{L}+E_{D}\right) / k_{B} T}$ mit $S_{L}$ und $E_{L}$ pro Ion.
+Verwende die angegebenen Werte für $D$ und $T$ um das Verhältnis $D_{1} / D_{2}$ zu bilden: $\frac{D_{1}}{D_{2}}=e^{-\left(E_{L}+E_{D}\right)\left(\frac{1}{T_{1}}-\frac{1}{T 2}\right) / k_{B}}$.
+
+Umformen ergibt $E_{L}+E_{D}=-\ln \left(\frac{D_{1}}{D_{2}}\right) \cdot k_{B} /\left(\frac{1}{T_{1}}-\frac{1}{T_{2}}\right)=2,67 \cdot 10^{-19} \mathrm{~J}=1.67$ eV
+(b) Welchen Wert hat der Vorfaktor $D_{0} \exp \left(S_{L} / k_{B}\right)$, mit der Entropie pro Ion $S_{L}$ ?
+
+Lösung:
+$D_{0} \exp \left(S_{L} / k_{B}\right)=\frac{D_{1}}{e^{-\left(E_{L}+E_{D}\right) /\left(k_{B} T_{1}\right)}}=4,39 \cdot 10^{-4} \frac{\mathrm{~m}^{2}}{\mathrm{~s}}$
+(c) Wie groß ist die elektrische Leitfähigkeit von NaBr bei $550^{\circ} \mathrm{C}$ ?
+
+Berechne die Dichte der Ionenpaare $n_{P}=N_{A} \rho / M=1.87 \cdot 10^{28} 1 / \mathrm{m}^{3}$ mit der molaren Masse $M=102,9 \mathrm{~g} / \mathrm{mol}$.
+
+\begin{aligned}
+\sigma_{\mathrm{el}} & =n_{P} q^{2} \frac{D}{k_{\mathrm{B}} T} \\
+& =n_{P} q^{2} \frac{D_{0}}{k_{\mathrm{B}} T} e^{S_{\mathrm{P}} /\left(2 k_{\mathrm{B}}\right)} e^{-E_{\mathrm{P}} /\left(2 k_{\mathrm{B}} T\right)} e^{-E_{\mathrm{D}} /\left(k_{\mathrm{B}} T\right)}
+\end{aligned}
+
+Die Faktoren 2 kommen durch die Betrachtung von Ionenpaaren statt einzelnen Ionen wie zuvor $\left(S_{P} / 2=S_{L}\right.$ und $\left.E_{P} / 2=E_{L}\right)$. Wir können also schreiben:
+
+\sigma_{\mathrm{el}}=n_{P} q^{2} \frac{D_{0}}{k_{\mathrm{B}} T} e^{S_{\mathrm{L}} /\left(k_{\mathrm{B}}\right)} e^{-\left(E_{\mathrm{L}}+E_{\mathrm{D}}\right) /\left(k_{\mathrm{B}} T\right)}
+
+Mit (a), (b), $T=823 \mathrm{~K}$ und $n_{P}$ erhalten wir: $1,21 \cdot 10^{-3} \frac{1}{\Omega m}$.
+
+### 3.4 Gleichgewichtsabstand
+
+Die Wechselwirkungsenergie zwischen zwei Atomen lässt sich durch die Gleichung
+
+U(r)=\frac{A}{r^{n}}-\frac{B}{r^{m}}
+
+ausdrücken, wobei $m<n$ ist.
+(a) Bestimmen Sie den Gleichgewichtsabstand $r_{0}$ in Abhängigkeit von den Parametern $A, B, m$ und $n$.
+Lösung: Bilde die erste Ableitung und setze gleich 0:
+
+\begin{gathered}
+\frac{d U}{d r}=-\frac{n A}{r^{n+1}}+\frac{m B}{r^{m+1}} \stackrel{!}{=} 0 \quad \text { für } \quad r=r_{0} \\
+\Rightarrow \frac{m B}{r_{0}^{m+1}}=\frac{n A}{r_{0}^{n+1}}
+\end{gathered}
+
+\begin{aligned}
+& r_{0}^{n+1-m-1}=\frac{n A}{m B} \\
+& r_{0}=\left(\frac{n A}{m B}\right)^{\frac{1}{n-m}}
+\end{aligned}
+
+(b) Bestimmen Sie die Kraft $F(r)=-d U / d r$ für $r \rightarrow 0$ und $r \rightarrow \infty$ und überlegen Sie, ob die Kraft anziehend oder abstoßend ist. In welchem Abstand $r>r_{0}$ ist die Kraft maximal? Berechnen Sie diesen Abstand in Einheiten von $r_{0}$ für das Lennard-Jones Potential.
+
+F(r)=\frac{-d U}{d r}=+\frac{n A}{r^{n+1}}-\frac{m B}{r^{m+1}} \xrightarrow{m<n} \begin{cases}F(r) \rightarrow \infty & \text { für } r \rightarrow 0 \\ F(r) \rightarrow 0 & \text { für } r \rightarrow \infty\end{cases}
+
+$F(r)$ divergiert gegen $+\infty$, wenn $r \rightarrow 0$, und nähert sich Null, wenn $r \rightarrow \infty$; Abstoßung für $r<r_{0}$, Anziehung für $r>r_{0}$.
+Position des Kraftminimums:
+
+\begin{gathered}
+\frac{d F}{d r}=\frac{d}{d r}\left(-\frac{d U}{d r}\right)=(n+1) n \frac{A}{r^{n+2}}-(m+1) m \frac{B}{r^{m+2}} \stackrel{!}{=} 0 \\
+\Rightarrow(m+1) m \frac{B}{r^{m+2}}=(n+1) n \frac{A}{r^{n+2}} \\
+\Rightarrow r^{n+2-m-2}=\frac{(n+1) n A}{(m+1) m B} \\
+r=\left(\frac{(n+1) n A}{(m+1) m B}\right)^{\frac{1}{n-m}}=r_{0}\left(\frac{n+1}{m+1}\right)^{\frac{1}{n-m}}>r_{0} \quad \text { da } \quad m<n
+\end{gathered}
+
+Für das Lennard-Jones-Potential: $n=12, m=6$
+
+\Rightarrow r=r_{0}\left(\frac{13}{7}\right)^{\frac{1}{6}} \approx 1.1 r_{0}
+
+![This diagram depicts the radial functions U(r) and F(r) as functions of the radial distance r, showing their behavior and specific points r_0 and r_1 on the curves. It is likely related to quantum mechanics or atomic physics, illustrating the radial components of a wavefunction or potential.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7e08f586-dc2e-4c1b-a28e-71ad660fac73/4759e133-0c82-416f-8fe1-b751b85d1025-9_718_887_883_620.jpg)
+Abbildung 7: Lennard-Jones-Potential mit $n=12, m=6, A=1$ und $B=1$.
+

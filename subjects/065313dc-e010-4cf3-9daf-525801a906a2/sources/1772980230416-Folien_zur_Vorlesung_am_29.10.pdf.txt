@@ -1,0 +1,135 @@
+### 2.5.3 "Response" Funktionen: Relationen \& Beispiele
+
+-) Allgemeiner Beweis von $C_{p}>C_{V}$ :
+
+$$
+\begin{aligned}
+& C_{V}=\left.T \frac{\partial S}{\partial T}\right|_{V}=T \frac{\partial(S, V)}{\partial(T, V)}=T \frac{\partial(S, V)}{\partial(T, p)} \frac{\partial(T, p)}{\partial(T, V)}=\left.T \frac{\partial(S, V)}{\partial(T, p)} \frac{\partial p}{\partial V}\right|_{T} \\
+& =T \underset{\frac{C_{p}}{T}}{\left[\left.\left.\frac{\partial S}{\partial T}\right|_{p} \frac{\partial V}{\partial p}\right|_{T}\right.}-\left.\underset{-V \kappa_{T}}{\stackrel{\left.\left.\frac{\partial S}{\partial p}\right|_{T} \frac{\partial V}{\partial T}\right|_{p}}{\sim}} \underbrace{}_{\substack{-\left(V \alpha_{p}\right)^{2} \\
+\text { Maxwell Relation! }}} \frac{\partial p}{\partial V}\right|_{T} \quad \frac{-1}{\frac{V \kappa_{T}}{2}} \\
+& C_{V}=C_{p}-\frac{T V \alpha_{p}^{2}}{\kappa_{T}} \quad \Rightarrow \quad C_{p}-C_{V}=\frac{T V \alpha_{p}^{2}}{\kappa_{T}} \geq 0
+\end{aligned}
+$$
+
+-) Adiabatengleichung für ein ideales Gas:
+
+Betrachte adiabatischen, quasi-statischen Prozess d.h. $\delta Q=d S=0$
+Wie ändert sich das Volumen als Funktion vom Druck?
+
+\begin{aligned}
+\left.\frac{\partial V}{\partial p}\right|_{S} & =\frac{\partial(V, S)}{\partial(p, S)}=\frac{\partial(V, S)}{\partial(V, T)} \frac{\partial(V, T)}{\partial(p, T)} \frac{\partial(p, T)}{\partial(p, S)}=\left.\frac{\left.\frac{\partial S}{\partial T}\right|_{V}}{\left.\frac{\partial S}{\partial T}\right|_{p}} \frac{\partial V}{\partial p}\right|_{T} \\
+& =\left.\frac{C_{V}}{C_{p}} \frac{\partial V}{\partial p}\right|_{T}=-\frac{C_{V}}{C_{p}} \frac{N k_{B} T}{p^{2}}=-\frac{1}{\kappa} \frac{V}{p} \quad \kappa=\frac{C_{p}}{C_{V}}
+\end{aligned}
+
+Lösung der
+Differenzialgleichung: $\quad V(p) \sim p^{-\frac{1}{\kappa}} \quad$ oder $\quad p V^{\kappa}=$ const.
+2.5.4 Joule-Thompson-Prozess
+![This diagram depicts a thermodynamic system with two compartments separated by a porous wall ("poröse Wand"), showing volumes, pressures, and temperatures (V, p, T) in each compartment, with no heat exchange (δQ = 0) indicated.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/d5f2fc4b-9976-4119-83ee-3c79aed32b5c/4d322a59-38b5-435b-b4d8-023ccfe75d46-03_690_1959_290_463.jpg)
+
+- Ein Gas in einer Kammer mit Volumen $V_{1}$ und Temperatur $T_{1}$ wird bei konstantem Druck $p_{1}$ durch eine poröse Wand* in eine zweite Kammer mit Druck $p_{2}<p_{1}$ gepresst.
+- Es findet kein Wärmeaustausch mit der Umgebung statt.
+- Frage: Wie ändert sich die Temperatur des Gases nach diesem Prozess?
+
+[^0]Allgemein gilt (konstanter Druck, kein Wärmeaustausch):
+
+\Delta E=E_{2}-E_{1}=\Delta W=p_{1} V_{1}-p_{2} V_{2}
+
+oder: $\quad \Delta H=\left(E_{1}+p_{1} V_{1}\right)-\left(E_{2}+p_{2} V_{2}\right)=0 \quad$ konstan
+Enthalpie
+
+Für infinitesimale Druckdifferenzen und $\mathrm{N}=$ const. ist der JTP deshalb durch den isenthalpen Prozess
+
+d H=T d S+V d p=0
+
+charakterisiert. Von Interesse ist der
+differentielle Joule-Thompson Koeffizient
+
+\delta=\left.\frac{\partial T}{\partial p}\right|_{H}
+
+Der JT Koeffizient ist von großer technischer Bedeutung da
+$\delta>0 \quad \ldots$ Gas kühlt sich bei Expansion ab
+$\delta<0 \quad \ldots$ Gas erwärmt sich bei Expansion
+(Stickstoffverflüssigung, Deo-Spray, Wärmepumpe, ...)
+
+Berechnung:
+
+d H & =T d S+V d p=\underbrace{T\left(\left.\frac{\partial S}{\partial T}\right|_{p}\right.}_{C_{p}} d T+\underbrace{\left.\frac{\partial S}{\partial T}\right|_{p}}_{\left.\frac{\partial V}{\partial p}\right|_{T}} d p)+V d p \\
+& -\alpha_{p} V \\
+& =C_{p} d T-\left(\alpha_{p} T-1\right) V d p=0 \quad \Rightarrow \quad \delta=\left.\frac{\partial T}{\partial p}\right|_{H}=\frac{V\left(T \alpha_{p}-1\right)}{C_{p}}
+
+Bsp 1: Ideales Gas mit $\quad p V=N k_{B} T$
+
+\left.T \frac{\partial V}{\partial T}\right|_{p}=T\left(\frac{N k_{B}}{p}\right)=V
+
+\Rightarrow \quad \delta=0
+
+Bei gedrosselter Expansion ändert sich die Temperatur des idealen Gases nicht.
+
+Bsp 2: van der Waals Gas mit
+
+\left(p+\frac{a N^{2}}{V^{2}}\right)(V-N b)=N k_{B} T
+
+Für kleine Parameter $a$ und $b$ kann die vdW Gleichung näherungsweise nach V aufgelöst werden:
+
+V \simeq \frac{N k_{B} T}{p}+\left(b-\frac{a}{k_{B} T}\right) N
+
+Damit:
+
+V T \alpha_{p}-V \simeq \frac{N k_{B} T}{p}+\frac{a N}{k_{B} T}-\left[\frac{N k_{B} T}{p}+N b-\frac{a N}{k_{B} T}\right]
+
+und
+
+\delta \simeq \frac{N}{C_{p}}\left(\frac{2 a}{k_{B} T}-b\right)
+
+## Diskussion:
+
+- Die gedrosselte Expansion von realen Gase kann, abhängig von der Temperatur und der Gasparameter, zur Abkühlung oder zum Aufheizen führen.
+- Die Abkühlung ergibt sich aus der Überwindung der Anziehungskraft zwischen den Teilchen ( $\mathrm{a}>0$ ), die nach dem Prozess im Mittel weiter voneinander entfernt sind.
+- Abkühlung nur unterhalb der "Inversionstemperatur" $T_{\mathrm{inv}}=\frac{2 a}{k_{B} T b}$.
+
+|  | Luft | Waserstoff | Helium |
+| :---: | :---: | :---: | :---: |
+| $T_{\mathrm{inv}}$ | $\approx 700 \mathrm{~K}$ | $\approx 130 \mathrm{~K}$ | $\approx 20 \mathrm{~K}$ |
+
+- Genauere Rechnung (höhere Korrekturen in a und b):
+![This diagram depicts the phase boundary in a pressure-temperature (p-T) phase diagram, showing regions where the parameter δ is positive or negative, indicating different phase stability conditions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/d5f2fc4b-9976-4119-83ee-3c79aed32b5c/4d322a59-38b5-435b-b4d8-023ccfe75d46-08_785_1500_1192_263.jpg)
+
+
+### 2.6 Extremaleigenschaften
+
+- Aus dem ersten und zweite Hauptsatz folgt für die Entropie
+
+d S \geq \frac{\delta Q}{T}=\frac{1}{T}(d E+p d V-\mu d N)
+
+D.h. für ein isoliertes System ( $\mathrm{dE}=\mathrm{dN}=0$ ), mir fixen externen Parameter ( $\mathrm{dV}=0$ ), nimmt die Entropie nur zu und erreicht im Gleichgewicht ein Maximum.
+
+Oder: Für eine gegebene Energie E, nimmt ein isoliertes System den Zustand ein, der die Entropie maximiert.
+
+Beispiel: Gay Lussac Versuch (irreversible Expansion eines Gases)
+![This diagram depicts a quantum tunneling scenario, showing a particle with energy E encountering a potential barrier of height V1 and then tunneling through to a region with potential V2. It illustrates the concept of a particle passing through a classically forbidden region due to quantum mechanical effects.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/d5f2fc4b-9976-4119-83ee-3c79aed32b5c/4d322a59-38b5-435b-b4d8-023ccfe75d46-09_403_2098_1716_348.jpg)
+
+Entropie eines idealen Gase (Herleitung später):
+
+& S(E, V, N)=k_{B} N\left[\frac{5}{2}+\log \left(\frac{V}{N}\left(\frac{4 \pi m E}{3 N h^{2}}\right)^{\frac{3}{2}}\right)\right] \\
+\Rightarrow & \Delta S=S\left(E, V_{1}, N\right)-S\left(E, V_{2}, N\right)=k_{B} N \log \left(\frac{V_{2}}{V_{1}}\right)>0
+
+Gas füllt gesamtes Volumen aus, da dieser Zustand die Entropie maximiert !
+
+- Für ein abgeschlossenes System ( $\mathrm{dN}=0$ ) bei fixer Temperatur ( $\mathrm{dT}=0$ ) und fixen äußeren Parametern ( $\mathrm{dV}=0$ ) gilt:
+
+T d S \geq d E \quad \Rightarrow \quad d F=d(E-T S) \leq 0
+
+Bei Kopplung an ein Wärmebad, nimmt die freie Energie immer weiter ab und erreicht im Gleichgewicht ein Minimum!
+
+Beispiel: Gas im Schwerefeld (bei Temperatur T)
+![This diagram depicts two states of a system under gravity, showing that although the energy \(E_2\) is greater than \(E_1\), the free energy \(E_2 - TS_2\) is less than \(E_1 - TS_1\), indicating the thermodynamic favorability of the second state due to entropy effects. It illustrates the relationship between energy, free energy, and entropy in the presence of gravity for two different volumes \(V_1\) and \(V_2\) at the same temperature \(T\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/d5f2fc4b-9976-4119-83ee-3c79aed32b5c/4d322a59-38b5-435b-b4d8-023ccfe75d46-11_746_2770_232_73.jpg)
+
+- Ähnlich kann man zeigen, dass bei fixer Temperatur und fixem Druck, Prozesse so ablaufen, dass
+
+d G \leq 0
+
+und die Gibbs Enthalte im Gleichgewicht ein Minimum einnimmt.
+
+
+[^0]:    *) Oder auch Drosselventil. Erlaubt Teilchenaustausch bei unterschiedlichen Drücken.
+

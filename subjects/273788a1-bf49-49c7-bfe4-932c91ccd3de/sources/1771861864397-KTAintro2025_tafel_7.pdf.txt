@@ -1,0 +1,128 @@
+Ionisation
+
+Vorlesung 7: 25.11.2025
+![This diagram depicts a photodiode circuit showing the generation of electron-hole pairs (e⁻ and h) in a semiconductor (Si or Ge) when exposed to light, with an external voltage source and current meter connected to measure the photocurrent.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-1_467_570_534_358.jpg)
+
+Quanta ~ Sev (Si)
+
+$20 \%$ Gesantenergie
+
+![This diagram depicts the energy level transitions of electrons (e⁻) and a muon (μ) in a gas-filled detector, illustrating the ionization process and the resulting current flow in an electric circuit. It shows how electrons are emitted and collected as they move through energy levels within the gas.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-1_511_593_406_1178.jpg)
+$E_{4} \sim \sigma(100 \mathrm{ev})$
+
+## Phononen
+
+![This diagram depicts a setup for measuring temperature, showing a thermometer inserted into a container with heat radiation inside, connected to a heat bath maintained at 70 mK, with a recorded temperature of approximately 273°C.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-1_437_698_1352_333.jpg)
+
+Quanta nonev $E_{\text {th }} \sim V\left(V_{\text {ev }}\right)$
+![This diagram depicts the relationship between resistance (R) and temperature (T) for a material, illustrating the sharp increase in resistance at the superconducting transition temperature (Tc). The left part shows a lattice structure with electron pairing (Cooper pairs), indicating the microscopic origin of superconductivity.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-1_488_835_1345_1096.jpg)
+$\sim 100 \%$ von Edep (manchmal in Ionisation oder Licht)
+
+Szintillation - $0 \ddot{l}+$ Benzol (Flássig-szint.) -Plastikszint. - Kristalle (NaI,CsI,Zus)
+
+![This diagram depicts the detection of scintillation light in a scintillation detector, showing a particle interaction producing light inside a scintillator, which is then detected by a photomultiplier tube (PMT).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-1_350_608_2138_628.jpg)
+Cherenkov
+
+Quanta 1ev-10ev 1\%-10\%
+
+Cherenkov
+![This diagram depicts the detection of Cherenkov radiation in water (H2O) by a photomultiplier tube (PMT), showing the emission of Cherenkov light cones from a charged particle moving faster than the speed of light in water and the resulting signal detected by the PMT.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-1_463_387_2215_1324.jpg)
+
+### 1.14.1 Energieschwelle und Auflösung
+
+Detektor misst Energie, indem er eine endliche Zahl von Quanten nachweist. Aufgrund unvermeidbarer Schwankungen dieser Anzahl ist die Energieauflösung grundsätzlich begrenzt.
+Wenn beim Detektor bei Energie deportion $E, N$ messbare Quanten erzeugt werden gilt: Poisson Statistik (unabhängige Ereignisse, konstante mittlere Rate, selten)
+
+$$
+\begin{gathered}
+P(N=k)=\frac{\lambda^{k}}{k!} e^{-\lambda} \quad\langle\lambda\rangle=N \\
+\sigma_{N}=\sqrt{N} \\
+\Rightarrow \frac{\sigma_{E}}{E}=\frac{\sigma_{N}}{N}=\frac{1}{\sqrt{N}}
+\end{gathered}
+$$
+
+Die benötigte Energie, um ein Quant zu erzeugen (z.B. 3.6 eV in Si , meV Bereich im Phononendetektor), ist gegeben durch
+
+\begin{aligned}
+N & =\frac{E}{\omega} \\
+\frac{\sigma_{E}}{E} & =\sqrt{\frac{\omega}{E}}
+\end{aligned}
+
+Je kleiner $\omega$, desto besser die Auflösung.
+
+$\xlongequal[E_{\text {th }} \sim 200 \mathrm{eV}]{\text { Ionisation }} \quad \frac{\text { Szintillation }}{E_{\text {th }} \gtrsim 1 \mathrm{keV}} \quad \xlongequal[E_{\text {th }} \gtrsim 10 \mathrm{keV}]{\text { Phonon }}$
+
+### 1.15 Beschleuniger
+
+Energie eines Teilchens nach Potenzialdurchgang
+
+\Delta E=q \Delta V \Rightarrow E=e U[\mathrm{eV}]
+
+Wellenlänge $\lambda=\frac{2 \pi \hbar}{p}$
+Zum Auflösen von Strukturen werden Energien von $\lambda \lesssim 2 \Delta x$ benönitgt.
+
+### 1.15.1 Teilchen in $\vec{E}$ und $\vec{B}$ Feldern
+
+Lorentzkraft:
+
+\vec{F}_{L}=q(\vec{E}+\vec{v} \times \vec{B})
+
+$\vec{B}=0 \Rightarrow$ Beschleunigung $\vec{F}=q \vec{E}$
+Bei $\vec{E}=0, \vec{v} \perp \vec{B}, F_{L}=q v B$ erhält man
+
+\begin{array}{rlr}
+\vec{F}_{z}=\frac{d \vec{p}}{d t}=\frac{d}{d t}(\gamma m \vec{v}) & \\
+=m\left(\frac{d \gamma}{d t} \vec{v}+\gamma \frac{d \vec{v}}{d t}\right) & (\vec{E}=0, \dot{\gamma}=0) \\
+=m \gamma \frac{d \vec{v}}{d t} & (\vec{v}=\vec{\omega} \times \vec{r}, \vec{\omega}=\text { konstant }) \\
+=m \gamma \vec{\omega} \times \frac{d \vec{r}}{d t} & \left(\vec{\omega} \perp \vec{r}, \omega=\frac{v}{r}\right) \\
+=m \gamma \frac{v^{2}}{r} & \\
+\Rightarrow r=\frac{\gamma m v}{q B} &
+\end{array}
+
+Für den LHC hat man Werte von $r=4.3 \mathrm{~km}, B \approx 8 \mathrm{~T}$, was das technische Maximum ist, und $p=7 \mathrm{TeV} / \mathrm{c}$.
+![The diagram depicts the timing and position of a particle relative to an RF (radio frequency) voltage cycle in a particle accelerator or similar device, showing the particle's location during the positive and negative half-cycles of the RF voltage period (T/2). It illustrates the particle being inside the tube during the "blue time" and in the gap between tubes during the "red time."](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/b351aa47-bac2-4b08-94cd-14e2421a05c4/752286e4-e3b9-4f75-9d9b-78a41b5c13a5-3_483_1424_242_292.jpg)
+
+Nach Beschleunigung im "roten" Bereich, ist das Teilchen schneller, muss also eine längere Röhre bekommen. → siehe Übung
+Zyklotron
+
+\begin{gathered}
+r=\frac{\gamma m v}{q B}=\frac{p}{q B} \\
+p=q B r \\
+v=\frac{r q B}{\gamma m} \\
+p \equiv m \gamma v \\
+\omega(\gamma) \frac{v}{r}=\frac{q B}{\gamma m}
+\end{gathered}
+
+Für nicht relativistische Teilchen ist $\omega$ konstant. Dann sinkt $\omega$ für relativistische Teilchen.
+→ Frequenz muss angepasst werden!
+Die Kreisbahn
+
+r(\beta)=\frac{\gamma m c \beta}{q B}=\frac{m c}{q B} \frac{\beta}{\sqrt{1-\beta^{2}}}
+
+steigt an.
+→ Magnetfeld muss ständig nachgeregelt werden.
+Synchro-Zyklotron:
+HF Frequenz wird angepasst, damit werden relativistische Teilchen weiter "in Phase" beschleunigt.
+Aber: Radius steigt weiter an.
+
+f=\frac{\omega}{2 \pi}=\frac{q B}{\gamma 2 \pi m}
+
+Synchrotron:
+Auch das B-Feld wird schnell geregelt, um Teilchen auf konstanter Kreisbahn zu halten.
+
+B \sim p(\gamma)
+
+Für hochrelativistische Teilchen ( $v \approx c$ ) folgt, dass die Frequenz stabil bleibt, und nicht mehr angepasst werden muss.
+
+Problem: Bremstrahlung
+
+\frac{d E}{d x} \sim \frac{Z^{2}}{m^{2}}
+
+Bei Synchrotron hängt
+
+p=-\frac{d E}{d t} \propto \frac{E^{4}}{m^{4} R}
+
+stark von $m$ ab! Beispiel:
+$e^{-}$in LEP: $E=50 \mathrm{GeV}$ und $p \sim \frac{\mathrm{GeV}}{\text { Umlauf }}$
+$p$ in LHC: $E=7 \mathrm{TeV}$ und $p \sim \frac{6.7 \mathrm{keV}}{\text { Umlauf }}$
+

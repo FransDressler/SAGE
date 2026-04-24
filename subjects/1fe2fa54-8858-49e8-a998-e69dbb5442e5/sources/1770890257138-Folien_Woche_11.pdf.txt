@@ -1,0 +1,216 @@
+1
+Experimental methods in solid-state physics
+10 Fermi Surfaces
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+2
+Sommerfeld Theory of Metals
+LMU 1906 – 1935 Emeritus
+Lecture this week
+• Apply Fermi Dirac statistics to electrons in a metal
+• Only Electrons near the Fermi surface contribute notably to thermal
+and electronic properties
+• Correctly describes temperature dependence of specific heat and
+electronic conductivity of many metals
+
+3
+Sommerfeld Theory of Metals
+LMU 1906 – 1935 Emeritus Nominated > 80 times for the Nobel prize; never got it.
+
+4
+Fermi surfaces – Free electron in lattice
+Gross, Festkörperphysik
+
+5
+Fermi surfaces – Simple metal
+Gross, Festkörperphysik
+
+6
+Sodium Band Structure
+ae
+d
+g
+Materials Project
+Perfect quasi-free
+electron parabolas
+
+7
+Copper Band Structure
+a
+q
+d q1
+r
+Materials Project
+
+8
+Fermi surfaces – More complex metals
+
+9
+How do we measure the Fermi surface?
+Last week ARPES
+Problems:
+• surface sensitive
+• in-plane only
+• → great for 2D materials
+Youngwoo Kim et al 2018 2D Mater. 5 035008
+
+10
+This week: electrons in a magnetic field
+𝑚 ሶ 𝒗 = ሶ 𝒑 = −𝑒(𝑬 + 𝒗 × 𝑩)
+ሶ
+𝒓 = 𝒗
+Free electron
+cyclotron orbit
+(helix)
+𝑩
+ℏ ሶ𝒌 = −𝑒(𝑬 + 𝒗𝑛(𝒌) × 𝑩)
+ሶ
+𝒓 = 𝒗𝑛 𝒌 = 1
+ℏ
+𝜕𝐸𝑛 𝒌
+𝜕𝒌
+Electron in a crystal
+cyclotron orbit
+(k-dependent velocity → more
+complicated shape)
+Big, fundamental chunk of
+condensed matter physics
+→ Next week
+→ Read e.g. Gross Chapter 9
+Pages 369 – 470.
+
+11
+𝑩
+ℏ ሶ𝒌 = −𝑒(𝑬 + 𝒗𝑛(𝒌) × 𝑩)
+𝒓 = 𝒗𝑛 𝒌 = 1
+ℏ
+𝜕𝐸𝑛 𝒌
+𝜕𝒌
+Electron in a crystal
+(more complicated shape, k-
+dependent velocity)
+• Magnetic field does not change energy of electron
+• k-space orbits are contrours of equal energy
+• k-space orbit are closed
+• k-space orbits of electrons near EF lie on the Fermi
+surface
+This week: electrons in a magnetic field
+(rotated by 90° degree and
+projected)
+Enclosed area S
+
+12
+Closed orbits in k-space
+How do measure these orbits?
+
+13
+Cyclotron resonance in metals
+𝑇 = ℏ2
+𝑒𝐵 ⋅ 𝑑𝑆
+𝑑𝐸
+Time for one complete orbit For the free electron gas
+𝑑𝑆
+𝑑𝐸 = 2𝜋𝑚/ℏ2
+Cyclotron frequency
+𝜔𝑐 = 𝑒𝐵
+𝑚∗
+
+14
+Cyclotron resonance in metals
+• Skin-effect: microwave field decays (quickly) from
+surface into bulk
+• Electron gets „kicked“ by the microwave E-field near
+the surface
+• If the kick is in phase we see and absorption
+resonance
+Gross, Festkörperphysik.
+
+15
+Hunklinger
+Gross, Festkörperphysik.
+
+16
+3D case: only stationary orbits contribute
+
+17
+3D case: stationary orbits
+To map out Fermi surface: rotate direction of magnetic field!
+
+18
+Quantum oscillations in magnetic field
+𝜙 = ර 𝒌 ⋅ 𝑑𝒓 = 1
+ℏ ර 𝒑 ⋅ 𝑑𝒓 = 1
+ℏ ර ℏ𝒌 + 𝑒𝑨 ⋅ 𝑑𝒓 = 2𝜋(𝑛 + 𝛾)
+• Electrons pick up a phase along the closed orbit
+• The phase needs to be quantized (similar to Bohr-Sommerfeld quantization)
+𝑆𝑘 = 2𝜋𝑒𝐵
+ℏ (𝑛 + 𝛾)
+Onsager relation: Cyclotron orbits are quantized such
+that each allowed orbit encloses an integer number of
+magnetic flux quanta in phase space.
+n: Landa (level) index (→ lecture next week)
+
+19
+Quantum oscillations in magnetic field
+𝐴𝐹 = A(EF)
+• Quantum oscillations occur when the enclosed area matches the Fermi surface
+• This happens always at an index, where the Landau leve crosses the Fermi energx
+• Therefore subsequent crossings satisfy
+𝑛 𝐵 = ℏ
+2𝜋𝑒 ⋅ 𝐴𝐹
+𝐵 − 𝛾
+2𝜋𝑒 ⋅ 𝐴𝐹
+𝐵𝑛+1
+− 𝛾 − ℏ
+𝐵𝑛
++ 𝛾 = ℏ
+2𝜋𝑒
+1
+𝐵𝑛+1
+− 1
+𝐵𝑛
+= 1
+Δ 1
+𝐵 = ℏ
+2𝜋𝑒 𝐴𝐹
+
+20
+Landau level picture (for 2D)
+
+21
+Landau level picture (for 2D)
+𝐸 = ℏ𝜔𝐶(n + 1/2)
+Quantized energy levels
+𝑛𝐿𝐿 = 𝑒𝐵
+Degeneracy
+
+22
+Landau level picture (for 3D)
+As the magnetic field increases, Landau levels
+cross the Fermi surface, periodically in 1/B,
+leading to quantum oscillations of all Fermi
+surface properties, both in 2D and 3D.
+The oscillations are resolvable at low
+temperatures and in clean samples, because
+electrons need to be able to complete a full
+orbit without scattering
+𝜔𝑐𝜏 > 1
+And thermal smearing needs to be small
+𝑘𝐵𝑇 < ℏ𝜔𝑐
+𝑘∥ free
+𝑘⊥ quantized
+Hunklinger
+
+23
+Magnetization oscillations: de Haas - van Alphen - effect
+
+24
+Resitance: Shubnikov – de Haas effect
+Nature volume 621, pages276–281 (2023)
+Chair of Prof. Pfleiderer (TUM)
+Scattering between orbits
+causes sum and
+difference frequencies

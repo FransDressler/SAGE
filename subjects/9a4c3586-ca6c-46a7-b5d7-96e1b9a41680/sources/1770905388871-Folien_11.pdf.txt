@@ -1,0 +1,66 @@
+## Der Strukturfaktor
+
+![This diagram depicts a model of a porous medium or granular material, showing the spatial arrangement of spherical particles with radii \(R_\alpha\) and the geometric vectors \(r\), \(r'\), and \(r_\alpha\) used to describe positions within the medium relative to a reference point \(O\) and a measurement scale \(R_m\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-1_1215_1895_447_197.jpg)
+Bild 4.15: Zur Aufspaltung des Ortsvektors bei der Herleitung von Strukturund Atom-Strukturfaktor. Die Atome werden als kugelförmige Gebilde mit dem Radius $R_{\alpha}$ betrachtet. Die Lage der Elementarzelle wird durch $\boldsymbol{R}_{m}$, die der Atomzentren in der Zelle durch $\boldsymbol{r}_{\alpha}$ und das Streuvolumen $\mathrm{d} V^{\prime}$ innerhalb des Atoms durch $\boldsymbol{r}^{\prime}$ festgelegt.
+
+## Strukturfaktor: Beispiel bcc mit einer Atomsorte
+
+![This diagram depicts the crystal structure of graphite, showing the arrangement of carbon atoms in hexagonal layers with interlayer spacing and in-plane lattice parameters labeled. It illustrates the layered structure and the distances between atoms within and between the graphene sheets.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-2_1132_1733_443_385.jpg)
+Bild 4.15: Zum Verschwinden des (100)-Reflexes bei kubisch raumzentrierten Gittern. Die Streubeiträge benachbarter Ebenen löschen sich durch destruktive Interferenz aus.
+
+## Beispiel $\mathbf{K C l}$ und $\mathbf{K B r}$
+
+![This image shows X-ray diffraction (XRD) patterns for potassium chloride (KCl) and potassium bromide (KBr) crystals, indicating their characteristic crystallographic planes and peak positions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-3_1367_1186_358_355.jpg)
+
+## NaCI Struktur:
+
+fcc-Gitter mit zweiatomiger Basis
+$r_{\alpha 1}=(0,0,0)$ und $r_{\alpha 2}=(1 / 2,1 / 2,1 / 2)$
+$S_{\mathrm{hkl}}=S_{h k l}^{f c c} \cdot\left[f_{K+}+f_{\mathrm{Cl}-} \cdot(-1)^{h+\mathrm{k}+\mathrm{l}}\right]$
+![This image shows the mathematical expressions for the structure factor \( S_{hkl} \) in crystallography, specifically for the cases when the Miller indices \( h, k, l \) are all even or all odd, involving the atomic form factors \( f_{K+} \) and \( f_{Cl-} \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-3_380_1241_737_1997.jpg)
+$\mathrm{K}^{+}$und $\mathrm{Cl}^{-}$haben gleiche Elektronenzahl
+→ Es treten Reflexe nur bei geraden Indizes auf.
+$\mathrm{K}^{+}$und $\mathrm{Br}^{-}$-haben unterschiedliche
+Elektronenzahl
+$\rightarrow f_{K+} \neq f_{\mathrm{Br}-}$
+→ Es treten auch Intensitäten für ungeraden Fall auf
+
+## Der reziproke Raum
+
+![This diagram depicts the relationship between a lattice in real space and its corresponding reciprocal lattice, showing the original lattice vectors \(a_1, a_2\) and reciprocal lattice vectors \(b_1, b_2\), along with their transformed counterparts \(a'_1, a'_2\) and \(b'_1, b'_2\). It illustrates how the reciprocal lattice points correspond to the real lattice points and the geometric transformation between the two spaces.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-4_1074_1548_398_802.jpg)
+Bild 4.16: Zusammenhang zwischen reziprokem Gitter und der Form der Elementarzelle des realen Gitters. Links wurde von einer primitiven Elementarzelle ausgegangen und das darunterliegende reziproke Gitter konstruiert. Rechts dagegen wurde ein „zentriertes“ Quadratgitter als Elementarzelle gewählt. Im reziproken Gitter treten zusätzliche Gitterpunkte auf. Die Indizierung unterscheidet sich in den beiden Fällen.
+
+## Atom-Strukturfaktor
+
+![This image shows atomic form factor graphs for hydrogen (Wasserstoff) and aluminum (Aluminium) as functions of the scattering vector K, depicting how the atomic form factor varies with scattering angle or momentum transfer for these elements. The aluminum graph also includes experimental data points labeled with crystallographic plane indices.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-5_1215_2645_273_304.jpg)
+Bild 4.18: Atomare Streufaktoren als Funktion des Streuvektors $K=(4 \pi \sin \theta) / \lambda$. a) Verlauf des atomaren Streufaktors beim freien Wasserstoffatom nach (4.34). b) Numerisch berechneter Verlauf des atomaren Streufaktors von Aluminium. Die Punkte sind experimentelle Werte, die aus Messungen der Streuintensität an Kristallen in unterschiedlichen Richtungen hergeleitet wurden. (Nach B.W. Batterman et al., Phys. Rev. 122, 68 (1961).)
+
+aus Hunklinger
+
+## Der Atom-Strukturfaktor
+
+![This diagram shows scattering intensity as a function of the scattering vector (sin Θ / λ) for X-rays (Röntgen) on the left and neutrons (Neutronen) on the right, comparing different elements and ions. It illustrates how the scattering amplitudes vary with angle for various atomic species in X-ray and neutron scattering experiments.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-6_1097_1468_461_760.jpg)
+
+## Der Atom-Strukturfaktor
+
+$f(\boldsymbol{\Delta} \boldsymbol{k})=\int_{V} \rho(\boldsymbol{r}) e^{-\Delta \boldsymbol{k} \cdot \boldsymbol{r}^{\prime}} d V^{\prime} \quad \begin{aligned} & \text { Hier wurde } \boldsymbol{K}_{\boldsymbol{h} \boldsymbol{k}} \text { bzw. } \boldsymbol{G} \text { durch } \Delta \boldsymbol{k} \text { ersetzt, da Streuvermögen eines } \\ & \text { Atoms nicht von der Kristallstruktur abhängt. }\end{aligned}$
+Atomstruktur- oder Atomformfaktor des Atoms spiegelt die spezifischen Eigenschaften des betrachteten Streuzentrums wider.
+
+## Bei Röngtenstrahlung
+
+Auswertung des Integrals
+![This diagram depicts the wavelength (λ) of light or electromagnetic radiation interacting with a spherical particle, illustrating the concept of scattering or diffraction related to the particle size.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-7_467_498_917_958.jpg)
+
+$$
+f(\boldsymbol{\Delta} \boldsymbol{k})=\int_{V} \rho(\boldsymbol{r}) e^{-\Delta \boldsymbol{k} \cdot \boldsymbol{r}^{\prime}} d V^{\prime}
+$$
+
+(Atom) Kugelvolumen
+z.B. 1s-Orbital
+
+Bei Neutronenstrahlung
+![This diagram depicts the concept of the de Broglie wavelength (λ) associated with a particle, illustrating the wave-particle duality in quantum mechanics. It shows a particle represented as a sphere alongside a wave, indicating the wavelength corresponding to the particle's momentum.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-7_373_409_841_2641.jpg)
+
+Bei Neutronenstrahlung
+![This diagram depicts the scattering geometry in reciprocal space, showing the relationship between incident and scattered wave vectors \( \mathbf{k_0} \) and \( \mathbf{k} \), the scattering vector change \( \Delta \mathbf{k} \), and the volume element \( dV \) at position \( \mathbf{r'} \) with angles \( \varphi \) and \( 2\theta \). It is used in the context of wave scattering or diffraction analysis.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e1fcdaa7-8677-4481-b666-37d988cc42f4/0924f87f-cd38-49a9-8018-bc8a5406ce2d-7_632_1121_1155_1880.jpg)
+

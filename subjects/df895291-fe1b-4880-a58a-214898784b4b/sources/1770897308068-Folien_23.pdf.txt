@@ -1,0 +1,435 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+nach Hunklinger
+Die Fermi-Fläche
+2D: 𝑘𝐹 = 2𝜋𝑛𝑠
+3D: 𝑘𝐹 = 3 3𝜋3𝑛𝑠
+2
+2
+3 3
+3
+3
+3 3
+4
+44
+4
+5 5
+5 5
+5
+55
+5
+𝑘𝐹
+Fläche konstanter Energie, welche die besetzten Zustände (bei T = 0) einschließt.
+Beachte: kF = Fermi-Wellenvektor hängt von Ladungsträgerdichte ab.
+Wenn die Fermi-Fläche innerhalb der 1.BZ
+liegt erhält man eine Kugel (freie Elektronen).
+Geht die Fermikugel über die erste
+Brillouinzone hinaus, so tritt Bragg Reflektion
+auf und die Kugel wird deformiert.
+Die ersten 5 Brillouinzonen
+eines 2D quadratischen Gitters.
+1. BZ
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+nach Hunklinger
+Die Fermi-Fläche
+2D: 𝑘𝐹 = 2𝜋𝑛𝑠
+3D: 𝑘𝐹 = 3 3𝜋3𝑛𝑠
+1. BZ
+44
+55
+𝑘𝐹
+Fläche konstanter Energie, welche die besetzten Zustände (bei T = 0) einschließt.
+Beachte: kF = Fermi-Wellenvektor hängt von Ladungsträgerdichte ab.
+Die ersten 5 Brillouinzonen
+eines 2D quadratischen Gitters.
+Wenn die Fermi-Fläche innerhalb der 1.BZ
+liegt erhält man eine Kugel (freie Elektronen).
+Geht die Fermikugel über die erste
+Brillouinzone hinaus, so tritt Bragg Reflektion
+auf und die Kugel wird deformiert.
+
+aus Hunklinger
+Die Fermi-Fläche (in 2D)
+
+aus Gross / Marx
+Fall A
+Fermi-Fläche reicht
+auch in die 3. BZ
+hinein
+Fall B ist
+trivialer Fall
+Fermi-Fläche
+(in 2D)
+
+aus Hunklinger
+Dispersionkurve von quasi-freien Elektronen
+2𝑈11
+An der Zonengrenze gibt es
+stehende Wellen.
+Die Komponente der
+Gruppengeschwindigkeit
+𝒗𝑔𝑟𝑢𝑝𝑝𝑒 = 𝜵𝐤𝐸/ℏ senkrecht zur
+Zonengrenze verschwindet dort.
+
+2𝑈1
+1
+An der Zonengrenze gibt es
+stehende Wellen.
+Die Komponente der
+Gruppengeschwindigkeit
+𝒗𝑔𝑟𝑢𝑝𝑝𝑒 = 𝜵𝐤𝐸/ℏ senkrecht zur
+Zonengrenze verschwindet dort.
+Das heißt, der Gradient von E(k)
+verläuft parallel zu den Grenzen
+der Brillouin-Zone (Bandlücken
+variieren entlang der BZ-Grenze),
+und die Linien konstanter Energie,
+E(k) = const, schneiden die
+Brillouin-Zonen senkrecht.
+Wechselwirkung der Elektronen an den Rändern der BZ
+
+Wechselwirkung der Elektronen an den Rändern der BZ
+aus Gross / Marx
+Das heißt, der Gradient von E(k)
+verläuft parallel zu den Grenzen
+der Brillouin-Zone (Bandlücken
+variieren entlang der BZ-Grenze),
+und die Linien konstanter Energie,
+E(k) = const, schneiden die
+Brillouin-Zonen senkrecht.
+
+Bild 8.31 aus
+Hunklinger
+Zusammenfassung (vereinfacht)
+1) Zeichne Fermi-Kugel freier Elektronen
+2) Deformiere die Fermi-Kugel leicht im Bereich der Bragg-Ebenen.
+3) Schiebe die Teile der n-ten Brillouin-Zone mittels eines reziproken Gittervektors in die 1.BZ.
+2D
+
+Figure 9.8 aus
+Ashcroft Mermin
+3D Brillouin-Zonen
+Oberflächen der ersten, zweiten und
+dritten Brillouin-Zone für (a) kubisch-
+raumzentrierte und (b) kubisch-
+flächenzentrierte Kristalle.
+Nur die äußeren Oberflächen sind
+dargestellt. Aus der Definition der
+Brillouin-Zonen folgt, dass die innere
+Oberfläche der n-ten Zone identisch ist
+mit der äußeren Oberfläche der (n - 1)-
+ten Zone.
+Offenbar werden die Oberflächen,
+welche die Zonen begrenzen, mit
+zunehmender Ordnungszahl der Zone
+komplexer.
+Nach R. Lück, Dissertation
+Technische Hochschule Stuttgart (1965).
+(a) bcc (b) fcc
+
+aus Hunklinger /
+bzw Aschcroft / Mermin
+3D Fermi-Fläche (fcc)
+
+Beispiele
+Natrium:
+[Ne] 3s1
+bcc, 1. Band
+halb gefüllt
+http://www.phys.ufl.edu/fermisurface/
+Kupfer:
+[Ar] 3d104s1
+fcc, 6. Band
+
+Beispiele
+http://www.phys.ufl.edu/fermisurface/
+Kupfer:
+[Ar] 3d104s1
+fcc, 6. Band
+Bild 8.33 aus Hunklinger
+R. Courths, Phys. R. 112, 53 (1984).
+H. Eckhardt et al., J. Phys. F14, 97 (1984).
+
+
+Aluminium:
+[Ne] 3s23p
+fcc, 2. und 3.
+Band
+
+Experimentelle Bestimmung der Fermi-Flächen
+1. de Haas-van Alphen-Effekt
+2. Shubnikov-de Haas-Effekt
+3. Zyklotronresonanz
+4. anomaler Skin-Effekt
+5. Magnetwiderstand
+6. Ultraschall-Absorption
+7. optische Reflektivität
+8. Photoelektronen-Spektroskopie
+Siehe Kapitel 9 sowie Abb. 10.6 aus Gross / Marx
+G. Dresselhaus et al., Phys. Rev. 98, 368 (1955).
+& Zentralübung
+
+Impuls von Bloch-Elektronen
+Erwartungswert des Impulses eines Elektrons im Bloch-Zustand |n, 𝐤 >
+< 𝒑 >n,𝐤= < n, 𝐤| 𝒑 |n, 𝐤 >
+= න 𝜓n,𝒌
+∗ (−iℏ𝜵)𝜓𝑛,𝐤 𝑑3𝒓 | 𝜓𝑛,𝐤 = 𝑒𝑖𝒌𝒓 ∙ 𝑢𝑛,𝒌(𝒓)
+= න un,𝒌
+∗ (𝐫) 𝑒−𝑖𝒌𝒓𝑒𝑖𝒌𝒓 ∙ (−iℏ)(𝜵 + i𝐤) ∙ 𝑢𝑛,𝒌(𝒓) 𝑑3𝒓
+= න un,𝒌
+∗ (𝐫) ∙ (ℏ𝐤 − iℏ𝜵) ∙ 𝑢𝑛,𝒌(𝒓) 𝑑3𝒓
+= ℏ𝐤 − iℏ න un,𝒌
+∗ (𝐫) ∙ 𝜵𝑢𝑛,𝒌(𝒓) 𝑑3𝒓 ≠ ℏ𝐤
+| 𝜵𝜓𝑛,𝐤 = 𝜵(𝑒𝑖𝒌𝒓 ∙ 𝑢𝑛,𝒌(𝒓))
+= 𝑒𝑖𝒌𝒓 ∙ 𝜵𝑢𝑛,𝒌(𝒓) + i𝒌 ∙ 𝑒𝑖𝒌𝒓 ∙ 𝑢𝑛,𝒌(𝒓)
+= 𝑒𝑖𝒌𝒓 ∙ (𝜵 + i𝐤) ∙ 𝑢𝑛,𝒌(𝒓) (*)
+
+Impuls von Bloch-Elektronen
+< 𝒑 >n,𝐤= ℏ𝐤 − iℏ න un,𝒌
+∗ (𝐫) ∙ 𝜵𝑢𝑛,𝒌(𝒓) 𝑑3𝒓 ≠ ℏ𝐤
+Bemerkungen:
+− Nur bei freiem Elektron gilt: 𝑢𝑛,𝒌(𝒓) = const. ⇒ < 𝒑 >n,𝐤= ℏ𝐤
+Erwartungswert des Impulses eines Elektrons im Bloch-Zustand |n, 𝐤 >
+− Kristall-Impuls (oder Quasi-Impuls) ist die durch die Gitterperiodizität modifizierte Impulsgröße
+ℏ𝐤, die den Wellencharakter eines Elektrons im periodischen Potential beschreibt, und ist eine
+Größe der Bandstruktur-Theorie.
+− Mechanische Impuls ist der tatsächliche physikalische Impuls des Bloch-Elektrons, gegeben durch 𝑚𝐯,
+also „Masse mal Geschwindigkeit“ (QM-Erwartungswert), und ist der Impuls, der bei der Beschreibung der
+Bloch-Elektronen mit äußeren Feldern (elektrisches und magnetisches Feld) benutzt wird.
+
+Zusammenhang zwischen Impuls und Energie
+Taylor-Reihenentwicklung der Energie um k. 𝐸𝑛 𝒌 + 𝒒 ≈ 𝐸𝑛 𝒌 + 𝒒𝜵𝐤𝐸𝑛 𝒌 + . . .
+Gradient bzgl. k
+Hamilton-Funktion für bestimmtes k, wobei Hk nur auf gitterperiodischen Anteil wirkt.
+𝐻 = 1
+2m 𝜵2 + 𝑉 𝒓 , mit 𝜓 = 𝑢𝑛,𝒌 𝑟 𝑒𝑖𝒌𝒓 eingesetzt.
+und für k + q:
+⇒ 𝐻𝒌+𝒒= 1
+2m ℏ(𝒌 + 𝒒) − iℏ𝜵 2 + 𝑉 𝒓 ≈ 𝐻𝒌 + ℏ
+m 𝒒 ∙ (ℏ𝒌 − 𝒊ℏ𝜵)
+𝛿𝐻 = kleine Störung von 𝐻𝒌, wenn |𝒒| ≪ |𝒌|
+⇒ Berechne Energieverschiebung in 1. Ordnung Störungstheorie: < 𝑢𝑛,𝒌 𝛿𝐻 𝑢𝑛,𝒌 >
+⇒ 𝐻𝒌= 1
+2m ℏ𝒌 − iℏ𝜵 2 + 𝑉 𝒓
+(*)
+
+𝐸𝑛 𝒌 + 𝒒 = 𝐸𝑛 𝒌 + න 𝑢n,𝐤
+∗ ∙ ℏ
+𝑚 𝒒 ℏ𝒌 − 𝑖ℏ𝜵 𝑢𝑛,𝒌d3𝒓 + … , mit 𝜓𝑛,𝒌 = 𝑢𝑛,𝒌 𝑒𝑖𝒌𝒓
+= 𝐸𝑛 𝒌 + ℏ
+𝑚 𝒒 ∙ න 𝜓n,𝐤
+∗ ∙ −𝑖ℏ𝜵 𝜓𝑛,𝒌d3𝒓 + … ,
+= 𝐸𝑛 𝐤 + 𝒒 ∙ ℏ
+𝑚 < 𝒑 >𝑛,𝒌 + . . .
+𝒒 ∙ ℏ
+m < 𝒑 >𝑛,𝒌
+⇒ ∇𝐸𝑛 𝐤 = ℏ
+𝑚 < 𝒑 >𝑛,𝒌= ℏ < 𝒗 >𝑛,𝒌
+Erwartungswert von Impuls und Geschwindigkeit
+Geschwindigkeit eines Elektrons im Blochzustand 𝜓𝑛,𝒌 : 𝒗𝑛,𝒌 = 1
+ℏ 𝛁𝒌𝐸𝑛 𝐤
+Geschwindigkeit eines Elektrons im Blochzustand ist konstant
+und erleidet keine Streuung im periodischen Potential
+𝐸𝑛 𝐤 + 𝒒 ∙ ∇𝐸𝑛 𝐤 + . . .
+Gestartet sind wir mit:
+(*)
+
+Bild 8.8 aus Gross / Marx
+Bild 10.3 aus Hunklinger
+Impuls und Energie
+𝐸 = ℏ2𝑘2
+2𝑚 ⇒ 𝑣 𝑘0 = 1
+ℏ ∙ 𝑑𝐸
+𝑑𝑘 ቚ𝑘0 = ℏ𝑘0
+𝑚
+𝒗𝑛,𝒌𝟎 = 1
+ℏ ∙ 𝛁𝐤𝐸𝑛 𝒌 ቚ𝑘0
+
+Bewegungsgleichung im k-Raum
+Semiklassische Näherung
+Einfluss eines langsam veränderlichen elektrischen Feldes (d.h. ℎ𝜈 ≪ 𝐸𝐺) auf die an einem Elektron
+verrichtete Arbeit.
+
+Bewegungsgleichung im k-Raum (freies Elektron)
+Semiklassische Näherung
+Einfluss eines langsam veränderlichen elektrischen Feldes (d.h. ℎ𝜈 ≪ 𝐸𝐺) auf die an einem Elektron
+verrichtete Arbeit.
+Arbeit Kraft ∙ Weg
+∇𝒌 𝐸𝑛 𝒌 δ𝒌
+⇒ ℏ d𝒌
+dt = −e𝑬 = 𝑭 Für das freie Elektron ist die Antwort auf ein äußeres Feld gleich der zeitlichen Ableitung
+des Kristallimpulses ℏ𝒌.
+Allgemein für freies Elektron mit E- und B-Feld: : ℏ d𝒌
+dt = −𝑒 𝑬 + 𝒗 × 𝑩
+δ𝑊 = −e𝑬 ∙ 𝒗 ∙ δt = 𝜕𝐸𝑛 𝒌
+𝜕𝒌 δ𝒌
+Elektron wird mit der Zeit t in andere Zustände 𝒌(t) überführt.
+mit 𝒗 = 1
+ℏ ∇𝒌 𝐸𝑛 𝒌 : −e𝑬 1
+ℏ ∇𝒌 𝐸𝑛 𝒌 = ∇𝒌 𝐸𝑛 𝒌 𝑑𝒌
+𝑑𝑡
+
+Elektronen-Bewegung im Magnetfeld
+ℏ d𝒌
+dt = −𝑒 𝒗 × 𝑩
+= − 𝑒
+ℏ ∙ 𝛁𝐤𝐸 × 𝑩
+B-Feld:
+⇒ Trajektorien mit 𝐸 𝒌 = 𝑐𝑜𝑛𝑠𝑡.
+
+Elektronen-Bewegung im Magnetfeld
+Bemerkungen:
+- Elektronenbahnen: Elektronen laufen gegen den Uhrzeigersinn um die
+Fermi-Fläche, wie ein Elektron im Vakuum bei
+angelegtem Magnetfeld.
+- Lochbahn: Elektronen laufen im Uhrzeigersinn um die Fermi-
+Fläche, so als ob sie eine positive Ladung hätten.
+- Trajektoren im Ortsraum: Drehe k-Raum Trajektorie um 90° und multipliziere
+mit ℏ
+𝑒𝐵 . Auch im Ortsraum laufen freie Elektronen auf
+Kreisbahnen mit Radius:
+𝑅𝑐 = 𝑣𝐹
+𝜔𝑐
+= ℏ𝑘𝐹 ∙ m
+m ∙ 𝑒𝐵 = ℏ𝑘𝐹
+𝑒𝐵
+und 𝜔𝑐 = eB
+m .
+ℏ d𝒌
+dt = −𝑒 𝒗 × 𝑩
+= − 𝑒
+ℏ ∙ 𝛁𝐤𝐸 × 𝑩
+= −𝑒 ∙ ሶ 𝒓 × 𝑩
+𝑩 = 𝐵 ො𝒛
+⇒ ሶ 𝒌 = − e𝐵
+ℏ ሶ 𝒓 × ො𝒛
+⇒ ሶ 𝒓 = ℏ
+e𝐵 ሶ 𝒌 × ො𝒛
+= − ℏ
+e𝐵 ො𝒛 × ሶ 𝒌
+
+𝒗𝑛,𝒌𝟎 = 1
+ℏ ∙ 𝛁𝐤𝐸𝑛 𝒌 ቚ𝑘0
+
+Experimentelle Bestimmung der Fermi-Flächen
+1. de Haas-van Alphen-Effekt
+2. Shubnikov-de Haas-Effekt
+3. Zyklotronresonanz
+4. anomaler Skin-Effekt
+5. Magnetwiderstand
+6. Ultraschall-Absorption
+7. optische Reflektivität
+8. Photoelektronen-Spektroskopie
+Siehe Kapitel 9 sowie Abb. 10.6 aus Gross / Marx
+G. Dresselhaus et al., Phys. Rev. 98, 368 (1955).
+& Zentralübung
+
+Die effektive Masse
+𝑑𝒗(𝒌)
+𝑑𝑡 = 1
+ℏ2 𝛁𝑘 𝛁𝑘𝐸𝑛 𝒌 ∙ 𝑭
+− Mit Hilfe des Tensors der effektiven Masse m* wird die Verbindung zur klassischen
+Bewegungsgleichung F = ma hergestellt.
+− Die reziproke effektive Masse ist durch die Krümmung der Energiefläche bestimmt. In ihr ist die
+Wechselwirkung der Elektronen mit den Atomrümpfen versteckt, die diese bei ihrer Bewegung im
+Festkörper erfahren.
+− Die Kenntnis der Energiedispersion E(k) reicht zur Beschreibung der Elektronenbewegung.
+− Man bezeichnet das hier entwickelte Konzept zur Beschreibung der Elektronenbewebung im Kristall
+als „effektive Massennäherung“.
+(𝒎∗)−𝟏
+𝒎∗ = Tensor der effektiven Masse
+𝑑𝒗i 𝒌
+𝑑𝑡 = ෍
+j
+1
+ℏ2
+𝜕2𝐸𝑛 𝒌
+𝜕𝑘i𝜕𝑘j
+𝐹j ; 𝑖, 𝑗 = 𝑥, 𝑦, 𝑢𝑛𝑑 𝑧
+𝑚∗ ij = 1
+ℏ2
+𝜕2𝐸𝑛 𝒌
+𝜕𝑘i𝜕𝑘j
+Definiert den effektiven
+Massentensor im Punkt k
+eines Bandes.
+In Komponentenschreibweise:
+
+Die Tensoren der reziproken effektiven Masse bzw. der effektiven Masse
+(1/m*)𝛼𝛽 und m*𝛼𝛽 sind symmetrisch. Sie lassen sich daher auf Hauptachsen
+transformieren, wodurch sich die Anzahl der unabhängigen Komponenten
+auf höchstens drei reduziert:
+(𝒎∗)−𝟏 =
+1/𝑚1 0 0
+0 1/𝑚2 0
+0 0 1/𝑚3
+Die effektive Masse
+𝑑𝒗(𝒌)
+𝑑𝑡 = 1
+ℏ2 𝛁𝑘 𝛁𝑘𝐸𝑛 𝒌 ∙ 𝑭
+(𝒎∗)−𝟏
+𝑑𝒗i 𝒌
+𝑑𝑡 = ෍
+j
+𝐹j ; 𝑖, 𝑗 = 𝑥, 𝑦, 𝑢𝑛𝑑 𝑧
+𝑚∗ ij = 1
+Definiert den effektiven
+Massentensor im Punkt k
+eines Bandes.
+In Komponentenschreibweise:
+𝒎∗ = Tensor der effektiven Masse
+
+Die effektive Masse in 1D
+k1 k2
+Effektive Masse bei k1 ist positiv, bei k2
+negativ (siehe später: Löcher)
+Je flacher die Parabel, desto größer die
+effektive Masse!
+
+Parabolische Massennäherung in 1D
+𝐸 = ℏ2𝑘2
+2𝑚∗
+k1 k2
+1D und parabolische Dispersion
+⇒ 𝜕2𝐸
+𝜕𝑘2 = ℏ2
+𝑚∗ ⇒ konstante effektive Masse
+Der Wert für m* kommt theoretisch aus Bandstrukturrechnungen, experimentell aus
+der Messung der Zyklotronresonanz. 3D Beispiel: Unterschiedliche Krümmung der
+Dispersion in x-, y-, und z-Richtung
+(𝒎∗)−𝟏 =
+1/𝑚1 0 0
+0 1/𝑚2 0
+0 0 1/𝑚3
+⇒ 𝒎∗ =
+𝑚1 0 0
+0 𝑚2 0
+0 0 𝑚3
+𝐸 𝒌 = ℏ2𝑘𝑥
+𝑚1
++ ℏ2𝑘𝑦
+𝑚2
++ ℏ2𝑘𝑧
+𝑚3
+, mit 1
+𝑚𝑖
+= 1
+ℏ2 ∙ 𝜕2 𝐸𝑛
+𝜕𝑘𝑖
+Effektive Masse bei k1 ist positiv, bei k2
+negativ (siehe später: Löcher)
+
+Effektive Masse in Silizium
+Bilder 28.5 und 28.6
+aus Ashcroft Mermin
+Unterschiedliche effektive Massen für unterschiedliche
+Richtungen der Elektronen im Leitungsband von Si:
+m1 = m2 ≠ m3
+Energiebänder des Siliziums. Das Leitungsband-Minimum in
+Richtung [100], verursacht die Ellipsoide konstanter Energie in
+der Abbildung oben.
+Das Valenzbandmaximum tritt bei k = 0 auf, wo sich zwei
+entartete Bänder mit unterschiedlichen Krümmungen treffen,
+so dass es 'leichte Löcher' und 'schwere Löcher' gibt.
+
+Blochoszillationen

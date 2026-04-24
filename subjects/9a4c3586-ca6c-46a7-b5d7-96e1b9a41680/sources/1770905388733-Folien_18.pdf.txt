@@ -1,0 +1,66 @@
+## Das freie Elektronengas
+
+![The image depicts a solid metal cube, likely used as a calibration or reference weight in scientific or industrial applications. It shows the physical form and surface texture of the metal cube.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-1_992_934_515_443.jpg)
+
+![This diagram depicts the potential energy profile of electrons in a metal and vacuum system, showing the metal's Fermi energy level (E_F), work function (Φ), and the potential barrier height (H) that electrons must overcome to escape from the metal into the vacuum.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-1_671_1453_344_1751.jpg)
+Abb. 7.3: Potenzialverlauf im Modell freier Elektronen. Im Inneren des Potenzialtopfs verschwindet die potenzielle Energie, da wir freie Teilchen angenommen haben. Die Potenzialtiefe ergibt sich aus der Summe der Austrittsarbeit $\Phi$ und der Fermi-Energie $E_{\mathrm{F}}$.
+
+## Das freie Elektronengas
+
+Das freie Elektronengas stellt die einfachste Näherung dar, die elektronischen Eigenschaften von Metallen zu beschreiben.
+
+Vorstellung: Schwach gebundene Valenzelektronen bewegen sich nahezu frei durch das Metall (Leitungselektronen).
+
+Die Gesamtenergie besteht nur aus kinetischer Energie (siehe rechte Skizze).
+
+Die Coulomb-Wechselwirkung zwischen den Elektronen selbst und zwischen Elektronen und positiven lonenrümpfen wird vernachlässigt.
+![This diagram depicts an energy dispersion relation for electrons in a two-dimensional crystal lattice, showing the energy (E) as a function of the wave vectors \(k_x\) and \(k_y\). It specifically illustrates the parabolic energy band structure typical of free or nearly free electrons in a semiconductor or metal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-2_861_981_420_2168.jpg)
+
+Fermi-Gas freier Elektronen: "Gas" aus freien, nicht-wechselwirkenden Elektronen, die dem Pauli-Prinzip gehorchen!
+
+## Energieniveaus in 1D
+
+Zunächst betrachten wir ein 'eindimensionales' Metall.
+Die Elektronen sind in einem Kasten der Länge $L$ mit unendlich hohen Potentialbarrieren eingeschlossen. Ein Elektron kann nicht in die Potentialbarriere eindringen.
+
+Schrödingergleichung:
+![This image depicts the time-independent Schrödinger equation for a free particle in one dimension, showing the Hamiltonian operator expressed in terms of the momentum operator and its differential form acting on the wave function. It labels the Hamiltonian operator, momentum operator, and wave function in German.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-3_636_1285_710_1188.jpg)
+
+Randbedingung: $\quad \psi_{n}(x=0)=\psi_{n}(x=L)=0$
+
+## Die Fermi-Dirac Verteilung
+
+![This diagram depicts the Fermi-Dirac distribution function \( f(E) \) for different values of the ratio \(\mu / k_B T\), showing how the occupation probability of energy states varies with energy normalized by the chemical potential \(\mu\). It specifically compares the distribution at finite temperature (\(\mu / k_B T = 10\) and 200) to the zero-temperature limit (\(T=0\)), illustrating the sharp step at the Fermi energy where \( f(\mu) = 1/2 \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-4_1336_1466_307_382.jpg)
+Abb. 7.5: Grafische Darstellung der Fermi-Dirac Verteilungsfunktion in Abhängigkeit von der reduzierten Energie $E / \mu$ für $\mu / k_{\mathrm{B}} T=10$ und 200. Für Metalle ist $\mu \simeq E_{\mathrm{F}} \sim 5 \mathrm{eV}$ bzw. $T_{\mathrm{F}} \sim 50000 \mathrm{~K}$, so dass $\mu / k_{\mathrm{B}} T=200$ etwa den Verhältnissen bei Raumtemperatur entspricht. Erwärmt man das System, so werden die Zustände in den farbig markierten Bereichen von $E / \mu<1$ nach $E / \mu>1$ umverlagert.
+
+## Fermi-Kugel in 3D
+
+## Die Fermi-Kugel besitzt die Fermi-Fläche als Oberfläche und den Fermi-Wellenvektor als Radius
+
+![This diagram depicts the Fermi surface in momentum space, showing a spherical Fermi surface with the Fermi wave vector \( k_F \) in a three-dimensional \( k_x, k_y, k_z \) coordinate system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-5_1158_1140_421_494.jpg)
+Bild 8.7: Fermi-Kugel. Am absoluten Nullpunkt sind alle Elektronen in Zuständen innerhalb der Fermi-Kugel untergebracht, die Begrenzung der Kugel ist daher scharf.
+
+## Zustandsdichte
+
+![This diagram depicts the occupation of electron states in a material as a function of energy relative to the chemical potential (μ), showing the density of states multiplied by the Fermi-Dirac distribution at zero temperature (T=0) and finite temperature (T>0). It illustrates the sharp Fermi edge (Fermi-Kante) at T=0 and the smearing of this edge at finite temperature, distinguishing occupied (besetzt) and unoccupied (unbesetzt) states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-6_1181_1532_317_797.jpg)
+Abb. 7.6: Zustandsdichte mal Besetzungswahrscheinlichkeit als Funktion der reduzierten Energie $E / \mu$ für $T=0$ und $T>0$. Beim Übergang von $T=0$ zu $T>0$ ändert sich die Besetzung der Zustände nur innerhalb eines Energieintervalls der Breite $k_{\mathrm{B}} T \operatorname{um} E / \mu=1$. Das Inset zeigt die Fermi-Dirac-Verteilungsfunktionen für $T=0$ und $T>0$.
+
+## Elektronendichte bestimmt Fermi-Energie, -Temperatur, -Wellenvektor und -Geschwindigkeit
+
+| Metall | $\boldsymbol{n} \boldsymbol{(} \mathbf{1 0}^{\mathbf{2 2}} \mathrm{cm}^{\mathbf{- 3}} \boldsymbol{)}$ | $E_{\mathrm{F}}(\mathrm{eV})$ | $\mathbf{T}_{\mathbf{F}}(\mathrm{K})$ | $k_{\mathrm{F}}\left(10^{8} \mathrm{~cm}^{-1}\right)$ | $\boldsymbol{\nu}_{\mathrm{F}}\left(10^{8} \mathrm{~cm} / \mathrm{s}\right)$ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Li | 4.70 | 4.72 | 54800 | 1.11 | 1.27 |
+| Na | 2.54 | 3.16 | 36700 | 0.91 | 1.05 |
+| Rb | 1.15 | 1.85 | 21500 | 0.69 | 0.79 |
+| Cu | 8.45 | 7.00 | 81200 | 1.35 | 1.55 |
+| Au | 5.90 | 5.51 | 63900 | 1.20 | 1.38 |
+| Ag | 5.86 | 5.49 | 63700 | 1.20 | 1.39 |
+| Be | 24.2 | 14.14 | 164100 | 1.92 | 2.21 |
+| Zn | 13.10 | 9.39 | 109000 | 1.56 | 1.79 |
+| Al | 18.06 | 11.63 | 134900 | 1.74 | 2.00 |
+| Pb | 13.20 | 9.37 | 108700 | 1.57 | 1.81 |
+
+
+![This image is a commemorative postage stamp depicting Enrico Fermi, an Italian physicist known for his work on nuclear physics and quantum theory. The background shows mathematical equations and a schematic related to nuclear or particle physics, highlighting Fermi's contributions to these scientific fields.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/abb9e8c9-98e8-4c32-bd15-481b86ecbe17/2386df06-6e8a-400a-abd0-297ec52507f5-7_912_668_453_2453.jpg)
+Tabelle 7.1: Elektronendichte, Fermi-Energie, Fermi-Temperatur, Fermi-Wellenvektor und Fermi-Geschwindigkeit für einige Metalle. Die Elektronendichte wurde hierbei über $n=N_{\mathrm{A}} Z \rho_{\mathrm{m}} / A$ abgeschätzt, wobei $N_{\mathrm{A}}=6.022 \times 10^{23}$ die Avogadro-Konstante, $\rho_{\mathrm{m}}$ die Massendichte, $A$ die Massenzahl und $Z$ die Ladungszahl des Elements sind.
+

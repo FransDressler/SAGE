@@ -1,0 +1,207 @@
+### 2.3 Kreisprozesse
+
+## Bsp: Wärmekraftmaschine:
+
+Das System (Arbeitsmedium) kehrt nach jedem Durchlauf wieder in seinen Ausgangszustand zurück.
+![This diagram depicts a heat engine system showing the flow of heat energy from a hot reservoir (T1) to a cold reservoir (T2) and the work (WM) performed by the machine per cycle. It illustrates the heat absorbed from the hot reservoir (Q1), the work output, and the heat released to the cold reservoir (Q2).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-01_1111_2722_649_142.jpg)
+
+- Annahme: quasi-statische Prozesse, Zustand des Systems jederzeit durch 2 Variablen beschrieben (p,V), (T,S), ...
+
+
+## Allgemein:
+
+$$
+W_{\mathrm{M}}=-W_{\mathrm{mech}}=\oint p d V
+$$
+
+Q=Q_{1}-Q_{2}=\oint T d S
+
+![This diagram depicts a thermodynamic cycle on a pressure-volume (p-V) diagram, showing the work done (W_M) by the system during the cycle.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-02_534_840_528_412.jpg)
+Arbeit = Fläche im pV-Diagramm
+
+![This diagram depicts a thermodynamic cycle on a Temperature (T) versus Entropy (S) graph, showing the process Q representing heat transfer during the cycle.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-02_566_830_486_1859.jpg)
+Wärme $=$ Fläche im TS-Diagramm
+
+Kreisprozess: $\quad \oint d E=0 \quad \Rightarrow \quad W_{\mathrm{M}}=Q$
+◯
+
+W_{\mathrm{M}}=Q>0
+
+(Wärmekraftmaschine)
+◯ $W_{\mathrm{M}}=Q<0$
+(Wärmepumpe, Kältemaschine)
+
+Carnot Prozess:
+
+![This diagram depicts a pressure-volume (p-V) thermodynamic cycle, showing the four stages of a cyclic process with arrows indicating the direction of the process through different states.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-03_806_1109_298_132.jpg)
+pV-Diagramm
+
+![This diagram depicts a thermodynamic cycle on a temperature (T) versus entropy (S) graph, showing the four stages of a heat engine or refrigeration cycle with processes labeled (1) through (4) between two temperature levels \(T_1\) and \(T_2\) and two entropy levels \(S_1\) and \(S_2\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-03_916_1133_261_1635.jpg)
+TS-Diagramm
+
+(1) Isotherme Expansion bei Kopplung an heißes Reservoir, $\mathrm{T}_{1}$ :
+
+⇒ Gas expandiert und verrichtet Arbeit $\left(W_{\mathrm{M}}>0\right)$.
+
+Die Wärmemenge $Q_{1}=T_{1}\left(S_{1}-S_{2}\right)$ wird dem heißen Bad entnommen und in Arbeit umgewandelt.
+(2) Adiabatische (isentrope) Expansion, System ist wärmeisoliert:
+
+⇒ Gas expandiert, verrichtet Arbeit und kühlt sich auf $\mathrm{T}_{2} \mathrm{ab}$.
+(3) Isotherme Kompression bei Kopplung an kaltes Reservoir, $\mathrm{T}_{2}$ :
+
+⇒ Gas wird komprimiert durch Arbeit von außen $\left(W_{\mathrm{M}}<0\right)$.
+Die Wärmemenge $Q_{2}=T_{2}\left(S_{1}-S_{2}\right)$ wird vom System an das kalte Bad abgegeben.
+(4) Adiabatische (isentrope) Kompression, System ist wärmeisoliert:
+
+⇒ Gas wird komprimiert und erhitzt sich auf $\mathrm{T}_{1}$.
+
+⇒ Die insgesamt geleistete Arbeit = aufgenommene Wärme:
+
+W_{\mathrm{M}}=Q=Q_{1}-Q_{2}=\left(T_{1}-T_{2}\right)\left(S_{1}-S_{2}\right)
+
+Der Wirkungsgrad einer Wärmekraftmaschine ist
+
+\eta=\frac{\text { geleistete Arbeit }}{\text { aufgenommene Wärme }}=\frac{W_{\mathrm{M}}}{Q_{1}}
+
+für Carnot Prozess: $\quad \eta_{C}=1-\frac{T_{2}}{T_{1}}<1 \quad \begin{array}{r}\text { (gilt für beliebige } \\ \text { Arbeitssubstanz!) }\end{array}$
+
+## Allgemeiner Kreisprozess:
+
+- Wärmeaufnahme bei beliebiger Temperatur $T_{2}<T<T_{1}$
+- irreversible Prozesse
+
+Wirkungsgrad realer Maschinen: $\quad \eta \leq \eta_{C}$
+
+Beweis: Wir zerlegen
+
+W_{\mathrm{M}}=\oint \delta Q=\int_{\delta Q>0} \delta Q+\int_{\delta Q<0} \delta Q=\underbrace{Q_{1}}_{>0}-\underbrace{Q_{2}}_{>0}
+
+Aus dem 2. Hauptsatz mit $\Delta S=0$ (Kreisprozess) folgt:
+
+\begin{gathered}
+0 \geq \oint \frac{\delta Q}{T}=\int_{\delta Q>0} \frac{\delta Q}{T}+\int_{\delta Q<0} \frac{\delta Q}{T} \geq \frac{Q_{1}}{T_{1}}-\frac{Q_{2}}{T_{2}} \Rightarrow \frac{Q_{2}}{Q_{1}} \geq \frac{T_{2}}{T_{1}} \\
+T_{2}<T<T_{1}
+\end{gathered}
+
+\Rightarrow \quad \eta=\frac{W_{\mathrm{M}}}{Q_{1}}=\frac{Q_{1}-Q_{2}}{Q_{1}} \leq 1-\frac{T_{2}}{T_{1}}=\eta_{C}
+
+Der Wirkungsgrad jeder Arbeitsmaschine ist durch den Carnot'schen Wirkungsgrad beschränkt !
+
+### 2.4 Thermodynamische Potentiale
+
+- Thermodynamische Potentiale sind Größen, die das Verhalten eines thermodynamischen Systems im Gleichgewicht als Funktion seiner natürlichen Variablen vollständig beschreiben.
+- Alle thermodynamischen Potentiale lassen sich durch LegendreTransformationen aus der Energie ableiten.
+
+
+### 2.4.1 (Innere) Energie
+
+betrachte isoliertes System mit Teilchenzahl $N$ und Volumen V
+![This diagram depicts carbon monoxide (CO) molecules, showing the carbon atom bonded to the oxygen atom with a triple bond.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-07_429_598_1077_1722.jpg)
+
+⇒ 1. und 2. Hauptsatz:
+
+\begin{aligned}
+d E & =\delta Q+\delta W \\
+& =T d S-p d V+\mu d N
+\end{aligned}
+
+⇒ natürliche Variablen für isoliertes System: Entropie (S), Volumen (V), Teilchenzahl (N)
+
+Vergleich mit allgemeiner differenzieller Darstellung von $E \equiv E(S, V, N)$
+
+d E=\underbrace{\left(\frac{\partial E}{\partial S}\right)_{V, N}}_{=T} d S+\underbrace{\left(\frac{\partial E}{\partial V}\right)_{S, N}}_{=-p} d V+\underbrace{\left(\frac{\partial E}{\partial N}\right)_{S, V}}_{=\mu} d N
+
+Intensive Größen Temperatur (T), Druck ( $\mathbf{p}$ ) und chem. Potential ( $\boldsymbol{\mu}$ ) als Ableitungen der Energie nach extensiven Größen S,V,N:
+
+T=\left(\frac{\partial E}{\partial S}\right)_{V, N} \quad-p=\left(\frac{\partial E}{\partial V}\right)_{S, N} \quad \mu=\left(\frac{\partial E}{\partial N}\right)_{S, V}
+
+## Mathematischer Einschub: "Eulersche Homogenitätsrelation"
+
+Sei $f\left(x_{1}, \ldots, x_{N}\right)$ eine homogene Funktion vom Grad $k$, d.h.:
+
+f\left(\lambda x_{1}, \ldots, \lambda x_{N}\right)=\lambda^{k} f\left(x_{1}, \ldots, x_{N}\right)
+
+Dann gilt: $\quad \sum_{i} \frac{\partial f}{\partial x_{i}} x_{i}=k f\left(x_{1}, \ldots, x_{N}\right)$
+
+Beweis: $\quad \Rightarrow$ Differenzieren von Gleichung $\left({ }^{*}\right)$ nach $\lambda$ :
+$\left.\begin{array}{lc} & \begin{array}{c}\text { Kettenregel } \\ \downarrow \\ \text { linke Seite: }\end{array} \\ & \frac{d}{d \lambda} f\left(\left\{\lambda x_{i}\right\}\right)=\sum_{i} \frac{\partial f\left(\left\{\lambda x_{i}\right\}\right)}{\partial\left(\lambda x_{i}\right)} x_{i} \\ \text { rechte Seite: } & \frac{d}{d \lambda}\left[\lambda^{k} f\left(\left\{x_{i}\right\}\right)\right]=k \lambda^{k-1} f\left(\left\{x_{i}\right\}\right)\end{array}\right\} \begin{aligned} & \text { setze } \\ & \lambda=1\end{aligned}$
+
+Energie ist extensiv und daher: $\quad E(\lambda S, \lambda V, \lambda N)=\lambda E(S, V, N)$
+
+## "homogene Funktion 1. Grades"
+
+Aus Satz von Euler folgt: $\quad E(S, V, N)=\frac{\partial E}{\partial S} S+\frac{\partial E}{\partial V} V+\frac{\partial E}{\partial N} N$
+oder:
+
+E=T S-p V+\mu N
+
+## "Fundamentalgleichung der Thermodynamik"
+
+Bemerkungen:
+
+- mehrkomponentiges Gas: $\quad E=T S-p V+\sum_{i} \mu_{i} N_{i}$
+- magnetische Systeme: $\quad d E=T d S+\vec{B} \cdot d \vec{m}$
+
+\Rightarrow \quad E=T S+\vec{B} \cdot \vec{m}
+
+etc.
+
+### 2.4.2 Entropie
+
+Für ein isoliertes System ist neben der Energie auch die Entropie (extensiv!) ein äquivalentes therm. Potential:
+
+S \equiv S(E, V, N)=\frac{1}{T}(E+p V-\mu N)
+
+Aus
+
+d S=\frac{1}{T} d E+\frac{p}{T} d V-\frac{\mu}{T} d N
+
+ergeben sich die Relationen:
+
+\frac{1}{T}=\left(\frac{\partial S}{\partial E}\right)_{V, N} \quad \frac{p}{T}=\left(\frac{\partial S}{\partial V}\right)_{E, N} \quad-\frac{\mu}{T}=\left(\frac{\partial S}{\partial N}\right)_{E, V}
+
+Achtung: Im Gegensatz zu allen anderen therm. Potentialen hat $S$ nicht die Einheit einer Energie!
+
+## Mathematischer Einschub: Legendre Transformation
+
+Für eine Funktion $f(x)$ sei $p(x)=\frac{\partial f}{\partial x}$ die "konjugierte Variable" zu x.
+
+## gesucht:
+
+Eindeutige Funktion $g \equiv g(p)$ welche die selbe Information wie $f(x)$ enthält.
+
+Beispiel: $\quad f(x, y)=\frac{1}{2}(x-a y)^{2} \quad \Rightarrow \quad p(x)=\frac{\partial f}{\partial x}=x-a y$
+Versuch 1: $\quad g(p, y)=f(x(p), y)=\frac{p^{2}}{2}$
+
+Problem: $\frac{\partial f}{\partial y}=-a(x-a y)=-a p \quad$ aber $\quad \frac{\partial g}{\partial y}=0$
+Information über Abhängigkeit von weiteren Variablen und Parametern geht verloren, wenn p als unabhängige Variable aufgefasst wird.
+
+Versuch 2 (Legendre Transformation):
+
+\begin{aligned}
+& g(p, y)=f(x, y)-x p=-\frac{p^{2}}{2}-a p y \quad x \equiv x(p) \\
+& \quad \Rightarrow \frac{\partial g}{\partial y}=-a p
+\end{aligned}
+
+Interpretation:
+aus Tangentengleichung:
+$g(p)=f(x)-p x$
+![This diagram depicts the convex conjugate (Legendre transform) relationship between a function \( f(x) \) and its conjugate \( g(p) \), showing the correspondence between points \( x_1, x_2 \) on \( f(x) \) and slopes \( p_1 = f'(x_1), p_2 = f'(x_2) \) with the values \( g(p_1), g(p_2) \). It illustrates how the tangent lines to \( f(x) \) relate to the values of the conjugate function \( g(p) \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/9c30fad5-c8b6-433f-86a0-2f681028c6ad/4028e0a2-efec-4c96-959b-5032026f3a45-13_1206_1677_817_1249.jpg)
+eindeutige (injektive) Abbildung: $\{x, f(x)\} \rightarrow\{p, g(p)\}$
+
+Gegeben: Funktion $f\left(x,\left\{y_{i}\right\}\right)$ und $p=\frac{\partial f}{\partial x}$ sei die konjugierte Variable zu $x$.
+
+Def: "Legendre-transformierte Funktion" $\quad g\left(p,\left\{y_{i}\right\}\right)=f-p x$
+
+- Differential: $d g=d(f-x p)=\underbrace{\frac{\partial f}{\partial x}}_{=p} d x+\sum_{i} \frac{\partial f}{\partial y_{i}} d y_{i}-x d p-p d x$
+
+=-x(p) d p+\sum_{i} \frac{\partial f}{\partial y_{i}} d y_{i}=\frac{\partial g}{\partial p} d p+\sum_{i} \frac{\partial f}{\partial y_{i}} d y_{i}
+
+$\Rightarrow \mathrm{g}$ hängt von den unabhängigen Variablen $p$ und $\left\{y_{i}\right\} \mathrm{ab}$ !
+
+- Wir erhalten $f(x)$ durch nochmalige Legendre Transformation von $g(p)$ :
+
+x=-\frac{\partial g}{\partial p} \quad g-p \frac{\partial g}{\partial p}=g+p x=f
+
+Bedingung: $p=f^{\prime}(x)$ muss invertierbar sein, d.h. $f^{\prime}(x)$ ist streng monoton wachsend oder fallend.
+

@@ -1,0 +1,152 @@
+## 3. Gitterdynamik
+
+Wirs unterscheiden:
+
+| Atomkerne | Elektroven |
+| :--- | :--- |
+| Canjsam | schnell |
+| "von Eldetionen mibeinthesst" | folgen instantan (okle Ansguny) |
+
+⇒ separate Behaudling von Gitter (Atomberne) und Elektionen.
+sog. Bonn-Oppenheimer Nähernung (adiabatiscle Näkency)
+zunädist: Nähermy der Schwingung als harmonisde Ossillatoren ( → spez. Wäme), ausdließend auharmoniscle tuteile ( → Wäme-Leitfähigheit, thomische Ausdehumy).
+
+### 3.1 Elastische Eigurschaften
+
+zurächst: Beschreibung des Festhörpers als elastiscles Voutinum, d.6. atomar Anflbour wind wicht bericksiditijt.
+
+⇒ wur anf Länyuskale >> atomare Abstände
+Annahme: Vlane Auslenkmyen ⇒ Cineare Antwort ⇒ Elastizitätstheonie.
+
+### 3.1.1 Mechanisde Spannunjen und Dehnemgen.
+
+Unaft pro Fläcke: Spannungstunser $\underline{\sigma}$, Momponenten $\sigma_{i j}$
+$\sigma_{i j} \quad\left\{\begin{array}{l}\text { jode Oberflaide (urichtuy) j kanu } \\ \text { dri uraffrided }\end{array}\right.$ drici uraffnidulcujen i cansgesettet werden.
+Vareidenkonvention:
+→ Folie
+buj: positiv Druck: negativ
+Väfle flaidgeviate $\leftrightarrow \quad \begin{aligned} & \text { Gegenkäffe miisser } \\ & \text { valanden sein }\end{aligned}$ vahanden sein, anch fiis nidef-diajouale $6 i j (9-3=$
+⇒ Do Spannunjstenser ist symmetrisch $\sigma_{j i}=\sigma_{i j} \begin{aligned} & 6 \text { unabliajej } \\ & \text { uomponented }\end{aligned}$ 6 unabliay;
+
+Beschneibung von Verformungen mit dem Dehnunjstenser Dehnum: Definiere analoy einen Dehnungstenses e unit $e_{i j}$
+
+Beispiel: Zwei Punkle cunter Uneft: $P(\underline{r}) \rightarrow P^{\prime}\left(\underline{r}+\frac{u}{\uparrow}\right)$
+
+$$
+Q(\underline{r}+\underline{\Delta r}) \rightarrow Q^{\prime}(\underline{r}+\underline{\Delta r}+\underline{u}+\underline{\Delta u})
+$$
+
+Veramury
+Annahme, Verine Verfammy $\Delta u \ll \Delta \underline{T}$ : Cinearisiate Beselucibuy
+Vaschiebungs komponente:
+
+\Delta u_{i}=\underbrace{\frac{\partial}{\partial x} u_{i}} \cdot \Delta x+\frac{\partial}{\partial y} u_{i} \cdot \Delta y+\frac{\partial}{\partial z} u_{i} \cdot \Delta z
+
+dimensiouslose
+versohiebum sgradienter
+Definition des $\underline{\text { Delannujsteusers }} \quad e_{i i}=\frac{\partial u_{i}}{\partial i} \wedge e_{i j}=\frac{1}{2}\left(\frac{\partial u_{i}}{\partial u_{j}}+\frac{\partial u_{j}}{\partial u_{i}}\right)$
+
+i, j=x, y, z \text { und } e_{i j}=e_{j i}
+
+## Beispiele Wüfel mit Kantenlänge L
+
+a) Uraft in y-Riditung: Eugspannuy byy → Dehnnuy $\Delta y$ Dehumnjskomponente: $\quad e_{y y}=\frac{\partial u_{y}}{\partial y}=\frac{\Delta y}{L}$ (nur dive QuerKoutraletion!)
+b) Allsatijes Druck: glacher minaxiales Druck auf allen Seiter relative Volumenändercing $\frac{\Delta v}{v} \approx-\left(e_{x x}+e_{y y}+e_{z z}\right)$ Nilverny: nus Flebren ohne Edean.
+c) Schermuj: Spannunjskomponenten $\sigma_{y z}$ und $\sigma_{z y}$
+
+Delauny : $e_{z y}=\frac{\partial u_{z}}{\partial y}=\frac{\Delta z}{L} ; e_{y z}=\frac{\partial u_{y}}{\partial z}=\frac{\Delta y}{L}$ Verve Volumeriändercy!
+3.1.2 Nomenklatur fin elestische Uoustanten
+![The image depicts Hooke's law for elastic constants, showing the relationship between stress (σ_ij) and strain (ε_kl) through the elasticity tensor (c_ijkl), which has 81 components.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7330855d-c2b5-4413-b1a6-7bc54168ae8a/c13552db-c028-4a1f-8ceb-ec93842f25b3-3_226_1575_264_365.jpg) Symmetriceiguschaflen von $\sigma_{i j}$, eve $\Rightarrow c_{i j} u e=c_{j i k e}=c_{i j} e k$
+
+⇒ maximal 36 unablängige Komponenter.
+Ans des quadratiscleu Ablianjugheit der elastischen Energie des Defamation fogt: $\sigma_{i j k e}=\sigma_{k e i j}$
+
+⇒ maximal 21 unabliā ujje kompomenter.
+Vereinfachte Notation (Voigt): jeweils zwei ludizes zusamusen-
+
+\begin{aligned}
+& x x \rightarrow 1 ; y y \rightarrow 2 ; z z \rightarrow 3 ; y z \rightarrow 4 ; z x \rightarrow 5 ; x y \rightarrow 6 . \\
+& e_{x x} \rightarrow e_{1} ; e_{y y} \rightarrow e_{2} ; \cdots
+\end{aligned}
+
+Wemm man Vnistallsymmetie berïcksichtijt, wind die Anzahl der unabkänjgen Usmponenten weits reduzient: 2.B. tiklines System 21 rodule, Unbiscles System 3 rodule.
+3.1.3 Elastizitätsteuser des Verbischen Systems
+(i) Kubische Hamptachsen sind äquivelent:
+
+\begin{array}{ll}
+c_{11}=c_{22}=c_{33} & \text { uniaxiale Drekuny } \\
+c_{44}=c_{55}=c_{66} & \text { uniaxiale Scherving } \\
+c_{12}=c_{13} & \text { Querbiaffe }
+\end{array}
+
+(ii) bei Schermy treten Veine Normal bräffe ourf: $c_{14}=0$
+(iii) bei Schermy treten Veive Scherbiäfte ⟂ Schernichtury auf: $\mathrm{C}_{43}=0$, usw.
+
+d.4. $\quad\left(\begin{array}{ccccccc}c_{11} & c_{12} & c_{12} & 0 & 0 & 0 \\ c_{12} & c_{11} & c_{12} & 0 & 0 & 0 \\ c_{12} & c_{12} & c_{11} & 0 & 0 & 0 \\ 0 & 0 & 0 & c_{44} & 0 & 0 \\ 0 & 0 & 0 & 0 & c_{44} & 0 \\ 0 & 0 & 0 & 0 & 0 & c_{44}\end{array}\right)$
+in isotigonn Materialien (amouph, polyluistalin) gilt
+zusätzlich: $\quad c_{11} \cdot c_{12}+2 \cdot c_{44}$
+$c_{12}=\lambda$ und $c_{44}=\mu$ sind unablianjjo, soj. Lanée-Koustanten.
+
+|  | E | $E=\mu(3 \lambda+2 \mu) \lambda+\mu$ |
+| :--- | :--- | :--- |
+|  | B | $B=\frac{\lambda+\mu}{2(\lambda+\mu)}$ |
+|  | $v$ | $\nu=\frac{3 \lambda+2 \mu}{3}$ |
+|  |  | $G=\mu$ |
+
+### 3.14 Schall wellen im clastischen Kontinumus
+
+Betrackte Volumenclement QV: Auslenkery $\underline{\text { w }}$, Wellenveleter 3 . $\underline{u} \| q$ : Coujitudinale Welle ; $\underline{u} \perp q$ : hansversale Welle.
+hier: Wellengleichmy der Elastizitäts theorie fin loyitudinale Wella im isotropen Medium.
+Ausganjspunkt (siehe Seilwelle):
+räumlich variiceude Spannuy $\sigma_{x x}$
+⇒ bewinkt Verschiebury $u_{x}$ vou $d V$.
+Nettolnaft: $\quad d F_{x}=\left[\sigma_{x x}(x+d x)-\sigma_{x x}(x)\right] d y d z$
+
+=\frac{\partial}{\partial x} \sigma_{x x} d x d y d z
+
+2. Newton : $\quad \rho \frac{\partial^{2}}{\partial t^{2}} \cdot u_{x}=\frac{\partial}{\partial x} \sigma_{x x}$
+
+\begin{aligned}
+& (*) \Rightarrow b_{x x}=c_{11} e_{x x}=c_{11}\left(\frac{\partial}{\partial x} u_{x}\right) \\
+& \Rightarrow \quad \rho \frac{\partial^{2}}{\partial t^{2}} u_{x}=c_{11} \frac{\partial^{2}}{\partial x^{2}} u_{x} \quad \text { Wellenfaichuy }
+\end{aligned}
+
+analog fin $u_{y}$ und $u_{z}$.
+
+\rho \frac{\partial^{2}}{\partial t^{2}} u_{i}=\sum_{j} \frac{\partial}{\partial j} \sigma_{i j}=\sum_{j k e} c_{i j k e} \frac{\partial^{2}}{\partial_{j} \partial k} u_{e}
+
+iiju,e = $x, y, z$
+
+Wellenglickny fin auisotope Medien
+mit dem Elastizifätstenser für Kubische Systeure (**)
+$\rho \frac{\partial^{2}}{\partial t^{2}} u_{x}=c_{\mu} \frac{\partial^{2}}{\partial x^{2}} u_{x}+c_{44}\left(\frac{\partial^{2}}{\partial y^{2}} u_{x}+\frac{\partial^{2}}{\partial z^{2}} u_{x}\right)+\left(c_{z^{2}}+c_{44}\right)\left(\frac{\partial^{2}}{\partial x^{2}} u_{y}+\frac{\partial^{2}}{\partial x^{2}} u_{z}\right)$ ebenso fin $u_{y}, u_{z} \Rightarrow$ Schallweller in Uubisder Unistalle.
+
+## Beispicle
+
+a) longitudinale Welle in $x$-Richtuny: $\underline{u} 11 q, u_{y}=u_{z}=0$
+keine Auslanky $\perp$ zu $x$; $\frac{\partial}{\partial y} u_{x}=0-\frac{\partial}{\partial z} u_{x}$
+$\Rightarrow \quad \rho \frac{\partial^{2}}{\partial t^{2}} u_{x}=c_{11} \frac{\partial^{2}}{\partial x^{2}} u_{x}$
+Ausatz: $\quad u_{x}=u_{x, 0} e^{-i(\omega t-q x)}, u_{\lambda, 0}$ : Amplitace
+Einsetzen: $s \omega^{2}=c_{11} q^{2}$
+d.h. $\quad \omega=\sqrt{\frac{G_{11}}{s}} \cdot q=v_{L} \cdot q$ (lineare Dispersion)
+
+- dispersions fière Schallausbreituy (vc unablu. vou a)
+- $v_{L}$ analog $\sqrt{\text { Federkonstante/Dichle }} \rightarrow$ Meckamik
+b) transversale Welle in x-Richtung und Auslendy in y-Ricly
+$u_{x}=u_{z}=0$
+Ausalz: $\quad u_{y}=u_{y, 0} \cdot e^{-i(\omega t-q x)}$
+Einseter: $\$ \frac{\partial^{2}}{\partial t^{2}} u_{y}=c_{44} \frac{\partial^{2}}{\partial x^{2}} u_{y}$
+$\Rightarrow \quad v_{t}=\frac{\omega}{q}=\sqrt{\frac{C_{44}}{s}} \quad$ (acralog fü $z$-Richty)
+c) Solveralle in $z$ - Richtung, Ausbraituy in $x y$-Elocre
+
+& u_{z}=u_{z, 0} \cdot e^{-i\left(\omega t-q_{x} \cdot x-q_{y} \cdot y\right)} \\
+& \rho \omega^{2}=c_{44}\left(q_{x}^{2}+q_{y}^{2}\right)=c_{44} \cdot q^{2}
+
+⇒ Schall geschwindiguer't diess Polanisation (lineer inz) unablänjo vou des Ausbraitungsnidatung in des xy - Elscue.
+Fant
+⇒ Messuy von $v_{L}$ und $v_{t}$ in [100]-Ricktung] liefent $c_{11}$ bzw $c_{44}$.
+analog: Messung von Schall geschwindijveit einer transversalen Welle in [110]-Richtung liefut $c_{12}$. Mit Akustik lassen sich die elastischen Ejenschaften bestimure.
+d) Quarzglas: elastisch und isotrop Schallgeschwindijka't ist isotrop, abs $v_{t}=3765 \frac{\mathrm{~m}}{\mathrm{~s}}$ and $v_{L}=5973 \frac{\mathrm{~m}}{\mathrm{~s}}$
+Gats: in der xy - Ebare anisotop ⇒ anses $\langle 100\rangle$
+ine raive Polarisation, nur outleny Hodrsymmetioniddungen soust genisded.
+

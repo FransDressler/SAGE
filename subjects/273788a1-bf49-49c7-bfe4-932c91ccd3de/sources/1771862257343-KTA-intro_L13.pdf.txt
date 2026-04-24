@@ -1,0 +1,196 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 13
+
+31. Januar 2026
+
+## Aufgabe 1 : Universalität der schwachen Wechselwirkung
+
+Im Standardmodell werden geladene schwache Zerfälle durch den Austausch von $W^{ \pm}$-Bosonen vermittelt. Die schwache Wechselwirkung ist universell in dem Sinne, dass alle Quarks und Leptonen mit derselben schwachen Kopplungskonstanten $g$ an den geladenen schwachen Strom koppeln. Daraus folgt, dass schwache Zerfallsprozesse verschiedener Fermionen eine sehr ähnliche Struktur besitzen.
+Bei dreiteiligen geladenen Stromzerfällen in leichte Fermionen zeigt die Zerfallsbreite eine starke Abhängigkeit von der Masse des zerfallenden Teilchens. Unterschiede zwischen verschiedenen Zerfallskanälen ergeben sich hauptsächlich aus Phasenraumeffekten sowie aus der Anzahl der möglichen Endzustände. Der Einfachheit halber können im Folgenden Phasenraumeffekte vernachlässigt werden.
+a. Geben Sie die möglichen Zerfallskanäle des $\mu$ - und des $\tau$-Leptons an. Berücksichtigen Sie dabei die Massen der Zerfallsprodukte. Skizzieren Sie die entsprechenden FeynmanDiagramme.
+b. Die Zerfallsbreite des Myons ist gegeben durch
+
+$$
+\Gamma\left(\mu^{-} \rightarrow e^{-}+v_{\mu}+\bar{v}_{e}\right)=\frac{G_{F}^{2} m_{\mu}^{5}}{192 \pi^{3}}
+$$
+
+Leiten Sie unter Verwendung dieses Ergebnisses die Lebensdauer des $\tau$-Leptons aus der Lebensdauer des Myons her.
+
+m_{\mu}=105.7 \mathrm{MeV}, \quad \tau_{\mu}=2.2 \times 10^{-6} \mathrm{~s}, \quad m_{\tau}=1776.9 \mathrm{MeV} .
+
+## Lösung
+
+## a. Zerfallskanäle und Diagramme.
+
+Myon: Aufgrund seiner relativ kleinen Masse kann das Myon nur leptonisch zerfallen. Der dominierende schwache Zerfallskanal (die ladungskonjugierten Prozesse sind impliziert) ist
+
+\mu^{-} \rightarrow e^{-}+\bar{v}_{e}+v_{\mu} .
+
+Tau: Das $\tau$-Lepton ist deutlich schwerer als das Myon und kann daher sowohl leptonisch als auch in Quarks zerfallen. Unter Vernachlässigung von Phasenraumeffekten sind die relevanten schwachen Zerfallskanäle
+
+\begin{aligned}
+& \tau^{-} \rightarrow e^{-}+\bar{v}_{e}+v_{\tau}, \\
+& \tau^{-} \rightarrow \mu^{-}+\bar{v}_{\mu}+v_{\tau}, \\
+& \tau^{-} \rightarrow v_{\tau}+\bar{u}+d .
+\end{aligned}
+
+Die ersten beiden Kanäle sind rein leptonisch und analog zum Myonzerfall. Im dritten Kanal erzeugt das $W^{-}$-Boson ein Paar leichter Quarks, die anschließend zu Hadronen hadronisieren.
+
+![This image depicts Feynman diagrams for the weak decay processes of the muon (μ⁻) and tau (τ⁻) leptons, showing their decay via the W⁻ boson into corresponding neutrinos and other leptons or quarks.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/4b6e737f-d8f7-48ab-976d-f32fa7942b00/d01b2b54-cf32-436c-a763-d5fc63bb8554-2_408_1611_477_228.jpg)
+Abbildung 1: Feynman-Diagramme.
+
+## b. Lebensdauer des $\boldsymbol{\tau}$-Leptons aus der Universalität.
+
+Die Zerfallsbreite des Myons lautet
+
+\Gamma_{\mu}=\frac{G_{F}^{2} m_{\mu}^{5}}{192 \pi^{3}}
+
+Für geladene Stromzerfälle dieser Art skaliert die Zerfallsbreite mit der fünften Potenz der Masse des zerfallenden Teilchens,
+
+\Gamma \propto G_{F}^{2} m^{5}
+
+Unter Ausnutzung der Universalität der schwachen Wechselwirkung ergibt sich für die elektronische Zerfallsbreite des $\tau$-Leptons daher
+
+\Gamma_{\tau e}=\left(\frac{m_{\tau}}{m_{\mu}}\right)^{5} \Gamma_{\mu}
+
+wobei Phasenraumeffekte vernachlässigt wurden.
+Da die Myonmasse im Endzustand klein gegenüber $m_{\tau}$ ist, besitzt der myonische Zerfallskanal näherungsweise die gleiche Breite,
+
+\Gamma_{\tau \mu} \simeq \Gamma_{\tau e} .
+
+Beim Zerfall in Quarks kann das $\bar{u} d$-Paar in drei verschiedenen Farbkombinationen auftreten ( $\mathrm{r} \overline{\mathrm{r}}, \mathrm{b} \overline{\mathrm{b}}, \mathrm{g} \overline{\mathrm{g}}$ ). Dies führt zu
+
+\Gamma_{\tau(\bar{u} d)} \simeq 3 \Gamma_{\tau e}
+
+Zerfallskanäle mit Strange-Quarks werden in dieser Abschätzung vernachlässigt.
+Die gesamte Zerfallsbreite des $\tau$-Leptons ist damit näherungsweise
+
+\begin{aligned}
+\Gamma_{\tau} & \simeq \Gamma_{\tau e}+\Gamma_{\tau \mu}+\Gamma_{\tau(\bar{u} d)} \\
+& \simeq(1+1+3) \Gamma_{\tau e}=5 \Gamma_{\tau e}
+\end{aligned}
+
+Mit $\tau=\hbar / \Gamma$ ergibt sich für die Lebensdauer des $\tau$-Leptons
+
+\tau_{\tau}=\frac{1}{5} \tau_{\mu}\left(\frac{m_{\mu}}{m_{\tau}}\right)^{5}
+
+Setzt man die numerischen Werte ein, so erhält man
+
+\tau_{\tau} \simeq 3.3 \times 10^{-13} \mathrm{~s},
+
+was angesichts der getroffenen Näherungen gut mit der experimentell gemessenen Lebensdauer $\tau_{\tau} \approx 2.9 \times 10^{-13} \mathrm{~s}$ übereinstimmt.
+
+## Aufgabe 2 Tiefinelastische Neutrinostreuung
+
+Die tiefinelastische Streuung von Leptonen an Nukleonen ermöglicht den Zugang zur inneren Struktur der Hadronen auf der Ebene ihrer fundamentalen Konstituenten. Abhängig von der Art des Leptons und der beteiligten Wechselwirkung können dabei unterschiedliche Aspekte der Nukleonstruktur untersucht werden.
+(a) Welche Gründe gibt es für die Verwendung von (Anti-)Neutrinos anstelle von Elektronen als Sonden für die Lepton-Nukleon-Streuung?
+(b) Um Neutrinos als Sonden zur Untersuchung der Struktur von Nukleonen verwenden zu können, müssen Neutrinostrahlen mit ausreichend hoher Energie und Intensität zur Verfügung stehen. Wie kann ein solcher Strahl erzeugt werden?
+(c) Zeichnen Sie die Feynman-Diagramme für die erlaubten Prozesse über den geladenen Strom (CC) bei der Streuung von $v_{\mu}$ (bzw. $\bar{v}_{\mu}$ ) an Nukleonen. Unter der Annahme, dass die Nukleonen in einem Festtarget-Experiment nur aus $u$ - und $d$-Valenzquarks bestehen, erwartet man für das Verhältnis $R$ der totalen Wirkungsquerschnitte der $v$ - N - und $\bar{v}$ - N -Streuung den Wert $R=3$, d.h. eine Unterdrückung des antineutrinoinduzierten Wirkungsquerschnitts gegenüber demjenigen der Neutrinos. Wie lässt sich dies qualitativ erklären? Experimentell findet man jedoch $R \approx 2$. Was folgt daraus für die Zusammensetzung des Nukleons?
+
+## Lösung: Tiefinelastische Neutrinostreuung
+
+(a) Welche Gründe gibt es für die Verwendung von (Anti-)Neutrinos anstelle von Elektronen als Sonden für die Lepton-Nukleon-Streuung?
+
+Mittels inelastischer Streuung von Leptonen an Nukleonen kann die innere Struktur der Nukleonen untersucht werden. Man erhält komplementäre Informationen durch Streuung von geladenen ( $e, \mu$ ) und neutralen Leptonen (insb. $v_{\mu}, \bar{v}_{\mu}$ ).
+
+- Geladene Leptonen wechselwirken elektromagnetisch. Sie liefern die mit dem Quadrat der elektrischen Ladung gewichtete Impulsverteilung der Quarks (hohe Genauigkeit) (vgl. Abb. 2, links).
+- Neutrinos wechselwirken schwach, koppeln an die immer gleich große schwache Ladung und liefern damit die Impulsverteilung der Quarks ohne Gewichtung (vgl. Abb. 2).
+(b) Um Neutrinos als Sonden zur Untersuchung der Struktur von Nukleonen verwenden zu können, müssen Neutrinostrahlen mit ausreichend hoher Energie und Intensität zur Verfügung stehen. Wie kann ein solcher Strahl erzeugt werden?
+
+Die Erzeugung von hochenergetischen, intensiven Neutrinostrahlen ist bisher nur für
+
+![This image depicts Feynman diagrams for particle interactions involving nucleons, showing an electron scattering off a nucleon via photon exchange on the left, and a muon neutrino interacting with a nucleon via W+ boson exchange on the right. It illustrates the fundamental processes of electromagnetic and weak interactions with quark-level transitions inside nucleons.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/4b6e737f-d8f7-48ab-976d-f32fa7942b00/d01b2b54-cf32-436c-a763-d5fc63bb8554-4_552_985_285_541.jpg)
+Abbildung 2
+
+$v_{\mu}, \bar{v}_{\mu}$ möglich. In Stichpunkten:
+-Protonen auf ein leichtes Target (z.B. Be) ⇒ Erzeugung von $\pi^{ \pm}, K^{ \pm}$
+
+- Ladungsselektion und Fokussierung durch ein "magnetisches Horn"
+- diese zerfallen im Flug zu $\pi^{-} \rightarrow \mu^{-}+\bar{v}_{\mu}$ bzw. $\pi^{+} \rightarrow \mu^{+}+v_{\mu}$
+- Nach Abschirmung zur Absorption von $\pi^{ \pm}, \mu^{ \pm}$(Eisen, Beton) bleibt ein $v_{\mu}, \bar{v}_{\mu}$-Strahl
+- durch den Zerfall z.B. $\mu^{-} \rightarrow e^{-}+\bar{v}_{e}+v_{\mu}$ ist ein $\bar{v}_{\mu}$ - Strahl etwas mit $\bar{v}_{\mathrm{e}}$ und $v_{\mu}$ kontaminiert! (gilt umgekehrt natürlich auch für $v_{m} u$ )
+
+Abbildung 3 zeigt beispielhaft einen Aufbau am SPS (Super-Proton-Synchroton) am CERN
+
+![This diagram depicts a neutrino beam production setup, showing the process from a proton accelerator (SPS) targeting a material to produce charged particles, which are then focused and allowed to decay in a vacuum tunnel, with charged particles absorbed before the resulting neutrino beam exits.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/4b6e737f-d8f7-48ab-976d-f32fa7942b00/d01b2b54-cf32-436c-a763-d5fc63bb8554-4_494_896_1640_557.jpg)
+Abbildung 3: Neutrinostrahl am SPS
+
+(c) Zeichnen Sie die Feynman-Diagramme für die erlaubten Prozesse über den geladenen Strom (CC) bei der Streuung von $v_{\mu}$ (bzw. $\bar{v}_{\mu}$ ) an Nukleonen. Unter der Annahme, dass die Nukleonen in einem Festtarget-Experiment nur aus $u$ - und $d$-Valenzquarks bestehen, erwartet man für das Verhältnis $R$ der totalen Wirkungsquerschnitte der $v-\mathrm{N}$ - und $\bar{v}-\mathrm{N}$-Streuung den Wert $R=3$, d. h. eine Unterdrückung des antineutrinoinduzierten Wirkungsquerschnitts gegenüber demjenigen der Neutrinos. Wie lässt sich dies qualitativ erklären? Experimentell findet man jedoch $R \approx 2$. Was folgt daraus für die Zusammensetzung des Nukleons?
+
+Die möglichen Wechselwirkungen über den geladenen Strom (CC) mit den Quarks und Antiquarks des Nukleons sind:
+$v+N \rightarrow X+\mu^{-}$: Aufgrund der Ladungserhaltung können Neutrinos über den CC nicht mit $u$ - oder $\bar{d}$-Quarks wechselwirken (siehe Abb. 4).
+
+![This diagram shows two Feynman diagrams for weak interaction processes involving a muon neutrino and an anti-muon, mediated by a W+ boson, resulting in either an up quark and a down quark or an anti-up quark and an anti-down quark.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/4b6e737f-d8f7-48ab-976d-f32fa7942b00/d01b2b54-cf32-436c-a763-d5fc63bb8554-5_544_1001_596_532.jpg)
+Abbildung 4: CC-Streuung von $v$ an Quarks und Antiquarks.
+
+$\bar{v}+N \rightarrow X+\mu^{+}$: Aufgrund der Ladungserhaltung können Antineutrinos über den CC nicht mit $\bar{u}$ - oder $d$-Quarks wechselwirken (siehe Abb .5 ).
+
+![This image depicts Feynman diagrams for weak interaction processes involving muons and quarks, specifically showing muon-antimuon annihilation into quark-antiquark pairs mediated by a W⁻ boson.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/4b6e737f-d8f7-48ab-976d-f32fa7942b00/d01b2b54-cf32-436c-a763-d5fc63bb8554-5_570_1027_1480_520.jpg)
+Abbildung 5: CC-Streuung von $\bar{v}$ an Quarks und Antiquarks.
+
+Da an der schwachen Wechselwirkung nur linkshändige Neutrinos (bzw. rechtshändige Antineutrinos) teilnehmen, muss die Helizität der beteiligten Zustände berücksichtigt werden.
+
+Neutrinostreuung an Quarks: ⇒ Die Spinerhaltung ist für alle Streuwinkel erfüllt, die Streuung ist isotrop.
+
+Antineutrinostreuung an Quarks: Bei $v \bar{q}$ - bzw. $\bar{v} q$-Streuung tritt eine Winkelabhängigkeit auf, wie in Abb. 6 dargestellt. Aufgrund der Drehimpulserhaltung ist die $\bar{v} q$-Streuung bei $180^{\circ} \mathrm{im}$ Schwerpunktsystem verboten. Die Streuung ist daher nicht isotrop, und der
+
+![This diagram depicts the allowed and forbidden spin (J) states for transitions between left-handed and right-handed leptons and quarks before and after a certain interaction or transformation, specifying which combinations of spin and particle chirality are permitted or forbidden.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/4b6e737f-d8f7-48ab-976d-f32fa7942b00/d01b2b54-cf32-436c-a763-d5fc63bb8554-6_588_785_306_648.jpg)
+Abbildung 6: Illustration der Winkelabhängigkeit bei der (Anti-)Neutrino-Quark-Streuung.
+
+Wirkungsquerschnitt zeigt eine Winkelabhängigkeit
+
+\sigma \sim\left(1+\cos \theta_{\mathrm{CM}}\right)^{2} .
+
+Dies führt zur erwarteten Unterdrückung der $\bar{v} q$-Streuung gegenüber der $v q$-Streuung. Experimentell findet man jedoch ein (schwach energieabhängiges) Verhältnis
+
+\frac{\sigma_{v N}^{\mathrm{tot}}}{\sigma_{\bar{v} N}^{\mathrm{tot}}} \simeq \frac{2}{1} .
+
+Daraus folgt, dass das Nukleon auch Antiquarks enthalten muss (bei denen der Wirkungsquerschnitt für $\bar{v}$-Streuung größer ist als für $v$-Streuung). Neben den drei Valenzquarks enthält das Nukleon daher auch Quark-Antiquark-Paare, die sogenannten Seequarks.
+
+## Aufgabe 3 : Z-Boson-Zerfall
+
+Ein ruhendes Z-Boson der Masse $M_{Z}=91.188 \mathrm{GeV}$ zerfällt in ein $\tau^{+} \tau^{-}$-Paar. Ein $\tau$-Lepton hat die Masse $m_{\tau}=1.777 \mathrm{GeV}$.
+a. Berechnen Sie Energie und Impuls der Zerfallsprodukte (in GeV).
+
+## Lösung:
+
+Natürliches Einheitensystem mit $\mathrm{c}=1$, Geschwindigkeit v jeweils in der Einheit c . 4Impuls eines Teilchens der Masse m:
+
+p=\left(p^{\mu}\right)=\left(p^{0}, \vec{p}\right)=(E, \vec{p})=(\gamma m, \gamma m \vec{v}) \quad \text { mit } \gamma=\frac{1}{\sqrt{1-\beta^{2}}}
+
+Bezeichnet man die Vierervektoren des Zerfalls $Z \rightarrow \tau_{1}+\tau_{2}$ mit
+
+\mathbf{p}_{z} \rightarrow \mathbf{p}_{1}+\mathbf{p}_{2} \quad \text { bzw. } \quad\left(p_{z}^{0}, \vec{p}_{z}\right) \rightarrow\left(p_{1}^{0}, \vec{p}_{1}\right)+\left(p_{2}^{0}, \vec{p}_{2}\right)
+
+so gelten folgende Beziehungen (Impulserhaltung $p_{z}=p_{1}+p_{2}$ )
+
+p^{2}=M_{Z}^{2}, \quad \overrightarrow{p_{z}}=0, \quad \mathbf{p}_{1}^{2}=\mathbf{p}_{2}^{2}=m_{\tau}^{2}, \quad \overrightarrow{p_{1}}=-\overrightarrow{p_{2}}, \quad p_{1}^{0}=p_{2}^{0}=\sqrt{m_{\tau}^{2}+\overrightarrow{p_{1}^{2}}}
+
+denn das Koordinatensystem, in dem das Z ruht, ist gerade das Schwerpunktssystem der $\tau$ (mit anderen Worten: die $\tau$ s fliegen back-to-back auseinander). Wegen der Impulserhaltung ist also
+
+\begin{gathered}
+p_{z}^{0^{2}}=M_{Z}^{2}=s=\left(\mathbf{p}_{1}+\mathbf{p}_{2}\right)^{2}=\left(p_{1}^{0}+p_{2}^{0}\right)^{2} \\
+p_{1}^{0}=p_{2}^{0}=\frac{\sqrt{s}}{2}=\frac{M_{Z}}{2}=45.594 \mathrm{GeV}
+\end{gathered}
+
+und
+
+\left|\overrightarrow{p_{1}}\right|=\left|\overrightarrow{p_{2}}\right|=\sqrt{\frac{M_{Z}^{2}}{4}-m_{\tau}^{2}}=45.559 \mathrm{GeV}
+
+b. Die mittlere Lebensdauer ruhender $\tau \mathrm{s}$ beträgt $2.910 \times 10^{-13} \mathrm{~s}$. Wie weit kommen die $\tau \mathrm{s}$ im Mittel?
+
+Lösung:
+Die Lebensdauer gilt im Ruhesystem eines $\tau$-Leptons.
+
+\begin{gathered}
+\gamma=\frac{E}{E_{0}}=\frac{M_{Z} / 2}{m_{\tau}}=\frac{M_{Z}}{2 \cdot m_{\tau}}=\frac{1}{\sqrt{1-\beta^{2}}}=25.66 \\
+\beta=\sqrt{1-\left(\frac{2 \cdot m_{\tau}}{M_{Z}}\right)^{2}}=0.980
+\end{gathered}
+
+Der Lebensdauer $\tau$ eines ruhenden $\tau$-Leptons (Eigenzeit) entspricht im Laborsystem das Zeitintervall (Koordinatenzeit) $\mathrm{t}=\gamma \tau$. Während dieser Zeit durchfliegt das Lepton die Wegstrecke
+
+x=|\vec{v}| \cdot t=\beta \cdot c \cdot \gamma \cdot \tau=\sqrt{1-\left(\frac{2 \cdot m_{\tau}}{M_{Z}}\right)^{2}} \cdot c \cdot \frac{M_{Z}}{2 \cdot m_{\tau}} \cdot \tau=2.188 \mathrm{~mm}
+
+Man erhält dann mit den obigen Zahlenwerten: $\mathrm{x} \simeq 2.188 \mathrm{~mm}$.
+

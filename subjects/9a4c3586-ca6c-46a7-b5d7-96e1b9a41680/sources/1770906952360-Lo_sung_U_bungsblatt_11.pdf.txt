@@ -1,0 +1,100 @@
+# Übung zur Vorlesung <br> Physik der kondensierten Materie 1 
+
+WiSe 2025/2026
+Blatt 11
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und -materialien
+Johannes Schmuck
+
+Themen: leeres Gitter, Tight-Binding-Model, Fermi Surface
+
+### 11.1 Warm Up
+
+(a) Stellen Sie sich ein zweidimensionales quadratisches Gitter vor, in dem Elektronen nur zu den nächsten Nachbarn 'hüpfen' können, beschrieben durch ein Tight-Binding-Modell.
+
+- Wenn eine der Hopping-Richtungen (z.B. entlang x ) nach und nach unterdrückt wird (d.h. das Hopping wird viel schwächer als entlang y), wie würden sich die elektronischen Eigenschaften ändern? Diskutieren Sie die erwartete Form der Energiebänder und die Dimensionalität der Elektronenbewegung.
+- Angenommen, die Hopping-Amplitude wird entlang einer Richtung komplex, d.h. $t \rightarrow t \cdot e^{i \phi}$. Welche physikalischen Phänomene könnten dadurch auftreten? Denken Sie an Bandtopologie und mögliche Ströme.
+Für ein Quadratgitter mit nur nächsten Nachbarn gilt:
+$\varepsilon(\mathbf{k})=-2 t_{x} \cos \left(k_{x} a\right)-2 t_{y} \cos \left(k_{y} a\right)$.
+- Wenn $t_{x}=t_{y}$, entsteht ein isotropes 2D-Band mit geschlossenen FermiFlächen.
+Für $t_{x} \ll t_{y}$, wird jedoch die Dispersion in $k_{x}$-Richtung flach: $\varepsilon(\mathbf{k}) \approx-2 t_{y} \cos \left(k_{y} a\right)$, d.h. Elektronen bewegen sich fast nur noch entlang $y$.
+
+Konsequenz: quasi-1D-Verhalten, Leitfähigkeit stark anisotrop ( $\sigma_{x} \ll \sigma_{y}$ ). Fermi-Flächen werden von geschlossenen Kurven (2D) zu offenen Linien (1D). Dies entspricht einer Änderung der Dimensionalität der Bewegung.
+
+- Eine einheitliche Phase in einer Richtung kann meist durch eine GaugeTransformation entfernt werden. Physikalisch ändert sich das Spektrum nicht,
+außer bei speziellen Randbedingungen (z.B. Ringe ⇒ persistente Ströme). Wenn jedoch um ein Plaquette eine endliche Phase akkumuliert wird $\Phi= \sum \varphi_{i j} \neq 0$, so entspricht dies einem effektiven magnetischen Fluss. Mögliche Folgen: Rekonstruktion der Bänder (Hofstadter-Spektrum), nichttriviale Bandtopologie (Chern-Zahlen ungleich null), Auftreten von Randströmen (chiral edge states) und quantisierte Hall-Leitung.
+(b) Welche physikalische Größe entscheidet in einem Material mit einer kleinen Bandlücke, ob es sich dabei um einen Leiter oder einen Halbleiter ist? Welche experimentellen Möglichkeiten giebt es auf diesen einzuwirken? Die entscheidende physikalische Größe ist die Lage des Fermi-Niveaus $E_{F}$ relativ zur Bandlücke. Befindet sich $E_{F}$ innerhalb des Valenz- oder Leitungsbandes, so besitzt das Material freie Ladungsträger und verhält sich wie ein Leiter. Liegt $E_{F}$ hingegen innerhalb der Bandlücke, so ist das Material bei $T=0$ nichtleitend und zeigt bei endlicher Temperatur aufgrund thermischer Anregungen von Elektronen über die kleine Bandlücke ein typisches Halbleiterverhalten. Experimentell lässt sich der Charakter auf verschiedene Weisen beeinflussen. Durch gezielte Dotierung kann das Fermi-Niveau in das Leitungs- oder Valenzband verschoben werden. Auch die Temperatur spielt eine wichtige Rolle, da sie die Zahl der thermisch angeregten Elektronen bestimmt. Mechanischer Druck oder Dehnung können die Bandlücke verändern und im Extremfall sogar schließen, was zu einer Metallisierung führt. Ein äußeres elektrisches Feld, etwa in einem FeldeffektTransistor, erlaubt ebenfalls die Verschiebung von $E_{F}$. Schließlich können auch optische Anregungen mit Photonenenergien oberhalb der Bandlücke Elektron-Loch-Paare erzeugen und so die Leitfähigkeit erhöhen.
+(c) Wie sieht die Fermifläche in einem ein- und zweidimensionalen System im reziproken Raum aus?
+
+FERMIFLÄCHE IM REZIPROKEN RAUM
+![This diagram depicts the Fermi surface representations in one-dimensional (1D) and two-dimensional (2D) momentum space, showing discrete Fermi points at ±k_F in 1D and a circular Fermi surface in 2D.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-2_378_678_1812_438.jpg)
+
+## (d) Kreuze die richtigen Antworten an:
+
+[ ] Jedes Band kann zwei Elektronen pro Einheitszelle aufnehmen; daher ist ein Material mit einer geraden Anzahl von Elektronen ein Metall, während eines mit einer ungeraden Anzahl von Elektronen ein Isolator sein kann. Falsch
+[ ] In Metallen ist die Fermifläche geschlossen und bestimmt viele elektronische Eigenschaften (z. B. Leitfähigkeit, spezifische Wärme). Richtig
+[ ] Bei $T=0 \mathrm{~K}$ ist die Fermifläche vollständig leer. Falsch
+
+### 11.2 Quadratisches ebenes Gitter \& reduziertes Zonenschema
+
+(a) Konstruieren Sie die ersten drei Brillouin-Zonen im reduzierten und ausgedehnten Zonenschema eines ebenen quadratischen Gitters (Gitterkonstante a) und markieren Sie für die ersten drei Energiebänder eines zweidimensionalen freien Elektronengases die von Elektronen besetzten Zustände. Nehmen Sie dazu die Energiedispersion von freien Elektronen und den Radius der Fermi-Kugel zu $k_{F}=1.75 \pi / a$ an. Was ändert sich, wenn anstelle eines freien Elektronengases ein Elektronengas betrachtet wird, welches sich in einem schwachen periodischen Potenzial befindet?
+Antwort: Für ein quadrarisches Gitter, kann ein entsprechendes reziprokes Gitter sofort konstruiert werden mit dem Gitterpunktabstand $b=2 \pi / a$. Die ersten drei Brillouin-Zonen werden mittels der Konstruktionsvorschrift der Wigner-Seitz-Zelle erhalten (ausgedehntes Zonenschema). Wenn nun zeichnerisch genau gearbeitet wurde kann der Radius $k_{F}$ der Fermi-Kugel direkt eingezeichnet werden so wie untenstehender Abbildung a dargestellt. Da bekannt ist, dass der Abstand vom Zentrum der ersten BZ zum Rand $\pi / a$ ist, reicht die eingezeichnete Fermi Kugel mit $k_{F}=1.75 \pi / a$ über den Rand der ersten Brillouinzone hinaus. Für das reduzierte Zonenschema ergibt sich die Darstellung in untenstehender Abbildung. Die rechte Abbildung veranschaulicht nochmal die Besetzung der entsprechenden Brillouinzonen entlang der $k_{x}$-Richtung. Bei dieser Betrachtung wird deutlich, dass das reduzierte Zonenschema den Vorteil bietet etwaige nicht besetzte Zustände in der ersten Brillouinzone sofort zu identifizieren wohingegen eine eindimensionale E(k)-Darstellung den Eindruck vermittelt alle Zustände in der ersten BZ seien besetzt.
+![The diagram depicts the Fermi surface and energy band structure in a two-dimensional square lattice, showing the evolution of the Fermi surface shape at different energy levels (1BZ, 2BZ, 3BZ) and the corresponding energy dispersion relation. It illustrates how the Fermi wave vector k_F and energy contours change within the first Brillouin zone and higher zones.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-4_937_1503_322_412.jpg)
+(b) Wir betrachten nun das quadratische Gitter mit Gitterkonstante a und einer Tight-Binding Bandstruktur der Elektronen, $E_{k}=-t\left[\cos \left(k_{x} \cdot a\right)+\cos \left(k_{y} \cdot a\right)-2\right]$. Wo liegen das energetische Minimum und das Maximum des Bandes? Wie groß ist die Bandbreite in Einheiten von t?
+Antwort: Das Bandminimum liegt im Zentrum der Brillouin-Zone bei $k=(0,0)$ mit dem Wert $E_{\text {min }}=-t[\cos (0 \cdot a)+\cos (0 \cdot a)-2]=-t[1+1-2]=0$. Das Bandmaximum liegt bei $k=(\pi / a, \pi / a)$ mit $E_{\text {max }}=-t[\cos (\pi / a \cdot a)+\cos (\pi / a \cdot a)-2]=-t[-1-1-2]=4 t$. Die Banbreite ist demnach $W=E_{\text {max }}-E_{\text {min }}=4 t$.
+(c) Zeichnen Sie qualitativ den Verlauf des Bandes längs $(0,0) \rightarrow(\pi / a, 0) \rightarrow (\pi / a, \pi / a) \rightarrow(0,0)$. Antwort: Durch Einsetzten der gegebenen k-Werte können die entsprechenden Energien in Einheiten von t bestimmt werden und die Form der Bandstruktur qualitativ eingezeichnet werden: $E(0,0)=0 t, E(\pi / a, 0)= 2 t, E(\pi / a, \pi / a)=4 t$
+![This diagram depicts the energy dispersion relation for a one-dimensional tight-binding model, showing the energy E normalized by the hopping parameter t as a function of the wave vector ka/π.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-5_571_719_343_431.jpg)
+
+### 11.3 Au(111) Einkristall
+
+![This image depicts two Fermi surface maps showing the intensity distribution of electronic states as a function of parallel momentum (kx, ky) in reciprocal space for a material, illustrating its electronic band structure at the Fermi level.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-5_671_1453_1104_298.jpg)
+
+Die Abbildung zeigt die Fermi-Oberfläche von $\mathrm{Au}(111)$, sie stammt aus ARPES Messungen (C. Tusche et al. Ultramicroscopy 206 (2019), https://doi.org/10.1016/j.ultramic.2019.112815). Zwei Merkmale werden im Folgenden besprochen: Die kreisförmige Kontur, die einem Oberflächenzustand entstammt und die hexagonale Kontur aus der Kristallstruktur. Die kreisförmige Fermi-Kontur hat einen Radius von $k_{F}=0.17 \AA^{-1}$.
+(a) Berechne die Fermiwellenlänge sowie die zwei-dimensionale Elektronendichte $n_{2 D}$. Wieso benutzen wir die zwei-dimensionale Elektronendichte?
+Antwort: Oberflächenzustände gibt es nur an der Schnittfläche (2D) des Einkristalls.
+
+$$
+\begin{aligned}
+& \lambda_{F}=\frac{2 \pi}{k_{F}}=\frac{6.283185307}{0.17} \AA \approx 36.96 \AA \approx 3.70 \mathrm{~nm}, \\
+& n_{2 D}=\frac{k_{F}^{2}}{2 \pi}=\frac{0.0289}{6.283185307} \AA^{-2} \approx 0.00460 \AA^{-2} \approx 4.6 \times 10^{13} \mathrm{~cm}^{-2} .
+\end{aligned}
+$$
+
+(b) Beschreibe woher die detektierte Elektronenverteilung stammt? Welche Symmetrien liegen im Kristall wohl offensichtlich vor? Wie verhalten sich die Oberflächenzustände? Wie sehen wohl de zugehörigen Bänder aus?
+Antwort:
+Zentraler Kreis: Zeigt einen isotropen, fast frei-Elektronen-ähnlichen Oberflächenzustand (oft vom Shockley-Typ). Seine Dispersion hängt hauptsächlich von $|k| \mathrm{ab}$, sodass Flächen gleicher Energie kreisförmig sind. Oder anders gesagt: Der oberflächenlokalisierte Zustand erfährt ein schwaches in-plane periodisches Potential und stammt oft aus s-ähnlichem Charakter, was eine annähernd isotrope effektive Masse und kreisförmige Konturen ergibt.
+Äußere, hexagonal-ähnliche Konturen: Entstehen aus bulk-projizierten Zuständen oder der Bulk-Bandstruktur, die in die Oberflächen-Brillouin-Zone projiziert wird. Sie werden stark vom Kristallpotential und der Gitter-Symmetrie beeinflusst und zeigen daher hexagonale Anisotropie (fcc(111)).
+(c) Erkläre nun wie man aus den gemessenen ARPES Daten die effektive Masse erhält.
+
+Antwort:
+Die ARPES-Daten müssen nahe $\Gamma$ einer Parabel angefittet werden. Dafür müssen die Energien der Elektronen gegen $k$ geplottet werden und die Krümmungen der erhaltenen Elektronenverteilungen angefittet werden. Für parabolische Dispersion gilt nämlich $\frac{d^{2} E}{d k^{2}}=\frac{\hbar^{2}}{m^{*}}$.
+(d) Berechne nun die effektive Masse $m^{*}$ und die Fermigeschwindigkeit $v_{F}$ unter der Annahme das Bandminimum liegt $\Delta E=0.5 \mathrm{eV}$ unterhalb der Fermienergie.
+
+\begin{aligned}
+& \Delta E=\frac{\hbar^{2} k_{F}^{2}}{2 m^{*}} \quad \Rightarrow \quad m^{*}=\frac{\hbar^{2} k_{F}^{2}}{2 \Delta E} \text { mit } \Delta E=0.50 \mathrm{eV} \\
+& m^{*}=\frac{3.215 \times 10^{-50}}{1.60218 \times 10^{-19}} \mathrm{~kg} \approx 0.22 m_{e} v_{F}=\frac{\hbar k_{F}}{m^{*}} \approx 8.94 \times 10^{5} \mathrm{~m} \mathrm{~s}^{-1}
+\end{aligned}
+
+### 11.4 Tight-Binding Model
+
+In den 1980er Jahren wurde eine Familie von Oxiden entdeckt, die sich als supraleitend mit wesentlich höheren kritischen Temperaturen als Metalle und Legierungen erwiesen. Die Verbindungen in dieser Oxidfamilie enthalten alle Ebenen aus Kupfer und Sauerstoff, wobei die Cu-Atome an den Knoten eines quadratischen Gitters
+sitzen. Einige Mitglieder dieser Familie enthalten zudem Kupfer-Sauerstoff-Ketten. Ein Beispiel hierfür ist $\mathrm{YBa}_{2} \mathrm{Cu}_{3} \mathrm{O}_{7}$. Ziel ist es, die Bandstruktur von $\mathrm{YBa}_{2} \mathrm{Cu}_{3} \mathrm{O}_{7}$ auf vereinfachte Weise unter Verwendung der Tight-Binding-Näherung zu untersuchen. Betrachten Sie eine isolierte Kette und Ebene von Kupfer- und Sauerstoffatomen. Sei $a$ der $\mathrm{Cu}-\mathrm{Cu}-\mathrm{Abstand}$ und $\mathbf{y}$ der Einheitsvektor entlang der Kette.
+![This diagram depicts the crystal lattice structure of copper oxide (CuO), showing the arrangement of copper (Cu) and oxygen (O) atoms in a two-dimensional plane with lattice constant "a".](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-7_278_362_769_1052.jpg)
+![This diagram depicts the crystal structure of the high-temperature superconductor YBa2Cu3O7, showing the arrangement of copper-oxygen chains and planes, as well as the positions of barium and yttrium atoms within the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-7_594_482_1084_408.jpg)
+![This diagram depicts the crystal structure of a material, showing the arrangement of atoms in chains and planes across four distinct levels. It illustrates the spatial organization of two types of atoms (represented by red and blue spheres) within a three-dimensional lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-7_592_428_1091_898.jpg)
+(a) Verwenden Sie die Abbildung, um das Bravais-Gitter und die Basis einer Kupfer-Sauerstoff-Kette anzugeben.
+(b) Wie lautet das zugehörige reziproke Gitter? Geben Sie die entsprechende erste Brillouin-Zone an.
+(c) Geben Sie die Form der Bloch-Funktionen in der Tight-Binding-Näherung an. Sei $k$ der entsprechende Wellenvektor.
+(d) Betrachten Sie nur die nächsten Nachbarn und berechnen Sie die Dispersionsrelation $E_{C}(k)$. Drücken Sie das Ergebnis in Form der Matrixelemente aus:
+$E_{C}^{0}=\int d^{3} r \phi_{1}(\mathbf{r}) \hat{H}_{C} \phi_{1}(\mathbf{r}), \quad V_{\text {chain }}=V=-\int d^{3} r \phi_{1}(\mathbf{r}) \hat{H}_{C} \phi_{1}(\mathbf{r}+a \mathbf{y})$
+wobei y der Einheitsvektor entlang der Kette ist und $\hat{H}_{C}$ der Hamiltonoperator eines Elektrons in der Kette.
+(e) Zeichnen Sie die Dispersionsrelation unter der Annahme $V>0$. Wenn die Elektronenbesetzung dieses Bandes ein Elektron pro Einheitszelle beträgt, wie sieht dann die Fermi-Oberfläche aus? Was passiert, wenn die Elektronenbesetzung sehr gering ist? Geben Sie in diesem Fall die effektive Masse $m^{*}$ der Elektronen an.
+a) Das Bravais-Gitter einer Kette ist die Menge der Punkte $R_{n}=n a \mathbf{y}$, wobei $n \in \mathbb{Z}$ ist und $\mathbf{y}$ ein Einheitsvektor entlang der Kettenachse. Die Basis besteht dann aus einem Kupferatom bei $R_{0}=0$ und einem Sauerstoffatom bei $a \mathbf{y} / 2$.
+b) Das reziproke Gitter ist $K_{p}=(2 \pi / a) p \mathbf{y}$, wobei $p \in \mathbb{Z}$. Die erste BrillouinZone ist das Intervall $[-\pi / a,+\pi / a]$.
+c) Unter Verwendung der vorher eingeführten Notation gilt
+$\psi_{k}(\mathbf{r})=\frac{1}{\sqrt{N_{n}}} \sum_{\ell} e^{i k \ell a} \phi_{1}(\mathbf{r}-\ell a \mathbf{y})$, wobei $N_{n}$ die Anzahl der Einheitszellen ist.
+d) Es ergibt sich $E_{C}(k)=E_{C}^{0}-2 V \cos k a$.
+e) Beschränkt auf die erste Brillouin-Zone, ist diese Relation dargestellt. Die Funktion $E_{C}(k)$ ist symmetrisch unter $k \longrightarrow \frac{\pi}{a}-k, \quad E_{C}(k) \longrightarrow 2 E_{C}^{0}-E_{C}(k)$. Die Hälfte der Zustände liegt also im Teilintervall $[-\pi / 2 a,+\pi / 2 a]$. Ein Elektron pro Einheitszelle entspricht einem halb gefüllten Band, und die FermiEnergie ist dann $E_{C}^{0}$. Die Fermifläche reduziert sich auf die beiden Punkte $k=+\pi / 2 a$ und $k=-\pi / 2 a$. Bei sehr geringer Besetzung wird nur der untere Bereich des Bandes in der Nähe von $k \approx 0$ besetzt. Dann gilt $E_{C}(k) \simeq E_{C}^{0}-2 V\left(1-\frac{1}{2} k^{2} a^{2}\right)$, woraus folgt $m^{*}=\frac{\hbar^{2}}{2 V a^{2}}$.
+![This diagram depicts the energy dispersion relation \( E_c(k) \) for electrons in a one-dimensional crystal lattice, showing how the conduction band energy varies with the wave vector \( k \) within the first Brillouin zone from \(-\frac{\pi}{a}\) to \(+\frac{\pi}{a}\). It illustrates the formation of an energy band with a band gap influenced by the potential \( V \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f61868a-daff-4aa9-ae44-8cb5ddd98af1/b7dc5f3f-da00-4344-8e62-be0d87a7461f-9_609_968_391_401.jpg)
+

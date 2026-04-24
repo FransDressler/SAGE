@@ -1,0 +1,198 @@
+## lonische Bindung
+
+## z.B. NaCl : fcc-Gitter mit Basis aus $\mathrm{Cl}^{-}$und $\mathrm{Na}^{+}$Ion
+
+![This image depicts the crystal structure of sodium chloride (NaCl), showing the arrangement of Na+ and Cl- ions in the lattice (a and b) and a photograph of NaCl crystals (c).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-01_889_1667_693_331.jpg)
+c
+
+Abb. 1.21: (a) die Natriumchloridstruktur, jedes Na -Atom ist von 6 Cl-Atomen umgeben und umgekehrt. In (b) ist ein Modell der NaClStruktur mit realistischen Ionengrößen gezeigt. Das $\mathrm{Cl}^{-}$-Ion ist wesentlich größer als das $\mathrm{Na}^{+}$-Ion ( $r_{\mathrm{Na}^{+}}=0.95 \AA$, $r_{\mathrm{Cl}^{-}}=1.81 \AA$ ). (c) zeigt einen natürlichen NaCl-Kristall (Foto: Wlodi, Polen). Man erkennt die kubische Form.
+
+## Konturlinien der Elektronendichteverteilung in NaCl
+
+![This diagram depicts electron density contour plots for the sodium chloride (NaCl) ionic pair, showing the electron density distribution around the sodium cation (Na⁺) and chloride anion (Cl⁻) both individually and when combined in the NaCl compound. The contours illustrate changes in electron density due to ionic interaction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-02_1217_1334_458_263.jpg)
+
+```
+Cl- hat Elektronenkonfiguration von Argon:
+... 3s }\mp@subsup{}{}{2}3\mp@subsup{p}{}{6
+Na+ hat Elektronenkonfiguration von Neon:
+... 2s 2 2p }\mp@subsup{}{}{6
+```
+
+
+## Madelung-Konstante
+
+z.B. NaCl : fcc-Gitter mit Basis aus $\mathrm{Cl}^{-}$und $\mathrm{Na}^{+}$Ion
+![This diagram depicts the crystal lattice structure of sodium chloride (NaCl), showing the arrangement of sodium ions (Na⁺) and chloride ions (Cl⁻) in the cubic unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-03_1142_909_628_338.jpg)
+
+Bei der NaCl-Struktur (fcc) ist ein $\mathrm{Na}^{+}$-Ion im Abstand R von $6 \mathrm{Cl}^{-}$-Ionen umgeben, es folgen:
+$12 \mathrm{Na}^{+}$-Ionen im Abstand $\sqrt{2} \mathrm{R}$,
+$8 \mathrm{Cl}^{-}$-Ionen im Abstand $\sqrt{3} \mathrm{R}$,
+$6 \mathrm{Na}^{+}$-Ionen im Abstand 2R,
+$24 \mathrm{Na}^{+}$-Ionen im Abstand $\sqrt{5} \mathrm{R}$,
+⋯
+$\alpha=\sum_{k=1}^{\infty}(-1)^{k+1} \frac{n_{k}}{c_{k}}=\frac{6}{1}-\frac{12}{\sqrt{2}}+\frac{8}{\sqrt{3}}-\frac{6}{2}+\frac{24}{\sqrt{5}} \pm \ldots \approx 1,7476$
+
+## lonische Bindung: Potenzialverlauf
+
+![This diagram depicts the interatomic potential energy curve for NaCl as a function of the interatomic distance \(R\), showing the total potential \(\tilde{U}\), the attractive and repulsive components, and the equilibrium bond length \(R_0\) where the potential energy is minimized.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-04_1305_1729_454_273.jpg)
+Abb. 3.8: Potenzialverlauf bei der ionischen Bindung. Gezeigt ist die Energie $\widetilde{U}$ pro Ionenpaar eines NaCl-Kristalls, die sich aus der Madelung-Energie und dem abstoßenden Beitrag zusammensetzt.
+
+## Kovalente Bindung $\mathrm{H}_{2}{ }^{+}$-Molekülion
+
+![This diagram depicts the spatial wavefunctions (Ψ) of a two-atom system, showing the bonding (Ψ^s, bindend) and antibonding (Ψ^a, antibindend) molecular orbitals as functions of the interatomic distance (r/a_B). It illustrates how the wavefunctions combine constructively or destructively around atoms A and B to form bound and anti-bound states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-05_840_1160_179_1565.jpg)
+![This diagram depicts the geometric configuration and coordinate system for the positronium molecule (Ps2), showing the positions and distances between two positrons (e⁺) labeled A and B, and an electron (e⁻), with vectors and distances defining their spatial relationships.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-05_352_528_130_2773.jpg)
+![This diagram depicts the probability density functions (|Ψ|²) of the symmetric (|Ψ^s|²) and antisymmetric (|Ψ^a|²) molecular orbitals for a diatomic molecule, showing the electron distribution around two nuclei labeled A and B as a function of the distance r normalized by the Bohr radius (a_B).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-05_835_1186_1036_1547.jpg)
+
+## Kovalente Bindung $\mathrm{H}_{2}{ }^{+}$-Molekülion
+
+![This diagram depicts the energy level curves for the hydrogen molecular ion (H₂⁺) as a function of internuclear distance R, showing the bonding (E^s) and antibonding (E^a) molecular orbital energies derived from the Linear Combination of Atomic Orbitals (LCAO) method. It illustrates the formation of a stable bond at the equilibrium distance R₀ where the bonding energy curve reaches its minimum.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-06_1097_1405_388_114.jpg)
+Abb. 3.12: Energiefunktionen $E^{s}(R)$ und $E^{a}(R)$ für symmetrische und antisymmetrische Elektronendichteverteilungen des $\mathrm{H}_{2}^{+}$-Molekülions.
+
+![This diagram depicts the spatial wavefunctions for the bonding (Ψ^s) and antibonding (Ψ^a) molecular orbitals formed by the combination of atomic orbitals from two atoms (A and B) in a diatomic molecule, showing how the wavefunctions vary with distance (r) relative to the atomic positions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-06_840_1173_179_1552.jpg)
+![This diagram depicts the probability density functions (|Ψ|²) of symmetric (|Ψ^s|²) and antisymmetric (|Ψ^a|²) molecular orbitals as a function of distance (r) normalized by the Bohr radius (a_B) for a diatomic molecule with nuclei labeled A and B. It shows the spatial distribution of electron density in bonding and antibonding states between the two nuclei.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-06_837_1192_1036_1541.jpg)
+![This diagram depicts the geometric arrangement and coordinate system for a positron-electron-positron (e⁺-e⁻-e⁺) system, showing distances between particles and reference points used in calculations of their interactions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-06_352_530_130_2771.jpg)
+
+$$
+\begin{gathered}
+\Psi^{s}=\frac{1}{\sqrt{2+2 S_{A B}}}\left(\phi_{A}+\phi_{B}\right) \\
+\Psi^{a}=\frac{1}{\sqrt{2-2 S_{A B}}}\left(\phi_{A}-\phi_{B}\right) \\
+S_{A B}=\Re \int \phi_{A}^{*}\left(\mathbf{r}_{A}\right) \phi_{B}\left(\mathbf{r}_{B}\right) d^{3} r
+\end{gathered}
+$$
+
+aus Marx, Gross
+A. Holleitner WS 25/26
+
+![The image depicts the covalent bonding in an H₂ molecule, showing the potential energy curve as a function of internuclear distance and the electron density distribution at various distances (R) between the two hydrogen nuclei. It also includes a schematic of the molecular geometry and electron positions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-07_1561_2981_106_325.jpg)
+Abb. 3.15 aus Marx, Gross
+
+## Hybrid-Orbitale (hier: $\mathbf{s p}^{\mathbf{1}}$ )
+
+![This diagram depicts the combination of atomic orbitals, specifically showing the formation of a molecular orbital (Φ) as the normalized sum of an s orbital (ϕ_s) and a p orbital (ϕ_p), with their respective wavefunctions plotted and the resulting constructive and destructive interference regions highlighted.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-08_1272_1850_452_595.jpg)
+Abb. 3.18: Schematische Darstellung der Bildung einer Linearkombination von $s$ - und $p$-Orbitalen zur Bildung eines $s p$-Hybridorbitals.
+
+## Hybrid-Orbitale (hier: $\mathbf{s p}^{\mathbf{2}}$ )
+
+![This image depicts the angular distribution plots of the three sp² hybrid orbitals (Φ₁^sp², Φ₂^sp², Φ₃^sp²) and compares them with the shapes and orientations of the atomic s and p orbitals (s, p_x, p_y, p_z). It shows how the sp² hybrid orbitals are formed by combining the s and p orbitals in specific spatial directions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-09_1358_1647_380_752.jpg)
+Abb. 3.20 aus Gross, Marx
+
+A. Holleitner WS 25/26
+
+## Hybrid-Orbitale (hier: $\mathbf{s p}^{\mathbf{3}}$ )
+
+![This diagram depicts the sp³ hybridization of the carbon atom in a methane (CH₄) molecule, showing the tetrahedral arrangement of four sp³ hybrid orbitals with bond angles of 109.47° between the carbon and hydrogen 1s orbitals.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-10_1035_955_452_465.jpg)
+![This diagram depicts the geometric arrangement of atoms in a methane (CH4) molecule, showing the tetrahedral structure with carbon (C) at the center and hydrogen (H) atoms at the vertices, including bond lengths and angles.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-10_1009_1013_492_1759.jpg)
+
+## $\mathbf{s p}^{\mathbf{3}}$-Hybridisierung
+
+![This image depicts the shapes and orientations of atomic orbitals: (a) a p orbital with lobes of opposite phase, (b) an s orbital with spherical symmetry, and (c) a set of three mutually perpendicular d orbitals.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-11_754_2173_515_216.jpg)
+Bild 2.10: Veranschaulichung der Ausbildung der $s p^{3}$-Hybridorbitale. a) Das $s$-Orbital befindet sich in der Mitte, die beiden „Keulen“ des $p_{y}$-Orbitals sind links und rechts davon zu sehen. b) Hybridorbital in [111]-Richtung. c) Orbitale des tetraederförmigen $s p^{3}$-Hybrids. Zum besseren Erkennen der geometrischen Verhältnisse sind die Keulen schlanker gezeichnet, als sie tatsächlich sind.
+
+![This diagram depicts the crystal structure of diamond, showing the tetrahedral arrangement of carbon atoms bonded covalently in a cubic lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-11_600_636_617_2589.jpg)
+Tetraedrische Bindung in Diamant (C: $2 \mathrm{~s}^{2} 2 \mathrm{p}^{2}$ ), Silizium (Si: $3 s^{2} 3 p^{2}$ ), und Germanium (Ge: $4 \mathrm{~s}^{2} 4 \mathrm{p}^{2}$ ). $109.47^{\circ}$ Bindungswinkel
+
+## Kovalente Bindung
+
+![This diagram depicts the electron density distribution in a silicon crystal, showing the spatial arrangement and bonding between silicon atoms. It illustrates how electron density varies around the Si atoms, indicating covalent bonding regions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-12_961_1668_505_884.jpg)
+Abbildung 11.47 Elektronendichteverteilung im Siliziumkristall
+
+## lonische vs. kovalente Bindung
+
+Sehr viele Bindungen sind gemischte Bindungen.
+
+Grobe Abschätzung des ionischen Charakters in \%:
+
+\left(1-\exp \frac{-\left(\chi_{A}-\chi_{B}\right)^{2}}{4}\right) \cdot 100 \%
+
+mit $\chi_{A}$ und $\chi_{B}$ die Elektronegativitäten der beiden Elemente.
+
+Beispiel: RbF
+
+\begin{array}{ll}
+\chi_{R b} & =0.486 \\
+\chi_{F} & =3.40
+\end{array}
+
+\left(1-\exp \frac{-(3.4-0.486)^{2}}{4}\right) \cdot 100 \%=88.1 \%
+
+/Contribution from the Gates Chemical Laboratory, California Institute of Technology, No. 326]
+the NATURE OF THE CHEMICAL BOND. IV. THE ENERGY OF SINGLE BONDS AND THE RELATIVE ELECTRONEGATIVITY OF ATOMS
+
+## By Linus Pauling
+
+## Received May 18, 1932
+
+|  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | Halogene | 18 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 <br> 1 Wasserstoff 0,755 |  | Atomic | Farbe |  |  |  | Darstellung |  |  |  |  |  | Stickstoffgrup alkogene |  |  |  |  | 2 <br> He Helium |
+|  |  | Symbol Name Gewicht |  | Minimum | ![](https://cdn.mathpix.com/cropped/d58c84bb-1b39-4b6d-aebe-8b11aad305df-14.jpg?height=34&width=136&top_left_y=332&top_left_x=996) | □ | ![](https://cdn.mathpix.com/cropped/d58c84bb-1b39-4b6d-aebe-8b11aad305df-14.jpg?height=206&width=203&top_left_y=316&top_left_x=1353) |  |  | ↑ |  |  |  |  |  |  |  |  |
+|  |  | 4 |  |  |  |  |  |  |  |  |  |  | 5 B | 6 | 7 | 8 | 9 |  |
+| 2 | 3 Lithium | Be |  |  |  |  |  |  |  |  |  |  |  |  |  | Sauerstoff | Fluor | Ne |
+|  | ![](https://cdn.mathpix.com/cropped/d58c84bb-1b39-4b6d-aebe-8b11aad305df-14.jpg?height=34&width=101&top_left_y=491&top_left_x=380) | 0 |  | Maximum | Maximum | □ |  |  |  |  |  |  | Bor 0,277 | Kohlenstoff | Stickstoff | ${ }_{1.46}^{\text {Sauers }}$ | Fluor 340 | Neon |
+|  |  | 12 Mg |  |  |  | ![](https://cdn.mathpix.com/cropped/d58c84bb-1b39-4b6d-aebe-8b11aad305df-14.jpg?height=87&width=67&top_left_y=537&top_left_x=1148) | Linearität |  |  | Logarithmische |  |  |  |  | 15 P Phosphor |  |  |  |
+| 3 |  |  |  | Unbekannt □ |  |  |  |  |  |  |  |  |  |  |  |  |
+|  | 11 Na Natrium 0,547 | 0 |  |  |  |  |  | ![](https://cdn.mathpix.com/cropped/d58c84bb-1b39-4b6d-aebe-8b11aad305df-14.jpg?height=60&width=989&top_left_y=613&top_left_x=1260) |  |  |  |  | 13 <br> Al <br> Aluminium 0,440 | 14 <br> Si Silicium 1,385 |  | 16 S Schwefel 2,07 | 17 Cl Chlor 3.62 | 18 Ar Argon |
+|  |  |  | 21 | 22 | 23 | 24 | 25 | 26 | 27 |  |  |  | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 |  |
+| 4 | K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni | Cu | Zn | Ga | Ge | As | Se | Br | Kr |
+|  | Kalium | Calcium | 0,188 | Scandium | Vanadium | 0,666 | Mangan | ${ }_{0163}$ | Cobalt | 1,16 | 1,227 | Zink | Gallium | Germanium ${ }_{1,23}^{\substack{\text { Germa } \\ 1,23}}$ | Arsen 0,81 | Selen 2,02 | ${ }^{\text {Brom }}$ 3,364 | ${ }_{0}^{\text {Krypton }}$ |
+|  | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 |
+| 5 | Rb | Sr | Y | Zr | Nb | Mo | Tc | Ru | Rh | Pd | Ag | Cd | In | Sn | Sb | Te | I | Xe |
+|  | $\underbrace{\text { Rubidum }}_{0.486}$ | $\mathrm{Strontum}_{0,0521}$ | 0,307 | ${ }_{0426}^{\text {Zirconium }}$ | 0,892 | Molybdän | ${ }_{0}$ Technetium | 1,050 | Rhodium 1.137 | Paladium 0,557 | 1,302 | Cadmium | Indum 0,300 | Zinn | Antimon | ${ }_{1.971}^{\text {Telur }}$ | 100 3.060 | 0 |
+| 6 <br> 55 <br> Caesium 0.472 |  | 56 | 57-71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 | 79 | 80 | 81 | 82 | 83 | 84 | 85 | 86 |
+|  |  | Ba |  | Hf | Ta | W | Re | Os | Ir | Pt | Au | Hg | Tl | Pb | Bi | Po | At | Rn |
+|  |  | Barium 0.1446 |  | Hafnium | Tantal | Wolfram | Rhenium | Osmium | Iridium | 2.128 | 2.309 | Quecksilber | Thallium | Blei | Bismut | Polonium | Astat | 0 |
+| 7 | 87 | 88 | 89-103 | 104 | 105 | 106 | 107 | 108 | 109 | 110 | 111 | 112 | 113 | 114 | 115 | 116 | 117 | 118 |
+|  |  |  |  | Rf | Db | Sg | Bh | Hs | Mt | Ds | Rg | Cn | Nh | FI | Mc | Lv | Ts | Og |
+|  | Francium | Radium |  | Rutheforcolum | Dubnium | Seaborgium | Bohrium | Hassium | Meitnerium | Dammstatuium | Roentgenium | Copernicium | Nihonium | Flerovium | Moscovium | Livermorium | Tenness | Oganesson |
+|  | Electron affinity is the energy released when an electron is attached to a neutral atom in the gaseous state to form a negative ion. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  | 57 | 58 | 59 | 60 | 61 | ${ }^{62}$ | 63 | 64 | 65 | 66 | 67 | 68 | ${ }^{69}$ | 70 | 71 |
+|  |  |  | 6 | La | Ce | Pr | Nd | Pm | Sm | Eu | Gd | Tb | Dy | Ho | Er | Tm | Yb | Lu |
+|  |  |  |  | Lanthan 0.50 | 0.52 | 0.52 | ${ }^{0.52}$ | 0.52 | 0.52 | 0.52 | 0.52 | ${ }_{0.52}^{\text {Terbium }}$ | 0.52 | 0.52 | Erbium 0.52 | Thulium 0.52 | Ytterbium | 0.52 |
+|  |  |  |  | 89 | 90 | 91 | 92 | 93 | 94 | 95 | 96 | 97 | 98 | 99 | 100 | 101 | 102 | 103 |
+|  |  |  | 7 | Ac | Th | Pa | Protactinium | Np | Neptunium | Plutonium | Americium | Berkelium | Cf | Califomium | Einstenium | Mendekuim | Nobelium | Lr |
+
+## Metallische Bindung
+
+Metallatome können äußere Elektronen leicht abgeben und formen eine Elektronenwolke, welche die positiven lonen umgibt (Leitungselektronen). Energie des Systems kann auf diese Weise erniedrigt werden. Metallische Bindung ist am schwierigsten zu berechnen. Sehr vereinfachte Darstellung: Freie Elektronen halten Kristall zusammen.
+![This diagram depicts the structure of a metal lattice showing positively charged metal ions arranged in a regular pattern surrounded by a "sea" of delocalized electrons. It illustrates the metallic bonding model where electrons are free to move throughout the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-15_832_1343_903_481.jpg)
+![This diagram depicts the variation of kinetic energy, Coulomb energy, and total energy as functions of the normalized radius \( r_A / a_B \) in a quantum system, illustrating the balance of energies that determines the binding energy \( E_B \) and equilibrium radius \( r_{A,0} \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-15_1077_1183_286_2073.jpg)
+
+## Van der Waals Wechselwirkung
+
+![This diagram depicts the electric dipole moments and charge distributions in different physical systems: (a) an electron and positive charge in an atom with zero average dipole moment, (b) two point charges separated by a distance, and (c) two dipoles with associated electric fields and angular orientations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-16_945_1864_470_653.jpg)
+Abb. 3.5: (a) Momentanes elektrisches Dipolmoment der kugelsymmetrischen Ladungsverteilung eines Atoms $A$. (b) Induziertes Dipolmoment durch Polarisierung der Elektronenhülle von Atom $A$ mit einer Punktladung B. (c) Orientierung zweier Dipolmomente $p_{A}$ und $p_{B}$ von Atomen $A$ und $B$ mit den zugehörigen elektrischen Feldern $E_{A}$ und $E_{B}$. Gegenseitig induzierte Dipolmomente stehen parallel zum Verbindungsvektor $\mathbf{R}$ der beiden Atome.
+
+## Lennard-Jones-Potenzial berechnet für Argon
+
+E_{\mathrm{pot}}(R)=4 \epsilon\left[\left(\frac{\sigma}{R}\right)^{12}-\left(\frac{\sigma}{R}\right)^{6}\right]
+
+![This diagram depicts the Lennard-Jones potential energy curve for Argon (Ar), showing the variation of potential energy \(E_{pot}\) as a function of the interatomic distance \(R\) normalized by \(\sigma\), with parameters \(\epsilon\) and \(\sigma\) representing the depth of the potential well and the finite distance at which the inter-particle potential is zero, respectively.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-17_1304_1703_402_1405.jpg)
+
+## Wasserstoffbrücken-Bindung
+
+![This diagram depicts the molecular structure of a water molecule (H2O) with an emphasis on the hydrogen bonding between two water molecules, showing the partial positive charge on hydrogen and partial negative charge on oxygen.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/011469c3-8eb4-46e1-8690-691bf328ed3d/d58c84bb-1b39-4b6d-aebe-8b11aad305df-18_767_1322_671_1020.jpg)
+
+## Schmelztemperaturen und Bindungsenergien der chemischen Elemente
+
+| 1 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|  | H | Schmelztemperatur ( ${ }^{\circ} \mathrm{C}$ ) <br> Bindungsenergie (kJ/mol) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | He |
+|  | -259.14 0.05868 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -272 |
+| 2 | Li | Be | Alkalimetalle Erdalkalimetalle Übergangsmetalle <br> Seltene Erden andere Metalle Halbmetalle/ Halbleiter <br> Nichtmetalle <br> Halogene <br> Edelgase |  |  |  |  |  |  |  |  |  | B | C | N | 0 | F | Ne |
+|  | 180.54 158 | 1278 320 |  |  |  |  |  |  |  |  |  |  | 2300 561 | 3500 711 | -209.9 474 | -218.4 251 | -219.62 81.0 | -248.6 1.92 |
+| 3 | Na | Mg |  |  |  |  |  |  |  |  |  |  | Al | Si | P | S | Cl | Ar |
+|  | 97.8 107 | 650 145 |  |  |  |  |  |  |  |  |  |  | 660.37 327 | 1410 446 | 44.1 331 | 112.8 275 | -100.98 135 | -189.3 7.74 |
+| 4 | K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni | Cu | Zn | $\mathbf{G a}$ | Ge | As | Se | Br | Kr |
+|  | 63.65 90.1 | 839 178 | 1539 376 | 1660 468 | 1890 512 | 1857 395 | 1245 282 | 1535 413 | 1495 424 | 1453 428 | 1083 336 | 419.58 130 | 29.78 271 | 937.4 372 | 817 285.3 | 217 237 | -7.2 118 | -157.2 11.2 |
+| 5 | Rb | Sr | Y | Zr | Nb | Mo | Tc | Ru | Rh | Pd | Ag | Cd | In | Sn | Sb | Te | I | Xe |
+|  | 38.89 82.2 | 764 166 | 1523 422 | 1852 603 | 2468 730 | 2617 658 | 2200 661 | 2250 650 | 1966 554 | 1552 376 | 961.93 284 | 320.9 112 | 156.61 243 | 231.9 303 | 630 265 | 449.5 211 | 113.5 107 | -111.9 15.9 |
+| 6 | Cs | Ba | * | Hf | Ta | W | Re | Os | Ir | Pt | Au | Hg | Tl | Pb | Bi | Po | At | Rn |
+|  | 28.5 | 725 |  | 2150 | 2996 | 3410 | 3180 | 3045 | 2410 | 1772 | 1064.43 | -38.87 | 303.5 | 327.5 | 271.3 | 254 | 302 | 19.5 |
+| 7 | Fr | Ra | ** | Rf | Db | Sg | Bh | Hs | Mt | Uun | Uuu | Uub |  |  |  |  |  |  |
+|  | 27 | 700 160 |  | ? | ? | ? | ? | ? | ? | ? | ? | ? |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  | * | La | Ce | Pr | Nd | Pm | Sm | Eu | Gd | Tb | Dy | Ho | Er | Tm | Yb | Lu |
+|  |  |  |  | 920 431 | 795 417 | 935 357 | 1010 328 | ? | 1072 206 | 822 179 | 1311 400 | 1360 391 | 1412 294 | 1470 302 | 1522 317 | 1545 233 | 824 154 | 1656 428 |
+|  |  |  | ** | Ac | Th | Pa | U | Np | Pu | Am | Cm | Bk | Cf | Es | Fm | Md | No | Lr |
+|  |  |  |  | 1050 410 | 1750 598 | 1600 | 1132 536 | 640 456 | 639.5 347 | 994 264 | 1340 385 | ? | ? | ? | ? | ? | ? | ? |
+

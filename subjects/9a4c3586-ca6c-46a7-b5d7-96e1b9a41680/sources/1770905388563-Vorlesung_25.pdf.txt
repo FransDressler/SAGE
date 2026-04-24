@@ -1,0 +1,137 @@
+### 7.7 Sommerfold - Theorie
+
+In Drude-Modell wind anjenommer, dacs alle Leitunjseleltiona mittels thermiseher turgey ader eines electrischen Feldes anjeregt werden. Es vann allerding weder die thermische Uapazität (siehe Vapitel 5.4 ) woch das soj. Wiedemanu-Thanz-Gesetz en kina (siele Vapite 7.11). A. Sommerfeld schlug als Enweiterny vor, die Elebtrom als fieie Thilcher betrachte (s. 5.3), d.h. sie gehoche des Schödinger-Glichng, dem Pauli-Prinzip und des Termi-Dinac-Vataily. Fin halb gefülle Bänder vann die Ferni- Tékae in gents Näherny als Termi-kugel beschnidor (⇒ Achali- und Edel metalle).
+$\Rightarrow \quad t_{1} \frac{d}{d t} \underline{u}=\underline{I}=-e \underline{E} \quad$ / lupols : tik
+⇒ Vaschieber der Fauni-kujel am Tr-Punkt un $\delta \underline{k} \quad=-\frac{e \underline{E} \delta t}{t}$
+
+Im deletrischen Feld: Transpart übs wenije, schulle Elelitioner $\left(\sim v_{t}\right)$.
+
+Problem : $\delta t=\underline{z a i}$, sodass sich verschie by einstell, ist oine "mittlere Stopren't und wind richt Vler ans der Theoric hagelitet.
+
+### 7.8 Boltmann-Glaidny
+
+Gesucht: Ausdrude firm Umverteily der Fercin-Diracvartaluy im K-laum bè Aulega vou E.
+$\underline{E}=0$ : Irain-Dinac Vertily $f_{0}(\underline{U})$ im Glaichgewicht
+$\underline{E} \neq 0$ : Besclamuigy der Ladungsträges bis stationäres Nicht. Glaichyewicht $f(\underline{u}, \underline{r}, t)$.
+
+Annaliue: Ändercy von $f$ dinch:
+
+- Diffusion anfymed Didnteschwantenge
+- änβue Tolder
+- Stremprozesse
+
+Liouvilleschol Safz (Ue. Mechanik): Veive Stope ⇒ Phasenianey blailst citalten
+
+$$
+\begin{aligned}
+& f(\underline{k}+d \underline{k}, \underline{\tau}+d \underline{r}, t+d t)=f(\underline{k}, \underline{r}, f) ; \\
+& \Leftrightarrow f(\underline{k}+d \underline{k}, \underline{\tau}+d \underline{r}, t+d t)-f(\underline{k}, \underline{r}, t)=0 \quad ; \\
+& \Rightarrow \frac{\partial f}{\partial \underline{k}} d \underline{k}+\frac{\partial f}{\partial \underline{r}} d \underline{r}+\frac{\partial f}{\partial t} d t=0 ; \quad \text { | Ablailug uach } \\
+& \text { do zuit } \frac{1}{d t}
+\end{aligned}
+$$
+
+![This image depicts the Boltzmann equation, showing the time evolution of the distribution function \( f \) in phase space, including terms for fields, diffusion, and a collision term representing the effect of collisions or sources.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/fa340c88-3de4-45cb-84bc-df7e331c98b1/7c8a1e86-dc10-45da-99a3-0f12400e9161-2_430_1353_1780_416.jpg)
+
+Bolkmann-Glaidng besducibt zeiteide und räumlide Enteridely der Ventaileystunktion $f(\underline{k}, \underline{r}, t)$.
+
+## Bennerky
+
+- Diffusionsterm kaun/uind fin eleletisele Leitfiling beit weggelasse.
+- Stoß/Stientam: Relaxationszeit - Nähery:
+
+\left.\left.\frac{\partial f}{\partial t}\right|_{\text {Stany }}=-\frac{f(\underline{k})-f_{0}(\underline{k})}{\tau(\underline{k})} \right\rvert\,,
+
+\begin{aligned}
+& \tau: \text { Relaxations seit } \\
+& \tau^{-1}: \text { Streurate }
+\end{aligned}
+
+⇒ Exponanticlles Abklinge, abs and Verschidbung der
+Funi-lengel Kann damit erklint wade.
+(⇒ Drude-Modell, Sommen-Theorie).
+
+- De Sticuprozesse werden im Uapitel 7.9 besproda.
+
+
+## Ladiugstranspert (ine Rahme de Boltmanu-Gericy)
+
+Glaichstomlaitfäkijusit $[\underline{\underline{\sigma}}]=\left[\frac{\dot{I}}{\underline{E}}\right]$ Tenses
+Fin $\underline{E}=$ coust. $\quad \dot{u}=-\frac{e \underline{E}}{t_{1}} \quad$ (Sommerfold)
+Anualue: - isotiopes $e^{-}$- Gas (Tensor $\rightarrow$ sualar)
+
+- stationainer zustand $\left(\frac{\partial f}{\partial t}=0\right), d . h$.
+
+Viin Ein- (Ausscholten.
+
+\Rightarrow \quad-\frac{f(\underline{k})-f_{0}(\underline{k})}{\tau(\underline{k})} & =-\frac{e \underline{E}}{t} \cdot \underline{\nabla}_{k} \cdot f(\underline{k}) \\
+\Rightarrow & f(\underline{k}) \\
+\Rightarrow & f_{0}(\underline{k})+\frac{e \tau(\underline{k})}{t} \cdot \underline{E} \cdot \underline{\nabla}_{\underline{k}} f(\underline{k})
+
+Annalume: $-f(\underline{U})$ sei klaine Abweichny vou $f_{0}(\underline{K})$
+
+& \Rightarrow \underline{\nabla}_{\underline{u}} \cdot f(\underline{\underline{u}}) \approx \underline{\nabla}_{\underline{u}} \cdot f_{0}(\underline{\underline{u}}) \\
+& f(\underline{\underline{u}})=f_{0}(\underline{\underline{u}})+\frac{e \tau(\underline{\underline{u}})}{t} \cdot \underline{E} \cdot \underline{\nabla}_{\underline{u}} f_{0}(\underline{\underline{k}})
+
+linearisiate Boltzmann-Gleidny
+
+Stoundichte:
+
+\dot{y}=\frac{e}{4 \pi^{3}} \int \underline{v}(\underline{k}) \cdot f(\underline{k}) d^{3} k
+
+Annalime: - $E$ in ainer Richtuy: $E_{x}$
+
+\Rightarrow \quad j_{y}=j_{z}=0
+
+"allenistchend falsch , sale abs underviaa e ⋅ : $\underline{\text { r }}(\underline{\text { s }}) \cdot \underline{\text { E }}$
+beñidesichift wid"
+(**) ⇒
+
+- nus $\underline{\nabla}_{\underline{k}} \underline{f}_{0}(\underline{k})$ fiis zu Netto-Tramsport LC
+
+\left[\begin{array}{l}
+\left.\left[-\frac{\partial}{\partial \xi} f \underset{\sim}{(x)} \frac{e \tau(\underline{\xi})}{t} \cdot \underline{E} \cdot \frac{\partial}{\partial y} f_{0}(\underline{\xi})\right]\right] \\
+-\frac{\partial f_{0}}{\partial k}=\left(\frac{\partial f_{0}}{\partial E}\right) \cdot \frac{\partial E}{\partial k}=\left(\frac{\partial f_{0}}{\partial E}\right) \cdot t_{1} v_{x} \\
+\dot{j}=\frac{-e^{2} E_{x}}{4 \pi^{3}} \int v_{x}^{2} \cdot \tau(\xi) \cdot \frac{\partial f_{0}(\underline{\xi})}{\partial E} d^{3} k
+\end{array}\right.
+
+Annalue : - Funi-Dirac-Statistik fall stal ab $\Rightarrow \frac{\partial}{\partial t} \cdot f_{0}$ zeijt ansgepiagtes resimum $\Rightarrow \frac{\partial}{\partial E} f_{0} \approx-\delta\left(E-E_{0}\right)$
+
+- $d^{3} k \rightarrow \frac{1}{\hat{t}} \frac{d G}{v(y)} \cdot d S_{E}$ (新 $\begin{gathered}\text { s. Zactialibley } \\ \text { bze. Dos }\end{gathered}$ ) $D(E) d E=\rho_{k} \int_{E}^{E+d E} d^{3} k=\frac{\rho_{k}}{\hbar} d E \int \frac{d S_{E}}{\text { vyinppe }}$ Obef Godmintegil
+
+\Rightarrow \quad \sigma_{x x} & =\frac{j x}{E x} \\
+& \approx \frac{e^{2}}{4 \pi^{3}+1} \int \frac{v_{x}^{2}(\underline{u})}{v(\underline{u})} \cdot \tau(\underline{u}) \delta\left(E-E_{F}\right) d E \cdot d S_{E}
+
+Annalure: - isotope Gesclusindipleits vertaily $\Rightarrow v_{x}^{2}=\frac{1}{3} v^{2}$
+
+- $\tau$ ist nichtunjs unabliänjo
+- $m^{*} \cdot v_{\tau}=\hbar k_{\tau}$
+
+\Rightarrow \quad b_{x x}=\frac{e^{2}}{4 \pi^{3} t} \int \frac{v_{x}^{2}\left(\underline{k}_{F}\right)}{v\left(\underline{k}_{T}\right)} \tau\left(\underline{k}_{F}\right) \cdot d S_{F} \\
+\text { Fermin-oburflede } \\
+\int_{1} d S_{F}=4 \pi k_{F}^{2} \\
+=\frac{e^{2}}{4 \pi^{2} t} \cdot \frac{1}{3} \frac{v_{F}^{2}}{v_{T}} \cdot \tau\left(\underline{k}_{F}\right) \cdot 4 \pi k_{T}^{2}
+
+& \left.=\frac{e^{2}}{3 \pi^{2} G^{\prime}} \cdot \frac{m^{*}}{m^{*}} \cdot v_{F} \cdot \tau\left(\underline{k}_{F}\right) \cdot k_{F}^{2} \right\rvert\,{u^{*}}^{*} v_{F}=t_{1} k_{F} \\
+& \left.=\frac{e^{2}}{3 \pi^{2}} \cdot \frac{\tau\left(\underline{k}_{F}\right)}{m^{*}} \cdot k_{F}^{3} \quad \right\rvert\, k_{F}^{3}=3 \pi^{2} \cdot u \\
+\Rightarrow \quad \sigma_{x x} & =\frac{u \cdot e^{2}}{m^{*}} \tau\left(E_{F}\right)
+
+## Bemerky
+
+- Verginch m Drude-Moddle und Soumer fld-Therie:
+- nus $e^{-}$an $E_{F}$ trager ben.
+- m* bañclesidetit WW zn Atomiümpfa und "Ge"-Eldita
+- $\tau\left(E_{F}\right)$ : Relaxationspet an $E_{F}$, d.h
+guam sperifiziat (Kop. 7.9)
+- Es eajot sich eive mittler fière Wajlinge des Elehtronen an $E_{F}$.
+
+e_{m f_{p}}=v_{T} \cdot \tau \quad\left(v_{g p} \cdot 7.11\right)
+
+- Verschiebuy de Ferui-lengl: $\quad J k=3 \cdot 10 \mathrm{in}^{-1} \quad\left(|E|=\frac{100 v}{\mathrm{~m}}\right)$
+
+\Rightarrow \quad \frac{\partial K}{K_{F}} \approx 10^{-7} \quad(\text { recliffetijt obije Nighey })
+
+- Tequeuzabliäuije leitfälij vid:
+
+\sigma_{\omega}=\frac{n \cdot e^{2} \cdot \tau}{m^{*}} \cdot \frac{1}{1-i(\omega \tau)}
+

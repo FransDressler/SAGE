@@ -1,0 +1,90 @@
+### 3.2.3 Eindimensionales Bravais-Gitter unit zweiatoniger Basis
+
+varewey : - Es gibt zwei Äcte: 1zweij, zzwaj
+
+- alunstisder Ast (LA,TA)
+- optischer Ast (LO, TO)
+$\lambda_{\text {zway }} \searrow_{\text {zzwery }}$
+- Fin u-Atone in do primitiven EZ gibt es $3 u$ Zwaje.
+
+3 alcustische und ( $3 n-3$ ) optiscle tweije
+Betrachte un Richtungen holos Symmetice
+⇒ uvi eine Afousonte pro Nekebere
+Annahue: unterseliedlicle rassen $M_{1}$ und $M_{2}$ give Tederhoustante C
+nus vächste Nachborn
+Bewegungs gendange: $\quad M_{1} \frac{d^{2}}{d t^{2}} u_{s}=C\left(v_{s}-u_{s}\right)-C\left(u_{s}-v_{s-1}\right)$
+$M_{2} \frac{d{ }^{2}}{d t^{2}} v_{s}-C\left(v_{s}-u_{s}\right)+C\left(u_{s+1}-v_{s}\right)$
+H) $\left\{\begin{array}{l}M_{1} \frac{d^{2}}{d t^{2}} u_{s}=C\left(v_{s}+v_{s-1}-2 u_{s}\right) \\ M_{2} \frac{d^{2}}{d t^{2}} v_{s}=C\left(u_{s}+u_{s+1}-2 v_{s}\right)\end{array}\right.$
+
+Cöscenjsausalz:
+
+$$
+u_{s}=U \cdot e^{-i(\omega t-q s a)} ; v_{s}=V \cdot e^{-i(\omega t-q s a)} ;
+$$
+
+$\left.\begin{array}{rl}\quad-\omega^{2} M_{1} u & =c \cdot v\left(1+e^{-i q q}\right)-2 c u \\ \text { äquivaleut: } \quad-\omega^{2} M_{2} v & =c \cdot u\left(1+e^{+i q a}\right)-2 c v\end{array}\right\}\left(n^{*}\right)$
+
+Uoefficienter -
+defunimante $\quad\left|\begin{array}{cc}2 C-M_{1} \omega^{2} & -C\left(1+e^{-i q a}\right) \\ -C\left(1+e^{+i q a}\right) & 2 C-M_{2} \omega^{2}\end{array}\right| \stackrel{!}{=} 0$;
+
+Hinwéis:
+$\Rightarrow \quad M_{1} M_{2} \omega^{4}-2 c\left(M_{1}+M_{2}\right) \omega^{2}+2 c^{2}(1-\cos (q a))=0 ; e^{+i q a}+e^{-i q a}$
+
+\omega_{ \pm}^{2}=\frac{c}{r_{1} r_{2}}\left[r_{1}+r_{2} \pm \sqrt{r_{1}^{2}+M_{2}^{2}+2 M_{1} M_{2} \cos \left(q_{a}\right)}\right.
+
+nit optischer und alenefischem Ast.
+
+\begin{aligned}
+& q \rightarrow 0: \omega_{ \pm}=\frac{C\left[M_{1}+M_{2} \pm\left(M_{1}+M_{2}\right)\right]}{M_{1} M_{2}} \\
+& q \rightarrow \frac{\pi}{a}: \omega_{ \pm} \cdot \frac{c\left[M_{1}+M_{2} \pm\left(M_{1}-M_{2}\right)\right]}{M_{1} M_{2}}
+\end{aligned}
+
+## Benerluygen
+
+- Almostischos zweij nit rinuszeidn entopridet einatonijer Vette unit $r=r_{1}+r_{2}$ und $a \rightarrow r_{a}$.
+- Bei $9 \sim 0$ : alunstischen zweij: $M_{1}, M_{2}$ glide Phave + Amplitude optischea zweij: $M_{1}, M_{2}$ geguphesij, unter schiedlicle Amplitade
+bi Laduung ⇒ sehwingendes EM-Fed wie loven knistall $\underset{\sqrt{x_{1}}}{\Rightarrow}$ tental aby
+- $B_{i} q \rightarrow \frac{\pi}{a}$ : fù $r_{1}>M_{2}: \sqrt{\frac{2 c}{r_{1}}}<\sqrt{\frac{m}{r_{2}}}$
+
+⇒ Frequent Cinde
+$q \wedge \omega_{1}, \omega_{2}$ in (**): $\frac{v}{u}=0$ und/odes $\frac{u}{v}=0$
+⇒ eives do beiden Gitts ist an do
+Grenze des 1. Ba jiscili in Rube!
+
+- Altenative Betrachtuy?. Basis mit 2 glicher Atoum, die abu dinch unteschiedlicle Unaftloustanten geleppolt sind :
+
+\begin{aligned}
+m_{1} & =M_{2}=m \\
+k & +G
+\end{aligned}
+
+- Frequenzlidre gibt die Moficheit, $M_{1}, M_{2}$ and/ods $U_{1} G$ absolut (~ticw) abzuschałtec!
+- In Alg. sind die TO,LO,TA und CA-Aste micht cutartet.
+- Gith unit Diamantstinktes (2.B. Ge, S.)
+![This diagram depicts the phonon dispersion relations for longitudinal optical (LO), transverse optical (TO), longitudinal acoustic (LA), and transverse acoustic (TA) phonon modes in a crystal along the [111] crystallographic direction, showing their frequency (ω) as a function of wavevector (q). It also notes that LO and TO modes are degenerate at q=0.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f98ba70e-c299-4290-866c-3d950a89a0b0/60156eef-6161-4a0e-b689-bfe5891af796-2_361_1078_1957_419.jpg)
+- Gitto uit NaCE-Stukets
+
+![This diagram depicts the phonon dispersion relation in a crystal lattice, showing the frequency (ω) versus wave vector (q) for acoustic (TA, LA) and optical (TO, LO) phonon modes.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f98ba70e-c299-4290-866c-3d950a89a0b0/60156eef-6161-4a0e-b689-bfe5891af796-2_346_430_2392_653.jpg)
+L0- T0 Entanty bir
+$y=0$ anfecholace
+
+### 3.3 Phonomen
+
+Quantisiermy der Gitterschwingenge :
+In BD gibt es 3.N.U unabhängje Schwingungsmoder
+( $N=$ Auzale Afore im unial al,$u=$ Anzale Atome in p. Ez).
+Ahulid wie harmonisde Ossillatera unit Enajie: $E=\left(i+\frac{1}{2}\right)$ tha, $i=0,1,2, \ldots$
+Man definist: $\quad E_{q_{1 s}}=\left(u_{q_{1 s}}+\frac{1}{2}\right) t_{1} \omega_{s}(q)$
+
+Energie des Gitter sch wingungen ist gequantelt ⇒ Phonon
+"Phonon" ist oin Quasiteilchen mit Wellenveleter 7, das mit EH-Strahluy, abou unit Nentroven, Elaktom, Störstellen etc. so in WW titt, ab lätte es einen luspuls.
+
+R=t_{q} \quad\left(\frac{h}{2 \pi} \cdot \frac{2 \pi}{\lambda}=\frac{h}{\lambda}, \begin{array}{l}
+D_{e} \text { Broglic-WSll } \\
+\text { mit Imined }
+\end{array}\right.
+
+mit Imporls $p$ )
+Zur QM- Beschereiby der Gittershiving siehe Tutarial 8.
+![This diagram depicts a quantum harmonic oscillator potential energy curve showing vibrational energy levels of a diatomic molecule and the quantized vibrational energy formula. It also references the energy-time uncertainty principle related to energy and lifetime of states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/f98ba70e-c299-4290-866c-3d950a89a0b0/60156eef-6161-4a0e-b689-bfe5891af796-3_606_1392_1478_554.jpg)
+

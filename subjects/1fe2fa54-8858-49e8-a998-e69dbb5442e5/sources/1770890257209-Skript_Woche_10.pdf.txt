@@ -1,0 +1,580 @@
+Experimental Methods in Solid State Physics
+Christoph Kastl - TUM
+Winter Term 2025
+Contents
+1 Tight binding approximation - the case of graphene 2
+1.1 Diagonalizing the Hamiltonian in k-space . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2 Low energy effective Hamiltonian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+1.3 Eigenstates and chirality in Graphene . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+1
+
+Tutorial on Solid State Physics 2025 Week 6
+Figure 1: a Honeycomb lattice structure of graphene, consisting of two interpenetrating triangular
+lattices with the lattice unit vectors a1 and a2 and the nearest-neighbor vectors δi, i = 1,2,3. b The
+corresponding Brillouin zone where the Dirac cones are located at the corner of the first Brillouin
+zone, the high-symmetry points K and K′.
+1 Tight binding approximation - the case of graphene
+Graphene’s lattice is a honeycomb structure composed of two interpenetrating triangular sublattices,
+denoted as A and B sites. This bipartite lattice is crucial for understanding the electronic behavior
+of graphene. The unit vectors of the triangular sub-lattices are given by:
+a1/2 = a
+2 (3, ±√3). (1)
+where a is the carbon-carbon distance. The nearest-neighbor vectors are given by:
+δ1 = a
+2 (1, √3) and δ2 = a
+2 (1, −√3) and δ3 = −a(1, 0). (2)
+The two inequivalent high-symmetry points K and K′ in k space can, e.g., be described by
+K = 2π
+3√3a (−√3, −1) and K′ = 2π
+3√3a (+√3, +1). (3)
+In the simplest form of the tight-binding model, only the interactions between nearest-neighbor
+atoms are considered. This approximation is often sufficient to capture the essential features of
+graphene’s band structure. The hopping parameter t, which represents the energy associated with
+an electron hopping from one site to a neighboring site, is typically around 2.7 eV for graphene.
+1.1 Diagonalizing the Hamiltonian in k-space
+The real space Hamiltonian for graphene in the nearest-neighbor tight-binding model is:
+H = −t X
+⟨ij⟩
+(a†
+i bj + b†
+j ai) (4)
+where a†
+i and b†
+j are the electron creation operators on the A and B sublattices, respectively, and t
+is the hopping parameter. The summation P
+⟨ij⟩ runs over all pairs 〈ij〉 of nearest neighbors. The
+on-site terms are omitted here because they only lead to a rigid shift (identical atoms on each lattice
+site).
+2
+
+Tutorial on Solid State Physics 2025 Week 6
+Fourier Transform to Momentum Space: The momentum-space representation is introduced
+through the Fourier transforms of the creation and annihilation operators. These transforms allow
+us to move from real space, where the Hamiltonian is expressed in terms of individual lattice sites,
+to momentum space, where the Hamiltonian is formulated in wavevectors k. In momentum space,
+the Hamiltonian becomes diagonal, and the electron dynamics are described in terms of the energies
+associated with momentum eigenstates.
+Define the Fourier transforms of the creation and annihilation operators:
+ai = 1
+√N
+X
+k
+eik·Ri ak and bj = 1
+√N
+X
+k
+eik·Rj bk, (5)
+where N is the number of unit cells, Ri and Rj are the positions of the A and B sites, respectively,
+and k is the wavevector.
+Substitute the Fourier transforms into the real space Hamiltonian:
+H = −t X
+⟨i,j⟩
+1
+e−ik·Ri a†
+k′
+eik′·Rj bk′ + h.c.
+!
+. (6)
+Rewriting the sum over the nearest neighbors: Next, we rewrite the Hamiltonian by reor-
+ganizing the sum over nearest neighbors ⟨ij⟩: We first sum over all sites i on the A sublattice, and
+for each site i, we then sum over its three nearest B neighbors, identified by the vectors δ. In other
+words, the nearest neighbors j are located at positions Rj = Ri + δ, where δ point from an A-site
+to the neighboring B-sites. Using that relation, we can then rewrite the Hamiltonian as
+i
+δ
+N
+k′
+e−ik·Ri eik′·(Ri+δ)a†
+kbk′ + h.c.
+!
+(7)
+= −t X
+i
+δ
+N
+ei(k′−k)·Ri eik′·δ a†
+kbk′ + h.c.
+. (8)
+Orthogonality of Fourier Components: We can simplify the sum by considering the orthogo-
+nality of the Fourier components. The orthogonality of the Fourier components implies that:
+ei(k′−k)·Ri = N δk,k′ , (9)
+where δk,k′ is the Kronecker delta, which is 1 if k = k′ and 0 otherwise.
+Applying the orthogonality condition, we get:
+eik·δ a†
+kbk + h.c.
+(10)
+= −t X
+
+eik·δ a†
+kbk + h.c.
+
+(11)
+Matrix Representation of the Hamiltonian: To represent the tight-binding Hamiltonian of
+graphene as a matrix, we define the basis vectors as:
+ψk =
+ak
+bk
+
+(12)
+3
+
+The Hamiltonian can then be written in matrix form as:
+H = X
+ψ†
+kH(k)ψk. (13)
+where H(k) is the 2 × 2 Hamiltonian matrix:
+H(k) = −t
+ 0 ∆(k)
+∆∗(k) 0
+
+, (14)
+with ∆(k) = P
+δ eik·δ .
+Energy bands: To find the energy eigenvalues, we need to diagonalize the Hamiltonian matrix.
+The eigenvalues correspond to the energy of the electron states in graphene. The Hamiltonian matrix
+is a 2 × 2 matrix, so we solve for the eigenvalues by finding the determinant of H − EI, where E
+represents the energy eigenvalues and I is the identity matrix. This gives the characteristic equation:
+det
+
+−t
+ 0 ∆(k)
+∆∗(k) 0
+− E
+1 0
+0 1
+
+= 0 (15)
+Simplifying:
+det
+ −E −t∆(k)
+−t∆∗(k) −E
+
+= 0 (16)
+Now, calculate the determinant:
+E2 − t2∆(k)∆∗(k) = 0 (17)
+This leads to the energy eigenvalues:
+E± = ±tp∆(k)∆∗(k). (18)
+Inserting the nearest neighbour terms: Next, we insert the nearest neighbour terms in ∆(k):
+For graphene, the sum over nearest neighbors involves the three vectors from above δ1, δ2, and δ3:
+δ1 = a
+2 ,
+√3a
+2
+, δ2 = a
+2 , −
+√3a
+, δ3 = (−a, 0) . (19)
+∆(k) = eik·δ1 + eik·δ2 + eik·δ3 . (20)
+Factor out eik·δ3 :
+∆(k) = eik·δ3
+h
+1 + eik·(δ1−δ3) + eik·(δ2−δ3)i
+. (21)
+With the above definitions of δi with i = 1,2,3:
+f (k) = e−ikxa h
+1 + ei 3
+2 kxa 
+ei √3
+2 ky a + e−i √3
+2 ky ai
+. (22)
+Using the identity eiθ + e−iθ = 2 cos(θ), we get:
+∆(k) = e−ikxa
+"
+1 + 2ei 3
+2 kxa cos
+√3
+2 ky a
+!#
+. (23)
+4
+
+Likewise, ∆∗(k) is defined as:
+∆∗(k) = eikxa
+"
+1 + 2e−i 3
+2 kxa cos
+√3
+2 ky a
+!#
+. (24)
+Now, we compute ∆(k)∆∗(k) :
+∆(k)∆∗(k) = e−ikxa
+1 + 2ei 3
+!#!
+eikxa
+1 + 2e−i 3
+!#!
+(25)
+=
+!# "
+. (26)
+Expanding the product:
+∆(k)∆∗(k) = 1 + 2ei 3
++ 2e−i 3
++ 4 cos2
+. (27)
+Combining the complex conjugate terms:
+2ei 3
++ 2e−i 3
+= 4 cos
+ 3
+2 kxa
+cos
+. (28)
+Thus, we have:
+∆(k)∆∗(k) = 1 + 4 cos
+ 3
+2 kxa
+cos
++ 4 cos2
+. (29)
+The energy bands are therefore given by:
+E±(k) = ±t
+v
+u
+u
+t1 + 4 cos
+. (30)
+We can also rewrite the term
+cos2
+(31)
+using the identity cos2(x) = 1
+2 (1 + cos(2x)). The energy bands can then be expressed as:
+E±(k) = ±tp3 + f (k), (32)
+where
+f (k) = 2 cos
+√3ky a
+
++ 4 cos
+. (33)
+These are two gapless bands that touch at the Dirac points K and K′. In other words, the Dirac
+points are the points in k-space for which E±(k) = 0.
+5
+
+Tutorial on Solid State Physics 2025 Week 6qy
+-0.1
+0
+0.1
+qx
+-0.1 0 0.1
+E (q)
+Conical Energy Dispersion Near Dirac Point for Graphene
+Figure 2: Conical behavior of the bands near the Dirac point. Here, the energy is linear in momen-
+tum.
+Express in Terms of Pauli Matrices: We can express the Hamiltonian
+H(k) = −t
+(15)
+in terms of Pauli matrices by expressing ∆(k) as
+∆(k) = X
+eik·δ = X
+[cos(k · δ) + i sin(k · δ)] , (16)
+so the Hamiltonian reads
+H(k) = −t X
+ 0 cos(k · δ) + i sin(k · δ)
+cos(k · δ) − i sin(k · δ) 0
+. (17)
+In terms of Pauli matrices, the Hamiltonian is then
+H(k) = −t X
+[cos(k · δ) σx − sin(k · δ) σy ] . (34)
+where the Pauli matrices are defined as:
+σx =
+0 1
+1 0
+, σy =
+0 −i
+i 0
+, σz =
+1 0
+0 −1
+. (35)
+Mass term: We can also add a σz term to the Hamiltonian which is then given by:
+HM (k, M ) = −t X
+[cos(k · δ)σx − sin(k · δ)σy + M σz ] (36)
+This can also be written in matrix form as:
+HM (k, M ) = −t X
+ M cos(k · δ) + i sin(k · δ)
+cos(k · δ) − i sin(k · δ) −M
+(37)
+6
+
+From the matrix form of the Hamiltonian, we can see that the additional σz term raises the energy
+of A sites and lowers the energy of B sites, thereby opening a gap in the band structure. We can
+interpret this as arising from on-site potential terms of the form:
+Hpotential = M
+
+ X
+α∈{A sites}
+ˆna,α − X
+β∈{B sites}
+ˆnb,β
+
+ , (38)
+where ˆna,α = ˆa†
+αˆaα and ˆnb,β = ˆb†
+βˆbβ . This type of potential can arise when the A and B sublattices
+consist of different types of atoms, such as in boron nitride. Boron nitride has the same honeycomb
+lattice structure as graphene, but with boron atoms on A sites and nitrogen atoms on B sites.
+1.2 Low energy effective Hamiltonian
+Dispersion near K: We now look towards the behavior of ∆(k) near the Dirac point K. If we
+rewrite ∆(k) in terms of k = q + K, this means that we express the wave vector k relative to a
+specific point K in reciprocal space. This is particularly useful near the Dirac points in graphene,
+as the energy exhibits a linear dispersion relation there.
+∆(K + q) = e−iKxae−iqxa
+2 (Kx+qx)a cos
+2 (Ky + qy )a
+. (39)
+At the Dirac point K = (Kx, Ky ) we have Kx = − 2π
+3a and Ky = − 2π
+3√3a .
+∆(K + q) = e−iKxae−iqxa
+1 − 2ei 3
+2 qxa cos − π
+3 +
+2 qy a
+(40)
+We now expand ∆(K + q) to first order in q about q = 0. For small qx, we expand e−iqxa as:
+e−iqxa ≈ 1 − iqxa + O(q2
+x) (41)
+Similarly, expand ei 3
+2 qxa to first order in qx:
+ei 3
+2 qxa ≈ 1 + i 3
+2 qxa + O(q2
+x) (42)
+For small qy , we expand cos
+
+− π
+3 + √3
+2 qy a
+as:
+cos − π
+3 +
+≈ cos
+− π
+3
++
+2 qy a sin
+ π
+(43)
+Since cos  − π
+ = 1
+2 and sin   π
+ = √3
+2 , we get:
+cos − π
+≈ 1
+2 + 3
+4 qy a (44)
+Substitute the expansions into the original expression for ∆(K + q):
+∆(K + q) ≈ e−iKxa (1 − iqxa)
+
+1 − 2
+
+1 + i 3
+2 qxa
+  1
+2 + 3
+4 qy a
+
+(45)
+7
+
+Now expand the terms inside the brackets:
+1 + i 3
+2 qxa
+  1
+4 qy a
+= 1
+4 qy a + i 3
+4 qxa + i 9
+8 qxqy a2 (46)
+Multiplying by -2 and adding 1:
+1 − 2
+ 1
+4 qy a + i 3
+4 qxa + i 9
+8 qxqy a2
+= − 3
+2 qy a − i 3
+2 qxa + i 9
+4 qxqy a2 (47)
+Now substitute this back into the expression for ∆(K + q) and only keep terms linear in qx and qy
+∆(K + q) ≈ e−iKxa
+
+− 3
+2 qy a − i 3
+2 qxa + O(q2
+x, q2
+y , qxqy )
+
+(48)
+To first order, we are thus left with:
+∆(K + q) ≈ −e−iKxa
+ 3
+2 a (qy + iqx)
+
+(49)
+= −ie−iKxa 3a
+2 (qx − iqy ) (50)
+The phase of ∆(K + q) carries no physical significance (since, for example, the energy bands are
+given by E±(K +q) = ±tp∆(K + q)∆∗(K + q) ), so it is convenient to ignore the phase of ie−iKxa.
+We thus have
+∆(K + q) = − 3a
+2 (qx − iqy ). (51)
+About the Dirac point K, the Hamiltonian is thus
+H(K + q) = ℏvF
+ 0 qx − iqy
+qx + iqy 0
+, (52)
+where
+vF = 3at
+2ℏ (53)
+is the Fermi velocity. We can express this in terms of Pauli matrices as
+H(K + q) = ℏvF (qxσx + qy σy ) = ℏvF q · σ. (54)
+Dispersion near K’: Similarly, we can define the relative momentum q = k − K′ and expand
+around the Dirac point K′:
+∆(K′ + q) = − 3a
+2 (qx + iqy ). (55)
+So the Hamiltonian about this Dirac point is
+H(K′ + q) = ℏvF
+ 0 qx + iqy
+qx − iqy 0
+= ℏvF (qxσx − qy σy ) = ℏvF ¯q · σ. (56)
+with the vector
+¯q ≡
+ qx
+−qy .
+, (57)
+8
+
+Linear dispersion relation: From the Hamiltonian near the Dirac points, we find that the energy
+bands near the Dirac points are given by
+E±(q) = ℏvF |q|. (58)
+Near a Dirac point, the dispersion relation is therefore linear in momentum, so the energy bands
+form a cone (called a Dirac cone) with the vertex lying on the Dirac point.
+Mass term: If we add the σz term that we introduced earlier, the Hamiltonian near the K Dirac
+points will, e.g., be of the form
+HM (q) = ℏvF (qxσx + qy σy + M σz ) = ℏvF
+ M qx − iqy
+qx + iqy −M
+. (59)
+As we saw, this additional term gaps the energies, so that near the Dirac points, the energies become
+EM,± = ±ℏvF
+q
+q2
+x + q2
+y + M 2. (60)qx
+-0.1
+0
+0.1
+qy
+-0.1 0 0.1
+Energy (q)
+Conical Energy Dispersion with Gap Near Dirac Point for Graphene
+Figure 3: Bands near the Dirac point when including a σz term, which creates a gap.
+1.3 Eigenstates and chirality in Graphene
+In the previous paragraphs, we have shown that the effective massless Dirac Hamiltonian in graphene
+is given by:
+H = ℏvF (σxqx + τz σy qy ), (61)
+where:
+• vF is the Fermi velocity.
+• τz = ±1 denotes the valley index (K or K′).
+• σx and σy are the Pauli matrices.
+9
+
+• qx and qy are the wavevector components relative to the Dirac points.
+To find the eigenstates, we solve the eigenvalue equation:
+Hψ = Eψ (62)
+For the Hamiltonian at the K point (τz = 1):
+H = ℏvF (σxqx + σy qy ) (63)
+To find the eigenvalues, we solve the characteristic equation:
+det(H − EI) = 0 (64)
+⇒ det
+ −E ℏvF (qx − iqy )
+ℏvF (qx + iqy ) −E
+= E2 − (ℏvF )2(q2
+x + q2
+y ) = 0 (65)
+⇒ E = ±ℏvF
+q
+q2
+y = ±ℏvF |q| (66)
+The eigenstates ψ are two-component spinors:
+ψ =
+ψA
+ψB
+(67)
+Substituting these into the Hamiltonian, we get:
+ℏvF
+ 0 qx − iqy
+qx + iqy 0
+ ψA
+ψB
+= E
+ψA
+= ±ℏvF |q|
+(68)
+Case 1: E = +ℏvF |q| (
+(qx − iqy )ψB = |q|ψA
+(qx + iqy )ψA = |q|ψB
+⇒ ψB = qx + iqy
+|q| (69)
+Let θ = arg(qx + iqy ), so qx+iqy
+|q| = eiθ . Choosing ψA = e−i θ
+2 the eigenstate reads
+ψ(+) = 1
+√2
+e−i θ
+e+i θ
+(70)
+Case 2: E = −ℏvF |q|
+(
+(qx − iqy )ψB = −|q|ψA
+(qx + iqy )ψA = −|q|ψB
+⇒ ψB = − (qx + iqy )
+|q| ψA (71)
+So:
+ψ(−) = 1
+√2
+e−i θ
+−ei θ
+(72)
+The eigenstates are
+ψ(±)
+K = 1
+±ei θ
+, θ = arg(qx + iqy ) (73)
+10
+
+For the Hamiltonian at the K′ point (τz = −1) we can similarly calculate the eigenvalues and
+eigenstates. The eigenenergies are the same as for K
+⇒ E = ±ℏvF
+y = ±ℏvF |q| (74)
+The eigenstates read
+ψ(±)
+K′ = 1
+ei θ
+±e−i θ
+, θ = arg(qx + iqy ). (75)
+Chirality near the Dirac points Now that we have defined the Hamiltonian near the Dirac
+points, we consider the chirality associated with the K and K′ points next. The sign difference in
+the terms involving qx and qy in the Hamiltonian determines the chirality of the system. At the K
+point, the Hamiltonian is:
+H(K + q) = ℏvF
+= ℏvF (qxσx + qy σy ) = ℏvF q · σ. (76)
+The sign of the terms in the Hamiltonian indicates that the momentum space near the K point is
+right-handed, or positive chirality. This means that an electron at the K point moves in a clockwise
+direction in momentum space. At the K′ point, the Hamiltonian is:
+H(K′ + q) = ℏvF
+ 0 qx + iqy
+qx − iqy 0
+= ℏvF (qxσx − qy σy ) = ℏvF ¯q · σ. (77)
+For the K′ point, the opposite sign appears in the Hamiltonian, which corresponds to left-handed,
+or negative chirality. This indicates that an electron at the K′ point moves in a counter-clockwise
+direction in the momentum space. Thus, the difference in the sign of the terms in the Hamiltonian
+leads to the distinction between the two valleys in momentum space. The two valleys, K and K′, are
+associated with opposite chirality, which can have important consequences for electronic properties,
+such as the direction of current flow in response to an applied magnetic field (the so-called valley
+Hall effect).
+11

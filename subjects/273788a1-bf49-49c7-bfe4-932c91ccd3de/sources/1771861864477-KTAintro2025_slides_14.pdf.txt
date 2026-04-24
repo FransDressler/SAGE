@@ -1,0 +1,246 @@
+![The image is an introductory overview of nuclear, particle, and astrophysics, showing representations of atomic nuclei, particle physics (Standard Model particles), nuclear reactors, particle accelerators, neutrino experiments, cosmic phenomena like supernova remnants, and the timeline of the universe from the Big Bang.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-01_1875_3333_0_0.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Beta, alpha, fission |
+| 10 | 16/12/25 |  | Nuclear reactors | Radioactive transitions, Radiocarbon method |
+| 11 | 13/01/26 | Particle / Nuclear | Nuclear Structure | Gamma transitions, Mott, Form factors |
+| 12 | 20/01/26 |  | Nucleon Structure | Deep inelastic scattering, Quarks and QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions | Quarks and QCD (VOL2), Z_0 production, Parity violation |
+| 14 | 03/02/26 | Astrophysics | Neutrinos | Neutrino basics, Neutrino oscillations |
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram is a Feynman diagram depicting the decay of a gluon into a quark-antiquark pair.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-03_324_511_666_546.jpg)
+![This diagram depicts a Feynman diagram for electron-positron scattering (Bhabha scattering), showing the interaction between an electron (e⁻) and a positron (e⁺) with the exchange of a virtual photon (γ).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-03_408_915_541_1239.jpg)
+g Gluon-Aufspaltun
+
+$$
+g \rightarrow q \bar{q}
+$$
+
+\begin{aligned}
+\underline{s} & =m_{1}^{2} c^{4}+m_{2}^{2} c^{4}+2 E_{1} E_{2}-2 \overrightarrow{p_{1}} \overrightarrow{p_{2}} c \\
+& =2 E^{2}+\underbrace{2 p_{1}^{2} c^{2}}_{\sim 2 E^{2}} \approx \underline{4 E^{2}}
+\end{aligned}
+
+![This diagram is a plot of the total cross section (σ) for electron-positron (e⁺e⁻) annihilation as a function of the center-of-mass energy (√s) in GeV, showing resonance peaks corresponding to the production of various mesons and bosons such as ρ, ω, ϕ, J/ψ, Υ, and Z.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-03_1071_963_384_2260.jpg)
+
+Farbladungen von Quarks und Gluonen
+e+ e- Kollissionen
+Resonanzen
+
+![This diagram depicts the differential cross section (dσ/dy) as a function of the variable y for neutrino (ν) and antineutrino (ν̅) interactions at neutrino energies between 30 and 200 GeV, showing experimental data points and fitted curves for both particles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-04_1545_1505_125_828.jpg)
+Poch Fig. 10.2
+
+## Warum Neutrinos? β-Zerfall von R . n
+
+![This diagram depicts the beta decay of radium-228 (Ra-228) into actinium-228 (Ac-228), showing the measured and expected electron kinetic energy spectra from the emitted beta particles. It illustrates the discrepancy between the continuous measured electron energy distribution and the expected discrete energy peak, highlighting the need for the neutrino hypothesis.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-05_1240_2831_573_218.jpg)
+
+## Neutrinos aus Kernreaktoren
+
+![This diagram depicts the beta-minus decay process, showing a neutron converting into a proton while emitting a W^- boson that subsequently decays into an electron and an electron antineutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-06_355_681_78_2551.jpg)
+![The image depicts a nuclear power plant, showing the cooling towers releasing steam into the atmosphere.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-06_691_1035_447_239.jpg)
+
+- Kerspaltung von ${ }^{235} \mathrm{U}$ und ${ }^{239} \mathrm{Pu}$
+- Beta Zerfall Kaskaden von neutronenreichen Spaltproduktion
+- Im Mittel 6 Neutrinos per Spaltung
+![This diagram depicts the nuclear fission chain reaction of Uranium-235, showing the splitting of Uranium nuclei into smaller nuclei (fission products), the release of neutrons, and the subsequent induced fission events. It also illustrates the radioactive decay chains of fission products and the formation of Plutonium-239 from Uranium-238.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-06_1105_1162_572_1843.jpg)
+
+
+## Neutrinos aus Beschleunigern
+
+![This diagram depicts Feynman diagrams for the weak decay processes of mesons, specifically showing the decay of a positively charged pion (\(\pi^+\)) into a muon (\(\mu^+\)) and a muon neutrino (\(\nu_\mu\)), and the decay of a negatively charged D meson (\(D^-\)) into a tau lepton (\(\tau^-\)) and a tau antineutrino (\(\bar{\nu}_\tau\)) via the exchange of \(W^+\) and \(W^-\) bosons, respectively.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-07_520_821_72_2476.jpg)
+![This image shows a section of the Large Hadron Collider (LHC), a particle accelerator used for high-energy physics experiments to collide protons or heavy ions at near light speeds. It is designed to study fundamental particles and forces by analyzing collision outcomes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-07_728_1068_473_255.jpg)
+![This diagram depicts a neutrino beamline setup, showing the process from proton acceleration and ejection, through pion and muon decay in the decay tunnel, to neutrino detection.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-07_433_1889_919_1411.jpg)
+
+- Protonen treffen auf ein Target (z. B. aus Beryllium)
+- Erzeugung von Pionen, Kaonen und charmhaltigen Mesonen
+- Die Mesonen zerfallen und erzeugen Neutrinos
+
+
+## Neutrinos aus der Atmosphere ${ }^{\bar{a}+\nu_{A}}$
+
+![The image depicts a view of Earth from space, showing the planet's curvature, atmosphere, and part of the surface with cloud formations. It is for illustrating Earth's appearance and atmospheric layer from an orbital perspective.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-08_714_1162_498_245.jpg)
+
+- Kollision kosmischer Strahlung (Protonen) mit der Atmosphäre
+- Erzeugung von Schauer(n) aus Pionen (= ud-Quarks)
+- Myon- und Elektron-Neutrinos werden im Verhältnis 2 : 1 erzeugt
+![This diagram depicts the particle cascade initiated by a cosmic ray interacting with the Earth's atmosphere, showing the production and decay of pions and muons leading to hadronic and electromagnetic showers. The inset shows the decay processes of charged pions into muons and neutrinos via W boson mediation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-08_1821_1664_54_1628.jpg)
+
+
+## Neutrinos von der Sonne
+
+![This diagram shows the solar neutrino flux per reaction as a function of neutrino energy, depicting the energy spectra and flux intensities at Earth for neutrinos produced by different nuclear reactions in the Sun.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-09_656_606_20_2068.jpg)
+![This diagram depicts the weak interaction processes of beta-plus decay (top) and beta-minus decay (bottom), showing the transformation between protons and neutrons mediated by W bosons and the associated emission of positrons or electrons and neutrinos.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-09_565_533_40_2748.jpg)
+![This image depicts the Sun, showing its surface and outer atmosphere with visible solar activity such as sunspots and solar flares.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-09_722_722_450_238.jpg)
+
+- Kernfusion in der Sonne
+- Es werden ausschließlich ElektronNeutrinos erzeugt
+- 100 Milliarden $\left(10^{11}\right)$ Neutrinos $/ \mathrm{cm}^{2} / \mathrm{s}$ auf der Erde
+![This diagram depicts the proton-proton (pp) chain reaction in stellar nucleosynthesis, showing the sequence of nuclear fusion reactions by which hydrogen nuclei combine to form helium, along with the associated neutrino emissions and branching ratios for different reaction pathways (ppI, ppII, and ppIII).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-09_916_1729_768_1447.jpg)
+
+
+## Neutrino Entdeckung
+
+- Neutrinofluss : $5 \times 10^{13} \bar{v}_{e} / \mathrm{s} / \mathrm{cm}^{2}$
+- $\bar{v}_{e}$ wechselwirkt mit Proton in Wasser, und erzeugt ein Positron und ein Neutron
+![This diagram depicts the quark-level interaction in beta-plus decay, showing a proton converting into a neutron via the emission of a W+ boson, which subsequently decays into a positron and an electron neutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-10_534_906_1167_177.jpg)
+![This diagram depicts the process of electron-positron pair production and annihilation within a layered detector setup, showing how gamma rays interact with matter to produce electron-positron pairs and subsequent gamma emissions. It illustrates the interaction of gamma photons with layers of material, resulting in particle creation and gamma radiation emission.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-10_1005_1159_795_1276.jpg)
+![This image depicts two men operating an early computer or electronic control system, likely from the mid-20th century, showing the use of analog or early digital equipment with numerous dials, switches, and meters. It is related to historical computing or control room operations.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-10_940_830_92_2417.jpg)
+- Detector placed 11 m from reactor and 12 m underground
+200 liters of water with about 40 kg of dissolved CdCl2
+
+
+# Neutrino oscillations 
+
+![This image depicts a playful representation of the three types of neutrinos: tau neutrino (τ), electron neutrino (νₑ), and muon neutrino (μ), illustrating their distinct identities in particle physics.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-11_740_1540_561_784.jpg)
+Why?
+
+How can I detect neutrinos from the sun?
+
+1969:
+Ray Davis is swimming in the water shield of the Homestake experiment in South Dakota, USA
+
+## Solar Neutrino Problem
+
+![This image depicts a comparison of neutrino detection rates from various experiments relative to the prediction made by John Bahcall, showing that all experiments measure fewer neutrinos than expected.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-13_1008_2729_454_242.jpg)
+
+- What is wrong? The expectation? The measurement?
+- Or did the neutrinos change their flavor on the way from the sun to the earth?
+
+
+## Neutrino oscillations
+
+![This image depicts the three types of neutrinos in particle physics: tau neutrino (ντ), electron neutrino (νe), and muon neutrino (νμ). It visually represents these neutrino flavors as characters holding hands.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-14_747_1545_551_786.jpg)
+What !?
+
+## Neutrino Flavours und Masses
+
+Flavor eigenstate = quantum mechanical superposition of mass eigenstates
+
+Pontecorvo-Maki-Nakagawa-Sakata Matrix describes the rotation:
+
+\left(\begin{array}{l}
+v_{e} \\
+v_{\mu} \\
+v_{\tau}
+\end{array}\right)=\left(\begin{array}{lll}
+U_{e 1} & U_{e 2} & U_{e 3} \\
+U_{\mu 1} & U_{\mu 2} & U_{\mu 3} \\
+U_{\tau 1} & U_{\tau 2} & U_{\tau 3}
+\end{array}\right)\left(\begin{array}{l}
+v_{1} \\
+v_{2} \\
+v_{3}
+\end{array}\right)
+
+![This diagram depicts the relationship between neutrino flavor eigenstates (red vectors labeled e, μ, τ) and mass eigenstates (blue vectors labeled 1, 2, 3), showing the mixing angles θ12, θ23, and θ13 that describe neutrino oscillations.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-15_1278_978_392_2000.jpg)
+
+## Neutrino Oscillations (for 2 Flavour)
+
+![This diagram depicts the vector representation of neutrino flavor states in terms of mass eigenstates, illustrating neutrino mixing with mixing angle θ between electron neutrino (ν_e) and muon neutrino (ν_μ) flavors and their corresponding mass states ν_1 and ν_2.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-16_413_639_119_2437.jpg)
+![This diagram depicts the oscillation probabilities of muon antineutrinos (P(ν̅_μ)) and electron antineutrinos (P(ν̅_e)) as functions of the ratio of distance to energy (L/E), illustrating neutrino oscillation behavior with parameters related to the mixing angle (sin²2Θ) and mass-squared difference (Δm²).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-16_928_1447_486_171.jpg)
+
+P\left(v_{\mu} \rightarrow v_{e}\right)=\sin ^{2} 2 \theta \cdot \sin ^{2}\left(\Delta m^{2} \cdot L_{v} / E_{v}\right)
+
+## Neutrino Oscillations (for 2 Flavour)
+
+![This diagram depicts the mixing of neutrino flavor eigenstates (ν_μ and ν_e) with neutrino mass eigenstates (ν_1 and ν_2) in the context of neutrino oscillations, showing the relationship between the states through the mixing angle θ.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-17_410_621_119_2452.jpg)
+![This diagram depicts the oscillation probabilities of muon antineutrinos (P(ν̅μ)) and electron antineutrinos (P(ν̅e)) as functions of the inverse neutrino energy (1/E), illustrating the characteristic oscillation pattern related to neutrino mass-squared differences (Δm²) and mixing angle (θ).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-17_913_1462_481_174.jpg)
+
+How strong is the mixing?
+![This diagram depicts neutrino flavor oscillation, showing the transition probabilities between electron neutrinos (νₑ) and muon neutrinos (ν_μ) over time or distance.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-17_514_975_718_2140.jpg)
+
+What is the mass difference?
+
+P\left(v_{\mu} \rightarrow v_{e}\right)=\sin ^{2} 2 \theta \sin \left(2\left(\Delta m^{2} \cdot\right)_{v} / E_{v}\right)
+
+\Delta m^{2}=m_{1}^{2}-m_{2}^{2}
+
+Amplitude
+Frequency
+Neutrino oscillations are only possible if at least one neutrino has a mass
+
+## Neutrino oscillations
+
+![This image depicts the three types of neutrinos (tau neutrino, electron neutrino, and muon neutrino) represented as cartoon characters holding hands, illustrating the concept of neutrino flavors in particle physics.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-18_747_1545_551_786.jpg)
+Really !?
+
+## SNO Experiment in Canada
+
+Bowl filled with heavy water
+Deuterium
+
+How can we test that the neutrinos change their flavour?
+
+## Idea!
+
+![This diagram depicts the interaction processes of neutrinos with nucleons and electrons, specifically showing charged current (CC), neutral current (NC), and elastic scattering (ES) interactions involving neutrinos and the exchange of W⁺ and Z⁰ bosons. It illustrates how different neutrino flavors interact with protons, neutrons, and electrons via these weak force mechanisms.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-20_895_2702_481_351.jpg)
+
+- Scattering via neutral Z-Boson is flavor independent
+- This reaction channel measures the entire neutrino flux
+
+
+## Idea!
+
+charged current (CC)
+![This diagram depicts the weak interaction process involved in neutron decay within a deuteron, showing the transformation of a neutron into a proton via the exchange of a W+ boson, accompanied by the emission of an electron and an electron neutrino.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-21_708_909_573_351.jpg)
+![This diagram depicts neutrino interactions, specifically neutral current (NC) interaction with a deuteron and elastic scattering (ES) interaction with electrons, showing the exchange of Z^0 and W^+ bosons. It also notes the binding energy of deuterium and the energy requirement for neutrino interactions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-21_1152_1773_129_1283.jpg)
+
+## On
+
+- For a CC reaction with a muon neutrino, a muon would have to be created
+- $m_{\mu}=105 \mathrm{MeV}$
+- Electrons from the sun have smaller energies
+![This diagram depicts the solar neutrino energy spectrum, showing the flux of neutrinos from different nuclear reactions in the Sun as a function of neutrino energy, with detection sensitivity ranges for Gallium, Chlorine, and Super-Kamiokande experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-21_434_585_1311_1785.jpg)
+
+SNO Phase 1: only heavy water
+
+Photomultiplier
+
+## SNO Phase 2: with 2t NaCl (Salt)
+
+Cl captures neutron Cl* → Cl emitts photons Photons kick electrons out of the atomic shell
+![This diagram shows the neutrino flux measurements from the Sudbury Neutrino Observatory (SNO) compared to the Standard Solar Model (SSM) prediction, illustrating the detection of all neutrino flavors and confirming neutrino oscillations. It also references earlier neutrino detection work by Ray Davis and John Bahcall.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-24_1670_3082_205_249.jpg)
+
+## Nobel Prize in Physics 2015
+
+![This image depicts a Nobel Prize medal, which is awarded to individuals or organizations for outstanding contributions in fields such as Physics, Chemistry, Medicine, Literature, Peace, and Economic Sciences. It shows the profile of Alfred Nobel, the founder of the Nobel Prizes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-25_280_277_421_278.jpg)
+
+Takaaki Kajita and Arthur B. McDonald:
+"for the discovery of neutrino oscillations, which shows that neutrinos have mass"
+![The image depicts two men engaged in phone conversations, likely illustrating communication or a phone call between them. It shows one older man outdoors and one middle-aged man indoors, both smiling while using mobile phones.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-25_976_1441_239_1818.jpg)
+![The image depicts the announcement of the 2015 Nobel Prize in Physics awarded to Takaaki Kajita and Arthur B. McDonald for their discovery of neutrino oscillations, which shows that neutrinos have mass.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/11337fc2-3a5f-4f82-b9cb-4c63829aadfb/59ae6fb6-6f2b-4d9d-8894-8de6e166a01e-25_629_772_994_377.jpg)
+
+## Prüfung
+
+## - Inhalt
+
+- Alle Vorlesungen (Tafel und Slides)
+- Schwerpunkt auf Verständnis!
+- Herleitungen werden nicht abgeprüft (z.B. Yukawa, Wirkungsquerschnitte)
+- Komplizierte Formeln (z.B. Wirkungsquerschitte, Weizäcker, Weißkopf Näherung) werden angegeben.
+- Abhängigkeiten und fundamentale Zusammenhänge sind prüfungsrelevant (z.B. Propagator Term, Energie-Impuls-Beziehung, de-Broglie Wellenlänge, Unschärferelation, Helizität...)
+- Wichtig: Auswahlregeln, Erhaltungssätze, welche Reaktionen sind erlaubt/verboten, Feyman Diagramme
+- Alle Übungen
+- Blatt 2 2a - Herleitung des Yukawa Potentials muss nicht im Detail gerechnet werden können.
+- Komplizierte Formeln werden angegeben.
+- Einheiten, Massen etc. werden angegeben.
+
+
+## - Hilfsmittel
+
+- Taschenrechner (nicht programmierbar)
+- 1 DINA4 Blatt (handschriftlich und selbst beschrieben, auch auf Tablet, kein TeX oder Computerschrift, kein Copy\&Paste von Plots, Bildern etc.)
+

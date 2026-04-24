@@ -1,0 +1,282 @@
+## Chapter 1
+
+## A Macroscopic View of Matter
+
+### 1.1 Viewing the World at Different Scales
+
+The world puts on different faces for observers using different scales in the measurement of space and time. The everyday, macroscopic world, as perceived on the scale of meters and seconds, looks very different from that of the atomic, microscopic world, which is seen on scales smaller by some ten orders of magnitude. Different still is the submicroscopic ealm of quarks, which is revealed only when the scale shrinks further by another ten orders of magnitude. With an expanding scale in the opposite direction, one enters the regime of astronomy, and ultimately cosmology. These different pictures arise from different ways of organizing data, while the basic laws of physics remain the same.
+
+The physical laws at the smallest accessible length scale are the most "fundamental," but they are of little use on a larger scale, where we must deal with different physical variables. A complete knowledge of quarks tells us nothing about the structure of nuclei, unless we can define nuclear variables in terms of quarks, and obtain their equations of motion from those for quarks. Needless to say, we are unable to do this in detail, although we can see how this could be done in principle. Therefore, each regime of scales has to be described phenomenologically, in terms of variables and laws observable in that regime. For example, an atom is described in terms of electrons and nuclei without reference to quarks. The subnuclear world enters the equations only implicitly, through such parameters as the mass ratio of electron to proton, which we take from experiments in the atomic regime. Similarly, in the macroscopic domain, where atoms are too small to be visible, we describe matter in terms of phenomenological variables such as pressure and temperature. The atomic structure of matter enters the picture implicitly, in terms of properties such as density and heat capacity, which can be measured by macroscopic instruments.
+
+This book is concerned mainly with statistical methods, which provide a bridge between the microscopic and the macroscopic world. We begin our study with thermodynamics, because it is a highly successful phenomenological theory, which
+identifies the correct macroscopic variables to use, and serves as a guidepost for statistical mechanics.
+
+### 1.2 Thermodynamics
+
+From experience, we know that a macroscopic body generally settles down, or "relaxes" to a stationary state after a short time. We call this a state of thermal equilibrium When the external condition is changed, the existing equilibrium state will change, and, after a relatively short relaxation time, settles down to another equilibrium state. Thus, a macroscopic body spends most of the time in some state of equilibrium, punctuated by almost sudden transitions. In our study of macroscopic phenomena, we divide the subject roughly under the following headings:
+
+- Thermodynamics is a phenomenological theory of equilibrium states and transitions among them.
+- Statistical mechanics is concerned with deducing the thermodynamic properties of a macroscopic system from its microscopic structure.
+- Kinetic theory aims at a microscopic description of the transition process between equilibrium states.
+
+As a rule, properties of a macroscopic system can be classified as either extensive or intensive:
+
+- Extensive quantities are proportional to the amount of stuff present.
+- Intensive quantities are independent of the amount of stuff present.
+
+Generally, there are only these two categories, because we can neglect surface effects. A macroscopic body is typically of size $L \sim 1 \mathrm{~m}$, while the range of atomic forces is of order $r_{0} \sim 10^{-10} \mathrm{~m}$. The macroscopic nature is expressed by the ratio $L / r_{0} \sim 10^{10}$. The surface to volume ratio, rendered dimensionless in terms of the range of atomic forces, is of order $r_{0} / L \sim 10^{-10}$. The extensive property expresses the "saturation property" of atomic forces, that is, an atom can "feel" only as far as the range of the force. The intensive property means that atoms in the interior of the body do not feel the presence of the surface.
+
+Exceptions arise when one of the following conditions prevail:
+
+- The system is small.
+- There is a nonuniform external potential.
+- There are long-range interparticle forces, such as the Coulomb repulsion between charges, and the gravitational attraction between mass elements.
+- The geometry is such that the surface is important.
+
+These exceptions occur in important physical systems. For example, the volume of a star is a nonlinear function of its mass, due to the long-ranged gravitational interaction. We illustrate the different cases in Figure 1.1.
+
+![This diagram depicts examples of particle or system configurations illustrating the concept of extensivity in physical systems, showing how extensive systems maintain proportional scaling when divided, while non-extensive systems do not due to factors like small size, long-range interactions, or irregular shapes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/204ead23-7ec3-4dd2-a9ff-40b5f38aa220/28642244-d175-43cc-88d7-d1a09b8e51d0-03_917_1040_250_383.jpg)
+Figure 1.1 A body has extensive properties if surface effects can be neglected, so that the energy is proportional to the number of particles. In these pictures, the surface layer is indicated by a heavy line.
+
+### 1.3 The Thermodynamic Limit
+
+We consider a material body consisting of $N$ atoms in volume $V$, in the absence of a nonuniform external potential, to be the idealized limit
+
+$$
+\begin{aligned}
+N & \rightarrow \infty \\
+V & \rightarrow \infty \\
+\frac{N}{V} & =\text { fixed number }
+\end{aligned}
+$$
+
+This is called the thermodynamic limit, in which the system becomes translationally invariant.
+
+The thermodynamic state is specified by a number of thermodynamic variables, which are assumed to be either extensive (proportional to $N$ ), or intensive (independent of $N$ ). We consider a generic system described by the three variables $P, V, T$, denoting, pressure, volume, and temperature respectively:
+
+- The pressure $P$, an intensive quantity, is the force per unit area that the body exerts on a wall, which can be that of the container of the system, or it may be one side of an imaginary surface inside the body. Under equilibrium conditions in the absence of external potentials, the pressure must be uniform throughout
+the body. It is convenient to measure pressure in terms of the atmospheric pressure at sea level:
+
+1 \mathrm{~atm}=1.013 \times 10^{6} \text { dyne } \mathrm{cm}^{-2}=1.103 \times 10^{5} \mathrm{~N} \mathrm{~m}^{-2}
+
+- The volume $V$ measures the spatial extent of the body, and is an extensive quantity. A solid body maintains its own characteristic density $N / V$. A gas, however, fills the entire volume of its container.
+- The temperature $T$, an intensive quantity, is measured by some thermometer. It is an indicator of thermal equilibrium. Two bodies in contact with each other in equilibrium must have the same temperature. Since the two bodies in question can be different parts of the same body, the temperature of a body in equilibrium must be uniform. The temperature also indicates the energy content of a body, but the notion of energy has yet to be defined, through the first law of thermodynamics.
+
+In the thermodynamic limit we must use only intensive quantities, mathematically speaking. Instead of $V$ we should use the specific volume $v=V / N$, or the density $n=N / V$. However, it is convenient to regard $V$ as a large but finite number, for this corresponds to the everyday experience of seeing the volume of a macroscopic body expand or contract, while the number of atoms is fixed.
+
+There are systems requiring other variables in addition to, or in place of, $P, V, T$. Common examples are the magnetic field and magnetization for a magnetic substance, the strain and stress in elastic solids, or the surface area and the surface tension.
+
+### 1.4 Thermodynamic Transformations
+
+When a body is in thermal equilibrium, the thermodynamic variables are not independent of one another, but are constrained by an equation of state of the form
+
+f(P, V, T)=0
+
+where the function $f$ is characteristic of the substance. This leaves two independent variables out of the original three. Geometrically we can represent the equation of state by a surface in the state space spanned by $P, V, T$, as shown in Figure 1.2. All equilibrium states must lie on this surface. We regard $f$ as a continuous differentiable function, except possibly at special points.
+
+A change in the external condition will change the equilibrium state of a system. For example, application of external pressure will cause the volume of a body to decrease. Such a change is called a thermodynamic transformation. The initial and final states are equilibrium states. The system can be considered to remain in equilibrium, if the transformation proceeds sufficiently slowly. In such a case, we say that the transformation is quasi-static. This usually means that the transformation is reversible, in that the system will retrace the transformation in reverse, when the external change
+
+![This diagram depicts a thermodynamic state surface showing the pressure (P), temperature (T), and volume (V) relationship, illustrating reversible and irreversible paths between two states (A and B) on the equation of state surface.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/204ead23-7ec3-4dd2-a9ff-40b5f38aa220/28642244-d175-43cc-88d7-d1a09b8e51d0-05_612_692_265_559.jpg)
+Figure 1.2 The state space in thermodynamics.
+
+is reversed. A reversible transformation can be represented by a continuous path on the equation-of-state surface, as illustrated in Figure 1.2.
+
+An irreversible transformation, on the other hand, cannot be represented by a path on the equation-of-state space, as indicated by the dashed line in Figure 1.2. In fact, we may not be able to represent it as a path in the state space at all. An example is the sudden removal of a wall in a container of a gas, so that the gas expands into a compartment that was originally vacuous. Although the initial and final states are equilibrium states, the intermediate states do not have uniform $P, V, T$, and hence cannot be represented as points in the state space.
+
+In a reversible transformation, we can consider mathematically infinitesimal paths. The mechanical work done by the system over an infinitesimal path is represented by a differential:
+
+d W=P d V
+
+Along a finite reversible path $A \rightarrow B$, the work done is given by
+
+\Delta W=\int_{A}^{B} P d V
+
+which depends on the path connecting $A$ to $B$. This is the area underneath the path in a $P V$ diagram. When the path is a closed cycle, the work done in one cycle is the area enclosed, as shown in Figure 1.3. The work done along an irreversible path is generally not $\int P d V$. For example, in the free expansion of a gas into a vacuum, the system does not perform work on any external agent, and so $\Delta W=0$.
+
+A uniquely thermodynamic process is heat transfer. From the atomic point of view, it represents a transfer of energy in the form of thermal agitation. In thermodynamics, we define heat phenomenologically, as that imparted by a heating element, such as a flame or a heating coil. An amount of heat $\Delta Q$ absorbed by a body causes a rise $\Delta T$ in its temperature given by
+
+\Delta Q=C \Delta T
+
+![This diagram depicts a pressure-volume (P-V) cycle for a thermodynamic process, showing the work done by the system during one complete cycle.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/204ead23-7ec3-4dd2-a9ff-40b5f38aa220/28642244-d175-43cc-88d7-d1a09b8e51d0-06_562_564_248_613.jpg)
+Figure 1.3 The work done in a closed cycle of transformations is represented by the area enclosed by the cycle in a $\boldsymbol{P} \boldsymbol{V}$ diagram.
+
+where $C$ is the heat capacity of the substance. We imagine the limit in which $\Delta Q$ and $\Delta T$ become infinitesimal. The heat capacity is an extensive quantity. The intensive heat capacity per particle $C / N$, per mole $C / n$, or per unit volume $C / V$, is called specific heat.
+
+The fact that heat is a form of energy was established experimentally, by observing that one can increase the temperature of a body by $\Delta T$ either by transferring heat to the body or performing work on it. A practical unit for heat is the calorie (cal), originally defined as that amount of heat that will raise the temperature of 1 g of water from 14.5 to $15.5^{\circ} \mathrm{C}$ at sea level. In current usage, it is defined exactly in terms of the joule (J):
+
+1 \mathrm{cal} \equiv 4.184 \mathrm{~J}
+
+Another commonly used unit is the British thermal unit (Btu):
+
+1 \mathrm{Btu} \equiv 1055 \mathrm{~J}
+
+The heat absorbed by a body depends on the path of the transformation, as is true of the mechanical work done by the body. We can speak of the amount of heat absorbed in a process, but the "heat of a body," like the "work of a body," is meaningless. Commonly encountered transformations are the following:
+
+- $T=$ constant (isothermal process)
+- $P=$ constant (isobaric process)
+- $V=$ constant (constant-volume process)
+- $\Delta Q=0$ (adiabatic process)
+
+We use a subscript to distinguish the different types of paths, as for example $C_{V}$ and $C_{P}$, representing, respectively, the heat capacity at constant volume and constant pressure. The heat capacity is only one of many thermodynamic coefficients
+that measure the response of the system to an external source. Other examples are
+
+\begin{aligned}
+& \kappa=-\frac{1}{V} \frac{\Delta V}{\Delta P} \quad \text { (compressibility) } \\
+& \alpha=\frac{1}{V} \frac{\Delta V}{\Delta T} \quad \text { (coefficient of thermal expansion) }
+\end{aligned}
+
+These coefficients can be obtained from experimental measurements. In principle they can be calculated from atomic properties using statistical mechanics.
+
+### 1.5 Classic Ideal Gas
+
+The simplest thermodynamic system is the classic ideal gas, which is a gas in the limit of low density and high temperature. The equation of state is given by the ideal gas law:
+
+P V=N k_{B} T
+
+where $T$ is the ideal gas temperature, measured in kelvins ( K ), and
+
+k_{B}=1.381 \times 10^{-16} \mathrm{erg} \mathrm{~K}^{-1}(\text { Boltzmann's constant })
+
+As we shall see, the second law of thermodynamics implies $T>0$, and the lower bound is called the absolute zero. For this reason, $T$ is also called the absolute temperature. The heat capacity of a monatomic ideal gas at constant volume $C_{V}$ has the value
+
+C_{V}=\frac{3}{2} N k_{B}
+
+These properties of the ideal gas were established experimentally, and can be derived theoretically in statistical mechanics.
+
+Thermodynamics does not assume the existence of atoms. Instead of the number of atoms $N$, we can use the number of gram moles $n$, which is a chemical property of the substance. The two are related through
+
+N k_{B} & =n R \\
+R & =8.314 \times 10^{7} \mathrm{erg} \mathrm{~K}^{-1}(\text { gas constant })
+
+The ratio $R / k_{B}$ is Avogadro's number, the number of atoms per mole:
+
+A_{0}=\frac{R}{k_{B}}=6.022 \times 10^{23}
+
+![This diagram is a Pressure-Volume (P-V) diagram showing isothermal processes for an ideal gas at three different temperatures (T1 > T2 > T3), illustrating the relationship between pressure and volume along isotherms. It depicts points and transitions between states on these isotherms, indicating changes in pressure and volume at constant temperatures.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/204ead23-7ec3-4dd2-a9ff-40b5f38aa220/28642244-d175-43cc-88d7-d1a09b8e51d0-08_705_759_261_526.jpg)
+Figure 1.4 Isotherms of an ideal gas, and various paths of transformations.
+
+Indeed, the atomic picture was a latecomer that gained acceptance only after a long historic struggle (See Section 10.7).
+
+The equation of state can be represented graphically in a $P V$ diagram, as shown in Figure 1.4, which displays a family of curves at constant $T$ called isotherms. Indicated on this graph are the reversible paths corresponding to various types of transformations:
+
+- $a b$ is isothermal.
+- $b c$ proceeds at constant volume.
+- $c d$ is at constant pressure.
+- de is isothermal.
+- abcdea is a closed cycle.
+- $d f$ is nonisothermal.
+
+To keep the temperature constant during an isothermal transformation, we keep the system in thermal contact with a body so large that its temperature is not noticeably affected by heat exchange with our system. We call such a body a heat reservoir, or heat bath.
+
+### 1.6 First Law of Thermodynamics
+
+The first law expresses the conservation of energy by including heat as a form of energy. It asserts that there exists a function of the state, internal energy $U$, whose change in any thermodynamic transformation is given by
+
+\Delta U=\Delta Q-\Delta W
+
+That is, $\Delta U$ is independent of the path of the transformation, although $\Delta Q$ and $\Delta W$ are path dependent. In a reversible infinitesimal transformation, the infinitesimal changes $d Q$ and $d W$ are not exact differentials, in the sense that they do not represent the changes of definite functions, but their difference
+
+d U=d Q-d W
+
+is an exact differential.
+
+### 1.7 Magnetic Systems
+
+For a magnetic substance, the thermodynamic variables are the intensive magnetic field $H$, and the extensive magnetization $M$, which are unidirectional and uniform in space. The magnetic field is generated by external real currents (and not induced currents), and the magnet work done by the system is given by
+
+d W=-H d M
+
+The first law takes the form
+
+d U=d Q-H d M
+
+which maps into that for a $P V T$ system under the correspondence $H \leftrightarrow-P, M \leftrightarrow V$.
+For a paramagnetic substance, a magnetic field induces a magnetization density given by
+
+\frac{M}{V}=\chi H
+
+The magnetic susceptibility $\chi$ obeys Curie's law
+
+\chi=\frac{c_{0}}{T}
+
+Thus, we have the equation of state
+
+M=\frac{\kappa H}{T}
+
+where $\kappa=c_{0} V$.
+An idealized uniform ferromagnetic system has a phase transition at a critical temperature $T_{c}$, and becomes a permanent magnet for $T<T_{c}$ in the absence of external field. However, there is no phase transition in the presence of an external field. The equation of state is illustrated graphically in the $M T$ diagram of Figure 1.5.
+
+![This diagram depicts the temperature dependence of magnetization (M) in a ferromagnetic material, showing how magnetization decreases as temperature (T) approaches the critical temperature (Tc) for different values of the magnetic field (H), including zero and positive fields.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/204ead23-7ec3-4dd2-a9ff-40b5f38aa220/28642244-d175-43cc-88d7-d1a09b8e51d0-10_562_605_246_598.jpg)
+Figure 1.5 Equation of state of a uniform ferromagnet. A ferromagnetic transition occurs at a critical temperature at zero field.
+
+A real ferromagnet is not uniform, but made up of domains with different orientations of the magnetization. The configuration of the domains is such as to reduce the fringing fields that extend outside of the body, in order to minimize the magnetic energy. Each domain behaves according to the uniform case depicted in Figure 1.5. At a fixed $T<T_{c}$, the domain walls move in response to a change in $H$, to either consolidate old domains, or create new ones. This is a dissipative process, and leads to hysteresis, as shown in the $M H$ plot of Figure 1.6. At zero field, the magnetization is at either $a$ or $b$, depending on the history. This is the basis of magnetic memory.
+
+![This diagram depicts a magnetic hysteresis loop showing the relationship between magnetization (M) and magnetic field strength (H), illustrating the lag of magnetization behind the applied magnetic field during magnetization and demagnetization cycles.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/204ead23-7ec3-4dd2-a9ff-40b5f38aa220/28642244-d175-43cc-88d7-d1a09b8e51d0-10_638_645_1792_576.jpg)
+Figure 1.6 Hysteresis in a ferromagnet is due to the formation of ferromagnetic domains.
+
+## Problems
+
+1.1 Tenzing Norgay heated $1 \mathrm{~m}^{3}$ of water from 20 to $40^{\circ} \mathrm{C}$, in order to take a bath before climbing Chomolungma.
+(a) How much energy did he use? Give the answer in kWh .
+(b) Show that the energy is enough to lift Tenzing's entire party of 14, of average weight 150 lb , from sea level to the top of Chomolungma (elev. $29,000 \mathrm{ft}$ ).
+1.2 Referring to Figure 1.4, find the work done along the various paths on the closed cycle $a b, b c, c d, d e, e a$, and give the total work done in the closed cycle. How much heat is supplied to the system in one cycle?
+1.3 An ideal gas undergoes a reversible transformation along the path
+
+\frac{V}{V_{0}}=\left(\frac{T}{T_{0}}\right)^{b}
+
+where $V_{0}, T_{0}$, and $b$ are constants.
+(a) Find the coefficient of thermal expansion.
+(b) Calculate the work done by the gas when the temperature increases by $\Delta T$.
+1.4 In a nonuniform gas, the equation of state is valid locally, as long as the density does not change too rapidly with position. Consider a column of ideal gas under gravity at constant temperature. Find the density as a function of height, by balancing the forces acting on a volume element.
+1.5 Two solid bodies labeled 1 and 2 are in thermal contact with each other. The initial temperatures were $T_{1}, T_{2}$, with $T_{1}>T_{2}$. The heat capacities are $C_{1}$ and $C_{2}$, respectively. What is is final equilibrium temperature, if the bodies are completely isolated from the external world?
+1.6 A paramagnetic substance is magnetized in an external magnetic field at constant temperature. How much work is require to attain a magnetization $M$ ?
+1.7 A hysteresis curve (see Figure 1.6) is given by the formula
+
+M=M_{0} \tanh \left(H \pm H_{0}\right)
+
+where the + sign refers to the upper branch, and the - sign refers to the lower branch. The parameter $H_{0}$ is called the coercive force. Show that the work done by the system in one hysteresis cycle is $2 M_{0} H_{0}$.
+1.8 The atomic nucleus The atomic nucleus contains typically fewer than 300 protons and neutrons. It is an example of a small system with both short- and long-range forces. The mass is given by the semi empirical Weizsäcker formula (See deShalit
+and Feshbach 1974):
+
+M=Z m_{p}+N m_{n}-a_{1} A+a_{2} A^{2 / 3}+a_{3} \frac{Z^{2}}{A^{1 / 3}}+a_{4} \frac{(Z-N)^{2}}{A}+\delta(A)
+
+where $Z$ is the number of protons, $N$ is the number of neutrons, and $A=Z+N$. The masses of protons and neutrons are, respectively, $m_{p}, m_{n}$ and $a_{i}(i=1, \ldots, 4)$ are numerical constants.
+
+\text { Volume energy : } a_{1} & =16 \mathrm{MeV} / \mathrm{c}^{2} \\
+\text { Surface energy : } a_{2} & =19 \\
+\text { Coulomb energy : } a_{3} & =0.72 \\
+\text { Symmetry energy : } a_{4} & =28
+
+The symmetry energy favors $N=Z$. The term $\delta(A)$ is the "pairing energy" that gives small fluctuations.
+
+Take $Z=N=A / 2, m_{n} \approx m_{p}$, and neglect $\delta(A)$, so that
+
+M=\left(m_{p}-a_{1}\right) A+a_{2} A^{2 / 3}+\frac{a_{3}}{4} A^{5 / 3}
+
+Make a $\log$ plot of $M$ from $A=1$ to $A=10^{4}$, and indicate the range in which $M$ can be considered as extensive.
+1.9 The false vacuum In the theory of the "inflationary universe," a pinpoint universe was created during the Big Bang in a "false" vacuum state characterized by a finite energy density $u_{0}$, while the true vacuum state should have zero energy density. (For a review see Guth, 1992).
+
+An ordinary solid too has finite energy per unit volume; but it occupies a definite volume, given a total number of particles. If we put the solid in a box larger than that volume, it would not fill the box, but "rattle" in it. Not so the false vacuum. It must have the same energy density whatever its volume, and this makes it strange stuff indeed.
+(a) Imagine putting the false vacuum in a cylinder stopped with a piston, with the true vacuum outside. If we pull on the piston to increase the volume of the false vacuum by $d V$, show that the false vacuum performs work $d W=-u_{0} d V$. Hence the false vacuum has negative pressure $P=-u_{0}$.
+(b) According to general relativity, the radius $R$ of the universe obeys the equation
+
+\frac{d^{2} R}{d t^{2}}=-\frac{4 \pi}{3 c^{2}} G\left(u_{0}-3 P\right) R
+
+where $c$ is the velocity of light, and
+
+G=6.673 \times 10^{-8} \mathrm{~cm}^{3} / \mathrm{g} \mathrm{~s}=6.707 \times 10^{-39} \mathrm{GeV}^{-2} \hbar c^{3}
+
+is Newton's constant (gravitational constant). For the false vacuum, this reduces to
+
+\frac{d^{2} R}{d t^{2}} & =\frac{R}{\tau^{2}} \\
+\tau & =\sqrt{\frac{3 c^{2}}{8 \pi G u_{0}}}
+
+Thus the radius of the universe expands exponentially with time constant $\tau$. According to theory, $u_{0}=\left(10^{15} \mathrm{GeV}\right)^{4} /(\hbar c)^{3}=10^{96} \mathrm{erg} / \mathrm{cm}^{3}$. Show
+
+\tau \approx 10^{-34} s
+
+## References
+
+deShalit, A. and H. Feshbach, Theoretical Nuclear Physics, Vol. 1, Wiley, New York, 1974, p. 11.
+Guth, A., The Oskar Klein Memorial Lectures, Vol. 2, G. Ekspong (ed.), World Scientific Publishing Co., Singapore, 1992.
+

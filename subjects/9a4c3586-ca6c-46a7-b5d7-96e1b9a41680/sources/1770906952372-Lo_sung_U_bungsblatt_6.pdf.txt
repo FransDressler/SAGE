@@ -1,0 +1,226 @@
+# Übung zur Vorlesung <br> Physik der kondensierten Materie 1 
+
+WiSe 2025/2026
+Tutorien in der Woche vom 01.12.25
+Blatt 6
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und -materialien
+Max Gruber
+
+### 6.1 Atomstrukturfaktor von atomarem Wasserstoff
+
+Für das Wasserstoffatom ist im Grundzustand die Elektronendichte durch $\rho_{H}(r)=\left|\Psi_{100}(r)\right|^{2}=\exp \left(-2 r / a_{B}\right) /\left(\pi a_{B}^{3}\right)$ gegeben. Hierbei ist $a_{B}$ der Bohrsche Radius. Zeigen Sie, dass der atomare Formfaktor $f(\mathbf{q})$ durch
+
+$$
+f(\mathbf{q})=\frac{1}{\left(1+\left(\frac{q a_{B}}{2}\right)^{2}\right)^{2}}
+$$
+
+gegeben ist, wobei $\mathbf{q}=\Delta \mathbf{k}=\mathbf{k}^{\prime}-\mathbf{k}=\mathbf{G}$ der Streuvektor ist.
+
+## Lösung:
+
+Der Atomformfaktor ist definiert als die Fourier-Transformierte der Elektronendichte $\rho_{H}(\mathbf{r})$ :
+
+f(\mathbf{q})=\int d^{3} r \rho_{H}(\mathbf{r}) e^{-i \mathbf{q} \cdot \mathbf{r}}
+
+Da $\rho_{H}(\mathbf{r})$ sphärisch symmetrisch ist, empfiehlt sich die Verwendung von Kugelkoordinaten. Mit $d^{3} r=r^{2} d r \sin (\theta) d \theta d \phi$ erhalten wir
+
+\begin{aligned}
+f(\mathbf{q}) & =\int_{0}^{\infty} d r r^{2} \int_{0}^{\pi} d \theta \sin (\theta) \int_{0}^{2 \pi} d \phi \rho_{H}(\mathbf{r}) e^{i q r \cos (\theta)} \\
+& =4 \pi \int_{0}^{\infty} d r r^{2} \frac{\sin (q r)}{q r} \rho_{H}(r)
+\end{aligned}
+
+Nach Einsetzen der Elektronendichte des Wasserstoffatoms, $\rho_{H}(r)$, erhalten wir
+
+\begin{aligned}
+f(\mathbf{q}) & =\frac{4}{\left(q a_{B}\right)^{3}} \int_{0}^{\infty} d r r e^{-2 r / a_{B}} \sin (q r) \\
+& =\frac{4}{\left(q a_{B}\right)^{3}} \int_{0}^{\infty} d \xi \xi \sin (\xi) e^{\frac{-2 \xi}{q a_{B}}}
+\end{aligned}
+
+wobei wir die Koordinatentransformation $\xi=q r, \frac{d \xi}{d r}=q$, also $d r=\frac{d \xi}{q}$ verwendet haben. Dieses Integral ist tabelliert (vgl. z.B. Bronstein-Semendjajew):
+
+\int d x x \sin (b x) e^{-a x}=-\left(\frac{b x}{a^{2}+b^{2}}+\frac{2 a b}{\left(a^{2}+b^{2}\right)^{2}}\right) & e^{-a x} \cos (b x) \\
+& -\left(\frac{a x}{a^{2}+b^{2}}+\frac{a^{2}-b^{2}}{\left(a^{2}+b^{2}\right)^{2}}\right) e^{-a x} \sin (b x) .
+
+An der oberen Grenze $(x \rightarrow \infty)$ wird $e^{-a x}=1$. An der unteren Grenze $(x=0)$ überlebt nur der zweite Term in der ersten runden Klammer. Wir erhalten also:
+
+\int_{0}^{\infty} d x x \sin (b x) e^{-a x}=\frac{2 a b}{\left(a^{2}+b^{2}\right)^{2}}
+
+Mit Hilfe von Gleichung (4) können wir $a=\frac{2}{q a_{B}}$ identifizieren und wir erhalten als Endresultat für den atomaren Formfaktor:
+
+f(\mathbf{q})=\frac{4}{\left(q a_{B}\right)^{3}} \int_{0}^{\infty} d \xi \xi \sin (\xi) e^{\frac{-2 \xi}{q a_{B}}}=\frac{2\left(\frac{2}{q a_{B}}\right) b}{\left(\left(\frac{2}{q a_{B}}\right)^{2}+b^{2}\right)^{2}}=\frac{1}{\left(1+\left(q a_{B} / 2\right)^{2}\right)^{2}}
+
+### 6.2 Strukturanalyse
+
+(a) Gegeben sind die drei Diffraktogramme von $\mathrm{NaCl}, \mathrm{NaF}$ und NaBr (Abbildung 2). Alle drei Verbindungen kristallisieren in einer fcc-Struktur. Ordnen Sie die Diffraktogramme den jeweiligen Verbindungen zu und begründen Sie Ihre Entscheidung kurz. Beachten Sie hierbei die Gitterkonstante der jeweiligen Verbindung.
+(b) Beschreiben Sie kurz, welche Veränderungen Sie im XRD von NaCl erwarten, wenn Sie es bei 400 K aufnehmen.
+
+![This is an X-ray diffraction (XRD) pattern showing the intensity of diffracted X-rays as a function of the diffraction angle (2θ), used to identify the crystalline structure and phase composition of a material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/eb1679e0-bed6-464a-b3a9-b90448ba21b1/8ca63f3e-affc-4249-9af1-69b5cffb274c-2_432_526_1343_251.jpg)
+XRD I
+
+![This diagram is an X-ray diffraction (XRD) pattern showing the intensity of diffracted X-rays (Int.) as a function of the diffraction angle (2θ), used to identify the crystalline structure of a material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/eb1679e0-bed6-464a-b3a9-b90448ba21b1/8ca63f3e-affc-4249-9af1-69b5cffb274c-2_428_527_1347_776.jpg)
+XRD II
+
+![This diagram is an X-ray diffraction (XRD) pattern showing the intensity of diffracted X-rays (Int.) as a function of the diffraction angle (2θ), used to identify the crystalline structure of a material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/eb1679e0-bed6-464a-b3a9-b90448ba21b1/8ca63f3e-affc-4249-9af1-69b5cffb274c-2_428_520_1347_1306.jpg)
+XRD III
+
+## Lösung:
+
+(a) Über die Gitterkonstante der jeweiligen Verbindungen kann eine Aussage über die Größe der Einheitszelle und somit dem Abstand der Atome zueinander gemacht werden. Die überträgt sich wiederum auf die Abstände der Netzebenen. Nach Bragg $(n \lambda=2 d \sin (\Theta))$ bedeuten größere Abstände der Netzebenen $\left(d_{h k l}\right)$ kleinere Winkel $2 \Theta$ im Diffraktogramm und somit lässt sich folgende Zuordnung treffen: XRD I $=\mathrm{NaBr}, \mathrm{XRD}$ II $=\mathrm{NaCl}, \mathrm{XRD}$ III $=\mathrm{NaF}$.
+(b) NaCl hat keinen Phasenübergang bzw. Aggregatszustandsänderung bei 400 K . Somit ändert sich die Anzahl an Reflexen nicht. Aufgrund des Debye-Waller-Effekts nimmt mit steigender Temperatur die mittlere Amplitude der kohärenten elastischen Streuung ab und es verringern sich die Peak-Intensitäten (vor allem bei größeren $2 \Theta$ ).
+
+### 6.3 Röntgenbeugung
+
+Mittels Epitaxie ist es möglich einkristalline Filme eines Materials so auf einem Substratkristall aufwachsen lassen, dass sie sich in ihren Kristallrichtungen am Substrat orientieren. So kann man beispielsweise Au (001)-Schichten auf GaAs (001) herstellen, d.h. die (001)-Ebenen des Goldes liegen parallel zur (001)-Oberfläche des GaAs-Substrates und sind zudem in der Filmebene am GaAs ausgerichtet. Gold hat eine fcc-Struktur. Dampft man Gold im Vakuum auf ein amorphes Substrat wie z.B. Glas, dann orientieren sich die (111)-Ebenen parallel zur Oberfläche des Glases. Dies ist ein energetisch bevorzugter Zustand, da es sich um die dichtest gepackten Ebenen handelt.
+
+![This diagram depicts the basic setup for X-ray diffraction (XRD) measurement, showing the incident X-ray beam from the source (Quelle) striking a sample at an angle θ and the diffracted beam detected at an angle 2θ.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/eb1679e0-bed6-464a-b3a9-b90448ba21b1/8ca63f3e-affc-4249-9af1-69b5cffb274c-3_359_794_781_639.jpg)
+Abbildung 1: Schematischer Aufbau des Beugungsexperiments
+
+![This diagram is an X-ray diffraction (XRD) pattern showing the intensity of diffracted X-rays (counts per second) as a function of the diffraction angle (2 theta), used to identify the crystalline structure and phase composition of a material. The labeled peaks correspond to specific crystallographic planes and their diffraction angles.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/eb1679e0-bed6-464a-b3a9-b90448ba21b1/8ca63f3e-affc-4249-9af1-69b5cffb274c-3_647_947_1334_566.jpg)
+Abbildung 2: Röntgenspektrum des Goldfilms
+
+An einem Au-Film auf GaAs (001) wird nun folgendes Röntgenbeugungsexperiment durchgeführt (siehe Abbildung 1). Quelle und Detektor werden so bewegt, dass der Einfallswinkel immer gleich dem Ausfallswinkel ist. Die Wellenlänge des verwendeten Röntgenlichts ist $\lambda=0.154 \mathrm{~nm}$. Das Ergebnis ist in Abbildung 2 dargestellt. Die Gitterkonstanten sind 0.408 nm für Gold und 0.565 nm für GaAs. Hat das Gold bevorzugt eine (001)- oder (111)-Orientierung? Beachten Sie, dass man im Diagramm (Abbildung 2) auch die Beugungsreflexe des (001)-orientierten Substrats (GaAs, Zinkblendestruktur) sieht. Können Sie diese zuordnen?
+Hinweis: Überlegen Sie zuerst, welche Reflexe an einem fcc-Gitter auftreten können.
+
+
+Allgemein gilt für den Strukturfaktor (in kubischen Systemen):
+
+S_{h k l}=\sum_{\alpha} f_{\alpha}(\mathbf{K}) \cdot e^{-2 \pi i\left(h u_{\alpha}+k v_{\alpha}+l w_{\alpha}\right)}
+
+mit den Miller Indizes ( $h k l$ ) und den atomaren Formfaktoren $f_{\alpha}$ der Atome an den Orten $\mathbf{r}_{\alpha}=u_{\alpha} \mathbf{a}_{\mathbf{1}}+v_{\alpha} \mathbf{a}_{\mathbf{2}}+w_{\alpha} \mathbf{a}_{\mathbf{3}}$.
+Bei einem fcc-Gitter aus Au-Atomen haben alle Basisatome denselben atomaren Formfaktor $f_{\mathrm{Au}}$ und die ( $u_{\alpha}, v_{\alpha}, w_{\alpha}$ ) lauten ( $0,0,0$ ), ( $\frac{1}{2}, \frac{1}{2}, 0$ ), ( $\frac{1}{2}, 0, \frac{1}{2}$ ) und ( $0, \frac{1}{2}, \frac{1}{2}$ ), wobei von der konventionellen, kubischen Einheitszelle ausgegangen wird. Wegen $e^{-i \pi n}=(-1)^{n}$ gilt somit:
+
+S_{h k l}^{\mathrm{Au}}=f_{\mathrm{Au}}\left[1+(-1)^{h+k}+(-1)^{k+l}+(-1)^{h+l}\right]
+
+Wir erwarten erlaubte Bragg-Reflexe, wenn $S_{h k l}^{\mathrm{Au}} \neq 0$. Das ist nur der Fall, wenn die (hkl) alle gerade oder alle ungerade sind.
+Die Zinkblenden-Struktur von GaAs können wir als fcc-Gitter mit zweiatomiger Basis, bestehend aus zwei Atomsorten, auffassen. Dabei befinde sich je ein Ga-Atom im Ursprung der Basis und zusätzlich ein As-Atom im relativen Abstand $\mathbf{r}_{\mathrm{As}}=\frac{1}{4}\left(\mathbf{\mathbf { a } _ { 1 }}+\mathbf{\mathbf { a } _ { 2 }}+\mathbf{\mathbf { a } _ { 3 }}\right)$. Kombiniert man diese Basis mit dem Strukturfaktor des fcc-Systems (vgl. Gleichung 7) erhält man:
+
+S_{h k l}^{\mathrm{GaAs}}=\left[f_{\mathrm{Ga}}+f_{\mathrm{As}} e^{-i \frac{\pi}{2}(h+k+l)}\right]\left[1+(-1)^{h+k}+(-1)^{k+l}+(-1)^{h+l}\right]
+
+Da der zweite Term äquivalent ist zum vorherigen Fall, gilt auch hier, dass nur Reflexe mit allen $h k l$ gerade oder allen ungerade existieren können.
+Um den Winkel zu berechnen, unter dem erlaubte Reflexionen bestimmter Indizes stattfinden, nutzen wir die Bragg-Bedingung für konstruktive Interferenz und den Ebenenabstand in kubischen Systemen:
+
+n \lambda & =2 d_{h k l} \sin \theta_{h k l} \\
+d_{h k l} & =\frac{a}{\sqrt{h^{2}+k^{2}+l^{2}}}
+
+mit der Gitterkonstanten $a$. Reflexe erster Ordnung ( $n=1$ ) finden wir also bei
+
+2 \theta_{h k l}=2 \cdot \arcsin \frac{\lambda \sqrt{h^{2}+k^{2}+l^{2}}}{2 a}
+
+Mithilfe dieser Gleichung können wir die erwartete Position von Peaks im Beugungsbild für Au und GaAs separat berechnen. Insbesondere interessieren uns die Ebenen (001) und (111) sowie ihre Vielfachen. Dabei betrachten wir nur solche, die nach den oben gefundenen Bedingungen erlaubt sind. Für (001) sind beispielsweise nicht alle Miller Indizes gerade oder ungerade, jedoch für ihre geraden Vielfachen (002), (004) usw. Tabelle 1 enthält die nach Gleichung 10 berechneten Winkel, unter denen konstruktive Interferenz an der jeweiligen Ebene zu erwarten wäre. Nur unter den fettgedruckten Winkeln beobachten wir Maxima im Beugungsbild in Abbildung 2.
+Der Peak bei $2 \theta=38.15^{\circ}$ ist schwach im Vergleich zu den anderen, und bei $2 \theta=81.65^{\circ}$ ist kein Beugungsmaximum zu beobachten. Zudem sind vier von fünf beobachteten Maxima den Vielfachen der (001)-Ebene zuzuordnen. Wir folgern also, dass das Au beim Wachstum auf GaAs eine (001)-Richtung bevorzugt.
+
+| Reflex $(h k l)$ | Au: $2 \theta_{h k l}$ | GaAs: $2 \theta_{h k l}$ |
+| :---: | :---: | :---: |
+| $(002)$ | $\mathbf{4 4 . 3 5}^{\circ}$ | $\mathbf{3 1 . 6 3}^{\circ}$ |
+| $(004)$ | $\mathbf{9 8 . 0 3}^{\circ}$ | $\mathbf{6 6 . 0 7}^{\circ}$ |
+| $(111)$ | $\mathbf{3 8 . 1 6}^{\circ}$ | $27.31^{\circ}$ |
+| $(222)$ | $81.65^{\circ}$ | $56.34^{\circ}$ |
+
+Table 1: Errechnete Winkel konstruktiver Interferenz an erlaubten Ebenen
+
+### 6.4 Auswahlregeln für das bbc-Gitter
+
+In dieser Aufgabe werden die Auswahlregeln für Beugung an einem raumzentriertem (bcc) Gitter in Analogie zum fcc-Gitter hergeleitet.
+(a) Stellen Sie den bcc Kristall als primitives Bravais-Gitter mit Gitterkonstante $a$ und einer zweiatomigen Basis dar. Wie sehen die Basisvektoren in den fraktionellen Koordinaten der gewöhnlichen kubischen Zelle aus?
+(b) Zeigen Sie beginnend von der allgemeinen Form der Streuamplitude
+
+A(\mathbf{q})=\sum_{\mathbf{R}} \sum_{\alpha} f_{\alpha}(\mathbf{q}) e^{-i \mathbf{q} \cdot\left(\mathbf{R}+\mathbf{r}_{\alpha}\right)},
+
+wobei $\mathbf{R}$ über die Bravais-Gittervektoren summiert und $\mathbf{r}_{\alpha}$ die Basisvektoren sind, dass $A(\mathbf{q})$ sich in Gittersumme und Strukturfaktor zerlegen lässt.
+(c) Zeigen Sie, dass die Gittersumme
+
+S_{\mathrm{sc}}(\mathbf{q})=\sum_{\mathbf{R}} e^{-i \mathbf{q} \cdot \mathbf{R}}
+
+eines primitiv kubischen Gitters mit Gitterkonstante $a$ nur dann ungleich null ist, wenn
+
+\mathbf{q}=\mathbf{G}=\frac{2 \pi}{a}(h, k, \ell), \quad h, k, \ell \in Z
+
+ist, das heißt, wenn q ein reziproker Gittervektor des primitiv kubischen Gitters ist.
+(d) Nehmen Sie an, dass alle Atome eines bcc-Gitters gleich sind und den selben Atomstrukturfaktor $f(\mathbf{q})$ haben. Leiten Sie mit der Basis aus Aufgabe a) den Strukturfaktor $F_{h k l}$ her und zeigen Sie, dass:
+
+F_{h k l} \propto 1+(-1)^{h+k+\ell}
+
+Nennen Sie hieraus folgend die Auswahlregeln für Beugung an einem bcc-Gitter. Erläutern Sie in einem Satz, was passiert wenn diese Auswahlregel nicht erfüllt ist.
+
+
+(a) Wir wählen ein primitiv kubisches Bravais-Gitter mit Gitterkonstante $a$ :
+
+\mathbf{R}=a\left(n_{1}, n_{2}, n_{3}\right), \quad n_{1}, n_{2}, n_{3} \in Z
+
+Die bcc-Struktur kann dann durch eine zweiatomige Basis in der konventionellen kubischen Einheitszelle dargestellt werden:
+
+\mathbf{r}_{1}=(0,0,0), \quad \mathbf{r}_{2}=\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right)
+
+in fraktionellen Koordinaten der kubischen Einheitszelle. Das bcc-Gitter lässt sich aus allen Positionen $\mathbf{R}+\mathbf{r}_{1}$ and $\mathbf{R}+\mathbf{r}_{2}$ zusammensetzen.
+(b) Wir beginnen mit
+
+A(\mathbf{q})=\sum_{\mathbf{R}} \sum_{\alpha} f_{\alpha}(\mathbf{q}) e^{-i \mathbf{q} \cdot\left(\mathbf{R}+\mathbf{r}_{\alpha}\right)}
+
+und separieren nach $\mathbf{R}$ und $\mathbf{r}_{\alpha}$ Abhängigkeiten:
+
+A(\mathbf{q}) & =\sum_{\mathbf{R}} \sum_{\alpha} f_{\alpha}(\mathbf{q}) e^{-i \mathbf{q} \cdot \mathbf{R}} e^{-i \mathbf{q} \cdot \mathbf{r}_{\alpha}} \\
+& =\left(\sum_{\mathbf{R}} e^{-i \mathbf{q} \cdot \mathbf{R}}\right)\left(\sum_{\alpha} f_{\alpha}(\mathbf{q}) e^{-i \mathbf{q} \cdot \mathbf{r}_{\alpha}}\right)
+
+Wir definieren
+
+S_{\text {Gitter }}(\mathbf{q})=\sum_{\mathbf{R}} e^{-i \mathbf{q} \cdot \mathbf{R}}, \quad F(\mathbf{q})=\sum_{\alpha} f_{\alpha}(\mathbf{q}) e^{-i \mathbf{q} \cdot \mathbf{r}_{\alpha}}
+
+so dass
+
+A(\mathbf{q})=S_{\text {Gitter }}(\mathbf{q}) F(\mathbf{q})
+
+$S_{\text {Gitter }}$ hängt nur vom Bravais-Gitter ab, während $F(\mathbf{q})$ als Strukturfaktor die Basis beschreibt.
+(c) Für das primitiv, kubische Gitter mit $\mathbf{R}=a\left(n_{1}, n_{2}, n_{3}\right)$ gilt
+
+S_{\mathrm{sc}}(\mathbf{q})=\sum_{n_{1}, n_{2}, n_{3}} e^{-i \mathbf{q} \cdot a\left(n_{1}, n_{2}, n_{3}\right)}=\sum_{n_{1}} e^{-i q_{x} a n_{1}} \sum_{n_{2}} e^{-i q_{y} a n_{2}} \sum_{n_{3}} e^{-i q_{z} a n_{3}} .
+
+Jeder Term ist eine eindimensionale geometrische Reihe:
+
+\sum_{n_{1}=-\infty}^{\infty} e^{-i q_{x} a n_{1}}
+
+welche nur dann einen Beitrag liefert (und formell im unentlichen Kristall divergiert), wenn
+
+e^{-i q_{x} a}=1 \quad \Rightarrow \quad q_{x} a=2 \pi h, \quad h \in Z
+
+Analog für $q_{y}$ and $q_{z}$. Demnach ist die Gittersumme nur dann ungleich null, wenn
+
+\mathbf{q}=\mathbf{G}=\frac{2 \pi}{a}(h, k, \ell), \quad h, k, \ell \in Z
+
+d.h. wenn $\mathbf{q}$ dem reziproken Gittervektor des primitiv kubischen Gitters entspricht. Dies ist die bekannte Laue-Bedingung.
+(d) Nun kümmern wir uns um den Strukturfaktor für die zweiatomige Basis. Mit der Annahme von identischen Atomen mit Formfaktor $f(\mathbf{q})$ erhalten wir
+
+F(\mathbf{q})=f(\mathbf{q}) e^{-i \mathbf{q} \cdot \mathbf{r}_{1}}+f(\mathbf{q}) e^{-i \mathbf{q} \cdot \mathbf{r}_{2}}=f(\mathbf{q})\left[e^{-i \mathbf{q} \cdot(0,0,0)}+e^{-i \mathbf{q} \cdot\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right)}\right]
+
+Damit unsere Streuvektoren die Bragg-Bedingung des primitiv kubischen Gitters erfüllen muss gelten:
+
+\mathbf{q}=\mathbf{G}=\frac{2 \pi}{a}(h, k, \ell)
+
+Dann ist
+
+& \mathbf{G} \cdot \mathbf{r}_{1}=0 \\
+& \mathbf{G} \cdot \mathbf{r}_{2}=\frac{2 \pi}{a}(h, k, \ell) \cdot \frac{a}{2}(1,1,1)=\pi(h+k+\ell)
+
+Und somit sind
+
+e^{-i \mathbf{G} \cdot \mathbf{r}_{1}}=1, \quad e^{-i \mathbf{G} \cdot \mathbf{r}_{2}}=e^{-i \pi(h+k+\ell)}=(-1)^{h+k+\ell}
+
+Der Strukturfaktor wird
+
+F_{h k l}=f(\mathbf{G})\left[1+(-1)^{h+k+\ell}\right]
+
+Abgesehen von einer insgesamt proportionellen Konstante kann dies geschrieben werden als:
+
+F_{h k l} \propto 1+(-1)^{h+k+\ell}
+
+(e) Aus $F_{h k l}$ sehen wir direkt:
+
+F_{h k l}= \begin{cases}2 f(\mathbf{G}), & \text { wenn } h+k+\ell \text { gerade } \\ 0, & \text { wenn } h+k+\ell \text { ungerade. }\end{cases}
+
+Folglich haben nur Reflexe mit
+
+h+k+\ell \text { gerade }
+
+einen nicht verschwindenden Strukturfaktor und können Beugungsreflexe hervorrufenc. Reflexe mit $h+k+\ell$ ungerade interferieren die Beiträge der beiden Basisatome destruktiv und $F_{h k l}=0$ : diese Reflexe sind systematisch abwesend im Beugunsspektrum eines bcc-Gitters.
+

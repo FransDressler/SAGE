@@ -1,0 +1,32 @@
+## Duktile Materialien
+
+![This image shows stress-strain diagrams for polycrystalline and single-crystal materials, depicting the mechanical behavior under tension including elastic, plastic deformation, and fracture stages. The left graph details the stages for polycrystals with annotations in German, while the right graph shows the corresponding behavior for single crystals.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/10ce4e0e-51e8-4b07-bce9-64b4190dd978/7e76cac0-2f31-4a5e-aa7d-c9a09b925383-1_1251_2436_443_443.jpg)
+
+## Plastische Deformation von Einkristallen
+
+![This diagram depicts the forces acting on a cylindrical object under combined tensile stress (Zugspannung) and shear stress (Scherspannung), illustrating the resulting deformation or stress distribution.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/10ce4e0e-51e8-4b07-bce9-64b4190dd978/7e76cac0-2f31-4a5e-aa7d-c9a09b925383-2_905_777_390_484.jpg)
+![This diagram depicts the mechanical behavior of a helical spring under an applied axial load, showing the spring in its unloaded (straight) and loaded (twisted and extended) states.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/10ce4e0e-51e8-4b07-bce9-64b4190dd978/7e76cac0-2f31-4a5e-aa7d-c9a09b925383-2_1041_882_421_1489.jpg)
+
+Unslipped single crystal fixed at top end.
+
+Single crystal after plastic deformation by tensile stress in the direction of the arrow. Slip occurs on distinct parallel planes.
+
+## Kritische Schubspannung
+
+![This diagram depicts the concept of shear stress and atomic plane displacement in a crystalline material, showing how an applied shear stress (σ) causes relative displacement (δx) between atomic planes. The right part illustrates atomic layers and the resulting sinusoidal shear stress distribution as a function of displacement.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/10ce4e0e-51e8-4b07-bce9-64b4190dd978/7e76cac0-2f31-4a5e-aa7d-c9a09b925383-3_957_2494_471_392.jpg)
+a) Prinzipielle Anordnung. b) Variation der erforderlichen Schubspannung $\sigma$ als Funktion der Verschiebung $\delta x$ der Gitterebene B. Die Gleichgewichtslage der Gitterebenen ist durch hellblaue Kreise angedeutet.
+
+aus Hunklinger
+
+## Ausbildung und Wanderung von Versetzungen
+
+![This diagram depicts the process of dislocation movement in a crystal lattice under shear stress ("Schubspannung"). It shows how an applied shear stress causes a dislocation (highlighted in yellow) to move through the lattice, resulting in plastic deformation.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/10ce4e0e-51e8-4b07-bce9-64b4190dd978/7e76cac0-2f31-4a5e-aa7d-c9a09b925383-4_1151_1997_405_639.jpg)
+
+## Versetzungen und Burgersvektor
+
+## Burgers-Vektor parallel zur Versetzungslinie <br> ⇒ Schraubenversetzung
+
+![This diagram depicts a crystal lattice with a dislocation line ("Versetzungslinie") showing the Burgers vector (b) and the Burgers circuit around the dislocation, illustrating the concept of lattice distortion caused by the dislocation.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/10ce4e0e-51e8-4b07-bce9-64b4190dd978/7e76cac0-2f31-4a5e-aa7d-c9a09b925383-5_1353_1394_372_867.jpg)
+Burgers-Vektor senkrecht zur Versetzungslinie
+⇒ Stufenversetzung
+

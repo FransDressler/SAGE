@@ -1,0 +1,78 @@
+## Klausur zur
+
+## WS 2010/2011
+
+## Aufgabe 1 Zweidimensionales Gitter (12 Punkte)
+
+![This diagram depicts atomic arrangements in crystal lattice structures, specifically showing the difference between a surface atomic layer (a) and a bulk atomic arrangement (c) in a crystalline material.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/0ad91875-6dfc-4d7a-b35d-4e188e715a46/8446bbcf-3d4b-4aa1-8e5b-57651eb2d1fe-1_956_465_1336_484.jpg)
+Abbildung 1: Fiktiver 2D-Ionenkristall. Die kleinen gelben A-Atome seien negativ, die großen grünen B-Atome positiv geladen. (a) Das Gitter sei quadratisch und die großen B-Atome seien zentriert zwischen den A-Atomen. (b) Die B-Atome seien spiegelsymmetrisch um $\pm \delta a$ aus dem Zentrum verschoben. (c) Alle B-Atome seien in Phase um $\delta a$ aus dem Zentrum verschoben.
+
+![This diagram depicts the atomic arrangement in two different crystal lattice structures, showing the positions of atoms in a simple cubic lattice (a) and a body-centered cubic lattice (b).](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/0ad91875-6dfc-4d7a-b35d-4e188e715a46/8446bbcf-3d4b-4aa1-8e5b-57651eb2d1fe-1_447_456_1338_1123.jpg)
+
+Abbildung 1 (a) zeigt ein zweidimensionales Gitter eines Ionenkristalls, das aus zwei Atomen A und B mit negativer bzw. positiver Ladung aufgebaut ist.
+1.1 Welches Punktgitter beschreibt die Translationssymmetrie des abgebildeten Kristalls vollständig? Geben sie primitive Gittervektoren an. (2P)
+1.2 Geben Sie eine Basis für die Atome der Elementarzelle an. (2P)
+1.3 Der Kristall mache eine Gitterphasenumwandlung. Dabei werden die B-Atome im Zentrum benachbarter Einheitszellen spiegelsymmetrisch längs der horizontalen Achse um $\pm \delta a$ zueinender (oder eine Zelle weiter auseinender) verschoben wie in Abbildung 1 (b) gezeigt. Welche Symmetrie hat das Gitter nun? (1P)
+1.4 Geben Sie die neuen primitiven Gitter- und die Basisvektoren an. (2P)
+1.5 Zeichnen Sie das reziproke Gitter und die ersten zwei Brillouinzonen für den Kristall vor und nach der Verzerrung. (2P)
+1.6 Wir nehmen nun an, dass die B-Atome in Phase (in jeder der ursprünglichen Zellen gleich) um $\delta a$ verschoben werden [Abbildung 1 (c)]. Wie ändert sich die Translationssymmetrie gegenüber (a)? (1P)
+1.7 Welche der beiden Verzerrungen (b) und (c) koppelt an ein externes elektrisches Feld? (2P)
+
+## Aufgabe 2 Strukturanalyse (10 Punkte)
+
+Kupfer hat ein kubisch flächenzentriertes Gitter mit einem Atom pro Gitterpunkt.
+2.1 Geben Sie die Anzahl der Atome in der kubischen Einheitszelle, sowie die Anzahl der nächsten Nachbarn jedes Atoms an (jeweils kurze Begründung). (2P)
+2.2 Bestimmen Sie den Abstand der nächsten Nachbarn in Einheiten der Kantenlänge $a$ der kubischen Einheitszelle. (2P)
+2.3 Der Bragg-Peak 2. Ordnung an der (001)-Ebene unter Verwendung von $\mathrm{Cu}-K_{\alpha}$-Strahlung $(\lambda=1,5413 \AA)$ erscheint bei einem Einfallswinkel von $\theta=25,24^{\circ}$. Bestimmen Sie hieraus die Gitterkonstante $a$ von Cu . (2P)
+2.4 Warum tritt der (001)-Reflex 1. Ordnung nicht auf? (1P)
+2.5 Bestimmen Sie die Dichte von Kupfer $\rho_{\mathrm{Cu}}$ mit der Atommasse von Kupfer $m_{\mathrm{Cu}}=63,55 u \left(u=1,660538782(83) \times 10^{-27} \mathrm{~kg}\right) .(3 \mathrm{P})$
+
+## Aufgabe 3 Kubisch-flächenzentriertes Gitter (7 Punkte)
+
+3.1 Geben Sie drei Vektoren an, die im Ortsraum die primitive Elementarzelle des kubisch flächenzentrierten Gitters aufspannen. (2P)
+3.2 Berechnen Sie die Vektoren der primitiven Elementarzelle des reziproken Gitters für das kubisch flächenzentrierte Gitter. (4P)
+3.3 Begründen Sie, warum das reziproke Gitter kubische Symmetrie besitzt. (1P)
+
+## Aufgabe 4 Gitterschwingungen (10 Punkte)
+
+In einem Ultraschallexperiment wird ein piezoelektrisches Element (Übertrager) mit einer der Grenzflächen eines quaderförmigen Kristalls in Kontakt gebracht wie in Abb. 2 gezeigt. Ein Hochfrequenzimpuls am Übertrager erzeugt über den piezoelektrischen Effekt eine oszillierende Verformung, also einen Schallimpuls, der sich über den Kristall ausbreitet und an der dem Übertrager gegenüberliegenden Fläche reflektiert wird. Kehrt die Schallwelle zum Übertrager zurück, erzeugt sie, wiederum aufgrund des piezoelektrischen Effekts, ein Spannungssignal, dessen Zeitverschiebung gegenüber dem Anregungsimpuls aufgezeichnet wird. Der Kristall habe eine kubische Struktur und sei parallel zu den (100)-Achsen geschnitten. In Ausbreitungsrichting sei die Probe 1 cm lang. Es werde ein Impuls mit einer Frequenz von 100 MHz und $0.5 \mu \mathrm{~s}$ Dauer erzeugt. Die Reflexe treffen im Abstand von $16 \mu \mathrm{~s}$ am Übertrager ein.
+
+![This diagram depicts the components of an ultrasonic testing setup, showing the connection between the probe, the ultrasonic transducer, and the high-frequency generator and receiver.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/0ad91875-6dfc-4d7a-b35d-4e188e715a46/8446bbcf-3d4b-4aa1-8e5b-57651eb2d1fe-3_401_639_1023_721.jpg)
+Abbildung 2: Experimenteller Aufbau bei einem Ultraschallexperiment
+
+4.1 Berechnen Sie die Schallgeschwindigkeit $v_{s}$ in der Probe. (1P)
+4.2 Welche Art von Phononen regt man in diesem Experiment an? (1P)
+4.3 Ist eine Frequenz von 100 MHz groß oder klein für eine Phononenenergie in einen Festkörper? Wie lautet der Zusammenhang zwischen der Anregungsfrequenz, Wellenvektor $q$ und Schallgeschwindigkeit bei sehr kleinen Frequenzen? (3P)
+4.4 Welchem Gesetz $\omega(q)$ folgt die Dispersion in der ersten Brillouin-Zone zwischen $q=(0,0,0)$ und ( $\pi / a, 0,0$ ) in harmonischer Näherung, wenn man nur die Wechselwirkung zwischen nächsten Nachbarn berücksichtigt? (3P)
+4.5 Berechnen Sie die Energie dieses Phononenzweiges am Rand der Brillouin-Zone mit den angegebenen Parametern und der Gitterkonstante $a=5 \AA$. (2P)
+
+## Aufgabe 5 Spezifische Wärmekapazität (16 Punkte)
+
+Die spezifische Wärmekapazität bei konstantem Volumen, $c_{V}$, eines (dreidimensionalen) Kristalls ist gegeben durch
+
+$$
+c_{V}=\frac{1}{V} \sum_{\mathbf{k}, s} \frac{\partial}{\partial T} \frac{\hbar \omega_{s}(\mathbf{k})}{e^{\frac{\hbar \omega_{s}(\mathbf{k})}{k_{B} T}}-1} .
+$$
+
+Hier ist $s$ die Zahl der Phononenzweige und $k_{B}$ die Boltzmann-Konstante ( $k_{B}=1.3807$. $10^{-23} \mathrm{~J} / \mathrm{K}$ ).
+5.1 Berechnen Sie den Hochtemperaturlimes $\left(\hbar \omega_{s}(\mathbf{k}) \ll k_{B} T\right)$ von $c_{V}$ für ein Gitter mit einer einatomigen Basis (3P).
+5.2 Wie hängt $c_{V}(T)$ in einen Isolator bei tiefen Temperaturen von $T$ ab? Was bedeutet "tiefe Temperatur" in diesem Zusammenhang? Was ist in einem Metall anders? (3P)
+5.3 Was besagt die Debyesche Näherung? (2P)
+5.4 Wie hängt die phononische Zustandsdichte $D(\omega)$ im Debye-Modell bei kleinen Energien (im dreidimensionalen Fall) von $\omega$ ab? Begründen Sie Ihre Antwort in 1 bis 2 Sätzen. (2P)
+5.5 Schätzen Sie den Debye-Wellenvektor $k_{D}$, die Debye-Frequenz $\omega_{D}$ und die Debye-Temperatur $\Theta_{D}$ für Silber ab. Hinweis: Silber hat eine kubisch flächenzentrierte Kristallstruktur mit Gitterkonstante $a=4.09 \AA$ und eine mittlere Schallgeschwindigkeit von $2600 \mathrm{~m} / \mathrm{s}\left(\hbar=1.054 \cdot 10^{-34} \mathrm{~J} \mathrm{~s}\right)$. (6P)
+
+## Aufgabe 6 Tight-binding-Modell (26 Punkte)
+
+Wir betrachten ein einfach quadratisches Gitter mit Gitterkonstante $a$ und einer tight-binding Bandstruktur der Elektronen,
+
+\varepsilon_{\mathrm{k}}=-t\left[\cos \left(k_{x} a\right)+\cos \left(k_{y} a\right)-2\right]
+
+6.1 Skizzieren Sie das reziproke Gitter und die erste Brillouin-Zone. (1P)
+6.2 Wo liegen das Minimum und das Maximum des Bandes? Wie groß ist die Bandbreite in Einheiten von $t$ ? (2P)
+6.3 Zeichnen Sie qualitativ den Verlauf des Bandes längs der Linie $(0,0)-(\pi, 0)-(\pi, \pi)-(0,0)$. Geben Sie bei der Beschriftung der y-Achse die Energie in Einheiten von $t$ an. (3P)
+6.4 Geben Sie den funktionalen Zusammenhang für die Gruppengeschwindigkeit der Elektronen $\mathbf{v}(\mathbf{k})$, und die Beträge $|\mathbf{v}(\mathbf{k})|$ für die [10] und die [11]-Richtung an. Wo ist die Geschwindigkeit maximal? (5P)
+6.5 Zeichnen Sie in der Brillouin-Zone die Verbindungslinie von ( $\pi / a, 0$ ) nach ( $0, \pi / a$ ) und geben Sie einen funktionalen Zusammenhang für diese Linie im reziproken Raum an. (2P)
+6.6 Berechnen Sie die Energie längs der Linie aus Aufgabe 6.5. (2P)
+6.7 Das Band liege oberhalb des letzten vollständig gefüllten Bandes und habe keinen Überlapp mit anderen Bändern. Wie groß ist die Bandfüllung für $E_{F}=2 t$ ? Bitte begründen Sie Ihre Antwort in 1 oder 2 Sätzen. (3P)
+6.8 Berechnen Sie für eine Füllung von 0.1 Elektronen pro Elementarzelle den Fermi-Impuls, die Fermienergie, sowie deren Zahlenwerte für $t=1 \mathrm{eV}$ und $a=4 \AA$. Hinweis: Verwenden Sie die quadratische Näherung für die cosinus-Funktionen am Bandminimum. (8P)
+

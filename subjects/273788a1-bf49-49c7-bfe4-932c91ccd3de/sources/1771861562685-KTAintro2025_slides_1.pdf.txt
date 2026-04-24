@@ -1,0 +1,89 @@
+Einführung in die
+![The image depicts the fields of nuclear, particle, and astrophysics, showing concepts such as atomic nuclei, particle physics (including the Standard Model particles), particle accelerators, neutrino detection, and cosmic phenomena like the Big Bang and supernova remnants.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-1_1479_2807_389_70.jpg)
+
+## Dark Matter and Low-Energy Neutrinos
+
+Dr. Raimund Strauss<br>Experimental physicist<br>TUM Physik Department<br>Lehrstuhl E15 (Prof. Schönert)
+
+## Dark Matter and low energy neutrino physics <br> Cryogenic Particle Detectors \& Quantum Sensors
+
+![The image depicts a researcher standing next to a dilution refrigerator, which is used for cooling quantum computing hardware or other experiments requiring extremely low temperatures.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-2_634_1104_580_1647.jpg)
+
+## Experiments:
+
+CRESST - Direct Search for Dark Matter
+NUCLEUS - Coherent neutrino-nucleus scattering
+
+CRESST
+Cryogenic Rare Event Search with Superconducting Thermometers
+
+## Tutorübungen KTA-Intro 2025/2026
+
+## Tutor Team
+
+![The image depicts a group photo labeled "Factor Team," showing individual portraits of five team members with their names: Niko, Dr. Luigi, Dr. Mario, Dr. Margarita, and Matthias.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-3_1082_1073_607_86.jpg)
+
+## Übungsleitung:
+
+Dr. Margarita Kaznacheeva margarita.kaznacheeva@tum.de
+![This is a photograph of a smiling young woman. It does not depict a diagram or image related to a specific subject matter.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-3_534_467_504_2323.jpg)
+
+## Termine der Vorlesung:
+
+Di 14:15-15:45 D 00.5901.051, Hörsaal (5901.EG.051)
+
+## Termine der 6 Übungsgruppen:
+
+Mo 8:30-10 (Luigi) E PH II 127, Seminarraum E11 (5107.U1.127)
+Tue 8:30-10 (Niko) D/E MW 2235, Seminarraum (5502.02.235)
+Tue 12-14 (Niko) D/E MW 2235, Seminarraum (5502.02.235)
+Thu 8:30-10 (Mario) D PH II 227, Seminarraum E20 (5107.EG.227)
+Fri 8:30-10 (Matthias) D C.3202, Tutorraum (5140.01.202)
+
+Fri 10-12 (Margarita) E
+
+## Informationen zum Übungsbetrieb
+
+- 6 Übungsgruppen
+- Übung auch in englischer Sprache (markiert mit E)
+- Wöchentlich: Übungsblätter mit Aufgaben
+- Lösungen eine Woche später!
+- Notenbonus von 0.3 falls
+- Präsentation einer Übungsaufgabe an der Tafel
+- $50 \%$ Anwesenheit bei den Tutorübungen
+- Bestandenes "Quiz" Ende Dezember
+![This image depicts a classroom scene with a teacher standing and three students sitting at desks, likely illustrating a typical educational or instructional setting.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-4_770_931_479_1873.jpg)
+- Klausur: Schriftlich, Hilfsmittel: Taschenrechner und handbeschriebenes DINA4 Blatt
+- Prüfungstermine: 26.2.2026 11:00-12:30
+30.3.2026 11:00-12:30 (Nachholklausur)
+
+
+## Was ist die Natur unserer Materie ?
+
+## 'Spirit' der Vorlesung:
+
+- Voller "Must-Knows" für Physiker
+- Fokus auf Basics in KTA
+- Übungen überarbeitet, Fokus auf Basics
+- Hauptteil an Tafel, Powerpoint nur ergänzend
+- 'Never to late' for a career in KTA
+- Wichtiges Toolkit auch für andere Bereiche der Physik
+![This diagram depicts the expansion of the universe over time, showing the progression from the Big Bang to the present and into the future, including the cosmic microwave background and the formation of galaxies.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-5_947_1136_479_1731.jpg)
+- Skript! Suche nach Werkstudierenden (bitte bei mir melden).
+
+
+## drei Generationen der Materie
+
+(Fermionen)
+![This diagram depicts the Standard Model of particle physics, specifically showing the fundamental fermions: six quarks (up, charm, top, down, strange, bottom) and six leptons (electron, muon, tau, and their corresponding neutrinos), along with their masses, electric charges, and spins.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-6_1427_1145_413_368.jpg)
+
+Wechselwirkungen
+(Bosonen)
+
+drei Generationen der Materie
+(Fermionen)
+![This diagram depicts the Standard Model of particle physics, showing the fundamental particles including quarks, leptons, gauge bosons, the Higgs boson, and the hypothetical graviton, along with their masses, charges, and spins.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-7_1438_2181_416_368.jpg)
+
+![This diagram depicts the difference between repulsive ("abstoßend") and attractive ("anziehend") forces in the context of two people throwing or swinging an object, showing how their movements and directions of force change over time ("Zeit").](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-8_1098_2344_499_303.jpg)
+![This diagram depicts the classification of fundamental particles in the Standard Model of particle physics, showing the three families of leptons (neutral and charged) and quarks, along with the fundamental forces they interact with (weak, electromagnetic, and strong interactions).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/91fe3cbf-a65a-4092-be9e-8320d9bc3c38/58ab9b0b-b526-448b-b09b-eb0cd1403556-9_1540_1678_239_565.jpg)
+

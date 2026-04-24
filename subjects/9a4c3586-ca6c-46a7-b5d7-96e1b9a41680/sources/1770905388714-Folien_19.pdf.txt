@@ -1,0 +1,77 @@
+## Spezifische Wärme von Cu
+
+![This image depicts the specific heat capacity (Cv) of copper (Cu) as a function of temperature, showing experimental data and theoretical fits based on the equation Cv = γT + βT³. The left graph plots Cv versus temperature, while the right graph plots Cv/T versus T² to linearize the relationship for analysis.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-1_1077_2220_372_497.jpg)
+Bild 8.8: a) Verlauf der spezifischen Wärme von Kupfer bei tiefen Temperaturen. Die spezifische Wärme setzt sich aus dem linearen Anteil der Elektronen (gestrichelt) und dem $T^{3}$-Beitrag der Phononen (strichpunktiert) zusammen. b) Spezifische Wärme $C_{V} / T$ von Kupfer als Funktion von $T^{2}$. (Nach J.A. Rayne, Austral. J. Phys. 9, 191 (1956).)
+
+## Das Besondere am Fermi-Gas freier Elektronen
+
+![This diagram depicts the Fermi-Dirac distribution function \( f(E) \) showing the probability of electron occupancy at energy \( E \) relative to the Fermi energy \( E_F \) for temperatures \( T=0 \) and \( T>0 \). It illustrates the sharp occupancy cutoff at \( T=0 \) due to the Pauli exclusion principle and the thermal broadening of the distribution at finite temperature.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-2_1207_2105_427_78.jpg)
+
+Elektronen, die zur
+Wärmekapazität beitragen:
+
+$$
+\propto k_{B} T / T_{F}
+$$
+
+
+#### Abstract
+
+Abb. 7.8: Plausibilitätsbetrachtung zur Wärmekapazität des Elektronengases. Gezeigt ist eine Fermi-Dirac-Verteilungsfunktion bei $T=0$ (rot) und $T>0$ (blau). Der schattierte Bereich zeigt den Energiebereich der Breite $k_{\mathrm{B}} T$, aus dem die Elektronen zur Wärmekapazität beitragen können.
+
+
+## Spezifische Wärme von Cu
+
+## Die korrekte Beschreibung der spez. Wärme bei tiefsten Temperaturen ist einer der größten Erfolge der freien Elektronentheorie.
+
+![This diagram depicts the specific heat capacity \(C_V\) of copper (Cu) as a function of temperature, showing experimental data and theoretical fits based on the equation \(C_V = \gamma T + \beta T^3\) for low-temperature heat capacity behavior. The left graph shows \(C_V\) versus temperature \(T\), while the right graph plots \(C_V/T\) against \(T^2\) to linearize the relationship.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-3_1064_2221_421_494.jpg)
+Bild 8.8: a) Verlauf der spezifischen Wärme von Kupfer bei tiefen Temperaturen. Die spezifische Wärme setzt sich aus dem linearen Anteil der Elektronen (gestrichelt) und dem $T^{3}$-Beitrag der Phononen (strichpunktiert) zusammen. b) Spezifische Wärme $C_{V} / T$ von Kupfer als Funktion von $T^{2}$. (Nach J.A. Rayne, Austral. J. Phys. 9, 191 (1956).)
+
+## Sommerfeld
+
+| Metall | $\gamma_{\exp }\left(10^{-3} \mathrm{~J} / \mathrm{mol} \mathrm{K}^{2}\right)$ | $\gamma_{\text {theor }}\left(10^{-3} \mathrm{~J} / \mathrm{mol} \mathrm{K}^{2}\right)$ | $\gamma_{\text {exp }} / \gamma_{\text {theor }}$ |
+| :--- | :--- | :--- | :--- |
+| Li | 1.63 | 0.749 | 2.18 |
+| Na | 1.38 | 1.094 | 1.26 |
+| K | 2.08 | 1.668 | 1.25 |
+| Rb | 2.41 | 1.911 | 1.26 |
+| Cs | 3.20 | 2.238 | 1.43 |
+| Fe | 4.98 | 0.498 | 10 |
+| Co | 4.98 | 0.483 | 10.3 |
+| Ni | 7.02 | 0.458 | 15.3 |
+| Cu | 0.695 | 0.505 | 1.38 |
+| Ag | 0.646 | 0.645 | 1.00 |
+| Au | 0.729 | 0.642 | 1.14 |
+| Sn | 1.78 | 1.41 | 1.26 |
+| Pb | 2.98 | 1.509 | 1.97 |
+
+
+![The image depicts a bust of Arnold Sommerfeld along with the formula for the fine-structure constant (α), which Sommerfeld introduced in quantum physics to describe the strength of the electromagnetic interaction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-4_944_569_114_2648.jpg)
+Theresienstr. 37 LMU München
+
+Tabelle 7.2: Vergleich zwischen experimentellem und nach (7.2.8) berechneten Wert des Sommerfeld-
+Koeffizienten $\gamma$ der elektronischen spezifischen Wärme. Koeffizienten $y$ der elektronischen spezifischen Wärme.
+
+## Zustandsdichte
+
+![This diagram depicts the density of states (Zustandsdichte) as a function of energy (Energie) for nickel, showing the distribution of electronic states up to the Fermi energy level (E_F).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-5_1224_1224_450_549.jpg)
+Bild 8.9: Zustandsdichte von Nickel. Der Beitrag der $d$-Elektronen überdeckt den des $s$-Bands, dessen gedachter Verlauf gestrichelt gezeichnet ist. Die besetzten Zustände sind durch dunkleres Blau hervorgehoben. (Nach J. Callaway, C.S. Wang, Phys. Rev. B 7, 1096 (1973).)
+
+## Kollektive Phänomene im Elektronengas
+
+![The diagram depicts the energy profile (a) as a function of spatial coordinate \( r \) near a potential well at \( r_0 \), showing a perturbation \( e \delta \phi(r_0) \) below the Fermi energy \( E_F \), and (b) the corresponding density of states \( D(E) \) as a function of energy \( E \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-6_1022_2208_331_555.jpg)
+Bild 8.10: Lokale Veränderung der Zustandsdichte durch eine zusätzliche positive Ladung. Die besetzten Zustände sind durch hellblaue Färbung hervorgehoben. a) Lage der besetzten Zustände in der Nachbarschaft einer positiven Ladung. Die blaue Mulde wird durch Elektronen des restlichen Festkörpers so aufgefüllt, dass die Fermi-Energie in der gesamten Probe konstant bleibt. b) Verlauf der Zustandsdichte in größerer Entfernung von der Störladung.
+
+## Abgeschirmtes Coulomb-Potential und Thomas-Fermi Länge
+
+> Äquivalente Abschirmung:
+> Debye-Hückel Abschirmung (Ionen/Festkörper) Yukawa-Potenzial (Kernphysik)
+
+![This diagram depicts the comparison between a screened potential (abgeschirmtes Potenzial) and a Coulomb potential (Coulomb-Potenzial) as a function of distance (Abstand r) in angstroms, showing their corresponding energy (Energie E) values in electron volts (eV). It specifically illustrates how the screened potential decreases more rapidly than the Coulomb potential due to the exponential screening factor.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-7_1117_1155_560_642.jpg)
+Bild 8.11: Vergleich zwischen reinem und abgeschirmtem Coulomb-Potenzial. Für die Abschirmlänge wurde der Wert $r_{\mathrm{TF}}=1 \AA$ gewählt.
+
+## Metall-Isolator Übergang
+
+![This diagram depicts the metal-insulator transition in phosphorus-doped silicon (Si:P), showing the electrical conductivity (Leitfähigkeit) as a function of electron density (Elektronendichte). It illustrates the critical electron density at which the material transitions from an insulator to a metal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7df6f887-a056-4bb2-8120-53d60a942e19/b56db0e7-7cd3-4b0a-8cb6-133a489db9b6-8_1231_1274_468_625.jpg)
+Bild 8.12: Elektrische Leitfähigkeit von stark dotierten Silizium-Proben. Der Metall-IsolatorÜbergang erfolgt bei einer Elektronenkonzentration von $n=3,74 \cdot 10^{24} \mathrm{~m}^{-3}$. (Nach H.F. Hess et al., Phys. Rev. B 25, 5578 (1982).)
+

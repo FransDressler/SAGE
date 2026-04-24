@@ -1,0 +1,91 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing key elements such as a nuclear model, particle physics chart (Standard Model), particle accelerator, neutrino detection, nuclear reactors, and astrophysical phenomena like the Big Bang and cosmic structures.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Beta, alpha, fission, decays |
+| 10 | 16/12/25 |  | Nuclear reactors | Reactors, gamma transitions |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram depicts a synchrotron particle accelerator, showing the circular path of electrons accelerated by klystron transmitters, guided by injection, ejection, and deflection magnets, with components like the LINAC and electron gun for initial electron injection.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-03_544_711_382_102.jpg)
+
+Kernphysik
+![The image depicts a black hole with an accretion disk, showing the swirling matter being pulled into the black hole and jets of energy being emitted from its poles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-03_558_862_894_252.jpg)
+
+Beschleniger auf der Erde und im Weltall
+
+Kosmische Strahlung
+
+Entstehung von...
+
+- leichten Kernen im frühen Universm ( $10-10^{3}$ sek. nach dem Urknall)
+- Kerne bis Fe in stellaren Brennen (Fusion)
+- schwere Kerne in Supernova und anderen Orten mit extrem hohen Neutronenfluessen
+![This diagram depicts the timeline of the universe from the Big Bang to the present, showing key cosmological events such as cosmic inflation, particle formation, recombination, the dark ages, galaxy evolution, and the formation of structures like clusters of galaxies, galaxies, and the solar system.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-04_1299_3090_519_125.jpg)
+
+
+## Weizäcker Formel (semi empirical mass formula)
+
+$$
+\begin{aligned}
+M(A, Z)= & N M_{\mathrm{n}}+Z M_{\mathrm{p}}+Z m_{\mathrm{e}}-a_{\mathrm{v}} A+a_{\mathrm{s}} A^{2 / 3} \\
+& +a_{\mathrm{c}} \frac{Z^{2}}{A^{1 / 3}}+a_{\mathrm{a}} \frac{(N-Z)^{2}}{4 A}+\frac{\delta}{A^{1 / 2}}
+\end{aligned}
+$$
+
+\begin{aligned}
+a_{\mathrm{v}} & =15.67 \mathrm{MeV} / c^{2} \\
+a_{\mathrm{s}} & =17.23 \mathrm{MeV} / c^{2} \\
+a_{\mathrm{c}} & =0.714 \mathrm{MeV} / c^{2} \\
+a_{\mathrm{a}} & =93.15 \mathrm{MeV} / c^{2} \\
+\delta & =\left\{\begin{aligned}
+-11.2 \mathrm{MeV} / c^{2} & \text { falls } Z \text { und } N \text { gerade sind (gg-Kerne) } \\
+0 \mathrm{MeV} / c^{2} & \text { falls } A \text { ungerade ist (ug-Kerne) } \\
++11.2 \mathrm{MeV} / c^{2} & \text { falls } Z \text { und } N \text { ungerade sind (uu-Kerne). }
+\end{aligned}\right.
+\end{aligned}
+
+![This diagram is a nuclear binding energy per nucleon (B/A) curve as a function of mass number (A), showing the variation of nuclear binding energy for different nuclei and highlighting magic numbers for neutrons (N) and protons (Z). The inset zooms in on the binding energy per nucleon for lighter nuclei with low mass numbers.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-06_1837_1398_17_165.jpg)
+Aus Povh S. 19ff
+
+![This diagram depicts the components of nuclear binding energy per nucleon (B/A) as a function of the mass number (A), showing the contributions from volume energy, surface energy, Coulomb energy, asymmetry energy, and the total binding energy in a nucleus.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-06_1466_1429_205_1719.jpg)
+Aus Povh S. 19ff
+
+![This diagram depicts the binding energy per nucleon (in MeV) as a function of the atomic mass number (A), illustrating the energy changes involved in nuclear fusion (for light nuclei) and nuclear fission (Spaltung, for heavy nuclei).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-07_1518_2284_188_622.jpg)
+![This diagram is a nuclear mass parabola for isotopes with mass number A=101, showing the mass (M) in MeV/c² of different isotopes (Mo, Tc, Ru, Rh, Pd, Ag) and indicating which are beta-unstable (filled circles) and stable (open circle). It illustrates the relative nuclear masses and beta decay stability for these isotopes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-08_1418_1425_280_167.jpg)
+![This diagram is a mass parabola for isotopes with mass number A=106, showing the nuclear mass (M) in MeV/c² as a function of atomic number (Z) for elements from technetium (Tc) to indium (In). It indicates beta instability and stability of isotopes, with arrows representing beta-minus (β⁻) and beta-plus (β⁺) decay pathways.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-08_1469_1111_239_1932.jpg)
+![This image depicts a section of the nuclide chart (Nuklidkarte) showing isotopes with their decay modes, half-lives, and nuclear properties, specifically highlighting beta-plus (β+) and beta-minus (β−) decay pathways for certain isotopes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-09_1793_2392_44_471.jpg)
+
+## Tabelle der bekannten Nuklide
+
+| Kerntyp | Zahl der stabilen Isotope | Stabilität | Zahl der Isotope pro Element |
+| :--- | :--- | :--- | :--- |
+| gg | 165 | Sehr stabil | mehrere |
+| ug | 95 | Stabil | 1 |
+| uu | 4 | Zumeist instabil | 1 |
+
+Die „einsamen“ vier stabilen Atome aus uu - Kernen sind:
+
+[^0]![Energy level diagram for the radioactive decay of potassium-40 (^40K), showing its beta-minus decay to calcium-40 (^40Ca), electron capture (EC) to argon-40 (^40Ar), and the associated energy levels, decay modes, branching ratios, and half-life.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8518a5b6-3579-4c5f-9af7-b74ba54a1f5b/2028e6f8-2eb8-4b95-9684-e3e2808136e4-11_1258_2706_303_293.jpg)
+
+
+[^0]:    ${ }^{2} \mathrm{H}$ - Deuterium
+    ${ }^{6}$ Li-Lithium
+    ${ }^{10} \mathrm{~B}$ - Bor
+    ${ }^{14} \mathrm{~N}$ - Stickstoff
+

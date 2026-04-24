@@ -1,0 +1,117 @@
+## Tight-binding Ansatz
+
+Bringt man Atome näher und näher zusammen so wird die Entartung der atomaren Niveaus aufgehoben. Annäherung von N-Atomen
+
+⇒ Aufhebung der N-fachen Entartung
+![This diagram depicts different potential energy profiles (a, b, c) for an electron in a hydrogen-like atom, illustrating how the electron's potential well and energy levels vary in different model scenarios. The top inset shows the electron orbitals corresponding to these potential wells.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-01_1168_1082_526_218.jpg)
+
+Ortskoordinate $x$
+
+Bild 8.21: Schematischer Verlauf des Potenzials im Modell stark gebundener Elektronen: a) Potenzial eines einzelnen Atoms. b) Überlagerung der Einzelpotenziale zum Gitterpotenzial, c) Resultierendes Störpotenzial, d.h. Gesamtpotenzial minus Potenzial des Aufatoms. Die Lage der Atomkerne ist jeweils durch Punkte angedeutet.
+
+Diamant sollte im Modell der freien Elektronen ein Metall sein. Warum ist es ein Isolator?
+
+![This diagram depicts the potential energy curves for atomic interactions, showing the total potential U(r) and the atomic potential UA(r - Ri) as a function of the interatomic distance r, with labeled atomic positions i and j.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-01_647_759_565_2443.jpg)
+Abb. 3.7 Verlauf der potenziellen Energie $U(\vec{r})$ eines Kristallelektrons im Vergleich mit der potenziellen Energie $U_{A}\left(\vec{r}-\vec{R}_{i}\right)$ eines Elektrons im freien Atom
+
+## Tight-binding Ansatz <br> Beispiel einer Wellenfunktion
+
+Allg. ist der Ansatz einer gitterperiodischen Funktion für den „tight binding“-Ansatz nicht zwingend erforderlich. Die Rechnungen vereinfachen sich allerdings.
+
+Abb. 8.12: Räumliche Variation des Realteils der Wellenfunktion in der tight-binding Näherung. Die Wellenfunktion ist aus atomaren Wellenfunktionen (oben) und einer ebenen Welle (Mitte) aufgebaut.
+Abb. 8.12: Räumliche Variation des
+Realteils der Wellenfunktion in der lenfunktion ist aus atomaren Wellenfunktionen (oben) und einer
+ebenen Welle (Mitte) aufgebaut.
+![This diagram depicts the construction of a Bloch wavefunction in a periodic potential, showing (top) the localized atomic orbitals at lattice sites, (middle) the plane wave factor with wavevector k, and (bottom) the resulting Bloch wavefunction formed by their product.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-02_1025_1630_635_1287.jpg)
+
+## Beispiel: einfach kubisches Gitter
+
+![The diagram depicts the energy levels and wavefunction behavior of electrons in a periodic potential, showing (a) the potential well as a function of position, (b) the corresponding energy bands as a function of reciprocal distance, and (c) the energy dispersion relation as a function of the wave vector in a crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-03_940_2402_396_457.jpg)
+Bild 8.22: Veranschaulichung des Modells stark gebundener Elektronen. a) Lage der Niveaus $E_{1}$ und $E_{2}$ im Potenzial $\widetilde{V}_{\mathrm{A}}$ isolierter Atome, b) Absenkung und Aufspaltung der Niveaus in Abhängigkeit vom reziproken Atomabstand $a^{-1}, \mathbf{c )}$ Dispersionskurve $E_{k}$ längs der [111]-Richtung dargestellt im reduzierten Zonenschema.
+
+## Tight-binding Ansatz
+
+![This diagram depicts the energy band structure of a solid, showing the formation of valence and conduction bands (Valenzband and Leitungsband) as a function of interatomic distance (Interatomarer Abstand). It illustrates the energy gap (Eg) between these bands and the splitting of atomic orbitals (s and p) into energy bands in a crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-04_1017_1009_416_588.jpg)
+Bild 8.24: Abstandsabhängigkeit der Energiebänder im Diamant. Die eingekreisten Zahlen geben die Zahl der besetzbaren Zustände pro Atom an. Gleichgewichtsabstand und Energielücke haben die Werte $R_{0}=3,57 \AA$ bzw. $E_{\mathrm{g}}=5,5 \mathrm{eV}$. (Nach A.H. Wilson, The Theory of Metals, Cambridge Univ. Press, 1965.)
+
+## Im „tight-binding“ Modell ist Diamant ein Isolator (bzw. Halbleiter mit großer Bandlücke)!
+
+Tight-binding erklärt, dass (a) Bandlücken und Bandüberlapp vom jeweiligen Kristall abhängen und dass (b) die höheren Bänder nicht die Form der unteren Bänder besitzen müssen.
+
+## Zahl der Zustände
+
+Zahl der Zustände in einem Band ist gleich der Anzahl $N$ der primitiven Elementarzellen im Kristall (bei Besetzung der Zustände Spin beachten).
+
+Beispiel:
+
+- Volumen der primitiven Zelle des fcc-Gitters: V = a $\frac{3}{4}$
+
+⇒ Quader mit Kantenlänge $L_{x} L_{y} L_{z}$ enthält $N=4 L_{x} L_{y} L_{z} / a^{3}$ primitive Zellen.
+
+- Volumen der 1. Brillouin-Zone (bcc-gitter mit Gitterkonstante $4 \pi / a$ )
+
+$$
+V_{B Z}=\frac{1}{2}\left(\frac{4 \pi}{a}\right)^{3}=\frac{32}{a^{3}} \pi^{3}
+$$
+
+⇒ Zahl der Zustände in der 1. BZ:
+Aus periodischer
+
+\frac{32}{a^{3}} \pi^{3}: \frac{(2 \pi)^{3}}{L_{x} L_{y} L_{z}}=\frac{4 L_{x} L_{y} L_{z}}{a^{3}}=N
+
+⇒ Zahl der besetzten Bänder ist bestimmt durch die Zahl der Elektronen pro Elementarzelle.
+
+## Metalle, Halbleiter, Isolatoren
+
+$\sigma\left[\mathrm{W}^{-1} \mathrm{~cm}^{-1}\right]$ bei 300 K
+![This diagram shows the electrical conductivity values of various materials, categorizing them into metals and metalloids, intrinsic semiconductors, and insulators based on their conductivity levels.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-06_1077_974_440_399.jpg)
+
+![This diagram depicts the electronic band structures of a metal and a semimetal, showing the relationship between the conduction and valence bands relative to the Fermi energy level (E_F). It illustrates how the bands overlap or touch at the Fermi level in metals and semimetals, affecting their electrical conductivity.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-06_469_967_430_1755.jpg)
+![This diagram depicts the energy band structure comparison between a semiconductor (Halbleiter) with a band gap less than 3 eV and an insulator (Isolator) with a band gap greater than 3 eV, showing their conduction and valence bands relative to the Fermi level (E_F).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-06_550_861_1120_1755.jpg)
+
+## Metalle, Halbleiter, Isolatoren
+
+![The diagram depicts the electronic band structures and corresponding energy band diagrams for a metal (a) and an insulator (b), showing the relationship between energy levels, wave vector, and spatial coordinate with the Fermi energy level indicated.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-07_1241_1381_317_927.jpg)
+Volle Bänder tragen keinen Strom, nicht-volle schon!
+
+Bild 8.25: Besetzung der Bänder von Kristallen mit einatomiger Basis. a) Die Zustände der beiden Valenzbänder sind vollständig besetzt, das Leitungsband des Metalls ist nur bis zur Hälfte gefüllt. b) Die Zustände der beiden Valenzbänder sind vollständig besetzt, das Leitungsband des Isolators ist leer.
+
+
+![This diagram depicts an electronic band structure and density of states for a material, showing energy levels (E) as a function of wavevector (k) along specific crystallographic directions, with corresponding density of states represented by the shaded blocks on the right.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-08_1194_1142_419_687.jpg)
+Bild 8.26: Zur Richtungsabhängigkeit der Dispersionskurven. Die beiden oberen Bänder überlappen. Daher treten Elektronen aus dem Band $i=3$ in das Band $i=4$ über. Ist der Überlapp gering, so handelt es sich um ein Halbmetall.
+
+## Metalle
+
+Die Zustände im obersten besetzten Band sind nicht vollständig mit Elektronen besetzt. Die Zahl der Zustände in einem Band ist gleich der Zahl der primitiven Elementarzellen im Kristall, $\mathrm{N} \Rightarrow 2 \mathrm{~N}$ Elektronen (spin-up und spin-down) können in einem Band untergebracht werden (falls Bänder nicht überlappen).
+
+Beispiel Alkalimetalle:
+ein Valenzelektron pro primitiver Elementarzelle ⇒ das oberste Band ist nur halb besetzt .
+![This diagram depicts the electronic band structure of a metal, showing the highest energy band with free states as the conduction band and the highest fully occupied band as the valence band along with other bands of lower energy.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-09_489_1299_1147_1420.jpg)
+
+## Beispiel: Bandstruktur von Kupfer (Siehe auch Vorlesung 20!)
+
+![This diagram depicts the electronic band structure and density of states (DOS) for copper (Cu), showing the energy levels of s and d electron bands relative to the Fermi energy (E_F) along different wave vectors in the Brillouin zone. It also includes the electron configuration and the equation for the density of states as a function of energy.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-10_1126_2457_377_364.jpg)
+Abb. 8.22: Bandstruktur $E(\mathbf{k})$ von Kupfer entlang der Richtungen hoher Symmetrie. Links ist die resultierende Zustandsdichte gezeigt (die Symbole entsprechen experimentellen Daten aus R. Courths und S. Hüfner, Phys. Rep. 112, 55 (1984)).
+
+## Halbleiter \& Isolatoren
+
+Enthält die Elementarzelle eine gerade Anzahl von Elektronen (und überlappen die Bänder nicht) so füllen die Valenzelektronen ein oder mehrere Bänder vollständig auf und lassen (bei $T=0$ ) die oberen leer.
+
+Beispiel Si: [Ne] $+3 \mathrm{~s}^{2} 3 \mathrm{p}^{2}$
+
+Halbleiter unterscheiden sich von Isolatoren nur durch die Größe der Energielücke (typisch größer/kleiner 3 eV ):
+
+E_{g}^{H L}<E_{g}^{\text {Isolator }}
+
+![This diagram depicts the energy band structure of a semiconductor, showing the conduction band minimum, valence band maximum, the band gap energy (Eg), and the Fermi level (EF).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/52063b78-7942-4a34-b356-5713d981cba6/bcb9eaa1-585a-4744-8010-d9770b2d6bea-11_548_462_1157_1099.jpg)
+
+Oberstes Band mit freien Zuständen
+⇒ Leitungsband
+
+Oberstes voll besetztes Band
+⇒ Valenzband
+
++ weitere mit niedrigerer Energie
+
+Volle Bänder tragen keinen Strom!
+

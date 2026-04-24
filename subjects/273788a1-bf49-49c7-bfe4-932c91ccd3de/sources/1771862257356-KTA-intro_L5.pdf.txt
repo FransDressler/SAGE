@@ -1,0 +1,188 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 5
+
+24. November 2025
+
+## Aufgabe 1 : Bethe-Bloch-Formel
+
+Der Energieverlust, den ein Teilchen mit der Kernladung $z$ und der Geschwindigkeit $v(\beta=v / c)$ beim Durchgang durch Materie (Dichte $\rho$, Kernladung $Z$ und Massenzahl $A$ ) aufgrund von Ionisationen von Atomen in der Materie erfährt, wird über einen großen Energiebereich durch die Bethe-Bloch-Formel beschrieben:
+
+$$
+-\frac{\mathrm{d} E}{\mathrm{~d} x} \approx 0.1535 \rho \frac{Z}{A} \frac{z^{2}}{\beta^{2}} 2\left(\ln \left(\frac{2 m_{e} v^{2} \gamma^{2}}{I}\right)-\beta^{2}\right)\left[\mathrm{MeV} \mathrm{~cm}^{2} / \mathrm{g}\right] .
+$$
+
+Dabei ist $I$ die mittlere Energie, die für eine Ionisation notwendig ist. Die Abschätzung für den maximalen Impulsübertrag im Stoß mit einem Elektron $W_{\text {max }} \approx 2 m_{e} c^{2} \beta^{2} \gamma^{2}$ wurde bereits eingesetzt $\left(\gamma=1 / \sqrt{1-\beta^{2}}\right)$. Typische Werte für $B=m_{e} c^{2} / I$ liegen in der Grössenordnung $10^{4}-10^{6}$ abhängig von Teilchen und Material.
+![This diagram depicts the electric field configuration of a uniformly charged cylindrical shell with radius \( b \), showing the position of a point charge \( e \) and the vector \( \vec{v} \) from the cylinder's axis to the charge. It is used to analyze the electric potential or field at a point outside the charged cylinder.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-1_211_478_1363_804.jpg)
+a. Welche Energieabhängigkeit besitzt der Energieverlust näherungsweise für nichtrelativistische (kleine $\beta$ ) bzw. für relativistische ( $\beta \approx 1$ ) Teilchen?
+b. Zeigen sie, dass der Energieverlust für einen bestimmten Wert $\gamma_{\text {min }}$ ein Minimum besitzt. Teilchen bei dieser Energie bezeichnet man als "minimalionisierend".
+Hinweis: Die resultierende Formel für die Lage dieses Minimums als Funktion von $B$ ist etwas unhandlich und trivial nicht lösbar. Schätzen sie daher näherungsweise die ungefähre Lage des Minimums $\gamma_{\text {min }}$ für typische Werte von $B$ ab mit grafischen Methoden.
+
+## Lösung: Bethe-Bloch-Formel
+
+a. Das Plotten des Energieverlustes in Abhängigkeit von $\gamma$ zeigt ein Minimum, dessen Position von dem Verhältnis $\frac{2 m_{e} v^{2}}{I}=\frac{2 m_{e} c^{2} \beta^{2}}{I}$ abhängt. Typische Werte für $B=\frac{m_{e} c^{2}}{I}$ sind $10^{4}-10^{6}$, damit ergibt sich eine Kurve wie folgt: die beiden $\beta$-abhängigen Bestandteile $\frac{1}{\beta^{2}}$ und $\ln \left(\beta^{2} \gamma^{2}\right)$ sind streng monoton fallend bzw. streng monoton steigend, also kann man sagen, daß das Verhalten von $\frac{d E}{d x}$ bei kleinen $\beta$ vom $\frac{1}{\beta^{2}}$-Term dominiert wird, bei großen $\beta$ hingegen vom $\ln ()$.
+b. Um das Minimum zu finden, muß man
+
+![This diagram depicts the stopping power (-dE/dx) of a charged particle as a function of its Lorentz factor (γ), showing the full Bethe-Bloch energy loss curve along with approximations for the low-β and high-β regimes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-2_807_1143_301_461.jpg)
+Abbildung 1: $-\frac{d E}{d x}(\gamma)$ für $B=10^{5}$
+
+\frac{\partial\left(\frac{d E}{d x}\right)}{\partial \beta}=0
+
+lösen:
+
+\begin{aligned}
+\frac{\partial}{\partial \beta} C \cdot \frac{1}{\beta^{2}}\left(\ln \left(B \beta^{2} \gamma^{2}\right)-\beta^{2}\right) & =0 \\
+\frac{\partial}{\partial \beta} \frac{1}{\beta^{2}} \ln \left(B \beta^{2} \gamma^{2}\right) & =0 \\
+-\frac{2 \ln \left(B \beta^{2} \gamma^{2}\right)}{\beta^{3}}+\frac{B\left(\beta^{2} \frac{\partial \gamma^{2}}{\partial \beta}+2 \beta \gamma^{2}\right)}{\beta^{2}\left(B \beta^{2} \gamma^{2}\right)} & =0 \\
+-\frac{2 \ln \left(B \beta^{2} \gamma^{2}\right)}{\beta^{3}}+\frac{B\left(2 \beta^{3} \gamma^{4}+2 \beta \gamma^{2}\right)}{\beta^{2}\left(B \beta^{2} \gamma^{2}\right)} & =0 \\
+\ln (B)+\ln \left(\beta^{2} \gamma^{2}\right) & =\beta^{2} \gamma^{2}+1
+\end{aligned}
+
+Mit
+
+\begin{aligned}
+\gamma^{2} & =\frac{1}{1-\beta^{2}} \\
+1-\beta^{2} & =\frac{1}{\gamma^{2}} \\
+\beta^{2} & =1-\frac{1}{\gamma^{2}} \\
+& =\frac{\gamma^{2}-1}{\gamma^{2}} \\
+\beta^{2} \gamma^{2} & =\gamma^{2}-1
+\end{aligned}
+
+erhält man schliesslich
+
+\ln (B)+\ln \left(\gamma^{2}-1\right)=\gamma^{2}
+
+Diese Gleichung ist nur schwer mathematisch in den Griff zu bekommen, aber eine graphische Lösung für drei verschiedene Werte von $B\left(10^{4}, 10^{5}\right.$ und $\left.10^{6}\right)$ zeigt, dass Teilchen mit $\gamma \approx 3-4$ minimal ionisierend wirken:
+
+![This diagram shows the behavior of the function ln(B) + ln(γ² - 1) - γ² plotted against γ for different values of B (10⁴, 10⁵, 10⁶), illustrating how the function changes with γ and magnetic field strength B.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-3_741_1140_1336_466.jpg)
+Abbildung 2: Angetragen zur Suche der Nullstellen ist jeweils $\ln (B)+\ln \left(\gamma^{2}-1\right)-\gamma^{2}$ für verschiedene $B$ in Abhängigkeit von $\gamma$. Rot: $B=10^{4}$, grün: $B=10^{5}$, blau: $B=10^{6}$.
+
+## Diskussion: Typische Merkmale eines Gammaspektrums
+
+Ein gemessenes Gammaspektrum, wie in Abbildung 4 dargestellt, zeigt typischerweise mehrere charakteristische Strukturen, die die unterschiedlichen Wechselwirkungsmechanismen von Photonen mit dem Detektormaterial widerspiegeln.
+Wenn ein Gammaquant seine gesamte Energie im Detektor deponiert, erscheint das Ereignis im sogenannten Vollenergiepeak (full energy peak). Dies tritt ein, wenn das Photon vollständig
+durch den Photoeffekt (dann auch Photopeak genannt) absorbiert wird oder wenn nach einer oder mehreren Compton-Streuungen bzw. durch Paarerzeugung die gesamte Photonenenergie letztlich im Detektor deponiert wird. Die Breite des Vollenergiepeakswird durch die Energieauflösung des Detektors bestimmt und definiert die Genauigkeit der Energiemessung.
+Gibt das Photon hingegen nur einen Teil seiner Energie über eine oder mehrere ComptonStreuungen ab und verlässt anschließend den Detektor, wird nur ein Bruchteil seiner Energie deponiert. Diese Ereignisse bilden das sogenannte Compton-Kontinuum, das sich von niedrigen Energien bis zu einer scharfen Abbruchkante, der Compton-Kante, erstreckt. Die ComptonKante entspricht dem maximal möglichen Energieübertrag auf ein Elektron, d. h. der Streuung des Photons um $180^{\circ}$.
+Zusätzlich kann bei deutlich niedrigeren Energien ein schwächerer Rückstreupeak (backscatter peak) auftreten. Dieses Merkmal entsteht durch Photonen, die zunächst um etwa $180^{\circ}$ außerhalb des Detektors (z. B. an umgebenden Materialien) gestreut werden und anschließend wieder in den Detektor eintreten, wo sie ihre verbleibende Energie deponieren.
+Bei höheren Photonenergien ( $E_{\gamma}>1.022 \mathrm{MeV}$ ) wird die Paarerzeugung möglich. Dabei wandelt sich das Photon im Coulomb-Feld eines Atomkerns in ein Elektron-Positron-Paar ( $e^{+} e^{-}$) um. Das Positron verliert zunächst seine kinetische Energie im Detektormaterial und annihiliert anschließend mit einem Elektron, wobei zwei Photonen mit jeweils 511 keV Energie entstehen. Werden beide dieser Annihilationsphotonen zusammen mit der kinetischen Energie des Elektron-Positron-Paares vollständig im Detektor absorbiert, ergibt sich ein Ereignis im Vollenergiepeak (full energy peak) des ursprünglichen Gammaquants. Entweicht eines der beiden $511-\mathrm{keV}$ Photonen, entsteht ein Einzelfluchtpeak (single escape peak) bei $E_{\gamma}-511 \mathrm{keV}$; entweichen beide, resultiert ein Doppelfluchtpeak (double escape peak) bei $E_{\gamma}-1,022 \mathrm{MeV}$.
+Diese Annihilationsstrahlung entsteht häufig außerhalb des Detektors, etwa in der Umgebung des Messaufbaus, kann aber in den Detektor eintreten und dort den charakteristischen Annihilationspeak bei 511 keV erzeugen.
+Diese Merkmale zusammen charakterisieren die verschiedenen Wechselwirkungen von Photonen mit Materie und erm "oglichen die Identifikation sowohl der Gammastrahlungsquelle als auch der Detektorantwort.
+
+![This diagram is a gamma-ray energy spectrum from a scintillation or semiconductor detector, showing key features such as the full energy peak, Compton continuum, Compton edge, backscatter peak, pair production annihilation peak, and escape peaks. It is used to analyze the energy distribution and interactions of gamma photons with the detector.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-4_727_1092_1784_482.jpg)
+Abbildung 3: Typisches Gammaspektrum in einem Germaniumdetektor. Die Abbildung ist entnommen aus Gordon Gilmore, Practical Gamma-Ray Spectroscopy, John Wiley \& Sons, 2011.
+
+## Aufgabe 2 : Wechselwirkung von Photonen mit Materie
+
+Photonen wechselwirken mit Materie durch verschiedene physikalische Prozesse, abhängig von ihrer Energie und der Kernladungszahl $Z$ des Targetmaterials.
+a. Beschreiben Sie kurz den physikalischen Mechanismus jedes der drei wichtigsten Prozesse der Photon-Materie-Wechselwirkung:
+(a) Photoeffekt: Beim Photoeffekt überträgt das Photon seine gesamte Energie auf ein gebundenes Elektron des Absorberatoms. Das Photon wird vollständig absorbiert, und das Elektron wird aus seiner atomaren Schale herausgelöst, wobei seine kinetische Energie der Photonenergie minus der Bindungsenergie entspricht.
+(b) Compton-Streuung: Bei der Compton-Streuung wechselwirkt das Photon mit einem (näherungsweise) freien oder schwach gebundenen Elektron. Das Photon überträgt nur einen Teil seiner Energie auf das Elektron und wird unter einem Winkel mit verringerter Energie gestreut.
+(c) Paarerzeugung: Paarerzeugung wird möglich, wenn die Photonenergie $1,022 \mathrm{MeV}$ übersteigt, die kombinierte Ruhemasse eines Elektron-Positron-Paares. Im CoulombFeld eines Atomkerns wandelt sich das Photon in ein $e^{-}$und ein $e^{+}$um, die anschließend Energie im Material verlieren; das Positron annihiliert schließlich unter Emission von zwei Photonen mit jeweils 511 keV .
+b. Zeichnen Sie für jeden dieser Wechselwirkungsprozesse ein Feynman-Diagramm.
+c. Basierend auf der Diskussion der Form des typischen Energiespektrums, das in der $\gamma$-Spektroskopie in Abbildung 3 gezeigt ist, welche Unterschiede im Spektrum erwarten Sie für kleine und große Detektoren?
+Bei einem großen Detektor wird über mehrere Compton-Streuprozesse und schließlich den Phototeffekt die gesamte Energie des Gamma-Quants im Detektor deponiert, d.h. man erwartet einen grossen Anteil der Ereignisse im Photo-Peak, während bei einem kleinen Detektor ein Gamma-Quant mit hoher Wahrscheinlichkeit nur einmal streut, d.h. man erwartet, vor allem bei höheren Gamma-Energien, weniger Ereignisse im Photo-Peak und mehr Ereignisse im Compton-Kontinuum.
+d. Skizzieren Sie den gesamten Photonenabsorptionsquerschnitt $\sigma\left(E_{\gamma}\right)$ als Funktion der Photonenenergie. Geben Sie an, in welchen Energiebereichen der Photoeffekt, die Compton-Streuung und die Paarerzeugung dominieren.
+Eine Skizze des gesamten Photonenabsorptionsquerschnitts als Funktion der Photonenenergie zeigt drei deutlich getrennte Bereiche:
+
+- Bei niedrigen Photonenenergien (typischerweise unter einigen hundert keV) dominiert der Photoeffekt. Der Wirkungsquerschnitt fällt mit zunehmender Energie sehr steil ab und hängt stark von der Ordnungszahl des Materials ab.
+- Bei mittleren Energien (etwa von einigen hundert keV bis zu mehreren MeV ) wird die Compton-Streuung zum dominierenden Wechselwirkungsprozess.
+- Bei hohen Photonenenergien (oberhalb von etwa 1 MeV ) wird die Paarerzeugung möglich und dominiert bald. Der Wirkungsquerschnitt nimmt mit der Energie zu und ist in Materialien mit hoher Ordnungszahl stark verstärkt.
+![This diagram depicts Feynman diagrams illustrating the photoelectric effect, showing the interaction between photons and electrons near a nucleus resulting in electron emission over time.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-6_474_684_296_694.jpg)
+![This image shows Feynman diagrams for Compton scattering and pair production, illustrating the interactions between photons, electrons, positrons, and a nucleus over time in quantum electrodynamics.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-6_988_698_762_685.jpg)
+
+
+## Aufgabe 3 Compton-Effekt
+
+Bei der Streuung von $\gamma$-Quanten an Elektronen überträgt ein Photon einen Teil seiner Energie auf ein ruhendes Elektron und setzt seine Bewegung unter einem Streuwinkel $\theta_{\gamma}$ fort, wie in Abbildung 4 dargestellt.
+
+![This diagram depicts the Compton scattering process, showing an incoming gamma photon scattering off a stationary electron, resulting in a scattered photon with reduced energy and a recoiling electron with momentum.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/68f5b52d-5bf0-4a1f-a9ba-4b1846964f1c/b5470e80-a8aa-4087-a495-50c0dd3d7a62-6_446_1228_2108_429.jpg)
+Abbildung 4: Compton-Effekt
+
+a. Berechnen Sie die kinetische Energie des gestreuten Elektrons als Funktion des Streuwinkels $\theta_{\gamma}$ und der Energie des Photons $E_{\gamma}$.
+b. Der maximale Energieübertrag auf das Elektron tritt bei der Rückstreuung des $\gamma$-Quants ( $\theta_{\gamma}=180^{\circ}$ ) auf und bildet die sogenannte Compton-Kante im gemessenen Energiespektrum. Berechnen Sie die Energiedifferenz zwischen der ursprünglichen $\gamma$-Energie und der maximalen Elektronenenergie. Wie groß wird diese Energiedifferenz im Grenzfall hoher $\gamma$-Energien?
+
+## Lösung: Compton-Effekt
+
+a. Es gelten Energieerhaltung
+
+E_{\gamma}+m_{e} c^{2}=E_{\gamma}^{\prime}+E_{e}=E_{\gamma}^{\prime}+\sqrt{m_{e}^{2} c^{4}+p_{e}^{2} c^{2}}
+
+und Impulserhaltung:
+
+\vec{p}_{\gamma}=\vec{p}_{\gamma}^{\prime}+\vec{p}_{e}
+
+Quadriert man Gleichung 4 und multipliziert mit $c^{2}$, erhält man:
+
+p_{e}^{2}=p_{\gamma}^{2}+p_{\gamma}^{\prime 2}-2 p_{\gamma} p_{\gamma}^{\prime} \cos \theta_{\gamma}
+
+und
+
+p_{e}^{2} c^{2}=E_{\gamma}^{2}+E_{\gamma}^{\prime 2}-2 E_{\gamma} E_{\gamma}^{\prime} \cos \theta_{\gamma}
+
+Gleichung (3) nach $E_{e}$ aufgelösen und quadrieren liefert:
+
+m_{e}^{2} c^{4}+p_{e}^{2} c^{2}=E_{\gamma}^{2}+E_{\gamma}^{\prime 2}+m_{e}^{2} c^{4}+2\left(E_{\gamma}-E_{\gamma}^{\prime}\right) m_{e} c^{2}-2 E_{\gamma} E_{\gamma}^{\prime}
+
+Durch Einsetzen von Gleichung (6) in (7) erhält man:
+
+\begin{gathered}
+E_{\gamma} E_{\gamma}^{\prime}\left(1-\cos \theta_{\gamma}\right)=\left(E_{\gamma}-E_{\gamma}^{\prime}\right) m_{e} c^{2} \\
+\Rightarrow E_{\gamma}^{\prime}=\frac{E_{\gamma}}{1+\frac{E_{\gamma}}{m_{e} c^{2}}\left(1-\cos \theta_{\gamma}\right)} \\
+E_{e, k i n}=E_{\gamma}-E_{\gamma}^{\prime}=\frac{\frac{E_{\gamma}^{2}}{m_{e} c^{2}}\left(1-\cos \theta_{\gamma}\right)}{1+\frac{E_{\gamma}}{m_{e} c^{2}}\left(1-\cos \theta_{\gamma}\right)}
+\end{gathered}
+
+## Alternative Lösung mit Vierervektoren:
+
+Viererimpulserhaltung: $p_{e 0}+p_{\gamma}=p_{e}+p_{\gamma}^{\prime}$
+
+\left(\begin{array}{c}
+m_{e} c \\
+0 \\
+0 \\
+0
+\end{array}\right)+\left(\begin{array}{c}
+E_{\gamma} / c \\
+E_{\gamma} / c \\
+0
+\end{array}\right)=\left(\begin{array}{c}
+\frac{E_{\gamma}^{\prime}}{c} \\
+\frac{E_{\gamma}^{\prime}}{c} \cos \theta \\
+\frac{E_{\gamma}^{\prime}}{c} \sin \theta \\
+\end{array}\right)+\left(\begin{array}{c}
+E_{e} / c \\
+p_{x e} \\
+p_{y e} \\
+\end{array}\right)
+
+$\mathrm{c}=1$
+
+\left(\begin{array}{c}
+m_{e}+E_{\gamma}-E_{\gamma}^{\prime} \\
+E_{\gamma}-E_{\gamma}^{\prime} \cos \theta \\
+-E_{\gamma}^{\prime} \sin \theta \\
+\end{array}\right)=\left(\begin{array}{c}
+E_{e} \\
+p_{x e} \\
+p_{y e} \\
+\end{array}\right)
+
+Quadrieren:
+
+\left(m_{e}+E_{\gamma}-E_{\gamma}^{\prime}\right)^{2}-\left(E_{\gamma}-E_{\gamma}^{\prime} \cos \theta\right)^{2}-\left(-E_{\gamma}^{\prime} \sin \theta\right)^{2}=m_{e}^{2}
+
+Umstellen für $E_{\gamma}^{\prime}$ ergibt:
+
+E_{\gamma}^{\prime}=\frac{E_{\gamma}}{1+\frac{E_{\gamma}}{m_{e} c^{2}}(1-\cos \theta)}
+
+b. Die maximale auf das Elektron übertragene Energie ergibt sich für $\theta_{\gamma}=180^{\circ}$, d.h. $\cos \theta_{\gamma}=$ -1 .
+
+Dann ist
+
+E_{e, \max }=\frac{2 E_{\gamma}^{2}}{m_{e} c^{2}+2 E_{\gamma}}
+
+Die Energiedifferenz beträgt damit
+
+\Delta E=E_{\gamma}-E_{e, \max }=E_{\gamma}-\frac{2 E_{\gamma}^{2}}{m_{e} c^{2}+2 E_{\gamma}}=\frac{E_{\gamma}}{1+2 \frac{E_{\gamma}}{m_{e} c^{2}}}=\frac{1}{\frac{1}{E_{\gamma}}+\frac{2}{m_{e} c^{2}}}
+
+Für $E_{\gamma} \rightarrow \infty$ wird $\Delta E \rightarrow \frac{m_{e} c^{2}}{2}$.
+

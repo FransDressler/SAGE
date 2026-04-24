@@ -1,0 +1,167 @@
+## Die effektive Masse
+
+In Komponentenschreibweise:
+$\underbrace{\frac{d \boldsymbol{v}(\boldsymbol{k})}{d t}=\frac{1}{\hbar^{2}} \boldsymbol{\nabla}_{k}\left[\boldsymbol{\nabla}_{k} E_{n}(\boldsymbol{k})\right]}_{\left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}} \cdot \boldsymbol{F}$
+$\boldsymbol{m}^{*}=$ Tensor der effektiven Masse
+
+$$
+\frac{d \boldsymbol{v}_{\mathrm{i}}(\boldsymbol{k})}{d t}=\sum_{\mathrm{j}} \frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}} F_{\mathrm{j}} ; \quad i, j=x, y, \text { und } z
+$$
+
+$\left(\frac{1}{m^{*}}\right)_{\mathrm{ij}}=\frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}}$
+
+Definiert den effektiven Massentensor im Punkt k eines Bandes.
+
+## Bemerkungen:
+
+- Mit Hilfe des Tensors der effektiven Masse $\boldsymbol{m}^{*}$ wird die Verbindung zur klassischen Bewegungsgleichung $F=m a$ hergestellt.
+- Die Tensoren der reziproken effektiven Masse ( $1 / \mathrm{m}^{*}$ ) ${ }_{\alpha \beta}$ bzw. der effektiven Masse $m^{*}{ }_{\alpha \beta}$ sind symmetrisch. Sie lassen sich daher auf Hauptachsen transformieren, wodurch sich die Anzahl der unabhängigen Komponenten auf höchstens drei reduziert:
+
+\left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}=\left(\begin{array}{ccc}
+1 / m_{1} & 0 & 0 \\
+0 & 1 / m_{2} & 0 \\
+0 & 0 & 1 / m_{3}
+\end{array}\right)
+
+## Die effektive Masse
+
+In Komponentenschreibweise:
+$\underbrace{\frac{d \boldsymbol{v}(\boldsymbol{k})}{d t}=\frac{1}{\hbar^{2}} \boldsymbol{\nabla}_{k}\left[\boldsymbol{\nabla}_{k} E_{n}(\boldsymbol{k})\right] \cdot \boldsymbol{F}}_{\left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}}$
+
+\begin{aligned}
+\frac{d \boldsymbol{v}_{\mathrm{i}}(\boldsymbol{k})}{d t}=\underbrace{\sum \frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}}}_{\mathrm{j}} F_{\mathrm{j}} ; & i, j=x, y, \text { und } z \\
+\left(\frac{1}{m^{*}}\right)_{\mathrm{ij}}=\frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}} & \begin{array}{l}
+\text { Definiert den effektiven } \\
+\text { Massentensor im Punkt } \boldsymbol{k} \\
+\text { eines Bandes. }
+\end{array}
+\end{aligned}
+
+$\boldsymbol{m}^{*}=$ Tensor der effektiven Masse
+
+## Bemerkungen:
+
+- Die reziproke effektive Masse ist durch die Krümmung der Energiefläche bestimmt. In ihr ist die Wechselwirkung der Elektronen mit den Atomrümpfen versteckt, die diese bei ihrer Bewegung im Festkörper erfahren.
+- Die Kenntnis der Energiedispersion $E(\boldsymbol{k})$ reicht zur Beschreibung der Elektronenbewegung.
+- Man bezeichnet das hier entwickelte Konzept zur Beschreibung der Elektronenbewegung im Kristall als „effektive Massennäherung“.
+
+
+## Die effektive Masse in 1D
+
+![This diagram depicts the energy dispersion relation \(E(k)\) and the corresponding effective mass \(m^*\) as functions of the wave vector \(k\) in a crystalline solid, illustrating how the effective mass varies near the band edges at \(k_1\) and \(k_2\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-03_1408_1336_372_519.jpg)
+Bild 9.2: Zusammenhang zwischen der Dispersionsrelation $E(k)$ und der effektiven Masse $m^{*}$ in eindimensionaler Darstellung.
+
+Walter Schottky Institut \& School of Natural Sciences
+
+Effektive Masse bei $k_{1}$ ist positiv, bei $k_{2}$ negativ (siehe später: Löcher)
+
+Je flacher die Parabel, desto größer die effektive Masse!
+
+## Parabolische Massennäherung in 1D
+
+![This diagram depicts the energy dispersion relation \(E(k)\) for electrons in a crystal lattice, showing the band structure near the Brillouin zone edges and the effective mass approximation near the band minimum. It illustrates how the energy varies with the wave vector \(k\), with the parabolic approximation \(E = \frac{\hbar^2 k^2}{2m^*}\) used to describe electron behavior near \(k=0\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-04_599_1319_382_529.jpg)
+
+Effektive Masse bei $k_{1}$ ist positiv, bei $k_{2}$ negativ (siehe später: Löcher)
+
+Je flacher die Parabel, desto größer die effektive Masse!
+
+1D und parabolische Dispersion $\Rightarrow \frac{\partial^{2} E}{\partial k^{2}}=\frac{\hbar^{2}}{m^{*}} \Rightarrow$ konstante effektive Masse
+
+Der Wert für $m^{*}$ kommt theoretisch aus Bandstrukturrechnungen, experimentell aus der Messung der Zyklotronresonanz.
+
+3D Beispiel: Unterschiedliche Krümmung der Dispersion in $x-, y-$, und $z$-Richtung
+
+\begin{aligned}
+& E(\boldsymbol{k})=\frac{\hbar^{2} k_{x}^{2}}{m_{1}}+\frac{\hbar^{2} k_{y}^{2}}{m_{2}}+\frac{\hbar^{2} k_{z}^{2}}{m_{3}}, \text { mit } \frac{1}{m_{i}}=\frac{1}{\hbar^{2}} \cdot \frac{\partial^{2} E_{n}}{\partial k_{i}^{2}} \\
+& \left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}=\left(\begin{array}{ccc}
+1 / m_{1} & 0 & 0 \\
+0 & 1 / m_{2} & 0 \\
+0 & 0 & 1 / m_{3}
+\end{array}\right) \Rightarrow \boldsymbol{m}^{*}=\left(\begin{array}{ccc}
+m_{1} & 0 & 0 \\
+0 & m_{2} & 0 \\
+0 & 0 & m_{3}
+\end{array}\right)
+\end{aligned}
+
+## Effektive Masse in Silizium
+
+![This diagram is an electronic band structure plot showing the energy dispersion of electrons in a crystalline solid along specific crystallographic directions [111], [000], and [100]. It depicts the conduction and valence bands with energy values in electron volts (eV), highlighting band gaps and energy differences between key points in the Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-05_1412_940_286_392.jpg)
+
+Unterschiedliche effektive Massen für unterschiedliche Richtungen der Elektronen im Leitungsband von Si: $m_{1}=m_{2} \neq m_{3}$
+
+Energiebänder des Siliziums. Das Leitungsband-Minimum in Richtung [100], verursacht die Ellipsoide konstanter Energie in der Abbildung oben.
+
+Das Valenzbandmaximum tritt bei $k=0$ auf, wo sich zwei entartete Bänder mit unterschiedlichen Krümmungen treffen, so dass es 'leichte Löcher' und 'schwere Löcher' gibt.
+
+## Blochoszillationen
+
+![The diagram depicts (a) the relationship between velocity and wave vector in a periodic potential, showing energy bands, and (b) the oscillatory displacement of a particle over time under an electric field, illustrating Bloch oscillations in a crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-06_978_2051_359_531.jpg)
+
+Bild 9.3: Elektronenbewegung unter dem Einfluss eines konstanten elektrischen Feldes $-\mathcal{E}_{x}$. a) Geschwindigkeit (durchgezogene Kurve) und Energie (strich-punktierte Kurve) als Funktion der Wellenzahl: An der Grenze der Brillouin-Zone „springen“ die Elektronen im reduzierten Zonenschema von $\pi / a$ nach $-\pi / a$. b) Zeitlicher Verlauf der räumlichen Auslenkung: Es tritt eine oszillatorische Bewegung um den Mittelwert $x_{0}$ auf. Als Anfangsbedingung wurde $k(t=0)=0$ gewählt.
+
+## Ladungstransport in Bändern
+
+Halbleiter \& Isolatoren: Enthält die Elementarzelle eine gerade Anzahl von Elektronen (und überlappen die Bänder nicht) so füllen die Valenzelektronen ein oder mehrere Bänder vollständig auf und lassen (bei $T=0$ ) die oberen leer.
+
+Beispiel: Si: $[\mathrm{Ne}]+3 \mathrm{~s}^{2} 3 \mathrm{p}^{2}$
+![This diagram depicts the energy band gap in a semiconductor or insulator, showing the conduction band minimum and valence band maximum separated by the energy gap \(E_g\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-07_209_400_512_1318.jpg)
+![This diagram depicts the Fermi energy level (E_F) in a solid-state system, representing the highest occupied energy level of electrons at absolute zero temperature.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-07_73_483_751_1304.jpg)
+![This diagram depicts a potential energy curve for a diatomic molecule, showing the variation of potential energy with internuclear distance and indicating the bond dissociation energy.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-07_203_326_853_1331.jpg)
+
+Volle Bänder tragen keinen Strom.
+
+Stromdichte: $\quad \boldsymbol{j}=-\frac{e}{V} \sum_{k \in \text { Band }} \boldsymbol{v}(\boldsymbol{k})=-\frac{e}{\hbar V} \sum_{k \in \text { Band }} \boldsymbol{\nabla}_{k} E_{n}(\boldsymbol{k})=0$, mit V dem Kristallvolumen
+da bei einem vollen Band: $E_{\mathrm{n}}(\boldsymbol{k})=E_{\mathrm{n}}(-\boldsymbol{k})$ eine gerade Funktion ist, $\mathbf{v}(-\boldsymbol{k})=-\mathbf{v}(\boldsymbol{k})$.
+
+## Loch = „Defekt-Elektron“
+
+![This diagram depicts energy band structures showing electron and hole states relative to the energy gap, with (a) illustrating transitions between conduction and valence bands at specific wavevectors, and (b) illustrating electron-hole pair recombination or scattering processes within the valence band.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-08_959_2082_359_570.jpg)
+Bild 9.4: Zum Konzept des Lochs. a) Ein Elektron wird, z.B. durch optische Absorption, aus dem vollen Valenzband ins leere Leitungsband angehoben. Das Elektron im Leitungsband ist durch einen Punkt, das fehlende Elektron durch eine hellblaue Kreisfläche dargestellt. Das resultierende Loch besitzt jedoch den Wellenvektor $\boldsymbol{k}_{\mathrm{p}}=-\boldsymbol{k}_{\mathrm{n}}$, also den des Elektrons, das den Zustand des offenen Kreises C belegt. b) Durch den Sprung eines Elektrons von P in den leeren Zustand Q wird das entsprechende Loch angehoben. Dabei wird die Energiedifferenz zwischen den beiden Zuständen frei.
+
+## Drude-Modell
+
+\xrightarrow{|\boldsymbol{E}| \neq 0:}
+
+![This image depicts a statue of Georg Simon Ohm, a physicist known for formulating Ohm's Law in electricity. The statue shows Ohm seated, with his name and lifespan (1789-1854) inscribed on the pedestal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-09_1234_715_416_150.jpg)
+![This diagram depicts the setup for analyzing the motion of a positive charge \( q \) in an electric circuit, showing the direction of current \( I \), voltage \( U \), and the velocity \( v \) of the positive charge within a conductor.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-09_374_960_409_891.jpg)
+
+Elektron bei $|\boldsymbol{E}|=0$ : randomisierte Bewegung
+
+|\boldsymbol{E}| \neq 0:
+
+![This image is a historical photograph of a man, likely a portrait of a notable individual from the late 19th or early 20th century. It does not depict a diagram or technical subject matter.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-09_906_636_402_2684.jpg)
+Paul Drude (1863-1906)
+
+![This diagram depicts the path of an electron in a magnetic field, illustrating the circular or helical trajectory due to the Lorentz force acting perpendicular to the electron's velocity and the magnetic field direction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-09_186_408_1338_2096.jpg)
+
+Elektron bei $|\boldsymbol{E}| \neq 0$ : Drift-Bewegung
+
+## Drude-Modell
+
+Im Rahmen der Drude-Theorie gilt, dass bei $\boldsymbol{E} \neq 0$ die Geschwindigkeit $\boldsymbol{v}$ zwischen den Stößen linear anwächst, bis es $\boldsymbol{v}_{\boldsymbol{d}}$ als Sättigungswert erreicht.
+
+Sobald das Feld $\boldsymbol{E}$ ausgeschalten wird $(\boldsymbol{E}=0)$ gilt
+
+& m \frac{\mathrm{~d} \boldsymbol{v}}{\mathrm{dt}}=-m \frac{\boldsymbol{v}_{\boldsymbol{d}}}{\tau} \\
+& \Rightarrow \boldsymbol{v}=\boldsymbol{v}_{\boldsymbol{d}}(\boldsymbol{t}=\mathbf{0}) \cdot e^{-\boldsymbol{t} / \boldsymbol{\tau}} \\
+& \Rightarrow \mathrm{m} \cdot \boldsymbol{v}=\boldsymbol{p}=\mathrm{m} \cdot \boldsymbol{v}_{\boldsymbol{d}}(\boldsymbol{t}=\mathbf{0}) \cdot e^{-\boldsymbol{t} / \boldsymbol{\tau}}=\boldsymbol{p}_{\boldsymbol{d}}(\boldsymbol{t}=\mathbf{0}) \cdot e^{-\boldsymbol{t} / \boldsymbol{\tau}}
+
+Daher wird $\tau$ als Impulsrelalaxationszeit bezeichnet (engl. „momentum relaxation time“ oder „momentum scattering time“), die charakteristische Zeit, in welcher der Driftstrom exponetiell abklingt (gerne auch $\tau_{m}$ )
+
+Typsiche Stoßzeiten:
+$10^{-14}-10^{-12} \mathrm{~s}$
+(LO-Phononen bei RT)
+
+Des Weiteren: „Drude auf modern“:
+
+Elektronen bewegen sich an der Fermi-Kante mit $v_{F}$.
+Elektronen streuen an GitterDefekten, Phononen, etc.
+$\boldsymbol{v}$ ist die sog. Drift-Geschwindigkeit.
+Streu-Prozesse sind unkorreliert.
+
+## Sommerfeld-Theorie (nächste Vorlesung)
+
+![This diagram depicts the shift in the Fermi surface in momentum space (wave number space) for electrons in a metal. It shows the Fermi surface as a circle at zero electric field (a) and its displacement by \(\delta k_x\) under an applied electric field \(\mathcal{E}_x\) (b).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cf3b9464-3aee-4ff3-92af-495f1ce96c8f/ba2d3528-95d4-46fe-a561-76ab6752ddbd-11_1006_2155_341_588.jpg)
+Bild 9.5: Verschiebung der Fermi-Kugel im elektrischen Feld. Die Punkte symbolisieren die erlaubten Wellenvektoren. a) Fermi-Kugel ohne elektrisches Feld. Koordinatenursprung und Kugelmittelpunkt fallen zusammen. b) Unter dem Einfluss des elektrischen Feldes $-\mathcal{E}_{x}$ haben sich alle Wellenvektoren und mit ihnen die Elektronenverteilung um den Betrag $\delta k_{x}$ nach rechts verschoben. Durch Stöße werden Elektronen aus dem dunklen Bereich der Vorderseite in den helleren Bereich der Rückseite transportiert.
+

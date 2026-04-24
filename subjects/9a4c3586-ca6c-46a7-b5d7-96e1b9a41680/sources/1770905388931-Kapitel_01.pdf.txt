@@ -1,0 +1,584 @@
+## Skript 02
+
+1. De Stuktur fester Voinper: Atouse in Visitallen, Ein knistalle
+1.1. Vistallstruktur $=$ Gitter + Basis
+
+Ein knistall ist ane 3D, periodische Anordumy von Atomen. Ein idealer histall settet sich aus Aftomen zusammen, die in einem duch diei fundamentale Grund veltanen $\underline{a}_{1}, \underline{a}_{2}$, und $a_{3}$ (Basisveltaren) definiaten Gitter anyenduct sind.
+Von jeden Punkt I aus sieht die Anondunny der Abure glich aus, wie im Punkt $\underline{r}^{\prime}$
+
+$$
+\underline{r}^{\prime}=\underline{r}+u_{1} \cdot \underline{a}_{1}+u_{2} \cdot \underline{a}_{2}+u_{3} \cdot \underline{a}_{3}, u_{i} \in \mathbb{Z}
+$$
+
+Die Menge aller Punkte I'defineer ein Gitter Gitler
+
+Un Gitter beselneiben, verwenden wir 6 Gitterparameter:
+
+> Gitterkoustanten Winkel
+
+\begin{array}{ll}
+a_{1}=\left|a_{1}\right|, & a_{2}=\left|a_{2}\right|, a_{3}-\left|a_{3}\right| \\
+\alpha \Varangle a_{2}, a_{3}, & \beta \Varangle a_{3}, a_{1}, \\
+\gamma \Varangle a_{1}, a_{2}
+\end{array}
+
+Volumen des Einheitszelle:
+
+V_{E Z}=\underline{a}_{1} \cdot\left(\underline{a}_{2} \times \underline{a}_{3}\right) .
+
+Die knistallstruktur wind enst aufyebout, wenn eive Basis ans Atomen völlij gleichantig jeden Gitterpunkt besetzt.
+
+\text { mistallstuktur }=\text { Gitter }+ \text { Basis }
+
+Relativ zu jedem Gitterpunlet j liegen die Basisatone
+
+R_{j}=x_{j} \underline{a}_{1}+y_{j} \underline{a}_{2}+z_{j} \underline{a}_{3}
+
+Allj. jilt: ln 30 gilot es
+
+14 Bravaisgitter und 7 Unistall systeme. Wie komment man daranf?
+
+### 1.2 Bravais yitter
+
+![The image depicts a handwritten note explaining the distinction between point symmetries and translation symmetries in a crystal lattice, stating that point symmetries fix a point in space while translation symmetries shift the entire crystal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-02_274_1719_275_227.jpg)
+Betrachte zuriächst nur das Gitter dure Basis.
+Folie
+
+## - Thausalationssymmetic
+
+\begin{aligned}
+& u(\underline{r})=u(\underline{r}+\underline{R}), \underline{R}: \text { Gittervelxtor } \\
+& \underline{R}=u_{1} \underline{a}_{1}+u_{2} \underline{a}_{2}+u_{3} \underline{a}_{3}, u_{i} \in \mathbb{Z} .
+\end{aligned}
+
+Die Basisveltaren $a_{i}$ spannen ein schiefwinkliges Kondinatensystem auf. Parallelepiped wind als Einheitszelle odo Elementarzelle beeiducet.
+
+Folie
+Bemerkwap: - Man cuterscheidef princitive EZ (mit 1 Gitterpundet) and vicht-primitive EZ ( $>1$ Gitterpankte).
+
+- Einheitszellen (EZ) sind uidit eindentig. Folie
+- Mit des nicht-prinitiven Ez Kann man nit dev Basisvelleren wicht alle Gitterpankle meichen!
+- Die primitive EZ bringf off die Symmetie des Punlitgitter nicht zum Ausdiuch ( ⇒ wähle micht-primitive EZ wit Basis).
+
+
+## Symmetic operationen
+
+Eine Symmetie operation ist eine Operation, nach des der Uorpes nicht vom Ausgangszustand zu unterscheiden ist.
+
+## Beispiel: Drehuny und Spiegeluy eives Wärfels
+
+Das geometische Objekt zus Symmetie operation heipt Symmetic element.
+Spiegeluy → Spiegelcheve
+Drehung → Drchachse
+
+## Gruppentheoic
+
+Die Meyz all Symmetic operationen bildet eine math. Gruppe, dic Symmetie guppe.
+
+- Punktsymmetic operation (mind. ein Gitterpunlet blaibt aholten)
+- Drchmy um eine Achse: es jibt n-z̈dlige Drchachsen ⇒ nur Drchcugen um $\frac{2 \pi}{u}, u=1,2, \ldots$ sind excaust u-Zählijveit: Wie oft titt bei Drchmy un $2 \pi$ Deckmugsglaichhat auf.
+nue 2,3,4 and 6-zählije Dachangen sind relevount.
+Symbole $2,3,4,6$
+- Spiejeluy : Beispiel Spiegeluy an $x y$-Ebena:
+
+\begin{aligned}
+& x_{1}^{\prime}=x \\
+& y_{1}^{\prime}=y-z
+\end{aligned}
+
+Symbol m
+
+- Inversionszentinun:
+
+& x^{\prime}=-x ; y^{\prime}=-y \quad ; \quad z^{\prime}=-z ; \\
+& \text { Symbol i (oder } \overline{1} \text { ) Spiegely an } \\
+& \text { Purent. } \\
+& \text { Punkt. gitter haben immes Inversion. } \\
+& \text { Bei Einfülung einer Basis Vann diese verloren gela. }
+
+- Dreh inversionsadise: zusammengesetzle Operation, Drchuy + Luvesion
+
+& \text { Symbol } \overline{2}, \overline{3}, \overline{4}, \overline{6} \\
+& \text { zweizahlige Drchung }+ \text { luversion }=\text { Spiegeley } \\
+& \Rightarrow \overline{2}=m .
+
+## Fazit: 10 Punktsymmetie operationen! okne Thanslation
+
+Ans des Guppentheorie engeben sich mathematisch 32 Punktsymmetic gruppen. rit Thanslation: 230 mistallographiscle Raumgrupper. Diese vertailen sich anf 7 kistallsysteme. Folic Quasi-K.
+
+Auguste Bravois Uounte 1849 zeijen, dass es in 30 14 Einhaitszellen der mistalle gibt.
+
+In 2D jibt es 5 Bravaisgitter
+
+Benuerkuy: - Das "hexagonale" Graphen-Gitter ist Vein
+Bravais-Gitter ( $\rightarrow$ Tutorium). Bravais-Gitter ( $\rightarrow$ Tutorium).
+
+## Skript 03
+
+## 1. 3 Vubische Stulturen
+
+- Unbiscle primitiv (simple cubic)
+
+| 6 viadiste Nachbeun | a |
+| :--- | :--- |
+| 12 übervächste Nachbonn | $a \sqrt{2}$ |
+| Folie |  |
+
+## Folic
+
+- Unbisch innemzentiest. (body centered cubic)
+
+Vubische EZ unit 2 Gitterpunkten bei $(0,0,0)$ and $\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right)$ 8 viächste Nachborn a $\frac{13}{2}$ 6 übervächste Nachboun a Packunjs verliältuis $68 \%$
+
+
+- Kubisch flachenrentient: (face centered cubic)
+
+Kubische EZ wit 4 Gitterpunklen 12 véchste Nachboann 6 übervachste Nachbonn Padrung sverhältris
+
+⇒ höchste Kondinationszale, dichteste Padreny. Folic
+1.4 hcp-Stukturen (hexajoually dose-paded)
+primitive EZ:
+
+& \alpha=120^{\circ} ; a=b ; \\
+& c=\sqrt{\frac{8}{3}} a \cong 1,63 a
+
+Basis $(0,0,0),\left(\frac{2}{3}, \frac{1}{3}, \frac{1}{3}\right)$
+
+## Dichteste kugelpackuy
+
+Die hexajoual dichteste kuyelpadnuy entsteht, wenn man ein hexajonales Bravais-Gitter nird eino Rasis ans (wind.) twei glaichartijen Atonen Kocubiniert.
+Das easte sei bei $(0,0,0)$, das zweite ba $\left(\frac{2}{3}, \frac{1}{3}, \frac{1}{2}\right)$,. also anf halber c-Achsentione in tenturn eires Basisdieiecks.
+
+⇒ Es gibt vein hexajoual dichtest sepacites Gitter, sondern immer einen hexajonal diehtert gepadeten Mistall.
+1.5 Die Diamant-Stuktur
+
+Folic
+
+\begin{gathered}
+C_{1} S_{i}, G e \\
+\uparrow \\
+\text { (wenn Diamant) }
+\end{gathered}
+
+fcc-Struktur nit 2 -atomiges Basis $(0,0,0),\left(\frac{1}{4}, \frac{1}{4}, \frac{1}{4}\right)$. noordinationszale 4
+Packungsdichte $34 \%$
+Unsadre: $\quad s p^{3}-$ Hybridisiency
+Bemerkingen - Veine 4-zällige Drchachse dunch Wüfelffacla!'
+
+- Vohlenstoff komment in cuterschiedlide unistall formar vor, sog. Poly mophe , nitt teilweise sels unterschiedlicher Eijenschafter: Diamant, Graphid, Graphen, Bilagen-Grapha, Fulleneve, Volulenstoff yanoiöhdian, etc...
+- Zinkblendestuktur: wie Diamant, aber Basis aus zwei wuterschiedlidn Atower. 7.B. Gats, hn S6, GaP (III-V Halblater).
+
+
+## Wigne - Saits - Zelle (WSZ)
+
+Die WSz ist eine von vielen wiöfichen prinitven EZ. unit folgender Voustuktious vaschift:
+a) Zeichne Verbindumgslinion zen dem vächsten Nachboun
+b) Beichne rittel senturechte
+c) Das Verinste eingeschlossene Volumen ist die WSz.
+
+## Bemerkyen
+
+- Welde EZ verwendet wind, ist eive Fioge der Handhabbankit.
+- Symmetric des Gitters ist u.a. an yöseacu EZ besses za eshemua.
+- Die Abmessuy gebräuchlicher EZ (Gitterkoustanten) ist oft gioßer als der intoatomove Abstand ( → z.B. fcc and bcc).
+
+
+## Skript 04
+
+### 1.7 Ridetunjen und Ebenen in Kistall
+
+Physivelische Eigenschaften, wie electr. Leitfähijkeit und Schallgeschwindijueit, hangen off von Unistalliditurgen ab. Epitaletischas Wachstmen (MBE) hängt von den Wistallebenen $a b$, anf die ein vistall anfjewachsen werden soll.
+⇒ System, un Richtunjen und Ebenen in Ulessifitiencen.
+
+## Bestimmuy der Richt myen
+
+$\underline{a}_{1}, \underline{a}_{2}$ und $\underline{a}_{3}$, spannen Einheitszolle anf (iA. schiefwinkeij), $u^{\prime}, v^{\prime}$ und $w^{\prime} \in \mathbb{Z}$.
+![This diagram depicts the velocity components of a particle in a rotating reference frame, showing the relationship between the absolute velocity (ωa₃), the relative velocity (v'a₂), and the transport velocity (u'a₁). It illustrates how the total velocity vector (P) is composed of these components in the context of rotational motion.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-08_277_415_1244_197.jpg)
+
+Fin einen Punlt $P$ gelfe: $\underline{z}=u^{\prime} \underline{a}_{1}+v^{\prime} \underline{a}_{2}+w^{\prime} \underline{a}_{3}$
+⇒ Suche die Vlainsten janzen Zahlen $u, v, w$, fur die jilt:
+
+u^{\prime}: v^{\prime}: \omega^{\prime}=u: v: \omega
+
+Bsp.:
+$2: 6: 8=1: 3: 4$
+Die Richtung vou z wind Klassifizient als $[u, v, w]$. Flien Ist Z.B.v' negativ ⇒ $[u \bar{v} \omega]$ (oder: $[u-v \omega],[u \leq \omega])$ Ganzer Satz äquivaleuter Richtunjen (Z.B Würfellkanten): Suvw).
+
+## $\frac{\text { Bestimmung der Ebenen }}{\text { rillensche Qudices }}$
+
+![This diagram depicts a vector addition in three-dimensional space, showing how the vector ωa3 is the resultant of the vectors u'a1 and v'a2.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-08_271_373_2116_215.jpg)
+$\underline{a}_{1}, \underline{a}_{2}$ und $\underline{a}_{3}$ spannen eine $E Z$ anf.
+⇒ bilde Veluwent: $\frac{1}{u^{\prime}}, \frac{1}{v^{\prime}}, \frac{1}{\omega^{\prime}}$
+⇒ bilde Salz von (uneistens) ganzes Zahlen hue mit :
+
+h: k: \ell=\frac{1}{u^{\prime}}: \frac{1}{v^{\prime}}: \frac{1}{w^{\prime}}
+
+Die Fliche/Eben ist dann chonalterisiont dunch (hkl) Folic
+
+## Bemerlingen:
+
+- Satz äquivalenter Flaichen ist dunch\{hke\} beschieben, z.B.:
+$\{100\}$ : alle Winfalflichen,
+$\{110\}$ : alle Flichen durch paralle Flichendiapouale,
+\{111\}: alle Flichen dench drici Flachendia, onalen.
+\{111\}: alle Flichen dench dici Fleichendiajoualeur Fdie(n)
+- Im kubischen Systemen stent die Unistallichtuny senterednt zer Theche.
+- Abstand zweir Flachen (hke) im Vubischen System nit Vantenbing $a$ :
+
+d=\frac{a}{\sqrt{u^{2}+u^{2}+l^{2}}}
+
+### 1.8 Ferlorduminger in Unistallen (reale Unistalle)
+
+Bisher: ideale maknoskopische knistalle $\sim 10^{23}$ Altome
+Problem: völlig fehlerficie turorducung ist unniöflich (Entigoie)
+Defelet $\cong$ Abweichny van periodischer der Atome
+
+## Atten von Defekten:
+
+> - Punktdefekte (atomare Defekte) Folien - Liniendefekte (Versekmyen) - flächenhafte Defekte (innere Grenzfiche, Kongrenzen)
+
+Defekt enzengung:
+
+& \text { - Teilchenbestrahluy (Z.B. Nentonou, lonen, } e^{-} \text {) } \\
+& \text { - thermisch }
+
+## Beispiele
+
+## - Schottley - Defelet:
+
+Folic
+Es jubt eine von der Temperatur abhängige Zahl von Teldstellen, wie Punktdefelle und Paare von Leerstellen in lonenhinstallen. In lovenunistallen ist es everjectisch giunstij, dass faich viele Leerstellen fin Vationen und Anionen entstehen, da der kistall dechisch neentral bleibt.
+
+## Thermodynamische übalegury
+
+Annahme: ヨ leerstellendichte.
+freie Enthalpie :
+Fin $p=$ const. $T=$ const.:
+Fün Vleive Leerstellendichten:
+
+G & =U-T S+p V=\bar{F}+p V . \\
+d G & =d U-T d S+p d V
+
+Baitraj der Leerstellen zur inveren Enerje : $\quad \Delta U_{L}=N_{L} E_{L}$,
+$E_{L}$ : Enzenjunjsenajic ( $\frac{e V}{\text { Atour }}$ )
+$N_{L}$ : Auzahl do leestelle
+Beitrog der learstellen zur Entropie:
+
+- Schwingungs - Entropie SL: Auderceny der Spektion der Gitterschingy
+- Konfiguations-Entropie $S_{k}$.
+
+Verteile $N_{L}$ Leerstcllen anf $N+N_{L}$ Gitter plätzen :
+
+\begin{array}{rlrl} 
+& \omega_{K} & =\frac{\left(N+N_{L}\right)!}{N!N_{L}!} \\
+\text { Entropie baitraj: } & S_{K} & =k_{B} \cdot \ln \left(\frac{\left(N+N_{L}\right)!}{N!N_{L}!}\right) \\
+\Rightarrow \quad \Delta F_{L}=N_{L} \cdot E_{L}+T \Delta S & =N_{L} E_{L}-T N_{L} S_{L}-k_{B} T \ln \left(\frac{\left(N+N_{L}\right)!}{N!N_{L}!}\right)
+\end{array}
+
+$N_{L} \ll N$ sowie unit $\ln (x!)=x(\ln x-1)$ :
+
+\approx N_{L} E_{L}-N_{L} T S_{L}-k_{B} T N_{L} \ln \left(\frac{N_{L}}{N}\right)
+
+In thermischen Gleidegewicht ist $F$ minimal $\Rightarrow \frac{\partial F}{\partial N_{L}}=0$
+
+\ldots \Rightarrow \quad N_{L}=N \exp \left(\frac{S_{L}}{K_{B}}\right) \exp \left(-\frac{E_{L}}{K_{B} T}\right)
+
+Typische Wale: $\quad S_{L} / K_{B} \sim 0.5-5$ und $E_{L} \sim \mathrm{eV}$.
+Fun $E_{L} \sim 1 \mathrm{eV}$ and $S_{L} / k_{B} \sim 3$
+$N_{L} / N \sim 2 \cdot 10^{-14}(1000 \mathrm{~K})$ und $3 \cdot 10^{-16}(300 \mathrm{~K})$ Folic
+Misache:
+Die Obufläche hat eine geningere Bindungsenerje ("missing partners")
+⇒ Thanspot von Atomen zur Oberfliche.
+
+- Schottky - Defekte als Paare von Leerstellen in loneuluistallan
+
+⇒ Ladungsneutiali kit!
+
+N_{L}^{+}=N_{L}^{-} & =\sqrt{N^{+} N^{-}} e^{\left(\frac{S_{L}^{+}+S_{L}^{-}}{2 k_{B}}\right)} e^{-\left(\frac{E_{L}^{+}+E_{L}^{-}}{2 k_{B} T}\right)} \\
+& =\sqrt{N^{+} N^{-}} e^{\left(\frac{S p}{2 k_{B}}\right)} e^{-\left(\frac{E_{p}}{2 k_{B}+}\right)},
+
+nit $S_{P}=S_{L}{ }^{+}+S_{L}^{-}$: Entigpic des loven paous
+$E_{P}=E_{L}{ }^{\dagger}+E_{L}^{-}$: Bildungseverje - 11 -
+Werden Fiemdionen nit andever Ladmigszahe aingebout, muss die zusätzlide Ladung dunch Leenstellen kompensient werden.
+
+## - Timkel-Dofelle:
+
+Kombination ans Zwischenjitter atom and Leerstelle. Stöckiometice bleilot muerändest. Wichtig in der Halblaterplysik and - Technik, (z.B. bzef. Ladungsträgerdidite und Rehounbinationszention), Batterien und beim Unistall wachstum, und entstelen u.a. duch Bestrakley von Teilchen (Photonem, lonen, Elationen).
+
+## - Zwischen gitteratome ("luterstitionelle Atome):
+
+Vazenen Gitter ⇒ Kostet Everje
+(jè velainer desto wahuscheinlicher)
+Ahuliche Rolle wie Frenkel-Defelte.
+In Legiamugen wie stahl ( Fe wit $^{\text {b }}, C_{r}, N_{i}, M_{u}, M_{0}, V_{1}, M_{0}, C_{0}$ )
+ist u.a. $C$ als zwischangitter eingebant, um Hörte and Festigkeit zu beein flassen.
+
+- Substitutionstonstellen Halblaiter technik eine wesentCiche Rolle:
+n-Dotienny: z.B. $P$ in Silizinun Ciefat zus. Eldetonen
+$p-$ Dotienny: Z.B. B —"— enzengt "Löcher", d.h. es fehlen im Durchsdinitt Elationen als positive Laduugsträjer
+⇒ Transistacu, Dioden, Solarzellen.
+"Anti site"- Defekte in Verbindungshalblatern, z. B. in lusb kaun ln anf Sb-Platz und ungeheht sitien.
+⇒ Einfluss ouf Ladungsträgerkouzentiation.
+Wichtij z.B. in Laseran wendumjen (seltere Endendotierle (mistalle),
+z.B. Nd: YAG ( $Y_{3} A l_{5} O_{15}$ - Yttrimen-Aluminim-Granat)
+
+
+## - Farbrentien :
+
+Zuest in Alvalihalogeniden beobachtet (Einban von Fehesteller durch Bestralleny wit x-nays oder J.nays).
+
+Es eutstekeu curtaschiedlide Tehlstellen wit witerschiedl. Absorptions chonaleteristita.
+
+Sambere Unistall ist transparent, dinch Dotiency farbij. 4f. Dotieny, de 4f- Schale ject abgesehinut ist ⇒ "atomar"
+
+## "Bewegung" von Punklde fekten
+
+- "Diffusion" von Punkt defekten nidit von Leenstellen!
+![This image depicts the Arrhenius equation for the rate of atoms overcoming thermal barriers, showing the relationship between the hopping frequency, the attempt frequency, and the activation energy.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-13_380_1508_624_253.jpg)
+
+Fidesches Gesett:
+![This image depicts the Arrhenius-type equation for the diffusion coefficient (D), showing its dependence on temperature through an exponential factor involving the activation energy (E0) and Boltzmann constant (kB). It relates the diffusion coefficient to atomic jump frequency and lattice parameters in a cubic crystal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-13_342_1542_1424_263.jpg)
+
+Diffusionsstom
+![This diagram depicts Fick's first law of diffusion, showing the diffusive flux density as proportional to the negative gradient of concentration, with annotations explaining the diffusion constant and concentration terms.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-13_415_795_1022_953.jpg)
+
+Kupfer: $D=10^{-18} \frac{\mathrm{~cm}^{2}}{\mathrm{~s}}$ uit $L=\sqrt{6 \Delta t}$ Differsionslange
+
+\Rightarrow L=2 \mathrm{um} \text { in } 1 \mathrm{Std} \text { bic } 300 \mathrm{~K} .
+
+- Diffusion von Zwisdengitteratomen
+
+Wanderny interstitionaller Atone.
+Wenn einmal enrengt, genanso bewejlich wie Punletdefelte.
+⇒ starke T- Ablänjgleit
+2.B. $N$ in Te bei 1100 K (Tsannez: 1800k)
+
+E_{D}=0.85 \mathrm{eV}, \quad D_{0}=0,005 \frac{\mathrm{~cm}^{2}}{\mathrm{~s}}
+
+![The image shows handwritten notes about the timescale of approximately one second at 1100 K and a timescale of 10^-9 seconds related to particle or molecular motion at room temperature (RT).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-13_139_789_2557_1013.jpg)
+
+- Diffusion in lonembristallen
+
+Hier: Transpost dendn lonen (nicht Elektionen).
+Allj:- $\quad \sigma_{\text {electisch }}=n_{q} \cdot q \cdot \mu \quad$ (Ladumgstäjerdichle
+Es gilt: Einstain-Smoluchowski-Glaidany Laduy J, Bewefidda't)
+
+\mu \cdot u_{B} T=q \cdot 0
+
+Alkalihaloguide: Leerstelleudiffusion
+Silberhalojenide: Zwischengitter diffusion (Ulainere $E_{0}$ )
+$\Rightarrow$ stonk untersdricallich Diffusions Koustante und $E_{L}$ )
+⇒ stank untersdnicallide Diffusiouskoustante.
+
+\sigma_{\text {elektish }}=\frac{u_{q} q^{2} \Delta}{u_{B} T}=\frac{u q^{2} D_{0}}{u_{B} T} e^{\frac{S_{p}}{2 k_{B}} e^{-\frac{E_{p}}{2 k_{B} T}} e^{-\frac{E_{D}}{k_{B} T}},}
+
+unit u. loneupaar-Dicht, $S_{p}, E_{p}$ : Entopie u. BindunjsEnerje pro lonempaor und $E_{0}$ : Aktivierunjsenerje der lonen unit der Vöheren BeweglichVeit.
+
+## - Ausgedehule Defekte
+
+Malnoshopisdre Eigurschaften, wie die medhanische Festijhent , werden von ausgedehuten Defekten becinflust.
+Unterscloide : $\quad$ spiöde (Z.B.Veracuik) $\leftrightarrow$ duktil (retalk)
+Man misst z. B. Spannming - Dehnenjs - Kenven fir geninge Auslenkury: Hook'sches Geselz
+
+\sigma=E\left(\frac{\delta L}{L}\right),
+
+nit $\underset{L}{\sigma}$ : medianische Spanny $\left[\frac{N}{m^{2}}\right]$
+$\frac{E}{D}:$ Eldstizit
+Abriss bei : $\quad \frac{\partial L}{L}<1 \% \Rightarrow$ spiöde Materialiea (Hook jiltinues)
+$\frac{\partial L}{L} \sim 10 \% \Rightarrow$ dultile Maleniala
+Toke limbs
+Bei Einkristaller: - plastische Verformuny bei Ve. Spannumje
+
+- anisotiopes Verhalte (wg. Scherbäuder)
+
+
+## Vitisshe Schubspanung:
+
+& \sigma \\
+& \sigma \uparrow \\
+& \text { Sciub- } \begin{array}{l}
+G \cdot e, \text { mit } e=\frac{\partial_{x}}{d} \\
+\text { spanchy } \\
+\text { modul }
+
+![The image depicts a graph of the function y = x^2 - 1, showing the parabola's shape and its vertex at the point (0, -1).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-15_92_407_1665_350.jpg)
+"Schiebe so lang, bis histall um eive Atom-Position weiteriücht."
+
+\sigma=\underbrace{\frac{G \cdot a}{2 \pi \cdot d}}_{\substack{\text { sodess } \\ \text { des Hou Veline } \\ \overbrace{\text { descle Gesels }}}} \cdot \underbrace{\sin \left(\frac{2 \pi \delta_{x}}{a}\right)}_{\text {max. } 1} \sim \frac{G \cdot \bar{d}}{2 \pi \cdot d} \cdot \frac{i \pi \cdot \delta_{x}}{a}
+
+\Rightarrow \quad \sigma_{c}=\frac{G a}{2 \pi \cdot d} \approx \frac{G}{2 \pi} \quad(a \sim d)
+
+Verglache exp. bestimutes Schubmodal mit exp. bestiments Schubmodul .
+![This image depicts a handwritten note comparing the ratios of shear modulus (G) to critical shear stress (Gc) for different material structures, specifically single crystal, polycrystal, and amorphous aluminum.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-15_247_1164_2434_722.jpg)
+
+## Grund: Bilduy von Versetzungen Stufen versetinge Schamben verseting
+
+## Versetzungen :
+
+Limiendefelle → Usade: "Vernutschle" (scip) von Atomeberse Es bildet sich eine Gleitebene
+
+- Glatebenen sind materialsperifich
+- typischerweise Ebene mit didriestor Packury.
+
+
+## Burjes Velktor:
+
+Veleter zur Besclueibuy der Versetzmyslinie (Gröpe und Ridutuy)
+⇒ Bilde Schlaife um einen Defelt Bunjers Velter ist dos zusätzlicle Velktor $\underline{b}$, unn den Pfad schliepen zu konner.
+$\underline{b}$ wind in Einhaiten der Gitterhoustante anjegeben.
+All. gilt :
+
+- Stufenvasetruy $\underline{b}$ - Versetzuysline s
+- Schamben verscty $\underline{b} 11$ —u- s
+- b ist Koustant entlany do Versetzuy
+- Versetzmys linie endet normalerweise unidit im histall, sondenu:
+(i) an des Obenflicke (oder Konugranze)
+(ii) an einem Versetzuys knoten
+
+\Rightarrow \underline{b}_{1}+\underline{b}_{2}+\ldots=0
+
+(iii) ist in sich geschlossen.
+
+- b ist eine topologische Enkaltungs giöße
+- Versetzunjen Vönnen sich verbinden oder aufspalten
+$\Rightarrow \underline{b}=\sum_{i} \underline{b}_{i}$
+- Versetzunjen unit gegensinnigen Vareichen $\left(\underline{b}_{1}=-\underline{b}_{2}\right)$ kŏnnen sich gegenserity annililieven.
+
+
+### 1.9. Bind mujs verhältrisse in kristalle
+
+Ursache fin den Zusammenhalt der Festhorper: Eldetrostatiscle Auziehny zwische Elahtiones und positiv geladeve Atomkerve Gitter enerje $=$ Enejie do ficien $e^{-}$- Enejie des buistalls .
+
+## Athaktive Unaff:
+
+5 Grandtypen
+
+## Andue Sontienny:
+
+| v.d. Waals Binduy Argon Argon | fluktuierende Dipole schwach , isotrop | abgeschlosseve |
+| :--- | :--- | :--- |
+| laniscle NaCl | vollständijer Ladungstransfer stark, isotrop | Schaleu |
+| Vovaleute Binduy s! | Valeuzelektion zwischer den Afomen stark, genichlet | micht abge -able- schlosseme |
+| metalliscle Binduy | Valenzelektion verschmiest stark, isotrop | scialen |
+
+## Repulsive Uraff
+
+De Anziding wirkt aive repulsive knaft entyegen, die vour überlapp do Eleletioneu orbitale henülut ("Pauli-Prinzip").
+
+De Balance zwischen attraktiver und repulsiver hraff hälf den knistall zusacumou.
+
+### 1.10 loneukistalle
+
+- ferleude Electioneulatury (Isolator)
+- ioniscle Leitung bei hohen Temperaturen
+- Modell de starren kujelu ist oft geit erfúll, da die betailigton lonen abgeschlosseve Schalen haben.
+Bispiel $\mathrm{NkCl}: \quad \mathrm{Na}^{+}\left(1 s^{2}, 2 s^{2}, 2 p^{6}\right) \quad C^{-}\left(1 s^{2}, 2 s^{2}, 2 p^{6}, 3 s^{2}, 3 p^{6}\right)$
+Potantialle Enerje zwischen lon $i$ and $j$ :
+
+& \text { schale }
+
+unt $\rho$ do Reichweite der Wechselwirkumy and $R_{i j}$ dem Abstand zwischen lon $i$ and lon $j$.
+
+Wechselwirkmussenorje des lons i ${ }_{R_{i j}}$ mit allen anderen lonen:
+
+E_{p o t}^{(i)}=\sum_{j \neq i}\left(c \cdot e^{-\frac{R_{i j}}{S}} \pm \frac{1}{4 \pi \varepsilon_{0}} \frac{\eta_{i} q_{j}}{R_{i j}}\right)
+
+Wechselwirkumgsenesgic des lons i mit den $Z_{\text {un }}$ vächoten Nachbarn und denn Abstand $R_{i j}=p_{i j} \cdot R_{n n}$.
+
+E_{p o t}^{(i)} & =z_{n n} \cdot c \cdot e^{-\frac{R_{n n}}{\rho}}+\frac{q^{2}}{4 \pi \varepsilon_{0}} \sum_{j \neq i} \frac{ \pm 1}{p_{i j} R_{n n}} \\
+& =z_{n n} \cdot c \cdot e^{-\frac{R_{n n}}{\rho}}-\frac{\alpha}{4 \pi \varepsilon_{0}} \frac{q^{2}}{R_{n n}},
+
+mit $\quad \alpha=\sum_{i \neq j} \frac{\mp 1}{P_{i j}} \quad \underline{\text { Madelum-Konstante. }}$.
+$\alpha= \begin{cases}1.748 & \text { fin Nacle (fcc, 2-atoning Basis) } \\ 1.763 & \text { fin CsCl (sc, 2-atomije Basic) } \\ 1.634 & \text { fin zus Zinkblende }\end{cases}$
+
+- Unistall nit N loneupaaren (2N-lonen):
+
+E_{B}=N \cdot E_{p o t}^{(i)}
+
+- Gleichzewichtsabstand:
+
+&\left.N \cdot \frac{d}{d R} E_{\text {pot }}^{(i)}\right|_{R_{0}}=-N \frac{Z_{u n} \cdot c}{\rho} e^{-\frac{R_{0}}{\rho}}+\frac{N \cdot \alpha \cdot \eta^{2}}{4 \pi \varepsilon_{0} R_{0}^{2}} \stackrel{1}{=} 0 \\
+& \Rightarrow \quad Z_{u n} \cdot c \cdot e^{-R_{0} / \rho}=\frac{\rho \cdot \alpha \cdot q^{2}}{4 \pi \varepsilon_{0} \cdot R_{0}^{2}}
+
+$\operatorname{lm}$ GGW gilt: $R_{u n} \approx R_{0}$
+
+\Rightarrow \quad E_{B}=\frac{\alpha q^{2}}{4 \pi \varepsilon_{0} R_{0}}\left(1-\frac{\rho}{R_{0}}\right)
+
+## Madelumy
+
+- Eneyje.
+
+| kistall | $R_{0}(\AA)$ | $s(\AA)$ | $E_{B} / N(\mathrm{eV})$ |
+| :--- | :---: | :---: | :---: |
+| lif | 2.014 | 0.291 | 10.92 |
+| Nace | 2.820 | 0.322 | 8.23 |
+| kCe | 3.147 | 0.327 | 4.47 |
+| kj | 3.533 | 0.349 | 6.75 |
+
+### 1.11 Vovalente Bindumy
+
+Euriächst nur eine Atomsonte, gerichtete Bindumy, d.u Entioly der Elelltoneudichte zwischan den Atomen $\left(\rightarrow \mathrm{H}_{2}\right.$-Moleties $)$. Geneinsane Aufteilung der Valenzelektronen fulnt zur Edelgashonfijuation fin je zwei Partner.
+kovalente Bindum wichtij, wenn ämfac Shale nus halb gefillt ist ⇒ dann kinnen Orbitale überlappen, ohne dass die Bextrany köhoner Enerje-Niveaus nötjy ist.
+$s p^{3}$ - Hybridisieruny
+Bei der Besetzuny des Valeuzbands (liochste Band elektrouishs) zustände im (solator bzs. Halbliter bei $T=0$ ) unit je 2 s- und p-Elektroven (abgeschlosseve innere Schalen werden ignoriat) werden ans den atomaren Wellen funktioner duch virtuelle tureguy eines s-Zustands in den p-Zustand vier $s p^{3}$ - Hybride $\left|h_{i}\right\rangle$ duch Linearkombination der $\psi_{s}=|s\rangle$ und $\psi_{p}=\left|p_{x}, p_{y}, p_{z}\right\rangle$ zustände.
+
+Von den insgesant 8 Möglichkeiten sind 4 Onbitale bindend (und zeijen in Richining des riachsten Nachbann).
+twischen den Grenzfäller iouischer und Uovaleuter Bindung gibt es einen Voutinuierlichen Übergang.
+
+| mistall | Grad des ionischen Chonakters |
+| :---: | :---: |
+| Si | 0.00 |
+| Sic | 0.18 |
+| Gats | 0.62 |
+| $\mathrm{H}_{0} 0$ | 0.84 |
+| $\mathrm{Na}_{\mathrm{LCl}}$ | 0.94 |
+| $\mathrm{Rb}_{\mathrm{F}}$ | 0.96 |
+
+### 1.12 Metallische Bindumy
+
+Metalle besitzen ein bis zwei fiei beweglide Elektronen pro Atom. ⇒ elekt. Leitfähigkeit.
+chaktenistisch:- Veniugenum der Kinetischen Enerje der Valeure elektoran im Metall $(\rightarrow$ particle in a box).
+
+- Bei übuganysmetallen (z.B. Ca) treten noch zusätzliche Bindungskiäfte anfyand de WW inveres Sdralen auf.
+
+Bindumysenerjic pro Atom:
+Allialimetall $\sim 1 \mathrm{eV} /$ Atom
+Wolfiam $\sim 8.7 \mathrm{eV} /$ Aton
+
+### 1.13 Van der Waals Wechsel wirkeung
+
+Allg: Bindumy von Edelgas vnistallen (fcc) und molekularen Festköppern $\mathrm{H}_{2}, \mathrm{~N}_{2}, \mathrm{O}_{2}, \mathrm{~F}_{2}$.
+charakteristisch: - Elektronen wolke fluktuiest um den Vern
+
+- Im zeitlidien rittel verschwinden alle electrischen Dipolmomente, abs sperifischen Zeitpunkten nicht not wendigueweise ⇒ induziater Dipol Nachbaratomen.
+van der Waals WW: schwach anziekeude WW zwischan induziaten Dipolen.
+$E_{\text {pot }}(R)=-c \frac{\alpha_{1} \cdot \alpha_{2}}{R^{6}}, \alpha_{1^{\prime}} \alpha_{2}$ atomone Polarisiesbarkent abstoßende WW bei Vleinen Abständer der Atome ("Panli-Prinip").
+
+⇒ Lennard - Joues - Potential
+
+E_{P_{0+}}(R)=\frac{a}{R^{12}}-\frac{b}{R^{6}}
+
+⇒ Bindumiss everje eines van-de Wals knistalls mit $N$ Atomen
+
+E_{B}^{\text {total }}=\frac{1}{2} N \sum_{i \neq j}\left(\frac{a}{R_{i j}^{12}}-\frac{b}{R_{i j}^{6}}\right),
+
+\text { unt } R_{i j}^{\prime}=p_{i j} \cdot R_{n k}
+
+Fun foc-Gitter: $\sum\left(\frac{1}{P_{i j}}\right)^{12}=12,13$
+
+\sum^{\prime}\left(\frac{1}{p_{i j}}\right)^{6}=14,45
+
+Die rachsten Nachbann (12) liefern in fcc-Gitten fast den gesacuten Baitrag.
+
+| Element | Bindems venoje <br> pro Altom (ev) | Schnelatempeats <br> $(k)$ |
+| :---: | :---: | :---: |
+| $N_{e}$ | 0,02 | 24 |
+| $A_{r}$ | 0,08 | 84 |
+| $k_{r}$ | 0,116 | 117 |
+| Xe | 0,17 | 161 |
+
+## 1. 14 Wassestoff Inücken - Bindung
+
+H-Atom zwischen zwei stark elektionejativen Atomen (z.B. $F, O, N, C e$ ) bildet Brücke.
+![This diagram depicts the bonding in a hydrogen peroxide (H2O2) molecule, showing covalent bonds between hydrogen and oxygen atoms and an ionic interaction between the two oxygen atoms.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/7ec76926-9e8c-40f4-ba1e-ec2b51832acf/502b5296-5701-44e4-9216-9e5e99a37dc9-22_238_508_485_557.jpg)
+

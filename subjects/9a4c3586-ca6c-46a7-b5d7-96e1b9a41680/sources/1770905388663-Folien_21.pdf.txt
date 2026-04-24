@@ -1,0 +1,78 @@
+## Bandstruktur und Bloch-Theorem
+
+![This diagram depicts two different potential energy landscapes as functions of spatial coordinates, labeled "Ortskoordinate" (spatial coordinate) and "Potenzial" (potential). Specifically, it shows (a) a potential with deep wells and (b) a potential with sharp peaks, illustrating different types of periodic potentials in a spatially varying system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-1_834_2477_550_398.jpg)
+Bild 8.2: Anschauliche Darstellung der Potenziallandschaft. Die Bildbegrenzung ist so gewählt, dass ein Schnitt entlang von Atomkernen erfolgt, der andere dagegen zwischen den Rümpfen verläuft. a) Coulomb-Potenzial, b) Pseudopotenzial.
+
+## Bloch-Wellenfunktion
+
+![This diagram depicts wave functions in a periodic potential, showing (top) a Bloch function \( u_k(x) \), (middle) the real part of a plane wave \( \mathrm{Re}(e^{ikx}) \), and (bottom) the real part of the Bloch wave \( \mathrm{Re} \, \psi_k(x) \) as a product of the two, illustrating electron behavior in a crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-2_1182_1497_420_331.jpg)
+Bild 8.13: Veranschaulichung einer eindimensionalen Bloch-Funktion. Dargestellt sind die gitterperiodische Funktion $u_{k}(x)$ (oben), der Realteil des Phasenfaktors $\mathrm{e}^{\mathrm{i} k x}$ (Mitte) und der Realteil der BlochFunktion $\psi_{k}(x)$. Die Punkte geben die Lage der Atomrümpfe an.
+
+Eine Bloch-Wellenfunktion $\psi_{\mathrm{k}}(\boldsymbol{r})$ besteht aus einem gitterperiodischen Teil $u_{\mathrm{k}}(\boldsymbol{r})$ und einer ebenen Welle $\mathrm{e}^{\mathrm{i} k r}$.
+
+$$
+\begin{aligned}
+& \psi_{n, \boldsymbol{k}_{\mathbf{0}}+\boldsymbol{G}}(\boldsymbol{r})=\psi_{n, \boldsymbol{k}_{\mathbf{0}}}(\boldsymbol{r}) \\
+& E_{n, \boldsymbol{k}_{\mathbf{0}}+\boldsymbol{G}}=E_{n, \boldsymbol{k}_{\mathbf{0}}}
+\end{aligned}
+$$
+
+Bloch-Theorem
+![This diagram depicts an electronic band structure showing the energy \(E\) as a function of the wave vector \(k\), illustrating allowed energy bands and forbidden band gaps in a periodic solid. The plot highlights the dispersion relation of electrons in a crystal lattice with periodicity \(a\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-3_964_752_642_546.jpg)
+
+Ausgedehntes Zonenschema
+
+Walter Schottky Institut \& School of Natural Sciences
+
+Alle erlaubten elektronischen Zustände können in der 1. BZ dargestellt werden. Das Bloch-Theorem erlaubt die unterschiedliche Darstellung von $E(\boldsymbol{k})$.
+
+![This diagram is a band structure plot showing the energy dispersion relation E(k) for electrons in a periodic potential, specifically illustrating the formation of energy bands and band gaps as a function of the wave vector k. The plot highlights allowed energy bands and forbidden gaps in a one-dimensional crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-3_1081_670_525_1366.jpg)
+Reduziertes Zonenschema
+
+![This diagram depicts the electronic band structure of a crystalline solid, showing the energy bands (labeled as 1st to 4th bands) and band gaps (Bandlücke) as a function of the wave vector (Wellenvektor k). It illustrates the allowed and forbidden energy ranges for electrons in the material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-3_961_954_645_2103.jpg)
+Periodisches Zonenschema
+
+Abb. 8.20 aus Hunklinger
+A. Holleitner WS 25/26
+
+## Bloch-Theorem in 2D
+
+![This diagram depicts the reciprocal lattice of a simple cubic lattice, showing the first three reciprocal lattice vectors \(G_1\), \(G_2\), and \(G_3\), and illustrating the construction of the first Brillouin zone with labeled zones and wave vector \(k\) relationships.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-4_1049_1541_505_553.jpg)
+Abb. 8.9: Zur Konstruktion der ersten drei Brillouin-Zonen eines quadratischen Gitters im zweidimensionalen $\mathbf{k}$ Raum. Die gestrichelten Vektoren verdeutlichen die Beugungsbedingung (8.2.18).
+
+## Modell der freien Elektronen mit Bandindizes
+
+![This diagram is an electronic band structure showing the energy levels (E) as a function of wave vector (kx) for different energy bands labeled 1 through 19 in a crystalline solid.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-5_1105_813_398_427.jpg)
+Abb. 8.5: Reduziertes Zonenschema für ein freies Elektronengas in einem einfach kubischen Gitter mit Gitterkonstante $a$. Dargestellt ist $E_{n}(\mathbf{k})$ nur entlang $k_{x}$ innerhalb der 1. Brillouin-Zone.
+
+| Bandindex | ( $\boldsymbol{h}, \boldsymbol{k}, \boldsymbol{\ell}$ ) | $\boldsymbol{E}_{\boldsymbol{n}} \boldsymbol{(} \mathbf{0 ,} \mathbf{0 ,} \mathbf{0} \boldsymbol{)}$ | $E_{n}\left(k_{x}, 0,0\right)$ |
+| :--- | :--- | :--- | :--- |
+| 1 | 000 | 0 | $k_{x}^{2}$ |
+| 2 | 100 | $\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}+\frac{2 \pi}{a}\right)^{2}$ |
+| 3 | $\overline{1} 00$ | $\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}-\frac{2 \pi}{a}\right)^{2}$ |
+| 4,5,6,7 | 010, $0 \overline{1} 0,001,00 \overline{1}$ | $\left(\frac{2 \pi}{a}\right)^{2}$ | $k_{x}^{2}+\left(\frac{2 \pi}{a}\right)^{2}$ |
+| 8,9,10,11 | $110,1 \overline{1} 0,101,10 \overline{1}$ | $2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}+\frac{2 \pi}{a}\right)^{2}+\left(\frac{2 \pi}{a}\right)^{2}$ |
+| 12,13,14,15 | $\overline{1} 10, \overline{11} 0, \overline{1} 01, \overline{1} 0 \overline{1}$ | $2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ | $\left(k_{x}-\frac{2 \pi}{a}\right)^{2}+\left(\frac{2 \pi}{a}\right)^{2}$ |
+| 16,17,18,19 | 011, $0 \overline{1} 1,01 \overline{1}, 0 \overline{11}$ | $2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ | $k_{x}^{2}+2 \cdot\left(\frac{2 \pi}{a}\right)^{2}$ |
+
+Tabelle 8.1: Dispersionsrelation in [100] Richtung jeweils in Einheiten von $\hbar^{2} / 2 m$.
+
+## Leeres 3D fcc-Gitter
+
+![This diagram is an electronic band structure plot showing the energy levels (E_k) normalized by the Fermi energy (E_F) as a function of the wave vector (k) along high-symmetry points in the Brillouin zone, labeled Γ, X, W, L, and K. It depicts the allowed energy bands for electrons in a crystalline solid.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-6_1199_1189_594_502.jpg)
+
+Walter Schottky Institut \& ɔопооі оι ιναιurai οciences
+
+![This diagram depicts the Brillouin zone of a crystal lattice, showing high-symmetry points and paths in reciprocal space labeled with standard notation (e.g., Γ, L, X). It is used in solid state physics to analyze electronic band structures and phonon dispersion relations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-6_964_1036_85_2001.jpg)
+Bild 8.15: Energiedispersionskurven freier Elektronen in einem leeren kubisch flächenzentrierten Gitter nach der Reduktion auf die 1. Brillouin-Zone. Die Energie wurde auf die Fermi-Energie $E_{\mathrm{F}}$ eines Metalls mit drei freien Elektronen pro Atom normiert.
+
+## 3D fcc-Gitter (Beispiele)
+
+![This diagram is an electronic band structure plot showing the energy levels (E_k) of electrons normalized by the Fermi energy (E_F) as a function of the wave vector (k) for a crystalline material. It highlights specific points where energy bands cross or nearly cross, which are important for understanding the material's electronic properties.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-7_1153_1145_442_98.jpg)
+
+![This image depicts the electronic band structure diagrams for silicon (Si) and gallium arsenide (GaAs), showing the relationship between energy (in eV) and wave vector (k) along various symmetry points in the Brillouin zone. The diagrams specifically highlight the band gaps of these semiconductor materials.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d8cd0896-b574-4f4a-bba3-5d00b3599945/7fb66986-9b38-44b2-8289-559e8b0a1644-7_1179_1803_421_1401.jpg)
+Siehe Fig. 1.16 aus
+Hamaguchi (Basic
+Semiconductor Physics)
+A. Holleitner WS 25/26
+

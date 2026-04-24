@@ -1,0 +1,140 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 01.01.26
+Blatt 1
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Prof. Dr. Alexander Holleitner
+Aufgabe 1: Begriffe in der Kristallographie
+Machen Sie sich mit folgenden Begriffen vertraut und diskutieren Sie diese anhand
+der Struktur von Graphen:
+Abbildung 1: Graphenstruktur
+(a) Bravaisgitter
+(b) Primitive Vektoren
+(c) Koordinationszahl
+
+Abbildung 2: Konstruktion der Graphenstruktur
+Abbildung 3: Primitive Gittervektoren und eine m¨ogliche primitive Einheitszelle von
+Graphen
+(d) Wigner-Seitz Zelle
+(e) Kristallstruktur
+(a) Bravaisgitter
+Die zweidimensionale Graphenstuktur stellt kein Bravais-Gitter dar! Ein
+vereinfachter Beweis kann man anhand Abbildung 1 veranschaulichen. Laut
+Definition ist ein Bravais-Gitter ein unendliches Gitter von Raumpunkten mit
+einer Anordnung und Orientierung, die exakt gleich aussieht, egal von
+welchem Gitterpunkt wir das Gitter betrachten (Aus Buch Festk¨orperphysik“
+von R. Gross; 4. aktualisierte Auflage). Die Schnittpunkte der gestrichelten
+Linien bilden kein Bravais-Gitter. Zwar sieht aus der Perspektive von Punkt
+
+P und R die Anordnung der Punkte gleich aus, jedoch ist die Perspektive von
+Punkt Q um 60° gedreht. Folglich ist die Wabenstruktur kein Bravais-Gitter.
+Die 2d-Wabenstruktur ntspricht einem hexagonalen Bravais-Gitter
+(Abbildung 2(a) und 2(b)) mit zweiatomiger Basis (Abbildung 2(c)).
+(b) Primitive Vektoren
+Die primitiven Vektoren⃗a 1,⃗a 2 sind ¨uber den Gittervektor⃗ R definiert. Es gilt⃗
+R = n1⃗a 1, +n2⃗a 2 als primitive Vektoren, wobei⃗a 1,⃗a 2 ∈ Z . Durch eine
+Gittertranslation mit dem Gittervektor wird das Gitter wieder in sich selbst
+¨uberf¨uhrt. Die primitiven Vektoren f¨ur die Wabenstruktur sind in Abbildung
+3 eingezeichnet.
+(c) Koordinationszahl
+Die Koordinationszahl definiert die Zahl der n¨achsten Nachbaratome. F¨ur die
+Wabenstruktur betr¨agt die Koordinationszahl 3.
+(d) Wigner-Seitz Zelle
+Die Wigner-Seitz-Zelle ist eine primitive Einheitszelle (von vielen m¨oglichen).
+Konstruktion (s. Abb. D):
+(a) Zeichne die Verbindungslinien zu den n¨achsten Nachbarn (Gitterpunkte).
+(b) Zeichne die Mittelsenkrechten auf die Verbindungslinien.
+(c) Das kleinste eingeschlossene Volumen definiert die Wigner-Seitz-Zelle.
+(e) Kristallstruktur
+Die Kristallstruktur besteht aus einem Punktgitter und einer Basis. Im Fall
+der Wabenstruktur ist das Punktgitter hexagonal und die Basisbesteht aus
+zwei Atomen.
+Aufgabe 2: Raumerf¨ullung von kubischen Gittern
+In Abbildung 1 sind die drei kubischen Bravais-Gitter abgebildet. Bestimmen Sie
+die Anzahl der Gitterpunkte pro konventioneller Einheitszelle (W¨urfel) und
+berechnen Sie die maximale Packungsdichte, welche sich f¨ur harte Kugeln f¨ur diese
+drei Gitter ergibt.
+Die Metalle Wolfram und Aluminium besitzen bei Zimmertemperatur ein bcc- bzw.
+ein fcc-Gitter. Die Basis besteht aus einem Atom pro Gitterpunkt. Die Dichten
+sind 19, 3 g/cm3 (W) und 2, 7 g/cm3 (Al). Nehmen Sie im Folgenden an, die Atome
+seien harte Kugeln, die ihre n¨achsten Nachbarn ber¨uhren.
+
+Abbildung 4: Konventionelle Einheitszellen des primitiv kubischen, des raumzentri-
+ert kubischen (bcc) und des fl¨achenzentriert kubischen (fcc) Gitters (von links nach
+rechts)
+(a) Berechnen sie die Anzahl der Gitterpunkte pro konventionelle Einheitszelle.
+Anzahl der Gitterpunkte pro konventionelle Einheitszelle
+(a) Simple Cubic (sc): Nsc = 8 · 1/8 = 1
+(b) Body Centered Cubic (bcc): Nbcc = 1 + 8 · 1/8 = 2
+(c) Face Centered Cubic (fcc): Nfcc = 6 · 1/2 + 8 · 1/8 = 4
+(b) Berechnen Sie die Gitterkonstanten abcc und afcc dieser Kristallstrukturen in
+Einheiten des Atomradius r.
+(a) Body Centered Cubic (bcc):
+Bestimme zuerst die L¨ange der Raumdiagonale dbcc in Abh¨angigkeit der
+Kantenl¨ange abcc: dbcc = √3abcc
+Die Raumdiagonale verl¨auft durch zwei halbe Kugeln an den
+Eckpunkten und durch eine ganze Kugel im Zentrum der Zelle. Daher
+ergibt sich f¨ur rbcc = dbcc/4 = √3
+4 abcc
+Es folgt abcc = d/4 = 4√3 rbcc
+(b) Face Centered Cubic (fcc): rfcc
+Bestimme zuerst die L¨ange der Fl¨achendiagonale lfcc in Abh¨angigkeit der
+Kantenl¨ange a: lfcc = √2afcc
+Die Fl¨achendiagonale verl¨auft durch zwei halbe Kugeln an den
+Eckpunkten und durch eine ganze Kugel im Zentrum der Fl¨ache.
+Daherergibt sich f¨ur rfcc = lfcc/4 = √2
+4 afcc
+Es folgt afcc = 4√2 rfcc
+(c) Welche Volumina Vbcc und Vfcc (in Einheiten von r) haben die primitiven
+Elementarzellen?
+
+VpEZ,bcc = a3
+bcc/2 = 32
+3√3 r3
+bcc
+VpEZ,fcc = a3
+fcc/4 = 8√2 rfcc
+(d) Berechnen Sie die Gitterkonstanten aW und aAl aus den Dichten der beiden
+Metalle. (Verwenden Sie die molaren Massen: 183, 84 u f¨ur W und 26, 98 u
+f¨ur Al; Avogadro-Konstante NA = 6, 022 · 1023 mol−1.)
+aW = 3
+p2VpEZ,bcc = 3
+q2mW
+ρW = 0.32 nm
+aAl = 3
+p4VpEZ,fcc = 3
+q4mAl
+ρAl = 0.4 nm
+Aufgabe 3: Nickeloxidschichten
+Abbildung 5: NiO2 Gitter. Abbildung 6: Deformiertes NiO2 Git-
+ter.
+Der gemeinsame Baustein einiger korrelierter Materialien sind Nickeloxidschichten
+(siehe Abbildung 5). Der Abstand zwischen Nickelatomen (gef¨ullte Kreise) sei a.
+Der Einfachheit halber sollen diese NiO2-Schichten in der 3. Dimension im Abstand
+c ¨ubereinander liegen. In erster N¨aherung besitzen die Schichten eine vierz¨ahlige
+Symmetrie; der Kristall ist tetragonal.
+(a) Zeichnen Sie das (zweidimensionale) Bravais-Gitter und geben Sie einen
+m¨oglichen Satz primitiver Vektoren f¨ur eine Nickeloxidschicht an. Was ist die
+primitive Einheitszelle und was die Basis?
+
+Abbildung 7: Primitive Einheitszellen der beiden Gitter
+Das zweidimensionale Bravais-Gitter ist quadratisch mit den primitiven
+Gittervektoren⃗a 1 und⃗a 2. Der Gitterabstand betr¨agt a. Die Einheitszelle ist
+in Abbildung 7(a) als grau schattierte Fl¨ache eingezeichnet. Die Basis besteht
+aus einem Nickel mit zwei Sauerstoffatomen.
+(b) Ein einem hypothetischen NiO2-Material stellt man bei genauerer
+Betrachtung fest, dass die Sauerstoffatome abwechselnd leicht oberhalb und
+unterhalb der Ebene liegen (siehe Abbildung 6, (+) bedeutet oberhalb und (-)
+unterhalb). Das NiO2-Gitter ist also nicht ganz symmetrisch. Was sind in
+diesem Fall das Bravaisgitter, die Basis und die primitive Einheitszelle? Wie
+groß ist somit der Gitterabstand in Einheiten von a?
+Unter der Annahme einer tetragonalen Kristallstruktur in 3D, ist das
+BravaisGitter in 2D quadratisch mit |⃗a 1| = |⃗a 2| und der Winkel zwischen⃗a 1
+und⃗a 2 betr¨agt 90◦. Die primitive Einheitszelle muss gr¨oßer als in 6(a)
+gew¨ahlt werden und ist um 45◦ verkippt. Der neue Gitterabstand in
+Einheiten von a betr¨agt √2a. Die primitive Einheitszelle ist in Abbildung
+6(.)b) als grau schattierte Fl¨ache eingezeichnet. Die Basis besteht aus zwei
+Nickelatomen und vier Sauerstoffatomen.

@@ -1,0 +1,81 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Gitterdynamik
+Rn, = Rn+ r
+r
+Elementarzelle n = (n1, n2, n3)
+Atom
+ (Basis)
+0
+un,
+Gesucht wird die Frequenz einer Gitterschwingung in Abhängigkeit vom
+Wellenvektor
+Die allgemeine Bewegungsgleichung
+un, Momentane Auslenkung des Basisatoms 
+in der Einheitszelle (n1,n2,n3) mit:
+Rn = n1a1 + n2a2 + n3a3
+𝑚𝛼 ሷ 𝑢𝐧αi + ෍
+𝐦βj
+𝜙𝐧αi
+𝐦βj 𝑢𝐦βj = 0Newton:
+𝜙𝐧αi
+𝐦βj 𝑢𝐦βj : die Kraft, die auf das Atom  in der n-ten Einheitszelle in i-Richtung ausgeübt wird,
+wenn das Atom
+ in der m-ten Einheitszelle in Richtung j verschoben wird.
+𝑞 ( 𝑞 = 2𝜋
+𝜆 )
+Harmonische Näherung!
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Gitter-Ebenen
+aus Demtröder
+
+Gitterdynamik: Projektion auf 1D
+aus Hunklinger
+
+Gitterdynamik
+aus Gross / Marx
+
+Born-von Karman Randbedingung
+aus Ashcroft / Mermin
+n = 1 n = N
+Sinnvolle Beschreibung, wenn Randeffekte vernachlässigt werden!
+
+Dispersionsrelation einer linearen Kette
+aus Hunklinger
+𝜔 = 2 𝐶1
+𝑀 |𝑠𝑖𝑛(1
+2 𝑞𝑎)|
+𝜔 𝑞 → 0
+𝑞 = 𝑐 = 𝐶1
+𝑀 𝑎 Schallgeschwindigkeit
+𝑑𝜔
+𝑑𝑞 = 0
+Δ𝑞 = 2𝜋
+𝑎
+1
+𝑁
+
+Periodische Auslenkungen (Ortsraum)
+Wikipedia Commons
+„Nyquist frequency“ in der Signal-Theorie
+ = 2 a
+q = 2/
+ = /2
+
+Reduktion auf die 1. Brillouin-Zone
+
+Dispersionsrelation einer linearen Kette
+1D normal modes.gif
+Wikipedia commons
+𝜔 = 2 𝐶1
+𝑀 |𝑠𝑖𝑛(1
+2 𝑞𝑎)|
+𝜔 𝑞 → 0
+𝑞 = 𝑐 = 𝐶1
+𝑀 𝑎 Schallgeschwindigkeit
+𝑑𝜔
+𝑑𝑞 = 0
+Δ𝑞 = 2𝜋
+𝑎
+1
+𝑁

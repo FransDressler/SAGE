@@ -1,0 +1,180 @@
+## Bsp2: Zustandsdichte für ein 3D harmonisches Potential:
+
+$$
+E_{\vec{n}}=\hbar \omega\left(n_{x}+n_{y}+n_{z}\right) \quad n_{i}=0,1,2, \ldots, \infty
+$$
+
+D(E)=g_{S} \sum_{\vec{n}} \delta\left(E-\hbar \omega\left(n_{x}+n_{y}+n_{z}\right)\right) \Delta n_{x} \Delta n_{y} \Delta n_{z} \quad\left(\Delta n_{i}=1\right)
+
+Kontinuumsübergang: $\epsilon_{i}=\hbar \omega n_{i}, \quad \Delta \epsilon_{i}=\hbar \omega \Delta n_{i} \rightarrow 0$
+
+\begin{aligned}
+\Rightarrow D(E) & =\frac{g_{S}}{(\hbar \omega)^{3}} \int_{0}^{\infty} d \epsilon_{x} d \epsilon_{y} d \epsilon_{z} \delta\left(E-\sum_{i=x, y, z} \epsilon_{i}\right) \\
+& =\frac{g_{S}}{(\hbar \omega)^{3}} \int_{0}^{E} d \epsilon_{x} \int_{0}^{\epsilon_{x}} d \epsilon_{y}=\frac{g_{S}}{(\hbar \omega)^{3}} \frac{E^{2}}{2}
+\end{aligned}
+
+## allgemein
+
+(d-dim. harmonisches Potential):
+
+D(E)=\frac{g_{S}}{(d-1)!} \frac{E^{(d-1)}}{(\hbar \omega)^{d}}
+
+⇒ Thermodynamische Größen des Fermi Gases im Kontinuumslimes:
+
+- Zustandssumme: $\quad \ln Z_{\mathrm{G}}=\int_{0}^{\infty} d E D(E) \ln \left(1+e^{-\beta(E-\mu)}\right)$
+- Teilchenzahl: $\quad N=\int_{0}^{\infty} d E D(E) N_{F}(E)$
+- Innere Energie: $\quad U=\int_{0}^{\infty} d E D(E) E N_{F}(E)$
+
+N_{F}(E)=\frac{1}{e^{\beta(E-\mu)}+1}=\frac{1}{\left(e^{\beta E} / z\right)+1} \quad \text { Fermi-Dirac Verteilung }
+
+![This diagram depicts the Fermi-Dirac distribution function \( N_F(E) \) showing the probability of occupancy of energy states by fermions at different temperatures \( T = 0 \), \( T_1 \), and \( T_2 > T_1 \). It illustrates how the distribution broadens and smooths out as temperature increases, with a sharp step at the chemical potential \( \mu \) at zero temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-02_672_1845_1547_232.jpg)
+
+### 5.1.2 Mathematischer Einschub: "Fermi-Integral"
+
+Definition *): $\quad f_{\alpha}(z):=\frac{1}{\Gamma(\alpha)} \int_{0}^{\infty} \frac{y^{\alpha-1}}{\left(e^{y} / z\right)+1} d y=\sum_{n=1}^{\infty}(-1)^{n+1} \frac{z^{n}}{n^{\alpha}}$
+
+Beweis (Reihendarstellung): $\frac{1}{\left(e^{y} / z\right)+1}=\frac{z}{e^{y}+z}=\sum_{n=1}^{\infty}(-1)^{n+1} e^{-y n} z^{n}$
+
+\begin{aligned}
+& \int_{0}^{\infty} \frac{y^{\alpha-1}}{\left(e^{y} / z\right)+1} d y=\sum_{n=1}^{\infty}(-1)^{n+1} z^{n} \int_{0}^{\infty} d y y^{\alpha-1} e^{-y n} \quad x=y n \\
+= & \sum_{n=1}^{\infty}(-1)^{n+1} \frac{z^{n}}{n^{\alpha}} \underbrace{\int_{0}^{\infty} d x x^{\alpha-1} e^{-x}}_{=\Gamma(\alpha)}=\Gamma(\alpha) \sum_{n=1}^{\infty}(-1)^{n+1} \frac{z^{n}}{n^{\alpha}}
+\end{aligned}
+
+- Reihenentwicklung: $\quad f_{\alpha}(z \ll 1) \approx z-\frac{z^{2}}{2^{\alpha}}+\ldots$
+![This image shows a mathematical note or disclaimer about inconsistent definitions, specifically stating that in Mathematica software, the function \( f_{\alpha}(z) \) is defined as the negative of the polylogarithm function \(\text{PolyLog}[\alpha, -z]\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-03_111_2927_2139_0.jpg)
+
+
+## Weitere Eigenschaften:
+
+- Ableitungen: $f_{\alpha-1}(z)=z \frac{d}{d z} f_{\alpha}(z)$
+- Asympt. Entwicklungen:
+
+\begin{gathered}
+f_{\frac{5}{2}}(z \gg 1) \approx \frac{8}{15 \sqrt{\pi}}\left[(\ln z)^{\frac{5}{2}}+\frac{5 \pi^{2}}{8}(\ln z)^{\frac{1}{2}}+\ldots\right] \\
+f_{\frac{3}{2}}(z \gg 1) \approx \frac{4}{3 \sqrt{\pi}}\left[(\ln z)^{\frac{3}{2}}+\frac{\pi^{2}}{8}(\ln z)^{-\frac{1}{2}}+\ldots\right]
+\end{gathered}
+
+(siehe Sommerfeld-Entwicklung: nächste VO)
+
+### 5.1.3 Ideales Fermi Gas (3D, Box):
+
+Zustandsdichte: $\quad D(E)=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \sqrt{E}$
+
+- Teilchenzahl:
+
+N & =\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \int_{0}^{\infty} d E \frac{\sqrt{E}}{\left(e^{\beta E} / z\right)+1} \quad x=E /\left(k_{B} T\right) \\
+& =g_{S} V \frac{2}{\sqrt{\pi}} \underbrace{\left(\frac{2 \pi m k_{B} T}{h^{2}}\right)^{\frac{3}{2}}}_{=\lambda_{T}^{-3}} \underbrace{\int_{0}^{\infty} d x \frac{\sqrt{x}}{\left(e^{x} / z\right)+1}}_{=\Gamma(3 / 2) f_{3 / 2}(z)}=g_{S} \frac{V}{\lambda_{T}^{3}} f_{\frac{3}{2}}(z)
+
+- Großkanon. Potential:
+
+J & =-\left(k_{B} T\right) \frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \int_{0}^{\infty} d E \sqrt{E} \ln \left(1+e^{-\beta(E-\mu)}\right) \quad \begin{array}{c}
+\text { partielle } \\
+\text { Integration }
+\end{array} \\
+& =-\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \frac{2}{3} \int_{0}^{\infty} d E \frac{E^{\frac{3}{2}}}{e^{\beta(E-\mu)}+1}=-g_{S} \frac{V}{\lambda_{T}^{3}}\left(k_{B} T\right) f_{\frac{5}{2}}(z)
+
+-Innere Energie:
+
+U=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \int_{0}^{\infty} d E \frac{E^{\frac{3}{2}}}{\left(e^{\beta E} / z\right)+1}=g_{S} \frac{3}{2} \frac{V}{\lambda_{T}^{3}}\left(k_{B} T\right) f_{\frac{5}{2}}(z)
+
+## Zustandsgleichungen: Ideales Fermi Gas $(J=-p V)$
+
+& \frac{N}{V}=\frac{g_{S}}{\lambda_{T}^{3}} f_{\frac{3}{2}}(z) \quad \frac{p}{k_{B} T}=\frac{g_{S}}{\lambda_{T}^{3}} f_{\frac{5}{2}}(z) \quad U=\frac{3}{2} p V \\
+& \text { mit: } \quad g_{S}=(2 S+1), \quad z=e^{\frac{\mu}{k_{B} T}}, \quad \lambda_{T}=\sqrt{h^{2} /\left(2 \pi m k_{B} T\right)}
+
+### 5.2. Thermodynamische Eigenschaften
+
+### 5.2.1 Klassischer Grenzfall
+
+Der klassische Grenzfall eines Fermi Gases ergibt sich für geringe Dichten und/oder hohe Temperaturen, so dass $n \lambda_{T}^{3} \ll 1$, wobei $n=N / V$ die Teilchendichte ist.
+verdünntes Fermi Gas: $\quad n \lambda_{T}^{3}=g_{S} f_{\frac{3}{2}}(z) \ll 1$
+$\Rightarrow \quad x:=\frac{n \lambda_{T}^{3}}{g_{S}} \simeq z-\frac{z^{2}}{2^{\frac{3}{2}}} \quad \Rightarrow \quad z=x+\frac{x^{2}}{2^{\frac{3}{2}}}+\mathcal{O}\left(x^{3}\right)$
+thermische Zustandsgleichung:
+$\frac{p}{k_{B} T}=\frac{g_{S}}{\lambda_{T}^{3}} f_{\frac{5}{2}}(z) \quad \Rightarrow \quad p V \simeq \frac{N k_{B} T}{x}\left(z-\frac{z^{2}}{2^{\frac{5}{2}}}\right)$
+$\Rightarrow \quad p V \simeq N k_{B} T\left(1+\frac{n \lambda_{T}^{3}}{2^{\frac{5}{2}} g_{S}}\right)$
+
+\text { Wegen } z=e^{\beta \mu} \ll 1 \quad \Rightarrow \quad N_{F}(E)=\frac{1}{\left(e^{\beta E} / z\right)+1} \approx e^{-\beta(E-\mu)}
+
+kann die Verteilungsfunktion eines verdünnten Fermi Gases durch die Maxwell-Boltzmann Verteilung genähert werden.
+
+- chemisches Potential:
+
+\mu=k_{B} T \ln (z)=\underbrace{k_{B} T\left[\ln \left(\frac{n \lambda_{T}^{3}}{g_{S}}\right)\right.}_{=\mu_{\mathrm{cl}}}+\frac{1}{2^{\frac{3}{2}}} \frac{n \lambda_{T}^{3}}{g_{S}}+\ldots]<0
+
+## Zusammenfassung:
+
+- Ein verdünntes Fermi Gas (geringe Dichten, hohe Temperaturen) verhält sich wie ein klassisches Gas.
+- Quantenkorrekturen durch Austauschkorrelationen skalieren mit dem
+
+\text { "Entartungsparameter" }=n \lambda_{T}^{3}
+
+### 5.2.2 Entartetes Fermi Gas, $\mathbf{T}=\mathbf{0}$
+
+Im Grenzfall $\mathrm{T} \rightarrow 0$ ( $\beta \rightarrow \infty$ ) ergibt sich für die Fermiverteilung
+
+N_{F}(E)=\frac{1}{e^{\beta(E-\mu)}+1} \begin{cases}=1 & E<\mu \\ =0 & E>\mu\end{cases}
+
+![This diagram depicts the Fermi-Dirac distribution function \( N_F(E, T=0) \) at absolute zero temperature, showing that all energy states below the chemical potential \(\mu\) are fully occupied (value 1) and all states above \(\mu\) are unoccupied (value 0).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-09_518_936_359_2033.jpg)
+
+Das chemische Potential wird durch die Anzahl der Teilchen bestimmt:
+
+& N=\int_{0}^{\mu} d E D(E)=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \frac{2}{3} \mu^{\frac{3}{2}} \\
+\Rightarrow & \mu(T=0) \equiv E_{F}=\frac{\hbar^{2}}{2 m}\left(\frac{6 \pi^{2}}{g_{S}} \frac{N}{V}\right)^{\frac{2}{3}}
+
+![This diagram depicts electron spin states relative to the Fermi energy level \(E_F\), showing spin-up and spin-down electrons occupying discrete energy levels. It illustrates the concept of spin polarization or spin splitting in an electronic system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-09_550_656_1199_2128.jpg)
+
+- Das chemische Potential bei $\mathrm{T}=0$ wird als Fermienergie $E_{F}$ bezeichnet.
+- Bei $\mathrm{T}=0$ sind alle Zustände bis zur Fermienergie besetzt, alle mit höheren Energien sind unbesetzt.
+
+
+## - Fermi-Implus / Fermi-Wellenvektor:
+
+E_{F} & =\frac{p_{F}^{2}}{2 m}=\frac{\hbar^{2} k_{F}^{2}}{2 m} \\
+\Rightarrow k_{F} & =\frac{p_{F}}{\hbar}=\left(\frac{6 \pi^{2}}{g_{S}} \frac{N}{V}\right)^{\frac{1}{3}}
+
+![This diagram depicts the Fermi sphere ("Fermi-Kugel") in momentum space, showing the occupied electron states within the Fermi wavevector \( k_F \) in a two-dimensional \( k_x \)-\( k_y \) plane. It illustrates the concept that all electron states with wavevectors \( |\vec{k}| \leq k_F \) are filled at zero temperature in a Fermi gas.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-10_889_1232_52_1621.jpg)
+
+- Energie ( $\mathbf{T}=\mathbf{0}$ ):
+
+U=\int_{0}^{\mu} d E D(E) E=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}} \frac{2}{5} \mu^{\frac{5}{2}} \quad \Rightarrow U(T=0)=\frac{3}{5} N E_{F}
+
+- Druck $(\mathbf{T}=\mathbf{0}): \quad \Rightarrow \quad p(T=0)=\frac{2}{3} \frac{U(T=0)}{V}=\frac{2}{5} \frac{N}{V} E_{F}$
+
+⇒ nicht-verschwindender "Entartungsdruck" bei $\mathrm{T}=0$ !!!
+
+Ergänzung zum chemischen Potential: $\quad \mu \simeq$ " $\Delta E-T \Delta S$ "
+
+- Klassisches Gas T>0:
+
+![This diagram depicts the arrangement of neutrons (N) in nuclear energy levels, showing the occupancy and spin orientation of neutrons within different energy states in a nucleus.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-11_604_614_353_179.jpg)
+ungeordnet
+
+$\Delta E \simeq k_{B} T$
+
+\Delta S \simeq k_{B} \underbrace{\ln (\Omega)}_{\gg 1}
+
+\Rightarrow \quad \mu \simeq \Delta E-T \Delta S<0
+
+![This diagram depicts the quantum states of a system with \(N+1\) particles, showing the distribution of spin-up and spin-down particles across discrete energy levels within a space of degeneracy \(\Omega\). It illustrates the occupation of these energy levels by particles with different spin orientations.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-11_624_788_322_2123.jpg)
+ungeordnet
+
+- Entartetes Fermi Gas T $\approx 0$
+
+![This diagram depicts the energy levels and spin states of electrons in a system with N electrons, showing the filling of energy states up to the Fermi energy \(E_F\) with paired electrons having opposite spins.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-11_662_656_1415_137.jpg)
+geordnet
+
+\begin{gathered}
+\Delta E \simeq E_{F} \\
+\Delta S \simeq 0 \\
+\Rightarrow \mu \simeq \Delta E \simeq E_{F}>0
+\end{gathered}
+
+![This diagram depicts electron energy levels and spin states in a system with \(N+1\) electrons, showing the filling of energy states up to the Fermi level \(E_F\) with spin-up and spin-down electrons.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-11_619_629_1394_1986.jpg)
+geordnet
+
+## Chemisches Potential idealer Gase:
+
+![This diagram depicts the temperature dependence of the chemical potential \(\mu(T)\) for fermions, bosons, and a classical gas, showing how \(\mu(T)\) varies with temperature \(T\) for these different quantum statistics.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/6fac9b6b-164b-458b-8641-d3de80d95941/d0653f65-ad75-4a1e-b8e9-95eed85c6bb5-12_1387_2442_398_282.jpg)
+
+## *) werden im nächsten Kapitel behandelt
+

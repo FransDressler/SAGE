@@ -1,0 +1,97 @@
+Introduction to Biophysics
+Technische Universität München
+Wintersemester 2025/2026
+Prof. Julia Herzen, Prof. Andreas Bausch, Prof. Ulrich Gerland
+Solutions to Exercise Sheet 7
+Problem 7.1
+A protein’s primary structure is defined solely by its amino acid sequence, and is con-
+structed by peptide bonds between adjacent amino acid residues. Secondary structure
+results from hydrogen bonding along the polypeptide backbone, resulting in alpha-helices
+and beta-pleated sheets. Tertiary structure results from hydrogen bonding between R
+groups, hydrophobic interactions, and disulfide bridges; these interactions create the
+three-dimensional structure of the molecule. Finally, quaternary structure arises from
+the joining of multiple subunits to create a functional protein complex.
+Problem 7.2
+The nonpolar amino acids are buried in the center of the protein due to their hydrophobic
+nature.
+Not all proteins have a quaternary structure; quaternary structure refers to the arrange-
+ment and number of subunits, and not every protein has multiple subunits. Disulfide
+bonds make proteins less susceptible to unfolding; typically, they will link beta-sheets,
+alpha-helices, and loops, which means that they primarily maintain tertiary structure,
+not secondary, which refers to local conformations, and is maintained largely by hydrogen
+bonds. Protein charges do change with pH; as a solution’s pH increases, acidic groups
+on proteins deprotonate. A protein’s function depends, however, very much on its spa-
+tial conformation. Its native conformation permits it to recognize and bind to specific
+molecules, and thus perform its specific function.
+Problem 7.3
+we first determine the free-energy change represented by the binding to the first protein.
+∆G◦ = −RT lnK
+∆G◦ = −(1.98 × 10−3 kcal/K mole) (310 K) ln(5 × 109)
+∆G◦ = −13.7 kcal/mole
+
+Introduction to Biophysics: Solutions to Exercise Sheet 7
+The free-energy change associated with binding to the second protein is -13.7 kcal/mole
++ 2.8 kcal/mole = -10.9 kcal/mole. Thus, the equilibrium constant for binding to the
+second protein is:
+−10.9 kcal/mole = −(1.98 × 10−3 kcal/K mole) (310 K) lnk
+k = 5 × 107
+Problem 7.4
+We first look at the diffusion equation ∂c(⃗r,t )
+∂t = −D⃗∇2c(⃗r, t ). As we are looking at a
+a steady state, the time derivative of the concentration field c vanishes. We work with
+spherical coordinates and thus must transform the Laplace operator to spherical coordi-
+nates.⃗
+∇2c = 1
+r2
+∂
+∂r (r2 ∂c
+∂r ) + 1
+r2 sin θ
+∂
+∂θ (sin θ ∂c
+∂θ ) + 1
+r2 sin2 θ
+∂2c
+∂ϕ
+However, this problem is radially symmetric, which means that only the partial derivative
+for r needs to be considered:⃗
+∇2c = 1
+r2
+∂r (r2 ∂c
+∂r )
+This brings our differential equation to:
+0 = D 1
+∂r ) · r2
+D
+∂r ) = 0 ∫
+(r2 ∂c
+∂r ) = A · 1
+∂c
+∂r = A
+r2 ∫
+c(r) = −A
+r + B
+To determine the constants A and B we are given the boundary condition: c(r → ∞) =
+c∞, c(r = b) = 0
+0 = −A
+b + B
+−Bb = −A
+c(r) = −Bb
+r + B
+lim
+r→∞ c(r) = B = c∞
+c(r) = −c∞b
+r + c∞
+j = −D∇c
+= −Dc∞b
+r2⃗ e r
+2
+
+Introduction to Biophysics: Solutions to Exercise Sheet 7
+From this we can determine the concentration current and finaly the resulting association
+rate:
+I = 4πr2|j| = 4πDc∞b
+kon = I
+c∞
+= 4πDb
+3

@@ -1,0 +1,262 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 9
+
+19. Dezember 2025
+
+## Aufgabe 1 Kernspaltung
+
+Kernspaltung ist der Prozess, bei dem ein schwerer Atomkern in zwei (oder mehr) leichtere Fragmente zerfällt und dabei Energie freisetzt. Ob ein solcher Prozess energetisch möglich ist, kann anhand der nuklearen Bindungsenergien verstanden werden. Die in einer Kernreaktion freiwerdende Energie wird durch den $Q$-Wert beschrieben:
+
+$$
+Q=\left(\sum m_{\text {initial }}-\sum m_{\text {final }}\right) c^{2},
+$$
+
+also die Massendifferenz zwischen Anfangs- und Endzustand, umgerechnet in Energie. Ein positiver $Q$-Wert zeigt an, dass die Reaktion Energie freisetzt und somit energetisch erlaubt ist. In dieser Aufgabe analysieren wir die energetischen Bedingungen, unter denen Kernspaltung auftreten kann, unter Verwendung der Weizsäcker-Massenformel (semi-empirische Massenformel), in der zuvor verwendeten Form:
+
+B E(A, Z)=a_{V} A-a_{S} A^{2 / 3}-a_{C} \frac{Z(Z-1)}{A^{1 / 3}}-a_{A} \frac{(Z-A / 2)^{2}}{A}+\delta,
+
+Dabei ist $A$ die Massenzahl, $Z$ die Protonenzahl und $B E$ die Bindungsenergie des Kerns. In der vorliegenden Aufgabe vernachlässigen wir, sofern nicht anders angegeben, den Asymmetrieund den Paarungsterm.
+a. Verwenden Sie diese Formel, um eine Beziehung zwischen $A$ und $Z$ herzuleiten, die beschreibt, wann die symmetrische Spaltung eines Kerns $(A, Z)$ in zwei Tochterkerne ( $A / 2, Z / 2$ ) energetisch möglich ist. Lassen Sie den Asymmetrie- und den Paarungsterm dabei außer Acht.
+b. Betrachten Sie den Spaltprozess
+
+n_{\text {therm }}+{ }_{92}^{235} \mathrm{U} \rightarrow{ }_{50}^{131} \mathrm{Sn}+{ }_{42}^{102} \mathrm{Mo}+3 \mathrm{n}
+
+Berechnen Sie mit Hilfe der Weizsäcker-Formel den $Q$-Wert der Reaktion.
+Thermische Neutronen sind Neutronen im thermischen Gleichgewicht mit ihrer Umgebung. Ihre kinetische Energie ist im Vergleich zu Kernenergien sehr klein:
+
+E_{n, \text { therm }} \approx 0.025 \mathrm{eV} \ll 1 \mathrm{MeV},
+
+sodass ihr kinetischer Beitrag in der $Q$-Wert-Berechnung vernachlässigt werden kann.
+c. Bestimmen Sie die beim Einfang eines thermischen Neutrons durch ${ }^{235} \mathrm{U}$ bzw. ${ }^{238} \mathrm{U}$ freiwerdende Energie. Nehmen Sie an, dass die kinetische Energie des Neutrons vernachlässigbar ist, und verwenden Sie atomare Massen. Vergleichen Sie die erhaltenen $Q$-Werte mit der ungefähren Spaltbarriere von
+
+E_{\text {barrier }} \approx 5.5 \mathrm{MeV} .
+
+Erklären Sie, warum thermische Neutronen ${ }^{235} \mathrm{U}$, nicht aber ${ }^{238} \mathrm{U}$ zur Spaltung anregen. Hinweis: berücksichtigen Sie den Einfluss des Paarungsterms in der Weizsäcker-Formel und die dadurch entstehenden Unterschiede in der Bindungsenergie zwischen geradzahliggeradzahlig, ungeradzahlig-geradzahlig und ungeradzahlig-ungeradzahlig aufgebauten Kernen.
+
+## Lösung: Kernspaltung
+
+a. Grundvoraussetzung für das Auftreten von spontaner Spaltung ist, dass dabei Energie freigesetzt wird:
+
+\begin{gathered}
+M(A, Z)-2 M(A / 2, Z / 2)>0 \\
+2 E_{B}(A / 2, Z / 2)>E_{B}(A, Z) \\
+2 a_{V} \frac{A}{2}-2 a_{O} \cdot\left(\frac{A}{2}\right)^{2 / 3}-2 a_{C} \frac{Z^{2} / 4}{(A / 2)^{1 / 3}}>a_{V} \cdot A-a_{O} \cdot A^{2 / 3}-a_{C} \cdot \frac{Z^{2}}{A^{1 / 3}}
+\end{gathered}
+
+Man sieht, dass der Volumenterm gleich bleibt.
+
+\begin{gathered}
+a_{O}\left(A^{2 / 3}-2\left(\frac{A}{2}\right)^{2 / 3}\right)>a_{C}\left(2 \frac{Z^{2} / 4}{(A / 2)^{1 / 3}}-\frac{Z^{2}}{A^{1 / 3}}\right) \\
+\frac{a_{O}}{a_{C}}\left(1-2^{1 / 3}\right)>\frac{Z^{2}}{A}\left(2^{-2 / 3}-1\right) \\
+\frac{Z^{2}}{A}>\frac{a_{O}}{a_{C}} \frac{\left(2^{1 / 3}-1\right)}{\left(1-2^{-2 / 3}\right)} \simeq 0.7 \cdot \frac{a_{O}}{a_{C}} \simeq 18
+\end{gathered}
+
+Unter der Annahme, dass $A \geq 2 Z$ :
+
+\Rightarrow Z \geq 36
+
+Tatsächlich ist dies nur eine notwendige, aber keine hinreichende Bedingung für das Auftreten von Kernspaltung. Wenn man den Potentialverlauf genauer betrachtet (s. nächste Teilaufgabe), erkennt man, dass es eine Potentialbarriere zu überwinden gibt. Diese Energie muss von außen zugeführt werden (Beschuss mit energiereichen Teilchen oder Photoanregung), da die Tunnelwahrscheinlichkeit für die großen Spaltfragmente durch die Potentialbarriere extrem klein ist. Erst bei wesentlich schwereren Kernen verschwindet die Potentialbarriere und spontane Spaltung tritt auf.
+b. Einsetzen in die Weizsäckerformel liefert die folgenden Bindungsenergien:
+$\mathrm{EB}(235,92)=1775.83 \mathrm{MeV}$
+EB $(131,50)=1076.12 \mathrm{MeV}$
+EB $(102,42)=872.05 \mathrm{MeV}$
+$Q=M\left({ }^{235} \mathrm{U}\right)-M\left({ }^{131} \mathrm{Sn}\right)-M\left({ }^{102} \mathrm{Mo}\right)-2 m_{\mathrm{n}}=E B(102,42)+E_{B}(131,50)-E_{B}(235,92)=$ 172.3 MeV
+c. Der Q-Wert für den Einfang eines Neutrons durch ein Atom der Massenzahl A ist
+
+Q=M_{A}+m_{n}-M_{A+1}
+
+Für ${ }^{235} \mathrm{U}$ ergibt sich $\mathrm{Q}=6.43 \mathrm{MeV}$, für ${ }^{238} \mathrm{U} \mathrm{Q}=4.85 \mathrm{MeV}$. Das heißt, dass die beim Einfang eines thermischen Neutrons freiwerdende Energie ausreicht, um für ${ }^{235} \mathrm{U}$ die Spaltbarriere zu überwinden, bei ${ }^{238} \mathrm{U}$ dagegen nicht. Dies lässt sich damit erklären, dass ${ }^{235}$ U ein gu-Kern ist und durch Einfang eines Neutrons ein gg-Zustand mit einer höheren Bindungsenergie erreicht wird (hier wird zusätzlich die Paarungsenergie frei). ${ }^{238} \mathrm{U}$ dagegen ist ein gg-Kern und der Einfang eines zusätzlichen Neutrons führt zu einem gu-Kern, ohne dass zusätzlich Paarungsenergie frei wird. Um ${ }^{238}$ U mit Neutronen zu spalten, müssen die Neutronen daher eine Mindestenergie von 1 MeV besitzen.
+
+Ein kleiner Exkurs über die Anwendung der Uranspaltung in Kernreaktoren wäre hier denkbar. Dafür sind zwei Dinge entscheidend: 1. wird Energie freigesetzt, und 2. werden bei der Spaltung weitere Neutronen frei, was zu einer möglichen Kettenreaktion führt. Im Kernreaktor muss man den Neutronenfluss so regulieren, dass im Mittel nur 1 Neutron eine weitere Spaltung auslöst.
+
+## Aufgabe 2 Energetik des $\boldsymbol{\beta}$-Zerfalls
+
+Der $\beta$-Zerfall ist ein Prozess der schwachen Wechselwirkung, bei dem ein Nukleon seine Identität ändert: ein Neutron wandelt sich in ein Proton um ( $\beta^{-}$-Zerfall), oder ein Proton wandelt sich in ein Neutron um ( $\beta^{+}$-Zerfall bzw. Elektroneneinfang).
+Für den nuklearen $\beta$-Zerfall ist es wichtig, zwischen Kernmassen und atomaren Massen zu unterscheiden: Atomare Massen beinhalten die Elektronen der Atomhülle. Da sich beim $\beta$ Zerfall die Kernladung $Z$ ändert, ändert sich auch die Anzahl der gebundenen Elektronen, was bei Energiebilanzen berücksichtigt werden muss. In den folgenden Aufgaben sollen daher sofern nicht anders angegeben - atomare Massen verwendet werden.
+a. Berechnen Sie die beim Zerfall eines freien Neutrons freiwerdende Energie, den sogenannten $Q$-Wert.
+b. Bestimmen Sie die energetischen Bedingungen, die erfüllt sein müssen, damit ein Neutron oder ein Proton innerhalb eines Kerns einen $\beta$-Zerfall durchführen kann. Verwenden Sie atomare Massen, sodass die Elektronen vor und nach dem Zerfall korrekt berücksichtigt werden. Erklären Sie außerdem, warum sich die Bedingungen für den $\beta^{-}$-Zerfall und für $\operatorname{den} \beta^{+}$-Zerfall unterscheiden.
+c. Ein Proton im Kern kann sich auch durch Einfangen eines Hüllenelektrons in ein Neutron umwandeln (K-Einfang oder EC-Prozess):
+
+{ }_{Z}^{A} \mathrm{X}+e^{-} \rightarrow{ }_{Z-1}^{A} \mathrm{Y}+v
+
+Unter welchen energetischen Bedingungen ist dieser Prozess möglich?
+
+## Lösung: Energetik des $\boldsymbol{\beta}$-Zerfalls
+
+a. Es gilt natürlich:
+
+Q=c^{2} \cdot\left(m_{n}-m_{p}-m_{e}-m_{\bar{v}}\right) \\
+Q=c^{2} \cdot\left(939.566 \mathrm{MeV} / c^{2}-938.272 \mathrm{MeV} / c^{2}-0.511 \mathrm{MeV} / c^{2}-0 \mathrm{MeV} / c^{2}\right)=783 \mathrm{keV}
+
+b. Im folgenden werden die atomaren Massen immer mit $M$, die Kernmassen hingegen mit $m$ bezeichnet. Die jeweiligen Prozesse stellen sich symbolisch wie folgt dar:
+
+- $\beta^{-}$:
+
+{ }_{Z}^{A} \mathrm{X}_{N}^{0} \rightarrow{ }_{Z+1}^{A} \mathrm{Y}_{N-1}^{+1}+\beta^{-}+\bar{v}
+
+Die Energiebilanz sieht dann so aus:
+
+\begin{aligned}
+& m_{x} \geq m_{y}+m_{e}+m_{\bar{v}} \\
+& M_{x} \geq M_{y}-m_{e}+m_{e}+m_{\bar{v}}+\frac{B E\left(e^{-}\right)}{c^{2}}
+\end{aligned}
+
+Nachdem die Neutrinomasse und die Bindungsenergie hier vernachlässigt werden dürfen, gilt hier lediglich $M_{x} \geq M_{y}$.
+
+- $\beta^{+}$:
+
+{ }_{Z}^{A} \mathrm{X}_{N}^{0} \rightarrow{ }_{Z-1}^{A} \mathrm{Y}_{N+1}^{-1}+\beta^{+}+v
+
+...Energiebilanz ....
+
+\begin{aligned}
+& m_{x} \geq m_{y}+m_{e}+m_{v} \\
+& M_{x} \geq M_{y}+m_{e}+m_{e}+m_{v}-\frac{B E\left(e^{-}\right)}{c^{2}}
+\end{aligned}
+
+Damit gilt beim $\beta^{+}$-Zerfall vereinfacht $M_{x} \geq M_{y}+2 m_{e}$.
+c. K-Einfang:
+
+{ }_{Z}^{A} \mathrm{X}_{N}^{+1}+e^{-} \rightarrow{ }_{Z-1}^{A} \mathrm{Y}_{N+1}^{0}+v
+
+Bei der Energiebilanz kann diesmal die Bindungsenergie nicht vernachlässigt werden, da sie für K-Elektronen mehrere 10 keV betragen kann:
+
+\begin{array}{r}
+m_{x}+m_{e}-\frac{B E(\mathrm{~K}-\text { Schale })}{c^{2}} \geq m_{y}+m_{v} \\
+M_{x}-\frac{B E(\mathrm{~K}-\text { Schale })}{c^{2}} \geq M_{y}+m_{v}
+\end{array}
+
+Damit gilt beim $\beta^{+}$-Zerfall vereinfacht $M_{x} \geq M_{y}+\frac{B E(\text { K-Schale })}{c^{2}}$.
+
+## Aufgabe 3 Alphazerfall
+
+Der Alphazerfall ist ein radioaktiver Prozess, bei dem ein schwerer Kern ein $\alpha$-Teilchen (einen ${ }^{4}$ He-Kern) emittiert. Das emittierte $\alpha$-Teilchen trägt kinetische Energie davon, und der Tochterkern erfährt einen Rückstoß in die entgegengesetzte Richtung. Die in diesem Prozess freiwerdende Energie wird durch den $Q$-Wert beschrieben, der sich in Form der Bindungsenergien des Mutterkerns, des Tochterkerns und des $\alpha$-Teilchens ausdrücken lässt.
+Der Alphazerfall ist eng mit dem quantenmechanischen Tunneleffekt verknüpft: Innerhalb des Kerns ist das $\alpha$-Teilchen in einem Potentialtopf der starken Wechselwirkung gefangen, außerhalb des Kerns erfährt es jedoch ein abstoßendes Coulombpotential. Für die beobachteten $\alpha$-Energien ist die Coulombbarriere klassisch unüberwindbar, quantenmechanisch kann das $\alpha$-Teilchen sie jedoch mit einer kleinen Wahrscheinlichkeit durchtunneln. Diese Tunnelwahrscheinlichkeit bestimmt die Lebensdauer des zerfallenden Kerns und führt zur empirischen Geiger-NuttallRegel, die die $\alpha$-Energie mit der Halbwertszeit verknüpft.
+a. Verwenden Sie die Weizsäcker-Formel, um im Allgemeinen den $Q$-Wert der Reaktion
+
+{ }_{Z}^{A} X \rightarrow{ }_{Z-2}^{A-4} Y+{ }_{2}^{4} \mathrm{He}
+
+zu berechnen. Für welche Kerne ist der Alphazerfall energetisch möglich? Eine vollständige analytische Lösung ist nicht erforderlich; erläutern Sie den Zusammenhang qualitativ (z.B. anhand des Verlaufs der Bindungsenergie pro Nukleon für schwere Kerne).
+b. Skizzieren Sie den Verlauf des effektiven Potentials $V(r)$ für ein $\alpha$-Teilchen innerhalb und außerhalb des Kerns. Gehen Sie dabei von einem konstanten Potentialtopf innerhalb des Kernradius $R$ (starke Wechselwirkung) und einer Coulomb-Abstoßung außerhalb des Kerns aus. Kennzeichnen Sie in Ihrer Skizze den klassisch verbotenen Bereich (Coulombbarriere), den das $\alpha$-Teilchen durchtunneln muss.
+c. Für ein $\alpha$-Teilchen, das sich im Inneren des Kerns befindet und eine Energie $E>0$ besitzt, gibt es eine endliche Wahrscheinlichkeit, die Coulombbarriere zu durchdringen (Tunnelwahrscheinlichkeit). Diese ist näherungsweise gegeben durch
+
+T \simeq \exp \left(-\frac{2}{\hbar} \int_{R}^{D} \mathrm{~d} r \sqrt{2 m(V(r)-E)}\right)
+
+wobei $R$ ungefähr dem Kernradius entspricht und $D$ den klassischen Umkehrpunkt im Coulombpotential bezeichnet. Zeigen Sie, dass die Halbwertszeit $T_{1 / 2}$ des Kerns mit der Energie des $\alpha$-Teilchens verknüpft ist durch
+
+\log T_{1 / 2} \propto \frac{1}{\sqrt{E_{\alpha}}},
+
+also die Geiger-Nuttall-Regel: Alphastrahler mit größeren $\alpha$-Energien $E_{\alpha}$ haben wesentlich kürzere Halbwertszeiten.
+
+## Lösung: Alpha-Zerfall
+
+a. Verwenden Sie die Weizsäcker-Formel, um allgemein den $Q$-Wert der Reaktion
+
+{ }_{Z}^{A} X \rightarrow{ }_{Z-2}^{A-4} Y+{ }_{2}^{4} \mathrm{He}
+
+zu berechnen. Für welche Kerne ist der $\alpha$-Zerfall energetisch möglich?
+
+## Lösung:
+
+Die Energiebilanz muss positiv sein:
+
+Q=M(A, Z)-M(A-4, Z-2)-m_{\alpha}>0 \\
+E_{B}(\alpha)+E_{B}(A-4, Z-2)>E_{B}(A, Z) \\
+E_{B}(\alpha)=28,3 \mathrm{MeV} \\
+E_{B}(A, Z)-E_{B}(A-4, Z-2)<28,3 \mathrm{MeV} \\
+a_{V}(A-A+4)-a_{S}\left(A^{2 / 3}-(A-4)^{2 / 3}\right)-a_{C}\left(\frac{Z^{2}}{A^{1 / 3}}-\frac{(Z-2)^{2}}{(A-4)^{1 / 3}}\right)<28,3 \mathrm{MeV}
+
+Eine quantitative Lösung ist nicht trivial und geht über den Rahmen dieser Aufgabe hinaus. In der Literatur findet man das Ergebnis: $A>140$. Der leichteste bekannte $\alpha$-Emitter ist ${ }^{144} \mathrm{Nd}$ mit einer Halbwertszeit von $10{ }^{15}$ Jahren.
+
+Um den Zusammenhang qualitativ zu verstehen, ist folgende Betrachtung hilfreich:
+
+E_{B}(A, Z)-E_{B}(A-4, Z-2)<28 \mathrm{MeV}
+
+Aufgelöst nach der Bindungsenergie pro Nukleon $B(Z)$ ergibt sich:
+
+A B(Z)-(A-4) B(Z-2)<28 \\
+A[B(Z)-(1-4 / A) B(Z-2)]<28
+
+Betrachten Sie das Verhalten der Bindungsenergie pro Nukleon $B(Z)$ :
+
+Nucleon Binding-energy \atomic mass
+![This diagram is a plot of nucleon binding energy per nucleon (MeV/u) versus mass number (A), showing the nuclear stability peak and the natural alpha-decay boundary for light and heavy nuclei. It compares binding energies for even-even and even-odd nuclei to illustrate nuclear stability trends across different mass numbers.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/fdfd55ea-f116-4c42-9d5d-242d768dbc2a/f8c02c03-3a21-48c2-aae4-995c71c2a471-07_542_776_2161_696.jpg)
+
+Im Grenzfall großer Massenzahlen gilt $(1-4 / A) \approx 1$, während $B(Z)-B(Z-2)$ negativ ist. Damit ist die obige Bedingung sicher erfüllt.
+Die Differenz $B(Z)-B(Z-2)$ bleibt bis etwa $A \approx 130$ näherungsweise konstant (und negativ), während der Vorfaktor ( $1-4 / A$ ) mit abnehmendem $A$ kleiner wird. Ab einer Massenzahl von etwa $A \lesssim 150$ ist die obige Bedingung nicht mehr erfüllt und ein $\alpha$-Zerfall ist energetisch nicht mehr möglich.
+b. Skizzieren Sie den Verlauf des Potentials für ein $\alpha$-Teilchen innerhalb und außerhalb des Kerns, wobei innerhalb des Kerns ein konstantes Potential und außerhalb des Kerns die Coulomb-Abstoßung angenommen wird.
+
+## Lösung:
+
+Innerhalb des Kerns: Potentialtopf mit steilem Anstieg bei $r=R_{K}$; außerhalb des Kerns: Coulomb-Abstoßung
+
+V(r)=\frac{Z_{1} Z_{2} e^{2}}{4 \pi \varepsilon_{0} r}
+
+![This diagram depicts the energy level and potential barrier for alpha decay, showing the alpha particle's energy relative to the nuclear potential barrier and the quantum tunneling process through the barrier.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/fdfd55ea-f116-4c42-9d5d-242d768dbc2a/f8c02c03-3a21-48c2-aae4-995c71c2a471-08_753_714_1425_742.jpg)
+c. Für ein im Kern befindliches $\alpha$-Teilchen mit $E>0$ gibt es eine endliche Wahrscheinlichkeit, die Coulomb-Barriere zu durchdringen (Tunnelwahrscheinlichkeit). Diese ist näherungsweise gegeben durch
+
+T \simeq \exp \left(-\frac{2}{\hbar} \int_{R}^{D} \mathrm{~d} r \sqrt{2 m(V(r)-E)}\right)
+
+Leiten Sie daraus eine Beziehung zwischen der Energie des $\alpha$-Teilchens und der Lebensdauer des Kerns ab (Geiger-Nuttall-Gesetz).
+
+
+Für $\lambda_{\mathrm{dB}}$ (de-Broglie-Wellenlänge) $\ll r_{2}-r_{1}$ ist die Tunnelwahrscheinlichkeit sehr klein. In diesem Fall gilt näherungsweise:
+
+T=T_{0} \cdot \exp \left(-\frac{2}{\hbar} \int_{r_{1}}^{r_{2}} \sqrt{2 m(V(r)-E)} \mathrm{d} r\right)=T_{0} \cdot e^{-G}
+
+Dabei ist $G$ der Gamow-Faktor:
+
+G=\frac{2 \sqrt{2 m}}{\hbar} \int_{r_{1}}^{r_{2}} \sqrt{\left(\frac{Z_{1} Z_{2} e^{2}}{4 \pi \varepsilon_{0} r}-E\right)} \mathrm{d} r
+
+Das Integral lässt sich analytisch auswerten:
+
+G=\frac{2}{\hbar} \sqrt{\frac{2 m}{E}} \frac{Z_{1} Z_{2} e^{2}}{4 \pi \varepsilon_{0}}\left[\arccos \left(\sqrt{\frac{r_{1}}{r_{2}}}\right)-\sqrt{\frac{r_{1}}{r_{2}}\left(1-\frac{r_{1}}{r_{2}}\right)}\right]
+
+Die Zerfallskonstante $\lambda$ ist definiert als die Wahrscheinlichkeit pro Zeiteinheit, dass ein Kern zerfällt. Sie bestimmt die zeitliche Entwicklung der Anzahl der noch nicht zerfallenen Kerne,
+
+N(t)=N_{0} e^{-\lambda t}
+
+und die Halbwertszeit
+
+T_{1 / 2}=\frac{\ln 2}{\lambda} .
+
+Innerhalb des Kerns ist das $\alpha$-Teilchen durch die starke Wechselwirkung gebunden, besitzt jedoch eine positive Energie $E$. Außerhalb des Kerns erfährt es eine abstoßende CoulombWechselwirkung, die eine Barriere bildet, die klassisch nicht überwunden werden kann. Der Zerfall findet nur statt, wenn das $\alpha$-Teilchen diese Barriere durchtunnelt.
+
+Die Zerfallsrate lässt sich schematisch schreiben als
+
+\lambda=v T,
+
+wobei $v$ die sogenannte Versuchsfrequenz und $T$ die Tunnelwahrscheinlichkeit ist.
+Die Versuchsfrequenz $v$ beschreibt, wie oft das $\alpha$-Teilchen die Kernoberfläche erreicht und einen Austrittsversuch unternimmt. Sie kann abgeschätzt werden durch
+
+v \sim \frac{v}{2 R},
+
+wobei $v$ die Geschwindigkeit des $\alpha$-Teilchens im Kern und $R$ der Kernradius ist. Diese Frequenz liegt typischerweise in der Größenordnung von $10^{21} \mathrm{~s}^{-1}$ und hängt nur schwach von der Energie des $\alpha$-Teilchens ab.
+
+Der Gamow-Faktor, der die Tunnelwahrscheinlichkeit $T$ bestimmt, hängt exponentiell von Höhe und Breite der Coulomb-Barriere ab und ist daher sehr empfindlich von der Energie $E$ des $\alpha$-Teilchens abhängig.
+Da die Versuchsfrequenz $v$ von Kern zu Kern nur langsam variiert, während sich die Tunnelwahrscheinlichkeit exponentiell ändert, wird die Energiedependenz der Zerfallskonstante im Wesentlichen durch die Tunnelwahrscheinlichkeit bestimmt:
+
+\lambda \propto T \sim e^{-G} .
+
+Mit der Beziehung zwischen Zerfallskonstante und Halbwertszeit
+
+T_{1 / 2}=\frac{\ln 2}{\lambda}
+
+ergibt sich
+
+T_{1 / 2} \sim e^{G} .
+
+Da der Gamow-Faktor näherungsweise wie
+
+G \propto \frac{1}{\sqrt{E}}
+
+skaliert, hängt die Halbwertszeit exponentiell vom inversen Quadratwurzelwert der Energie des emittierten $\alpha$-Teilchens ab. Dies führt direkt zum Geiger-Nuttall-Gesetz, das die beobachtete Korrelation zwischen $\alpha$-Teilchenenergie und Kernlebensdauer beschreibt.
+
+Beziehung zur Halbwertszeit:
+
+T_{1 / 2} \sim \frac{1}{\lambda} \sim \frac{1}{T} \sim e^{G} \Rightarrow \log T_{1 / 2} \sim G \sim \frac{1}{\sqrt{E}}
+
+![This diagram is a Geiger-Nuttall plot showing the logarithm of the alpha decay constant (decay rate) versus the logarithm of the alpha particle range for various alpha-emitting isotopes. It illustrates the relationship between the decay rate and the alpha particle range for different radioactive nuclei.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/fdfd55ea-f116-4c42-9d5d-242d768dbc2a/f8c02c03-3a21-48c2-aae4-995c71c2a471-10_476_684_1829_696.jpg)
+Abb.3.15. Geiger-Nuttal-Geraden mit experimentell ermittelten Reichweiten (Punkte) für $\alpha$-Strahler dreier Zerfallsketten. Aus G. Musiol, J. Ranft, R. Reif, D. Seeliger: Kern- und Elementarteilchenphysik (Deutscher Verlag der Wissenschaften, Berlin 1988)
+

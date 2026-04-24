@@ -1,0 +1,166 @@
+## (A) Longitudinale Gitterschwingung bei zweiatomiger Basis
+
+![This diagram depicts a two-dimensional lattice model for a binary alloy or compound with two types of atoms (A and B) arranged in a periodic pattern, showing atomic positions and interactions along the lattice. It specifically illustrates the displacement variables (u and v), spring constants (M and C), and lattice spacing (a) along the wave vector direction q.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-01_1331_1806_398_295.jpg)
+Bild 6.10: Zur Herleitung der Gitterschwingung bei zweiatomiger Basis. Die einzelnen Ebenen enthalten jeweils nur gleichartige Atome. Die dunkelblauen Punkte bezeichnen wir als Atome A, die hellblauen als Atome B. Die herausgegriffene lineare Kette ist grau markiert.
+
+## 1D Bravaisgitter mit 2 Atomen in der primitiven Einheitszelle
+
+![This diagram depicts the phonon dispersion relation for a diatomic linear chain, showing the optical and acoustic branches of vibrational frequencies as a function of wave vector, including the frequency gap (Frequenzlücke) between the two branches. It also includes formulas for the angular frequencies at the zone boundary and the condition for the masses \(M_1 > M_2\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-02_1004_2126_385_755.jpg) Bild 6.11: Verlauf der Dispersionskurven in
+Kristallen mit zweiatomiger Basis. Der optische
+Zweig liegt über dem akustischen, dazwischen
+tritt eine verbotene Zone auf.
+Bild 6.11: Verlauf der Dispersionskurven in Kristallen mit zweiatomiger Basis. Der optische Zweig liegt über dem akustischen, dazwischen tritt eine verbotene Zone auf.
+
+## 1D Bravaisgitter mit 2 Atomen in der primitiven Einheitszelle
+
+$$
+\begin{gathered}
+\omega=\sqrt{2 C \frac{M_{1}+M_{2}}{M_{1} M_{2}}} \\
+\omega=\sqrt{\frac{2 C}{M_{2}}}
+\end{gathered}
+$$
+
+Walter Schottky Institut \& School of Natural Sciences
+
+![This diagram depicts the vibrational modes of a diatomic linear chain, showing longitudinal and transversal acoustic and optical phonon modes with the relative displacements of atoms in the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-03_1208_1407_592_1852.jpg)
+A. Holleitner WS 25/26
+
+## (B) Longitudinale Gitterschwingung bei zweiatomiger Basis
+
+![This diagram depicts a two-dimensional lattice model showing atoms of two types (A and B) arranged alternately, with masses m connected by springs representing force constants K and G along a chain in the horizontal direction labeled by displacement coordinates u and v. It illustrates the mechanical coupling and periodic structure of the lattice with lattice constant a and wave vector q, likely for analyzing vibrational modes or phonon dispersion in a diatomic lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-04_1331_1806_398_295.jpg)
+Bild 6.10: Zur Herleitung der Gitterschwingung bei zweiatomiger Basis. Die einzelnen Ebenen enthalten jeweils nur gleichartige Atome. Die dunkelblauen Punkte bezeichnen wir als Atome A, die hellblauen als Atome B. Die herausgegriffene lineare Kette ist grau markiert.
+
+
+Wir betrachten eine Basis mit 2 gleichen Atomen, die aber durch unterschiedliche Kraftkonstanten gekoppelt sind:
+
+|  | $(n-2) \cdot \mathrm{a}$ | $n \cdot \mathrm{a}$ | $(n+1) \cdot \mathrm{a}$ | $(n+2) \cdot \mathrm{a}$ |
+| :--- | :--- | :--- | :--- | :--- |
+| Gleichgewichtspositionen | ![](https://cdn.mathpix.com/cropped/61ed39a7-506d-4dd1-8bca-4e247e63349b-05.jpg?height=118&width=493&top_left_y=653&top_left_x=1165) |  |  |  |
+| Primitive Zelle | ![](https://cdn.mathpix.com/cropped/61ed39a7-506d-4dd1-8bca-4e247e63349b-05.jpg?height=111&width=379&top_left_y=801&top_left_x=1169) | K | $G$ |  |
+| Nomenklatur: | $\begin{aligned} & \mathrm{u}_{1}(\mathrm{na})=\text { Auslenkung um } \\ & \mathrm{u}_{2}(\mathrm{na})=\text { Auslenkung um } \end{aligned}$ |  |  |  |
+
+Potentielle Energie (harmonische Näherung):
+
+\Phi=\frac{K}{2} \sum_{n}\{\underbrace{\left\{u_{1}(n a)-u_{2}(n a)\right\}^{2}}_{\Delta \text { x einer Feder mit } K}+\frac{G}{2} \sum_{n} \underbrace{\left\{u_{2}(n a)-u_{1}([n+1] a)\right\}^{2}}_{\Delta \text { x einer Feder mit } G}
+
+![This diagram depicts a mechanical system with two masses connected by a spring, illustrating the relative displacements (u1 and -u2) and the forces acting on the masses. It shows the dynamics of the spring-mass system with one mass represented in black and the other in red.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-06_619_1192_546_989.jpg)
+
+u_{1}(\mathrm{na})-u_{2}(\mathrm{na})=\Delta \mathrm{x}
+
+Im Folgenden $d \leq \frac{a}{2}, K \geq G$ :
+
+## Bewegungsgleichungen:
+
+\begin{aligned}
+m \ddot{u}_{1}(n a) & =-\frac{\partial \Phi}{\partial u_{1}(n a)} \\
+& =-K\left\{u_{1}(n a)-u_{2}(n a)\right\}-G\left\{u_{1}(n a)-u_{2}([n-1] a)\right\} \\
+m \ddot{u}_{2}(n a) & =-\frac{\partial \Phi}{\partial u_{2}(n a)} \\
+& =-K\left\{u_{2}(n a)-u_{1}(n a)\right\}-G\left\{u_{2}(n a)-u_{1}([n+1] a)\right\}
+\end{aligned}
+
+Wir suchen wieder nach Lösungen, die eine Welle mit Kreisfrequenz $\omega$ und Wellenvektor $q$ darstellen:
+
+\begin{aligned}
+& u_{1}(n a, t)=U \cdot e^{i(q n a-\omega t)} \\
+& u_{2}(n a, t)=V \cdot e^{i(q n a-\omega t)}
+\end{aligned}
+
+Für $q$ werden wieder periodische Randbedingungen angenommen.
+
+Lösungen in Bewegungsgleichungen eingesetzt:
+
+& \left\{m \omega^{2}-(K+G)\right\} \cdot U+\left(K+G e^{-i q a}\right) \cdot V=0 \\
+& \left\{K+G e^{+i q a}\right\} \cdot U+\left(m \omega^{2}-(K+G)\right) \cdot V=0
+
+Lösungen für homogenes Gleichungssystem (rechte Seite $=0$ ), wenn Koeffizientendeterminante verschwindet:
+
+& \left\{m \omega^{2}-(K+G)\right\}^{2}-\left(K+G e^{-i q a}\right)\left(K+G e^{+i q a}\right)=0 \\
+& \left\{m \omega^{2}-(K+G)\right\}^{2}-\left(K^{2}+G^{2}+2 K G \cdot \cos (q a)\right)=0
+
+⇒ Quadratische Gleichung für $\omega^{2}$
+
+\omega^{2}=\frac{K+G}{m} \pm \frac{1}{m} \sqrt{K^{2}+G^{2}+2 K G \cdot \cos (q a)}
+
+## Dispersionsrelation
+
+Für jeden der $N$ Werte von $q$ (wegen periodischer Randbedingungen) existieren 2 Lösungen $( \pm) \Rightarrow 2 N$ Normalschwingungen
+
+
+![This diagram depicts the phonon dispersion relation for a diatomic linear chain, showing the acoustic and optical branches of vibrational frequencies as functions of the wave vector. It illustrates the frequency gaps and the formulas for the optical and acoustic phonon frequencies in terms of the force constants (K, G) and mass (m).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-09_1415_1636_385_487.jpg)
+(-)
+
+(+)
+
+Bild 6.11: Verlauf der Dispersionskurven in Kristallen mit zweiatomiger Basis. Der optische Zweig liegt über dem akustischen, dazwischen tritt eine verbotene Zone auf.
+
+## Spezialfälle
+
+$q=0 \quad$ eingesetzt in $\quad \omega^{2}=\frac{K+G}{m} \pm \frac{1}{m} \sqrt{K^{2}+G^{2}+2 K G \cdot \cos (q a)}=\frac{K+G}{m} \pm \frac{K+G}{m}$
+(-) $\quad \begin{aligned} & \omega=0 \\ & U=V \\ & \leftarrow\end{aligned} \leftarrow q=0$ und $\omega=0$ eingesetzt in eine der beiden Gleichungen für $U$ oder $V$.
+
+Akustischer Zweig: Die Atome in der primitiven Zelle • • bewegen sich in Phase:
+![This diagram depicts a simple model of particle movement or interaction in a one-dimensional system, showing two particles (black and red) moving stepwise from left to right through three adjacent regions. It illustrates the sequential positions of the particles as they progress through the system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-10_161_961_956_1109.jpg)
+$(+) \quad \omega=\sqrt{2(K+G) / m}$
+$U=-V$
+$\leftarrow q=0$ und $\omega=\sqrt{2(K+G) / m}$ eingesetzt in eine der Gleichungen für $U$ oder $V$.
+
+Optischer Zweig: Die Atome in der primitiven Zelle bewegen sich gegenphasig:
+![This diagram depicts the spin configurations of two interacting particles, showing the relative spin orientations (parallel or antiparallel) and the corresponding directions of their magnetic moments or spin vectors. It illustrates how the spins align or oppose each other in different scenarios.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-10_169_954_1594_1133.jpg)
+
+## Spezialfälle
+
+& q=\frac{\pi}{a} \quad \text { d.h. } \lambda=2 a \text {; eingesetzt in } \quad \omega^{2}=\frac{K+G}{m} \pm \frac{1}{m} \sqrt{K^{2}+G^{2}+2 K G \cdot \cos (q a)}=\frac{K+G}{m} \pm \frac{K-G}{m} \\
+& \text { (-) } \\
+& \begin{array}{|l|}
+\begin{array}{l}
+\omega=\sqrt{\frac{2 G}{m}} \\
+U=V \\
+\hline
+\end{array} \quad \text { Im akustischen Zweig bewegen sich alle Atome in einer prom } \\
+\quad \begin{array}{ll|l|l|l|}
+\hline \bullet & \bullet & \bullet & \bullet & \bullet \\
+\longrightarrow \longrightarrow & \leftarrow & \rightarrow \longrightarrow & \bullet \\
+\hline
+\end{array}
+\end{array} \\
+& \text { (+) }
+
+
+![This diagram is a phonon dispersion relation showing the frequency (ω) versus wave vector (q) for a one-dimensional diatomic lattice, depicting the acoustic branch ("akustischer Zweig") and optical branch ("optischer Zweig") of lattice vibrations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-12_1160_1410_513_755.jpg)
+
+![The image depicts a frequency gap (Frequenzlücke) in a band structure diagram, specifically indicating the energy range in a solid where no electron states exist.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-12_238_433_817_2440.jpg)
+
+## 3D Gitter mit $\boldsymbol{n}$ Atomen als Basis
+
+Bewegungsgleichungen in 3D werden durch Transformation auf Normal-Koordinaten vollständig entkoppelt (siehe Physik 1!).
+
+Für jeden Wert von $q$ gibt es $3 n$ Schwingungsmoden.
+3 akustische Zweige $3(n-1)$ optische Zweige
+![This diagram is a phonon dispersion relation showing the frequency (ω) versus wave vector (q) for a crystal lattice, distinguishing between optical ("optisch") and acoustic ("akustisch") phonon branches.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-13_1111_1083_635_973.jpg)
+
+Typische Dispersionskurve für ein Gitter mit zwei-atomiger Basis entlang einer beliebig gegebenen Richtung im $k$-Raum.
+
+Die 3 akustischen Zweige (unten) sind für kleine $q$ linear in $q$. Die drei oberen Kurven (optische Zweige) verlaufen relativ flach, wenn die Wechselwirkung innerhalb der Zellen wesentlich stärker ist als zwischen den Zellen.
+
+Beachte: Da keine Entartung vorliegt, ist in dem gezeigten Beispiel die Richtung von $q$ keine Richtung hoher Symmetrie
+
+## Beispiel einer longitudinalen und transversalen akustischen Mode entlang einer beliebigen Richtung
+
+Longitudinal akustische Mode
+![This diagram depicts a one-dimensional chain of atoms illustrating the propagation of a longitudinal wave (phonon) through the lattice, showing atomic displacements and the wave vector \( k \) and wavelength \( \lambda \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-14_743_1139_708_432.jpg)
+
+Transversal akustische Mode
+![This diagram depicts the arrangement of magnetic moments (spins) in an antiferromagnetic material, showing alternating spin directions along a lattice with wave vector k and wavelength λ.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-14_728_1173_721_1820.jpg)
+
+## 3D Gitter mit $\boldsymbol{n}$ Atomen als Basis
+
+Entlang Richtungen hoher Symmetrie liegen unterschiedliche Dispersionsäste oft übereinander: Entartung!
+
+In Si sind in [100]- und [111] Richtung die transversalen Schwingungen entartet.
+![This diagram is a phonon dispersion curve for silicon (Si), showing the relationship between phonon frequency (ω) and wave vector (q) along different crystallographic directions ([100], [110], [111]). It depicts the acoustic (LA, TA) and optical (LO, TO) phonon modes in the silicon crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-15_804_1155_903_296.jpg)
+
+Walter Schottky Institut \& School of Natural Sciences
+![This diagram depicts the first Brillouin zone of a face-centered cubic (FCC) crystal lattice, showing high-symmetry points and directions in reciprocal space used in solid state physics and band structure calculations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/0e3e945c-ddf8-4689-ae1f-853d7af0da26/61ed39a7-506d-4dd1-8bca-4e247e63349b-15_803_1019_841_1904.jpg)
+aus Hunklinger, Gross/Marx bzw. P. E. Van Camp et al., PRB 31, 4089 (1985).
+A. Holleitner WS 25/26
+

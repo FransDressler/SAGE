@@ -1,0 +1,110 @@
+### 7.9 Stren mecha nisment
+
+Eleletionen Vönnen an Defenter, Phononer, weituen Elektionen sowie Grenz flächer in unistall sticuer. Diese Unerel mäßijkeik benötjet man, un den deleti, selve widestand und desser Temperaturablängjlen't zu erldaincer.
+
+- Sticumy on Punktdefekten und Vermaneinijunjen.
+- statische Stienrention ⇒ elastisdre Stencuy
+$\Rightarrow \quad$ wird Bewejumpsniclity
+- Zustand var (uadh) Stop : tik (hlk)
+$t_{1} \underline{k}^{\prime}=t_{1} \underline{k}+t_{1} \underline{k} ;$ tik wind vom kiths anfjenoume $|\operatorname{tr} \underline{k}|<2|\underline{k} \underline{k}|$
+- Strenny nur in fieie zustainde
+ungeladene (neutrale) Stónstelle
+- QM : Strencey an Uastenpotential
+- temperatur unabliácyjo
+- "Restwiderstand" bei sehr Verine T
+
+
+## geladere Störstelle
+
+- QHI : Rutherfond-Stremey wit abgeselinuitch
+
+Conlomb potential, ~ Z Atoursale
+
+- temperatem mablâujo fù Metalle der Stinistell
+- trup peratus ablizing fú Halbbiter
+
+$$
+\rho \propto T^{-3 / 2} m^{*-1 / 2}
+$$
+
+(side Sommarsemesto)
+
+- Strenny an Phonovern
+- $E_{F} \gg$ tiwphousen $\Rightarrow|\underline{v}| \approx\left|\underline{k^{\prime}}\right|$
+- inebestisde Strung : $\underline{k}=\underline{k}^{\prime}+\frac{q}{\imath}+\frac{G}{\imath}$
+
+Enseey and Gitter-
+Verindicy veluted
+voce Phoulds
+
+## - $\exists$ Normalprozesse und UmVappprozesse
+
+- Widestands / Beweglickleritiandery T- abbänjo) da Phonomen besetzey T-abliainjo ist (s. Debye).
+
+\begin{aligned}
+& T \ll \theta_{0} \cdot s_{p h} \propto\left(\frac{T}{\theta_{0}}\right)^{5} \frac{\text { Blosh-Grüneis }}{\text { Gesth. }} \\
+& T \gg \theta_{D}: s_{p h} \propto \frac{T}{M \theta_{D}^{2}} \frac{\text { Masse des Alourrcupbe }}{\cong M} .
+\end{aligned}
+
+- Strenny an Eleletoner
+- Vidteildreepliĕnomer, allending Abschinnung + Pauli-Printip
+- Hän fijste Strenprozess: zwischen zwei Eléltion Enerjeculalfy: $\quad \begin{aligned} & E_{1}+E_{2}=E_{1}^{\prime}+E_{2}^{\prime} \\ & \text { vos streen } \\ & \text { vach story }\end{aligned}$
+⇒ nur Zustainde innerhalb der Unjesclab
+
+\begin{aligned}
+& \frac{\left(E_{A}-E_{T}\right)^{2}}{E_{T^{2}}} \rightarrow \frac{\left(K_{Q} T\right)^{2}}{E_{T}^{2}} \times F_{\text {flade }} \\
+& \text { Shimale }: \frac{1}{\tau_{e e}} \propto \frac{\left(K_{B} T\right)^{2}}{E_{T}{ }^{2}}
+\end{aligned}
+
+dimme kysaceb
+
+### 7.10 Temperatonablainjokent
+
+Un die T-Ablänjokit zu beseluciben, wenden die Stiensater anfsummint:
+
+& \frac{1}{\tau_{2}}=\frac{1}{\tau_{\text {Defidel }}}+\frac{1}{\tau_{\text {peleden }}}+\frac{1}{\tau_{\text {phour }}}+\cdots \\
+& \frac{1}{\tau_{2}}=\sum_{i} \frac{1}{\tau_{i}}+\frac{\text { Math hiessche lege }}{}
+
+Mit $e=\left|v_{F}\right| \cdot \tau$ des fieien Weglaing und
+
+& \sigma=\frac{u \cdot e^{2} \tau\left(E_{T}\right)}{u^{*}} \text { sowie }|s|=\left|\sigma^{-1}\right| \text { (Ein isotope } \text { Electionsen y steme) } \\
+& \frac{1}{e_{\Sigma}}=\sum \frac{1}{e_{i}} \quad|s|=\sum_{i}\left|s_{i}\right|
+
+Widestandsbectiaje
+des eiveleve
+Stren mechanisme
+Vasidet $\delta$ and $\&$
+
+## sind ejunteich Tenser <br> \section*{retalle:} <br> (*) $S \times \begin{cases}T^{2} & T \lll \theta_{0} \text { und sels seive Proben } \\ \text { const } & T \ll \theta_{0} \text { und indt so reive Proben } \\ T & T<\theta_{0} \\ T & T \gg \theta_{D}\end{cases}$
+
+HL side Sommosemerts
+
+## 7. 11 Wämetrausport auffiund von Eleletionen in Metallen
+
+Auch Wainetranspert nittles der Elelitione abjejt über angeregte Elelitionen an des Fermi-Oberfleche.
+
+& \begin{array}{c}
+\text { Wämeleitfähjleit } \\
+\text { (sithe varite }
+\end{array} \cdot \Lambda_{e l}=\frac{1}{3} \cdot c_{v}^{e l} \cdot v \cdot e \quad \text { (Debye) } \\
+& \text { (siche Uapile } \\
+& \text { übs Phonome) } \\
+& =\frac{1}{3}\left(\frac{\pi^{2} n k_{B}^{2} T}{n^{*} v_{T}^{2}}\right) \cdot v_{T} \cdot l\left(\begin{array}{c}
+\text { Sommerfeld } \\
+(* *)
+\end{array}\right. \\
+& =\frac{\pi^{2}}{3} \cdot \frac{n k_{\beta}^{2}}{m^{4}} \cdot \tau \\
+& (*) \Rightarrow \Lambda_{e l}^{(* *)} \underset{\downarrow}{\ell} \frac{\downarrow}{\beta} \cdot T \propto \begin{cases}T & T \ll \theta_{D} \\
+T^{-4} & T<\theta_{D} \\
+\text { const. } & T \gg \theta_{D}\end{cases}
+
+## Wiedemanu - Tauz - Geselz
+
+Annahue: - sowola electiscle, als and die themisshe Laitfolinglait (aufgund der Elechtone) wind von Electioner dominiat
+
+- dieselber Stennechanisuer $\tau_{\text {clekt. }}^{-1}=\tau_{\text {them }}^{-1}$.
+
+\frac{\Lambda_{d}}{\sigma}=\frac{\pi^{2}}{3}\left(\frac{u_{B}}{e}\right)^{2} \cdot T=L \cdot T
+
+Loneuz-zahl: $\quad 2.5 \cdot 10^{-8} \omega \Omega k^{-2}$
+

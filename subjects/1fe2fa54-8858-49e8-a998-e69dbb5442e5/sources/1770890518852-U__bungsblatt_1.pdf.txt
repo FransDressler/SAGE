@@ -1,0 +1,56 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 01.01.26
+Blatt 1
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Prof. Dr. Alexander Holleitner
+Aufgabe 1: Begriffe in der Kristallographie
+Machen Sie sich mit folgenden Begriffen vertraut und diskutieren Sie diese anhand
+der Struktur von Graphen:
+(a) Bravaisgitter
+(b) Primitive Vektoren
+(c) Koordinationszahl
+(d) Wigner-Seitz Zelle
+(e) Kristallstruktur
+Aufgabe 2: Raumerf¨ullung von kubischen Gittern
+Abbildung 1: Konventionelle Einheitszellen des primitiv kubischen, des raumzentri-
+ert kubischen (bcc) und des fl¨achenzentriert kubischen (fcc) Gitters (von links nach
+rechts)
+
+In Abbildung 1 sind die drei kubischen Bravais-Gitter abgebildet. Bestimmen Sie
+die Anzahl der Gitterpunkte pro konventioneller Einheitszelle (W¨urfel) und
+berechnen Sie die maximale Packungsdichte, welche sich f¨ur harte Kugeln f¨ur diese
+drei Gitter ergibt.
+Die Metalle Wolfram und Aluminium besitzen bei Zimmertemperatur ein bcc- bzw.
+ein fcc-Gitter. Die Basis besteht aus einem Atom pro Gitterpunkt. Die Dichten
+sind 19, 3 g/cm3 (W) und 2, 7 g/cm3 (Al). Nehmen Sie im Folgenden an, die Atome
+seien harte Kugeln, die ihre n¨achsten Nachbarn ber¨uhren.
+(a) Berechnen sie die Anzahl der Gitterpunkte pro konventionelle Einheitszelle.
+(b) Berechnen Sie die Gitterkonstanten abcc und afcc dieser Kristallstrukturen in
+Einheiten des Atomradius r.
+(c) Welche Volumina Vbcc und Vfcc (in Einheiten von r) haben die primitiven
+Elementarzellen?
+(d) Berechnen Sie die Gitterkonstanten aW und aAl aus den Dichten der beiden
+Metalle. (Verwenden Sie die molaren Massen: 183, 84 u f¨ur W und 26, 98 u
+f¨ur Al; Avogadro-Konstante NA = 6, 022 · 1023 mol−1.)
+Aufgabe 3: Nickeloxidschichten
+Der gemeinsame Baustein einiger korrelierter Materialien sind Nickeloxidschichten
+(siehe Abbildung 2). Der Abstand zwischen Nickelatomen (gef¨ullte Kreise) sei a.
+Der Einfachheit halber sollen diese NiO2-Schichten in der 3. Dimension im Abstand
+c ¨ubereinander liegen. In erster N¨aherung besitzen die Schichten eine vierz¨ahlige
+Symmetrie; der Kristall ist tetragonal.
+(a) Zeichnen Sie das (zweidimensionale) Bravais-Gitter und geben Sie einen
+m¨oglichen Satz primitiver Vektoren f¨ur eine Nickeloxidschicht an. Was ist die
+primitive Einheitszelle und was die Basis?
+(b) Ein einem hypothetischen NiO2-Material stellt man bei genauerer
+Betrachtung fest, dass die Sauerstoffatome abwechselnd leicht oberhalb und
+unterhalb der Ebene liegen (siehe Abbildung 3, (+) bedeutet oberhalb und (-)
+unterhalb). Das NiO2-Gitter ist also nicht ganz symmetrisch. Was sind in
+diesem Fall das Bravaisgitter, die Basis und die primitive Einheitszelle? Wie
+groß ist somit der Gitterabstand in Einheiten von a?
+
+Abbildung 2: NiO2 Gitter. Abbildung 3: Deformiertes NiO2 Git-
+ter.

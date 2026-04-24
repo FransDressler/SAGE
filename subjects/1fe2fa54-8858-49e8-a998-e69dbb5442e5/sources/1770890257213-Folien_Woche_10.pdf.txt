@@ -1,0 +1,239 @@
+1
+Experimental methods in solid-state physics
+09 Graphene Band Structure
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+2
+Graphene
+Crystal structure:
+• Hexagonal lattice
+• 2 lattice sites in primitive cell
+Base vector:
+1st Brillouin zone: two lattice sites in
+primitive unit cell (real space)
+→ K and K’ different lattice sites in BZ
+→ Valley degree of freedom
+Real space:
+Momentum space:
+a1 = a(1,0)
+a2 = a(-1/2, /2)3
+
+3
+Assumption for tight binding approximation (TBA):
+1. Energy eigenvalues and eigenfunctions are known for an electron in an isolated atom.
+2. When atoms are brought together to form a solid, they remain sufficiently far apart
+so that the electron can be assigned to a particular electronic state.
+3. Periodic potential is approximated by a superposition of atomic potentials.
+4. Perturbation theory can be used to treat the difference between actual potential and
+the atomic potential.
+Perturbation is the difference between the periodic potential and the atomic potential,
+around which the electron is localized.
+General idea of TBA is to construct a trial wave function
+ from the (known)
+orbital wave function
+i.
+Tight binding approach
+
+4
+Electron configuration of C-atom:
+1s22s22p2  [He] 2s22p2
+Bonding in graphene
+sp2-hybridisation:
+• 4 valence electrons per C-atom
+• 8 valence electrons per unit cell in graphene
+• sp2-orbitals form strong -bonds (6 valence electrons)
+• pz – orbital perpendicular to plane of hybridization (2 valence electrons)
+• pz – orbitals overlap and form weak -bonds
+
+5
+pz -orbitals determine electronic band structure in graphene
+L.E.F. Foa Torres, Introduction to Graphene-Based Nanomaterials, Cambridge (2014).
+available as ebook at https://opac.ub.tum.de
+
+6
+Electronic band structure of graphene
+• pz – orbitals centered at lattice site A and B
+• pz – orbitals only weakly coupled in x-y direction
+→ binding and anti-binding state
+• sp2-hybridzed orbitals strongly bound
+→ 6 valence electrons strongly localized
+→ do not contribute to conductivity of graphene
+→ can be neglected in the electronic band structure calculation
+Hamiltonian of electron in periodic potential (in agreement with Bloch Ansatz):
+(1)
+(2) xj:: vector joining a lattice point and
+the second atom in the basis.
+𝜙 Ԧ𝑥 = 𝑐𝐴𝜙𝐴 Ԧ𝑥 + 𝑐𝐵𝜙𝐵 Ԧ𝑥 𝛴𝑀 = ෍
+n=A,B
+𝐶n𝜙𝑛 Ԧ𝑥
+𝐻 = Ԧ𝑝2
+2𝑚 + ෍
+ⅈ
+(𝑉 Ԧ𝑥 − Ԧ𝑥𝐴 − 𝑅𝑖 + 𝑉 Ԧ𝑥 − Ԧ𝑥𝐵 − 𝑅𝑖 )
+Tight Binding ansatz:
+A,
+B: pz – orbitals on lattice site 1 and 2
+Summation:
+21
+
+7
+Application onto wave function
+i:
+• analogue for lattice site B
+•
+i: eigenvalues of pz-orbital at lattice site i
+•
+UA small around lattice site B
+i small away from lattice site i
+(3)
+(4) H
+i = Ui
+i
+Schrödinger equation:(5)
+(6)
+Projection of
+1 and
+2 on wave function
+ (to get c1 and c2 from equation (1))
+𝐻𝜓𝑘 = 𝐸 𝑘 𝜓𝑘
+𝐸 𝑘 𝜙𝑖 𝜓 = 𝜙𝑖 ∆Ui 𝜓
+𝐻𝜙𝐴 = 𝜀𝐴𝜙𝐴 + Ԧ𝑝2
+2𝑚 + ෍ⅈ
+(𝑉 Ԧ𝑥 − Ԧ𝑥𝐴 − 𝑅𝑖 + 𝑉 Ԧ𝑥 − Ԧ𝑥𝐵 − 𝑅𝑖 ) 𝜙𝐴
+U1
+for
+A =
+B = 0:
+
+8
+න 𝜙𝐴 ∗ 𝜙𝐵
+with overlap integral of nearest neighbors:
+(7)
+Next, with following definitions:
+(8) overlap integral
+(nearest neighbor)
+(9)
+(10) transfer integral
+(nearest neighbor hopping amplitude)
+(6)
+phase factor
+𝜙A 𝜓 = cA + cB 1 + 𝑒−𝑘 𝑎 A + 𝑒−𝑘 𝑎 B
+𝜙B 𝜓 = cB + cA 1 + 𝑒−𝑘 𝑎 A +𝑒−𝑘 𝑎 B
+𝛼 𝑘 = 1 + 𝑒−𝑘 𝑎 A +𝑒−𝑘 𝑎 B
+𝐸 𝑘
+𝛼 𝑘 ∗
+0𝐸 𝑘 −
+1
+𝛼 𝑘 ∗
+0𝐸 𝑘 −
+1
+𝐸 𝑘
+cA
+cB = 0
+0
+න 𝜙𝐴 ∗ 𝜙𝐵 𝜖ℝ
+න 𝜙𝐴 ∗ 𝜙𝐵
+𝛾𝐴 = න 𝜙𝐴 ∗ ∆𝑈𝐴𝜙𝐵 = න 𝜙𝐵 ∗ ∆𝑈𝐵𝜙𝐴 𝜖ℝ
+(6) 𝐸 𝑘 𝜙𝑖 𝜓 = 𝜙𝑖 ∆Ui 𝜓
+𝛾0 =
+
+9
+(for graphene:
+1 → 0 because of
+vanishing overlap in x-y
+direction)
+from Determinant:
+“+”: conduction band
+“-”: valence band
+Relation is symmetric around zero (for 1 → 0)
+Dispersion relation of graphene:
+for x- and y- components of vector k,
+• together with eix+e-ix= 2cos(x)
+• trigonometric identities
+• primitive lattice vector
+𝐸 𝑘 = ±
+0 𝛼 𝑘 +
+ 1 𝛼 𝑘 2
+𝐸 𝑘 = ±
+ 0 𝛼 𝑘
+𝛼 𝑘 = 1 + 𝑒𝑘 𝑎 A + 𝑒𝑘 𝑎 B
+= ⋯
+1 + 𝑒−𝑘 𝑎 A + 𝑒−𝑘 𝑎 B
+1/2
+= 3 + 2 cos 3𝑘ya + 4 cos 3 3
+2 𝑘ya cos 𝑘xa
+2
+c1
+c2 = 0
+0
+
+10
+Dispersion relation of graphene
+ 2 
+ akx cos x  + 4cos2 
+ 2 
+ ak 
+
+
+3aky 
+
+E(k ,k ) = 
+ 1+4cos
+
+
+x y 0
+Figs. 2.2, 2.3, 3.22 in Toshiaki Enoki, Tsuneya Ando „Physics and Chemistry of Graphene“
+Jenny Stanford Publishing 2019, available as ebook at https://opac.ub.tum.de
+Hexagonal structure in 1st
+BZ with linear dispersion
+
+11
+Peculiarities:
+• Half-metallic behavior
+→ with Fermi-energy EF continuously tunable from valence to conduction band
+• Linear Dispersion at charge neutrality points K, K‘ (Dirac Points)
+→ charge carriers behave like massless fermions (Dirac Fermions)
+with Fermi velocity vF ~ 106 m/s
+• Relevant quantum numbers for charge carriers:
+→ Spin (up and down)
+→ Pseudospin (K or K’ valley)
+Dispersion relation of graphene
+Pseudospin described by 2-dimensional
+Pauli-Spin-Matrices 𝐻 0 𝑘x − 𝑖𝑘y
+0𝑘x + 𝑖𝑘y = ℏ𝜈𝐹 𝜎 𝑘=
+Quantum mechanical (low-energy / toy model) description of valley degree of freedom:
+
+12
+Photoelectric effect
+photon
+emitted electron
+Evac
+work function
+
+13
+ARPES – Measuring band structure directly
+https://www.nature.com/articles/s42254-019-0088-5
+𝐸𝑘𝑖𝑛 = ℎ𝜈 − 𝜙 − 𝐸𝐵
+Energy conservation
+In-plane momentum conservation
+ℏ𝑘𝑖,∥ = ℏ𝑘𝑓,∥ =
+2𝑚𝐸𝑘𝑖𝑛(sin 𝜃 cos 𝜙 𝑘𝑥 +
+sin 𝜃 sin 𝜙 𝑘𝑥)
+Out-of-plane momentum (potential
+step at surface)
+ℏ𝑘 ⊥ = 2𝑚(𝐸𝑘𝑖𝑛 cos2 𝜃 + 𝑉0
+
+14
+ARPES – graphene
+https://www.nature.com/articles/nphys477
+
+15
+ARPES – hexagonal boron nitride (hBN)
+https://journals.aps.org/prb/pdf/10.1103/PhysRevB.95.085410
+
+16
+ARPES – tungsten disulfide (WS2)
+10.1088/2053-1583/aad21c

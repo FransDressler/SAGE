@@ -1,0 +1,240 @@
+## Vorlesung 13: 27.1.2026
+
+## 1960er Jahre: Quarkmodell wird etabliert
+
+- Tiefinelastische Streuung: punktförmige, geladene Konstituenten
+- Da $n, p$ unterschiedliche Ladung besitzen: mindestens 2 verschiedene Quark Typen
+- Da Spin $1 / 2$ sowohl von Nukleonen, als auch von Quarks; Nukleonen muss mindestens aus 4 Quarks aufgebaut sein
+
+Modell:
+
+$$
+\begin{aligned}
+& p=(u u d) \\
+& n=(u d d)
+\end{aligned}
+$$
+
+\begin{array}{c|c}
+u & d \\
+e_{u}=+2 / 3 e & e_{d}=-1 / 3 e
+\end{array}
+
+(aber nicht eindeutig festgelegt durch $n, p$ )
+$\Delta^{++} \Delta^{-}$ist starker Hinweis auf $+2 / 3$ und $-1 / 3$
+Valenzquarks: Drei Quarks, die die Quantenzahlen der Nukleonen ausmachen
+Seequarks: Quark-Antiquark Paare (z.B. $u \bar{u}$ ), die im Feld virtuell erzeugt werden und annihilieren (siehe $e^{-} e^{+}$ Paare im Coulomb Feld).
+Die Quantenzahlen spielen im Mittel keine Rolle.
+Weitere Flavor in 3 Familien
+
+\begin{array}{ccc}
+\binom{u}{d} & \binom{c}{s} & \binom{t}{b} \\
+1.8-5.5 \mathrm{MeV} / \mathrm{c}^{2} & \sim 1 \mathrm{GeV} / \mathrm{c}^{2} & 170 \mathrm{GeV} / \mathrm{c}^{2}
+\end{array}
+
+$m_{u}<m_{d}$ (weil Neutron schwer!) Nur etwa die Hälfte der Masse wird durch Valenz- und Seequarks beschrieben → Rest: Gluonen
+
+Quarks in Hadronen
+Baryonen: z.B.
+
+\begin{array}{rrr}
+|p\rangle=\left|\begin{array}{ll}
+\downarrow \uparrow \uparrow \\
+u u d
+\end{array}\right\rangle & J=\frac{1}{2}^{+} & l=0 \\
+|n\rangle=\left|\begin{array}{ll}
+\downarrow \downarrow \uparrow \\
+u d d
+\end{array}\right\rangle & J=\frac{1}{2}^{+} & l=0 \\
+\left|\Delta^{++}\right\rangle=\left|\begin{array}{ll}
+\uparrow \uparrow \uparrow \\
+u u u
+\end{array}\right\rangle & J=\frac{3}{2}^{+} & l=0 \\
+\left|\Delta^{+}\right\rangle=\left|\begin{array}{ll}
+\uparrow \uparrow \uparrow \\
+u u d
+\end{array}\right\rangle & J=\frac{3}{2}^{+} & l=0
+
+Wenn ein Baryon erzeugt wird → gleichzeitige Erzeugung von Antibaryon
+→ additive Quantenzahl $B$ (Baryonenzahl)
+
+\begin{array}{c|c}
+B=1 & \text { Baryonen } \\
+B=-1 & \text { Antibaryonen } \\
+B=1 / 3 & \text { Quarks } \\
+B=-1 / 3 & \text { Antiquarks } \\
+B=0 & \text { Alle anderen Teilchen }
+
+Mesonen Quark-Antiquark Paare
+keine "Mesonenzahl"-Erhaltung, z.B. $\pi^{+} \rightarrow \mu^{+}+\nu_{\mu}$
+
+### 2.10 Quark Gluon Wechselwirkung
+
+Farbladung - wird benötigt wegen Pauliprinzip Warum?
+$\underline{\text { Bsp }} \Delta^{++}=\left|\begin{array}{c}\uparrow \uparrow \uparrow \\ u u u\end{array}\right\rangle \quad J^{P}=\frac{3}{2}^{+} \quad L=0 \Rightarrow$ Spins alle parallel!
+Gesamtwellenfunktion symmetrisch! Aber laut Pauli muss bei Fermionen die Gesamtwellenfunktion antisymmetrisch bei Vertauschung der Teilchen sein!
+
+⇒ Verboten laut Pauli
+
+⇒ Farbladungen retten das Pauliprinzip
+
+### 2.10.1 Wichtige Eigenschaften der starken WW
+
+Confinement: Man kann kein einzelnes Quark aus einen Hadron herauslösen, ohne dass $q \bar{u}$ Paar erzeugt wird.
+![This diagram depicts the effective potential energy as a function of radius \( r \) for a particle under a Coulomb potential and a confined potential, showing the difference between the pure Coulomb potential \(-\frac{\alpha}{r}\) and the confined potential \(-\frac{\alpha s(l)}{r}\). It illustrates how the potential changes with confinement and the behavior of the function \( s(l) \) approaching zero at small \( r \) and one at large \( r \), indicating asymptotic freedom.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-2_746_988_438_187.jpg)
+![This diagram depicts the hadronization process in particle physics, showing how a quark-antiquark pair connected by a gluon field transforms into multiple quark-antiquark pairs that form jets of hadrons.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-2_458_650_580_1224.jpg)
+
+Teilchenerzeugung in $e^{+} e^{-}$Kollision
+![This diagram depicts a Feynman diagram for electron-positron scattering (Bhabha scattering), showing the interaction between an electron (e⁻) and a positron (e⁺) with the exchange of a virtual photon (γ).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-2_359_830_1263_623.jpg)
+
+Austauschteilchen? $\gamma(e / m), Z_{0}$ (schwache WW)
+Produkte: alle fundamentale geladene Leptonen/Antileptonen + (Anti-)Quarks, $\nu \overline{n u}$ nur über $Z_{0}$
+![This is a Feynman diagram depicting electron-positron annihilation into a muon-antimuon pair via a virtual photon exchange.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-2_495_318_1797_605.jpg)
+![This is a Feynman diagram depicting an electron-positron scattering process mediated by a neutral Z boson exchange in particle physics.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-2_483_289_1809_1169.jpg)
+
+Kinematik Die Schwerpunktsenergie quadriert ist
+
+s=\left(p_{1} c+p_{2} c\right)^{2}=p_{1}^{2} c^{2}+p_{2}^{2}+2 p_{1} p_{2} c^{2}=E_{1}^{2}-{\overrightarrow{p_{1}}}^{2} c^{2}+E_{2}^{2}-{\overrightarrow{p_{2}}}^{2} c^{2}+2 E_{1} E_{2} \stackrel{!}{=} 2 \overrightarrow{p_{1}} \overrightarrow{p_{2}} c^{2}
+
+Für $E_{1}=E_{2}$ und $\overrightarrow{p_{1}}=-\overrightarrow{p_{2}}$
+
+s=m_{1}^{2} c^{4}+m_{2}^{2} c^{4}+2 E_{1} E_{2}-2 \overrightarrow{p_{1}} \overrightarrow{p_{2}} c^{2}=2 E^{2}+\underbrace{2 p_{1}^{2} c^{2}}_{\sim 2 E^{2}} \approx 4 E^{2}
+
+(Lorentzinvariante) Schwerpunktsenergie ist damit gegeben durch $\sqrt{s}=2 E m_{c}^{2}$, also $\sqrt{s} \sim \sqrt{E}$
+
+Fixed target: $E_{1}=E, E_{2}=0, \overrightarrow{p_{2}}=0$ und $m_{1} c^{2}<E$
+
+S=\underbrace{m_{1}^{2} c^{4}+m_{2} c^{4}}_{\approx 0}+\underbrace{2 E \cdot m_{2} c^{2}}_{E^{2}-\vec{p}^{2} c^{2}=m^{2} c^{4}} \approx 2 E \cdot m_{2} c^{2}
+
+![This diagram depicts the cross section (σ) in nanobarns for electron-positron (e⁺e⁻) annihilation into muon-antimuon (μ⁺μ⁻) and tau-antitau (τ⁺τ⁻) pairs as a function of the center-of-mass energy (√s) in GeV, based on data from the CELLO and JADE experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-3_544_753_450_552.jpg)
+Poch Fig. 9.3
+
+Leptonen
+
+\begin{array}{ccc}
+e^{+} e^{-} \rightarrow \mu^{+} \mu^{-} & m_{\mu} \approx 105.7 \mathrm{MeV} / \mathrm{c}^{2} & \tau_{\mu} \approx 2 \mathrm{~s} \\
+e^{+} e^{-} \rightarrow \tau^{+} \tau^{-} & m_{\tau} \approx 1.77 \mathrm{GeV} / \mathrm{c}^{2} & \tau_{\tau} \approx 10^{-13} \mathrm{~s}
+
+Wobei $\tau^{+}$wieder in $e^{+}+\nu_{e}+\overline{\nu_{\tau}}$ zerfallen kann (oder $\mu^{+} \ldots$ ) und gleichfalls das $\tau^{-}$in $\mu^{-}+\nu_{\tau}+\overline{\nu_{\mu}}$ (oder $e^{-} \ldots$ ) Wirkungsquerschnitt falls $E<m_{Z_{0}} \Rightarrow e / m$-WW dominant
+
+\sigma_{\mu^{+} \mu^{-}}=\frac{\pi \alpha^{2}}{3 E^{2}}\left(\hbar c^{2}\right)=\frac{4 \pi \alpha^{2}}{3 s}(\hbar c)^{2} \sim \frac{1}{\underline{\underline{s}}}
+
+Test der Quantenelektrodynamik (QED):
+Wenn $m_{\mu}, m_{e} \ll E, \sigma_{\tau \tau} \approx \sigma_{\mu \mu}$
+⇒ Leptonenuniversalität: Bis auf die Masse, verhalten sich alle Leptonen $(e, \mu, \tau)$ gleich.
+Nun: Erzeugung von Hadronen bei höheren Energien
+Resonanzen $\hat{=}$ kurzlebige Zustände, feste Masse, Quantenzahlen $\left(J^{P}\right) \Rightarrow$ "Teilchen"
+
+![This diagram is a particle physics cross section plot showing the variation of the cross section (σ) in cm² for different particle resonances (ρ, ω, ϕ, J/ψ, Υ, Z) as a function of the center-of-mass energy (√s) in GeV. It illustrates how the cross section changes with energy, highlighting resonance peaks corresponding to specific particles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-3_759_691_1795_541.jpg)
+Poch Fig. 9.4
+
+$\underline{\rho, \omega, \phi}$ typische Breite $\Gamma \approx 4 \cdot 150 \mathrm{MeV} \hat{=} 10^{-22} \mathrm{~s} \ldots 10^{-24} \mathrm{~s}$
+Bsp:
+$\rho_{0} \quad: J=1^{-}, m_{\rho_{0}} \approx 775 \mathrm{MeV} / \mathrm{c}^{2}$
+
+\rho_{0}=\frac{1}{\sqrt{2}}(u \bar{u}-d \bar{d}) \quad \text { Überlagerung von Zuständen }
+
+![This is a Feynman diagram depicting a particle interaction where a quark-antiquark pair produces a gluon, which then splits into two pions (π+ and π−) through quark-antiquark pairs.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-4_403_1102_422_477.jpg)
+
+Produktion via $e / m$ Kraft, dominanter Zerfallskanal via starke WW
+$\phi: E_{\phi}=1019 \mathrm{MeV}, \Gamma=4.3 \mathrm{MeV}$ (recht "lange" Lebenszeit)
+Erzeugung von neuem Quark $s(\bar{s})$
+"strange" ⟺ weil es nicht mit starken WW zerfällt, sondern nur schwach
+![This diagram shows Feynman diagrams for radiative transitions of mesons involving strange quarks, specifically depicting the processes for the \( K^{*0} \) and \( K^{*+} \) mesons decaying into a photon (\(\gamma\)) and a kaon (\(K^0\) or \(K^+\)).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-4_618_1228_1128_415.jpg)
+
+Erzeugung von $K$ Mesonen, die nur mit schwacher WW zerfallen, da Quarks ineinander umgewandelt werden.
+Neue Quantenzahl $S$ (Strangeness) $=$ (Anzahl $S$-Quarks) - (Anzahl $\bar{S}$-Antiquarks)
+→ bei $e / m$ und starker WW erhalten
+→ bei schwacher WW verletzt
+N.B.: Zerfall durch starke WW auch möglich
+![This diagram depicts a quark-level interaction in particle physics, specifically showing the decay process involving mesons with quark content transitions mediated by gluon exchange. It illustrates how quarks and antiquarks rearrange and interact via the strong force in the decay of a π+ meson into a π− meson and other particles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-5_787_707_203_678.jpg)
+
+Virtueller Zustand in der Mitte mit min. 3 Gluonen (wegen Parität, Farbe, $C$-Parität), stark unterdrückt, da keine durchlaufenden Quarklinien
+
+Zweig-Regel: Durchlaufende Quarklinien sind zu bevorzugen, da Prozesse stark unterdrückt sind, wenn sie nur über Diagramme mit unterbrochenen Quarklinien (Annihilation) laufen.
+
+## $J / \psi$ Resonanz
+
+Man ahnt es schon: hier werden charm Quark $c \bar{c}$ erzeugt.
+$\phi$-artigen Zerfall von $J / \psi \rightarrow D \bar{D}$ D-Mesonen ( $c \bar{u}, c \bar{d}, \ldots$ ) energetisch nicht möglich
+→ Zerfall in $D \bar{D}$ nicht möglich, da $2 \times$ MAsse von $D$ Mesonen größer als die der $J / \psi$ Resonanz.
+
+## $\gamma$ Resonanz $b \bar{b}$
+
+noch höhere Energien $t \bar{t}, m_{t} \approx 174 \mathrm{GeV} / \mathrm{c}^{2}$
+$Z_{0} \quad$ Resonanz $\sqrt{s}=91.2 \mathrm{GeV}$
+Erzeugung (Nachweis) des neutralen Austauschteilchens der schwachen WW.
+![This image depicts a particle interaction event in a bubble chamber, showing the tracks of charged particles including a positive pion (π⁺), a negative pion (π⁻), a positron (e⁺), and an electron (e⁻) resulting from a high-energy collision.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-6_652_659_201_669.jpg)
+$\underline{\text { Beweise für } Z_{0}}$ :
+
+- universelles Resonanzmaximum: egal welcher Endzustand, immer das gleiche Maximum bei $\sqrt{s}=m_{Z}$
+
+\begin{aligned}
+& e^{+} e^{-} \rightarrow Z_{0} \rightarrow e^{+} e^{-} \\
+& e^{+} e^{-} \rightarrow Z_{0} \rightarrow \mu^{+} \mu^{-} \\
+& e^{+} e^{-} \rightarrow Z_{0} \rightarrow \tau^{+} \tau^{-} \\
+& e^{+} e^{-} \rightarrow Z_{0} \rightarrow \text { Hadronen } \\
+& e^{+} e^{-} \rightarrow Z_{0} \rightarrow \nu \bar{\nu} \text { (unsichtbar) }
+\end{aligned}
+
+[Bei Quark Resonanzen sind Zustände zusammengesetzte Zustände, die von dem jeweiligen Zerfallskanal abhängen, z.B. durchgezogene Linien oder 3-Gluonen Zerfall]
+
+- Neutrinozerfall, nachweisbar durch nicht sichtbare ("fehlende") Breite des Zerfalls. Neutrinos können nur durch schwache WW erzeugt werden.
+
+Bonus: Berechnete Breite stimmt genau mit Anzahl der Neutrinos (3 Familien) überein!
+
+- Helizitätsverletzung ist nachweisbar.
+
+
+### 2.10.2 Eigenschaften der schwachen WW
+
+h=\frac{\vec{s} \cdot \vec{p}}{|\vec{s}||\vec{p}|}
+
+$h=+1$ parallel, rechtshändig, $h=-1$ antiparallel, linkshändig.
+
+- Teilchen hat messbare Helizität, hängt ab von Bezugssystem
+- Chiralität ist Eigenschaft von einem Feld in Bezug auf die Ausrichtung von Spin und Impuls.
+- schwache WW ist maximal Paritätsverletzend, da Kopplung (an Vertices) nur an linkshändige Fermionen und rechtshändige Antifermionen ["rechts = anti"].
+- Dann als Teilchen (nach WW an Vertex) hat Teilchen eine gewisse Helizität.
+- Diese ist abhängig von $\beta$, und somit von Masse des Teilchens.
+- Je schwerer Teilchen (je langsamer), umso mehr wird der jeweilige andere Helizitätszustand beigemischt.
+
+\sim \frac{m}{E}
+
+Bsp $\pi$-Zerfall
+
+![This diagram depicts the decay process of a neutral pion (π⁰) with spin 0 into a muon (μ⁻) and an antimuon neutrino (ν̅_μ).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-7_209_449_301_324.jpg)
+Rechtshändiges Teilchen
+
+Rechtshändiges Antiteilchen
+
+\begin{array}{r}
+m_{e}=0.5 \mathrm{MeV} / \mathrm{c}^{2} \\
+\pi^{-}=|d \bar{u}\rangle \rightarrow e^{-}+\overline{\nu_{e}} \\
+\pi^{-} \rightarrow \mu^{-}+\overline{\nu_{\mu}} \\
+m_{\mu}=105 \mathrm{MeV} / \mathrm{c}^{2} \\
+m_{\nu}=10 \mathrm{eV} / \mathrm{c}^{2}
+
+Helizitätsflip nötig. ⇒ $\sim \frac{m}{E}$
+Myon hat $200 \times$ mehr Masse als Elektron → zerfall in $e^{-}$stark unterdrückt.
+Zurück zur $e^{-} e^{+}$Annihilation zu $Z_{0}$
+Wenn $e^{-}$polarisiert sind, gibt es eine Vorzugsrichtung für den Spin ⇒ Asymetrie in der Streuung beobachtbar, produzierte Fermionen werden entsprechend nur in Vorzugsrichtung emittiert.
+
+### 2.11 Tiefinelastische Neutrino Streuung
+
+![This diagram is a Feynman diagram depicting the interaction of a muon neutrino and a muon via the exchange of a W+ boson, resulting in the production of an up quark and an anti-down quark.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-7_417_730_1103_685.jpg)
+
+1. Streuung von $\nu$ an Quark
+![This diagram depicts the helicity states of a neutrino (ν) and an antineutrino (ν̅), showing that the neutrino has left-handed helicity while the antineutrino has right-handed helicity, with the spin projection \( S_z = 0 \).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-7_172_597_1777_735.jpg)
+$180^{\circ}$ Streuung
+2. Streuung von $\nu$ an Antiquark
+![This diagram depicts the interaction between a neutrino (ν) and an antineutrino (ν̅), showing the directions of their momenta and indicating their helicities or spin projections (Sz = -1). It is related to the study of neutrino and antineutrino reactions or scattering processes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-7_189_569_2432_740.jpg)
+$180^{\circ}$ Streuung
+![This diagram depicts the directions of spin and momentum for a neutrino (ν) and an antineutrino (q̅) in the context of their helicity states, showing that neutrinos are left-handed and antineutrinos are right-handed, with a spin projection S_z = +1.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-8_140_602_196_735.jpg)
+
+Für Antiquarks ist $180^{\circ}$ Streuung stark unterdrückt. Umso mehr, je höher der Impuls.
+⇒ hochenergetische Neutrino Streuung (tiefinelastisch) gibt Aufschlüsse über Quark und Antiquark Content.
+
+![This diagram depicts the differential cross section (dσ/dy) as a function of the inelasticity parameter (y) for neutrino (ν) and antineutrino (ν̅) interactions at neutrino energies between 30 and 200 GeV. It shows the experimental data points and theoretical fits for neutrino and antineutrino scattering processes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/656a0d70-2f05-4e7c-8a8b-7c899e3ef4f8/c044a5ba-c8a3-4f8e-a8ae-20080de1b448-8_798_777_557_443.jpg)
+Poch Fig. 10.2
+

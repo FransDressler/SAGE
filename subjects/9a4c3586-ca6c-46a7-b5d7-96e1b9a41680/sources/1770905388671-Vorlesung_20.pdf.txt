@@ -1,0 +1,110 @@
+## 6. Baudstuktos und Blach-Theorem
+
+Elaltionsen in Festliörpes sind wicht "fee". Stattolessen spünen sie die Potentiallandschaft, die von do Ladungsvertailing un die Atominupfe horühnt.
+
+$$
+U=0 \text { : fires Eleletionengas }
+$$
+
+QH: $\left[-\frac{t^{2}}{2 m} \nabla^{2}+u(r)\right] \psi(r)=E \psi(r) \quad$ (*) mit pairodiselen: $U(\underline{r})=U(\underline{r}+\underline{R}) ; \underline{R}=$ Gitterveleter Potuitial
+
+## ⇒ Finde Evagie - Eigen werte
+
+⇒ Fille Enajie - Niveaus lt. Feni-Divac Vertilluy arf. komplixientes Vieltielchemproblem.
+
+Man have sich dem Problem anf zwè Aoten viähern:
+
+- Näheruy "nakezn" fièrer Elellionen (anch "quasi-fiei") Ansgangspunlet: fè Eleltomen.
+- "Tight binding", Ansgangspankt: gebundeven Electoren.
+
+
+### 6.1 Modell des fast feien ("quasi-feian") Elektorengases
+
+Ausatz: - fieres Elektonengas + Bragg - Reflexion
+
+- Berücksichtije solevede Wechicdwiskerny der Elections nit dem periodischen Gitts.
+
+Zunadast: 1D-Elektoneujas dive periodisches Potential.
+$\Rightarrow U(x)=0$, auf Laits unil Länge $L=N \cdot a$.
+(*) $\Rightarrow \quad-\frac{\hbar^{2}}{2 u} \frac{\partial^{2}}{\partial x^{2}} \psi(x)=E \psi(x)$;
+Ausatic:
+
+\begin{array}{rlrl}
+\psi(x) & =\psi_{k}(x) & i \\
+\psi_{k}(x) & \left.=\frac{1}{\sqrt{L}} e^{i k_{x}}-\langle x \mid k\rangle \right\rvert\, \int_{0}^{L} A_{e}^{x-i k_{x}} A_{e}^{i k_{x}} d x \\
+E & =\frac{\hbar^{2} u^{2}}{2 m} i
+\end{array}
+
+Periodische Raudbedinguge:
+
+\begin{aligned}
+& \psi_{k}(x+c)=\psi_{k}(x) \\
+& k=u \cdot \frac{2 \pi}{L}=u \cdot \frac{2 \pi}{N \cdot a} ; u \in \mathbb{N} .
+\end{aligned}
+
+Nun: $\quad U(x)=U_{1} \cdot\left[e^{i \frac{2 \pi}{a} \cdot x}+e^{-i \frac{2 \pi}{a} \cdot x}\right]+2 \cdot U_{1} \cdot \cos \left[\frac{2 \pi}{a} \cdot x\right]$
+Stormustheaic (s.QM): Die duch die Storuy bedingle
+Engie versdiebung ist dunch
+$\left\langle k^{\prime}\right| u|k\rangle$ geber.
+
+\begin{aligned}
+\left\langle k^{\prime}\right| u|k\rangle & =\frac{1}{L} \int_{0}^{L} e^{-i k^{\prime} x} u(x) e^{i k x} d x \cdot \\
+& =\frac{u_{1}}{L} \int_{0}^{L}\left[e^{i\left(k-k^{\prime}+\frac{2 \pi}{a}\right) \cdot x}+e^{i\left(u-k^{\prime}-\frac{2 \pi}{a}\right) \cdot x}\right] d x \\
+& =\left\{\begin{array}{lll}
+0 & \text { fin } & \left(u-k^{\prime}\right) \neq \pm \frac{2 \pi}{a} \\
+u_{1} & \text { fin } & \left(k-k^{\prime}\right)= \pm \frac{2 \pi}{a} ;
+\end{array}\right.
+\end{aligned}
+
+⇒ Integral des periodische Fruntione versehwindet nabezu voll staindig ausʒs fin $k-k^{\prime}= \pm \frac{2 \pi}{a}$ (Brogg-Bedingung!).
+
+## Bennerknyge :
+
+- Engsolvaltete Potential Uoppolt wis Zenstainde, die sid um $\pm \frac{2 \pi}{9}$ untoscheiden.
+- Meist ist Komeltw 1. Onduy geing (Situation 1, Felie)
+- Wenn abs $|k\rangle$ und $\left|k^{\prime}\right\rangle$ vor Einschalter des Potentials gleide Enejie besitze, d.h. $k= \pm \frac{\pi}{a}$, vann die entantele Stöncungstheorie angewendet waden. (Situation 2, Fole.)
+
+Es gibt zwei Lsj. der Wallenfunktionar und Eijen werk:
+
+\Psi_{+} & =\frac{1}{\sqrt{2}}\left(\left\langle x \left\lvert\, \frac{\pi}{a}\right.\right\rangle+\left\langle x \left\lvert\,-\frac{\pi}{a}\right.\right\rangle\right)= \\
+& =\frac{2}{\sqrt{2} \sqrt{L}} \cos \left(\frac{\pi}{a} \cdot x\right)=\sqrt{\frac{2}{L}} \underbrace{\cos \left(\frac{\pi}{a} \cdot x\right)} \\
+E_{+} & =\frac{t^{2}}{2 m}\left(\frac{\pi}{a}\right)^{2}-\left|u_{1}\right| \quad ; \quad\left(E^{\prime}=E_{0}-\delta\right)
+
+& \psi_{-}=\frac{1}{\sqrt{2}}\left(\left\langle x \left\lvert\, \frac{\pi}{a}\right.\right\rangle-\left\langle x \left\lvert\,-\frac{\pi}{a}\right.\right\rangle\right) \\
+& =i \sqrt{\frac{2}{2}} \cdot \sin \left(\frac{\pi}{a} \cdot x\right) ; \\
+& \text { steburde wille } \\
+& E_{-}=\underbrace{\frac{t^{2}}{2 m}\left(\frac{\pi}{a}\right)^{2}}_{\text {fić Elelition }}+\underbrace{\left|u_{1}\right|}_{\text {quasi-fiem }} \quad i\left(E^{\prime}=E_{0}+\delta\right)
+
+⇔ Durch übolagerung Bragg-nefleletiets Wellen be' $k= \pm \frac{\pi}{2}$ entstehend stekende Welle wit Maxima an bzw. zwische den Atomninipten (die positiv gelade sind).
+
+- Anfenthaltswahuscheinlichkite (stehenden Wellen)
+
+\begin{array}{lll}
+\rho(t)=\left|\psi_{+}\right|^{2} & \alpha & \cos ^{2}\left(\frac{\pi}{a} \cdot x\right) \\
+\rho(-)=|\psi-|^{2} & \alpha & \sin ^{2}\left(\frac{\pi}{a} \cdot x\right)
+\end{array}
+
+für laufende Weller
+
+\rho \propto\left|e^{i \pi \frac{x}{a}}\right|^{2}=1 \quad \text { (koustant). }
+
+- Die Ladugivertailing $s(+)$ und $s(-)$ fülnen im Vejevier zur baufenden Welle zu eiver Enviedrigny bzes. Eilioling des potentialle Enaja cines Elatitoses an den lonerrüwpte.
+- An des Cneuze des Bz eutsteht eine Evergieliede $\alpha 2 \cdot U_{1}$.
+![The image depicts the title of a section or chapter related to the "Fourier components of the periodic potential," indicating a focus on analyzing periodic potentials using Fourier analysis in a physics or materials science context.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ecf9290a-e0f6-4bb5-aadc-68f787924487/f02c8d1d-eaa7-47ea-a6e6-5c6fbd710fe1-3_187_585_1798_1271.jpg)
+- Die Enejiclide ist Ioge de Gitterperiodizitat (in Uombination wit der QM).
+- Je Khins de Gittsabstand $a$, desto giofo ist dic Engielindee.
+- Zurs weiteren Besclucibuy führen wín das "erweitate", "reduriate" und das "pairdische" zocumseheme ein.
+- Funs beliebiges periodisches Potential Vann gesdenieben waden:
+
+U(x)=\sum_{n} 2 \cdot U_{n} \cdot \cos \left(\frac{2 \pi n}{a} \cdot x\right) ; \quad n \in \mathbb{N}
+
+![The image depicts a handwritten German sentence related to Hölder coefficients and energy levels.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ecf9290a-e0f6-4bb5-aadc-68f787924487/f02c8d1d-eaa7-47ea-a6e6-5c6fbd710fe1-4_97_1237_353_314.jpg) be lighna Enagies.
+
+\frac{\hbar^{2}}{2 u}\left(\frac{n \pi}{a}\right)^{2}-\left|u_{n}\right|<E<\frac{\hbar^{2}}{2 m}\left(\frac{n \pi}{a}\right)^{2}+\left|u_{n}\right|
+
+- In 3D jeschielt all dies an BZ-Gronzebenen.
+
+Natinlich muss man dazn die Besondohaitar des je'weilize
+Bravais - Gitts briüdsiditige.
+⇒ Enajaliede Vann fin versdiedave Rictruge im Unistall verschieda gro $\beta$ sin!
+

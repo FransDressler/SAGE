@@ -1,0 +1,110 @@
+## Streuung von Bloch-Elektronen
+
+![This diagram depicts the propagation of wavefronts in a medium without scattering, illustrating undisturbed movement and the absence of electrical resistance. It specifically shows the concept of coherent wave propagation with a characteristic wavelength labeled as λ_F.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-01_428_2856_336_221.jpg)
+
+![This diagram depicts electron scattering in a solid, illustrating the concept of the mean free path (ℓ) between scattering centers (Streuzentrum) and the relationship between the Fermi wavelength (λ_F) and the Fermi wavevector (k_F).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-01_585_1881_757_419.jpg)
+Abb. 9.21: Schematische Darstellung von Elektronenwellen, die durch Verunreinigungen gestreut werden. Der Abstand der Streuer entspricht der mittleren freien Weglänge, der Abstand der Wellenfronten der Fermi-Wellenlänge $\lambda_{\mathrm{F}}=2 \pi / k_{\mathrm{F}}$. (a) $k_{\mathrm{F}} \ell \gg 1$ und (b) $k_{\mathrm{F}} \ell \simeq 1$.
+
+![This diagram depicts the concept of wave interference, showing how waves from two sources overlap and create an interference pattern.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-01_365_634_1362_458.jpg)
+
+## Streumechanismen: Defekt
+
+![This diagram depicts a representation of wavevectors in reciprocal space, showing vectors \( \mathbf{k} \), \( \mathbf{k'} \), and their difference \( \mathbf{K} \) within a circular region defined by the Fermi surface or a similar boundary in the \( k_x \)-\( k_y \) plane. It illustrates the relationship between these wavevectors and a small momentum shift \( \delta k_x \) near the boundary at \( \pi/a \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-02_1186_1324_359_450.jpg)
+Bild 9.6: Elektronenstreuung an einem Defekt. Die Wellenvektoren $\boldsymbol{k}$ und $\boldsymbol{k}^{\prime}$ des Elektrons liegen vor und nach dem Stoß innerhalb der aufgeweichten Oberfläche der Fermi-Kugel. Das Gitter nimmt den Impuls $\hbar \boldsymbol{K}$ auf. Das Zentrum der Fermi-Kugel ist durch das anliegende elektrische Feld um $\delta k_{x}$ nach rechts verschoben.
+
+Wellenvektor $k_{x}$
+
+## Streumechanismen: Phonon (Normal-Prozess)
+
+![This diagram depicts scattering processes in momentum space for electrons near the Fermi surface, showing wavevectors before and after scattering with momentum transfer \( q \) and the angle \( \vartheta \) between initial and final wavevectors. Specifically, (a) illustrates electron scattering with a momentum transfer \( q \) between wavevectors \( k \) and \( k' \), while (b) shows the corresponding wavevector configuration for the scattering process with reversed direction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-03_1087_2384_356_424.jpg)
+Bild 9.7: Normal-Prozess. a) Streuprozess bei tiefen Temperaturen mit kleinem Impulsübertrag, b) Streuprozess bei hohen Temperaturen von der Vorder- zur Rückseite der „Fermi-Kugel“ durch ein einziges Streuereignis. Das Zentrum der Fermi-Flächen ist durch das elektrische Feld jeweils gegenüber dem Koordinatenursprung um $\delta k_{x}$ nach rechts verschoben.
+
+## Streumechanismen: Phonon (Umklapp-Prozess)
+
+![This diagram depicts a momentum space (wavevector) representation in a condensed matter or solid state physics context, showing the scattering process of an electron from an initial wavevector \( k \) to a final wavevector \( k' \) by a momentum transfer \( q \). It specifically illustrates the relationship between wavevectors near the Fermi surface and the momentum transfer involved in the scattering event.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-04_965_1213_359_421.jpg)
+Wellenvektor $k_{x}$
+
+Bild 9.8: Umklapp-Prozess. Das wechselwirkende Elektron erzeugt ein Phonon und wird unter Mitwirkung eines reziproken Gittervektors auf die Rückseite der „FermiKugel" gestreut. Ihr Zentrum ist gegenüber dem Koordinatenursprung um $\delta k_{x}$ nach rechts verschoben.
+
+## Streumechanismen: Elektron-Elektron
+
+![This diagram depicts the Fermi surface in momentum space (kx, ky) for electrons, showing wave vectors k1, k2, k3, and k4 involved in electron scattering processes near the Fermi wave vector kF, with thermal broadening indicated by 2k_th.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-05_933_993_346_536.jpg)
+
+Abb. 9.18: Veranschaulichung der Elektron-ElektronStreuung im k-Raum. Die beiden Elektronen (1) und (2) mit Wellenvektoren $\mathbf{k}_{1}$ und $\mathbf{k}_{2}$ streuen aneinander und nehmen anschließend die Zustände (3) und (4) mit Wellenvektoren $\mathbf{k}_{3}$ und $\mathbf{k}_{4}$ ein. Das Pauli-Prinzip erfordert, dass die Zustände (3) und (4) unbesetzt sind. Die dunkelgrau getönte Fläche markiert die energetisch erlaubten Zustände. Die Impulserhaltung reduziert diese bis auf den Bereich der grün getönten Kugelkalotte.
+
+## Temperaturabhängigkeit von Kupfer und Manganin
+
+![This diagram shows the electrical conductivity (Leitfähigkeit) as a function of temperature for copper (Kupfer) and manganin, illustrating how copper's conductivity decreases significantly with increasing temperature while manganin's conductivity remains nearly constant.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-06_1077_1149_409_474.jpg)
+Bild 9.9: Temperaturabhängigkeit der elektrischen Leitfähigkeit von hochreinem Kupfer (durchgezogene Kurve) und der Legierung Manganin (gestrichelt).
+
+Manganin: 86\% Kupfer, 12\% Mangan, 2\% Nickel
+
+## Temperaturabhängigkeit von Natrium (bei tiefenT)
+
+![This diagram depicts the relative electrical resistance of sodium (Natrium) as a function of temperature in Kelvin, showing how resistance changes with temperature from 0 to 20 K.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-07_1090_1067_445_429.jpg)
+
+## Mattiesensche Regel
+
+$$
+\varrho=\frac{m^{*}}{n e^{2} \tau}=\varrho_{\mathrm{D}}+\varrho_{\mathrm{G}}=\frac{m^{*}}{n e^{2} \tau_{\mathrm{D}}}+\frac{m^{*}}{n e^{2} \tau_{\mathrm{G}}(T)}
+$$
+
+$\rho_{D}$ : Defekt-basiert<br>$\rho_{G}$ : Gitter-basiert (thermisch)
+
+Der unterschiedliche Restwiderstand bei $T=0$ wird unterschiedlichen Defektkonzentrationen zugeschrieben.
+
+Bild 9.10: Temperaturverlauf des elektrischen Widerstands von drei Natriumproben mit unterschiedlichem Restwiderstand. (Nach D.K.C. MacDonald, K. Mendelssohn, Proc. Roy. Soc. London 202, 103 (1950).)
+
+## Phonon-dominierte Streuung (für reine Metalle)
+
+Bloch-Grüneisen Gesetz
+![This diagram depicts the reduced electrical resistance (R/R_Θ) as a function of reduced temperature (T/Θ) for different metals (Au, Na, Cu, Al, Ni), showing how resistance varies with temperature normalized by the Debye temperature (Θ) for each metal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-08_1110_1119_440_408.jpg)
+
+\begin{aligned}
+& \varrho_{\mathrm{G}}= A\left(\frac{T}{\Theta}\right)^{5} \int_{0}^{\Theta / T} \frac{x^{5} \mathrm{~d} x}{\left(\mathrm{e}^{x}-1\right)\left(1-\mathrm{e}^{-x}\right)} . \\
+& \varrho \propto \begin{cases}\text { const. } & \text { für } T \ll \Theta, \\
+T^{5} & \text { für } T<\Theta, \\
+T & \text { für } T \gg \Theta,\end{cases} \\
+& \theta: \text { Debye-Temperatur }
+\end{aligned}
+
+Bild 9.11: Reduzierter Widerstand verschiedener Metalle als Funktion der reduzierten Temperatur $T / \Theta$. (Nach D.K.C. MacDonald, Handbuch der Physik XIV, S. Flügge, ed., Springer, 1956.)
+
+## Elektron-Elektron Streuung? ⇒ hochreine Metalle
+
+![This diagram depicts the temperature dependence of the specific electrical resistivity (Spezifischer Widerstand) of potassium (Kalium), showing different power-law behaviors (T², T⁵, T¹) corresponding to electron-electron and Bloch-Grüneisen scattering mechanisms.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-09_1111_1629_437_369.jpg)
+Bild 9.12: Elektrische Leitfähigkeit von hochreinem Kalium. Deutlich zu erkennen sind die drei im Text beschriebenen Bereiche unterschiedlicher Steigung. Bei den tiefsten Temperaturen dominiert die Elektron-Elektron-Streuung. (Nach M.P. Marder, Condensed Matter Physics, John Wiley \& Sons, $2000 .^{10}$ )
+
+## Wärmetransport aufgrund von Elektronen in Metallen
+
+![This diagram depicts the thermal conductivity (Wärmeleitfähigkeit) of copper (Kupfer) as a function of temperature (Temperatur) in Kelvin (K), showing how copper's thermal conductivity varies with temperature.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-10_1336_1357_396_348.jpg)
+Bild 9.21: Wärmeleitfähigkeit von Kupfer. Ähnlich wie bei den dielektrischen Kristallen tritt auch bei den Metallen ein ausgeprägtes Maximum im Temperaturverlauf auf. (Nach G.K. White, R.J. Tainsh, Phys. Rev. 119, 1869 (1960).)
+
+\Lambda_{\mathrm{el}} \propto l T \propto \begin{cases}T & \text { für } T \ll \Theta \\ T^{-4} & \text { für } T<\Theta, \\ \text { const. } & \text { für } T \gg \Theta .\end{cases}
+
+$\Lambda_{\mathrm{el}}$ : elektronische Wärmeleitfähigkeit
+$l$ : mittlere freie Weglänge
+
+## Wiedemann-Franz Gesetz
+
+\frac{\Lambda_{\mathrm{el}}}{\sigma}=\frac{\pi^{2}}{3}\left(\frac{k_{\mathrm{B}}}{e}\right)^{2} T=L T
+
+Lorenz-Zahl: $L=2.5 \cdot 10^{-8} W \Omega K^{-2}$
+(nur) wenn $l$, die mittlere freie Weglänge, für die elektrische und die thermische Leitfähigkeit identisch ist.
+
+|  | $\Lambda_{\mathrm{el}} / \mathrm{W} / \mathrm{mK}$ | $\sigma /(\mu \Omega \mathrm{m})^{-1}$ | $L / \mathrm{W} \Omega / 10^{8} \mathrm{~K}^{2}$ |  | $\Lambda_{\mathrm{el}} / \mathrm{W} / \mathrm{mK}$ | $\sigma /(\mu \Omega \mathrm{m})^{-1}$ | $L / \mathrm{W} \Omega / 10^{8} \mathrm{~K}^{2}$ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Ag | 429 | 68,0 | 2,15 | Li | 85 | 11,7 | 2,47 |
+| A1 | 237 | 40,0 | 2,03 | Mg | 171 | 25,4 | 2,29 |
+| Au | 317 | 48,8 | 2,29 | Na | 141 | 23,8 | 2,02 |
+| Cu | 401 | 59,6 | 2,84 | Pb | 35 | 5,2 | 2,30 |
+| Fe | 80 | 11,2 | 2,44 | Sn | 67 | 9,1 | 2,49 |
+| K | 102 | 16,4 | 2,13 | Zn | 121 | 18,4 | 2,24 |
+
+Tabelle 9.1: Wärmeleitfähigkeit, spezifischer Widerstand und Lorenz-Zahl einiger Metalle bei Zimmertemperatur. (Verschiedene Quellen.)
+
+## Wiedemann-Franz Gesetz
+
+![This diagram shows the temperature dependence of the electrical conductivity (σ), the Lorenz number (L), and the ratio Λ/σT for copper (Kupfer) over a temperature range from 1 K to 1000 K. It is used to analyze the relationship between thermal and electrical transport properties in copper as temperature varies.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/4f9cd348-d779-4b84-b4aa-f0ad216cc3e6/8f52cf82-5712-433d-9c05-3686a11a2085-12_1105_1241_450_432.jpg)
+Bild 9.22: Temperaturabhängigkeit der elektrischen (gestrichelt) und thermischen (punktiert) Leitfähigkeit von Kupfer. Die ausgezogene blaue Kurve gibt den Temperaturverlauf der Lorenz-Zahl wieder. (Nach J.S. Blakemore, Solid State Physics, Saunders, 1974 und G.K. White, R.J. Tainsh, Phys. Rev. 119, 1869 (1960).)
+

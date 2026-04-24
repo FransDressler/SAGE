@@ -1,0 +1,37 @@
+## De Broglie Wellenlänge
+
+![This diagram depicts the relationship between wavelength (λ) and energy for photons, electrons, neutrons, and helium atoms, showing their respective de Broglie wavelengths across a range of energies. It specifically compares these particles' wavelengths at different energies, including a highlighted thermal energy region around 300 K.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2a4e82a6-6362-494c-b2a1-c3d9d62dfb62/d1da3720-0b67-4e93-86bf-8b80ec9e7516-1_1264_1544_471_553.jpg)
+
+Die de Broglie Wellenlänge von Photonen, Elektronen, Neutronen und Heliumatomen als Funktion der Teilchenenergie (letztere in unterschiedlichen Einheiten!)
+
+$$
+\lambda=h / p
+$$
+
+## Charakteristische Kenndaten
+
+| Größe | Photonen | Elektronen | Neutronen |
+| :--- | :--- | :--- | :--- |
+| Masse | 0 | $m_{\mathrm{e}}=9.109 \times 10^{-31} \mathrm{~kg}$ | $M_{n}=1.675 \times 10^{-27} \mathrm{~kg}$ |
+| Wellenlänge | $\begin{aligned} & \lambda=\frac{h c}{E} \\ & \lambda[\AA] \simeq \frac{12.4}{E[\mathrm{keV}]} \end{aligned}$ | $\begin{aligned} & \lambda=\frac{h}{\sqrt{2 m_{\mathrm{e}} E}} \\ & \lambda[\AA] \simeq \frac{12}{\sqrt{E[\mathrm{eV}]}} \end{aligned}$ | $\begin{aligned} & \lambda=\frac{h}{\sqrt{2 M_{n} E}} \\ & \lambda[\AA] \simeq \frac{0.28}{\sqrt{E[\mathrm{eV}]}} \end{aligned}$ |
+| Flussdichte | Röntgenröhre: $<10^{8} / \mathrm{mm}^{2} \mathrm{~s} \mathrm{mrad}^{2} 0.1 \% \mathrm{BW}$ <br> Synchrotron (3. Gen.): $\sim 10^{20} / \mathrm{mm}^{2} \mathrm{~s} \mathrm{mrad}^{2} 0.1 \% \mathrm{BW}$ | $>10^{24} / \mathrm{cm}^{2} \mathrm{~s}$ | $\sim 10^{15} / \mathrm{cm}^{2} \mathrm{~s}$ |
+| Streuquerschnitt | $\propto Z^{2}$ | $\propto Z^{2}$ | stark vom jeweiligen Kern abhängig |
+
+## Bragg Bedingung
+
+![This diagram depicts the geometric setup for X-ray diffraction by crystal planes, illustrating the path difference between rays reflected from successive lattice planes separated by distance d, used to derive Bragg's law.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2a4e82a6-6362-494c-b2a1-c3d9d62dfb62/d1da3720-0b67-4e93-86bf-8b80ec9e7516-3_901_1492_501_904.jpg)
+
+## Bragg Bedingung / Millersche Indizes
+
+![This diagram depicts a crystallographic lattice showing atomic positions and specific crystallographic planes indexed by Miller indices (e.g., (110), (310), (120), (130), (010)). It illustrates the arrangement of atoms and the orientation of different lattice planes within the crystal structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2a4e82a6-6362-494c-b2a1-c3d9d62dfb62/d1da3720-0b67-4e93-86bf-8b80ec9e7516-4_892_1320_519_122.jpg)
+
+Mehrere Netzebenen des einfachen kubischen Gitters. Die eingezeichneten Ebenen sind mit ihren Millerschen Indizes versehen. Es sind jeweils zwei parallele Ebenen einer Schar eingezeichnet.
+
+Der Abstand benachbarter paralleler Ebenen nimmt ab, wenn die Millerschen Indizes größer werden;
+d.h. Reflexionen bei hohen Indizes erfordern kürzere Wellenlängen.
+
+## Streuamplitude
+
+![This diagram depicts the geometry and wave vectors involved in a scattering experiment, showing the incident wave, scattered wave, and the positions of the probe and detector relative to the scattering center. It illustrates the relationship between wave vectors \(k_0\), \(k\), and position vectors \(r\), \(R_0\), and \(R_1\) in the context of wave scattering.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/2a4e82a6-6362-494c-b2a1-c3d9d62dfb62/d1da3720-0b67-4e93-86bf-8b80ec9e7516-5_1322_1945_313_729.jpg)
+Bild 4.3 aus Hunklinger
+

@@ -1,0 +1,131 @@
+## Alim 2
+
+P: (Frage)
+I: (Antwort)
+P: Ich möchte die Prüfung gleichmäßig auf die 3 Schwerpunkte Statistische Mechanik, Thermodynamik und Quantenstatistik aufteilen. Wir beginnen mit statistischer Mechanik. Wann benutzt man die statistische Mechanik (oder so ähnlich)?
+I: Wir betrachten makroskopische Systeme mit großer Teilchenanzahl und Volumen, als den thermodynamischen Limes. Es ist in diesem Fall nicht mehr möglich die Bewegungsgleichung zu lösen, außerdem hängen diese empfindlich von den Anfangsbedingungen ab. Für Messgrößen betrachten wir den zeitlichen Mittelwert dieser, da sich der Mikrozustand ständig ändert. Statt dem Zeitmittelwert können wir aufgrund der Ergondenhypothese ebenso den Ensemblemittelwert betrachten, wobei das Ensemble die Gesamtheit der Mikrozustände ist, die mit einem Makrozustand verträglich sind. Jedem Mikrozusand kann eine Wahrscheinlichkeit zugeordnet werden.
+P: Wann ist die statische Mechanik nicht anwendbar?
+I: Für kleine Teilchenzahlen.
+P: Hat nach den verschiedenen Ensembles gefragt.
+I: Es gibt das mikrokanonische, das kanonische und das großkanonische Ensemble. Beim mikrokanonischen Ensemble betrachetet man ein isoliertes System und lässt eine kleinen Energieunschärfe zu. Das grundlegende Postulat besagt, dass im mikrokanonischen Ensemble jeder Mirkozustand gleichwahrscheinlich ist, was mikroskopisch durch die Liouvillegleichung (Wahrscheinlichkeitdichte konstant entlang Trajektorie) und die Ergodenhypothese (Trajektorie kommt jeden Phasenraumpunkt beliebig nahe) begründet werden kann. Beim kanonischen Ensemble lässt man zudem Energieaustausch mit der Umwelt (Reservoir) zu, beim großkanonischen zusätzlich auch noch Teilchenaustausch.
+P: Hier hat sie, glaube ich, noch was zu den Wahrscheinlichkeiten im kanonischen Ensemble gefragt.
+I: Kleines System + Reservoir bilden ein mikrokanonisches Ensemble, wobei das Reservoir viel größer als das System ist, sodass Energieaustausch nicht zur Temperaturänderung des Reservoirs führt. Man betrachtet im Gesamtsystem alle Zustände bei denen das kleine System die Energie $E_{r}$ hat und kommt so auf die Gewichtung der Zustände im System durc den Boltzmanfaktor (Sollte ich nicht herleiten).
+P: Wie kommt man auf die innere Energie im kanonischen Ensemble?
+I: Mittlere Energie ist geben durch:
+
+$$
+U=\langle E\rangle=\sum_{r} p_{r} E_{r}
+$$
+
+mit der kanonischen Zustandssumme $Z=\sum_{r} \mathrm{e}^{-\beta E_{r}}$ ergibt sich:
+
+U=-\frac{\partial \ln (Z)}{\partial \beta}
+
+P: Und im großkanonischen?
+I:
+
+\left.U=-\frac{\partial \ln (\mathcal{Z}(z, T, V))}{\partial \beta}, \quad \mathcal{Z}=\sum_{r} \mathrm{e}^{-\beta\left(E_{r}-\mu\right.}\right)=\sum_{r} z^{N_{r}} \mathrm{e}^{-\beta E_{r}}
+
+Hab dann noch das chemische Potential erklärt.
+P: Warum benutzt man den verschiedene Ensembles und warum liefern diese die gleichen Ergebnisse?
+I: Die relativen Schwankung der nicht vorgegeben Größen (z. B. $U$ im kanonischen) ist proportional zu $\frac{1}{\sqrt{N}}$ und verschwindet daher im thermodynamischen Limes, die Verteilung der Messgrößen ist also sehr scharf. Man benutzt immer das Ensemble welches am besten zur jeweilige Situation passt, also zum Beispiel ob der Austausch mit der Umgebung zulassen ist bzw, was die gegebenen Variablen sind (z. B. Temperatur oder Energie).
+P: Was ändert sich für reale Gase und wie entwickelt man das?
+
+## ALIM
+
+I: Wechselwirkung zwischen Molekülen, Entwicklung in der Dichte, da dort Wechselwirkung klein sind. Man nennt das Virialentwicklung.
+P: Betrachten wir die van-der-Waals Gleichung, wher kommen die Korrekturen?
+P: Reduktion des Volumens durch Eigenvolumen der Moleküle (Hardcore und Lennard-Jones erwähnt); Reduzierung des Drucks, durch attraktive Wechselwirkung, die ausgeübte Kraft auf die Außenwände wird dadurch verringert.
+P: Was ist die Wahrscheinlichkeit von $r$ Rechtsschritte von $N$ Gesamtschritten beim Randomwalk?
+I:
+
+P(r, N)=\frac{N!}{r!(N-r)!} p^{r}(1-p)^{r}
+
+wobei $p$ ist Wahrscheinlichkeit für einen Rechtsschritt ist.
+P: Wie nennt man das?
+I: Eine Binomialverteilung
+P: Was ist der Zusammenhang mit der Poisson- und Gaußverteilung?
+I: Für große $N$ erhält man für $p=$ konst. die Gauß-Verteilung, wenn $N p=$ konst. die PoissonVerteilung. Mehr wollte sie nicht wissen.
+P: Dann kommen wir nun zur Thermodynamik. Was sind die Hauptsätze?
+
+\begin{aligned}
+& \text { 1. } \mathrm{d} U=\delta Q-\delta W \\
+& \text { 2. } \mathrm{d} S \geq \frac{\delta Q}{T} \\
+& \text { 3. } \frac{S}{N} \rightarrow 0, \quad \text { für } T \rightarrow 0
+\end{aligned}
+
+Hab diese dann noch erklärt. Erster Hauptsatz beschreibt Energieerhaltung (andere Vorzeichenkonvention) und noch den Unterschied zwischen vollständigen und unvollständigen Differentialen und Zustandsgrößen erklärt. Für vollständige Differentiale gilt die Integrabilitätsbedingung, die Größe ist wegunabhängig. Beim zweiten Hauptsatz bin ich die verschiedenen Fälle durchgegangen, $\geq 0$ für isolierte Systeme und Gleichheit im reversiblem Fall. Habe dann noch erwähnt, dass die Temperatur ein integrierender Faktor ist, der aus dem Unvollständigen $\delta Q$ ein vollständiges Differential macht. Dritter Hauptsatz besagt, dass Entropiedichte für niedrige Temperaturen gegen 0 geht, man betrachtet die Entropiedichte, da der Grundzustand entartet sein kann.
+P: Wollte noch ein bisschen mehr zu Zustandsgrößen wissen.
+P: Weiß nicht mehr ganz genau was ich geantwortet habe, erwähnte aber nochmal, dass diese nur vom Zustand des System abhängen und nicht von dessen Historie bzw. unabhängig von Integrationsweg ist. Der Zustand wird charakterisiert durch die Angabe der Zustandsvariablen.
+P: Wie viele Zustandvariablen hat man denn?
+I: Das ist nicht begrenzt, da man beliebig viele weitere äußere Parameter hinzufügen kann, das System kann mehrkomponentig sein (d. h. verschiedene Teilchenzahlen) und es können auch noch äußere Felder wie Magnetfelder angelegt werden.
+P: Wie wechselt man zwischen den thermodynamischen Potentialen und wofür braucht man diese?
+I: Durch Legendretransformation kann man diese umwandeln, durch deren Ableitungen nach den thermodynamischen Parametern erhält man die thermodynamischen Größen des Systems.
+P: Kann man einen Zustand durch die Variablen $V, P, T$ angeben?
+P: Habe erst ja gesagt, mich aber dann korrigiert und gesagt, dass $P$ die verallgemeinerte Kraft zu $V$ ist und durch Legendretransformation zwar $P$ statt $V$ zur Variablen des Systems wird, aber niemals beide Variablen des Systems sind.
+P: Ihr hätte gereicht zu erwähnen, dass $P, V$ und $T$ durch die Zustandsgleichung nicht unabhängig von einander sind und sich damit die Anzahl der Variablen um eins reduziert.
+P: Was sind die Maxwell-Relationen?
+
+I: Man erhält diese aus der Integrabilitätsbedingung der vollständigen Differentiale der thermodynamischen Potentiale. Soll ich das für ein Beispiel machen, z. B. $U$ ?
+P: Ja, gerne.
+P:
+
+\begin{aligned}
+\mathrm{d} U & =T \mathrm{~d} S-P \mathrm{~d} V \\
+\left(\frac{\partial T}{\partial V}\right)_{S}=\left(\frac{\partial}{\partial V} \frac{\partial U}{\partial S}\right)_{S} & =\frac{\partial^{2} U(S, V)}{\partial S \partial V}=\left(\frac{\partial}{\partial S} \frac{\partial U}{\partial V}\right)_{V}=-\left(\frac{\partial P}{\partial S}\right)_{V}
+\end{aligned}
+
+P: Wollte nochmal was zu reversiblen Prozessen hören, weiß nicht mehr ganz genau was.
+I: Können bei Umkehrung der äußeren Parameter auch in die andere Richtung ablaufen, es geht keine Arbeit verloren und das anhand der freien Expansion und der isothermen reversiblen Expansion eines Gases erklärt.
+P: Sind dann auf Kreisprozesse gekommen und speziell auf den Carnot-Kreisprozess.
+I: Habe das p-V-Diagramm gezeichnet und die verschiedenen Schritte erklärt. Durchlaufen im Uhrzeigersinn ergibt eine Wärmekraftmaschine, gegen den Uhrzeigersinn eine Wärmepunpe. Sind dann noch auf den Wirkungsgrad gekommen, der definiert ist durch Nutzen/Aufwand und habe das für den Carnot-Prozess hingeschrieben.
+
+\eta=\frac{\Delta W}{Q_{\mathrm{H}}}=\frac{Q_{\mathrm{H}}-Q_{\mathrm{K}}}{Q_{\mathrm{H}}}
+
+Man kann darüber die absolute Temperatur definieren.
+P: Wann ist der Wirkungsgrad bei Wärmekraftmaschinen maximal?
+I: Wenn diese reversible ablaufen, da dann keine Arbeit verschwendet wird, und wenn die Maschine zwischen zwei Temperaturen operiert und die untere möglichst kalt ist.
+P: Ich soll die Arbeit im p-V-Diagramm zeigen.
+I: Fläche unter dem Graphen, wenn man nach links geht, zusätzliches Minus Vorzeichen.
+P: Möchte das ganze noch im T-S-Diagramm sehen und aus diesem den Wirkungsgrad abgelesen haben.
+I: Zeichne das Diagramm und sage, dass $\Delta Q=T \Delta S$ für die Isothermen und $\Delta Q=0$ für die Adiabaten ist, haben die entsprechenden Flächen markiert und auch die Nettoarbeit, welche der eingeschlossenen Fläche im Rechteck entspricht, da aus dem 1. HS $\Delta W=\Delta Q$ (andere Vorzeichenkonvention) folgt.
+P: Kommen wir nun zur Quantenstatistik. Was ist die Anzahl der Zustände für die verschiedenen Gase bei $M$ Niveaus und $N$ Teilchen. Ich sollte die Quantengase noch beschreiben.
+I: Fermionen: Vielteilchenwellenfunktion antisymmetrisch unter Teilchenaustausch, das heißt Wellenfunktion verschwinden, wenn Zustand mehrfach besetzt ist (Pauli-Prinzip):
+
+\frac{M!}{N!(M-N)!}
+
+Bosonen: Vielteilchenwellenfunktion symmetrisch unter Teilchenaustausch, das heißt Zustände können mehrfach besetzt werden:
+
+\frac{(N+M-1)!}{N!(M-1)!}
+
+Habe dann noch kurz erklärt, wie man kombinatorisch drauf kommt ( $M-1$ ununterscheidbare Trennstriche und $N$ ununterschiedbare Teilchen auf $N+M-1$ ununterscheidbare Plätze verteilen). Klassisch ohne und mit korrekter Boltzmanzählung:
+
+M^{N} \quad \text { bzw. } \quad \frac{M^{N}}{N!}
+
+P: Wie sehen die Besetzungen graphisch aus?
+
+I: Alle drei Graphen hingezeichne, für Fermionen noch die beiden Fälle $T=0$ und $T>0$ unterschieden und dies durch thermische Anregung um die Fermi-Kante erklärt.
+P: Wie sieht der Druck für Bosonen- und Fermionengase aus?
+P: Für Bosonen p-V-Diagramm gemalt und erklärt dass im Bereich des Bose-Einstein-Kondensats der Druck konstant ist, das Teilchen im Grundzustand zu diesem nicht beitragen. Für Fermionen das p-T-Diagramm gemalt mit dem Fermi-Druck bei $T=0$ und der Annäherung an den klassischen Verlauf. Das Ganze mit dem Pauli-Prinzip erklärt, da auch Zustände selbst bei $T=0$ mit nicht verschwindendem Impuls besetzt sind.
+P: Was ist ein schwarzer Strahler und wie sieht die Planckverteilung aus?
+I: Körper, der im thermodynamischen Gleichgewicht mit seinem Inneren ist und im gesamten Frequenzbereich Strahlung vollständig absorbiert. Die spektrale Energiedichte der Photonen im Inneren entspricht der Planckschen Strahlungsverteilung
+
+u(\omega, T)=\frac{\hbar \omega^{3}}{\pi^{2} c^{3}\left(\mathrm{e}^{\beta \hbar \omega}-1\right)}
+
+Habe dann noch kurz die einzelnen Terme erklärt: $\mathrm{e}^{\beta \hbar \omega}-1$ aus der Besetzungszahl, tω Energie, $\omega^{2}$ durch den Wechsel auf Kugelkoordinaten und der konstanten Zustandsdichtedichte im Impulsraum.
+P: Wie sähe das ganze in 1D aus?
+I: Keine Integration über Kugeloberfläche mehr, daher statt $\propto \omega^{3}$ nur noch $\propto \omega$.
+P: Dann kommen wir am Schluss noch kurz zur Landau-Ginzburg-Theorie. Was ist das?
+I: Diese wird verwendet um Phasenübergänge bzw. das Verhalten des Systems nahe des kritischen Punkts zu beschreiben. Man betrachtet dabei die Entwicklung der freien Energie in Ordnungsparametern, die charakteristisch für die jeweilige Phase sind (habe das kurz am Beispiel der Magnetisierung erklärt). Bei der Ginzburg-Landau-Theorie sind diese nicht räumlich konstant (also nicht Mean-Field-Theorie) sondern variieren räumlich. Man muss daher das Funktionalintgegral bezüglich des Ordnungsparameters betrachten und daher alle möglichen Verteilungen, die dieser annehmen kann, berücksichtigen. Mehr konnte ich dann nicht mehr sagen, da die Zeit vorbei war.
+
+## Bemerkungen
+
+Zunächst einmal ist Frau Prof. Alim eine sehr angenehme Prüferin, die einen immer ausreden lässt.
+Im Vorfeld haben wir ihr eine e-Mail geschickt, was sie alles abfragen wird (also Rechnungen, Herleitungen, Verständnis), worauf sie antwortete, dass sie Wert auf das Verständnis legt. Ausgeschlossen hat sie das Andere nicht. Bei mir kamen keine Herleitungen oder Rechnung dran, was aber vielleicht auch am Onlineformat lag. Außerdem hat sie gesagt, dass sie sich für die Prüfung am Buch von Kerson Huang orientieren wird. Ich habe dann zunächst das falsche Buch durchgearbeitet (statische Mechanik), was ich erst bemerkt habe als Prof. Alim eine e-Mail geschrieben hat, dass Sie sich am Stoff unserer Prüfung (Prof. Zacharias) orientieren wird, sie persönlich aber für die Vorbereitung das Buch: Einführung in die statistische Physik von Kerson Huang benutzt. Die Themen, die dann in der Prüfung dran kamen, waren dann sowohl im Buch wie auch bei uns in der VL zu finden, bis auf die Maxwell-Relationen, glaube ich. Alle anderen Themen aus unserer VL, die nicht im Buch waren bzw. umgekehrt waren nicht Teil der Prüfung (z. B. das ausführliche Magnetismus-Kapitel). Als Note habe ich am selben Abend eine 1,0 erhalten.
+
+## Literatur
+
+- Skript aus der VL von Prof. Zacharias
+- Statistische Mechanik von Kerson Huang (würde ich aber nicht empfehlen, da es sehr lang ist und viele Kapitel nicht Teil der VL waren)
+- Einführung in die statistische Physik von Kerson Huang (kürzer und neuer)
+

@@ -1,0 +1,134 @@
+### 7.4 Effertive Masse
+
+Gilf das Newtonsche Gesetz $I=m \cdot a$ in Festörpeen?
+
+$$
+\frac{d}{d t} \underline{v}(\underline{u})=\left(\underline{\nabla}_{k} \cdot \underline{v}\right) \cdot \frac{d \underline{u}}{d t}=\underline{\nabla}_{\underline{u}}\left(\frac{1}{t_{1}} \underline{\nabla} E_{n}(\underline{u})\right) \cdot \underbrace{\frac{d \underline{u}}{d t}}_{\underline{I} / t_{1}}
+$$
+
+Resulatat: $\quad \frac{d}{d t} \underline{v}(\underline{u})=\frac{1}{u^{2}} \underline{\nabla}_{k}\left[\underline{\nabla}_{k} E_{n}(\underline{u})\right] \cdot \mp$
+
+\text { Definition }=:\left(m^{*}\right)^{-1}
+
+## Benerkumgen
+
+- Gilf usw, wenn die änfere knaft I heive Interbendriberjange erreugt.
+- m* hat nur bei Bewegry des Elektiona cive Redenty. "dynamisede Masse".
+- Effeletive Massennähery : WW der Laitunjs elebtion wit Atomrümpfer, abs anch Rumpfeleletionen etc. ist $m^{*}$ enthelte:
+
+\left(\frac{1}{m^{*}}\right)_{i j}=\frac{1}{t^{2}} \frac{\partial E(\underline{x})}{\partial k_{i} \partial k_{j}}
+
+⇒ Unummy des Enerjefliche.
+
+- Blode-Ossillationa : Bei einem Vontanter eleletrische Feld bann es za Oszillation Колиме, wenn an der Br es za eiver Umbeles von $\underline{0}$ vocumt.
+
+⇒ Veire Gleichstom lentfilijent.
+
+### 7.5 Ladrugs transport in Bändenn
+
+Baitry cinzelver Elektroven zur dentischen Stroudichte.
+
+\begin{array}{r}
+\dot{f}=\frac{e}{v} \sum_{\underline{k}} \underline{v}(\underline{k}) \underset{1}{\longrightarrow} \dot{f}=-\frac{e}{4 \pi^{3}} \int \underline{v}(\underline{k}) f(\underset{\uparrow}{E} T) d k^{3} \\
+\rho_{k}=\frac{2 v}{(2 \pi)^{3}} \quad \begin{array}{c}
+\text { Ferin-Dinac } \\
+\text { Verteily }
+\end{array}
+\end{array}
+
+$T=0: \quad f\left(E_{1} T\right) \rightarrow$ stufenfencilion :
+
+(7.2) \Rightarrow \begin{aligned}
+& \dot{f}=-\frac{e}{4 \pi^{3}} \int \underline{v}(\underline{k}) d^{3} k \\
+& \dot{f}=-\frac{e}{4 \pi^{3}} \cdot \frac{1}{u} \int \nabla_{k} \in(\underline{k}) d^{3} k
+\end{aligned}
+
+Unistalle unit Inversionssymmetic: $\quad E(\underline{k})=E(-\underline{k})$
+
+\begin{gathered}
+\Rightarrow \underline{v}(-\underline{k})=\frac{1}{t} \nabla_{-\underline{k}} E(-\underline{k})=-\frac{1}{t} \nabla_{\underline{k}}^{y} E(\underline{k})=-\underline{v}(\underline{k}) \\
+\frac{\partial}{\partial(-k)}=-\frac{\partial}{\partial u}
+\end{gathered}
+
+## Das lutegral (*) wind dahs Nudl
+
+kistalle ohne invasionssymmetie:
+
+E(\underline{\boldsymbol{k}})_{\imath}=E(-\underline{\boldsymbol{k}})_{\iota}
+
+Spin-doun
+"Unamer - Entartung" fin spinanfyesportere
+Entsprechead gilf: "volle Rändo leine Strom".
+Benerking $(*) \Leftrightarrow \dot{j}=-\frac{e}{4 \pi^{3}} \int_{\text {besetd }} v(\underline{u}) d^{3}$
+
+=\frac{-e}{4 \pi^{3}} t \underbrace{\int_{\beta z} v(\xi) d^{2} k}_{=0}-\int_{\text {lev }} v(\underline{u}) d^{3} k
+
+positive
+Laduy
+"Deteltelehtion"
+
+=\frac{i+e}{4 \pi^{3}} \int_{\text {lead }} v(\underline{k}) d^{3} k
+
+"Loch"
+Strom enfogt über positive Ladugsträjes ("Loches").
+
+## Kouropt des Lochs bzes. "Defelteleletions".
+
+Annalume: volle Bänder $(T=0) \Rightarrow \Sigma \underline{k}=0$
+Enzerge ein Loch (z.B. übs thanisde, optiscle Amegy) im valenzboud:
+
+\begin{aligned}
+\Sigma \underline{k} & =-\underline{k}_{n}=0-\underline{k}_{n} \\
+& \left.=\underline{k}_{p} \quad \text { (Folie, Bild } 9 u_{a}\right)
+\end{aligned}
+
+Loch:
+![The diagram depicts the relationship between the wavevectors of a hole (k_h), a positive charge (k_p), and a Bloch electron (k_n) in a solid, showing that the hole wavevector equals the positive charge wavevector, which is the negative of the Bloch electron wavevector.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/210351ee-879b-4f5a-b841-0acc35417004/2c7b9c6e-4c3c-4e9e-8f71-67816a83828f-3_268_796_611_734.jpg)
+
+Enerje:
+
+E_{u}(\underline{u})=E_{p}(\underline{u})=-E_{u}(\underline{u})
+
+> Effeletive Masse $(s .7 .4)$
+
+\begin{aligned}
+\left(\frac{1}{m^{*}}\right)_{p} & =\left(\frac{1}{m^{*}}\right)_{n}=\left(\frac{1}{t^{2}} \frac{\partial E(\underline{S})}{\partial \underline{U} \partial \underline{U}}\right)_{p} \\
+& =\left(\frac{1}{n^{2}}\left(\frac{-\partial E(\underline{U})}{\partial \underline{U})(-\partial \underline{U})}\right)_{n}\right. \\
+& =-\left(\frac{1}{m^{*}}\right) n \\
+m_{p}^{*} & =-m_{n}^{*}=m_{n}^{*} n
+
+Gesehwindiglent
+
+\frac{\underline{\nabla}_{\underline{k}} E_{p}(\underline{k})-\underline{\nabla}_{\underline{k}} E(\underline{k})}{\underline{v}_{p}\left(\underline{u}_{p}\right)=v_{u}\left(\underline{k}_{u}\right)}
+
+& \text { BWG: } \\
+& (\text { s.7.3 }
+
+& t_{n} \dot{\underline{i}}_{u}=-e\left(\underline{E}+\underline{v}_{u} \times \underline{B}\right) \\
+& t \dot{\underline{u}}_{p}=-e\left(\underline{E}+\underline{v}_{p} \times \underline{B}\right)
+
+"Teilcha mit positiver Laduy"
+Bisher lattle wirs den Fall $\underline{E}=0$ betrachlet $\left(\Rightarrow{ }_{j}^{D C}=0\right)$.
+
+### 7.6 Drude Modell
+
+Das Drude Mrodel ist das einfachste, klassiscle Moddl, wn den Ladungstranspat fün $E \neq 0$ und damit das Olunscle Gesctz beseluciben zu kŏne. Die Revegy der Eleletion wind mit ttilfe der Vinetisele Gasthenie Geselniebe.
+$e^{-}$: Vlassiscle Teilde uit Vth: theruischen Geschwivdijveit "Brownede Rewegy" mit mittleran Stoß/Relaxationszet と
+vd - Driftgeschwindighit
+hlassisde BWGL:
+
+\frac{m \cdot \frac{d}{d t} \underline{v}=-e \underline{E}-m \frac{\underline{v} d}{\tau}{ }_{\uparrow}}{\text { "Reibuy" } \cong \text { Widestand }}
+
+Stationaire Zustand: $\quad \dot{v}=0 \Leftrightarrow v_{d}=\underbrace{\frac{e}{m} \cdot \tau \cdot E}_{\mu}$
+Beweglichkait : $\quad \mu=\frac{e \cdot \tau}{m}$
+
+Mit n
+der Elehtoneudichte:
+
+j & =-e \cdot u \cdot \underline{v} d-\frac{u \cdot e^{2}}{m} \cdot \underline{E} \\
+& =n \cdot e \cdot \mu \cdot \underline{E}
+
+Elaktiscle Leitfailighit $\sigma=\frac{|\dot{q}|}{|E|}=\frac{u \cdot e^{2} \tau}{m}=u \cdot e \cdot \mu$
+
+Dannit kaun das Drude rodell die Litfähingkait des OhunscheGesetzes ankand von Elektiona als Vacsische Trilder erkbinen.
+

@@ -1,0 +1,214 @@
+Ergänzung: Volumen einer d-dimensionalen Kugel
+
+$$
+V_{d}(R)=\int_{\sum_{x_{i}<R^{2}}} d^{d} x \stackrel{\begin{array}{c}
+\text { verallgemeinerte } \\
+\text { Kugelkoordinaten }
+\end{array}}{\downarrow} \underbrace{\int_{d} d \Omega}_{C_{d}} \int_{0}^{R} r^{d-1} d r=\frac{C_{d}}{d} R^{d}
+$$
+
+Bestimme $C_{d}$ aus bekanntem Gauß-Integral:
+
+\begin{gathered}
+\pi^{\frac{d}{2}}=\left[\int_{-\infty}^{\infty} d x e^{-x^{2}}\right]^{d}=\int d^{d} x e^{-\sum x_{i}^{2}}=\underbrace{\int d \Omega}_{C_{d}} \underbrace{\int_{0}^{\infty} d r r^{d-1} e^{-r^{2}}}_{=\Gamma(d / 2) / 2} \\
+\Rightarrow \quad C_{d}=\frac{\pi^{\frac{d}{2}}}{\frac{1}{2} \Gamma\left(\frac{d}{2}\right)} \quad \Rightarrow \quad V_{d}=\frac{\pi^{\frac{d}{2}} R^{d}}{\frac{d}{2} \Gamma\left(\frac{d}{2}\right)}=\frac{\pi^{\frac{d}{2}} R^{d}}{\Gamma\left(\frac{d}{2}+1\right)}
+\end{gathered}
+
+### 3.4 Anschluss an die Thermodynamik
+
+### 3.4.1 Extensivität der Entropie
+
+![This diagram depicts two thermodynamic systems or states, each characterized by energy (E), volume (V), and particle number (N) variables, often used to represent initial and final conditions in thermodynamics or statistical mechanics.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/25906d8d-306b-423d-b55c-822cea313118/52845d4e-f44d-416c-b06f-fa983d26a72e-02_428_973_486_116.jpg)
+
+## 2 isolierte Systeme:
+
+H=H_{1}\left(\underline{q}_{1}, \underline{p}_{1}\right)+H_{2}\left(\underline{q}_{2}, \underline{p}_{2}\right)
+
+\begin{aligned}
+\Omega(E, V, N) & =\int_{E_{1}-\Delta<H_{1}<E_{1}} \frac{d^{3 N_{1}} q d^{3 N_{1}} p}{N_{1}!h^{3 N_{1}}} \int_{E_{2}-\Delta<H_{2}<E_{2}} \frac{d^{3 N_{2}} q d^{3 N_{2}} p}{N_{2}!h^{3 N_{2}}} \\
+& =\Omega_{1}\left(E_{1}, V_{1}, N_{1}\right) \Omega_{2}\left(E_{2}, V_{1}, N_{1}\right)
+\end{aligned}
+
+S=k_{B} \ln \Omega: \quad \Rightarrow S(E, V, N)=S_{1}\left(E_{1}, V_{1}, N_{1}\right)+S_{2}\left(E_{2}, V_{2}, N_{2}\right)
+
+3.4.2 Gleichgewicht
+![This diagram depicts a thermodynamic system divided into two subsystems, each characterized by its energy (E), volume (V), and number of particles (N). It is used to analyze the exchange of these quantities between the two subsystems.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/25906d8d-306b-423d-b55c-822cea313118/52845d4e-f44d-416c-b06f-fa983d26a72e-03_445_994_221_153.jpg)
+
+Energieaustausch unter Bedingung:
+
+E_{2}=E-E_{1}
+
+- Wahrscheinlichkeit, dass System 1 Energie $\mathrm{E}_{1}$ hat:
+
+P\left(E_{1}\right) \sim \Omega_{1}\left(E_{1}\right) \Omega_{2}\left(E-E_{1}\right)
+
+- Wahrscheinlichste Energieaufteilung $\widehat{E}_{1}, \widehat{E}_{2}=E-\widehat{E}_{1}$ :
+
+\begin{aligned}
+& \left.\frac{\partial P}{\partial E_{1}}\right|_{E_{1}=\widehat{E}_{1}}=\left.\frac{\partial \Omega_{1}}{\partial E_{1}}\right|_{E_{1}=\widehat{E}_{1}} \Omega_{2}\left(E-\widehat{E}_{1}\right)-\left.\Omega_{1}\left(\widehat{E}_{1}\right) \frac{\partial \Omega_{2}}{\partial E_{2}}\right|_{E_{2}=E-\widehat{E}_{1}}=0 \\
+& \left.\quad \Rightarrow \frac{1}{\Omega_{1}\left(\widehat{E}_{1}\right)} \frac{\partial \Omega_{1}}{\partial E_{1}}\right|_{E_{1}=\widehat{E}_{1}}=\left.\frac{1}{\Omega_{2}\left(\widehat{E}_{2}\right)} \frac{\partial \Omega_{2}}{\partial E_{2}}\right|_{E_{2}=E-\widehat{E}_{1}}
+\end{aligned}
+
+\Omega(E)=e^{S(E) / k_{B}} \quad \Rightarrow \quad \frac{1}{\Omega} \frac{\partial \Omega}{\partial E}=\frac{1}{k_{B}} \frac{\partial S}{\partial E}
+
+⇒ Für die wahrscheinlichste Systemkonfiguration gilt:
+
+\left.\left.\left.\frac{\partial S_{1}}{\partial E_{1}}\right|_{E_{1}=\widehat{E}_{1}}=\left.\frac{\partial S_{2}}{\partial E_{2}}\right|_{E_{2}=E-\widehat{E}_{1}}\right\} \begin{array}{c}
+\frac{1}{T_{1}}=\frac{1}{T_{2}} \\
+\text { mperatur } \\
+\frac{1}{T}:=\frac{\partial S}{\partial E}
+\end{array}\right\}
+
+Zwei Systeme befinden sich im thermischen Gleichgewicht, wenn das isolierte Gesamtsystem in seiner wahrscheinlichsten Konfiguration anzutreffen ist.
+
+## Fluktuationen:
+
+Entwickle $\ln P\left(E_{1}\right)=$ const. $+\underbrace{\ln \Omega_{1}\left(E_{1}\right)}_{=S_{1}\left(E_{1}\right) / k_{B}}+\underbrace{\ln \Omega_{2}\left(E_{2}\right)}_{=S_{2}\left(E_{2}\right) / k_{B}}$ um Maximum:
+
+& \ln P\left(E_{1}\right)=\text { const. }+\frac{1}{k_{B}}[\overbrace{\left.\frac{\partial S_{1}}{\partial E_{1}}\right|_{\widehat{E}_{1}}-\left.\frac{\partial S_{2}}{\partial E_{2}}\right|_{E-\widehat{E}_{1}}}^{=0 \text { (da Maximum) }}\left(E_{1}-\widehat{E}_{1}\right) \\
+& +\frac{1}{2 k_{B}}[\underbrace{\left.\frac{\partial^{2} S_{1}}{\partial E_{1}^{2}}\right|_{\widehat{E}_{1}}+\left.\frac{\partial^{2} S_{2}}{\partial E_{2}^{2}}\right|_{E-\widehat{E}_{1}}}]\left(E_{1}-\widehat{E}_{1}\right)^{2}+\ldots \\
+& \begin{array}{c}
+\text { (da zweite Ableitung nach } \\
+\text { extensiver Größe) }
+\end{array} \quad\left[\sim \frac{1}{N_{1}}+\sim \frac{1}{N_{2}}\right] \quad \uparrow \\
+& \text { Für große N: extrem scharfe Verteilung um } \\
+& \text { thermischen Gleichgewichtszustand! }
+
+## allgemein: isoliertes Gesamtsystem, aber
+
+- Energieaustausch: $\quad E_{2}=E-E_{1}$
+- flexible Wand: $\quad V_{2}=V-V_{1}$
+- Teilchenaustausch: $\quad N_{2}=N-N_{1}$
+![This diagram depicts a thermodynamic system divided into two subsystems, each characterized by its own energy (E), volume (V), and number of particles (N). It is used to analyze the exchange or equilibrium conditions between the two subsystems.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/25906d8d-306b-423d-b55c-822cea313118/52845d4e-f44d-416c-b06f-fa983d26a72e-06_429_968_211_1806.jpg)
+-Wahrscheinlichste Konfiguration?
+
+\begin{array}{lll}
+P\left(E_{1}, V_{1}, N_{1}\right) \sim \Omega_{1}\left(E_{1}, V_{1}, N_{1}\right) \Omega_{2}\left(E-E_{1}, V-V_{1}, N-N_{1}\right) \\
+\frac{\partial P}{\partial E_{1}} \stackrel{!}{=} 0 & \Rightarrow \frac{\partial S_{1}}{\partial E_{1}}=\frac{\partial S_{2}}{\partial E_{2}} & \Rightarrow \frac{1}{T_{1}}=\frac{1}{T_{2}} \\
+\frac{\partial P}{\partial V_{1}} \stackrel{!}{=} 0 & \Rightarrow \frac{\partial S_{1}}{\partial V_{1}}=\frac{\partial S_{2}}{\partial V_{2}} & \Rightarrow \frac{p_{1}}{T_{1}}=\frac{p_{2}}{T_{2}} \\
+\frac{\partial P}{\partial N_{1}} \stackrel{!}{=} 0 & \Rightarrow \frac{\partial S_{1}}{\partial N_{1}}=\frac{\partial S_{2}}{\partial N_{2}} & \Rightarrow \frac{\mu_{1}}{T_{1}}=\frac{\mu_{2}}{T_{2}}
+\end{array}
+
+### 3.5 Kanonisches Ensemble
+
+- (kleines) System gekoppelt an Wärmebad
+- Energieaustausch möglich
+- Gesamtsystem isoliert
+
+
+## Hamiltonfunktion:
+
+![This diagram depicts a system of interest (System von Interesse) in contact with a heat bath (Wärmebad), illustrating the concept of thermal equilibrium or heat exchange between the system and its surroundings.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/25906d8d-306b-423d-b55c-822cea313118/52845d4e-f44d-416c-b06f-fa983d26a72e-07_630_1221_63_1743.jpg)
+
+H(\underline{q}, \underline{p})=H_{S}\left(\underline{q}_{s}, \underline{p}_{s}\right)+H_{B}\left(\underline{q}_{b}, \underline{p}_{b}\right)+H_{W}(\underline{q}, \underline{p})
+
+System (bekannt)
+
+Bad (oft unbekannt)
+
+Wechselwirkung (→0)
+
+## Phasenraumdichte (Gesamtsystem):
+
+\rho(\underline{q}, \underline{p})=\rho_{\mathrm{MK}}\left(\underline{q}_{s}, \underline{q}_{b}, \underline{p}_{s}, \underline{p}_{b}\right)=\frac{1}{\Omega_{\mathrm{ges}}(E)} \quad E-\Delta<H(\underline{q}, \underline{p})<E
+
+"reduzierte Phasenraumdichte des Systems"
+
+\rho_{\mathrm{MK}}\left(\underline{q}_{s}, \underline{q}_{b}, \underline{p}_{s}, \underline{p}_{b}\right) \neq 0 \quad \Leftrightarrow \quad \overbrace{H_{\mathrm{S}}\left(\underline{q}_{s}, \underline{p}_{s}\right)}^{E-E_{S}-\Delta<H_{\mathrm{B}}\left(\underline{q}_{b}, \underline{p}_{b}\right)<E-E_{S}}
+
+Daher:
+
+\rho_{S}\left(\underline{q}_{s}, \underline{p}_{s}\right) & =\int \frac{d^{3 N_{b}} q d^{3 N_{b}} p}{N_{b}!h^{3 N_{b}}} \rho_{\mathrm{MK}}\left(\underline{q}_{s}, \underline{q}_{b}, \underline{p}_{s}, \underline{p}_{b}\right) \\
+& =\frac{1}{\Omega_{\mathrm{ges}}(E)} \int_{\underline{E-E_{S}-\Delta<H_{\mathrm{B}}<E-E_{\mathrm{S}}}} \frac{d^{3 N_{b}} q d^{3 N_{b}} p}{N_{b}!h^{3 N_{b}}}=\frac{\Omega_{\mathrm{B}}\left(E-E_{S}\right)}{\Omega_{\mathrm{ges}}(E)}
+
+Wir verwenden nun die Tatsache, dass $E_{\mathrm{S}} \ll E$ und entwickeln
+
+\ln \Omega_{\mathrm{B}}\left(E-E_{S}\right) & \approx \ln \Omega_{\mathrm{B}}(E)-\left.\frac{\partial \ln \Omega_{\mathrm{B}}}{\partial E_{\mathrm{B}}}\right|_{E_{\mathrm{B}} \simeq E} E_{\mathrm{S}} \\
+& =\frac{S_{\mathrm{B}}(E)}{k_{B}}-\left.\frac{1}{k_{B}} \frac{\partial S_{\mathrm{B}}}{\partial E_{\mathrm{B}}}\right|_{E_{\mathrm{B}} \simeq E} E_{\mathrm{S}}=\frac{S_{\mathrm{B}}(E)}{k_{B}}-\frac{E_{\mathrm{S}}}{k_{B} T}
+
+Daraus folgt: $\quad \rho_{S}\left(\underline{q}_{s}, \underline{p}_{s}\right) \sim e^{-\frac{H_{\mathrm{S}}\left(\underline{q}_{s}, \underline{p}_{s}\right)}{k_{B} T}}$
+
+Mit der Normierung $\int \rho_{S}\left(\underline{q}_{s}, \underline{p}_{s}\right)=1$ erhalten wir dann die Phasenraumdichte
+für das für das
+
+## "Kanonische Ensemble":
+
+\rho_{\mathrm{K}}(\underline{q}, \underline{p}) & =\frac{1}{Z_{\mathrm{K}}} e^{-\beta H_{S}(\underline{q}, \underline{p})} & Z_{\mathrm{K}}=\int \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}} e^{-\beta H_{S}(\underline{q}, \underline{p})} \\
+\beta & =\left(k_{B} T\right)^{-1} & \text { "kanonische Zustandssumme" }
+
+Das kanonische Ensemble beschreibt die Phasenraumverteilung für ein System, das an ein Wärmebad mit gegebener Temperatur T gekoppelt ist.
+
+Mikrozustände sind nicht mehr gleichverteilt, sondern werden abhängig von ihrer Energie $H_{S}(\underline{q}, \underline{p})$ gewichtet.
+
+### 3.5.1 Zustandssumme und Erwartungswerte
+
+- Erwartungswerte von Observablen (allgemein): $\left(H_{S} \equiv H\right)$
+
+\langle A\rangle=\int d \Gamma(\underline{q}, \underline{p}) A(\underline{q}, \underline{p}) \rho_{\mathrm{K}}(\underline{q}, \underline{p})=\frac{1}{Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) A(\underline{q}, \underline{p}) e^{-\beta H(\underline{q}, \underline{p})}
+
+- Erwartungswert der Energie:
+
+E=\langle H\rangle & =\frac{1}{Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) H(\underline{q}, \underline{p}) e^{-\beta H(\underline{q}, \underline{p})} \\
+& =-\frac{1}{Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) \frac{\partial}{\partial \beta} e^{-\beta H(\underline{q}, \underline{p})}=-\frac{1}{Z_{\mathrm{K}}} \frac{\partial Z_{\mathrm{K}}}{\partial \beta}=-\frac{\partial}{\partial \beta} \ln Z_{\mathrm{K}}
+
+- Erwartungswert Druck (analog):
+
+p=-\left\langle\frac{\partial H}{\partial V}\right\rangle=-\frac{1}{Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) \frac{\partial H(\underline{q}, \underline{p})}{\partial V} e^{-\beta H(\underline{q}, \underline{p})}=k_{B} T \frac{\partial}{\partial V} \ln Z_{\mathrm{K}}
+
+### 3.5.2 Entropie
+
+"kanonische Entropie":
+
+S=-k_{B}\left\langle\ln \rho_{\mathrm{K}}\right\rangle
+
+S & =-k_{B} \int d \Gamma(\underline{q}, \underline{p}) \underbrace{\ln \left(\frac{e^{-\beta H(\underline{q}, \underline{p})}}{Z_{\mathrm{K}}}\right)}_{\ln \rho_{\mathrm{K}}} \underbrace{\frac{e^{-\beta H(\underline{q}, \underline{p})}}{Z_{\mathrm{K}}}}_{\rho_{\mathrm{K}}} \\
+& =k_{B} \ln Z_{\mathrm{K}}+\frac{k_{B} \beta}{Z_{\mathrm{K}}} \int d \Gamma(\underline{q}, \underline{p}) H(\underline{q}, \underline{p}) e^{-\beta H(\underline{q}, \underline{p})}=k_{B} \ln Z_{\mathrm{K}}+\frac{1}{T}\langle H\rangle
+
+### 3.5.3 Freie Energie
+
+Definiere: $\quad F(T, V, N)=-k_{B} T \ln Z_{\mathrm{K}}(T, V, N)$
+
+Konsistent mit (Helmholtz) freier Energie aus der Thermodynamik?
+
+- Aus obigem Resultat für die Entropie folgt:
+
+\Rightarrow F=\langle H\rangle-S T
+
+$\langle H\rangle \ldots$ Erwartungswert der gesamten
+Energie des Systems (승 innere Energie E)
+
+- Weiters erhält man für die Ableitung von $F$ nach $T$ :
+
+\left.\frac{\partial F}{\partial T}\right|_{V, N}= & -k_{B} \frac{\partial}{\partial T}\left[T \ln Z_{\mathrm{K}}(T, V, N)\right] \\
+= & -k_{B} \ln Z_{\mathrm{K}}(T, V, N)-k_{B} T \frac{\partial \ln Z_{\mathrm{K}}}{\partial T}=-S \\
+& \frac{\partial \ln Z_{\mathrm{K}}}{\partial T}=-\frac{1}{k_{B} T^{2}} \frac{\partial \ln Z_{\mathrm{K}}}{\partial \beta}=\frac{\langle H\rangle}{k_{B} T^{2}}
+
+$F=-k_{B} T \ln Z_{\mathrm{K}} \quad$ entspricht der freien Energie aus der Thermodynamik !
+
+## Beispiel: Ideales Gas
+
+- Hamiltonfunktion:
+
+H(\underline{q}, \underline{p})=\sum_{i=1}^{3 N} \frac{p_{i}^{2}}{2 m}, \quad q_{i} \in V
+
+![This diagram depicts a system of particles (with volume V and number N) in thermal contact with a heat bath at temperature T, illustrating the concept of a canonical ensemble in statistical mechanics.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/25906d8d-306b-423d-b55c-822cea313118/52845d4e-f44d-416c-b06f-fa983d26a72e-13_651_1121_63_1843.jpg)
+
+- Zustandssumme:
+
+Z_{\mathrm{K}}=\int d \Gamma(\underline{q}, \underline{p}) e^{-\frac{\beta}{2 m} \sum_{i} p_{i}^{2}}=\frac{V^{N}}{N!h^{3 N}} \prod_{i=1}^{3 N} \underbrace{\int d p_{i} e^{-\frac{\beta}{2 m} p_{i}^{2}}}_{\sqrt{2 m \pi / \beta}}=\frac{V^{N}}{N!}\left(\frac{2 m \pi}{\beta h^{2}}\right)^{\frac{3 N}{2}}
+
+![This image depicts the Helmholtz free energy formula for an ideal gas in the thermodynamic limit (large particle number N), using Stirling's approximation. It shows the expression for free energy F as a function of temperature T, volume V, and particle number N.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/25906d8d-306b-423d-b55c-822cea313118/52845d4e-f44d-416c-b06f-fa983d26a72e-13_445_1702_1521_84.jpg)
+
+\lambda_{T}=\sqrt{\frac{h^{2}}{2 \pi m k_{B} T}}
+
+Z_{\mathrm{K}}=\frac{1}{N!}\left(\frac{V}{\lambda_{T}^{3}}\right)^{N}, \quad F=-N k_{B} T \ln \left(e \frac{V}{N \lambda_{T}^{3}}\right), \quad \lambda_{T}=\sqrt{\frac{h^{2}}{2 \pi m k_{B} T}}
+
+- Energie: $\quad E=-\frac{\partial \ln Z_{\mathrm{K}}}{\partial \beta}=\frac{\partial}{\partial \beta} \ln \left(\lambda_{T}^{3 N}\right)=\frac{3 N}{2} \frac{\partial}{\partial \beta} \ln \beta=\frac{3}{2} N k_{B} T$
+- Druck: $\quad p=-\frac{\partial F}{\partial V}=\frac{N k_{B} T}{V}$
+- Entropie: $\quad S=-\frac{\partial F}{\partial T}=N k_{B} \ln \left(\frac{e V}{N \lambda_{T}^{3}}\right)+N k_{B} T \frac{\partial}{\partial T} \ln \lambda_{T}^{-3}$
+
+=k_{B} N\left[\ln \left(\frac{V}{N \lambda_{T}^{3}}\right)+\frac{5}{2}\right] \quad \begin{gathered}
+\text { Sackur-Tetrode } \\
+\text { Gleichung }
+\end{gathered}
+

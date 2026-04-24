@@ -1,0 +1,206 @@
+### 6.1.4 Klassischer Grenzfall
+
+Der klassische Grenzfall eines Bose Gases ergibt sich wieder für geringe Dichten und/oder hohe Temperaturen, so dass $n \lambda_{T}^{3} \ll 1$.
+
+## verdünntes Bose Gas:
+
+$$
+\begin{aligned}
+& n \lambda_{T}^{3}=\frac{\lambda_{T}^{3}}{V} \frac{z}{1-z}+g_{\frac{3}{2}}(z) \ll 1 \quad \Rightarrow \quad z \ll 1 \\
+& \Rightarrow \quad n \lambda_{T}^{3} \simeq z+\frac{z^{2}}{2^{\frac{3}{2}}} \quad \Rightarrow \quad z=n \lambda_{T}^{3}-\frac{\left(n \lambda_{T}^{3}\right)^{2}}{2^{\frac{3}{2}}}+\ldots
+\end{aligned}
+$$
+
+Bsp: thermische Zustandsgleichung:
+
+\begin{array}{lc}
+\frac{p V}{k_{B} T}=-\underset{(\text { nicht } \sim \mathrm{V})}{\ln (1<z)}+\frac{V}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z) & p V \simeq \frac{N k_{B} T}{n \lambda_{T}^{3}}\left(z+\frac{z^{2}}{2^{\frac{5}{2}}}\right) \\
+\Rightarrow p V \simeq N k_{B} T\left(1-\frac{n \lambda_{T}^{3}}{2^{\frac{5}{2}}}\right) \longleftrightarrow & \begin{array}{c}
+\text { "Anziehung"tiche } \\
+\text { Bosonen }
+\end{array}
+\end{array}
+
+### 6.2 Bose-Einstein Kondensation
+
+Wir betrachten nun den Fall eines "entarteten" Bose-Gases mit $n \lambda_{T}^{3} \sim 1$. Aus der Gleichung für die Gesamtteilchenzahl erhält man die Bedingung $\lambda_{T}^{3} n=\underbrace{\frac{\lambda_{T}^{3}}{V} \frac{z}{1-z}}_{\lambda_{T}^{3} n_{0}}+g_{\frac{3}{2}}(z)$, die man nach $z$ auflösen kann.
+
+Graphische Lösung:
+![This diagram depicts the function \( g_{\frac{3}{2}}(z) \) used in quantum statistical mechanics, showing its behavior as the fugacity \( z \) approaches 1, with annotations indicating the contributions to particle number from excited states \( N_e \) and the ground state \( N_0 \) in a Bose-Einstein condensate.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-02_1121_1898_1040_686.jpg)
+
+## Diskussion:
+
+- Für $n \lambda_{T}^{3}<g_{\frac{3}{2}}(1) \simeq 2.612$ gibt es eine Lösung der Gleichung $n \lambda_{T}^{3}=g_{\frac{3}{2}}(z)$ mit $z<1$.
+
+Da im thermodynamischen Limes $\lambda_{T}^{3} / V \ll 1$ gilt, ist in diesem Fall die Besetzung des Grundzustands vernachlässigbar:
+
+\lambda_{T}^{3} n_{0}=\frac{\lambda_{T}^{3}}{V} \frac{z}{1-z} \longrightarrow 0
+
+- Für höhere Dichten oder niedrigere Temperaturen, $n \lambda_{T}^{3} \geq 2.612$, gibt es keine Lösung der obigen Gleichung, d.h. eine maximale Besetzung der angeregten Zustände ist erreicht:
+
+N_{e}=\frac{V}{\lambda_{T}^{3}} g_{\frac{3}{2}}(1)
+
+Alle weiteren Teilchen besetzen dann den Grundzustand:
+
+N_{0}=N-\frac{V}{\lambda_{T}^{3}} g_{\frac{3}{2}}(1)
+
+Aus der Bedingung $n \lambda_{T}^{3} \stackrel{!}{=} g_{\frac{3}{2}}(1)$ erhält man eine kritische Temperatur
+
+T_{c} \simeq \frac{2 \pi \hbar^{2}}{k_{B} m}\left(\frac{n}{g_{\frac{3}{2}}(1)}\right)^{\frac{2}{3}}
+
+unterhalb welcher sich das therm. Verhalten eines Bose-Gases ändert.
+⇒ Man spricht von einem Phasenübergang von einem normalen Gas zu einem Bose-Einstein-Kondensat.
+
+Das BE-Kondensat wird durch eine makroskopische Besetzung des Grundzustands charakterisiert:
+
+\frac{N_{0}}{N}=1-\left(\frac{T}{T_{c}}\right)^{\frac{3}{2}}
+
+![This diagram depicts the fraction of particles in the condensate (N0/N) as a function of temperature (T) for a Bose-Einstein condensate, showing the transition at the critical temperature (Tc) from the condensate phase ("Kondensat") to the normal gas phase ("Gas").](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-04_815_1570_1399_1378.jpg)
+
+### 6.2.1 Bose-Einstein Kondensation in einer Falle
+
+Die Bose-Einstein Kondensation wurde bis jetzt für eine 3D Gas in einem Kastenpotential diskutiert.
+
+Im Allgemeinen hängt dieses Phänomen von der Skalierung der Zustandsdichte $D(E) \sim E^{\alpha-1}$, d.h. von der Dimensionalität und vom Einschlusspotential ab.
+Bsp 1: Kastenpotential in 1D-3D: $\quad D(E) \propto\left\{\begin{array}{l}E^{\frac{1}{2}} \\ E^{0} \\ E^{-\frac{1}{2}}\end{array}\right.$
+
+Anzahl angeregter Teilchen:
+
+N_{e} \propto \int_{0}^{\infty} d E \frac{D(E)}{\left(e^{\beta E} / z\right)-1} \propto\left\{\begin{array}{ccc}
+g_{\frac{3}{2}}(z) & & 2.612 \\
+g_{1}(z) & z \rightarrow 1^{-} & \infty \\
+g_{\frac{1}{2}}(z) & & \infty
+\end{array}\right.
+
+Bsp 2: Harmonische Falle 1D-3D: $\quad D(E) \propto\left\{\begin{array}{cc}E^{2} & \text { (3D) } \\ E^{1} & \text { (2D) } \\ E^{0} & \text { (1D) }\end{array}\right.$
+
+Anzahl angeregter Teilchen:
+
+\begin{array}{r}
+N_{e} \propto \int_{0}^{\infty} d E \frac{D(E)}{\left(e^{\beta E} / z\right)-1} \propto \begin{cases}g_{3}(z) & 1.202 \\
+g_{2}(z) & z \rightarrow 1^{-} \\
+g_{1}(z) & 1.645 \\
+\infty\end{cases} \\
+\text { 鳇 keine Kondensation !! }
+
+### 6.3 Thermodynamische Eigenschaften des Bose Gases
+
+- Chemisches Potential: Aus $\mu=k_{B} T \ln z$ folgt:
+
+\frac{\mu}{k_{B} T}= \begin{cases}\ln g_{\frac{3}{2}}^{-1}\left(n \lambda_{T}^{3}\right)^{*)} & T>T_{c} \\ 0 & T \leq T_{c}\end{cases}
+
+*) $g_{\alpha}^{-1}=$ Umkehrfunktion von $g_{\alpha}(z)$
+![The diagram depicts the temperature dependence of the chemical potential μ(T) for bosons compared to a classical gas, showing the behavior near the critical temperature Tc for Bose-Einstein condensation. It illustrates that for bosons, μ(T) approaches zero at Tc and remains constant below it, while for a classical gas, μ(T) decreases continuously with temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-07_799_2606_982_221.jpg)
+
+Unterhalb der kritischen Temperatur kann jedes weitere Teilchen nur mehr den Grundzustand besetzen, d.h. weder die Energie noch die Entropie erhöhen sich bei Änderung der Teilchenzahl.
+
+- Druck \& Energie: $\quad \frac{p}{k_{B} T}=-\frac{\ln (1-z)}{V}+\frac{1}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z), \quad \frac{U}{k_{B} T}=\frac{3}{2} \frac{1}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z)$
+wegen: $\quad N_{0}=\frac{z}{1-z} \sim N \sim V \quad \Rightarrow \quad(1-z) \sim \frac{1}{V} \quad\left(T<T_{c}\right)$ folgt im thermodynamischen Limes: $\quad \lim _{V \rightarrow \infty} \frac{\ln (1-z)}{V}=0$
+
+\frac{p}{k_{B} T}=\left\{\begin{array}{cc}
+\lambda_{T}^{-3} g_{\frac{5}{2}}(z) & T>T_{c} \\
+\lambda_{T}^{-3} g_{\frac{5}{2}}(1) & T \leq T_{c}
+\end{array}\right.
+
+Teilchen im Grundzustand liefern keinen
+$U=\frac{3}{2} p V= \begin{cases}\frac{3}{2} k_{B} T \frac{V}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z) & T>T_{c} \\ \frac{3}{2} k_{B} T \frac{V}{\lambda_{T}^{3}} g_{\frac{5}{2}}(1) & T \leq T_{c}\end{cases}$
+
+- Entropie: $\quad S=\frac{U+p V-\mu N}{T}=k_{B}\left(\frac{5}{2} \frac{p V}{k_{B} T}-\frac{\mu}{k_{B} T} N\right)$
+
+\frac{S}{k_{B}}= \begin{cases}\frac{5}{2} \frac{V}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z)-N \ln (z) & T>T_{c} \\ \frac{5}{2} \frac{V}{\lambda_{T}^{3}} g_{\frac{5}{2}}(1) & T \leq T_{c}\end{cases}
+
+Daraus folgt für $\mathrm{T} \rightarrow 0: \quad S \sim T^{\frac{3}{2}}$
+⇒ Das ideale Bose Gas erfüllt den 3. Hauptsatz der Thermodynamik !!
+
+- Wärmekapazität: $\quad C_{V}=\left.\frac{\partial U}{\partial T}\right|_{V, N}$
+
+Für $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ und daher $\mathrm{z}=1$ folgt:
+
+C_{V}=\frac{3}{2} k_{B} V g_{\frac{5}{2}}(1) \frac{\partial}{\partial T}\left(\frac{T}{\lambda_{T}^{3}}\right)=\frac{15}{4} k_{B} g_{\frac{5}{2}}(1) \frac{V}{\lambda_{T}^{3}} \sim T^{\frac{3}{2}}
+
+## Allgemein (siehe Übungen):
+
+\frac{C_{V}}{k_{B} N}= \begin{cases}\frac{15}{4} \frac{g_{\frac{5}{2}}(z)}{g_{\frac{3}{2}}(z)}-\frac{9}{4} \frac{g_{\frac{3}{2}}(z)}{g_{\frac{1}{2}}(z)} \rightarrow \frac{3}{2} & T>T_{c} \\ \frac{15}{4} \frac{g_{\frac{5}{2}}(1)}{n \lambda_{T}^{3}} \sim T^{\frac{3}{2}} & T \leq T_{c}\end{cases}
+
+![This diagram depicts the Lambda anomaly in the specific heat capacity of liquid helium, showing the normalized specific heat \( \frac{C_V}{k_B N} \) as a function of temperature \( T \), with a sharp peak at the critical temperature \( T_c \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-10_1100_1993_977_633.jpg)
+6.4 Erzeugung eines Bose-Einstein Kondensats
+
+T_{c} \simeq 3.31 \frac{\hbar^{2}}{k_{B} m} n^{\frac{2}{3}} \sim \frac{n^{2 / 3}}{m}
+
+Für ein stark komprimiertes Gas mit einer Teilchendichte von $n \approx 10^{28} \mathrm{~m}^{-3}$ und einer Teilchenmasse $m \approx 10^{-25} \mathrm{~kg}$ ergibt sich eine kritische Temperatur von etwa
+
+T_{\mathrm{c}} \approx 100 \mathrm{mK}
+
+⇒ Experimentell erreichbar, allerdings sind bei diesen Temperaturen schon alle Stoffe fest.
+
+Ausnahme: Helium (flüssig unterhalb $\mathrm{T}<4 \mathrm{~K}$ ) $\quad \Rightarrow \quad T_{\mathrm{c}} \sim 1.6 \mathrm{~K}$
+Tatsächlich findet man in diesem Bereich ( $\mathrm{T}_{\mathrm{c}}=2.17 \mathrm{~K}$ ) eine Phasenübergang in eine superfluiden Zustand.
+
+Allerdings: Starke Wechselwirkungen zwischen den Atomen!
+⇒ Eigenschaften von flüssigem Helium weichen signifikant von einem idealen Bose-Einstein-Kondensat ab.
+
+## Bose-Einstein-Kondensation von stark verdünnten atomaren Gasen
+
+Idee: stark verdünnte Gase, in magnetischer Falle isoliert:
+
+- schwache Wechselwirkungen
+- keine Verflüssigung oder Festkörperbildung
+![This diagram depicts a potential energy well showing multiple particles (red circles) with three bonds (triple lines) inside it, likely representing molecules or atoms trapped in a potential well or energy state.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-12_418_846_792_174.jpg)
+aber:
+
+n \lesssim 10^{18} \mathrm{~m}^{-3} \quad \Rightarrow \quad T_{\mathrm{c}} \lesssim 10^{-7} \mathrm{~K}
+
+Temperaturen im nano-Kelvin Bereich erreichbar durch Laserkühl- und Verdampfungskühlmethoden !!
+
+Laserkühlen ("Basics"):
+![This diagram depicts the interaction between a laser and an atom, showing the absorption and emission of photons by the atom with corresponding momentum changes. It also includes an energy level diagram illustrating the atomic excitation energy and the laser photon energy involved in the process.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-13_687_2870_190_105.jpg)
+
+Das Atom absorbiert Photonen aus dem Laserstrahl und emittiert sie dann in eine beliebige Richtung. Aus dem Implusübertrag der Photonen ergibt sich eine mittlere Kraft (Strahlungsdruck) in Richtung des Laserstrahls:
+
+\vec{F}_{\vec{k}_{L}}=\frac{\Delta p}{\Delta t} \approx \hbar \vec{k}_{L} R_{\mathrm{abs}} \stackrel{\text { Absorptionsrate }}{(\vec{v})} \quad R_{\mathrm{abs}} \sim \frac{1}{\left(E_{e g}-\hbar \omega_{L}-\vec{k}_{L} \cdot \vec{v}\right)^{2}+\Gamma^{2} / 4}
+
+Wegen dem Doppler-Effekt ist die Absorptionsrate für $\vec{k}_{L} \cdot \vec{v}<0$ größer als für $\vec{k}_{L} \cdot \vec{v}>0$ :
+
+\Rightarrow \quad \vec{F}_{\mathrm{ges}}=F_{\vec{k}_{L}}+F_{-\vec{k}_{L}} \simeq-\gamma \vec{v}
+
+In einer sogenannten magneto-optischen Falle (MOT) kann ein atomares Gas gefangen und in alle 3 Richtungen gekühlt werden.
+![This diagram depicts a three-dimensional coordinate system with a central point, showing the directions of the x, y, and z axes relative to the point. It is used to illustrate spatial orientation or vector directions in 3D space.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-14_810_942_73_1901.jpg)
+
+Die spontan emittierten Photon erzeugen ungerichtete Kraftstöße, die schlussendlich zu einer endlichen Temperatur in der Gaswolke führen.
+"Doppler-Temperatur": $T_{D} \approx \frac{\hbar \Gamma}{2 k_{B}} \leftarrow \begin{gathered}\text { spontane } \\ \text { Zerfallsrate }\end{gathered}$
+typische Werte: $\quad \Rightarrow \quad T_{D} \sim 100 \mu \mathrm{~K} \gg T_{\mathrm{c}}$
+
+## Verdampfungskühlen:
+
+![This diagram depicts the process of molecular adsorption and temperature-dependent behavior of molecules on a surface, showing (I) molecules at a higher temperature \(T_1\), (II) molecules beginning to desorb or leave the surface, and (III) molecules at a lower temperature \(T_2 < T_1\) with fewer molecules desorbed.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-15_825_2801_174_126.jpg)
+(I) "Heißes" Gas in einer Falle, thermischer Zustand bei Temperatur $\mathrm{T}_{1}$.
+(II) Reduktion der Fallentiefe: ⇒ schnelle Teilchen verlassen die Falle, langsame Teilchen bleiben gefangen ⇒ Gesamtenergie reduziert sich !!
+(III) Relaxation in neues thermisches Gleichgewicht mit $\mathrm{T}_{2}<\mathrm{T}_{1}$.
+
+Ziel/Schwierigkeit: Reduktion der Temperatur schneller als Verlust der Teilchen!
+
+n \lambda_{T}^{3} \sim n T^{-\frac{3}{2}} \rightarrow 1
+
+- Kondensation von Rubidium $85\left(\mathrm{~T}_{\mathrm{c}} \sim 200 \mathrm{nK}\right)$ :
+![This diagram depicts the density distribution of a Bose-Einstein condensate at different temperatures relative to the critical temperature \(T_c\), showing the transition from a thermal cloud ("thermische Wolke") above \(T_c\) to the ground state ("Grundzustand") condensate below \(T_c\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-16_915_1926_793_215.jpg)
+
+Erste Erzeugung eines Bose-Einstein Kondensats in 1995 durch Eric Cornell und Carl Wiemann (Boulder, Colorado) und Wolfgang Ketterle (MIT).
+![This image depicts a series of resonance spectra measured at different evaporation frequencies (ν_evap) in MHz, showing how the spectral line shape changes with frequency over a spatial scale of 300 µm. It is likely used to analyze frequency-dependent behavior in a physical or chemical system, such as magnetic resonance or atomic vapor spectroscopy.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-16_1258_602_523_2211.jpg)
+
+M. H. Anderson, J. R. Ensher, M. R. Matthews, C. E. Wieman and E. A. Cornell, Science 269, 198 (1995).
+
+## Bose-Einstein-Kondensat: "makroskopische Materiewelle"
+
+![This diagram depicts a quantum tunneling scenario, showing a wavefunction (in red) partially penetrating and passing through a potential energy barrier (in blue) that it classically should not overcome.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-17_424_693_274_243.jpg)
+
+|\Psi\rangle=\left|\psi_{0}\right\rangle^{\otimes N}
+
+![This diagram depicts the wavefunction of a particle in a double-well potential, showing the quantum tunneling effect where the particle's probability distribution (red curve) extends across both wells separated by a potential barrier (blue curve).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-17_429_936_274_1690.jpg)
+
+|\Psi\rangle \sim\left(\left|\psi_{L}\right\rangle+\left|\psi_{R}\right\rangle\right)^{\otimes N}
+
+⇒ Materiewelleninterferenz, "Atomlaser", ...
+![This diagram depicts a quantum optics experiment setup showing the interaction between photons (red beams) and quantum emitters or atoms (red spheres) near a photonic crystal or waveguide structure (yellow). It illustrates the coupling of light to quantum systems and the resulting spatial light intensity distribution (blue and red pattern) on a detector or substrate.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-17_688_910_1315_142.jpg)
+![This image depicts a series of 3D plots showing the evolution of a wave function or probability density distribution, likely representing quantum interference or diffraction patterns over time or different conditions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/360c9b27-7239-49bb-b5c3-1790ec3c8f12/95d38105-dabe-4631-a371-24ef87ae58b0-17_873_1036_1278_1706.jpg)
+z.B: Gruppe Schmiedmayer, Atominstitut, TU-Wien
+

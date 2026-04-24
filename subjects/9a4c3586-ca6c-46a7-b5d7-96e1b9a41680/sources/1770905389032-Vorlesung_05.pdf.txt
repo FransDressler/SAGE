@@ -1,0 +1,96 @@
+- Schottley - Defelete als Paure von benstellen in loven knistallen
+
+⇒ Ladumpsuentialitat!
+
+$$
+\begin{aligned}
+& \left.N_{L}^{+}=N_{L}^{-}=N e^{\left(\frac{S_{L}^{+}+S_{L}^{-}}{2} K_{B}\right.}\right) e^{-\left(\frac{E_{L}^{+}+E_{L}^{-}}{2\left(U_{B} T\right)}\right)} \\
+& =N e^{\left(\frac{S_{p}}{2 \mu_{a}}\right)} e^{-\left(\frac{E_{p}}{2 \mu_{a} T}\right)} \text {, } \\
+& \text { unt } S_{p}=\left(S_{L}{ }^{+}+S_{L}{ }^{-}\right) \text {: Entogie dor locempars, } \\
+& E_{p}=\left(E_{L}{ }^{+}+E_{L}{ }^{-}\right) \text {: Bildugs ene jie }-11-\text {. }
+\end{aligned}
+$$
+
+Werden Ficundione nit andera Laduyszale eingebout , unuss die zusätzlich lady duch weitere/wenjus leestcht Kompensient werde.
+
+## - Trakel Defefte:
+
+Kombination ans Zwisclongittratom und Leerstelle. Stöchionetic bleibt unveriandat Wicktij in do Halblaterplysine und. Teckink (7.B. bzy. Ladunjsträgudichte und Rekombinationszentien), Batterien und beim knistall wacksten, und entstehe n.a. durch Bestrahly von Teilchn (Plotone, lonen, Eleletions)
+
+- zwischen jith atoure ("Interstitionalle Atome")
+
+Verzena Gitter $\Rightarrow$ Vostet Enajie
+(je veleius die Atoue desto wahnschailibe)
+Ahulide Rolle wie Freukl-Defelte.
+In Lejiangen wie Stale (Fe witt $C, G, N_{i}, M_{0}, V, G$ ) ist u.a. $C$ als zwischenjituratom eingebant, un die Haite und Testigkeit zu beciuflussen.
+
+- Substitionsstästell :
+
+Substitions störstelle spieler insbesondere in des Helbleitestechnik ane zentiale Rolle:
+$u$-Dotieng: z.B. $P$ in Silizium liefet zus. Eldition
+$p$-Dotieng: 2.B. B - 11 - enzengt "Löch", $d .6$ es fechle im Dmokschintt Elatetiona; "löchs" sind positive Laduysträges.
+⇒ Trausistore, Disde, Solaralle.
+"Anti site" - Defelele in Verbindugshalblaturn (z.B. Gats, husb), a.B. in In Sb kaun In auf Slo-Pläter and anngeledut sito
+
+⇒ Einfluss anf die Ladugsträgerkouzentatio, aber anch Stionfluss, da Widestand sich ändert.
+Wichti z.B. in Laseranwenduga (selteve-Enden-dotiente unistalle $)$, z.B. $\mathrm{Nd}: \mathrm{YAG}$ ( $\mathrm{Y}_{3} \mathrm{Al}_{5} \mathrm{O}_{15}$-Ythimu-Aluminin Ganat ):
+
+## Faibzantien :
+
+trost in Allalihaloguiden beobachtet (Einban von Iehlstell duch Bestrahly wit $x$-nays odo 8 -nays).
+
+Es antslehe unterschiedlich Iehestelle unit untoschiedlicke Absonptions clarakteristive.
+
+Alg: Sambere/Reine Unistalle sind transparat, dench dic Existenz von Defekten in Vocubination nist Laduge (Eldetione) werde die "neale knistalle" forbij. Selv off sind dabei tief ligende EldetrounOrbitale involviest ⇒ Elektomishe Zustände sind gent abgesehinent ⇒ "atomaren" Defekt.
+
+## "Beweguy" von Punktdefele:
+
+$\frac{\text { "Diffusion" von Punktelefelte }}{\text { Leersteller diffension entspricht Diffusion von Atome, }}$ and nicht leerstelle!
+![The image depicts the Arrhenius equation describing the rate (v) of atoms overcoming a thermal energy barrier (activation energy E₀) as a function of temperature (T). It shows the relationship between the reaction rate and activation energy with the formula \( v = v_0 \exp\left(\frac{-E_0}{k_B T}\right) \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a6930a11-93ab-42d2-a38e-b4293f28577e/281ddf19-d096-4844-8dab-6c92019c9754-3_241_1497_602_344.jpg)
+
+Fichseles Geselz:
+Falter (Vubischen Gitts -
+hisistall 1/6) koustante
+![This diagram depicts the spin diffusion equation, showing the relationship between spin current density, diffusion constant, and local spin density in the context of spin transport phenomena. It specifically relates the spin current to the gradient of the local spin density with diffusion parameters.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/a6930a11-93ab-42d2-a38e-b4293f28577e/281ddf19-d096-4844-8dab-6c92019c9754-3_526_921_854_947.jpg)
+
+\begin{aligned}
+& =\alpha \cdot a^{2} \cdot v_{0} e^{-\frac{E_{0}}{k_{B T}}}-D_{0} \cdot e^{-E_{0} / k_{B} T} \\
+& E_{D} \approx E_{L} \approx \Lambda e V \quad t=\text { zit }
+\end{aligned}
+
+Uupfer: $D=10^{-18} \frac{\mathrm{~cm}^{2}}{\mathrm{~s}}$ unit $L=\sqrt{6 \cdot 0 \cdot t^{2}}$ Diffusiouslaye
+
+\Rightarrow L=2 \mathrm{~nm} \text { in } 1 \mathrm{std} \text { bei } 300 \mathrm{~K} .
+
+## - Diffusion von Zwischengitteratome
+
+Wandeny interstitionalles Atome. Wenn einmal enrojt, genanso beweglich wie Punktdefdel-. ⇒ starke T-Abhänjjkę't
+2.B. $N$ in $T_{e}$ bei 1100 K ( $T_{s e c}$ cueda: 1800 K )
+
+\left.\begin{array}{l}
+E_{D}=0.85 \mathrm{eV}, \\
+D_{0}=0,005 \frac{\mathrm{~cm}^{2}}{\mathrm{~s}},
+\end{array}\right\} \begin{aligned}
+& 1 \text { spruy pro } 10^{-9} \mathrm{~s} \text { bei } 1100 \mathrm{k}, \\
+& \text { kamm Rewejey bei RT. }
+
+- Diffusion in lonembuistallen
+tites: Tramsport dinch loner (nicht Elektione)
+Alg:
+$\gamma$
+
+& \text { å: Bewalgeichle't }
+
+Es $\cdot e_{t}$ :
+Einstan - Smoluchouski - Glicky
+
+\mu \cdot k_{B} \cdot T=q \cdot 0
+
+Alkalihalogenide: Leer stellendiffusio-
+Silbrhaloguide: Zwischagittrdiffusion (Uleire ae $E_{D}$ )
+⇒ stank unterschiedlide Diffusions houstante.
+
+\sigma_{\text {elektish }}=\frac{u_{q} \cdot q^{2} \cdot D}{u_{B} T}=\frac{u \cdot q^{2} \cdot D_{0}}{u_{B} T} \cdot e^{\frac{S_{p}}{2 k_{B}} e^{-\frac{E_{p}}{2 k_{B} T}} e^{-\frac{E_{D}}{k_{B} T}},}
+
+nit $u$ : lovempaor-Diale, $S_{p}, E_{p}$ : Entropie und Bindumysereaje pro loner parl und $E_{D}$ : Aktivieryserrogic do lone unit del kiokere Beweg lich
+

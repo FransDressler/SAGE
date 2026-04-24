@@ -1,0 +1,233 @@
+## Vorlesung 11: 13.1.2026
+
+### 2.3 Gammaübergänge
+
+Geht ein Kern von einem angeregten HZstand in einen energetisch niedrigeren über, unter Emiision von Gammastrahlung, dann geschieht das in Form von Multipolstrahlung.
+
+Die quellenfrein Maxwell-Gleichungen haben Lösungen für $B$ und $E$, die Kugelflächenfunktionen entwickelt werden können.
+
+$$
+\begin{array}{ll}
+\left(\Delta+k^{2}\right) B=0 & \left(\Delta+k^{2}\right) E=0 \\
+E=+\frac{i}{k} \nabla \times B & B=-\frac{i}{k} \nabla \times E
+\end{array}
+$$
+
+(Helmholtz-Gleichungen)
+
+\left(k=\frac{\omega}{c}\right)
+
+Lösungen sind gegeben durch
+
+E_{l m}=f_{l}(r) \hat{L} Y_{l m}(\theta, \phi)
+
+mit $f_{l}(r)$ dem Radialfaktor, $\hat{L}=-i r \times \nabla$ dem Drehimpulsoperator und $Y_{l m}(\theta, \phi)$ den Kugelfächenfunktionen, die die Eigenwerte $L^{2} Y_{l m}=l(l+1) \hbar^{2} Y_{l m}, L_{z} Y_{l m}=m \hbar Y_{l m}$ besitzen.
+
+Parität Erinnerung: Verhalten einer Wellenfunktion nach Spiegelung aller Raumkoordinaten $\vec{r} \rightarrow-\vec{r}$.
+
+P \Psi(\vec{r})=\Pi \Psi(\vec{r}) \quad \Pi= \pm 1
+
+Bsp:
+
+\begin{aligned}
+P \vec{E} & =-\vec{E} \\
+P \vec{B} & =+\vec{B} \\
+P \hat{L} & =\hat{L} \\
+P Y_{l m} & =(-1)^{l} Y_{l m} \\
+P E_{l m} & =P\left[f_{l}(r) \hat{L} Y_{l m}\right]=(-1)^{l} E_{l m}
+\end{aligned}
+
+Man nennt eine Parität $\Pi(\mathrm{un})$ gerade, wenn $l(\mathrm{un})$ gerade ist.
+Für magnetische Dipolstrahlung: $\nabla \times E=i \omega B$
+
+B_{l m}=f_{l}(r) \hat{L} Y_{l m}
+
+Hier ist das magnetische Feld das "führende Strahlungsfeld"
+
+P B=B \Rightarrow P\left(B_{l m}\right)=(-1)^{l+1} B_{l m}
+
+\begin{array}{ll}
+E_{l} \text { Strahlung } & \Pi_{1} \stackrel{!}{=}(-1)^{l} \Pi_{2} \\
+M_{l} \text { Strahlung } & \Pi_{1} \stackrel{!}{=}(-1)^{l+1} \Pi_{2} \\
+& \Pi_{2}=\Pi_{\gamma} \cdot \Pi_{1}
+\end{array}
+
+$\Pi_{1,2}$ Paritäten der beteiligten Kernzustände
+Gesamtdrehimpuls eines Zustandes mit Drehimpuls $L$ und Spin $S$ (bei Nukleon $=\frac{1}{2}$ ):
+
+J=L+S
+
+Jeder Kernzustand wird klassifiziert: $J^{\Pi}$
+Bei Übergang $\overrightarrow{J_{1}}$ zu $\overrightarrow{J_{2}}$
+
+\begin{gathered}
+\vec{J}_{1}-\vec{J}_{2}=\vec{J}_{\gamma} \\
+\left|J_{1}-J_{2}\right| \leq l \leq J_{1}+J_{2}
+\end{gathered}
+
+$l$ ist die Ordnung der $e / m$ Multipolstrahlung
+z.B.: $2^{+} \rightarrow 0^{+} \Rightarrow 2 \leq l \leq 2 \Rightarrow l=2, \Pi_{\gamma}=1$
+$E 2$ ist erlaubt, $M 2$ nicht erlaubt wegen der Parität
+![This diagram is an energy level diagram for a nuclear transition, showing an electric quadrupole (E2) gamma decay from a 2+ excited state to a 0+ ground state.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-2_168_387_285_1265.jpg)
+
+\begin{gathered}
+|3-1| \leq l \leq 3+1 \\
+2 \leq l \leq 4, l=2,3,4 \\
+l=2 \Rightarrow M 2, l=3 \Rightarrow E 3, l=4 \Rightarrow M 4
+\end{gathered}
+
+![This diagram depicts an energy level transition in an atom or ion, showing an electron moving from a higher energy state labeled "3-" to a lower energy state labeled "1+."](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-2_161_359_532_1119.jpg)
+![This diagram depicts the energy level structure and neutron emission processes in a nucleus, showing discrete nuclear states, a continuum region, and associated neutron emission cross sections, including the giant dipole resonance (Riesenresonanz) for the reaction \( A_ZX(\gamma,n)A_{Z}^{-1}X \).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-2_922_789_744_662.jpg)
+
+## 2.4 Übergangsraten
+
+\lambda(E l)=\frac{8 \pi(l+1)}{l[(2 l+1)!!]^{2}} \frac{e^{2}}{4 \pi \epsilon_{0} \hbar c}\left(\frac{E_{\gamma} R_{n}}{\hbar c}\right)^{2 l+1}\left(\frac{3}{l+3}\right)^{2} \frac{c}{R_{N}} \\
+\tau=\frac{1}{\lambda}
+
+(Weißkopf Näherung)
+$\lambda$ wird größer…
+
+- je kleiner $l^{1}$
+- je größer Energie Phasenraum Zustandsdichte $\sim E_{\gamma}^{2}$
+- je elektronischer $\lambda(M l) \approx \lambda(E l+1)$
+
+Für E: Ladungen, für B: Ströme → relativistische Unterdrückung
+
+[^0]![This is a nuclear decay scheme showing the beta-minus decay of Krypton-85 (Kr-85) with its spin-parity, half-life, and energy state.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-3_204_684_233_205.jpg)
+![This diagram is a nuclear energy level scheme for the isotope Rubidium-85 (Rb-85), showing gamma emission probabilities, energy levels, spin and parity states, and transition details between excited states and the stable ground state.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-3_1353_1390_429_502.jpg)
+
+### 2.5 Geometrische Struktur der Kerne
+
+- Wie groß sind Kerne?
+- Welche geometrische Gestalt haben Kerne?
+
+Wie? Durch Streuung! mit $p, \alpha$ alle Rutherford?
+Problem: Projektile sind selbst ausgedehnt → Kernkräfte wirken zwischen den Teilchen
+Lösung: $e^{-}$-Kern Streuung
+Warum: $e^{-}$punktförmige Teilchen, nur $e / m \mathrm{WW}$, die wohlbekannt ist mit Kopplung $\alpha=\frac{1}{137}$
+
+### 2.5.1 Kinematik der $e^{-}$Kern Streuung
+
+![This diagram depicts the scattering of an electron (e⁻) by a nucleus (kern), showing the initial and final energies and momenta of the electron and nucleus, as well as the scattering angle θ between the initial and final electron directions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-4_428_1059_299_520.jpg)
+
+Rechnung mit Vierervektor:
+
+\begin{array}{r}
+p=\left(p_{0}, p_{1}, p_{2}, p_{3}\right)=\left(\frac{E}{c}, \vec{p}\right) \\
+a \cdot b=a_{0} b_{0}-\vec{a} \cdot \vec{b} \\
+p^{2}=\frac{E^{2}}{c^{2}}-\vec{p}^{2} \\
+E^{2}-\vec{p}^{2} c^{2}=m^{2} c^{4}
+
+(Definition Vierervektor)
+(Energie-Impuls Beziehung)
+Hier ist $m$ die invariante Masse.
+
+Der Ansatz $p+P=p^{\prime}+P^{\prime}$ liefert
+$E^{\prime}=\frac{E}{1+\frac{E}{M c^{2}}(1-\cos \theta)}$
+Rückstoßenergie des Kerns: $E_{p}^{\prime}=E-E^{\prime}, E_{p}=0$
+![This diagram depicts the ratio of scattered energy to initial energy (E'/E) as a function of scattering angle (θ) for particles with energies of 0.5 GeV and 10 GeV interacting with targets of atomic mass A=1 and A=50. It shows how the energy loss varies with angle and target mass in particle scattering events.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-4_764_898_1233_973.jpg)
+
+→ Je höher die Elektronenenergie im Vergleich zur Ruhemasse des Kerns ist, desto mehr Energie wird auf den Kern übertragen.
+
+→ Desto höher ist auch die Winkelabhängigkeit.
+
+### 2.5.2 Rutherford Wirkungsquerschnitt
+
+Elektronen streut (relativistisch) an Kern mit Ladung mit Ladung $Z \cdot$
+Annahmen
+
+- Kein Spin
+- Atomkern schwer $\left(M c^{2}\right)$ und $E<M c^{2}$, damit $E_{p} \approx 0 \Rightarrow|\vec{p}|=\left|\overrightarrow{p^{\prime}}\right|$
+- Keine räumliche ausdehnung der Ladung $Z \cdot e$
+dann gilt:
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }}=\frac{\left(z Z e^{2}\right)^{2}}{\left(4 \pi \epsilon_{0}\right)^{2}\left(4 E_{\mathrm{kin}}\right)^{2} \sin ^{4}\left(\frac{\theta}{2}\right)}
+
+Herleitung: z.B. aus Fermis goldener Regel mit ebenen Wellen, Impulsübertrag $\vec{q}$
+
+\begin{aligned}
+\frac{d \sigma}{d \Omega} & \left.\sim\left|\left\langle\Psi_{f}\right| \mathcal{H}\right| \Psi_{i}\right\rangle\left.\right|^{2} \\
+\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }} & =\frac{4 Z^{2} \alpha^{2}(\hbar c)^{2} E^{\prime 2}}{|\overrightarrow{q c}|^{4}} \sim \frac{1}{|q|^{4}}
+\end{aligned}
+
+![This diagram depicts the vector decomposition of a momentum vector \(\vec{p}\) into components \(\vec{p}'\) and \(\vec{q}\), showing the angle \(\theta_{12}\) between \(\vec{p}\) and \(\vec{p}'\). It is used in physics to analyze momentum vectors and their relative orientations.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-5_309_1002_598_543.jpg)
+
+|q|=2|\vec{p}| \sin \left(\frac{\theta}{2}\right)
+
+### 2.6 Feynman Diagramme (Feldtheoretische Betrachtung)
+
+![This diagram is a Feynman diagram depicting a particle interaction where a proton and an antiproton annihilate, producing a virtual photon (γ*), which then decays into a Z boson and an electron-positron pair.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-5_451_1079_1151_495.jpg)
+de Broglie Wellenlänge des ausgetauschten Photons
+
+\lambda=\frac{\hbar}{|\vec{q}|}=\frac{\hbar}{|\vec{p}| \cdot 2 \sin \left(\frac{\theta}{2}\right)}
+
+Falls $\lambda$ wesentlich größer als der Kernradius ist, werden Strukturen nicht aufgelöst (Rutherford).
+
+### 2.7 Mott Wirkungsquerschnitt
+
+Hierbei wird der Spin der Elektronen berücksichtigt
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\text {Mott }}=\left(\frac{d \sigma}{d \Omega}\right)_{\text {Rutherford }}\left(1-\beta^{2} \sin ^{2}\left(\frac{\theta}{2}\right)\right) \quad \beta=\frac{v}{c}
+
+Also: bei $\beta \rightarrow 1$ ist die Rückwärtsstreuung stark unterdrückt.
+Warum: $\beta \rightarrow 1$, Spin in Bewegungsrichtung ist Erhaltungsgröße $h=\frac{\vec{s} \cdot \vec{p}}{|\vec{s}||\vec{p}|}$ (Helizität) ist erhalten.
+![This diagram depicts the precession of a spin vector \(\vec{S}\) around a magnetic field direction \(\vec{z}\), showing the components of the spin and momentum vectors \(\vec{p}\) and \(\vec{p}'\) during the precession motion.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-5_349_490_2039_1304.jpg)
+
+Der Spinumkehr ist nötig, um die Helizität zu erhalten. Bei Spin $s=0$ Target ist das nicht möglich, was bedeutet, dass $180^{\circ}$ Streuung im Grenzfall $\beta \rightarrow 1$ nicht möglich ist. (möglich, falls Target Spin hat)
+
+In Realität: bei großen $|\vec{q}|$ sind Wirkungsquerschnitte systematisch kleiner!
+Warum? Weil bei größeren $|\vec{q}|$ wird $\lambda$ kleiner und die Auflösung nimmt zu. Das Elektron sieht nicht mehr die gesamte Ladung, sondern nur noch einen Teil davon.
+
+Mathematisch (Herleitung direkt aus Fermi's Goldener Regel, mit endlicher Ladungsverteilung)
+
+\left(\frac{d \sigma}{d \Omega}\right)_{\exp }=\left(\frac{d \sigma}{d \Omega}\right)_{\mathrm{Mott}} \cdot\left|F^{2}\left(\vec{q}^{2}\right)\right|^{2}
+
+![This diagram depicts a three-spectrometer setup at the MAMI (Mainz Microtron) facility, showing the arrangement of spectrometers A, B, and C along with associated components such as detector systems, dipoles, and beamline elements for particle or nuclear physics experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-6_610_789_233_1087.jpg)
+
+Der Formfaktor $F$ lässt sich durch Fourier-Transformation der Ladungsverteilung im Ortsraum $f(\vec{x})$ bestimmen
+
+F\left(\vec{q}^{2}\right)=\int e^{i \vec{q} \cdot \vec{x} / \hbar} f(\vec{x}) d^{3} x
+
+In Kugelsymmetrischer Näherung erhält man
+
+& F\left(q^{2}\right)=4 \pi \int f(r) \frac{\sin (|q| r / \hbar)}{|q| r / \hbar} r^{2} d r \\
+& \quad \Rightarrow f(r)=\int F\left(\vec{q}^{2}\right) e^{-i \vec{q} \cdot \vec{x} / \hbar} d^{3} q
+
+Elektron-Streuung an ${ }^{12} \mathrm{C}$
+![This diagram is a differential cross-section plot for a scattering experiment at an energy of 420 MeV, showing the angular distribution of scattered particles as a function of the scattering angle θ. It compares experimental data points with theoretical model predictions indicated by solid and dashed lines.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-6_766_579_1544_203.jpg)
+
+| $\rho(\mathrm{r})$ | $\left\|F\left(\boldsymbol{q}^{2}\right)\right\|$ | Beispiel |
+| :--- | :--- | :--- |
+| punktförmig | konstant | Elektron |
+| exponentiell | Dipol | Proton |
+| gaußförmig | gaußförmig | ${ }^{6} \mathrm{Li}$ |
+| homogene Kugel | oszillierend | - |
+| Kugel mit diffusem Rand | oszillierend | ${ }^{40} \mathrm{Ca}$ |
+|  | ![The image depicts a coordinate system with the variable "r" on the horizontal axis and the variable "|q|" on the horizontal axis, likely representing a relationship or function involving these two variables.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/72705e12-cd6d-43e3-8246-1d2a4bba3304/1599e861-19f9-4f4f-8943-8babc2470795-6_34_342_2127_1273.jpg) |  |
+
+
+| Ladungsverteilung $f(r)$ |  | Formfaktor $F\left(\boldsymbol{q}^{2}\right)$ |  |
+| :--- | :--- | :--- | :--- |
+| Punkt exponentiell | $\delta(r) / 4 \pi$ | 1 $\left(1+\boldsymbol{q}^{2} / a^{2} \hbar^{2}\right)^{-2}$ | konstant <br> Dipol |
+|  | ( $a^{3} / 8 \pi$ ) $\cdot \exp (-a r)$ |  |  |
+| Gauß | $\left(a^{2} / 2 \pi\right)^{3 / 2} \cdot \exp \left(-a^{2} r^{2} / 2\right)$ | $\exp \left(-q^{2} / 2 a^{2} \hbar^{2}\right)$ | Gauß |
+| homogene Kugel |  | $\begin{gathered} 3 \alpha^{-3}(\sin \alpha-\alpha \cos \alpha) \\ \text { mit } \alpha=\|\boldsymbol{q}\| R / \hbar \end{gathered}$ | oszillierend |
+
+Bei homogener Kugel mit Radius $R$ ergibt sich ein Minimum in $F\left(\vec{q}^{2}\right)$ bei $|q| \approx 4,5 \frac{\hbar}{R}$.
+Bei $E=420 \mathrm{MeV}$ und $51^{\circ}$ ergibt sich $|q|=360 \mathrm{MeV} / \mathrm{c}$
+
+R \approx 4.5 \frac{\hbar}{q} \approx 4.5 \cdot \frac{197}{360} \mathrm{fm} \approx 2.5 \mathrm{fm}
+
+Daraus folgt der Radius von Kernen, unter der Annahme von homogen geladenen Kugeln
+
+R \approx 1.21 \cdot A^{1 / 3} \mathrm{fm}
+
+und eine Nukleonendichte in Kernen
+
+\rho_{N} \approx 0.17 \text { Nukleonen } / \mathrm{fm}^{3}
+
+(Auch möglich ist inelastische Streuung: Größere Energieüberträge durch Anregung von Kernen.)
+
+
+[^0]:    ${ }^{1}$ Größenskalen: $R \sim 5 \mathrm{fm}, \lambda_{\gamma}=2 \frac{\pi}{k} \sim 100-1000 \mathrm{fm} . l$ beschreibt wie fein die Winkelstruktur des Feldes ist. Bei großen $l$ wechselt das Feld oft Polarität und im kleinen Volumen (=Kern) mittlen sich die Beiträge weg, das Matrixelement wird daher klein.
+

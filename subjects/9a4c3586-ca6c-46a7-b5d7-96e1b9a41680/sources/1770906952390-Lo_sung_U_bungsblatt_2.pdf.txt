@@ -1,0 +1,79 @@
+## Übung zur Vorlesung <br> Physik der kondensierten Materie 1
+
+WiSe 2025/2026
+Technische Universität München
+Blatt 2
+Lehrstuhl für Nanotechnologie und -materialien
+
+### 2.1 Kristallographische Richtungen in 3D
+
+Kubische Gitter
+(a) Zeichnen Sie die folgenden Gitterrichtungen: [100], [110], [112], [1̄̄0].
+![This diagram depicts crystallographic directions in a cubic crystal system, showing specific crystallographic direction vectors labeled as [100], [110], [1-10], and [112].](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-1_362_369_1145_880.jpg)
+(b) Bestimmen Sie die Richtungsindizes der angegebenen kristallographischen Richtungen.
+![This diagram depicts a crystallographic cube with an arrow indicating the [111] crystallographic direction, commonly used in materials science and solid-state physics to specify orientation within a cubic crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-1_397_347_1763_485.jpg)
+![This diagram depicts a crystallographic direction in a cubic crystal system, specifically the direction labeled as [-10-1]. It shows the vector orientation within the unit cell corresponding to these Miller indices.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-1_396_345_1766_878.jpg)
+![This diagram depicts a crystallographic direction in a cubic crystal lattice, specifically the [2-1-2] direction vector within the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-1_414_345_1748_1282.jpg)
+(c) Bestimmen Sie die Miller-Indizes der gezeichneten Ebenen.
+![This diagram depicts a crystallographic plane within a cubic crystal lattice, specifically the (110) plane. It shows the orientation and position of this plane relative to the unit cell edges.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-2_356_319_442_487.jpg)
+![This diagram depicts the (111) crystallographic plane within a cubic crystal lattice, showing the orientation and position of the plane relative to the cube's edges.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-2_346_317_449_889.jpg)
+![This diagram depicts a three-dimensional representation of a plane within a cube, specifically showing the (102) crystallographic plane in a cubic lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-2_349_317_449_1306.jpg)
+(d) Eine Familie von Ebenen umfasst alle Ebenen, die aufgrund der Symmetrie des Kristallsystems äquivalent sind, d.h. dieselbe Verteilung von Gitterpunkten enthalten. Die Notation $\{h k l\}$ wird für die Familie der Ebenen verwendet, die zur Ebene (hkl) äquivalent sind. In einem kubischen System sind zum Beispiel die Ebenen ( $0 \overline{1} 0$ ) und ( 100 ) äquivalent und gehören zur Familie $\{100\}$. Finden Sie zwei Ebenen, die zur gleichen Familie gehören wie die erste aus dem vorigen Teil.
+$\{110\}$ enthält jede Ebene, die zwei gegenüberliegende Kanten enthält. z.B.(110), (101),(011), (ㄷ110), (ㅎs01)…
+
+## Hexagonale Gitter
+
+(a) Zeichnen Sie die Ebenen, die den Miller-Indizes (10ī1) und ( $\overline{1} 2 \overline{1} 0$ ) entsprechen.
+
+![This diagram depicts a truncated cuboctahedron, a type of Archimedean solid, showing its geometric structure with vertices, edges, and faces. It illustrates the shape formed by truncating the vertices of a cuboctahedron.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-2_415_344_1549_683.jpg)
+(10-11)
+
+![This diagram depicts a three-dimensional projection of a four-dimensional hypercube (tesseract) with one of its cubic cells highlighted. It shows the structure and connectivity of the tesseract's cells in four-dimensional space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-2_413_345_1553_1095.jpg)
+(-12-10)
+
+(b) Identifizieren Sie die Miller-Indizes der gezeichneten Ebenen.
+![This diagram depicts a crystal lattice plane in a hexagonal crystal system, specifically the (01-10) crystallographic plane. It shows the orientation and position of this plane within the hexagonal unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-3_418_319_337_491.jpg)
+![This diagram depicts a crystallographic form known as the (11-22) Miller index plane within a hexagonal crystal system. It shows the orientation and position of this specific crystallographic plane relative to the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-3_409_313_343_906.jpg)
+![This diagram depicts a polyhedral representation of the (2-1-11) plane in a cubic crystal lattice, showing the orientation and intersection of this specific crystallographic plane within the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-3_416_310_339_1319.jpg)
+
+### 2.2 Graphen
+
+Graphen ist ein zweidimensionales Material, das für seine außergewöhnliche Festigkeit und Leitfähigkeit bekannt ist. Diese Eigenschaften machen es vielversprechend für Anwendungen in der Elektronik, in Sensoren und in der Energiespeicherung. Es is zusammengesetzt aus Einzelschichten von Kohlenstoffatomen, angeordnet in einem sogenanntes Honeycomb-Gitter.
+(a) Finden Sie die Einheitszelle, die Gittervektoren $\mathbf{a}_{1}$ und $\mathbf{a}_{2}$ und drücken Sie die Atombasis mit diesen aus.
+![This diagram depicts the lattice structure of graphene, showing the arrangement of carbon atoms in a hexagonal pattern with two distinct sublattices labeled A and B, and the lattice vectors \(a_1\) and \(a_2\) defining the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-3_617_663_1332_745.jpg)
+
+Atombasis: C in $\mathrm{A}(0,0)$ und $\mathrm{B}(2 / 3,2 / 3)$
+(b) Welche Symmetrien finden wir in diesem Material?
+
+D6h - senkrechte Achse zur Ebene mit 6-facher dihedraler Symmetrie: zyklische Rotationen und Spiegelungen entlang der Linien, die von jedem Scheitelpunkt
+zur Mitte der gegenüberliegenden Seite verlaufen. Spiegelsymmetrie in der Atomebene.
+![This diagram depicts the symmetry operations of a hexagon, specifically illustrating a reflection symmetry about a vertical axis and a rotation symmetry by 60 degrees. It shows how certain vertices of the hexagon are mapped onto each other under these symmetry transformations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-4_334_235_468_945.jpg)
+$6 / \mathrm{mmm}$ - senkrechte Achse zur Ebene mit 6 -facher Rotation, einer senkrechten Spiegelebene und zwei vertikalen Spiegelebene, die sich in der Achse schneiden.
+![This diagram depicts the vector addition and geometric relationships of vectors in a hexagonal lattice or crystal structure, showing how vectors connect points in the lattice and their resultant directions. It is specifically illustrating vector translations and symmetry operations within the hexagonal arrangement.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-4_278_313_1018_906.jpg)
+(c) Welche Symmetrien würden wir in einem Material mit derselben Gitterstruktur, aber mit zwei verschiedenen Atomarten, finden?
+
+Die Symmetrie D6h reduziert sich zu D3h.
+
+### 2.3 Perowskite
+
+Perowskite sind Materialien mit der Formel $\mathrm{ABX}_{3}$. Sie gehören zu den häufigsten Struktur-Familien und können eine Vielzahl von Phänomenen aufweisen, wie z. B. Supraleitung oder Ferroelektrizität. Einige hybride organisch-anorganische Perowskite werden für die Herstellung hocheffizienter Solarzellen verwendet.
+(a) $\mathrm{SrTiO}_{3}$ ist ein Oxid mit einer kubischen Perowskit-Struktur, wie in der Abbildung gezeigt. Das Ti befindet sich im Zentrum. Identifizieren Sie, welche Atome den beiden anderen Elementen entsprechen.
+
+In der Einheitszelle finden wir acht Achtel des blauen Atoms, ein Ti-Atom und sechs Hälfte des weißen Atoms. Das bedeutet, dass das blaue Atom Sr und das weiße Atom O ist.
+(b) Welches Bravais-Gitter entspricht diesem Material? Finden Sie die primitiven Gittervektoren und Basisvektoren.
+![This diagram depicts the crystal structure of strontium titanate (SrTiO3), showing the positions of Sr, Ti, and O atoms within the unit cell and the lattice vectors a1, a2, and a3. It specifies the fractional coordinates of each atom type in the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-5_435_723_698_700.jpg)
+
+Simple cubic.
+(c) Welche Symmetriepunkte enthält es? Welche Symmetrien würden auftreten, wenn das Gitter entlang der $y$-Achse gedehnt würde?
+$\mathrm{O}_{h}$ : Drei vierzählige Drehachsen durch die Mittelpunkte der Flächen und Vier dreizählige Drehachsen durch gegenüberliegende Ecken. Horizontale Spiegelebene.
+![This diagram depicts the symmetry operations of a crystal lattice, showing rotational symmetries of 120° repeated 4 times and 90° repeated 3 times, along with a reflection plane labeled "h."](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-5_511_495_1546_816.jpg)
+
+Für das deformierte $\mathrm{SrTiO}_{3}$ finden wir die dreizähligen Rotationsachsen nicht mehr. Zwei der vierzähligen Rotationsachsen reduzieren sich zu zweizähligen Rotationsachsen. Die nächsten relevanten Achsen sind zwei
+zweizählige Rotationsachsen, die durch gegenüberliegende längere Kanten verlaufen. Die horizontale Spiegelebene bleibt jedoch erhalten. Dies entspricht der D4h-Symmetrie.
+![This diagram depicts the symmetry operations of a rectangular prism, showing the rotational axes and the corresponding angles of rotation (90° and 180°) around those axes. It illustrates the rotational symmetry elements present in the prism's geometry.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-6_486_725_522_700.jpg)
+(d) Stellen Sie die Verteilung der Atome in den Ebenen mit den Miller-Indizes (100) und (110) dar, fur das nicht deformierte $\mathrm{SrTiO}_{3}$.
+(e) Für die zweidimensionalen Gitter, die in diesen Ebenen vorzufinden sind, finden Sie die primitiven Gittervektoren und geben Sie die Basisvektoren als Linearkombination dieser primitiven Vektoren an.
+
+![This image depicts the atomic lattice structures of SrO (strontium oxide) and SrTiO3 (strontium titanate) in the (100) crystallographic plane, showing the positions of Sr, Ti, and O atoms along with their lattice vectors and corresponding lattice constants.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/456f4735-0658-4530-8f1b-ee711c6925cc/a8d78fc4-0562-407b-b1bc-b95d40f26c45-7_1509_1088_483_517.jpg)
+(110)
+

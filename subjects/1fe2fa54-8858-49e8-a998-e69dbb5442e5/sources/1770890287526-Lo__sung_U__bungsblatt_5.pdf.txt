@@ -1,0 +1,397 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+L¨osungsskizze zu
+Blatt 5
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Sebastian Loy
+Dieses Dokument stellt eine L¨osungsskizze dar, mit keinerlei Garantie auf
+Vollst¨andigkeit und/oder Korrektheit.
+5.1 Reziprokes Gitter in zwei Dimensionen: die
+Brillouin-Zone
+Wir betrachten ein 2D Gitter mit den primitiven Gittervektoren
+a1 =
+1
+0
+
+, a2 =
+1/3
+2/3
+
+.
+(a) Berechnen Sie die primitiven Gittervektoren im reziproken Raum.
+(min.) 2 L¨osungswege:
+(i) Anhand der allgemeinen Definition ai · bj = 2πδij mit δij dem Kronecker-
+Delta
+Durch Einsetzen ergibt sich ein Gleichungssystem mit vier Gleichungen
+und den vier unbekannten Elementen von b1 und b2 b1,x, b1,y, b2,x und
+b2,y:
+a1 · b1 = 1 · b1,x = 2π
+a1 · b2 = b2,x = 0
+a2 · b1 = 1
+3b1,x + 2
+3b1,y = 0 → 2
+3b1,y = −1
+3 · 2π
+a2 · b2 = 1
+3b2,x + 2
+3b2,y = 2π → 2
+3b2,y = 2π
+
+Die rechte Seite neben den Pfeilen in der dritten und vierten Zeile erh¨alt
+man durch einsetzen der ersten beiden Zeilen. Damit hat man dann alle
+vier Elemente der reziproken Gittervektoren.
+(ii) Analog zum 3D Fall, indem man als dritten Vektor einen Einheitsvektor
+ˆez nimmt, der senkrecht auf a1 und a2 steht:
+Zu Beginn berechnen wir das Volumen, der so aufgespannten 3D Zelle:
+V3D = a1 · (a2 × ˆez) = 2
+3 (1)
+b1 = 2π
+V3D
+a2 × ˆez = 3π
+
+
+1/3
+2/3
+0
+
+ ×
+
+
+1
+
+
+b2 = 2π
+V3D
+ˆez × a1 = 3π
+1
+ ×
+
+F¨ur die beiden reziproken Gittervektoren nimmt man jeweils nur die ersten
+beiden Eintr¨age der Vektoren.
+In beiden F¨allen erh¨alt man
+b1 =
+ 2π
+−π
+, b2 =
+ 0
+3π
+.
+(b) Zeichnen Sie das reale und das reziproke Gitter und konstruieren Sie
+die Wigner-Seitz-Zelle und die 1. Brillouin-Zone.
+Die 1. Brillouin-Zone entspricht der Wigner-Seitz Zelle im reziproken Raum.
+Beide werden konstruiert, indem man ausgehend von einem Gitterpunkt die
+Verbindungslinien zu allen n¨achsten Nachbarn zeichnet und darauf die Mit-
+telsenkrechten konstruiert:
+
+(0, 0)
+(1/3, 2/3)
+(1, 0)
+Abbildung 2: Reales Gitter (rote Punkte) mit Wigner-Seitz-Zelle
+(eingeschlossene Fl¨ache der blauen Mittelsenkrechten).
+(0, 3π)
+(0, 0)
+(2π, −π)
+Abbildung 3: Reziprokes Gitter (rote Punkte) mit 1. Brillouin-Zone
+(eingeschlossene Fl¨ache der blauen Mittelsenkrechten).
+
+(c) Zeichnen Sie (ausgehend von einem Punkt (00)) die folgenden Punkte
+im reziproken Gitter: (10), (01) und (¯12
+3 ).
+siehe Abbildung 4.
+Abbildung 4: Darstellung der Ebenen (links, Teilaufgabe (d)) im realen Gitter und
+der Punkte (rechts, Teilaufgabe (c)) im reziproken Gitter.
+(d) Zeichnen Sie die zugeh¨origen Ebenen in das reale Gitter ein und
+beschreiben Sie kurz den Zusammenhang zwischen diesen Ebenen
+und den Punkten im reziproken Gitter.
+Die Koordinaten geben im reziproken Gitter einfach Punkte an. Im realen
+Gitter geben sie Ebenen an, die man als Ebene Wellen auffassen kann, deren
+Wellenvektor durch den Punkt im reziproken Gitter gegeben ist. Die Wellen-
+vektoren, die im reziproken Raum direkt einem Gitterpunkt beschreiben, entsprechen
+ebenen Wellen, die im realen Raum an allen Atomen die gleiche Phase zeigen.
+
+Der letzte Punkt (¯12
+3 ) zeigt, dass alle Punkte im reziproken Raum, auch zwis-
+chen reziproken Gitterpunkten, als ebene Wellen im realen Raum betrachtet
+werden k¨onnen. Ihre Phase ist jedoch nicht an allen realen Gitterpunkten
+gleich. Man hat bei dieser Ebenenschar allerdings das Problem, dass es sich
+bei dem Punkt streng genommen nicht um Miller Indizes handeln kann. Wir
+k¨onnen die in Abbildung 4 gezeigten Ebenen entweder ¨uber die ”¨aquivalenten”
+Miller Indizes (¯32) erhalten oder indem man (¯12
+3 ) ausgehend von jedem Punkt
+im realen Gitter einzeichnet. Im allgemeinen erkennt man hier allerdings, dass
+Positionen zwischen den reziproken Gitterpunkten nicht sinnvoll als Ebenen im
+realen Raum dargestellt werden k¨onnen.
+Bei Streuexperimenten zur Bestimmung der Struktur eines Kristalls messen wir
+keine Intensit¨at zwischen reziproken Gitterpunkten, weil die von den Atomen
+gestreuten Wellen in diesem Fall keine konstruktive Interferenz zeigen. (Bei
+der Betrachtung von Gitterschwingungen, bei denen Atome unterschiedliche
+Phasen haben, sind diese Punkte im reziproken Raum jedoch wieder von In-
+teresse.)
+5.2 Strukturfaktor von Diamant
+Die konventionelle Zelle der Diamantstruktur wird ¨ublicherweise als W¨urfel
+dargestellt. Die Kristallstruktur ist ein dann ein fcc-Gitter mit einer
+zweiatomigen Basis, bestehend aus zwei Kohlenstoffatomen. (Eine sch¨one
+graphische Darstellung findet man z.B. unter de.wikipedia.org/wiki/Diamant.)
+Diese so definierte konventionelle Zelle enth¨alt insgesamt acht Kohlen-
+stoffatome.
+(a) Bestimmen Sie den Strukturfaktor Shkl der zweiatomigen Basis.
+Zuerst schreiben wir die Positionen der Atome in der konventionellen Zelle als
+r(uμ, νμ, wμ, xj , yj , zj
+ = auμˆe1 + νμˆe2 + wμˆe3 + xj ˆe1 + yj ˆe2 + zj ˆe3
+= pμ + qj
+mit pμ = a(uμˆe1 + νμˆe2 + wμˆe3) den Koordinaten der vier Basiseinheiten in
+der konventionellen Zelle mit μ = 1, 2, 3, 4 und qj = a(xj ˆe1 + yj ˆe2 + zj ˆe3) die
+Koordinaten der Atome innerhalb der Basis mit j = 1, 2.
+
+F¨ur das fcc-Gitter gilt:
+p1 = a (0, 0, 0)
+p2 = a
+
+0, 1
+2, 1
+2
+p3 = a
+1
+2, 0, 1
+2
+p4 = a
+2, 1
+2, 0
+Die Koordinaten der beiden Basisatome innerhalb der zweiatomigen Basis
+lauten: q1 = a (0, 0, 0)
+q2 = a
+4, 1
+4, 1
+4
+Der gesamte Strukturfaktor des Diamantgitters l¨asst sich damit (mit Hilfe des
+Faltungssatzes) schreiben als:
+Sges
+G = X
+α
+fα(G)e−2πı(huα+kvα+lwα) nur C-Atome
+= f X
+μ,j
+e−ıG·(pμ+qj ) = X
+μ
+e−ıG·pμ f X
+j
+e−ıG·qj
+= 1 + e−ıπ(k+l) + e−ıπ(h+l) + e−ıπ(h+k) f 1 + e−ı π
+2 (h+k+l)
+= Sfcc
+G · SBasis
+G
+mit dem Atomformfaktor f , der f¨ur alle Basisatome gleich ist, weil wir nur
+Kohlenstoffatome betrachten.
+(b) Geben Sie die Miller’schen Indizes an, bei denen eine Ausl¨oschung
+von Reflexen auftritt.
+Zuerst betrachtet man den Strukturfaktor Sf cc
+hkl des reinen fcc-Gitters (ohne den
+Atomformfaktor f , der erst bei der Basis eingef¨uhrt wird.)
+Sfcc
+G = Sfcc
+hkl = X
+μ
+e−ıG·pμ = 1 + e−ıπ(k+l) + e−ıπ(h+l) + e−ıπ(h+k)
+=
+
+
+
+4 falls alle Indizes h, k, l gerade oder ungerade
+0 falls ein Index gerade (ungerade) und die
+anderen beiden ungerade (gerade)
+Wir sehen also, dass beim fcc-Gitter keine Reflexe auftreten, wenn die Indizes
+teilweise gerade und teilweise ungerade sind (unterer Fall mit Sf cc
+hkl = 0 in
+obenstehender Gleichung).
+
+Als zweites betrachtet man den Strukturfaktor SBasis
+hkl der Basis:
+SBasis
+G = SBasis
+hkl = f X
+j
+e−ıG·qj = f 1 + e−ı π
+2 (h+k+l)
+=
+
+
+
+2f falls h + k + l = 4n mit n ∈ Z
+f (1 − ı) falls h + k + l = 4n + 1 mit n ∈ Z
+0 falls h + k + l = 4n + 2 mit n ∈ Z
+f (1 + ı) falls h + k + l = 4n + 3 mit n ∈ Z
+F¨ur die vorliegende zweiatomige Basis treten also keine Reflexe auf, wenn die
+Bedingung h + k + l = 4n + 2 mit n ∈ Z gilt.
+Insgesamt gilt damit, dass die Reflexe verschwinden, falls genau ein Index
+(un)gerade ist oder falls h + k + l = 4n + 2 mit n ∈ Z.
+(c) Zeigen Sie, dass die erlaubten Reflexionen der Diamantstruktur en-
+tweder die Bedingung (i) h + k + l = 4n mit n ∈ Z erf¨ullen, wenn alle
+Indizes h, k, l gerade sind, oder die Bedingung (ii), dass alle Indizes
+h, k, l ungerade sind.
+Hierf¨ur betrachten wir den gesamten Strukturfaktor Sges
+G = Sges
+hkl aus Teilauf-
+gabe (a). Dieser berechnet sich mit Teilaufgabe (b) zu:
+Sges
+G = Sges
+hkl = Sfcc
+hkl · SBasis
+hkl
+
+
+8f falls h + k + l = 4n mit n ∈ Z und h, k, l gerade
+0 falls h + k + l = 4n + 2 mit n ∈ Z und h, k, l gerade,
+oder wenn gerade und ungerade Indizes auftreten
+4f (1 − ı) falls h + k + l = 4n + 1 mit n ∈ Z und h, k, l ungerade
+4f (1 + ı) falls h + k + l = 4n + 3 mit n ∈ Z und h, k, l ungerade
+Die beiden Bedingungen, f¨ur die der gesamte Strukturfaktor Sges
+hkl̸ = 0, sind also
+gerade die Bedingungen aus der Angabe.
+(d) Was ¨andert sich beim Strukturfaktor, wenn wir von der Diamantstruk-
+tur zu einer
+Zinkblende-Struktur ¨ubergehen?
+Die Basis besteht nicht mehr aus zwei identischen (Kohlenstoff-)Atomen, son-
+dern aus zwei unterschiedlichen Atomen, die dann auch unterschiedliche Atom-
+formfaktoren f1 und f2 besitzen. Der Strukturfaktor der zweiatomigen Basis
+
+ergibt sich dann zu
+SBasis
+G = SBasis
+hkl = X
+fj e−ıG·qj = f1 + f2e−ı π
+2 (h+k+l)
+
+
+f1 + f2 falls h + k + l = 4n mit n ∈ Z
+f1 − ıf2 falls h + k + l = 4n + 1 mit n ∈ Z
+f1 − f2 falls h + k + l = 4n + 2 mit n ∈ Z
+f1 + ıf2 falls h + k + l = 4n + 3 mit n ∈ Z
+Und der gesamte Strukturfaktor dann analog zum Diamantstrukturfall:
+hkl = Sfcc
+hkl · SBasis
+hkl
+
+
+4(f1 + f2) falls h + k + l = 4n mit n ∈ Z und h, k, l gerade
+4(f1 − f2) falls h + k + l = 4n + 2 mit n ∈ Z und h, k, l gerade
+4(f1 − ıf2) falls h + k + l = 4n + 1 mit n ∈ Z und h, k, l ungerade
+4(f1 + ıf2) falls h + k + l = 4n + 3 mit n ∈ Z und h, k, l ungerade
+0 falls genau ein Index (un)gerade
+5.3 Anwendung der Laue Bedingung: Das Debye-Scherrer
+Experiment
+Bei einem Debye-Scherrer Experiment untersucht man Proben, indem
+man sie mit monochromatischer R¨ontgenstrahlung bestrahlt. Auf dem
+Schirm, der kreisf¨ormig um die Probe angeordnet ist, zeigen sich Diffrak-
+tionsringe unter bestimmten Winkeln 2θ. Aus diesen Winkeln kann man
+die Kristallstruktur der untersuchten Probe herleiten.
+Die in unserem Fall im Experiment gemessenen Winkel seien:
+2θ1 = 28,8◦, 2θ2 = 41,0◦, 2θ3 = 50,8◦ und 2θ4 = 59,6◦.
+(a) Leiten Sie die Bragg-Bedingung aus der Laue-Bedingung her.
+Der Konvention von Gross folgend ist der einfallende Vektor k und der gestreute
+Vektor k′.
+∆k = k′ − k = G (Laue − Bedingung)
+(k + G)2 = k′2
+−2k · G |k|=|k′|
+= |G|2 (Elastische Streuung)
+Hier haben wir den Einheitsvektor ˆG = G/|G| verwendet. Wir betrachten nun
+den Winkel φ, der zwischen den Vektoren −G und k liegt, also unten rechts
+
+Abbildung 1: Geometrie eines Debye-Scherrer Experiments (aus Gross, Marx:
+Festk¨orperphysik: Aufgaben und L¨osungen)
+im eingezeichneten Dreieck:
+2 |k| |G| cos φ = |G|2
+F¨ur die Winkel gilt im so aufgespannten Dreieck 180◦ = 90◦ +θ +φ. Zusammen
+mit dem Fakt, dass cos φ = cos(90◦ − θ) = sin θ ergibt sich:
+2 |k| sin θ = |G| = n |Gmin| = n2π
+d
+sin θ n=1
+= |Gmin|
+2 |k| = λ
+2d (Bragg − Bedingung)
+Eine detaillierte Ausf¨uhrung findet man beispielsweise in Kap. 2.2.3 in ”Festk¨orperphysik”
+(2023) von Gross und Marx
+(b) Geben Sie an, ob es sich bei der gemessenen Probe um eine fcc-,
+bcc- oder Diamantstruktur handelt. Nehmen Sie hierf¨ur an, dass es
+sich bei allen gemessenen Reflexen um Beugungsreflexe 1. Ordnung
+handelt.
+Wir berechnen zuerst den sin θ f¨ur alle gemessenen Winkel:
+Index 1 2 3 4
+2θ 28,8◦ 41,0◦ 50,8◦ 59,6◦
+sin θ 0,2487 0,3502 0,4289 0,4970
+Die Verh¨altnisse der sin θ-Werte geben genau die Verh¨altnisse der L¨angen der
+zu den Netzebenenscharen geh¨orenden minimalen reziproken Gittervektoren
+
+an, f¨ur die der Strukturfaktor nicht verschwindet. Im Allgemeinen ist das also
+definiert als: sin θμ
+sin θν
+= Gmin,μ
+Gmin,ν
+= dν
+dμ
+μ, ν = 1, 2, 3, 4
+Durch Einsetzen der Zahlenwerte aus der Tabelle erh¨alt man
+sin θ1 : sin θ2 : sin θ3 : sin θ4 = 0.710 : 1.0 : 1.225 : 1.419 ≃ 1
+√2 : 1 :
+r3
+2 : √2
+f¨ur die Verh¨altnisse aus allen vier Reflexen. Nun m¨ussen wir diese Verh¨altnisse
+noch mit den Verh¨altnissen aus der fcc, bcc und Diamantstruktur vergleichen:
+Einschub: Mit G = hb1 +kb2 +lb3 erh¨alt man f¨ur ein kubisches Kristallsystem
+(zu dem ja alle drei zu betrachtenden Strukturen geh¨oren) mit Gitterkonstante
+a die L¨ange des jeweils k¨urzesten zur Ebene geh¨orenden Gittervektors:
+|Gmin| = Gmin = 2π
+a
+√h2 + k2 + l2, (2)
+wo b1, b1 und b1 die reziproken Gittervektoren sind.
+F¨ur ein bcc Gitter erhalten wir den Strukturfaktor
+Shkl =
+2f falls h + k + l = gerade
+0 falls h + k + l = ungerade
+mit dem Atomformfaktor f , woraus sich die Ebenenscharen mit endlichen
+Strukturfaktoren zu (110), (200), (121), (220) ... ergeben.
+Mit diesen Ebenenscharen kann man dann in Verbindung mit Gleichung 2 das
+L¨angenverh¨altnis f¨ur Gmin bestimmen:
+√2 : 2 : √6 : √8 bzw. 1
+√2 : 1 :
+r3
+2 : √2
+Wir erkennen, dass es sich bei diesen Verh¨altnissen um genau die vorliegenden
+Verh¨altnisse in unserer Probe handelt. Daraus kann man schlussfolgern, dass
+es sich bei der gemessenen Probe um einen bcc Kristall handelt.
+Dies funktioniert f¨ur die fcc-Struktur und die Diamantstruktur analog. F¨ur
+den Strukturfaktor des fcc Gitters und der Diamantstruktur kann man das
+Ergebnis aus Aufgabe 2 verwenden.
+F¨ur fcc erh¨alt man dann:
+√3 : 2 : √8 : √11 : √12 bzw.
+√3
+2 : 1 : √2 :
+√11
+2 : √3
+
+F¨ur die Diamantstruktur erh¨alt man:
+√3 : √8 : √11 : 4 bzw.
+√3
+2 : √2 :
+√11
+2 : 2 (3)
+Beide Verh¨altnisse stimmen nicht mit dem gemessenen Verh¨altnis aus unserer
+Probe ¨uberein.
+(c) Wenn wir die Wellenl¨ange der R¨ontgenstrahlung kennen, k¨onnen
+wir in diesem Experiment auch die Gitterkonstante bestimmen. Die
+vorliegende Messung wurde bei einer Wellenl¨ange von λ = 1,541 ˚A
+aufgenommen. Berechnen Sie die Gitterkonstante a der konven-
+tionellen kubischen Zelle.
+Wenn wir die Relationen |Gmin| = 2π
+a
+√h2 + k2 + l2 und k = 2π/λ mit der
+Wellenl¨ange λ = 1,541 ˚A in die Bragg-Bedingung (s. Teilaufgabe (a)) einset-
+zen und umformen erhalten wir:
+a = λ√h2 + k2 + l2
+2 sin θ = 4,38 ˚A
+f¨ur die Ebene (110) und den Winkel 2θ = 28,8◦. Die Werte f¨ur die anderen
+Ebenen mit ihren zugeh¨origen Streuwinkeln stimmen gut mit diesem Ergebnis
+¨uberein.

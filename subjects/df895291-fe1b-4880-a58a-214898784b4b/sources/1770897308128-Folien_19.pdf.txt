@@ -1,0 +1,34 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Hunklinger
+Spezifische Wärme von Cu
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+aus Gross/Marx
+Das Besondere am Fermi-Gas freier Elektronen
+Es gilt das Pauli-Prinzip Elektronen, die zur
+Wärmekapazität beitragen:
+∝ 𝑘𝐵𝑇/𝑇𝐹
+𝑇𝐹
+
+aus Hunklinger
+Spezifische Wärme von Cu Die korrekte Beschreibung der spez. Wärme bei
+tiefsten Temperaturen ist einer der größten Erfolge
+der freien Elektronentheorie.
+
+aus Gross/Marx
+Wikipedia
+Sommerfeld
+Theresienstr. 37
+LMU München
+
+Zustandsdichte
+
+Kollektive Phänomene im Elektronengas
+
+Abgeschirmtes Coulomb-Potential
+und Thomas-Fermi Länge
+Äquivalente Abschirmung:
+Debye-Hückel Abschirmung (Ionen/Festkörper)
+Yukawa-Potenzial (Kernphysik)
+
+Metall-Isolator Übergang

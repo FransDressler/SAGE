@@ -1,0 +1,272 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 8
+
+15. Dezember 2025
+
+## Aufgabe 1 : Supernova 1987a
+
+Am 23. Februar 1987 wurde die Explosion des Sterns Sanduleak-69 202 (Entfernung $1.8 \cdot 10^{5}$ Lichtjahre) beobachtet. Dabei wurden in einigen Neutrinodetektoren Elektron-Antineutrinos nachgewiesen. Das Kamiokande-Experiment registrierte 11 Ereignisse mit Energien zwischen 8.8 MeV und 36.7 MeV innerhalb eines Zeitintervalls von 12.4 s . Daraus lässt sich ein zeitintegrierter $\bar{v}_{e}$-Fluss $F_{\bar{v}_{e}} \simeq 10^{10} \mathrm{~cm}^{-2}$ am Ort der Erde abschätzen.
+a. Geben Sie die beim Gravitationskollaps insgesamt in Form von Neutrinos freigesetzte Energie an, wenn die mittlere Neutrinoenergie etwa 10 MeV beträgt. Nehmen Sie dabei an, dass die Neutrinos isotrop abgestrahlt wurden, und Neutrinos und Antineutrinos aller 3 Flavours gleich häufig produziert werden. (Wie lässt sich diese Annahme begründen?)
+
+Lösung:
+
+$$
+E_{v t o t}=N_{v}<E_{v}>F_{v}(R) \cdot 4 \pi R^{2}
+$$
+
+$N_{v}$ - zahl der Flavours
+$<E_{v}>$ - mittlere Energie
+$F_{v}(R)$ - Fluss auf die Erde
+
+\begin{gathered}
+=6 \cdot 10 \mathrm{MeV} \cdot 10^{10} \mathrm{~cm}^{2} \cdot 4 \pi\left(1.8 \cdot 10^{5} \cdot 3 \cdot 10^{10} \cdot 3.16 \cdot 10^{7} \mathrm{~cm}\right)^{2} \\
+=2.2 \cdot 10^{59} \mathrm{MeV}=3.5 \cdot 10^{46} \mathrm{~J}
+\end{gathered}
+
+Bei einer Supernova Typ II ( $\sim 10 \times M_{\odot}$ ) werden etwa $99 \%$ der insgesamt freiwerbenden Energie in Form von Neutrinos abgestrahlt. Der Hauptteil der Neutrinos wird bei der Kühlung des Proto-Neutronsterns emittiert. Dabei werden $v_{x} \bar{v}_{x}$ - Paare im thermischen Geichgewicht erzeugt. Daher hat man eine ungefähre Gleichvrteilung aller Flavours.
+b. Welche Masse muss (von $R \simeq \infty$ kommend) auf Kerndichte $\rho=10^{15} \mathrm{~g} / \mathrm{cm}^{3}$ zusammenstürzen, damit diese Energie in Form von Gravitationsenergie frei wird?
+
+Lösung:
+Gravitationsenergie einer massiven Kugel mit Dichte $\rho$ :
+
+E_{g}=G \int_{0}^{R} \frac{M(r) d m(r)}{r}=G \int_{0}^{R} \frac{\frac{4 \pi}{3} \rho r^{3} \cdot 4 \pi \rho r^{2}}{r} d r
+
+$M(r)$ - Kugel innerhalb von $r, d m(r)$ - infinitesimale Kugelschale bei $r$
+
+E_{g}=G \int_{0}^{R} \frac{16 \pi^{2}}{3} \rho^{2} r^{4} d r=\frac{16 \pi^{2}}{15} G \rho^{2} R^{5}
+
+$E_{g}(\infty)=0$, d.h. beim zusammenstürzen wird der obige Energiebetrag frei.
+
+\begin{gathered}
+E_{g}=E_{v, t o t}=\frac{16 \pi^{2}}{15} G \rho^{2} R^{5} \\
+\Rightarrow R=\left(\frac{15 E_{v, t o t}}{16 \pi^{2} G \rho^{2}}\right)^{1 / 5}=8.7 \mathrm{~km} \\
+M=\frac{4 \pi}{3} \rho R^{3}=2.7 \cdot 10^{30} \mathrm{~kg} \approx 1.4 \times M_{\odot}
+\end{gathered}
+
+c. Aus der Dauer des Neutrinosignals konnte damals eine Massengrenze für Neutrinos abgeleitet werden. Wie groß ist $m_{v}$ unter der Annahme, dass die Neutrinos alle gleichzeitig emittiert wurden? Welche Aussage kann man über $m_{v}$ machen, wenn die Emission während eines Zeitintervalls von 15 s erfolgt ist?
+
+Lösung: Neutrino mit Energie $E=\gamma m_{0} c^{2}, p=\gamma m_{0} v$
+
+v=\frac{p c^{2}}{E}=c \frac{\sqrt{E^{2}-m_{0}^{2} c^{4}}}{E}=c \sqrt{1-\frac{m_{0}^{2} c^{4}}{E^{2}}}
+
+Laufzeit:
+
+t=\frac{R}{v}=\frac{R}{c}\left(1-\frac{m_{0}^{2} c^{4}}{E^{2}}\right)^{-1 / 2} \approx \frac{R}{c}\left(1+\frac{m_{0}^{2} c^{4}}{2 E^{2}}\right)
+
+Laufzeitunterschied für 2 Neutrinos mit $E_{2}>E_{1}$, die gleichzeitig emittiert wurden:
+
+\Delta t=t_{1}-t_{2}=\frac{R}{c} \frac{m_{0}^{2} c^{4}}{2}\left(\frac{1}{E_{1}^{2}}-\frac{1}{E_{2}^{2}}\right) \\
+m_{0}^{2}=\frac{2 \Delta t}{R c^{3}} \frac{E_{1}^{2} E_{2}^{2}}{\left(E_{2}^{2}-E_{1}^{2}\right)}
+
+m_{0} \simeq \sqrt{\frac{2 \cdot 12.4 \mathrm{~s}(8.8 \mathrm{MeV})^{2} \cdot(36.7 \mathrm{MeV})}{1.7 \cdot 10^{21} \mathrm{~m}\left(3 \cdot 10^{8} \mathrm{~m} / \mathrm{s}\right)^{3}(27.9 \mathrm{MeV})}} \\
+m_{0} \simeq 18.9 \frac{\mathrm{eV}}{c^{2}}
+
+Falls nicht alle Neutrinos gleichzeitig emittiert würden, sondern während eines Zeitintervalls von 15 s , kann man eine obere Grenze für $m_{v}$ angeben. Veringerung(?) der beobachteten Zeitdifferenz bedeutet, dass langsamtes $v$ zuerst und schnellstes $v$ zuletzt gestartet sein muss.
+
+\Delta t_{\text {beob }}=\frac{R}{c} \frac{m_{0}^{2} c^{4}}{2}\left(\frac{1}{E_{1}^{2}}-\frac{1}{E_{2}^{2}}\right)-\Delta t_{e m} \\
+\Rightarrow m_{v}=\frac{E_{1} E_{2}}{c^{2}} \sqrt{\frac{2 c}{R} \frac{\left(\Delta t_{\text {beob }}+\Delta t_{e m}\right)}{E_{2}^{2}-E_{1}^{2}}} \\
+=\frac{8.8 \mathrm{MeV} \cdot 36.7 \mathrm{MeV}}{\left(3 \cdot 10^{8} \mathrm{~m} / \mathrm{s}\right)^{2}} \sqrt{\frac{2 \cdot 3 \cdot 10^{8} \mathrm{~m} / \mathrm{s}}{1.7 \cdot 10^{21} \mathrm{~m}} \frac{12.4 \mathrm{~s}+15 \mathrm{~s}}{(27.9 \mathrm{MeV})^{2}}} \\
+m_{v} \leqslant 28 \frac{\mathrm{eV}}{c^{2}}
+
+(PDG: $m_{v_{e}}<5.8 \mathrm{eV}, m_{v_{e}}<19.6 \mathrm{eV}$ )
+
+![This diagram depicts the energy versus time distribution of neutrino events detected by the KAM II and IMB experiments, showing the energy of neutrinos (in MeV) observed over a period of seconds during a supernova neutrino burst.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/c58217d0-8eba-4aab-a0dc-72476ef5d69b/caa64084-c166-4164-bc46-26473a1c9619-3_535_974_1706_548.jpg)
+FIG. 15. Scatter plot of energy and time of the 12 events in the burst sample observed in Kamiokande-II, and the 8 events in the burst sample observed in the IMB detector. The earliest event in the sample of each detector has, arbitrarily but not unreasonably, been assigned $t=0$.
+
+Abbildung 1: Phys.Rev.D 38 (1988) 448
+
+## Aufgabe 2 Weizsäcker-Massenformel
+
+Die Masse eines Kerns mit Protonenzahl $Z$ und Massenzahl $A$ ist durch die Weizsäcker- Massenformel gegeben:
+
+M(A, Z)=Z m_{p}+(A-Z) m_{n}-B E(A, Z)
+
+mit
+
+B E(A, Z)=a_{V} A-a_{S} A^{2 / 3}-a_{C} \frac{Z(Z-1)}{A^{1 / 3}}-a_{A} \frac{(Z-A / 2)^{2}}{A}+\delta,
+
+wobei
+
+\delta= \begin{cases}+a_{P} / A^{1 / 2} & \text { für gg-Kerne, } \\ -a_{P} / A^{1 / 2} & \text { für uu-Kerne, } \\ 0 & \text { für gu- bzw. ug-Kerne, }\end{cases}
+
+und die Konstanten sind
+$a_{V}=15.67 \mathrm{MeV}, \quad a_{S}=17.23 \mathrm{MeV}, \quad a_{C}=0.714 \mathrm{MeV}, \quad a_{A}=93.15 \mathrm{MeV}, \quad a_{P}=12 \mathrm{MeV}$.
+a. Benennen Sie die Terme der Bindungsenergie $B E(A, Z)$ und beschreiben Sie ihre Herkunft im Flüssigkeitstropfenmodell von Weizsäcker in wenigen Worten.
+
+Lösung: Die einzelnen Terme entstehen im Flüssigkeitstropfenmodell wie folgt:
+(i) Volumenterm $\left(a_{V} A\right)$ : Nukleonen im Inneren wechselwirken über kurzreichweitige, attraktive Kernkräfte mit einer ungefähr konstanten Zahl von Nachbarn. Der Beitrag ist daher proportional zur Zahl der Nukleonen, also zum Volumen, und ist der dominante positive Bindungsterm.
+(ii) Oberflächenterm $\left(-a_{S} A^{2 / 3}\right)$ : Nukleonen an der Oberfläche haben weniger Nachbarn und sind daher schwächer gebunden. Da die Zahl der Oberflächennukleonen proportional zur Oberfläche ( $\sim A^{2 / 3}$ ) ist, verringert dieser Term die Bindungsenergie.
+(iii) Coulombterm $\left(-a_{C} Z(Z-1) / A^{1 / 3}\right)$ : Entsteht durch die elektrostatische Abstoßung zwischen Protonen. Er wird für große $Z$ besonders wichtig und reduziert die Bindungsenergie.
+(iv) Asymmetrieterm $\left(-a_{A}(Z-A / 2)^{2} / A\right)$ : Bevorzugt wird (für leichte Kerne) ungefähr $N \approx Z$. Aufgrund des Pauli-Prinzips führt die getrennte Auffüllung von Protonenund Neutronenniveaus dazu, dass Konfigurationen mit starkem Proton-NeutronUngleichgewicht $(N \neq Z)$ energetisch benachteiligt sind, was die Bindung asymmetrischer Kerne verringert.
+(v) Paarungsterm ( $\delta$ ): Gerade Zahlen von Protonen und/oder Neutronen werden bevorzugt, da Nukleonen dazu neigen, Paare (Spin-0-Zustände) zu bilden, die stärker gebunden sind. Daher gilt $\delta>0$ für gg-Kerne, $\delta<0$ für uu-Kerne und $\delta=0$ für gu-/ug-Kerne.
+b. Zeigen Sie, dass die Protonenzahl $Z$ des stabilsten Kerns unter allen Kernen mit gleicher Massenzahl $A$ (d. h. Isobare) näherungsweise der Beziehung
+
+Z_{s}(A) \approx \frac{A}{1.983+0.0152 A^{2 / 3}}
+
+folgt. Nehmen Sie $Z \gg 1$ an.
+
+Lösung: Für festes $A$ ist die stabilste Isobare diejenige mit der kleinsten Masse $M(A, Z)$. Wir minimieren daher $M(A, Z)$ bezüglich $Z$ bei konstantem $A$ :
+
+\left.\frac{\partial M(A, Z)}{\partial Z}\right|_{A=\mathrm{const}}=0
+
+Es tragen nur die $Z$-abhängigen Terme von $M(A, Z)$ bei:
+
+M(A, Z)=Z m_{p}+(A-Z) m_{n}-B E(A, Z) .
+
+Mit
+
+B E(A, Z)=\cdots-a_{C} \frac{Z(Z-1)}{A^{1 / 3}}-a_{A} \frac{(Z-A / 2)^{2}}{A}+\delta
+
+erhält man
+
+\frac{\partial M(A, Z)}{\partial Z}=\left(m_{p}-m_{n}\right)+a_{C}(2 Z-1) A^{-1 / 3}+2 a_{A}(Z-A / 2) A^{-1} .
+
+Setzt man die Ableitung für den stabilsten Kern gleich Null, so folgt
+
+0=\left(m_{p}-m_{n}\right)+a_{C}\left(2 Z_{s}-1\right) A^{-1 / 3}+2 a_{A}\left(Z_{s}-A / 2\right) A^{-1} .
+
+Durch Auflösen nach $Z_{s}$ erhält man
+
+Z_{s}=\frac{a_{A}+m_{n}-m_{p}+a_{C} / A^{1 / 3}}{2 a_{C} A^{-1 / 3}+2 a_{A} A^{-1}}
+
+Setzt man die gegebenen Konstanten ein und vereinfacht (unter Verwendung von $Z \gg 1$ ), erhält man näherungsweise
+
+Z_{s}(A) \approx \frac{A}{0.0152 A^{2 / 3}+1.983}
+
+Dieser Ausdruck macht auch die Faustregel $Z \approx A / 2$ verständlich:
+
+- Für kleine und mittlere $A$ ist der Term $0.0152 A^{2 / 3}$ im Nenner noch klein gegenüber 1.983, daher
+
+1.983+0.0152 A^{2 / 3} \approx 2 \quad \Rightarrow \quad Z_{s} \approx \frac{A}{2}
+
+was die übliche Lage des Tals der Stabilität beschreibt.
+
+- Für große $A$ wächst der Term $0.0152 A^{2 / 3}$, sodass der Nenner größer als 2 wird und
+
+\frac{Z_{s}}{A}=\frac{1}{1.983+0.0152 A^{2 / 3}}<\frac{1}{2} .
+
+Schwere stabile Kerne haben also $Z / A<1 / 2$, was die zunehmende Bedeutung der Coulomb-Abstoßung widerspiegelt.
+c. Bestimmen Sie die Protonenzahlen $Z$ der stabilsten Isobare für die Massenzahlen $A=73$ und $A=97$. Nennen Sie die entsprechenden Elemente.
+
+Lösung: Mit
+
+Z_{s}(A) \approx \frac{A}{1.983+0.0152 A^{2 / 3}}
+
+erhält man (auf die nächste ganze Zahl gerundet):
+
+- Für $A=73$ :
+
+Z_{s} \approx 32.5 \quad \Rightarrow \quad Z=32
+
+entsprechend ${ }^{73} \mathrm{Ge}$.
+
+- Für $A=97$ :
+
+Z_{s} \approx 42.1 \quad \Rightarrow \quad Z=42,
+
+entsprechend ${ }^{97}$ Mo.
+d. Berechnen Sie die gesamte Bindungsenergie und die Bindungsenergie pro Nukleon für die Isotope ${ }^{7} \mathrm{Li},{ }^{20} \mathrm{Ne},{ }^{56} \mathrm{Fe}$ und ${ }^{235} \mathrm{U}$ mit der Weizsäcker-Formel. Wie verhalten sich die Werte mit wachsender Massenzahl $A$ ?
+
+Mit den gegebenen Konstanten und der Massenformel erhält man näherungsweise:
+
+
+| Isotop | $A$ | $Z$ | $B E(A, Z)(\mathrm{MeV})$ | $B E(A, Z) / A(\mathrm{MeV})$ |
+| :---: | :---: | :---: | :---: | :---: |
+| ${ }^{7} \mathrm{Li}$ | 7 | 3 | 38.3 | 5.5 |
+| ${ }^{20} \mathrm{Ne}$ | 20 | 10 | 161.0 | 8.05 |
+| ${ }^{56} \mathrm{Fe}$ | 56 | 26 | 493.5 | 8.81 |
+| ${ }^{235} \mathrm{U}$ | 235 | 92 | 1806.2 | 7.7 |
+
+Die Bindungsenergie pro Nukleon $B E / A$ :
+
+- steigt von leichten Kernen ( ${ }^{7}$ Li) stark an,
+- wird im Bereich der mittel-schweren Kerne ( $A \sim 50-60$, z. B. ${ }^{56}$ Fe) ungefähr konstant und maximal,
+- und nimmt für sehr schwere Kerne wie ${ }^{235} \mathrm{U}$ wieder ab.
+e. Verwenden Sie die semiempirische Weizsäcker-Massenformel
+
+B E(A, Z)=a_{V} A-a_{S} A^{2 / 3}-a_{C} \frac{Z(Z-1)}{A^{1 / 3}}-a_{A} \frac{(Z-A / 2)^{2}}{A}+\delta,
+
+um einen qualitativen Ausdruck für die Bindungsenergie pro Nukleon $B E / A$ als Funktion der Massenzahl $A$ für Kerne im Tal der Stabilität herzuleiten.
+
+Nehmen Sie an, dass die stabilsten Isobare näherungsweise $Z \simeq A / 2$ erfüllen und vernachlässigen Sie für die qualitative Diskussion den Asymmetrieterm und den Paarungsterm $\delta$. Betrachten Sie getrennt die Bereiche der leichten Kerne ( $A \ll 50$ ) und der schweren Kerne ( $A \gg 50$ ) und zeigen Sie, dass $B E / A$ für kleine $A$ zunimmt, bei mittleren $A$ ein Maximum besitzt und für große $A$ wieder abnimmt. Erklären Sie den physikalischen Ursprung dieses Verhaltens anhand des Oberflächen- und des Coulombterms.
+
+Lösung: Um das Verhalten der Bindungsenergie pro Nukleon zu verstehen, betrachten wir getrennt den Bereich der leichten Kerne (kleines $A$ ) und den Bereich der schweren Kerne (großes $A$ ). Wir nehmen an, dass Kerne im Tal der Stabilität näherungsweise $Z \simeq A / 2$ erfüllen, sodass wir uns auf die dominierende $A$-Abhängigkeit konzentrieren können.
+
+## Leichte Kerne ( $A \ll$ 50): Oberflächenterm dominiert
+
+Für kleine $A$ sind sowohl $Z$ als auch $A^{1 / 3}$ klein, sodass der Coulombterm
+
+-a_{C} \frac{Z(Z-1)}{A^{1 / 3}}
+
+im Vergleich zum Oberflächenterm
+
+-a_{S} A^{2 / 3}
+
+numerisch sehr klein ist. Für leichte Kerne können wir den Coulombterm daher vollständig vernachlässigen und schreiben
+
+B E(A) \approx a_{V} A-a_{S} A^{2 / 3}
+
+Durch Division durch $A$ erhält man
+
+\frac{B E}{A} \approx a_{V}-a_{S} A^{-1 / 3}
+
+Da $A^{-1 / 3}$ mit wachsendem $A$ abnimmt, wird der negative Beitrag kleiner und $\frac{B E}{A}$ steigt für kleine A monoton an. In diesem Regime steigt die Kurve stark an, wie durch die blaue Linie in Abbildung 2 dargestellt.
+
+## Schwere Kerne ( $A \gg 50$ ): Coulombterm dominiert
+
+Für große $A$ gilt für Kerne im Tal der Stabilität näherungsweise
+
+Z \simeq \frac{A}{2} \gg 1
+
+In diesem Bereich kann der Coulombterm nicht mehr vernachlässigt werden. Da $Z$ groß ist, dürfen wir
+
+Z(Z-1)=Z^{2}-Z \approx Z^{2}
+
+mit einem kleinen relativen Fehler der Ordnung $1 / Z$ approximieren.
+Setzt man $Z \simeq A / 2$ ein, so wird der Coulombterm zu
+
+-a_{C} \frac{Z(Z-1)}{A^{1 / 3}} \approx-a_{C} \frac{(A / 2)^{2}}{A^{1 / 3}}=-\frac{a_{C}}{4} A^{5 / 3}
+
+Die Bindungsenergie für schwere Kerne verhält sich somit wie
+
+B E(A) \approx a_{V} A-a_{S} A^{2 / 3}-\frac{a_{C}}{4} A^{5 / 3},
+
+und durch Division durch $A$ :
+
+\frac{B E}{A} \approx a_{V}-a_{S} A^{-1 / 3}-\tilde{a}_{C} A^{2 / 3}, \quad \tilde{a}_{C}=\frac{a_{C}}{4} .
+
+Für große $A$ dominiert der Term $-\tilde{a}_{C} A^{2 / 3}$ (siehe die orange Linie in Abbildung 2) und führt dazu, dass $\frac{B E}{A}$ mit zunehmendem $A$ abnimmt.
+
+Fasst man beide Grenzfälle zusammen (Abbildung 2), so ergibt sich:
+
+- Für leichte Kerne dominiert der Oberflächenterm und $\frac{B E}{A}$ steigt mit $A$ rasch an.
+- Für mittlere Kerne werden Oberflächen- und Coulombterm vergleichbar groß, und es entsteht ein breites Maximum.
+- Für schwere Kerne dominiert der Coulombterm und $\frac{B E}{A}$ nimmt mit $A$ langsam ab.
+
+Dies erklärt die charakteristische Form der beobachteten Bindungsenergiekurve (Abbildung 3): ein steiler Anstieg für kleine $A$, ein Maximum in der Nähe von Eisen ( $A \approx 56$ ) und ein allmählicher Abfall für schwerere Kerne.
+
+![This diagram depicts the binding energy per nucleon (BE/A) as a function of mass number (A) for atomic nuclei, comparing light and heavy approximations with the full binding energy per nucleon curve, highlighting the maximum BE/A around the iron region (A ~ 56).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/c58217d0-8eba-4aab-a0dc-72476ef5d69b/caa64084-c166-4164-bc46-26473a1c9619-8_648_921_1340_573.jpg)
+Abbildung 2: Approximation der Bindungsenergie als Funktion der Massenzahl $A$.
+
+f. Betrachten Sie Kerne mit gleicher Massenzahl $A$ (Isobare). Schreiben Sie die Bindungsenergie als Funktion von $Z$ für festes $A$ und diskutieren Sie qualitativ, wie viele stabile Isobare existieren können. Veranschaulichen Sie Ihre Antwort für $A=76$.
+
+Lösung: Für festes $A$ können alle Terme in $B E(A, Z)$, die nicht von $Z$ abhängen, in eine Konstante absorbiert werden:
+
+\widehat{B E}(Z)=\mathrm{const}-\hat{a}_{C} Z(Z-1)-\hat{a}_{A}\left(Z-\frac{A}{2}\right)^{2}+\delta(Z)
+
+![This diagram is a binding energy curve showing the average binding energy per nucleon as a function of the number of nucleons in a nucleus, illustrating nuclear stability across different elements. It highlights that nuclei around iron (Fe) have the highest binding energy per nucleon, indicating maximum stability, while lighter and heavier nuclei have lower binding energies.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/c58217d0-8eba-4aab-a0dc-72476ef5d69b/caa64084-c166-4164-bc46-26473a1c9619-9_678_851_287_605.jpg)
+Abbildung 3: Bindungsenergie als Funktion der Massenzahl $A$.
+
+wobei $\hat{a}_{C}$ und $\hat{a}_{A}$ die entsprechenden $A$-abhängigen Faktoren enthalten. Die dominierende $Z$-Abhängigkeit ist quadratisch:
+
+\widehat{B E}(Z) \sim-Z^{2},
+
+d. h. eine nach unten geöffnete Parabel in der Darstellung gegen $Z$.
+
+- Für $\delta=0$ (ungerades $A$, alle Isobare sind gu- oder ug-Kerne) gibt es eine einzige Parabel in $B E(Z)$ (und entsprechend in $M(Z)$ ). Es kann höchstens eine stabile Isobare am Maximum dieser Parabel geben.
+- Für gerades $A$ führt der Paarungsterm zu zwei Parabeln (gg- und uu-Kerne), die in der Energie um $\pm a_{P} / \sqrt{A}$ gegeneinander verschoben sind. Die gg-Parabel liegt typischerweise energetisch tiefer, sodass mehrere gg-Isobare stabil (oder langlebig) sein können, während uu-Isobare meist weniger gebunden sind. Ein Beispiel für einen solchen Fall ist in Abbildung 4 dargestellt.
+
+![This diagram is a binding energy (BE) versus atomic number (Z) plot for isotopes with mass number A=76, showing the binding energy values for nuclei with isospin projection δ = +1 and δ = -1. It specifically compares the binding energies of isotopes of elements from zinc (Zn) to krypton (Kr).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/c58217d0-8eba-4aab-a0dc-72476ef5d69b/caa64084-c166-4164-bc46-26473a1c9619-9_632_915_1868_573.jpg)
+Abbildung 4: Bindungsenergien für $A=76$-Isobare im Maximum
+

@@ -1,0 +1,94 @@
+## Ladungsneutralität
+
+![This diagram depicts the crystal lattice structure of sodium chloride (NaCl), showing the alternating arrangement of positively charged sodium ions (Na⁺) and negatively charged chloride ions (Cl⁻) in a cubic pattern.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-01_1084_1087_498_686.jpg)
+Ladungskompensation durch doppelt geladene Kationen!
+
+Bild 5.4: $\mathrm{Ca}^{2+}$-Ionen in NaCl -Kristallen. Der Einbau von Kalziumionen bedingt das Auftreten von $\mathrm{Na}^{+}$-Leerstellen und damit eine Reduktion der Massendichte.
+
+## Reale Kristalle Punkt-Defekte (atomare Defekte)
+
+## Stöchimetrische Fehler
+
+![This diagram depicts a Schottky defect in a crystal lattice, showing the vacancy of an atom and the corresponding displaced atom within the lattice structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-02_645_770_468_291.jpg)
+![This diagram depicts a Frenkel defect in a crystal lattice, showing an atom displaced from its original lattice site to an interstitial position, creating a vacancy and an interstitial defect.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-02_543_733_468_1302.jpg)
+
+- Anion -n
+- Kation +n
+![This diagram depicts an anti-Schottky defect in a crystal lattice, showing the movement of ions or atoms where smaller ions move into interstitial positions, creating vacancies and interstitial defects.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-02_545_876_1221_192.jpg)
+![This diagram depicts an anti-Frenkel defect in a crystal lattice, showing the displacement of an atom from its original lattice site to an interstitial position, creating a vacancy and an interstitial defect.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-02_543_845_1221_1190.jpg)
+![This diagram depicts atomic site exchange (atomic diffusion) in alloys, showing the swapping of positions between atoms (Legierungen) on a lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-02_543_865_1221_2154.jpg)
+
+
+## Reale Kristalle Punkt-Defekte (atomare Defekte)
+
+## Stöchimetrische Fehler
+
+## Leerstelle
+
+![This diagram depicts the atomic structure of a substitutional solid solution, showing how solute atoms replace solvent atoms in the crystal lattice. It highlights the positions of solute atoms, solvent atoms, and the substitutional sites within the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-03_1170_1161_513_296.jpg)
+
+Substitutionelles Fremdatom „Anti-site-Defekt“
+
+ZwischenGitteratom
+
+![This diagram depicts two types of point defects in a crystal lattice: (a) a vacancy defect (Leerstelle) where an atom is missing, and (b) an interstitial defect (Zwischengitteratom) where an extra atom is positioned in the space between lattice sites.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-03_574_1218_513_1958.jpg)
+(c)
+
+![This diagram depicts the atomic arrangement of a substitutional solid solution, showing how impurity atoms (blue) replace host atoms (red) in the crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-03_499_499_1140_2354.jpg)
+Fremdatom
+
+## Einfluss von Störstellen
+
+![The image shows a round brilliant-cut diamond, depicting its faceting and light reflection properties.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-04_986_986_523_143.jpg)
+
+YAG-Kristall
+![The image depicts a synthetic ruby crystal, which is used primarily in laser technology and as a gemstone. It shows the characteristic deep pink to purple coloration of the synthetic corundum material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-04_990_1201_519_1611.jpg)
+
+Nd:YAG-Kristall
+![The image depicts an Nd:YAG laser system along with its energy level diagram, showing the laser transition at 1064 nm and the common frequency doubling to 532 nm using BBO crystals.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-05_1363_3267_0_0.jpg)
+
+## LASER OSCILLATIONS IN Nd-DOPED YTTRIUM ALUMINUM, YTTRIUM GALLIUM AND GADOLINIUM GARNETS
+
+(continuous operation of $\mathrm{Y}_{3} \mathrm{Al}_{5} \mathrm{O}_{12}{ }^{\text {i }}$ pulsed operation of $\mathrm{Y}_{3} \mathrm{Ga}_{5} \mathrm{O}_{12}$ and $\mathrm{Gd}_{3} \mathrm{Ga}_{5} \mathrm{O}_{12}$; rm. temp; E)
+J. E. Geusic, H. M. Marcos, and L. G. Van Uitert Bell Telephone Laboratories, Incorporated Murray Hill, New Jersey (Received 17 April 1964)
+
+## Farbzentren
+
+![This diagram shows the optical density spectrum of potassium chloride (KCl) as a function of wavelength in nanometers, highlighting absorption bands labeled F, R1, R2, M, and N.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-06_1148_1159_471_423.jpg)
+Bild 5.5: Optische Absorption von KCl nach Bestrahlung mit Röntgenlicht. Die verschiedenen Banden werden unterschiedlichen Defektarten mit den Bezeichnungen $F, R_{1}, R_{2}, M$ und $N$ zugeordnet. (R.H. Silsbee, Phys. Rev. 138, A180 (1965).)
+
+## Farbzentren
+
+F-Zentrum
+![This diagram depicts an electron (e⁻) moving through a crystal lattice, illustrating the concept of electron conduction or electron movement in a solid-state material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-07_548_537_442_440.jpg)
+
+![This diagram depicts the atomic arrangement in a face-centered cubic (FCC) crystal lattice, showing the positions of atoms at the corners and centers of each face of the cubic unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-07_530_532_1088_440.jpg)
+![This diagram depicts a crystal lattice structure with electrons (e⁻) located at interstitial sites, illustrating the concept of electron placement or movement within the lattice. The label "M-Zentrum" suggests it is showing a defect or impurity center in the lattice, likely related to solid-state physics or materials science.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-07_566_824_440_1172.jpg)
+![This diagram depicts a vacancy center (V-Zentrum) in a crystal lattice, showing the position of a missing atom (vacancy) and an associated electron within the lattice structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-07_566_805_453_2305.jpg)
+![This diagram depicts a hydrogen center (H-Zentrum) defect in a crystal lattice, showing the position of a hydrogen atom (or ion) bonded within the lattice structure. It illustrates the interaction of the hydrogen with the surrounding lattice atoms.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-07_553_806_1169_1203.jpg)
+![This diagram depicts the process of analyzing and classifying atomic defects and color centers in 2D materials, specifically showing the inputs, characterization methods, and future quantum technology applications such as single photon emitters, quantum computing, quantum internet, and quantum sensing.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-08_1592_2867_170_51.jpg)
+A. Carbone et al. Appl. Phys. Rev. 12, 031333 (2025).
+
+## Leerstellenwanderung
+
+![This diagram depicts a substitutional solid solution in materials science, showing how a solute atom (darker sphere) replaces a solvent atom (lighter spheres) within the crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-09_326_510_450_689.jpg)
+![This diagram depicts a substitutional solid solution in a crystalline lattice, showing how a solute atom (darker sphere) replaces a solvent atom (lighter spheres) within the host metal's atomic structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-09_329_510_867_689.jpg)
+![This diagram depicts a carbon atom lattice structure with a vacancy defect, showing the arrangement of carbon atoms and the missing atom site within the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-09_326_510_1297_689.jpg)
+![This diagram depicts a potential energy profile for a particle moving between two stable states (A and C) separated by an energy barrier at B, illustrating the concept of activation energy (E_D) required for the particle to transition from state A to state C.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-09_1063_913_512_1591.jpg)
+
+## Wanderung von Zwischengitteratomen
+
+![This diagram depicts the energy landscape for the diffusion of an atom (or defect) through different lattice sites (A, B, C) in a crystal structure, showing the energy barriers and relative energies associated with the atom moving between these sites over time.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-10_1114_2207_502_529.jpg)
+
+## Temperaturabhängigkeit des Diffusionskoeffizienten von Stickstoff in Eisen
+
+Temperatur $T /{ }^{\circ} \mathrm{C}$
+![This diagram is an Arrhenius plot showing the diffusion constant (D) of nitrogen in iron (Fe:N) as a function of the reciprocal temperature (1000/T). It depicts how the diffusion constant decreases exponentially with decreasing temperature.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-11_1210_1220_529_676.jpg)
+
+Bild 5.10: Temperaturabhängigkeit des Diffusionskoeffizienten von Stickstoff in Eisen. Die Daten wurden mit verschiedenen Messmethoden ermittelt und stammen von verschiedenen Autoren. Es ist bemerkenswert, dass sich im untersuchten Temperaturintervall der Diffusionskoeffizient um etwa 16 Größenordnungen ändert! (Nach A.E. Lord, Jr., D.N. Beskers, Acta Met. 14, 1659 (1966).)
+
+## Elektrische Leitfähigkeit von NaCl
+
+![This diagram shows the temperature dependence of the electrical conductivity (log σT) of NaCl, illustrating charge transport mechanisms through thermally generated vacancies and vacancies caused by impurities.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9faf79b0-6fb8-4238-bfeb-0ea12e9b9bae/8f726cdb-da50-446d-a88d-b3d4ff036053-12_858_2395_389_635.jpg)
+Bild 5.11: Elektrische Leitfähigkeit von NaCl . Aufgetragen ist der Logarithmus der Leitfähigkeit als Funktion der reziproken Temperatur. Es treten zwei Bereiche auf, die auf unterschiedlichen Mechanismen der Leerstellenerzeugung beruhen. (Nach W. Lehfeldt, Z. Phys. 85, 717 (1933).)
+

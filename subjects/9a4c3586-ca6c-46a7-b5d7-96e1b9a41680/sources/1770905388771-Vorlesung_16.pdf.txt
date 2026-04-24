@@ -1,0 +1,120 @@
+### 3.4 Phonoven und die specifische Wänme des Gittus
+
+In Folgender betrachten wis die spesifische Wains von Gittan bei koustantem Volumer.
+
+Experimentell cirfacher:
+
+$$
+\begin{aligned}
+& C_{v}=\left(\frac{\partial}{\partial T} u\right)_{v} \quad(\rightarrow \text { Thenice }) \\
+& C_{p}=\left(\frac{\partial}{\partial T} u\right)_{\rho}
+\end{aligned}
+$$
+
+unit $\underbrace{C_{p}-C_{v}=\alpha_{v}^{2} V \cdot T \cdot B} \quad, \alpha_{v}=\begin{gathered}\text { therma. Ausdehnys- } \\ \text { koeffirent }\end{gathered}$
+→ side statistisde Physike $\quad B=$ kompressionsmoded
+$R$ fin ideales Gas
+( side 4.3 und 5.1 (ii) Physik 1, Skipt)
+
+### 3.4.1 Expeimend dle Beobadity
+
+(a) Bei Rammempenater gilt firs alle Testlisiper
+
+C_{V}=3 \cdot N_{\lambda} \cdot k_{B}=3 \cdot R \approx 2 \pi \gamma \mathrm{~mol}^{-1} U^{-1} \text { (Dulay-Pettit) }
+
+zus Hublity: Glaichvertailys rate / Aquippartitions theore inuere Engie (ideales Gas):
+
+\begin{aligned}
+U & =N \frac{1}{2} \cdot f \cdot k_{0} \cdot T \\
+\uparrow & \text { Takeits rad } \\
+& =N \cdot \frac{3}{2} \cdot k_{B} T
+\end{aligned}
+
+⇒ Wämekapazitát $C_{v}=3 \cdot R(4.3$ und S.1(ii)).
+(b) Bei tiefur Termperatura findet man
+
+\text { Cv } & \alpha T^{3} \text { bei isolatore ( } \rightarrow \text { Phourina) } \\
+& \propto T^{1} \text { bi Metalle ( } \rightarrow \text { Elelitiona) }
+
+(c) Bi Phasenübergägy beobachtet man große (weitare) Raitiāge on $\mathrm{Cv}_{v}$.
+
+Phonover sind Bosoner (Keine Besetrysbegrenzy, Spin-0)
+
+## ⇒ Bose-Einstain Statistik
+
+\langle u\rangle=\frac{1}{e^{t w / k_{B} T}-1} \text { (Besctzugzahl im them. GGW) }
+
+⇒ Ensemble harmonischs Osrillater unit Enyie
+
+E=\left(\langle u\rangle+\frac{1}{2}\right) \text { th } \omega \quad(u=0,1,2,3, \ldots)
+
+⇒ lunere Energie eines Gittos unit einatonign Basis und $3 N$ - Eiguscharinguger, nit eins Enogie tiw:
+
+\langle u\rangle=3 N \cdot \operatorname{tin}\left(\frac{1}{e^{t \omega / k_{t} T}-1}+\frac{0_{1}}{2}\right)
+
+unt $C_{v}=\left(\frac{\partial}{\partial T} \cdot U\right)_{v}$ :
+
+c_{v}=3 \cdot N \cdot u_{B} \cdot\left(\frac{t_{\omega}}{u_{B} T}\right)^{2} \cdot \frac{e^{t \omega / k_{B} T}}{\left[e^{t \omega / k_{B} T}-1\right]^{2}} i
+
+baw. $C_{V}=3 \cdot N \cdot k_{B}(x)^{2} \cdot e^{x}\left(e^{x}-1\right)^{-2} ; x=\frac{t_{u}}{u_{a} \tau}$
+fin $T \gg 0: x \rightarrow 0 \Rightarrow C_{v}=3 \cdot N K_{B}=3 R$ (Dulo glefit) fin $T \rightarrow 0$ : $x \rightarrow \infty \Rightarrow C_{V}=3 N k_{B} x^{2} e^{-x} \sim 3 N k_{B} \cdot e^{-x}$
+
+### 3.4.3 Deloye-Modell
+
+Betrachte QM- Ossillatonen ("Phonoren") wit witeschiedlichs Thequenz.
+![The image depicts handwritten text in German discussing the "Anzahl und Energie" (number and energy) of low-energy acoustic phonons.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/eecebdba-48c7-4bb8-bbeb-202267a1d70f/4063c86f-8841-4285-8413-7bd2a491658f-3_91_1578_383_287.jpg) wind unt tilfe der Schallgeselewindighent vs abgeschätzt:
+
+& \begin{aligned}
+\quad t_{1} \omega & =t_{1}\left(v_{s} \cdot q\right) \\
+\Leftrightarrow \quad \omega & =v_{s} \cdot q ; \\
+\Leftrightarrow \quad q & =\frac{\omega}{v_{s}} ;
+\end{aligned} \\
+& L^{2}=V \text { (Volumn) } \\
+& L=\lambda ; q=\frac{2 \pi}{\lambda}=\frac{2 \pi}{L} \\
+& =3 \cdot\left(\frac{L}{2 \pi}\right)^{3} \cdot \frac{4}{3} \pi \cdot\left(\frac{\omega}{v_{5}}\right)^{3} c^{\prime} \\
+& =\frac{V}{2 \pi^{2}} \cdot \frac{\omega^{3}}{V_{s}^{3}} \quad \text { (*) }
+
+Die Verteiling pro Tiequenz (bzev. Zustandsdidate D(ω) pro Fiequenz w) ajibt sich:
+
+\partial(\omega)=\frac{d}{d \omega} \cdot N_{\text {phouon }}=\frac{3}{2} \frac{v}{\pi^{2}} \frac{\omega^{2}}{v_{s}^{3}} \times \omega^{2}
+
+lunere Enoje:
+
+& U=\int_{0}^{\omega_{0}} E_{\text {phonon }} \cdot D(0) \cdot\langle n\rangle \cdot d \omega \text {, wit } \omega_{D} D_{s} \text { cut -off", } \\
+& \left.=\frac{3}{2} \frac{v}{\pi^{2}} \frac{1}{v_{s}^{3}} \int_{0}^{\omega_{0}} \frac{t_{\omega} \cdot \omega^{2}}{\left(e_{x_{0}}^{t \omega / k_{B} T}-1\right)} \cdot d \omega \right\rvert\, x=\frac{\hbar \omega}{k_{B} T} \\
+& =\frac{3}{2} \frac{v}{\pi} \frac{u_{0}^{4}}{v_{s}^{3}} \frac{T^{4}}{t_{1}^{3}} \int_{0}^{x_{0}} \frac{x^{3}}{e^{x}-1} \cdot d x ; \quad \text { und } \quad x_{D}=\frac{t_{1} \omega_{D}}{u_{B} T}
+
+## lutoludio:
+
+\text { zu } \omega_{D}:(*) \Rightarrow \omega_{D}^{3}=\frac{1}{V} \cdot N_{\text {phonouan }} \cdot 2 \pi^{2} \cdot v_{S}^{3}=\frac{6 \cdot N_{\text {Aloum }}}{V} \cdot \pi^{2} v_{S}^{3} \\
+\text { ans } 3 \cdot 2 \cdot 3: N_{\text {phax on }}=3 \cdot N_{\text {Alou }}=N \\
+\Rightarrow \omega_{D}=\left(\frac{6 \pi^{2} N}{V}\right)^{1 / 3} \cdot v_{S} \text { i Debye-Tiequeuz }
+
+Entespechend definienen win die Debye-Temperates $\theta_{0}$
+
+& \hbar_{1} \omega_{D}=k_{B} \theta_{D} \Leftrightarrow \theta_{D}-\frac{\hbar_{1} \omega_{D}}{k_{B}} \\
+& u=q \cdot N \cdot k_{B}\left(\frac{T}{\theta_{0}}\right)^{3} \int_{0}^{x_{0}} d x \frac{x^{3}}{e^{x}-1} \\
+& C_{V}=\left(\frac{\partial u}{\partial T}\right)_{V}=q N k_{B}\left(\frac{T}{\theta_{0}}\right)^{3} \underbrace{\int_{0}^{x} \frac{x^{4} e^{x}}{\left(e^{x}-1\right)^{2}}}_{0} \\
+& \text { esde } T^{3}-\text { Geselz }
+
+T<\theta_{\Delta} \text { bzw } x_{\Delta} \rightarrow \infty: & \quad C_{V}=\text { aNk } \cdot\left(\frac{T}{\theta_{\Delta}}\right)^{3} \cdot \frac{4}{15} \pi^{4}=\frac{12}{5} N k_{B} \cdot \pi^{4}\left(\frac{T}{\theta_{\Delta}}\right)^{3} \\
+T \gg \theta_{\Delta}: \theta_{\Delta} / T \rightarrow 0: \quad & \quad C_{V} \rightarrow q \cdot N k_{B}\left(\frac{T}{\theta_{0}}\right)^{3} \cdot \frac{1}{3}\left(\frac{\theta_{0}}{T}\right)^{3} \\
+& =3 \cdot R \quad\left(N=N_{A}\right) \\
+& \quad \text { Duloy -Pefit }
+
+- Vagiff: Spezifiscle Wäncue "fèies" Elektone
+
+Elellionen sind Fermioner → Femi- Dirac - Statistik
+
+\left.\begin{aligned}
+u= & \int D(E) \cdot f(E, T) \cdot E \cdot d E \propto T^{2} \\
+& \text { Zustands- Fenini-Dinac } \\
+& \text { didate Vaily }
+\end{aligned} \quad \right\rvert\, \rightarrow C_{V} \propto T
+
+- lusgesament engibt sid fin tiefe Tomperaturn
+
+C_{v}=C_{v}^{\text {Gittv }}+C_{v}^{\text {Elelition }}=\alpha \cdot T^{3}+\gamma \cdot T,
+
+unt $\alpha$ und $\gamma$ den entsprechender Voustanter.
+

@@ -1,0 +1,180 @@
+1
+Quanten-Hall-Effekt
+Dr. Christoph Kastl
+Walter-Schottky-Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+2
+2D Elektronen im Magnetfeld
+Hall-Effekt
+(klassisch)
+SdH-Oszillationen
+(semi-klassisch)
+Quanten-Hall-Effekt
+(voll quantisiert)
+
+3
+Nobelpreis 1985 – Fundamentale Forschung an Halbleitern
+2D Halbleiter mit hoher Reinheit und Mobilität
+KM2 in SS26 & Halbleiterphysik WS 26/27
+
+4
+Hallwiderstand bei tiefen Temperaturen und im hohen Magnetfeld
+I
+Vxx
+Vxy
+Rxx = 0
+Rxy =(25813 Ω) / ν
+ν = 3
+ν = 4
+ν = 6
+
+5
+Hallwiderstand und Landau Level Entartung
+𝑛𝐿𝐿 = 𝑒𝐵
+ℎ
+Zustände pro Landau Level (und Fläche)
+Für feste Elektronendichte n2D sind genau ν Landau Level gefüllt wenn gilt
+𝑛2𝐷 = 𝑒𝐵
+ℎ ⋅ 𝜈
+Mit dem klassischen Hallwiderstand erhalten wir
+𝑅𝑥𝑦 = 𝑅𝐻 ⋅ 𝐵 = 1
+𝑒 ⋅ 𝑛2𝐷
+⋅ 𝐵 = ℎ
+𝑒2 ⋅ 1
+𝜈
+Experiment
+
+6
+Widerstand (Messgröße) vs. Leitfähigkeit (Fundamental)
+𝒋 = 𝜎 ⋅ 𝑬 𝑗𝑥
+𝑗𝑦 = 𝜎𝑥𝑥 𝜎𝑥𝑦
+𝜎𝑦𝑥 𝜎𝑦𝑦 ⋅ 𝐸𝑥
+𝐸𝑦
+Ohmsches Gesetz
+Inversion des Leitfähigkeitstensors
+𝜎𝑥𝑥 = 𝜌𝑥𝑥
+𝜌𝑥𝑥
+2 + 𝜌𝑥𝑦
+2
+𝜌 = 𝜎−1
+𝜎𝑥𝑦 = −𝜌𝑥𝑦
+𝜌𝑥𝑥
+2 + 𝜌𝑥𝑦
+𝜌𝑥𝑥 = 𝜎𝑥𝑥
+𝜎𝑥𝑥
+2 + 𝜎𝑥𝑦
+𝜌𝑥𝑦 = −𝜎𝑥𝑦
+𝜎𝑥𝑥
+2 + 𝜎𝑥𝑦
+Im Experiment
+𝜎𝑥𝑦 =
+4𝑒2
+ℎ
+4𝑒2
++ 02
+𝜎𝑥𝑥 = 0
++ 02
+= 0
+
+7
+Wie fließt der Messtrom ohne eine Zustandsdichte bei EF?
+Wieso kann ein “Isolator” einen endlichen Hallwiderstand haben?
+DOS
+E
+EF
+Landau-Levelℏ𝜔𝑐 Konsistent bisher:
+• Wert der Quantisierung
+→ Landau-Level Entartung
+• Fermi-Level zwischen Landau-Leveln
+→ DOS(EF) ~ 0 und 𝜎𝑥𝑥 = 0
+Landau-Level
+
+8
+Transport durch 1D Randkanäle
+2D Volumen (Bulk)
+Rand (Edge)
+Lokalisierte Bahn
+„Skipping orbit“
+
+9
+Transport durch 1D Randkanäle
+Rand durch Potentialwall angenähert
+1D Zustandsdichte bei EF
+• 1D Randkanäle mit chiraler Propagation
+→ keine Rückstreuung im Kanal
+• Keine Streuung zwischen den Randzuständen durch
+die Volumenzustände
+• Perfekte Transmission: T12 = 1 → Transport
+beschrieben durch Landauer-Büttiker-Formalismus
+exponentiell
+unterdrückt1 2
+
+10
+1 2V1 V2
+V1
+V2
+𝐼12 = 𝜈 ⋅ 𝑇12 ⋅ 𝐺1𝐷 ⋅ 𝑉12 = 𝜈 𝑒2
+ℎ (𝑉1 − 𝑉2)
+𝑅𝑥𝑦 = 𝑉𝑥𝑦
+𝐼 = 𝑉1 − 𝑉2
+𝜈 𝑒2
+ℎ (𝑉1 − 𝑉2)
+= 1
+𝜈 ⋅ ℎ
+𝑒2
+Der Strom ist durch die Anzahl der
+Randkänale 𝜈, das Leitswertquantum 𝑒2
+ℎ und
+die chemische Potentialdifferenz 𝑉1 − 𝑉2
+gegeben
+Da zwischen den Randkanälen keine Streuung
+stattfindet sind die Potentiale des „oberen“ und
+„unteren“ Randes durch V2 und V1 gegeben
+
+11
+Lokalisierung und Quantisierung durch Unordnung
+Lokalisierte Zustände
+Ausgedehnte Zustände
+𝜌𝑥𝑥 = 0
+𝜌𝑥𝑦 = quantisiert
+𝜌𝑥𝑥 ≠ 0
+𝜌𝑥𝑦 𝑛𝑖𝑐ℎ𝑡 quantisiert
+
+12
+Ausblick: Fraktionaler Quanten-Hall-Effekt
+Composite quasi-particles:
+electrons + flux quanta
+
+13
+Ausblick: Topologie und Quantisierung
+𝜎𝑥𝑦 = 𝐶 ⋅ 𝑒2
+ℎ = ෍
+𝑛 occ
+න
+𝐵𝑍
+𝑑2𝑘/ 2𝜋 2Ω𝑛(𝒌)
+Ω𝑛 𝒌 = ∇𝑘 × 𝐴𝑛 𝒌 = ∇𝑘 × 𝑖⟨𝑢𝑛𝒌 ∇𝒌 𝑢𝑛𝒌⟩
+• Chern number 𝐶
+• Berry connection 𝐴𝑛 𝒌
+• Berry curvature Ω𝑛 𝒌
+→ Hall conductance can be expressed in
+genereal geometric properties of the Hamiltonian
+
+14
+Ausblick: Präzisionsmessungen und das SI-System
+Zum Beispiel: J. Appl. Phys. 114, 064508 (2013).
+
+15
+Aktuelle Forschung: Anomaler Fraktionaler Quanten-Hall-Effekt
+Nature volume 622, pages 74–79 (2023).
+
+16
+Aktuelle Forschung: Interferometrie mit fraktionalen Randkanälen
+Science, 10 Apr 2025, Vol 388, Issue 6748, pp. 730-735
+Anyonische Zustände bei
+geradzahlig, fraktionalem Füllfaktor,
+z.B. 5/2, sind mögliche Kandidaten
+zur Realisierung von Topologischen
+Qubits.

@@ -1,0 +1,198 @@
+# Übung zur Vorlesung <br> Physik der kondensierten Materie 1 
+
+WiSe 2025/2026
+Tutorien in der Woche vom 15.12.25
+Lösungen zu Blatt 8
+
+Technische Universität München
+Lehrstuhl für Nanotechnologie und -materialien
+Alexander Musta
+
+### 8.1 Quantenmechanische Behandlung der eindimensionalen harmonischen Kette
+
+Angenommen, Sie haben $N$ Atome mit der Masse $m$, welche in einer eindimensionalen Kette mit periodischen Randbedingungen angeordnet sind. Im Gleichgewichtszustand beträgt der Abstand zwischen benachbarten Atomen $a$. Die Wechselwirkung zwischen den Atomen wird durch ein harmonisches Potenzial der nächsten Nachbarn mit der Federkonstante $K$ beschrieben. Daraus ergibt sich der Hamiltonoperator des Systems wie folgt:
+
+$$
+\hat{H}=\sum_{i=1}^{N} \frac{\hat{p}_{i}^{2}}{2 m}+\frac{K}{2} \sum_{i=1}^{N}\left(\hat{x}_{i}-\hat{x}_{i+1}\right)^{2} .
+$$
+
+Die Operatoren $\hat{p}_{i}$ und $\hat{x}_{i}$ bezeichnen die Impuls- bzw. Ortsoperatoren des $i$-ten Atoms, welche die Kommutatorbeziehung $\left[\hat{x}_{i}, \hat{p}_{j}\right]=i \hbar \delta_{i, j},\left[\hat{x}_{i}, \hat{x}_{j}\right]=0$ und $\left[\hat{p}_{i}, \hat{p}_{j}\right]=$ 0 erfüllen. In diesem Fall entspricht $\delta_{i, j}$ dem Kronecker-Delta. Für periodische Randbedingungen gelten die Beziehungen $\hat{x}_{N+1}=\hat{x}_{1}$ und $\hat{p}_{N+1}=\hat{p}_{1}$.
+(a) Oftmals ist es nützlich, die Operatoren in den reziproken Raum zu transformieren, wodurch sich der Ausdruck für den Hamiltonoperator vereinfachen lässt. Die Realraum Operatoren $\hat{x}_{n}, \hat{p}_{n}$ kann man wie folgt in $k$-Raum Operatoren transformieren:
+
+\begin{gathered}
+\hat{x}_{k}=\frac{1}{\sqrt{N}} \sum_{n=1}^{N} e^{-i k a n} \hat{x}_{n} \quad ; \quad \hat{x}_{n}=\frac{1}{\sqrt{N}} \sum_{k} e^{i k a n} \hat{x}_{k} \\
+\hat{p}_{k}=\frac{1}{\sqrt{N}} \sum_{n=1}^{N} e^{i k a n} \hat{p}_{n} \quad ; \quad \hat{p}_{n}=\frac{1}{\sqrt{N}} \sum_{k} e^{-i k a n} \hat{p}_{k}
+\end{gathered}
+
+Über welche Werte läuft die Summe über $k$, bzw. welche Werte darf $k$ annehmen? Zeigen Sie zudem, dass der Hamiltonoperator im Wellenvektorraum wie folgt ausgedrückt wird:
+
+\hat{H}=\sum_{k}\left[\frac{1}{2 m} \hat{p}_{k} \hat{p}_{-k}+\frac{m \omega_{k}^{2}}{2} \hat{x}_{k} \hat{x}_{-k}\right] \text { wobei } \omega_{k}^{2}=\frac{4 K}{m} \sin ^{2}\left(\frac{a k}{2}\right)
+
+Hinweis: Zeigen Sie zunächst, dass $N \delta_{k, k^{\prime}}=\sum_{n=1}^{N} e^{\text {ian }\left(k-k^{\prime}\right)}$ gilt, wobei $k$ und $k^{\prime}$ Wellenvektoren sind. Nutzen Sie zudem die Identität $\sum_{n=0}^{N-1} x^{n}= \left(1-x^{N}\right) /(1-x)$.
+
+## Lösung:
+
+Durch die periodischen Randbedingungen gilt $\hat{x}_{1}=\hat{x}_{N+1}$. Dadurch ergibt sich:
+
+\begin{aligned}
+& \hat{x}_{1}=\hat{x}_{N+1} \Leftrightarrow \sum_{k} e^{i a k} \hat{x}_{k}=\sum_{k} e^{i a k(N+1)} \hat{x}_{k} \\
+\Rightarrow & e^{i a k N} \stackrel{!}{=} 1 \Leftrightarrow k=\frac{2 \pi m}{a N} \quad \text { mit } \quad m=0,1, \ldots, N-1
+\end{aligned}
+
+Zunächst zeigen wir, dass $N \delta_{k, k^{\prime}}=\sum_{n=1}^{N} e^{\text {ian }\left(k-k^{\prime}\right)}$ gilt. Für $k=k^{\prime}$ sehen wir leicht, dass sich die Summe zu $N$ ergibt.
+Für den Fall $k \neq k^{\prime}$ schreiben wir:
+
+\begin{aligned}
+\sum_{n=1}^{N} e^{i a n\left(k-k^{\prime}\right)} & =\sum_{n=0}^{N-1} e^{i a(n+1)\left(k-k^{\prime}\right)}=e^{i a\left(k-k^{\prime}\right)} \frac{1-e^{i a N\left(k-k^{\prime}\right)}}{1-e^{i a\left(k-k^{\prime}\right)}} \\
+& \stackrel{=\frac{2 \pi m}{a N}}{=} e^{i \frac{2 \pi}{N}\left(m-m^{\prime}\right)} \frac{1-e^{i 2 \pi\left(m-m^{\prime}\right)}}{1-e^{i \frac{2 \pi}{N}\left(m-m^{\prime}\right)}}=0
+\end{aligned}
+
+Dabei haben wir die Identität $\sum_{n=0}^{N-1} x^{n}=\left(1-x^{N}\right) /(1-x)$ benutzt.
+Nun berechnen wir die Summe $\sum_{l} \hat{x}_{l} \hat{x}_{l+m}$ :
+
+\sum_{l} \hat{x}_{l} \hat{x}_{l+m} & =\sum_{l, k, k^{\prime}} \frac{1}{N} e^{i a l\left(k+k^{\prime}\right)} e^{i a m k^{\prime}} \hat{x}_{k} \hat{x_{k^{\prime}}} \\
+& =\sum_{k, k^{\prime}} \delta_{k,-k^{\prime}} e^{i a m k^{\prime}} \hat{x}_{k} \hat{x}_{k^{\prime}} \\
+& =\sum_{k} e^{-i a m k} \hat{x}_{k} \hat{x}_{-k}
+
+Damit können wir $\hat{H}$ wie folgt umschreiben:
+
+\hat{H} & =\sum_{i} \frac{p_{i}^{2}}{2 m}+\frac{K}{2} \sum_{i}\left(\hat{x}_{i}-\hat{x}_{i+1}\right)^{2} \\
+& =\sum_{k} \frac{1}{2 m} \hat{p}_{k} \hat{p}_{-k}+\frac{K}{2} \sum_{i}(\hat{x}_{i}^{2}+\hat{x}_{i+1}^{2}-\hat{x}_{i} \hat{x}_{i+1}-\underbrace{\hat{x}_{i+1} \hat{x}_{i}}_{=\hat{x}_{i} \hat{x}_{i-1}}) \\
+& =\sum_{k}[\frac{1}{2 m} \hat{p}_{k} \hat{p}_{-k}+\frac{K}{2} \hat{x}_{k} \hat{x}_{-k} \underbrace{\left(2-e^{-i a k}-e^{i a k}\right)}_{=2-2 \cos (a k)=4 \sin ^{2}\left(\frac{a k}{2}\right)}] \\
+& =\sum_{k}\left[\frac{1}{2 m} \hat{p}_{k} \hat{p}_{-k}+\frac{m \omega_{k}^{2}}{2} \hat{x}_{k} \hat{x}_{-k}\right]
+
+Hier definieren wir $\omega_{k}^{2}=\frac{4 K}{m} \sin ^{2}\left(\frac{a k}{2}\right)$, analog zur Dispersion in der klassischen Behandlung der eindimensionalen harmonischen Kette.
+(b) Wir können den Hamiltonoperator weiter vereinfachen, indem wir die Vernichtungsund Erzeugungsoperatoren $\hat{a}_{k}$ und $\hat{a}_{k}^{\dagger}$ einführen:
+
+\hat{a}_{k}=\sqrt{\frac{m \omega_{k}}{2 \hbar}}\left(\hat{x}_{k}+\frac{i}{m \omega_{k}} \hat{p}_{-k}\right) ; \hat{a}_{k}^{\dagger}=\sqrt{\frac{m \omega_{k}}{2 \hbar}}\left(\hat{x}_{-k}-\frac{i}{m \omega_{k}} \hat{p}_{k}\right) .
+
+Zeigen Sie, dass $\left[\hat{a}_{k}, \hat{a}_{k^{\prime}}^{\dagger}\right]=\delta_{k, k^{\prime}},\left[\hat{a}_{k}, \hat{a}_{k^{\prime}}\right]=0$ und $\left[\hat{a}_{k}^{\dagger}, \hat{a}_{k^{\prime}}^{\dagger}\right]=0$ gelten, welche den analogen Kommutatoreigenschaften der Erzeugungs- und Vernichtungsoperatoren eines einfachen harmonischen Oszillators entsprechen. Berechne zunächst den Kommutator $\left[\hat{x}_{k}, \hat{p}_{k^{\prime}}\right]$.
+
+## Lösung:
+
+Wir berechnen den Kommutator zwischen $\hat{x}_{k}$ und $\hat{p}_{k^{\prime}}$.
+
+\left[\hat{x}_{k}, \hat{p}_{k^{\prime}}\right]=\frac{1}{N} \sum_{m, n} e^{i a k m} e^{-i a k^{\prime} n}\left[\hat{x}_{m}, \hat{p}_{n}\right]=\frac{i \hbar}{N} \sum_{n} e^{i a n\left(k-k^{\prime}\right)}=i \hbar \delta_{k, k^{\prime}}
+
+Die Kommutatoren $\left[\hat{x}_{k}, \hat{x}_{k^{\prime}}\right]$ und $\left[\hat{p}_{k}, \hat{p}_{k^{\prime}}\right]$ verschwinden, da die Realraumoperatoren $\hat{x}_{i}, \hat{p}_{i}$ untereinander kommutieren. Nun ergibt sich für $\left[\hat{a}_{k}, \hat{a}_{k^{\prime}}^{\dagger}\right]$ folgendes:
+
+{\left[\hat{a}_{k}, \hat{a}_{k^{\prime}}^{\dagger}\right] } & =\frac{m \omega_{k}}{2 \hbar}\left[\hat{x}_{k}+\frac{i}{m \omega_{k}} \hat{p}_{-k}, \hat{x}_{-k^{\prime}}-\frac{i}{m \omega_{k}} \hat{p}_{k^{\prime}}\right] \\
+& =\frac{i}{2 \hbar}\left(-\left[\hat{x}_{k}, \hat{p}_{k^{\prime}}\right]+\left[\hat{p}_{-k}, \hat{x}_{-k^{\prime}}\right]\right)=\delta_{k, k^{\prime}}
+
+{\left[\hat{a}_{k}, \hat{a}_{k^{\prime}}\right] } & =\frac{m \omega_{k}}{2 \hbar}\left[\hat{x}_{k}+\frac{i}{m \omega_{k}} \hat{p}_{-k}, \hat{x}_{-k^{\prime}}+\frac{i}{m \omega_{k}} \hat{p}_{k^{\prime}}\right] \\
+& =\frac{i}{2 \hbar}\left(\left[\hat{x}_{k}, \hat{p}_{k^{\prime}}\right]+\left[\hat{p}_{-k}, \hat{x}_{-k^{\prime}}\right]\right)=0
+
+$\left[\hat{a}_{k}^{\dagger}, \hat{a}_{k^{\prime}}^{\dagger}\right]=0$ ergibt sich durch die hermitesche Konjugation von $\left[\hat{a}_{k}, \hat{a}_{k^{\prime}}\right]=0$.
+(c) Zeigen Sie schließlich, dass der Hamiltonoperator in Bezug auf $\hat{a}_{k}, \hat{a}_{k}^{\dagger}$ einer Summe aus unabhängigen harmonischen Oszillatoren mit jeweils einer Eigenfrequenz $\omega_{k}$ entspricht:
+
+\hat{H}=\sum_{k} \hbar \omega_{k}\left(\hat{a}_{k}^{\dagger} \hat{a}_{k}+\frac{1}{2}\right)
+
+
+Die Operatoren $\hat{x}_{k}$ und $\hat{p}_{k}$ werden wie folgt durch $\hat{a}_{k}$ und $\hat{a}_{k}^{\dagger}$ geschrieben:
+
+\hat{x}_{k}=\sqrt{\frac{\hbar}{2 m \omega_{k}}}\left(\hat{a}_{k}+\hat{a}_{-k}^{\dagger}\right) \quad \text { und } \quad \hat{p}_{k}=i \sqrt{\frac{m \omega_{k} \hbar}{2}}\left(\hat{a}_{k}^{\dagger}-\hat{a}_{-k}\right)
+
+Dadurch kann man $\hat{H}$ schreiben als:
+
+\hat{H} & =\sum_{k} \frac{\hbar \omega_{k}}{4}\left[-\left(\hat{a}_{-k}-\hat{a}_{k}^{\dagger}\right)\left(\hat{a}_{k}-\hat{a}_{-k}^{\dagger}\right)+\left(\hat{a}_{k}+\hat{a}_{-k}^{\dagger}\right)\left(\hat{a}_{-k}+\hat{a}_{k}^{\dagger}\right)\right] \\
+& =\sum_{k} \frac{\hbar \omega_{k}}{4}\left[-\hat{a}_{-k} \hat{a}_{k}-\hat{a}_{k}^{\dagger} \hat{a}_{-k}^{\dagger}+\hat{a}_{-k} \hat{a}_{-k}^{\dagger}+\hat{a}_{k}^{\dagger} \hat{a}_{k}+\hat{a}_{k} \hat{a}_{-k}+\hat{a}_{k} \hat{a}_{k}^{\dagger}+\hat{a}_{-k}^{\dagger} \hat{a}_{-k}+\hat{a}_{-k}^{\dagger} \hat{a}_{k}^{\dagger}\right] \\
+& =\sum_{k} \frac{\hbar \omega_{k}}{2}\left(\hat{a}_{k}^{\dagger} \hat{a}_{k}+\hat{a}_{k} \hat{a}_{k}^{\dagger}\right) \\
+& =\sum_{k} \hbar \omega_{k}\left(\hat{a}_{k}^{\dagger} \hat{a}_{k}+\frac{1}{2}\right)
+
+Wie wir sehen können, erhalten wir für $\hat{H}$ eine Summe aus unabhängigen harmonischen Oszillatoren. Jede Mode $k$ nimmt nur diskrete Eigenwerte $E_{k}= \hbar \omega_{k}\left(n_{k}+\frac{1}{2}\right), n_{k}=0,1,2, \ldots$ an.
+
+### 8.2 Optische Phononen in einer zweiatomigen Ketten
+
+![This diagram depicts a one-dimensional lattice model showing masses connected by springs, with alternating small mass m and large mass M, representing a diatomic chain used in the study of lattice vibrations or phonons in solid state physics. It shows the arrangement of masses and spring constants, with displacements and wave vectors indicated for analyzing vibrational modes.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/00e1bd7c-96e2-4872-a3a7-4cda9936b208/6970206c-f895-45f4-b6d8-f2757aedffcf-5_383_1389_1362_369.jpg)
+Abbildung 1: Skizze einer zweiatomigen Kette bestehend aus Atomen mit Masse $m$ und $M$, wobei $M>m$ gilt.
+
+Betrachten Sie eine lineare Kette bestehend aus zwei unterschiedlichen Atomen mit Massen $m$ und $M$ (mit $M>m$ ), welche sich in einem regelmäßigen Muster abwechseln, wie es in Abbildung 1 dargestellt ist. Benachbarte Atome sind miteinander durch eine Feder mit Federkonstante $f$ gekoppelt. Im Gleichgewichtszustand sind die benachbarten Atome $a / 2$ voneinander entfernt, wobei $a$ der Größe der Einheitszelle entspricht. Die longitudinale Auslenkung aus der Gleichgewichtsposition für
+das $n$-te Atom mit Masse $m$ wird mit $q_{n}$ und das $n$-te Atom mit Masse $M$ mit $Q_{n}$ bezeichnet. Der Index $n$ geht von 1 bis $N$ und es gibt insgesamt $2 N$ Atome.
+(a) Berechnen Sie das Spektrum der Eigenfrequenzen für longitudinale Schwingungen mit periodischen Randbedingungen $q_{N+1}=q_{1}$ und $Q_{N+1}=q_{1}$. Welche Werte darf $k$ annehmen?
+
+
+Die Klassischen Bewegungsgleichungen erhalten wir durch das Anwenden vom Hooke'schen Gesetztes und sind gegeben durch:
+
+m \frac{d^{2} q_{n}}{d t^{2}}=f\left(Q_{n}+Q_{n-1}-2 q_{n}\right) \quad ; \quad M \frac{d^{2} Q_{n}}{d t^{2}}=f\left(q_{n}+q_{n+1}-2 Q_{n}\right)
+
+Wir erhalten damit $2 N$ gekoppelte lineare Differentialgleichungen. Wir setzen den Ansatz der für ebene Wellen ein und erhalten somit:
+
+-m \omega^{2} a_{k}=f\left(A_{k}+e^{-i a k} A_{k}-2 a_{k}\right) \quad ; \quad-M \omega^{2} A_{k}=f\left(a_{k}+e^{i a k} a_{k}-2 A_{k}\right)
+
+Der Wellenvektor ist gegeben durch $k=2 \pi l /(N a)$, wobei $l$ eine ganze Zahl ist mit $-N / 2+1 \leq l \leq N / 2$, was sich aus den periodischen Randbedingungen ergibt (siehe Aufgabe 8.1). Die Gleichungen für $a_{k}$ und $A_{k}$ schreiben wir nun in der Matrix-Form auf als:
+
+\left(\begin{array}{cc}
+m \omega^{2} / f-2 & 1+e^{-i k a} \\
+1+e^{i k a} & M \omega^{2} / f-2
+\end{array}\right)\binom{a_{k}}{A_{k}}=0 .
+
+Es handelt sich weiterhin um $2 N$-Gleichungen, welche für ein gegebenes $k$ nur paarweise gekopplet sind für $a_{k}$ und $A_{k}$. Damit die Matrixgleichung eine nicht triviale Lösung besitzt muss die Determinante der Matrix verschwinden. Dadurch ergeben sich folgende Gleichungen für die Frequenz $\omega(k)$ :
+
+\omega_{ \pm}(k)=\left[\frac{f}{m M}\left(m+M \pm \sqrt{m^{2}+M^{2}+2 m M \cos (k a)}\right)\right]^{\frac{1}{2}}
+
+$\omega_{-}(k)$ entspricht dem akustischen und $\omega_{+}(k)$ dem optischen Zweig. Je größer der Unterschied zwischen $m$ und $M$ ist, desto größer wird die Lücke zwischen den beiden Zweigen. Die Dispersionsrelationen für zwei unterschiedliche Massenverhältnisse sind in Abbildung 2 gegeben.
+
+![This diagram is a phonon dispersion relation showing the frequency (ω) of vibrational modes in a one-dimensional diatomic lattice as a function of the wave vector (ka/π), comparing cases for two different mass ratios (M = 3m and M = 1.2m). It depicts the acoustic and optical phonon branches for these mass configurations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/00e1bd7c-96e2-4872-a3a7-4cda9936b208/6970206c-f895-45f4-b6d8-f2757aedffcf-7_510_699_348_717.jpg)
+Abbildung 2: Dispersion Relationen einer zweiatomigen Kette für $M / m=3$ (blau) und $M / m=1.2$ (rot).
+
+(b) Bestimmen Sie $q_{n}(t)$ und $Q_{n}(t)$ bei $k=0$ und $k=\frac{\pi}{a}$.
+
+
+Wir betrachten zuerst den Fall $k=0$. Dann erhalten wir $\omega_{+}^{2}(0)=2 f(m+ M) /(m M)$ und $\omega_{-}^{2}(0)=0$. Wir setzen $\omega_{-}^{2}(0)$ in die Matrixgleichung ein und erhalten:
+
+\left(\begin{array}{cc}
+-2 & 2 \\
+2 & -2
+\end{array}\right)\binom{a_{0}}{A_{0}}=0 \Rightarrow A_{0}=a_{0}
+
+D.h., dass die schweren und leichten Atome sich in Phase bewegen. Dieser Fall entspricht einer Translation des gesamten Gitters. Wenn wir $\omega_{+}^{2}(0)$ in die Matrixgleichung einsetzten, erhalten wir:
+
+2 \frac{m}{M} & 2 \\
+2 & 2 \frac{M}{m}
+\end{array}\right)\binom{a_{0}}{A_{0}}=0 \Rightarrow A_{0}=-\frac{m}{M} a_{0}
+
+Die leichten und schweren Atome schwingen gegeneinander, wobei die Amplitude der Schwingung für die schweren Atome um den Faktor $\frac{m}{M}$ kleiner ist. Zusammenfassend können wir schreiben
+
+& Q_{n}(t)=q_{n}(t)=a+b t \text { (akustischer Zweig) } \\
+& Q_{n}(t)=Q_{0} \cos \left(\omega_{+}(0) t\right) ; q_{n}(t)=-Q_{0} \frac{M}{m} \cos \left(\omega_{+}(0) t\right) \text { (optischer Zweig) }
+
+Nun betrachten wir den Fall $k=\pi / a$. Damit ergibt sich $\omega_{+}^{2}(\pi / a)=2 f / m$ und $\omega_{-}^{2}(\pi / a)=2 f / M$. Die Matrixgleichung bei $k=0$ ist dann gegeben als:
+
+m \omega^{2} / f-2 & 0 \\
+0 & M \omega^{2} / f-2
+\end{array}\right)\binom{a_{\pi / a}}{A_{\pi / a}}=0 .
+
+Für den akustischen Zweig ( $\omega_{-}$) sehen wir, dass $a_{\pi / a}=0$ gelten muss. Bei dem optischen Zweig ( $\omega_{+}$) muss $A_{\pi / a}=0$ gelten. Die Auslenkungen als Funktion der Zeit sind damit gegeben als
+
+& Q_{n}(t)=(-1)^{n} A_{\pi / a} \cos \left(\omega_{-}(\pi / a) t\right) ; q_{n}(t)=0 \text { (akustischer Zweig) } \\
+& Q_{n}(t)=0 ; q_{n}(t)=(-1)^{n} a_{\pi / a} \cos \left(\omega_{+}(\pi / a) t\right) \text { (optischer Zweig) }
+
+Im akustischen Zweig bewegen sich nur die schweren Atome, wobei benachbarte Atome sich in entgegengesetzte Richtungen bewegen. Für den optischen Zweig bewegen sich nur die leichten Atome.
+(c) Betrachten Sie den speziellen Grenzfall gleicher Masse $m=M$ mit der Gitterkonstante $a / 2$. Zeichnen Sie das vollständige Spektrum $\omega(k)$ und diskutieren Sie, was mit dem optischen Zweig in diesem Grenzfall geschieht.
+
+
+In dem Grenzfall $M \rightarrow m$ erhalten wir
+
+\omega_{ \pm}(k)=\left[\frac{f}{m}(2 \pm \sqrt{2+2 \cos (k a)})\right]
+
+und die Energielücke bei $k=\frac{\pi}{a}$ verschwindet. Abbildung 3 zeigt die Dispersionsrelation für die zweiatomige Kette in diesem Grenzfall (gestrichelte rote Linie). Diese Dispersionsrelation ist äquivalent zu der einatomigen harmonischen Kette mit einer Gitterkonstante von $a / 2$ (blaue Kurve), wenn man $|k|>\frac{\pi}{a}$ in die erste Brillouin Zone $[-\pi / a, \pi / a]$ hineinfaltet.
+(d) Zeigen Sie, dass der Gesamtimpuls der angeregten Phononen
+
+P(t)=\frac{d}{d t} \sum_{n=1}^{N}\left[m q_{n}(t)+M Q_{n}(t)\right]
+
+mit Wellenzahl $k \neq 0$ gleich 0 ist.
+
+![This diagram depicts phonon dispersion relations for a one-dimensional lattice, showing the relationship between angular frequency (ω) and wave vector (k) for two different lattice constants (a and a/2). It illustrates how the phonon frequency varies with wave vector in the lattice vibrations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/00e1bd7c-96e2-4872-a3a7-4cda9936b208/6970206c-f895-45f4-b6d8-f2757aedffcf-9_508_699_367_696.jpg)
+Abbildung 3: Dispersion Relationen einer zweiatomigen Kette für $M=m$ (rot). Der optische Zweig in diesem Grenzfall entspricht der zurückgefalteten Dispersionsrelation der einatomigen Kette mit der Gitterkonstante $a / 2$ für $|k|>\frac{\pi}{a}$.
+
+
+Wir setzen den Ansatz von $q_{n}(t)$ und $Q_{n}(t)$ in $P(t)$ ein:
+
+P(t) & =\frac{d}{d t} \sum_{n=1}^{N}\left[m q_{n}(t)+M Q_{n}(t)\right]=-i \omega(k)\left(m a_{k}+M A_{k}\right) e^{-i \omega(k) t} \sum_{n=1}^{N} e^{i k n a} \\
+& \stackrel{k=\frac{2 \pi l}{N a}}{=}-i \omega(k)\left(m a_{k}+M A_{k}\right) e^{-i \omega(k) t} \sum_{n=1}^{N}\left(e^{i n 2 \pi l}\right)^{\frac{1}{N}} \\
+& =-i \omega(k)\left(m a_{k}+M A_{k}\right) e^{-i \omega(k) t} N \delta_{l, 0} .
+
+Das heißt, dass die angeregten Phononen $q \neq 0$ zu keiner Translation bzw. Bewegung des Kristalls führen, da sie keinen Beitrag zum gesamten physikalischen Impuls $P$ liefern. Jedoch für die Mode $k=0 \mathrm{im}$ akustischen Zweig erhalten wir eine gleichförmige Translation des Kristalls mit einem gesamten physikalischen Impuls $P \neq 0$, wie wir bereits in Aufgabe (b) gesehen haben. Für den optischen Zweig bei $k=0$ ergibt sich hingegen:
+
+P(t)=-i \omega_{+}(0)\left(m a_{0}+M A_{0}\right) e^{-i \omega_{+}(0) t} N \delta_{l, 0}=-i \omega_{+}(0)\left(m a_{0}-\frac{m}{M} M a_{0}\right) e^{-i \omega_{+}(0) t} N \delta_{l, 0}=0 .
+

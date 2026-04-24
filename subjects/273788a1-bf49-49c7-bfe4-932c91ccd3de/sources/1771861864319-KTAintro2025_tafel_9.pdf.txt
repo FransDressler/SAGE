@@ -1,0 +1,119 @@
+## Vorlesung 9: 9.12.2025
+
+Betrachtung von Isobaren ( $\mathrm{A}=$ const)
+Wie ändert sich $M(A, Z)$ in Abhängigkeit von $Z$ ?
+
+$$
+\begin{gathered}
+B(A=\text { const, } Z)=\text { const }-a_{C} \frac{Z^{2}}{A^{1 / 3}}-a_{A} \frac{(N-Z)^{2}}{A^{2}} \\
+B(Z)=-\alpha Z^{2}+\beta Z+\gamma, \quad Z_{0}=\frac{\beta}{2 \alpha}
+\end{gathered}
+$$
+
+![This is a mass parabola diagram for isobars showing the beta-minus (β⁻) and beta-plus (β⁺) decay pathways between nuclei with the same mass number (A) but different atomic numbers (Z). It illustrates how nuclei transition to more stable states by beta decay along the curve of nuclear mass versus atomic number.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-1_426_782_733_189.jpg)
+
+\begin{gathered}
+{ }_{Z}^{A} \mathrm{X} \rightarrow{ }_{Z+1}^{A} \mathrm{Y}+e^{-}+\overline{\nu_{e}} \\
+\beta^{-}: n \rightarrow p+e^{-}+\overline{\nu_{e}} \\
+\beta^{+}:{ }_{Z}^{A} \mathrm{X} \rightarrow{ }_{Z-1}^{A} \mathrm{Y}+e^{+}+\nu_{e}
+\end{gathered}
+
+![This diagram depicts a one-dimensional coordinate axis labeled with a point \( z_0 \) on the z-axis, likely representing a specific position or reference point in a spatial or physical context.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-1_184_961_1196_214.jpg)
+
+Schematischer Graph von Bindungsenergie von Isobaren für $g u$ und $u g$-Paarungen
+![This diagram depicts the energy level curves for the quark-antiquark pairs gg (gluon-gluon) and uu (up quark-up antiquark), illustrating the stable states due to pairing effects and the resulting energy splitting between these states.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-1_426_704_1656_187.jpg)
+
+Schematischer Graph von Bindungsenergie von Isobaren für $g g$ - und $u u$-Paarungen
+![This diagram is a nuclear mass parabola for atomic mass number A=6, showing the variation of nuclear mass (M) with atomic number (Z) for isotopes of mass 6, including ^6H, ^6He, ^6Li, ^6Be, and ^6B. It illustrates the relative nuclear stability of these isotopes, with ^6Li at the minimum mass point indicating the most stable isotope for A=6.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-1_588_812_1535_1027.jpg)
+
+Beispiel für Ausnahmefall für Isobare mit $A=6$.
+Man sieht, ${ }^{6}$ Li ist stabil trotz $u u$-Paarung:
+Das liegt an der Clusterbildung im kern, $\alpha^{+}{ }^{2} \mathrm{H}$, und an der günstigen Spin-Isospin-Kopplung
+![This diagram is a nuclear binding energy curve for isotopes with mass number A=8, showing the relative binding energies of lithium-8, beryllium-8, and boron-8 nuclei. It illustrates the stability differences among these isotopes.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-2_490_816_207_612.jpg)
+
+Theoretisch vorgesagt Bindungsenergie von Isobare $A=8$ nach (Weizäcker)
+
+Laut Weizäcker ist ${ }^{8}$ Be das stabilste Isotop für $A=8$,
+aber: Cluster-Bildung ist hierbei nicht berücksichtigt:
+
+{ }^{8} \mathrm{Be} \approx \alpha+\alpha
+
+Weizäcker berücksichtigt nur die gemittelte Massenbeiträge und keine Kernstruktur:
+
+B_{\text {exp }}\left({ }^{8} \mathrm{Be}\right) \approx B_{\text {Weizäcker }}\left({ }^{8} \mathrm{Be}\right) \approx 56 \mathrm{MeV}
+
+Vergleiche mit $2 \alpha$ :
+
+B\left({ }^{8} \mathrm{Be}\right)=2 \cdot B\left({ }^{4} \mathrm{He}\right)+92 \mathrm{keV}
+
+⇒ sehr schwach gebunden
+⇒ instabil, sehr geringe Lebenszeit $\tau \approx 8 \cdot 10^{-17} \mathrm{~s}$
+Einschub zu triple $\alpha$-Zerfall in Kernen:
+
+{ }^{4} \mathrm{He}+{ }^{4} \mathrm{He} \rightarrow{ }^{8} \mathrm{Be}+\gamma \\
+{ }^{8} \mathrm{Be}+{ }^{4} \mathrm{He} \rightarrow{ }^{12} \mathrm{C}^{*} \rightarrow{ }^{12} \mathrm{C}+\gamma
+
+${ }^{12} \mathrm{C}^{*}$ ist der angeregte Kohlenstoff von ${ }^{12} \mathrm{C}$, dem stabilen Kohlenstoff, der essentiell für Leben ist. Die kurze Lebenszeit ist ein "kosmischer Zufall".
+${ }^{8}$ Be bildet Bottleneck bei Fusionsreaktionen, verzögert das sogenannte Heliumbrennen.
+Falls ${ }^{8} \mathrm{Be}$ stabil wäre → explosionsartige Berbrennung, um Faktor $10^{6}$ kürzere Lebenszeit von Sternen Falls ${ }^{8} \mathrm{Be}$ noch instabiler wäre → keine Kohlenstoffproduktion.
+
+Electron capture:
+
+n \rightarrow p+e^{-}+\overline{\nu_{e}} \\
+{ }_{Z}^{A} \mathrm{X}+e^{-} \rightarrow{ }_{Z-1}^{A} \mathrm{Y}+\nu_{e}
+
+Einfang eines $e^{-}$aus der Atomhülle, da $e^{-}$einen endliche Aufenthaltswahrscheinlichkeit im Kern haben. Besonders bei schweren (großen) Kernen mit $e^{-}$-Bahnen, die besonders klein sind.
+
+### 2.1.3 Alpha Zerfall
+
+- $p, n$ können nicht emittiert werden, entweichen
+- Dagegen gebundene Zustände schon (in Praxis vor allen ${ }^{4} \mathrm{He}$ )
+- ${ }^{4} \mathrm{He}$ ist ungewöhnlich stark gebunden $(7 \mathrm{MeV} / n)$
+![This diagram depicts the energy levels involved in alpha decay, showing bound and quasi-stationary states of protons and neutrons within a nucleus, the potential barrier, and the energy of the emitted alpha particle as a function of nuclear radius.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-3_793_1507_507_264.jpg)
+
+V_{C}=2(Z-2) \frac{\alpha \hbar c}{r} \\
+(A, Z) \rightarrow(A-4, Z-2)+\alpha
+
+Transmission durch Barriere (Quantenmechanische Tunnelwahrscheinlichkeit)
+
+T \approx e^{-2 \kappa \Delta r}, \quad \kappa=\sqrt{\frac{2 m}{E-V_{C}}}
+
+### 2.1.4 Kernspaltung
+
+- $B / A$ fällt $Z \geq 40$
+- Kern mit $Z>40$ können prinzipiell in 2 leichtere Kerne zerfallen
+- Potentialbarriere groß
+- Verformung der Kerne möglich
+![This diagram depicts the deformation of a sphere into an ellipsoid, showing the relationship between the original radius \(R\) and the semi-major and semi-minor axes \(a\) and \(b\) of the ellipsoid, with equations expressing these axes in terms of a deformation parameter \(\epsilon\).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-3_170_1511_2110_196.jpg)
+
+Die Verformung ändert Bindungsenergie $E_{S}$ vs. $E_{C}$
+
+E_{S}=a_{s} A^{2 / 3}\left(1+\frac{2}{5} \epsilon^{2}+\ldots\right) \\
+E_{C}=a_{C} \frac{Z^{2}}{A^{1 / 3}}\left(1-\frac{1}{5} \epsilon^{2}+\ldots\right) \\
+\Delta E=E(\epsilon)-E(\epsilon=0)=\frac{\epsilon^{2}}{5}\left(2 a_{S} A^{2 / 3}-a_{C} Z^{2} A^{-1 / 3}\right)
+
+wenn $\Delta E<0$, dann Energiegewinn durch Verformung.
+
+\Longleftrightarrow \frac{Z^{2}}{A} \geq \frac{2 a_{s}}{a_{C}} \approx 48
+
+wenn $Z>114, A>270$, dann spontane Spaltung.
+Potentialverlauf
+![This diagram depicts the behavior of a function related to the ratio \( \frac{Z^2}{A} \) in nuclear physics, showing that when this ratio is approximately greater than 48, there is no fission barrier ("keine Spaltbarriere").](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/da6cb733-1ab8-49f5-9556-ed16d3f1022c/9ea78b23-9fd8-4bea-bd0e-8dc49a273f3a-4_566_917_552_557.jpg)
+
+### 2.1.5 Induzierte Spaltung:
+
+- Ab ca. $Z \approx 92$ ist die Spaltbarriere $\sim 6 \mathrm{MeV}$.
+- Kann durch Neutroneneinfangreaktion zugeführt werden
+z.B. $n+{ }^{235} \mathrm{U} \rightarrow{ }^{236} \mathrm{U}^{*}$
+
+Bei der Einfangreaktion werden 6.4 Mev frei und die Spaltbarriere sind 5.5 MeV (ähnliche Spaltmaterialien ${ }^{233} \mathrm{Th},{ }^{239} \mathrm{Pu}$
+
+- Beispiel ${ }^{238} \mathrm{U}$ :
+
+Einfang: 4.9 MeV , Barriere: 5.5 MeV
+→ nur möglich durch schnelle Neutronen, die
+a) eine geringe Einfang-Wirkungsquerschnitt haben
+b) nicht automatisch erzeugt in Spaltung werden ⇒ keine Kettenreaktion
+$\Rightarrow{ }^{235} \mathrm{U}$ muss angereichert werden (natürlich nur $0.72 \%$ )
+Für Reaktoren: mind. $3-5 \%$ für Atomwaffen mind. $>90 \%$.
+

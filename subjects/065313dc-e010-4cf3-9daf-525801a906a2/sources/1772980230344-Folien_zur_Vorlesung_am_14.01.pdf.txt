@@ -1,0 +1,269 @@
+## Ergänzung / Nachtrag: Summenkonvention
+
+In dieser VO wird für Summen über benachbarte Gitterplätze ausschließlich die Konvention
+
+$$
+\sum_{\langle i, j\rangle}=\quad \begin{aligned}
+& \text { Summe über alle Nachbarpaare (i,j), } \\
+& \text { jedes Paar wird nur einmal gezählt, } \\
+& \text { d.h. (j,i) und (i,j) zählen nur als ein Term }
+\end{aligned}
+$$
+
+verwendet.
+
+Achtung: In der Literatur wird auch häufig die Konvention verwendet, dass die Paare (i,j) und (j,i) separat gezählt werden. Dadurch kann es zu zusätzlichen Faktoren von 2 in der Definition der Kopplungskonstante kommen.
+
+- Bsp: 1D, periodische RB: $\quad \sum_{\langle i, j\rangle} \sigma_{z}^{i} \sigma_{z}^{j}=\sum_{i=1}^{N} \sigma_{z}^{i} \sigma_{z}^{i+1}$
+- Bsp: 2D, periodische RB:
+![This diagram depicts a labeled graph or lattice structure showing a central node connected to four surrounding nodes, each labeled with a complex number involving the imaginary unit \(i\) and an integer. It is likely used to represent a mathematical or computational concept involving complex numbers and graph connectivity.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-02_806_726_24_2260.jpg)
+da sonst
+Doppelzählung
+Summe über alle
+Gitterplätze
+
+Nachbarn von i
+
+\sum_{\langle i, j\rangle} \sigma_{z}^{i} \sigma_{z}^{j}=\sum_{i}^{\prime} \sigma_{z}^{i}\left(\sigma_{z}^{i, 1}+\sigma_{z}^{i, 2}+\sigma_{z}^{i, 3}+\sigma_{z}^{i, 4}\right)
+
+Molekularfeldnäherung: $\quad \sigma_{z}^{i} \sigma_{z}^{j} \rightarrow \sigma_{z}^{i}\left\langle\sigma_{z}^{j}\right\rangle+\sigma_{z}^{j}\left\langle\sigma_{z}^{i}\right\rangle-\left\langle\sigma_{z}^{i}\right\rangle\left\langle\sigma_{z}^{j}\right\rangle$
+
+Bsp. 1D: betrachte nur Terme in der Summe die Gitterplatz i enthalten:
+
+\begin{aligned}
+\sigma_{z}^{i-1} \sigma_{z}^{i}+\sigma_{z}^{i} \sigma_{z}^{i+1} \rightarrow & \left\langle\sigma_{z}^{i-1}\right\rangle \sigma_{z}^{i}+\sigma_{z}^{i-1}\left\langle\sigma_{z}^{i}\right\rangle+\left\langle\sigma_{z}^{i}\right\rangle \sigma_{z}^{i+1}+\sigma_{z}^{i}\left\langle\sigma_{z}^{i+1}\right\rangle \\
+& -\left\langle\sigma_{z}^{i-1}\right\rangle\left\langle\sigma_{z}^{i}\right\rangle-\left\langle\sigma_{z}^{i}\right\rangle\left\langle\sigma_{z}^{i+1}\right\rangle
+\end{aligned}
+
+D.h. es gibt insgesamt 2 Terme $\sim \sigma_{z}^{i}$ und
+
+\sigma_{z}^{i}\left(\left\langle\sigma_{z}^{i-1}\right\rangle+\left\langle\sigma_{z}^{i+1}\right\rangle\right)=-z m \sigma_{z}^{i} \quad z=2, \quad m=-\left\langle\sigma_{z}^{i}\right\rangle
+
+Jeder Term in der Summe liefert Beitrag $-m^{2}$ und daher:
+
+-J \sum_{i=1}^{N} \sigma_{z}^{i} \sigma_{z}^{i+1} \rightarrow \mu B_{\mathrm{eff}} \sum_{i=1}^{N} \sigma_{z}^{i}+\frac{z J}{2} m^{2} N \quad \Rightarrow B_{\mathrm{eff}}=\frac{z m J}{\mu}
+
+Analoge Rechnung liefert $\mathrm{z}=4$ in 2D und $\mathrm{z}=6$ in 3D.
+
+### 9.4.2 Diskussion der MF Lösung
+
+- kritische Temperatur:
+
+T_{c}:=\frac{z J}{k_{B}}, \quad \tau=\frac{T-T_{c}}{T_{c}}
+
+- Grenzfall $\mathbf{B}=\mathbf{0}: \quad m=\tanh (\beta m z J)$
+![This diagram depicts the behavior of an order parameter (m) versus an external parameter (likely temperature T) above the critical temperature (T > Tc) in a phase transition, showing the system in the disordered phase where the order parameter is zero at m=0.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-04_640_1110_1003_174.jpg)
+![This diagram depicts the behavior of an order parameter (likely magnetization \(m\)) as a function of an external parameter (possibly magnetic field or mass \(m\)) below the critical temperature \(T_c\), showing multiple stable and unstable equilibrium states characteristic of a first-order phase transition or spontaneous symmetry breaking.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-04_656_1116_987_1653.jpg)
+
+Für T>T ${ }_{\mathrm{c}}$ existiert nur eine Lösung mit $m=0$, d.h. mit verschwindendem magnetischen Moment.
+
+Für $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ gibt es noch zwei weitere Lösungen mit $m= \pm m_{0}$, d.h. mit endlicher Magnetisierung.
+
+- Knapp unterhalb von $\mathrm{T}_{\mathrm{c}}$ gilt für $\mathrm{B}=0$ :
+
+m=\tanh (\beta m z J) \simeq \frac{T_{c}}{T} m-\frac{1}{3}\left(\frac{T_{c}}{T} m\right)^{3}+\ldots \quad \Rightarrow m_{0}=\sqrt{-3 \tau}
+
+- Bei endlichem B-Feld, aber $\tau \ll 1, \mu B /\left(k_{B} T\right) \ll 1$, d.h. nahe am kritischen Punkt, ergibt sich aus der Entwicklung
+
+m\left(1-\frac{T_{c}}{T}\right)=\frac{\mu B}{k_{B} T}-\frac{1}{3}\left(\frac{\mu B}{k_{B} T}+\frac{T_{c}}{T} m\right)^{3}+\ldots
+
+die magnetische Zustandsgleichung:
+
+\frac{\mu B}{k_{B} T_{c}} \simeq \tau m+\frac{m^{3}}{3}
+
+und die kritische Isotherme:
+
+T=T_{c}: \quad \Rightarrow B \sim m^{3}
+
+![This diagram depicts the temperature dependence of the mass function \( m(T) \) in the presence and absence of a magnetic field \( B \), showing how the mass changes with temperature \( T \) for \( B = 0 \) and \( B \neq 0 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-05_762_857_1426_1922.jpg)
+
+- magnetische Suszeptibilität (nahe am krit. Punkt): $\quad \chi=\left.\frac{\partial m}{\partial B}\right|_{T}$
+
+\left.\frac{\partial}{\partial B}\right|_{T}: \quad \frac{\mu B}{k_{B} T_{c}} \simeq \tau m+\frac{m^{3}}{3} \quad \Rightarrow \quad \frac{\mu}{k_{B} T_{c}} \simeq \tau \chi+m^{2} \chi
+
+Im Grenzfall $\mathrm{B} \rightarrow 0$ können wir $m$ durch $m_{0}=0, \pm \sqrt{-3 \tau}$ ersetzen und erhalten:
+
+\chi=\frac{\mu}{k_{B} T_{c}} \frac{1}{\tau+m^{2}}=\left\{\begin{array}{cc:c}
+\frac{\mu / k_{B}}{T-T_{c}} & T>T_{c} \\
+\frac{\mu / k_{B}}{2\left(T_{c}-T\right)} & T<T_{c} \underbrace{\square(T)}_{\mathbf{0}} \underbrace{\chi}_{\mathbf{T}_{\mathbf{c}}}
+\end{array}\right.
+
+Die magnetische Response Funktion divergiert am kritischen Punkt wie
+
+\chi \sim\left|T-T_{c}\right|^{-1} \quad \text { "Curie-Weiß Gesetz" }
+
+- Freie Energie:
+
+F=-k_{B} T \ln Z_{\mathrm{MF}}=\frac{z J N}{2} m^{2}-k_{B} T N \ln \left[2 \cosh \left(\frac{\mu B+z J m}{k_{B} T}\right)\right]
+
+Diskussion ( $\mathrm{B}=0$ ):
+![This diagram depicts the free energy \( f \) as a function of the order parameter \( m \) for a system undergoing a phase transition at temperature \( T_c \), showing the change in the shape of the free energy curve above, at, and below the critical temperature \( T_c \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-07_878_1428_929_184.jpg)
+
+Die Freie Energie hat
+
+- für $\mathrm{T}>\mathrm{T}_{\mathrm{c}}$ ein Minimum bei $\mathrm{m}=0$.
+- für $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ zwei Minima bei $\mathrm{m} \neq 0$. ( $m=0$ energetisch instabil)
+
+Minimierung der freien Energie:
+
+\frac{\partial f}{\partial m}=0 \quad \Rightarrow \quad m=\tanh \left(\frac{\mu B_{\mathrm{eff}}}{k_{B} T}\right)
+
+## - Spezifische Wärme:
+
+Entwicklung der freien Energie (pro Teilchen) für $\mathrm{T} \sim \mathrm{T}_{\mathrm{c}}, \mathrm{B}=0$ :
+
+f \simeq k_{B}\left(T-T_{c}\right) \frac{m^{2}}{2}+\frac{k_{B} T_{c}}{12} m^{4}-k_{B} T \ln 2 \quad m \equiv m(T)
+
+Damit:
+
+=0
+
+Gleichgewicht
+
+\left.\begin{array}{l}
+c_{B}=\frac{C_{B}}{N}=-T \frac{\partial^{2} f}{\partial T^{2}}=-T \frac{\partial}{\partial T}\left[\left.\frac{\partial f}{\partial T}\right|_{m}+\frac{\partial F}{\partial m} \frac{\partial m}{\partial T}\right] \\
+=-k_{B} T \frac{\partial}{\partial T}\left[\frac{m^{2}}{2}-\ln 2\right]=-k_{B} T m \frac{\partial m}{\partial T} \\
+T>T_{c}: m(T)=0 \quad \Rightarrow \quad c_{B}=0 \\
+T<T_{c}: m(T)=\sqrt{-3 \tau} \quad \Rightarrow \quad c_{B}=\frac{3}{2} k_{B} T
+\end{array}\right\}
+
+Sprung der spez. Wärme bei T=Tc
+
+## - "Spontane Symmetriebrechung" ( $\mathbf{B}=\mathbf{0}$ ):
+
+Für B=0 ist der Hamiltonoperator des Ising-Modells invariant unter der globalen Symmetrieoperation:
+
+\sigma_{z}^{i} \rightarrow-\sigma_{z}^{i} \quad \text { " } \mathbf{Z}_{2} \text {-Symmetrie" }
+
+Aber: Der ferromagnetische Zustand mit $m=+m_{0}$ oder $m=-m_{0}$ zeichnet eine Richtung aus, d.h. er "bricht" die Symmetrie des Systems.
+
+T \approx T_{c}
+
+![This diagram depicts a potential energy function \( f \) versus a parameter \( m \), illustrating spontaneous symmetry breaking where a system initially at a symmetric unstable equilibrium (top of the central peak) moves to one of two stable minima on either side.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-09_546_1084_1082_232.jpg)
+
+Fluktuationen, kleine äußere Störungen, etc.
+
+T<T_{c}
+
+![This diagram depicts a potential energy landscape with two minima separated by a barrier, illustrating the concept of a system transitioning or tunneling from one stable state (left minimum) to another (right minimum) over the barrier. The red arrow indicates the direction of the transition or tunneling event.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-09_630_1094_998_1743.jpg)
+
+Überwindung der Energiebarriere erst nach unendlich langer Zeit.
+
+Exakter Gleichgewichtszustand ist symmetrisch, wird aber in der Praxis nicht erreicht !
+
+\rho(t \rightarrow \infty)=\frac{1}{2} \rho_{m_{0}}+\frac{1}{2} \rho_{-m_{0}}
+
+### 9.5 Das Ising Modell in 1D und 2D (Ausblick)
+
+## Molekularfeldnäherung:
+
+- nur die gemittelte WW der Nachbarspins wird berücksichtigt
+- Dimension, Gitterstruktur, etc. beeinflussen nur die Koordinationszahl z, d.h. die Stärke des effektiven Magnetfelds
+aber: wenige Nachbargitterplätze viele Nachbargitterplätze
+--> Fluktuationen relevant
+--> Fluktuationen weniger relevant
+
+\sum_{i=1}^{z} \vec{\mu}_{i} \simeq z\langle\vec{\mu}\rangle+\sqrt{z} \operatorname{Var}(\vec{\mu})
+
+Generell zeigt sich, dass die Molekularfeldnäherung in 3D oft gute Vorhersagen liefert, man in 1D / 2D aber auch qualitativ falsche Ergebnisse erhält.
+
+### 9.5.1 Das Ising Modells in 1D
+
+- In 1D kann das Ising-Modell mit Hilfe der Transfermatrixmethode exakt gelöst werden (siehe VO Fortgeschrittene statistische Physik).
+- Die exakte Lösung ergibt keine spontane Magnetisierung bei endlicher Temperatur und auch keinen Phasenübergang.
+- Allgemeines Argument gegen einen geordneten Zustand in 1D:
+![This diagram depicts the maximal ordered state in a system of spins, showing all spins aligned in the same direction, corresponding to the lowest energy state \( E = E_0 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-11_614_867_602_264.jpg)
+![This diagram depicts the excitation of a magnetic domain wall (Domänenwand) in a ferromagnetic material, showing the spin alignment on either side of the domain wall and the associated energy expression \( E = E_0 + 2J \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-11_620_872_596_1632.jpg)
+
+Änderung der freien Energie:
+![The image depicts a thermodynamic equation for the change in free energy (ΔF) related to domain walls (DW), showing how entropy increases due to the N-1 possible positions of the domain wall at nonzero temperature and large N.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-11_429_2236_1436_422.jpg)
+
+Für $T>0$ und $N \gg 1$ reduziert die Bildung von mehr und mehr DW die freie Energie und destabilisiert deshalb den geordneten Zustand.
+
+### 9.5.2 Das Ising Modell in 2D
+
+Das Ising Modell kann auch in 2D durch eine weitaus kompliziertere Transfermatrixrechnung gelöst werden. (Lars Onsager, Phys. Rev. 65, 117 (1944), 33 Seiten!!; W. Nolting, Grundkurs theor. Physik 6).
+
+Zusammenfassung der wichtigsten Ergebnisse:
+
+- In 2D gibt es einen Paramagnet-Ferromagnet Phasenübergang bei einer kritischen Temperatur:
+
+k_{B} T_{c}=\frac{2 J}{\ln (1+\sqrt{2})} \approx 2.27 \times J
+
+vgl. MF-Theorie:
+
+k_{B} T_{c}^{\mathrm{MF}}=4 J
+
+- Die spontane Magnetisierung (pro Spin) ist:
+
+m(B=0, T)=\left\{\begin{array}{cc}
+0 & T>T_{c} \\
+{\left[1-\frac{1}{\sinh ^{4}(2 \beta J)}\right]^{\frac{1}{8}}} & T<T_{c}
+\end{array}\right.
+
+![This diagram depicts the magnetization \( m \) as a function of temperature \( T \) for the two-dimensional Ising model at zero magnetic field \( B=0 \). It shows the spontaneous magnetization decreasing to zero at the critical temperature \( T_c \approx 2.27 J \), following the critical behavior \( m \sim (T_c - T)^{1/8} \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-13_846_1554_105_158.jpg)
+
+- Suszeptibilität:
+
+\chi \sim\left|T-T_{c}\right|^{-\frac{7}{4}}
+
+- Die spezifische Wärme (pro Spin) divergiert bei $\mathrm{T}_{\mathrm{c}}$ logarithmisch:
+
+C(B=0, T)
+
+![This diagram depicts the behavior of physical quantities as a function of the temperature ratio \( T/J \) in a system undergoing a phase transition, showing a divergence at the critical temperature 2.27 and a marked feature (MF) at temperature 4.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-13_835_1252_1384_243.jpg)
+
+C\left(B=0, T \approx T_{c}\right) \sim \ln \left|\frac{T_{c}}{T-T_{c}}\right|
+
+## 10. Phasenübergänge
+
+### 10.1 Phänomenologie und Begriffe
+
+Phasen: Zustände der Materie, die sich durch thermische, mechanische, magnetische, etc. Eigenschaften sowie durch ihre Symmetrien unterscheiden.
+
+> Innerhalb einer Phase sind thermodynamische Potentiale analytische Funktionen der Zustandsvariablen.
+
+Phasenübergang: Änderung der Phase bei Änderung eines Parameters. In der Nähe des Übergangs ist die freie Energie (oder ein anderes therm. Potential) eine nicht-analytische Funktion (nicht beliebig oft differenzierbar).
+
+### 10.1.1 Klassifizierung von Phasenübergängen
+
+## Phasenübergang "1. Ordnung":
+
+-) 1. Ableitungen thermodynamischer Potentiale sind unstetig
+-) latente Wärme $Q_{L}=T_{0} \Delta S \neq 0$ !!
+-) metastabile Phasen (überhitzte Flüssigkeit, übersättigter Dampf, ... )
+
+Bsp1: Flüssigkeit-Gas Übergang (bei gegebenen äußeren Druck $p, T<T_{c}$ ):
+Gibbs freie Enthalpie: $\quad G \equiv G(T, p, N)$
+![This diagram depicts a gas system under pressure \( p \) less than an external pressure \( p_0 \), illustrating the concept of gas molecules confined in a container at temperature \( T \) with a movable piston or barrier. It shows the relationship between internal pressure, external pressure, and molecular motion in a thermodynamic context.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-15_758_702_463_354.jpg)
+![This diagram depicts a Gibbs free energy (G) versus pressure (p) plot at constant temperature (T = const.), showing a phase transition at pressure p₀ where the slope of G changes abruptly.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-15_590_956_684_1708.jpg)
+![This diagram depicts a liquid-vapor phase equilibrium scenario where the pressure \( p \) is greater than the equilibrium vapor pressure \( p_0 \), showing the system at temperature \( T \) with liquid and vapor phases separated by an interface.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-15_642_706_1482_346.jpg)
+![This diagram depicts the specific volume (V) as a function of pressure (p) at constant temperature (T), illustrating the phase transition between liquid and gas phases with volumes Vf and Vg at the saturation pressure p0. It also shows the thermodynamic relation for volume as the partial derivative of Gibbs free energy (G) with respect to pressure.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-15_618_996_1490_1716.jpg)
+![This diagram depicts a physical setup illustrating the concept of pressure (p) exerted by particles in a fluid on a piston with a mass, at a temperature (T) below a reference temperature (T₀). It shows the relationship between temperature, pressure, and the mechanical equilibrium of the piston.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-16_529_884_100_295.jpg)
+![This diagram depicts the Gibbs free energy (G) as a function of temperature (T) at constant pressure (p), illustrating the concept of metastability in phase transitions with a metastable continuation shown by the dashed line beyond the equilibrium temperature T₀.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-16_651_1326_137_1458.jpg)
+![This diagram depicts a gas in a container with a movable piston under pressure, illustrating the condition where the temperature \( T \) is greater than a reference temperature \( T_0 \), typically used to explain the behavior of gases under heating.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-16_862_894_771_285.jpg)
+![This diagram depicts the entropy (S) as a function of temperature (T), illustrating the entropy change (ΔS) at a phase transition temperature (T0) and the thermodynamic relation for entropy as the negative partial derivative of Gibbs free energy (G) with respect to temperature at constant pressure.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-16_619_1316_940_1458.jpg)
+-) thermo. Potential stetig, aber Sprung in den 1. Ableitungen
+-) latente Wärme $Q_{L}=T_{0} \Delta S$
+-) metastabile Phasen
+
+Bsp2: ferromagnetischer Übergang (als Funktion von B, bei $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ ):
+![This diagram depicts the behavior of magnetization (B) in a ferromagnetic material as a function of temperature (T), showing the transition at the Curie temperature (Tc) where the material changes from a magnetically ordered state with aligned spins to a disordered paramagnetic state with random spin orientation.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-17_513_989_232_126.jpg)
+
+Freie Energie: $\quad F \equiv F(T, B)$
+
+B<0
+
+![This diagram depicts a potential energy function \( F \) as a function of a variable \( m \), illustrating spontaneous symmetry breaking with a double-well potential where the system stabilizes at a nonzero value of \( m \). The red dot indicates the stable equilibrium position corresponding to the broken symmetry state.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-17_577_810_887_126.jpg)
+
+$B=0$
+![This diagram depicts a free energy (F) versus order parameter (m) curve illustrating spontaneous symmetry breaking, showing two stable minima representing degenerate ground states.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-17_582_804_882_1114.jpg)
+
+B>0
+
+![This diagram depicts a potential energy function \(F\) as a function of a variable \(m\), illustrating spontaneous symmetry breaking with a stable minimum at a nonzero value of \(m\). The red dot indicates the system's stable equilibrium state where the symmetry is broken.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-17_582_814_887_2118.jpg)
+![This diagram depicts the hysteresis loop of ferromagnetic material, showing the relationship between the magnetic field strength (B) and the magnetization (F) of the material.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-17_588_804_1605_132.jpg)
+![This diagram depicts a magnetization (M) versus magnetic field (B) curve, showing the hysteresis behavior of a ferromagnetic material with the solid line representing the magnetization curve and the dashed line indicating the hysteresis loop.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b911bcad-5d5e-49c5-b4cc-917a24fdc673/7f204057-7a31-4341-beca-2b377aeceffb-17_688_926_1500_1542.jpg)
+
+\mathcal{M}=-\left.\frac{\partial F}{\partial B}\right|_{T}
+

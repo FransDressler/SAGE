@@ -1,0 +1,321 @@
+## 3. Grundlagen der statistischen Physik
+
+Ziel: Statistische Aussagen über makroskopische Größen ausgehend von einem mikroskopischen Modell !
+
+### 3.1 Klassische Mechanik im Phasenraum
+
+Hamiltonfunktion:
+
+$$
+H(\underline{q}, \underline{p}, t)=\sum_{i=1}^{M} p_{i} \dot{q}_{i}-L(\underline{q}, \underline{p}, t)=E_{\mathrm{kin}}+E_{\mathrm{pot}}
+$$
+
+Energie eines klassischen Systems als Funktion der (verallgemeinerten) Orts- und Impluskoordinaten $\underline{q}=\left(q_{1}, q_{2}, \ldots, q_{M}\right), \underline{p}=\left(p_{1}, p_{2}, \ldots, p_{M}\right)$.
+
+M .... Anzahl der Freiheitsgrade
+
+Hamiltonsche
+Bewegungsgleichungen:
+
+\dot{q}_{i}=\frac{\partial H}{\partial p_{i}}, \quad \dot{p}_{i}=-\frac{\partial H}{\partial q_{i}}
+
+## "Phasenraum":
+
+Ein klassisches System mit $M$ Freiheitsgraden wird zu jedem Zeitpunkt durch einen Punkt $\pi(t) \in \Gamma$ in einem 2M dimensionalen Phasenraum ( $\Gamma$-Raum) repräsentiert.
+
+\pi(t)=\left(q_{1}(t), q_{2}(t), \ldots, q_{M}(t), p_{1}(t), p_{2}(t), \ldots p_{M}(t)\right)
+
+![This diagram depicts a closed loop in phase space, showing the trajectory of a pion's state \(\pi(t)\) evolving over time with momentum \(p\) and position \(q\) coordinates. It illustrates the cyclic evolution of the pion's phase space coordinates at different times \(t_0, t_1, t_2\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-02_862_1539_750_126.jpg)
+
+Evolution der
+Phasenraumtrajektorie $\pi(t)$
+⇔ Hamiltonsche Gleichungen!
+zeitunabhängige Systeme: $\quad H\left(\underline{q}, \underline{p}, \ngtr \Rightarrow \frac{d H}{d t}=0\right.$
+
+Evolution auf (2M-1) dimensionaler Hyperfläche $\quad H(\underline{q}, \underline{p})=$ const .
+
+## Observablen:
+
+Jede andere messbare Größe $A$ lässt sich als Phasenraumfunktion formulieren:
+
+A \equiv A(\underline{q}, \underline{p}, t)=A(\pi, t)
+
+Es gilt: $\quad \frac{d A}{d t}=\frac{\partial A}{\partial t}+\{A, H\}$
+wobei $\quad\{A, H\}:=\sum_{i}\left[\frac{\partial A}{\partial q_{i}} \frac{\partial H}{\partial p_{i}}-\frac{\partial A}{\partial p_{i}} \frac{\partial H}{\partial q_{i}}\right]$ "Poisson-Klammer"
+
+$\left.\begin{array}{l}\text { Aber: makroskopische Systeme }\left(\mathrm{N} \sim 10^{23}\right) \\
+\text { - Anfangsbedingungen unbekannt } \\
+\text { - Phasenraumtrajektorie nicht mehr berechenbar } \\
+\text { - Dynamik auf Zeitskalen von Mikrosekunden }\end{array}\right\}$| nur statistische |
+| :---: |
+| Vorhersagen möglich |
+
+## Phasenraumdichte
+
+![This diagram depicts a path integral in phase space, showing a trajectory of a system with coordinates \(q\) and conjugate momenta \(p\), illustrating the concept of discretizing the path into segments (highlighted by the blue square) for quantum or classical mechanical analysis.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-04_820_1470_211_126.jpg)
+
+Diskretisierung des Phasenraums:
+
+\Delta q_{i}, \Delta p_{i} \rightarrow d q_{i}, d p_{i}
+
+Wahrscheinlichkeit, das System innerhalb eines kleinen Volumselements $\Delta V(\underline{q}, \underline{p})$ im Phasenraum zu finden:
+
+Phasenraumdichte
+
+P[\pi \in \Delta V(\underline{q}, \underline{p})]=\rho(\underline{q}, \underline{p}, t) \Delta \underline{q} \Delta \underline{p}
+
+- Normierung:
+
+\int d^{M} q d^{M} p \rho(\underline{q}, \underline{p}, t)=1
+
+- Mittelwerte:
+
+\langle A\rangle(t)=\int d^{M} q d^{M} p \rho(\underline{q}, \underline{p}, t) A(\underline{q}, \underline{p}, t)
+
+## Kontinuitätsgleichung:
+
+Stromdichte: $\underline{j}=\rho \underline{v}$
+Phasenraumgeschwindigkeit: $\quad \underline{v}=\dot{\pi}=\left(\dot{q}_{1}, \dot{q}_{2}, \ldots, \dot{p}_{1}, \dot{p}_{2}, \ldots\right)$
+
+Da es für Phasenraum-Trajektorien keine Quellen oder Senken gibt, gilt für jedes Gebiet G:
+
+\int_{\partial G} d \underline{S} \cdot \underline{j}=-\frac{\partial}{\partial t}\left[\int_{G} d^{M} q d^{M} p \rho(\underline{q}, \underline{p}, t)\right]
+
+![This diagram depicts a region \( G \) in phase space with coordinates \( q \) and \( p \), showing the oriented surface element \( d\underline{S} \) on the boundary of \( G \) with outward normal vectors. It is used to illustrate concepts related to phase space flow or flux in classical mechanics or Hamiltonian dynamics.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-05_703_963_655_2012.jpg)
+
+WahrscheinlichkeitsFluss durch Rand von G
+
+Abnahme der Gesamtwahrscheinlichkeit in G
+mit Satz von Gauß:
+
+\int_{G} d^{M} q d^{M} p\left[\frac{\partial}{\partial t} \rho+\operatorname{div} \underline{j}\right]=0
+
+\Rightarrow \frac{\partial}{\partial t} \rho+\operatorname{div}(\rho \underline{v})=0
+
+"Kontinuitätsgleichung"
+
+## Liouvillesches Theorem
+
+- Zeitevolution von $\rho(t)$ entlang Hamiltonscher Phasenraumtrajektorien:
+
+\begin{aligned}
+& \frac{d \rho}{d t}=\frac{\partial \rho}{\partial t}+\sum_{i}\left[\frac{\partial \rho}{\partial q_{i}} \dot{q}_{i}+\frac{\partial \rho}{\partial p_{i}} \dot{p}_{i}\right] \\
+& \quad=\frac{\partial \rho}{\partial t}+\underbrace{\sum_{i}\left[\frac{\partial \rho}{\partial q_{i}} \frac{\partial H}{\partial p_{i}}-\frac{\partial \rho}{\partial p_{i}} \frac{\partial H}{\partial q_{i}}\right]}_{=\{\rho, H\}}=\frac{\partial \rho}{\partial t}+\{\rho, H\}
+\end{aligned}
+
+- Kontinuitätsgleichung:
+
+0=\frac{\partial \rho}{\partial t}+\operatorname{div}(\rho \underline{v})=\underbrace{\frac{\partial \rho}{\partial t}+\sum_{i}\left[\frac{\partial \rho}{\partial q_{i}} \dot{q}_{i}+\frac{\partial \rho}{\partial p_{i}} \dot{p}_{i}\right]}_{=0}+\rho \sum_{i} \underbrace{\left[\frac{\partial \dot{q}_{i}}{\partial q_{i}}+\frac{\partial \dot{p}_{i}}{\partial p_{i}}\right]}_{=0^{*}}
+
+*) $\frac{\partial \dot{q}_{i}}{\partial q_{i}}+\frac{\partial \dot{p}_{i}}{\partial p_{i}}=\frac{\partial^{2} H}{\partial q_{i} \partial p_{i}}-\frac{\partial^{2} H}{\partial p_{i} \partial q_{i}}=0$
+
+\Rightarrow \quad \frac{d \rho}{d t}=\frac{\partial \rho}{\partial t}+\{\rho, H\}=0
+
+"Liouville-Theorem"
+
+Bedeutung: $\quad \Rightarrow \quad \rho(\underline{q}(t), \underline{p}(t), t)=\rho(\underline{q}(0), \underline{p}(0), 0)$
+Phasenraumdichte für mitbewegten Beobachter bleibt konstant!
+![This diagram depicts a mapping between two sets in a two-dimensional space with axes labeled \(q\) and \(p\), showing vectors originating from points in one set and pointing to corresponding points in another set, illustrating a transformation or correspondence between these sets.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-07_815_979_1024_237.jpg)
+
+V(t)=V(0)
+
+Volumen im Phasenraum bleibt erhalten!
+
+### 3.2 Statistische Ensemble
+
+"Mikrozustand": $\pi(t)=\left(q_{1}(t), q_{2}(t), \ldots, q_{M}(t), p_{1}(t), p_{2}(t), \ldots p_{M}(t)\right)$ (exakter Zustand des Systems, aber generell nicht beschreibbar)
+
+Für Systeme im Gleichgewicht relevant:
+
+\bar{A}=\lim _{T \rightarrow \infty} \frac{1}{T} \int_{0}^{T} d t A(\underline{q}(t), \underline{p}(t))
+
+Zeitmittelwert einer makroskopischen Observable A
+![This diagram depicts a phase space trajectory for a Hamiltonian system, showing the evolution of the canonical coordinates \(q\) and \(p\) on the energy surface defined by \(H(q, p) = E\). It illustrates the path \(\pi(t)\) traced by the system over time in the \(q\)-\(p\) plane.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-08_804_1131_739_1817.jpg)
+
+Ergodenhypothese: Bei Zeitentwicklung eines großen Systems kommen alle Trajektorien im Phasenraum im Laufe der Zeit jedem Punkt mit gleicher Energie beliebig nahe, d.h. die Punkte liegen dicht auf der Hyperfläche $H(\underline{q}, \underline{p})=E$.
+
+⇒ Alle Zustände mit gleicher Energie sind gleich wahrscheinlich!
+
+\rho(\underline{q}, \underline{p}) \sim \delta(H(\underline{q}, \underline{p})-E)
+
+## Grundprinzip der statistischen Mechanik:
+
+⇒ Ersetze Zeitmittelwert durch Mittel über ein statistisches Ensemble.
+"Ensemble": Große Zahl identischer (fiktiver) Systeme
+(i) mit gleichen makroskopischen Variablen (z.B.: E,V, N)
+(ii) aber zufällig verteilten mikroskopischen Variablen.
+![This diagram depicts a constant energy contour in phase space for a Hamiltonian system, showing points \((q, p)\) that satisfy the energy equation \(H(q, p) = E\). It illustrates the concept of a manifold \(n\) formed by these points in the phase space coordinates \(q\) and \(p\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-09_809_1464_1384_132.jpg)
+mögliche Mikrozustände die den selben Makrozustand representieren
+
+## Zeitmittelwert:
+
+![This diagram depicts a phase space trajectory for a Hamiltonian system, showing the evolution of the state \(\pi(t)\) in the \((q, p)\) plane where the Hamiltonian \(H(q, p) = E\) is constant.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-10_793_1126_232_174.jpg)
+
+## Ensemblemittelwert:
+
+![This diagram depicts a constant energy contour in phase space for a Hamiltonian system, showing the curve defined by the Hamiltonian function \( H(q,p) = E \) in the coordinates \( q \) and \( p \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-10_799_1142_253_1679.jpg)
+
+\bar{A}=\lim _{T \rightarrow \infty} \frac{1}{T} \int_{0}^{T} d t A(\underline{q}(t), \underline{p}(t)) \quad\langle A\rangle=\int d^{M} q d^{M} p A(\underline{q}, \underline{p}) \rho(\underline{q}, \underline{p})
+
+\text { Ergodenhypothese }^{\star} \quad \Rightarrow \quad \bar{A}=\langle A\rangle
+
+*) - Nicht beweisbar, aber in der Regel näherungsweise für $\mathrm{N} \gg 1$ erfüllt.
+
+- wichtige Ausnahmen: Systeme mit weiteren Erhaltungsgrößen außer der Energie, "integrable Systeme", 1D Systeme, ...
+
+
+### 3.3 Mikrokanonisches Ensemble
+
+Isoliertes System mit bekannter Energie $E$ im Interval
+
+[E-\Delta, E] \quad \Delta \ll E
+
+![This diagram depicts a gas of diatomic molecules, illustrating their rotational energy states with different rotational quantum numbers represented by the lines attached to each molecule.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-11_350_540_279_2139.jpg)
+
+E, V, N
+
+## "Mikrokanonisches Ensemble":
+
+Alle Mikrozustände, die mit makroskopischen Größen E,V,N kompatibel sind, haben die gleiche a priori Wahrscheinlichkeit.
+
+\tilde{\rho}_{\mathrm{MK}}(\underline{q}, \underline{p})=\left\{\begin{array}{cc}
+\rho_{0}=\text { const } & E-\Delta<H(\underline{q}, \underline{p})<E \\
+0 & \text { sonst }
+\end{array}\right.
+
+- Normierung: $\int d^{M} q d^{M} p \tilde{\rho}_{\mathrm{MK}}(\underline{q}, \underline{p})=\rho_{0} \int_{E-\Delta<H<E} d^{M} q d^{M} p=1$
+
+
+### 3.3.1 Zustandssumme
+
+Bemerkung: $\quad \tilde{\rho}_{\mathrm{MK}}(\underline{q}, \underline{p}) \sim[\text { Wirkung }]^{-3 N}$
+
+Mit Vorgriff auf die Quantenstatistik definieren wir eine dimensionslose Phasenraumdichte:
+
+\rho_{\mathrm{MK}}(\underline{q}, \underline{p}):=N!h^{3 N} \tilde{\rho}_{\mathrm{MK}}(\underline{q}, \underline{p}) \quad \text { h } \ldots \text { Plancksches }
+
+Dann:
+
+\rho_{\mathrm{MK}}(\underline{q}, \underline{p})=\left\{\begin{array}{cc}
+\frac{1}{\Omega(E, \Delta)} & E-\Delta<H(\underline{q}, \underline{p})<E \\
+0 & \text { sonst }
+\end{array}\right.
+
+wobei:
+
+\Omega(E, \Delta)=\int_{E-\Delta<H<E} \underbrace{\frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}}}_{\text {vereinfachte Schreibweise: }} \quad \begin{gathered}
+\text { "Zustandssumme" } \\
+\text { (dimensionslos) }
+\end{gathered}
+
+![This diagram depicts a phase space grid with momentum (p) and position (q) axes, illustrating the concept of a quantum state represented by a minimum uncertainty wave packet within the phase space. The red ellipses indicate contours of constant probability density, and the blue square represents the smallest distinguishable area in phase space, related to the Heisenberg uncertainty principle.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-13_831_1670_73_105.jpg)
+
+Energieschale $[\mathrm{E}, \mathrm{E}+\Delta]$
+
+\Delta V=h^{3 N}
+
+"Größe" eines Zustands im Phasenraum (limitiert durch Heisenbergsche Unschärferelation!)
+
+\Omega(E, \Delta)=\int_{E-\Delta<H<E} \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}}
+
+Anzahl der insgesamt möglichen Mikrozustände!
+
+## Quantenmechanik:
+
+- minimales Phasenraumvolumen durch Orts/-Impuls-Unschärferelation
+- Faktor $1 / N$ ! wegen Ununterscheidbarkeit der Teilchen.*)
+*) Vernachlässigung dieses Faktors führt zu Problemen in der klass. stat. Mechanik (z.B. Gibbs Paradoxon)
+
+Bemerkungen zur Berechnung der Zustandssumme:
+
+- oft einfacher:
+![This diagram depicts a phase space representation in terms of variables \(p\) and \(q\), showing a region \(\Phi(E)\) enclosed by a boundary \(\Omega(E, \Delta)\), which likely represents an energy shell or surface in phase space for a system with energy \(E\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-14_907_1290_145_1664.jpg)
+gesamtes Phasenraumvolumen
+mit $\boldsymbol{H} \boldsymbol{<} \boldsymbol{E}$
+$d \Gamma(\underline{q}, \underline{p})$
+$\Phi(E)=\int_{H<E} \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}}=\int_{H<E} d \Gamma(\underline{q}, \underline{p})$
+- dann: $\Omega(E, \Delta)=\Phi(E)-\Phi(E-\Delta) \simeq D(E) \Delta$
+$D(E)=\frac{d \Phi}{d E}$
+"Zustandsdichte"
+- weiters, für große $N$ gilt gewöhnlich:
+
+\Phi(E) \sim E^{\alpha N}
+
+stark wachsende Funktion !
+![This diagram depicts a function Φ(E) plotted against energy E, showing the values of the function at E and at a shifted energy E - Δ. It illustrates how the function Φ changes with a small decrement Δ in energy.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-14_690_1153_1551_1438.jpg)
+D.h. im Grenzfall N>>1 (stark wachsendes Phasenraumvolumen) gilt:
+
+\Rightarrow \quad \Omega(E, \Delta)=\Phi(E)-\Phi(E-\Delta) \approx \Phi(E)
+
+\Omega \equiv \Omega(E, V, N) \quad \Rightarrow \text { Zustandssumme unabhängig von } \Delta!
+
+### 3.3.2 Entropie (mikrokanonisch)
+
+S(E, V, N):=k_{B} \ln \Omega(E, V, N)
+
+-) Maß für die Anzahl der möglichen Mikrozustände.
+![The image depicts the formula for entropy in statistical mechanics, \( S = k \log W \), which relates entropy (S) to the number of microstates (W) of a system. This formula is associated with Ludwig Boltzmann, whose bust is shown in the image.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-15_788_640_834_2155.jpg)
+-) Maß für die "Unordnung" / "Unbestimmtheit" eines Systems.
+
+## L. Boltzmann:
+
+$\mathrm{S}(\mathrm{E}, \mathrm{V}, \mathrm{N})$ stimmt mit der Entropie aus der Thermodynamik überein.
+
+\begin{gathered}
+S(E, V, N)=k_{B} \ln \Omega(E, V, N) \\
+\frac{1}{T}=\left(\frac{\partial S}{\partial E}\right)_{V, N} \quad \frac{p}{T}=\left(\frac{\partial S}{\partial V}\right)_{E, N} \quad-\frac{\mu}{T}=\left(\frac{\partial S}{\partial N}\right)_{E, V}
+\end{gathered}
+
+⇒ Aus Berechnung von $\Omega(E, V, N)$ folgen alle anderen thermodynamischen Größen !
+
+Äquivalente (allgemeinere) Definition:
+
+\begin{aligned}
+S=k_{B} \ln \Omega=k_{B} \frac{\ln \Omega}{\Omega} \underbrace{\int_{E-\Delta<H<E} d \Gamma(\underline{q}, \underline{p})}_{=\Omega} & =-k_{B} \int d \Gamma(\underline{q}, \underline{p}) \rho_{\mathrm{MK}} \ln \rho_{\mathrm{MK}} \\
+\rho_{\mathrm{MK}}=\frac{1}{\Omega} & \Rightarrow S=-k_{B}\left\langle\ln \rho_{\mathrm{MK}}\right\rangle
+\end{aligned}
+
+## Beispiel: Ideales Gas
+
+Hamiltonfunktion:
+
+H(\underline{q}, \underline{p})=\sum_{i=1}^{3 N} \frac{p_{i}^{2}}{2 m}, \quad q_{i} \in V
+
+![This diagram depicts a simplified model of carbon monoxide (CO) molecules in a gas phase, showing the linear molecular structure with a carbon atom triple-bonded to an oxygen atom.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c3f11257-bac0-4d04-a400-59bbf93443d6/25d076b2-b147-4a3b-9d72-efd9651588eb-17_355_534_306_2155.jpg)
+$E, V, N$
+
+Phasenraumvolumen:
+
+\Phi(E)=\int_{H<E} \frac{d^{3 N} q d^{3 N} p}{N!h^{3 N}}=\frac{V^{N}}{N!h^{3 N}} \times \underbrace{\int_{\sum p_{i}^{2}<2 m E} d^{3 N} p}_{\text {3N-dim Kugel mit Radius } \sqrt{2 m E}}
+
+Volumen einer d-dimensionalen Kugel (siehe unten):
+
+V_{d}(R)=\int_{\sum x_{i}^{2}<R^{2}} d^{d} x=\frac{\pi^{\frac{d}{2}} R^{d}}{\Gamma(d / 2+1)}
+
+$\Gamma(\mathrm{x}) \ldots \Gamma$-Funktion
+
+(\Gamma(x+1)=x!)
+
+\Rightarrow \Phi(E)=\frac{V^{N}}{N!h^{3 N}} \frac{\pi^{\frac{3 N}{2}}}{\left(\frac{3 N}{2}\right)!}(2 m E)^{\frac{3 N}{2}}
+
+## - Zustandssumme:
+
+\Omega(E, V, N, \Delta) & =\Phi(E, V, N)-\Phi(E-\Delta, V, N) \\
+& =\Phi(E, V, N)[1-(\underbrace{\left.\left(1-\frac{\Delta}{E}\right)^{\frac{3 N}{2}}\right]} \text { } \simeq \Phi(E, V, N) \\
+{\left[\lim _{n \rightarrow \infty}\left(1-\frac{x}{n}\right)^{n}=e^{-x}\right] \quad=\left(1-\frac{2}{3 N} \frac{3 N \Delta}{2 E}\right)^{\frac{3 N}{2}} } & \approx e^{-\frac{3 N \Delta}{2 E}} \\
+& \rightarrow 0(\Delta \gg E / N)
+
+- Entropie: $\quad S(E, V, N)=k_{B} \ln \Phi(E, V, N)$ (benütze Stirling Formel: $\ln N!\approx N \ln N-N$ )
+
+S(E, V, N) & \simeq k_{B}\left[N \ln V+\frac{3 N}{2} \ln \left(\frac{2 \pi m E}{h^{2}}\right)-\ln \left(\frac{3 N}{2}\right)!-\ln N!\right] \\
+& \simeq k_{B} N\left\{\ln \left[V\left(\frac{2 \pi m E}{h^{2}}\right)^{\frac{3}{2}}\right]-\frac{3}{2} \ln \left(\frac{3 N}{2}\right)-\ln N+\frac{5}{2}\right\} \\
+\Rightarrow S & =k_{B} N\left\{\ln \left[\frac{V}{N}\left(\frac{4 \pi m E}{3 N h^{2}}\right)^{\frac{3}{2}}\right]+\frac{5}{2}\right\} \quad \begin{array}{c}
+\text { Sackur-Tetrode } \\
+\text { Gleichung }
+\end{array}
+
+Zustandsgleichungen (siehe Übungen):
+
+& \frac{1}{T}=\left.\frac{\partial S}{\partial E}\right|_{V, N}=\frac{3}{2} k_{B} \frac{N}{E} \quad \Rightarrow \quad E=\frac{3}{2} N k_{B} T \\
+& \frac{p}{T}=\left.\frac{\partial S}{\partial V}\right|_{E, N}=\frac{N k_{B}}{V} \quad \Rightarrow \quad p V=N k_{B} T
+

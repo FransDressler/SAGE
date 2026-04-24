@@ -1,0 +1,256 @@
+Theoretische Physik 4A
+Statistische Mechanik \& Thermodynamik
+(TUM, Wintersemester 2025/26)
+Peter Rabl
+![The image is a black-and-white portrait photograph of a man with glasses and a full beard. It does not depict a diagram or specific subject matter beyond the person's likeness.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-01_635_572_1468_179.jpg)
+![This image depicts the formation of a Bose-Einstein condensate, showing the transition of a gas of atoms from a thermal state to a condensed state with a sharp peak in density at ultra-low temperatures.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-01_619_920_1479_961.jpg)
+![This diagram depicts the Fermi-Dirac distribution function \( f(E) \) as a function of the normalized energy \( E/\mu \) at a temperature \( T = 0 \) and a finite temperature \( k_B T = \frac{1}{5} \mu \), showing the probability of occupancy of energy states by fermions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-01_698_925_1447_1986.jpg)
+
+## 1. Einleitung \& historischer Überblick
+
+### 1.1 Ziel der statistischen Physik
+
+- Klassische Mechanik: Ein System aus $N$ Teilchen wird durch den Ort $\vec{x}_{i}(t)$ (im 3D Raum) und Impuls $\vec{p}_{i}(t)$ jedes Teilchens, sowie den Newtonschen Bewegungsgleichungen beschrieben:
+
+$$
+\begin{aligned}
+& \dot{\vec{x}}_{i}(t)=\frac{\vec{p}_{i}(t)}{m_{i}} \quad \begin{array}{c}
+\text { Wechselwirkungen zwischen Teilchen } \\
+\text { und externe Kräfte }
+\end{array} \\
+& \dot{\vec{p}}_{i}(t)=\vec{F}_{i}\left(\vec{x}_{1}(t), \vec{x}_{2}(t), \ldots \vec{x}_{N}(t), t\right)
+\end{aligned}
+$$
+
+Das System ist durch die Lösung dieser 6N Differentialgleichungen + Anfangsbedingungen vollständig bestimmt !
+
+```
+Aber: "makroskopische" Systeme (Gase, Festkörper, ...) = N ~1023
+    exakte Lösung nicht möglich !
+```
+
+- Quantenmechanik: Ein System aus $N$ Teilchen wird durch eine Wellenfunktion $\Psi(t) \equiv \Psi\left(t, \vec{x}_{1}, \vec{x}_{2}, \ldots, \vec{x}_{N}\right)$ in einem unendlichdimensionalen Hilbertraum und der Schrödingergleichung beschrieben:
+
+i \hbar \frac{\partial}{\partial t} \Psi(t)=\underbrace{\left[\sum_{i}-\frac{\hbar^{2}}{2 m}\right.}_{\substack{\text { kinetische } \\ \text { Energie }}} \vec{\nabla}_{i}^{2}+\underbrace{V\left(\vec{x}_{i}\right)}_{\substack{\text { externes } \\ \text { Potential }}}+\frac{1}{2} \sum_{i \neq j} U_{i j}\left(\left\{\vec{x}_{i}\right\}\right)] \Psi(t)
+
+Numerik: kontinuierliche Freiheitsgrade ⇒ Diskretisierung!
+![This diagram depicts a discrete approximation of a wavefunction Ψ(z_n) at discrete points z_n along a spatial domain of length L, showing the sampled values and the spacing Δz between points. It is used in numerical methods for solving quantum mechanical problems or differential equations involving wavefunctions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-03_540_1148_1288_184.jpg)
+
+⇒ ( $L / \Delta z$ ) Differentialgleichungen
+(1 Teilchen, 1 Dimension)
+
+N-Teilchen, 3D: $\quad$ \# Diffgln. $\sim\left(\frac{L}{\Delta z}\right)^{3 N} \quad \begin{aligned} & \text { exponentielle } \\ & \text { Skalierung !!! }\end{aligned}$
+
+- Thermodynamik: Einfache Zusammenhänge zwischen makroskopischen Größen (Volumen, Druck, Energie, Temperatur, ....) in Systemen aus $N \gg 1$ Teilchen.
+![This diagram depicts a gas in a container illustrating the relationship between volume, energy/temperature, and pressure (Druck) for a large number of particles (N ~ 10^23). It shows how gas particles move within a volume and exert pressure on a movable piston.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-04_741_1634_427_369.jpg)
+z.B.: Zustandsgleichung ideales Gas: $\quad p V=N k_{B} T$
+- Thermodynamische Gesetze beruhen auf Erfahrungswerten.
+- Keine Herleitung systemspezifischer Parameter aus mikroskopischer Theorie.
+klassische Mechanik, Elektrodynamik
+
+Quantenmechanik
+
+## Statistische Physik
+
+Statistische Aussagen über makroskopische Größen ausgehend von einem mikroskopischen Modell !
+( exakt für $N \rightarrow \infty$ ) makroskopischer Systeme
+
+### 1.2 Historischer Überblick
+
+- Vorgeschichte:
+
+| -) R. Bacon (13. Jhdt.) | Bewegung der "kleinsten Teile" eines |
+| :--- | :--- |
+| -) J. Kepler (1605) |  |
+| -) F. Bacon (16./17. Jhdt.) | Körpers als Ursache für Wärme |
+| -) R. Boyle (17. Jhdt.) |  |
+| -) G. Galilei (16. Jhdt.) | \} erstes Thermometer |
+| -) G. Fahrenheit (1714) | $\}$ |
+| -) R. Boyle (1662) | Zustandsgleichung idealer Gase |
+| -) E. Mariotte (1676) |  |
+| -) J. Charles (1787) |  |
+| -) J. Gay-Lussac (1802) |  |
+
+- Thermodynamik:
+
+| -) S. Carnot (1824) | $\}$ | Umwandlung von Wärme in mechanische Arbeit, Wärmekraftmaschinen, Wirkungsgrad |
+| :--- | :--- | :--- |
+| -) R. Mayer (1842) | $\}$ | Wärme ist Energie, allgemeine Formulierung des Energieerhaltungssatzes (1. Hauptsatz) |
+| -) W. Thompson (Lord Kelvin) (1850) | $\}$ | absolute Temperatur |
+| -) R. Clausius (1854) | $\}$ | Begriff der Entropie (nicht nutzbare Wärme), irreversible Prozesse (2. Hauptsatz) |
+
+- Statistische Physik:
+
+| -) D. Bernoulli (1738) | $\}$ | Gasgesetze aus Bewegung kleinster Teilchen ("kinetische Gastheorie") |
+| :--- | :--- | :--- |
+| -) J.C. Maxwell (1860) | $\}$ | Methoden d. Wahrscheinlichkeitslehre, Beginn der statistische Mechanik |
+| -) L. Boltzmann (~1870) | $\}$ | Entropie als mikroskopische Größe, Verbindung zwischen stat. Physik und Thermodynamik |
+| -) J. Gibbs (1900) | \} | Ensemble-Begriff, thermodynamische Potentiale, Phasenübergänge |
+| -) M. Planck (~1900) -) A. Einstein (ab 1905) | $\}$ | "Quantenstatistik" (Schwarzkörperstrahlung, Bose-Einstein-Statistik, ...) |
+| -) W. Nernst (1905) | $\}$ | 3. Hauptsatz, Unerreichbarkeit des absoluten Nullpunkts |
+
+### 1.3 Wahrscheinlichkeitstheorie
+
+## (Grundlagen, Wiederholung)
+
+### 1.3.1 Wahrscheinlichkeiten
+
+Eine Größe (Zufallsvariable) $X$ kann zufällig einen der diskreten Werte $\left\{X_{n} \mid n=1, \ldots, N\right\}$ annehmen. Wir bezeichnen mit
+
+P\left(X_{n}\right) \equiv P\left(X=X_{n}\right)
+
+die Wahrscheinlichkeit, dass bei einem gegebenen Ereignis (z.B. in einem Experiment), der Wert $X=X_{n}$ auftritt. Das heisst, bei einer großen Anzahl von $M \rightarrow \infty$ Wiederholungen des selben Ereignisses wird der Fall $X=X_{n}$ insgesamt $N_{n}=P\left(X_{n}\right) \times M$ mal eintreten.
+
+| Es gilt: | $($ i) | $0 \leq P\left(X_{n}\right) \leq 1$ | positiv |
+| ---: | :--- | ---: | :--- |
+|  | (ii) | $\sum_{n} P\left(X_{n}\right)=1$ | normiert |
+
+Für kontinuierliche Größen definieren wir die Wahrscheinlichkeit, dass $X$ einen Wert innerhalb des Intervals $[A, B]$ annimmt als
+
+P(X \in[A, B])=\int_{A}^{B} \underset{\text { Wahrscheinlichkeitsdichte }}{p(X)} d X
+
+| Es gilt: | $(i)$ | $0 \leq p(X)$ |
+|  | $(i i)$ | $\int p(X) d X=1$ | positiv
+
+und für (infinitesimal) kleine Intervalle:
+
+P\left(X \in\left[X_{0}, X_{0}+d X\right]\right) \simeq p\left(X_{0}\right) d X
+
+### 1.3.2 Mittelwert, Varianz und Korrelationen
+
+- Der Mittelwert (oder Erwartungswert) einer Zufallsvariable,
+
+\langle X\rangle=\sum_{n} X_{n} P\left(X_{n}\right) \quad \text { bzw. } \quad\langle X\rangle=\int X p(X) d X
+
+bestimmt den Wert, der gemittelt über viele Ereignisse angenommen wird.
+
+Achtung: Mittelwert $\neq$ wahrscheinlichster Wert!
+
+Analog dazu ist der Erwartungswert einer beliebigen Funktion $F(X)$ durch
+
+\langle F(X)\rangle=\sum_{n} F\left(X_{n}\right) P\left(X_{n}\right) \quad \text { bzw. } \quad\langle F(X)\rangle=\int F(X) p(X) d X
+
+gegeben.
+
+- Die Varianz einer Verteilung,
+
+\left\langle\Delta X^{2}\right\rangle=\left\langle(X-\langle X\rangle)^{2}\right\rangle=\left\langle X^{2}\right\rangle-\langle X\rangle^{2}
+
+bestimmt die mittlere Abweichung der tatsächlich auftretende Werte vom Mittelwert.
+D.h., nur wenn $\sqrt{\left\langle\Delta X^{2}\right\rangle} \lesssim\langle X\rangle$ ist der Mittelwert eine "brauchbare" Größe.
+
+Bsp:
+![This diagram depicts a probability distribution histogram showing the mean value (⟨X⟩) and the standard deviation (√⟨ΔX²⟩) as measures of central tendency and spread of the data.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-12_819_1109_1152_165.jpg)
+![This diagram depicts a discrete probability distribution or histogram with bars representing probabilities or frequencies for values 0 to 10, illustrating the mean (⟨X⟩) and the standard deviation (√⟨ΔX²⟩) of the distribution.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-12_855_1121_1152_1728.jpg)
+
+Achtung: Mittelwert und Varianz existieren nicht für alle Verteilungen!
+
+Bsp: Cauchy (Lorentz) Verteilung:
+
+\begin{aligned}
+& p(x)=\frac{1}{\pi} \frac{a}{\left(x-x_{0}\right)^{2}+a^{2}} \\
+& \Rightarrow \quad\langle x\rangle=\int_{-\infty}^{\infty} d x \operatorname{xp}(x) \quad \sim \int^{\infty} \frac{d x}{x} \sim \infty
+\end{aligned}
+
+![This diagram depicts a Lorentzian (or Cauchy) distribution curve, showing its peak centered at \( x_0 \) and the parameter \( a \) representing the half-width at half-maximum (HWHM) of the peak.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-13_586_1057_112_1647.jpg)
+
+- Für Verteilungen von mehreren Variable sind die Kovarianzen durch
+
+C_{X Y}=\langle(X-\langle X\rangle)(Y-\langle Y\rangle)\rangle=\langle X Y\rangle-\langle X\rangle\langle Y\rangle
+
+definiert und bestimmen Korrelationen zwischen zwei Größen.
+
+Zwei Größen sind statistisch unabhängig (unkorreliert) wenn:
+
+P(X, Y)=P(X) P(Y) \quad \Rightarrow \quad C_{X Y}=0
+
+![This diagram depicts a 2D Gaussian distribution or normal distribution, showing the density of values centered at the origin with elliptical contours indicating the spread along the X and Y axes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-14_477_619_105_243.jpg)
+$C_{X Y}=0$
+
+![This diagram depicts a two-dimensional Gaussian distribution or probability density function, showing an elliptical contour of data concentration with correlation between variables X and Y.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-14_477_598_105_1209.jpg)
+$C_{X Y}>0$
+
+![This diagram depicts a two-dimensional Gaussian distribution or probability density function, showing an elliptical contour of data spread along the X and Y axes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/e0652a01-6a7d-4bd0-aaa0-a9a028111ae4/57621203-6e11-4798-9404-9f79b747bcea-14_477_609_105_2144.jpg)
+$C_{X Y}<0$
+
+### 1.3.3 Beispiele
+
+(1) Poisson Verteilung: $\quad P(N)=\frac{\lambda^{N}}{N!} e^{-\lambda}$
+
+\langle N\rangle & =\sum_{N=0}^{\infty} N \frac{\lambda^{N}}{N!} e^{-\lambda}=e^{-\lambda} \lambda \frac{\partial}{\partial \lambda} \sum_{N=0}^{\infty} \frac{\lambda^{N}}{N!}=e^{-\lambda} \lambda \frac{\partial}{\partial \lambda} e^{\lambda}=\lambda \\
+\left\langle N^{2}\right\rangle & =\sum_{N=0}^{\infty} N^{2} \frac{\lambda^{N}}{N!} e^{-\lambda}=\lambda+e^{-\lambda} \sum_{N=0}^{\infty} N(N-1) \frac{\lambda^{N}}{N!}=\ldots=\lambda+\lambda^{2}
+
+Für die Poissonverteilung gilt: $\langle N\rangle=\left\langle\Delta N^{2}\right\rangle=\lambda$
+(2) Binomialverteilung:
+
+& \begin{array}{l}
+w_{N}(k)=\binom{N}{k} p^{k}(1-p)^{(N-k)}, \quad\binom{N}{k}=\frac{N!}{k!(N-k)!} \\
+&\langle k\rangle=\sum_{k=0}^{N} k \frac{N!}{k!(N-k)!} p^{k}(1-p)^{N-k} \\
+&=p N \sum_{k=1}^{N} \frac{(N-1)!}{(k-1)!(N-1-(k-1))!} p^{(k-1)}(1-p)^{N-1-(k-1)} \\
+& \quad \begin{array}{l}
+\ell=k-1 \\
+M=N-1
+\end{array}
+\end{aligned} \\
+\quad=p N \underbrace{\sum_{\ell=0}^{M}\binom{M}{\ell} p^{\ell}(1-p)^{M-\ell}}_{(p+(1-p))^{M}=1}=p N \\
+\left\langle\Delta k^{2}\right\rangle=\quad \ldots \quad=N p(1-p) \quad \text { (ähnliche Rechnung) }
+\end{array}
+
+(3) Normalverteilung (Gauß-Verteilung):
+
+\begin{array}{r}
+x \sim \mathcal{N}\left(\mu, \sigma^{2}\right): \quad p(x)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{-\frac{(x-\mu)^{2}}{2 \sigma^{2}}} \\
+\Rightarrow \quad\langle x\rangle=\mu, \quad\left\langle\Delta x^{2}\right\rangle=\sigma^{2}
+
+weitere Momente:
+
+\left\langle x^{3}\right\rangle=\mu^{3}+3 \mu \sigma^{2}, \quad\left\langle x^{4}\right\rangle=\mu^{4}+6 \mu^{2} \sigma^{2}+3 \sigma^{4}
+
+(alle Momente $\left\langle x^{n}\right\rangle$ existieren)
+
+## Zur Erinnerung:
+
+\text { Gauß-Integral: } \quad \int_{-\infty}^{\infty} d x e^{-a(x-b)^{2}}=\sqrt{\frac{\pi}{a}}
+
+### 1.3.4 Charakteristische Funktion
+
+Def: Für eine gegebene Verteilung $p(X)$ ist die Fourier-Transformierte
+
+\varphi_{X}(t)=\left\langle e^{i t X}\right\rangle=\int_{-\infty}^{\infty} d X p(X) e^{i t X}
+
+die entsprechende charakteristische Funktion.
+
+Analog definiert man für diskrete Wahrscheinlichkeitsverteilungen:
+
+\varphi_{X}(t)=\sum_{n=1}^{N} P\left(X_{n}\right) e^{i X_{n} t}
+
+## Eigenschaften:
+
+- Die charakteristische Funktion existiert für alle normierten Verteilungen.
+(Da $\left|e^{i X t}\right| \leq 1$.)
+- Die charakteristische Funktion enthält die selbe Information wie die ursprüngliche Verteilung, und es gilt
+
+p(X)=\frac{1}{2 \pi} \int_{-\infty}^{\infty} d t \varphi_{X}(t) e^{-i t X}
+
+- Aus der Entwicklung der Exponentialfunktion erhält man:
+
+\varphi_{X}(t)=\left\langle e^{i t X}\right\rangle=\sum_{n=0}^{\infty} \frac{\left\langle X^{n}\right\rangle}{n!}(i t)^{n} \quad \Rightarrow \quad\left\langle X^{n}\right\rangle=\left.\frac{1}{i^{n}} \frac{\partial^{n} \varphi_{X}}{\partial t^{n}}\right|_{t=0}
+
+Die Momente einer Verteilung können aus Ableitungen der charakt. Funktion erhalten werden ("momenterzeugende Funktion").
+
+- Für zwei unabhängig Größen $X$ und $Y$ gilt für die Summe $Z=X+Y$ :
+
+\varphi_{Z}(t)=\left\langle e^{i(X+Y) t}\right\rangle=\left\langle e^{i X t}\right\rangle\left\langle e^{i Y t}\right\rangle=\varphi_{X}(t) \varphi_{Y}(t)
+
+Beispiel 1: Gauß-Verteilung
+
+\begin{gathered}
+\varphi(x)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} \int_{-\infty}^{\infty} d x e^{i x t} e^{-\frac{(x-\mu)^{2}}{2 \sigma^{2}}}=e^{i \mu t} e^{-\frac{\sigma^{2} t^{2}}{2}} \\
+\Rightarrow \quad\langle x\rangle=\left.\frac{1}{i} \frac{\partial \varphi}{\partial t}\right|_{t=0}=\mu, \quad\left\langle x^{2}\right\rangle=\left.\frac{1}{i^{2}} \frac{\partial^{2} \varphi}{\partial t^{2}}\right|_{t=0}=\mu^{2}+\sigma^{2}
+\end{gathered}
+
+Beispiel 2: Exponentialverteilung $\quad p(x)=\frac{1}{a} e^{-x / a}, \quad x \in[0, \infty)$
+
+& \varphi(x)=\frac{1}{a} \int_{0}^{\infty} d x e^{i x t} e^{-x / a}=\frac{1}{1-i a t} \\
+& \Rightarrow \quad\langle x\rangle=\left.\frac{1}{i} \frac{\partial \varphi}{\partial t}\right|_{t=0}=a, \quad\left\langle x^{n}\right\rangle=\left.\frac{1}{i^{n}} \frac{\partial^{n} \varphi}{\partial t^{n}}\right|_{t=0}=n!a^{n}
+

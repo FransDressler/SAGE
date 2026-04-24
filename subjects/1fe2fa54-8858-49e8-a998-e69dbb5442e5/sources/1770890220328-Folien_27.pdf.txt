@@ -1,0 +1,49 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Elektronenbewegung im Magnetfeld
+aus Gross / Marx
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Abb. 7.18
+aus Gross / Marx
+Im Magnetfeld gilt:
+𝒋 = ෝ𝝈𝑬 bzw. 𝑬 = ෝ𝝆𝒋 , mit ෝ𝝆 = ෝ𝝈−1
+𝑗𝑥
+𝑗𝑦
+𝑗𝑧
+=
+𝜎𝑥𝑥 𝜎𝑥𝑦 𝜎𝑥𝑧
+𝜎𝑦𝑥 𝜎𝑦𝑦 𝜎𝑦𝑧
+𝜎𝑧𝑥 𝜎𝑧𝑦 𝜎𝑧𝑧
+𝐸𝑥
+𝐸𝑦
+𝐸𝑧
+d.h.
+𝐸𝑥
+𝐸𝑦
+𝐸𝑧
+=
+𝜌𝑥𝑥 𝜌𝑥𝑦 𝜌𝑥𝑧
+𝜌𝑦𝑥 𝜌𝑦𝑦 𝜌𝑦𝑧
+𝜌𝑧𝑥 𝜌𝑧𝑦 𝜌𝑧𝑧
+𝑗𝑥
+𝑗𝑦
+𝑗𝑧
+bzw.
+Bewegungsgleichung im Drude-Modell:
+𝑚 𝑑
+𝑑𝑡 + 1
+𝜏 𝒗𝑒 = −𝑒 𝑬 + 𝒗𝑒 × 𝑩
+Elektronenbewegung im Magnetfeld (Hall-Effekt)
+
+aus Ashcroft / Mermin
+Elektronenbewegung im Magnetfeld (Hall-Effekt)
+
+aus Hunklinger
+Elektronen-Dispersionen im Magnetfeld
+
+aus Hunklinger
+Projektion in die Ebene von kx und ky
+
+Landau-Zustände des freien Elektronen-Gases
+
+Zustandsdichte des freien Elektronen-Gases im Magnetfeld

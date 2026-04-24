@@ -1,0 +1,123 @@
+### 1.10 loneukristalle
+
+- fehleude Elektoneuleituy (Isolator)
+- iouische Leituy bei hohen Temperatur
+- Modell de stancer kujeln ist oft jut erfüll, de die betcilijten loven abgeschlosseve schalen haben.
+Beispiel NaCl: $\quad N a^{+}\left(1 s^{2}, 2 s^{2}, 2 p^{6}\right), C e^{-}\left(1 s^{2}, 2 s^{2}, 2 p^{6}, 3 s^{2}, 9 p^{6}\right)$
+Potentialle Enayie zwischen lon i and $j$ :
+
+$$
+\begin{aligned}
+& E_{\text {pot }}^{\ddot{j} j}=\underbrace{c \cdot e^{-R_{i j} / s} b_{p e}}_{\substack{\text { abstoßerde Antel } \\
+\text { be }}} \pm \underbrace{\frac{1}{4 \pi \varepsilon_{0}} \frac{q^{2}}{R_{i j}}}_{+ \text {bi fidren Ld } j},
+\end{aligned}
+$$
+
+mit $\rho$ der Reichweite der Weckselwinkny and Rij dem Abstand zwischen lon i und $j$.
+
+Wecksd wirkunysmenje des lous $i$ mit alla anderen loven
+
+E_{\text {pot }}^{(i)}=\sum_{j \neq i}\left(c \cdot e^{-R_{i j} / s} \pm \frac{1}{4 \pi \varepsilon_{0}} \frac{q_{i} q_{j}}{R_{i j}}\right)
+
+Wedisdwiskenysenegie dow lous i mit den Zun nächsten Nadibann und dem Abstand $R_{i j}=p_{i j} \cdot R_{u n}$, Run Abstand zu viächsten Nachbann.
+
+\begin{aligned}
+E_{p o t}^{(i)} & =z_{44} \cdot c \cdot e^{-R_{4 u} / s}+\frac{q^{2}}{4 \pi \varepsilon_{0}} \sum_{j \neq i} \frac{ \pm 1}{p_{i j} R_{4 u}} \\
+& =z_{4 u} \cdot c \cdot e^{-R_{4 u} / s}-\frac{\alpha}{4 \pi \varepsilon_{0}} \frac{q^{2}}{R_{4 u}}
+\end{aligned}
+
+mit
+
+\alpha=\sum_{i \neq j} \frac{\mp 1}{p_{i j}} \quad \text { Madel unj-Voustante }
+
+\alpha \cong \begin{cases}1.748 & \text { fin Nace (foc, 2-atoming Basis } \\ 1.763 & \text { fin Csce (sc, 2-atomige Basis } \\ 1.634 & \text { fin Zus "Zinkblearde" }\end{cases}
+
+- Kristall unit $N$ locueuparara ( $2 N$ - loven) Eg
+
+E_{B}=N \cdot E_{\text {pot }}{ }^{(i)}
+
+- Glaich gewichtsabstand:
+
+&\left.N \cdot \frac{d}{d R} E_{\text {pot }}^{(i)}\right|_{R_{0}}-\frac{R_{0}}{S}+\frac{N \cdot \alpha \cdot q^{2}}{4 \pi \varepsilon_{0} \cdot R_{0}^{2}}! \\
+&=-N \cdot \frac{z_{n n} \cdot c}{S} \cdot e^{-\frac{R_{0}}{S}}= \\
+& z_{n n} \cdot c \cdot e^{-R_{0} / S}=\frac{\rho \cdot \alpha \cdot \eta^{2}}{4 \pi \varepsilon_{0} \cdot R_{0}^{2}}
+
+![This diagram depicts a potential energy curve (E_B) as a function of distance (R), likely representing the interaction potential between two particles or atoms, showing a potential well at distance R_0 where the energy is minimized.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/89b3bf3f-8e0c-46cf-885d-3617e25518a9/2cb1f5cb-a420-4d49-852d-06f3adcbc97c-2_298_378_215_1502.jpg)
+$\operatorname{lm} G G N$ jet: $R_{n u} \approx R_{0}$
+
+$\Rightarrow$\begin{tabular}{lccc}
+\& $E_{B}=\frac{\alpha q^{2}}{4 \pi \varepsilon_{0} R_{0}}\left(1-\frac{\rho}{R_{0}}\right)$ \& | Made |
+| :--- |
+| Enarg | <br>
+
+\& $R_{0}(i)$ \& $s(i)$ \& $E_{B} / N(\mathrm{eV})$ <br>
+\hline unistall \& 2.820 \& 0.322 \& 8.23 <br>
+\hline Nacl \& 3.147 \& 0.327 \& 7.47 <br>
+kce \& 3.533 \& 0.349 \& 6.75
+\end{tabular}
+
+## 1. 11 Kovalente Binduy
+
+Zuriächst wis eine Atomsonte, griditete Binduy, d.l. Entiöky der Elehtionendichte zwischen den Atouren ( → H2-Molekine).
+Gemeinsame Aufteiluy der Valenzclektone füht zur Edalgas konfijuration fiis jè zwà Partwo. Vovalente Binduy wichtij, wenn änßere Schale us halb gefüllt ist ⇒ dann Kinner die Orbitale überleppe, ohne dass die Besetany hisher Enaje-Niveaus ristj ist.
+
+## sp ${ }^{2}$ - Hybridisiercuy
+
+Beider Besetzy des Valenzbands (Liodiste Band elektionischer zustände in Isolator bzw. Halbeaits bei $T=0$ ) usit jo 2 s- und p-Elektione (abgeschlosseve invore schabe werden iquoiest) werden ans den atomonen Wellenfunktion dench vintuelle tmejey eines s-Zustands in den $p$-Zastand vies sp ${ }^{3}$-Hybride duch Linearkombinatione der $\psi_{s}=|s\rangle$ and $\psi_{p}=\left|p_{x}, p_{y}, p_{z}\right\rangle$ fuständen generiest.
+Von den insgesant 8 Moglichkait an sind 4 Onbitale bindend (und seige in die Ridetung der viachisten Nachbann)
+Zwischer der Grenzfälle ionischer und Kovalunts Binduy gibt es eiven kontinuieslichen Übergang.
+
+Unistall Grad des ionischen Chanaktas.
+| Si | 0.00 |  |  |
+| :--- | :--- | :--- | :--- |
+| S: C | 0.18 |  |  |
+| Ga As | 0.62 |  |  |
+| Ngo | 0.84 |  |  |
+| No Ce | 0.94 |  |  |
+| R67 | 0.96 | 0.881 leart | Panli, |
+
+
+### 1.12 Metalliscle Rinduy.
+
+Metalle besitzen ein bis zwei fiei beweglice Elelition pro Aton ⇒ eleleto. Leitsähight
+chanakhisch: - Veningeng der Vinetisda Engie der Valenzdetten im retall.
+
+- Bei Überjamjsmetalle (2.B.Ca) tretan nock zusätzliche Binduyshräfte anfyund der ww inneres sibolar auf.
+Bindugs enerje pro Aton:
+Albalinctall $\sim 1 \mathrm{eV}$ /Atom
+Wolfiam $\sim 8.7 \mathrm{eV} /$ Atom
+
+
+## 1. 13 Van-der-Wads Weckselwinkery
+
+Alg: Bindy von Edeljasknistalle ( $f_{c c}$ ) und molembers Festlusmpers $\mathrm{H}_{2}, \mathrm{~N}_{2}, \mathrm{O}_{2}, \mathrm{I}_{2}, \ldots$
+charakteristist: - Elektronen wolke fluktuiest um den Vern
+
+- Ins saitiche rittel versediwinde alle ebetischen Dipolmounte, abes ze spezi fischa beit pantle widt not wendyer waie.
+⇒ induzienter Dipol zu Nachboratomen.
+van-der-Waals $\omega \omega$ : schwach avziehende $\omega \omega$ zwische induzienter Dipolen (London - w)
+
+E_{\text {pot }}(R)=-c \frac{\alpha_{1} \alpha_{2}}{R^{6}}, \frac{\alpha_{1}, \alpha_{2} \text { atomaren }}{\text { Polanisis barkent }}
+
+Abstoßende WW bei Vlainen Abstände des Atouer ("Pauli hinzip)
+⇒ Lonuard-Joues Potential: $\quad E_{\text {pot }}(R)=\frac{a}{R^{12}}-\frac{b}{R^{6}}$
+
+⇒ Bindum senejes eines v.d.w. I Vnistades uit N - Atome
+
+E_{B}{ }^{\text {total }}=\frac{1}{2} N \sum_{i \neq j} \frac{a}{R_{i j}^{12}}-\frac{b}{R_{i j}^{6}}
+
+Ini $f_{c c}$ - Gitler:
+
+& \sum\left(\frac{1}{p_{i j}}\right)^{12}=12.13 \\
+& \sum\left(\frac{1}{p_{i j}}\right)^{6}=14.45
+
+⇒ Die viadister Nach barn (12) liefan in foc-Gittern fast den gesaunter Beiting.
+
+Elevent $E_{B}$ pro Atom (eV) Schnelztamporatos
+
+| $\mathrm{N}_{e}$ | 0.02 | 24 |
+| :---: | :---: | :---: |
+| $\mathrm{~A}_{1}$ | 0.08 | 84 |
+| $\omega_{1}$ | 0.116 | 117 |
+| $\mathrm{X}_{e}$ | 0.17 | 161 |
+

@@ -1,0 +1,235 @@
+### 8.3 Das Van-der-Waals-Gas
+
+Aus der freien Energie für ein wechselwirkendes Gas (MF-Näherung),
+
+$$
+F(T, N, V)=-k_{B} T N \ln \left(\frac{e(V-b N)}{N \lambda_{T}^{3}}\right)-\frac{a N^{2}}{V}
+$$
+
+erhalten wir durch Ableitung ( $p=-\partial F /\left.\partial V\right|_{T, N}$ ) die Zustandsgleichung des Van-der-Waals-Gases in der üblichen Form:
+
+\left(p+\frac{a}{v^{2}}\right)(v-b)=k_{B} T \quad \text { mit } \quad v=\frac{V}{N}
+
+Bemerkung: Bis auf Korrekturen $\mathcal{O}\left(b^{2} / v^{2}\right)$ erhält man das gleiche Resultat auch aus der Virial- oder der Clusterentwicklung bis zur Ordnung $\mathrm{n}=2$.
+
+- Spezifische Wärme: $\quad C_{V}=-T \frac{\partial^{2} F}{\partial T^{2}} \quad \Rightarrow \quad C_{V}=\frac{3}{2} k_{B} N$
+
+Gleich wie für das ideale Gas! (Unter der Annahme, dass $b$ und a nicht von T abhängen.)
+
+### 8.3.1 Kritisches Verhalten des vdW Gases
+
+Wir wollen nun die Zustandsgleichung des vdW Gases genauer betrachten. Dazu bestimmen wir zuerst den kritischen Punkt ( $T_{c}, p_{c}, v_{c}$ ), welcher durch die Bedingung
+
+\left.\begin{array}{c}
+\frac{\partial p}{\partial v}=\frac{\partial^{2} p}{\partial v^{2}}=0 \quad \text { definiert ist. } \\
+-\frac{k_{B} T}{(v-b)^{2}}+\frac{2 a}{v^{3}}=0 \\
+\frac{k_{B} T}{(v-b)^{3}}-\frac{3 a}{v^{4}}=0
+\end{array}\right\} \quad v_{c}=3 b, \quad k_{B} T_{c}=\frac{8}{27} \frac{a}{b}, \quad p_{c}=\frac{a}{27 b^{2}} ~ v^{2} ~ v^{3}=0
+
+In dimensionslosen Einheiten, $\bar{v}=v / v_{c}, \bar{p}=p / p_{c}, \bar{T}=T / T_{c}$, lässt sich die Zustandsgleichung in eine universale Form bringen:
+
+\left(\bar{p}+\frac{3}{\bar{v}^{2}}\right)(3 \bar{v}-1)=8 \bar{T}
+
+## Diskussion: vdW Isothermen
+
+![This diagram depicts the phase behavior of a substance near its critical point, showing the relationship between reduced pressure (p/pc) and reduced volume (v/vc) for temperatures above, equal to, and below the critical temperature (Tc), distinguishing liquid (flüssig) and gas phases.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-03_1370_2062_258_295.jpg)
+
+- Für $\mathrm{T}>\mathrm{T}_{\mathrm{c}}$ sind die Isothermen thermodynamisch stabil, $\partial p / \partial v<0$, und beschreiben einen kontinuierlichen Übergang von einem gasförmigen in einen flüssigen Zustand.
+- Für $\mathrm{T}=\mathrm{T}_{\mathrm{c}}$ gilt: $\left.\quad \frac{\partial p}{\partial v}\right|_{v=v_{c}}=0 \quad \begin{aligned} & \text { d.h. der Druck ändert sich nicht bei } \\ & \text { Kompression } .\end{aligned}$
+
+⟹ kritischer Punkt!
+
+- Für $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ gibt es einen endlichen Bereich im dem das vdW Gas thermodynamisch instabil ist, d.h. $\partial p / \partial v>0$.
+![This diagram depicts a pressure-volume (p-v) curve normalized by critical pressure and volume, showing a region where the partial derivative of pressure with respect to volume is positive, indicating an unstable or metastable phase in a thermodynamic system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-04_899_1169_1151_147.jpg)
+- In diesem Bereich kann das vdW Gas als homogene Phase nur in einem metastabilen Zustand (z.B. übersättigter Dampf) existieren.
+
+
+### 8.4 Der Flüssigkeit-Gas Phasenübergang
+
+- vdW-Zustandsgleichung:
+
+\bar{p}(\bar{v}, \bar{T})=\frac{8 \bar{T}}{(3 \bar{v}-1)}-\frac{3}{\bar{v}^{2}}
+
+(dimensionslose Einheiten)
+
+\bar{p}=\frac{p}{p_{c}} \uparrow \underset{\bar{v}=v / v_{c}}{\mid}
+
+- Alternative (thermodynamisch stabil):
+
+> Heterogenes Gemisch aus 2 verschiedenen Phasen!
+![This diagram depicts a two-phase system showing the distribution of molecules between gas (Gas) and liquid (Flüssigkeit) phases within a volume V, with Vg representing the gas volume and Vf the liquid volume. It illustrates the coexistence of molecules in both phases, highlighting their different densities and states.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-05_899_1274_1241_1637.jpg)
+![This diagram depicts a two-phase system showing gas and fluid phases with their respective properties: number of particles (N), volume (V), pressure (p), and chemical potential (μ), indicating thermal equilibrium with equal temperatures (Tg = Tf).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-06_826_1285_110_147.jpg)
+
+- freie Energie (allgemein):
+
+F(T, V, N)=-p V+\mu N
+
+- freie Energie / Teilchen ( $\eta=\mathrm{g}, \mathrm{f}$ ):
+
+\begin{gathered}
+f_{\eta}=\frac{F_{\eta}}{N_{\eta}}=-p_{\eta} v_{\eta}+\mu_{\eta} \\
+\left(v_{\eta}=V_{\eta} / N_{\eta}\right)
+\end{gathered}
+
+Gleichgewichtsbedingungen ( $\mathrm{T}_{\mathrm{g}}=\mathrm{T}_{\mathrm{f}}=\mathrm{T}$ ):
+i) gleicher Druck:
+
+p_{\mathrm{g}}=-\left.\frac{\partial f_{\mathrm{g}}}{\partial v_{\mathrm{g}}}\right|_{T}=-\left.\frac{\partial f_{\mathrm{f}}}{\partial v_{\mathrm{f}}}\right|_{T}=p_{\mathrm{f}} \equiv p_{0}
+
+ii) gleiches chem. Potential:
+
+\mu_{\mathrm{g}}=f_{\mathrm{g}}-\left.\frac{\partial f_{\mathrm{g}}}{\partial v_{\mathrm{g}}}\right|_{T} v_{\mathrm{g}}=f_{\mathrm{f}}-\left.\frac{\partial f_{\mathrm{f}}}{\partial v_{\mathrm{f}}}\right|_{T} v_{\mathrm{f}}=\mu_{\mathrm{f}}
+
+$\mathrm{i})+\mathrm{ii})$ : Die Tangenten der freien Energien $f_{\mathrm{g}}\left(T, v_{\mathrm{g}}\right)$ und $f_{\mathrm{f}}\left(T, v_{\mathrm{f}}\right)$ sind ident!
+![This diagram depicts the chemical potential (μ) as a function of velocity (v) for two distribution functions, \( f_a(T,v) \) and \( f_b(T,v) \), showing the points where each distribution intersects the chemical potential line at velocities \( v_a \) and \( v_b \). It is used to illustrate the relationship between chemical potential and particle velocity distributions at a given temperature T.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-07_889_1243_73_73.jpg)
+allgemein: 2 (oder mehrere) Phasen können im Gleichgewicht koexistieren, falls die Tangenten an die freien Energien übereinstimmen.
+
+\mu=f_{\eta}\left(v_{\eta}\right)-\left.\frac{\partial f_{\eta}(v)}{\partial v}\right|_{v=v_{\eta}} v_{\eta}
+
+im Übergangsbereich $v_{a}<v<v_{b}$ gilt:
+
+V=N_{a} v_{a}+N_{b} v_{b}=(\underbrace{N_{a}+N_{b}}_{N}) v \Rightarrow\left\{\begin{array}{l}
+\frac{N_{a}}{N}=\frac{v_{b}-v}{v_{b}-v_{a}} \\
+\frac{N_{b}}{N}=\frac{v-v_{a}}{v_{b}-v_{a}}
+\end{array}\right.
+
+- relativer Anteil der Teilchen $N_{b} \sim\left(v-v_{a}\right)$ und $N_{a} \sim\left(v_{b}-v\right)$
+- für $v=v_{a}$ und $v=v_{b}$ sind jeweils wieder alle Teilchen in einer Phase
+- Freie Energie des Gesamtsystems $\left(v_{a}<v<v_{b}\right)$ :
+
+f=\frac{F}{N}=\frac{N_{a}}{N} f_{a}+\frac{N_{b}}{N} f_{b}=f_{b}\left(v_{b}\right)+\left(\frac{v_{b}-v}{v_{b}-v_{a}}\right)\left(f_{a}\left(v_{a}\right)-f_{b}\left(v_{b}\right)\right)
+
+Die freie Energie des heterogenen Systems liegt auf einer Geraden, die zwischen $f_{b}\left(v_{b}\right)$ und $f_{a}\left(v_{a}\right)$ interpoliert.
+
+- Daraus folg: $\quad-\frac{\partial f}{\partial v}=p_{0} \quad \Rightarrow \quad f(v, T)=f_{b}\left(v_{b}, T\right)+p_{0}(T)\left(v_{b}-v\right)$
+- Für ein System mit bekannter Zustandsgleichung $p(v, T)$ (z.B. vdW Gas):
+
+f\left(v_{a}, T\right)=f\left(v_{b}, T\right)-\int_{v_{b}}^{v_{a}} p(v, T) d v \text { Integration über }^{\text {instabilen Bereich! }}
+
+\Rightarrow \quad-\int_{v_{b}}^{v_{a}} p(v, T) d v=p_{0}(T)\left(v_{b}-v_{a}\right)
+
+Beispiel vdW Gas:
+![This diagram depicts the velocity distribution functions in a gas, showing the difference between the actual velocity distribution \( f_{vdW}(v,T) \) and the Maxwell-Boltzmann distribution \( f_{het}(v,T) \), along with the corresponding pressure \( p \) as a function of velocity \( v \). It illustrates deviations from ideal gas behavior due to intermolecular interactions, indicated by the shaded area between the curves.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-09_1702_1332_190_10.jpg)
+
+Dann ist $\quad-\int_{v_{\mathrm{g}}}^{v_{\mathrm{f}}} p(v, T) d v=p_{0}(T)\left(v_{\mathrm{g}}-v_{\mathrm{f}}\right) \quad$ erfüllt.
+
+Für $\mathrm{T}<\mathrm{T}_{\mathrm{c}}$ existiert ein Intervall $v \in\left[v_{\mathrm{f}}, v_{\mathrm{g}}\right]$, in dem die freie Energie des heterogenen Gemischs
+
+f_{\text {het }}(v, T)=f_{\mathrm{g}}\left(v_{\mathrm{g}}, T\right)+p_{0}(T)\left(v_{\mathrm{g}}-v\right)
+
+kleiner ist als die freie Energie des homogenen vdW Gases.
+
+## "Maxwell Konstruktion":
+
+ (graphische Bestimmung von $p_{0}, v_{\mathrm{g}}, v_{\mathrm{f}}$ )Wähle $p_{0}$ so, dass die im pV-Diagramm eingeschlossenen Flächen unterhalb und oberhalb ident sind.
+
+### 8.5 Das vdW Gas am kritischen Punkt
+
+![This diagram depicts a thermodynamic phase space with variables pressure (p), volume (v), and temperature (T), showing isotherms and a critical point (Tc, vc, pc) on a phase boundary surface. It illustrates the behavior of a substance near its critical point in a p-v-T diagram.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-10_979_1179_221_95.jpg)
+
+Koexistenzfläche (vdW Gleichung nicht anwendbar)
+
+\bar{p}=\frac{8 \bar{T}}{(3 \bar{v}-1)}-\frac{3}{\bar{v}^{2}} \quad \Rightarrow \quad \delta \bar{p} \simeq 4 \delta \bar{T}-6 \delta \bar{T} \delta \bar{v}-\frac{3}{2} \delta \bar{v}^{3}
+
+Eigenschaften des vdW Gases in der Umgebung des kritischen Punkts?
+
+\begin{gathered}
+\bar{p}=\bar{p}_{c}+\delta \bar{p} \\
+\bar{T}=\bar{T}_{c}+\delta \bar{T} \leftarrow \\
+\bar{v}=\bar{v}_{c}+\delta \bar{v} \\
+\left(\bar{p}_{c}=\bar{v}_{c}=\bar{T}_{c}=1\right)
+\end{gathered}
+
+\left(\bar{p}_{c}=\bar{v}_{c}=\bar{T}_{c}=1\right) \\
+\delta \bar{p} \simeq 4 \delta \bar{T}-6 \delta \bar{T} \delta \bar{v}-\frac{3}{2} \delta \bar{v}^{3}
+
+*) Gilt nur außerhalb oder am Rand der Koexistenzfläche.
+${ }^{* *)}$ Term $\sim \delta \bar{T} \delta \bar{v}^{2}$ kann vernachläßigt werden (ohne Beweis).
+
+- Dampfdruckkurve: Projektion der Koexistenzfläche auf p-T Ebene.
+![This diagram depicts a phase space trajectory in a dynamical system, showing the evolution of the variable \( p \) as a function of \( v \) with highlighted initial and final points \( p_0 \) and \( p_0(T) \). It illustrates the change in the state variable \( p \) over time \( T \) from the initial condition \( p_0 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-11_724_1253_243_84.jpg)
+![This diagram depicts the relationship between the average momentum \(\bar{p}\) and the inverse temperature \(\bar{T}\), showing a critical point \(\bar{T}_c\) where \(\bar{p}\) reaches a critical value \(\bar{p}_c\), likely illustrating a phase transition or critical behavior in a physical system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-11_662_830_316_1870.jpg)
+
+Nahe dem kritischen Punkt:
+
+\delta \bar{p} \simeq 4 \delta \bar{T}-6 \delta T \delta v-\frac{3}{2} \delta \bar{v}^{3}
+
+![This diagram depicts a potential energy curve for a particle-antiparticle system, showing the variation of potential energy (δp̅) as a function of a coordinate (δv̅), with points of equilibrium marked.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-11_397_1121_1320_1494.jpg)
+
+Da $\delta \bar{p}\left(\delta \bar{v}_{\mathrm{g}}\right)=\delta \bar{p}\left(\delta \bar{v}_{\mathrm{f}}\right)=\delta \bar{p}(0)$ wähle $\delta \bar{v}=0$ :
+
+\Rightarrow \quad \delta \bar{p}_{0} \simeq 4 \delta \bar{T}
+
+- Koexistenzkurve: Projektion der Koexistenzfläche auf v-T Ebene.
+![This diagram depicts a temperature versus velocity curve related to phase transitions, showing the critical temperature \( \bar{T}_c \) at critical velocity \( \bar{v}_c \), with forward and backward transition velocities \( \bar{v}_f \) and \( \bar{v}_g \) indicated. It illustrates the stability and transition points of a system as velocity changes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-12_836_968_269_147.jpg)
+
+\begin{aligned}
+& \underbrace{\delta \bar{p}-4 \delta \bar{T}}_{0} \simeq-6 \delta \bar{T} \delta \bar{v}-\frac{3}{2} \delta \bar{v}^{3} \\
+& \Rightarrow \delta v_{\mathrm{g}} \simeq-\delta v_{\mathrm{f}} \simeq \sqrt{-4 \delta \bar{T}}+\mathcal{O}(\delta \bar{T})
+\end{aligned}
+
+Interpretation:
+![This diagram depicts the phase transition of carbon dioxide molecules between gas and liquid states, showing CO2 molecules dispersed as gas at temperatures above the critical temperature (T > Tc) and partially condensed into liquid at temperatures below the critical temperature (T < Tc).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-12_756_1438_1405_26.jpg)
+![This diagram depicts the effect of temperature on the volume of a gas, showing gas particles in two containers at different volumes and velocities (v_c + δv_g and v_c - δv_g) with heat applied, illustrating thermal expansion and contraction.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-12_1232_1485_998_1484.jpg)
+
+## Bemerkungen:
+
+-) $\left|\delta v_{\mathrm{f}}\right|=$ "Ordnungsparameter"
+
+\begin{aligned}
+& T>T_{c}:\left|\delta v_{\mathrm{f}}\right|=0 \\
+& T<T_{c}:\left|\delta v_{\mathrm{f}}\right| \sim \sqrt{T_{c}-T}
+\end{aligned}
+
+![This diagram depicts the behavior of the normalized velocity fluctuation magnitude (|δv_f|/v) as a function of normalized temperature (T̅), showing a phase transition from a liquid ("flüssig," ordered) state to a gas ("gasförmig," disordered) state at the critical temperature T_c.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-13_783_1295_158_1653.jpg)
+
+Vergleiche:
+Bose-Einstein-Kondensation:
+
+\frac{N_{0}}{N}=1-\left(\frac{T}{T_{c}}\right)^{\frac{3}{2}}
+
+![This diagram depicts the fraction of particles in the condensate phase (N0/N) as a function of temperature (T) for a Bose-Einstein condensate, showing the transition from the condensate ("Kondensat") phase below the critical temperature (Tc) to the normal gas phase above Tc.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-13_682_1333_1278_1436.jpg)
+
+- Kompressibilität:
+
+\kappa_{T}=-\left.\frac{1}{v} \frac{\partial v}{\partial p}\right|_{T}
+
+verwende: $\quad\left(\frac{\partial v}{\partial p}\right)^{-1}=\frac{p_{c}}{v_{c}} \frac{\partial \bar{p}}{\partial \bar{v}} \quad$ un
+
+\frac{\partial \bar{p}}{\partial \bar{v}} \simeq-6 \delta \bar{T}-\frac{9}{2} \delta \bar{v}^{2}
+
+-) Für $T>T_{c}(\delta \bar{v}=0)$ :
+
+\Rightarrow \quad \kappa_{T}=\frac{1}{6 p_{c}} \frac{1}{\delta \bar{T}} \sim \frac{1}{T-T_{c}}
+
+-) Für $T<T_{c}\left(\delta \bar{v}=\delta v_{\mathrm{g}}(\delta \bar{T})\right)$ :
+![This diagram depicts a thermodynamic potential curve showing the relationship between the average velocity \(\bar{v}\) and the temperature \(\bar{T}\), illustrating phase transitions with critical points \(\bar{v}_f\), \(\bar{v}_c\), and \(\bar{v}_g\), and indicating a transition path with red arrows.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-14_825_962_982_1933.jpg)
+
+\frac{\partial \bar{p}}{\partial \bar{v}} \simeq-6 \delta \bar{T}-\frac{9}{2} \delta \bar{v}^{2} \simeq-6 \delta \bar{T}-18|\delta \bar{T}|=-12|\delta \bar{T}|
+
+\kappa_{T} \sim \frac{1}{\left|T_{c}-T\right|}
+
+Die Kompressibilität divergiert (in der vdW Theorie) oberhalb und unterhalb der kritischen Temperatur.
+
+- Wärmekapazität: (siehe Übung 11.3)
+
+\frac{C_{V}}{N}=\frac{3}{2} k_{B}+\frac{9}{2} k_{B}\left[1+\frac{28}{25} \frac{T-T_{c}}{T_{c}}+\ldots\right] \quad\left(T<T_{c}\right)
+
+![This diagram depicts the specific heat capacity at constant volume per particle (Cv/NkB) as a function of temperature (T) for a system undergoing a phase transition at the critical temperature Tc, showing a discontinuous jump in specific heat indicative of a second-order phase transition.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/a7aa9f1c-2a6a-45ac-8404-134590f2874c/f04397a4-520f-46e5-841e-d79ca59bab25-15_841_1078_1310_95.jpg)
+vdW Gas: Sprung der spezifischen Wärme beim Phasenübergang!
+reales Gas: spez. Wärme divergiert sogar beim Phasenübergang!
+
+C_{V} \sim \frac{1}{\left|T-T_{c}\right|^{\alpha}}
+
+## Zusammenfassung:
+
+- Das vdW Gas zeigt ein kritisches Verhalten, welches durch sprunghafte Änderungen und Divergenzen verschiedener phys. Größen nahe des kritischen Punkts bestimmt ist.
+- Vorschau: Ähnliche kritische Phänomene treten auch bei anderen Phasenübergängen auf und werden durch ihre kritischen Exponenten $\alpha, \beta, \gamma, \delta, \ldots$ klassifiziert.
+
+| Größe | Skalierung | vdW Gas | Experiment |
+| :---: | :---: | :---: | :---: |
+| $\left\|\delta v_{\mathrm{f}}\right\|$ | $\sim\left(T_{c}-T\right)^{\beta}$ | $\beta=1 / 2$ | $\beta=0.32$ |
+| $C_{V}$ | $\sim\left\|T_{c}-T\right\|^{-\alpha}$ | Sprung | $\alpha>0$ |
+| $\delta p\left(T_{c}\right)$ | $\sim(\delta v)^{\delta}$ | $\delta=3$ | $\delta=4.8$ |
+| $\kappa_{T}$ | $\sim\left\|T-T_{c}\right\|^{-\gamma}$ | $\gamma=1$ | $\gamma=1.2$ |
+

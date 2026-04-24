@@ -1,0 +1,253 @@
+2.4.3 Freie Energie
+
+![This diagram depicts a thermodynamic system transitioning from a macroscopic state defined by entropy (S), volume (V), and particle number (N) to a microscopic molecular representation in contact with a thermal reservoir at temperature (T). It illustrates the connection between macroscopic thermodynamic variables and microscopic molecular behavior in a heat reservoir context.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/8ba50e4a-c9c1-44aa-8a69-f0667e3c4853/27114365-43ff-4d74-bf9e-eeb94ea57ab0-01_440_2637_221_221.jpg)
+abgeschlossen, aber Energieaustausch mit Umgebung
+
+isoliertes System
+
+⇒ natürliche Variablen: Temperatur (T), Volumen (V), Teilchenzahl (N)
+
+⇒ ersetze $S$ durch konjugierte Variable $T=\left(\frac{\partial E}{\partial S}\right)_{V, N}$
+
+Durch eine Legendre Transformation erhalten wir die "Freie Energie":
+
+$$
+F \equiv F(T, V, N)=E-T S=-p V+\mu N
+$$
+
+differenzielle Form:
+
+d F=d E-S d T-T d S \quad \Rightarrow \quad d F=-S d T-p d V+\mu d N
+
+Bei isothermen Prozessen (und konstanter Teilchenzahl) ist
+
+d F=-p d V=\delta W
+
+⇒ Freie Energie ist Teil der Energie die bei gegebener Temperatur in Arbeit umgewandelt werden kann.
+vergleiche: $\left.\quad d E\right|_{T, N}=\delta W+\delta Q \neq \delta W \quad$ (z.B. dE=0 für ideales Gas)
+
+- Analog zur Energie erhalten wir die Relationen:
+
+-S=\left(\frac{\partial F}{\partial T}\right)_{V, N} \quad-p=\left(\frac{\partial F}{\partial V}\right)_{T, N} \quad \mu=\left(\frac{\partial F}{\partial N}\right)_{T, V}
+
+2.4.4 Enthalpie
+![This diagram depicts a gas pressure experiment showing gas molecules in a container with a piston and a weight on top, illustrating how the gas molecules exert pressure on the piston.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/8ba50e4a-c9c1-44aa-8a69-f0667e3c4853/27114365-43ff-4d74-bf9e-eeb94ea57ab0-03_622_553_217_245.jpg)
+konstanter Druck
+z.B. chemische
+
+Reaktionen, p=Luftdruck
+
+⇒ natürliche Variablen: Entropie (S), Druck (p), Teilchenzahl (N)
+
+⇒ ersetze $V$ durch konjugierte Variable $\quad-p=\left(\frac{\partial E}{\partial V}\right)_{S, N}$
+⇒ Legendre Transformation:
+
+\begin{aligned}
+\text { "Enthalpie": } & H \equiv H(S, p, N)=E+p V=T S+\mu N \\
+& d H=d E+p d V+V d p=T d S+V d p+\mu d N
+\end{aligned}
+
+## Diskussion Enthalpie:
+
+- Bei isobaren Prozessen (und konstanter Teilchenzahl) ist
+
+d H=d E+p d V=T d S=d Q
+
+⇒ Enthalpieänderung entspricht der zugeführten Wärme bei isobaren Prozessen.
+
+- Analog wie bei anderen therm. Potentialen erhalten wir die Relationen:
+
+T=\left(\frac{\partial H}{\partial S}\right)_{p, N} \quad V=\left(\frac{\partial H}{\partial p}\right)_{S, N} \quad \mu=\left(\frac{\partial H}{\partial N}\right)_{S, p}
+
+### 2.4.5 (Gibbs) freie Enthalpie
+
+⇒ natürliche Variablen: Temperatur (T), Druck (p), Teilchenzahl (N)
+
+\begin{aligned}
+G & \equiv G(T, p, N)=E+p V-T S=\mu N \\
+d G & =d H-T d S-S d T=-S d T+V d p+\mu d N
+\end{aligned}
+
+### 2.4.6 Großkanonisches Potential (offenes System)
+
+⇒ natürliche Variablen: Temperatur (T), Volumen (V), chem. Potential (μ)
+
+\begin{gathered}
+J \equiv J(T, V, \mu)=E-T S-\mu N=-p V \\
+d J=d F-\mu d N-N d \mu=-S d T-p d V-N d \mu
+\end{gathered}
+
+### 2.4.7 Gibbs-Duhem Relation
+
+Beim Übergang zu einem vollständigen Satz intensiver Variablen ( $T, p, \mu$ ) erhalten wir
+
+\begin{gathered}
+\Psi=E-T S+p V-\mu N \equiv 0 \\
+d \Psi=d J+p d V+V d p=-S d T+V d p-N d \mu=0
+\end{gathered}
+
+## Nur 2 der 3 intensiven Variablen können unabhängig von einander variiert werden !!
+
+Umformung: $\quad d \mu(T, p)=-\frac{S}{N} d T+\frac{V}{N} d p$ (natürliche Variablen des chemischen Potentials)
+
+Thermodynamische Potentiale: Zusammenfassung
+
+| natürliche Variablen | Potential | Differential |
+| :--- | :--- | :--- |
+| $S, V, N$ | $E=T S-p V+\mu N$ | $d E=T d S-p d V+\mu d N$ |
+| $E, V, N$ | $S=\frac{1}{T}(E+p V-\mu N)$ | $d S=\frac{1}{T} d E+\frac{p}{T} d V-\frac{\mu}{T} d N$ |
+| $T, V, N$ | $F=-p V+\mu N$ | $d F=-S d T-p d V+\mu d N$ |
+| $S, p, N$ | $H=T S+\mu N$ | $d H=T d S+V d p+\mu d N$ |
+| $T, p, N$ | $G=\mu N$ | $d G=-S d T+V d p+\mu d N$ |
+| $T, V, \mu$ | $J=-p V$ | $d J=-S d T-p d V-N d \mu$ |
+
+### 2.5 Thermodynamische "Response" Funktionen
+
+## "Response" Funktionen
+
+- beschreiben die (lineare) Antwort eines therm. Systems auf äußere Einwirkungen.
+- sind zweite Ableitungen der thermodynamischen Potentiale
+
+Bsp: Wärmekapazität, Kompressibilität, Ausdehnungskoeffizient, ...
+
+### 2.5.1 Maxwell Relationen
+
+Zur Erinnerung: vollständiges Differential
+(Integrabilitätsbedingung)
+
+d F=\left(\frac{\partial F}{\partial x}\right)_{y} d x+\left(\frac{\partial F}{\partial y}\right)_{x} d y \quad \Leftrightarrow \quad \frac{\partial}{\partial y}\left(\frac{\partial F}{\partial x}\right)=\frac{\partial}{\partial x}\left(\frac{\partial F}{\partial y}\right)
+
+⇒ Angewandt auf thermodynamische Potentiale ergeben sich daraus die Maxwell Relationen für die Ableitungen von Zustandsgrößen.
+
+Bsp 1: $\quad d E(S, V, N)=T d S-p d V+\mu d N \quad$ (Energie)
+
+\frac{\partial T}{\partial V}=\frac{\partial}{\partial V}\left(\frac{\partial E}{\partial S}\right)=\frac{\partial}{\partial S}\left(\frac{\partial E}{\partial V}\right)=-\frac{\partial p}{\partial S} \Rightarrow\left(\frac{\partial T}{\partial V}\right)_{S, N}=-\left(\frac{\partial p}{\partial S}\right)_{V, N}
+
+Bsp 2: $\quad d F(T, V, N)=-S d T-p d V+\mu d N \quad$ (Freie Energie)
+
+\frac{\partial \mu}{\partial V}=\frac{\partial}{\partial V}\left(\frac{\partial F}{\partial N}\right)=\frac{\partial}{\partial N}\left(\frac{\partial F}{\partial V}\right)=-\frac{\partial p}{\partial N} \Rightarrow\left(\frac{\partial \mu}{\partial V}\right)_{T, N}=-\left(\frac{\partial p}{\partial N}\right)_{T, V}
+
+⇒ Für einkomponentiges Gas: insgesamt 12 verschiedene Relationen!
+
+Gedächtnishilfe: "Maxwell-Diagramm"/ "Guggenheim Quadrat"
+
+### 2.5.2 Response Funktionen:
+
+- Wärmekapazität ("thermische Response"):
+
+C_{X}=\left.\frac{\delta Q}{d T}\right|_{X}
+
+Erhöhung der Temperatur dT bei zugefügter Wärme $\delta Q$ und festem Parameter $X$.
+-) isochor, $\mathbf{V = c o n s t}: \quad C_{V}=\left.\frac{\delta Q}{d T}\right|_{V}$
+
+1. Hauptsatz: $\quad d E=\delta Q-p d V=C_{V} d T$
+
+\Rightarrow C_{V}=\left.\frac{\partial E}{\partial T}\right|_{V, N}
+
+(falls $\mathrm{E}(\mathrm{T}, \mathrm{V}, \mathrm{N})$ gegeben)
+keine natürliche Variable
+
+## Allgemein:
+
+\frac{C_{V}=\left.\frac{\partial E}{\partial T}\right|_{V, N}=\left.\frac{\partial E}{\partial S} \frac{\partial S}{\partial T}\right|_{V, N}=-\left.T \frac{\partial^{2} F}{\partial T^{2}}\right|_{V, N}}{T \quad S=-\frac{\partial F}{\partial T}}
+
+-) isobar, p=const : $\quad C_{p}=\left.\frac{\delta Q}{d T}\right|_{p}$
+
+d E=\delta Q-p d V \quad \Rightarrow \quad C_{p} d T=\left.d(E+p V)\right|_{p}=\left.d H\right|_{p}
+
+\Rightarrow \quad C_{p}=\left.\frac{\partial H}{\partial T}\right|_{p, N}=\left.\frac{\partial H}{\partial S} \frac{\partial S}{\partial T}\right|_{p, N}=-\left.T \frac{\partial^{2} G}{\partial T^{2}}\right|_{p, N}
+
+Beispiel: ideales Gas $\quad E=\frac{3}{2} N k_{B} T, \quad p V=N k_{B} T$
+
+& \Rightarrow \quad C_{V}=\left.\frac{\partial E}{\partial T}\right|_{V, N}=\frac{3}{2} N k_{B} \\
+& \Rightarrow \quad C_{p}=\left.\frac{\partial H}{\partial T}\right|_{p, N}=\frac{\partial E}{\partial T} \underbrace{}_{\left({ }^{*}\right)}+\left.\frac{\partial(p V)}{\partial T}\right|_{p, N}=C_{V}+N k_{B}=\frac{5}{2} N k_{B}
+
+(*) Achtung: Bei Änderung der Temperatur mit $p=$ const. ändert sich auch das Volumen. In diesem Schritt verwenden wir, dass bei einem idealen Gas E nicht explizit von V abhängt.
+
+Im Allgemeinen sollte $C_{p}$ direkt als 2 . Ableitung von $G(T, p, N)$ zu berechnet werden (siehe z.B. Übungen 3.1 und 3.2)
+
+## Einschub: Folgerungen des 3. Hauptsatz
+
+- Spezifische Wärme:
+
+C_{X}=\left.T \frac{\partial S}{\partial T}\right|_{X} \quad \Rightarrow \quad S\left(T_{1}\right)-S\left(T_{0}\right)=\int_{T_{0}}^{T_{1}} d T \frac{C_{X}(T)}{T}
+
+Annahme: $\quad C_{X}(T \rightarrow 0) \simeq c_{0}+c_{1} T+\ldots, \quad c_{0}>0$
+dann gilt für kleine Temperaturen:
+
+\lim _{T_{0} \rightarrow 0} \underbrace{S\left(T_{1}\right)-S\left(T_{0}\right)}_{=S\left(T_{1}\right)<\infty}=\lim _{T_{0} \rightarrow 0} c_{0} \ln \left(T_{1} / T_{0}\right)=\infty
+
+3. Hauptsatz ⇒ Widerspruch!
+
+⇒ spez. Wärme verschwindet bei $\mathrm{T}=0$ !
+
+- Unerreichbarkeit des absoluten Nullpunkts:
+
+Annahme: Die Entropie nimmt bei $\mathrm{T}=0$ einen von einem weiteren Systemparameter $X$ abhängigen Wert $S(T=0, X) \neq 0$ ein.
+
+Wir betrachten weiters einen Kühlprozess, der aus einer Abfolge von zwei (idealisierten) Prozessen besteht:
+![This diagram depicts entropy (S) as a function of temperature (T) for two different compositions (X1 and X2). It shows the process of changing composition at constant temperature (i) and changing temperature at constant composition (ii) on entropy curves.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/8ba50e4a-c9c1-44aa-8a69-f0667e3c4853/27114365-43ff-4d74-bf9e-eeb94ea57ab0-14_804_1295_602_1563.jpg)
+(i) Abkühlung durch adiabatische Änderung $\mathrm{X}_{2} \rightarrow \mathrm{X}_{1}$.
+(ii) Abgabe von Wärme (Reduzierung der Entropie) durch isothermen* Prozess $\mathrm{X}_{1} \rightarrow \mathrm{X}_{2}$.
+
+[^0]Unter diesen Annahmen kann das System in einer endlichen Abfolge dieser Schritte bis auf $\mathrm{T}=0$ abgekühlt werden.
+3. HS: Die Entropie nimmt bei $\mathrm{T}=0$ einen von einem weiteren Systemparameter X unabhängigen Wert $\mathrm{S}(\mathrm{T}=0, \mathrm{X})=0$ ein.
+![This diagram depicts entropy (S) as a function of temperature (T) for two different compositions (X1 and X2). It shows the path of entropy changes during a process involving changes in composition and temperature, indicated by the red arrows and labeled steps (i) and (ii).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/8ba50e4a-c9c1-44aa-8a69-f0667e3c4853/27114365-43ff-4d74-bf9e-eeb94ea57ab0-15_795_1294_749_773.jpg)
+
+Der absolute Temperaturnullpunkt kann nicht in einer endlichen Anzahl von Kühlschritten erreicht werden!
+
+- Kompressibilität ("mechanische Response"):
+$\kappa_{X}=-\left.\frac{1}{V} \frac{\partial V}{\partial p}\right|_{X} \quad \begin{aligned} & \text { relative Volumsänderung } \\ & \text { bei Druckänderung }\end{aligned}$
+- isotherm: $\quad \kappa_{T}=-\left.\frac{1}{V} \frac{\partial V}{\partial p}\right|_{T, N}=-\left.\frac{1}{V} \frac{\partial^{2} G}{\partial p^{2}}\right|_{T, N}>0$
+- adiabatisch: $\quad \kappa_{S}=-\left.\frac{1}{V} \frac{\partial V}{\partial p}\right|_{S, N}=-\left.\frac{1}{V} \frac{\partial^{2} H}{\partial p^{2}}\right|_{S, N}>0$ thermodyn. Stabilität
+- thermischer Ausdehnungskoeffizient:
+relative Volumsänderung bei Temperaturänderung
+
+\alpha_{p}=\left.\frac{1}{V} \frac{\partial V}{\partial T}\right|_{p, N}=\left.\frac{1}{V} \frac{\partial^{2} G}{\partial T \partial p}\right|_{N}
+
+- isochorer Spannungskoeffizient:
+relative Druckänderung bei Temperaturänderung
+
+\beta_{V}=\left.\frac{1}{p} \frac{\partial p}{\partial T}\right|_{V, N}=-\left.\frac{1}{p} \frac{\partial^{2} F}{\partial T \partial V}\right|_{N}
+
+## Mathematischer Einschub:
+
+## Variablen-Transformation \& Jacobi-Determinante
+
+Seinen $f(u, v)$ und $g(u, v)$ zwei Funktionen der Variablen $u$ und $v$.
+Def: Jacobi-Determinante
+
+\frac{\partial(f, g)}{\partial(u, v)}:=\left|\begin{array}{cc}
+\left(\frac{\partial f}{\partial u}\right)_{v} & \left(\frac{\partial f}{\partial v}\right)_{u} \\
+\left(\frac{\partial g}{\partial u}\right)_{v} & \left(\frac{\partial g}{\partial v}\right)_{u}
+\end{array}\right|=\left(\frac{\partial f}{\partial u}\right)_{v}\left(\frac{\partial g}{\partial v}\right)_{u}-\left(\frac{\partial g}{\partial u}\right)_{v}\left(\frac{\partial f}{\partial v}\right)_{u}
+
+Bekannte Anwendung: Koordinatentransformation $x, y \leftrightarrow u, v$
+
+& \binom{d x}{d y}=\left(\begin{array}{ll}
+\left(\frac{\partial x}{\partial u}\right)_{v} & \left(\frac{\partial x}{\partial v}\right)_{u} \\
+\left(\frac{\partial y}{\partial u}\right)_{v} & \left(\frac{\partial y}{\partial v}\right)_{u}
+\end{array}\right)\binom{d u}{d v} \\
+& \text { "Volumselement": } \quad d V=d x d y=\left|\frac{\partial(x, y)}{\partial(u, v)}\right| d u d v
+
+## Eigenschaften der Jacobi-Determinante
+
+- ungerade bezüglich Vertauschung: $\frac{\partial(f, g)}{\partial(u, v)}=-\frac{\partial(g, f)}{\partial(u, v)}=-\frac{\partial(f, g)}{\partial(v, u)}$
+- verallgemeinerte Kettenregel: $\quad \frac{\partial(f, g)}{\partial(x, y)}=\frac{\partial(f, g)}{\partial(u, v)} \cdot \frac{\partial(u, v)}{\partial(x, y)}$
+- Rücktransformation: $\quad \frac{\partial(u, v)}{\partial(x, y)}=\left(\frac{\partial(x, y)}{\partial(u, v)}\right)^{-1}$
+- Spezialfall partielle Ableitung: $\left.\quad \frac{\partial f}{\partial u}\right|_{v}=\frac{\partial(f, v)}{\partial(u, v)}$
+
+Daraus folgen die nützlichen Relationen:
+i) $\left.\frac{\partial f}{\partial u}\right|_{v}=\frac{1}{\left.\frac{\partial u}{\partial f}\right|_{v}}$
+ii) $\left.\frac{\partial f}{\partial u}\right|_{v}=-\frac{\left.\frac{\partial f}{\partial v}\right|_{u}}{\left.\frac{\partial u}{\partial v}\right|_{f}}$
+
+## Beweis:
+
+i) $\left.\quad \frac{\partial f}{\partial u}\right|_{v}=\frac{\partial(f, v)}{\partial(u, v)}=\left(\frac{\partial(u, v)}{\partial(f, v)}\right)^{-1}=\left(\left.\frac{\partial u}{\partial f}\right|_{v}\right)^{-1}$
+ii) $\left.\frac{\partial f}{\partial u}\right|_{v}=\frac{\partial(f, v)}{\partial(u, v)}=\frac{\partial(f, v)}{\partial(f, u)} \frac{\partial(f, u)}{\partial(u, v)}=-\frac{\partial(f, v)}{\partial(f, u)} \frac{\partial(f, u)}{\partial(v, u)}$
+
+=-\left(\frac{\partial(f, u)}{\partial(f, v)}\right)^{-1} \frac{\partial(f, u)}{\partial(v, u)}=-\left.\left(\left.\frac{\partial u}{\partial v}\right|_{f}\right)^{-1} \frac{\partial f}{\partial v}\right|_{u}
+
+
+[^0]:    *) Dabei kann ein zweites, auf die gleiche Temperatur gekühltes aber größeres System als Wärmebad dienen.
+

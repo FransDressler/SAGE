@@ -1,0 +1,99 @@
+### 6.2 Bloch-Funktion and Block-Theam
+
+1928 Felix Bloch: Gesucht ist die lösung der Solvödingerflaichning fiur ein gitter periodisches Potential. Folie 1
+
+Behamptuny:
+
+$$
+\psi_{\underline{u}}(\underline{r})=u_{\underline{k}}(\underline{r}) \cdot e^{i \underline{k} \cdot \underline{r}}
+$$
+
+Block-Funktion
+unit $u_{\underline{k}}(\underline{r})=u_{\underline{k}}(\underline{r}+\underline{R}), \underline{R}:$ Gittervelter Folie 2
+"Ebene Welle, de mit einer gitterperiodischen Funktion moduliest ist."
+
+Un dies zu verstehen, betraditen wir ein Elektion in einem periodischen Potential: $U(\underline{r})=U(\underline{r}+\underline{R})$.
+$\Rightarrow \quad U(\underline{r})=\sum_{\underline{G}} U_{\underline{G}} e^{i \underline{G} r}, \begin{aligned} & \text { Darstellum als Focuir-Reile } \\ & \text { wit G retiproven Gitter veltor. }\end{aligned}$
+Ausatz: $\Psi(\underline{r})=\sum_{\underline{k}} c_{k} e^{i \underline{k} \underline{r}}$, Danstelluy als Fomier-Reike in:H$: H(\underline{r})=\left[-\frac{\hbar^{2}}{2 m} \underline{\nabla}^{2}+U(\underline{r})\right] \psi(\underline{r})=E \psi(\underline{r})$
+ajibt: $\sum_{\underline{k}} \frac{t^{2} k^{2}}{2 m} c_{\underline{k}} e^{i \underline{k} \underline{r}}+\sum_{\underline{k}^{\prime} \underline{G}} c_{\underline{k^{\prime}}} U_{\underline{G}} e^{i\left(\underline{k}^{\prime}+\underline{G}\right) \cdot \underline{r}}=E \sum_{\underline{k}} c_{\underline{k}} e^{i \underline{k} \underline{r}}$ Num wind ausgenult, dass : $\sum_{\underline{\underline{u}}} c_{\underline{u^{\prime}}} e^{i\left(\underline{\underline{u}}^{\prime}+\underline{G}\right) \underline{r}}=\sum_{\underline{\underline{u}}} c_{\underline{\underline{u}} \cdot \underline{\underline{q}}} e^{i \underline{\underline{u}} \underline{r}} ; \underline{\underline{k}}=\underline{\underline{u}}^{\prime}+\underline{G}_{i}$
+$\Rightarrow \quad \sum_{\underline{u}} e^{i \underline{k} \underline{r}}[\underbrace{\left(\frac{t^{2} u^{2}}{2 m}-E\right) c \underline{u}+\sum_{\underline{G}}^{\prime} u_{\underline{G}} \underline{c}_{\underline{k}-\underline{G}}}]=0$
+Gilt fin alle. Daher muss der Ansduch fün jedes $\underline{u}$ getienent versdurindan.
+
+\Rightarrow \quad\left(\frac{t^{2} k^{2}}{2 m}-E\right) \underset{\underline{k}}{\underline{k}}+\sum_{\underline{G}}^{\prime} v_{\underline{G}} c_{\underline{k}-\underline{G}}=0
+
+Sdriodinjes-Gleichung im U-Ramm fin Elektion in einem periodischou Potential.
+
+Es treten nur Entwicklumshoeffizienten $\underline{c} \underline{v}-\underline{v}, c_{\underline{u}-\underline{q^{\prime}}}, \underline{c x}-\underline{q^{\prime}}$ auf, die sich um resiprole Gitter velteren $\underline{G}, \underline{G}^{\prime}, \underline{G}^{\prime \prime} \ldots$ unterscheiden. Dies muss ands fin die Wellenfunction gelten.
+
+\begin{aligned}
+\Rightarrow \quad \psi_{\underline{k}}(\underline{r}) & =\sum_{\underline{G}} c_{\underline{k}-\underline{G}} e^{i(\underline{k}-\underline{G}) \cdot \underline{r}} \\
+& =\underbrace{}_{u_{\underline{k}}(\underline{r}) \cdot e^{\left(\sum_{\underline{G}} c_{\underline{k}-\underline{G}} e^{-i \underline{G} \underline{r}}\right) \cdot e^{i \underline{k} \underline{r}} \quad(* *)} \quad \text { Blode-Funktion }} \\
+& =\quad \text { (*) } \quad
+\end{aligned}
+
+## Benuerkuyen:
+
+- Fin $u_{\underline{k}}(\underline{\underline{r}})=$ const. eshält man den Fall "feier Elehtionen".
+- Bloch-Funktionen, denen Wellen veltor sich um einen rezips. Gittervehter curterschaiden, sind faich:
+
+\begin{aligned}
+& \Psi_{\underline{k}+\underline{G}^{\prime}(\underline{r}) \stackrel{(* *)}{=}} \sum_{\underline{G}} c_{\underline{k}+\underline{G}^{\prime}-\underline{G}} e^{i\left(\underline{\underline{u}}+\underline{G}^{\prime}-\underline{G}\right) \underline{r}} \quad \mid \underline{G}-\underline{G}^{\prime} \rightarrow \underline{G}^{\prime \prime} \\
+& =\underbrace{\sum_{G^{\prime \prime}}^{G} c_{\underline{u}-\underline{G}^{\prime \prime}} e^{-i \underline{G}^{\prime \prime} \cdot \underline{r}} e^{i \underline{u} \cdot \underline{r}}}_{=u_{\underline{u}}(\underline{r})} \\
+& =T_{\underline{k}}(\underline{I}) \quad \text { und sducila } \underline{G} \operatorname{Sin} \underline{G}^{\prime} \text {. } \\
+& =\Psi \underline{k}+\underline{a}(\underline{r})(* * *)
+\end{aligned}
+
+- De Eigunwate En wiederholen sidn periodisch im Ramm: Fin zwei Wellentmationen $\Psi \underline{k}(\underline{v})$ and $\Psi \underline{v}+\underline{q}(\underline{v})$, deren Wellenvehter sich men einen reziproken Gittervehter muterscheiden, gilf:
+
+H \psi_{\underline{k}}=E_{\underline{k}} \psi_{\underline{k}} \quad \wedge H \psi_{\underline{k}+\underline{G}}=E_{\underline{k}+\underline{G}} \psi_{\underline{k}+\underline{G}}
+
+Mit $(* * *)$ gilf:
+
+& E_{\underline{\underline{x}}} \Psi_{\underline{\underline{x}}}=H_{\underline{\Psi} \underline{\underline{x}}}=H \Psi_{\underline{\underline{y}}+\underline{\underline{q}}}=E_{\underline{\underline{u}}+c} \Psi_{\underline{\underline{y}}+G} \\
+& \text { and sount } E_{\underline{\underline{u}}}=E_{\underline{\underline{u}}+\underline{\underline{a}}}:
+
+- Aus den latten beiden Bemeskungen 6gt:
+
+Lösnigen der SG (Wellen funktionen und Eigen wate) in der 1. Brillonin-Zone enthalten alle Infomationen:
+⇒ "Reduktion anf die 1. Brillowin-Zove".
+"Redurientes Zoneuschema".
+
+- Alljemein ist (*) ein Uomplizientes Glaidnunjssystem'.
+
+Lösmyer side z.B. Ashcroff-Menmin (oder Grop). Hier Nähermyslösmy nake einer bonengrenze: $u= \pm \frac{\pi}{a}=\frac{1}{2}|\underline{G}|$
+
+- Retiadle in der Summe nur $|\underline{G}|=\frac{2 \pi}{a}$ and wir definieren $U_{\frac{2 \pi}{a}}!U$.
+- Zovenrand $\left( \pm \frac{\pi}{a}\right) \Rightarrow \begin{aligned} & \text { un Useffizienten } c_{+\frac{\pi}{a}} \text { and } c_{-\frac{\pi}{a}} \\ & \text { sind relevant. }\end{aligned}$ sind relevant.
+- Wirs scurciben $\lambda=\frac{t^{2}}{2 m}\left( \pm \frac{\pi}{a}\right)^{2}$
+
+⇒ Nur zwei Gleidrunjen : $\left.\begin{array}{rl}|\underline{u}|=\frac{\pi}{a}:(\lambda-E)_{\frac{c \pi}{a}}+u_{c_{-\frac{\pi}{2}}} & =0 \\ |\underline{k}|=-\frac{\pi}{a}:(\lambda-E)_{\frac{c-\pi}{a}}+u_{c_{\frac{\pi}{2}}} & =0\end{array}\right\}(* * * *)$
+Determinanten-Gleichny: $\quad\left|\begin{array}{cc}\lambda-E & u \\ u & \lambda=E\end{array}\right| \doteq 0$
+
+\begin{gathered}
+\Rightarrow(\lambda-E)^{2}=u^{2} \\
+E_{1 / 2}=\lambda \pm u=\frac{u^{2}}{2 m}\left( \pm \frac{\pi}{a}\right)^{2} \pm u
+\end{gathered}
+
+(*) ⇔ J Enerjecinche der Gröpe $\pm U$
+$(* * * *) \Rightarrow \frac{c-\frac{\pi}{\alpha}}{c+\frac{\pi}{\alpha}}=\frac{E-\lambda}{u}=\frac{\lambda \pm u-\lambda}{\lambda}= \pm 1$
+$\Rightarrow \psi(x)=e^{i \frac{\pi}{2} x} \pm e^{-i \frac{\pi}{2} \lambda}=2\left\{\begin{array}{c}\cos \left(\frac{\pi}{2} \lambda\right) \\ i \sin \left(\frac{\pi}{2} x\right)\end{array}\right.$
+
+| ![](https://cdn.mathpix.com/cropped/ee777d36-a853-4e19-9f60-0e1078833be5-3.jpg?height=46&width=291&top_left_y=2338&top_left_x=1304) |  |
+| :--- | :--- |
+| stehrude Wellen |  |
+| Vousistent mit |  |
+| überlegungen ans | Idien |
+| leapitel 6.1 | 3-7 |
+
+- Man Kaun Elektonen im Festlisper anch durch "Wannier-Funktiona" doustellen. Dat wind die Wellenfenktia ans Funktionen aufgloant, die den einzeleas Gittsatonsen zugendnet sind und new dont grofe Wate annehme.
+(side z.B. Gross).
+
+
+## Abschließend definienen wir noch das Bloch-Theorem:
+
+Fin jede Wellentunktion, welehe die Schiodinger-Gleidny afilll, existient ein Wellen veltor $\underline{k}$, sodass die Thanslation um einen Gittervektor $\underline{R}$ glaichwentij ist mit der Multiplikation nit den Phasen faltos $e^{i \underline{k} \cdot \underline{R}}$.
+
+Kousistenzdreck:
+(*) $\Rightarrow \Psi_{\underline{k}}(\underline{r}+\underline{R})=u_{\underline{k}}(\underline{r}+\underline{R}) e^{i \underline{k} \underline{r}} e^{i \underline{k} \cdot \underline{R}}$
+$=\Psi_{\underline{k}}(\underline{r}) e^{i \underline{k} \cdot \underline{R}}$
+

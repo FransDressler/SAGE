@@ -1,0 +1,838 @@
+Experimental Methods in Solid State Physics
+Christoph Kastl - TUM
+Winter Term 2025
+Contents
+1 Reciprocal space probes: theory of diffraction 2
+2 X-ray Scattering and Crystal Structure Determination 8
+3 Neutron and M¨ossbauer Spectroscopy 18
+1
+
+Tutorial on Solid State Physics 2025 Week 4-6
+1 Reciprocal space probes: theory of diffraction
+Historical Background
+The discovery of X-ray diffraction is deeply rooted in Munich’s scientific tradition. At the beginning
+of the 20th century, the city was one of Europe’s centers for theoretical physics under the leadership
+of Arnold Sommerfeld at the Ludwig-Maximilians-Universit¨at (LMU). Sommerfeld was known
+for his unusual philosophy that theoretical understanding and hands-on experimentation must go
+hand in hand and, therefore, a theory chair should also host experimental work . His institute
+therefore housed not only mathematicians and theorists but also instruments for optical and X-ray
+studies.a b c d
+e f g
+Figure 1: Laue’s X-ray diffraction experiment on zinc blende (ZnS). a Primitive unit cell with one zinc
+and one sulfur atom in the basis. b Conventional fcc unit cell. c Projection along the (100) direction
+showing fourfold symmetry. d Projection along the (111) direction showing threefold symmetry. e
+Natural zinc blende crystals (sphalerite), showing facets of different orientations. Reproduced under
+CC BY-SA 4.0, I. Leidus 2021. f,g Original Laue X-ray diffraction patterns of zinc blende (ZnS) for
+incidence along the [001] (fourfold) and [111] (threefold) crystallographic directions. These directions
+are normal to the (001) and (111) plane families, respectively, which give rise to the characteristic
+square and triangular symmetries observed in the diffraction patterns. Reproduced with permission
+from W. Friedrich et al., Ann. Phys. 41, 971–988 (1913). Copyright Wiley.
+In this environment, Max von Laue, then a young Privatdozent working with Sommerfeld,
+developed the idea that X-rays could be diffracted by a crystal. Stimulated by discussions with Paul
+Peter Ewald, who analyzed the propagation of waves in periodic media, Laue realized that a crystal
+lattice could act as a three-dimensional diffraction grating if the X-ray wavelength was comparable
+to interatomic spacings. In 1912, together with Walter Friedrich and Paul Knipping, Laue
+tested this hypothesis at LMU by directing X-rays onto a single crystal of zinc blende (ZnS). The
+2
+
+Tutorial on Solid State Physics 2025 Week 4-6
+resulting array of sharp spots — the first X-ray diffraction pattern — provided direct evidence that
+X-rays behave as waves and that atoms in crystals are arranged in a periodic lattice:
+“Diese Tatsache, daß eine v¨ollige Vierz¨ahligkeit auf der Platte vorhanden ist, ist wohl einer der
+sch¨onsten Beweise f¨ur den gitterartigen Aufbau der Kristalle, und ein Beweis daf¨ur, dass keine
+andere Eigenschaft als allein das Raumgitter hier in Betracht kommt.”1
+Laue’s Diffraction Experiment on Zinc Blende
+Zinc blende crystallizes in the face-centered cubic (fcc) structure with a two-atom basis, one zinc
+and one sulfur atom displaced along the body diagonal (Figs. 1a,b). Because of its high cubic
+symmetry, the crystal exhibits several distinct rotational axes, including a fourfold axis along the
+[001] direction and a threefold axis along the [111] direction (Figs. 1c,d). These correspond to the
+normals of the (100) and (111) planes, respectively.
+In the Munich experiment, X-rays were aligned along these symmetry axes. For incidence along
+the fourfold [001] axis, the diffraction pattern displayed square symmetry (Fig. 1f ); along the three-
+fold [111] axis, the pattern revealed triangular symmetry (Fig. 1g). These symmetries reflected
+the orientation of reciprocal-lattice points in the respective crystal zones and provided direct ev-
+idence of the crystal’s three-dimensional periodicity and the existence of a reciprocal lattice. For
+this discovery, Max von Laue received the Nobel Prize in Physics in 1914. Thus, the foundations of
+modern crystallography were laid in Munich through the synergy of theory and experiment fostered
+by Sommerfeld’s school. Laue’s experiment and the Braggs’ interpretation remain cornerstones of
+solid-state physics.
+Diffraction Geometry: From Bragg Reflection to Laue’s Condition
+Bragg Reflection from Lattice Planes. Very soon after the discovery of Laue diffraction,
+William Henry Bragg and his son William Lawrence Bragg proposed a simple and intuitive inter-
+pretation of how X-rays scatter from crystals. They viewed a crystal as a three-dimensional array
+of parallel lattice planes separated by a spacing d. When X-rays of wavelength λ are incident at an
+angle θ, waves reflected from adjacent planes interfere constructively if their path difference equals
+an integer multiple of λ (Fig. 2a).d
+θ
+2dsinθ
+a b
+k'
+k
+a
+Figure 2: Bragg vs. Laue. a Geometry of Bragg reflection. Waves reflected under an angle θ from
+adjacent lattice planes with spacing d interfere constructively when the extra path 2d sin θ equals
+an integer multiple of λ. b Laue’s condition. Each atom in the lattice acts as a scattering center.
+Constructive interference between an incoming wave k and outgoing wave k′ occurs if for any lattice
+vector R the waves are in phase again, such that (k′ − k) · R = 2πn.
+1W. Friedrich, P. Knipping, M. von Laue, Interferenzerscheinungen bei R¨ontgenstrahlen, Annalen der Physik, 346,
+971–988 (1913).
+3
+
+From geometry, the path difference between rays reflected by neighboring planes is
+∆s = 2d sin θ.
+The condition for constructive interference is
+2d sin θ = nλ, n = 1, 2, 3, . . .
+This is Bragg’s law. It defines the angular positions of the diffraction maxima for a given lattice
+spacing d and wavelength λ. Each set of lattice planes (hkl) produces reflections at characteristic
+angles θhkl, providing the basis for indexing diffraction peaks in X-ray experiments.
+Indexing of Directions and Planes
+A crystal lattice is defined by the primitive translation vectors a1, a2, a3; any lattice point is
+at R = n1a1 + n2a2 + n3a3 with ni ∈ Z. These vectors are not generally orthogonal; the
+interaxial angles are α = ∠(a2, a3), β = ∠(a1, a3), γ = ∠(a1, a2).
+Directions. A crystallographic direction is given by d = ua1 + va2 + wa3 and written
+as [u v w]. All symmetry-equivalent directions form the family ⟨u v w⟩.
+Planes. A crystal plane intersects the axes at (p a1, q a2, r a3). The reciprocals of these
+intercepts define the Miller indices (hkl) with h = 1/p, k = 1/q, ℓ = 1/r. Parentheses (hkl)
+denote one plane, braces {hkl} the equivalent family.
+Relation. Directions [uvw] belong to the direct lattice; plane normals (hkl) correspond to
+vectors of the reciprocal lattice. Hence [hkl]̸ ⊥ (hkl) in general. Only for cubic crystals, where
+ai ⊥ aj and |ai| are equal, are [hkl] and (hkl) parallel.
+Plane Spacing. For cubic symmetry, the interplanar spacing is dhkl = a/√h2 + k2 + ℓ2,
+entering Bragg’s law 2dhkl sin θ = nλ. Each diffraction maximum can thus be indexed by its
+(hkl) triplet.
+Laue’s Diffraction Condition. In a more general approach, one assumes that the incoming wave
+is scattered from all atoms in the crystal. The scattered, outgoing waves interfere with one another
+and produce a diffraction pattern. For a well-defined diffraction maximum, the waves scattered from
+every pair of atoms must be in phase. The path difference is the sum of the highlighted paths in Fig.
+2b, whereby each can be expressed as the projection of R on the incoming and outgoing directions
+k/|k| and k′/|k′|
+∆s = R · −k
+|k| + R · k′
+|k′| = R ·
+ k′
+|k′| − k
+|k|
+
+.
+Making use of the fact that the scattering process is elastic |k| = |k′| and k = 2π/λ, we arrive at the
+following condition for constructive interference
+R
+k · (k′ − k) = Rλ
+2π · (k′ − k) = nλ =⇒ R · (k′ − k) = 2πn.
+In short, if the atoms are separated by a lattice translation a, the phase difference between their
+scattered waves is
+∆ϕ = ∆k · R, ∆k = k′ − k.
+4
+
+Constructive interference requires that the phase be an integer multiple of 2π:
+∆k · R = 2πn ⇐⇒ ei ∆k·R = 1.
+This condition must hold for any lattice translation R = n1a1 +n2a2 +n3a3, not just for a few
+selected planes. A diffraction peak is therefore only well defined if the interference is constructive
+for all atoms separated by an arbitrary lattice vector. Because the three primitive vectors ai form a
+linearly independent basis, this is the case if, and only if, the condition is satisfied for each of them
+individually:
+ei ∆k·ai = 1, i = 1, 2, 3.
+or equivalently
+∆k · ai = 2πni, ni ∈ Z.
+These three independent equations define the set of all ∆k vectors that produce constructive inter-
+ference — the discrete lattice of allowed diffraction vectors.
+Bragg’s law is the special case where (h, k, ℓ) refer to a single family of lattice planes with spac-
+ing dhkl, yielding the same angular condition 2dhkl sin θ = nλ. In general, the integer triplet (h, k, ℓ)
+provides the natural way to index diffraction peaks in any X-ray diffraction pattern.
+The Reciprocal Lattice and Ewald’s spherea b
+G
+k
+k'
+Figure 3: Ewald-sphere construction for two crystal orientations. a The incident wavevector k
+points from the origin to the center of the sphere (radius 2π/λ). The blue dots are reciprocal lattice
+points. The grey axes denote directions in the laboratory frame where the diffracted beams are
+observed. A reciprocal-lattice point lying on the sphere yields a diffracted wavevector k′ = k + G.
+b After rotating the crystal, the reciprocal lattice rotates and a different point intersects the sphere,
+producing a new k′.
+The vectors ∆k satisfying the Laue condition ei ∆k·a = 1 form a periodic lattice in wave-vector
+space, the so-called reciprocal lattice.aMthematically, the reciprocal basis vectors bi are defined
+so that ai · bj = 2πδij . Since the ai are linearly independent, this relation uniquely determines
+the bi. This is the definition of a dual basis spanning a dual space. Each allowed diffraction
+vector G = hb1 + kb2 + ℓb3 then automatically fulfills the Laue condition. The reciprocal lattice
+therefore provides a compact and elegant framework to describe the periodicity of a crystal in k-space
+and to formulate the diffraction condition in terms of reciprocal lattice vectors G = k′ − k. The
+5
+
+Ewald sphere provides a geometrical construction of possible scattering vectors for specific incident
+directions, wavelength, and crystal orientations (Fig. 3).
+Reciprocal Lattice
+The reciprocal lattice provides a compact description of the periodicity of a crystal in wavevec-
+tor space. It follows directly from the Laue interference condition ei ∆k·ai = 1, which implies
+∆k · ai = 2πni for all primitive vectors ai.
+Definition. The reciprocal basis vectors b1, b2, b3 are defined by
+ai · bj = 2π δij .
+Any reciprocal-lattice vector is
+Ghkl = h b1 + k b2 + ℓ b3, h, k, ℓ ∈ Z.
+Each Ghkl corresponds to a periodic modulation that repeats in phase after every lattice
+translation.
+Explicit construction. For a direct lattice spanned by a1, a2, a3 with cell volume V =
+a1 ·(a2 × a3),
+b1 = 2π a2 × a3
+V , b2 = 2π a3 × a1
+V , b3 = 2π a1 × a2
+V .
+The reciprocal cell volume is V ∗ = (2π)3/V .
+Geometric meaning. Each Ghkl is perpendicular to the family of planes (hkl), satisfying
+Ghkl · r = 2πn. The spacing between adjacent planes is dhkl = 2π/|Ghkl|. In cubic crystals,
+bi are parallel to ai with |bi| = 2π/a.
+Diffraction condition. Constructive interference (Laue condition) occurs when
+k′ − k = Ghkl.
+Thus, each diffraction peak corresponds to one reciprocal-lattice vector lying on the Ewald
+sphere of radius |k| = 2π/λ.
+Question 1 Bragg Reflection
+An X-ray beam of wavelength λ = 0.154 nm is incident on a cubic crystal with lattice constant
+a = 0.408 nm. At which angle 2θ does the first-order Bragg reflection from the (111) planes occur?
+14.5◦
+(a)
+25.9◦
+(b)
+37.1◦
+(c)
+44.5◦
+(d)
+6
+
+Question 2 Constructive Interference
+Which condition must be fulfilled for a crystal to produce sharp and well-defined diffraction peaks?
+The X-ray beam must be incident along a high-symmetry lattice direction.(a)
+Constructive interference must occur for a few selected lattice planes only.(b)
+Constructive interference must hold for all atoms separated by any lattice translation vector.(c)
+Each atom must scatter with the same amplitude and phase.(d)
+Question 3 Bragg–Laue Relation
+Which statement correctly describes the relationship between the Bragg and Laue formulations of
+diffraction?
+Bragg’s law neglects the vector nature of the wavevectors and is only approximate.(a)
+Both describe the same elastic interference condition; Bragg’s law is a geometric projection of the
+Laue equations.
+(b)
+Laue’s formulation applies only for inelastic scattering.(c)
+Bragg’s law applies only to cubic crystals, while Laue’s holds for all lattices.(d)
+Question 4 Ewald Sphere Comparison
+For an X-ray beam and an electron beam of the same kinetic energy, which statement correctly
+explains the difference in their diffraction patterns?
+Both show the same number of diffraction spots because the Ewald sphere radius depends only
+on energy.
+(a)
+Electrons have a much shorter wavelength at the same energy, giving a larger Ewald-sphere radius
+and many more reciprocal-lattice intersections.
+X-rays interact more strongly with the lattice, producing additional higher-order reflections.(c)
+Electron diffraction is mostly inelastic, so many spots appear from different scattering processes.(d)
+7
+
+2 X-ray Scattering and Crystal Structure Determination
+Crystals are periodic arrangements of atoms and, therefore, of electron density. Any probe with
+wavelength comparable to the lattice spacing, λ ∼ 1 ˚A, will be diffracted by this periodic electron
+density. In principle, very different probes can be used: electromagnetic waves (X-rays) and matter
+waves (electrons and neutrons). All of them produce diffraction when their de Broglie wavelength
+matches the crystal periodicity, but they differ strongly in their interaction with matter and in the
+experimental techniques they require.
+probe interaction surface/bulk source E(λ = 1 ˚A)
+X-rays electron density bulk (mm) table-top, synchrotron ≈ 12.4 keV
+electrons Coulomb interaction surface (nm) electron gun ≈ 150 eV
+neutrons nuclear & magnetic bulk (cm) reactor, spallation source ≈ 0.082 eV
+Table 1: Comparison of common diffraction probes with wavelength λ = 1 ˚A.
+In this chapter we focus on X-rays. X-ray diffraction (XRD) is the standard technique for
+determining lattice constants, crystal symmetry, and the arrangement of atoms within the unit
+cell. The key theoretical insight is that, in the limit of weak scattering, the diffracted amplitude
+is given by the Fourier transform of the electron density. The discrete diffraction peaks observed
+from a crystal are then simply the Fourier components of a periodic charge density. In the following
+sections we develop this Fourier-space description and connect it to the concepts of atomic form
+factor and structure factor, which control the intensities of the observed reflections.
+Scattering as a Fourier Transform of the Electron Density
+We consider an incident monochromatic X-ray beam with wavevector k, described by a plane wave
+ψin(r) = eik·r.
+After interaction with the sample, part of the wave is scattered into a new direction with wavevector
+k′. Far from the sample, the scattered wave has the standard outgoing spherical form
+ψout(r) ∝ A(k → k′) eikr
+r ,
+where A(k → k′) is the scattering amplitude. It depends only on the difference between incoming
+and outgoing wavevectors,
+q = k′ − k.
+For X-rays, the interaction with matter is weak and primarily with the electron density ρ(r). Within
+the first Born approximation (single scattering), one finds that the scattering amplitude is given by
+the Fourier transform of ρ(r),
+A(q) =
+Z
+ρ(r) e−iq·r d3r, q = k′ − k.
+All overall prefactors (classical electron radius, polarization factors, detector efficiency, . . . ) are
+absorbed into the proportionality constant that relates the measured intensity to the scattering
+amplitude via
+I(q) ∝ |A(q)|2.
+8
+
+Born Approximation and the Green-Function Method
+1. From Schr¨odinger to the inhomogeneous Helmholtz equation. For a particle of
+mass m in a scattering potential V (r), the stationary Schr¨odinger equation can be rewritten
+as an inhomogeneous Helmholtz equation
+(∇2 + k2)ψ(r) = 2m
+ℏ2 V (r) ψ(r), k2 = 2mE
+ℏ2 ,
+2. Outgoing Green function. The Green function of (∇2 + k2) is defined by
+(∇2 + k2) G(+)(r, r′) = −δ(r − r′).
+The physical (outgoing) solution is a spherical wave
+G(+)(r, r′) = − eik|r−r′|
+4π|r − r′| ,
+3. Lippmann–Schwinger equation. Multiply the Helmholtz equation for ψ by G(+),
+the Green equation by ψ, subtract, and integrate over all space. Using Gauss’s theorem and
+outgoing boundary conditions yields the integral form of the scattering state:
+ψ(r) = ψin(r) + 2m
+ℏ2
+Z
+G(+)(r, r′) V (r′) ψ(r′) d3r′.
+This expresses the scattered wave as a superposition of outgoing spherical waves emitted from
+each point in the potential.
+4. First Born approximation (weak scattering). If the potential is weak (X-rays
+interact only slightly with electrons), then inside the integral we approximate the full wave
+as the incident wave ψ(r′) ≈ eik·r′
+(equivalent to first-order-perturbation theory) yielding
+ψ(r) ≈ eik·r + 2m
+ℏ2
+G(+)(r, r′) V (r′) eik·r′
+d3r′.
+5. Far-field limit and scattering amplitude. For |r| → ∞,
+G(+)(r, r′) ≈ − eikr
+4πr e−ik′·r′
+, k′ = k ˆr.
+Thus the scattered wave has the standard asymptotic form
+ψ(r) r→∞
+−−−→ eik·r + f (k → k′) eikr
+r ,
+with the Born amplitude
+f (k → k′) = − 2m
+4πℏ2
+V (r) ei(k−k′)·r d3r.
+6. Application to X-ray scattering. For X-rays, interaction is governed by V (r) ∝
+ϵ(r) ∝ ρ(r). Therefore, we define the scattering amplitude as
+A(q) =
+ρ(r) e−iq·r d3r, q = k′ − k,
+where the integral runs across the sample volume, i.e. the scattered amplitude is the Fourier
+transform of the electron density.
+9
+
+From Electron Density to the Atomic Form Factor
+The electron density of a solid can be written as a sum of atomic contributions located at the atomic
+positions rα,
+ρ(r) = X
+α
+ρα(r − rα),
+where ρα(r) denotes the electron density associated with atom α. Note that we do not need to
+assume a periodic lattice at this point of the calculation. Using the definition of the scattering
+amplitude
+ρ(r) e−iq·r d3r,
+we obtain
+A(q) = X
+α
+ρα(r − rα) e−iq·r d3r
+= X
+e−iq·rα
+ρα(r) e−iq·r d3r.
+The integral over the internal coordinate r depends only on the atomic electron density and defines
+the atomic form factor
+fα(q) =
+ρα(r) e−iq·r d3r.
+Physical meaning. The atomic form factor fα(q) describes how strongly a single atom scatters
+X-rays at momentum transfer q. It is the Fourier transform of the atomic electron density and
+therefore decreases with increasing |q|: high-angle scattering probes finer spatial features of the
+electron cloud, to which heavy atoms (large Z) contribute more strongly than light atoms. The
+phase factor e−iq·rα accounts for the relative phase between waves scattered from different atoms;
+in an ordered crystal, these phases interfere and give rise to the structure factor introduced next.
+Structure Factor and Interference from a Periodic Lattice
+For a periodic crystal, the atomic electron density is repeated periodically at lattice vectors R. For
+basis of atoms located at fixed positions rα within the unit cell, the position of atom j in the unit
+cell at lattice vector R is
+R + rα.
+The total electron density is therefore
+ρ(r) = X
+R
+X
+ρα(r − R − rα),
+and the corresponding scattering amplitude is a double sum over lattice points and basis atoms.
+A(q) = X
+X
+fα(q) e−iq·(R+rα).
+This factorizes into
+e−iq·R
+! X
+fα(q) e−iq·rα
+!
+.
+10
+
+The sum over lattice points,
+S(q) = X
+e−iq·R,
+is nonzero only when q equals a reciprocal lattice vector G. This is the basic diffraction condition,
+which we derived already in the last chapter based on Laue’s or Bragg’s arguments. Diffraction
+peaks occur only at reciprocal-lattice points:
+q = G
+Structure factor. For q = G, the remaining sum is called the structure factor.
+F (G) = X
+fα(G) e−iG·rα .
+Physical interpretation. Each atom contributes with its form factor fα(G) weighted by a phase
+factor e−iG·rα that depends on its position in the unit cell. Depending on the symmetry of the
+crystal, these contributions may interfere constructively or destructively. This explains why certain
+reflections are strong, weak, or completely absent in a diffraction pattern. The structure factor is
+therefore the central quantity connecting diffraction intensities to the crystal structure.
+Example: Diffraction Spectrum of NaCl
+Sodium chloride (NaCl) crystallizes in the rock-salt structure. Its Bravais lattice is face-centered
+cubic (fcc), which can be derived from a simple cubic lattice with 4 atoms in the basis (Fig. 4a).
+In the fcc lattive of NaCl there are two atoms (Cl, Na) per unit cell (Fig. 4b). Using this example,
+we will illustrate how lattice symmetry and basis interference together determine which diffraction
+peaks appear and with what intensity (Fig. 4c).20 30 40 50 60 70 80
+Angle 2 (°)
+10 0
+10 1
+10 2
+10 3
+10 4
+10 5
+Intensity
+(1,1,1)
+(2,0,0) (2,2,0)
+(3,1,1)
+(2,2,2)
+(4,0,0)
+(3,3,1)
+(4,2,0)
+ca NaCl
+a
+ClNa
+b
+(0,a/2,a/2)
+(a/2,0,a/2)
+(a/2,a/2,0)
+Figure 4: Diffraction patterns of NaCl. a Fcc lattice from simple cubic lattice with 4 atoms in
+the basis. b Primitive unit cell and conventional unit cell of NaCl. The lattice is fcc with two atoms
+in the basis: Cl located at (0, 0, 0) and Na located at a(1/2, 1/2, 1/2). c Simulated X-ray diffraction
+spectrum of NaCl assuming an average grain size of 1 nm (blue) and 100 nm (red). The fcc lattice
+allows only diffraction peaks with (hkl) all odd or even. The Na and Cl basis weakens the odd peaks
+due to partial destructive interference.
+11
+
+Conventional Cubic Cells and Miller Indexing in the Cubic Crystal Family
+In crystallography the cubic crystal family (simple cubic, fcc, bcc) is always described using
+the conventional cubic cell of side length a, even though fcc and bcc lattices are not primitive
+in this basis. This convention is rarely stated explicitly, but it underlies all standard indexing
+using Miller indices (hkl).
+Primitive vs. conventional cells. Every Bravais lattice has a primitive unit cell defined
+by three primitive vectors a1, a2, a3. For fcc and bcc these primitive cells are non-cubic and
+have volumes a3/4 (fcc) and a3/2 (bcc). Crystallography instead uses the larger conventional
+cubic cell with orthogonal edges of equal length a, together with a basis:
+simple cubic: 1 atom basis,
+bcc: basis at (0, 0, 0), ( 1
+2 , 1
+2 , 1
+2 ),
+fcc: basis at (0, 0, 0), ( 1
+2 , 0), ( 1
+2 , 0, 1
+2 ), (0, 1
+2 ).
+Why the cubic cell is used. The conventional cubic cell preserves the cubic metric: the
+coordinate axes remain orthogonal and all edges have the same length. As a result, geometric
+properties of lattice planes are simple:
+dhkl = a
+√h2 + k2 + ℓ2 , G = 2π
+a (h, k, ℓ).
+This makes Bragg’s law and diffraction indexing intuitive and directly tied to experiments.
+Selection rules as a basis effect. Because fcc and bcc Bravais lattices are represented
+in the cubic basis with a multi-point basis, not every cubic vector (hkl) corresponds to a
+reciprocal-lattice vector. The consistency between the cubic basis and the true primitive
+reciprocal lattice leads to the following extinction rules:
+fcc: (hkl) all even or all odd, bcc: h + k + ℓ even.
+These rules arise entirely from the choice of the conventional cubic basis, not from the under-
+lying Bravais lattice itself.
+Summary. The entire cubic crystal family is indexed in the conventional cubic basis rather
+than in the primitive basis. This preserves the simplicity of cubic geometry for plane spacings
+and diffraction, while the multi-atom basis introduces the necessary selection rules for fcc and
+bcc crystals. This convention is universal in crystallography and X-ray diffraction.
+12
+
+Lattice Sum and Selection Rule for the fcc Lattice
+We represent the fcc lattice as a simple cubic Bravais lattice with lattice constant a and a four-point
+basis. The simple cubic lattice vectors are
+R = a(n1, n2, n3), n1, n2, n3 ∈ Z,
+and the four basis positions (in units of a) are
+d1 = a(0, 0, 0), d2 = a
+
+0, 1
+2
+
+, d3 = a
+ 1
+2 , 0, 1
+
+, d4 = a
+ 1
+2 , 0
+The set of all positions R + dα (α = 1, . . . , 4) is exactly the fcc lattice.
+Lattice sum. The total phase factor for scattering with momentum transfer q from all lattice
+points can be written as
+S(q) = X
+4X
+α=1
+e−iq·(R+dα).
+This factorizes into a simple-cubic lattice sum and a basis sum:
+S(q) =
+X
+e−iq·R 4X
+α=1
+e−iq·dα
+The first sum is nonzero when q coincides with a reciprocal lattice vector of the simple cubic lattice,
+G = 2π
+a (h, k, ℓ), h, k, ℓ ∈ Z.
+We therefore set q = G and focus on the remaining factor
+B(hkl) =
+4X
+e−iG·dα ,
+which determines whether a given (hkl) reflection is allowed or forbidden.
+Basis sum. Using the basis positions defined above and G = 2π
+a (h, k, ℓ), we find
+G · d1 = 0,
+G · d2 = 2π
+
+h · 0 + k · a
+2 + ℓ · a
+= π(k + ℓ),
+G · d3 = π(h + ℓ),
+G · d4 = π(h + k).
+Hence
+B(hkl) = 1 + e−iπ(k+ℓ) + e−iπ(h+ℓ) + e−iπ(h+k).
+Since e−iπn = (−1)n, this becomes
+B(hkl) = 1 + (−1)k+ℓ + (−1)h+ℓ + (−1)h+k.
+13
+
+Evaluation of the selection rule. Now consider different parities of (h, k, ℓ):
+• All even or all odd. If h, k, ℓ are all even or all odd, then h + k, h + ℓ, and k + ℓ are all even.
+Therefore (−1)h+k = (−1)h+ℓ = (−1)k+ℓ = 1, and
+B(hkl) = 1 + 1 + 1 + 1 = 4̸ = 0.
+• Mixed parity (some even, some odd). If one index is even and two are odd (or vice
+versa), then among the sums h + k, h + ℓ, k + ℓ exactly two are odd and one is even, such that
+B(hkl) = 1 + (+1) + (−1) + (−1) = 0.
+The full lattice sum S(q), is nonzero only if the Miller indices are either all even or all odd:
+S(q)̸ = 0 ⇔ h, k, ℓ all even or all odd.
+This is the characteristic selection rule for the fcc lattice: reflections with mixed parity of (h, k, ℓ)
+(such as 100, 210, 221, . . . ) are systematically absent.
+Structure factor of NaCl
+Within the fcc unit cell, the two atoms occupy the positions
+rCl = (0, 0, 0), rNa = a
+2 (1, 1, 1).
+The position of Na differs from Cl by a body-diagonal shift of half a simple-cubic lattice vector. Note
+that several choices of the NaCl basis are possible, e.g. (0, 0, 0) and ( 1
+2 , 0, 0), since all lead to the
+same crystal after applying the fcc Bravais translations. The canonical choice (0, 0, 0) and ( 1
+2 )
+is preferred because it preserves the full cubic symmetry, makes the fcc Bravais lattice evident,
+and places the second atom at the center of the cube, highlighting the octahedral coordination
+characteristic of the rock-salt structure. For reflections that satisfy the fcc condition, the total
+structure factor is
+Fhkl = fCl(G) e−iG·rCl + fNa(G) e−iG·rNa ,
+where fCl and fNa are the atomic form factors. Since rCl = (0, 0, 0), the first phase factor is unity.
+The second phase factor becomes
+e−iG·rNa = exp[−iπ(h + k + ℓ)] = (−1) h+k+ℓ.
+Thus the NaCl structure factor is
+Fhkl = fCl(G) + fNa(G) (−1)h+k+ℓ.
+Intensity pattern. Equation (2) shows that Na and Cl scatter either in phase or out of phase,
+depending on the parity of h + k + ℓ:
+Fhkl =
+(
+fCl + fNa, if h + k + ℓ is even,
+fCl − fNa, if h + k + ℓ is odd.
+Since the form factors decrease with increasing |G| but satisfy fCl > fNa for all scattering angles,
+the consequences are:
+14
+
+• Reflections with mixed parity of (h, k, ℓ) (e.g. 100, 210) are forbidden by the fcc lattice and do
+not appear.
+• Among the allowed reflections (all-even or all-odd), those with h + k + ℓ even have larger
+intensity, approximately proportional to (fCl + fNa)2.
+• Reflections with h + k + ℓ odd are weaker, approximately proportional to (fCl − fNa)2.
+Summary of NaCl selection rules. Combining the Bravais-lattice and basis interference rules
+yields:
+Allowed reflections: h, k, ℓ all even or all odd.
+Strong reflections: h + k + ℓ even.
+Weak reflections: h + k + ℓ odd.
+This intensity alternation is characteristic of the NaCl structure and is commonly used to identify
+rock-salt–type crystals in powder diffraction.
+Finite Crystallite Size and the Scherrer Equation
+An ideal infinite crystal produces delta-function–sharp Bragg peaks. Real samples consist of finite-
+sized crystallites of linear dimension L, and this finite size leads to a broadening of the diffraction
+peaks. The Scherrer equation provides a simple and widely used relation between the angular peak
+width and the average crystallite size.
+Origin of size broadening. Consider a crystal of finite thickness L along the scattering vector
+G. The scattering amplitude is proportional to the Fourier transform of the lattice over this finite
+interval. For a one-dimensional crystal with N layers separated by d, the amplitude is
+A(q) ∝
+N −1X
+n=0
+e−iqnd = e−iqd(N −1)/2 sin(N qd/2)
+sin(qd/2) .
+The resulting intensity has a principal maximum at q = G = 2π/d and a finite width
+∆q ∼ 2π
+N d ∼ 1
+L .
+Thus the finite size L leads to an intrinsic broadening of the Bragg peak.
+Angular width of a Bragg reflection. In an X-ray diffraction experiment the scattering vector
+is related to the Bragg angle θ by |G| = 2k sin θ = 4π
+λ sin θ. A small change in scattering vector, ∆q,
+produces an angular width
+∆q = 4π
+λ cos θ ∆θ.
+Combining this with ∆q ∼ 1/L yields
+∆θ ∼ λ
+4πL cos θ .
+15
+
+Scherrer equation. In practice, the full width at half maximum (FWHM) of a Bragg peak,
+denoted β, is used. The Scherrer equation is written as
+L = K λ
+β cos θ ,
+where
+• L is the average crystallite size perpendicular to the (hkl) planes,
+• λ is the X-ray wavelength,
+• β is the peak width (FWHM) in radians after instrument correction,
+• θ is the Bragg angle,
+• K is the dimensionless shape factor, typically K ≈ 0.9.
+Experimental X-Ray Diffraction Techniques
+The Fourier-space description developed above applies to any diffraction geometry. In practice,
+the three most widely used techniques are the Laue method, powder diffraction, and single-crystal
+diffractometry.
+Laue method (polychromatic beam). In the Laue technique a stationary single crystal is illu-
+minated with a white (polychromatic) X-ray beam containing a continuous spectrum of wavelengths.
+Different reciprocal-lattice vectors G satisfy the diffraction condition for different wavelengths, gen-
+erating a pattern of spots on a detector placed behind or in front of the sample. Key characteristics:
+• instantaneous mapping of crystal orientation;
+• highly useful for aligning single crystals and determining symmetry;
+• each diffraction spot corresponds to a specific G and a specific wavelength in the incident
+spectrum;
+• not suitable for precise lattice-parameter determination.
+The Laue method is widely used in crystal growth, device fabrication, and sample alignment prior
+to single-crystal measurements.
+Powder diffraction (Debye–Scherrer geometry). A polycrystalline powder consists of a macro-
+scopic ensemble of randomly oriented crystallites. For a given wavelength λ, each set of planes (hkl)
+meets the Bragg condition for a subset of crystallites whose orientation satisfies q = Ghkl. As a
+result, each allowed (hkl) produces a Debye ring on the detector. Key features:
+• straightforward identification of phases via the set of dhkl spacings;
+• intensities correspond to |Fhkl|2 but averaged over orientation;
+• peak positions give lattice parameters, peak widths can be analyzed via the Scherrer equation;
+• insensitive to orientation, requires only powdered material.
+Powder diffraction is the standard tool for phase analysis, structural refinement (Rietveld method),
+and measurement of crystallite size and strain.
+16
+
+Single-crystal diffraction (monochromatic beam). A high-quality single crystal is rotated
+in a monochromatic X-ray beam while diffraction intensities are recorded for many independent G
+vectors. The resulting dataset of Ihkl provides the full information needed to determine:
+• atomic positions within the unit cell (from Fhkl),
+• symmetry operations and space group,
+• atomic displacement parameters and refined lattice parameters.
+Because intensities reflect detailed phase relationships inside the structure factor, single-crystal
+diffraction enables true three-dimensional structure determination, including refinement of complex
+molecular structures and subtle distortions.
+17
+
+3 Neutron and M¨ossbauer Spectroscopy
+Neutron Imaging and Spectroscopy
+Neutron-based imaging techniques provide a striking demonstration of the unique interaction of
+neutrons with matter. In contrast to X-rays, which are primarily sensitive to the electron density
+and thus scale roughly with the atomic number Z, thermal and cold neutrons interact through
+short-range nuclear forces. As a result, the attenuation of neutron beams exhibits a highly irregular
+and non-monotonic dependence on Z and even varies dramatically between isotopes of the same
+element (Fig. 5a). A particularly important case is hydrogen, which possesses an unusually large
+scattering cross section. Materials rich in hydrogen therefore appear strongly absorbing in neutron
+images, while many metals are comparatively transparent.a b
+Figure 5: Neutron imaging and scattering. a Periodic table highlighting the irregularly varying
+absorption of thermal neutrons (kinetic energy 25 meV) across the elements. The color indicate
+strong (black) to light (light grey) neutron absorption. b Neutron radiography of a motorcycle
+engine recorded at the ANTARES beamline of FRM II. Copyright MLZ.
+A powerful illustration of this complementary contrast mechanism is neutron tomography. Using
+a collimated beam of thermal or cold neutrons, a series of radiographs is recorded while the sample
+is rotated. A tomographic reconstruction then yields a full three-dimensional map of the neutron
+attenuation coefficient. Neutron tomography has enabled imaging scenarios that are essentially im-
+possible with X-rays. For example, in-operando studies of combustion engines reveal the distribution
+of water, oil, and fuel inside metal housings that are nearly transparent to neutrons (Fig. 5b).
+Neutron Optics and Detection
+Due to their electrical neutrality neutrons penetrate deeply into matter, experiencing only weak
+refraction. Classical refractive lenses are therefore of little use. Instead, neutron imaging relies
+on geometric collimation or pinhole apertures to define the beam, often complemented by neutron
+guides and supermirror coatings that exploit total external reflection at grazing incidence.
+Because neutrons do not ionize matter directly, their detection requires a conversion reaction
+that produces charged particles. For thermal and cold neutrons this is achieved efficiently using
+nuclei with large capture cross sections, e.g. 3He, 10B, or 6Li. The reaction products (protons, α
+particles, or tritons) generate ionization or scintillation light, enabling electronic readout.
+18
+
+For neutron tomography, typical detection schemes employ thin scintillator screens (6LiF/ZnS
+or 6Li-doped glass) coupled to sensitive optical cameras. Spatial resolutions on the order of tens
+of micrometers are routinely achieved, and the excellent penetration of neutrons allows imaging of
+complex, enclosed metallic assemblies.
+Elastic Neutron Scattering and Magnetic Structure
+Neutron diffraction is formally analogous to X-ray diffraction: a coherent neutron beam with wave
+vector k impinges on a sample and is elastically scattered into k′. The condition for constructive
+interference is the familiar Bragg relation
+G = k − k′, |G| = 2π
+dhkl
+,
+where G is a reciprocal lattice vector. The measured Bragg peaks reflect the periodicity of the
+underlying crystal lattice.
+A crucial difference to X-rays, however, lies in the interaction mechanism. X-rays couple to the
+electronic charge density, whereas neutrons interact with individual nuclei through the strong force
+and additionally carry a magnetic moment. The nuclear interaction provides structural information
+even for light elements and isotope-sensitive contrast. The magnetic interaction, by contrast, renders
+neutrons directly sensitive to magnetic lattices. The magnetic lattice may be of various microscopic
+origins ranging from periodic alignment of individual spins at atomic sites, periodic alignment of
+magnetic flux quanta (vortices) in superconductors, to periodic alignment of magnetic textures in
+so-called skyrmions lattices.
+Inelastic Neutron Scattering: Excitations and Dispersion
+Elastic scattering probes the static arrangement of atoms and spins. In inelastic neutron scattering,
+by contrast, the neutron exchanges a small amount of energy and momentum with the sample.
+This process reveals the dynamics of the crystal: collective vibrations of the lattice, spin waves in
+magnetically ordered materials, and other low-energy excitations. When an incoming neutron of
+wave vector k and energy E is scattered into k′ and E′, the momentum and energy transfers are
+q = k − k′, ℏω = E − E′.
+The measured scattering intensity as a function of (q, ω) constitutes a map of the elementary exci-
+tations in the material.
+Collective Excitations At the energy scale of thermal and cold neutrons, matter does not respond
+through the motion of isolated atoms. Instead, the relevant degrees of freedom are collective modes:
+correlated oscillations that extend over many unit cells.
+• Phonons are quantized lattice vibrations. The atoms in a crystal vibrate collectively with
+well-defined frequencies and wavelengths. Neutrons couple to these vibrations through the
+nuclear interaction.
+• Magnons are quantized spin waves in magnetically ordered systems. Here the neutron in-
+teracts through its magnetic moment. Disturbing the ordered spin structure by flipping or
+twisting a spin creates a propagating excitation whose frequency (or energy) depends on the
+wavelength of the disturbance.
+19
+
+Dispersion Relations A central concept in the interpretation of inelastic scattering is the disper-
+sion relation ω(q) of an excitation. It specifies how the frequency (or energy) of a collective mode
+depends on its wavelength. Typical qualitative behaviours include:
+• acoustic phonons: frequency increases approximately linearly with |q| near the Brillouin-zone
+centre;
+• optical phonons: finite frequency at q = 0;
+• ferromagnetic magnons: quadratic dispersion at small |q|;
+• antiferromagnetic magnons: approximately linear dispersion near the ordering wave vector.
+Experimental realization
+In practice, neither the neutron momentum nor the momentum transfer is measured directly. In-
+stead, q is reconstructed from the well-defined geometry and/or timing information of the instru-
+ment.a b
+axis 1
+sets: E and k
+axis 2
+sets: q
+axis 3
+sets: E' and k'
+Figure 6: Inelastic Neutron scattering. a Schematic of a so-called triple axis spectrometer. Copyright
+MLZ. b Phonon dispersion of GaAs measured by inelastic neutron scattering. Reproduced with
+permission from Strauch and Dorner, J. Phys. Condens. Matter 2 1457 (1990). Copyright 1990 IOP
+Publishing.
+Triple–axis spectroscopy. A triple–axis spectrometer employs three independently rotatable axes
+(Fig. 6a). (i) a monochromator that selects the incident momentum k, (ii) the sample, which sets
+the scattering angle, and (iii) an analyser that selects k′. By rotating these components, one chooses
+the magnitudes
+|k| = 2π
+λi
+, |k′| = 2π
+λf
+,
+and their relative angle. The selected q follows directly from the calibrated mechanical angles. Scans
+through q are performed by rotating the sample and detector arm, while varying k or k′ tunes the
+energy transfer ℏω = E − E′. The monochromator and analyser are typically single crystals (such as
+crystal of pyrolitic graphite) that diffract well defined energy and momenta of the beam according
+20
+
+to Bragg’s law. Figure 6b shows exemplarily the phonon dispersion ω(q) of GaAs as measured by
+inelastic neutron scattering.
+Time–of–flight spectroscopy. In a time–of–flight (TOF) experiment the incident beam contains
+a broad wavelength distribution. The initial momentum k is determined for each neutron from its
+arrival time at the sample position. After scattering, the neutron is detected at a known flight path
+and at a specific detector angle, yielding both |k′| (from the flight time) and its direction (from the
+pixel position). Each detection event thus produces an unambiguous point in (Q, ω) space. Typical
+velocities of thermal neutrons are 2200 m/s, while typical length scales of the detector geometry are
+several meters resulting in timescales of μs, well within reach of standard electronic detectors.
+21
+
+M¨ossbauer Spectroscopy
+Historical Background
+In 1957, Rudolf M¨ossbauer, then a doctoral student at the Technische Universit¨at M¨unchen, discov-
+ered that γ-rays emitted by nuclei embedded in a solid can be absorbed by identical nuclei without
+energy loss to recoil. This was unexpected, because a free nucleus must recoil after emission, shifting
+the γ-ray out of resonance. M¨ossbauer showed that in a crystal the recoil momentum can be taken
+up by the entire lattice, enabling resonant, recoil-free absorption of γ-radiation with extraordinarily
+narrow linewidth. The discovery was soon confirmed by high-precision measurements, including the
+famous Pound–Rebka experiment (1960) testing gravitational redshift. Only four years after this
+doctoral work, M¨ossbauer received the 1961 Nobel Prize in Physics, one of the fastest recognitions
+in the history of the award.m = +3/2
+m = +1/2
+m = -1/2
+m = -3/2
+m = -1/2
+m = +1/2m = ±1/2
+m = ±1/2
+m = ±3/2
+EMössbauer
+ΔE = v/c E γ
+Radioactive source Detector
+Sample
+57 Co → 57
+Fe + γ
+57 Fe I(ΔE)
+b
+c
+with Zeeman splitting
+Figure 7: M¨ossbauer spectroscopy. a Schematic of M¨ossbauer spectroscopy. A radioactive source
+emits gamma radiation produced via the excited state of a specific isotope. The radiation is reso-
+nantly absorbed by the same isotope in the sample. The energy is precisely modulated by moving the
+source (Doppler effect). The transmission resonances are detected by a photon counting detector. In
+this example, cobalt decays via electron capture into an excited state of iron which decays into the
+ground state via emission of a gamma quant. b Level diagram of 57Fe with Zeeman splitting from
+magnetization. Transitions (arrows) follow the usual dipole selection rule ∆m = ±1, 0. c M¨ossbauer
+absorption spectrum of 57Fe showing the typical six absorption lines. Reproduced with permisison
+from Science 141, 1035-1038 (1963). Copyright 1963 AAAS.
+Basics of the M¨ossbauer Effect
+A free nucleus emitting a γ-ray of energy Eγ must recoil with energy
+ER = E2
+γ
+2M c2 ,
+which for the 14.4 keV transition of 57Fe is of order 10−3 eV. In a solid, however, the lattice can take
+up momentum only by creating phonons, whose energies are quantized in units ℏωphonon of order
+22
+
+meV. Since
+ER ≪ ℏωphonon,
+the recoil energy is too small to create even a single (optical) phonon. Phonon creation is thus
+forbidden, and the momentum is absorbed elastically by the whole lattice. Such recoil-free events
+occur with probability f = e−2W , the Lamb–M¨ossbauer factor.
+Because these photons retain their natural, extremely narrow linewidth, the resulting absorption
+spectra resolve tiny hyperfine interactions. Three effects are relevant: (i) the isomer shift, which
+probes s-electron density at the nucleus; (ii) quadrupole splitting due to electric field gradients for
+nuclei with I ≥ 1; and (iii) magnetic hyperfine splitting arising from internal magnetic fields.
+Experimental Implementation: Doppler Modulation
+To scan the γ-ray energy across the nuclear resonance, the M¨ossbauer source is moved with a precisely
+controlled velocity v (typically a few mm/s). The resulting Doppler shift
+∆E = v
+c Eγ
+is sufficient to tune the photon energy by an amount comparable to the hyperfine splittings. A
+schematic experimental setup is shown in Fig. 7a: a driven source illuminates an absorber containing
+the isotope of interest, and a detector records the transmitted intensity as a function of Doppler
+velocity. The measured transmission spectrum reveals the hyperfine splitting at the absorber nucleus.
+Example: Sextet Spectrum of α-Fe
+The classic example is elemental α-iron, where the 57Fe nucleus undergoes a 14.4 keV transition.
+The nuclear levels have spins
+Ig = 1
+2 , Ie = 3
+2 .
+In ferromagnetic α-Fe, an internal hyperfine field of approximately 33 T produces Zeeman splitting
+into 2 sublevels of the ground state and 4 sublevels of the excited state (Fig. 7b). Allowed transitions
+obey ∆m = 0, ±1, resulting in six absorption lines: the characteristic M¨ossbauer sextet shown in
+Fig. 7c.
+The spacing of these six lines yields the hyperfine magnetic field, while their positions and
+intensities encode information on chemical environment, symmetry, and magnetic domain orientation
+at the iron sites. This makes the α-Fe spectrum a textbook example of how M¨ossbauer spectroscopy
+provides site-specific insight into hyperfine interactions with exceptional energy resolution.
+23

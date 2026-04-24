@@ -1,0 +1,278 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 7
+
+9. Dezember 2025
+
+## Aufgabe 1 : Vierervektoren
+
+Die Schwerpunktsenergie $E_{\mathrm{cm}}$ eines Systems aus zwei Teilchen ist gegeben durch
+
+$$
+E_{\mathrm{cm}}^{2}=s=\left(\mathbf{p}_{1}+\mathbf{p}_{2}\right)^{2},
+$$
+
+wobei $\mathbf{p}_{1}$ und $\mathbf{p}_{2}$ die Viererimpulse $\mathbf{p}=(E / c, \vec{p})$ der beiden Teilchen sind.
+In der speziellen Relativitätstheorie ist es nützlich, Größen wie Energie, Impuls, Raum und Zeit in Vierervektoren zusammenzufassen.
+Vierervektoren sind zum Beispiel:
+
+\mathbf{x}=(c t, \vec{x}), \quad \mathbf{p}=(E / c, \vec{p}),
+
+und häufig setzt man $c \equiv 1$ der Einfachheit halber.
+Ihr Skalarprodukt ist definiert als:
+
+\mathbf{x y}=g_{\mu v} x^{\mu} y^{v}=x_{0} y_{0}-\vec{x} \cdot \vec{y} .
+
+Eine entscheidende Tatsache ist, dass das Skalarprodukt zweier Vierervektoren eine Lorentzinvariante ist, d. h. es hat in allen Inertialsystemen den gleichen Wert. Um dies zu veranschaulichen, betrachte zwei Vierervektoren $\mathbf{p}=\left(p_{0}, \vec{p}\right)$ und $\mathbf{k}=\left(k_{0}, \vec{k}\right)$, wie sie von einem Bezugssystem aus gesehen werden, das sich mit der Geschwindigkeit $v$ entlang der $x$-Achse bewegt. Eine Lorentztransformation wirkt wie folgt:
+
+\mathbf{p}^{\prime}=\Lambda_{v}^{\mu} p^{v}=\left(\begin{array}{cccc}
+\gamma & \gamma \beta & 0 & 0 \\
+\gamma \beta & \gamma & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{array}\right)\left(\begin{array}{c}
+p_{0} \\
+p_{1} \\
+p_{2} \\
+p_{3}
+\end{array}\right)=\left(\begin{array}{c}
+\gamma p_{0}+\gamma \beta p_{1} \\
+\gamma \beta p_{0}+\gamma p_{1} \\
+p_{2} \\
+p_{3}
+\end{array}\right)
+
+und man kann explizit verifizieren, dass
+
+\mathbf{p}^{\prime} \mathbf{k}^{\prime}=\mathbf{p} \mathbf{k} .
+
+a. Zeigen Sie, dass $s$ lorentzinvariant ist, d. h. zeigen Sie, dass der Wert von
+
+s=\left(\mathbf{p}_{1}+\mathbf{p}_{2}\right)^{2}
+
+in allen Inertialsystemen derselbe bleibt, auch wenn sich die individuellen Energien und Impulse der Teilchen unter Lorentztransformationen ändern.
+b. Am Beschleuniger HERA werden Protonen mit $E_{\mathrm{p}}=920 \mathrm{GeV}$ mit Elektronen mit $E_{\mathrm{e}}=$ 27.5 GeV zur Kollision gebracht. Berechnen Sie die Schwerpunktsenergie des ep-Systems.
+c. Wie groß müsste die Energie des Elektrons sein, damit bei einem Stoß mit einem ruhenden Proton die gleiche Schwerpunktsenergie vorliegt?
+
+## Lösung: Vierervektoren
+
+a. Das Skalarprodukt der transformierten Vierervektoren ist
+
+\begin{aligned}
+\mathbf{p}^{\prime} \mathbf{k}^{\prime}= & \left(\gamma p_{0}+\gamma \beta p_{1}\right)\left(\gamma k_{0}+\gamma \beta k_{1}\right)-\left(\gamma \beta p_{0}+\gamma p_{1}\right)\left(\gamma \beta k_{0}+\gamma k_{1}\right)-p_{2} k_{2}-p_{3} k_{3} \\
+& =\gamma^{2}\left(1-\beta^{2}\right) p_{0} k_{0}-\gamma^{2}\left(1-\beta^{2}\right) p_{1} k_{1}-p_{2} k_{2}-p_{3} k_{3}=\mathbf{p k} .
+\end{aligned}
+
+(Es gilt: $\gamma^{2}\left(1-\beta^{2}\right)=1$.)
+$s$ ist das Skalarprodukt eines Viererimpulses mit sich selbst und damit lorentzinvariant. Außerdem hängt $\mathbf{p}^{\prime} \mathbf{k}^{\prime}$ nicht mehr von $\gamma \mathrm{ab}$.
+b. Die Viererimpulse für eine ep Kollision lauten ( $c \equiv 1$ ):
+
+\mathbf{p}_{e}=\left(\begin{array}{c}
+E_{e} \\
+0 \\
+0 \\
+p_{e}
+\end{array}\right) \text { und } \mathbf{p}_{p}=\left(\begin{array}{c}
+E_{p} \\
+-p_{p}
+\end{array}\right) \text {, }
+
+als Strahlachse wird meist die $z$-Achse definiert.
+
+\begin{aligned}
+s & =\left(\mathbf{p}_{e}+\mathbf{p}_{p}\right)^{2} \\
+& =\mathbf{p}_{e}^{2}+\mathbf{p}_{p}^{2}+2 \mathbf{p}_{e} \mathbf{p}_{p} \\
+& =m_{e}^{2}+m_{p}^{2}+2\left(E_{e} E_{p}-\overrightarrow{p_{e}} \cdot \overrightarrow{p_{p}}\right) \\
+& =m_{e}^{2}+m_{p}^{2}+2\left(E_{e} E_{p}+p_{e} p_{p}\right)
+\end{aligned}
+
+Das $+p_{e} p_{p}$ kommt von $g^{\mu \nu}$, das bei jedem 4-Vektorprodukt eingefügt werden muss. Die kinetischen Energien hierbei sind viel größer als die Ruheenergien, somit auch $p \gg m c$ und die Ruhemassen sind vernachlässigbar. Außerdem gilt $p_{e, p} \approx E_{e, p}$ und es ergibt sich
+
+\sqrt{s}=\sqrt{4 E_{e} E_{p}}=318 \mathrm{GeV}
+
+c. Bei einem Experiment mit ruhendem Protonentarget gilt:
+
+\begin{gathered}
+\mathbf{p}_{e}=\left(\begin{array}{c}
+E_{e} \\
+p_{e}
+\end{array}\right) \text { und } \mathbf{p}_{p}=\left(\begin{array}{c}
+m_{p} \\
+0
+\end{array}\right), \\
+s=m_{e}^{2}+m_{p}^{2}+2 E_{e} m_{p} .
+\end{gathered}
+
+Auch hier sind die Ruhemassen wieder vernachlässigbar und
+
+E_{c} m=\sqrt{s}=\sqrt{2 E_{e} m_{p}} .
+
+Die benötigte Strahlenergie ist also
+
+E_{e}=\frac{s}{2 m_{p}}=\frac{(318 \mathrm{GeV})^{2}}{2 \cdot 0.938 \mathrm{GeV}}=54 \mathrm{TeV}
+
+Merke also: Willst du viel Schwerpunktsenergie baue einen Collider!
+
+## Aufgabe 2 : RF-Beschleuniger
+
+![The diagram depicts two types of particle accelerators: a cyclotron (left) showing the acceleration of charged particles using an electromagnet and an RF sender, and a linear accelerator (right) showing particle acceleration through drift tubes inside an acceleration tank powered by an RF sender.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/f56d8b62-25e8-46f6-99f0-9d1461e08dc9/ce8265f0-64c4-4cb6-8c78-025cf257f218-3_527_1579_438_242.jpg)
+
+Im Gegensatz zum Tandembeschleuniger werden RF-Beschleuniger (Radiofrequenz-Beschleuniger) mit Wechselspannung betrieben. Daher kann die gleiche Spannung auch mehr als zweimal durchlaufen werden. Ausserdem brauchen die Ionen nicht umgeladen zu werden wie im Tandembeschleuniger. Typische Bauformen sind ein Zyklotron (Abbildung, links) und ein Linearbeschleuniger (Abbildung, rechts). Im Zyklotron wird die Beschleunigungsspannung am Beschleunigungsspalt, der zweimal pro Umlauf durchlaufen wird, angelegt. Im Linearbeschleuniger findet die Beschleunigung zwischen den Driftröhren statt.
+a. Warum müssen die Ionen aus der Quelle gepulst in einen RF-Beschleuniger eingeschossen werden?
+b. Überlegen Sie sich, wann die Ionenpakete relativ zur Phase der Wechselspannung eingeschossen werden müssen, damit der Beschleuniger auch beschleunigt (Phasenstabilität). Warum werden Ionen mit leicht unterschiedlicher Energie in einem RF-Beschleuniger auf die gleiche Energie "fokussiert"?
+c. Leiten Sie eine Formel zur Berechnung der Längen der Driftröhren in einem Linearbeschleuniger für nichtrelativistische bzw. relativistische Teilchen der Masse $m$ her.
+d. Das originale Zyklotron in Berkeley, erbaut von E. O. Lawrence, der dafür 1939 den Nobelpreis erhielt, hatte einen Radius von 12.5 cm und ein Magnetfeld von 1.3 T. Berechnen Sie die maximale Energie für Protonen und die dazugehörige Frequenz der angelegten Wechselspannung. Mit dem späteren Ausbau zum heutigen "88-Inch Cyclotron" (Durchmesser $=88^{\prime \prime}$ ) lässt sich welche Energie für Protonen erreichen (gleiche Magnetfeldstärke angenommen)?
+
+## Lösung: RF-Beschleuniger
+
+a. Ionen außer Phase werden nicht beschleunigt, da die Spannung periodisch umgepolt wird und Ionen außer Phase abgebremst werden.
+b. Kurz vor dem Maximum des E-Feldes. In diesem Fall werden die später kommenden Ionen duch das mittlerweile angestiegene Feld stärker beschleunigt als die früher kommenden Ionen. Der Unterschied in Ankunftszeit und Geschwindigkeit wird also kompensiert.
+
+Diese Fokussierung funktioniert allerdings nur bei LINACs, bei Zyklotrons führt eine höhere Energie einfach zu einem größeren Umlaufradius. Dort ist allerdings auch keine Energiefokussierung notwendig, da die Energie am Ende bei der Extraktion schlicht durch den äußeren Radius definiert ist.
+c. Zunächst die rein klassische Betrachtung:
+
+L=(2 k+1) \frac{v t}{2} ; \quad k \in \mathbb{N}_{0}
+
+Hierbei ist $\frac{t}{2}$ eine Halbperiode der RF. Nach $n$ Beschleunigungen ist
+
+E_{k i n} & =n \mathrm{e} V_{0} \\
+& =\frac{m v^{2}}{2} \\
+L_{n} & \geq \sqrt{\frac{n e V_{0}}{2 m}} t \\
+& \propto n^{1 / 2}
+
+Im ultrarelativistischen Fall wird es trivial: $v \approx c=$ const, also $L_{n} \approx$ const.
+d. Zunächst setzen wir die Lorentzkraft mit der Zentrifugalkraft gleich:
+
+F & =q v B=\frac{m v^{2}}{r} \\
+t & =\frac{2 \pi r}{v}=\frac{2 \pi}{v} \frac{m v}{q B}=\frac{2 \pi m}{q B} \\
+f & =\frac{q B}{2 \pi m} \\
+& =\frac{1 \mathrm{e} \cdot 1.3 T}{2 \pi 938.3 \mathrm{MeV} / c^{2}} \\
+& =\frac{1.3 \frac{\mathrm{Vs}}{m^{2}} \cdot\left(3 \cdot 10^{8} \frac{m}{s}\right)^{2}}{2 \pi \cdot 938.3 \cdot 10^{6} \mathrm{~V}} \\
+& \approx 19.85 \mathrm{MHz}
+
+Die maximale Geschwindigkeit ist durch den Außenradius des Zyklotrons definiert:
+
+v_{\max } & =\frac{q B R}{m} \\
+E_{\max } & =\frac{m v_{\max }^{2}}{2}=\frac{q^{2} B^{2} R^{2}}{2 m} \\
+& =\frac{\mathrm{e}^{2}(1.3 \mathrm{~T})^{2} \cdot(0.125 m)^{2}}{2 \cdot 938.3 \mathrm{MeV} / c^{2}} \\
+& =\frac{1.3^{2} \cdot 0.125^{2} \cdot\left(3 \cdot 10^{8}\right)^{2}}{2 \cdot 938.3 \cdot 10^{6}} \mathrm{e} \\
+& =1.26 \mathrm{MeV}
+
+Der Radius geht offensichtlich quadratisch in die erreichbare Energie ein, also wurde der beim Upgrade von 12.5 cm auf 88 inch (Durchmesser, entspricht $88 \cdot 0.5 \cdot 2.54=111.76 \mathrm{~cm}$ Radius) erhöht.
+
+Das ergibt eine Energie von
+
+1.27 \mathrm{MeV} \cdot\left(\frac{111.76}{12.5}\right)^{2}=101 \mathrm{MeV}
+
+Die Webseite spricht von lediglich 55 MeV , dies könnte z.B. am nicht mehr so starken $B$-Feld liegen.
+O lässt sich (wie in der Tandemaufgabe gesehen) noch vollständig strippen (d.h. alle Elektronen entfernen), bei Xe ist das nicht mehr möglich.
+$E_{\text {max }}$ skaliert mit $\frac{q^{2}}{A}, \frac{E_{\text {max }}}{A}$ somit mit $\frac{q^{2}}{A^{2}}$ (bei vollständig ionisiertem ${ }^{16} \mathrm{O}$ ist das $\frac{1}{4}$ ).
+Dabei kommt man auf etwa $253 \mathrm{MeV} / A . \mathrm{Im}$ Fall von ${ }^{132} \mathrm{Xe}$ (häufigstes Isotop) erhält man dagegen $8 \mathrm{MeV} \approx 101 \mathrm{MeV} \cdot \frac{36^{2}}{132^{2}}$, womit man auf einen mittleren Ladungszustand von Xe ${ }^{36+}$ schliessen kann (was glaubhaft erscheint, da dies die gleiche Elektronenkonfiguration hat wie das Edelgas ${ }^{18} \mathrm{Ar}$ ).
+
+## Aufgabe 3 GZK cut-off
+
+Ultrahochenergetische kosmische Strahlung besteht aus Protonen oder Kernen, die die Erde mit Energien über $10^{19} \mathrm{eV}$ erreichen und damit zu den energiereichsten in der Natur beobachteten Teilchen gehören. Wenn sich diese kosmischen Strahlen durch den intergalaktischen Raum ausbreiten, treffen sie ständig auf Photonen des kosmischen Mikrowellenhintergrunds (CMB). Obwohl CMB-Photonen nur sehr geringe Energien besitzen, wird ihre Energie im Ruhesystem des Protons stark angehoben, sodass sie die Schwelle für die Photopionenproduktion überschreiten können. Dadurch werden Reaktionen möglich wie
+
+\gamma+p \rightarrow\left(\Delta^{+}\right) \rightarrow n+\pi^{+} \quad \text { oder } \quad \gamma+p \rightarrow\left(\Delta^{+}\right) \rightarrow p+\pi^{0} .
+
+Jede dieser Wechselwirkungen führt dazu, dass das Proton einen erheblichen Teil seiner Energie verliert. Da das Universum mit CMB-Photonen erfüllt ist, durchläuft ein Proton oberhalb einer bestimmten kritischen Energie viele solcher Wechselwirkungen über kosmologische Distanzen, wodurch seine Energie schnell unter die Schwelle absinkt. Dies führt zum Greisen-Zatsepin-Kuzmin-(GZK)-Cutoff: Oberhalb dieser Schwelle werden Wechselwirkungen mit CMB-Photonen so häufig, dass das Proton kontinuierlich Energie verliert. Da jede Wechselwirkung einen beträchtlichen Teil der Protonenenergie entzieht, wird der Fluss kosmischer Strahlen mit Energien oberhalb dieser Schwelle auf der Erde stark unterdrückt.
+a. Treffen Sie eine Abschätzung für die mittlere Energie der CMB-Photonen.Das Schwarzkörperspektrum der kosmischen Hintergrundstrahlung entspricht einer Temperatur von $2,72 \mathrm{~K}$.
+
+Lösung: Das Plancksche Strahlungsgesetz in seiner Wellenlängenform lautet
+
+B_{\lambda}(T)=\frac{2 h c^{2}}{\lambda^{5}} \frac{1}{\exp \left(\frac{h c}{\lambda k_{B} T}\right)-1} .
+
+Wir schätzen die mittlere Energie aus dem Maximum von $B_{\lambda}$ ab. Die analytische Bestimmung der Maximalstelle ist nicht trivial, daher bestimmen wir sie für eine Abschätzung der Größenordnung graphisch. Abbildung 1 (links) zeigt $B_{\lambda}(\lambda)$ für eine Temperatur von $T=2.72 \mathrm{~K}$.
+
+Aus dem Plot erkennt man, dass die Verteilung ihr Maximum bei einer Wellenlänge von
+
+\lambda_{\max } \approx 1 \mathrm{~mm}
+
+hat. In dieser Lösung approximieren wir die mittlere Photonenergie durch die Photonenergie, die dieser Wellenlänge entspricht:
+
+E \approx h \frac{c}{\lambda_{\max }} \simeq 1.2 \times 10^{-3} \mathrm{eV}
+
+Dies liefert eine sinnvolle Abschätzung für die typische Energie eines CMB-Photons.
+
+## Hinweis:
+
+Die Größe $B_{\lambda}$ oben ist die spektrale Strahldichte (Energie pro Fläche, Zeit, Raumwinkel und Wellenlängenintervall). Der entsprechende Ausdruck pro Frequenzintervall lautet
+
+B_{v}(T)=\frac{2 h v^{3}}{c^{2}} \frac{1}{\exp \left(\frac{h v}{k_{B} T}\right)-1} .
+
+![This image depicts the Planck distribution of blackbody radiation at a temperature of 2.72 K, showing spectral density as a function of wavelength on the left and frequency on the right, with marked values for peak and mean wavelengths/frequencies and their corresponding energies.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/f56d8b62-25e8-46f6-99f0-9d1461e08dc9/ce8265f0-64c4-4cb6-8c78-025cf257f218-7_540_1581_285_242.jpg)
+Abbildung 1: Vergleich der Planck-Verteilung in Wellenlängen- und Frequenzdarstellung. Die Maxima liegen an unterschiedlichen Positionen, während die wahre mittlere Photonenergie in beiden Fällen gleich ist.
+
+Wie in Abbildung 1 (rechts) zu sehen ist, hat diese Verteilung ihr Maximum bei einer Frequenz von $v_{\text {max }} \approx 160 \mathrm{GHz}$, was einer Wellenlänge von etwa
+
+\lambda_{\max }^{\prime}=\frac{c}{v_{\max }} \approx 2 \mathrm{~mm}
+
+entspricht. Wiederholt man die obige Abschätzung mit dem Maximum von $B_{v}$ statt mit dem Maximum von $B_{\lambda}$, so erhält man eine andere „typische“ Energie. Dies zeigt, dass die Lage des Maximums davon abhängt, ob man das Spektrum als Funktion der Wellenlänge oder der Frequenz beschreibt: die gleichen Photonen werden in unterschiedlich große Wellenlängen- bzw. Frequenzintervalle eingeteilt, und dadurch ändert sich die Form (und damit das Maximum) der Kurve. Die Lage des Maximums ist daher keine eindeutig physikalische Größe.
+
+Eine genauere und darstellungsunabhängige Charakterisierung der typischen Photonenergie erhält man, indem man die mittlere Photonenergie aus der Planck-Verteilung berechnet. Dazu verwenden wir die Energiedichte $u$ und die Photonenzahldichte $n$.
+In der Wellenlängendarstellung des Planckschen Spektrums lautet die spektrale Energiedichte
+
+u_{\lambda}(\lambda)=\frac{8 \pi h c}{\lambda^{5}} \frac{1}{\exp \left(\frac{h c}{\lambda k_{B} T}\right)-1} .
+
+Die gesamte Energiedichte ergibt sich zu
+
+u=\int_{0}^{\infty} u_{\lambda}(\lambda) d \lambda=\int_{0}^{\infty} \frac{8 \pi h c}{\lambda^{5}} \frac{1}{\exp \left(\frac{h c}{\lambda k_{B} T}\right)-1} d \lambda
+
+Jedes Photon der Wellenlänge $\lambda$ besitzt eine Energie $E=h c / \lambda$, sodass die spektrale Anzahldichte
+
+n_{\lambda}(\lambda)=\frac{u_{\lambda}(\lambda)}{h c / \lambda}=\frac{8 \pi}{\lambda^{4}} \frac{1}{\exp \left(\frac{h c}{\lambda k_{B} T}\right)-1}
+
+lautet. Damit ist die gesamte Photonenzahldichte
+
+n=\int_{0}^{\infty} n_{\lambda}(\lambda) d \lambda=\int_{0}^{\infty} \frac{8 \pi}{\lambda^{4}} \frac{1}{\exp \left(\frac{h c}{\lambda k_{B} T}\right)-1} d \lambda
+
+Die mittlere Photonenergie ist dann
+
+\langle E\rangle=\frac{u}{n}
+
+Durch Auswerten dieser Integrale erhält man
+
+\langle E\rangle \simeq 2.701 k_{B} T
+
+Für die CMB-Temperatur $T=2.72 \mathrm{~K}$ ergibt sich damit
+
+\langle E\rangle \approx 2.701 k_{B} T \approx 6.3 \times 10^{-4} \mathrm{eV} .
+
+Es ist wichtig zu betonen, dass dieses Ergebnis unabhängig davon ist, ob man von der Frequenz- oder der Wellenlängendarstellung ausgeht. In beiden Fällen ergibt sich nach Ausführen der Integrale derselbe Quotient $\langle E\rangle=u / n=2.701 k_{B} T$. Während also die Form des Planck-Spektrums und die Lage seines Maximums von der Wahl der Darstellung abhängen, ist die wahre mittlere Photonenergie eine physikalische Größe und somit darstellungsunabhängig.
+b. Wie groß ist die minimale Energie die ein Proton benötigt um ein Proton und ein Pion durch die frontale Kollision mit einem CMB-Photon zu erzeugen? ( $m\left(\pi^{0}\right)=135 \mathrm{MeV}$ ).
+
+Lösung:
+Viererimpluserhaltung:
+
+\mathbf{p}_{\gamma}+\mathbf{p}_{p}=\mathbf{p}_{p^{\prime}}+\mathbf{p}_{\pi}
+
+mit den Viererimpulsen
+
+\begin{gathered}
+\mathbf{p}_{\gamma}=\left(\begin{array}{c}
+E_{\gamma} \\
+E_{\gamma}
+\end{array}\right) \mathbf{p}_{p}=\left(\begin{array}{c}
+E_{p} \\
+p_{p}
+\end{array}\right) \\
+s=\left(\mathbf{p}_{\gamma}+\mathbf{p}_{p}\right)^{2}=\left(m_{p}+m_{\pi}\right)^{2} \\
+m_{p}^{2}+2\left(E_{\gamma} E_{p}-\left|\vec{p}_{\gamma} \| \vec{p}_{p}\right| \cos \theta\right)=m_{p}^{2}+2 m_{p} m_{\pi}+m_{\pi}^{2}
+\end{gathered}
+
+Für ein ultrarelativistisches Proton gilt die Näherung: $E_{p}=\left|\vec{p}_{p}\right|$; eine frontale Kollision bedeutet: $\cos \theta=-1$
+
+4 E_{\gamma} E_{p}=2 m_{p} m_{\pi}+m_{\pi}^{2} \\
+E_{p}=\frac{2 m_{p} m_{\pi}+m_{\pi}^{2}}{4 E_{\gamma}}
+
+![The image depicts cosmic ray energy spectra measured by various experiments, showing the flux of cosmic rays as a function of energy with features labeled "Knee" and "Ankle" on the left plot, and a detailed comparison of ultra-high-energy cosmic ray measurements above 10^18 eV on the right plot.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/f56d8b62-25e8-46f6-99f0-9d1461e08dc9/ce8265f0-64c4-4cb6-8c78-025cf257f218-9_600_1540_285_283.jpg)
+Abbildung 2: Cosmic ray Spektrum aus dem PDG. Hinweis: Das Spektrum endet bei Energien von $10^{20} \mathrm{eV}$, abgesehen von den AGASA Messungen, die jedoch teilweise durch neuere Messungen widerlegt worden sind.
+
+E_{p}=\frac{2 \cdot 938 \cdot 135+135^{2}\left[\mathrm{MeV}^{2}\right]}{4 \cdot 1.2 \cdot 10^{-3}[\mathrm{eV}]} \\
+E_{p} \simeq 6 \cdot 10^{19} \mathrm{eV}
+
+## Bemerkung:
+
+Wenn man die Protonen Energie mit einer Wellenlänge von $2 \mathrm{~mm}\left(6.2 \cdot 10^{-4} \mathrm{eV}\right)$ ausrechnet ergibt sich ein Wert von $9.8 \cdot 10^{19} \mathrm{eV}$. Dies ist der Grund für die abweichenden Werte in der Literatur. Daher kann man $10^{20} \mathrm{eV}$ als gute Abschätzung angeben.
+□ "
+

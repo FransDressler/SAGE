@@ -1,0 +1,243 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+L¨osungsskizze zu
+Blatt 3
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+Sebastian Loy
+Dieses Dokument stellt eine L¨osungsskizze dar, mit keinerlei Garantie auf
+Vollst¨andigkeit und/oder Korrektheit.
+3.1 Wiederholung
+Einfache Aufgaben, die mit Ihrem bisherigen Grundwissen aus der
+Festk¨orperphysik spontan und (in einer Klausursituation) ohne
+Nachschlagen gel¨ost werden sollten.
+(a) Abbildung 1 zeigt ein zweidimensionales Kristallgitter. Welches
+Bravaisgitter liegt vor? Zeichnen Sie eine primitive und eine
+nicht-primitive Einheitszelle ein. Geben Sie an, wieviele
+Gitterpunkte Ihre gew¨ahlten Einheitszellen enthalten.
+L¨osung: Das Bravais-Gitter ist zentriert-rechteckig.⃗a ′
+1 und⃗a ′
+2 sind die
+primitiven Gittervektoren der primitiven Einheitszelle (gr¨uner Bereich) mit
+einem Gitterpunkt.⃗a 1 und⃗a 2 sind die Gittervektoren einer nicht-primitiven
+(oder konventionellen) Einheitszelle mit zwei Gitterpunkten (roter Bereich).
+(b) Welches Kristallgitter wird zur Beschreibung von CsCl verwendet?
+(siehe Abbildung 2)
+L¨osung: Wir w¨ahlen ein einfach kubisches (sc) Kristallgitter mit einer Basis
+aus einem Cl−-Ion und einem Cs+-Ion.
+Wichtiger Hinweis: CsCl ist kein bcc-Gitter! Alle Atome (einschließlich des
+Mittelpunktes) m¨ussen in einem bcc-Gitter identisch sein. Bei CsCl ist das
+Atom in der Mitte Cl, w¨ahrend die Atome in den Ecken Cs sind.
+
+Abbildung 1: Konventionelle Einheitszelle (rot) und primitive Einheitszelle (gr¨un).
+Abbildung 2: C¨asiumchlorid bildet ein kubisches Gitter mit einer zweitatomigen
+Basis.
+(c) Nennen Sie jeweils ein Element, das mit einem Basisatom pro
+Gitterpunkt in einem sc, bcc und fcc Bravaisgitter kristallisiert.
+L¨osung: Einfach kubisch (sc): Polonium Po (die Alpha-Form ist SC und die
+Beta-Form ist rhomboedrisch).
+Raumzentriert kubisch (bcc): z.B. Fe, Cr, Mo, W und Alkalimetalle wie Li,
+K, Na, Rb, Cs.
+Fl¨achenzentriert kubisch (fcc): z.B. Cu, Ag, Au, Al, Pd, Pt.
+(d) Zeichnen Sie die angegebenen Kristallfl¨achen in die zugeh¨origen
+kubischen Elementarzellen aus Abbildung 3 ein.
+L¨osung: Kristallebenen (hkl) in kubischen Einheitszellen: Oben, von links
+nach rechts: (010), (020), (1,1,1). Unten, von links nach rechts: (110), (113),
+(111).
+Hinweis: Einige der Ebenen sind in die erste Einheitszelle zur¨uck¨ubersetzt.
+Dies ist eine ¨ubliche Darstellungsweise f¨ur Kristallebenen.
+
+Abbildung 3: Kristallebenen in kubischen Einheitszellen
+(e) Folgende Vektoren spannen eine primitive Einheitszelle auf:⃗
+a 1 = a
+2
+
+
+1
+1
+0
+
+⃗ a 2 = a
+2
+
+
+0
+
+⃗ a 3 = a
+
+Skizzieren Sie die Gittervektoren⃗a 1,⃗a 2 und⃗a 3 in einem kartesischen
+Koordinatensystem. Welches Kristallsystem wird durch die
+primitive Einheitszelle charakterisiert?
+L¨osung: Die primitive Einheitszelle wird durch folgende Vektoren
+aufgespannt:
+•⃗a 1 = a
+ •⃗a 2 = a
+ •⃗a 3 = a
+
+Der rote W¨urfel in Abbildung 4 zeigt die konventionelle kubische
+Einheitszelle, der gr¨une Rhomboeder zeigt die primitive Einheitszelle. Das
+Kristallsystem ist kubisch, das Bravais Gitter ist fcc. Siehe folgende
+Abbildung!
+
+Abbildung 4: primitive Gittervektoren in einem kartesischen Koordinatensystem
+3.2 Verst¨andnisfragen
+(a) Warum deformieren Einkristalle bei geringerer Zugspannung als Polykristalle
+mit konstanter Zugspannung?
+• Im einfachen Bild k¨onnen die Gitterebenen eines Einkristalls ¨ubereinandergleiten.
+Die genauere Erkl¨arung folgt in (b).
+(b) Warum f¨uhrt das Konzept des idealen Kristalls zu v¨ollig falschen Vorhersagen
+bei der kritischen Schubspannung?
+• Die abgesch¨atzten kritischen Schubspannungen sind im einfachen Bild
+deutlich zu hoch. Der Mechanismus der plastischen Verformung beruht
+nicht, wie bei der Absch¨atzung der kritischen Schubspannung angenom-
+men, in einem einfachen ¨Ubereinandergleiten von Gitterebenen. Tats¨achlich
+beruht der Fließvorgang bei kristallinen Festk¨orpern auf der Bewegung
+von Versetzungen.
+(c) Wodurch kommt der abstoßende - und der anziehende Teil des Lennard-Jones-
+Potentials zustande und welche Proportionalit¨at haben die beiden Teile typis-
+cherweise zum Radius?
+• Abstoßend: ¨Uberlapp von Wellenfunktionen nach Pauli-Prinzip; r−12
+• Anziehend: Van-der-Waals Kr¨afte; r−6
+(d) Skizzieren Sie ein kubisches Gitter mit einer zus¨atzlich eingeschobene Git-
+terebene, deren Ausdehnung so klein ist, dass sie nirgendwo bis an den Kristall-
+rand heranreicht (2D-Skizze gen¨ugt).
+
+Wie verl¨auft die Versetzungslinie in drei Dimensionen? Markieren Sie die Ver-
+setzungslinien in Ihrer Skizze.
+Wie verl¨auft der Burgers-Vektor in drei Dimensionen? Markieren Sie den
+Burgers-Vektor in Ihrer Skizze.
+Welche Form beschreibt der Burgers-Vektor in drei Dimensionen?
+Abbildung 5:
+(e) Zeichnen Sie den Burgers-Vektor in Abbildung 6 ein. Wie steht dieser zur
+Versetzungslinie?
+L¨osung:
+Die Versetzungslinie steht senkrecht auf die Bildebene und geht durch das rote
+
+Kreuz. Der Burgers-Vektor ist (abh¨angig von der definierten Umlaufrichtung)
+(anti)parallel zur Versetzungslinie und kann auf einem beliebigen Punkt der
+blau markierten Kante eingezeichnet werden. Die L¨ange des Burgers-Vektor
+entspricht dem H¨ohenunterschied an der blau markierten Kante.
+Abbildung 6: Schraubenversetzung [Hunklinger, H. (2021). Festk¨orperphysik (5.
+Aufl.). De Gruyter.]
+3.3 Leerstellendiffusion
+Mit Hilfe der Tracer-Methode wurde die Diffusion von Natriumionen in NaBr (Dichte
+ρ = 3,20 g/cm3) bei 480 ◦C und 650 ◦C untersucht. F¨ur den Diffusionskoeffizienten
+D wurden hierbei die Werte 3,22 · 10−15 m2/s bzw. 3,62 · 10−13 m2/s gefunden.
+Tipp 1: Eine solche Messung wird in ”Festk¨orperphysik” von Siegfried Hunklinger
+auf Seit 147 gezeigt.
+Tipp 2: Hunklinger wechselt in diesem Abschnitt zwischen Entropie und Bindungsen-
+ergie pro Ion und pro Ionenpaar.
+(a) Wie groß ist die Summe aus Bildungsenergie pro Ion und Aktivierungsenergie
+der Leerstellen?
+L¨osung:
+Hunklinger schreibt (auch aus Vorlesung herleitbar): D = D0eSL/kB e−(EL+ED )/kB T
+mit SL und EL pro Ion.
+Verwende die angegebenen Werte f¨ur D und T um das Verh¨altnis D1/D2 zu
+bilden: D1
+D2 = e−(EL+ED )( 1
+T1 − 1
+T 2 )/kB .
+
+Umformen ergibt EL + ED = −ln(D1
+D2 ) · kB /( 1
+T1 − 1
+T2 ) = 2, 67 · 10−19 J = 1.67
+eV
+(b) Welchen Wert hat der Vorfaktor D0 exp(SL/kB ), mit der Entropie pro Ion SL?
+D0 exp(SL/kB ) = D1
+e−(EL+ED )/(kB T1) = 4, 39 · 10−4 m2
+s
+(c) Wie groß ist die elektrische Leitf¨ahigkeit von NaBr bei 550 ◦C?
+Berechne die Dichte der Ionenpaare nP = NAρ/M = 1.87 · 1028 1/m3 mit der
+molaren Masse M = 102, 9 g/mol.
+σel = nP q2 D
+kBT (1)
+= nP q2 D0
+kBT eSP/(2kB) e−EP/(2kBT ) e−ED/(kBT ) (2)
+Die Faktoren 2 kommen durch die Betrachtung von Ionenpaaren statt einzelnen
+Ionen wie zuvor (SP /2 = SL und EP /2 = EL). Wir k¨onnen also schreiben:
+σel = nP q2 D0
+kBT eSL/(kB) e−(EL+ED)/(kBT ). (3)
+Mit (a), (b), T = 823K und nP erhalten wir: 1, 21 · 10−3 1
+Ωm .
+3.4 Gleichgewichtsabstand
+Die Wechselwirkungsenergie zwischen zwei Atomen l¨asst sich durch die
+Gleichung
+U (r) = A
+rn − B
+rm
+ausdr¨ucken, wobei m < n ist.
+(a) Bestimmen Sie den Gleichgewichtsabstand r0 in Abh¨angigkeit von
+den Parametern A, B, m und n.
+L¨osung: Bilde die erste Ableitung und setze gleich 0:
+dU
+dr = − nA
+rn+1 + mB
+rm+1
+!
+= 0 f¨ur r = r0
+⇒ mB
+rm+1
+= nA
+rn+1
+
+rn+1−m−1
+0 = nA
+mB
+r0 =
+ nA
+mB
+ 1
+n−m
+(b) Bestimmen Sie die Kraft F (r) = −dU/dr f¨ur r → 0 und r → ∞ und
+¨uberlegen Sie, ob die Kraft anziehend oder abstoßend ist. In welchem
+Abstand r > r0 ist die Kraft maximal? Berechnen Sie diesen Abstand
+in Einheiten von r0 f¨ur das Lennard-Jones Potential.
+F (r) = −dU
+dr = + nA
+rn+1 − mB
+m<n
+===⇒
+(
+F (r) → ∞ f¨ur r → 0
+F (r) → 0 f¨ur r → ∞
+F (r) divergiert gegen +∞, wenn r → 0, und n¨ahert sich Null, wenn r → ∞;
+Abstoßung f¨ur r < r0, Anziehung f¨ur r > r0.
+Position des Kraftminimums:
+dF
+dr = d
+dr
+
+−dU
+dr
+
+= (n + 1)n A
+rn+2 − (m + 1)m B
+rm+2
+!
+= 0
+⇒ (m + 1)m B
+rm+2 = (n + 1)n A
+rn+2
+⇒ rn+2−m−2 = (n + 1)nA
+(m + 1)mB
+r =
+ (n + 1)nA
+(m + 1)mB
+ 1
+n−m
+= r0
+ n + 1
+m + 1
+> r0 da m < n
+F¨ur das Lennard-Jones-Potential: n = 12, m = 6
+⇒ r = r0
+13
+7
+1
+6
+≈ 1.1r0
+
+Abbildung 7: Lennard-Jones-Potential mit n = 12, m = 6, A = 1 und B = 1.

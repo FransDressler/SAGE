@@ -1,0 +1,193 @@
+# Einführung in die Kern-, Teilchen- und Astrophysik 
+
+WS $25 / 26$
+
+Dr. Raimund Strauß
+
+Vorlesung 1 am 14.10.2025
+
+## 1 Grundbausteine der Materie
+
+### 1.1 Das Atom
+
+| $\approx 450 \mathrm{v} . \mathrm{Chr}$. | Demokrit/ Leukipp | 'atomos' | - unteilbar <br> - Alles ist Atom und Leere <br> - Atome unterscheiden sich in Form, Größe, Anordnung o. Lage, aber nicht in Qualität <br> - rein philosophische Sicht auf die Dinge |
+| :--- | :--- | :--- | :--- |
+| 1803-1808 | John Dalton | Atomtheorie | - Alle Atome sind untereinander gleich (eines Elements) <br> - Alle Materie besteht aus Atomen (unteilbar) <br> - Atome werden in chemischen Reaktionen nicht vernichtet oder geschaffen, sonder nur umgeordnet (sie bleiben erhalten). <br> - Gesetz der multiplen Proportionen (ganzzahlige Verhältnisse der Elemente) <br> - Kugelbild, Partialdrücke |
+| 1811 | A.Avogadro | Avogadro Gesetz | - Bei gleicher Temperatur und gleichem Druck enthalten gleiche Volumina gleich viel Teilchen (Moleküle) <br> - Exakt Ideales Gas $P V=n R T$ |
+| 1827 | R.Brown | Brownsche Bewegung | - Zitterbewegung von Pollenkörnern in Wasser <br> → Interpretation: intrinsische Bewegung "der Teilchen selber" |
+| 1905 | A.Einstein |  | Deutung der Brownschen Bewegung |
+| 1913 | J.Perrin | $\left\langle x^{2}\right\rangle=2 D t$ (1D) | Mittlere quadratische Verschiebung $\left\langle x^{2}\right\rangle$ wächst mit Zeit $t$ und Diffusionskoeffizient $D$ |
+
+![This diagram depicts a charged particle moving in a magnetic field, showing the circular motion of the particle with velocity vector "v" and the magnetic force directions acting perpendicular to the velocity.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-2_270_330_203_303.jpg)
+
+Stokes-Einstein
+$D=\frac{k_{B} T}{6 \pi \eta a}$
+$a$ : Teilchenradius, $\eta$ : Viskosität, T: Temperatur
+
+Nobelpreis 1926
+
+# → genauere Messung ergibt universelle $k_{B}$ und $N_{A}$ → thermische Bewegung von diskreten, thermischen Molekülen 
+
+$N_{A}=\frac{R}{k_{B}}$
+
+## Beweis für Atome
+
+## 1912 Bragg
+
+Röntgenkristallographie zeigt atomares Gitter
+Nobelpreis 1915
+
+### 1.2 Die Suche nach Teilchen - und die Struktur der Atome
+
+1897 Joseph Thomson
+Entdeckung des Elektrons
+
+![This diagram depicts a cathode ray tube setup showing the path of electrons (e⁻) emitted from the cathode and accelerated towards the anode, with electric and magnetic fields applied perpendicular to each other to demonstrate the deflection of the electron beam.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-2_501_1014_1119_513.jpg)
+Kathodenstrahlröhre
+
+- $\vec{E}$ und $\vec{B}$ so justieren, dass keine Ablenkung stattfindet $q E=q v B \Longrightarrow v=\frac{E}{B}$
+- $\vec{E}$ ausschalten $q v B=\frac{m v^{2}}{r} \Longrightarrow \frac{q}{m}=\frac{E}{B^{2} r}$
+
+$$
+\frac{e}{m} \approx 1.7 \cdot 10^{-11} \frac{\mathrm{C}}{\mathrm{~kg}}
+$$
+
+Warum neues Teilchen:
+
+- unabhängig von Gas/Material der Elektroden
+- sehr großes $e / m$
+- negative Ladung
+⟹ Entdeckung des ersten Elementarteilchens
+
+![This diagram depicts the distribution of electrons in the d-orbitals of an atom, showing the arrangement of five electrons across the four d-orbitals.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-2_309_309_2060_1256.jpg)
+Thomsons Atommodell
+
+"Nachspiel" Milikans Öltröpfchen
+1909-1913 → Elektronenmasse/Ladung
+Nobel
+![This diagram depicts an electrochemical cell setup, showing a container with an electrolyte solution and electrodes connected to a battery, illustrating the flow of electric current and ion movement within the cell.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-3_293_485_324_292.jpg)
+
+\begin{gathered}
+m_{e} \approx 9.11 \cdot 10^{-31} \mathrm{~kg} \\
+-e=-1.602176634 \cdot 10^{-19} \mathrm{C}(\mathrm{SI}, \text { exakt })
+\end{gathered}
+
+1896 Becquerel, Rutherford Entdeckung der Radioaktivität
+-1903 Villard
+
+| Becquerel | allgemein unsichtbare Strahlung | Durchdringung |
+| :--- | :--- | :--- |
+| Rutherford | $\alpha-{ }_{2}^{4} \mathrm{He}$ | gering |
+|  | $\beta-e^{-}\left(e^{+}\right)$ | mittel |
+| Villard | $\gamma-$ neutral, $e / m$-Strahlung | hoch |
+
+1911 E. Rutherford - Experiment
+Nobelpreis für Physik
+![This diagram depicts the setup for Rutherford's gold foil experiment, showing alpha particles being directed at a thin gold foil and their scattering at an angle θ, with a zinc sulfide (ZnS) screen detecting the deflected particles.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-3_284_583_1080_1183.jpg)
+
+Ergebnis:
+
+- meisten Teilchen werden nicht abgelenkt
+- hohe Streuwinkel beobachtet (selten) → nur möglich, wenn punktförmige Teilchen
+
+\frac{d \sigma}{d \Omega_{R u t h}}=\frac{Z_{1} Z_{2} e^{2}}{16 \pi \epsilon_{0} E} \frac{1}{\sin ^{4}(\theta / 2)}
+
+Beispiel: Frontalstoß $r_{\text {min }}=\frac{1}{4 \pi \epsilon_{0}} \frac{Z_{1} Z_{2} e^{2}}{E}$
+![This diagram depicts alpha decay, showing an alpha particle (α) being emitted from a nucleus (kern) with the recoil of the remaining nucleus indicated.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-3_126_248_1695_1354.jpg)
+wenn E groß genug ist, Kernstruktur (=Abweichung von Rutherfords punktförmiger Streuung) kann aufgelöst werden
+
+\frac{d \sigma}{d \Omega}=\frac{d \sigma}{d \Omega_{R u t h}} \cdot|F(\vec{q})|^{2}
+
+### 1.3 Entdeckung des Protons
+
+Vorgeschichte: Gasentladungsröhren zeigen positive Strahlung $\frac{e}{m}$ konnte gemessen werden (via $\vec{E} \perp \vec{B}$ )
+→ größeres $\frac{e}{m} \rightarrow$ kleinstes Teilchen
+1919 Rutherford
+
+\alpha+{ }^{14} \mathrm{~N} \rightarrow{ }^{17} \mathrm{O}+p
+
+→ Proton ist Bestandteil der Kerne $\quad m_{p} \approx 1.673 \cdot 10^{-27} \mathrm{~kg}$
+
+1932 Chadwick Nobel
+
+Entdeckung des Neutrons
+Vermutung bereits 1920 von Rutherford
+
+\alpha+{ }^{9} \mathrm{Be} \rightarrow{ }^{12} \mathrm{C}+\mathrm{X}
+
+Bereits Curie: neutrale Strahlung, Interpretation als ultra-harte $\gamma$-Strahlung Chadwick: viele, präzise Messungen mit verschiedenen Abschirmungen
+
+\alpha \rightarrow \overline{\mathrm{Be}} \xrightarrow{n} \underset{\text { Schirm }}{\widehat{S}} \xrightarrow{P} \underset{\text { Defector }}{|D|}
+
+Problem Kinematik: für $\gamma$ 's
+
+T_{\mathrm{p}, \max }=\frac{2 E_{\gamma}^{2}}{m_{p} c^{2}+2 E_{\gamma}}
+
+Bsp. $E_{\gamma}=5 \mathrm{MeV}, T_{p} \approx 50 \mathrm{keV}$ viel zu niedrig
+Lösung, neues neutrales Teilchen:
+
+T_{\mathrm{p}, \max }=\frac{4 m_{n} m_{p}}{\left(m_{n}+m_{p}\right)^{2}} T_{n}
+
+Ergebnis von Chadwick: $m_{n} \approx 1.674 \cdot 10^{-27} \mathrm{~kg} ; m_{n}-m_{p} \approx 2.3 \cdot 10^{-30} \mathrm{~kg}$
+Kurze Diskussion über $\gamma$-Strahlung: -neutral, ruhemassefrei, durchdringend? Woher wissen wir es?
+→ Relativität + Maxwell:
+
+E^{2}=(p c)^{2}+(m c)^{2}, \quad m_{\gamma}=0 \Longrightarrow E=p c
+
+→ Einsteins Lichtquant + Planck (1903):
+
+E=h \nu, \quad p=\frac{E}{c}=\frac{h}{\lambda}
+
+→ Compton-Streuung (1923):
+
+\Delta \lambda=\lambda^{\prime}-\lambda=\frac{h}{m_{e} c}(1-\cos \theta)
+
+„viel E an $e^{-}$übertragen, nicht an $p^{\prime \prime}$
+$\rightarrow \gamma$ bewegt sich mit $c=2.98 \cdot 10^{8} \mathrm{~m} / \mathrm{s}$
+→ Keine Ablenkung in E/B-Feldern
+→ Lichtdruck (Folienexperimente): $p=\frac{E}{c}$ wird bestätigt
+
+1932 Anderson Antiteilchen → Positron $e^{+}$
+![This diagram depicts the path of cosmic radiation (Kosmische Strahlung) particles entering a magnetic field inside a cloud chamber (Nebelkammer), showing the curved trajectories of charged particles such as electrons (e⁻).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-4_257_390_1921_1178.jpg)
+
+1930er Pauli Neutrino wird postuliert
+$\beta$-Zerfall $n \rightarrow p+e^{-}+\overline{\nu_{e}}$
+$\nu$-Eigenschaften: -keine $e / m$ WW -geringe Masse
+![This diagram depicts an energy spectrum measurement comparing experimental data ("Messung") with the expected signal ("Erwartung") for a double beta decay ("ββ-Körperzerfall"). It shows the intensity (I) versus energy (E), highlighting the difference between measured and expected energy distributions.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/ac46f442-3d57-4bf6-a34c-ca1aa9331f69/38152125-d9d8-4dfb-8a3e-c5a1a527e082-4_273_497_2236_1183.jpg)
+
+1933 Fermi Theorie des $\beta$-Zerfalls
+1956 Reines Cowan Neutrino wird experimentell nachgewiesen
+Status 1930er: 4 Teilchen $n, p, e^{-}, \nu(+$ Antiteilchen $)$ wurden als elementar angesehen.
+
+1950/60 Beschleunigungsexperimente
+→ Quarkmodell, Hadronen sind aus 2 oder 3 Quarks aufgebaut
+$p, n$ sind (leichte und stabile) Vertreter von großer Teilchenfamilie, der Hadronen
+⟹ "Hadronen Zoo"
+2012 CERN LHC Entdeckung des Higgs Teilchens (100x schwerer als $p$ )
+→ Standardmodell komplett
+
+### 1.4 Standardmodell der Teilchenphysik
+
+## Fermionen
+
+- halbzahliger Spin $s=\frac{1}{2}, \frac{3}{2}, \frac{5}{2}, \ldots$
+- Wellenfunktion antisymmetrisch $\Psi\left(\overrightarrow{r_{1}}, s_{1} ; \overrightarrow{r_{2}}, s_{2}\right)=-\Psi\left(\overrightarrow{r_{2}}, s_{2} ; \overrightarrow{r_{1}}, s_{1}\right)$
+- daher Teilchen genau gleich $\Psi(\vec{r}, s ; \vec{r}, s)=0$
+= Pauli Prinzip: zwei identischer Fermionen können nicht denselben Quantenzustand besetzen
+
+
+## Bosonen
+
+- ganzzahliger Spin $s=0,1,2, \ldots$
+- Wellenfunktion symmetrisch $\Psi\left(\overrightarrow{r_{1}}, s_{1} ; \overrightarrow{r_{2}}, s_{2}\right)=\Psi\left(\overrightarrow{r_{2}}, s_{2} ; \overrightarrow{r_{1}}, s_{1}\right)$
+- kein Pauliverbot: viele identische Bosonen in Grundzustand
+
+
+## Spin
+
+- Quantenmechanische Eigenschaft (wie Ladung, Masse)
+- nicht klassisch eine Kugel, die sich dreht
+- $\rightarrow 2 s+1$ Ausrichtungen des Spins
+
+Grundbausteine, punktförmig, 3 Familien (3 flavours)
+

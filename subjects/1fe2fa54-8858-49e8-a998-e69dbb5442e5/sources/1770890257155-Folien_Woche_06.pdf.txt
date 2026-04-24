@@ -1,0 +1,115 @@
+1
+Experimental methods in solid-state physics
+06 Neutron Scattering and Mössbauer Spectroscopy
+Dr. Christoph Kastl
+Walter Schottky Institut and Physics Department
+Zentrum für Nanotechnologie
+und Nanomaterialien
+
+2
+Attenuation of X-rays in matter
+sample
+
+3
+FRM – II Garching
+
+4
+Attenuation of thermal neutrons
+sample
+
+5
+Attenuation of thermal neutrons
+𝐴 = 𝜋𝑟2
+𝑉 𝒓 = 2𝜋ℏ2
+𝑚 𝑏𝛿(𝒓)
+Fermi pseudopotential
+• Scattering length b
+• Pointlike interaction due to nuclear
+forces
+• Uniform form factor (Fourier
+transform is a constant)
+
+6
+Imaging with neutrons
+Antares beamline at FRM - II
+
+7
+Detection of thermal or cold neutrons
+
+8
+Detection of thermal or cold neutrons
+3He tube
+• Neutron capture 3He → 3H + 1H (764
+keV)
+• Impact ionization in the gas tube →
+current pulse
+• Gamma rays interact weakly with 3He →
+excellent discrimination of neutron
+events vs. background counts
+
+9
+6Li scintillator
+• Glass material enriched with 6Li
+• Neutron capture 6Li → 3H + α1 (4.78 MeV)
+• Reaction products have limited range in the Li-
+containing material (~ 10 μm)
+• Conversion of the reaction energy into UV/visible
+scintillation light → detection with regular CCD
+camera (spatial resolution) or photomultiplier tube
+(energy resolution).
+
+10
+Imaging with neutrons…work well
+Antares beamline at FRM - II
+© FRM-II
+
+11
+Spectroscopy with neutrons
+© FRM-II
+Triple axes spectrometer
+𝑞 = 𝑘 − 𝑘′
+Δ𝐸 = ℏ𝜔 = 𝐸 − 𝐸′
+Inelastic scattering
+
+12
+Phonon dispersion of GaAs
+→ sound wave
+→ interacts with light
+Number of phonon branches: 3N
+N: number of atoms in the primitive unit cell
+
+13
+Phonon dispersion of GaAs
+→ sound wave
+→ interacts with light
+Zinc-blende structure
+
+14
+Neutron scattering from magnetic structures
+Skyrmion lattice
+Prof. Christian Pfleiderer
+Science 323, 915-919 (2009)
+
+15
+Nobel Prize in Physics 1961
+
+16
+Nobel Prize in Physics 1961
+The linewidth of the transition is
+
+17
+• In a crystal the mass M becomes very large
+(collective excitation of lattice vibrations)
+→ recoil energy becomes negligible
+• More accurate picture:
+- the energy of the lattice vibrations is quantized
+(phonons)
+- at low enough temperature a significant fraction
+of the absorption processes do not generate a
+phonon excitation
+
+18
+In practice: moving source modulates the X-ray energy via Dopppler effect
+
+19
+The case of 57Fe

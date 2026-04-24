@@ -1,0 +1,410 @@
+## Die Fermi-Fläche
+
+Fläche konstanter Energie, welche die besetzten Zustände (bei $T=0$ ) einschließt.
+Beachte: $k_{F}=$ Fermi-Wellenvektor hängt von Ladungsträgerdichte ab.
+
+2D: $k_{F}=\sqrt{2 \pi n_{s}}$
+3D: $k_{F}=\sqrt[3]{3 \pi^{3} n_{s}}$
+
+Wenn die Fermi-Fläche innerhalb der 1.BZ liegt erhält man eine Kugel (freie Elektronen).
+
+Geht die Fermikugel über die erste Brillouinzone hinaus, so tritt Bragg Reflektion auf und die Kugel wird deformiert.
+
+![This diagram depicts the first Brillouin zone (BZ) in reciprocal space, showing the wavevector components \(k_x\) and \(k_y\) with labeled energy band indices. It also indicates the Fermi wavevector \(k_F\) within the first Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-01_1148_1309_471_1611.jpg)
+Wellenvektor $k_{x}$
+Die ersten 5 Brillouinzonen eines 2D quadratischen Gitters.
+
+nach Hunklinger
+A. Holleitner WS 25/26
+
+## Die Fermi-Fläche
+
+Fläche konstanter Energie, welche die besetzten Zustände (bei $T=0$ ) einschließt.
+Beachte: $k_{F}=$ Fermi-Wellenvektor hängt von Ladungsträgerdichte ab.
+
+2D: $k_{F}=\sqrt{2 \pi n_{s}}$
+3D: $k_{F}=\sqrt[3]{3 \pi^{3} n_{s}}$
+
+Wenn die Fermi-Fläche innerhalb der 1.BZ liegt erhält man eine Kugel (freie Elektronen).
+
+Geht die Fermikugel über die erste Brillouinzone hinaus, so tritt Bragg Reflektion auf und die Kugel wird deformiert.
+
+![This diagram depicts the first Brillouin zone (1. BZ) in reciprocal space for a square lattice, showing the wavenumber vector components \(k_x\) and \(k_y\), with a Fermi wavevector \(k_F\) indicated inside the zone. It also labels different regions with integers, likely representing energy band indices or quantum numbers within the Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-02_1148_1309_471_1611.jpg)
+Wellenvektor $k_{x}$
+Die ersten 5 Brillouinzonen eines 2D quadratischen Gitters.
+
+nach Hunklinger
+A. Holleitner WS 25/26
+
+## Die Fermi-Fläche (in 2D)
+
+![This diagram depicts the Fermi surface in the first Brillouin zone for a two-dimensional square lattice, showing the free electron Fermi surface (a) and the Fermi surface modified by a periodic potential (b). It illustrates how the Fermi surface changes shape due to the presence of a lattice potential in reciprocal space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-03_858_2486_364_343.jpg)
+Bild 8.29: Darstellung der Fermi-Kugel mit $k_{\mathrm{F}}>\pi / a$ im reduzierten Zonenschema. Man beachte, dass sich die blau getönten Elektronenzustände in den beiden Bildern in unterschiedlichen Bändern befinden. a) In den Ecken der 1. Brillouin-Zone sind Zustände noch unbesetzt. b) Durch die Rückfaltung der Zustände der 2. Brillouin-Zone sind „Elektronentaschen“ entstanden.
+
+## Fermi-Fläche (in 2D)
+
+![This diagram depicts the Fermi surface and Brillouin zone in momentum space for a crystalline solid, showing the energy dispersion relation and the corresponding Fermi surfaces labeled A and B within the first Brillouin zone and an extended zone scheme.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-04_720_1376_85_591.jpg)
+
+reduziertes Zonenschema
+![The diagram depicts reduced Brillouin zones (BZ) and their corresponding Fermi surface reconstructions for different cases labeled 1, 2, and 3 BZ, illustrating how the Fermi surface changes under zone folding or reconstruction. It specifically compares the trivial case B with non-trivial cases A, showing the evolution of the Fermi surface topology in reciprocal space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-04_983_1301_140_1877.jpg)
+
+Fall A Fermi-Fläche reicht auch in die 3. BZ hinein
+
+![The image depicts periodic zone schemes (periodisches Zonenschema) showing the first, second, and third Brillouin zones (BZ) in reciprocal space for different lattice structures. It illustrates the shapes and boundaries of these Brillouin zones for various crystal lattice types.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-04_566_2025_922_713.jpg)
+Abb. 8.26: Fermi-Fläche eines quadratischen Gitters mit freien Elektronen. Oben links ist der parabolische Verlauf der Dispersionskurve zusammen mit zwei möglichen Fermi-Kreisen $A$ und $B$ bei unterschiedlicher Elektronenzahl pro Gitterplatz gezeigt. Oben in der Mitte und rechts sind die ersten drei Brillouin-Zonen im ausgedehnten und reduzierten Zonenschema, unten im periodischen Zonenschema gezeigt. Für die beiden Fermi-Energien sind die Füllung der Brillouin-Zonen und die daraus resultierenden Fermi-Flächen gezeigt. Die 4. Brillouin-Zone ist nicht mehr gezeigt.
+
+## Dispersionkurve von quasi-freien Elektronen
+
+An der Zonengrenze gibt es stehende Wellen.
+
+![This diagram is an energy band structure plot showing the energy \(E\) as a function of the wave vector \(k_x\), illustrating the opening of an energy gap \(2U_1\) at the Brillouin zone boundary \(\pi/a\) due to a perturbation or potential in a one-dimensional crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-05_1197_1128_484_256.jpg)
+Bild 8.18: Dispersionskurven von quasi-freien Elektronen in einer eindimensionalen Probe. Das periodische Potenzial bewirkt bei $k_{x}=\pi / a$ die Aufspaltung $\left|2 \widetilde{V}_{\boldsymbol{g}}\right|$. Die Lösungen für das leere Gitter sind gestrichelt gezeichnet.
+
+Die Komponente der Gruppengeschwindigkeit $\boldsymbol{v}_{\text {gruppe }}=\boldsymbol{\nabla}_{\mathbf{k}} E / \hbar$ senkrecht zur Zonengrenze verschwindet dort.
+
+## Wechselwirkung der Elektronen an den Rändern der BZ
+
+![This diagram depicts a 3D contour plot of a spherical harmonic function, showing the angular distribution of the function's amplitude on the surface of a sphere, with contour lines representing regions of equal value.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-06_968_970_296_117.jpg)
+Bild 8.30: Linien konstanter Energie unter Berücksichtigung der Wechselwirkung der Elektronen mit dem periodischen Gitter. Im erweiterten Zonenschema sind die ersten drei BrillouinZonen und ein Teil der vierten dargestellt. Für eine willkürlich gewählte Elektronendichte ist die Besetzung der Zustände durch blaue Färbung hervorgehoben.
+
+![This diagram depicts an energy band structure in a solid, showing the formation of an energy band gap of size 2U₁ at the Brillouin zone boundary (kx = π/a) due to electron wavevector interactions in a periodic potential.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-06_733_691_408_1302.jpg)
+
+An der Zonengrenze gibt es stehende Wellen.
+
+Die Komponente der Gruppengeschwindigkeit $\boldsymbol{v}_{\text {gruppe }}=\boldsymbol{\nabla}_{\mathbf{k}} E / \hbar$ senkrecht zur Zonengrenze verschwindet dort.
+
+Das heißt, der Gradient von $E(\boldsymbol{k})$ verläuft parallel zu den Grenzen der Brillouin-Zone (Bandlücken variieren entlang der BZ-Grenze), und die Linien konstanter Energie, $E(\boldsymbol{k})=$ const, schneiden die Brillouin-Zonen senkrecht.
+
+## Wechselwirkung der Elektronen an den Rändern der BZ
+
+![This diagram depicts the extended zone scheme of the Fermi surface in a crystal, showing the differences between free electrons (freie Elektronen) and crystal electrons (Kristallelektronen) across the first, second, and third Brillouin zones (BZ). It illustrates how the Fermi surface and electron behavior vary in reciprocal space for free versus crystal electrons.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-07_1231_1923_244_179.jpg)
+Abb. 8.27: Qualitativer Verlauf der Fermi-Flächen von freien Elektronen (links) und Kristallelektronen (rechts) für ein quadratisches Gitter. In der Mitte sind die ersten drei Brillouin-Zonen im ausgedehnten Zonenschema gezeigt. Eingezeichnet ist hier der Verlauf der Fermi-Fläche von freien Elektronen (Kreis, gestrichelt, orange) und der von Kristallelektronen (durchgezogene Linie, blau). Die 4. Brillouin-Zone ist nicht mehr gezeigt.
+
+
+
+Das heißt, der Gradient von $E(\boldsymbol{k})$ verläuft parallel zu den Grenzen der Brillouin-Zone (Bandlücken variieren entlang der BZ-Grenze), und die Linien konstanter Energie, $E(\boldsymbol{k})=$ const, schneiden die Brillouin-Zonen senkrecht.
+
+## Zusammenfassung (vereinfacht)
+
+1) Zeichne Fermi-Kugel freier Elektronen
+2) Deformiere die Fermi-Kugel leicht im Bereich der Bragg-Ebenen.
+3) Schiebe die Teile der $n$-ten Brillouin-Zone mittels eines reziproken Gittervektors in die 1.BZ.
+
+## 3D Brillouin-Zonen
+
+(a) bcc
+(b) fcc
+![This image depicts the stellations of three different polyhedra, showing the original solid on the left and its corresponding stellated form on the right for each type labeled I, II, and III.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-09_1377_1029_382_430.jpg)
+
+Oberflächen der ersten, zweiten und dritten Brillouin-Zone für (a) kubischraumzentrierte und (b) kubischflächenzentrierte Kristalle.
+
+Nur die äußeren Oberflächen sind dargestellt. Aus der Definition der Brillouin-Zonen folgt, dass die innere Oberfläche der n-ten Zone identisch ist mit der äußeren Oberfläche der ( $\mathrm{n}-1$ )ten Zone.
+
+Offenbar werden die Oberflächen, welche die Zonen begrenzen, mit zunehmender Ordnungszahl der Zone komplexer.
+
+Nach R. Lück, Dissertation Technische Hochschule Stuttgart (1965).
+
+## 3D Fermi-Fläche (fcc)
+
+![This image depicts three different geometric configurations of a truncated cuboctahedron with varying degrees of surface smoothing or rounding. It shows the progressive transformation of the polyhedron's edges and vertices from sharp (a) to increasingly rounded or smoothed forms (b and c).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-10_790_2590_389_341.jpg)
+Bild 8.32: Fermi-Flächen eines dreiwertigen Metalls mit schwachem periodischen Potenzial, dargestellt im reduzierten Zonenschema. a) 2. Brillouin-Zone. Die besetzten Zustände liegen am Rand, die Zustände im Innern sind unbesetzt. b) 3. Brillouin-Zone im Modell quasi-freier Elektronen. c) 3. Brillouin-Zone bei schwacher Wechselwirkung wie im Fall von Aluminium. (Nach R. Lück, Dissertation, TH Stuttgart (1965).)
+
+## Beispiele
+
+Natrium:
+[Ne] 3s ${ }^{1}$ bcc, 1. Band halb gefüllt
+![This image depicts the shape of a d-orbital electron cloud in an atom, specifically showing the spatial distribution of electron density within a cubic crystal field. It illustrates how the d-orbital is distorted or oriented relative to the surrounding cubic symmetry.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-11_1025_1070_461_505.jpg)
+
+![This diagram depicts the Fermi surface of copper (Kupfer) in its face-centered cubic (fcc) crystal structure, specifically showing the 6th electronic band.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-11_1039_1247_457_1721.jpg)
+
+## Beispiele
+
+![This diagram is a band structure and density of states (DOS) plot for copper (Cu), showing the energy levels of electrons as a function of the wavevector (k) along high-symmetry points in the Brillouin zone, with the Fermi energy level (E_F) indicated. The right panel displays the corresponding electronic density of states as a function of energy.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-12_1027_1647_487_224.jpg)
+Bild 8.33 aus Hunklinger
+R. Courths, Phys. R. 112, 53 (1984).
+H. Eckhardt et al., J. Phys. F14, 97 (1984).
+
+Kupfer:
+[Ar] $3 \mathrm{~d}^{10} 4 \mathrm{~s}^{1}$
+fcc, 6. Band
+![This diagram depicts a 3D visualization of a mathematical surface known as a gyroid, shown within a cubic unit cell. It illustrates the complex minimal surface structure with periodic boundary conditions used in materials science and physics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-12_986_986_510_1979.jpg)
+
+## http://www.phys.ufl.edu/fermisurface/
+
+| Li | Be | The Fermi Surface Database <br> (click icons) |  |  |  |  |  |  |  |  |  |  | C |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Na | Mg |  |  |  |  |  |  |  |  |  |  | Al | Si |
+| K | Ca | Sc | Ti | v | Cr | Mn | Feup- | Coup | Niup | Cu | Zn | Ga | Ge |
+| Rb | Sr | Y | Zr |  | Mo | Tc | Ru | Rh | Pd | Ag | Cd | In | Sn |
+| Cs | Ba | Lu | Hf | Ta | W | Re | Os | Ir | Pt | Au | Hg | Tl | Pb |
+
+氷氷
+![This image depicts the electron density isosurfaces of actinium (Ac) and thorium (Th) atoms, illustrating their spatial electron distribution and bonding characteristics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-13_230_472_1430_471.jpg)
+
+
+Aluminium:
+[Ne] 3s²3p fcc, 2 . und 3. Band
+[Ar] $3 \mathrm{~d}^{10} 4 \mathrm{~s}^{1}$ fcc, 6. Band
+
+Kupfer:
+![This diagram depicts a Fermi surface in a crystalline solid, showing the shape of the constant energy surface in momentum space for electrons in the material. The surrounding wireframe represents the first Brillouin zone of the crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-14_981_981_512_1980.jpg)
+
+## Experimentelle Bestiminung der ferni-flachen
+
+1. de Haas-van Alphen-Effekt
+2. Shubnikov-de Haas-Effekt
+3. Zyklotronresonanz
+4. anomaler Skin-Effekt
+5. Magnetwiderstand
+6. Ultraschall-Absorption
+![This diagram depicts the motion of an electron in a magnetic field, showing the electron orbit (Elektronenorbit) around a magnetic field vector \( B_z \) and the cyclotron frequency formula \(\omega_c = eB/m_c\). It illustrates the relationship between the magnetic field, electron orbit, and an applied radio frequency electric field \( E_{rf} \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-15_465_795_445_1453.jpg)
+![This image shows electron spin resonance (ESR) absorption spectra for silicon (Si) and germanium (Ge) at 24 GHz and 4 K, depicting absorption peaks corresponding to light holes, electrons, and heavy holes as a function of magnetic field strength.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-15_1077_775_432_2375.jpg)
+
+## Impuls von Bloch-Elektronen
+
+Erwartungswert des Impulses eines Elektrons im Bloch-Zustand | $\mathrm{n}, \mathbf{k}>$
+
+$$
+\begin{aligned}
+& <\boldsymbol{p}>_{\mathrm{n}, \mathbf{k}}=<\mathrm{n}, \mathbf{k}|\boldsymbol{p}| \mathrm{n}, \mathbf{k}> \\
+& =\int \psi_{\mathrm{n}, \boldsymbol{k}}^{*}(-\mathrm{i} \hbar \boldsymbol{\nabla}) \psi_{n, \mathbf{k}} d^{3} \boldsymbol{r} \quad \begin{aligned}
+\mid \psi_{n, \mathbf{k}} & =e^{i \boldsymbol{k} \boldsymbol{r}} \cdot u_{n, \boldsymbol{k}}(\boldsymbol{r}) \\
+\mid \boldsymbol{\nabla} \psi_{n, \mathbf{k}} & =\boldsymbol{\nabla}\left(e^{i \boldsymbol{k} \boldsymbol{r}} \cdot u_{n, \boldsymbol{k}}(\boldsymbol{r})\right) \\
+& =e^{i \boldsymbol{k} \boldsymbol{r}} \cdot \boldsymbol{\nabla} u_{n, \boldsymbol{k}}(\boldsymbol{r})+\mathrm{i} \boldsymbol{k} \cdot e^{i \boldsymbol{k} \boldsymbol{r}} \cdot u_{n, \boldsymbol{k}}(\boldsymbol{r}) \\
+& =e^{i \boldsymbol{k} \boldsymbol{r}} \cdot(\boldsymbol{\nabla}+\mathrm{i} \mathbf{k}) \cdot u_{n, \boldsymbol{k}}(\boldsymbol{r})
+\end{aligned} \\
+& =\int \mathrm{u}_{\mathrm{n}, \boldsymbol{k}}^{*}(\mathbf{r}) e^{-i \boldsymbol{k} r} e^{i \boldsymbol{k} \boldsymbol{r}} \cdot(-\mathrm{i} \hbar)(\boldsymbol{\nabla}+\mathrm{i} \mathbf{k}) \cdot u_{n, \boldsymbol{k}}(\boldsymbol{r}) d^{3} \boldsymbol{r} \\
+& =\int \mathrm{u}_{\mathrm{n}, \boldsymbol{k}}^{*}(\mathbf{r}) \cdot(\hbar \mathbf{k}-\mathrm{i} \hbar \boldsymbol{\nabla}) \cdot u_{n, \boldsymbol{k}}(\boldsymbol{r}) d^{3} \boldsymbol{r} \\
+& =\hbar \mathbf{k}-\mathrm{i} \hbar \int \mathrm{u}_{\mathrm{n}, \boldsymbol{k}}^{*}(\mathbf{r}) \cdot \boldsymbol{\nabla} u_{n, \boldsymbol{k}}(\boldsymbol{r}) d^{3} \boldsymbol{r} \neq \hbar \mathbf{k}
+\end{aligned}
+$$
+
+## Impuls von Bloch-Elektronen
+
+Erwartungswert des Impulses eines Elektrons im Bloch-Zustand $\mid \mathrm{n}, \mathbf{k}>$
+
+<\boldsymbol{p}>_{\mathrm{n}, \mathbf{k}}=\hbar \mathbf{k}-\mathrm{i} \hbar \int \mathrm{u}_{\mathrm{n}, \boldsymbol{k}}^{*}(\mathbf{r}) \cdot \boldsymbol{\nabla} u_{n, \boldsymbol{k}}(\boldsymbol{r}) d^{3} \boldsymbol{r} \neq \hbar \mathbf{k}
+
+## Bemerkungen:
+
+- Nur bei freiem Elektron gilt: $\quad u_{n, k}(\boldsymbol{r})=$ const. $\Rightarrow \quad\langle\boldsymbol{p}\rangle_{\mathrm{n}, \mathbf{k}}=\hbar \mathbf{k}$
+- Kristall-Impuls (oder Quasi-Impuls) ist die durch die Gitterperiodizität modifizierte Impulsgröße $\hbar \mathbf{k}$, die den Wellencharakter eines Elektrons im periodischen Potential beschreibt, und ist eine Größe der Bandstruktur-Theorie.
+- Mechanische Impuls ist der tatsächliche physikalische Impuls des Bloch-Elektrons, gegeben durch $m \mathbf{v}$, also „Masse mal Geschwindigkeit“ (QM-Erwartungswert), und ist der Impuls, der bei der Beschreibung der Bloch-Elektronen mit äußeren Feldern (elektrisches und magnetisches Feld) benutzt wird.
+
+
+## Zusammenhang zwischen Impuls und Energie
+
+Taylor-Reihenentwicklung der Energie um $\boldsymbol{k}$.
+
+E_{n}(\boldsymbol{k}+\boldsymbol{q}) \approx E_{n}(\boldsymbol{k})+\boldsymbol{q} \boldsymbol{\nabla}_{\mathbf{k}} E_{n}(\boldsymbol{k})+\ldots
+
+Gradient bzgl. k
+Hamilton-Funktion für bestimmtes $\boldsymbol{k}$, wobei $H_{\mathbf{k}}$ nur auf gitterperiodischen Anteil wirkt.
+
+\begin{aligned}
+& H=\frac{1}{2 \mathrm{~m}} \nabla^{2}+V(\boldsymbol{r}), \text { mit } \psi=u_{n, \boldsymbol{k}}(r) e^{i \boldsymbol{k} \boldsymbol{r}} \text { eingesetzt. } \\
+\Rightarrow & H_{\boldsymbol{k}}^{\left(\stackrel{(*)}{ }^{\circ}\right.}=\frac{1}{2 \mathrm{~m}}(\hbar \boldsymbol{k}-\mathrm{i} \hbar \nabla)^{2}+V(\boldsymbol{r})
+\end{aligned}
+
+und für $\boldsymbol{k}+\boldsymbol{q}$ :
+
+\Rightarrow H_{\boldsymbol{k}+\boldsymbol{q}}=\frac{1}{2 \mathrm{~m}}(\hbar(\boldsymbol{k}+\boldsymbol{q})-\mathrm{i} \hbar \boldsymbol{\nabla})^{2}+V(\boldsymbol{r}) \approx H_{\boldsymbol{k}}+\underbrace{\frac{\hbar}{\mathrm{m}} \boldsymbol{q} \cdot(\hbar \boldsymbol{k}-\boldsymbol{i} \hbar \boldsymbol{\nabla})}_{\delta H=\text { kleine Störung von } H_{\boldsymbol{k}}, \text { wenn }|\boldsymbol{q}| \ll|\boldsymbol{k}|}
+
+⇒ Berechne Energieverschiebung in 1. Ordnung Störungstheorie: $\quad<u_{n, k}|\delta H| u_{n, k}>$
+
+E_{n}(\boldsymbol{k}+\boldsymbol{q}) & =E_{n}(\boldsymbol{k})+\int u_{\mathrm{n}, \mathbf{k}}^{*} \cdot \frac{\hbar}{m} \boldsymbol{q}(\hbar \boldsymbol{k}-i \hbar \boldsymbol{\nabla}) u_{n, \boldsymbol{k}} \mathrm{~d}^{3} \boldsymbol{r}+\ldots, \quad \text { mit } \psi_{n, \boldsymbol{k}}=u_{n, \boldsymbol{k}} e^{i \boldsymbol{k} \boldsymbol{r}} \\
+& \stackrel{\stackrel{(*)}{=}^{*}}{=} E_{n}(\boldsymbol{k})+\underbrace{\frac{\hbar}{m} \boldsymbol{q} \cdot \int \psi_{\mathrm{n}, \mathbf{k}}^{*} \cdot(-i \hbar \boldsymbol{\nabla}) \psi_{n, \boldsymbol{k}} \mathrm{~d}^{3} \boldsymbol{r}+\ldots,}_{\boldsymbol{q} \cdot \frac{\hbar}{\mathrm{m}}<\boldsymbol{p}>_{n, \boldsymbol{k}}} \\
+& =\underbrace{\text { Gestartet sind wir mit: }}_{\begin{array}{c}
+E_{n}(\mathbf{k})+\boldsymbol{q} \cdot \frac{\hbar}{m}<\boldsymbol{p}>_{n, \boldsymbol{k}}+\ldots \\
+\Rightarrow \nabla E_{n}(\mathbf{k})=\frac{\hbar}{m}<\boldsymbol{p}>_{n, \boldsymbol{k}}=\hbar<\boldsymbol{v}>_{n, \boldsymbol{k}} \\
+\text { Erwartungswert von Impuls und Geschwindigkeit } \\
+E_{n}(\mathbf{k})+\boldsymbol{q} \cdot \nabla E_{n}(\mathbf{k})+\ldots
+\end{array}}
+
+Geschwindigkeit eines Elektrons im Blochzustand $\psi_{n, \boldsymbol{k}}: \quad \boldsymbol{v}_{n, \boldsymbol{k}}=\frac{1}{\hbar} \boldsymbol{\nabla}_{\boldsymbol{k}} E_{n}(\mathbf{k})$
+
+Geschwindigkeit eines Elektrons im Blochzustand ist konstant und erleidet keine Streuung im periodischen Potential
+
+## Impuls und Energie Beispiele
+
+![This diagram depicts the electronic band structure of a solid, showing the energy bands (1. Band and 2. Band) separated by a band gap (Bandlücke) and illustrating the distinction between free electrons (freie Elektronen) and band electrons (Band-Elektronen). The accompanying equation relates the energy dispersion to the electron velocity at a specific wave vector \( k_0 \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-20_1283_1106_481_252.jpg)
+
+Walter Schottky Institut \& School of Natural Sciences
+
+![This diagram is an electronic band structure plot for silicon (Si), showing the energy levels (in eV) as a function of the crystal momentum (wave vector k) along high-symmetry points in the Brillouin zone. It specifically highlights the band gap energy (Eg) and the group velocity expression for electrons at a particular k-point.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-20_1509_1165_237_1841.jpg)
+Bild 8.8 aus Gross / Marx Bild 10.3 aus Hunklinger
+
+## Bewegungsgleichung im $\boldsymbol{k}$-Raum
+
+## Semiklassische Näherung
+
+Einfluss eines langsam veränderlichen elektrischen Feldes (d.h. $h v \ll E_{G}$ ) auf die an einem Elektron verrichtete Arbeit.
+
+![This diagram depicts a wave function in a one-dimensional infinite potential well (quantum well) showing the wavelength λ, the lattice spacing a, and a small interval δx used to illustrate the probability density (shaded area) of finding a particle within that interval.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-21_632_1886_757_1021.jpg)
+Bild 9.1: Typische Längenskalen in der semiklassischen Näherung. Es muss die Beziehung Gitterkonstante $a \ll$ Ausdehnung $\delta x$ des Wellenpakets $\ll$ Wellenlänge $\lambda$ der angelegten äußeren Störung gelten. Die Größenverhältnisse sind nicht maßstabsgerecht wiedergegeben.
+
+## Bewegungsgleichung im $\boldsymbol{k}$-Raum (freies Elektron)
+
+## Semiklassische Näherung
+
+Einfluss eines langsam veränderlichen elektrischen Feldes (d.h. $h v \ll E_{G}$ ) auf die an einem Elektron verrichtete Arbeit.
+
+Elektron wird mit der Zeit $t$ in andere Zustände $\boldsymbol{k}(\mathrm{t})$ überführt.
+$\delta W=-\mathrm{e} \boldsymbol{E} \cdot \boldsymbol{v} \cdot \delta \mathrm{t}=\frac{\partial E_{n}(\boldsymbol{k})}{\partial \boldsymbol{k}} \delta \boldsymbol{k}$
+Arbeit Kraft • Weg $\_\_\_\_$ ,
+
+\nabla_{\boldsymbol{k}} E_{n}(\boldsymbol{k}) \delta \boldsymbol{k}
+
+mit $\boldsymbol{v}=\frac{1}{\hbar} \nabla_{\boldsymbol{k}} E_{n}(\boldsymbol{k}):-\mathrm{e} \boldsymbol{E} \frac{1}{\hbar} \nabla_{\boldsymbol{k}} \widetilde{E_{n}}(\boldsymbol{k})=\nabla_{\boldsymbol{k}} \stackrel{\mathscr{F}}{E_{n}}(\boldsymbol{k}) \frac{d \boldsymbol{k}}{d t}$
+$\Rightarrow \hbar \frac{\mathrm{d} \boldsymbol{k}}{\mathrm{dt}}=-\mathrm{e} \boldsymbol{E}=\boldsymbol{F}$
+Für das freie Elektron ist die Antwort auf ein äußeres Feld gleich der zeitlichen Ableitung des Kristallimpulses $\hbar \boldsymbol{k}$.
+
+Allgemein für freies Elektron mit $\boldsymbol{E}$ - und $\boldsymbol{B}$-Feld: : $\quad \hbar \frac{\mathrm{d} \boldsymbol{k}}{\mathrm{dt}}=-e(\boldsymbol{E}+\boldsymbol{v} \times \boldsymbol{B})$
+
+## Elektronen-Bewegung im Magnetfeld
+
+B-Feld:
+
+![This diagram depicts the Fermi surface topology in a two-dimensional Brillouin zone, showing the effect of a perturbation (ε) on the electronic band structure and the resulting changes in the Fermi surface contours.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-23_669_668_411_179.jpg)
+(a)
+
+![This diagram depicts the Fermi surface and the gradient of the energy dispersion (∇kε) in momentum space for a crystalline solid, illustrating the shape and directional properties of electronic states near the Fermi level.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-23_669_686_411_913.jpg)
+(b)
+
+![This diagram depicts a vector field pattern around four square-shaped regions with arrows indicating rotational flow, and it specifically highlights the gradient of a quantity denoted as \( \nabla_k \epsilon \) at one location.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-23_669_677_411_1674.jpg)
+(c)
+
+\hbar \frac{\mathrm{d} \boldsymbol{k}}{\mathrm{dt}} & =-e(\boldsymbol{v} \times \boldsymbol{B}) \\
+& =-\frac{e}{\hbar} \cdot\left(\nabla_{\mathbf{k}} E \times \boldsymbol{B}\right)
+
+⇒ Trajektorien mit $E(\boldsymbol{k})=$ const .
+
+Abb. 9.12: Bewegung des Wellenvektors $\mathbf{k}$ eines Kristallelektrons auf einer Fläche konstanter Energie für ein senkrecht zur Zeichenebene gerichtetes Magnetfeld (Feld zeigt aus Zeichenebene heraus). (a) Offene Bahnkurve, (b) geschlossene Bahnkurve (elektronenartig) und (c) geschlossene Bahnkurve (lochartig).
+
+## Elektronen-Bewegung im Magnetfeld
+
+## Bemerkungen:
+
+- Elektronenbahnen:
+- Lochbahn:
+- Trajektoren im Ortsraum: Drehe $k$-Raum Trajektorie um $90^{\circ}$ und multipliziere mit $\frac{\hbar}{e B}$. Auch im Ortsraum laufen freie Elektronen auf Kreisbahnen mit Radius:
+Elektronen laufen gegen den Uhrzeigersinn um die Fermi-Fläche, wie ein Elektron im Vakuum bei angelegtem Magnetfeld.
+
+Elektronen laufen im Uhrzeigersinn um die FermiFläche, so als ob sie eine positive Ladung hätten.
+
+Drehe $k$-Raum Trajektorie um $90^{\circ}$ und multipliziere Kreisbahnen mit Radius:
+
+& R_{c}=\frac{v_{F}}{\omega_{c}}=\frac{\hbar k_{F} \cdot \mathrm{~m}}{\mathrm{~m} \cdot e B}=\frac{\hbar k_{F}}{e B} \\
+& \text { und } \quad \omega_{c}=\frac{\mathrm{eB}}{\mathrm{~m}}
+
+\[
+
+\]
+
+
+![This diagram depicts the Fermi surface of copper (Cu), showing different types of electron orbits: closed electron-like orbits, open electron-like orbits, and closed hole-like orbits, along with the corresponding velocity equation for electrons on the Fermi surface.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-25_1094_2873_365_423.jpg)
+Abb. 9.13: Fermi-Fläche von Kupfer mit offenen und geschlossenen Bahnen. Im periodischen Zonenschema (rechts) ist die Fermi-Fläche durch die Hälse verbunden und ermöglicht somit offene Bahnen. Die geschlossenen Bahnen können sowohl elektronenartig als auch lochartig sein.
+
+## Experimentelle Bestiminung der ferni-flachen
+
+1. de Haas-van Alphen-Effekt
+2. Shubnikov-de Haas-Effekt
+3. Zyklotronresonanz
+4. anomaler Skin-Effekt
+5. Magnetwiderstand
+6. Ultraschall-Absorption
+![This diagram depicts the motion of an electron in a magnetic field, showing the electron orbit (Elektronenorbit) with the cyclotron frequency formula (ω_c = eB/m_c) and the orientation of the magnetic field (B_z) and an applied radio frequency electric field (E_rf).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-26_465_795_445_1453.jpg)
+![This image shows electron spin resonance (ESR) absorption spectra for silicon (Si) and germanium (Ge) at 24 GHz and 4 K, depicting absorption peaks corresponding to electrons and light and heavy holes as a function of magnetic field strength.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-26_1077_775_432_2375.jpg)
+
+## Die effektive Masse
+
+In Komponentenschreibweise:
+
+| $\frac{d \boldsymbol{v}(\boldsymbol{k})}{d t}=\underbrace{\frac{1}{\hbar^{2}} \boldsymbol{\nabla}_{k}\left[\boldsymbol{\nabla}_{k} E_{n}(\boldsymbol{k})\right]}_{\left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}} \cdot \boldsymbol{F}$ |
+| :---: |
+| $\underbrace{}$ |
+
+\frac{d \boldsymbol{v}_{\mathrm{i}}(\boldsymbol{k})}{d t}=\underbrace{\sum_{\mathrm{j}} \frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}}} F_{\mathrm{j}} ; \quad i, j=x, y, \text { und } z
+
+$\boldsymbol{m}^{*}=$ Tensor der effektiven Masse
+
+\left(\frac{1}{m^{*}}\right)_{\mathrm{ij}}=\frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}} \quad \begin{aligned}
+& \text { Definiert den effektiven } \\
+& \text { Massentensor im Punkt } \boldsymbol{k} \\
+& \text { eines Bandes. }
+
+
+- Mit Hilfe des Tensors der effektiven Masse $\boldsymbol{m}^{*}$ wird die Verbindung zur klassischen Bewegungsgleichung $\boldsymbol{F}=m \mathbf{a}$ hergestellt.
+- Die reziproke effektive Masse ist durch die Krümmung der Energiefläche bestimmt. In ihr ist die Wechselwirkung der Elektronen mit den Atomrümpfen versteckt, die diese bei ihrer Bewegung im Festkörper erfahren.
+- Die Kenntnis der Energiedispersion $E(\boldsymbol{k})$ reicht zur Beschreibung der Elektronenbewegung.
+- Man bezeichnet das hier entwickelte Konzept zur Beschreibung der Elektronenbewebung im Kristall als „effektive Massennäherung“.
+
+
+## Die effektive Masse
+
+In Komponentenschreibweise:
+![This equation depicts the semiclassical equation of motion for the velocity \( v(k) \) of an electron wave packet in a crystal under an external force \( F \), showing how the inverse effective mass tensor \( (m^*)^{-1} \) relates to the second derivative of the energy band \( E_n(k) \) with respect to the crystal momentum \( k \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-28_374_783_368_307.jpg)
+$\boldsymbol{m}^{*}=$ Tensor der effektiven Masse
+
+\frac{d \boldsymbol{v}_{\mathrm{i}}(\boldsymbol{k})}{d t}=\underbrace{\sum^{\frac{1}{\hbar^{2}}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}}}_{\mathrm{j}} F_{\mathrm{j}} ; \quad i, j=x, y, \text { und } z
+
+$\left(\frac{1}{m^{*}}\right)_{\mathrm{ij}}=\frac{1}{\hbar^{2}} \frac{\partial^{2} E_{n}(\boldsymbol{k})}{\partial k_{\mathrm{i}} \partial k_{\mathrm{j}}}$
+Definiert den effektiven Massentensor im Punkt k eines Bandes.
+
+Die Tensoren der reziproken effektiven Masse bzw. der effektiven Masse $\left(1 / \mathrm{m}^{*}\right)_{\alpha \beta}$ und $m^{*}{ }_{\alpha \beta}$ sind symmetrisch. Sie lassen sich daher auf Hauptachsen transformieren, wodurch sich die Anzahl der unabhängigen Komponenten auf höchstens drei reduziert:
+
+\left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}=\left(\begin{array}{ccc}
+1 / m_{1} & 0 & 0 \\
+0 & 1 / m_{2} & 0 \\
+0 & 0 & 1 / m_{3}
+\end{array}\right)
+
+## Die effektive Masse in 1D
+
+![This diagram depicts the energy dispersion relation \( E(k) \) and the corresponding effective mass \( m^* \) of an electron in a crystal lattice as functions of the wavevector \( k \). It shows how the electron energy varies with \( k \) and how the effective mass changes, including regions where it becomes negative near the band edges at \( k_1 \) and \( k_2 \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-29_1408_1336_372_519.jpg)
+Bild 9.2: Zusammenhang zwischen der Dispersionsrelation $E(k)$ und der effektiven Masse $m^{*}$ in eindimensionaler Darstellung.
+
+Walter Schottky Institut \& School of Natural Sciences
+
+Effektive Masse bei $k_{1}$ ist positiv, bei $k_{2}$ negativ (siehe später: Löcher)
+
+Je flacher die Parabel, desto größer die effektive Masse!
+
+## Parabolische Massennäherung in 1D
+
+![This diagram depicts the energy band structure in a crystal lattice, showing the relationship between energy \(E(k)\) and wave vector \(k\). It illustrates the effective mass approximation near the band edges with the parabolic energy dispersion \(E = \frac{\hbar^2 k^2}{2m^*}\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-30_599_1323_382_525.jpg)
+
+Effektive Masse bei $k_{1}$ ist positiv, bei $k_{2}$ negativ (siehe später: Löcher)
+
+1D und parabolische Dispersion
+$\Rightarrow \frac{\partial^{2} E}{\partial k^{2}}=\frac{\hbar^{2}}{m^{*}} \Rightarrow$ konstante effektive Masse
+
+Der Wert für $m^{*}$ kommt theoretisch aus Bandstrukturrechnungen, experimentell aus der Messung der Zyklotronresonanz. 3D Beispiel: Unterschiedliche Krümmung der Dispersion in $x-, y-$, und $z$-Richtung
+
+& E(\boldsymbol{k})=\frac{\hbar^{2} k_{x}^{2}}{m_{1}}+\frac{\hbar^{2} k_{y}^{2}}{m_{2}}+\frac{\hbar^{2} k_{z}^{2}}{m_{3}}, \operatorname{mit} \frac{1}{m_{i}}=\frac{1}{\hbar^{2}} \cdot \frac{\partial^{2} E_{n}}{\partial k_{i}^{2}} \\
+& \left(\boldsymbol{m}^{*}\right)^{-\mathbf{1}}=\left(\begin{array}{ccc}
+1 / m_{1} & 0 & 0 \\
+0 & 1 / m_{2} & 0 \\
+0 & 0 & 1 / m_{3}
+\end{array}\right) \Rightarrow \boldsymbol{m}^{*}=\left(\begin{array}{ccc}
+m_{1} & 0 & 0 \\
+0 & m_{2} & 0 \\
+0 & 0 & m_{3}
+\end{array}\right)
+
+## Effektive Masse in Silizium
+
+![This diagram is an electronic band structure plot showing the energy levels (in eV) of a material as a function of crystal momentum along the [111], [000], and [100] directions. It specifically depicts the conduction and valence bands, highlighting the band gap and energy differences at critical points in the Brillouin zone.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-31_1412_940_286_392.jpg)
+
+Unterschiedliche effektive Massen für unterschiedliche Richtungen der Elektronen im Leitungsband von Si: $m_{1}=m_{2} \neq m_{3}$
+
+Energiebänder des Siliziums. Das Leitungsband-Minimum in Richtung [100], verursacht die Ellipsoide konstanter Energie in der Abbildung oben.
+
+Das Valenzbandmaximum tritt bei $k=0$ auf, wo sich zwei entartete Bänder mit unterschiedlichen Krümmungen treffen, so dass es 'leichte Löcher' und 'schwere Löcher' gibt.
+
+## Blochoszillationen
+
+![The image depicts (a) the velocity and energy dispersion relation as functions of the wave vector \( k_x \) in a periodic potential, and (b) the oscillatory displacement \( x \) of a particle over time \( t \), illustrating the phenomenon of Bloch oscillations in a crystal lattice under an electric field.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/bf7ed117-60ac-4b56-bb26-0017da92308a/ac251c7a-374e-4682-8832-6b491727d6ba-32_978_2051_359_531.jpg)
+
+Bild 9.3: Elektronenbewegung unter dem Einfluss eines konstanten elektrischen Feldes $-\mathcal{E}_{x}$. a) Geschwindigkeit (durchgezogene Kurve) und Energie (strich-punktierte Kurve) als Funktion der Wellenzahl: An der Grenze der Brillouin-Zone „springen“ die Elektronen im reduzierten Zonenschema von $\pi / a$ nach $-\pi / a$. b) Zeitlicher Verlauf der räumlichen Auslenkung: Es tritt eine oszillatorische Bewegung um den Mittelwert $x_{0}$ auf. Als Anfangsbedingung wurde $k(t=0)=0$ gewählt.
+

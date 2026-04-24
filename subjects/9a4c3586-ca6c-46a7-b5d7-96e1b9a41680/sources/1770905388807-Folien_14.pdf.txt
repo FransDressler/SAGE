@@ -1,0 +1,83 @@
+## Gitterdynamik
+
+Gesucht wird die Frequenz einer Gitterschwingung in Abhängigkeit vom Wellenvektor
+
+$$
+q\left(|q|=\frac{2 \pi}{\lambda}\right)
+$$
+
+## Die allgemeine Bewegungsgleichung
+
+$\boldsymbol{u}_{\mathrm{n}, \alpha}: \quad$ Momentane Auslenkung des Basisatoms $\alpha$ in der Einheitszelle ( $\mathrm{n}_{1}, \mathrm{n}_{2}, \mathrm{n}_{3}$ ) mit:
+![This diagram depicts the position vector decomposition in a crystal lattice, showing how the position of an atom within an elementary cell is expressed as the sum of the lattice vector and the basis vector of the atom within that cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-1_605_930_396_2274.jpg)
+
+\boldsymbol{R}_{\mathbf{n}}=n_{1} \mathbf{a}_{1}+n_{2} \mathbf{a}_{2}+n_{3} \mathbf{a}_{3}
+
+Newton: $\quad m_{\alpha} \ddot{u}_{\mathbf{n} \alpha \mathrm{i}}+\sum_{\mathbf{m} \beta \mathrm{j}} \phi_{\mathbf{n} \alpha \mathrm{i}}^{\mathbf{m} \beta \mathrm{j}} u_{\mathbf{m} \beta \mathrm{j}}=0 \quad$ Harmonische Näherung!
+$\phi_{\mathbf{n} \alpha \mathrm{i}}^{\mathbf{m} \beta \mathrm{j}} u_{\mathbf{m} \beta \mathrm{j}}: \quad$ die Kraft, die auf das Atom $\alpha$ in der $n$-ten Einheitszelle in $i$-Richtung ausgeübt wird, wenn das Atom $\beta$ in der m-ten Einheitszelle in Richtung $j$ verschoben wird.
+
+## Gitter-Ebenen
+
+![This diagram depicts the crystallographic planes (100), (010), (110), and (111) in a crystal lattice, showing the orientation of atomic planes relative to the lattice vectors a, b, and c. It illustrates how these planes intersect the lattice points and define different crystal faces.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-2_1035_1400_419_260.jpg)
+Abbildung 11.23 Einige ausgewählte Netzebenen in einem kubischen Gitter
+
+## Beispiele
+
+1. Der Abstand der Netzebenen im kubischen Gitter ist wegen $|\boldsymbol{a}|=|\boldsymbol{b}|=|\boldsymbol{c}|$ und $\boldsymbol{a}^{*} \perp \boldsymbol{b}^{*} \perp \boldsymbol{c}^{*}$ :
+
+d_{h k l}=\frac{a}{\sqrt{h^{2}+k^{2}+l^{2}}}
+
+So ist z. B. der Abstand der (100)-Ebenen $d_{100}=a$, der (110)-Ebenen $d_{110}=a / \sqrt{2}$ usw.
+2. Für ein rechtwinkliges Gitter mit $a \neq b \neq c$ wird
+
+d_{h k l}=\frac{1}{\sqrt{(h / a)^{2}+(k / b)^{2}+(l / c)^{2}}} .
+
+3. Für nicht rechtwinklige Gitter müssen zur Berechnung von $\boldsymbol{G}$ auch die Mischprodukte der Basisvektoren berücksichtigt werden. $\square$
+
+## Gitterdynamik: Projektion auf 1D
+
+![This diagram depicts a two-dimensional lattice model used in physics or materials science, showing the arrangement of lattice sites labeled by indices \(s\) and \(q\) with nearest-neighbor interactions indicated by arrows. It specifically illustrates the connectivity and interaction directions of a central lattice site with its surrounding neighbors in a discrete spatial grid.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-3_1277_1494_338_364.jpg)
+Bild 6.6: Ausbreitung longitudinaler Wellen in einem orthorhombischen Kristall. Die Auslenkung der Atome und die Ausbreitung der Welle erfolgt in [100]Richtung. Die augenblickliche Lage der Atome ist durch dunkelblaue, ihre Ruheposition durch hellblaue Punkte wiedergegeben. Die Pfeile symbolisieren die auf das herausgegriffene Atom wirkenden Kräfte. Die betrachtete lineare Kette ist grau markiert.
+
+## Gitterdynamik
+
+![This diagram depicts two types of lattice vibrations or displacements in a one-dimensional chain of atoms, showing (a) longitudinal displacements and (b) transverse displacements of atoms labeled by their position indices. It illustrates the displacement variables \( u_n \) for atoms at different lattice sites \( n \) along the chain.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-4_1077_2425_361_454.jpg)
+Abb. 5.4: Schematische Darstellung der Auslenkung der Netzebenen bei einer longitudinalen (a) und transversalen Gitterschwingung (b). Die gestrichelten Linien geben die Gleichgewichtslage, die Pfeile die Auslenkung an.
+
+## Born-von Karman Randbedingung
+
+![The diagram depicts the Born-von Karman or periodic boundary condition applied to a linear chain of atoms, illustrating how the chain is conceptually looped so that the first atom (n=1) and the last atom (n=N) are connected.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-5_629_1913_416_666.jpg)
+![This diagram depicts a model of a sodium (Na) atom illustrating the arrangement of its valence electron in the outermost shell and the core electrons in the inner shells. It shows the electron configuration and the effective nuclear charge experienced by the valence electron.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-5_334_1906_1204_666.jpg)
+
+Sinnvolle Beschreibung, wenn Randeffekte vernachlässigt werden!
+
+## Dispersionsrelation einer linearen Kette
+
+![The diagram depicts the dispersion curve of a linear chain, showing the relationship between frequency (ω) and wave vector (q) considering only nearest neighbor interactions. It highlights the first Brillouin zone in blue and includes the formula for the dispersion relation and the sound velocity at q → 0.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-6_1361_2392_304_586.jpg)
+Wellenvektor $\boldsymbol{q}$
+
+## Periodische Auslenkungen (Ortsraum)
+
+![This diagram depicts the displacement \( u \) of a wave in a lattice, showing both the continuous wave (blue curve) and discrete lattice points (black dots) spaced by distance \( a \). It illustrates the relationship between the wave's displacement and the lattice structure in a crystal or solid-state physics context.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-7_1199_1337_325_242.jpg)
+Ortskoordinate $x$
+
+![This diagram depicts the concept of amplitude modulation (AM) in signal processing, showing a high-frequency carrier wave (red) modulated by a lower-frequency message signal (black). The black dots indicate points where the carrier wave's amplitude matches the instantaneous amplitude of the message signal.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-7_433_1356_375_1781.jpg)
+„Nyquist frequency“ in der Signal-Theorie
+\begin{gathered}
+\lambda=2 \mathrm{a} \\
+q=2 \pi / \lambda=\pi / 2
+\end{gathered}
+
+## Reduktion auf die 1. Brillouin-Zone
+
+![This diagram depicts a phonon dispersion relation showing the frequency (ω) as a function of the wave vector (q) in a one-dimensional lattice with lattice constant a. It illustrates the periodicity of the phonon spectrum in reciprocal space, highlighting the wave vector shift by a reciprocal lattice vector \( G = -2\pi/a \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-8_1340_1381_389_317.jpg)
+Bild 6.9: Reduktion auf die 1. BrillouinZone. Durch die Addition des reziproken Gittervektors $G=-2 \pi / a$ wird der Wellenvektor $\boldsymbol{q}^{\prime}$ in den Wellenvektor $\boldsymbol{q}$ übergeführt. Die Steigung der Dispersionskurven bei den angegeben Wellenvektoren und damit auch die Gruppengeschwindigkeit ändern sich durch diese Operation nicht.
+
+## Dispersionsrelation einer linearen Kette
+
+Walter Schottky Institut \& School of Natural Sciences
+
+![This diagram depicts vibrational modes of a one-dimensional lattice or chain of atoms, showing displacement patterns for different wave vectors (k), wavelengths (λ), and corresponding angular frequencies (ω_k). It illustrates how atomic displacements vary along the chain for specific phonon modes in a crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/3c113693-a3b9-4a43-a6a3-f7ad8d6abfbc/9bf0d1be-a35e-4c1d-b01a-83f49fc286e4-9_988_1054_653_2083.jpg)
+aus Hunklinger 1D normal modes.gif Wikipedia commons
+A. Holleitner WS 25/26
+

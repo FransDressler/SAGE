@@ -1,0 +1,201 @@
+### 5.2.3 Entartetes Fermi Gas, T>0
+
+Für ein entartetes Fermi Gas bei endlicher Temperatur $0<T \ll T_{F}$ ( $T_{F}=E_{F} / k_{B} \ldots$ Fermi-Temperatur) ändert sich die Verteilungsfunktion in einem Energieinterval $\Delta E \approx k_{B} T$ um die Fermienergie.
+![This diagram depicts the Fermi-Dirac distribution function showing the probability \(N_F\) of electron occupancy as a function of energy \(E\), with the Fermi energy \(E_F\) and thermal energy \(k_B T\) indicated. It illustrates how electron occupancy sharply transitions around the Fermi level at finite temperature.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-01_566_1073_750_137.jpg)
+![This diagram depicts the distribution of electron energy states relative to the Fermi energy level (E_F), showing occupied (besetzt), variable (variabel), and unoccupied (unbesetzt) energy levels with electron spins indicated.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-01_703_1189_655_1574.jpg)
+
+Die Thermodynamik eines entarteten Fermi Gases wird durch wenige Zustände nahe der Fermienergie bestimmt!
+
+## Einschub: Sommerfeld-Entwicklung:
+
+Wir betrachten Integrale von der Form (z.B. Teilchenzahl, Energie, ...):
+
+$$
+I=\int_{0}^{\infty} d E F(E) N_{F}(E) \quad \text { mit: } \quad k_{B} T \ll E_{F}, F(0)=0
+$$
+
+⇒ partielle Integration:
+
+\begin{array}{cl}
+I=\int_{0}^{\infty} d E G(E)\left(-\frac{d N_{F}}{d E}\right) \longrightarrow & -\frac{d N_{F}}{d E} \\
+G(E)=\int_{0}^{E} d E^{\prime} F\left(E^{\prime}\right) & -\frac{d N_{F}}{d E}=\frac{\beta e^{\beta(E-\mu)}}{\left(e^{\beta(E-\mu)}+1\right)^{2}} \\
+=\sum_{n}(E-\mu)^{n} G_{n} & \text { • gerade Funktion von } x=\beta(E-\mu) \\
+G_{n}=\left.\frac{1}{n!} \frac{d^{n} G}{d E^{n}}\right|_{E=\mu} & \text { • verschwindet für }|E-\mu| \gg k_{B} T
+\end{array}
+
+$\Rightarrow \quad I=\sum_{n=0}^{\infty} G_{n}\left(k_{B} T\right)^{n} J_{n} \quad$ mit $\quad J_{n}=\int_{-\infty}^{\infty} d x \frac{x^{n} e^{x}}{\left(e^{x}+1\right)^{2}}$
+es gilt: $\quad J_{0}=1$
+$J_{n}=0 \quad$ für n ungerade
+$J_{n}=2 n!\left(1-\frac{1}{2^{n-1}}\right) \zeta(n) \quad$ für n gerade
+$\zeta(n)=\sum_{k=1}^{\infty} \frac{1}{k^{n}} \quad$ Riemannsche Zeta-Funktion
+
+| $\zeta(2)=\frac{\pi^{2}}{6}$ | $\zeta(4)=\frac{\pi^{4}}{90}$ | $\zeta(6)=\frac{\pi^{6}}{945}$ | $\ldots$ |
+| :---: | :---: | :---: | :---: |
+| $J_{2}=\frac{\pi^{2}}{3}$ | $J_{4}=\frac{7 \pi^{4}}{15}$ | $J_{6}=\frac{31 \pi^{6}}{21}$ | $\ldots$ |
+
+Ergänzung: Berechnung der Integrale $J_{n}$
+
+\begin{aligned}
+J_{n} & =2 \int_{0}^{\infty} d x \frac{x^{n} e^{x}}{\left(e^{x}+1\right)^{2}}=-2 \frac{\partial}{\partial \alpha}\left[\int_{0}^{\infty} d x \frac{x^{n-1}}{e^{\alpha x}+1}\right]_{\alpha=1} \\
+& =-2 \frac{\partial}{\partial \alpha}\left[\frac{1}{\alpha^{n}} \int_{0}^{\infty} d y \frac{y^{n-1}}{e^{y}+1}\right]_{\alpha=1}=2 n \int_{0}^{\infty} d y \frac{y^{n-1}}{e^{y}+1}
+\end{aligned}
+
+ähnlich wie beim Fermi-Integral:
+
+\int_{0}^{\infty} d y \frac{y^{n-1}}{e^{y}+1}=\sum_{k=1}^{\infty}(-1)^{k+1} \underbrace{\int_{0}^{\infty} d y y^{n-1} e^{-y k}}_{\Gamma(n) k^{-n}}=\Gamma(n) \sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k^{n}}
+
+weiters:
+
+\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k^{n}}=\sum_{k=1}^{\infty} \frac{1}{k^{n}}-2 \sum_{k=1}^{\infty} \frac{1}{(2 k)^{n}}=\left(1-2^{1-n}\right) \zeta(n)
+
+## - Chemisches Potential:
+
+Wir wenden die Sommerfeld-Entwicklung zuerst zur Berechnung der Teilchenzahl für $\mathrm{T}>0$ an:
+
+N=K \int_{0}^{\infty} d E \sqrt{E} N_{F}(E) \quad K=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}}
+
+Damit:
+
+\begin{aligned}
+G(E) & =K \int_{0}^{E} d E^{\prime} \sqrt{E^{\prime}}=\frac{2}{3} K E^{\frac{3}{2}} \\
+& =\frac{2}{3} K\left[\mu^{\frac{3}{2}}+\frac{3}{2}(E-\mu) \mu^{\frac{1}{2}}+\frac{3}{8}(E-\mu)^{2} \mu^{-\frac{1}{2}}+\ldots\right]
+\end{aligned}
+
+und (Sommerfeld-Entwicklung):
+
+\Rightarrow \quad N=\sum_{n=0}^{\infty} G_{n}\left(k_{B} T\right)^{n} J_{n} \quad G_{0}=\frac{2}{3} K \mu^{\frac{3}{2}}, G_{2}=\frac{K}{4 \mu^{\frac{1}{2}}}, \ldots
+
+& \text { Für niedrige } \\
+& \text { Temperaturen: } \quad \Rightarrow \quad N=\frac{2}{3} K \mu^{\frac{3}{2}}\left[1+\frac{\pi^{2}}{8}\left(\frac{k_{B} T}{\mu}\right)^{2}+\ldots\right]
+
+Aus der Beziehung für $\mathrm{T}=0: \quad N=\frac{2}{3} K E_{F}^{\frac{3}{2}}$
+erhält man: $\quad E_{F}^{\frac{3}{2}}=\mu^{\frac{3}{2}}\left[1+\frac{\pi^{2}}{8}\left(\frac{k_{B} T}{\mu}\right)^{2}+\ldots\right]$
+
+Auflösen nach dem chem. Potential:
+
+\Rightarrow \quad \mu(T) \simeq E_{F}\left[1-\frac{\pi^{2}}{12}\left(\frac{k_{B} T}{E_{F}}\right)^{2}\right]
+
+![This diagram shows the temperature dependence of the chemical potential μ(T) relative to the Fermi energy EF in a Fermi gas, illustrating the transition from degenerate (entartet) behavior at low temperatures to classical (klassisch) behavior at temperatures around or above the Fermi temperature TF.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-06_698_1712_1447_137.jpg)
+
+Bemerkung:
+
+\frac{n \lambda_{T}^{3}}{g_{S}}=\frac{4}{3 \sqrt{\pi}}\left(\frac{T_{F}}{T}\right)^{\frac{3}{2}}
+
+- Innere Energie:
+
+U=K \int_{0}^{\infty} d E E^{\frac{3}{2}} N_{F}(E) \quad K=\frac{g_{S} V}{4 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{\frac{3}{2}}
+
+Damit:
+
+G(E) & =K \int_{0}^{E} d E^{\prime}\left(E^{\prime}\right)^{\frac{3}{2}}=\frac{2}{5} K E^{\frac{5}{2}} \\
+& =\frac{2}{5} K\left[\mu^{\frac{5}{2}}+\frac{5}{2}(E-\mu) \mu^{\frac{3}{2}}+\frac{15}{8}(E-\mu)^{2} \mu^{\frac{1}{2}}+\ldots\right]
+
+und (Sommerfeld-Entwicklung):
+
+\Rightarrow \quad U=\sum_{n=0}^{\infty} G_{n}\left(k_{B} T\right)^{n} J_{n} \quad G_{0}=\frac{2}{5} K \mu^{\frac{5}{2}}, G_{2}=\frac{3 K}{4} \mu^{\frac{1}{2}}, \ldots
+
+& \text { Für niedrige } \\
+& \text { Temperaturen: }
+\end{aligned} \quad \Rightarrow \quad U=\frac{2}{5} K \mu^{\frac{5}{2}}\left[1+\frac{5 \pi^{2}}{8}\left(\frac{k_{B} T}{\mu}\right)^{2}+\ldots\right]
+
+Einsetzen von $\mu(\mathrm{T})$ und $N=\frac{2}{3} K E_{F}^{\frac{3}{2}}$ ergibt:
+
+\Rightarrow \quad U(T)=\frac{3}{2} p(T) V \simeq \frac{3}{5} N E_{F}\left[1+\frac{5 \pi^{2}}{12}\left(\frac{k_{B} T}{E_{F}}\right)^{2}\right]
+
+- Entropie: $\quad S=\frac{U+p V-\mu N}{T}=\frac{\frac{5}{3} U-\mu N}{T}$
+
+S(T) \simeq N k_{B} \frac{\pi^{2}}{2}\left(\frac{k_{B} T}{E_{F}}\right) \underset{T \rightarrow 0}{\longrightarrow} 0
+
+Im Gegensatz zum klassischen Gas erfüllt die Entropie des Fermigases den 3. Hauptsatz der Thermodynamik!
+
+- Wärmekapazität: $\quad C_{V}(T)=\left.\frac{\partial U}{\partial T}\right|_{V} \simeq N k_{B} \frac{\pi^{2}}{2}\left(\frac{k_{B} T}{E_{F}}\right)$
+![This diagram depicts the temperature dependence of the heat capacity at constant volume, \( C_V(T) \), for a Fermi gas, showing the transition from degenerate (entartet) behavior at low temperatures, where \( C_V \sim T \), to classical (klassisch) behavior at higher temperatures, where \( C_V \) approaches the classical limit \( \frac{3}{2} k_B N \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-09_830_2383_528_100.jpg)
+![This diagram shows the temperature dependence of the heat capacity \( C_V(T) \) for a metal, indicating the contributions from electrons (linear in \( T \)) and phonons (cubic in \( T^3 \)).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-09_307_2404_1542_169.jpg)
+
+Bei tiefen Temperaturen ist die Wärmekapazität von Metallen durch den Beitrag der Elektronen bestimmt!
+
+## 6. Das Ideale Bose Gas
+
+6.1 Grundlagen:
+
+Analog zum Kapitel 5 betrachten wir nun ein ideales Gas aus Bosonen mit (ganzzahligem) Spin $S$, und bekannter Lösung der EinteilchenSchrödingergleichung,
+
+\hat{H}_{i}\left|\phi_{k}^{(i)}, m_{s}\right\rangle=E_{k}\left|\phi_{k}^{(i)}, m_{s}\right\rangle \quad \text { (jeweils } g_{S}=(2 S+1) \text {-fach entartet) }
+
+## Thermodynamische Größen (Bose-Einstein-Statistik):
+
+- Großkanon. Zustandssumme: $Z_{\mathrm{G}}=\prod_{k}\left(\frac{1}{1-e^{-\beta\left(E_{k}-\mu\right)}}\right)^{g_{S}}$
+- Großkanon. Potential:
+
+J=k_{B} T g_{S} \sum_{k} \ln \left(1-e^{-\beta\left(E_{k}-\mu\right)}\right)
+
+- Mittlere Teilchenzahl:
+
+N=\sum_{k} \frac{g_{S}}{e^{\beta\left(E_{k}-\mu\right)}-1}
+
+Im Folgenden (zur Vereinfachung und wichtigster Fall): $S=0 \Rightarrow g_{S}=1$
+
+Im thermodynamischen Limes ( $N, V \rightarrow \infty$ ) und mit der Zustandsdichte $D(E)$ erhalten wir:
+
+- Zustandssumme: $\quad \ln Z_{\mathrm{G}}=-\int_{0}^{\infty} d E D(E) \ln \left(1-e^{-\beta(E-\mu)}\right)$
+- Teilchenzahl: $\quad N=\int_{0}^{\infty} d E D(E) N_{B}(E)$
+- Innere Energie: $\quad U=\int_{0}^{\infty} d E D(E) E N_{B}(E)$
+
+N_{B}(E)=\frac{1}{e^{\beta(E-\mu)}-1}=\frac{1}{\left(e^{\beta E} / z\right)-1} \quad \text { Bose-Einstein Verteilung }
+
+![This diagram depicts the Bose-Einstein distribution function \(N_B(E)\) as a function of energy \(E\), showing its divergence near the chemical potential \(\mu\) compared to the Maxwell-Boltzmann distribution.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-11_683_2209_1547_301.jpg)
+
+## Konsequenzen der Bose-Einstein Verteilung:
+
+- Um positive Besetzungszahlen $N_{B}(E) \geq 0$ zu erhalten, muss
+
+![The image shows a mathematical inequality involving a chemical potential (μ) and a reference energy level (E₀), indicating that μ is less than or equal to E₀, which is defined as zero. This is typically used in physics or thermodynamics to set a baseline energy level or reference point.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-12_339_619_406_179.jpg)
+Grundzustandsenergie
+
+![This diagram depicts the Bose-Einstein distribution function \( N_B(E) \) as a function of energy \( E \), showing the occupation number of bosons at different energy levels with chemical potential \( \mu \). It illustrates how the distribution deviates from a classical distribution (dashed line) at low energies.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-12_672_1274_380_1373.jpg)
+
+- Für die Besetzung des Grundzustands gilt
+
+\left\langle\hat{n}_{0}\right\rangle=\frac{z}{1-z}=\frac{e^{\beta \mu}}{1-e^{\beta \mu}} \quad \longrightarrow \quad \infty \quad \text { für } \quad \begin{aligned}
+& \mu \rightarrow 0^{-} \\
+& z \rightarrow 1^{-}
+
+⇒ Die Besetzung des Grundzustands kann für $z \rightarrow 1^{-}$einen makroskopisch großen Wert annehmen.
+
+⇒ Der Beitrag des Grundzustands zu den thermodynamischen Größen muss deshalb getrennt behandelt werden.
+
+## Thermodynamische Größen mit Grundzustandsbeitrag:
+
+- Zustandssumme:
+
+\ln Z_{\mathrm{G}}=-\underset{\substack{\text { Grundzustand } \\ \iota}}{\ln (1-z)}-\int_{0}^{\infty} d E D(E) \ln \left(1-e^{-\beta(E-\mu)}\right)
+
+- Teilchenzahl:
+
+N=\frac{z}{1-z}+\int_{0}^{\infty} d E D(E) N_{B}(E)=N_{0}+N_{\substack{\text { Teilchen im } \\ \text { Grundzustand }}}^{N_{e}}
+
+- Innere Energie:
+
+U=\underbrace{E_{0} N_{0}}_{=0}+\int_{0}^{\infty} d E D(E) E N_{B}(E)
+
+6.1.2 Mathematischer Einschub: "Bose-Integral"
+
+Definition *): $\quad g_{\alpha}(z):=\frac{1}{\Gamma(\alpha)} \int_{0}^{\infty} \frac{y^{\alpha-1}}{\left(e^{y} / z\right)-1} d y=\sum_{n=1}^{\infty} \frac{z^{n}}{n^{\alpha}}$
+
+Beweis Reihendarstellung: analog wie in 5.1.2.
+![This diagram depicts the behavior of the q-gamma function \( g_\alpha(z) \) for different values of \(\alpha\) (specifically \(\frac{1}{2}\), \(\frac{3}{2}\), and \(\frac{5}{2}\)) as a function of \(z\), showing their values and asymptotic behavior near \(z=1\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/45b9640c-df1b-483c-80ae-f1b50ae8932d/630cdfdd-75d2-41aa-b463-169487efe21f-14_1041_2325_898_174.jpg)
+*) Mathematica: $g_{\alpha}(z)=\operatorname{PolyLog}[\alpha, z]$
+allgemein: $g_{\alpha}(1)=\zeta(\alpha)$
+
+### 6.1.3 Ideales Bose Gas (3D, Box):
+
+Analog zum Kapitel 5 erhalten wir für das Bose Gas in einem 3D Kastenpotential:
+
+## Zustandsgleichungen: Ideales Bose Gas
+
+\begin{array}{rlrl}
+\frac{N}{V} & =n_{0}+\frac{1}{\lambda_{T}^{3}} g_{\frac{3}{2}}(z) & n_{0}=\frac{N_{0}}{V}=\frac{1}{V} \frac{z}{1-z} \\
+\frac{p}{k_{B} T} & =-\frac{1}{V} \ln (1-z)+\frac{1}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z) & & \\
+U & =\frac{3 k_{B} T}{2} \frac{V}{\lambda_{T}^{3}} g_{\frac{5}{2}}(z) \quad \Rightarrow \quad U & \left.=\frac{3}{2} p V \quad \text { falls } \quad z \neq 1^{*}\right)
+\end{array}
+

@@ -1,0 +1,260 @@
+## Physik der kondensierten Materie Festkörperphysik
+
+![The image depicts a conceptual illustration of a nanoscale or atomic-scale device, likely a transistor or sensor, integrated on a circuit board, alongside a blueprint-style drawing of a modern research or academic building. The subject matter suggests a focus on advanced nanotechnology or semiconductor research for the Wintersemester 2025/2026.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-01_1257_2989_540_176.jpg)
+
+## Vorlesung \& Übungsbetrieb
+
+Vorlesung
+Dienstag
+12:00-14:00 Uhr
+HS2
+A. Holleitner
+
+Donnerstag
+10:00-12:00 Uhr
+HS2
+A. Holleitner
+
+- Material zur Vorlesung steht auf Moodle zur Verfügung.
+
+Zentralübung
+Montag
+12:00-14:00 Uhr
+HS3
+Christoph Kastl
+
+- Einführung in die experimentellen Methoden
+- Besprechung leichter Verständnisfragen
+- Besprechung von Fragen und offenen Punkten aus der Vorlesung, Ergänzungen
+- Hilfe bei der Lösung der Aufgaben
+- Eine der Examensaufgaben stammt aus den Themen der Zentralübung.
+
+
+## Übungsgruppen
+
+- erstes Übungsblatt am 17.10.2025 auf Moodle (jeden Freitag neues Übungsblatt)
+- Besprechung des Übungsblatts jeweils in der übernächsten Woche (erste Tutorien ab dem 28.10.2025)
+
+
+## Übungsgruppen
+
+| Gruppe 2 | Dienstag | 08:30-10:00 Uhr | PH2271 (Physik 2) | Johannes Schmuck |
+| :--- | :--- | :--- | :--- | :--- |
+| Gruppe 3 | Dienstag | 16:00-18:00 Uhr | 5101.EG. 271 (Physik 1) | Sebastian Loy |
+| Gruppe 4 | Mittwoch | 14:00-16:00 Uhr | 5140.01.201 (Tutorraum) | Alexander Musta |
+| Gruppe 5 | Mittwoch | 14:00-16:00 Uhr | 5402.01.220J (Chemie) | Pablo Galan Vazquez (Englisch) |
+| Gruppe 6 | Donnerstag | 08:30-10:00 Uhr | 5502.EG. 234 (MW) | Kurosch Mehrgan |
+| Gruppe 7 | Freitag | 12:00-14:00 Uhr | PH2271 (Physik 2) | Holger Mirkes |
+| Gruppe 8 | Freitag | 14:00-16:00 Uhr | online / Englisch | Sayooj Satheesh, Yuhan Sun |
+
+## Prüfungen zur Vorlesung
+
+Klausur
+Wiederholung
+23.02.2026
+09.04.2026
+
+Montag
+14:00-15:30 Uhr
+Donnerstag
+11:00-12:30 Uhr
+„Die Studierenden müssen sich selbst zu den Prüfungen anmelden“.
+Bitte beachten Sie die Anmeldefristen (voraussichtlich Mitte November bis Mitte Januar).
+
+## Notenbonus von einer Notenstufe
+
+- Zweimal vorrechnen in Tutorien
+- Regelmäßige Teilnahme an Tutorien (>50\%)
+- Bestandene Probeklausur
+-Der Notenbonus erlaubt nicht, die Klausur zu bestehen.
+
+Probeklausur
+12.01.2026
+
+HS3
+
+## Notenbonus von einer Notenstufe
+
+- Zweimal vorrechnen in Tutorien
+- Regelmäßige Teilnahme an Tutorien (>50\%)
+- Bestandene Probeklausur
+- Der Notenbonus erlaubt nicht die Klausur zu bestehen.
+
+Lernplattform Moodle
+Technische Universität München
+
+Welche Übungsgruppe besuchst Du?
+◯ Übung 2 (Di., 8:30)
+◯ Übung 3 (Di., 16:00)
+◯ Übung 4 (Mi., 14:00)
+◯ Übung 5 (Mi., 14:00, Chemie)
+◯ Übung 6 (Do., 8:30)
+◯ Übung 7 (Fr., 12:00)
+◯ Übung 8 (online)
+
+Kannst du Aufgabe $\mathbf{1}$ an der Tafel vorrechnen?
+
+Bitte wählen Sie eine Antwort:
+◯ Wahr
+◯ Falsch
+⋯
+
+Physik der kond 950837360 (W25/26) / Notenbonus / Welche Aufgaben kann ich im Tutorium vorrechnen? Blatt 1
+/ Vorschau
+
+## Welche Aufgaben kann ich im Tutorium vorrechnen? Blatt 1
+
+
+- Übungsblatt immer an einem Freitag, Eintragen bis Sonntagabend eine Woche später.
+- Besprechung und Vorrechnen des Übungsblatts in der folgenden Woche.
+![The image depicts a collection of textbooks on solid state physics (Festkörperphysik) and experimental physics, showing recommended literature for studying these subjects.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-06_1382_3051_231_135.jpg)
+
+
+## Was ist Festkörperphysik?
+
+![The image shows various mineral crystals categorized by their crystal system, specifically cubic (kubisch), triclinic (triklin), trigonal, and orthorhombic crystal systems. It depicts examples of minerals such as NaCl and Spessartin for cubic, Amazonit and Rhodonit for triclinic, Hämatit for trigonal, and Brookit for orthorhombic.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-07_1504_3218_286_47.jpg)
+
+## Nobelpreise
+
+| Jahr Preisträger | Thema | WS | SS |  |
+| :--- | :--- | :--- | :--- | :--- |
+| 1901 Wilhelm Conrad Röntgen | Röngten Strahlung | 1 |  |  |
+| 1905 Philipp Lenard | Kathodenstrahlung | 1 |  |  |
+| 1910 Johannes Diderik van der Waals | Van der Waals Gleichung | 1 |  |  |
+| 1913 Heike Kamerlingh Onnes | tiefe Temperaturen | 1 |  |  |
+| 1914 Max von Laue | Entdeckung der Beugung von Röntgenstrahlen an Kristallen | 1 |  |  |
+| 1915 William Henry Bragg, William Lawrence Bragg | Analyse der Kristallstruktur durch Röntgenstrahlen | 1 |  |  |
+| 1922 Albert Einstein | Photoelektrischer Effekt | 1 |  |  |
+| 1923 Robert Andrews Millikan | Photoelektrischer Effekt | 1 |  |  |
+| 1925 James Franck, Gustav Hertz | Elektron-Atom Wechselwirkung | 1 |  |  |
+| 1929 Louis de Broglie | Wellennatur der Elektronen | 1 |  |  |
+| 1930 Chandrasekhara Venkata Raman | Raman-Streuung | 1 |  |  |
+| 1936 Peter Debye | Beiträge zur Molekularstruktur durch Dipolmomente, hier Debye-Temperatur | 1 |  |  |
+| 1937 Clinton Davisson, George Thomson | Beugung von Elektronen an Kristallen | 1 |  |  |
+| 1938 Enrio Fermi | Neutronen, Kernreaktion | 1 |  |  |
+| 1939 Ernest Lawrence | Zyklotron | 1 |  |  |
+| 1944 Isidor Isaac Rabi | Resonanzmethode zur Bestimmung magnetischer Eigenschaften |  |  | 2 |
+| 1945 Wolfgang Pauli | Pauli-Prinzp | 1 |  |  |
+| 1952 Felix Bloch, Edward Mills Purcell | Kernspinresonanzspektroskopie, hier Bloch-Welle | 1 |  |  |
+| 1954 Max Born | Quantenmechanik, hier Born Oppenheim Näherung | 1 |  |  |
+| 1956 William Shockley, John Bardeen, Walter Brattain | Erfindung des Transistors |  |  | 2 |
+| 1961 Robert Hofstadter, Rudolf Mößbauer | Mößbauer-Effekt | 1 |  |  |
+| 1962 Lev Davidovich Landau | Theorien über kondensierte Materie, Suprafluidität | 1 |  |  |
+| 1970 Hannes Alfvén, Louis Néel | Ferri und Antiferrmagnetismus |  |  | 2 |
+
+## Nobelpreise
+
+| Jahr Preisträger | Thema |  | SS |  |
+| 1972 John Bardeen, Leon Cooper, Robert Schrieffer | BCS-Theorie der Supraleitung |  |  | 2 |
+| 1973 Leo Esaki, Ivar Giaever, Brian Josephson | Tunnel-Effekte in Festkörpern |  |  | 2 |
+| 1977 Philip Anderson, Nevill Mott, John Van Vleck | Elektronenstruktur in magn. und ungeordneten Systemen |  |  | 2 |
+| 1985 Klaus von Klitzing | Entdeckung des Quanten-Hall-Effekts | 1 |  |  |
+| 1986 Ernst Ruska, Gerd Binnig, Heinrich Rohrer | Elektronenmikroskopie und Rastertunnelmikroskop |  |  | 2 |
+| 1987J. Georg Bednorz, K. Alexander Müller | Hochtemperatur-Supraleitung |  |  | 2 |
+| 1991 Richard R. Ernst | Entwicklung der hochauflösenden NMR-Spektroskopie - auch für Festkörperanwendungen |  |  | 2 |
+| 1994 Bertram N. Brockhouse und Clifford G. Shull | Neutronenspektroskopie | 1 |  |  |
+| 1996 Robert F. Curl, Harold W. Kroto, Richard E. Smalley | Entdeckung der Fullerene - neue Festkörpermaterialien |  |  | 2 |
+| 1998 Robert B. Laughlin, Horst L. Störmer, Daniel C. Tsui | Fraktionaler Quanten-Hall-Effekt | 1 |  |  |
+| 2000Zhores I. Alferov, Herbert Kroemer, Jack S. Kilby | Halbleiter-Heterostrukturen |  |  | 2 |
+| 2003 Alexei Abrikossov, Witali Ginsburg, Anthony James Leggett | Supraleiter und Supraflüssigkeiten |  |  | 2 |
+| 2007 Albert Fert, Peter Grünberg | Riesenmagnetowiderstand (GMR) |  |  | 2 |
+| 2010 Andre Geim, Konstantin Novoselov | Entdeckung von Graphen | 1 |  |  |
+| 2011 Daniel Shechtman | Entdeckung der Quasikristalle | 1 |  |  |
+| 2014 Isamu Akasaki, Hiroshi Amano, Shuji Nakamura | Entwicklung effizienter blauer LEDs | 1 |  | 2 |
+| 2016 David J. Thouless, F. Duncan M. Haldane, J. Michael Kosterlitz | Topologische Phasenübergänge in Festkörpern | 1 |  |  |
+| 2019 John B. Goodenough, M. Stanley Whittingham, Akira Yoshino | Entwicklung von Lithium-lonen-Batterien - FestkörperElektrochemie | 1 |  |  |
+| 2023 Pierre Agostini, Ferenc Krausz, Anne L'Huillier | Attosekundenphysik - Elektronendynamik in Festkörpern |  |  | 2 |
+| 2023 Moungi G. Bawendi, Louis E. Brus, Alexei I. Ekimov | Für die Entdeckung und Entwicklung von Quantenpunkten |  |  | 2 |
+| 2025 John Clarke, Michel Devoret, John Martinis | Makroscopisches Quantum Mechanisches Tunneln |  |  | 2 |
+
+Walter Schottky Institut \& School of Natural Sciences A. Holleitner WS 25/26
+
+![The image is a portrait illustration of a man, likely intended for a commemorative or editorial purpose. It does not depict a diagram or technical subject matter.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-10_673_455_92_61.jpg)
+John Clarke
+
+![The image is a portrait illustration of a man. It does not depict a diagram or subject matter beyond the person's likeness.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-10_660_455_95_553.jpg)
+Michel H. Devoret
+
+![The image is a portrait illustration of a man. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-10_660_452_95_1072.jpg)
+John M. Martinis
+
+... für die Entdeckung von makroskopischem quantenmechanischen Tunneln und Energie-Quantisierung in einem elektrischen Stromkreis.
+![This diagram depicts a Josephson junction, showing two macroscopic superconducting states separated by a tunnel barrier, illustrating the quantum tunneling of Cooper pairs between the superconductors.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-10_654_940_88_1543.jpg)
+![The diagram depicts an electrical circuit for a constant current source using a current source symbol (I0), a capacitor (C), and a resistor (R), showing the relationship between current (I) and voltage (V). The image also references the 2025 Nobel Prize, suggesting the circuit's relevance to a Nobel-winning discovery or technology.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-10_429_852_85_2482.jpg)
+
+![This image depicts a quantum computing chip, specifically showing the layout of quantum circuits and qubits used for quantum information processing.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-10_984_1562_751_1649.jpg)
+https://physics.aps.org/articles/v18/170
+
+![The image is a portrait illustration of a man. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-11_673_446_91_52.jpg)
+John Clarke
+
+![This image is a portrait illustration of a man. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-11_665_460_93_554.jpg)
+Michel H. Devoret
+
+![The image is a portrait illustration of a man. It does not depict a diagram or technical subject matter.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-11_668_449_93_1067.jpg)
+John M. Martinis
+
+![This diagram depicts a Josephson junction, showing two macroscopic superconducting states separated by a tunneling barrier, illustrating the phase difference and voltage across the junction.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-11_652_936_93_1547.jpg)
+unterschied zwischen $\psi_{1}$ und $\psi_{2:} \delta$
+
+![This diagram depicts different potential energy landscapes U(δ) as a function of a coordinate δ, illustrating concepts related to energy barriers, metastable states, and quantum tunneling or wavefunction behavior in a potential well.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-11_838_890_968_46.jpg)
+Walter Schottky Institut \& School of Natural Sciences
+
+![This image depicts a photonic integrated circuit designed for quantum computing, showing waveguides and components used to manipulate and route photons for quantum information processing.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-11_899_1192_836_2109.jpg)
+https://physics.aps.org/articles/v18/170
+
+A. Holleitner WS $25 / 26$
+
+Transistoren auf einem Chip ~8 Milliarden auf $\mathbf{7 8} \mathbf{m m}^{\mathbf{2}}$
+![The image shows a green LEGO piece, specifically a round plate with four studs and a central hole. It is used as a connector or decorative element in LEGO building sets.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-12_251_280_502_359.jpg)
+
+Gordon Moore: "Every 1.5 years complexity doubles"
+![This diagram is a semiconductor transistor count chart showing the number of transistors per chip in various microprocessors over time, illustrating the trend described by Moore's Law.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-12_699_759_1044_67.jpg)
+
+![The image depicts the global human population growth since 1800 in billions, including future estimates up to 2100, showing a rise from 2 billion in 1930 to an estimated range between 7.3 billion and 15.6 billion by 2100. It also states the current human population as 8.3 billion (Homo sapiens on Earth).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-12_1650_2475_127_810.jpg)
+![This diagram depicts the downscaling trend of semiconductor technology nodes from 1987 to 2028, showing the reduction in transistor feature sizes (in micrometers and nanometers) over time with corresponding microscopic images of the transistor structures at each node.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-13_1459_3297_138_0.jpg)
+
+## Exzellenzcluster <br> Munich Center for Quantum Science \& Technology
+
+![The image depicts a schematic overview of quantum science and technology, illustrating key research areas such as Quantum Information, Quantum Simulation, Quantum Networks, Quantum Matter, Quantum Sensing, and Emerging Directions, alongside symbolic representations of quantum phenomena and experimental setups.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-14_991_2184_455_161.jpg)
+![This diagram depicts a quantum circuit for a quantum computing operation, showing qubits initialized in the |0⟩ state and the application of quantum gates including Hadamard (H) and phase (φ) gates, along with controlled operations.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-14_347_563_453_2383.jpg)
+![This diagram depicts a toroidal surface with vector fields shown at various points, illustrating the concept of vector fields on a torus in differential geometry or topology. It specifically shows how vectors can be oriented and vary over a curved, donut-shaped manifold.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-14_330_572_1429_817.jpg)
+![This diagram depicts a conceptual representation of atomic or molecular locations, possibly illustrating the idea of tracking or mapping atoms or particles in a spatial or quantum context. It shows multiple markers with atomic symbols connected by paths, suggesting movement or relationships between atomic positions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-14_368_538_1406_2190.jpg)
+![This diagram depicts a scanning tunneling microscope (STM) setup showing the interaction between the microscope tip and the electron spins on a surface lattice, illustrating how the STM can detect and manipulate individual atomic spins.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-14_473_665_911_2604.jpg)
+
+## Munich Quantum Valley
+
+![The image depicts a laboratory setting focused on building a quantum computer, showing researchers working with quantum computing hardware.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-15_910_2947_489_192.jpg)
+
+Welcome to Munich Quantum Valley!
+
+## Vorlesung \& Übungsbetrieb
+
+## Vorlesung
+
+Dienstag
+
+
+- Material zur Vorlesung steht auf Moodle zur Verfügung.
+
+
+## Zentralübung
+
+Christoph Kastl
+
+- Einführung in die experimentellen Methoden
+- Besprechung leichter Verständnisfragen
+- Besprechung von Fragen und offenen Punkten aus der Vorlesung, Ergänzungen
+- Hilfe bei der Lösung der Aufgaben
+- Eine der Examensaufgaben stammt aus den Themen der Zentralübung.
+
+
+
+- erstes Übungsblatt am 17.10.2025 auf Moodle (jeden Freitag neues Übungsblatt)
+- Besprechung des Übungsblatts in der übernächsten Woche (erste Tutorien ab dem 28.10.2025)
+
+
+## Physik der kondensierten Materie Festkörperphysik
+
+![The image depicts a conceptual illustration of a nanoscale or molecular electronic device on a circuit board, alongside a line drawing of a modern building, likely representing a research institute or university facility. The text "Wintersemester 2025/2026" suggests it is related to an academic course or program in nanotechnology or molecular electronics for that semester.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/e89c17d5-0c2a-4408-9486-3044e425b51b/f0996d83-35e0-4f11-92b1-6e1b8f0ed3d0-17_1257_2989_540_311.jpg)
+

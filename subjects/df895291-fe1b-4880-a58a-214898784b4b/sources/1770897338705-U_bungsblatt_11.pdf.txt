@@ -1,0 +1,89 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Blatt 11
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und -materialien
+11.1 Warm Up
+(a) Stellen Sie sich ein zweidimensionales quadratisches Gitter vor, in dem Elek-
+tronen nur zu den n¨achsten Nachbarn ’h¨upfen’ k¨onnen, beschrieben durch ein
+Tight-Binding-Modell.
+- Wenn eine der Hopping-Richtungen (z.B. entlang x) nach und nach unterdr¨uckt
+wird (d.h. das Hopping wird viel schw¨acher als entlang y), wie w¨urden sich die
+elektronischen Eigenschaften ¨andern? Diskutieren Sie die erwartete Form der
+Energieb¨ander und die Dimensionalit¨at der Elektronenbewegung.
+- Angenommen, die Hopping-Amplitude wird entlang einer Richtung komplex,
+d.h. t → t · eiϕ. Welche physikalischen Ph¨anomene k¨onnten dadurch auftreten?
+Denken Sie an Bandtopologie und m¨ogliche Str¨ome.
+(b) Welche physikalische Gr¨oße entscheidet in einem Material mit einer kleinen
+Bandl¨ucke, ob es sich dabei um einen Leiter oder einen Halbleiter ist? Welche
+experimentellen M¨oglichkeiten gibt es auf diesen einzuwirken?
+(c) Wie sieht die Fermifl¨ache in einem ein- und zweidimensionalen System im
+reziproken Raum aus?
+(d) Kreuze die richtigen Antworten an:
+[ ] Jedes Band kann zwei Elektronen pro Einheitszelle aufnehmen; daher ist ein
+Material mit einer geraden Anzahl von Elektronen ein Metall, w¨ahrend eines
+mit einer ungeraden Anzahl von Elektronen ein Isolator sein kann.
+[ ] In Metallen ist die Fermifl¨ache geschlossen und bestimmt viele elektronische
+Eigenschaften (z. B. Leitf¨ahigkeit, spezifische W¨arme).
+[ ] Bei T = 0K ist die Fermifl¨ache vollst¨andig leer.
+
+11.2 Quadratisches ebenes Gitter & reduziertes Zonenschema
+(a) Konstruieren Sie die ersten drei Brillouin-Zonen im reduzierten und ausgedehn-
+ten Zonenschema eines ebenen quadratischen Gitters (Gitterkonstante a) und
+markieren Sie f¨ur die ersten drei Energieb¨ander eines zweidimensionalen freien
+Elektronengases die von Elektronen besetzten Zust¨ande. Nehmen Sie dazu die
+Energiedispersion von freien Elektronen und den Radius der Fermi-Kugel zu
+kF = 1.75π/a an. Was ¨andert sich, wenn anstelle eines freien Elektronengases
+ein Elektronengas betrachtet wird, welches sich in einem schwachen periodis-
+chen Potenzial befindet?
+(b) Wir betrachten nun das quadratische Gitter mit Gitterkonstante a und einer
+Tight-Binding Bandstruktur der Elektronen, Ek = −t[cos(kx·a)+cos(ky ·a)−2].
+Wo liegen das energetische Minimum und das Maximum des Bandes? Wie groß
+ist die Bandbreite in Einheiten von t?
+(c) Zeichnen Sie qualitativ den Verlauf des Bandes l¨angs (0, 0) → (π/a, 0) →
+(π/a, π/a) → (0, 0).
+11.3 Au(111) Einkristall
+Die Abbildung zeigt die Fermi-Oberfl¨ache von Au(111), sie stammt aus ARPES Mes-
+sungen (C. Tusche et al. Ultramicroscopy 206 (2019), https://doi.org/10.1016/j.ultramic.2019.112815).
+Zwei Merkmale werden im Folgenden besprochen: Die kreisf¨ormige Kontur, die einem
+Oberfl¨achenzustand entstammt und die hexagonale Kontur aus der Kristallstruktur.
+Die kreisf¨ormige Fermi-Kontur hat einen Radius von kF = 0.17 ˚A−1.
+
+(a) Berechne die Fermiwellenl¨ange sowie die zwei-dimensionale Elektronendichte
+n2D. Wieso benutzen wir die zwei-dimensionale Elektronendichte?
+(b) Beschreibe woher die detektierte Elektronenverteilung stammt? Welche Sym-
+metrien liegen im Kristall wohl offensichtlich vor? Wie verhalten sich die
+Oberfl¨achenzust¨ande? Wie sehen wohl de zugeh¨origen B¨ander aus?
+(c) Erkl¨are nun wie man aus den gemessenen ARPES Daten die effektive Masse
+erh¨alt.
+(d) Berechne nun die effektive Masse m∗ und die Fermigeschwindigkeit vF unter der
+Annahme das Bandminimum liegt ∆E = 0.5eV unterhalb der Fermienergie.
+
+11.4 Tight-Binding Model
+In den 1980er Jahren wurde eine Familie von Kupferoxid-Supraleitern entdeckt, deren
+kritische Temperaturen deutlich ¨uber denen von Metallen und Legierungen liegen.
+Diese Verbindungen besitzen Cu–O-Ebenen, in denen die Cu-Atome die Knoten
+eines quadratischen Gitters bilden, und teils zus¨atzlich Cu–O-Ketten, wie im Beispiel
+YBa2Cu3O7. Zur vereinfachten Untersuchung der Bandstruktur dieses Materials soll
+die Tight-Binding-N¨aherung auf eine isolierte Cu–O-Kette bzw. -Ebene angewendet
+werden. Dabei bezeichnet a den Cu–Cu-Abstand und y den Einheitsvektor entlang
+der Kette.
+(a) Verwenden Sie die Abbildung, um das Bravais-Gitter und die Basis einer Kupfer-
+Sauerstoff-Kette anzugeben.
+(b) Wie lautet das zugeh¨orige reziproke Gitter? Geben Sie die entsprechende erste
+Brillouin-Zone an.
+(c) Geben Sie die Form der Bloch-Funktionen in der Tight-Binding-N¨aherung an.
+Sei k der entsprechende Wellenvektor.
+
+(d) Betrachten Sie nur die n¨achsten Nachbarn und berechnen Sie die Dispersion-
+srelation EC (k). Dr¨ucken Sie das Ergebnis in Form der Matrixelemente aus:
+E0
+C = R d3r ϕ1(r) ˆHC ϕ1(r), Vchain = V = − R d3r ϕ1(r) ˆHC ϕ1(r + ay)
+wobei y der Einheitsvektor entlang der Kette ist und ˆHC der Hamiltonoperator
+eines Elektrons in der Kette.
+(e) Zeichnen Sie die Dispersionsrelation unter der Annahme V > 0. Wenn die
+Elektronenbesetzung dieses Bandes ein Elektron pro Einheitszelle betr¨agt, wie
+sieht dann die Fermi-Oberfl¨ache aus? Was passiert, wenn die Elektronenbe-
+setzung sehr gering ist? Geben Sie in diesem Fall die effektive Masse m∗ der
+Elektronen an.

@@ -1,0 +1,81 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 8.12.25
+Blatt 7
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und -materialien
+Alexander Musta
+7.1 Elastische Eigenschaften von Festk¨orpern
+(a) Wie sind die Komponenten des Spannungstensors σij definiert? Welche
+Eigenschaft besitzt der Spannungstensor, wenn sich der K¨orper im statischen
+Gleichgewicht befindet? Gebe jeweils eine Skizze f¨ur einen W¨urfel an, welche
+eine Dehnung in y-Richtung, eine uniforme Kompression und eine Scherung
+auf der xy-Fl¨ache in Richtung y erf¨ahrt.
+(b) Wie sind die Komponenten des Dehnungstensors eij in Bezug auf den
+Verschiebungsvektor⃗u (⃗r ) definiert?
+(c) Der Elastizit¨atstensor Cijkl ist ein Tensor 4. Stufe, der eine lineare Beziehung
+zwischen dem Spannungstensor und dem Dehnungstensor herstellt
+(Verallgemeinerung des Hooke’schen Gesetzes) und wird wie folgt definiert:
+σij = X
+kl
+Cijklekl. (1)
+Außerdem kann die elastische Energiedichte eines K¨orpers geschrieben werden
+als
+U = 1
+2
+X
+ijkl
+˜Cijkleij ekl (2)
+Welche Beziehung besteht zwischen ˜Cijkl und Cijkl? Wie viele unabh¨angige
+Komponenten besitzt Cijkl f¨ur einen K¨orper im statischen Gleichgewicht?
+(d) In der Technik werden h¨aufig polykristalline Materialien verwendet, die man
+hinsichtlich ihrer elastischen Eigenschaften in guter N¨aherung als isotrope
+Festk¨orper betrachten kann. Was versteht man unter den technischen Gr¨oßen
+Young-Modul E, Poisson-Zahl ν, Kompressionsmodul B und Gleitmodul G?
+Wie sind diese Gr¨oßen definiert? Sind diese Gr¨oßen unabh¨angig voneinander?
+
+7.2 Elastizit¨atstensor eines zweidimensionalen kubischen
+Kristalls
+(a) Zeigen Sie, dass der Elastizit¨atstensor unter Symmetriebetrachtungen eines
+zweidimensionalen kubischen Gitters folgende Form annimmt:
+C =
+
+
+C11 C12 0
+C12 C11 0
+0 0 C33
+
+ .
+Die Indizes {1, 2, 3} entsprechen den Indizes {xx, yy, xy} in der sogenannten
+Voigt-Notation.
+Hinweis: Betrachte die Invarianz der Energiedichte U unter bestimmten
+Symmetrieoperationen.
+(b) Die Bewegungsgleichung f¨ur Schallwellen in einem Medium ist gegeben durch:
+ρ∂2ui
+∂t2 = X
+j=x,y,z
+∂σij
+∂j (3)
+ui steht f¨ur die lokale Auslenkung in die i-te Richtung (i = x, y, z), ρ f¨ur die
+Dichte und σij f¨ur den Spannungstensor. Zeige, dass elastische Wellen, welche
+sich in einem zweidimensionalen kubischen Gitter in die [11]-Richtung
+ausbreiten folgende Phasengeschwindigkeiten besitzen
+v1 =
+s
+C11 + 2C33 + C12
+2ρ f¨ur longitudinale Wellen (4)
+v2 =
+s
+C11 − C12
+2ρ f¨ur transversale Wellen (5)
+Hinweis: Die Bewegungsgleichung in (3) kann mit dem Ansatz einer ebenen
+Welle f¨ur die Auslenkung ui gel¨ost werden.
+7.3 Elastizit¨atsmodul
+Welche L¨angen¨anderung erf¨ahrt ein Stahlseil (Elastizit¨atsmodul E = 2 · 1011 N/m2,
+Dichte ρSt = 7.7 · 103 kg/m3) der L¨ange L = 9 km, wenn es
+(a) in einem senkrechten Schacht h¨angt?
+
+(b) im Meer (Dichte ρW = 1.03 · 103 kg/m3) abgesenkt wird?
+(c) Wie lang darf das Seil im Schacht h¨ochstens sein, damit die maximale
+zul¨assige Zugspannung von σmax = 8 · 108 N/m2 nicht ¨uberschritten wird?

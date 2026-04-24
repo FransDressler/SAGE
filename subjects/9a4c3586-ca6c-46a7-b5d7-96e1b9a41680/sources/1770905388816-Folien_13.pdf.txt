@@ -1,0 +1,65 @@
+## Spannungskomponenten in 3D
+
+## Hooksches Gesetz
+
+![This diagram depicts the components of the stress tensor acting on a three-dimensional element, showing normal and shear stress components on the faces of a cubic volume in the x, y, and z coordinate directions.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-1_1024_1251_453_515.jpg)
+Bild 6.1: Illustration der Spannungskomponenten. Auf jeder Oberfläche lassen sich Spannungskomponenten definieren, die in Richtung der drei Koordinatenachsen weisen. Der erste Index von $\sigma_{i j}$ gibt die Richtung der Kraft an, der zweite die Fläche, an der sie angreift.
+
+$$
+\Delta \boldsymbol{F}=-k \cdot \Delta \boldsymbol{x}
+$$
+
+## Zugspannung, uniforme Kompression \& Scher-Deformation
+
+![This diagram depicts a stress element in a solid mechanics context, showing the normal stress component \(\sigma_{yy}\) acting on the face of a cubic element oriented along the y-axis. It illustrates the distribution and direction of the stress \(\sigma_{yy}\) on the element's surface.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-2_756_807_450_389.jpg)
+![This diagram depicts a 3D representation of a stress tensor acting on a cubic element, showing the normal stress components σ_xx, σ_yy, and σ_zz along the x, y, and z axes respectively.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-2_674_804_450_1297.jpg)
+(c)
+![This diagram depicts a 3D stress element showing shear stresses acting on the faces of a differential cubic volume in a Cartesian coordinate system (x, y, z). It illustrates the components of shear stress, specifically σ_yz and σ_zy, acting on the cube's surfaces.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-2_745_787_454_2209.jpg)
+
+Bild 6.2: Illustration zur Elastizitätstheorie. a) Dehnung eines Würfels in $y$-Richtung. Die Zugspannung $\sigma_{y y}$ bewirkt eine Streckung in $y$-Richtung um den Betrag $\Delta y$. b) Uniforme Kompression unter allseitigem Druck. Die Kräfte, die auf die Unterseite bzw. rückwärtigen Seiten wirken, sind der Übersichtlichkeit halber nicht gezeichnet. c) Reine Scherdeformation. In a) und c) sind die für das mechanische Gleichgewicht erforderlichen Gegenkräfte punktiert dargestellt.
+
+## Die 14 Bravais-Gitter in 3D
+
+![This diagram depicts the seven crystal systems and their corresponding Bravais lattices, showing the geometric arrangements of lattice points and the angles between lattice vectors (α, β, γ) for each system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-3_1483_1754_276_609.jpg)
+
+4 Arten von Einheitszellen:
+
+\begin{aligned}
+P & =\text { primitiv } \\
+I & =\text { raumzentriert } \\
+F & =\text { flächenzentriert } \\
+C & =\text { basiszentriert }
+\end{aligned}
+
+## trigonal ~ rhomboedrisch „verzerrter Würfel“
+
+## aus Gross, Marx
+
+Identische Darstellungen in:
+Hunklinger, Ibach \& Lüth Kopitzki
+
+## Zahl der unabhängigen elastischen Konstanten
+
+| Kristallsystem | Punktgruppe | elastische Konstanten | Kubische Kristalle |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|  |  |  |  |  |  |  |  |  |
+| triklin | alle | 21 |  |  |  |  |  |  |
+| monoklin | alle | 13 | $[c]=$ <br> $[c]=$ | $c_{12}$ | $c_{12}$ | 0 | 0 | 0 |
+| orthorhombisch | alle | 9 |  | $c_{11}$ | $c_{12}$ | 0 | 0 | 0 |
+| tetragonal | $\begin{aligned} & C_{4}, C_{4 h}, S_{4} \\ & C_{4 v}, D_{4 v}, D_{4 h}, D_{2 d} \end{aligned}$ | 7 <br> 6 |  | $c_{12}$ | $c_{11}$ | $c_{44}$ | 0 | 0 |
+| rhomboedrisch | $\begin{aligned} & C_{3}, S_{6} \\ & C_{3 v}, D_{3}, D_{3 d} \end{aligned}$ | $\begin{aligned} & 7 \\ & 6 \end{aligned}$ |  |  |  |  |  |  |
+| hexagonal | alle | 5 |  |  |  |  |  |  |
+| kubisch | alle | 3 |  |  |  |  |  |  |
+
+aus Hunklinger \& Marx, Gross
+
+## Richtungsabhängigkeit der Schallgeschwindigkeiten
+
+![This diagram depicts the spatial regions labeled T and L in amorphous silicon dioxide (a-SiO2), likely representing different structural or compositional zones within the material.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-5_699_691_450_286.jpg)
+
+![This diagram depicts the constant energy contours of the valence bands (heavy hole T1, light hole T2) and the conduction band (L) in gallium arsenide (GaAs) as a function of the in-plane wavevector components (x and y).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-5_689_699_455_1315.jpg)
+Bild 6.4: Richtungsabhängigkeit der Schallgeschwindigkeit. a) Die Wellenausbreitung in Quarzglas ist isotrop. Die beiden transversalen Wellen (T) unterschiedlicher Polarisation sind entartet. b) Schallgeschwindigkeit in Galliumarsenid bei Ausbreitung in der $x y$-Ebene. Die transversalen Wellen $\mathrm{T}_{1}$ und $\mathrm{T}_{2}$ sind senkrecht bzw. parallel zur Zeichenebene polarisiert. In $\langle 100\rangle$-Richtung sind sie entartet, in den anderen Richtungen unterscheiden sich die Geschwindigkeiten deutlich.
+
+![This diagram depicts an ultrasonic pulse-echo measurement setup showing the intensity of received ultrasonic pulses (Intensität I) as a function of time (Laufzeit t), with a piezoelectric transducer acting as both sender (Sender) and receiver (Empfänger) of the ultrasonic waves.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/9a93f2c2-d013-49ab-ae88-2912f5c90baf/afc883c0-dd9d-41a1-850f-d91fd18d416a-5_1046_1041_312_2187.jpg)
+Bild 6.4: Richtungsabhängigkeit der Schallgeschwindigkeit. a) Die Wellenausbreitung in Quarzglas ist isotrop. Die beiden transversalen Wellen (T) unterschiedlicher Polarisation sind entartet. b) Schallgeschwindigkeit in Galliumarsenid bei Ausbreitung in der $x y$-Ebene. Die transversalen Wellen $\mathrm{T}_{1}$ und $\mathrm{T}_{2}$ sind senkrecht bzw. parallel zur Zeichenebene polarisiert. In $\langle 100\rangle$-Richtung sind sie entartet, in den anderen Richtungen unterscheiden sich die Geschwindigkeiten deutlich.
+

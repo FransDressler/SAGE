@@ -1,0 +1,29 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Spannungskomponenten in 3D
+aus Hunklinger
+Δ𝑭 = − 𝑘 ∙ Δ𝒙
+Hooksches
+Gesetz
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Zugspannung, uniforme Kompression & Scher-Deformation
+aus Hunklinger
+
+Die 14 Bravais-Gitter in 3D
+aus Gross, Marx
+Identische Darstellungen in:
+Hunklinger,
+Ibach & Lüth
+Kopitzki
+…
+https://demonstrations.wolfram.com/The143DBravaisLattices/
+trigonal ~
+rhomboedrisch
+„verzerrter Würfel“
+
+Zahl der unabhängigen elastischen Konstanten
+& Marx, Gross
+Kubische Kristalle
+
+Richtungsabhängigkeit der Schallgeschwindigkeiten
+Piezo

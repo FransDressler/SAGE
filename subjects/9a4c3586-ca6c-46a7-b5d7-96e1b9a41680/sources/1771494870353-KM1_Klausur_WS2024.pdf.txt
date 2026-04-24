@@ -1,0 +1,275 @@
+## Aufgabe 1: Zweidimensionales Gitter (13,5 Punk te)
+
+Abbildung 4 zeigt eine zweidimensionale Kristallstruktur aus zwei verschiedenen Atomsorten A und B. Jedes Atom hat 3 nächste Nachbarn.
+
+![This diagram depicts a two-dimensional crystal lattice structure showing the arrangement of atoms in two different layers, labeled A and B, with the lattice constant "a" indicating the distance between adjacent atoms in layer A.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-01_632_976_539_409.jpg)
+Abbildung 1 Zweidimensionale Gitter Kristallstruktur aus verschiedenen Atomen A und B .
+
+a) Geben sie eine mögliche primitive Gitterzelle mit den Koordinaten der zugehörigen Basisatomen und primitiven Gittervektoren an. Berechnen Sie die Fläche dieser primitiven Einheitszelle. Welche Drehsymmetrie hat der Kristall?
+b) Welches Bravais-Gitter beschreibt die Translationssymmetrie des Punktgitters vollständig?
+c) Zeichnen Sie die Wigner-Seitz-Zelle für das vorliegende Gitter mit den Konstruktionsschritten.
+d) Berechnen Sie die primitiven Gittervektoren des reziproken Gitters für den gegebenen Kristall und skizzieren Sie das reziproke Gitter. Welche Drehsymmetrie hat das reziproke Gitter?
+e) Zeichnen Sie die erste Brillouin-Zone des Gitters mit den Konstruktionsschritten.
+f) Wie würde sich die Drehsymmetrie des Kristalls ändern, wenn die beiden Atome in Abbildung 4 identisch sind? Welches Bravais-Gitter beschreibt die Translationssymmetrie des Punktgitters nun vollständig?
+
+## Lösung:
+
+a) Eine mögliche Wahl einer primitiven Einheitszelle ist gegeben durch die Basisvektoren
+
+$$
+\begin{gathered}
+\vec{a}_{1}=a\binom{1}{0} \\
+\vec{a}_{2}=a\binom{\frac{1}{2}}{\frac{1}{2} \sqrt{3}}
+\end{gathered}
+$$
+
+mit einer zweiatomigen Basis, wobei die Lage von Atom A durch ( 0,0 ) und die Lage von Atom B durch ( $0,-\frac{a}{\sqrt{3}}$ ) gegeben ist. Siehe Abbildung 2.
+Die Fläche beträgt
+
+A=\left|\vec{a}_{1} \times \vec{a}_{2}\right|=\frac{\sqrt{3}}{2} a^{2}
+
+Der Kristall hat eine 3-zählige Drehachse.
+
+![This image depicts a two-dimensional lattice structure showing the unit cell vectors \(\vec{a}_1\) and \(\vec{a}_2\) on the left, and on the right, it illustrates the coordination environment of an atom labeled A with its nearest neighbors in the lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-02_455_1523_1647_185.jpg)
+Abbildung 2 Links: Mögliche Wahl der Basisvektoren und Veranschaulichung der zweiatomigen Basis. Rechts: Konstruktion der Wigner-Seitz-Zelle.
+
+b) Das gegebene Punktgitter wird durch das zweidimensionale hexagonale/trigonale Bravaisgitter beschrieben.
+c) Konstruktion Wigner-Seitz-Zelle:
+
+1. Zeichne Verbindungslinien zu den nächsten Gitterpunkten
+2. Zeichne die Mittelsenkrechten zu den Verbindungslinien
+3. das kleinste eingeschlossene Volumen ist die Wigner-Seitz-Zelle Abbildung 2 zeigt eine Skizze der Konstruktion.
+d) Die primitiven Gittervektoren des reziproken Gitters ergeben sich aus
+
+\vec{a}_{i} \cdot \vec{b}_{j}=2 \pi \delta_{i j} .
+
+Damit:
+
+\begin{gathered}
+\vec{b}_{1}=\frac{2 \pi}{a}\binom{1}{-\frac{1}{\sqrt{3}}} \\
+\vec{b}_{2}=\frac{2 \pi}{a}\binom{0}{\frac{2}{\sqrt{3}}}
+\end{gathered}
+
+Das reziproke Gitter ist in Abbildung 3 dargestellt. Das reziproke Gitter hat eine 6-zählige Drehachse.
+![This image depicts the reciprocal lattice of a hexagonal lattice, showing the basis vectors \(\vec{b}_1\) and \(\vec{b}_2\) and the construction of the first Brillouin zone as a hexagonal region around the origin in reciprocal space.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-03_690_1691_1265_274.jpg)
+
+Abbildung 3 Links: Reziprokes Gitter mit primitiven reziproken Gittervektoren. Rechts: Konstruktion der ersten Brillouinzone.
+e) Die erste Brillouinzone ist in Abbildung 3 dargestellt.
+f) Der Kristall hat dann eine 6-zählige Drehsachse. Das zugrundeliegende Bravaisgitter ist nach wie vor das zweidimensionsonale trigonale/hexagonale Gitter mit einer zweiatomigen Basis.
+
+## Aufgabe 2: Röntgenbeugung (8 Punkte)
+
+![This diagram is an X-ray diffraction (XRD) pattern showing the intensity of diffracted X-rays as a function of the diffraction angle (2 Theta), used to identify the crystalline phases present in a material. The peaks marked with triangles indicate specific diffraction angles corresponding to the crystal planes in the sample.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-04_764_967_366_450.jpg)
+Abbildung 4 Röntgenbeugungsexperiment
+
+Das Ergebnis eines Röntgenbeugungsexperiments an NaCl mit einer Wellenlänge von $1.54 \AA \AA$ zeigt Peaks bei den im obigen Bild dargestellten Winkeln. Der Kristall hat eine fcc-Struktur mit einer Gitterkonstante von $5.61 \AA$.
+a) NaCl kann mit 8 Atomen einer sc Elementarzelle dragestellt werden. Die Lage der einzelnen Atome ist gegeben bei: $\mathrm{Cl}:(0,0,0),\left(\frac{1}{2}, \frac{1}{2}, 0\right),\left(0, \frac{1}{2}, \frac{1}{2}\right),\left(\frac{1}{2}, 0, \frac{1}{2}\right)$ Na: $\left(\frac{1}{2}, \frac{1}{2}, \frac{1}{2}\right),\left(\frac{1}{2}, 0,0\right),\left(0, \frac{1}{2}, 0\right),\left(0,0, \frac{1}{2}\right)$. Berechnen Sie den Strukturfaktor und geben Sie die Fälle an, in denen er nicht verschwindet.
+b) Bestimmen Sie die Indizes für die fünf Peaks in der Abbildung, unter der Annahme, dass sie alle erster Ordnung sind. Beschriften Sie die Abbildung entsprechend.
+
+## Lösung:
+
+a) Das Einsetzen dieser Positionen in den Strukturfaktor ergibt
+
+S_{h k l}=f_{C l}[1+\exp \{-i \pi(h+k)\}+\exp \{-i \pi(h+l)\}+\exp \{-i \pi(k+l)\}] \\
++f_{N a}\left[\exp \{-i \pi(h+k+l)\}+\exp (-i \pi h)+\exp (-i \pi k)+\exp \left(-i_{\pi l}\right)\right] \\
+S_{h k l}=\left[f_{C l}+f_{N a} \exp \{i \pi(h+k+l)\}\right] \\
+\cdot[1+\exp \{i \pi(h+k)\}+\exp \{i \pi(h+l)\}+\exp \{i \pi(k+l)\}] \\
+S_{h k l}=\left\{\begin{array}{lll}
+4\left(f_{C l}+f_{N a}\right) & h, k, l & \text { alle gerade } \\
+4\left(f_{C l}-f_{N a}\right) & h, k, l & \text { alle ungerade }
+\end{array}\right.
+
+b) Die Bragg-Gleichung für kubische Systeme lautet:
+
+n \lambda=2 d_{h k l} \sin \left(\theta_{h k l}\right)
+
+where
+
+d_{h k l}=\frac{a}{\sqrt{h^{2}+k^{2}+l^{2}}}
+
+Um Indizes den von uns betrachteten Spitzen zuzuordnen
+
+\sin ^{2}(\theta)=\frac{\lambda^{2}}{4 a^{2}} N^{2}
+
+where $N^{2}=\left(h^{2}+k^{2}+l^{2}\right)$
+Für ein fcc-Gitter können wir entweder alle Indizes als gerade oder alle ungerade haben, Daher sind Kombinationen wie ( $1,0,0$ ) oder ( $1,1,0$ ) nicht zulässig.
+
+\begin{aligned}
+& \text { mit } \sin ^{2}\left(\theta_{h k l}\right)=0,0585 \text { for } \theta=14 \mathrm{deg} \\
+& \sin ^{2}\left(\theta_{h k l}\right)=0,0760 \text { for } \theta=16 \mathrm{deg} \\
+& \sin ^{2}\left(\theta_{h k l}\right)=0,1527 \text { for } \theta=23 \mathrm{deg} \\
+& \sin ^{2}\left(\theta_{h k l}\right)=0,2061 \text { for } \theta=27 \mathrm{deg} \\
+& \sin ^{2}\left(\theta_{h k l}\right)=0,2277 \text { for } \theta=28,5 \mathrm{deg}
+\end{aligned}
+
+Die Spitzen sind also: $N^{2}=3$ peak $(1,1,1), N^{2}=4$, peak $(2,0,0)$, $N^{2}=8$, peak $(2,2,0), N^{2}=11$, peak $(3,1,1), N^{2}=12$, peak $(2,2,2)$
+
+## Aufgabe 3: Zweiatomige Lineare Kette (12 Punkte)
+
+a) Was ist der Unterschied zwischen einer akustischen und optischen Mode? Beschreiben Sie dazu, wie sich die Teilchen bewegen.
+b) Zeigen Sie ausgehend von den Bewegungsgleichungen, dass die Dispersionsrelation longitudinaler Schwingungen eines eindimensionalen Gitters mit zwei Atomen in einer Einheitszelle gegeben ist durch
+
+\omega^{2}=\frac{D}{m_{1} m_{2}}\left(m_{1}+m_{2} \pm \sqrt{m_{1}^{2}+m_{2}^{2}+2 m_{1} m_{2} \cos (q a)}\right) .
+
+Die Länge der Einheitszelle sei $a$ und jede Einheitszelle enthält ein Atom mit Masse $m_{1}$ und ein Atom mit Masse $m_{2}$, welche mit Federn mit Federkonstante $D$ verbunden sind (siehe Skizze). Alle Federn sind gleich und die Bewegung der Teilchen ist nur in einer Dimension.
+Hinweis: Die folgende Identität könnte hilfreich sein $e^{-\mathrm{i} x}+e^{\mathrm{i} x}= 2 \cos x$.
+![This diagram depicts a one-dimensional mass-spring system model showing two masses, \( m_1 \) and \( m_2 \), connected by springs with spring constant \( D \) and separated by a distance \( a \). It is typically used to illustrate lattice vibrations or phonons in a diatomic linear chain in solid state physics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-06_328_1404_1328_207.jpg)
+c) Bestimmen Sie die Frequenzen der akustischen und optischen Mode bei $q=0$.
+d) Zeigen Sie, dass die Gruppengeschwindigkeit an der Grenze der ersten Brillouinzone Null ist.
+
+
+a) Die erste Skizze zeigt eine langwellige akustische Welle: Alle Atome in der Einheitszelle bewegen sich in Phase mit langsamer räumlicher Modulation.
+![This diagram depicts a model of coupled oscillators or masses connected by springs, illustrating the concept of vibrational modes or wave propagation through a chain of masses and springs. It shows the displacement and interaction of individual masses connected by springs in a mechanical system.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-07_234_1392_0_107.jpg)
+
+Die zweite Skizze zeigt eine langwellige optische Welle: Die zwei verschiedenen Atome schwingen außer Phase mit langsamer räumlicher Modulation. Im Allgemeinen ist die Amplitude der Bewegung der verschiedenen Atome in der Zelle nicht gleich.
+![This diagram depicts a model of coupled oscillators, showing pairs of masses connected by springs with arrows indicating the direction of motion or force between them. It illustrates the dynamics of oscillatory motion in a system of masses and springs.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-07_218_1398_563_138.jpg)
+b) Sei $x_{n}$ die Position des $n$-ten Teilchens der Masse $m_{1}$ und $y_{n}$ die Position des $n$-ten Teilchens der Masse $m_{2}$. Wir nehmen an, dass die Gleichgewichtsposition von $x_{n}$ gegeben ist als na und die Gleichgewichtsposition von $y_{n}$ als $n a+d$.
+Wir schreiben folgende Bewegungsleichungen für die Abweichungen von diesen Gleichgewichtspositionen $\delta x_{n}$ und $\delta y_{n}$ :
+
+\begin{aligned}
+m_{1} \delta \ddot{x}_{n} & =-D\left(\delta x_{n}-\delta y_{n-1}\right)-D\left(\delta x_{n}-\delta y_{n}\right) \\
+m_{2} \delta \ddot{y}_{n} & =-D\left(\delta y_{n}-\delta x_{n}\right)-D\left(\delta y_{n}-\delta x_{n+1}\right)
+\end{aligned}
+
+Mit den Ansätzen
+
+\delta x_{n} & =A_{x} e^{\mathrm{i} q a n-\mathrm{i} \omega t} \\
+\delta y_{n} & =A_{y} e^{\mathrm{i} q a n-\mathrm{i} \omega t}
+
+erhalten wir
+oder
+
+-m_{1} \omega^{2} A_{x} e^{\mathrm{i} q n a}=-2 D A_{x} e^{\mathrm{i} q n a}+D A_{y}\left(e^{\mathrm{i} q n a}+e^{\mathrm{i} q(n-1) a}\right) \\
+-m_{2} \omega^{2} A_{y} e^{\mathrm{i} q n a}=-2 D A_{y} e^{\mathrm{i} q n a}+D A_{x}\left(e^{\mathrm{i} q n a}+e^{\mathrm{i} q(n+1) a}\right) \\
+\omega^{2} A_{x}=2\left(D / m_{1}\right) A_{x}-\left(D / m_{1}\right)\left(1+e^{-\mathrm{i} q a}\right) A_{y} \\
+\omega^{2} A_{y}=2\left(D / m_{2}\right) A_{y}-\left(D / m_{2}\right)\left(1+e^{\mathrm{i} q a}\right) A_{x}
+
+Dies ist ein Eigenwertproblem von $\omega^{2}$. Wir müssen also die Nullstellen der Determinante
+
+\left|\begin{array}{cc}
+2\left(D / m_{1}\right)-\omega^{2} & -\left(D / m_{1}\right)\left(1+e^{-\mathrm{i} q a}\right) \\
+-\left(D / m_{2}\right)\left(1+e^{\mathrm{i} q a}\right) & 2\left(D / m_{2}\right)-\omega^{2}
+\end{array}\right|
+
+finden.
+Dies gibt die Gleichung
+
+& 0=\omega^{4}-\omega^{2}\left(2 D\left(1 / m_{1}+1 / m_{2}\right)\right)+\frac{D^{2}}{m_{1} m_{2}}\left(4-\left(1+e^{\mathrm{i} q a}\right)\left(1+e^{-\mathrm{i} q a}\right)\right) \\
+& \left.0=\omega^{4}-\omega^{2}\left(\frac{2\left(m_{1}+m_{2}\right) D}{m_{1} m_{2}}\right)+\frac{D^{2}}{m_{1} m_{2}}(2-2 \cos (q a))\right)
+
+Eine Gleichung der Form $0=x^{4}+b x^{2}+c$ kann folgendermaßen gelöst werden. Substituiere $u=x^{2}$. Dann
+
+0=u^{2}+b u+c .
+
+Dies ergibt mit der allgemeinen Lösungsformel für quadratische Gleichungen
+
+u=-\frac{b}{2} \pm \sqrt{\frac{b^{2}}{4}-c}
+
+und damit
+
+x^{2}=-\frac{b}{2} \pm \sqrt{\frac{b^{2}}{4}-c}
+
+Wir finden als Lösung von Gleichung (9)
+
+\omega^{2}=\frac{D}{m_{1} m_{2}}\left(m_{1}+m_{2} \pm \sqrt{m_{1}^{2}+m_{2}^{2}+2 m_{1} m_{2} \cos (q a)}\right)
+
+Das negative Vorzeichen entspricht dem akustischen Zweig, das positive dem optischen.
+c) Für $q=0, \cos (q a)=1$. Die akustische Mode hat die Frequenz (Energie) null. Die Frequenz der optischen Mode ist
+
+\omega=\sqrt{\frac{2 D\left(m_{1}+m_{2}\right)}{m_{1} m_{2}}}
+
+d) Die Gruppengeschwindigkeit ist gegeben als $d \omega / d q \cdot d \omega / d \cos (q a)$ ist nicht singulär, aber durch anwenden der Kettenregel findet $\operatorname{man} d \cos (q a) / d q= a \sin (q a)=0$ an der Grenze der Brillouinzone $\left(q= \pm \frac{\pi}{a}\right)$.
+
+## Aufgabe 4: Zustandsdichte Dreidimensionaler Fermionensysteme (12 Punkte)
+
+a) Leiten Sie die Zustandsdichte $D(E)$ für das dreidimensionale Elektronengas aus der Anzahl besetzter Zustände im reziproken Raum her. Geben Sie die Fermi-Wellenzahl $k_{F}$ und die Fermi-Energie $E_{F}$ als Funktion der Elektronendichte an.
+b) Berechnen Sie die Fermi-Energie $E_{F}$ (in eV ), die Fermi-Temperatur $T_{F}$ (in K ), den Fermi-Wellenvektor $k_{F}$ (in $\mathrm{m}^{-1}$ ) und die Fermi-Geschwindigkeit $v_{F}$ (in $\mathrm{ms}^{-1}$ ) für $\mathrm{T}=0 \mathrm{~K}$ von Kalium (bcc-Struktur; $\mathrm{a}=5.23 \AA$; ein Leitungselektron pro Atom).
+c) Betrachten Sie die anisotrope Dispersion
+
+E(\boldsymbol{k})=\frac{\hbar^{2}}{2}\left[\frac{k_{x}^{2}}{m_{11}}+\frac{k_{y}^{2}}{m_{22}}+\frac{k_{z}^{2}}{m_{33}}\right]
+
+eines dreidimensionalen Fermigases. Die Zustandsdichte $D(E)$ eines dreidimensionalen Fermionensystems mit einer solchen anisotropen Dispersion $E(\boldsymbol{k})$ lässt sich mittels der Gleichung
+
+D(E)=\frac{V}{(2 \pi)^{3}}\left|\frac{d V_{k}}{d E}\right|
+
+berechnen. $V$ ist hierbei das Volumen des Systems im realen Raum und $V_{k}$ das von der Fläche konstanter Energie umschlossene Volumen im reziproken Raum. Berechnen Sie die Zustandsdichte $D(E)$ dieses Fermionensystems.
+Hinweis: Ein Ellipsoid mit Volumen $V=\frac{4 \pi}{3} a b c$ kann beschrieben werden durch die Gleichung $1=\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}+\frac{z^{2}}{c^{2}}$ mit den Halbachsen $a, b, c$.
+
+
+a) Besetzte Zustände liegen innerhalb einer Kugel im $\vec{k}$-Raum mit Radius $k$. Durch die periodischen Randbedingungen nimmt ein Zustand ein
+
+Volumen $\left(\frac{2 \pi}{L}\right)^{3}$ im $\vec{k}$-Raum ein, wobei das Kristallvolumen $V=L^{3}$. Die Zahl der Zustände ist gegeben durch
+
+N(k)=2 \cdot \frac{\frac{4 \pi}{3} k^{3}}{\left(\frac{2 \pi}{L}\right)^{3}}=\frac{V}{3 \pi^{2}} k^{3}
+
+wobei der Faktor 2 das Pauli-Prinzip berücksichtigt.
+Das freie Elektronengas besitzt die Dispersion $E=\frac{\hbar^{2}}{2 m} k^{2}$ und damit $k=\left(\frac{2 m E}{\hbar^{2}}\right)^{1 / 2}$.
+Es folgt
+
+N(E)=\frac{V}{3 \pi^{2}}\left(\frac{2 m E}{\hbar^{2}}\right)^{3 / 2}
+
+Die Zustandsdichte ist dann
+
+D(E)=\frac{d N(E)}{d E}=\frac{V}{2 \pi^{2}}\left(\frac{2 m}{\hbar^{2}}\right)^{3 / 2} \sqrt{E}
+
+Für $\mathrm{T}=0 \mathrm{~K}$ liegen besetzte Zustände innerhalb Kugel mit Radius der Fermi-Wellenzahl $k_{F}$. Also aus 1
+
+k_{F}=\left(\frac{3 \pi^{2} N}{V}\right)^{1 / 3}=\left(3 \pi^{2} n\right)^{1 / 3}
+
+wobei $n=N / V$ die Elektronendichte ist.
+Für die Fermi-Energie gilt
+
+E_{F}=\frac{\hbar^{2}}{2 m}\left(3 \pi^{2} n\right)^{2 / 3}
+
+b) Es gilt:
+
+E_{F}=\frac{\hbar^{2}}{2 m}\left(3 \pi^{2} n\right)^{2 / 3} \\
+k_{F}=\left(3 \pi^{2} n\right)^{1 / 3} \\
+v_{F}=\frac{\hbar}{m}\left(3 \pi^{2} n\right)^{1 / 3} \\
+T_{F}=\frac{E_{F}}{k_{B}}
+
+Außerdem gilt:
+
+n=\frac{N}{V}=\frac{w \cdot p}{a^{3}},
+
+wobei $w$ die Anzahl der Leitungselektronen pro Atom ist und $p$ die Anzahl der Gitterpunkte pro Einheitszelle beschreibt.
+
+## Kalium
+
+Kalium kristallisiert in der bcc-Struktur mit $a=5.23 \AA, w=1, p=2$, also $n=1.4 \cdot 10^{28} \mathrm{~m}^{-3}$.
+Daraus ergeben sich folgende Werte:
+
+E_{F}=3.39 \cdot 10^{-19} \mathrm{~J}=2.1 \mathrm{eV}, \\
+k_{F}=7.46 \cdot 10^{9} \mathrm{~m}^{-1}, \\
+v_{F}=0.86 \cdot 10^{6} \mathrm{~ms}^{-1}, \\
+T_{F}=2.46 \cdot 10^{4} \mathrm{~K} .
+
+c) Die Dispersion lässt sich umschreiben zu
+
+1=\frac{k_{x}^{2}}{a^{2}}+\frac{k_{y}^{2}}{b^{2}}+\frac{k_{z}^{2}}{c^{2}} ;
+
+Eine Fläche konstanter Energie entspricht demnach einem Ellipsoid mit den Halbachsen
+
+a=\frac{1}{\hbar}\left(2 m_{11} E\right)^{1 / 2}, \quad b=\frac{1}{\hbar}\left(2 m_{22} E\right)^{1 / 2}, \quad c=\frac{1}{\hbar}\left(2 m_{33} E\right)^{1 / 2} .
+
+Für das von der Fläche konstanter Energie $E$ umschlossene Volumen im reziproken Raum $V_{k}$ ergibt sich
+
+V_{k}=\frac{4 \pi}{3} a b c=\frac{8 \sqrt{2} \pi}{3 \hbar^{3}}\left(m_{11} m_{22} m_{33}\right)^{1 / 2} E^{3 / 2} .
+
+Es folgt
+
+D(E)=\frac{V}{(2 \pi)^{3}}\left|\frac{d V_{k}}{d E}\right|=\frac{V}{\sqrt{2} \hbar^{3} \pi^{2}}\left(m_{11} m_{22} m_{33}\right)^{1 / 2} E^{1 / 2}
+
+## Aufgabe 5: Bandstruktur im periodischen Potential (6 Punkte)
+
+Betrachten Sie zunächst ein freies Elektronengas, dessen Fermikugel den Radius $k_{F}=1.2 \pi / a$ besitzt. Nun fügen wir ein schwaches periodisches Potential hinzu. Gehen Sie für den Rest der Aufgabe von diesem so entstandenen Modell quasifreier Elektronen aus.
+a) Skizzieren Sie die die Bandstruktur $E\left(k_{x}\right)$ eines eindimensionalen quasifreien Elektronenmodells für die ersten drei Energiebänder im reduzierten Zonenschema. Markieren Sie die von Elektronen besetzten Zustände. Vergessen Sie nicht die Achsen vollständig zu beschriften.
+b) Skizzieren Sie die ersten 3 Brillouinzonen eines ebenen quadratischen Gitters. Markieren Sie für die ersten 3 Energiebänder eines zweidimensionalen quasifreien Elektronenmodells die von Elektronen besetzten Zustände. Skizzieren Sie die besetzten Zustände auch im reduzierten Zonenschema.
+
+
+a) Siehe Abbildung 5(a)
+b) Siehe Abbildung 5(b)
+
+![This diagram depicts the electronic band structure and Fermi surface of a material. Part (a) shows the energy dispersion relation as a function of wave vector \( k_x \) with the Fermi energy \( E_F \) indicated, while part (b) shows the corresponding Fermi surface contours for three different energy bands.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/ed07e741-c40f-4b73-8bb3-017989bb09d5/3992c3c3-e8db-4460-8a1a-1b236a7ea8ae-13_1029_1896_99_139.jpg)
+Abbildung 5 (a) Bandstruktur für die ersten 3 Bänder im reduzierten Schema. (b) Erweitertes und reduziertes Zonenschema für das zweidimensionale quasifreien Elektronenmodell
+

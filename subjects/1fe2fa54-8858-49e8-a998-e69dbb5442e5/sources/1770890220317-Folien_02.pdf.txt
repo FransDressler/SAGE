@@ -1,0 +1,61 @@
+Physik der kondensierten Materie
+Festkörperphysik
+Wintersemester 2025/2026
+Gliederung:
+1. Struktur fester Körper
+2. Wellen in Kristallstrukturen
+3. Gitterdynamik
+4. Thermische Leitfähigkeit (Phononen)
+5. Das freie Elektronengas
+6. Bandstruktur und Blochtheorem
+7. Ladungstransport
+
+NaCl (kubisch)
+Spessartin (kubisch)
+Rhodonit (triklin)
+Hämatit (trigonal)
+Amazonit (triklin)
+Orthorombischer
+Brookit
+Makroskopischer Regelmäßigkeiten: äußere Form, Farbe
+1. Struktur fester Körper
+
+• Einkristalline Festkörper (z.B. Si-Einkristall)
+Die Orte der Atome können durch ein periodisches Gitter von Raumpunkten beschrieben werden.
+• Polykristalline Festkörper (z.B. polykristallines Si, NaCl-Kristalle)
+… bestehen aus vielen kleinen Einkristallen, deren Größe und Orientierung ohne Ordnung variiert.
+• Amorphe Festkörper (z.B. Glas)
+Atome bzw. Moleküle sind unregelmäßig verteilt. Keine strenge Periodizität.
+• Flüssigkristalle
+Zwischenzustand zwischen geordneten Zustand eines kristallinen Festkörpers und einer isotropen Flüssigkeit.
+• Zusammengesetzte Festkörper (z.B. Holz)
+
+Kristallstruktur = Gitter + Basis
+aus Hunklinger
+
+Translationssymmetrie
+aus Hunklinger
+
+Einheitszellen in 2D und 3D Bravais-Gitter
+Welche sind primitive Einheitszellen? aus Gross, Marx
+
+Primitive Gitterzellen eines 2D Bravais-Gitter
+aus Gross, Marx
+
+Symmetrieoperationen und Symmetrieelement
+aus Gross, Marx
+
+Die 10 Punksymmetrieoperationen
+
+Punktsymmetrie-Operationen
+„Reguläre Fünf-, Sieben- oder Achtecke lassen sich nicht flächendeckend ohne
+Überschneidung bzw. Löcher anordnen. Dies bedeutet, dass Symmetrieachsen mit
+dieser Zähligkeit nicht existieren.“
+
+Quasi-Kristalle
+aus Hunklinger, Gross, Marx
+In einem Quasikristall sind die Atome nicht wirklich periodisch sondern nur
+„quasiperiodisch“ angeordnet. D.h. Quasikristalle besitzen eine lokal regelmäßige
+Struktur, sind über große Abstände aber aperiodisch aufgebaut.
+D. Shechtman, I. Blech, D. Gratias, J. Cahn,
+Metallic Phase with Long-Range Orientational Order and No Translational Symmetry, Phys. Rev. Lett. 53, 1951(1984).

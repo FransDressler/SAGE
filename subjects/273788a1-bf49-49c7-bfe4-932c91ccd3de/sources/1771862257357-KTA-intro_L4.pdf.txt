@@ -1,0 +1,152 @@
+# Übung zur Einführung in die Kern-, Teilchen- und Astrophysik <br> Dr. Raimund Strauss <br> Wintersemester 2025/26 
+
+## Blatt Nr. 4
+
+8. November 2025
+
+## Aufgabe 1 : Wirkungsquerschnitt
+
+Der Wirkungsquerschnitt ist ein Maß für die Wahrscheinlichkeit einer bestimmten Wechselwirkung zwischen einem einfallenden Teilchen und einem Targetteilchen.
+a. Bei einem Fixed-Target-Experiment treffen $10^{6}$ Protonen pro Zeiteinheit, auf eine 1 mm dünne Bleiplatte. Wie groß ist der Wirkungsquerschnitt für die Erzeugung von Pionen, wenn dabei $130 \pi^{-}$beobachtet werden.
+b. Die Luminosität des LHC beträgt $10^{33} \mathrm{~cm}^{-2} \mathrm{~s}^{-1}$. Die Luminosität beschreibt die Anzahl der Teilchenbegegnungen pro Zeit und Fläche. Der veranschlagte Wirkungsquerschnitt für die Erzeugung des Higgs-Bosons und den anschließenden Zerfall in zwei $\gamma$ beträgt 50 fb . Wieviele dieser Events können dabei pro Sekunde erwartet werden? Wie lange muss man auf das erste Higgs-Boson warten?
+c. Betrachten Sie ein Neutrino welches sich geradlinig durch einen beliebig langen Bleizylinder bewegt. Welche Strecke legt das Neutrino darin im Mittel zurück, bis es einmal im Bleizylinder wechselwirkt? Hinweis: Koherente Neutrino-Kern-Streuung hat mit Abstand den höchsten Wirkungsquerschnitt für Neutrino-Streuungen in Blei, rechnen sie mit einem Wirkungsquerschnitt von $\sigma=10^{-40} \mathrm{~cm}^{2}$.
+
+## Lösung: Wirkungsquerschnitt
+
+a. Durch die Vorraussetzung einer nur sehr dünnen Bleiplatte muss die Abschwächung des Strahles durch das Target nicht berücksichtigt werden, da die Dicke des Bleitargets viel geringer ist als die Abschwächlänge des Teilchenstrahles im Targetmaterial!
+Der Wirkungsquerschnitt ist laut Povh folgendermaßen definiert:
+$\sigma=\frac{\text { Zahl der Reaktionen pro Zeiteinheit }}{\text { Zahl der Strahlteilchen pro Zeiteinheit pro Flächeneinheit × Zahl der Streuzentren }}\left[\mathrm{m}^{2}\right]$
+Die Anzahl der Targetatome pro Volumen $V=S \cdot l$, wobei $S$ der durchstrahlten Fläche und $l$ der Dicke des Targets entsprechen, kann folgendermaßen berechnet werden:
+
+$$
+\begin{gathered}
+N_{\text {atoms }}=\frac{N_{A}\left[\frac{1}{m o l}\right] \cdot \rho\left[\frac{g}{\mathrm{~cm}^{3}}\right] \cdot S \cdot l[m]}{A\left[\frac{g}{m o l}\right]} \\
+\sigma=\frac{\frac{N_{\pi^{-}}}{t}}{\frac{N_{p}}{t \cdot S} \cdot \frac{N_{A} \rho S l}{A}}
+\end{gathered}
+$$
+
+\begin{gathered}
+\sigma=\frac{N_{\pi^{-}}}{N_{p}} \cdot \frac{A}{N_{A} \cdot \rho \cdot l} \\
+\sigma=\frac{130 .}{10^{6}} \cdot \frac{207.2\left[\frac{g}{\mathrm{~mol}}\right]}{6.022 \cdot 10^{23}\left[\frac{1}{\mathrm{~mol}}\right] \cdot 11.4\left[\frac{g}{\mathrm{~cm}^{3}}\right] \cdot 0.1[\mathrm{~cm}]} \\
+\sigma=39.2 \cdot 10^{-27}\left[\mathrm{~cm}^{2}\right]=39.2[\mathrm{mbarn}]
+\end{gathered}
+
+b. Die Luminosität beschreibt die Anzahl der Teilchenbegegnungen pro Zeit und Fläche und beschreibt somit die Leistungsfähigkeit eines Teilchenbeschleunigers.
+Somit kann die Eventrate folgendermaßen beschrieben werden:
+
+\frac{N_{e v}}{t}=L \cdot \sigma \\
+\frac{N_{e v}}{t}=\frac{10^{33}}{c m^{2} s} \cdot 50 \cdot 10^{-15} \cdot 10^{-24} \mathrm{~cm}^{2} \simeq 5 \cdot 10^{-5} \frac{1}{s}
+
+Für das Higgs-Boson muss man demnach
+
+\frac{1}{5 \cdot 10^{-5}} s=2 \cdot 10^{4} s=5.6 h
+
+warten.
+c. Für die mittlere freie Weglänge ergibt sich im Fall der Abschwächung eines Teilchenstrahles in einem ausgedehntem Material der folgende Zusammenhang:
+
+\lambda=\frac{1}{\rho_{T} \sigma}
+
+mit der Teilchendichte $\rho_{T}$ und dem Wirkungsquerschnitt $\sigma$.
+Die Teilchendichte berechnet sich durch
+
+\rho_{T}=\frac{N_{A} \rho}{M}
+
+wobei $M$ die molare Masse des Materials, $\rho$ die Materialdichte und $N_{A}$ die AvogadroKonstante ist.
+Somit folgt für die mittlere freie Weglänge eines Neutrinos im Bleizylinder unter Berücksichtigung, dass koherente Neutrino-Kern-Streuung dominiert:
+
+\lambda_{\mu}=\frac{M}{\rho \sigma N_{A}} \approx 3 \times 10^{17} \mathrm{~cm}
+
+Das entspricht in etwa 0.3 Lichtjahre, also in etwa 1/14 des Weges zu unserem Nachbarstern Alpha Centauri.
+
+## Aufgabe 2 : Das Wu-Experiment
+
+Bis 1956 nahm man an, dass die räumliche Parität stets eine erhaltende Größe ist, d. h. dass alle Naturgesetze in Bezug auf Rechts- oder Linkssymmetrie invariant sind. Tatsächlich wurde diese Invarianz in der klassischen Physik und bei den meisten Phänomenen auf atomarer und subatomarer Ebene beobachtet. Im Jahr 1957 wurde im Wu-Experiment das erste physikalische Phänomen entdeckt, das nicht räumlich symmetrisch war. Später stellte sich heraus, dass diese Paritätsverletzung charakteristisch für die schwache Wechselwirkung ist.
+
+- Begriff der Parität: Was versteht man unter einer Paritätstransformation? Wie wirkt eine solche Transformation auf den Ortsvektor, den Impuls und den Spin eines Teilchens? Welche dieser Größen verhalten sich unter Parität wie Vektoren und welche wie Pseudovektoren (axiale Vektoren)?
+
+Lösung: Eine Paritätstransformation entspricht einer Punktspiegelung am Ursprung:
+
+\vec{r} \rightarrow \vec{r}^{\prime}=-\vec{r}, \quad \vec{p} \rightarrow \vec{p}^{\prime}=-\vec{p},
+
+Die vollständige Transformation des Koordinatensystems K mit $(x, y, z)$ in $\mathrm{K}^{\prime}$ mit $\left(x^{\prime}, y^{\prime}, z^{\prime}\right)= (-x,-y,-z)$ kann, wie in Abbildung 1 gezeigt, in zwei Schritten durchgeführt werden. Zuerst durch eine Spiegelung des rechtshändigen Systems K an der $x$ - $z$-Ebene und anschließend durch eine Drehung des gespiegelten Systems um $180^{\circ}$ um die $y^{\prime}$-Achse. Dies führt zu einer vollständigen Inversion.
+
+![The diagram depicts the reflection of a coordinate system across a mirror plane ("Spiegel"), showing the transformation of the original axes (x, y, z) to the reflected axes (x', y', z') after a 180° rotation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8ac81d16-4664-4d41-a41c-a8d1ab3d7c41/31bf1d6e-2e26-4732-b4d5-2c15a2273248-3_499_1264_1400_411.jpg)
+Abbildung 1: Paritätstransformation.
+
+Polare Vektoren (z. B. Ort $\vec{r}$, Geschwindigkeit $\vec{v}$, Impuls $\vec{p}$ ) ändern unter Parität ihr Vorzeichen, während axiale Vektoren (Pseudovektoren), gebildet als Kreuzprodukt zweier polarer Vektoren, unverändert bleiben:
+
+\vec{L}=\vec{r} \times \vec{p} \rightarrow \vec{L}, \quad \vec{S} \rightarrow \vec{S} .
+
+Bis 1956 nahm man an, dass alle Naturgesetze unter dieser Operation invariant sind (Paritätserhaltung). Das Wu-Experiment (1957) zeigte jedoch, dass beim $\beta$-Zerfall eine Asymmetrie auftritt, die unter Parität ihr Vorzeichen ändern würde. Somit wird die Parität in der schwachen Wechselwirkung nicht erhalten.
+
+Anmerkung zur Helizität: Die Helizität $h=\frac{\vec{p} \cdot \vec{S}}{|\vec{p}||\vec{S}|}$ ändert unter Parität ihr Vorzeichen, da $\vec{p} \rightarrow-\vec{p}$, während $\vec{S}$ unverändert bleibt. Ein Überschuss an Elektronen mit $h<0$ (linkshändig) ist daher ein direkter Hinweis auf Paritätsverletzung.
+
+- Experimenteller Aufbau: Abbildung 2 zeigt schematisch den Aufbau des Wu-Experiments, in dem der $\beta$-Zerfall von ${ }^{60}$ Co-Kernen in einem Magnetfeld untersucht wurde. Beschreiben Sie das Prinzip des Experiments und die wichtigsten Komponenten des Aufbaus, einschließlich der Rolle des Magnetfeldes und der Kühlung der Probe.
+
+![This diagram depicts a setup for adiabatic demagnetization refrigeration, showing components such as a Co+CeMgNO3 sample, magnets for adiabatic demagnetization, and polarization coils, along with helium cooling stages and photomultiplier tubes (PMTs).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8ac81d16-4664-4d41-a41c-a8d1ab3d7c41/31bf1d6e-2e26-4732-b4d5-2c15a2273248-4_908_960_532_555.jpg)
+Abbildung 2: Experimenteller Aufbau des Wu-Experiments.
+
+Lösung: Cobalt-60 zerfällt über den $\beta^{-}$-Zerfall in einen angeregten Zustand von Nickel-60:
+
+{ }_{27}^{60} \mathrm{Co} \rightarrow{ }_{28}^{60} \mathrm{Ni}^{*}+e^{-}+\bar{v}_{e} .
+
+Die Spin- und Paritätsquantenzahlen der beteiligten Kerne sind bekannt als:
+
+{ }^{60} \mathrm{Co}: J^{\pi}=5^{+}, \quad{ }^{60} \mathrm{Ni}^{*}: J^{\pi}=4^{+}
+
+Daraus folgt für die Kerntransition eine Änderung des Gesamtspins:
+
+\Delta J=1, \quad \Delta \pi=0
+
+Die emittierten Leptonen tragen:
+
+e^{-}: s=\frac{1}{2}, \quad \bar{v}_{e}: s=\frac{1}{2}
+
+Ihre Spins kombinieren sich zu einem effektiven Gesamtdrehimpuls $S=1$, um die Erhaltung des Drehimpulses bei $\Delta J=1$ zu erfüllen.
+
+Somit kann die Gesamtbilanz des Drehimpulses beim Zerfall schematisch geschrieben werden als:
+
+J_{i}\left({ }^{60} \mathrm{Co}\right)=5 \longrightarrow J_{f}\left({ }^{60} \mathrm{Ni}^{*}\right)=4+\left(S_{e^{-} \bar{\nu}_{e}}=1\right),
+
+wobei der Gesamtdrehimpuls erhalten bleibt.
+
+Die beiden $\gamma$-Quanten werden bei der anschließenden elektromagnetischen Entspannung von ${ }^{60} \mathrm{Ni}^{*}$ emittiert:
+
+{ }_{28}^{60} \mathrm{Ni}^{*} \rightarrow{ }_{28}^{60} \mathrm{Ni}+2 \gamma
+
+Die $\gamma$-Strahlung entsteht aus einem elektromagnetischen Übergang, der Parität erhält. Sie dient daher als zuverlässige Referenz für die Orientierung der Cobalt-Kerne und erlaubt die Überprüfung, dass die Probe tatsächlich polarisiert ist.
+
+Wesentliche Komponenten des experimentellen Aufbaus:
+
+- Radioaktive Quelle: Cobalt-60-Quelle.
+- Magnetfeld: Ein starkes äußeres Magnetfeld (etwa $0.1-1 \mathrm{~T}$ ) wurde entlang der $z$-Achse angelegt. Dieses Feld richtete die magnetischen Momente der Cobalt-Kerne so aus, dass ihre Spins bevorzugt entgegengesetzt zur Feldrichtung zeigten.
+- Kryogene Kühlung: Zur Erzeugung und Aufrechterhaltung der Kernpolarisation wurde die Probe auf etwa $0,01 \mathrm{~K}$ mit einem Kryostaten unter Verwendung von flüssigem Helium gekühlt. Bei diesen Temperaturen übersteigt die ZeemanAufspaltung der Kerne $k_{\mathrm{B}} T$, und die Spins richten sich überwiegend entlang der Feldrichtung aus. Ohne Kühlung würde die thermische Bewegung die Spinorientierungen zufällig machen und die Polarisation zerstören.
+- Detektoren: Ein Elektronendetektor (Szintillationszähler) wurde oberhalb der Probe entlang der Magnetfeldachse platziert. $\gamma$-Detektoren dienten zur Kontrolle der Richtung und Intensität der $\gamma$-Emission als Referenz für die Polarisation.
+- Umkehr des Magnetfeldes: Zur Simulation einer paritätsspiegelbildlichen Konfiguration wurde die Richtung des Magnetfeldes umgekehrt.
+- Gemessene Größen und Erwartungen: Welche physikalischen Größen wurden im Experiment gemessen? Welche Verteilung der emittierten Elektronen wäre zu erwarten, wenn die Parität in der schwachen Wechselwirkung erhalten wäre? Erläutern Sie die Begründung dieser Erwartung.
+
+
+## Lösung:
+
+Gemessene Größen:
+
+- Zählrate der emittierten Elektronen.
+- Zählrate der $\gamma$-Strahlung in den beiden Zählern als Referenz für den Grad der Kernpolarisation.
+- Änderung dieser beiden Observablen bei Umkehrung des Magnetfeldes (und damit von $\vec{J}$ ).
+
+Erwartung bei Paritätserhaltung: Die Elektronenverteilung sollte symmetrisch bezüglich der Spinachse sein. Eine Umkehrung der Kernspinrichtung sollte die Zählraten nicht verändern. Da elektromagnetische Wechselwirkungen die Parität erhalten, sollte die $\gamma$ Verteilung symmetrisch und bei Feldumkehr unverändert bleiben.
+
+- Experimentelle Ergebnisse und Interpretation: Abbildung 3 zeigt die experimentellen Ergebnisse. Beschreiben Sie, was die Daten über die Emissionsrichtung der Elektronen aussagen. Wie zeigen diese Beobachtungen die Verletzung der Paritätssymmetrie? Was lässt sich aus diesen Ergebnissen folgern?
+
+Lösung: Abbildung 3 zeigt die gemessenen Zählraten für $\gamma$-Strahlung und Elektronen aus dem Zerfall polarisierten ${ }^{60} \mathrm{Co}$ in Abhängigkeit von der Zeit. Die drei Diagramme zeigen (1) die $\gamma$-Anisotropie, (2) den daraus abgeleiteten $\gamma$-Polarisationsparameter $\varepsilon_{\gamma}$ und (3) die $\beta$-Asymmetrie für entgegengesetzte Magnetfeldrichtungen.
+(1) Das obere Diagramm zeigt die normierten Zählraten der $\gamma$-Strahlung, gemessen mit zwei Detektoren: einem Äquatorialzähler (senkrecht zum Magnetfeld) und einem Polarzähler (entlang der Magnetfeldrichtung). Wenn die Probe kalt und polarisiert ist, unterscheiden sich die Zählraten deutlich: der Polarzähler registriert weniger $\gamma$-Ereignisse als der Äquatorialzähler. Mit zunehmender Temperatur nähern sich beide Kurven an, was zeigt, dass die Anisotropie verschwindet, sobald die Kerne ihre Polarisation verlieren. Diese Anisotropie der $\gamma$-Emission, die aus einem elektromagnetischen Übergang stammt, bestätigt, dass die Cobalt-Kerne tatsächlich im Magnetfeld ausgerichtet waren.
+(2) Das mittlere Diagramm quantifiziert den Grad der $\gamma$-Polarisation. Wenn $\varepsilon_{\gamma}$ gegen Null geht, wird die $\gamma$-Emission isotrop. Dieses Diagramm zeigt somit den zeitlichen Verlust der Kernpolarisation.
+(3) Das untere Diagramm zeigt die normierte $\beta$-Zählrate für den Elektronendetektor entlang der Magnetfeldrichtung für zwei entgegengesetzte Orientierungen des polarisierenden Feldes: ( $H \uparrow$ ) und ( $H \downarrow$ ). Wenn das Magnetfeld nach oben zeigt ( $H \uparrow$ ), ist die Elektronenzählrate niedriger als die warme (unpolarisierte) Referenz, während sie für ( $H \downarrow$ ) höher ist. Die $\beta$-Emission zeigt eine deutliche Asymmetrie, die ihr Vorzeichen ändert, wenn die Feldrichtung (und damit die Spinrichtung der Kerne) umgekehrt wird. Mit abnehmender Polarisation verschwindet die Asymmetrie, und beide Kurven nähern sich an. Diese $\beta$-Asymmetrie beweist, dass der $\beta$-Zerfall selbst zwischen den beiden Spiegelkonfigurationen unterscheidet, d. h. die Paritätssymmetrie wird in der schwachen Wechselwirkung verletzt.
+
+Das Wu-Experiment lieferte den ersten direkten Nachweis, dass die schwache Wechselwirkung die räumliche Parität verletzt, und zeigte damit, dass die Natur auf fundamentaler Ebene zwischen links und rechts unterscheidet.
+
+![This diagram depicts gamma anisotropy and beta asymmetry measurements over time, showing counting rates from equatorial and polar counters used to calculate gamma anisotropy and the beta asymmetry in a polarized sample. It is specifically related to the study of nuclear polarization and decay asymmetries under a polarizing magnetic field.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/8ac81d16-4664-4d41-a41c-a8d1ab3d7c41/31bf1d6e-2e26-4732-b4d5-2c15a2273248-7_1402_895_312_593.jpg)
+Fig. 2. Gamma anisotropy and beta asymmetry for polarizing field pointing up and pointing down.
+
+Abbildung 3: Ergebnisse des Wu-Experiments. Aus der Originalpublikation https://doi.org/ 10.1103/PhysRev. 105.1413
+

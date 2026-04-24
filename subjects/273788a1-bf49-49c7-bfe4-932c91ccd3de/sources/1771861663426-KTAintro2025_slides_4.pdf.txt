@@ -1,0 +1,156 @@
+Einführung in die
+![The image is an introduction to nuclear, particle, and astrophysics, showing key concepts and tools such as atomic nuclei, particle classification (Standard Model), particle accelerators, neutrino detection, nuclear reactors, cosmic phenomena like the Crab Nebula, and the timeline of the universe from the Big Bang to galaxy formation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-01_1744_3317_131_17.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction, particle detection |
+| 6 | 18/11/25 |  | Accelerators | Four vector, accelerators, cyclotron |
+| 7 | 25/11/25 | Astrophysics | Cosmic accelerators | Supernovae, cosmic rays, BBN |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Alpha, beta, gamma |
+| 10 | 16/12/25 |  | Nuclear reactors | Radiation, Reactors |
+| 11 | 13/01/26 | Particle / Nuclear | High energy physics 1 | Deep inelastic scattering |
+| 12 | 20/01/26 |  | High energy physics 2 | QCD |
+| 13 | 27/01/26 | Particle Physics | Weak interactions |  |
+| 14 | 03/02/26 | Astrophysics | Neutrinos |  |
+
+## Zusammenfassung der letzten Vorlesung
+
+![The image explains Noether's Theorem, stating that if a system has continuous symmetry, there are corresponding conserved quantities, illustrated with a butterfly's line symmetry. It also includes a photograph of Emmy Noether, the mathematician who formulated the theorem.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-03_852_1191_552_10.jpg)
+![This diagram depicts the beta-minus decay process, showing a neutron (composed of quarks udd) transforming into a proton (quarks uud) via the weak force mediated by a W⁻ boson, which then decays into an electron and an electron antineutrino (leptons).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-03_587_1014_692_1234.jpg)
+
+$$
+\left.\Gamma_{i \rightarrow f}=\frac{2 \pi}{\hbar}\left|\langle f| H^{\prime}\right| i\right\rangle\left.\right|^{2} \rho\left(E_{f}\right)
+$$
+
+Propagator-Term
+
+## Stetige Symmetrien = Erhaltung
+
+Feynman Graphen
+
+## Fermis goldene Regel
+
+## Vereinheitlichung der fundamentalen WW
+
+Jahrhundert
+16./17.
+18.
+
+Elektrostatik
+Magnetismus
+Gravitation
+19.
+
+Elektromagnetische WW
+20.
+(1. Hälfte)
+
+QED (Quantenelektrodynamik)
+schwache WW
+starke WW
+ART
+20.
+(2. Hälfte)
+elektroschwache WW
+QCD*
+Allgemeine
+Relativitäts-
+?
+Grand Unified Theorie (GUT) ? theorie
+„Weltformel“, Theorie of Everything, Stringtheorie?, Quantum Loop Gravity?
+
+## Motivation
+
+## Matter-Antimatter Asymmetry
+
+All nucleons $N_{B}$ and antinucleons $N_{\bar{B}}$ annihilated, and production is no longer possible (universe too cold)
+
+## Expected ratio:
+
+$\frac{N_{B}}{N_{\gamma}}=\frac{N_{\bar{B}}}{N_{\gamma}}=10^{-18}$
+Observed ratio:
+
+\frac{N_{B}}{N_{\gamma}}=10^{-10} \quad \frac{N_{\bar{B}}}{N_{\gamma}} \approx 0
+
+![This diagram depicts the creation of an electron-positron pair from a photon, illustrating the process of pair production where a photon transforms into a particle-antiparticle pair.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-05_431_596_1392_1334.jpg)
+![This diagram depicts the emission of electromagnetic radiation (a photon) due to the acceleration of an electric charge, specifically showing the interaction between a positive and a negative charge resulting in the emission of a photon.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-05_314_642_1473_2211.jpg)
+
+## Sakharov Criteria
+
+X \rightarrow q q, \quad X \rightarrow \bar{q} \bar{q}
+
+1) Baryon-number-violating interactions:
+
+- Process that creates only particles (no antiparticles) and only anti-partiles (no particles)
+- Lepton number violation can be translated to Baryon number violation (sphaleron processes)
+
+2) C and CP violation:
+
+- In addition to having a reaction that creates barons or anti-baryons only...
+o ...we need a difference in the production of baryons over anti-baryons
+
+3) Non-equilibrium situation:
+o In addition to creating more baryons than anti-baryons
+o ... we need a non-equilibrium, such that we do not destroy the baryons at the same rate as they are created
+
+\Gamma(X \rightarrow q q) \neq \Gamma(\bar{X} \rightarrow \bar{q} \bar{q})
+
+![This image is a black-and-white photograph of an elderly man with his eyes closed, resting his face on his hand. It does not depict a diagram or specific subject matter beyond the portrait of the person.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-06_531_595_1126_2568.jpg)
+A. D. Sacharow, 1967
+
+Electron spin explained: imagine a ball that's rotating, except it's not a ball and it's not rotating
+![This diagram depicts the intrinsic spin of a particle, specifically showing a particle with spin quantum number +1/2 and its spin orientation along the north-south axis.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-07_1099_717_622_874.jpg)
+![This diagram depicts the spin orientation of an electron, showing the electron's intrinsic angular momentum (spin) with a value of -1/2, oriented downward along the spin axis.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-07_1122_734_622_1767.jpg)
+
+## Ladungskonjugation C
+
+![This diagram depicts the concept of electron-positron pair production and annihilation, showing the transformation between a positron (e⁺) and an electron (e⁻).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-08_358_631_510_596.jpg)
+![This diagram depicts the concept of particle-antiparticle pair, specifically showing a proton (p) and its corresponding antiparticle, the antiproton (p̅), with arrows indicating their relationship or transformation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-08_486_769_916_526.jpg)
+
+Erhalten in der elektro-magnetischen und starken Wechselwirkung !
+
+![This diagram depicts the symbol for a neutrino with its spin direction indicated. It shows the neutrino particle and the orientation of its intrinsic angular momentum (spin).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-08_199_176_791_1885.jpg)
+left-handed neutrino
+
+![This image depicts the concept of a left-handed particle or object with spin indicated by the arrow. The red cross over it suggests that left-handedness is being negated or prohibited.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-08_280_282_781_2255.jpg)
+antineutrino
+(Maximale) Verletzung in der schwachen Wechselwirkung!
+
+## CP (Ladungskonjugation + Parität)
+
+![This diagram depicts the helicity and parity properties of neutrinos and antineutrinos, showing the existence of left-handed neutrinos and right-handed antineutrinos in nature, while right-handed neutrinos and left-handed antineutrinos are not found in nature. It illustrates how parity and charge parity transformations relate these different states.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/7056c90a-f9b3-4af2-87fb-4ff9c6951153/3e48689c-0bd0-48f8-9a65-fea56e78de78-09_1330_2562_416_171.jpg)
+
+## Vereinheitlichung der fundamentalen WW
+
+Jahrhundert
+16./17.
+18.
+
+Elektrostatik
+Magnetismus
+Gravitation
+19.
+
+Elektromagnetische WW
+(1. Hälfte)
+
+QED (Quantenelektrodynamik)
+schwache WW
+starke WW
+ART
+(2. Hälfte)
+elektroschwache WW
+QCD*
+Allgemeine
+Relativitäts-
+?
+Grand Unified Theorie (GUT) ? theorie
+„Weltformel“, Theorie of Everything, Stringtheorie?, Quantum Loop Gravity?
+

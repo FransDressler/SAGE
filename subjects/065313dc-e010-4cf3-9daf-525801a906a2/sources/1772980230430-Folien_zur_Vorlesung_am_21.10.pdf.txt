@@ -1,0 +1,217 @@
+## Einschub: Magnetisierungsarbeit
+
+Eine Probe mit Volumen $V=A \times L$ und Magnetisierung $M$ befindet sich in einem homogenen äußeren Magnetfeld $B$.
+![The diagram depicts the magnetic field and magnetization in a coil with N windings, showing the relationship between magnetic flux density (B), magnetic field strength (H), magnetization (M), and the total magnetic moment (m). It also illustrates the electrical current (I) and voltage (U) in the coil.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-01_1512_2552_575_396.jpg)
+
+Ausgangspunkt: Wir nehmen an, dass bei gegebenen Strom I, ein homogenes Feld $B(H)$ und eine Magnetisierung $M$ der Probe vorliegt.
+
+Ziel: Berechnung der dem System zugeführten Energie $\delta W$, bei einer kleinen Änderung des magnetischen Moments $\delta m$.
+
+- Elektrische Leistung:
+
+$$
+P_{\mathrm{el}}=U I=-I N A \dot{B}=-A L H \mu_{0}(\dot{H}+\dot{M})
+$$
+
+=-V \frac{\mu_{0}}{2} \frac{d}{d t} H^{2}-V \mu_{0} H \dot{M}=-B_{0} \frac{d}{d t} m \quad\left(B_{0}=\mu_{0} H\right)
+
+Energie des mag. Felds ohne Probe (unabhängig von der Magnetisierung, kann deshalb vernachlässigt werden)
+
+\Rightarrow \quad \delta W_{\mathrm{el}}=-B_{0} \delta m
+
+## Vorzeichen?
+
+![This diagram depicts the relationship between electric current (Strom, I) and electric voltage (elektrische Spannung, U) across a coil or solenoid, illustrating the generation of a magnetic field by the current flowing through the coil.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-03_926_958_253_147.jpg)
+
+\delta W_{\mathrm{el}}>0:
+
+- Ladungen werden auf ein höheres elektrisches Potential gehoben.
+- Die Energie der Umgebung erhöht sich.
+- Die Energie des Systems verringert sich entsprechend.
+
+Für den ersten Hauptsatz folgt:
+
+d E=\delta W=-\delta W_{\mathrm{el}}=B_{0} \delta m
+
+## Mathematischer Einschub: Vollständige und nicht vollständige Differentiale
+
+Sei $F(x, y)$ eine skalare Funktion zweier Variablen $x$ und $y$, dann ist
+
+d F=\left(\frac{\partial F}{\partial x}\right)_{y} d x+\left(\frac{\partial F}{\partial y}\right)_{x} d y
+
+das vollständige (auch totale, oder exakte) Differential von $F$.
+
+\left(\frac{\partial F}{\partial x}\right)_{y} \ldots \text { "partielle Ableitung" von } F \text { nach } x \text { bei konstantem } y
+
+" $d F$ ".... Änderung von $F \rightarrow F+d F$ bei infinitesimaler Änderung von
+
+x \rightarrow x+d x \text { und } y \rightarrow y+d y .
+
+\binom{\text { mathematisch präziser: }}{d F, d x, d y \text { sind linear Abbildungen ("1-Formen"), } \quad d F: \mathbb{R}^{2} \rightarrow \mathbb{R}}
+
+Es gilt: Gegeben ein vollständiges Differential
+
+d F=A(x, y) d x+B(x, y) d y
+
+dann ist die Stammfunktion
+
+F\left(x_{1}, y_{1}\right)=\int_{x_{0}, y_{0}}^{x_{1}, y_{1}} d F=F\left(x_{0}, y_{0}\right)+\int_{x_{0}, y_{0}}^{x_{1}, y_{1}} A(x, y) d x+B(x, y) d y
+
+bis auf eine Konstante $F\left(x_{0}, y_{0}\right)$ eindeutig bestimmt. Speziell ist das Integral
+
+F\left(x_{1}, y_{1}\right)-F\left(x_{0}, y_{0}\right)=\int_{x_{0}, y_{0}}^{x_{1}, y_{1}} d F
+
+unabhängig vom $\boldsymbol{\operatorname { W e g }}\left(x_{0}, y_{0}\right) \rightarrow\left(x_{1}, y_{1}\right)$.
+![This diagram depicts a curve in the xy-plane with two points labeled \((x_0, y_0)\) and \((x_1, y_1)\), illustrating a comparison between a red curved path and a blue direct path connecting these points. It is likely used to demonstrate concepts related to curve length, path optimization, or interpolation between two points.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-05_629_1649_1595_116.jpg)
+
+Für einen geschlossenen Weg gilt:
+
+\oint_{x_{0}, y_{0}}^{x_{1}, y_{1}} d F=0
+
+## Frage:
+
+d F=A(x, y) d x+B(x, y) d y
+
+## vollständiges Differential ?
+
+Falls $d F$ vollständiges Differential, dann
+
+A(x, y)=\left(\frac{\partial F}{\partial x}\right)_{y} \quad B(x, y)=\left(\frac{\partial F}{\partial y}\right)_{x}
+
+und wegen der Vertauschbarkeit der partiellen Ableitungen gilt:
+
+\left(\frac{\partial A}{\partial y}\right)_{x}=\frac{\partial}{\partial y} \frac{\partial F}{\partial x}=\frac{\partial}{\partial x} \frac{\partial F}{\partial y}=\left(\frac{\partial B}{\partial x}\right)_{y}
+
+## "Integrabilitätsbedingung"
+
+## Allgemein:
+
+d F=\sum_{i=1}^{N} A_{i}\left(x_{1}, \ldots x_{N}\right) d x_{i} \quad \Longleftrightarrow \quad \frac{\partial A_{i}}{\partial x_{j}}=\frac{\partial A_{j}}{\partial x_{i}} \quad \forall x_{i} \neq x_{j}
+
+vollständiges Diff.
+
+| Konvention: | $d F$ | $\ldots$ | vollständiges Differential |
+| :--- | :--- | :--- | :--- |
+|  | $\delta F$ | $\ldots$ | nicht vollständiges Differential |
+
+## Bedeutung für die Thermodynamik
+
+Sei $d F=\sum_{i=1}^{N} A_{i}\left(x_{1}, \ldots x_{N}\right) d x_{i}$ ein vollständiges Differential.
+Dann ist die Größe $F\left(x_{1}, \ldots, x_{N}\right)$ eine Zustandsfunktion, d.h. sie ist für jeden Gleichgewichtszustand eindeutig und unabhängig von der Vorgeschichte durch die Zustandsvariablen $x_{i}$ bestimmt.
+
+Bsp1: $\quad E \equiv E(V, T)=\frac{3}{2} N k_{B} T$
+
+d E=\underbrace{0}_{=A} \cdot d V+\underbrace{\frac{3}{2} N k_{B}}_{=B} \cdot d T \quad \Rightarrow \quad \frac{\partial A}{\partial T}=0=\frac{\partial B}{\partial V}
+
+vollständiges Diff. ⇒ Energie ist Zustandsfunktion
+
+Bsp2: mechanische Arbeit (als Funktion von V und T )
+
+\delta W=\underbrace{-p(T, V)}_{=A} \cdot d V+\underbrace{0}_{=B} \cdot d T \quad \Rightarrow \quad \frac{\partial A}{\partial T}=-\frac{\partial p(T)}{\partial T} \neq 0=\frac{\partial B}{\partial V}
+
+kein vollständiges Diff. ⇒ Arbeit ist wegabhängig !
+
+Daraus folgt auch das $\delta Q=d E-\delta W$ kein vollständiges Differential sein kann !
+
+## "Integrierender Faktor"
+
+Für ein nicht-vollständiges Differential $\delta F$ kann immer eine Funktion $\lambda(x, y)$ gefunden werden, sodass
+
+d F=\lambda(x, y) \delta F
+
+ein vollständiges Differential ist.
+
+## Beispiel:
+
+\delta F=y d x-x d y \quad \Rightarrow \quad\left(\frac{\partial A}{\partial y}\right)_{x}=1 \neq\left(\frac{\partial B}{\partial x}\right)_{y}=-1
+
+(kein vollständiges Diff)
+
+Integrierender Faktor: $\quad \lambda(x, y)=\frac{1}{x^{2}}$
+damit wird $d F=\lambda(x, y) \delta F=\frac{y}{x^{2}} d x-\frac{1}{x} d y$ zum vollständigen Diff.:
+
+\Rightarrow \quad\left(\frac{\partial A}{\partial y}\right)_{x}=\frac{1}{x^{2}}=\left(\frac{\partial B}{\partial x}\right)_{y}
+
+## Zweiter Hauptsatz:
+
+Einem System im thermischen Gleichgewicht kann die Größe Entropie (S) zugeordnet werden. Die Entropie ist eine Zustandsfunktion, und es gilt:
+
+- Die Entropie ist extensiv.
+- In einem reversiblen Prozess ist
+![This image depicts the thermodynamic equation for entropy change (dS) in a reversible process, showing the relationship between reversible heat transfer (δQ_rev) and temperature (T). It explains the terms in the equation, identifying δQ_rev as reversible heat supplied and T as temperature, referred to as the "integrating factor."](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-10_519_1881_892_861.jpg)
+- In einem irreversiblen Prozess ist $\delta Q_{\text {irr }}<\delta Q_{\text {rev }}$ und deshalb
+![This image depicts the Clausius inequality from thermodynamics, showing the entropy change \(dS\) being greater than the heat supplied divided by temperature for an irreversible process. The German text explains that the heat is supplied in an irreversible process.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-10_334_1887_1753_792.jpg)
+
+Folgerungen aus dem 2. Hauptsatz:
+
+1. Für ein isoliertes System ist $\delta Q=0$ und daher $d S \geq 0$
+
+- Die Entropie in einem isolierten System nimmt nie ab.
+- Im Gleichgewichtszustand ist die Entropie maximal.
+
+2. Quasistatischer Temperaturausgleich:
+![This diagram depicts heat transfer between two objects or systems at different temperatures, showing heat flow (δQ) from the higher temperature \( T_1 \) to the lower temperature \( T_2 \).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-11_281_1184_1341_364.jpg)
+
+Gesamtentropie:
+
+d S=d S_{1}+d S_{2} \geq 0
+
+(Gesamtsystem isoliert)
+
+d S_{1}=\frac{-\delta Q}{T_{1}} \quad d S_{2}=\frac{+\delta Q}{T_{2}}
+
+d S=\delta Q\left(\frac{1}{T_{2}}-\frac{1}{T_{1}}\right) \geq 0 \quad \leftrightarrow \quad T_{1}>T_{2} \Rightarrow \delta Q>0
+
+- "Wärme fließt nie von selbst von einem kälteren in ein wärmeres Reservoir." R. Clausius (1850)
+
+3. Perpetuum mobile der 2. Art:
+![This diagram depicts a thermodynamic system where a heat reservoir at temperature T transfers an amount of heat δQ to a machine, illustrating the basic setup for analyzing energy exchange in thermodynamic processes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-12_524_1385_1267_348.jpg)
+
+\oint \delta Q=-\oint \delta W ?
+
+Kreisprozess, der nur einem Reservoir Wärme entzieht und in Arbeit umwandelt ?
+
+Kreisprozess, Gesamtsystem isoliert:
+
+\left.\begin{array}{c}
+\Delta S_{\text {Maschine }}=\oint d S=0 \\
+\Delta S_{\text {res }} \simeq-\oint \frac{\delta Q}{T}<0
+\end{array}\right\} \quad \begin{gathered}
+\Delta S=\Delta S_{\text {res }}+\Delta S_{\text {Maschine }} \geq 0 \\
+\text { Widerspruch }!
+\end{gathered}
+
+- Unmöglichkeit eines Perpetuum mobile zweiter Art. Lord Kelvin (1851)
+
+
+## Anmerkungen:
+
+- Wir haben hier den 2. Hauptsatz abstrakt-mathematisch formuliert und daraus die physikalischen Konsequenzen bezüglich des Transports von Wärme und der Unmöglichkeit eines Perpetuum mobiles 2. Art abgeleitet.
+- Historisch wurde der 2. Hauptsatz mit Hilfe dieser "physikalischen" Prinzipien formuliert:
+-"Kelvin'sche Aussage":
+Es gibt kein Perpetuum mobile zweiter Art.
+
+
+## -"Clausius'sche Aussage":
+
+Es gibt keine periodisch Arbeitende Maschine, die lediglich einem kälteren Wärmebad Wärme entzieht und diese einem heißeren Wärmebad zuführt.
+
+- Diese Prinzipien sind äquivalent. Z.B., wäre es möglich ein PM 2. Art zu konstruieren, könnten wir damit periodisch Wärme von einem kalten in ein heißes Reservoir transferieren.
+- Es gibt noch weitere äquivalente Formulierungen des 2. HS, z.B:
+
+Der Wirkungsgrad eine Carnot-Prozesses kann nicht übertroffen werden.
+
+## Dritter Hauptsatz ("Nernst'scher Satz"):
+
+Bei Annäherung der Temperatur an den absoluten Nullpunkt nimmt die Entropie einen universellen (von anderen Parametern unabhängigen) Wert an.
+$S(T)$
+![This diagram depicts entropy \( S \) as a function of temperature \( T \) for different volumes \( V_1, V_2, V_3 \), showing how entropy increases with temperature at various fixed volumes.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-15_638_1194_785_213.jpg)
+
+S(T \rightarrow 0)=S_{0}
+
+\text { (meist } S_{0}=0 \text { ) }
+
+- Der 3. HS kann mit der Quantenstatistik einfach erklärt werden.
+-Aus dem 3. HS folgt, dass ein System in einer endlichen Anzahl von Kühlschritten nicht bis auf den absoluten Nullpunkt ( $\mathrm{T}=0$ ) abgekühlt werden kann*.
+![The text is a German note stating that a topic or point will be treated in more detail later. It is not a diagram or image depicting a specific subject matter.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/b3e5e289-2c37-474f-bb8f-e020c06a8c45/0982277a-4da9-4fb1-bc0a-66f7dcfd778b-15_94_1395_2151_0.jpg)
+

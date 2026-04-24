@@ -1,0 +1,85 @@
+## Spezifische Wärmekapazität
+
+![This diagram depicts the molar heat capacity (specific heat) of diamond as a function of temperature, comparing experimental data points with the theoretical curve calculated by Einstein. It also shows the classical Dulong-Petit limit for heat capacity as a reference.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-01_1149_2613_399_495.jpg)
+
+## Besetzung von Phononen-Zuständen mit einer Energie $\hbar \omega$
+
+![This diagram depicts energy level spacing in a quantum harmonic oscillator relative to thermal energy, showing the cases where the quantum energy spacing (ħω) is much greater than (left) or much less than (right) the thermal energy (k_B T).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-02_722_1285_607_235.jpg)
+![This diagram depicts the Bose-Einstein distribution function, showing the average occupation number ⟨n⟩ and the quantity ⟨n⟩ + 1/2 as functions of the dimensionless temperature parameter \( k_B T / \hbar \omega \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-02_1083_1405_471_1693.jpg)
+
+## Angewendet auf die typische Phononen-Dispersionsrelation
+
+![This diagram is a phonon dispersion relation showing the optical and acoustic branches (optische Zweige and akustische Zweige) of vibrational frequencies (ω) as a function of wave vector (qa/π) in a lattice, with an approximate contribution of ħω in the Einstein model indicated.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-03_1114_2470_421_315.jpg)
+
+## Spezifische Wärmekapazität
+
+![The diagram depicts the molar heat capacity (specific heat) of diamond as a function of temperature, comparing experimental data with Einstein's theoretical calculation. It shows that Einstein's model matches the data at low temperatures but deviates from the classical Dulong-Petit limit at higher temperatures.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-04_1246_2663_398_487.jpg)
+
+## Spezifische Wärmekapazität bei tiefen Temperaturen für „Isolatoren“
+
+![This diagram shows the relationship between the heat capacity at constant pressure (Cp) and the cube of temperature (T³) for Argon gas, illustrating how Cp varies with temperature in the range plotted.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-05_984_1398_594_341.jpg)
+Abb. 6.8: Molare Wärmekapazität von festem Argon geplottet gegen $T^{3}$. Das experimentelle Ergebnis stimmt sehr gut mit dem Debyeschen $T^{3}$-Gesetz überein (nach L. Finegold und N. E. Philips, Phys. Rev. 177, 1383-1391 (1969)).
+
+## Angewendet auf die typische Phononen-Dispersionsrelation
+
+![This diagram depicts the phonon dispersion relation in a crystal lattice, showing the optical branches ("optische Zweige") and acoustic branches ("akustische Zweige") of vibrational modes as a function of the wave vector normalized by π.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-06_1104_1350_423_314.jpg)
+Abb. 6.4: Zur Veranschaulichung der Näherungen bei der Ableitung des Tieftemperaturgrenzfalles der Wärmekapazität. Da $k_{\mathrm{B}} T$ klein ist, können die optischen Moden vernachlässigt und die akustischen Zweige durch lineare Dispersionsrelationen angenähert werden.
+
+Approximierter Beitrag $\hbar \omega$ im Einstein-Modell
+$\frac{\omega(q \rightarrow 0)}{q}=c=\sqrt{\frac{C_{1}}{M}} a=v_{\mathrm{S}} \quad$ Schallgeschwindigkeit
+
+## Zum Debye-Modell
+
+![This diagram depicts the phonon density of states \(D(\omega)\) as a function of frequency \(\omega\) for copper (Cu), comparing the real solid's phonon spectrum with the Debye approximation. It shows the actual phonon density of states with characteristic peaks and the Debye model's linear approximation up to the Debye cutoff frequency \(\omega_D\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-07_1072_1376_523_427.jpg)
+Abb. 6.6: Phononen-Zustandsdichte eines realen Festkörpers und die DebyeNäherung. Die Debye-Frequenz $\omega_{\mathrm{D}}$ bzw. der Debye-Wellenvektor $q_{\mathrm{D}}$ ist so gewählt, dass die Flächen unter den Kurven gleich sind.
+
+
+![This diagram is a plot of the specific heat capacity at constant volume (Cv) versus normalized temperature (T/Θ) for various materials, illustrating the Debye model of specific heat in solids. It shows how Cv changes with temperature for different substances, confirming the universal behavior predicted by the Debye theory.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-08_1194_1197_440_507.jpg)
+Bild 6.32: Molare Wärmekapazität verschiedener Substanzen als Funktion der reduzierten Temperatur $T / \Theta$. Durch die Normierung auf die Debye-Temperatur fallen alle Messdaten auf eine Kurve. (Nach E. Schrödinger, Handbuch der Physik, Band X, H. Geiger, K. Scheel, eds., Springer, 1926)
+
+## Debye-Temperaturen der chemischen Elemente
+
+![This diagram depicts the specific heat capacity (Cv) of various materials as a function of normalized temperature (T/Θ), illustrating the temperature dependence of specific heat in different substances.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-09_866_866_338_179.jpg)
+
+| Thermische Leitfähigkeit und Debye Temperatur |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|  | Be 1440 2.00 | Debye Temperatur (K) |  |  |  |  |  |  |  |  |  | B | C | N | 0 | F | Ne |
+|  |  |  |  |  |  |  |  |  |  |  |  | ... | 2230 | ⋯ | … | … | 75 |
+|  |  |  |  |  |  |  |  |  |  |  |  | 0.27 | 1.29 | … | … | ... | ⋯ |
+| Na | Mg |  |  |  |  |  |  |  |  |  |  | Al | Si | P | S | Cl | Ar |
+| 158 | 400 |  |  |  |  |  |  |  |  |  |  | 428 | 645 | ⋯ | … | … | 92 |
+| 1.41 | 1.56 |  |  |  |  |  |  |  |  |  |  | 2.37 | 1.48 | … | … | … | ⋯ |
+| K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni | Cu | Zn | Ga | Ge | As | Se | Br | Kr |
+| 91 | 230 | 360 | 420 | 380 | 630 | 410 | 470 | 445 | 450 | 343 | 327 | 320 | 374 | 282 | 90 | … | 72 |
+| 1.02 | … | 0.16 | 0.22 | 0.31 | 0.94 | 0.08 | 0.80 | 1.00 | 0.91 | 4.01 | 1.16 | 0.41 | 0.6 | 0.50 | 0.02 | … | ⋯ |
+| Rb | Sr | Y | Zr | Nb | Mo | Tc | Ru | Rh | Pd | Ag | Cd | In | Sn | Sb | Te | I | Xe |
+| 56 | 147 | 280 | 291 | 275 | 450 | ... | 600 | 480 | 274 | 225 | 209 | 108 | 200 | 211 | 153 | … | 64 |
+| 0.58 | … | 0.17 | 0.23 | 0.54 | 1.38 | 0.51 | 1.17 | 1.50 | 0.72 | 4.29 | 0.97 | 0.82 | 0.67 | 0.24 | 0.02 | … | ⋯ |
+| Cs | Ba | La | Hf | Ta | W | Re | Os | Ir | Pt | Au | Hg | TI | Pb | Bi | Po | At | Rn |
+| 38 | 110 | 142 | 252 | 240 | 400 | 430 | 500 | 420 | 240 | 165 | 71.9 | 78.5 | 105 | 119 | ⋯ | ⋯ | 64 |
+| 0.36 | … | 0.14 | 0.23 | 0.58 | 1.74 | 0.48 | 0.88 | 1.47 | 0.72 | 3.17 | … | 0.46 | 0.35 | 0.08 | … | … | ⋯ |
+| Fr | Ra | Ac |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ⋯ | ⋯ | ⋯ | ⋯ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ⋯ | … | … |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| ⋯ |  |  | Ce | Pr | Nd | Pm | Sm | Eu | Gd | Tb | Dy | Ho | Er | Tm | Yb | Lu |  |
+|  |  |  | ⋯ | ... | ... | ⋯ | ⋯ | … | 200 | ... | 210 | ... | … | ⋯ | 120 | 210 | ⋯ |
+|  |  |  | 0.11 | 0.13 | 0.16 | … | 0.13 | ⋯ | 0.11 | 0.11 | 0.11 | 0.16 | 0.14 | 0.17 | 0.35 | 0.16 |  |
+| ⋯ |  |  | Th | Pa | U | Np | Pu | Am | Cm | Bk | Cf | Es | Fm | Md | No | Lr |  |
+|  |  |  | 163 | … | 207 | ... | ... | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ |
+|  |  |  | 0.54 | ... | 0.28 | 0.06 | 0.07 | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ | ⋯ |  |
+
+## Spezifische Wärmekapazität Diamant
+
+![This diagram depicts the specific heat capacity (Spezifische Wärme) of diamond as a function of temperature, comparing experimental data with theoretical predictions from the Debye and Einstein models.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-10_1128_1220_474_432.jpg)
+Bild 6.33: Spezifische Wärme von Diamant. (Nach Y.S. Touloukian, E.H. Buyco, Thermophysical Properties of Matter, Band V, IFI/ Plenum, 1970.) Die quadratischen Messpunkte stammen von F.H. Weber, Ann. Phys. 147, 311 (1872). Ebenfalls eingezeichnet sind die theoretischen Kurven von A. Einstein bzw. P. Debye.
+
+## Spezifische Wärmekapazität in 2D
+
+![This diagram shows the specific heat capacity (spezifische Wärme) of a helium-3 (^3He) film as a function of the square of temperature (T²) at different densities (Θ) indicated by various symbols and corresponding temperatures in Kelvin. It is used to analyze the temperature dependence of the specific heat in ^3He films.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/cfa35f27-577d-4d9a-9bd7-fc67d5594b2f/8ae75697-c3de-4769-8459-35abaee6e5e2-11_1210_1262_447_426.jpg)
+
+$$
+C_{V} \sim T^{2}
+$$
+
+Bild 6.34: Spezifische Wärme von monolagigen ${ }^{3} \mathrm{He}$-Filmen auf Graphit als Funktion von $T^{2}$. Die Dichte der Heliumatome steigt links beginnend von 0,078 auf 0,092 pro $\AA^{2}$ an. Damit nimmt auch die Debye-Temperatur $\Theta$ zu, die ebenfalls angegeben ist. (Nach S.V. Hering et al., J. Low Temp. Phys. 25, 793 (1976).)
+

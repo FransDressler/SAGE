@@ -1,0 +1,99 @@
+### 2.3 Fomies-Eutwidley son Panktyittens
+
+Do unistalle und dacint die strendichtevertally $s(1)$ periodisri ist, hann die Stendichtevertaily in eine Fomier-Reike zerleyt wender.
+
+1D: $u(x) \cdot \sum_{p=1}^{\infty} u_{p} \cdot e_{k}^{i\left(\frac{2 \pi}{a} \cdot p\right) \cdot x}, p \in \mathbb{Z}$
+Allj: Do Term $\frac{2 \pi}{a} \cdot p$ ist ein Punkt ins rexipsolven Ramm.
+Wenn $u(x)$ eine nelle Fundition ist. $\Rightarrow u_{-p}^{*}=u_{p}(2 . B$ Afou-
+3D:
+
+$$
+\begin{aligned}
+u(\underline{I}) & =\sum_{\underline{\hat{M}}} u \underline{\hat{k}} \cdot e^{i \underline{\hat{k}} \underline{\underline{r}}} ; \text { rexiprobes cittervelts } \underline{\underline{Q}} \\
+\text { bzw } u(\underline{\underline{r}}) & =\sum_{\underline{\underline{G}}} u_{\underline{G}} \cdot e^{i \underline{\underline{G}} \cdot \underline{\underline{r}}} ; \underline{G}-11-
+\end{aligned}
+$$
+
+Ein reziprober Githervelets hat die allyemeine Form:
+
+\begin{array}{r}
+\underline{G}=\underline{k}_{u, k, e}=k \cdot \underline{b}_{1}+k \underline{b}_{2}+e \cdot \underline{b}_{3} \\
+u_{1,} k, e \in \mathbb{Z} .
+\end{array}
+
+Die Basisvelteren $\underline{b}_{1}, \underline{b}_{2}$ und $\underline{b}_{3}$ definierer die Einheitszelle des nexipioken Gitters.
+Da das Gittr periodisch ist, muss fin fin die Strendichtevertaly getter:
+
+\begin{gathered}
+s(\underline{r})=\rho(\underline{r}+\underline{R})^{\underline{\otimes}} ; \underline{R}=u_{1} \cdot a_{1}+u_{2} \cdot a_{2}+u_{5} a_{3} \\
+\left(u_{i} \in R\right) \cdot
+\end{gathered}
+
+Aus $s( \pm)=\sum_{n_{1} k_{1} e} s k_{1} k_{1} e \cdot e^{i \underline{G} \cdot \underline{r}}$
+
+=\sum_{n, k, e}^{n, k, e} s h, k, e \cdot e^{i \underline{k} u, k e \cdot \tilde{r}}=s(\underline{r})
+
+folgt $e^{i \underline{k}_{n k l}-\underline{r}(\mathbb{Q})} e^{i \underline{k}_{n k e}(\underline{r}+\underline{R})}$
+$\Rightarrow \quad e^{i \underline{k} u k e \cdot \underline{R}}=e^{i \underline{G} \cdot \underline{R}}=1$
+$\Rightarrow \quad \underline{u}$ uke $\cdot \underline{R}=\underline{G} \cdot \underline{R}=2 \pi \cdot p \quad p \in \mathbb{Z}$.
+Mit Unke und $\underline{b}$ eingesetzt, giet fin beliebige $n_{i}, h, k, e$
+
+\underline{a}_{j} \cdot \underline{b}_{i}=2 \pi \delta_{i j} * x .
+
+Bemenknyan:
+$-\underline{u}_{u k e} \cdot \underline{R}=\left(u \underline{b}_{1}+u \underline{b}_{2}+l \underline{b}_{3}\right) \cdot\left(u_{1} \underline{a}_{1}+u_{2} \underline{a}_{2}+u_{3} \underline{a}_{3}\right)$
+
+\Rightarrow e^{i \underline{k} u k e \cdot R^{* *}}=e^{i \underline{G} \cdot \underline{R}^{(\text {gauze Zahl })}}=e^{i 2 \pi(\text { jamezane })}=1
+
+- Im Folgenden (und im Allgemaine) wind des bke weist weggelasse.
+
+Seles off benutet man uw $\underline{G}$ (sieke oban).
+
+- Fogende houstruktionsvasonift alambt es, die resiprolen
+
+Gitter-Basisvelfuen konstruion.
+
+\underline{b}_{1}=2 \pi \cdot \frac{\underline{a_{2}} \times \underline{a}_{3}}{\underline{a}_{1} \cdot\left(\underline{a_{2}} \times \underline{a}_{3}\right)} ; \underline{b_{2}}=2 \pi \cdot \frac{\underline{a}_{3} \times \underline{a}_{1}}{\underline{a}_{1} \cdot\left(\underline{a}_{2} \times \underline{a}_{3}\right)} ; \underline{b_{3}}=2 \pi \cdot \frac{\underline{a_{1}} \times \underline{a}_{2}}{\underline{a_{1}}\left(\underline{a_{2}} \times \underline{a_{3}}\right)}
+
+$-\underline{a}_{1} \cdot\left(\underline{a}_{2} \times \underline{a}_{3}\right)=\underline{a}_{2} \cdot\left(\underline{a}_{3} \times \underline{a}_{1}\right)=\underline{a}_{3} \cdot\left(\underline{a}_{1} \times \underline{a}_{2}\right)=V_{E Z}$
+entspridit Volumen der Einkeitszalle
+$-\underline{a}_{1} \cdot \underline{b}_{1}=2 \pi ; \underline{a}_{2} \cdot \underline{b}_{2}=2 \pi ; \underline{a}_{3} \cdot \underline{b}_{3}=2 \pi ; \underline{a} ; \underline{b}_{j}=2 \pi(i=0)$
+$\underline{a}_{1} \cdot \underline{b}_{2}=0 ; \cdots \quad \underline{a}_{i} \underline{b}_{j}=2 \pi \delta_{i j}$
+
+- Die neziproven Gitterveltar 首uke bzw. besso G (Guke) bilder das reziprolle Gittes.
+
+
+## Beispiel
+
+- Einfade venbisde Gitts unit Gitter Voustante a :
+$\underline{a}_{1}=a(1,0,0) ; \underline{a}_{2}=a \cdot(0,1,0) ; \underline{a}_{3}=a \cdot(0,0,1), V=a^{3}$.
+$\underline{b}_{1}=\frac{2 \pi}{a}(1,0,0) ; \quad \underline{b}_{2}=\frac{2 \pi}{a}(0,1,0) ; \quad \underline{b}_{3}=\frac{2 \pi}{a}(0,0,1)$
+- fcc-Giths:
+$\underline{a}_{1}=\frac{1}{2} \cdot a(1,1,0) ; \quad \underline{a}_{2}=\frac{1}{2} a(1,0,1) ; \underline{a}_{3}=\frac{1}{2} a \cdot(0,1,1)$
+$V_{b z}=a_{1} \cdot\left(\underline{a}_{3} \times \underline{a}_{2}\right)=\frac{a^{3}}{8} \cdot\left(\begin{array}{l}1 \\ 1 \\ 0\end{array}\right) \cdot\left[\left(\begin{array}{l}0 \\ 1 \\ 1\end{array}\right) \times\left(\begin{array}{l}1 \\ 0 \\ 1\end{array}\right)\right]=\frac{a^{3}}{8}\left(\begin{array}{c}1 \\ 1 \\ 0\end{array}\right) \cdot\left(\begin{array}{c}1 \\ 1 \\ 1\end{array}\right) =\left|\frac{a^{3}}{8}[1+1+0]\right|=\frac{2}{8} a^{3}=\frac{1}{4} a^{3}$
+$\underline{b}_{1}=2 \pi \frac{4}{a^{3}} \cdot \frac{a^{2}}{4}\left[\left(\begin{array}{l}1 \\ 0 \\ 1\end{array}\right) \times\left(\begin{array}{l}0 \\ 1 \\ 1\end{array}\right)\right]=\frac{2 \pi}{a}\left(\begin{array}{c}-1 \\ -1 \\ 1\end{array}\right)$
+$\underline{b}_{2}=2 \pi \frac{4}{a^{3}} \cdot \frac{a^{2}}{4}\left[\left(\begin{array}{l}0 \\ 1 \\ 1\end{array}\right) \times\left(\begin{array}{l}1 \\ 1 \\ 0\end{array}\right)\right]=\frac{2 \pi}{a}\left(\begin{array}{c}-1 \\ 1 \\ -1\end{array}\right)$
+$\underline{b}_{3}=2 \pi \frac{4}{a^{3}} \cdot \frac{a^{2}}{4}\left[\left(\begin{array}{l}1 \\ 0 \\ 0\end{array}\right) \times\left(\begin{array}{l}1 \\ 1 \\ 1\end{array}\right)\right]=\frac{2 \pi}{a}\binom{1}{-1}$
+$\Rightarrow$ Das resiprove Gitter des fec-Gitters ist ein (verschobemar) bce-Gither.
+
+\begin{aligned}
+-\frac{b c c-G i t u s:}{a_{1}}=\frac{1}{2} a(1,-1,-1) ; \underline{a}_{2}=\frac{1}{2} a(1,1,-1) ; \underline{a}_{3}=\frac{1}{2} a(1,1,1) \\
+V_{0}=\frac{1}{2} a^{3} \\
+\underline{b}_{1}=\frac{n \pi}{a}(1,-1,0) ; \underline{b}_{2}=\frac{2 \pi}{a}(0,1,-1) ; \underline{b}_{3}=\frac{2 \pi}{a}(0,1,1) ;
+\end{aligned}
+
+⇒ entspricht des ávem (verschobere) foc-Gith.
+
+## Bennerking:
+
+- Ein reziprober Gittovektor $\underline{u}$ nke $\underline{\prime} \underline{G}=4 \underline{b}_{1}+k \underline{b}_{2}+e \underline{b}_{3}$ steht sentrecht auf dv Ebene de Millusche ludizes (hke).
+- Fin den Abstand zweir Ebene (hke) giet: $d_{\text {nke }}=\frac{2 \pi}{|\underline{G}|}$
+- Eine ebeve Welle $e^{i(\vec{G} \cdot \vec{r})}$ lozs $e^{i\left(\underline{k}_{n} \times e^{\cdot} r\right)}$ hat diessalbe Periodizität wie das knistallgith in Realramm in Richtyy de Ebere uke.
+$e^{i \underline{G} \cdot \underline{r}}=e^{i\left(\frac{2 \pi}{\text { duke }} \cdot r\right)}=1 ; r=u \cdot d$ uke,$u \in \mathbb{Z}$.
+$\Rightarrow \quad$ Man Uann den resiproken Gitterveltar als Wellenveltor fin eive ebene Welle in Realraum anffasser.
+- Zunide zas Strendichte:
+
+Mon neunt $\Delta \underline{u}=\underline{u}-\underline{u}_{0}=\underline{G}=\underline{K}_{\text {uke }}$ die Lane-Bedingung
+$\Rightarrow \quad$ Die Menge des rexiproken Gitterveltoren $G$ bestimual die möjliche Reflexe in der Bengy bzw. Strenny (xaay, Nentiane, e-n)
+"Die Amplitude A der gestienten Welle ist zen vernachlassije, wenn $\Delta \underline{k}$ verschieden vou $\underline{G}$ ist".
+

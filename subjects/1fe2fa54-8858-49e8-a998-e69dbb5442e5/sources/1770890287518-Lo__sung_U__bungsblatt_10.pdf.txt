@@ -1,0 +1,210 @@
+¨Ubung zur Vorlesung
+Physik der kondensierten Materie 1
+WiSe 2025/2026
+Tutorien in der Woche vom 12.01.26
+Blatt 10
+Technische Universit¨at M¨unchen
+Lehrstuhl f¨ur Nanotechnologie und
+-materialien
+10.1 W¨armeleitf¨ahigkeit
+Skizzieren Sie den typischen Temperaturverlauf der W¨armeleitf¨ahigkeit von kristalli-
+nen Dielektrika. Erkl¨aren Sie die physikalischen Hintergr¨unde der verschiedenen
+Bereiche der Temperaturabh¨angigkeit.
+Die W¨armeleitf¨ahigkeit wird durch Umklappprozesse und Phonon-Defektstreuung
+bestimmt. Da f¨ur Umklappprozesse der Summenwellenvektor bei der Wechselwirkung
+zwischen zwei Phononen außerhalb der 1. Brillouin-Zone liegen muss, m¨ussen wir
+|q1 + q2| ≥ 1
+2|G| (1)
+fordern. Im Rahmen des Debye-Modells ist die mittlere Energie dieser Phononen,
+f¨ur die Umklappprozesse m¨oglich sind, etwa kBθD/2. Damit k¨onnen wir ihre Beset-
+zungswahrscheinlichkeit zu
+⟨n⟩ = 1
+eθD /2T − 1. (2)
+Mit lph ∝ ⟨n⟩−1 ergibt sich dann:
+lph ∝
+(
+eθD /2T f¨ur T << θD
+θD
+T f¨ur T >> θD. (3)
+Wir erwarten also, dass lph von hohen Temperaturen her kommend zun¨achst ∝ 1/T
+und dann ∝ eθD /2T ansteigt und dann unterhalb einer von der Probengr¨oße und
+Probenreinheit abh¨angigen Temperatur s¨attigt. Bei solch tiefen Temperaturen sind
+Umklapp-Prozesse unterdr¨uckt und die mittlere freie Wegl¨ange der Phononen nur
+noch durch Streuung an Defekten und den Kristalloberfl¨achen begrenzt. Die mit-
+tlere freie Wegl¨ange wird unabh¨angig von der Temperatur und die W¨armeleitf¨ahigkeit
+
+wird nur noch durch die spezifische W¨arme bestimmt. Sie ist dort somit proportional
+zu T 3. Bei hohen Temperaturen ist die spezifische W¨arme konstant, und das Tem-
+peraturverhalten von κ ist durch die mittlere freie Wegl¨ange bestimmt.
+Abbildung 1: Typische Temperaturverlauf der W¨armeleitf¨ahigkeit κ.
+10.2 Fl¨ussiges 3He als Fermi-Gas
+Aufgrund der durch die kleine Atommasse verursachten großen Nullpunktfluktuatio-
+nen wird 3He selbst bei T = 0 K nicht fest. Mit einem Kernspin von I = 1/2 bildet
+es somit eine Fermi-Fl¨ussigkeit, mit ρ = 0.08 g cm−3.
+(a) Aufgrund der endlichen Wechselwirkungen stellt fl¨ussiges 3He kein ideales Fermi-
+Gas dar, sondern eine Fermi-Fl¨ussigkeit mit einer effektiver Masse m∗ = 2.8m3He.
+Berechnen Sie hiermit die Fermi-Energie EF, Fermi-Temperatur TF und Fermi-
+Geschwindigkeit vF. Vergleichen Sie diese Werte mit typischen Werten von
+Elektronengasen in Metallen. Welchen Vorteil besitzt fl¨ussiges 3He gegen¨uber
+Elektronengasen in Metallen zum Studium von Fermi-Gasen?
+
+Die Fermi-Energie ist gegeben durch
+EF = μ(0) = ¯h2
+2m∗
+3He
+(3π2n3He)2/3 = 2.405 × 10−23 J. (4)
+F¨ur Fermi-Temperatur und Fermi-Geschwindigkeit gilt:
+TF = EF
+kB
+= 1.743 K (5)
+vF =
+s
+2EF
+m∗
+3He
+= 58.5 m s−1. (6)
+W¨ahrend die Atomdichte in fl¨ussigem 3He die gleiche Gr¨oßenordnung wie die
+Elektronendichte in Metallen hat (z.B. nCu = 8.45 × 1028 m−3), ist die Masse
+der 3He-Atome um mehr als drei Gr¨oßenordnungen h¨oher als die Elektronen-
+masse. Da die Fermi-Energie und -Temperatur proportional zu 1m skalieren,
+besitzt fl¨ussiges 3He eine im Vergleich zu einem Elektronengas viel niedrigere
+Fermi Energie (Fermi-Temperatur). W¨ahrend wir f¨ur Metalle Fermi-Energien
+(-Temperaturen) im Bereich einiger eV (10 000 K) haben, betr¨agt diese f¨ur
+3He weniger als 1 meV (10 K). Dies bietet große Vorteile beim Studium von
+Fermi-Gasen bzw. Fermi-Fl¨ussigkeiten. Da die Fermi-Temperatur von Elek-
+tronengasen weit oberhalb der Schmelztemperatur von Metallen liegt, kann
+der ¨Ubergang von einem entarteten Quantengas bei T < TF zu einem klas-
+sischen Teilchengas bei T > TF mit Metallen prinzipiell nicht studiert wer-
+den. F¨ur fl¨ussiges 3He mit TF ≃ 1.7 K ist dies dagegen leicht m¨oglich. Der
+entsprechende Temperaturbereich ist mit etablierten K¨uhltechniken leicht zu
+erreichen. Zus¨atzlich kann 3He sehr rein hergestellt werden.
+(b) Berechnen Sie die spezifische W¨arme von fl¨ussigem 3He f¨ur T << TF.
+Um die spezifische W¨arme von fl¨ussigem 3He f¨ur T << TF zu berechnen,
+benutzen wir die Tieftemperaturn¨aherung der spezifischen W¨arme eines idealen
+Fermi-Gases:
+cV = π2
+2 n3HekB
+T
+T ∗
+F
+(7)
+Um die endlichen Wechselwirkungseffekte zu ber¨ucksichtigen, verwenden wir
+die effektive Fermi-Temperatur T ∗
+F = 1.743 K. Damit erhalten wir f¨ur T =
+20 mK:
+cV (20 mK) = 1.249 × 104 J m−3 K−1. (8)
+
+10.3 Chemisches Potenzial in zwei Dimensionen
+Ausgehend von der Zustandsdichte N2D = m/π¯h2, zeigen Sie, dass f¨ur das chemische
+Potential eines zweidimensionalen Fermi-Gases gilt:
+μ(T ) = kBT ln
+
+exp
+ πn¯h2
+mkBT
+
+− 1
+
+, (9)
+wobei n die Elektronendichte ist.
+F¨ur die Elektronendichte f¨ur d = 2 gilt
+n2D = 1
+L2
+X
+k,σ
+fk =
+Z ∞
+0
+dϵkN2D(ϵk)fk = m
+π¯h2
+Z ∞
+0
+dϵk
+eϵk−μ(T )/kBT + 1 (10)
+Hierbei ist fk = eϵk−μ(T )/kBT + 1−1 die Besetzungswahrscheinlichkeit der Zust¨ande
+bei der Temperatur T . Dieses Integral ist tabelliert und wir finden:
+dx
+b + ceax = 1
+ab [ln(b + c) − ln(c)] . (11)
+In unserem Fall ist a = 1/kBT , b = 1 und c = e−μ/kBT und wir erhalten
+n2D = m
+π¯h2
+μ(T ) + kBT ln(1 + e−μ/kBT ) . (12)
+Diese Gleichung m¨ussen wir nach /mu aufl¨osen. Wir erhalten
+n2Dπ¯h2
+mkBT − μ(T )
+kBT = ln(1 + e−μ/kBT ) → e−μ/kBT = 1
+e−n2Dπ¯h2/mkBT − 1 (13)
+und daraus schließlich
+μ(T ) = kBT ln
+
+exp
+ πn¯h2
+mkBT
+
+− 1
+
+. (14)
+10.4 Spezifische W¨armekapazit¨at von Gold
+(a) Berechnen Sie den elektronischen und phononischen Beitrag zur spezifischen
+W¨armekapazit¨at cV von Gold im Modell eines freien Elektronengases bei einer
+Temperatur von T = 300 K. (Gold ist ein kubisch, fl¨achenzentriertes Gitter,
+
+mit a = 4.08 ˚A, nAu = 5.9 × 1028 m−3, θAu = 162 K)
+Der elektronische Beitrag zur spezifischen W¨armekapazit¨at lautet
+cel.
+V = π2
+2 nkB
+T
+TF
+. (15)
+Die Fermi-Temperatur l¨asst sich aus der gegebenen Elektronendichte berech-
+nen:
+TF = EF
+kB
+= ¯h2
+2mkB
+(3π2n)2/3 = 6.413 × 104 K. (16)
+Daraus ergibt sich sofort
+cel.
+V (T = 300 K) = 1.880 × 104 J m−3 K−1. (17)
+Als n¨achstes sch¨atzen wir den Phononen-Beitrag zur spezifischen W¨armekapazit¨at
+ab. Bei T = 300 K, also T ≃ θD, gilt die klassische N¨aherung:
+cph.
+V = 3nkB = 2.44 × 106 J m−3 K−1. (18)
+(b) Bei welcher Temperatur sind die beiden Beitr¨age gleich?
+Die Temperatur bei der die beiden Beitr¨age ¨ubereinstimmen l¨asst sich aus dem
+Tieftemperaturlimes absch¨atzen von cph.
+V :
+cph.
+V = 12
+5 π4nkB
+ T
+θD
+3
+. (19)
+Gleichsetzen mit cel.
+V = π2/2nkBT /TF ergibt:
+T 2
+0 = θ2
+D
+5
+24π2
+TF
+→ T0 = 1.183 K. (20)
+(c) Berechnen Sie den Sommerfeld-Koeffizienten γ = cel.
+V /T von Gold und vergle-
+ichen Sie diesen mit dem experimentell ermittelten Wert γAu = 71.42 J K−2 m−3.
+Der Sommerfeld-Koeffizient f¨ur Gold ergibt sich zu
+γ = cel.
+V
+T = 62.67 J m−3 K−2. (21)
+
+Die Diskrepanz zwischen dem theoretischen und experimentellen Werte r¨uhrt
+daher, dass die Elektronen nicht wirklich frei sind, wie es im Sommerfeld-Modell
+angenommen wird. Bandstruktur- und (Fermi Fl¨ussigkeits-) Wechselwirkungs-
+Effekte lassen sich jedoch manchmal in einer renormierten effektiven (thermis-
+chen“) Masse mth zusammenfassen:
+γ∗ = mth
+m γfrei → mAu
+th = 1.140. (22)

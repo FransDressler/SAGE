@@ -1,0 +1,92 @@
+![This image is an introduction to nuclear, particle, and astrophysics, showing key concepts such as atomic nuclei, particle physics (including the Standard Model particles), nuclear reactors, particle accelerators, neutrino detection, cosmic phenomena like supernova remnants, and the timeline of the universe from the Big Bang to galaxy formation.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-01_1875_3333_0_0.jpg)
+
+## Table of contents
+
+| Lecture | Date | Theme | Topic | Sub-Topics |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 14/10/25 | Introduction | Little History of particle physics | atoms, elementary particles |
+| 2 | 21/10/25 | Particle Physics | Standard Model | Fermions, Bosons, Interactions, |
+| 3 | 28/10/25 |  | Fundamental symmetries | Conservations, Feynman, Propagator, |
+| 4 | 04/11/25 |  | Fundamental symmetries | Discrete symmetries; Cross section |
+| 5 | 11/11/25 |  | Interaction with Matter | Bethe Bloch, gamma interaction |
+| 6 | 18/11/25 |  | Particle detection | Gamma interactions, detector basics |
+| 7 | 25/11/25 | Astrophyics | Detectors, accelerators | Detector types, accelerators, cyclotron Supernovae, cosmic rays, Supernovae, cosmic rays |
+| 8 | 02/12/25 | Nuclear physics | Basics | Binding energies, Weizäcker |
+| 9 | 09/12/25 |  | Nuclear reactions | Beta, alpha, fission |
+| 10 | 16/12/25 |  | Nuclear reactors | Radioactive transitions, Radiocarbon method |
+| 11 | 13/01/26 | Particle / Nuclear | Nuclear Structure | Gamma transitions, Mott, Form factors |
+| 12 | 20/01/26 |  | Nucleon Structure | Deep inelastic scattering, Quarks and QCD |
+| 13 | 27/01/26 | Particle Physics | Strong \& Weak interactions | Quarks and QCD (VOL2), Z_0 production |
+| 14 | 03/02/26 | Astrophysics | Weak interaction, Neutrinos | Parity violation, deep inelastic neutrino scattering, Neutrino oscillations |
+
+![This diagram depicts different models of charge or matter density distributions ρ(r) and their corresponding form factors |F(q²)|, with examples of particles or nuclei (electron, proton, lithium-6, calcium-40) illustrating each case. It shows how spatial distributions relate to the behavior of form factors in momentum space for various physical systems.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-03_1702_1595_85_877.jpg)
+
+## Zusammenfassung der letzten Vorlesung
+
+![This diagram is a differential cross-section plot for a particle scattering experiment at an energy of 420 MeV, showing how the scattering cross-section varies with the scattering angle θ. It compares experimental data points with theoretical predictions represented by solid and dashed lines.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-04_1133_860_328_177.jpg)
+
+Kerne sind homogene Kugeln
+![This diagram depicts the proton and neutron electromagnetic form factors as functions of the squared momentum transfer \( Q^2 \), showing the electric form factor \( G_E^p \), the magnetic form factors \( G_M^p \) and \( G_M^n \) normalized by their magnetic moments, and the squared neutron electric form factor \( (G_E^n)^2 \).](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-04_730_900_544_1197.jpg)
+
+## Nukleonen sind diffuse Objekte
+
+Nukleonen bestehen aus punktförmigen Spin 1/2 Teilchen
+
+## Die Farben der QCD
+
+Quarks tragen Farbe (Triplett (3) )
+Antiquarks tragen Antifarbe (Anti-Triplett (3) )
+Alle beobachteten Hadronen sind farblos (Farb-Singletts)
+Mesonen: $\quad(3) \times \overline{(3)} \rightarrow$ (1) + (8)
+Baryonen: ${ }^{(3)} \times$ (3) $\times$ (3) $\rightarrow$ (1) + (8) + (8) + (10)
+![This diagram depicts the additive color mixing of red, green, and blue light, showing how their overlapping beams combine to create secondary colors and white light.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-05_738_779_276_2420.jpg)
+
+Baryonen: bestehen aus Quarks mit r, g, b = nach außen „weiß“, also farbneutral
+Mesonen: bestehen aus Quark-Antiquark mit $\mathrm{r}, \overline{\mathrm{g}} \mathrm{g}, \overline{\mathrm{b}} \mathrm{b}$, also auch nach außen farbneutral
+
+## Die Farben der QCD
+
+Darstellung der Farben in der QCD in 2 Dimensionen:
+g
+
+Das $\pi^{+}$-Meson z.B. als farbneutrales Objekt:
+![This diagram depicts Feynman diagrams related to gluon interactions in quantum chromodynamics, specifically gluon splitting into a quark-antiquark pair and the gluon self-interaction vertex.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-06_827_544_385_2014.jpg)
+
+Baryonen und Antibaryonen als farbneutrale Objekte:
+![This is a Feynman diagram depicting the interaction of four gluons in quantum chromodynamics (QCD), illustrating the self-interaction vertex characteristic of gluons as gauge bosons of the strong force.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-06_233_230_1372_2266.jpg)
+tkopplung
+4-Gluon-Vertex
+
+## Gluonen
+
+Als Resultat der Gruppentheorie (ohne Herleitung) können Gluonen folgende acht Farbkombinationen aufweisen:
+farbigen Quarks kann eine antisymmetrische Wellenfunktion kor en:
+
+Als Konsequenz können Gluonen untereinander koppeln. Sie vermitteln nicht nur die starke WW, sie unterliegen ihr selbst.
+
+Beispiele der Quark-Gluon-Wechselwirkungen. Gluon-Abstrahlung führte zur Entdeckung der Gluonen
+vom Quark
+$\mathrm{q} \rightarrow \mathrm{qg}$
+$\mathrm{g} \rightarrow \mathrm{q} \overline{\mathrm{q}}$
+
+3-Gluon-Vertex
+$\mathrm{g} \rightarrow \mathrm{gg}$
+
+4-Gluon-Vertex
+gg $\rightarrow$ gg
+
+Darstellung in 2D
+(120º-Winkel):
+![This diagram depicts the color charge directions in quantum chromodynamics (QCD), showing the three color charges (red, green, blue) separated by 120 degrees in a color space.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-07_318_394_1270_1266.jpg)
+farbloses Objekt:
+Meson: $\left|\pi^{+}\right\rangle=\left\{\begin{array}{l}u_{\mathrm{r}} \bar{d}_{\overline{\mathrm{r}}} \\ u_{\mathrm{g}} \bar{d}_{\overline{\mathrm{g}}}\end{array}\right.$
+![This diagram depicts the baryon decuplet, showing the classification of baryons based on their strangeness and electric charge in particle physics. It illustrates the organization of baryons into multiplets according to the quark model.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-07_305_394_1283_2444.jpg)
+
+![This diagram shows the measured cross section (σ) in nanobarns for electron-positron (e⁺e⁻) collisions producing muon-antimuon (μ⁺μ⁻) and tau-antitau (τ⁺τ⁻) pairs as a function of the center-of-mass energy (√s) in GeV, with data from the CELLO and JADE experiments.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-08_1330_1858_340_725.jpg)
+Poch Fig. 9.3
+
+![This diagram is a plot of the total cross section (σ) in cm² for electron-positron (e⁺e⁻) annihilation as a function of the center-of-mass energy (√s) in GeV, showing resonance peaks corresponding to various mesons and bosons such as ρ, ω, ϕ, J/ψ, Υ, and Z.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-09_1739_1582_61_887.jpg)
+Poch Fig. 9.4
+
+![This diagram shows a particle interaction event in a bubble chamber, specifically depicting the decay of a neutral kaon (K0) into two charged pions (π+ and π−) and an electron-positron pair (e+ and e−). It illustrates the curved tracks of charged particles resulting from the decay within a magnetic field.](http://localhost:5001/subjects/273788a1-bf49-49c7-bfe4-932c91ccd3de/images/34f576fc-b256-415f-83df-3b313e500896/938a2377-a183-4ea2-b626-a4facc312b14-10_1368_1381_234_1023.jpg)
+

@@ -1,0 +1,113 @@
+# Physik der kondensierten Materie Festkörperphysik 
+
+Wintersemester 2025/2026
+
+Gliederung:<br>1. Struktur fester Körper<br>2. Wellen in Kristallstrukturen<br>3. Gitterdynamik<br>4. Thermische Leitfähigkeit (Phononen)<br>5. Das freie Elektronengas<br>6. Bandstruktur und Blochtheorem<br>7. Ladungstransport
+
+## Die 14 Bravais-Gitter in 3D
+
+## Kristallsystem
+
+1 kubisch
+![This diagram depicts a cube with labeled vertices, illustrating the concept of permutations or arrangements of elements, specifically showing the positions of "zug" and "p" in a spatial or combinatorial context.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_308_340_302_885.jpg)
+
+2 tetragonal
+![This diagram depicts the body-centered cubic (BCC) crystal structure, showing the arrangement of atoms with one atom at each corner of the cube and one atom at the center of the cube.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_258_274_604_906.jpg)
+
+3 rhombisch
+![This diagram depicts the crystal structure of a simple cubic lattice, showing the arrangement of atoms (red spheres) at the corners of a cube.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_264_269_859_906.jpg)
+zugehörige Bravais-Gitter
+![The image depicts the crystal structure of a face-centered lattice (F) and the geometric relationship between the lattice vectors a, b, and c, showing the interaxial angles α, β, and γ.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_436_678_328_1612.jpg)
+![This diagram depicts the unit cell of a simple cubic crystal structure, showing the arrangement of atoms at the corners of the cube and the lattice parameter labeled as "c."](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_264_256_864_1612.jpg)
+![This diagram depicts the crystal structure of fluorine in a cubic lattice arrangement, showing the positions of fluorine atoms within the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_264_259_859_1932.jpg)
+
+5 trigonal
+![This diagram depicts the Hasse diagram of the Boolean lattice \( B_3 \), representing the inclusion relations among all subsets of a three-element set. It shows the partial order structure where each node corresponds to a subset and edges indicate subset inclusion.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-2_330_248_1140_1469.jpg)
+
+6 monoklin
+6 monoklin
+
+4 Arten von Einheitszellen:
+$P=$ primitiv
+I = raumzentriert
+F $=$ flächenzentriert
+C = basiszentriert
+aus Gross, Marx
+Identische Darstellungen in:
+Hunklinger,
+Ibach \& Lüth
+Kopitzki
+⋯
+
+![The image is a historical photograph of a man, likely a portrait from the 19th century. It does not depict a diagram or subject matter related to scientific or technical content.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-3_678_665_130_213.jpg)
+Auguste Bravais 1811-1863
+Wikipedia commons
+
+Ein Bravais-Gitter ist ein unendliches Gitter von Raumpunkten mit einer Anordnung und Orientierung, die exakt gleich aussieht, egal von welchem Gitterpunkt wir das Gitter betrachten.
+$\underline{r}^{\prime}=\underline{r}+u_{1} \cdot \underline{a}_{1}+u_{2} \cdot \underline{a}_{2}+u_{3} \cdot \underline{a}_{3} ; u_{i} \in \mathbb{Z} ;$ Die Menge aller Punkt $r^{\prime}$ definiant ein Gither.
+
+Bravais-Gitter
+
+|  |  | Bravais-Gitter (kugelsymmetrische Basis) | Kristallstrukturen (Basis mit beliebiger Symmetrie) | nur 10 Punktsymmetrieoperationen <br> Zstl. - Translationen <br> - Schraubenachsen (Rotation + Translation) <br> - Gleitspiegelungen (Spiegelung + Translation) |
+| :--- | :--- | :--- | :--- | :--- |
+| 3D | Punktgruppen | 7 Kristallsysteme | 32 Kristallklassen |  |
+| 3D | Raumgruppen | 14 Bravais-Gitter | 230 Raumgruppen* |  |
+| 2D | Punktgruppen | 5 Kristallsysteme | 10 Kristallklassen |  |
+| 2D | Raumgruppen | 5 Bravais-Gitter | 17 Raumgruppen |  |
+
+## Kubisch primitives Gitter (simple cubic - sc)
+
+![This diagram depicts a body-centered cubic (BCC) crystal lattice structure, showing the unit cell with lattice parameter "a" and the body diagonal distance labeled as \( a\sqrt{2} \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-4_964_1017_456_591.jpg)
+
+![This diagram depicts the crystal structure of a body-centered cubic (BCC) lattice, showing atoms positioned at the eight corners of a cube and a single atom at the center of the cube.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-4_843_861_452_1813.jpg)
+(b)
+
+a) Gitter mit (dunkelgefärbter) einatomiger Basis. Die heller dargestellten Atome gehören bereits zu den benachbarten Elementarzellen. b) Cäsiumchloridstruktur. Die Elementarzelle enthält die beiden dunklen Atome bzw. Ionen auf den Plätzen ( $0,0,0$ ) und ( $1 / 2,1 / 2,1 / 2$ ). Die hellen Atome sind auch hier bereits Bestandteile der benachbarten Elementarzellen.
+
+## Kubisch primitives Gitter Packungsverhältnis (atomic packing factor - APF)
+
+![This diagram depicts a body-centered cubic (BCC) unit cell structure in crystallography, showing the atomic arrangement with atoms represented as spheres of radius R equal to half the lattice parameter a.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-5_556_829_631_313.jpg)
+
+Volumen pro Atom
+![This diagram depicts the calculation of the Atomic Packing Factor (APF) for a crystal structure, showing the ratio of the volume occupied by atoms (modeled as spheres) to the total volume of the unit cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-5_521_1134_774_1683.jpg)
+
+Atome pro EZ: $8 \times \frac{1}{8}=1$
+Volumen pro EZ
+
+## Gitterstrukturen der chemischen Elemente
+
+| I <br> II |  |  |  | bcc |  | □ |  |  |  | SC |  |  |  | III | IV | V | VI | VII | VIII |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Li | Be |  | □ |  |  |  |  |  |  | Diamant |  |  |  | B | C | N | O | F | Ne |
+| Na | Mg |  |  |  |  |  |  |  |  |  |  |  |  | Al | Si | P | S | Cl | Ar |
+| K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni |  | Cu | Zn |  | Ga | Ge | As | Se | Br | Kr |
+| Rb | Sr | Y | Zr | Nb | Mo | Tc | Ru | Rd | Pd |  | Ag | Cd |  | In | Sn | Sb | Te | I | Xe |
+| Cs | Ba | LaLu | Hf | Ta | W | Re | Os | Ir | Pt |  | Au | Hg |  | TI | Pb | Bi | Po | At | Rn |
+| Fr | Ra | $\begin{aligned} & \text { AC- } \\ & \text { Lp } \end{aligned}$ | La <br> Ac |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  | Ce | Pr | Nd | Pm | Sm | Eu |  | Gd |  | Dy | Ho | Er | Tm | Yb | Lu |
+|  |  |  |  |  | Th | Pa | U | Np | Pu | Am |  | Cm |  | Cf | Es | Fm | Md | No | Lr |
+
+[^0]
+## Wigner-Seitz Zelle
+
+![This diagram depicts the construction of a Voronoi cell (a) and its corresponding three-dimensional Voronoi polyhedron (b) around a central point in a lattice, showing the region of space closer to that point than to any other lattice points.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-7_825_2570_402_344.jpg)
+a) Darstellung des Konstruktionsprinzips anhand eines ebenen schiefwinkligen Gitters. Zwischen den verbundenen Gitterpunkten werden jeweils Mittelsenkrechte errichtet. b) Wigner-Seitz-Zelle des kubisch raumzentrierten Gitters. Die üblicherweise benutzte nicht-primitive Elementarzelle ist gestrichelt gezeichnet, der Gitterpunkt im Zentrum der Zelle wurde weggelassen.
+
+## Wigner-Seitz Zelle
+
+(a)
+![This diagram depicts a Voronoi cell (blue polygon) in a Voronoi tessellation, showing the region of points closest to a central black point compared to surrounding black points. The dashed lines represent the perpendicular bisectors that form the boundaries of the Voronoi cell.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/d5c6b1eb-0cb0-4393-9c21-b516a3f6fa03/002fc127-314f-417d-b28e-4c9c2aa1dd72-8_773_1059_443_454.jpg)
+
+Allg.: Die Wigner-Seitz Zelle ist eine von vielen möglichen primitiven Elementarzellen mit folgender Konstruktionsvorschrift:
+a) Zeichne Verbindungslinie zu dem nächsten Nachbarn.
+b) Zeichne die Mittelsenkrechte
+c) Das kleinste eingeschlossene Volumen ist die Wigner-Seitz-Zelle
+
+- Welche Einheitszelle verwendet wird, ist eine Frage der Handhabbarkeit.
+- Die Symmetrie des Gitters ist u.a. an größeren Einheitszellen besser zu erkennen.
+- Die Abmessung gebräuchlicher Einheitszellen („Gitterkonstanten“) ist oft größer als der interatomare Abstand.
+
+
+[^0]:    hcp: ABCABC ...
+    dhcp: ABACABAC…
+

@@ -1,0 +1,162 @@
+## 7. 12 Ladmigstransport in Mapuetfold
+
+Und die Bewequng von Eleltionen untor Winkury cines Eand eines B-Foldes za beschaciben, benntzen wir den Ansetz von Drude Vombinest wit des SoummerfeldThenie:
+
+$$
+\text { Waft: } \quad \bar{I}=-c[\underline{E}+\underbrace{\underline{v} \times \underline{B}}_{\text {Lorcuteliaft }}]
+$$
+
+Anffrund des luaft und der vahenscleu Stren prozesse vehusen wir firs den mittlences Willenvelter $\langle\underline{k}\rangle$ des Elelchomen an:
+
+\frac{d}{d t}\langle\underline{k}\rangle=\frac{\underline{I}}{t_{1}}-\frac{\partial \underline{k}}{\tau}=-\frac{c[\underline{E}+\underline{v} \times \underline{B}]}{t_{1}}-\frac{\delta \underline{k}}{\tau}
+
+Fin mittlere Geschwindighit $\langle\underline{v}\rangle=\underline{\delta_{v}}=\frac{t_{n} \overline{\delta_{v}}}{m}$ and stationäicu Zustand $\left(\frac{d}{d t}\langle\underline{k}\rangle=0\right)$.
+
+\delta_{\underline{v}}=-\frac{e \tau}{u}\left[\underline{E}+\delta_{\underline{v}} \times \underline{B}\right]
+
+Annalume: $\quad \underline{B}=\left(\begin{array}{l}0 \\ 0 \\ B_{z}\end{array}\right), \underline{E}=\left(\begin{array}{c}E_{x} \\ E_{z} \\ E_{z}\end{array}\right)$ und $\underline{v}=\left(\begin{array}{l}v_{x} \\ v_{y} \\ v_{z}\end{array}\right)$
+
+\left.\begin{array}{rl}
+\Rightarrow \delta v_{x} & =-\omega_{c} \tau\left[\frac{E_{x}}{|\underline{\beta}|}+\delta v_{y}\right] \\
+\delta v_{y} & =-\omega_{c} \tau\left[\frac{E_{y}}{|\underline{\beta}|}-\delta v_{x}\right] \\
+\delta v_{z} & =-\omega_{c} \tau\left[\frac{E_{z}}{|\underline{\beta}|}\right]
+\end{array}\right\}(* *)
+
+unt $v_{c}=\frac{e|\Omega|}{m}=1.76 \cdot 10^{11} \mathrm{~s}^{-1} \cdot B[T]$
+do Zyklotronfiequenz. m ist hies die Elektomenmasse $m_{e}=9.1 \times 10^{-31} k g$, da wir bisher in Rahmen des Dunde-Modells rechuse!
+
+Löst man das Gleidnunjs splem (**) uach $\delta v_{x}, \delta v_{y}$ und $\delta v_{z}$ auf und sekt man fin die Strondichte $j=u \cdot e \cdot \delta_{\underline{v}}$, entialt man:
+
+\dot{f}=\left(\begin{array}{l}
+j x \\
+j y \\
+j z
+\end{array}\right)=\frac{\sigma_{0}}{1+\omega_{c}^{2} \tau^{2}}\left(\begin{array}{ccc}
+1 & -\omega_{c} \tau & 0 \\
++\omega_{c} \tau & 1 & 0 \\
+0 & 0 & 1+\omega_{c}^{2} \tau^{2}
+\end{array}\right)\left(\begin{array}{l}
+E_{x} \\
+E_{y} \\
+E_{z}
+\end{array}\right) ;
+
+uit $\sigma_{0}=\frac{u e^{2} \cdot \tau}{m}$ (Drude-Leitfähigleit)
+
+## Benarkenjen
+
+- Selbstvenständlich miisste man die lineanisiate Boltzmanu mater Berüchsichtigny der sperifischen Bandstinktur benutzen (side leap. 7.8). Dies hann ua. in Gross/Maux in Vapitel 9.9 .1 nadigelesen werden. Das Engebuis ist allerdings analog zn (***) wit $\tau \rightarrow \tau\left(E_{F}\right)$ and $m \rightarrow m^{*}$, wenn Band parabolisch bzw. innerhalb effeltiven Masscuriaherng.
+- Aus (*) fogt fin $\tau \rightarrow \infty$ :
+
+\begin{aligned}
+& \frac{d}{d t}\langle\underline{k}\rangle=\frac{F}{t} \cdot \frac{-e \underline{\sigma}}{t}-\frac{e \delta_{\underline{v} \times B}}{t} \\
+& \Leftrightarrow \frac{\delta_{\underline{v}}}{m}=\frac{t_{t}}{m} \frac{d\left\langle s^{t}\right.}{d t}=-\frac{e E^{t}}{m}-\frac{\delta_{\underline{v} \times} \underline{\beta}}{m} \\
+& \left.\Leftrightarrow \quad \begin{array}{rl}
+\quad \delta_{i x} & =-\frac{e}{m} E_{x}-\omega_{c} \delta_{v_{y}} \\
+\quad \delta_{\dot{v}} & =-\frac{e}{e} E_{y}+\omega_{c} \delta v_{x}
+\end{array}\right\} \begin{array}{l}
+\text { Uncis bewejuy } \\
+\text { in der Rewerey } \\
+x y-\text { Rever }
+\end{array} \\
+& \text { in der Bewegey } \\
+& \text { xy- Bewegry } \\
+& \omega_{c}\left(*_{*} x_{*}\right)
+\end{aligned}
+
+⇒ Zyklotronnesonauz bei $\omega_{c}=\frac{e B}{w^{*}}$ !
+zur Bestimmuny der effelliven Masse an des Fenin-Oberliade (side Zentralübuny)!
+
+- mit (***) bisst sich der Hall-Effelt bescheibeen.
+
+Annalime: $\underline{B}=\left(\begin{array}{l}0 \\ 0 \\ B_{z}\end{array}\right) \wedge \quad j=\left(\begin{array}{c}\hat{j}_{x} \\ 0 \\ 0\end{array}\right)$;
+
+\begin{aligned}
+& \Rightarrow \quad \omega_{c} \tau \cdot E_{x}+E_{y}=0 \\
+& \Leftrightarrow \quad E_{y}=-\omega_{c} \cdot \tau E_{x}=-\frac{e B_{x} \tau}{m} E_{x}=\mu B_{2} \cdot E_{x}
+\end{aligned}
+
+Resultat: Es baut sidnt ein elektisclos Feld in
+y-Richtury anf. Dieses transversale
+electrische Feld heisst Hall-Fold.
+$\Rightarrow \quad E_{y}=-\frac{e \cdot B_{z} \cdot r}{m} E_{x}=-\frac{e B_{z}}{m} \frac{j x}{\sigma_{0}}=R_{H} \cdot B_{z} \cdot j x$,
+unit $R_{H}=-\frac{1}{u \cdot e}$ dem Hall-Voeffizienten,
+
+& S_{x y}=\frac{E_{y}}{j x}=R_{H} \cdot B_{z} \quad \text { spezif. Hall-Widerstand, } \\
+& \tan \theta_{H}=\frac{E_{y}}{E_{x}}=-\frac{e B_{z}}{m}=\sigma_{0} \cdot R_{H} \cdot B \quad \text { Hall-Winkel. }
+
+- Messeometic "Hall-bar uit Dide $d$ :
+![This diagram depicts a Hall effect sensor circuit, showing the arrangement of voltage inputs (U_H and U_II) and the magnetic field (B_z) applied perpendicular to the current flow (I_x) through a conductor with dimensions labeled L and b.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/b5dc9f9b-ad31-49a2-9b6a-004f13de6696/53d6ac4d-c737-4065-8a08-49d3d3792fef-3_433_697_1025_824.jpg)
+
+Fin die transversale Hall-Spanumy $u_{H}$ gilt:
+
+u_{H}=R_{H} \cdot B_{z} \cdot j_{x} \cdot b=\rho_{H} \cdot j_{e} \cdot b=\frac{\rho_{H} \cdot|j|}{d}
+
+⇒ Messuy von $R_{H}$ engibt Vazeichen und Dichte der Laduysträger ( $e^{-}$oder Löcher $l^{+}$).
+
+- In des bishaijus Herlitunj ist $R_{H}$ unabliäujo von us* und danit von des Vrämmy des transpattrgenden Bandes ( → Drude)! In fogunden Fällen gilt dies widn!
+- Melnere Bander tragen zum Strom bei
+
+⇒ Z.B. Zweiband-Modell uit $R_{H}=\frac{1}{e} \frac{n_{1} \mu_{1}^{2}-n_{2} \mu_{2}^{2}}{\left(u_{1} \mu_{1}+u_{2} \mu_{2}\right)^{2}}$
+![The image depicts handwritten notes on the Zwiebach model involving mobility (Beweglichkeit) and charge carrier density (Ladungsträgerdichte), with a formula relating these quantities. It is related to semiconductor physics or charge transport modeling.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/b5dc9f9b-ad31-49a2-9b6a-004f13de6696/53d6ac4d-c737-4065-8a08-49d3d3792fef-3_153_1244_2260_638.jpg)
+
+- Band ist nicht parabolisch $\Rightarrow m_{i j}{ }^{*}$ ist Tensor
+- $\tau=\tau(\underline{u})$ ist anisotop
+- Fami-Oberfliche ist Veine kuyel
+- Starke kordation zwiscleur den e-
+- Fiin $\omega_{c} \tau \gg 1$ sind ebene Elektioneur wellen veine guten Eigenzustände mehrs (siehe Vap. 7.13/7.14). $\left.\begin{array}{rl}\text { tum Vejleich: Retalle: } e & \approx 100 \mathrm{um} \\ \text { and } B & =1 \mathrm{~T}\end{array}\right\} \begin{aligned} & r \\ & \omega_{c}=\frac{e}{v_{F}} \simeq 10^{-13} \mathrm{~s} \\ & \omega^{-1},\end{aligned}$ d.h. $\omega_{c} \tau<1$
+
+⇒ Was passiet bei höheren Mejuet feldern?
+
+### 7.13 Landan Niveans
+
+Quantisienny der Elelktonenbahuen ims starken regretfeld, d.h. $\omega_{c} \tau \geq 1$.
+
+Stationäre Schüdingergfaichung $\frac{1}{2 m^{*}}(-i \hbar \underline{\nabla}+e \underline{A})^{2} \psi=E \psi$.
+$\left.\begin{array}{l}B \text {-Feld in z-Richtuy } \\ \text { Couloub-Eicky }\end{array}\right\} \quad \underline{A}=\left(0, \times B_{z}, 0\right)$
+$\Rightarrow \frac{\partial^{2} \psi}{\partial x^{2}}+\frac{\partial^{2} \psi}{\partial z}+\left(\frac{\partial}{\partial y}+\frac{i e \xi_{x} x}{t}\right)^{2} \psi+\frac{2 u^{*} E}{u} \psi=0$
+Ausatz: $\psi=\tilde{\psi}(x) \cdot e^{-i\left(k_{y} y+k_{z} \cdot z\right)} \quad$ (Laudau)
+$\Rightarrow \frac{\partial^{2}}{\partial x^{2}} \tilde{\psi}+\left[\frac{2 m^{*} \sigma}{t^{2}}-u_{z}^{c}-\left(\frac{e B_{x} x}{t}-k_{y}\right)^{2}\right] \tilde{\psi}=0$
+unit $E_{e}=E-\frac{\hbar^{2} k_{e}^{2}}{2 m^{*}} ; x^{\prime}=x-\frac{t_{k} k_{y}}{e B} ; \omega_{c}=\frac{e B}{m^{*}}$;
+
+\frac{\partial^{2}}{\partial \dot{x}^{2}} \tilde{\psi}+\frac{2 m^{*}}{4}\left[E_{e}-\frac{1}{2} m^{*} \omega_{c}^{2} x^{\prime 2}\right] \tilde{\psi}=0
+
+→ hannomischer Ossillater mit Fequenz ve tentreen
+
+x_{0}=\frac{t_{1} k_{y}}{e B}=\frac{t_{1} k_{y}}{w^{*} \omega_{c}}
+
+$\Rightarrow \quad$ Quantisiate Subbander! unit:
+
+E-E_{e}+E\left(k_{z}\right)=\left(e+\frac{1}{2}\right) t \omega_{c}+\frac{t_{1}^{2} k_{z}^{2}}{2 m^{x}}
+
+und den Eigunfunktionen $\tilde{s}(x)$.
+
+## Bennerlicyen
+
+- Physivalische Bild: Aufspaltung der Parabelu/Bänder in Subbänder ( → Folie)
+- Quantisiency der Elektioneneneje in $x-y$-Ebene fieic $e^{-}$in $z$ - Richtuy.
+$-J E=\tan _{c}$; z.B. $B_{z}=2 T$ typ. 0.1 mel $J E / k_{B} \approx \lambda k$ (tiefe $T$ ),
+$T_{7} \approx 10^{4} \mathrm{~K} \Rightarrow$ sels hole Anzall vou Niveaus!
+- Bewegey der e- i fin grofe Quantenzahla e
+
+⇒ Vones poudeuzprivatip
+
+![The diagram depicts the concept of an electron wave function transitioning into a quantum state or region, illustrating the behavior of electrons in quantum mechanics. It shows the electron wave function evolving into a localized state with associated quantum numbers or properties.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/b5dc9f9b-ad31-49a2-9b6a-004f13de6696/53d6ac4d-c737-4065-8a08-49d3d3792fef-5_517_427_1094_299.jpg)
+Elektionsurustand unt $\omega_{c} \cdot \tau=1$
+
+⇒ kneis bewejuy $[$ siche $(* * * *)]$
+
+\sigma_{e}^{2}=\left(e+\frac{1}{2}\right) \frac{2 t a}{m^{*} \omega_{c}}
+
+Eingeschlossener Fluss:
+
+\phi_{e}=\pi \cdot r_{e}^{2} \cdot B=\left(e+\frac{1}{2}\right) \frac{4}{e}
+
+(sicke Uapitel 7.4)
+
+- In K- Ramm duchlanfen die Elelitionen Uraisbahnen mit quantisiaten Radien $k_{e}$
+
+k e^{2}=\left(e+\frac{1}{2}\right) \frac{2 m^{*} \omega_{c}}{n}
+
+⇒ Laudau-Rölnen und Landan-Zylinder (s. Folien) allendings ist Danstelly in $k_{x}$ und ky micht nichtij, de $k_{x}$ und by Veine Eijenzustände mels sind.
+

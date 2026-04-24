@@ -1,0 +1,140 @@
+## WALTHER-MEIBNER-INSTITUT
+
+Bayerische Akademie der Wissenschaften
+Lehrstuhl für Technische Physik E23, Technische Universität München
+Prof. Dr. Rudolf Gross, Dr. Stephan Geprägs
+Tel.: +49 (0)89 28914225
+E-mail: rudolf.gross@wmi.badw.de, E-mail: stephan.gepraegs@wmi.badw.de
+
+## Klausur zur
+
+## Physik der Kondensierten Materie I WS 2019/2020
+
+## Aufgabe 1: Zweidimensionales Gitter (15 Punkte)
+
+Abbildung 1 zeigt eine zweidimensionale Kristallstruktur, die aus Mo- und S-Atomen mit Radius $r_{\mathrm{Mo}}=1,5 \AA$ und $r_{\mathrm{S}}=1 \AA$ sowie den Atommassen $m_{\mathrm{Mo}}=96 \mathrm{u}$ und $m_{\mathrm{S}}=32 \mathrm{u}$ aufgebaut ist. (Angabe: $u=1,661 \cdot 10^{-27} \mathrm{~kg}$ )
+
+(a)
+![The image depicts the two-dimensional crystal structure of a molybdenum-sulfur (Mo-S) compound, showing the arrangement of atoms before (a) and after (b) a phase transition.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/bf219adc-af2e-4352-bc21-97ad4324e3f0/4c3bd793-d10b-4a3e-9d38-c4ca747661b3-1_292_1266_1308_459.jpg)
+
+1.1 Zeichnen Sie das Punktgitter und geben sie eine mögliche primitive Gitterzelle mit den zugehörigen Basisatomen und primitiven Gittervektoren der Kristallstruktur in Abbildung 1 (a) an. Berechnen Sie die Fläche dieser primitiven Einheitszelle. (3 Punkte)
+1.2 Welches Bravais-Gitter beschreibt die Translationssymmetrie dieses Punktgitters vollständig? (1 Punkt)
+1.3 Geben Sie die chemische Formel und die Flächendichte in $\mathrm{g} / \mathrm{cm}^{2}$ des abgebildeten Materialsystems an. (2 Punkte)
+1.4 Welche Symmetrieeigenschaften der Punktgruppe haben Punktgitter und Basis (Dreh- und Spiegeloperationen). Stimmen Basis und Punktgitter in ihren Symmetrieeigenschaften überein? ( 3 Punkte)
+1.5 Beschreiben Sie, wie man die Wigner-Seitz-Zelle erhält, und zeichnen Sie diese für das Punktgitter der in Abb. 1 (a) gezeigten Kristallstruktur. (2 Punkte)
+1.6 Der Kristall mache nun einen Phasenübergang. Dabei werden die Mo-Atome jeder zweiten Mo-Atomreihe um $\Delta$ nach oben verschoben (siehe Abb. 1 (b)). Zeichnen Sie nun das Punktgitter und geben Sie eine mögliche primitive Gitterzelle mit den zugehörigen Basisatomen und primitiven Gittervektoren der Kristallstruktur in Abbildung 1 (b) an. Welches Bravais-Gitter beschreibt nun die Translationssymmetrie dieses Punktgitters vollständig? ( 4 Punkte)
+
+## Aufgabe 2: Diamantstruktur und Millersche Indizes (10 Punkte)
+
+Abbildung 2 zeigt die konventionelle Diamantstruktur mit Gitterkonstante $a$.
+
+![This diagram depicts the crystal lattice structure of diamond, showing the arrangement of carbon atoms in a cubic unit cell with tetrahedral bonding.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/bf219adc-af2e-4352-bc21-97ad4324e3f0/4c3bd793-d10b-4a3e-9d38-c4ca747661b3-2_397_437_753_443.jpg)
+Abbildung 2: Diamantstruktur. Die tetraedrischen Bindungen sind gestrichelt gekennzeichnet.
+
+2.1 Zeigen Sie, dass der Winkel zwischen den tetraedrischen Bindungen der Diamantstruktur (Bindungen zu den vier nächsten Nachbarplätzen) gleich $109,47^{\circ}$ ist. Welcher Bindungstyp ist verantwortlich für diese tetraedrische Bindung? (2 Punkte)
+2.2 Wie viele Atome besitzt die konventionelle und die primitive Zelle der Diamantstruktur? Geben Sie die Koordinationszahl der Diamantstruktur an. (2 Punkte)
+2.3 Nehmen Sie an, dass die Diamantstruktur aus sich berührenden, nicht-deformierbaren Kugeln mit Radius $r$ aufgebaut ist. Wie groß ist die Raumausfüllung (Volumen der Kugeln dividiert durch das Gesamtvolumen) der konventionellen Zelle? (2 Punkte)
+2.4 Wie lauten die Vorschriften zur Bestimmung der Millerschen Indizes ( $h k \ell$ ) zur Bezeichnung von Richtungen und Ebenen in Kristallen? Betrachten Sie die Ebenen $(100)_{x y z},(110)_{x y z}$ und $(111)_{x y z}$ bezogen auf die in Abbildung 2 dargestellte konventionelle Kristallstruktur. Wie lauten die Indizes dieser Ebenen, wenn sie sich auf die primitiven Achsen $\mathbf{a}_{1}$, $\mathbf{a}_{2}$ und $\mathbf{a}_{3}$ des Bravaisgitters der Diamantstruktur beziehen? ( 4 Punkte)
+
+## Aufgabe 3 Reziprokes Gitter (12 Punkte)
+
+Betrachten Sie im Folgenden ein zweidimensionales, hexagonales Gitter mit Gitterkonstante $a$. 3.1 Zeichnen Sie das zweidimensionale, hexagonale Gitter und konstruieren Sie die Wigner-SeitzZelle. (2 Punkte)
+3.2 Das zweidimensionale, hexagonale Bravais-Gitter wird durch $\mathbf{R}=n_{1} \mathbf{a}_{1}+n_{2} \mathbf{a}_{2}$, wobei $n_{1}$ und $n_{2}$ ganze Zahlen und $\mathbf{a}_{1}$ und $\mathbf{a}_{2}$ die primitiven Gittervektoren sind, beschrieben. Welcher Zusammenhang besteht zwischen den Gittervektoren $\mathbf{R}$ und den reziproken Gittervektoren $\mathbf{G}$ ? Wie hängen die primitiven Gittervektoren $\mathbf{b}_{1}$ und $\mathbf{b}_{2}$ des reziproken Gitters mit $\mathbf{a}_{1}$ und $\mathbf{a}_{2}$ zusammen? ( 3 Punkte)
+3.3 Berechnen Sie die reziproken Gittervektoren $\mathbf{b}_{1}$ und $\mathbf{b}_{2}$ des hexagonalen Gitters. Welches Bravais-Gitter beschreibt die Translationssymmetrie des reziproken Gitters vollständig? (3 Punkte)
+3.4 Was versteht man unter der 1. Brillouin-Zone? Welche Bedingung erfüllen Wellenvektoren, die auf dem Rand der Brillouin-Zonen liegen? Konstruieren Sie die 1. und 2. Brillouin-Zone des hexagonalen Gitters. Vergleichen Sie die Flächen der 1. und 2. Brillouin-Zonen. (4 Punkte)
+
+## Aufgabe 4: Strukturanalyse - Strukturfaktor (14 Punkte)
+
+Betrachten Sie im Folgenden das Ergebnis eines Röntgen-Experiments mit Wellenlänge $\lambda=$ 0.154 nm an einer Cobalt-Pulverprobe bei $25^{\circ} \mathrm{C}$ und bei $500^{\circ} \mathrm{C}$ (siehe Abbildung 3). Bei $25^{\circ} \mathrm{C}$ kristallisiert Cobalt in der hcp-Struktur ( $\alpha$-Co) mit den Gitterkonstanten $a_{\text {hcp }}$ und $c_{\text {hcp }}$. Oberhalb von $400^{\circ}$ findet eine Phasenumwandlung in die fcc-Struktur ( $\beta$-Co) mit der Gitterkonstanten $a_{\mathrm{fcc}}$ statt.
+
+![This diagram is an X-ray diffraction (XRD) pattern showing the intensity of diffracted X-rays as a function of the diffraction angle (2θ) for a material measured at two different temperatures, 25°C and 500°C, with labeled crystallographic planes.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/bf219adc-af2e-4352-bc21-97ad4324e3f0/4c3bd793-d10b-4a3e-9d38-c4ca747661b3-3_485_880_774_429.jpg)
+Abbildung 3: Pulver-Röntgen-diffraktometrie-Messung bei $25^{\circ} \mathrm{C}$ (schwarz) und $500^{\circ} \mathrm{C}$ (rot) an einer Cobalt-Probe. Oberhalb von $400^{\circ} \mathrm{C}$ findet eine Phasenumwandlung von einer hep-Struktur ( $\alpha$-Co) mit den Gitterkonstanten $a_{\text {hcp }}$ und $c_{\mathrm{hcp}}$ in die fcc-Struktur ( $\beta$-Co) mit der Gitterkonstanten $a_{\mathrm{fcc}}$ statt. Die Reflexe sind mittels den Millerschen Indizes $h, k, \ell$ auch in der hcpPhase indiziert. $2 \theta$ bezeichnet hier den Streuwinkel.
+
+### 4.1 Beschreiben Sie die wesentlichen Unterschiede zwischen dem Laue- und dem Debye-ScherrerVerfahren. (2 Punkte)
+
+4.2 Wie lauten allgemein die Bragg- und die von Laue-Bedingung? Zeigen Sie, dass die Braggund die von Laue-Bedingung äquivalent sind. (2 Punkte)
+4.3 Was bestimmt die Position und die Intensität der Röntgenreflexe? Was versteht man unter dem Struktur- und dem Atomformfaktor? (2 Punkte)
+4.4 Bestimmen Sie aus der Röntgenaufnahme bei $500^{\circ} \mathrm{C}$ (rote Kurve in Abbildung 3) die Gitterkonstante $a_{\mathrm{fcc}}$ von $\beta$-Co. Warum tritt kein (100)-Reflex 1. Ordnung von Co bei dieser Temperatur auf? Berechnen Sie hierzu den Strukturfaktor von $\beta$-Co. (3 Punkte)
+4.5 Bestimmen Sie aus der Röntgenaufnahme bei $25^{\circ} \mathrm{C}$ (schwarze Kurve in Abbildung 3) die Gitterkonstanten $a_{\mathrm{hcp}}$ und $c_{\mathrm{hcp}}$ von $\alpha$-Co. Benutzen Sie hierzu die Beziehung
+
+$$
+\frac{1}{d^{2}}=\frac{4}{3}\left(\frac{h^{2}+h k+k^{2}}{a_{\mathrm{hcp}}^{2}}\right)+\frac{\ell^{2}}{c_{\mathrm{hcp}}^{2}}
+$$
+
+## (2 Punkte)
+
+4.6 Begründen Sie mittels des Strukturfaktors von $\alpha$-Co, warum bei $25^{\circ} \mathrm{C}$ kein (111)-Reflex 1. Ordnung auftritt. (3 Punkte)
+
+## Aufgabe 5: Bindungstypen (4 Punkte)
+
+Welche Bindungstypen dominieren in den festen Phasen folgender Materialien: Neon, Platin, Diamant, Kupfer, Graphit, Silizium, Cäsiumchlorid, Quarz?
+
+## Aufgabe 6 Bindungsenergie (11 Punkte)
+
+Betrachten Sie ein zweiatomiges Molekül. Die Bindungsenergie als Funktion des Abstands $U(R)$ der Atome ist gegeben durch das Lennard-Jones-Potenzial
+
+U(R)=4 \epsilon\left[\left(\frac{\sigma}{R}\right)^{12}-\left(\frac{\sigma}{R}\right)^{6}\right]
+
+(Angaben: $u=1,661 \times 10^{-27} \mathrm{~kg}, e=1,602 \times 10^{-19} \mathrm{As}, \hbar=1,054 \times 10^{-34} \mathrm{Js}$ )
+6.1 Diskutieren Sie die physikalischen Ursachen der attraktiven und repulsiven Wechselwirkung des Lennard-Jones-Potenzials $U(R)$ und skizzieren Sie es als Funktion des Abstandes $R$. (3 Punkte)
+6.2 Berechnen Sie den Gleichgewichtsabstand $R_{0}$ in Abhängigkeit von den Parametern $\sigma$ und $\epsilon$. (1 Punkt)
+6.3 Berechnen Sie die Schwingungsfrequenz in harmonischer Näherung eines zweiatomigen Neon-Moleküls mit $\boldsymbol{\epsilon}=3,1 \mathrm{meV}, \sigma=0,274 \mathrm{~nm}$ und der Atommasse $M=20 u$. (3 Punkte)
+6.4 Schätzen Sie die maximale Auslenkung $x_{\text {max }}$ des Neon-Moleküls aufgrund der Nullpunktsschwingung ab. Vergleichen Sie das Ergebnis mit dem zweifachen Atomradius $0,76 \AA$ von Neon. (2 Punkte)
+6.5 Vergleichen Sie die maximale Auslenkung $x_{\text {max }}$ des Neon-Moleküls mit dem eines fiktiven HeMoleküls. Nehmen Sie für $\mathrm{He} \epsilon=1,0 \mathrm{meV}, \sigma=0,265 \mathrm{~nm}$, eine Atommasse $M=4 u$ und einen zweifachen Atomradius $0,62 \AA$ an. Interpretieren Sie das Ergebnis. (2 Punkte)
+
+## Aufgabe 7: Gitterschwingungen (17 Punkte)
+
+Betrachten Sie zunächst eine eindimensionale, lineare, quasi-elastische Kette aus äquidistanten Atomen der Masse $m=200 u$ im Abstand $a=4 \times 10^{-10} \mathrm{~m}$ (siehe Abb. 4 (a)), die um ihre Gleichgewichtslage kleine Schwingungen in einer Dimension ausführen können (harmonische Näherung). Eine Wechselwirkung bestehe ausschließlich zwischen nächsten Nachbarn und sei durch die Federkonstante $C$ charakterisiert. (Angabe: $u=1,661 \times 10^{-27} \mathrm{~kg}$ )
+
+![This diagram depicts two models of a one-dimensional chain of atoms connected by springs, representing lattice vibrations in a diatomic linear chain. It shows the arrangement of masses (m or m1, m2) and spring constants (c) used to analyze phonon modes or vibrational properties in solid-state physics.](http://localhost:5001/subjects/704e4a10-008e-4c0a-9b98-4f88de336511/images/bf219adc-af2e-4352-bc21-97ad4324e3f0/4c3bd793-d10b-4a3e-9d38-c4ca747661b3-4_287_814_1891_429.jpg)
+Abbildung 4: (a) Eindimensionale, lineare Kette aus äquidistanten Atomen der Masse $m=200 u$ im Abstand $a=4 \times 10^{-10} \mathrm{~m}$. (b) Eindimensionale, lineare Kette aus zwei alternierenden Atomen der Masse $m_{1}$ und $m_{2}$ mit $m_{1}>m_{2}$.
+
+7.1 Zeigen Sie, dass die Auslenkung $u_{n}(t)$ des $n$-ten Atoms der Kette in Abb. 4 (a) der Differentialgleichung
+
+m \frac{d^{2} u_{n}(t)}{d t^{2}}=-C\left[2 u_{n}(t)-u_{n+1}(t)-u_{n-1}(t)\right]
+
+genügt. Lösen Sie diese Gleichung mit dem Ansatz $u_{n}(t)=u_{0}(t) \mathrm{e}^{\text {lqna }}$ und leiten Sie die Dispersionsrelation zwischen Frequenz $\omega$ und der Wellenzahl $q$ ab. (3 Punkte)
+7.2 Welche Größe kann man aus der Dispersion $\omega(q)$ im langwelligen Limes ableiten? Berechnen Sie diese aus der Dispersionsrelation. (2 Punkte)
+7.3 Skizzieren Sie die Dispersionsrelation $\omega(q)$ der einatomigen Kette in Abb. 4 (a). Achten sie auf die korrekte Achsenbeschriftungen. Wie viele Phononenzweige gibt es und wie bezeichnet man diese? (3 Punkte)
+7.4 Skizzieren Sie nun die Dispersionsrelation $\omega(q)$ für eine eindimensionale, zweiatomige Kette (siehe Abb. 4 (b)) mit ausschließlich nächster Nachbar-Wechselwirkung. Vergessen Sie nicht, die Achsen vollständig zu beschriften. Wie viele Phononenzweige gibt es nun und wie bezeichnet man diese? (3 Punkte)
+7.5 Diskutieren Sie und skizzieren Sie die Zustandsdichte $D(\omega)$ der Phononen pro Frequenzintervall für die eindimensionale, zweiatomige Kette aus Aufgabe 7.4. Beschreiben Sie qualitativ, wo und warum in der Zustandsdichte Maxima/Divergenzen auftreten und wo nicht. (3 Punkte)
+7.6 Skizzieren Sie die Dispersionsrelation $\omega(\mathbf{q})$ in [100]-Richtung für einen dreidimensionalen Silizium-Kristall mit Diamantstruktur. Wie viele Phononenzweige gibt es und wie bezeichnet man diese? (3 Punkte)
+
+## Aufgabe 8: Spezifische Wärme (15 Punkte)
+
+Betrachten Sie Aluminium mit einer Dichte $n=N / V=6.02 \times 10^{28} \mathrm{~m}^{-3}$ und einer DebyeTemperatur $\Theta_{\mathrm{D}}=428 \mathrm{~K}$.
+(Angaben: $\hbar=1,054 \times 10^{-34} \mathrm{Js}, m=9,109 \times 10^{-31} \mathrm{~kg}, e=1,602 \times 10^{-19}$ As, $k_{\mathrm{B}}=1,381 \times 10^{-23} \mathrm{~J} / \mathrm{K}$ )
+8.1 Berechnen Sie den Beitrag der Gitterschwingungen zu der spezifischen Wärmekapazität $c_{V \text {,ph }}$ bei konstantem Volumen $V$ für tiefe und hohe Temperaturen. $c_{V}$ ist hierbei gegeben durch
+
+c_{V, \mathrm{ph}}=\frac{C_{V}}{V}=\frac{1}{V} \sum_{\mathbf{q}, r} \frac{\partial}{\partial T} \frac{\hbar \omega_{r}(\mathbf{q})}{\mathrm{e}^{\frac{\hbar \omega_{r}(\mathbf{q})}{k_{B} T}}-1}
+
+mit der Zahl der Phononenzweige $r$. Was bedeutet "tiefe" und "hohe" Temperaturen in diesem Zusammenhang?
+(Angaben: $\mathrm{e}^{x} \simeq 1+x+\frac{1}{2} x^{2}+\frac{1}{6} x^{3}, \frac{1}{a+b x+c x^{2}+\ldots} \simeq \frac{1}{a}\left[1-\frac{b}{a} x+\left(\frac{b^{2}}{a^{2}}-\frac{c}{a}\right) x^{2}\right]$ und $\int_{0}^{\infty} d x\left[x^{3} /\left(\mathrm{e}^{x}-\right.\right.$ 1) $\left.]=\pi^{4} / 15, \int_{0}^{\infty} d x\left[x^{2} /\left(\mathrm{e}^{x}-1\right)\right] \simeq 2,404, \int_{0}^{\infty} d x\left[x /\left(\mathrm{e}^{x}-1\right)\right]=\pi^{2} / 6\right)$ (5 Punkte)
+8.2 Berechnen Sie im Modell freier Elektronen den elektronischen Beitrag zur spezifischen Wärmekapazität $c_{V, \text { el }}$. Nehmen Sie hierfür die innere Energie als $U \simeq U(T=0)+\left(k_{\mathrm{B}} T\right)^{2} \frac{\pi^{2}}{6} D\left(E_{\mathrm{F}}\right)$ an. Hierbei ist $D\left(E_{\mathrm{F}}\right)$ die Zustandsdichte an der Fermi-Energie $E_{\mathrm{F}}$. (3 Punkte)
+8.3 Bei welcher physikalisch sinnvollen Temperatur gilt $c_{V, \mathrm{el}}=c_{V, \mathrm{ph}}$ in Aluminium? (3 Punkte)
+8.4 Berechnen Sie die Sommerfeld-Konstante $\gamma=c_{V, \mathrm{el}} / T$ von Aluminium und bestimmen Sie aus dem Vergleich mit dem experimentellen Wert $\gamma_{\exp }=0,135 \frac{\mathrm{~mJ}}{\mathrm{~cm}^{3} \mathrm{~K}^{2}}$ die thermische effektive Masse $m_{\text {th }}$ der Leitungselektronen. (2 Punkte)
+8.5 Skizzieren Sie die spezifische Wärmekapazität von Aluminium als Funktion der Temperatur
+T. (2 Punkte)
+
+## Aufgabe 9: Fermi-Flächen und Brillouin-Zonen (10 Punkte)
+
+Wir betrachten ein zweidimensionales quadratisches Gitter mit Gitterkonstante $a=2,8 \AA$, auf dem gleichartige Atome mit jeweils 4 Valenzelektronen angeordnet sind.
+(Angaben: $m_{e}=9,109 \times 10^{-31} \mathrm{~kg}, e=1,602 \times 10^{-19} \mathrm{C}, \hbar=1,054 \times 10^{-34} \mathrm{Js}$ )
+9.1 Wie groß ist der Fermi-Wellenvektor $k_{\mathrm{F}}$ und die Fermi-Energie $E_{\mathrm{F}}$ für dieses zweidimensionale System, wenn wir von einer freien Bewegung der Elektronen in der Ebene ausgehen? Berücksichtigen Sie die Spin-Entartung. (3 Punkte)
+9.2 Wie ändern sich der Fermi-Wellenvektor und die Fermi-Energie, wenn wir den Abstand der Atome verdoppeln würden? (1 Punkt)
+9.3 Zeigen Sie, dass für das zweidimensionale quadratische Gitter die Energie der freien Elektronen mit Wellenvektor in der Ecke der 1. Brillouin-Zone um den Faktor 2 höher ist als für solche mit Wellenvektoren im Mittelpunkt einer Seite. Wie hoch wäre der Faktor, wenn wir ein dreidimensionales einfach-kubisches Gitter betrachten und Elektronen mit Wellenvektoren in der Ecke der würfelförmigen 1. Brillouin-Zone und solchen mit Wellenvektoren auf den Mittelpunkten der Würfelflächen vergleichen. (3 Punkte)
+9.4 Welche Auswirkungen könnte das Ergebnis 9.3 auf die elektrische Leitfähigkeit von Materialien mit einer geraden Anzahl von Elektronen pro elementarer Gitterzelle haben? (3 Punkte)
+
+## Aufgabe 10 Dreidimensionales System stark gebundener Elektronen (15 Punkte)
+
+Die Bandstruktur des vereinfachten Tight-binding-Modells hat die Form
+
+E(\mathbf{k})=E_{0}-t \sum_{j} \mathrm{e}^{l \mathbf{k} \cdot\left(\mathbf{R}-\mathbf{r}_{j}\right)},
+
+wobei die Summe über die nächsten Nachbarn mit Abstand ( $\mathbf{R}-\mathbf{r}_{j}$ ) vom Atom am Ort $\mathbf{R}$ läuft. Die Größe $t$ ist das für alle nächsten Nachbarn als gleich angenommene Überlappungsintegral. Betrachten sie im Folgenden ein dreidimensionales, einfaches rhombisches Gitter mit Gitterkonstanten $a, b$ und $c$.
+10.1 Berechnen Sie die Energiewerte $E(\mathbf{k})$ des dreidimensionalen einfachen rhombischen Gitters und berechnen Sie die Bandbreite $W$ in Einheiten von $t$. (3 Punkte)
+10.2 Skizzieren Sie $E(\mathbf{k})-E_{0}$ entlang der Linie $(0,0,0)-(\pi / a, 0,0)-(\pi / a, \pi / b, \pi / c)-(0,0,0)$. Geben Sie die $y$-Achse in Einheiten von $t$ an. (3 Punkte)
+10.3 Berechnen Sie allgemein die Gruppengeschwindigkeit $\mathbf{v}(\mathbf{k})$ der Elektronen und für die [100]und die [111]-Richtungen. Wo ist die Geschwindigkeit maximal? Wo verschwindet die Gruppengeschwindigkeit? (3 Punkte)
+10.4 Berechnen Sie den Tensor der effektiven Masse $m^{\star}(\mathbf{k})$ und zeigen Sie, dass $m^{\star}(\mathbf{k})$ für alle Vektoren $\mathbf{k}$ diagonal ist. (3 Punkte)
+10.5 Vernachlässigen Sie im Folgenden die rhombische Verzerrung und gehen Sie zu einem einfach kubischen Gitter mit $a=b=c$ über. Berechnen Sie nun die effektive Masse $m^{\star}$ an den Punkten $\mathbf{k}=(0,0,0)$ und $\mathbf{k}=(\pi / 2 a, 0,0)$ als Funktion von $t$ und $a$. Bilden Sie hierzu aus den Haupteffektivenmassen $m_{i i}^{\star}$ mittels $m^{\star}=\sqrt[3]{m_{x x}^{\star} m_{y y}^{\star} m_{z z}^{\star}}$ einen Skalar. (3 Punkte)
+

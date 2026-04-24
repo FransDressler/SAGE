@@ -1,0 +1,36 @@
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+De Broglie Wellenlänge
+aus Gross, Marx
+bzw. Kittel
+Die de Broglie Wellenlänge von
+Photonen, Elektronen, Neutronen
+und Heliumatomen als Funktion
+der Teilchenenergie (letztere in
+unterschiedlichen Einheiten!)
+ = h/p
+
+Walter Schottky Institut & School of Natural Sciences A. Holleitner WS 25/26
+Charakteristische Kenndaten
+Tabelle 2.1
+aus Gross, Marx
+
+Bragg Bedingung
+
+Bragg Bedingung / Millersche Indizes
+Mehrere Netzebenen des einfachen kubischen Gitters.
+Die eingezeichneten Ebenen sind mit ihren Millerschen
+Indizes versehen. Es sind jeweils zwei parallele Ebenen
+einer Schar eingezeichnet.
+Der Abstand benachbarter paralleler Ebenen nimmt ab,
+wenn die Millerschen Indizes größer werden;
+d.h. Reflexionen bei hohen Indizes erfordern kürzere
+Wellenlängen.
+(010)
+(110)
+(130)
+(310)
+(120)
+
+Streuamplitude
+Bild 4.3
+aus Hunklinger

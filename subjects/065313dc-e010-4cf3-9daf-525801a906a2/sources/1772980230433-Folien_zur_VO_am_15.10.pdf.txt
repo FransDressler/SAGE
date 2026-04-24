@@ -1,0 +1,287 @@
+### 1.3.5 Zentraler Grenzwertsatz
+
+Gegeben seien N Zufallsvariablen $X_{n}$ mit einer beliebigen Verteilung mit endlichem Mittelwert und Varianz,
+
+$$
+\left\langle X_{n}\right\rangle=\mu, \quad\left\langle\Delta X_{n}^{2}\right\rangle=\sigma^{2}
+$$
+
+und
+
+Z=\frac{X_{1}+X_{2}+\cdots+X_{N}}{N}
+
+ist die (normierte) Summe dieser Zufallsgrößen.
+
+## "Zentraler Grenzwertsatz"
+
+Im Grenzfall $N \rightarrow \infty$ ist die Göße $Z$ normalverteilt, $Z \sim \mathcal{N}\left(\mu, \sigma^{2} / N\right)$, mit
+
+\langle Z\rangle=\mu, \quad\left\langle\Delta Z^{2}\right\rangle=\frac{\sigma^{2}}{N}
+
+Beweis: (unter Verwendung der Eigenschaften der charakt. Funktion)
+
+\varphi_{Z}(t)=\left\langle e^{i\left(X_{1}+X_{2}+\cdots+X_{n}\right) t / N}\right\rangle=\left[\left\langle e^{i X t / N}\right\rangle\right]^{N}
+
+## statistisch unabhängig
+
+Entwicklung für große N :
+
+\begin{aligned}
+&\left\langle e^{i X t / N}\right\rangle=1+i t \frac{\langle X\rangle}{N}-\frac{t^{2}}{2} \frac{\left\langle X^{2}\right\rangle}{N^{2}}+O\left(\frac{1}{N^{3}}\right) \\
+& \approx\left(1+\frac{i t \mu-t^{2} \sigma^{2} /(2 N)}{N}\right) \\
+& \lim _{N \rightarrow \infty}\left(1+\frac{a}{N}\right)^{N}=e^{a} \longrightarrow \varphi_{Z}(t)=e^{i \mu t} e^{-\frac{\sigma^{2}}{N} \frac{t^{2}}{2}} \\
+& \begin{array}{c}
+\text { charakteristische Funktion } \\
+\text { der Gauß-Verteilung }
+\end{array}
+\end{aligned}
+
+### 1.2 Gesetz der großen Zahlen: einfaches Modellsystem
+
+![This diagram depicts the exchange or diffusion of molecules (likely nitrogen gas, N₂) between two volumes or compartments labeled (1) and (2), with respective volumes \(V_1, V_2\) and molecule counts \(N_1, N_2\). It shows the bidirectional flow of molecules between the two regions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-03_440_925_221_158.jpg)
+
+Klassisches ideales Gas ( $N \sim 10^{23}$ Teilchen) in isoliertem Behälter mit Volumen V und durchlässiger Wand.
+
+N=N_{1}+N_{2}, V=V_{1}+V_{2}
+
+Annahme: Wahrscheinlichkeit ein Teilchen in $V_{1}$ oder $V_{2}$ zu finden:
+
+p_{1}=\frac{V_{1}}{V}, \quad p_{2}=\frac{V_{2}}{V}, \quad p_{2}=1-p_{1}
+
+Anzahl der möglichen Konfigurationen: $\quad 2^{N} \quad(\rightarrow$ " $\infty$ ")
+
+⇒ Exakte Beschreibung von makroskopischen Systemen meist nicht möglich / generell nicht sinnvoll !
+
+⇒ relevante Fragestellung: Was ist die wahrscheinlichste Konfiguration?
+
+- Wahrscheinlichkeit, $N_{1}$ Teilchen im Volumen 1 zu finden:
+
+w_{N}\left(N_{1}\right)=\frac{N!}{N_{1}!\left(N-N_{1}\right)!} p_{1}^{N_{1}} p_{2}^{N-N_{1}} \quad \text { ("Binomialverteilung") }
+
+"Entartung" des Zustands (ununterscheidbare Teilchen)
+$\stackrel{\wedge}{=}$ Anzahl der ununterscheidbaren Konfigurationen mit $N_{1}$ Teilchen im Volumen 1
+
+- Mittlere Teilchenzahl im Volumen 1:
+
+\left\langle N_{1}\right\rangle=\sum_{N_{1}=0}^{N} w_{N}\left(N_{1}\right) N_{1}=N p_{1}
+
+- Fluktuation (mittlere Abweichung) der Teilchenzahl:
+
+\begin{gathered}
+\Delta N_{1}=\sqrt{\left\langle\left(N_{1}-\left\langle N_{1}\right\rangle\right)^{2}\right\rangle}=\sqrt{\left\langle N_{1}^{2}\right\rangle-\left\langle N_{1}\right\rangle^{2}}=\sqrt{N p_{1}\left(1-p_{1}\right)} \\
+\left\langle N_{1}^{2}\right\rangle=\sum_{N_{1}=0}^{N} w_{N}\left(N_{1}\right) N_{1}^{2}
+\end{gathered}
+
+Bsp:
+
+w_{N=5}\left(N_{1}\right)
+
+p_{1}=0.4
+
+w_{N=50}\left(N_{1}\right)
+
+![This diagram depicts a probability distribution or frequency plot showing discrete data points \(N_1\) on the x-axis and their corresponding probabilities or frequencies on the y-axis, with a marked interval \(\Delta N_1\) indicating a range or difference in values of \(N_1\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-05_690_1230_205_241.jpg)
+![This diagram depicts a probability distribution or histogram of the variable \(N_1\), showing the spread or uncertainty \(\Delta N_1\) around the peak value. It illustrates the range of values \(N_1\) can take with their corresponding probabilities or frequencies.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-05_694_1286_201_1611.jpg)
+
+- Wahrscheinlichste Teilchenzahl $\widehat{N}_{1}$ :
+
+\left.w_{N}\left(N_{1}\right)\right|_{N_{1}=\widehat{N}_{1}} \stackrel{!}{=} \max
+
+einfacher: Maximierung von $\ln \left(w_{N}\left(N_{1}\right)\right)$ unter Ausnützung der
+
+## Stirling-Formel:
+
+N!\simeq \sqrt{2 \pi N}\left(\frac{N}{e}\right)^{N} \quad \Rightarrow \quad \ln (N!) \simeq N \ln (N)-N
+
+(Beweis: siehe Übungen)
+
+\begin{aligned}
+\Rightarrow \ln \left(w_{N}\left(N_{1}\right)\right) \simeq & N \ln (N)-N-N_{1} \ln \left(N_{1}\right)+N_{1} \\
+& -\left(N-N_{1}\right) \ln \left(N-N_{1}\right)+\left(N-N_{1}\right) \\
+& +N_{1} \ln \left(p_{1}\right)+\left(N-N_{1}\right) \ln \left(p_{2}\right)
+\end{aligned}
+
+## Maximalwertbedingung:
+
+![This image depicts a mathematical expression showing the derivative of the function \( x \ln(x) - x \) with respect to \( x \), which equals \( \ln(x) \). It is related to calculus, specifically differentiation of logarithmic functions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-06_339_899_607_1965.jpg)
+
+& \left.\frac{d}{d N_{1}} \ln \left(w_{N}\left(N_{1}\right)\right)\right|_{N_{1}=\widehat{N}_{1}}=-\ln \left(\widehat{N}_{1}\right)+\ln \left(N-\widehat{N}_{1}\right)+\ln \left(p_{1}\right)-\ln \left(p_{2}\right) \stackrel{!}{=} 0 \\
+& \Leftrightarrow \ln \left(\frac{p_{1}}{p_{2}}\right)=\ln \left(\frac{\widehat{N}_{1}}{N-\widehat{N}_{1}}\right) \quad \Rightarrow \widehat{N}_{1}=\left\langle N_{1}\right\rangle=p_{1} N
+
+Für große $N$ ist der wahrscheinlichste Wert $\widehat{N}_{1}$ gleich dem Mittelwert $\left\langle N_{1}\right\rangle$ der Binomialverteilung!
+
+TeilchenzahIfluktuationen (Abweichung vom wahrscheinlichsten Wert):
+Def: $\quad N_{1}=\widehat{N}_{1}+x, \quad N_{2}=N-\widehat{N}_{1}-x, \quad|x| \ll \widehat{N}_{1}$
+dann: $\quad \ln \left(w_{N}\left(\widehat{N}_{1}+x\right)\right) \simeq N \ln (N)-\left(\widehat{N}_{1}+x\right) \ln \left(\widehat{N}_{1}+x\right)$
+
+& -\left(N-\widehat{N}_{1}-x\right) \ln \left(N-\widehat{N}_{1}-x\right) \\
+& +\left(\widehat{N}_{1}+x\right) \ln \left(p_{1}\right)+\left(N-\widehat{N}_{1}-x\right) \ln \left(p_{2}\right)
+
+⇒ Taylor-Entwicklung für kleine Werte von $x / \widehat{N}_{1} \ll 1$ ergibt:
+
+\ln \left(w_{N}\left(\widehat{N}_{1}+x\right)\right) \simeq \ln \left(w_{N}\left(\widehat{N}_{1}\right)\right)-\frac{x^{2}}{2 N p_{1}\left(1-p_{1}\right)} \longleftarrow\left(\Delta N_{1}\right)^{2}
+
+\Rightarrow w_{N}\left(N_{1}\right) \simeq w_{N}\left(\widehat{N}_{1}\right) e^{-\frac{\left(N_{1}-\widehat{N}_{1}\right)^{2}}{2\left(\Delta N_{1}\right)^{2}}} \quad \text { ("Gauß-Verteilung") }
+
+Zusammenfassung: Für große Teilchenzahlen kann die Verteilungsfunktion für $N_{1}$ durch eine Gauß-Verteilung mit wahrscheinlichstem Wert $\widehat{N}_{1}$ und Breite (=Standardabweichung) $\Delta N_{1}$ genähert werden.
+
+w_{N}\left(N_{1}\right) \simeq \frac{1}{\sqrt{2 \pi} \Delta N_{1}} e^{-\frac{\left(N_{1}-\widehat{N}_{1}\right)^{2}}{2\left(\Delta N_{1}\right)^{2}}}
+
+(Normierung !)
+![This diagram depicts a probability distribution or histogram of a quantity labeled \(\hat{N}_1\), showing the spread or uncertainty \(\Delta N_1\) around its mean value. It is likely used to illustrate statistical fluctuations or measurement uncertainty in a physical or experimental context.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-08_767_1100_464_1764.jpg)
+$\left.\begin{array}{ll}\text { - Mittelwert: } & \widehat{N}_{1}=p_{1} N \sim N \\ \text { - Fluktuationen: } & \Delta N_{1}=\sqrt{p_{1}\left(1-p_{1}\right) N} \sim \sqrt{N}\end{array}\right\} \quad \begin{gathered}\rightarrow \infty \\ \text { (für große }\end{gathered}$
+
+Aber: relative Schwankungsbreite
+verschwindend klein! $\quad \frac{\Delta N_{1}}{\widehat{N}_{1}} \rightarrow 0 \quad$ (für große N)
+
+Zahlenbeispiel: $\quad N=10^{20} \quad p_{1}=1 / 2$
+
+\left.\begin{array}{r}
+\widehat{N}_{1}=0.5 \times 10^{20} \\
+\Delta N_{1}=0.5 \times 10^{10}
+\end{array}\right\} \quad \frac{\Delta N_{1}}{\widehat{N}_{1}}=10^{-10}
+
+Wahrscheinlichkeit $P_{\varepsilon}$, dass die gemessene Teilchenzahl um $\varepsilon=10^{-6} \%$ von $\widehat{N}_{1}$ abweicht:
+![This diagram depicts a probability distribution function \( w_N(N_1) \) for a variable \( N_1 \), showing the central value \( \hat{N}_1 \) and the shaded regions \( P_\varepsilon \) representing the probability of deviations from \( \hat{N}_1 \) beyond a certain threshold.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-09_682_1258_993_845.jpg)
+
+P_{\varepsilon}=2 \int_{(1+\varepsilon) \widehat{N}_{1}}^{\infty} w_{N}\left(N_{1}\right) d N_{1}=1-\underset{\text { Fehlerfunktion }}{\operatorname{Erf}}\left(\frac{\varepsilon \widehat{N}_{1}}{\sqrt{2} \Delta N_{1}}\right) \sim 10^{-2174}
+
+## Schlussfolgerungen:
+
+-) Wohldefinierter Erwartungswert von makroskopischen Messgrößen (z.B. Teilchenzahl) aus rein statistischen Überlegungen.
+-) Wahrscheinlichste Konfiguration hat maximale Entartung / Anzahl von kompatiblen "Mikrozuständen" (maximaler Entropie).
+-) Obwohl physikalisch erlaubt, treten viele Konfigurationen in der Praxis nie auf (z.B. alle Teilchen im Volumen 1).
+
+## 2. Thermodynamik
+
+### 2.1 Grundlagen und Terminologie
+
+Die (phänomenologische) Thermodynamik beschreibt die stationären Zustände eines makroskopischen Systems (Festkörper, Gase, ...) bestehend aus $N \gg 1$ Teilchen.
+![This diagram depicts carbon monoxide (CO) molecules, showing the molecular structure with a triple bond between the carbon and oxygen atoms.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-11_344_534_940_1183.jpg)
+
+N \sim 10^{23}
+
+- isoliert: kein Energie- oder Teilchenaustausch mit Umgebung
+- abgeschlossen: Energie- aber kein Teilchenaustausch mit Umgebung
+- offen: sowohl Energie- als auch Teilchenaustausch möglich
+
+Der thermodynamische Zustand ist (unabhängig von der Vorgeschichte) durch wenige makroskopische Messgrößen (Zustandsvariablen) vollständig beschrieben.
+![This diagram depicts the concept of pressure in a gas, showing gas molecules (red circles with triple lines) colliding with the surface of a container that has a weight on top, illustrating how molecular collisions exert force on the container walls.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-12_619_556_486_517.jpg)
+![This diagram depicts a spin configuration in a magnetic material, specifically showing a skyrmion lattice with spins arranged in a swirling pattern under an applied magnetic field \(\vec{B}\).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-12_503_846_538_1764.jpg)
+
+Bsp: Energie (E), Entropie (S), Temperatur (T), Druck (p), Volumen (V), Teilchenzahl (N), chemisches Potential ( $\mu$ ), Magnetisierung (M), magnetisches Feld (B), ...
+extensive Größen: proportional zur Größe des Systems (E,V,N,S, ...)
+intensive Größen: unabhängig von der Größe des Systems ( $\mathrm{p}, \mathrm{T}, \mathrm{B}, \mu, \ldots$ )
+
+## Zustandsgleichung:
+
+Die Zustandsgrößen sind durch eine systemabhängige Zustandsgleichung miteinander verknüpft.
+
+Bsp 1: "ideales" (nicht wechselwirkendes) Gas
+![This image depicts the thermal and caloric equations of state for an ideal gas, showing the relationship between pressure, volume, temperature, and internal energy with the Boltzmann constant.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-13_524_2622_845_147.jpg)
+
+Bsp 2: Van-der Waals Gas
+![The image depicts the Van der Waals equation for real gases, showing the corrections for molecular attraction and finite molecular volume in the equation of state. It also defines the volume per molecule as the total volume divided by the number of molecules.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-13_609_2664_1579_184.jpg)
+
+## Thermodynamischer Prozess:
+
+Übergang zwischen zwei Gleichgewichtszuständen.
+
+\text { z.B: } \quad(E, V, N) \quad \longrightarrow \quad\left(E^{\prime}, V^{\prime}, N^{\prime}\right)
+
+- "quasi-statischer Prozess" (Idealisierung):
+
+![This diagram depicts a potential energy barrier in quantum mechanics, showing a particle with energy \( V_p \) approaching and partially penetrating a rectangular potential barrier.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-14_355_682_961_153.jpg)
+$t_{0}$
+
+![This diagram depicts a potential energy barrier with a perturbation, showing the modified potential \( V + \delta V_1 \) and momentum \( p - \delta p_1 \) on one side of the barrier. It is used to illustrate changes in potential and momentum in a quantum tunneling or scattering context.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-14_366_725_929_961.jpg)
+$t_{1}=t_{0}+\delta t$
+
+![This diagram depicts a thermodynamic system or control volume with variables representing volume (V), pressure (p), and their small perturbations (δV₁, δV₂, δp₁, δp₂), likely used to analyze changes in volume and pressure within the system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-14_365_727_929_1846.jpg)
+$t_{2}=t_{0}+2 \delta t$
+
+- quasi-statische Änderung der externen Parameter
+- System ist zu jedem Zeitpunk im thermodynamischen Gleichgewicht und durch seine Zustandsvariablen beschrieben:
+
+E\left(t_{i}\right), V\left(t_{i}\right), p\left(t_{i}\right), \ldots
+
+- "reversibler Prozess" (Idealisierung):
+![This diagram depicts a system of coupled oscillators or masses connected by springs, showing the displacement and momentum variables (p, δp) and potential energy terms (V, δV) for each oscillator in the chain. It illustrates the interaction between adjacent oscillators through spring forces and changes in potential and momentum.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-15_376_2737_221_195.jpg)
+- quasi-statisch
+- die Zustandsänderung ist umkehrbar (reversibel)
+- Prozess + Umkehrprozess: Umgebung bleibt unverändert
+
+Beispiel: Die in der Feder gespeicherte Energie kann das Gas wieder vollständig komprimieren.
+
+Achtung: Reversibel ⇒ quasi-statisch aber nicht umgekehrt*!
+(*) z.B. wegen Energieverlust des Gesamtsystems durch Kolbenreibung.
+-"irreversibler Prozess" (realer Prozess):
+z.B: Motorzündung
+![This diagram depicts a thermodynamic piston system showing a gas confined in a cylinder with volume (V), pressure (p), and temperature (T), separated by a movable piston connected to a spring. It is used to illustrate the mechanical and thermodynamic interactions between the gas and the piston-spring system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-16_355_682_435_201.jpg)
+![This diagram depicts a simplified model of a gas-filled piston system, showing the gas (represented by the star shape) exerting pressure on a movable piston (green rectangle) connected to a spring. It illustrates the interaction between gas pressure, piston movement, and spring compression or extension.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-16_565_738_427_1031.jpg)
+![This diagram depicts a thermodynamic system with volume \( V' \), pressure \( p' \), and temperature \( T' \), showing a piston connected to a spring that can compress or expand the gas inside the container.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-16_359_739_427_1917.jpg)
+
+- Turbulenzen, etc.
+(i. Allgemeinen kein therm. Zustand)
+- Reibung, Strahlungsverluste, ...
+![This diagram depicts an isothermal process in thermodynamics, showing the relationship between pressure (p) and volume (V) for a reversible or quasi-static process where the product pV remains constant.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-16_907_1065_1297_265.jpg)
+![This diagram depicts an irreversible process on a pressure-volume (p-V) graph, showing that the path between states with pressures p2 and p1 and volumes V2 and V1 cannot be represented in a p-V diagram because it does not correspond to a thermodynamic equilibrium state.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-16_871_1230_1341_1712.jpg)
+- spezielle Prozesse:
+(i) isotherm: konstante Temperatur
+(ii) isochor: konstantes Volumen
+(iii) isobar: konstanter Druck
+(iv) isentrop: konstante Entropie*
+(v) adiabatisch: ohne Wärmeaustausch mit Umgebung*
+
+Bsp: ideales Gas
+
+p V=N k_{B} T
+
+![This diagram depicts a pressure-volume (p-V) thermodynamic cycle showing different processes including isothermal expansions/compressions (pV = const) and adiabatic expansions/compressions (pV^κ = const) between states labeled (i) to (v). It illustrates how pressure and volume change during these stages in a thermodynamic system.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-17_1116_1712_1061_1125.jpg)
+
+### 2.2 Die Hauptsätze der Thermodynamik
+
+## "Nullter" Hauptsatz:
+
+Befindet sich System A mit System B sowie System B mit System C im thermischen Gleichgewicht, so befindet sich auch A mit C im thermischen Gleichgewicht.
+
+Die Zustandsgröße, die bei diesen Systemen übereinstimmt, ist die Temperatur, die intensiv und überall im System gleich ist.
+![This diagram depicts three thermodynamic systems (A, B, and C) each characterized by their volume (V), number of particles (N), and temperature (T), illustrating the state variables of these systems.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-18_788_1449_1246_216.jpg)
+
+Definition:
+"thermisches Gleichgewicht"
+$T_{A}=T_{B}=T_{C}$
+
+## Erster Hauptsatz: ("Energieerhaltungsatz")
+
+i) Die innere Energie (E) eines isolierten Systems bleibt erhalten.
+ii) Die innere Energie eines offenen Systems ändert sich durch Leistung von Arbeit (W) und Aufnahme von Wärme (Q) gemäß:
+
+d E=\delta W+\delta Q
+
+| $d E$ | $\ldots$ | infinitesimale Änderung der Energie |
+| :--- | :--- | :--- |
+| $\delta W$ | $\ldots$ | die am System geleistete Arbeit bei gleichzeitiger <br> thermischer Isolierung des Systems |
+| $\delta Q$ | $\ldots$ | vom System aufgenommene Wärme bei konstanten <br> äußeren Parametern ( $\mathrm{z} . \mathrm{B}$, Volumen, Magnetfeld, $\ldots)$ |
+
+(def: "Wärme" = Energieänderung bei konstanten äußeren Parametern)
+
+-) Vorzeichen von Arbeit und Wärme $\quad \delta W=\delta W_{\text {mech }}=-p \delta V$
+
+![This diagram depicts a thermodynamic system where heat (\(\delta Q > 0\)) is added to a gas, causing it to do work (\(\delta W < 0\)) on a piston with a mass on top.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-20_677_1348_285_158.jpg)
+Wärme Zufuhr, Expansion
+
+![This diagram depicts a thermodynamic system with a piston and weight, illustrating the work done (δW > 0) by the system and heat transfer (δQ < 0) out of the system. It shows the relationship between work done by the system and heat loss during a process.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-20_656_1348_301_1627.jpg)
+Wärme Abgabe, Kompression
+
+-) allgemein: $\quad \delta W=\delta W_{\text {mech }}+\delta W_{\text {chem }}+\delta W_{\text {mag }}+\delta W_{\text {el }}+\ldots$
+
+![The image depicts the chemical work term in thermodynamics, showing the relationship \(\delta W_{\text{chem}} = \mu \delta N\), where \(\delta W_{\text{chem}}\) is the infinitesimal chemical work, \(\mu\) is the chemical potential, and \(\delta N\) is the change in particle number.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-20_339_667_1510_765.jpg)
+chemisch
+
+![This equation depicts the magnetic work done on a magnetic moment in an external magnetic field, showing the relationship between the change in magnetic work (δW_mag) and the product of the magnetic field vector (B) and the change in magnetic moment vector (δM).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-20_344_609_1521_1605.jpg)
+magnetisch
+
+![This equation depicts the infinitesimal work done by an electric field, showing the relationship between the small amount of work (δW_el), the electric potential (Φ_el), and the small amount of charge (δq).](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/c134a79d-211c-48b2-8149-eecc863d2479/0e8667e3-37d6-412b-8e95-93029ab5c7af-20_318_598_1531_2334.jpg)
+elektrisch
+

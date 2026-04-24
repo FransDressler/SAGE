@@ -1,0 +1,129 @@
+## Die Brillouin-Zone
+
+![This diagram depicts the reciprocal lattice and the first Brillouin zone of a square lattice, showing the boundaries in k-space defined by the lattice constants \(a_x\) and \(a_y\). It illustrates the construction of the Brillouin zone with reciprocal lattice points and the division of the zone into regions based on wave vectors \(k_x\) and \(k_y\).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-01_1466_1920_385_505.jpg)
+Bild 4.7: Brillouin-Zonen eines Rechteckgitters. Die Flächen der 2. BrillouinZone sind durch helle und die dritte durch dunklere Tönung gekennzeichnet.
+
+## Die Brillouin-Zone
+
+![This diagram depicts a complex geometric or mathematical arrangement involving multiple polygons, lines, and points, likely illustrating relationships or symmetries in a polygonal or polyhedral structure. It shows the intersection and connection of various colored lines and points, possibly representing a higher-dimensional or abstract geometric concept.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-02_1323_1942_361_368.jpg)
+
+Erste Brillouin-Zone sowie Brillouin-Zonen höherer Ordnung für ein zweidimensionales Gitter. Gezeigt sind die erste bis vierte Brillouin-Zone
+
+## Die Brillouin-Zone einer linearen Kette
+
+![This diagram depicts the first Brillouin zone and higher Brillouin zones in reciprocal space, showing the wave vector \( k \) intervals and their corresponding zone numbers for a one-dimensional crystal lattice with lattice constant \( a \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-03_298_2617_802_358.jpg)
+
+Bild 4.6: Brillouin-Zonen einer linearen Kette. Die Strecken der verschiedenen Brillouin-Zonen sind durch unterschiedlich gefärbte Bereiche gekennzeichnet. Die Mittelsenkrechten bilden die Ränder der jeweiligen Brillouin-Zonen. Der $\Gamma$-Punkt des reziproken Gitters liegt bei $k=0$.
+
+## von Laue Bedingung $=$ Bragg Bedingung
+
+Da die Wellenlänge bei der (elastischen) Beugung am Kristall unverändert bleibt, gilt, dass: $|\boldsymbol{k}|=\left|\boldsymbol{k}_{0}\right|=2 \pi / \lambda$ (*)
+
+$$
+\begin{aligned}
+& \boldsymbol{G}=\boldsymbol{k}-\boldsymbol{k}_{0} \\
+\Rightarrow & \boldsymbol{G}^{2}+2 \boldsymbol{k}_{0} \cdot \boldsymbol{G}+\boldsymbol{k}_{0}^{2}=\boldsymbol{k}^{2} \stackrel{*}{=} \boldsymbol{k}_{0}^{2} \\
+\Rightarrow & 2 \boldsymbol{k}_{0} \cdot \boldsymbol{G}=\boldsymbol{G}^{2} \\
+\Rightarrow & \boldsymbol{k}_{0} \cdot \frac{\boldsymbol{G}}{|\boldsymbol{G}|}=\frac{1}{2}|\boldsymbol{G}| \\
+= & |\boldsymbol{k}| \cdot \cos \varphi
+\end{aligned}
+$$
+
+![This diagram depicts the vector relationship in reciprocal space for crystallography or solid-state physics, showing the difference vector \( \mathbf{G} = \mathbf{k} - \mathbf{k}_0 \) between incident and scattered wave vectors \( \mathbf{k}_0 \) and \( \mathbf{k} \), with angles \( \varphi \) indicating the scattering geometry.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-04_591_841_881_2103.jpg)
+
+## Geometrische Interpretation:
+
+Konstruktive Interferenz tritt nur dann auf, wenn die Spitze des einfallenden $k$-Vektors auf der senkrechten Ebene liegt (Bragg-Ebene), welche einen reziproken Gittervektor halbiert.
+
+## Reziprokes Gitter von fcc
+
+1.) Das reziproke Gitter des fcc Gitters ist ein bcc Gitter.
+
+![This diagram depicts the Wigner-Seitz cell in a reciprocal lattice, illustrating the construction of the Brillouin zone in solid state physics. It shows how the Brillouin zone is formed as the Wigner-Seitz cell around a reciprocal lattice point.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-05_974_1234_457_310.jpg)
+Abb. 2.4
+aus Gross, Marx
+
+2. ) Die Wigner-Seitz-Zelle des reziproken Gitters wird als erste Brillouin-Zone bezeichnet.
+3.) Punkte hoher Symmetrie werden mit $\Gamma, \mathrm{X}, \mathrm{L}, \mathrm{K}$, U und W gekennzeichnet.
+
+![This diagram depicts the first Brillouin zone of a face-centered cubic (FCC) crystal lattice, showing high-symmetry points labeled Γ, L, U, X, K, and W used in band structure calculations in solid state physics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-05_718_786_580_2486.jpg)
+Bild 4.8
+aus Hunklinger bzw. Ashcroft Mermin
+
+Die erste Brillouin-Zone eines kubisch flächenzentrierten (fcc) Gitters ist ein abgestumpfter Oktaeder mit 8 Sechsecken und 6 Quadraten. Die Gitterzellen sind im reziproken Raum gezeichnet und das reziproke Gitter ist ein bcc-Gitter.
+A. Holleitner WS $25 / 26$
+
+## Reziprokes Gitter von bcc
+
+![This diagram depicts a geometric relationship between a cube and an inscribed truncated octahedron, showing how the truncated octahedron fits inside the cube with vertices and edges aligned.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-06_1170_926_346_299.jpg)
+1.) Das reziproke Gitter des bcc Gitters ist ein fcc Gitter.
+2. ) Die Wigner-Seitz-Zelle des reziproken Gitters wird als erste Brillouin-Zone bezeichnet.
+3.) Punkte hoher Symmetrie werden mit $\Gamma, \mathrm{H}, \mathrm{N}$ und P gekennzeichnet.
+![This diagram depicts the first Brillouin zone of a body-centered cubic (BCC) lattice, showing high-symmetry points labeled Γ, H, N, and P used in the analysis of electronic band structures in solid state physics.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-06_759_770_708_2385.jpg)
+
+Abb. 2.4: (a) Die erste Brillouin-Zone des kubisch raumzentrierten (bcc) Gitters ist ein rhombisches Dodekaeder. Die Zelle ist im reziproken Raum gezeichnet und das reziproke Gitter ist ein fcc-Gitter.
+
+## Die ersten drei BZ von bbc
+
+![This diagram depicts a truncated cuboctahedron, a type of Archimedean solid, showing its geometric structure with faces consisting of squares and hexagons.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-07_696_733_544_343.jpg)
+Bild 4.9: Die ersten drei Brillouin-Zonen des kubisch flächenzentrierten Gitters. (Nach N.W. Ashcroft, N.D. Mermin, Festkörperphysik, Oldenbourg, 2007.)
+
+![This image depicts a three-dimensional geometric model of a nonconvex uniform polyhedron known as the great stellated truncated dodecahedron. It shows the polyhedron's complex structure composed of intersecting star-like faces and truncated elements.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-07_697_720_546_1310.jpg)
+Bild 4.9: Die ersten drei Brillouin-Zonen des kubisch flächenzentrierten Gitters. (Nach N.W. Ashcroft, N.D. Mermin, Festkörperphysik, Oldenbourg, 2007.)
+
+![This image depicts a complex polyhedral structure known as a snub dodecahedron, which is an Archimedean solid composed of triangles and pentagons arranged in a chiral, non-symmetric pattern.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-07_704_720_536_2237.jpg)
+
+## Die Ewald-Kugel
+
+1. Trage einfallenden $\boldsymbol{k}_{0}$-Vektor, beginnend am Ursprung in das reziproke Gitter ein.
+2. Zeichne Kugel um Spitze von $\boldsymbol{k}$ mit Radius $|\boldsymbol{k}|$.
+3. Laue-Bedingung nur erfüllt, wenn reziproker Gitterpunkt auf der Kugeloberfläche liegt.
+
+Für beliebig einfallende Wellenvektoren $\boldsymbol{k}_{\boldsymbol{0}}$ werden im allgemeinen keine Bragg Peaks beobachtet.
+
+Ist jedoch $\boldsymbol{k}_{\boldsymbol{0}}-\boldsymbol{k}=\boldsymbol{K}_{\mathrm{hkl}}$ (bzw. G) so stammt der beobachtete Reflex von der Ebene (hkl).
+
+![This diagram depicts a reciprocal lattice with wave vectors in the context of diffraction or scattering, showing the relationship between the incident wave vector \( \mathbf{k}_0 \), the scattered wave vector \( \mathbf{k} \), the reciprocal lattice vector \( \mathbf{G} \), and the scattering angle \( 2\theta \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-08_1060_1063_221_1980.jpg)
+Bild 4.13: Zweidimensionale Darstellung der Ewald-Kugel. Bei der vorgegebenen Orientierung des Kristalls bezüglich des einfallenden Strahls tritt ein Reflex durch Beugung an den (410)-Netzebenen auf.
+
+## Die Ewald-Konstruktion
+
+Hilft, die unterschiedlichen Röntgenbeugungsmethoden darzustellen.
+
+1. Trage einfallenden $\boldsymbol{k}_{0}$-Vektor, beginnend am Ursprung in das reziproke Gitter ein.
+2. Zeichne Kugel um Spitze von $\boldsymbol{k}$ mit Radius $|\boldsymbol{k}|$.
+3. Laue-Bedingung nur erfüllt, wenn reziproker Gitterpunkt auf der Kugeloberfläche liegt.
+
+Für beliebig einfallende Wellenvektoren $\boldsymbol{k}_{\boldsymbol{0}}$ werden im allgemeinen keine Bragg Peaks beobachtet.
+
+Ist jedoch $\boldsymbol{k}_{\boldsymbol{0}}-\boldsymbol{k}=\boldsymbol{K}_{\mathrm{hkl}}$ (bzw. G) so stammt der beobachtete
+![This diagram depicts the Ewald construction used in X-ray crystallography, showing the relationship between the incident wave vector \( \mathbf{k_0} \), the diffracted wave vector \( \mathbf{k} \), and the reciprocal lattice vector \( \mathbf{K_{hkl}} \) within the reciprocal lattice space. It illustrates the geometric condition for diffraction where the tip of \( \mathbf{k} \) lies on the Ewald sphere of radius \( |\mathbf{k_0}| \).](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-09_902_1029_495_2069.jpg)
+Reflex von der Ebene (hkl).
+
+## Die Laue Methode
+
+Röntgenstrahl trifft aus fester Richtung $\boldsymbol{n}$ auf einen Einkristall. Röntgenstrahl enthält ein Spektrum von Wellenlängen $\lambda_{1}$ bis $\lambda_{2}$ mit zugehörigen Wellenvektoren $\boldsymbol{k}_{1}$ und $\boldsymbol{k}_{2}$.
+![This diagram depicts the concept of Brillouin zones in reciprocal space for a crystal lattice, showing the first and second Brillouin zones with wave vectors \( k_1 \) and \( k_2 \) inside these zones. It illustrates how wave vectors are limited to the first Brillouin zone and how larger wave vectors are mapped back into it.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-10_796_981_601_1154.jpg)
+
+Alle Punkte im schraffierten (grünen) Bereich erfüllen die Laue-Bedingungen und erzeugen einen Bragg-Reflex. Methode dient vorwiegend zur Orientierung von bekannten Kristallstrukturen.
+
+## Laue-Verfahren Beispiele
+
+![The image depicts the setup and results of X-ray diffraction analysis used to determine crystal structures, showing the diffraction pattern of 6H-SiC with hexagonal symmetry and silicon with diamond structure symmetry.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-11_1064_2009_356_674.jpg)
+Abb. 2.19: (a) Schematische Darstellung des Laue-Verfahrens. (b) Zur Veranschaulichung der Entstehung des Punktgitters bei Laue-Verfahren. (c) Laue-Aufnahme von 6H-SiC in (0001)-Orientierung. Man erkennt die 6-zählige Symmetrie der hexagonalen Struktur. (d) Laue-Aufnahme eines Si-Kristalls (4-zählige Symmetrie des Diamantgitters).
+
+## DrehkristallVerfahren
+
+![The image depicts X-ray diffraction (XRD) analysis, showing the setup for measuring diffraction from a crystal and an epitaxial film, along with diffraction intensity patterns and a rocking curve used to characterize the crystal quality and film structure.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-12_1230_1860_78_784.jpg)
+Abb. 2.20: (a) Schematische Darstellung des Drehkristall-Verfahrens. (b) Drehachsen bei einem Vierkreis-Diffraktometer. (c) Röntgenspektrum eines (001) orientierten $\mathrm{Sr}_{2} \mathrm{CrWO}_{6}$-Films auf einem (001) $\mathrm{SrTiO}_{3}$-Einkristall. Im Spektrum sind wegen der Orientierung von Film und Substrat nur ( $00 \ell$ )Reflexe enthalten. Die $c$-Achse von $\mathrm{Sr}_{2} \mathrm{CrWO}_{6}$ ist etwa doppelt so groß wie diejenige von $\mathrm{SrTiO}_{3}$, weshalb die Röntgen-Reflexe sehr nahe beieinander liegen. Für $\mathrm{Sr}_{2} \mathrm{CrWO}_{6}$ sind die ( $00 \ell$ ) mit ungeradzahligem $\ell$ ausgelöscht. (d) Rocking-Kurve des (002) Reflexes eines epitaktischen $\mathrm{La}_{2 / 3} \mathrm{Ca}_{1 / 3} \mathrm{MnO}_{3}$ Films, der auf einem einkristallinen $\mathrm{SrTiO}_{3}$ Substrat aufgewachsen wurde.
+
+## Pulver- oder Debye-Scherrer-Methode
+
+![The diagram depicts the setup and result of an X-ray diffraction experiment on a powder sample, showing the geometry of monochromatic X-ray beams interacting with a powder probe and the resulting diffraction rings on a film. The lower image shows the actual diffraction pattern with concentric rings produced by the powder sample.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-13_926_1797_423_710.jpg)
+Abb. 2.21: (a) Schematische Darstellung des Debye-Scherrer-Verfahrens. (b) Typische Debye-Scherrer-Aufnahme.
+
+## Strukturfaktor
+
+![This diagram depicts a model of a crystalline solid structure showing the arrangement of atoms as spheres with radii and lattice vectors labeled, illustrating the geometric parameters used to describe atomic positions and distances within the crystal lattice.](http://localhost:5001/subjects/9a4c3586-ca6c-46a7-b5d7-96e1b9a41680/images/37d8a2ea-26e9-4b8e-b544-da4cc4e21078/a01e5df1-1111-4d9c-84f4-4a0eed37ea19-14_1210_1895_452_197.jpg)
+Bild 4.15: Zur Aufspaltung des Ortsvektors bei der Herleitung von Strukturund Atom-Strukturfaktor. Die Atome werden als kugelförmige Gebilde mit dem Radius $R_{\alpha}$ betrachtet. Die Lage der Elementarzelle wird durch $\boldsymbol{R}_{m}$, die der Atomzentren in der Zelle durch $\boldsymbol{r}_{\alpha}$ und das Streuvolumen $\mathrm{d} V^{\prime}$ innerhalb des Atoms durch $\boldsymbol{r}^{\prime}$ festgelegt.
+

@@ -1,0 +1,111 @@
+Spezifische Wärme:
+
+$$
+C_{V}=-T \frac{\partial^{2} F}{\partial T^{2}}=\left\{\begin{array}{cc}
+C_{V}^{0}=-T \frac{\partial^{2} F_{0}}{\partial T^{2}} & T>T_{c} \\
+C_{V}^{0}+\frac{a_{0}^{2}}{2 b_{0}} T & T<T_{c}
+\end{array}\right.
+$$
+
+![This diagram depicts the specific heat capacity at constant volume, \( C_V(T) \), as a function of temperature \( T \), showing a discontinuity at the critical temperature \( T_c \) characteristic of a second-order phase transition.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-1_714_1005_1162_200.jpg)
+
+- Sprung der spezifischen Wärme:
+
+C_{V}\left(T_{c}^{-}\right)-C_{V}\left(T_{c}^{+}\right)=\frac{a_{0}^{2} T_{c}}{2 b_{0}^{2}}
+
+## Suszeptibilität:
+
+\begin{aligned}
+& \chi=\left.\left.\frac{\partial \varphi}{\partial \pi}\right|_{\pi=0} \quad \frac{\partial}{\partial \pi}\right|_{\pi=0}: \quad 2 a_{0}\left(T-T_{c}\right) \varphi+4 b_{0} \varphi^{3}=\pi \\
+& 2 a_{0}\left(T-T_{c}\right) \chi+12 b_{0} \varphi^{2} \chi=1 \\
+& \Rightarrow \quad \chi=\frac{1}{2 a_{0}\left(T-T_{c}\right)+12 b_{0} \varphi^{2}}
+\end{aligned}
+
+\chi=\left\{\begin{array}{cc}
+\frac{1}{2 a_{0}\left(T-T_{c}\right)} & T>T_{c} \\
+\frac{1}{4 a_{0}\left(T_{c}-T\right)} & T<T_{c}
+\end{array}\right.
+
+### 10.3.2 Kontinuierliche Symmetrien:
+
+bisher: • Ordnungsparameter $=$ Skalar
+
+- diskrete Symmetrie, z.B.: $\varphi \rightarrow-\varphi$
+
+Phasenübergänge mit kontinuierlicher Symmetrie:
+-) Heisenberg-Ferromagnet:
+Ordnungsparameter: $\quad \vec{\varphi}=\left(\begin{array}{c}M_{x} \\ M_{y} \\ M_{z}\end{array}\right) \quad \rightarrow$ bricht Rotationssymmetrie
+-) Bose-Einstein-Kondensat, superfluides He4:
+
+Ordnungsparameter: $\psi(\vec{r}) \in \mathbb{C} \equiv$ Wellenfunktion des Grundzustands
+
+→ bricht globale Phasenrotation $\psi(\vec{r}) \rightarrow e^{i \theta} \psi(\vec{r})$
+(1) Symmetrie
+
+Bsp: System mit 2D Rotationssymmetrie oder äquivalent U(1) Symmetrie:
+
+\psi(\vec{r})=\binom{\psi_{x}(\vec{r})}{\psi_{y}(\vec{r})} \quad \text { oder } \quad \psi(\vec{r})=\rho(\vec{r}) e^{i \theta(\vec{r})}
+
+freie Energie: $\quad F \simeq \int d^{3} r\left[c|\nabla \psi(\vec{r})|^{2}+a|\psi(\vec{r})|^{2}+b|\psi(\vec{r})|^{4}\right]$
+
+- homogenes System: $F(T ; \varphi) \simeq a|\varphi|^{2}+b|\varphi|^{4}$
+![This diagram depicts a free energy surface \( F(T; \varphi) \) as a function of order parameters \(\varphi_x\) and \(\varphi_y\) for the case where the coefficient \( a(T) > 0 \), indicating a single minimum at the origin typically associated with a disordered phase in a Landau theory of phase transitions.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-4_984_904_1246_190.jpg)
+
+unendlich viele Minima!
+![This diagram depicts a free energy surface \( F(T; \varphi) \) as a function of two order parameters \(\varphi_x\) and \(\varphi_y\), illustrating a phase transition scenario where the coefficient \( a(T) \) is negative, indicating the presence of multiple minima corresponding to different stable or metastable states.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-4_1021_1169_1225_1679.jpg)
+
+![This diagram depicts a double-well potential energy curve, showing the concept of quantum tunneling where a particle transitions between two potential wells separated by a barrier.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-5_487_1047_153_195.jpg)
+
+## longitudinale Anregungen:
+
+- minimale Energie /Oszillationsfrequenz
+![This diagram depicts quantum tunneling, showing a particle's wavefunction passing through a potential energy barrier that it classically could not overcome. The solid curve represents the potential barrier, while the dashed curve and arrows indicate the tunneling path of the particle.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-5_598_1063_824_179.jpg)
+
+
+## transversale Anregungen:
+
+- keine potentielle Energie
+- Beitrag zur f. Energie nur von
+
+\nabla^{2} \psi(\vec{r}) \sim|\vec{k}|^{2} \psi(\vec{k})
+
+abhängig.
+
+→ Bei einem PÜ mit kontinuierlicher Symmetrie tritt in der geordneten Phase immer eine "soft mode" oder "Goldstone Mode" mit verschwindender Anregungsenergie auf:
+
+E(\vec{k} \rightarrow 0) \rightarrow 0
+
+Beispiel: Magnet mit 2D Rotationssymmetrie
+![This diagram depicts a one-dimensional chain of six spin-1/2 particles, each with spin vectors pointing downward along the z-axis, representing a spin configuration in a quantum spin system. The x and y axes indicate the spatial orientation of the chain.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-6_397_1374_264_174.jpg)
+
+\vec{\varphi}=\binom{0}{-\rho}
+
+![This diagram depicts the spin alignment of six electrons, each represented by an arrow pointing downward within an orbital. It shows all six electrons having their spins paired in the same direction, indicating a specific electron spin configuration.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-6_313_1068_802_464.jpg)
+
+## "Goldstone Mode"
+
+→ keine Änderung der Energie durch uniforme Rotation aller mag. Momente
+![This diagram depicts the six possible orientations of a spin-5/2 particle's spin angular momentum vector relative to a chosen axis, illustrating the quantized spin states with magnetic quantum numbers m_s = +5/2, +3/2, +1/2, -1/2, -3/2, and -5/2.](http://localhost:5001/subjects/065313dc-e010-4cf3-9daf-525801a906a2/images/61487805-3959-40f6-b8f8-7bba8a1dbe41/698cb62c-0325-4a6d-a15e-fd4a1ccf7bb2-6_323_1073_1489_454.jpg)
+
+> Spin-Wellen / "Magnonen"
+
+→ räumliche Variation des OP erhöht die Wechselwirkungsenergie
+
+E(k) \sim-\nabla^{2} \psi(\vec{r}) \sim k^{2} \psi(k)
+
+### 10.3.3 Landau Theorie: Zusammenfassung
+
+- Verhalten therm. Größen nahe eines PÜ folgt aus Existenz eines Ordnungsparameters und der Symmetrie des Systems.
+- Eigentlich nur gültig für PÜ 2. Ordnung (da Entwicklung in $\varphi \ll 1$ ) aber auch qualitative Beschreibung eines PÜ 1. Ordnung möglich*.
+- Kritische Exponenten:
+
+\begin{aligned}
+& \alpha=0 \quad \beta=1 / 2 \quad \gamma=1 \quad \delta=3 \quad \eta=0 \quad \nu=1 / 2 \\
+& \text { "Landau Theorie" = "Molekularfeldnäherung" }
+\end{aligned}
+
+- Fluktuationen werden nicht berücksichtig → falsche quantitative Vorhersagen nahe am kritischen Punkt.
+
+[^0]
+[^0]:    *) siehe Übungen
+
