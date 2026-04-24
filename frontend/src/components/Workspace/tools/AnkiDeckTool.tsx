@@ -61,6 +61,7 @@ export default function AnkiDeckTool() {
   const [selectedTopicId, setSelectedTopicId] = useState("");
   const [selectedSubtopicId, setSelectedSubtopicId] = useState("");
   const [genCount, setGenCount] = useState(5);
+  const [genPrompt, setGenPrompt] = useState("");
   const [search, setSearch] = useState("");
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const [showDeckMenu, setShowDeckMenu] = useState(false);
@@ -123,6 +124,7 @@ export default function AnkiDeckTool() {
       const opts: any = { count: genCount };
       if (selectedTopicId) opts.topicId = selectedTopicId;
       if (selectedSubtopicId) opts.subtopicId = selectedSubtopicId;
+      if (genPrompt.trim()) opts.prompt = genPrompt.trim();
 
       const res = await generateAnkiCards(subject.id, opts);
       const { close } = connectAnkiStream(res.generationId, (ev: AnkiDeckEvent) => {
@@ -140,7 +142,7 @@ export default function AnkiDeckTool() {
       setGenerating(false);
       setGenProgress("");
     }
-  }, [subject, generating, genCount, selectedTopicId, selectedSubtopicId]);
+  }, [subject, generating, genCount, selectedTopicId, selectedSubtopicId, genPrompt]);
 
   const handleAddManual = async () => {
     if (!subject || !manualFront.trim() || !manualBack.trim()) return;
@@ -607,6 +609,14 @@ export default function AnkiDeckTool() {
       {plan && (
         <div className="space-y-2 p-3 rounded-lg bg-stone-900/50 border border-stone-800">
           <div className="text-xs font-medium text-stone-400 uppercase tracking-wider">Karten generieren</div>
+          <textarea
+            data-gen-prompt
+            value={genPrompt}
+            onChange={e => setGenPrompt(e.target.value)}
+            placeholder="Fokus: z.B. Formeln, Verständnisfragen, Klausurvorbereitung, Abrufübung..."
+            rows={2}
+            className="w-full bg-stone-900 border border-stone-700 rounded-lg px-2.5 py-1.5 text-xs text-stone-200 outline-none focus:border-teal-600 resize-none placeholder:text-stone-600"
+          />
           <div className="flex gap-2">
             <select
               value={selectedTopicId}
@@ -743,7 +753,22 @@ export default function AnkiDeckTool() {
                       </svg>
                       <span className="text-xs text-stone-300">{subtopic.title}</span>
                     </div>
-                    <span className="text-[11px] text-stone-600">{subCards.length}</span>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={e => {
+                          e.stopPropagation();
+                          setSelectedTopicId(topicId);
+                          setSelectedSubtopicId(subId);
+                          setGenCount(5);
+                          document.querySelector<HTMLTextAreaElement>("[data-gen-prompt]")?.focus();
+                        }}
+                        className="text-[10px] text-teal-600 hover:text-teal-400 transition-colors px-1"
+                        title="Mehr Karten für dieses Unterthema generieren"
+                      >
+                        + Mehr
+                      </button>
+                      <span className="text-[11px] text-stone-600">{subCards.length}</span>
+                    </div>
                   </button>
 
                   {subExpanded && subCards.map(card => (

@@ -222,6 +222,60 @@ function extractJsonArray(s: string): string {
   return ""
 }
 
+function buildDupeBlock(
+  existingQuestions: string[],
+  targetTopicId?: string,
+  targetSubtopicId?: string,
+  allCards?: AnkiCard[]
+): string {
+  if (existingQuestions.length === 0) return ""
+
+  const MAX_DUPE_BUDGET = 4000
+
+  // If we have full card data, do two-tier scoping
+  if (allCards && targetTopicId) {
+    const sameSubtopic: string[] = []
+    const otherCards: string[] = []
+
+    for (const card of allCards) {
+      const front = card.front
+      if (targetSubtopicId && card.topicId === targetTopicId && card.subtopicId === targetSubtopicId) {
+        sameSubtopic.push(front.slice(0, 120))
+      } else {
+        otherCards.push(front.slice(0, 60))
+      }
+    }
+
+    let block = ""
+    if (sameSubtopic.length > 0) {
+      block += `\nExistierende Karten IN DIESEM Unterthema (NICHT wiederholen):\n${sameSubtopic.map(q => `- ${q}`).join("\n")}\n`
+    }
+
+    // Fill remaining budget with other cards
+    const remaining = MAX_DUPE_BUDGET - block.length
+    if (otherCards.length > 0 && remaining > 100) {
+      let otherBlock = `\nKarten in anderen Themen (ähnliche vermeiden):\n`
+      for (const q of otherCards) {
+        const line = `- ${q}\n`
+        if (otherBlock.length + line.length > remaining) break
+        otherBlock += line
+      }
+      block += otherBlock
+    }
+
+    return block
+  }
+
+  // Fallback: flat list, budget-capped
+  let block = `\nBereits existierende Fragen (NICHT wiederholen):\n`
+  for (const q of existingQuestions) {
+    const line = `- ${q.slice(0, 120)}\n`
+    if (block.length + line.length > MAX_DUPE_BUDGET) break
+    block += line
+  }
+  return block
+}
+
 function buildPrompt(
   topicTitle: string,
   subtopicTitle: string,
@@ -229,24 +283,32 @@ function buildPrompt(
   exerciseContext: string,
   imageUrls: string[],
   count: number,
-  existingQuestions: string[]
+  existingQuestions: string[],
+  userPrompt?: string,
+  targetTopicId?: string,
+  targetSubtopicId?: string,
+  allCards?: AnkiCard[]
 ): string {
   const imageList = imageUrls.length > 0
     ? `\nVerfügbare Diagramme/Bilder:\n${imageUrls.map(u => `- ${u}`).join("\n")}`
     : ""
 
-  // Limit dupeBlock to avoid bloating the prompt
-  const dupeList = existingQuestions.slice(-50)
-  const dupeBlock = dupeList.length > 0
-    ? `\nBereits existierende Fragen (NICHT wiederholen):\n${dupeList.map((q, i) => `- ${q.slice(0, 80)}`).join("\n")}\n`
-    : ""
+  const dupeBlock = buildDupeBlock(existingQuestions, targetTopicId, targetSubtopicId, allCards)
 
   const shortRule = `WICHTIG: Halte Antworten KURZ (max 2-3 Sätze + Formel). Keine langen Herleitungen. Gib NUR valides JSON aus, keine Erklärungen davor/danach.`
 
+  const focusBlock = userPrompt
+    ? `\nFOKUS: ${userPrompt}\nErstelle die Karten mit diesem Fokus. Passe den Kartentyp entsprechend an.\n`
+    : ""
+
   if (exerciseContext && materialContext) {
+    const defaultRules = userPrompt
+      ? `Regeln: Keine Duplikate. Folge dem angegebenen Fokus. Vorderseite=Frage, Rückseite=kurze Antwort+Formel. LaTeX: $...$`
+      : `Regeln: Keine Duplikate. ~60% Klausur-Karten, ~40% Konzept-Karten. Vorderseite=Frage, Rückseite=kurze Antwort+Formel. LaTeX: $...$`
+
     return `Erstelle ${count} Anki-Karten. Thema: ${topicTitle} > ${subtopicTitle}
 ${shortRule}
-${dupeBlock}
+${focusBlock}${dupeBlock}
 VORLESUNGSMATERIAL:
 ${materialContext}
 
@@ -254,7 +316,7 @@ ALTKLAUSUREN (stärker gewichten):
 ${exerciseContext}
 ${imageList}
 
-Regeln: Keine Duplikate. ~60% Klausur-Karten, ~40% Konzept-Karten. Vorderseite=Frage, Rückseite=kurze Antwort+Formel. LaTeX: $...$
+${defaultRules}
 
 JSON-Array:
 [{"front":"...","back":"...","tags":["${topicTitle}","${subtopicTitle}","Klausur"],"imageUrl":null}]`
@@ -263,7 +325,7 @@ JSON-Array:
   if (exerciseContext) {
     return `Erstelle ${count} Anki-Karten aus Altklausuren. Thema: ${topicTitle} > ${subtopicTitle}
 ${shortRule}
-${dupeBlock}
+${focusBlock}${dupeBlock}
 Klausuraufgaben:
 ${exerciseContext}
 ${imageList}
@@ -274,14 +336,18 @@ JSON-Array:
 [{"front":"...","back":"...","tags":["${topicTitle}","${subtopicTitle}","Klausur"],"imageUrl":null}]`
   }
 
+  const defaultMaterialRules = userPrompt
+    ? `Regeln: Keine Duplikate. Folge dem angegebenen Fokus. 1 Konzept pro Karte. Vorderseite=Frage, Rückseite=kurze Antwort+Formel. LaTeX: $...$`
+    : `Regeln: Keine Duplikate. 1 Konzept pro Karte. Vorderseite=Frage, Rückseite=kurze Antwort+Formel. LaTeX: $...$. Variiere: Definition, Formel, Konzept.`
+
   return `Erstelle ${count} Anki-Karten. Thema: ${topicTitle} > ${subtopicTitle}
 ${shortRule}
-${dupeBlock}
+${focusBlock}${dupeBlock}
 Vorlesungsmaterial:
 ${materialContext}
 ${imageList}
 
-Regeln: Keine Duplikate. 1 Konzept pro Karte. Vorderseite=Frage, Rückseite=kurze Antwort+Formel. LaTeX: $...$. Variiere: Definition, Formel, Konzept.
+${defaultMaterialRules}
 
 JSON-Array:
 [{"front":"...","back":"...","tags":["${topicTitle}","${subtopicTitle}","Vorlesung"],"imageUrl":null}]`
@@ -296,7 +362,8 @@ export async function generateCardsForSubtopic(
   topicId: string,
   subtopicId: string,
   count = 5,
-  onProgress?: ProgressFn
+  onProgress?: ProgressFn,
+  userPrompt?: string
 ): Promise<AnkiCard[]> {
   const emit = onProgress || (() => {})
   const plan = await getStudyPlan(subjectId)
@@ -350,7 +417,7 @@ export async function generateCardsForSubtopic(
     ?.map(m => m.replace(/!\[.*?\]\(/, "").replace(/\)$/, "")) || []
   const allImages = [...new Set([...imageUrls.slice(0, 10), ...contextImages.slice(0, 5)])]
 
-  const prompt = buildPrompt(topic.title, subtopic.title, materialContext, exerciseContext, allImages, count, existingQuestions)
+  const prompt = buildPrompt(topic.title, subtopic.title, materialContext, exerciseContext, allImages, count, existingQuestions, userPrompt, topicId, subtopicId, existingDeck.cards)
 
   emit("generating", `Generating: ${topic.title} > ${subtopic.title}`)
 
@@ -381,16 +448,21 @@ export async function generateCardsForSubtopic(
     }
   }
 
-  // Fallback: try to find JSON objects and wrap in array
+  // Fallback: try to repair truncated array or extract individual objects
   if (!jsonStr) {
     // Try the whole raw string
     try { const t = JSON.parse(raw); jsonStr = Array.isArray(t) ? raw : `[${raw}]` } catch {
-      // Try to extract individual objects
+      // Try to extract individual complete JSON objects (string-aware to handle LaTeX braces)
       const objects: string[] = []
-      let depth = 0, start = -1
+      let depth = 0, start = -1, inStr = false, esc = false
       for (let i = 0; i < raw.length; i++) {
-        if (raw[i] === "{") { if (depth === 0) start = i; depth++ }
-        else if (raw[i] === "}") { depth--; if (depth === 0 && start !== -1) { objects.push(raw.slice(start, i + 1)); start = -1 } }
+        const ch = raw[i]
+        if (esc) { esc = false; continue }
+        if (ch === "\\") { esc = true; continue }
+        if (ch === '"') { inStr = !inStr; continue }
+        if (inStr) continue
+        if (ch === "{") { if (depth === 0) start = i; depth++ }
+        else if (ch === "}") { depth--; if (depth === 0 && start !== -1) { objects.push(raw.slice(start, i + 1)); start = -1 } }
       }
       if (objects.length > 0) jsonStr = `[${objects.join(",")}]`
     }
@@ -417,8 +489,30 @@ export async function generateCardsForSubtopic(
   try {
     parsed = JSON.parse(jsonStr)
   } catch {
-    console.error("[ankideck] final parse failure. Raw:", rawContent.slice(0, 300))
-    throw new Error("Failed to parse Anki cards from AI response")
+    // Last resort: try to salvage by extracting complete objects from jsonStr
+    const salvaged: string[] = []
+    let d = 0, s = -1, inS = false, e = false
+    for (let i = 0; i < jsonStr.length; i++) {
+      const c = jsonStr[i]
+      if (e) { e = false; continue }
+      if (c === "\\") { e = true; continue }
+      if (c === '"') { inS = !inS; continue }
+      if (inS) continue
+      if (c === "{") { if (d === 0) s = i; d++ }
+      else if (c === "}") { d--; if (d === 0 && s !== -1) { salvaged.push(jsonStr.slice(s, i + 1)); s = -1 } }
+    }
+    if (salvaged.length > 0) {
+      try {
+        parsed = JSON.parse(`[${salvaged.join(",")}]`)
+        console.warn(`[ankideck] salvaged ${parsed.length} cards from truncated response`)
+      } catch {
+        console.error("[ankideck] final parse failure. Raw:", rawContent.slice(0, 300))
+        throw new Error("Failed to parse Anki cards from AI response")
+      }
+    } else {
+      console.error("[ankideck] final parse failure. Raw:", rawContent.slice(0, 300))
+      throw new Error("Failed to parse Anki cards from AI response")
+    }
   }
 
   if (!Array.isArray(parsed)) parsed = [parsed]
@@ -451,7 +545,8 @@ export async function generateCardsForTopic(
   subjectId: string,
   topicId: string,
   countPerSubtopic = 5,
-  onProgress?: ProgressFn
+  onProgress?: ProgressFn,
+  userPrompt?: string
 ): Promise<AnkiCard[]> {
   const plan = await getStudyPlan(subjectId)
   if (!plan) throw new Error("No study plan found")
@@ -463,7 +558,7 @@ export async function generateCardsForTopic(
     const sub = topic.subtopics[i]
     onProgress?.("generating", `(${i + 1}/${topic.subtopics.length}) ${topic.title} > ${sub.title}`)
     try {
-      const cards = await generateCardsForSubtopic(subjectId, topicId, sub.id, countPerSubtopic)
+      const cards = await generateCardsForSubtopic(subjectId, topicId, sub.id, countPerSubtopic, undefined, userPrompt)
       allCards.push(...cards)
     } catch (e: any) {
       console.warn(`[ankideck] failed for subtopic "${sub.title}":`, e?.message)
@@ -475,7 +570,8 @@ export async function generateCardsForTopic(
 export async function generateFullDeck(
   subjectId: string,
   countPerSubtopic = 5,
-  onProgress?: ProgressFn
+  onProgress?: ProgressFn,
+  userPrompt?: string
 ): Promise<AnkiCard[]> {
   const plan = await getStudyPlan(subjectId)
   if (!plan) throw new Error("No study plan found")
@@ -490,7 +586,7 @@ export async function generateFullDeck(
       done++
       onProgress?.("generating", `(${done}/${total}) ${topic.title} > ${sub.title}`)
       try {
-        const cards = await generateCardsForSubtopic(subjectId, topic.id, sub.id, countPerSubtopic)
+        const cards = await generateCardsForSubtopic(subjectId, topic.id, sub.id, countPerSubtopic, undefined, userPrompt)
         allCards.push(...cards)
       } catch (e: any) {
         console.warn(`[ankideck] failed for "${topic.title} > ${sub.title}":`, e?.message)

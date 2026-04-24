@@ -895,7 +895,7 @@ export function deleteAnkiCard(subjectId: string, cardId: string) {
   );
 }
 
-export function generateAnkiCards(subjectId: string, opts: { topicId?: string; subtopicId?: string; count?: number }) {
+export function generateAnkiCards(subjectId: string, opts: { topicId?: string; subtopicId?: string; count?: number; prompt?: string }) {
   return req<{ ok: true; generationId: string; stream: string }>(
     `${env.backend}/subjects/${encodeURIComponent(subjectId)}/ankideck/generate`,
     { method: "POST", headers: jsonHeaders(), body: JSON.stringify(opts) }

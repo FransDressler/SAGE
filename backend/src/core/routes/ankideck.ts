@@ -146,7 +146,7 @@ export function ankideckRoutes(app: any) {
       const subject = await getSubject(subjectId)
       if (!subject) return res.status(404).send({ ok: false, error: "subject not found" })
 
-      const { topicId, subtopicId, count } = req.body
+      const { topicId, subtopicId, count, prompt: userPrompt } = req.body
       const generationId = randomUUID()
       const wsKey = `ankideck:${generationId}`
 
@@ -161,11 +161,11 @@ export function ankideckRoutes(app: any) {
           let cards: AnkiCard[]
 
           if (subtopicId && topicId) {
-            cards = await generateCardsForSubtopic(subjectId, topicId, subtopicId, count || 5, emit)
+            cards = await generateCardsForSubtopic(subjectId, topicId, subtopicId, count || 5, emit, userPrompt)
           } else if (topicId) {
-            cards = await generateCardsForTopic(subjectId, topicId, count || 5, emit)
+            cards = await generateCardsForTopic(subjectId, topicId, count || 5, emit, userPrompt)
           } else {
-            cards = await generateFullDeck(subjectId, count || 5, emit)
+            cards = await generateFullDeck(subjectId, count || 5, emit, userPrompt)
           }
 
           emitToAll(sessions.get(wsKey), { type: "cards", cards })
